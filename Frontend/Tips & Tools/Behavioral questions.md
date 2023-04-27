@@ -1,0 +1,3 @@
+- Refrain from exaggerating your abilities or being negative towards yourself.
+- Rather than saying "I failed at that task", you could say that task was challenging but provided me with some ideas for future areas of research to explore.
+- Additionally, avoid excessive slang cursing or inappropriate humor.

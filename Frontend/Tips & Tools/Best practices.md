@@ -1,0 +1,3 @@
+## Form
+- **Don't use labels as placeholders**: Placeholders and labels are two different things, with two different purposes. Labels explain what the field is, and placeholders provide *an example input*, to give users a hint about what's expected and show how to format the data.
+  The trouble with using a placeholder as a label is that the *placeholder disappears when something is entered into the input*. Therefore, it's better to have a label for input fields rather than using the input's placeholder as its label.

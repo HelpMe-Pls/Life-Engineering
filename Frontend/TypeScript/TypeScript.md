@@ -1,0 +1,18 @@
+[[Fundamentals]]
+[[TypeScript/Advanced]]
+
+---
+- Get individual types from a type of Array by using 2 dimentional array:
+```ts
+import type { MenuProps } from 'antd';
+
+type ItemType = MenuItemType | SubMenuType | MenuItemGroupType | MenuDividerType
+
+type MenuItem = MenuProps['items']  // ItemType[] (from the docs)
+type MenuItem = MenuProps['items'][number] // MenuItemType | SubMenuType | MenuItemGroupType | MenuDividerType
+
+// If you want to see ALL of MenuItem props:
+const item: MenuItem = {
+  // Ctrl + Space
+}
+```
