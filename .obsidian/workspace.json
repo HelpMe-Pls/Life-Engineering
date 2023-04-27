@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Frontend/Tips & Tools/Technical questions.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Frontend/Tips & Tools/DSA.md",
+                "file": "Frontend/Tips & Tools/WIL from books.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "e6c5d7e744f47859",
@@ -129,7 +128,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Frontend/Tips & Tools/DSA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,11 +154,14 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "ebde23360a6287d5",
+  "active": "49743631e5711930",
   "lastOpenFiles": [
+    "README.md",
+    "Frontend/Tips & Tools/Technical questions.md",
+    "Frontend/Tips & Tools/WIL from books.md",
     "Frontend/CSS/Flex.md",
-    "Frontend/JS/Everyday methods & utils.md",
     "Frontend/Tips & Tools/DSA.md",
+    "Frontend/JS/Everyday methods & utils.md",
     "Frontend/Tips & Tools/English vocab.md",
     "Untitled.md",
     "Frontend/CSS/CSS.md",
@@ -168,7 +169,6 @@
     "Frontend/CSS/Positioning.md",
     "Frontend/CSS/Animations.md",
     "Frontend/Tips & Tools/VSCode.md",
-    "Frontend/Tips & Tools/Technical questions.md",
     "Frontend/JS/Primitive types.md",
     "Frontend/CSS/Flow layout.md",
     "Frontend/Tips & Tools/Interview prep.md",
@@ -184,8 +184,6 @@
     "CSS/Flex.md",
     "Tips & Tools/VSCode.md",
     "JS/Conversion - Coercion.md",
-    "JS/Types.md",
-    "JS/Foundation.md",
     "Untitled.canvas"
   ]
 }
