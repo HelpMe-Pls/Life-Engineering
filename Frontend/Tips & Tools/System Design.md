@@ -1,0 +1,23 @@
+- Check [this](https://gist.github.com/vasanthk/485d1c25737e8e72759f)out.
+- [This](https://github.com/checkcheckzz/system-design-interview) also.
+- Guidelines to follow:
+	- **Requirements** exploration: Understand the problem thoroughly and determine the scope by asking a number of clarifying questions.
+		- "What's the primary device that users will access the system on?"
+		- "Which browsers should we support?"
+		- "Do we need to support internationalization?"
+		- "Does the app need to work offline?"
+	- **Architecture** / High-level design: Identify the key components of the product and how they are related to each other.
+		- For components, list down the various subcomponents that will exist within it and what data is being passed among each component.
+	- **Data model**: Describe the various data entities, the fields they contain and which component(s) they belong to.
+		- State management [[Where to put state.png |best practices]] and immutability.
+	- **Interface definition** (API): Define the interface (API) between components in the product, functionality of each API, their parameters and responses.
+		- Good components are designed in a way that they can be reused in multiple scenarios and abstract complexities.
+		- Components should be open for extension but closed for modification.
+		- [[Design Patterns |Read more]].
+	- **Optimizations** and deep dive: Discuss about possible optimization opportunities and specific areas of interest when building the product.
+		- UX: debounce input, disable interactive elements if they trigger an async request, "View more" button for long data, pagination, styling [[CSS#Overflow |overflow]], reflect state of the component to the user (e.g. loading, error, no data,...)
+		- Performance: latency (loading speed), SSR, code splitting, [[Frontend/React/Performance#Code Splitting |memory management]], [[Concurrency#Render as you fetch |render as you fetch]], prefetching/caching (with react-query),...
+		- [Accessibility](https://www.w3.org/WAI/fundamentals/accessibility-intro/): good color contrast, keyboard friendliness (`tabindex`), visual impairment (`aria-role`, `aria-label`, `alt` props), transcript for audio components,...
+		- Internationalization: design and development of a product, application or document content that enables easy localization for target audiences that vary in culture, region, or language. Components shouldn't be hardcoded to a specific language, consider display order for RTL languages.
+		- Multi-device support: good memory management, increasing the hit box of interactive elements,...
+		- Security: XSS, CSRF, [`rel=noopener`](https://mathiasbynens.github.io/rel-noopener/), [clickjacking](https://owasp.org/www-community/attacks/Clickjacking),...

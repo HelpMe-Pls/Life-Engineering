@@ -1,3 +1,11 @@
+- The "customers" of the test are developers, so you want to make it as easy for them to understand as possible so they can work out what's happening when a test fails.
+- Various types of tests:
+	1.  **Static**: catch typos and type errors as you write the code.
+	2.  **Unit**: verify that individual, isolated parts works as expected (we're often testing a single function).
+	3.  **Integration**: verify that several units works together in harmony (we're normally testing a single screen).
+	4.  **End to End** (AKA "e2e test" or "functional testing"): a helper that behaves like an user to click around the app and verify that things function the way you want (we're putting it all together and testing the application as a whole).
+---
+
 ### Intro to testing
 - Use VanillaJS to prepare the DOM for your test.
 - Assert the order of your elements by using Array destructuring, from that, you can get the corresponding methods of that DOM object (thanks to [TypeScript](https://github.com/HelpMe-Pls/testing-react-apps/blob/master/src/__tests__/final/TS/01.extra-1.tsx), at line `17`).

@@ -7,13 +7,15 @@
 ```js
 // ajax(..) is some arbitrary Ajax function given by a library
 ajax( "http://some.url.1", function myCallbackFunction(data){
-
-	console.log( data ); // Yay, I gots me some `data`!
-	
+	console.log( data ); // Yay, I got me some `data`!
 });
 ```
 
 - Any time you wrap a portion of code into a `function` and specify that it should be executed in response to some event (timer, mouse click, Ajax response, etc.), you are creating a _later_ chunk of your code, and thus introducing asynchrony to your program.
+
+### Synchronous vs asynchronous functions
+- Synchronous functions are blocking while asynchronous functions are not. In synchronous functions, *statements complete before the next statement is run*. In this case, the program is evaluated exactly in order of the statements and execution of the program is *paused* if one of the statements take a very long time.
+- Asynchronous functions usually accept a callback as a parameter and execution *continue on the next line immediately* after the asynchronous function is invoked. The callback is only invoked when the asynchronous operation is complete and the call stack is empty. Heavy duty operations such as loading data from a web server or querying a database should be done asynchronously so that the main thread can continue executing other operations instead of blocking until that long operation to complete (in the case of browsers, the UI will freeze).
 ---
 
 ### Async Console gotcha
@@ -81,7 +83,7 @@ while (true) {
 
 - In a single-threaded environment, it really doesn't matter that the items in the thread queue are low-level operations, because nothing can interrupt the thread. But if you have a parallel system, where two different threads are operating in the same program, you could very likely have unpredictable behavior.
 
-- Because ==JavaScript is single-threading==, the code inside of `foo()` (and `bar()`) is atomic, which means that once `foo()` starts running, the entirety of its code will finish before any of the code in `bar()` can run, or vice versa. This is called "run-to-completion" behavior:
+- Because ==JavaScript is single-threading==, the code inside of `foo()` (and `bar()`) is atomic, which means that once `foo()` starts running, the entirety of its code will finish before any of the code in `bar()` can run, or vice versa. This is called =="run-to-completion"== behavior:
 
 ```js
 // Chunk 1:

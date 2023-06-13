@@ -1,11 +1,23 @@
-- "What is the ratio of testers to developers to program managers? What is the interaction like? How does project planning happen on the team?"
-
-- "What brought you to this company? What has been most challenging for you?"
-
-- Ask about tech stack, everyday work involvement
-
-- "I'm not familiar with technology X, but it sounds like a very interesting solution. Could you tell me a bit more about how it works?"
-
-- We had some challenges in scalability from our current project, and I'd love to learn more about it. What opportunities are there at this company to learn about this?
-
-- 
+- The questions you ask reveal what you care about. If asked well, this can be a very predictable opportunity for you to leave a good impression while also knowing more about the role (including uncovering potential red flags).
+- If you don't know what to ask, follow these guidelines:
+	- Ask about your technical work
+		- "I'm not familiar with technology X, but it sounds like a very interesting solution. Could you tell me a bit more about how it works?"
+		- "What do you measure? What are your most important product metrics?"
+		- "What are the engineering challenges that the company/team is facing?"
+	- Ask about your role
+		- "What is the ratio of testers to developers to program managers? What is the interaction like? How does project planning happen on the team?"
+		- "We had some challenges in scalability and testing from our current project, and I'd love to learn more about it. What opportunities are there at this company to learn about this?"
+		- "What would be the most important problem you would want me to solve if I joined your team?"
+	- Ask about company culture and employees' welfare
+		- "What is unique about working at this company that you have not experienced elsewhere?"
+		- "What is something you wish were different about your job?"
+		- "What does the company do to nurture and train its employees?"
+	- Ask about leadership and management
+		- "Sometimes there's a trade-off between what's best for one of your team members and what's best for the team. Give an example of how you handled this and why?"
+		- "How do you train/ramp up engineers who are new to the team?"
+		- "How often are 1:1s conducted?"
+	- Ask about company's goal and direction
+		- "What assurance do you have that this company will be successful?"
+		- "Which companies are your main competitors and what differentiates your company?"
+		- "What are your highest priorities right now? For example, new features, new products, solidifying existing code, reducing operations overhead?"
+> End with appreciation, thanks for the interview.

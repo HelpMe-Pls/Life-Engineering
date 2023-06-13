@@ -54,7 +54,6 @@ a++;
 -   Call the callback too few or too many times 
 -   Fail to pass along any necessary environment/parameters to your callback
 -   Swallow any errors/exceptions that may happen
--   ...
 
 That should feel like a troubling list, because it is. You're probably slowly starting to realize that you're going to have to invent an awful lot of ad hoc logic **in each and every single callback** that's passed to an utility you're not positive you can trust.
 

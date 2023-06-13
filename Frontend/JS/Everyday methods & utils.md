@@ -15,9 +15,9 @@ console.log('newObj:', newObj);       // newObj: { "a": { "b": 2 }, "c": 2
 
 >> Use lo_cloneDeep to be sure about updating state
 ```
+> Use the built-in [structuredClone()](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone) if you want to deeply clone an object
 
 - Destructuring and alias:
-
 ```js
 function bar() {
 	return {
@@ -35,8 +35,58 @@ var { x: a, y: b, z: c } = bar();
 
 console.log( a, b, c );	// 4 5 6
 console.log( x, y, z );	// 4 5 6
-```
 
+//============ Destructuring function parameters =============
+const ctx = {params: {slug:'abc'}}
+
+// If we want to access the `params` property from the argument when invoking `fetchSth` function, we can define it in one of these 3 ways:
+// 1, the usual:
+function fetchSth(context) {
+	const slug = context.params.slug
+}
+// 2, type annotation:
+function fetchSth(context: {params}) {
+	const slug = params.slug
+}
+// 3, object destructuring is used in the function parameter itself:
+function fetchSth({params}) {
+	const slug = params.slug
+}
+// Then, invoke `fetchSth`:
+fetchSth(ctx)
+
+//===============================
+// Swapping variables
+let a = 1;
+let b = 3;
+
+[a, b] = [b, a];
+console.log(a); // 3
+console.log(b); // 1
+```
+### Spread vs rest:
+- ES6's rest syntax is like an inverse of the spread syntax: it offers a shorthand for including an arbitrary number of arguments to be passed to a function:
+```js
+function addFiveToABunchOfNumbers(...numbers) {
+  return numbers.map((x) => x + 5);
+}
+
+const result = addFiveToABunchOfNumbers(4, 5, 6, 7, 8, 9, 10); // [9, 10, 11, 12, 13, 14, 15]
+
+const [a, b, ...rest] = [1, 2, 3, 4]; // a: 1, b: 2, rest: [3, 4]
+
+const {e, f, ...others} = {
+  e: 1,
+  f: 2,
+  g: 3,
+  h: 4,
+}; // e: 1, f: 2, others: { g: 3, h: 4 }
+
+var a = [2,3,4];
+var [ b, ...c ] = a;
+
+console.log( b, c );   // 2 [3, 4]
+```
 
 ## Assignments
 - For the ***object*** destructuring form specifically, when leaving off a `var`/`let`/`const` declarator, we had to surround the *whole assignment expression* in `( )`, because otherwise the `{ .. }` on the lefthand side as the first element in the statement is taken to be a block statement instead of an object:
@@ -53,9 +103,8 @@ console.log( a2 );    // [1, 2, 3]
 ```
 
 - Array transformation:
-
 ```js
-// From an array to an5 object:
+// From an array to an object:
 var a1 = [ 1, 2, 3 ],
 	o2 = {};
 
@@ -71,12 +120,6 @@ var a1 = [ 1, 2, 3 ],
 [ a2[2], a2[0], a2[1] ] = a1;
 
 console.log( a2 );   // [2, 3, 1] 
-
-// Rest:
-var a = [2,3,4];
-var [ b, ...c ] = a;
-
-console.log( b, c );   // 2 [3, 4]
 ```
 
 - Restructuring :
@@ -101,7 +144,7 @@ var config = {
 	}
 };
 
-// merge `defaults` into `config`
+// merge `settings` into `config`
 {
 	// destructure (with default value assignments)
 	let {
@@ -124,6 +167,17 @@ var config = {
 }
 
 console.log(config)
+// {
+//   "options": {
+//     "remove": false,   // from `config`
+//     "enable": false,   // from `settings`
+//     "instance": null   // from `config`
+//   },
+//   "log": {
+//     "warn": true,
+//     "error": true
+//   }
+// }
 ```
 ---
 
@@ -150,7 +204,7 @@ for (var i = 0; i < 10; i++) {
 
 ## Array traversing methods
 ### .map()
-- Returns a ***NEW*** (seperate ref) **array** with its elements based on what the `callbackFn` does:
+- Returns a ***NEW*** (separate ref) **array** with its elements based on what the `callbackFn` does:
 ```ts
 const numbers = [1, 2, 3, 4];
 
@@ -167,7 +221,7 @@ const filteredNumbers = numbers.map((num, index) => {
 
 - Caution:
 	- `map` does ***not*** mutate the original array on which it is called (although `callbackFn`, if invoked, may do so).
-	- Don't use `map` if: you're not using the array it returns; and/or you're not returning a value from the callback.
+	- **Shouldn't** use `map` if: you're not using the array it returns; and/or you're not returning a value from the callback. Prefer [[Everyday methods & utils#.forEach() |.forEach()]] in those cases.
 
 ### .filter()
 - Returns a *shallow* copy of a portion of the original array, with its element(s) are the return value(s) of the `callbackFn`. If no elements pass the test, an ***empty array*** will be returned.
@@ -253,6 +307,17 @@ array.find((value, index) => {
 
 ```
 
+### .with()
+- ***Changes*** the value of a given index.
+- A [RangeError](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError) is thrown if `index > array.length` or `index < -array.length`
+- If `index < 0`,  `index + array.length` is used:
+- Returns a **new array** with the element at the given index replaced with the given value:
+```js
+const arr = [1, 2, 3, 4, 5];
+console.log(arr.with(2, 6).map((x) => x ** 2)); // [1, 4, 36, 16, 25]
+console.log(arr)  // [1, 2, 3, 4, 5]
+```
+
 ### .every()
 - Does ***not*** mutate the original array. However, `callbackFn` may do so.
 - Returns a **Boolean** value.
@@ -266,7 +331,7 @@ console.log(array1.every(isBelowThreshold));  // true
 ```
 
 ### .some()
-- Like `.every()` returns `true` if ***AT LEAST ONE*** element passes the  `callbackFn`: 
+- Like `.every()`, but returns `true` if ***AT LEAST ONE*** element passes the  `callbackFn`: 
 ```ts
 [2, 5, 8, 1, 4].some((x) => x > 10);  // false
 [12, 5, 8, 1, 4].some((x) => x > 10); // true
@@ -309,9 +374,7 @@ someArray.reduce((previousValue, currentValue) => { something... }, initialValue
 
 const arr = [21, 18, 42, 40, 69, 63, 34];
 
-const maxNum = arr.reduce((max, value) => (value > max ? value : max), 0);
-
-// maxNum returns 69
+const maxNum = arr.reduce((max, value) => (value > max ? value : max), 0);  // 69
 
 const nums = [1, 2, 3, 4];
 
@@ -324,6 +387,7 @@ console.log(nums.reduce(reducer))  // 10
 
 ### .forEach()
 - Does ***not*** mutate the original array. However, `callbackFn` may do so.
+- Does ***not*** return a value.
 - Executes the `callbackFn` once for each array element.
 - Nonexistent (`undefined`) and deleted elements ==***are NOT visited***==:
 ```ts
@@ -432,6 +496,7 @@ console.log('The new color of my Honda is ', myHonda.color);  // 'purple'
 // The original version is updated leading to its copies also updated:
 console.log('myCar[0].color = ', myCar[0].color);      // 'purple'
 console.log('newCar[0].color = ', newCar[0].color);    // 'purple'
+// The same thing happens if you set `newCar[0].color`
 ```
 
 ### .join()
@@ -516,8 +581,8 @@ arr.every((elem, index) => {
 - Like `.pop()`, but applied to the ***first*** element in an array.
 
 ### .reverse()
-- It is what it is.
-- Add the `length` property to an object and `.call()` it if you wanna reverse an object:
+- It is what it is. In case you want this feature without mutating the original array, use `.toReversed()`
+- Add the `length` property and "array-indexing" to an object and `.call()` it if you wanna reverse an object:
 ```ts
 const obj = {0: 1, 1: 2, 2: 3, length: 3};
 console.log(obj); // {0: 1, 1: 2, 2: 3, length: 3}
@@ -541,7 +606,7 @@ console.log('array1:', array1);
 
 ### .splice()
 - Useful when you want to add/remove/***replace*** element(s) at (or *from*) a specific index in an array.
-- ==***Changes***== the original array.
+- ==***Changes***== the original array. In case you want this feature without mutating the original array, use `.toSpliced()`
 - Returns an array containing the ***deleted*** element(s). Returns empty array if no elements are removed.
 ```ts
 someArray.splice(start, deleteCount, item1, item2, itemN)
@@ -582,7 +647,7 @@ console.log(myItems)    // ["ass", "cock", "fart", "shit"]
 ```
 ---
 
-## String traversing methods
+## String methods
 ### .charAt()
 - Returns a new `string` consisting of the single UTF-16 code unit located at the specified  `index`  in the original string.
 - If `index` is out of range, `charAt()` returns an *empty string*.
@@ -668,3 +733,5 @@ console.log(strCopy);    // ["Some long random string."]
 const wordsLimit = str.split(' ', 2);
 console.log(wordsLimit)  // ["Some", "long"]
 ```
+
+

@@ -189,3 +189,13 @@ function formatStr(str) {
     return str.slice(4)
 }
 ```
+
+> Redeclaring a variable with `var` will not throw an error, but `let` will:
+```js
+var foo = 'foo';
+var foo = 'bar';
+console.log(foo); // "bar"
+
+let baz = 'baz';
+let baz = 'qux'; // Uncaught SyntaxError: Identifier 'baz' has already been declared
+```

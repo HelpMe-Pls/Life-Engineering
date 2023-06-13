@@ -1,35 +1,24 @@
-- Closure is a *function **instance*** which "remembers" (able to access) its lexical **scope** even when it's executed **outside** that lexical scope (like a preservation of the *linkage* back to the original lexical scope where it was defined _no matter where_ it executes). E.g:
+- Closure is when **a function accesses variables defined outside of it**. In other words, it's a *function **instance*** which "remembers" (able to access) its lexical **scope** even when it's executed **outside** that lexical scope (like a preservation of the *linkage* back to the original lexical scope where it was defined _no matter where_ it executes). E.g:
 
 ```javascript
 function ask(question) {
-
   // At the time the callback `waitASec` is executed, the `ask` function has already finished, i.e. the `question` variable "should've been" garbage-collected
-
   // But because of "closure", the `waitASec` function "closes over" its lexical scope (in this case: the variable `question`)
-
   // i.e. its execution (which is outside of its lexical scope: 1s later than the execution of `ask`)
-
   // has access to its lexical scope (the variable `question`)
-
     setTimeout(function waitASec(){
-
         console.log(question)
-
     }, 1000)
 }
 
-
 ask("What is closure ?")    // print "what is closure ?" after 1 sec.
-
   
 //-------------
 // The linkage of closure may make your code behave unexpectedly (the common `var` vs `let` misuse):
 
 for (var i = 1; i <=3; i++) {
     setTimeout(function(){
-
         console.log(`i: ${i}`)     // After the for loop has finished, `i` === 4
-
     }, i*1000)
 }   // print "i: 4" every 1s for 3 times
 
@@ -39,9 +28,7 @@ for (var i = 1; i <=3; i++) {
 
 for (let i = 1; i <=3; i++) {
     setTimeout(function(){
-
         console.log(`i: ${i}`)    
-
     }, i*1000)
 }  
 ```

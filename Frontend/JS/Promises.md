@@ -1,6 +1,6 @@
-- Promises are an easily repeatable mechanism for encapsulating and composing _future values_. They create a pattern of expressing async flow in sequential fashion, which helps our brains plan and maintain async JS code better.
+- Promises are an easily repeatable mechanism for encapsulating and composing _future values_. ==They create a pattern of expressing async flow in sequential fashion==, which helps our brains plan and maintain async JS code better.
  
- They solve the _inversion of control_ issues that plague us with callbacks-only code:
+ > They solve the _inversion of control_ issues that plague us with callbacks-only code:
 
 ```js
 // Uninversion of control enables a nicer SoC, where `bar(..)` and `baz(..)` don't need to be involved in how `foo(..)` is called. Similarly, `foo(..)` doesn't need to know or care that `bar(..)` and `baz(..)` exist or are depending on the state if `foo(..)` completes or not (because once `foo(..)` resolves, `bar(..)` and `baz(..)` can only be continued PREDICTABLY from the resolved value of `foo(..)`).
@@ -302,7 +302,7 @@ Promise.resolve( foo( 42 ) )
 ---
 
 ### Chain Flow
--   Every time you call `then(..)` on a Promise, it creates and returns a new Promise, which we can _chain_  with.
+-   Every time you call `then(..)` on a Promise, it creates and returns a new Promise, which we can _chain_ with.
 -   If the fulfillment or rejection handler returns a Promise, it is *unwrapped*, so that whatever its 
      resolution is *will become* the resolution of the subsequently chained Promise returned from the current `then(..)`:
 

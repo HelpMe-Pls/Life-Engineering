@@ -29,7 +29,7 @@ if (res && res.data.success) {
 const [state, setState] = useState('initial')
 ```
  - Use [the functional updater](https://tkdodo.eu/blog/things-to-know-about-use-state#1-the-functional-updater) (in form of a *[pure function](https://beta.reactjs.org/apis/usestate#my-initializer-or-updater-function-runs-twice))* to compute new state based on previous state (i.e. queueing multiple state updates) and prevent stale state values from closure-related issues. Also useful if you need [complex calculation](https://tkdodo.eu/blog/things-to-know-about-use-state#2-the-lazy-initializer) to initialize the state (i.e. lazy state initialization), or [avoiding repeated calculation](https://tkdodo.eu/blog/use-state-for-one-time-initializations#state-to-the-rescue) is necessary.
- - Use TypeScript's generic in case type inferrence is [not guaranteed](https://tkdodo.eu/blog/things-to-know-about-use-state#4-the-convenience-overload).
+ - Use TypeScript's generic in case type inference is [not guaranteed](https://tkdodo.eu/blog/things-to-know-about-use-state#4-the-convenience-overload).
 ---
 
 ### Lifting state

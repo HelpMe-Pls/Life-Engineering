@@ -11,7 +11,7 @@ a.nav-link {
 }
 ```
 
-- The browser treats inline elements as if they're typography. It makes sense that with text, you'd want a bit of *extra space*, so that the lines in a paragraph aren't crammed in too tightly. But when it's applied on replaced elements, that *extra space* becomes redundant. To fix that, add the `display: block` or `line-hight: 0` to the desired inline element.
+- The browser treats inline elements as if they're typography. It makes sense that with text, you'd want a bit of *extra space*, so that the lines in a paragraph aren't crammed in too tightly. But when inline flow applied on replaced elements (which are block elements by default), that *extra space* becomes redundant. To fix that, add the `display: block` or `line-hight: 0` to the desired inline element.
 - Elements that have `display: block` will stack in the **vertical** direction, regardless of their size.
 - In Flow layout, background colors and borders are truly meant to be _in the background_. The content will float on top.
 - Elements can be completely removed from the page by using `display: none` (e.g. a button which is set to `display: none` cannot be clicked or focused). The catch is it still takes memory for that element.
@@ -125,7 +125,7 @@ a.nav-link {
 }
 ```
 #### Circular radius
-- A trick to have consistant symmetrical and circular corners a dynamic element's size is to use an [unrealistically large](https://courses.joshwcomeau.com/css-for-js/09-little-big-details/02.02-circular-radius) pixel value. The moment the two corners touch, when the combined radiuses exceed the element's height, the pixel value becomes hypothetical.
+- A trick to have consistent symmetrical and circular corners a dynamic element's size is to use an [unrealistically large](https://courses.joshwcomeau.com/css-for-js/09-little-big-details/02.02-circular-radius) pixel value. The moment the two corners touch, when the combined radiuses exceed the element's height, the pixel value becomes hypothetical.
 
 
 ## Padding

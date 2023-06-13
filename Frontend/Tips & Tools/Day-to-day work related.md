@@ -1,75 +1,15 @@
-## Example of my Fresher CV
+## Example of my Junior CV
 
-#### What did you specifically contribute to the project and what impact did it make?
-- We had a big project with many teams work together to build it. My team had 3 members, the senior frontend dev, a fullstack dev and me. We gather data and APIs from other teams to create a UI that basically is a cross platform desktop app which allow the users to manage and configure all of the sensors in an area.
+### What did you specifically contribute to the project and what impact did it make?
+#### WebSocket vs REST
 
-- For the first month, I had a task where I need to display the list of all sensors after the user chose an area (describe the dropdown button), which requires me to have an understand on where the data comes from and the data flow in React. So, the senior frontend dev creates the table component, and my job was to pass the data to the component so it can display the data.
+WebSocket | REST
+-- | --
+event-driven real-time data streaming | stateless request-response cycle
+various data formats | JSON, XML 
+doesn't scale very well | widely supported
 
-- Over the first month, I felt like I had a pretty good understanding of the data flow, so for the following month, I suggest the manager to give me a try on re-creating a similar table display for the configuration page (He gave me a task where I had to re-styling the dropdown menu with Material-UI, which is a plus my book to learn something new, but at that time, I see that there's more to learn about React for my suggested task).
-I tried to implement everything I've learnt and for the first try, I thought I made it (like, editing a cell and it actually shows the updated value), but after a playing with it for a while, turns out that it only shows the updated value for the moment you edit it, and not actually update the value in the database. The reason for that is I didn't really understand the global state management tool called Redux that my team were using then, so what I did was just updating the state locally and didn't send the updated value to the backend.
 
-- Show the dropdown layout:
-
-```tsx
-
-let networks = useSelector((store: RootState) => store.sensors.networks);
-
-  
-
-<FormControl className={fromSCSS}>
-
-  <Select
-
-    value={selectedNetwork}
-
-    onChange={(event: React.ChangeEvent<{ value: unknown }>)
-
-      => setSelectedNetwork(event.target.value))}
-
-  >
-
-    {networks.map((area, index) => (
-
-      <MenuItem key={index}>
-
-        {area}
-
-      </MenuItem>
-
-    ))}
-
-  </Select>
-
-</FormControl>
-
-```
-
-- Show the table layout:
-
-```tsx
-
-// <TableComponent/>, `routeToConfigPage` and `onChangeValue` are defined by senior
-
-const sensorList = useSelector((store: RootState) => store.sensors.sensorList)
-
-// header: get from backend's API: Network, IP, Serial Number, Status
-
-<TableComponent
-
-  header={state.headerTable}
-
-  data={sensorList}
-
-  onRowDblClick={(row) => {
-
-    dispatch(routeToConfigPage(row.clientRowId));
-
-  }}
-
-  onDataCellChanged={(props) => dispatch(onChangeValue(props))}
-
-/>
-```
 ------------------------------------------------------------
 
 #### Issues on the projects and how you solved them (STAR)?
@@ -546,7 +486,6 @@ useEffect(() => {
 
 
 ##### LOCO:
-
 - Gatsby ? What's the point ? Why Gatsby and not Next ? JAMStack ? SSR vs SSG ?
   - **CMS** (Content Management System): backend which serves data/content and decoupled from the frontend (i.e. you can have multiple frontends like from a web app or native mobile app all using the data from the same CMS using APIs). Whenever the content is updated, the CMS will notify the SSG (via webhook) to create static pages accordingly.
   - **Pre-rendering**: SSG and SSR are 2 forms of pre-rendering. They're all executed on the ***server***. The difference is in **when** it generates the HTML for a page.
@@ -737,9 +676,3 @@ const buttons = [
 - AWS hosting ?
   - EC2: is a VPS (Virtual Private Server) for hosting your backend, so that when you deploy the frontend from Netlify/Vercel, it'll connent to that EC2 instance to fully host your website
   - S3 bucket is a remote container for hosting static assets (like for instance when we deploy the website locally, the images are also stored locally within the same machine, now that we're deploying our website to the internet, we need some place to host those images so that the EC2 can access them)
-
-
-##### Markdown:
-- Why Electron ? Is there anything else besides Electron ?
-  - Build cross-platform *desktop* apps with JavaScript, HTML, and CSS (using Chromium like VSCode, MSTeam, Twitch,...)
-  - Tauri is the next big thing

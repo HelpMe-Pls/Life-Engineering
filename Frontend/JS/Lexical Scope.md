@@ -38,9 +38,8 @@ otherClass()
 
 ```
 
-- When a variable is declared as `const`, it means that the variable **can't be *reassign*** (**not** can't be mutated: _value immutability_ **is not** _assignment immutability_). The `const` keyword requires a variable to be initialized, so omitting an assignment from the declaration results in a `SyntaxError.
+- When a variable is declared as `const`, it means that the variable **can't be *reassign*** (**not** can't be mutated: _value immutability_ **is not** _assignment immutability_. In case you want an object to be "read-only", use `Object.freeze()`). The `const` keyword requires a variable to be initialized, so omitting an assignment from the declaration results in a `SyntaxError.
    It is best used to declare immutable primitive values (i.e. used as placeholders):
-
 ```javascript
 var someone = 'S'
 
@@ -70,4 +69,9 @@ const ENV_STRING = 'some-random-characters'
 const API_URL = 'https://example.com'
 
 const PAYLOAD = true
+
+
+const human = Object.freeze({race: 'human'}); // Create immutable (read-only) object
+const john = {...human, name: 'John'}; // {race: "human", name: "John"}
+const alienJohn = {...john, race: 'alien'}; // {race: "alien", name: "John"}
 ```

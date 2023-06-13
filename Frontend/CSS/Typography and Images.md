@@ -83,8 +83,7 @@ p {
 - Use this approach to roughly implement a [masonry layout](https://courses.joshwcomeau.com/css-for-js/06-typography-and-media/05-masonry-layout). Consider [Masonry.js](https://masonry.desandro.com/) if you want to properly get it done.
 
 ### Floats
-- The `float` property allows text to "wrap around" ***any*** [replaced element](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element#replaced_elements) or embedded element 
-  (e.g. a `p:first-of-type:first-letter`) 
+- The `float` property allows text to "wrap around" ***any*** [replaced element](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element#replaced_elements) or embedded element  (e.g. a `p:first-of-type:first-letter`) 
 - Floated items don't come with any default margin. You should consider adding `margin` on the embedded element so it doesn't feel too claustrophobic:
 ```html
 <style>
@@ -98,6 +97,20 @@ p {
 <img src="/cfj-mats/some-random-img.jpg" />
 <p>Imagine there's a very long paragraph here.</p>
 <p>Imagine there's a very long paragraph here.</p>
+```
+- If an element contains only floated elements, its height collapses to nothing. If you want it to always be able to resize, so that it contains floating elements inside it, set the value of the element's `display` property to `flow-root`:
+```css
+#container {
+  display: flow-root;
+}
+```
+- If a floated element is *taller* than the containing element, it will "overflow" outside of its container. We can [fix](https://www.w3schools.com/Css/tryit.asp?filename=trycss_layout_clearfix2) this with:
+```css
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 ```
 
 ### Indentation
@@ -245,7 +258,7 @@ p {
 ```
 
 
-## Icons
+## Icon (SVG)
 - The most popular icon format is `svg`. One of the neat things about SVG is that they can grow/shrink to any size without loss of quality. You can use it inline as a HTML tag (i.e. inline SVG), or use it like any other image format (e.g. `<img src="/circle.svg" />`):
 ```html
 <html>
@@ -257,7 +270,11 @@ p {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="50" cy="50" r="40" stroke="black" fill="pink" />
+<!--- 
+Basic coloring can be done by setting two attributes on the node: `fill` and `stroke`. 
+`fill` sets the color inside the object and `stroke` sets the color of the line drawn around the object.
+-->	     
+		<circle cx="50" cy="50" r="40" stroke="black" fill="pink" />
     </svg>
   </div>
 </body>
@@ -330,7 +347,7 @@ render(<Header />)
 ## Responsive and proportion
 - Images by default have a `min-width` of their intrinsic width.
 - Different screen res needs different image res accordingly to properly display them. The `srcset` property is essentially a "plural" version of `src`. The browser will scan through the list of `srcset` and apply the first one that matches.
-  Consider using the `<picture>` tag if you want to support *multiple* different file *formats*. It allows us to use modern image formats in a safe way, by providing backwards-compatibility for other browsers:
+- Consider using the `<picture>` tag if you want to support *multiple* different image *formats*. It allows us to use modern image formats in a safe way, by providing backwards-compatibility for other browsers:
 ```html
 <!-- the <picture> element behaves like a <span>, an inline wrapper that wraps around the <img> tag. We can use it to our advantage and treat an <img> as a Flex item
 -->

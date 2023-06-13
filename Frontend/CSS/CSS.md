@@ -207,8 +207,7 @@ h2 {
 - `overflow: auto` is the ideal behaviour when we know an element might overflow.
 - `overflow: hidden` truncates anything that extends beyond the bounds of the container. Mostly used to avoid undesirable horizontal scrollbar. Be mindful of the children elements within a `overflow: hidden` container: if its children has `position: sticky`, then the `position: sticky` won't work.
 	- Always add a comment when using this declaration.
-	- Be careful: `overflow: hidden` is identical to `overflow: scroll`, _but with the scrollbars removed._ Consider `overflow: clip` or wrap your element within another container (with a `overflow: hidden`), 
-	  if `overflow: hidden` on your current element is not behaving as you expected.
+	- Be careful: `overflow: hidden` is identical to `overflow: scroll`, _but with the scrollbars removed._ Consider `overflow: clip` or wrap your element within another container (with a `overflow: hidden`), if `overflow: hidden` on your current element is not behaving as you expected.
 - A *scroll **container*** is created wherever we use the `overflow` property (e.g. `overflow: scroll`, `overflow: auto`, or `overflow: hidden`) _except for_ **_`overflow: clip`_**. 
 	- When an element is contained by a scroll container, it's guaranteed to be stuck inside. It will never overflow beyond the 4 corners of the scroll container.
 	- Scroll containers only scroll when there's overflow (i.e. when the _inner size_ exceeds the _outer size_). If an element doesn't have a constrained `height`, the container is free to grow or shrink as much as it wants (e.g. if we don't explicitly set something like `height: 400px`, we won't get an awkward scrollbar). 
@@ -219,7 +218,7 @@ h2 {
 
 
 ## Visibility
-- `visibility: hidden` is helpful to be able to "hold space open" for an element that will soon become visible. Edge case: It can be selectively undone by children. In this example: the "Second button" is visible eventhough its parent is hidden:
+- `visibility: hidden` is helpful to be able to "hold space open" for an element that will soon become visible. Edge case: It can be selectively undone by children. In this example: the "Second button" is visible even though its parent is hidden:
 ```css
 section {
  visibility: hidden;

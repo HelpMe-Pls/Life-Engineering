@@ -104,6 +104,7 @@ setTimeout(w.ask.bind(w), 10, "?") // K ?
 - The `this` keyword points at these corresponding context following the order: `new` > `.call()`, `.apply()`, `.bind()` > context object > global context (except strict mode):
 
 ```javascript
+// If `.apply()`, `.call()`, or `.bind()` are used to call/create a function, `this` inside the function is the object that is passed in as the argument.
 
 // context object:
 

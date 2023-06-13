@@ -40,7 +40,7 @@
 	   Combine with the `calc()` function when you want to translate something by its own size _plus_ a few extra pixels: `transform: translateX(calc(30% + -69px));`
 	2. `scale()`: allows us to grow or shrink the _entire element_ *and all of its descendants* in 2D. The function format is the same as `translate()`, but the params are *unitless* values that represents a _multiple_ (e.g.  `scale(2)` means that the element should be twice as big as it would normally be). To scale in 3D, use [`scale3d()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale3d) instead. 
 	   Consider using with `overflow: hidden` to respect the element's boundaries so that it's not spilled to surrounding elements. 
-	3. `rotate()`: takes only one param, most commly used with the `deg` unit (e.g. `transform: rotate(-69deg)`). Another handy unit is `turn`, where `1turn` equals `360deg` (e.g. `transform: rotate(0.25turn)`). To rotate around the axis in 3D, use `rotate3d()` instead.
+	3. `rotate()`: takes only one param, most commonly used with the `deg` unit (e.g. `transform: rotate(-69deg)`). Another handy unit is `turn`, where `1turn` equals `360deg` (e.g. `transform: rotate(0.25turn)`). To rotate around the axis in 3D, use `rotate3d()` instead.
 	4. `skew()`: creates a "slanted" looking effect for an element (as if you grabbed each corner of the element and pulled them along a certain angle). The function takes 2 params with the same unit as `rotate()`. 
 	   **Positive** values move to the **right**. Negative values move to the left.
 	   If you want to move an element along a single axis, use either `skewX()` or `skewY()`.

@@ -30,7 +30,7 @@ Our box winds up being 548px wide because it adds 20px of padding and 4px of bor
 The same thing happens with height: because the element is empty, it has a content size of 0px, with the same border and padding added on top.*/
 ```
 
-What you need is *almost **always*** use the `box-sizing` property with `border-box` value so that the size of your element is calculated by automatically *adjusting* the measurements of *padding + border + content* to ***fit*** the given dimensions (i.e. the content could be shrinked responsively and the final rendered result includes all of its border and padding as well)
+What you need is *almost **always*** use the `box-sizing` property with `border-box` value so that the size of your element is calculated by automatically *adjusting* the measurements of *padding + border + content* to ***fit*** the given dimensions (i.e. the content could be shrunk responsively and the final rendered result includes all of its border and padding as well)
 ```css
 /*Set the default `box-sizing` for your project:*/
 *,

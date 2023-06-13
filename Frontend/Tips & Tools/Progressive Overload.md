@@ -4,163 +4,10 @@
 - Have the STAR method as your guidelines (master the Art of Storytelling)
 - Update every month/quarter
 - Make a summary of **highest-impact** checkpoint - the works that you're most proud of, after a year of working (or before switching to a new company)
-- Make YOUR achievements sound like they're bringing a meaningful change for your team/company/community (i.e. if you have time, try to write a dramatic STORY)
+- Make YOUR achievements sound like they're bringing a meaningful change for your team/company/community (i.e. if you have time, try to write a dramatic STORY and then spar it it casual conversations)
 ---
-### Tell me about yourself
-- Go in this order: 
-	1. Current Role, current work responsibility
-	2. College: my background is in computer science. I did my undergrad at HCMUE and...
-	3. Post College: Intership, isolation
-	4. Current Role: after college, I wanted to get some exposure to larger corporations so I joined FPT as a developer. It was a great experience. I learned a ton about...
-	5. Outside of Work: a bit about hobbies, adventurous,...
-	6. Wrap Up: I'm looking now for something new, and your company caught my eye. I've always loved the connection with the user, and I really want to be a part of a great team.
-
 
 ### FPT
-- Biggest flex: refractor code to embrace React design pattern && readability. 
-	- E.g. refractor repeated code:
-```jsx
-// sonarlint(javascript:S1871)
-// returning exact same thing for 2 conditions:
-case inputType.DATE:
-        if (item['key'] === 'dateOfBirth')
-          return (
-            <DatePicker
-              className={styles['date-picker']}
-              format="DD/MM/YYYY"
-              onChange={(_date, stringDate) => {
-                form.setFieldsValue(`${item['key']}`, stringDate);
-              }}
-              disabledDate={(current) => current && current > moment().endOf('day')}
-            />
-          );
-
-        if (item['key'] == 'ptpTime' && showPTPTime)
-          return (
-            <DatePicker
-              className={styles['date-picker']}
-              format="H:mm DD-MM-YYYY"
-              onSelect={setSelectedDate}
-              onChange={(_date, stringDate) => {
-                form.setFieldsValue(`${item['key']}`, stringDate);
-              }}
-              showTime={{
-                hideDisabledOptions: true,
-                disabledHours: () => {
-                  if (moment().date() == selectedDate?.date()) return disHrs;
-                  else return [];
-                },
-                disabledMinutes: () => {
-                  if (
-                    moment().hour() == selectedDate?.hour() &&
-                    moment().date() == selectedDate?.date()
-                  )
-                    return disMins;
-                  else return [];
-                },
-              }}
-              disabledDate={(current) => current && current <= moment().subtract(1, 'days')}
-            />
-          );
-
-        else if (item['key'] == 'recallAt' && isRecallAtChecked)
-          return (
-            <DatePicker
-              className={styles['date-picker']}
-              format="H:mm DD-MM-YYYY"
-              onSelect={setSelectedDate}
-              onChange={(_date, stringDate) => {
-                form.setFieldsValue(`${item['key']}`, stringDate);
-              }}
-              showTime={{
-                hideDisabledOptions: true,
-                disabledHours: () => {
-                  if (moment().date() == selectedDate?.date()) return disHrs;
-                  else return [];
-                },
-                disabledMinutes: () => {
-                  if (
-                    moment().hour() == selectedDate?.hour() &&
-                    moment().date() == selectedDate?.date()
-                  )
-                    return disMins;
-                  else return [];
-                },
-              }}
-              disabledDate={(current) => current && current <= moment().subtract(1, 'days')}
-            />
-          );
-
-// Refractored to:
-case inputType.DATE:
-        if (item['key'] === 'dateOfBirth')
-          return (
-            <DatePicker
-              className={styles['date-picker']}
-              format="DD/MM/YYYY"
-              onChange={(_date, stringDate) => {
-                form.setFieldsValue(`${item['key']}`, stringDate);
-              }}
-              disabledDate={(current) => current && current > moment().endOf('day')}
-            />
-          );
-        if (
-          (item['key'] == 'ptpTime' && showPTPTime) ||
-          (item['key'] == 'recallAt' && isRecallAtChecked)
-        )
-
-          // <DatePicker/> with time:
-          return (
-            <DatePicker
-              className={styles['date-picker']}
-              format="H:mm DD-MM-YYYY"
-              onSelect={setSelectedDate}
-              onChange={(_date, stringDate) => {
-                form.setFieldsValue(`${item['key']}`, stringDate);
-              }}
-              showTime={{
-                hideDisabledOptions: true,
-                disabledHours: () => {
-                  if (moment().date() == selectedDate?.date()) return disHrs;
-                  else return [];
-                },
-                disabledMinutes: () => {
-                  if (
-                    moment().hour() == selectedDate?.hour() &&
-                    moment().date() == selectedDate?.date()
-                  )
-                    return disMins;
-                  else return [];
-                },
-              }}
-              disabledDate={(current) => current && current <= moment().subtract(1, 'days')}
-            />
-          );
-```
-- Wired up APIs to work with my new UI
-- Extension (new design): refractor legacy code using Antd `<ProTable/>` to use f2p `<Table/>`
-- IAM Tables
-- Use a hidden wrapper component (usually a `div`) to manipulate state (`/components/SelectMultiple`):
-```jsx
-<Select
-      open={showDropDown}
-      onBlur={() => {
-        if (!isFocusSelect) {
-          setShowDropDown(false);
-        }
-      }}
-      dropdownRender={(menu) => (
-        <div
-          onMouseEnter={() => setIsFocusSelect(true)}
-          onMouseLeave={() => setIsFocusSelect(false)}
-        >
-		{/*...Some more jsx*/}
-        </div>
-      )}
-    >
-      {renderSelectOptions()}
-    </Select>
-```
 - VDONG
 	- Remove/add some fields, set fixed first 2 rows, table pagination, implement ws subscription with `stompjs` (CampaignManagement)
 	- Fix styling overflow for ReportDetail page, remove/add some fields, call corresponding APIs & conditional rendering for fixed campaigns
@@ -228,7 +75,7 @@ function mapDispatchToProps(dispatch) {
 export default connect(mapStateToProps)(CallbackNotifications);
 ```
 
-- Beware calling API inside of a loop (leads to state being updated but API hasn't return):
+> Beware calling API inside of a loop (leads to state being updated but API hasn't return):
 ```jsx
 const isShowBagde = [{id: 'rand0mstr1ng', seen: true}, ...]
 
@@ -448,19 +295,25 @@ const onExportHistory = async (campaignId) => {
 ```
 
 
-- Should extract a component to a separate module if all of its code is more than 169 lines
+- Should extract a component to a separate module if all of its code is more than 169 lines or is called $\geqslant$ 3 times. 
 - What's hard:
 	- FE: Async (i.e. to display the right thing at the right time) && Render stability (no flash of content)
 	- BE: Scalability && Stability
-	- Softskill: to practice true reciprocity
+	- Softs skill: deep listening & be very mindful of your reactions
 - Specific challenging situation:
 	- Root cause of my problems: much ambiguity (mostly due to ppl not working at their assigned role) & no docs for the code base
 	- Edit modal for campaigns (which I had to re-confirm my task midway through)
-	- OT coz someone else's fault (which works at the time but then bugs poped up later)
+	- No automated tests >> latent bugs
 	- Implement notis with ws
 	- Single handedly built the entire frontend for the report tool (Ability to work independently with clear planning and strict timeline)
 	- "I focus excessively on details" can be damaging if there are tight deadlines.
-	- The job was slowly but surely becoming solitary, which is not good for improving the softskills
+	- The job was slowly but surely becoming solitary, which is not good for improving the soft skills
+- What you'd like to be more proficient at:
+	- Complex API states handling
+	- Security: XSS, encode URL params
+	- a11y
+	- i18n
+	- Native mobile
 -------
 
 ### Story time
@@ -489,13 +342,13 @@ const onExportHistory = async (campaignId) => {
 ---
 ## What to tell
 ### 1
-- Every story requires a starting place that is not good enough and an ending place that is better
+- Every story requires a starting place that is not good enough and an ending place that is better.
 - Notice your errors and misconceptions along the way, face them, and correct them. Get your stories straight.
 - Life is what repeats. And it's worth getting what repeats right. 
 ### 2
 - The ultimate question of Man is not who we are, but who we could be.
-- d
-- d
+- I was instrumental in designing the migration path and it was a **smashing success.**
+- The idea is you operate on the level of what you want to be as well as you possibly can.
 ### 3
 - d
 - d

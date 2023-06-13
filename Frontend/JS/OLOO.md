@@ -11,8 +11,6 @@ var Workshop = {
     }
 }
 
-  
-
 var AnotherWorkshop = Object.assign(
     Object.create(Workshop),
     {
@@ -22,22 +20,17 @@ var AnotherWorkshop = Object.assign(
     }
 )
 
-
 var JSRecentParts = Object.create(AnotherWorkshop)
 
 JSRecentParts.setTeacher("K")
-
 JSRecentParts.speakUp("this is how it should be")
 
-// "K THIS IS HOW IT SHOULD BE"
+// "K", "THIS IS HOW IT SHOULD BE"
 ```
-
-
 
 - The so called "Inheritance" in other Object-oriented languages is actually "delegation" in JS. Inheritance is understood as a "parent-to-child" relationship where "**delegation**" more like a "**peer-to-peer**" relationship:
 
 ```javascript
-
 var AuthController = {
     authenticate() {
         console.log("auth");
@@ -47,8 +40,6 @@ var AuthController = {
         this.displayError();
     }
 };
-
-  
 
 var LoginFormController = Object.assign(
   Object.create(AuthController),
@@ -63,28 +54,16 @@ var LoginFormController = Object.assign(
   }
 );
 
-  
-
 var mockAuth = Object.create(AuthController);
-
 var mockLogin = Object.create(LoginFormController);
 
-
 // wrong:
-
 // mockAuth.onSubmit()
-
 // mockAuth.displayError()
-
 // mockAuth.handleResponse();
 
-  
-
 // correct:
-
 mockLogin.handleResponse();
-
 mockLogin.onSubmit();
-
 mockAuth.authenticate();
 ```

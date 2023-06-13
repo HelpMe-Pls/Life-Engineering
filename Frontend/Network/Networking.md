@@ -13,7 +13,6 @@ A typical web application is made up of:
 
 [[HTTP & Server]]
 [[Browser]]
-[[DOM]]
 [[Data Transfer]]
 [[Caching]]
 [[Development & Deploy]]

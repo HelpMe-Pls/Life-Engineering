@@ -1,5 +1,5 @@
 ### async - await
-- Instead of the `function *main(){}` declaration, we declare with the `async function main(){}`form. And instead of `yield`ing a promise, we `await` the promise. The keyword `async` before a function means that function ***always*** returns a promise (i.e. its return values are automatically wrapped in a *resolved* promise).
+- Instead of the `function *main(){}` declaration, we declare with the `async function main(){}` form. And instead of `yield`ing a promise, we `await` the promise. The keyword `async` before a function means that function ***always*** returns a promise (i.e. its return values are automatically wrapped in a *resolved* promise).
   The `await` operator is used to wait for a `Promise`. It's mostly used ***inside*** an `async function` within regular JavaScript code (i.e. if we try to use `await` in a non-async function, there would be a syntax error). Occasionally, it's used on its own with JavaScript modules:
 
 ```js
@@ -32,7 +32,6 @@ console.log(users);
 
 ```js
 (async function f() {
-
   try {
     let response = await fetch('/no-user-here');
     let user = await response.json();

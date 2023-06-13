@@ -4,7 +4,7 @@ wither (v): to affect harmfully (with object); to fade, decay (w/o object)
 
 credo (n) <cri-do>: a fancy word for [ultimate belief]
 
-endeavour (v-n): to try / an effort to do sth
+endeavor (v-n): to try / an effort to do sth
 
 cliché (n): an opinion that is overused and betrays a lack of original thought.
 
@@ -166,7 +166,7 @@ amalgam (n): fusion, mixture, blend
 
 burgeoning <burg-jun-ning> (adj): growing, expanding, or developing rapidly
 
-intricate (adj): complicated
+intricate (adj): complicated, sophisticated, pragmatic
 
 canonical (adj): orthodox
 

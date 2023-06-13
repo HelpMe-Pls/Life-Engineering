@@ -4,73 +4,84 @@
     "type": "split",
     "children": [
       {
-        "id": "1824f00687ce6b2c",
-        "type": "tabs",
+        "id": "f1b4b854bab4f13d",
+        "type": "split",
         "children": [
           {
-            "id": "54113c20c9f0f0c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
+            "id": "b0afe4804c3c55cb",
+            "type": "tabs",
+            "dimension": 52.55591054313099,
+            "children": [
+              {
+                "id": "7c917069fdb714cc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Frontend/Frameworks/Next.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "c3c7dfc814894adc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Frontend/Frameworks/Tailwind.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
-            }
+            ]
           },
           {
-            "id": "ebde23360a6287d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Frontend/Tips & Tools/WIL from books.md",
-                "mode": "source",
-                "source": false
+            "id": "ba43b2970f19ca21",
+            "type": "split",
+            "dimension": 47.44408945686901,
+            "children": [
+              {
+                "id": "815030cc64ff1e5f",
+                "type": "tabs",
+                "dimension": 43.611111111111114,
+                "children": [
+                  {
+                    "id": "5ae9378024ca827d",
+                    "type": "leaf",
+                    "state": {
+                      "type": "graph",
+                      "state": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "f64b5b413c78655e",
+                "type": "tabs",
+                "dimension": 56.388888888888886,
+                "children": [
+                  {
+                    "id": "a540099742bf1c6f",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Frontend/JS/Everyday methods & utils.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    }
+                  }
+                ]
               }
-            }
-          },
-          {
-            "id": "bafc7cbef429a141",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Frontend/CSS/Flex.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "e6c5d7e744f47859",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "55245689229c5e4a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Frontend/Tips & Tools/English vocab.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "49743631e5711930",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
+            ],
+            "direction": "horizontal"
           }
         ],
-        "currentTab": 1
+        "direction": "vertical"
       }
     ],
     "direction": "vertical"
@@ -99,13 +110,21 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "positional",
+                "query": "prettier",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "alphabetical"
+                "sortOrder": "byCreatedTime"
               }
+            }
+          },
+          {
+            "id": "024429d07f0dd86e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
             }
           }
         ]
@@ -128,6 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Frontend/Frameworks/Next.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,36 +174,43 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "49743631e5711930",
+  "active": "7c917069fdb714cc",
   "lastOpenFiles": [
-    "README.md",
-    "Frontend/Tips & Tools/Technical questions.md",
-    "Frontend/Tips & Tools/WIL from books.md",
-    "Frontend/CSS/Flex.md",
-    "Frontend/Tips & Tools/DSA.md",
-    "Frontend/JS/Everyday methods & utils.md",
-    "Frontend/Tips & Tools/English vocab.md",
-    "Untitled.md",
-    "Frontend/CSS/CSS.md",
-    "Frontend/CSS/Typography and Images.md",
-    "Frontend/CSS/Positioning.md",
-    "Frontend/CSS/Animations.md",
     "Frontend/Tips & Tools/VSCode.md",
-    "Frontend/JS/Primitive types.md",
-    "Frontend/CSS/Flow layout.md",
-    "Frontend/Tips & Tools/Interview prep.md",
+    "Frontend/Frameworks/Next.md",
+    "Frontend/Frameworks/Tailwind.md",
+    "Frontend/Tips & Tools/Tips.md",
+    "Untitled.md",
+    "Frontend/JS/Everyday methods & utils.md",
     "Frontend/Tips & Tools/Progressive Overload.md",
-    "Frontend/Tips & Tools/General Questions.md",
-    "Frontend/Tips & Tools/Interviewer questions.md",
-    "Frontend/Tips & Tools/Behavioral questions.md",
-    "Frontend/JS/JS.md",
+    "Frontend/React/Concurrency.md",
+    "Frontend/Tips & Tools/Interview prep.md",
+    "use.md",
+    "().md",
+    "Frontend/Tips & Tools/Day-to-day work related.md",
+    "Frontend/Tips & Tools/code-review.png",
+    "Frontend/Tips & Tools/Tips & Tools.md",
+    "Frontend/Tips & Tools/code_review.png",
+    "Frontend/Tips & Tools/code_review.jfif",
+    "Frontend/Tips & Tools/code_review.jfif.crdownload",
+    "Frontend/Tips & Tools/DSA.md",
+    "Frontend/Tips & Tools/Technical questions.md",
+    "Frontend/CSS/Animations.md",
+    "Frontend/CSS/Positioning.md",
+    "Frontend/CSS/Utils.md",
+    "Frontend/CSS/Typography and Images.md",
+    "Frontend/CSS/Flow layout.md",
+    "Frontend/CSS/Responsive.md",
+    "Frontend/CSS/Box model.md",
+    "Frontend/CSS/CSS.md",
+    "Frontend/Network/Browser.md",
+    "Frontend/JS/Advanced Patterns.md",
+    "Frontend/JS/OLOO.md",
+    "Frontend/React/Where to put state.png",
+    "Frontend/Tips & Tools/git-model.png",
+    "Frontend/JS/JS Overview.png",
     "DevOps",
     "New folder",
-    "CSS/CSS.md",
-    "JS/JS.md",
-    "CSS/Flex.md",
-    "Tips & Tools/VSCode.md",
-    "JS/Conversion - Coercion.md",
     "Untitled.canvas"
   ]
 }
