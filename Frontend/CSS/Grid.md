@@ -3,7 +3,7 @@
 - The rows/columns don't have to be the same size, but they do have to be *consistent* (i.e. every row needs to have the same *number* of columns (and vice-versa)). Every cell in the same column needs to have the same `width`, every cell in the same row needs to have the same `height`. 
   The default behavior of the content is *stretched to fill* the cell containing it. There is no rule that says a grid child must be the same size as the cell it's aligned with. Grid children can be assigned to the same cell and are allowed to overlap. 
 >  A grid child can span multiple rows and columns, but it must always produce a square/rectangle.
-- A grid can be contained within a bigger parent element, resulting in "dead space" around the grid, and that's still a valid grid (eventhough you shouldn't let that happen).
+- A grid can be contained within a bigger parent element, resulting in "dead space" around the grid, and that's still a valid grid (even though you shouldn't let that happen).
 ---
 
 ## Fundamentals

@@ -127,7 +127,6 @@ a.nav-link {
 #### Circular radius
 - A trick to have consistent symmetrical and circular corners a dynamic element's size is to use an [unrealistically large](https://courses.joshwcomeau.com/css-for-js/09-little-big-details/02.02-circular-radius) pixel value. The moment the two corners touch, when the combined radiuses exceed the element's height, the pixel value becomes hypothetical.
 
-
 ## Padding
 - Negative values are *invalid*.
 - Percentage value in `padding` always refer to `width`. For example, when we set `padding-bottom: 50%`, we're saying that the element's bottom padding should be half of its `width`, not its `height`.
@@ -142,5 +141,5 @@ a.nav-link {
 - `min-width: 100%`  to prevent horizontal overflow (so that it never grows above 100% of the available space). Also keep this on top of your head when you want to position your content in some kind of a container.
 
 ## Height
-- The `height` of an element grows accordingly to its content (kinda like how `width: min-content` behaves). Setting an element to have a `height: 50%` will force that it to take up half of the *parent* element's content space. It's good practice to set `min-height: 100%` on the element and `height: 100%` on `html` and `body` selectors if you want the element to be fully visible.
+- The `height` of an element grows accordingly to its content (kinda like how `width: min-content` behaves). Setting an element to have a `height: 50%` will force that it to take up half of the *parent* element's content space. It's good practice to set `min-height: 100%` on the element and `height: 100%` on `html` [and](https://courses.joshwcomeau.com/css-for-js/treasure-trove/010-global-styles) `body` selectors if you want the element to be fully visible.
 - JavaScript frameworks like React will render our applications into a container element. In order for percentage-based heights to work, we need to add `height: 100%` to the wrapper.

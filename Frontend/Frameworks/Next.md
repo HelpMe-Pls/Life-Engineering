@@ -1,6 +1,6 @@
 - Next.js does code splitting automatically, so each page only loads what’s necessary for that page.
-- It means that pages become isolated. If a certain page throws an error, the rest of the application would still work.
-- By default, Next.js **pre-renders** every page. This means that Next.js generates HTML for each page in advance and can be served from a CDN geographically closer to the user, instead of having it **all** done by client-side JavaScript. Pre-rendering can result in better performance and SEO.
+- It means that pages become isolated. If a certain page (or part of a page) throws an error, the rest of the application would still work.
+- By default, Next.js **pre-renders** every page. This means that Next.js generates HTML for each page [in advance](https://www.youtube.com/watch?v=kUs-fH1k-aM) and can be served from a CDN geographically closer to the user, instead of having it **all** done by client-side JavaScript. Pre-rendering can result in better performance and SEO.
 - In a production build of Next.js, whenever [`Link`](https://nextjs.org/docs/api-reference/next/link) components appear in the browser’s viewport, Next.js automatically **prefetches** the code for the corresponding linked page in the background.
 ---
 
@@ -23,14 +23,14 @@
 - This is [[Next#Static routes |similar]] to previous versions of Next.js. However, there's a set of [preserved file names](https://nextjs.org/docs/app/building-your-application/routing#file-conventions) which are used for creating UI with specific behavior in nested routes (e.g. a [`page.js`](https://nextjs.org/docs/app/api-reference/file-conventions/page#props) file is required to make a route segment publicly accessible).
 - A layout is UI that is **shared** between multiple pages. On navigation, layouts preserve state, remain interactive, *and do not re-render*. Layouts can also be [nested](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#nesting-layouts).
 > The `app` directory **must** include a [root layout](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#root-layout-required). It's a SC by default and ***cannot*** be set to a CC. The root layout is **implicitly implemented** when you define its `children` (same for `template.js`). 
-- A [template](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#templates) is a smaller version of layout (i.e. included in the `children` of `layout.js` and wraps the `page.js` for that route and everything nested below). It creates a new instance for each of their children on navigation, which means state is ***not** preserved*, and effects are re-synchronized.
+- A [template](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#templates) is a smaller version of layout (i.e. included in the `children` of `layout.js` and wraps the `page.js` for that route and everything nested below). It *creates a **new instance*** for each of their children on navigation, which means state is ***not** preserved*, and effects are re-synchronized.
 - To omit a specific folder name from the URL segment or to create multiple root layouts, use [route groups](https://nextjs.org/docs/app/building-your-application/routing/route-groups#examples). Use the `_` prefix to omit a folder [and all of its subfolders](https://nextjs.org/docs/app/building-your-application/routing/colocation#private-folders) out of routing.
 - To access route segments, you can use [`useSelectedLayoutSegment()`](https://nextjs.org/docs/app/api-reference/functions/use-selected-layout-segment) or [`useSelectedLayoutSegments()`](https://nextjs.org/docs/app/api-reference/functions/use-selected-layout-segments) in a CC.
 
 ### Navigation
 - You can use [`usePathname()`](https://nextjs.org/docs/app/api-reference/functions/use-pathname#returns) to read the current URL's path.
 - For complex route behaviors (e.g. refresh, back, forward,...), use [`useRouter()`](https://nextjs.org/docs/app/api-reference/functions/use-router). For [redirecting](https://nextjs.org/docs/app/api-reference/functions/redirect#redirect).  
-- [[Next#getStaticPaths |getStaticPaths]] is replaced with [`generateStaticParams`](https://nextjs.org/docs/app/api-reference/functions/generate-static-params).
+- [[Next#getStaticPaths |getStaticPaths()]] is replaced with [`generateStaticParams()`](https://nextjs.org/docs/app/api-reference/functions/generate-static-params).
 - Prefetching is a way to preload a route in the background before it's visited. The rendered result of prefetched routes is added to the router's client-side cache.
 	- By default, routes are prefetched as they become visible in the viewport when using the `<Link>` component.
 	- Prefetching is only enabled in production.
@@ -181,7 +181,7 @@ export async function POST(request: Request) {
 
 ### Caching
 - By default, all [`fetch()`](https://nextjs.org/docs/app/building-your-application/data-fetching/caching#fetch) requests are *cached and deduplicated* automatically. During server rendering, when Next.js comes across a fetch, it will check the cache to see if the data is already available. If it is, it will return the cached data. If not, it will fetch and store data for future requests.
-- [Revalidation](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#revalidate) is the process of purging the cache and re-fetching the latest data. Useful when your data changes and you want to ensure your application shows the latest version *without having to rebuild* your entire application. There are two types of revalidation in Next.js:
+- [Revalidation](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#revalidate) is the process of purging the cache and re-fetching the latest data. Useful when your data changes and you want to ensure your application shows the latest version [[Next#ISR (Incremental Static Regeneration) |without having to rebuild]] your entire application. There are two types of revalidation in Next.js:
 	- [Background](https://nextjs.org/docs/app/building-your-application/data-fetching/revalidating#background-revalidation): Revalidates the data at a specific time interval.
 	- [On-demand](https://nextjs.org/docs/app/building-your-application/data-fetching/revalidating#on-demand-revalidation): Revalidates the data based on an event such as an update.
 
@@ -206,7 +206,7 @@ Catch all routes: pages/post/[...all].js → `/post/* (/post/6996/id/title/wh
 Optional Catch all routes: pages/post/[[...param]].js → /post && /post/*
 ```
 - In a **dynamic** route, components are rendered on the server at request time.
-- [`useRouter`](https://nextjs.org/docs/pages/api-reference/functions/use-router) where the `<Link/>` is insufficient (e.g. redirecting)
+- [`useRouter()`](https://nextjs.org/docs/pages/api-reference/functions/use-router) where the `<Link/>` is insufficient (e.g. redirecting)
 
 ### API Routes
 - Any file inside the folder `pages/api` is mapped to the route `/api/*` and will be treated as an API endpoint instead of a `page.`
@@ -226,7 +226,7 @@ export default function handler(req, res) {
 ## Rendering
 - SSG and SSR components are considered ***server**-rendered* components. If a page is not using [[Next#getStaticProps |getStaticProps]] or [[Next#getServerSideProps |getServerSideProps]], the component is *client-rendered* just like in traditional React.
 ### Static Site Generation (recommended)
-- If a page uses Static Generation, the page HTML is generated (*at **build** time, on the **server***) when you run  `next build` . This HTML will then be *reused on each request*. It can be ***cached*** by a CDN.
+- If a page uses Static Generation, the page HTML is generated (*at **build** time, on the **server***) when you run  `next build`. This HTML will then be *reused on each request*. It can be ***cached*** by a CDN.
 - You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is "yes", then you should choose Static Generation.
 - If the answer is "no", it's most likely that your page shows frequently updated data, and *the entire (or most of)* page content changes on every request. In that case, you can use SSG with **Client-side data fetching:** skip pre-rendering some parts of a page and then use client-side JavaScript to populate them later.
 - You can statically generate pages [**with**](https://nextjs.org/docs/pages/building-your-application/rendering/static-site-generation#static-generation-with-data) or [**without (fetching) data**](https://nextjs.org/docs/pages/building-your-application/rendering/static-site-generation#static-generation-without-data).
@@ -263,7 +263,7 @@ export async function getStaticProps() {
 }
 ```
 ##### ISR (Incremental Static Regeneration)
-- ISR enables you to use static-generation on a per-page basis, without needing to rebuild the **entire site** (i.e. you can create or update static pages _after_ you’ve built your site).
+- ISR enables you to use static-generation on a [*per-page basis*](https://youtu.be/kUs-fH1k-aM?t=555), without needing to rebuild the **entire site** (i.e. you can create or update static pages _after_ you’ve built your site).
 - With ISR, you can retain the benefits of static while scaling to millions of pages.
 - To use ISR, add the [`revalidate`](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) prop to `getStaticProps`.
 

@@ -48,16 +48,16 @@ Questions:
 - If i want to update a file in some random previous commits and NOT wanting it to merge with the current code flow, what should i do ?
 >	Create a branch from that commit then do whatever u want on it
 
-- Add new untracked files to .gitignore: 
+- Add new untracked files to `.gitignore`: 
   - Unwanted file created, it will appear in git staging area
-  - Add that file's name to .gitignore then save OR right click on it from the staging area, there will be an option for "add to .gitignore"
+  - Add that file's name to `.gitignore` then save OR right click on it from the staging area, there will be an option for "add to `.gitignore`"
 
-- How to add to .gitignore previously tracked file(s) or folder(s) ?
+- How to add to` .gitignore` previously tracked file(s) or folder(s) ?
     > cd desired/file/folder/path
     > git rm --cached <filename> 
  or
     > git rm -r --cached <foldername> 
-    > Add the <filename> || <foldername> to .gitignore and Ctrl+S it
+    > Add the <filename> || <foldername> to `.gitignore` and Ctrl+S it
     > git commit -am "Remove ignored files" or enter commit message then Ctrl+Enter
     > push
   >> To undo that:

@@ -1,6 +1,7 @@
 - It is what it is: the styling of a component is isolated within its boundaries so that we can avoid styling collision.
 - It is recommended to use in tandem with an unopinionated styling component lib (like Reach UI) for maintainability.
 - The styling are generated an run time if you're using this "styled component" approach (i.e. the style of a component is not computed if that component isn't mounted)
+> Always define your styled components **OUTSIDE** of the render method (i.e. your main component), otherwise it will be recreated on every single render pass, leading to unexpected behavior (especially when your styled components have animations in it).
 - Inline styles are quick and easy to add, but they carry two significant disadvantages:
 	1.  They make it harder to understand what's going on by "splitting up" where the CSS definitions live.
 	2.  They aren't compatible with media queries, pseudo-classes, and any CSS that isn't straight-up property/value.
@@ -16,6 +17,7 @@ function Button({ href, children }) {
 	);
 }
 
+// ALWAYS define this OUTSIDE of your main component
 const Wrapper = styled.button`
 /* styles */
 `;

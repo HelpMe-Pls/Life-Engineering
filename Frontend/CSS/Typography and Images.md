@@ -141,7 +141,7 @@ p {
 <p>Imagine there's a very long paragraph here.</p>
 <p>Imagine there's a very long paragraph here.</p>
 ```
-- To preserve the "white-space" as indentation and render paragraphs which are seperated by "white-space", use the `white-space: pre-wrap` declaration. 
+- To preserve the "white-space" as indentation and render paragraphs which are separated by "white-space", use the `white-space: pre-wrap` declaration. 
 
 
 ### Text alignment

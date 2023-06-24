@@ -44,3 +44,55 @@ for (let i = 1; i <= 100; i++) {
   console.log(output || i);
 }
 ```
+
+- If your component has styling transformation, better isolate that animation part to an API and keep your main component SoC from that animation:
+```tsx
+//==========>> <Drawer/> helpers <<==========
+const openedMixin = (theme: Theme): CSSObject => ({
+	width: drawerWidth,
+	overflowX: 'hidden',
+	transition: theme.transitions.create('width', {
+		easing: theme.transitions.easing.sharp,
+		duration: theme.transitions.duration.enteringScreen,
+	}),
+});
+const closedMixin = (theme: Theme): CSSObject => ({
+	width: `calc(${theme.spacing(7)} + 1px)`,
+	overflowX: 'hidden',
+	transition: theme.transitions.create('width', {
+		easing: theme.transitions.easing.sharp,
+		duration: theme.transitions.duration.leavingScreen,
+	}),
+});
+
+const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' })(
+	({ theme, open }) => ({
+		width: drawerWidth,
+		flexShrink: 0,
+		whiteSpace: 'nowrap',
+		boxSizing: 'border-box',
+		...(open && {
+			...openedMixin(theme),
+			'& .MuiDrawer-paper': openedMixin(theme),
+		}),
+		...(!open && {
+			...closedMixin(theme),
+			'& .MuiDrawer-paper': closedMixin(theme),
+		}),
+	}),
+);
+
+//=================|| Main Component ||===================
+export default function CustomDrawer() {
+	const [open, setOpen] = useState(false);
+	const toggleDrawer = () => {
+		setOpen(!open)
+	}
+	return (
+			<Drawer variant="permanent" open={open}>
+				{/*Do some*/}
+			</Drawer>
+	);
+}
+
+```
