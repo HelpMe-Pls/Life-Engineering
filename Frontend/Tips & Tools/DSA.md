@@ -12,7 +12,7 @@
 - [Stack vs Heap](https://courses.engr.illinois.edu/cs225/fa2022/resources/stack-heap/) memory.
 
 ## Big O
-- Big O time is the language and metric we use to describe the ***efficiency*** of algorithms. It measure of how much *slower* the code will get as the inputs grow. It helps you understand how an algorithm _scales_.
+- Big O time is the metric we use to analyze the **scalability** and **efficiency** of algorithms. It measure of how much *slower* the code will get as the *inputs* grow. It helps you understand how an algorithm _scales_.
 - Big O just describes the ***rate*** of increase (i.e. allows us to express how the runtime scales). For this reason, we *drop the constants* in runtime. An algorithm that might have described as $O(2n)$ is actually $O(n)$.
 - If your algorithm is in the form "do this, *then*, when you're *all done*, do that" then you ***add*** the runtimes. If your algorithm is in the form "do this *for each time* you do that" then you ***multiply*** the runtimes:
 ```java
@@ -37,8 +37,8 @@ for (int a : arrA) {
 - To estimate the time complexity, we need to calculate ***the number of times*** an operation is executed (in proportion to the *size and cost* of input): 
 	- $O(1)$ - Constant time: where `1` represents the ***same*** amount of time required for an algo to execute (i.e. it's ***independent*** of the size of the input). E.g. accessing an array element
 	- $O(n)$ - Linear time: the time it takes to run the algorithm is increased proportionately as the size of input `n` increases (e.g. traversing an array). $O(\sqrt{n})$ time complexity could be an improvement for $O(n)$ if you can't get it to $O(log\enspace n)$  
-	- $O(log\enspace n)$ - Logarithmic time: basically means execution time goes up *linearly* while the `n` goes up *exponentially* (in CS we assume the base of `log` is `2`). E.g. binary search
-	- $O(n^2)$ - Quadratic time: it is the reverse of logarithmic time, i.e. execution time grows *exponentially* proportional to the input size. E.g. nested loops iterating the ***same*** array
+	- $O(log\enspace n)$ - Logarithmic time: basically means execution time goes up *linearly* while the input size of `n` goes up *exponentially* (in CS we assume the base of `log` is `2`). Another way to put it: $\log_a{b}$ is the *number of times* you can divide `b` by `a` before reaching `1` (the base case), i.e. the number of levels in a recursion tree where it's divided by a factor of `a` from the input size `b`. Binary search is an example.
+	- $O(n^2)$ - Quadratic time: it is the reverse of logarithmic time, i.e. execution time grows *exponentially* proportional to the input size. E.g. nested loops iterating the ***same*** array, or search if 2 arrays have a common element.
 ```js
 // O(1):
 var arr = [6, 8, 3, 69, 5];
@@ -57,7 +57,7 @@ for (let i = 1; i < n; i*=2)  {
 	// For instance, if `n = 64`, then:
 	// `log n` in this case is log base 2 of 64, which is 6
 	// Therefore, this `console.log(i)` below is executed 6 times
-	// As `n` increases EXPONENTIALLY (2^x = n), the iteration increases LINEARLY (+1)  
+	// As `n` increases EXPONENTIALLY (2^x = n), the iteration (x) increases LINEARLY (+1)  
 	// E.g. n == 128 (2^7) >> `console.log(i)` is executed 7 times
 	console.log(i)
 }
@@ -572,7 +572,7 @@ class LRU<K, V> {
 
 ## Algorithms
 - An algorithm can be defined as a precise sequence of instructions to solve a problem. It can be helpful to first generalize the problem and then more precisely outline the sequence of required instructions before coding an implementation.
-- Whenever we say that our algorithm is sufficient then it means that the algorithm is solving the problem in less amount of time while taking the least amount of space.
+- Whenever we say that our algorithm is sufficient then it means that the algorithm is solving the problem in less amount of time while taking the least amount of space, or, its worst-case running time grows *slowly* with its input size.
 
 ### Sorting 
 - Working with sorted data or having the ability to sort your own data can result in significant time savings. Therefore, a dataset of elements that can be ordered is fundamentally necessary.
@@ -619,21 +619,21 @@ for(i=0; i<arr.length-1; i++) {
 
 // First iteration:
 {62} 24 15 22 {1}
-1 24 15 22 62
+-> 1 24 15 22 62
 
 // Next iteration:
 1 {24} {15} 22 62
-1 15 24 22 62
+-> 1 15 24 22 62
 
 // Next iteration:
 1 15 {24} {22} 62
-1 15 22 24 62 // `arr` sorted
+-> 1 15 22 24 62 // `arr` sorted
 ```
 - Because an in-place swap is being performed, no temporary array is required. There are 3 temporary variables `i`, `j` and `min_index`; however, they are *not dependent* on the list size (i.e. they don't scale with input size), so, the space complexity is $O(1)$. Time complexity is similar to the bubble sort.
 
 #### Insertion sort
 - It is appropriate for datasets which are *already partially sorted* and the number of elements is small.
-- Assume we're sorting in ascending order. Rather than searching through all the elements, this approach begins by examining the *first two elements* in a list and proceed *in pair* of subsequent elements. The smaller of the two is then moved to the left. This is repeated for every pair of elements each one being compared to the element on its left, then, a subsequent switch to the left is made if it's found to be smaller:
+- Assume we're sorting in ascending order. Rather than searching through all the elements, this approach begins by examining the *first two elements* in a list and proceed *in pair* of subsequent elements. The smaller of the two is then moved to the left. This is repeated for every pair of elements where each one being compared to the element on its left, then, a subsequent switch to the left is made if it's found to be *smaller*:
 ```js
 const arr = [12, 11, 13, 5, 6]
 // Pseudo code:
@@ -647,22 +647,26 @@ for(i=0; i<arr.length-1; i++) {
 
 // First iteration:
 {12} {11} 13 5 6
-11 12 13 5 6
+-> 11 12 13 5 6
 
 // Next iteration, 12 < 13, no swap occurred:
 11 12 13 5 6
 
 // Next iteration:
 11 12 {13} {5} 6
+-> 11 12 5 13 6
 11 {12} {5} 13 6
+-> 11 5 12 13 6
 {11} {5} 12 13 6
-5 11 12 13 6
+-> 5 11 12 13 6
 
 // Next iteration:
 5 11 12 {13} {6}
+-> 5 11 12 6 13
 5 11 {12} {6} 13
+-> 5 11 6 12 13
 5 {11} {6} 12 13
-5 6 11 12 13 // arr sorted
+-> 5 6 11 12 13 // arr sorted
 ```
 - The time and space complexity is similar to selection sort.
 
@@ -716,8 +720,8 @@ quickSort(arr, 0, arr.length - 1);
  
 console.log("Sorted array: [" + arr.join(", ") + "]");
 ```
-- Quick sort is quite similar to merge sort. Its main advantage over merge sort, is that the sorting can be done in-place. This saves time because we don’t have to create new arrays.
-- Quick sort consumes more space but returns overall quicker solutions. It has the time complexity of $O(nlogn)$ for average cases, $O(n^2)$ for the worst case (applied on a reverse-sorted array) and space complexity $O(n)$
+- Quick Sort is quite similar to merge sort. Its main advantage over merge sort, is that the sorting can be done in-place. This saves time because we don’t have to create new arrays. If you're looking for a general-purpose sorting algorithm with a predictable performance regardless of the input, Merge Sort is a solid choice. On the other hand, Quick Sort can be faster in practice for smaller datasets and is often favored when memory usage is a concern.
+- Quick Sort consumes more space but returns overall quicker solutions. It has the time complexity of $O(nlogn)$ for average cases, $O(n^2)$ for the worst case (applied on a reverse-sorted array) and space complexity $O(n)$
 
 ### Searching
 #### Linear
@@ -786,16 +790,6 @@ let recursiveBinary = function (arr, x, start, end) {
 ```
 - Binary search runs with $O(log\enspace n)$ time and $O(n)$ space.
 
-### Divide and Conquer
-- The algorithm comprises two mandatory steps, namely, divide and conquer with an optional third, is combine. [Merge sort](https://www.geeksforgeeks.org/merge-sort/) is a good implementation of divide and conquer (`d&c`).
-	- In the divide step, the input is split into smaller segments and processed individually. 
-	- In the conquer step, every task associated with a given segment is solved.
-	- The *optional* last step, combine, is combining all the solved segments.
-- Parallelization and memory management are two immediate advantages when applying `d&c`:
-	- Parallelism is when you have different threads or computers working on the same problem at the same time to complete it in a quicker time.
-	- Memory management: in the merge sort example, consider that each array can be sent to a different core or server depending on the architecture of your organization and the results are then returned.
-	  It might be the data being processed is too large to hold in memory and must be processed in chunks. Additionally, you may have provisioned access to cloud computing. So the solution can involve accessing an online server and exporting some of the problems from the company servers.
-
 ### Recursion
 - It is the practice of having functions call themselves with a ***smaller*** instance of a problem *repeatedly* until some ***exit condition*** is met.
 - There are three requirements for implementing a recursive solution, namely the base case, the diminishing structure, and the recursive call. 
@@ -809,11 +803,33 @@ function pow(x, n) {
 }
 ```
 - Recursion vs regular loop: with recursion, you can simply call the function with a different input (diminishing structure) and it will *return a breakdown of the required steps*. Readability is a strong plus for recursion. Sometimes when a problem requires many checks (i.e. base cases), a loop can quickly become unwieldy. Recursive solutions reduce the amount of code required to solve a problem and can be easier to read and understand.
-- It is highly recommended to employ a recursive approach as part of a `d&c` solution where the problem is broken intos maller steps and repeated to come upon the optimum solution.
+- It is highly recommended to employ a recursive approach as part of a `d&c` solution where the problem is broken into smaller steps and repeated to come upon the optimum solution.
 - Recursion increases computational cost as resources are required to make a function call. 
   However, the computation from each result will be *retained on the [call stack](https://www.codingninjas.com/codestudio/library/recursion-and-stack)*. 
   This can be useful when computing hierarchical problems or problems where one can benefit from *knowing which steps resulted in a given outcome* like traversing a graph.
 - Beware of the maximal recursion depth of the JavaScript engine. We can rely on it being 10000, some engines allow more, but 10000 is probably out of limit for the majority of them.
+
+### Divide and Conquer
+- The algorithm comprises two mandatory steps, namely, divide and conquer with an optional third, is combine. [Merge sort](https://www.geeksforgeeks.org/merge-sort/) is a good implementation of divide and conquer (`d&c`).
+	- In the divide step, the input is split into smaller segments and processed individually. 
+	- In the conquer step, every task associated with a given segment is solved.
+	- The *optional* last step, combine, is combining all the solved segments.
+	- Use the Master Theorem to determine the complexity of a `d&c` approach:
+		- Assuming the segments (subproblems) have equal size, we have:
+						  $T(n) \leq aT\left(\frac{n}{b}\right) + O(n^d)$
+		- Where `a`, `b`, `d` are independent of the input size `n`:
+			- $aT\left(\frac{n}{b}\right) + O(n^d)$ is a constant for the base case (for all sufficiently small `n`)
+			- `a`: the number ($\geq 1$) of recursive calls
+			- `b`: the factor ($> 1$) by which `n` shrinks before a recursive call applied
+			- `d`: the exponent ($\geq 0$) in running time of the "combine step", outside of the recursive calls 
+			- If $a < b^d$, $T(n) = O(n^d)$
+			- If $a = b^d$, $T(n) = O(n^dlogn)$
+			- If $a > b^d$, $T(n) = O(n^{\log_b(a)})$
+
+- Parallelization and memory management are two immediate advantages when applying `d&c`:
+	- Parallelism is when you have different threads or computers working on the same problem at the same time to complete it in a quicker time.
+	- Memory management: in the merge sort example, consider that each array can be sent to a different core or server depending on the architecture of your organization and the results are then returned.
+	  It might be the data being processed is too large to hold in memory and must be processed in chunks. Additionally, you may have provisioned access to cloud computing. So the solution can involve accessing an online server and exporting some of the problems from the company servers.
 
 ### Dynamic programming
 - Dynamic programming (`dp`) is an extension of `d&c` and recursion which in addition involves keeping a record of results ([memoizing](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/961483057)) generated from running the sub problems each time they are newly run. 

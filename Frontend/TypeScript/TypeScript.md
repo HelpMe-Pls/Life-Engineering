@@ -1,4 +1,4 @@
-[[Fundamentals]]
+[[Frontend/TypeScript/Fundamentals]]
 [[TypeScript/Advanced]]
 
 ---

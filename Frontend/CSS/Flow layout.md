@@ -15,7 +15,7 @@ a.nav-link {
 - Elements that have `display: block` will stack in the **vertical** direction, regardless of their size.
 - In Flow layout, background colors and borders are truly meant to be _in the background_. The content will float on top.
 - Elements can be completely removed from the page by using `display: none` (e.g. a button which is set to `display: none` cannot be clicked or focused). The catch is it still takes memory for that element.
-- You can shift things in the inline direction with `margin-left` and `margin-right`, since that pushes it around in the inline direction, but you can't give it a `width` or `height`.
+- You can shift things in the *inline* direction with `margin-left` and `margin-right`, since that pushes it around in the inline direction, but you can't give it a `width` or `height`.
 - `inline-block` treats elements as **inline** _externally_ and **block** _internally_. So the term `inline-block` works outside-in. Properties like `width` and `margin-top` have no effect on an `inline` element, but they do work on `inline-block` elements. A big downside with `display: inline-block`: It disables line-wrapping.
 ---
 
@@ -58,7 +58,7 @@ a.nav-link {
 
 ## Border
 - If we don't specify a `border-color`, it'll use the font's color by default.
-- An `outline` is like an extra `border` (i.e. it's stacked outside border, and can sometimes be used as a "second border), or can be treated as a `border`. It doesn't affect layout but more like `box-shadow`, just a cosmetic effect draped over an element, without nudging it around, or changing its size.
+- An `outline` is like an extra `border` (i.e. it's stacked outside border, and can sometimes be used as a "second border"), or can be treated as a `border`. It doesn't affect layout but more like `box-shadow`, just a cosmetic effect draped over an element, without nudging it around, or changing its size.
 - Outlines have a special `outline-offset` property. It allows you to add a bit of a gap between the element and its `border`.
 
 ### Radius

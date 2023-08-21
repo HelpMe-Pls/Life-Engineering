@@ -1,7 +1,7 @@
 # Beyond Order
 ## Rule 1: Do not carelessly denigrate social institutions or creative achievement 
 
-- People remain mentally healthy not mearly because of the integrity of their own minds, but because they are constantly being reminded how to think, act, and speak by those around them.
+- People remain mentally healthy not merely because of the integrity of their own minds, but because they are constantly being reminded how to think, act, and speak by those around them.
 
 - The best player is therefore not the winner of any given game but, among many other things, he or she who is invited by the largest number of others to play the most extensive series of games.
 
@@ -37,11 +37,11 @@
 
 - What is the antidote to the suffering and malevolence of life? The highest possible goal. What is the prerequisite to pursuit of the highest possible goal? Willingness to adopt the maximum degree of responsibility - and this includes the responsibilities that others disregard or neglect.
 
-- It is a bad idea to sacrifice yourself uncomplainingly so that someone else can take the credit. Nonetheless, under such circumstances - if you're a wise and attentive person - you might still notice that your unproductive coworkers are leaving a plethora of valueable tasks undone.
+- It is a bad idea to sacrifice yourself uncomplainingly so that someone else can take the credit. Nonetheless, under such circumstances - if you're a wise and attentive person - you might still notice that your unproductive coworkers are leaving a plethora of valuable tasks undone.
  
 - You could start by trying to solve a small problem - something that is bothering you, that you think YOU could fix. You could start by confronting a dragon of just the size that you are likely to defeat. Under reasonable circumstances, picking up the excess responsibility is an opportunity to become truly invaluable.
 
-- It appears that the meaning that most effectively sustains life is to be found in the adoption of responsibility. In your experience, has doing something easy been worthwhile ? Well, no, not very often. Then perhaps what you really want is something difficult. It is for this reason that we voluntarily and happily place limitiations on ourselves. We narrow and limit ourselves, and explore the possibilities thereby revealed. That is what makes the game.
+- It appears that the meaning that most effectively sustains life is to be found in the adoption of responsibility. In your experience, has doing something easy been worthwhile ? Well, no, not very often. Then perhaps what you really want is something difficult. It is for this reason that we voluntarily and happily place limitations on ourselves. We narrow and limit ourselves, and explore the possibilities thereby revealed. That is what makes the game.
 
 - Accept some limitations, however, and the game begins. Accept them, more broadly speaking, as a necessary part of Being and a desirable part of life. Assume you can transcend them by accepting them. And then you can play the limited game properly.
 
@@ -51,9 +51,9 @@
 
 - When you face a challenge, you grapple with the world and inform yourself. This makes you more than you are. It makes you increasingly into who you could be. The ultimate question of Man is not who we are, but who we could be.
 
-- Even under the best of all conceivable circumstances, almost insupearble obstacles will emerge and obstruct your path. The encouragement? You will have the opportunity to reveal yourself as much stronger and more competent than you might imagine.
+- Even under the best of all conceivable circumstances, almost insuperable obstacles will emerge and obstruct your path. The encouragement? You will have the opportunity to reveal yourself as much stronger and more competent than you might imagine.
 
-- Here is what the future means: If you are going to take care of yourself, you are already burdened (or priviledged) with a social responsibility. The you for whom you are caring is a community that exists across time. The necessity for considering this society of the individual, so to speak, is a burden and an opportunity that seems uniquely characteristic of human beings.
+- Here is what the future means: If you are going to take care of yourself, you are already burdened (or privileged) with a social responsibility. The you for whom you are caring is a community that exists across time. The necessity for considering this society of the individual, so to speak, is a burden and an opportunity that seems uniquely characteristic of human beings.
 
 - And then you determine to start acting in accordance with your conscience. You decide that it is a partner, despite its adversarial form. You put all that you have discovered to be right into action, and you begin your ascent. You start to monitor yourself, ever more careful to ensure you are doing the right thing - listening to what you say, watching yourself act, trying not to deviate from the straight and narrow path. That becomes your goal.
 
@@ -80,7 +80,7 @@
 - Helping people bridge the gap between what they profoundly intuit but cannot articulate seems to be a reasonable and valuable function for a public intellectual.
 
 - It might be that the true meaning of life is available for discovery, if it can be discovered at all, by each individual, alone - although in communication with others, past and present.
-  It may well be, therfore, that the true meaning of life is not to be found in what is objective, for example, but what is subjective (but still universal).
+  It may well be, therefore, that the true meaning of life is not to be found in what is objective, for example, but what is subjective (but still universal).
 
 - The meaning that sustains life in all its tragedy and disappointment is to be found in shouldering a noble burden.
 
@@ -119,7 +119,7 @@
 ## Rule 8: Try to make one room in your home as beautiful as possible
 
 - Making something beautiful is difficult, but it is amazingly worthwhile. If you learn to make something in your life truly beautiful - even one thing - then you have established a relationship with beauty.
-  From there you can begin to expand that relationship out into other elements of your life and the world. That is and invitation to the devine. That is the reconnection with the immortality of childhood, and the true beauty and majesty of the Being you can no longer see. You must be daring to try that.
+  From there you can begin to expand that relationship out into other elements of your life and the world. That is and invitation to the divine. That is the reconnection with the immortality of childhood, and the true beauty and majesty of the Being you can no longer see. You must be daring to try that.
 
 - A real piece of art is a window into the transcendent, and you need that in your life, because you are finite and limited and bounded by your ignorance. Unless you can make a connection to the transcendent, you will not have the strength to prevail when the challenges of life become daunting.
 
@@ -147,7 +147,7 @@
 
 - It is that combination of Truth, Courage, and Love comprising the Ideal, whose active incarnation in each individual does in fact take the potential of the future and make the best of it.
 
-- It is not the expression of emotion associated with unpleasent events that has curative power. It is the development of a sophisticated causal theory: Why was I at risk? What was it about the world that made it dangerous? What was I doing or not doing to contribute to my vulnerability? How can I change the value hierachy I inhibit to take the negative into account so that I can see and understand it? How much of my old map do I have to let crumble and burn - with all the pain dying tissue produces - before I can change enough to take my full range of experience into account? Do I have the faith to step beyond what should and must die and let my new and wiser personality emerge? To some degree, we are our assumptions. They structure the world for us.
+- It is not the expression of emotion associated with unpleasant events that has curative power. It is the development of a sophisticated causal theory: Why was I at risk? What was it about the world that made it dangerous? What was I doing or not doing to contribute to my vulnerability? How can I change the value hierachy I inhibit to take the negative into account so that I can see and understand it? How much of my old map do I have to let crumble and burn - with all the pain dying tissue produces - before I can change enough to take my full range of experience into account? Do I have the faith to step beyond what should and must die and let my new and wiser personality emerge? To some degree, we are our assumptions. They structure the world for us.
 
 - We have every reason to avoid facing the bitter truth. But making what is - and what was - clear and fully comprehended can only protect us. If you are suffering from memories that will not stop tormenting you, there is a possibility - possibility that could be your salvation - waiting there to be discovered.
 
@@ -193,7 +193,7 @@
 
 - Here is a rule: do not ever punish your partner (or anyone) for doing something you want them to continue doing. Particularly if it took some real courage - some real going above and beyond the call of duty - to manage.
 
-- Devote yourself to the higher ideal upon which an honest and courageous relationship is necessarily dependent, and do that with the seriousness that will keep your soul intact. Maintain your marital vows, so that you are desperate enough to negotiate honestly. Do not let your partner brush you off with protestations of ignorance of refusal to communicate. Do not be naive, and do not expect the beauty of love to maintain itself without all-out effort on your part. Distribute the requirements of your household in a manner you both find  acceptable, and do not tyrannize or subject yourself to slavery. Decide what you need to keep yourself satisfied both in bed and out of it.
+- Devote yourself to the higher ideal upon which an honest and courageous relationship is necessarily dependent, and do that with the seriousness that will keep your soul intact. Maintain your marital vows, so that you are desperate enough to negotiate honestly. Do not let your partner brush you off with protestations of ignorance of refusal to communicate. Do not be naive, and do not expect the beauty of love to maintain itself without all-out effort on your part. Distribute the requirements of your household in a manner you both find acceptable, and do not tyrannize or subject yourself to slavery. Decide what you need to keep yourself satisfied both in bed and out of it.
 
 
 ## Rule 11: Do not allow yourself to become resentful, deceitful, or arrogant

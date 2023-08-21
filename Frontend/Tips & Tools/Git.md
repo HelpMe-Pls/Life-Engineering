@@ -16,7 +16,7 @@ git push
 - **Merge --squash**: use it if you just wanted to have the updates from the target branch but NOT their commits and also NOT wanting to have an extra commit at that moment, then later have a commit to represent your current work (not necessarily a merge commit).
 - **Rebase**: use it ***BEFORE PUSH*** if you want to have a ***clean*** git tree (i.e. the tip of branches are not connected with each other) and you'll have to make sure that your commit messages look meaningful so that the `target` branch looks easy to read/understand.
 Rebase `src` onto `target` means taking every commits from `src` and put it on top of `target` (`src` is still the current checkout, but the git tree looks like the tip of `target`  just grew with more commits from your `src` at the point of executing `rebase`, i.e `src` still has *all* the updates from `target`, it just looks different in the git tree as if your `src` is now growing from the tip of `target` with ALL the commits from both branches)
-So that's why if there're conflicts, you'll have to resolve the conflicts *one-by-one* (coz the `target` is now the "base" and it just had *more commits* from your `src` ), not all at once like the `merge`
+So that's why if there're conflicts, you'll have to resolve the conflicts *one-by-one* (coz the `target` is now the "base" and it just had *more commits* from your `src`), not all at once like the `merge`
 
 ### What to do after your MR is merged:
 - If you want to keep working on that merged branch (`src`):

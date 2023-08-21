@@ -1,4 +1,4 @@
-## Shortkeys 
+## Short keys 
 Ctrl + `[` or `]`: Code block indent
 
 Alt + ↑ or ↓: Move the selected *line*/code block 
@@ -26,6 +26,8 @@ clg + Tab: `console.log()`
 Open DevTool's console: Ctrl + Shift + `I`
 To clear DevTool's console history: Ctrl + Shift + P then type "clear" then choose it
 
+The equivalent of `npx` is `pn dlx` (for download) or `pn exec` for running executables
+
 #### Wrap a block of code inside a new scope:
 - Select text (optional)
 - Open command palette (usually Ctrl+Shift+P)
@@ -37,6 +39,7 @@ To clear DevTool's console history: Ctrl + Shift + P then type "clear" then choo
 - Ctrl + Shift + P
 - Type in upper or lower on your preference
 - Hit Enter
+
 
 ---
 ### Initial setups for a new project 

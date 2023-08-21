@@ -1,10 +1,11 @@
 - Much needed for a promotion/ CV Update/ Interviews
 - Just start it right when a challenge arises, then document it along the way
-- Focus more on the IMPACT (especially ***meaningful*** ones) rather than the output just for the sake of getting something done.
+- Focus more on the IMPACT (especially ***meaningful*** ones) rather than the output just for the sake of getting something done. Explain your trajectory/decisions **in terms of the value** you bring to others. You need to make it clear it’s not about you; it’s more about the value you bring.
 - Have the STAR method as your guidelines (master the Art of Storytelling)
 - Update every month/quarter
 - Make a summary of **highest-impact** checkpoint - the works that you're most proud of, after a year of working (or before switching to a new company)
-- Make YOUR achievements sound like they're bringing a meaningful change for your team/company/community (i.e. if you have time, try to write a dramatic STORY and then spar it it casual conversations)
+- Make YOUR achievements sound like they're bringing a meaningful change for your team/company/community (i.e. if you have time, try to write a dramatic, intriguing STORY - the one with ups and downs, how you handle unexpected situations and make good use of opportunities - then spar it it in casual conversations)
+> If you can connect the dots between your past, present, and future; identify the underlying themes in your career trajectory; and explain the **unique** value you can bring to your new endeavor, you’re winning.
 ---
 
 ### FPT
@@ -252,6 +253,10 @@ const onExportHistory = async (campaignId) => {
     }
     return null;
   };
+  
+<Button onClick={onExportHistory}>
+	Import
+</Button>
 ```
 - Import button:
 ```tsx
@@ -315,55 +320,69 @@ const onExportHistory = async (campaignId) => {
 	- i18n
 	- Native mobile
 -------
+## Behavioral - What to tell
+- Long story short, it was not what I wanted, but definitely is what I needed.
+### VDONG
+- Without any prior experience, joining a company of such reputation, I surely had high expectations. I was expecting a cutting-edge tech stack (because that was what I spent a year to prepare for) with the most efficient procedures for our development cycles and of course, someone reliable to learn from.
+	- But instead, I joined a project whose frontend was pushing around the devs (because most of them are fullstack devs with a lean on backend) and the tech stack was kind of peculiar. We were using a Chinese React stack with Umi as the frontend framework using a kind of Redux-saga as state management approach, Antd as the UI framework and LESS to style the components.
+	- So as you might've guessed, I was assigned as a frontend dev with a lot of tasks to catch up with the upcoming tight deadlines. On top of that, our team didn't have a qualified development process either. We had no project manager, and our DevOps guy somehow assumed the role of the manager. We operated based on some kind of a heuristic approach and there was no documentation whatsoever. I know it's hard to believe such an arrangement exists within a company of such scale, but that's what it was. 
+	  So I was like, me ? what the hell do I know about Umi and all of this unheard-of stack ? And it was the very first time I faced reality: The World Is Simple Only When It Behaves. When things are no longer specified, with precision, the walls crumble, and chaos makes its presence known. Everything becomes unreliable. Naive and feared of incapable for the role, I was overthinking so much, looking down on myself and keep telling myself that I couldn't do this, I'm definitely incompetent and this is too much for a fresher like me. 
+- Fortunately, the guy sitting next to me has been there long enough to know his way through the project and he's kinda more well-rounded fullstack than the rest of the team. Thanks to him, I was able to get myself together and hit the ground and running. Following a divide and conquer approach, he helped me break up my tasks into manageable sub-tasks and carefully prioritize them. I also learnt from him how to generalize a solution to solve a problem and its neighbors, you know, to write maintainable code.
+- WebSocket eli5: provides a way to exchange data between browser and server via a persistent connection. The data can be passed in both directions as “packets”, without breaking the connection and the need of additional `HTTP` requests. WebSocket objects are cross-origin by nature. When a `new WebSocket(url)` is created, the browser (using headers, in a `HTTP` request) asks the server: “Do you support WebSocket?” And if the server replies “yes” (by sending a code `101` response), then the connection is upgraded and continues in WebSocket protocol:
+	- Methods:
+		- `socket.send(data)`,
+		- `socket.close([code], [reason])`.
+	- Events:
+		- `onopen` – connection established,
+		- `onmessage` – data received,
+		- `onerror` – socket error,
+		- `onclose` – connection closed.
+- Another fun story is that, right around the end of my probation, I got covid, which was kinda weird, coz as far as I remember, during the peak of the pandemic, everyone around me had it, and I was the only one made it through without being "positive". But then when everything is back to normal, and no one seems to have it, then I got caught. It was mild, thanks to the vaccine perhaps? And to my surprise, shortly after recovering from covid, I was involved in a in a bike crash, due to my own ignorance. I was rushing to make it to work on time on a rainy day, and as I turning a corner, the slippery street caused the accident. Luckily, I ended up with just a few scratches on my skin, nothing too serious. But those 2 events were definitely a quick reminder of how fragile life is and the importance of putting care in our actions.
+- As a surprise, the project somehow managed to be delivered, even though the feedback was kinda on the negative side. As expected, team members couldn't put up with what was going on, and they eventually left, resulting in our team size being cut in half. All that happened within the first 3 months of my career, and also the most eventful period I've ever been through in a workplace. It was not what I wanted nor expected, but definitely what I needed. To conclude, I'd say a fine combination of gratitude and courage is what keep me going and it's almost always more fascinating about journeying *voluntarily* into the unknown - the heroic path - the noble goal. The willingness to take on that responsibility is identical to the decision to live a meaningful life.
 
-### Story time
- - It's not about "dumbing down" our solutions, it's about optimizing for clarity. The clearer the code is, the quicker we'll be able to fix bugs and ship new features.
-- Anw, a part of me has to die. But it's the conscious aim that decides which direction will give birth to a better me.
-- Sitting still in our seats, we nonetheless act out a multitude of alternate realities, extending ourselves experimentally, testing multiple potential paths, before specifying the one we will actually take
-- Tasks/challenges are are neither clear nor self-evident, objectively. They must be established practically, pragmatically, and they retain their validity only under very narrow and specified conditions. The conscious illusion of complete and sufficient perception only sustains itself, for example—only remains sufficient for our purposes—when everything goes according to plan. Under such circumstances, what we see is accurate enough, so that there is no utility in looking farther.
-- In a crisis, when our thing no longer goes, we turn to those whose expertise far transcends ours to restore the match between our expectant desire and what actually happens.
-- The World Is Simple Only When It Behaves. When things go wrong, chaos ensues. When things break down, what has been ignored rushes in. When things are no longer specified, with precision, the walls crumble, and chaos makes its presence known. Everything becomes unreliable. Therefore, I have to speak the truth to myself, earn trust with myself to carry myself in chaos.
-- What you least want will inevitably happen—and when you are least prepared. What you least want to encounter will make itself manifest when you are weakest and it is strongest. And you will be defeated.
-- Coding reflects real life very closely: If you identify things, with careful attention and language, you bring them forward as viable,obedient objects, detaching them from their underlying near-universal interconnectedness. Yousimplify them. You make them specific and useful, and reduce their complexity. You make itpossible to live with them and use them without dying from that complexity, with its attendantuncertainty and anxiety. If you leave things vague, then you’ll never know what is one thing andwhat is another. Everything will bleed into everything else. This makes the world too complexto be managed.
-- It's more fascinating about journeying voluntarily into the unknown - the heroic path - the noble goal. The willingness to take on that responsibility is identical to the decision to live a meaningful life.
-- If we each live properly, we will collectively flourish.
-- Alongside our wish to be free of rules, we all search for structure.
-- As unfamiliar and strange as it sounds, in the deepest part of our psyche, we all want to be judged.
+### Transitions
+- Company re-org
+- Take advantage of company perks such as sponsored Coursera && MS, AWS certs,...
+- I was reluctant to learn DSA, but as I forced myself through it, I realized it's an endeavor that requires a rare blend of precision and creativity. It can certainly be frustrating at times, but it's also highly addictive.
+
+### Report
+- Lead frontend using Astro & MUI
+- Poor man's deployment >> Could be better using Docker, Vercel, AWS EC2
+- Raise manday request
+
+### Autocall
+- Lead frontend using Next13 & Tailwind
+- Tell how you cooked up a tl;dr NextJS Obsidian docs 
+- Persuade how nextjs 13 (with default caching and server components) is better than previous versions with server components:
+	- You can fetch data inside your components, and it Just Works™. No more `useEffect()` that are common with client-side fetching.
+	- You can stream data using `<Suspense>` to speed up the initial page load.
+	- You can execute more code on the server without shipping it to the client, keeping bundle sizes smaller.
+
+### WIL
+- Trust in your own ability
+	- Always place your becoming above your current being. It's less about what you know and more about your ability to adapt. That means it is necessary to recognize and accept your insufficiency, so that it can be continually rectified. That’s painful, certainly—but it’s a good deal.
+	- The idea is you operate on the level of what you want to be as well as you possibly can.
+	- Once you learned how to set your goals properly, with care, you'll slowly but certainly realize that you're capable of doing the things that you once thought "there's no way I can do that". And that's a walloping realization.
+- Learned how to learn
+	- What is new is also what is exciting, compelling, and provocative, assuming the rate at which it is introduced does not intolerably undermine and destabilize our state of being.
+	- Alongside our wish to be free of rules, we all search for structure and validations from others. As unfamiliar and strange as it sounds, in the deepest part of our psyche, we all want to be judged. It's hard to deny that when you built something beautiful and take pride in it.
+	- You need to have a hierarchy of improvement, and that means you're gonna be lesser than ppl who already attained along that dimension, so, it's necessary to have some humility and to have your improvements measured/judged by the structure of social institution so you can rightfully hone your skills. 
+	- To give is to do what you can to make things better. The good in people will respond to that, and support it, and imitate it, and multiply it, and return it, and foster it, so that everything improves and moves forward.
+- Learned to be prepared, even if nothing's going wrong and everything seems right.
+	- What you least want will inevitably happen—and when you are least prepared. What you least want to encounter will make itself manifest when you are weakest and it is strongest. And you will be defeated.
 - I noted that the nature of such meaning was constantly re-presented in the great stories of the past, and that it had more to do with developing character in the face of suffering than with happiness.
-- What shall I do next year? Try to ensure that the good I do then will be exceeded only by the good I do the year after that.
-- Aim continually at Heaven while you work diligently on Earth.
-- Always place your becoming above your current being. That means it is necessary to recognize and accept your insufficiency, so that it can be continually rectified. That’s painful, certainly—but it’s a good deal.
-- To give is to do what you can to make things better. The good in people will respond to that, and support it, and imitate it, and multiply it, and return it, and foster it, so that everything improves and moves forward
-- What is new is also what is exciting, compelling, and provocative, assuming the rate at which it is introduced does not intolerably undermine and destabilize our state of being
-- You need to have a hierarchy of improvement, and that means you're gonna be lesser than ppl who already attained along that dimension, so, it's necessary to have some humility and to have your improvements measured/judged by the structure of social institution so you can rightfully hone your skills. 
-- [Watch this](https://www.youtube.com/watch?v=IInaPtwdNCQ)
-- Venture out into the dangerous but promising unknown world and discover what is there.
-
----
-## What to tell
-### 1
 - Every story requires a starting place that is not good enough and an ending place that is better.
-- Notice your errors and misconceptions along the way, face them, and correct them. Get your stories straight.
-- Life is what repeats. And it's worth getting what repeats right. 
-### 2
-- The ultimate question of Man is not who we are, but who we could be.
-- I was instrumental in designing the migration path and it was a **smashing success.**
-- The idea is you operate on the level of what you want to be as well as you possibly can.
-### 3
-- d
-- d
-- d
+
 
 ## What to ask
-### 1
-- d
-- d
-- d
-### 2
-- d
-- d
-- d
-### 3
-- d
-- d
-- d
+### 1. Most memorable stages
+- Most honorable moments/achievements in their career
+- How long are they willing to stay/ have been in the company, and if they'll leave, what will likely be the reason
+- Any secondary jobs or passive income ?
+- Current income (range) ?
+### 2. What you've learnt from that
+- Pick up from their answers and chain them along
+- Look for similarities and going deeper into that
+### 3. How it's like looking forward, what are you hoping for
+- What makes you happy/content in terms of your career development ?
+- Questions/advice/tips for me ?

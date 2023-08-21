@@ -12,6 +12,7 @@
 - The most important takeaway is that “*every interview is a learning process*”. It is essential to realize that even if you are well-suited to a position, there is always the possibility that a more experienced candidate is also being interviewed. So, even though you did not get a role, you could still have had a good interview.
 - Include keywords from job descriptions into your resume. Analyze the job description and determine how important each skill and experience is, then optimize the *frequency* of the keyword according to its importance/relevance.
 - Pride in appearance can be equated with pride in a role.
+- [Watch this](https://www.youtube.com/watch?v=IInaPtwdNCQ)
 - If you're unsure whether or not the interview will be technical, ask your recruiting coordinator what position your interviewer holds (or what the interview might cover). An engineer will usually perform a technical interview.
 - You typically do one or two screening interviewers before being brought on-site.
 - [Do your research](https://www.experis.com/en/insights/articles/2021/05/25/20-tips-for-great-job-interviews), figure out what problems their business is trying to solve. It'd be great if you can offer specific improvements and/or alternate approaches, better yet, their trade offs as well (e.g. have a closer look at [this UI](https://peeba.com/hk/en/) and maybe suggest better layout/UX/etc. >> Get [refactoring UI](https://www.refactoringui.com/?ref=biblidev.fr))
@@ -23,7 +24,7 @@
 	- Vanilla JS, or jQuery at the very least. Not all interviews allow you to use React as they want to see mastery of the fundamentals.
 - Many ***startups*** might post job listings, but for the hottest startups, often *the best way in is through a personal referral*. This reference doesn't necessarily need to be a close friend or a coworker. Often just by reaching out and expressing your interest, you can get someone to pick up your resume to see if you're a good fit.
 - Regardless of the outcome, always ask yourself, did I present myself to the best of my ability? And, can I learn things from this interview that can help me in subsequent interviews?
-
+- Aim for the companies that on the bottom of your list in the first month of applying (i.e. treat them as foreplay for the companies that you *really* want to work at)
 
 ## During the interview
 - Listen until the question is finished, and take a breath.
@@ -52,11 +53,12 @@
 ### Behavioral
 - Typically, behavioral interview [questions](https://www.techinterviewhandbook.org/behavioral-interview-questions) can be split into several types:
 	- Getting to know your career preferences, ambitions and plans
-	- Discuss details of experiences or projects written in your resume
+	- Discuss [[Progressive Overload#Behavioral - What to tell |the details]] of experiences or projects written in your resume
 	- "Tell me about a time where you" type of questions where you describe how you demonstrated certain traits or responded to a situation
 - Display pride in previous work-related experiences you've had. And have some questions [[Interviewer questions |prepared]]. Take this time to learn something about what is being sought.
 - Prepare your stories to [[Behavioral questions |showcase fit]] to the company's culture / core values.
 - Refrain from exaggerating your abilities or being negative towards yourself.
+> Do whatever it takes to not sound desperate, even if you are.
 - Rather than saying "I failed at that task", you could say that task was challenging but provided me with some ideas for future areas of research to explore.
 - Additionally, avoid excessive slang cursing or inappropriate humor.
 
@@ -84,8 +86,6 @@
 	- Work hours: work life balance, is OT well compensated or is the company expecting you to be ready for the job at all time ? 
 - Choose companies/teams that resonate with what you value. The aim of an interview is to find a good match between the company and the candidate.
 - Despite whatever is happening in the negotiation, give the company the impression that 1) you still like the company, and that 2) you're still excited to work there, even if the numbers or the money or the timing is not working out.
-
-
 
 ## After the interview
 - Interviewers assess you *relative to other candidates* on that same question by the same interviewer. It's a *relative* comparison.

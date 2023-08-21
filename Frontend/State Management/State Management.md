@@ -1,4 +1,4 @@
-[[Redux/Fundamentals]]
+[[Fundamentals]]
 [[redux-saga]]
 [[redux-toolkit]]
 

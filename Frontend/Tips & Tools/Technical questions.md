@@ -102,17 +102,19 @@ def contains_string(search_term, strings):
 ## Best practices
 ### Do's
 - Use variable names that explain your code (i.e. long variable names are acceptable)
-- Ask for permission to use helper functions without having to implement them (e.g. `reduce`, `filter`, `min`, `max`, `push`,... should all be ok to use)
+- Ask for permission to use native helper functions without having to implement them (e.g. `reduce`, `filter`, `min`, `max`, `push`,... should all be ok to use)
 - Write in a modular fashion, going from higher-level functions and breaking them down into smaller helper functions. 
   The nice thing about the modular code is that it's easily testable because each component can be verified separately. As code gets more complex, it becomes increasingly important to write it in a modular way. This will make it easier to read and maintain. Your interviewer wants to see you demonstrate these skills in your interview:
 	- Let's say you're asked to build a car. You can just write a few high level functions first: `gatherMaterials()`, `assemble()`. 
 	- Then break down `assemble()` into smaller functions, `makeEngine()`, `getWheels()`, `constructCarFrame()`. 
+> **If you get confused or nervous, take a break.** No one is going to mark you down for saying "Do you guys mind if I take five minutes to work through this and get back to you?" in middle of the interview.
 - Use a mix of functional and imperative programming paradigms:
 	- Pure functions are easier to reason about and can help to reduce bugs in your implementation.
 	- Avoid mutating the parameters passed into your function especially if they are passed by reference unless you are sure of what you are doing.
 	- However, functional programming is usually expensive in terms of space complexity because of non-mutation and the repeated allocation of new objects. On the other hand, imperative code is faster because you operate on existing objects. Hence you will need to achieve a balance between accuracy vs efficiency, by using the right amount of functional and imperative code where appropriate.
 	- Avoid relying on and mutating global variables. Global variables introduce state. And things will go wrong rapidly.
 	- If you have to rely on global variables, make sure that you do not mutate it by accident.
+> The biggest asset you have is honesty and intellectual curiosity.
 - If you are cutting corners in your code, state that out loud to your interviewer and say what you would do in a non-interview setting (no time constraints). For instance:
 	- "Under non-interview settings, I would write a regex to parse this string rather than using `split()` which may not cover certain edge cases."
 - Scan through your code for mistakes - such as off-by-one errors:

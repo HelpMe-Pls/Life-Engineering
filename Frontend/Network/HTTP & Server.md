@@ -1,0 +1,1 @@
+CORS (Cross Origin Resource Sharing) is a system that allows web servers to specify which other domains are allowed to access their resources, enabling safe communication between different origins while protecting against security risks.

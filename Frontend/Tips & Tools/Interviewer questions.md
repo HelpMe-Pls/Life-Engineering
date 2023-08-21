@@ -4,14 +4,18 @@
 		- "I'm not familiar with technology X, but it sounds like a very interesting solution. Could you tell me a bit more about how it works?"
 		- "What do you measure? What are your most important product metrics?"
 		- "What are the engineering challenges that the company/team is facing?"
+		- "Does the development team get time to improve the quality of the software?"
 	- Ask about your role
+		- "Why is this role open? Is it a new role, or am I replacing someone? Why did that person leave?"
 		- "What is the ratio of testers to developers to program managers? What is the interaction like? How does project planning happen on the team?"
 		- "We had some challenges in scalability and testing from our current project, and I'd love to learn more about it. What opportunities are there at this company to learn about this?"
 		- "What would be the most important problem you would want me to solve if I joined your team?"
+		- "How is developer time spread between maintenance and building new features ?"
 	- Ask about company culture and employees' welfare
 		- "What is unique about working at this company that you have not experienced elsewhere?"
 		- "What is something you wish were different about your job?"
 		- "What does the company do to nurture and train its employees?"
+		- "How much downtime have you experienced in the past six months? Can you walk me through how you would respond to your website going down right now?"
 	- Ask about leadership and management
 		- "Sometimes there's a trade-off between what's best for one of your team members and what's best for the team. Give an example of how you handled this and why?"
 		- "How do you train/ramp up engineers who are new to the team?"

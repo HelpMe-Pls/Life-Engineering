@@ -57,17 +57,17 @@
       }
     },
     {
-      "query": "path:Redux",
+      "query": "path:State",
       "color": {
         "a": 1,
         "rgb": 7752380
       }
     },
     {
-      "query": "path:\"Tips & Tools\"",
+      "query": "path:Tips",
       "color": {
         "a": 1,
-        "rgb": 9429375
+        "rgb": 11499706
       }
     }
   ],
@@ -75,12 +75,12 @@
   "showArrow": true,
   "textFadeMultiplier": -1.6,
   "nodeSizeMultiplier": 1.37604166666667,
-  "lineSizeMultiplier": 0.692083333333333,
+  "lineSizeMultiplier": 0.451455301455301,
   "collapse-forces": false,
   "centerStrength": 0.46875,
   "repelStrength": 12.3736979166667,
   "linkStrength": 1,
   "linkDistance": 342,
-  "scale": 0.32287482674199863,
+  "scale": 0.4526649852147067,
   "close": true
 }

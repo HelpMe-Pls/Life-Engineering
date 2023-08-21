@@ -1,12 +1,29 @@
 - Next.js does code splitting automatically, so each page only loads what’s necessary for that page.
 - It means that pages become isolated. If a certain page (or part of a page) throws an error, the rest of the application would still work.
 - By default, Next.js **pre-renders** every page. This means that Next.js generates HTML for each page [in advance](https://www.youtube.com/watch?v=kUs-fH1k-aM) and can be served from a CDN geographically closer to the user, instead of having it **all** done by client-side JavaScript. Pre-rendering can result in better performance and SEO.
+	- Beware of the [hydration error](https://nextjs.org/docs/messages/react-hydration-error) , especially when using browser-only APIs like `window` or `localStorage` in your rendering logic. To fix it:
+```tsx
+export default DemoApp() {
+	  const { showCart } = useAppStore()  // An example of using localStorage (from Zustand)
+	  // initial state should match with the one in the store
+	  const [clientShowCart, setClientShowCart] = useState(false)
+	  
+	  // Fix the hydration error with `useEffect()`:
+	  useEffect(() => {
+		setClientShowCart(showCart)
+      }, [showCart])
+
+	return <div className={`some tailwind-classes ${clientShowCart ? 'block' : 'hidden'}`}>
+	{/* some content */}
+	</div>
+}
+```
 - In a production build of Next.js, whenever [`Link`](https://nextjs.org/docs/api-reference/next/link) components appear in the browser’s viewport, Next.js automatically **prefetches** the code for the corresponding linked page in the background.
 ---
 
 # Next $\geqslant$ 13
 - As of React v18++, it can render on the client *and* the server, meaning you can choose the rendering environment at the component level.
-- You may noticed that the majority of components are ***non-interactive*** (static) and can be ***fully rendered on the server*** as Server Components (SC). For smaller pieces of *interactive* UI, we can _sprinkle in_ Client Components (CC - which are **pre**rendered (with HTML-CSS) on the server *and then* hydrated (with JS) on the client).
+- You may noticed that the majority of components are ***non-interactive*** (static) and can be ***fully rendered on the server*** as Server Components (SC). For smaller pieces of *interactive* UI, we can _sprinkle in_ Client Components (CC - which are **pre**rendered (with HTML-CSS) on the server *and then* hydrated (with JS) on the client), i.e. [[Next#Static Site Generation (recommended) |SSG]].
 - SCs allow you to move data fetching to the server - closer to your database - reducing both the back-and-forth communication between client and server; keep sensitive information on the server (access tokens, API keys,...) and keep large dependencies that previously would impact the client JavaScript bundle size on the server, leading to improved performance.
 > Since **SCs *are the default***, all components are part of the SC module graph **unless** defined as a CC (i.e. imported in a module that ***STARTS WITH*** the `"use client"` directive).
 - `"use client"` does **not** mean client side rendering. The content (HTML & CSS) is still going to be prerendered *on the server* (just like with `pages` directory) and you'll also get the benefit of interactivity with JavaScript on the client, while SCs are only HTML & CSS, no interactivity added.
@@ -24,11 +41,11 @@
 - A layout is UI that is **shared** between multiple pages. On navigation, layouts preserve state, remain interactive, *and do not re-render*. Layouts can also be [nested](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#nesting-layouts).
 > The `app` directory **must** include a [root layout](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#root-layout-required). It's a SC by default and ***cannot*** be set to a CC. The root layout is **implicitly implemented** when you define its `children` (same for `template.js`). 
 - A [template](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#templates) is a smaller version of layout (i.e. included in the `children` of `layout.js` and wraps the `page.js` for that route and everything nested below). It *creates a **new instance*** for each of their children on navigation, which means state is ***not** preserved*, and effects are re-synchronized.
-- To omit a specific folder name from the URL segment or to create multiple root layouts, use [route groups](https://nextjs.org/docs/app/building-your-application/routing/route-groups#examples). Use the `_` prefix to omit a folder [and all of its subfolders](https://nextjs.org/docs/app/building-your-application/routing/colocation#private-folders) out of routing.
+- To omit a specific folder name from the URL segment or to create multiple root layouts, use [route groups](https://nextjs.org/docs/app/building-your-application/routing/route-groups#examples) (wrap the folder name in a pair of parentheses). Use the `_` prefix to omit a folder [and all of its subfolders](https://nextjs.org/docs/app/building-your-application/routing/colocation#private-folders) out of routing.
 - To access route segments, you can use [`useSelectedLayoutSegment()`](https://nextjs.org/docs/app/api-reference/functions/use-selected-layout-segment) or [`useSelectedLayoutSegments()`](https://nextjs.org/docs/app/api-reference/functions/use-selected-layout-segments) in a CC.
 
 ### Navigation
-- You can use [`usePathname()`](https://nextjs.org/docs/app/api-reference/functions/use-pathname#returns) to read the current URL's path.
+- You can use [`usePathname()`](https://nextjs.org/docs/app/api-reference/functions/use-pathname#returns) to get the current URL's path.
 - For complex route behaviors (e.g. refresh, back, forward,...), use [`useRouter()`](https://nextjs.org/docs/app/api-reference/functions/use-router). For [redirecting](https://nextjs.org/docs/app/api-reference/functions/redirect#redirect).  
 - [[Next#getStaticPaths |getStaticPaths()]] is replaced with [`generateStaticParams()`](https://nextjs.org/docs/app/api-reference/functions/generate-static-params).
 - Prefetching is a way to preload a route in the background before it's visited. The rendered result of prefetched routes is added to the router's client-side cache.
@@ -149,7 +166,7 @@ export async function POST(request: Request) {
 
 
 ## Rendering
-- You ***must NOT*** import SCs into CCs. Instead, you can pass SCs [as *props (or children)*](https://nextjs.org/docs/getting-started/react-essentials#recommended-pattern-passing-server-components-to-client-components-as-props) to CCs. The SC will be rendered on the server, and when the CC is rendered on the client, the prop _"hole"_ will be filled in with the rendered result of the SC.
+- SCs have to be rendered by other SCs. You ***must NOT*** import SCs into CCs (the reverse is possible, though). Instead, you can pass rendered SCs [as *props (or children)*](https://nextjs.org/docs/getting-started/react-essentials#recommended-pattern-passing-server-components-to-client-components-as-props) to CCs. The SC will be rendered on the server, and when the CC is rendered on the client, the prop _"hole"_ will be filled in with the rendered result of the SC.
 > Those "props" **MUST** be serializable (i.e. values such as functions, Dates,... **cannot** be passed directly to Client Components) because they're [crossing](https://nextjs.org/docs/getting-started/react-essentials#keeping-server-only-code-out-of-client-components-poisoning) the network boundary between Server and Client.
 - Use the [global singletons](https://nextjs.org/docs/getting-started/react-essentials#sharing-data-between-server-components) pattern and [colocating data fetching](https://nextjs.org/docs/getting-started/react-essentials#sharing-fetch-requests-between-server-components) if you want to share data between SCs.
 - **Node** runtimes are **server-side** environments optimized for heavy processing and serving ***multiple** clients*, while **Edge** runtimes are **client-side** environments located closer to end-users, focusing on ***local execution*** and enhancing performance. You can [specify a runtime](https://nextjs.org/docs/app/building-your-application/rendering/edge-and-nodejs-runtimes#segment-runtime-option) for individual route segments in your Next.js application.
@@ -166,7 +183,7 @@ export async function POST(request: Request) {
 
 
 ## Data fetching
-- Basically, with SCs, you might want to move your data-loading concerns out of your CCs.
+- Basically, [with SCs](https://nextjs.org/docs/app/building-your-application/data-fetching/fetching#async-and-await-in-server-components), you might want to move your data-loading concerns out of your CCs.
 - To perform [server-side data mutations](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions#on-demand-revalidation) and [progressively enhance forms](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions#invocation) (asynchronous side effects in response to user interaction), use the [`use-server`](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions#creation) directive.
 ### Middleware
 - Middleware allows you to run code [before](https://nextjs.org/docs/app/building-your-application/routing/middleware) a request is completed. Then, based on the incoming request, you can modify the response by rewriting, redirecting, modifying the request or response headers, or responding directly.

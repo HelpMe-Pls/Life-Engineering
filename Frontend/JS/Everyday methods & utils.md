@@ -423,7 +423,7 @@ console.log(flatten(nested)); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
 ### .slice()
-- Useful when you want to extract or remove a portion of an array.
+- Useful when you want to *extract or remove* a portion of an array.
 - Does ***not*** mutate the original array.
 - Returns a **new** array (a *shallow* copy portion) of the original array with its element(s) selected from `start` to `end` (`end` is ==***not***== included).
 - Returns an **empty** array when:
@@ -458,7 +458,7 @@ console.log(animals.slice(-3, 0));         // []
 console.log(animals.slice(2, -0));         // []
 console.log(animals.slice(undefined, 0));  // []
 
-// If `end` is negative, the absolute of it is how many element(s) REMOVED from the last index (right to left)
+// If `end` is negative, the absolute of it is how many element(s) REMOVED from the last index inclusive (right to left)
 console.log(animals.slice(0, -1));    // ["ant", "bison", "camel", "duck"]
 console.log(animals.slice(1, -3))     // ["bison"]
 console.log(animals.slice(1, -5));    // []

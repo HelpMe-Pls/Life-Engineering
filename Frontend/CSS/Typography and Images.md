@@ -1,12 +1,12 @@
 # Typography
 - On the web, underlines carry a very specific meaning: they tend to be links.
 - CSS allows us to change the cosmetic presentation of text, but it doesn't affect the semantic meaning of the markup (semantics are important because not everyone can see the cosmetic styles). 
-  For that, we need to use specialized HTML tags, e.g. using the HTML `<em>` tag instead of `font-style: italic` takes accesibility into account (for screen reader)
+  For that, we need to use specialized HTML tags, e.g. using the HTML `<em>` tag instead of `font-style: italic` takes accessibility into account (for screen reader)
 - The `line-height` property only takes a *unitless number*. This number is multiplied by the element's font-size to calculate the actual line height.
 - Most of the properties that inherit are typography-related, like `color`, `font-size`, `text-shadow`, and so on.
 
 ## Text rendering
-- **Kerning** **algorithms** refer to the spacing between individual characters. Characters are nudged left or right (in drection) so that they "feel right". The letter placement is slightly different between browsers is that the browsers implement different kerning algorithms.
+- **Kerning** **algorithms** refer to the spacing between individual characters. Characters are nudged left or right (in direction) so that they "feel right". The letter placement is slightly different between browsers is that the browsers implement different kerning algorithms.
 - We can access the "kerning" with CSS by using `font-kerning`  and/or  `letter-spacing` property.
 - The `-webkit-font-smoothing` property (**for MacOS only**) controls the *smoothness* of the font.
 - We can tweak the formatting of our text using the `text-transform` property (with the values like `capitalize`, `uppercase`, `lowercase`)

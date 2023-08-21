@@ -496,7 +496,7 @@ a:focus img {
 - Make sure to test `drop-shadow` on Safari if your app supports it (browser's glitch). Opt for `box-shadow` instead, if the `drop-shadow` glitch happens too often.
 
 ### `text-shadow`
-- `text-shadow` is a shadow that applies only to the typography within the selected element. Commonly used to increase the contrast between light-coloured text and a light background. Takes same values as `box-shadow`.
+- `text-shadow` is a shadow that applies only to the typography within the selected element. Commonly used to increase the contrast between light-colored text and a light background. Takes same values as `box-shadow`.
 
 
 ## Gradients
