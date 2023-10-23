@@ -33,8 +33,8 @@ socket.onmessage = async (e) => {
       dispatch({
         type: 'callNotification/save',
         payload: { 
-	        unreadNotis: unreadNotis ,
-	        isSeenAll: isSeenAll
+	        unreadNotis,
+	        isSeenAll
 	    },
       }); 
 //...
@@ -299,7 +299,7 @@ const onExportHistory = async (campaignId) => {
 	</Button>
 ```
 
-
+- **Event-driven programming**: events are determined by user actions, sensor outputs, or messages from other programs. Events are monitored in an [[Async#Event Loop |event loop]], and when an event occurs, a callback function associated with that event is executed. This approach is asynchronous and non-blocking, meaning that if an event triggers a service and starts reacting to the event, it will not block other services from running or reacting.
 - Should extract a component to a separate module if all of its code is more than 169 lines or is called $\geqslant$ 3 times. 
 - What's hard:
 	- FE: Async (i.e. to display the right thing at the right time) && Render stability (no flash of content)
@@ -322,6 +322,7 @@ const onExportHistory = async (campaignId) => {
 -------
 ## Behavioral - What to tell
 - Long story short, it was not what I wanted, but definitely is what I needed.
+- Being a Software Engineer is just getting paid to figure out things you have no idea how to do.
 ### VDONG
 - Without any prior experience, joining a company of such reputation, I surely had high expectations. I was expecting a cutting-edge tech stack (because that was what I spent a year to prepare for) with the most efficient procedures for our development cycles and of course, someone reliable to learn from.
 	- But instead, I joined a project whose frontend was pushing around the devs (because most of them are fullstack devs with a lean on backend) and the tech stack was kind of peculiar. We were using a Chinese React stack with Umi as the frontend framework using a kind of Redux-saga as state management approach, Antd as the UI framework and LESS to style the components.
@@ -359,6 +360,7 @@ const onExportHistory = async (campaignId) => {
 	- You can execute more code on the server without shipping it to the client, keeping bundle sizes smaller.
 
 ### WIL
+- If you're indeterminate, Life will happen *to* you instead of happen *for* you. Do not allow that. You gotta take the wheel.
 - Trust in your own ability
 	- Always place your becoming above your current being. It's less about what you know and more about your ability to adapt. That means it is necessary to recognize and accept your insufficiency, so that it can be continually rectified. That’s painful, certainly—but it’s a good deal.
 	- The idea is you operate on the level of what you want to be as well as you possibly can.
@@ -377,12 +379,13 @@ const onExportHistory = async (campaignId) => {
 ## What to ask
 ### 1. Most memorable stages
 - Most honorable moments/achievements in their career
-- How long are they willing to stay/ have been in the company, and if they'll leave, what will likely be the reason
-- Any secondary jobs or passive income ?
+- How long are they willing to stay/have been in the company, and if they'll leave, what will likely be the reason
+- Any side jobs or passive income ?
 - Current income (range) ?
 ### 2. What you've learnt from that
 - Pick up from their answers and chain them along
 - Look for similarities and going deeper into that
 ### 3. How it's like looking forward, what are you hoping for
 - What makes you happy/content in terms of your career development ?
+- What are the key determinators for success / a profound life ?
 - Questions/advice/tips for me ?

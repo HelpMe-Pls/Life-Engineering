@@ -10,7 +10,7 @@ cliché (n): an opinion that is overused and betrays a lack of original thought.
 
 profound (adj-n): deep af
 
-omnipresent (adj) = ubiquitous: present everywhere at the same time
+omnipresent (adj) = ubiquitous, pervasive: present everywhere at the same time
 
 disarray (v-n): out of order, confusion
 
@@ -344,7 +344,7 @@ incumbent {on} (n-adj): required, necessary, obligatory
 
 unbidden (adj): unasked, uninvited, unsolicited
 
-peril (v-n): endanger, risk, threaten, danger, threat
+peril (v-n): endanger, risk, threaten, danger, threat, menace
 
 wend (v-n): travel, go, move, proceed 
 
@@ -411,3 +411,10 @@ agnostic (adj): unbiased, atheistic, skeptic
 crux (n): essence, core, gist, kernel
 
 incur (v): suffer, exposed to, catch, cause
+
+opulent (adj): rich, wealthy, affluent
+
+glean (v): find out, to gather bit by bit
+
+penance (n): sám hối
+

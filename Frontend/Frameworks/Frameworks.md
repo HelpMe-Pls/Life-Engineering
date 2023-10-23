@@ -1,5 +1,6 @@
 [[Gatsby]]
 [[Next]]
+[[Astro]]
 [[Remix]]
 [[Solid]]
 [[MUI]]

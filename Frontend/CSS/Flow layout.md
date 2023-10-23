@@ -17,6 +17,7 @@ a.nav-link {
 - Elements can be completely removed from the page by using `display: none` (e.g. a button which is set to `display: none` cannot be clicked or focused). The catch is it still takes memory for that element.
 - You can shift things in the *inline* direction with `margin-left` and `margin-right`, since that pushes it around in the inline direction, but you can't give it a `width` or `height`.
 - `inline-block` treats elements as **inline** _externally_ and **block** _internally_. So the term `inline-block` works outside-in. Properties like `width` and `margin-top` have no effect on an `inline` element, but they do work on `inline-block` elements. A big downside with `display: inline-block`: It disables line-wrapping.
+- To vertically align the content of a cell in a table or vertically position an image in a line of text, use [`vertical-align`](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align).
 ---
 
 ## Margins

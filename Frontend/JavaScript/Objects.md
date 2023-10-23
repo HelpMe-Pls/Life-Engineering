@@ -1,5 +1,5 @@
 [[this]]
 [[new]]
 [[Prototype]]
-[[JS/class]]
+[[Frontend/JavaScript/class]]
 [[OLOO]]

@@ -38,7 +38,6 @@ bar( p );
 baz( p );
 
 //--------------- Or:
-
 function bar() {
 	// `foo(..)` has definitely finished, so
 	// do `bar(..)`'s task

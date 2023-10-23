@@ -29,10 +29,10 @@
       }
     },
     {
-      "query": "path:JS",
+      "query": "path:JavaScript",
       "color": {
         "a": 1,
-        "rgb": 16113177
+        "rgb": 15851610
       }
     },
     {
@@ -43,17 +43,17 @@
       }
     },
     {
-      "query": "path:Frameworks",
+      "query": "path:Frontend/Frameworks  ",
       "color": {
         "a": 1,
-        "rgb": 5433107
+        "rgb": 9247826
       }
     },
     {
       "query": "path:Network",
       "color": {
         "a": 1,
-        "rgb": 165961
+        "rgb": 5498643
       }
     },
     {
@@ -69,6 +69,20 @@
         "a": 1,
         "rgb": 11499706
       }
+    },
+    {
+      "query": "path:Backend",
+      "color": {
+        "a": 1,
+        "rgb": 6266958
+      }
+    },
+    {
+      "query": "path:DevOps  ",
+      "color": {
+        "a": 1,
+        "rgb": 2312961
+      }
     }
   ],
   "collapse-display": false,
@@ -81,6 +95,6 @@
   "repelStrength": 12.3736979166667,
   "linkStrength": 1,
   "linkDistance": 342,
-  "scale": 0.4526649852147067,
+  "scale": 0.45266498521471366,
   "close": true
 }

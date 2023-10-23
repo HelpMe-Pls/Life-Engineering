@@ -4,45 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "f1b4b854bab4f13d",
+        "id": "1ce8572171af97b6",
         "type": "split",
         "children": [
           {
-            "id": "b0afe4804c3c55cb",
+            "id": "f64b5b413c78655e",
             "type": "tabs",
-            "dimension": 53.300733496332526,
+            "dimension": 49.84025559105432,
             "children": [
               {
-                "id": "ef5b76edec73eaee",
+                "id": "c6d77da5d8927133",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/Frameworks/Next.md",
+                    "file": "Frontend/JavaScript/Everyday methods & utils.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "5eeb4ce8b33c870d",
+                "id": "75b5b4b9ca477dc4",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/Tips & Tools/DSA.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "d156e35e775fe2f3",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Frontend/Tips & Tools/WIL from books.md",
+                    "file": "Backend/NodeJS/APIs.md",
                     "mode": "source",
                     "source": false
                   }
@@ -52,16 +40,16 @@
             "currentTab": 1
           },
           {
-            "id": "ae2be8a10b6f909a",
+            "id": "4882bc6678dd9db8",
             "type": "split",
-            "dimension": 46.699266503667474,
+            "dimension": 50.15974440894568,
             "children": [
               {
-                "id": "f64b5b413c78655e",
+                "id": "23f365afb1474865",
                 "type": "tabs",
                 "children": [
                   {
-                    "id": "f44ab90850fc5688",
+                    "id": "1c3357224693bc87",
                     "type": "leaf",
                     "state": {
                       "type": "graph",
@@ -71,7 +59,7 @@
                 ]
               },
               {
-                "id": "6728fdf1a5d5adff",
+                "id": "9af5729fe3f4acc4",
                 "type": "tabs",
                 "children": [
                   {
@@ -80,7 +68,7 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Frontend/JS/Everyday methods & utils.md",
+                        "file": "Frontend/JavaScript/Everyday methods & utils.md",
                         "mode": "source",
                         "source": false
                       }
@@ -121,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "align-self",
+                "query": "graphQL",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -158,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Frontend/Tips & Tools/DSA.md",
+                "file": "Backend/NodeJS/APIs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,6 +154,16 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ec492156bb3d805b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
               }
             }
           }
@@ -185,41 +183,44 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "5eeb4ce8b33c870d",
+  "active": "75b5b4b9ca477dc4",
   "lastOpenFiles": [
-    "Frontend/Tips & Tools/WIL from books.md",
-    "Frontend/Tips & Tools/Progressive Overload.md",
-    "Frontend/Frameworks/Next.md",
-    "Frontend/Tips & Tools/DSA.md",
-    "Frontend/JS/Everyday methods & utils.md",
-    "Frontend/Network/HTTP & Server.md",
-    "Frontend/Tips & Tools/Interview prep.md",
-    "Frontend/Tips & Tools/Interviewer questions.md",
-    "Frontend/JS/OOP.md",
-    "Frontend/Tips & Tools/Technical questions.md",
-    "Frontend/Tips & Tools/General Questions.md",
-    "Frontend/Tips & Tools/Tips.md",
-    "Frontend/Tips & Tools/Behavioral questions.md",
-    "Frontend/CSS/Flex.md",
-    "Frontend/CSS/Grid.md",
-    "Frontend/CSS/CSS.md",
-    "Frontend/Network/Browser.md",
-    "Frontend/CSS/Typography and Images.md",
-    "Frontend/State Management/State Management.md",
-    "Frontend/Tips & Tools/Tips & Tools.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Frontend/JavaScript/Equality.md",
+    "Backend/NodeJS/APIs.md",
+    "Frontend/Tips & Tools/Repository structures.md",
+    "Frontend/Tips & Tools/System Design.md",
     "Frontend/Tips & Tools/Tools & Util libs.md",
-    "Frontend/State Management/Fundamentals.md",
-    "Frontend/State Management/redux-toolkit.md",
-    "Frontend/State Management/redux-saga.md",
-    "Frontend/Tips & Tools/Git.md",
+    "Frontend/Tips & Tools/Tips & Tools.md",
+    "Frontend/Tips & Tools/Tips.md",
+    "Frontend/Tips & Tools/Meta.md",
+    "Frontend/Tips & Tools/Best practices.md",
+    "Frontend/Tips & Tools/Day-to-day work related.md",
+    "Frontend/Tips & Tools/Interview prep.md",
+    "Frontend/Tips & Tools/Progressive Overload.md",
+    "Backend/NodeJS/NodeJS.md",
+    "Backend/NodeJS/Frameworks.md",
+    "Frontend/React/Fundamentals.md",
+    "Frontend/Frameworks/Next.md",
+    "Backend/NodeJS/Auth.md",
+    "Frontend/Network/HTTP & Server.md",
+    "Frontend/React/Design Patterns.md",
+    "Backend/Databases.md",
+    "Frontend/JavaScript/Async.md",
     "Frontend/CSS/Flow layout.md",
+    "Frontend/Tips & Tools/English vocab.md",
+    "Frontend/JavaScript/Monads.md",
+    "Backend/Backend.md",
+    "NodeJS",
+    "Backend/NodeJS",
+    "Untitled",
     "Frontend/Tips & Tools/code-review.png",
     "Frontend/Tips & Tools/code_review.png",
     "Frontend/Tips & Tools/code_review.jfif",
     "Frontend/Tips & Tools/code_review.jfif.crdownload",
     "Frontend/React/Where to put state.png",
     "Frontend/Tips & Tools/git-model.png",
-    "Frontend/JS/JS Overview.png",
+    "Frontend/JavaScript/JS Overview.png",
     "DevOps",
     "New folder",
     "Untitled.canvas"

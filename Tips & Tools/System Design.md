@@ -8,6 +8,7 @@
 		- "Does the app need to work offline?"
 	- **Architecture** / High-level design: Identify the key components of the product and how they are related to each other.
 		- For components, list down the various subcomponents that will exist within it and what data is being passed among each component.
+		- Check out [[Repository structures]].
 	- **Data model**: Describe the various data entities, the fields they contain and which component(s) they belong to.
 		- State management [[Where to put state.png |best practices]] and immutability.
 	- **Interface definition** (API): Define the interface (API) between components in the product, functionality of each API, their parameters and responses.

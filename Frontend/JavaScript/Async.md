@@ -43,7 +43,7 @@ It's a moving target under what conditions exactly `console` I/O will be defer
 ---
 
 ### Event Loop
-- The mechanism which handles executing multiple chunks of your program _over time_, at each moment invoking the JS engine, called the "event loop". A vastly simplified pseudocode to illustrate the concepts. But it should be enough to help get a better understanding:
+- The mechanism which handles executing multiple chunks of your program _over time_, at each moment invoking the JS engine, called the "event loop". Here's a simplified pseudocode to illustrate the concepts, but it should be enough to help get a better understanding:
 
 ```js
 // `eventLoop` is an array that acts as a queue (first-in, first-out)
@@ -290,5 +290,5 @@ Related topics:
 [[Callbacks]]
 [[Promises]]
 [[Generators]]
-[[Performance]]
+[[Frontend/JavaScript/Performance]]
 [[Advanced Patterns]]

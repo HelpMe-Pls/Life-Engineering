@@ -13,4 +13,3 @@
 		- `select`: to get the `state` from any `model`
 		- `call`: Executes an asynchronous function
 		- `put`: similar to `dispatch`
-- 

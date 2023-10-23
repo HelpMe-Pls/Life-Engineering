@@ -1,8 +1,10 @@
 [[Frontend/TypeScript/Fundamentals]]
 [[TypeScript/Advanced]]
 
+Check [this](https://profy.dev/article/react-typescript) out.
+
 ---
-- Get individual types from a type of Array by using 2 dimentional array:
+- Get individual types from a type of Array by using 2 dimensional array:
 ```ts
 import type { MenuProps } from 'antd';
 

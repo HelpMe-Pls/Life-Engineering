@@ -6,10 +6,16 @@
 	4. Identify [[Where to put state.png |where]] your state should live.
 	5. Add inverse data flow (i.e. state flow between components).
 
+- Why **immutability** is a fundamental concept in React:
+	- **Predictability**: Immutability increases predictability by avoiding unexpected side effects caused by changes in state. Software development is often about clear communication which is aided by following expectations.
+	- **Performance Optimization**: React can optimize the rendering process by comparing the old and new state. If the state is immutable, React knows that it doesn’t need to re-render a component when the state hasn’t changed.
+	- **State Tracking**: Immutability allows for easier tracking of changes in state over time4. This can be particularly useful when debugging, as you can see the exact history of state changes.
+	- **Concurrency**: In a concurrent environment, immutability can help avoid issues with race conditions, where two processes attempt to change the same piece of data simultaneously.
+
 ---
 
 ### Raw React APIs
--   `React` vs `ReactDOM`: `React` is for creating elements and using the core features of React (like hooks and such). `ReactDOM` is for specific rendering platform (in this case,the DOM in the browser, other cases, `ReactNative`).
+-   `React` vs `ReactDOM`: `React` is for creating elements and using the core features of React (like hooks and such). `ReactDOM` is for specific rendering platform (in this case, the DOM in the browser, other cases, `ReactNative`).
 -   Using raw `React` & `ReactDOM` APIs from [unpkg](https://unpkg.com/) to render "It is what it is."
 -   `children` prop (when it is _plural_) will be rendered as an **ARRAY**.
 ---

@@ -13,6 +13,7 @@ console.log('oldObj:', oldObj);       // oldObj: { "a": { "b": 2 }, "c": 5
 
 console.log('newObj:', newObj);       // newObj: { "a": { "b": 2 }, "c": 2 }
 
+>> The deep-shallow copy only affects elements that are of object-typed (because of references), primitive values are always considered deep copied.
 >> Use lo_cloneDeep to be sure about updating state
 ```
 > Use the built-in [structuredClone()](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone) if you want to deeply clone an object
@@ -382,7 +383,6 @@ const reducer = (prev, cur) => prev + cur
 
 console.log(nums.reduce(reducer))  // 10
 ```
-
 - `reduceRight()` method does the same thing but in reversed order (starts from the end of the array, right to left).
 
 ### .forEach()
@@ -425,7 +425,7 @@ console.log(flatten(nested)); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ### .slice()
 - Useful when you want to *extract or remove* a portion of an array.
 - Does ***not*** mutate the original array.
-- Returns a **new** array (a *shallow* copy portion) of the original array with its element(s) selected from `start` to `end` (`end` is ==***not***== included).
+- Returns a **new** array (a *shallow* copy portion) of the original array with its element(s) selected from `start` (inclusive) to `end` (exclusive).
 - Returns an **empty** array when:
 	- `start` is `>=` array length.
 	- `end` is `0`.
@@ -518,7 +518,7 @@ console.log(elements.join('__'));  // "Fire__{a: 2}__3"
 ## Array mutating methods
 ### .push()
 - Adds one (*or more*) elements to the ***end*** of an array.
-- Returns the new **length** of the array.
+- Returns ==the new **length**== of the array.
 ```ts
 const sports = ['soccer', 'baseball'];
 const total = sports.push('football', 'swimming');

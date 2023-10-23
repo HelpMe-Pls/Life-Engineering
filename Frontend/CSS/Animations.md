@@ -1,5 +1,5 @@
 - Reach out for libraries (instead of vanilla CSS) if your animations are:
-	- Too complex or sophisticated to be done with CSS (eg. 'crossfading' between DOM elements).
+	- Too complex or sophisticated to be done with CSS (e.g. 'crossfading' between DOM elements).
 	- Very prominent/important, and you want to add extra polish to it with [spring physics](https://www.joshwcomeau.com/animation/a-friendly-introduction-to-spring-physics/).
 - For React-specific libraries, use [React Spring](https://www.react-spring.dev/) or [Framer Motion](https://www.framer.com/motion/). Consider [gsap](https://greensock.com/gsap/) if you're not using React.
 - Every animation we add should have a purpose behind it. We shouldn't add animation just to be fancy. Animation can make a product feel more polished, but only when it's thoughtful, and it's clear to the user *why* it exists (i.e. show the user how the application responds to input, whether that's clicking, hovering, scrolling...). The generally-acceptable range of durations is from **200ms to 500ms** for the transition/animation to feel natural. There are definitely exceptions, but 80%+ of the common animations fit within that range.

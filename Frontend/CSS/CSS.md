@@ -91,6 +91,7 @@ p:first-of-type:first-letter {
 - Classes are "more specific" than tags, so if there is a conflict between a class and a tag, the class wins. IDs, however, are more specific than classes.
 
 ## Combinators
+- If there's no space between 2 selectors (or more), the CSS rule will be applied for all elements that have *both* (or all) of those selectors in their class name.
 - The comma `,` allows multiple selectors to have the same CSS rule.
 - Having a  `space`  between 2 selectors creates a descendant selector. The descendant selector will apply to **_all_** descendants, no matter how deeply nested they are:
 ```css

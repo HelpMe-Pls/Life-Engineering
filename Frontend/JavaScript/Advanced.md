@@ -4,4 +4,4 @@
 [[Functional Programming]]
 [[Regular Expressions]]
 [[TypeScript]]
-[[JS/Testing]]
+[[Frontend/JavaScript/Testing]]

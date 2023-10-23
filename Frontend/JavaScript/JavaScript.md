@@ -1,4 +1,4 @@
 [[Foundation]]
-[[JS/Advanced]]
+[[Frontend/JavaScript/Advanced]]
 ![[JS Overview.png]]
 

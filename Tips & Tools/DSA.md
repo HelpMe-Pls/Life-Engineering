@@ -84,7 +84,7 @@ for i=0 to n
 ```
 - Space complexity is a parallel concept to time complexity. **Increasing speed (reduced time complexity) will most often (*not always*) lead to increased memory consumption and vice-versa**.
 - If we need to *create* an array of size `n` (from the process of running the algo), this will require $O(n)$ space. If we need a two-dimensional array of size `n` $×$ `n`, this will require $O(n^2)$ space.
-- However, just because you have `n` function calls in total doesn't mean it takes $O(n)$ space, i.e. the space complexity only increased when each execution of the algo requires the ***acquisition*** of more memory (i.e. auxiliary space) for it. Therefore, a suggestion for improving space complexity is to overwrite existing variables and avoid creating more variables/data structures than needed.
+- However, just because you have `n` function calls in total doesn't mean it takes $O(n)$ space, i.e. the space complexity only increased when each execution of the algo requires the ***acquisition*** of ***more*** memory (i.e. auxiliary space) for it. Therefore, a suggestion for improving space complexity is to overwrite existing variables and avoid creating more variables/data structures than needed.
 ---
 
 # Tools and techniques
@@ -155,7 +155,7 @@ interface LinkedList<T> {
     get(index: number): T | undefined;
 }
 ```
-- A ***set*** will store its elements in an ***ordered*** way and will only hold ***unique*** elements. Once a value has been added to a set, it cannot change. Instead, you should and would have to delete it and add a new value. If you want to update a value in a collection, use an array. 
+- A ***set*** will store its elements in an ***ordered*** (not sorted) way and will only hold ***unique*** elements. Once a value has been added to a set, it cannot change. Instead, you should and would have to delete it and add a new value. If you want to update a value in a collection, use an array. 
   *However*, objects that are added to sets can be treated differently depending on the language. In JavaScript, you can add mutable objects to a set, which is not permitted in Python. 
 - While sets can perform an exceptionally quick search, performance degrades when dealing with very large datasets due to its internal mechanism which uses hash tables.
 - Sets are beneficial when you need to keep track of a unique collection of values, such as removing duplicates from an array or checking membership efficiently.
@@ -163,7 +163,7 @@ interface LinkedList<T> {
 - **Object**: when the order of the keys are ***not*** important and their type is simple (e.g. `string | number`), or you *don't* need to iterate the collection. If you want to define a custom data structure or an object with methods, prefer `class` for better readability.
 - **Array**: when you need index-based access and want to perform complex operations on the collection of values.
 - **Map**: when the relationship between keys and values is important. Keys in a Map can be of any type and are not limited to sequential integer indices like in an Array. Use Map when you want *frequent* $O(1)$ **retrieval**/deletion values based on their key.
-- **Set**: when you want an ***unique*** iterable collection of ***values***, *frequent* $O(1)$ **search**/deletion and *don't* need random item retrieval (i.e. keys are *not* important). 
+- **Set**: when you want an ***unique*** iterable collection of ***values*** (i.e. a Set will *automatically* remove duplicated values) , *frequent* $O(1)$ **search**/deletion and *don't* need random item retrieval (i.e. keys are *not* important). 
 > Map and Set are built-in objects. Keys in Object, Array, Map are unique.
 
 #### Stacks and queues
@@ -673,55 +673,44 @@ for(i=0; i<arr.length-1; i++) {
 #### Quick sort
 - It uses a *divide-and-conquer* methodology. Suppose we're sorting in ascending order. Given an array of items, a place is determined on the array on which to split the array and this is called *the pivot point*. The original array is *partitioned* into two arrays one of which holds values smaller than the pivot, and the other array holds values greater than the pivot value. Recursively, we find the pivot for each sub-lists until all lists contains only one element:
 ```js
-// Function to swap two elements
-function swap(arr, i, j) {
-  let temp = arr[i];
-  arr[i] = arr[j];
-  arr[j] = temp;
-}
- 
-// Function to generate a random pivot index
-function generateRandomPivot(low, high) {
-  return Math.floor(Math.random() * (high - low + 1)) + low;
-}
- 
-// Function to perform QuickSort
-function quickSort(arr, low, high) {
-  if (low < high) {
-    let pivotIndex = generateRandomPivot(low, high);
-    let pivotValue = arr[pivotIndex];
- 
-    // Swap the pivot index with the last index in `arr`
-    swap(arr, pivotIndex, high);
-    // Set temporary starting point for partitioning iteration:  
-    let i = low - 1;
-	// Partitioning: 
-    for (let j = low; j < high; j++) {
-      if (arr[j] <= pivotValue) {
-        i++;
-        swap(arr, i, j);
-      }
-    }
- 
-    // Partitioning: Swap the pivot element back so that it's placed within (i, j) range
-    swap(arr, ++i, high);
- 
-    // Recursively sort the left and right subarrays excluding the pivot:
-    quickSort(arr, low, i - 1);
-    quickSort(arr, i + 1, high);
+function quicksort(arr: number[]):  number[] {
+  if (arr.length <= 1) {
+    return arr;
   }
+  console.log("arr:", arr);
+
+  // Choose a random pivot index
+  const pivotIndex = Math.floor(Math.random() * arr.length);
+  const pivot = arr[pivotIndex];
+  console.log('pivot:', pivot)
+  
+  // Divide the array into sub-arrays based on the pivot
+  const left = [];
+  const right = [];
+  
+  for (const element of arr) {
+    if (element < pivot) {
+      left.push(element);
+    } else if (element > pivot) {
+      right.push(element);
+    }
+  }
+
+  console.log('left:', left);
+  console.log('right:', right);
+
+  console.log('next step:', [...left, pivot, ...right]);
+
+  // Recursively sort and bubbling up the recursive stack to combine sub-arrays
+  return [...quicksort(left), pivot, ...quicksort(right)];
 }
- 
-// Execute sample:
-let arr = [5, 2, 7, 3, 1, 6, 4, 8];
-console.log("Original array: [" + arr.join(", ") + "]");
- 
-quickSort(arr, 0, arr.length - 1);
- 
-console.log("Sorted array: [" + arr.join(", ") + "]");
+
+const unsortedArray = [5, 2, 7, 3, 1, 6, 4, 8];
+const sortedArray = quicksort(unsortedArray);
+console.log(sortedArray);
 ```
 - Quick Sort is quite similar to merge sort. Its main advantage over merge sort, is that the sorting can be done in-place. This saves time because we don’t have to create new arrays. If you're looking for a general-purpose sorting algorithm with a predictable performance regardless of the input, Merge Sort is a solid choice. On the other hand, Quick Sort can be faster in practice for smaller datasets and is often favored when memory usage is a concern.
-- Quick Sort consumes more space but returns overall quicker solutions. It has the time complexity of $O(nlogn)$ for average cases, $O(n^2)$ for the worst case (applied on a reverse-sorted array) and space complexity $O(n)$
+- Quick Sort consumes more space but returns overall quicker solutions. It has the time complexity of $O(nlogn)$ for average cases, $O(n^2)$ for the worst case (applied on a sorted or reverse-sorted array) and space complexity $O(n)$
 
 ### Searching
 #### Linear
@@ -810,7 +799,7 @@ function pow(x, n) {
 - Beware of the maximal recursion depth of the JavaScript engine. We can rely on it being 10000, some engines allow more, but 10000 is probably out of limit for the majority of them.
 
 ### Divide and Conquer
-- The algorithm comprises two mandatory steps, namely, divide and conquer with an optional third, is combine. [Merge sort](https://www.geeksforgeeks.org/merge-sort/) is a good implementation of divide and conquer (`d&c`).
+- The algorithm comprises two mandatory steps, namely, divide and conquer (`d&c`) with an optional third, is combine.
 	- In the divide step, the input is split into smaller segments and processed individually. 
 	- In the conquer step, every task associated with a given segment is solved.
 	- The *optional* last step, combine, is combining all the solved segments.
@@ -825,7 +814,71 @@ function pow(x, n) {
 			- If $a < b^d$, $T(n) = O(n^d)$
 			- If $a = b^d$, $T(n) = O(n^dlogn)$
 			- If $a > b^d$, $T(n) = O(n^{\log_b(a)})$
+- Merge sort is a practical implementation of `d&c` :
+```ts
+function mergeSort(arr: number[]): { sorted: number[]; count: number } {
+  if (arr.length <= 1) {
+    return { sorted: arr, count: 0 };
+  }
 
+  const middle = Math.floor(arr.length / 2);
+  const left = arr.slice(0, middle);
+  const right = arr.slice(middle);
+
+  const leftResult = mergeSort(left);
+  const rightResult = mergeSort(right);
+
+  const mergeResult = merge(leftResult.sorted, rightResult.sorted);
+
+  return {
+    sorted: mergeResult.sorted,
+    count: leftResult.count + rightResult.count + mergeResult.count,
+  };
+}
+
+function merge(left: number[], right: number[]): { sorted: number[]; count: number } {
+  const result: number[] = [];
+  let count = 0;
+  let leftIndex = 0;
+  let rightIndex = 0;
+
+  while (leftIndex < left.length && rightIndex < right.length) {
+    if (left[leftIndex] <= right[rightIndex]) {
+      result.push(left[leftIndex]);
+      leftIndex++;
+    } else {
+      result.push(right[rightIndex]);
+      rightIndex++;
+      count += left.length - leftIndex;
+    }
+  }
+
+  return {
+    sorted: result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex)),
+    count,
+  };
+}
+
+// Generate an array of 100,000 unrepeated integers from 1 to 100,000
+const arr: number[] = [];
+for (let i = 1; i <= 69; i++) {
+  arr.push(i);
+}
+console.log(`Pre: ${[arr]}`);
+
+// Shuffle the array to create inversions
+for (let i = arr.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1));
+  [arr[i], arr[j]] = [arr[j], arr[i]];
+}
+
+console.log(`Randomized: ${[arr]}`);
+
+const { sorted, count } = mergeSort(arr);
+console.log(`Number of inversions: ${count}`);
+console.log(`Post: ${sorted}`);
+
+```
 - Parallelization and memory management are two immediate advantages when applying `d&c`:
 	- Parallelism is when you have different threads or computers working on the same problem at the same time to complete it in a quicker time.
 	- Memory management: in the merge sort example, consider that each array can be sent to a different core or server depending on the architecture of your organization and the results are then returned.

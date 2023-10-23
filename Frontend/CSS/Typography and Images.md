@@ -98,7 +98,7 @@ p {
 <p>Imagine there's a very long paragraph here.</p>
 <p>Imagine there's a very long paragraph here.</p>
 ```
-- If an element contains only floated elements, its height collapses to nothing. If you want it to always be able to resize, so that it contains floating elements inside it, set the value of the element's `display` property to `flow-root`:
+- If an element contains only floated elements, its height collapses to nothing. If you want it to always be able to resize, so that it contains floating elements inside it, set the value of the container's `display` property to `flow-root`:
 ```css
 #container {
   display: flow-root;
