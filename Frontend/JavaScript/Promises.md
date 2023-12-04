@@ -473,7 +473,9 @@ Promise.all( [p1,p2] )
 
 - Remember to always attach a rejection/error handler to every promise, even and especially the one that comes back from `Promise.all([ .. ])`.
 
--  `Promise.race([ .. ])` will fulfill if and when **any** Promise resolution is a fulfillment, and it will reject if and when **any** Promise resolution is a rejection. **Warning:** A "race" requires **at least one** "runner," so if you pass an empty array, instead of immediately resolving, the main `race([..])` Promise will never resolve. So be careful never to send in an empty array.
+-  `Promise.race([ .. ])` will fulfill if and when **any** Promise resolution is a fulfillment, and it will reject if and when **any** Promise resolution is a rejection. 
+ > [!warning]-  A "race" requires **at least one** "runner"
+> If you pass an empty array, instead of immediately resolving, the main `race([..])` Promise will never resolve. So be careful never to send in an empty array.
 
 ```js
 // `request(..)` is a Promise-aware Ajax utility

@@ -158,7 +158,7 @@ bequeath {sth to sb} (v): transmit, to give as a will
 
 knee-jerk (adj): quy chụp, disapproving
 
-radical (adj-n): extreme, fundamental, foundation, dire
+radical (adj-n): extreme, fundamental, foundation, dire, rudimentary
 
 incisive <in-xai-sive> (adj): impressively direct and decisive (as in manner or presentation)
 
@@ -366,6 +366,8 @@ confidant (n)  {caution: it's different from confidEnt}: intimate, the one to wh
 
 solitude (n): isolation, privacy, loneliness
 
+reclusive (adj): solitary, lonely
+
 enticement (n): lure, temptation, seduction
 
 deciduous (adj): falling off or shed seasonally or at a certain stage of development in the life cycle
@@ -412,9 +414,14 @@ crux (n): essence, core, gist, kernel
 
 incur (v): suffer, exposed to, catch, cause
 
-opulent (adj): rich, wealthy, affluent
+opulent (adj): rich, wealthy, affluent, sumptuous
 
 glean (v): find out, to gather bit by bit
 
-penance (n): sám hối
+penance <peh-nance> (n): sám hối
 
+prerogative (n): privilege, a distinctive excellence
+
+innocuous (adj): harmless, inoffensive, insipid
+
+desolate (v-adj): to deprive of inhabitants, lifeless, deserted, dilapidated

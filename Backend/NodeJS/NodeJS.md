@@ -4,6 +4,16 @@
 [[APIs]]
 [Debugging](https://www.builder.io/blog/debug-nodejs)
 # Overview
+## Threads and Processes
+- A **process** is *an instance* of a computer program that is being executed. It contains the program code and its current activity. Depending on ***the OS***, a process may be made up of multiple threads of execution that execute instructions *concurrently*.
+  When you start a Node.js application, the operating system creates a new process for that application. If your Node.js application starts child processes (for example, using the `child_process` module), those are also managed by the operating system.
+- A **thread**, on the other hand, is the *smallest sequence* of programmed instructions that can be managed independently by a scheduler, in this case, ***the v8 engine***. In other words, a thread is a single sequence of instructions that can be executed by the CPU.
+### Concurrency and Parallelism
+- By default (in the traditional sense), Node.js is single-threaded, using an event-driven architecture to handle multiple concurrent tasks. This is achieved through the use of callbacks, promises, and async/await, which allow Node.js to delegate tasks to their corresponding runtime environment concurrently (outside of the main thread) so that it can handle many tasks at once without waiting for each one to complete.
+	  Once the asynchronous operation is complete, its result is placed in a queue (also known as the task queue or the callback queue). The event loop, which is a part of the JavaScript runtime, continually checks this queue and pushes the results back onto the main thread to resume the paused execution with that resolved value.
+- However, concurrency doesn’t mean that multiple tasks are executing at the exact same time (that's parallelism). It means that the tasks are being started and managed at the same time, but because Node.js is single-threaded, only ***one*** task can be processed ***at a time***.
+- The introduction of `worker_threads` in Node.js v12 allows for true parallel execution of tasks. Each worker thread can run on a separate CPU core and has its own event loop and memory space. This means that [*CPU-intensive tasks*](https://nodejs.org/api/worker_threads.html) can be offloaded to a worker thread, allowing them to run in parallel without blocking the main thread.
+
 ## File I/O
 ### Write file
 - By default, `fs.writeFile()` will ***replace*** the contents of the file if it already exist and create a new file otherwise.
@@ -124,3 +134,6 @@ fs.readFile('/Users/joe/test.txt', 'utf8', (err, data) => {
 ```
 
 - The `fs.readFile()` function buffers the entire file. To minimize memory costs, when possible prefer streaming via `fs.createReadStream()`.
+
+## Implementations
+- Checkout the [[Backend/NodeJS/Frameworks |frameworks]].

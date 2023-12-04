@@ -13,31 +13,30 @@
             "dimension": 49.84025559105432,
             "children": [
               {
-                "id": "c6d77da5d8927133",
+                "id": "f333c1064f113d2a",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/JavaScript/Everyday methods & utils.md",
+                    "file": "Frontend/CSS/CSS.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "75b5b4b9ca477dc4",
+                "id": "7eaa8353fbcf450e",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Backend/NodeJS/APIs.md",
+                    "file": "Backend/NodeJS/NodeJS.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "4882bc6678dd9db8",
@@ -109,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "graphQL",
+                "query": "cors",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,14 +145,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Backend/NodeJS/APIs.md",
+                "file": "Frontend/JavaScript/Everyday methods & utils.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -167,7 +166,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -183,34 +183,35 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "75b5b4b9ca477dc4",
+  "active": "be13d4cca4b1e2fe",
   "lastOpenFiles": [
+    "Frontend/CSS/CSS.md",
+    "Frontend/CSS/Flex.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
-    "Frontend/JavaScript/Equality.md",
-    "Backend/NodeJS/APIs.md",
-    "Frontend/Tips & Tools/Repository structures.md",
-    "Frontend/Tips & Tools/System Design.md",
-    "Frontend/Tips & Tools/Tools & Util libs.md",
-    "Frontend/Tips & Tools/Tips & Tools.md",
-    "Frontend/Tips & Tools/Tips.md",
-    "Frontend/Tips & Tools/Meta.md",
-    "Frontend/Tips & Tools/Best practices.md",
-    "Frontend/Tips & Tools/Day-to-day work related.md",
-    "Frontend/Tips & Tools/Interview prep.md",
-    "Frontend/Tips & Tools/Progressive Overload.md",
     "Backend/NodeJS/NodeJS.md",
-    "Backend/NodeJS/Frameworks.md",
-    "Frontend/React/Fundamentals.md",
-    "Frontend/Frameworks/Next.md",
-    "Backend/NodeJS/Auth.md",
-    "Frontend/Network/HTTP & Server.md",
-    "Frontend/React/Design Patterns.md",
-    "Backend/Databases.md",
-    "Frontend/JavaScript/Async.md",
+    "Tips & Tools/Figma.md",
+    "Tips & Tools/English vocab.md",
+    "Frontend/CSS/Typography and Images.md",
     "Frontend/CSS/Flow layout.md",
-    "Frontend/Tips & Tools/English vocab.md",
-    "Frontend/JavaScript/Monads.md",
+    "Frontend/CSS/Box model.md",
+    "Frontend/Network/HTTP & Server.md",
+    "Frontend/CSS/Animations.md",
+    "Backend/NodeJS/Frameworks.md",
+    "Frontend/JavaScript/class.md",
+    "Frontend/TypeScript/Interface.md",
+    "Tips & Tools/Day-to-day work related.md",
+    "Tips & Tools/DSA.md",
+    "Frontend/TypeScript/TypeScript.md",
+    "DevOps/DevOps.md",
+    "Backend/NodeJS/Auth.md",
+    "Frontend/Network/Browser.md",
+    "Frontend/JavaScript/Promises.md",
+    "Frontend/JavaScript/Async.md",
+    "Tips & Tools/Tips.md",
+    "Backend/Databases.md",
     "Backend/Backend.md",
+    "Tips & Tools/Technical questions.md",
+    "Untitled.canvas",
     "NodeJS",
     "Backend/NodeJS",
     "Untitled",
@@ -222,7 +223,6 @@
     "Frontend/Tips & Tools/git-model.png",
     "Frontend/JavaScript/JS Overview.png",
     "DevOps",
-    "New folder",
-    "Untitled.canvas"
+    "New folder"
   ]
 }

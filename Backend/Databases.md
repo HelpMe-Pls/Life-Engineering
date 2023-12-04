@@ -80,3 +80,16 @@ module.exports = mongoose.model("Book", BookSchema);
   content: 'Content 2'
 },...
 ```
+
+# SQL (Squeal :))
+
+
+
+# ORM
+## Prisma
+### Keywords
+
+
+
+
+# Query builders

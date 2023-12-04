@@ -137,10 +137,29 @@ a.nav-link {
 - `min-content` and `max-content` are _intrinsic_ (i.e. based on the target element's content space - the size of the children). 
 	- `max-content` doesn't fill the available space. An element with `width: max-content` pays no attention to the constraints set by the parent. It will size the element based purely on the length of its *unbroken* children. 
 	- `min-content` makes the element to become as narrow as it can, _based on the child contents_. For example a `<h1>` with `width: min-content` chooses the smallest possible value for `width` that still contains each word, which will be the `width` of the longest word (because `<h1>` is a block-level element. If `min-content` was applied for a `<span>`, the `width` will just be the intrinsic `width` of the *entire* string, horizontally, and line-wrap as needed).  
-- `fit-content` is like the combination of `min-content` and `max-content`. If that `width` can fit within the parent container, it behaves just like `max-content`: not adding any line-breaks. If the content is too wide to fit in the parent, however, it behaves just like `width: auto`: adds line-breaks as-needed to ensure it *never exceeds* the available space. 
-- `width: auto` has a different meaning for [replaced element](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element#replaced_elements). It doesn't mean “stretch out and fill all of the space”, it means “use your natural width”. For most of the other elements, `width: auto` still means “automatically grow to fill *as much space as possible*”.
-- `min-width: 100%`  to prevent horizontal overflow (so that it never grows above 100% of the available space). Also keep this on top of your head when you want to position your content in some kind of a container.
+- `fit-content` is like the combination of `min-content` and `max-content`. If that `width` can fit within the parent container, it behaves just like `max-content` by not adding any line-breaks. If the content is too wide to fit in the parent, however, it behaves just like `width: auto`: adds line-breaks as-needed to ensure it *never exceeds* the available space. 
+- `width: auto` has a different meaning for [replaced element](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element#replaced_elements). It doesn't mean “try to scale yourself to fill the container's space while respecting the aspect ratio” (that's `width: 100%` by the way), it means “use your intrinsic width”. For most of the other elements, `width: auto` still means “automatically grow to fill *as much space as possible*”.
+- `min-width: 100%`  to prevent horizontal overflow (so that it never grows above 100% of the container's space). Also keep this on top of your head when you want to position your content *in* some kind of a container.
 
 ## Height
-- The `height` of an element grows accordingly to its content (kinda like how `width: min-content` behaves). Setting an element to have a `height: 50%` will force that it to take up half of the *parent* element's content space. It's good practice to set `min-height: 100%` on the element and `height: 100%` on `html` [and](https://courses.joshwcomeau.com/css-for-js/treasure-trove/010-global-styles) `body` selectors if you want the element to be fully visible.
+- The `height` of an element grows accordingly to its content (kinda like how `width: min-content` behaves). Setting an element to have a `height: 50%` will force that it to take up half of the *parent* element's content space, if that space has a ***fixed*** `height`:
+```css
+.parent {
+  height: 69vh
+}
+
+.child {
+  height: 69%  /* this works */
+}
+/*------------------------*/
+
+.parent {
+  min-height: 69vh  /* notice this is `min-height`, which may be fluid, based on screen sizes */
+}
+
+.child {
+  height: 69%  /* this may work for some cases, but you shouldn't set a percentage height in such cases, but instead, set this as a fixed height as well, e.g. 69% of 69vh is 47.61vh */
+}
+```
+- It's good practice to set `min-height: 100%` on the element and `height: 100%` on `html` [and](https://courses.joshwcomeau.com/css-for-js/treasure-trove/010-global-styles) `body` selectors if you want the element to be fully visible.
 - JavaScript frameworks like React will render our applications into a container element. In order for percentage-based heights to work, we need to add `height: 100%` to the wrapper.

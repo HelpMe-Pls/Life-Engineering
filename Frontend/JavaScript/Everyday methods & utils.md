@@ -365,9 +365,9 @@ console.log(arr.includes('c', 2))  // true
 someArray.reduce(callbackFn, _initialValue)
 
 // Inline `callbackFn`:
-someArray.reduce((previousValue, currentValue) => { something... }, initialValue )
+someArray.reduce((previousValue, currentValue) => { something... }, initialValue)
 
-// If exists `initialValue`, it will be assigned to previousValue for the FIRST time the callback is called and the `currentValue` will be treated as the FIRST VALUE in the array.
+// If exists `initialValue`, it will be assigned to `previousValue` for the FIRST time the callback is called and the `currentValue` will be treated as the FIRST VALUE in the array.
 
 // If there’s no `initialValue`, the first value of the array will be assigned to `previousValue` and `currentValue` will be the 2nd value of the array
 

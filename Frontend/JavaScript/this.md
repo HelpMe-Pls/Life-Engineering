@@ -1,4 +1,4 @@
-- A function's `this` references the ==*execution __context__*== for that call, determined entirely by *__how__ the function was called*. A `this`-aware function can thus have a different **context** each time it's called, which makes it more flexible and reusable (sort of like *having dynamic scope*):
+- A function's `this` references the ==*execution __context__*== for that ***call***, determined entirely by *__how__ the function was **called***. A `this`-aware function can thus have a **different context** each time it's called, which makes it more flexible and reusable (sort of like *having dynamic scope*):
 
 ```javascript
 // Implicit binding:

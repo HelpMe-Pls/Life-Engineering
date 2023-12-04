@@ -96,3 +96,28 @@ export default function CustomDrawer() {
 }
 
 ```
+
+##### Currying vs Piping 
+- **Currying** is a technique where a function with multiple arguments is transformed into *a sequence of functions* (i.e. function returning functions), each taking a single argument. It's used to enable partial function application and create specialized functions. Here's an example of currying:
+```javascript
+const add = x => y => x + y;
+const add5 = add(5);
+console.log(add5(3));  // Output: 8
+```
+
+- On the other hand, **piping** is a technique where multiple functions are composed together to form a pipeline of operations. The output of one function becomes the input for the next function in the pipeline. It enhances code readability and promotes modular data transformation pipelines. Here's an example of piping:
+```javascript
+const add5 = x => x + 5;
+const multiply2 = x => x * 2;
+const subtract10 = x => x - 10;
+
+const pipe = (...fns) => (value) => fns.reduce((acc, fn) => fn(acc), value);
+
+const calculate = pipe(
+  add5,
+  multiply2,
+  subtract10
+);
+
+console.log(calculate(3));  // Executes all those function sequentially, giving the output: 8 -> 16 -> 6
+```

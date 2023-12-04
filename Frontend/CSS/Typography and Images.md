@@ -288,7 +288,9 @@ Basic coloring can be done by setting two attributes on the node: `fill` and `st
 ```
 - To convert SVG icons to React components, use [the online tool](https://svg2jsx.com). Or, use an npm package (`react-feather`) if you want to quicky use an icon as a component.
 - Consider having a "[[CSS#Visibility |visually hidden]]" element when you use an icon (because screen readers cannot interpret icons)
-- Be mindful that SVG elements have a default value of `display: inline`, which can cause some unexpected spacing around it. Fix it by adding a `line-height: 0` or `display: block` using a descendant selector:
+
+>[!important]
+>Be mindful that SVG elements have a default value of `display: inline`, which can cause some unexpected spacing around it. Fix it by adding a `line-height: 0` or `display: block` using a descendant selector:
 ```jsx
 import { Home } from 'react-feather';
 

@@ -19,4 +19,4 @@
 - Stores data on browser only.
 - 5**MB** capacity
 - Accessible **ONLY** from within the same tab
-- Expires on *tab* close
+- Expires on *tab/browser* close (still persists on refresh/restore)
