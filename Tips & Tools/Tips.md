@@ -3,6 +3,8 @@
 [[Best practices]]
 [[code-review.png |Code Review]]
 
+---
+#### JS
 - Check for empty object: 
 ```jsx
 // Render this component only when `detailCampaign` object has data:
@@ -120,4 +122,53 @@ const calculate = pipe(
 );
 
 console.log(calculate(3));  // Executes all those function sequentially, giving the output: 8 -> 16 -> 6
+```
+
+#### CSS
+- To disable the flash of the "tap rectangle" for a button on mobile devices:
+```css
+.pushable {
+  -webkit-tap-highlight-color: transparent;
+}
+```
+
+- Increase an element's hit box (useful on mobile devices) by using an empty `::after` absolute element:
+```css
+button {
+    position: relative;
+    height: 32px;
+}
+  
+button::after {
+    --tap-increment: -8px; /* extends outwards in all directions */
+    content: '';
+    position: absolute;
+    top: var(--tap-increment);
+    left: var(--tap-increment);
+    right: var(--tap-increment);
+    bottom: var(--tap-increment);
+}
+```
+
+- Use `pointer-events` to control the pointer's behavior. Useful when you need to disable click on an element. We can also ***undo*** `pointer-events` in below-positioned elements:
+```html
+<style>
+  .toast-wrapper {
+    pointer-events: none;
+  }
+  
+  .toast {
+    pointer-events: auto;
+  }
+</style>
+
+<!-- The `.toast-wrapper` will ignore clicks, so that we can click the ``.random` button behind it. But its child, `.toast` will happily accept pointer interactions. -->
+<button class="random">
+  Random button
+</button>
+<div class="toast-wrapper">
+  <div class="toast">
+    Your tweet was sent.
+  </div>
+</div>
 ```

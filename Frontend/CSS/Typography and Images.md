@@ -5,11 +5,20 @@
 - The `line-height` property only takes a *unitless number*. This number is multiplied by the element's font-size to calculate the actual line height.
 - Most of the properties that inherit are typography-related, like `color`, `font-size`, `text-shadow`, and so on.
 
+
 ## Text rendering
 - **Kerning** **algorithms** refer to the spacing between individual characters. Characters are nudged left or right (in direction) so that they "feel right". The letter placement is slightly different between browsers is that the browsers implement different kerning algorithms.
 - We can access the "kerning" with CSS by using `font-kerning`  and/or  `letter-spacing` property.
 - The `-webkit-font-smoothing` property (**for MacOS only**) controls the *smoothness* of the font.
 - We can tweak the formatting of our text using the `text-transform` property (with the values like `capitalize`, `uppercase`, `lowercase`)
+- Specify text selection options with the `user-select` property:
+```css
+.selectable {
+  user-select: none; /* Disable text selection */
+  /* Other values are `text`, `all`, `auto` (the default) */ 
+}
+```
+
 
 ## Text overflow
 - A regular "white space" (created by pressing the `Space` button) or a dash (`-`) creates an opportunity for line-break a word when it's at the end of a line.
@@ -142,7 +151,6 @@ p {
 <p>Imagine there's a very long paragraph here.</p>
 ```
 - To preserve the "white-space" as indentation and render paragraphs which are separated by "white-space", use the `white-space: pre-wrap` declaration. 
-
 
 ### Text alignment
 - The `text-align` property controls the horizontal distribution of the characters.
@@ -313,7 +321,6 @@ const Button = styled.button`
 render(<Header />)
 ```
 ---
-
 # Images
 - The goal with alternative text (the `alt` attribute in the `<img/>` tag) should be to convey the _semantic meaning_ of the image to the user. Alt text should _not_ include additional contextual information, consider using the `<figcaption>` tag instead:
 ```html
@@ -337,6 +344,7 @@ render(<Header />)
 > [!tip]
 > It's important to use an `img` tag for semantically-meaningful images, because `background-image` can't be given alt text.
 
+
 ## Positioning 
 - The `object-fit` property sets how ***the content*** of a replaced element (not just `<img>`) should be resized (or cropped) to fit its container. It takes the following values:
 	- `fill` (**default value**): the *entire* content will be scaled to *fully* contained inside the element (i.e. If the *entire* content aspect ratio does not match the aspect ratio of its box, then it will be *stretched* to fit, leading to distorted looking image)
@@ -345,6 +353,7 @@ render(<Header />)
 	- `none`: it only takes whatever fits the container starting from the top-left corner of the full-sized content.
 - The `object-position` property specifies *the offsets* of the content within its available space. It takes from 1 to 4 values that define the [2D position](https://developer.mozilla.org/en-US/docs/Web/CSS/position_value) of an element.
 - The `vertical-align` property is used to *vertically* position an image [in a line of text](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align#try_it).
+
 
 ## Responsive and proportion
 - Images by default have a `min-width` of their intrinsic width.
