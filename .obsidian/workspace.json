@@ -30,14 +30,13 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Backend/NodeJS/Frameworks.md",
+                    "file": "Backend/NodeJS/NodeJS.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "4882bc6678dd9db8",
@@ -109,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cors",
+                "query": "super",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,6 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Frontend/CSS/CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,34 +183,34 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "1c3357224693bc87",
+  "active": "f333c1064f113d2a",
   "lastOpenFiles": [
-    "Backend/NodeJS/Frameworks.md",
     "Backend/NodeJS/NodeJS.md",
+    "Frontend/CSS/Flow layout.md",
     "Frontend/CSS/CSS.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
     "Frontend/CSS/Flex.md",
+    "Frontend/CSS/Typography and Images.md",
+    "Frontend/CSS/Responsive.md",
+    "Frontend/CSS/Box model.md",
+    "Frontend/CSS/Positioning.md",
+    "Frontend/CSS/Animations.md",
+    "Backend/NodeJS/Frameworks.md",
+    "Backend/NodeJS/Auth.md",
+    "Frontend/JavaScript/class.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
     "Tips & Tools/Figma.md",
     "Tips & Tools/English vocab.md",
-    "Frontend/CSS/Typography and Images.md",
-    "Frontend/CSS/Flow layout.md",
-    "Frontend/CSS/Box model.md",
     "Frontend/Network/HTTP & Server.md",
-    "Frontend/CSS/Animations.md",
-    "Frontend/JavaScript/class.md",
     "Frontend/TypeScript/Interface.md",
     "Tips & Tools/Day-to-day work related.md",
     "Tips & Tools/DSA.md",
     "Frontend/TypeScript/TypeScript.md",
     "DevOps/DevOps.md",
-    "Backend/NodeJS/Auth.md",
     "Frontend/Network/Browser.md",
     "Frontend/JavaScript/Promises.md",
     "Frontend/JavaScript/Async.md",
     "Tips & Tools/Tips.md",
     "Backend/Databases.md",
-    "Backend/Backend.md",
-    "Tips & Tools/Technical questions.md",
     "Untitled.canvas",
     "NodeJS",
     "Backend/NodeJS",

@@ -2,7 +2,7 @@
 - A _flex parent_ (or the **flex container**) is defined by adding a `display: flex` rule to an element. All of the ***immediate children*** are then laid out automatically as _flex items_.
 - The children will be positioned by default according to the following 2 rules:
 	1.  **Primary/main axis:** Children will be bunched up at the _start_ of the container.
-	2.  **Cross axis:** Children will `stretch` out to fill the entire container (i.e. the default value for `align-*`  is  `stretch`).
+	2.  **Cross axis:** Children will `stretch` out to ==fill the entire container== (i.e. the default value for `align-*`  is  `stretch`).
 
 - Key properties (for the flex ***container***):
 1.  `flex-direction`: establishes the main layout axis (`row` / `column` / `row-reverse` / `column-reverse`).

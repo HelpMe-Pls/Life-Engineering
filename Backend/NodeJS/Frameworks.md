@@ -192,7 +192,7 @@ export class AppModule {}
 ```
 
 ### Modules
-- Controllers always belong to a module, which is why we include the `controllers` array within the `@Module()` decorator. Providers of the same application domain is also included in a *feature module*, which organizes code relevant for a specific feature, keeping code organized and establishing clear boundaries:
+- A module is like a metadata store for an application domain, making a feature a component which organizes and establishing clear boundaries in a NestJS app. Controllers always belong to a module, which is why we include the `controllers` array within the `@Module()` decorator. Same for providers:
 ```ts
 // cats/cats.module.ts
 import { Module } from '@nestjs/common';

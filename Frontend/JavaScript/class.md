@@ -1,6 +1,6 @@
 # super
 ## Calling the parent constructor
-- You need to call `super()` in the constructor of the child class before you can use `this`. The `super()` call ensures that the base class constructor is executed before we try to access `this` in the child class (which is important because the base class constructor is responsible for initializing the newly created object):
+- You need to call `super()` in the constructor of the child class before you can use `this`. The `super()` call ensures that the parent class constructor is executed before we try to access `this` in the child class (which is important because (in this case) the `Base` class constructor is responsible for initializing the newly created object):
 ```ts
 class Base {
   constructor() {

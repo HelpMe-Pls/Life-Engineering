@@ -90,6 +90,7 @@ p:first-of-type:first-letter {
 ```
 - Classes are "more specific" than tags, so if there is a conflict between a class and a tag, the class wins. IDs, however, are more specific than classes.
 
+
 ## Combinators
 - If there's no space between 2 selectors (or more), the CSS rule will be applied for all elements that have *both* (or all) of those selectors in their class name.
 - The comma `,` allows multiple selectors to have the same CSS rule.
@@ -134,7 +135,6 @@ p.hometown { 
 - a: Alpha channel, optional, works like in RGB format.
 */
 ```
-
 #### RGB
 ```css
 .random-btn {
@@ -148,7 +148,6 @@ p.hometown { 
 - a value is optional
 */
 ```
-
 #### Hex
 - Similar to RGB value, only difference is it uses the 16-digit hexadecimal system
 ```css
@@ -162,7 +161,84 @@ p.hometown { 
 - 90: a (optional)
 */
 ```
-#### Named colors (aqua, azure, cyan, teal, black, red,...)
+#### Named colors 
+- Check out the full list [here](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color)
+#### Selection colors
+- We can tweak both the background and text color for the selection box using the `::selection` pseudo-element:
+```html
+<style>
+  ::selection {
+    color: hsl(25deg 100% 20%);
+    background-color: hsl(55deg 100% 60%);
+  }
+</style>
+
+<p>
+  Try selecting some of the text in these paragraphs!
+</p>
+<p>
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+</p>
+```
+- Selection styles _**aren't** inheritable_. Use [[CSS#Variables |CSS Variables]] as a workaround _for that element and all of its descendants_:
+```html
+<style>
+  p::selection {
+    color: black;
+    background-color: yellow;
+  }
+</style>
+
+<p>
+  This yellow selection paragraph has <em>some emphasized text with the default blue selection color</em>, in the middle.
+</p>
+-----------------------------------------
+
+<!-- Use CSS Variables -->
+<style>
+  ::selection {
+    color: var(--selection-color);
+    background-color:
+      var(--selection-background);
+  }
+  
+  html {
+    /*
+      Define global defaults
+      for selection colors…
+    */
+    --selection-color:
+      hsl(25deg 100% 20%);
+    --selection-background:
+      hsl(55deg 100% 60%);
+  }
+  
+  figure {
+    /*
+      …But then override those values
+      for specific parts of the page!
+    */
+    --selection-color: hsl(0deg 0% 0%);
+    --selection-background:
+      hsl(333deg 100% 50%);
+  }
+</style>
+
+<p>
+  Lorem Ipsum is simply <em>dummy text of the printing and typesetting industry</em>. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</p>
+
+<figure>
+  <img
+    alt="Handsome-looking dog"
+    src="https://courses.joshwcomeau.com/cfj-mats/article-image-spot.jpg"
+  />
+  <figcaption>
+    Try selecting this text! The selection background should look pink.
+  </figcaption>
+</figure>
+```
+
 
 ## Units and values
 ### Units
@@ -202,7 +278,7 @@ h2 {
 ## Overflow
 > [!important] 
 > An element may have overflow, but the scroll container (maybe higher up in the hierarchy - not necessarily its direct parent) is only created where you define the `overflow` property.
-- `overflow: auto` is the ideal behaviour when we know an element might overflow.
+- `overflow: auto` is the ideal behavior when we know an element might overflow.
 - `overflow: hidden` truncates anything that extends beyond the bounds of the container. Mostly used to avoid undesirable horizontal scrollbar. Be mindful of the children elements within a `overflow: hidden` container: if its children has `position: sticky`, then the `position: sticky` won't work.
 	- Always add a comment when using this declaration.
 	- Be careful: `overflow: hidden` is identical to `overflow: scroll`, _but with the scrollbars removed._ Consider `overflow: clip` or wrap your element within another container (with a `overflow: hidden`), if `overflow: hidden` on your current element is not behaving as you expected.
@@ -499,10 +575,114 @@ a:focus img {
 
 
 ## Gradients
-- s
-- s
-- ss
+### Linear gradient
+- The colors are equally distributed along the specified spectrum, starting from the top and going down by default. If we want the gradient to run at a different angle, we can pass that as an optional first argument:
+```css
+.box {
+  background-image: linear-gradient(to right, color1, color2, ...colorN);
+  /* Is equivalent to: */
+  background-image: linear-gradient(90deg, color1, color2, ...colorN);
+}
+```
+- By default, the midpoint between two colors (i.e. the blur area where 2 colors are merging) is halfway through the space between color stops. Hints (as a separate argument) allow us to shift that midpoint:
+```html
+<style>
+  .box.one { /* 20% blue merged with 80% gold */
+    background-image: linear-gradient(blue, 20%, gold);
+  }
+  .box.two {
+    background-image: linear-gradient(deeppink, 80%, gold);
+    /* Declaring `deeppink 80%, gold` won't work as expected */
+  }
 
+  .box {
+    width: 200px;
+    height: 200px;
+    border: 3px solid;
+    margin: 16px;
+  }
+</style>
+
+<div class="box one"></div>
+<div class="box two"></div>
+```
+- Use [this tool](https://www.joshwcomeau.com/gradient-generator) to generate your linear gradient. 
+### Radial gradient
+- A radial gradient emanates outwards in a circle from a single point.
+- Customize that "single point" by using the `circle at` prefix along with a pair of horizontal and vertical percentage:
+```html
+<style>
+  .box {
+    width: 200px;
+    height: 200px;
+    border: 3px solid;
+    background-image: radial-gradient(
+      circle at 50% 100%,
+      white 0%,
+      yellow 10%,
+      gold 20%,
+      coral 30%,
+      skyblue
+    );
+  }
+</style>
+
+<div class="box"></div>
+``` 
+### Conic gradient
+- Conic gradients are what would happen if you took a straight line with a linear gradient, and formed it into a circle.
+- It takes both the angle (with `0deg` starting from the 12 o'clock direction, so for instance `90deg` is like 3 o'clock) and the position (`at`) as an argument for the starting point:
+```html
+<style>
+  .box {
+    width: 200px;
+    height: 200px;
+    border: 3px solid;
+    background-image: conic-gradient(
+      from 90deg at 50% 100%,
+      hsl(220deg 80% 55%) 50%,
+      hsl(220deg 90% 75%) 62.5%,
+      hsl(220deg 100% 85%) 75%,
+      hsl(220deg 80% 75%) 87.5%,
+      hsl(220deg 80% 55%) 100%
+    );
+  }
+</style>
+
+<div class="box"></div>
+```
+- Create a seamless blend by having the same start and end color:
+```css
+.box {
+    width: 200px;
+    height: 200px;
+    border: 3px solid;
+    background-image: conic-gradient(
+      deeppink,
+      coral,
+      gold,
+      coral,
+      deeppink /* <-- same color! */
+    );
+}
+```
+- Create a CSS pie chart by shifting the color stops to be adjacent:
+```css
+.box {
+    width: 200px;
+    height: 200px;
+    border: 3px solid;
+    border-radius: 50%;
+    background-image: conic-gradient(
+      deeppink 0%,
+      deeppink 33.3%,
+      gold 33.4%,
+      gold 66.6%,
+      slateblue 66.7%,
+      slateblue 100%
+    );
+  }
+```
 
 ## Clipping
 - s
