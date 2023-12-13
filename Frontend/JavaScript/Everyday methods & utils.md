@@ -264,6 +264,24 @@ console.log(deleteWords);
 
 console.log(words)   // ["spray", "limit", "exuberant"]
 ```
+- Tip: Use `.filter(Boolean)` to remove falsy values from an array:
+```ts
+ export const links: LinksFunction = () => {
+	return [
+		{ rel: 'icon', type: 'image/svg+xml', href: faviconAssetUrl },
+		{ rel: 'stylesheet', href: fontStylesheetUrl },
+		{ rel: 'stylesheet', href: tailwindStylesheetUrl },
+		cssBundleHref ? { rel: 'stylesheet', href: cssBundleHref } : null,
+	].filter(Boolean)
+}
+
+// In case `cssBundleHref` is falsy, the return value of `links` would be:
+[
+  { rel: 'icon', type: 'image/svg+xml', href: faviconAssetUrl },
+  { rel: 'stylesheet', href: fontStylesheetUrl },
+  { rel: 'stylesheet', href: tailwindStylesheetUrl },
+]
+```
 
 ### .find()
 - Does ***not*** mutate the original array. However, `callbackFn` may do so.
@@ -388,7 +406,7 @@ console.log(nums.reduce(reducer))  // 10
 ### .forEach()
 - Does ***not*** mutate the original array. However, `callbackFn` may do so.
 - Does ***not*** return a value.
-- Executes the `callbackFn` once for each array element.
+- ***Executes*** the `callbackFn` once for each array element.
 - Nonexistent (`undefined`) and deleted elements ==***are NOT visited***==:
 ```ts
 const logArrayElements = (element, index) => {

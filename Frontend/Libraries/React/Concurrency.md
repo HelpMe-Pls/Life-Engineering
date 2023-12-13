@@ -42,7 +42,7 @@ const [isPending, startTransition] = useTransition();
 // `startTransition(callback)`: allows you to wrap any UI updates inside `callback` to tell React that it’s a low-priority update.
 ```
 
-- Use this hook with ***extra care***, since it's related to [[React/Performance#Intro |performance optimization]].
+- Use this hook with ***extra care***, since it's related to [[Frontend/Libraries/React/Performance#Intro|performance optimization]].
 ---
 
 ### `useDeferredValue`

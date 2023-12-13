@@ -1,5 +1,3 @@
-[[TypeScript/Types]]
-[[Unions]]
+[[Basic Types]]
+[[Type Transformation]]
 [[Generics]]
-[[Interface]]
-[[TypeScript/Class]]

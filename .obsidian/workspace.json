@@ -13,7 +13,7 @@
             "dimension": 49.84025559105432,
             "children": [
               {
-                "id": "7eaa8353fbcf450e",
+                "id": "be31124b00e36591",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -25,12 +25,24 @@
                 }
               },
               {
-                "id": "10d6e588915647ea",
+                "id": "e53a13750a791b9c",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/Tips.md",
+                    "file": "Frontend/Frameworks/Routing.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "3143680ed380165f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Frontend/TypeScript/Basic Types.md",
                     "mode": "source",
                     "source": false
                   }
@@ -109,7 +121,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "router",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -130,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 240
+    "width": 255.5
   },
   "right": {
     "id": "82a9e7d6600420b4",
@@ -146,7 +158,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tips & Tools/Tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,34 +195,35 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "10d6e588915647ea",
+  "active": "1c3357224693bc87",
   "lastOpenFiles": [
-    "Frontend/CSS/Positioning.md",
-    "Frontend/CSS/Flow layout.md",
-    "Tips & Tools/Tips.md",
-    "Backend/NodeJS/NodeJS.md",
-    "Frontend/CSS/CSS.md",
-    "Frontend/CSS/Flex.md",
-    "Frontend/CSS/Typography and Images.md",
-    "Frontend/CSS/Responsive.md",
-    "Frontend/CSS/Box model.md",
-    "Frontend/CSS/Animations.md",
-    "Backend/NodeJS/Frameworks.md",
-    "Backend/NodeJS/Auth.md",
-    "Frontend/JavaScript/class.md",
+    "Frontend/Frameworks/Routing.md",
+    "Backend/Caching.md",
+    "Frontend/TypeScript/Basic Types.md",
+    "Frontend/Frameworks/Styling.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
-    "Tips & Tools/Figma.md",
-    "Tips & Tools/English vocab.md",
-    "Frontend/Network/HTTP & Server.md",
-    "Frontend/TypeScript/Interface.md",
-    "Tips & Tools/Day-to-day work related.md",
+    "Frontend/Frameworks/Remix.md",
+    "Frontend/TypeScript/Fundamentals.md",
+    "Frontend/TypeScript/Type Transformation.md",
+    "Backend/NodeJS/NodeJS.md",
+    "Frontend/Libraries/React/react-router.md",
+    "Frontend/Frameworks/Next.md",
+    "DevSecOps/Security.md",
+    "Frontend/HTML/Hyperlinks.md",
+    "DevSecOps/DevSecOps.md",
+    "DevSecOps/DevOps.md",
+    "Backend/Backend.md",
+    "Backend/Security.md",
+    "Frontend/TypeScript/Advanced.md",
+    "Frontend/JavaScript/Nested Scope.md",
+    "Backend/NodeJS/Frameworks.md",
+    "Tips & Tools/Technical questions.md",
     "Tips & Tools/DSA.md",
-    "Frontend/TypeScript/TypeScript.md",
-    "DevOps/DevOps.md",
-    "Frontend/Network/Browser.md",
     "Frontend/JavaScript/Promises.md",
     "Frontend/JavaScript/Async.md",
-    "Backend/Databases.md",
+    "Frontend/Frameworks/Tailwind.md",
+    "Tips & Tools/System Design.md",
+    "Frontend/Libraries",
     "Untitled.canvas",
     "NodeJS",
     "Backend/NodeJS",
@@ -220,10 +232,10 @@
     "Frontend/Tips & Tools/code_review.png",
     "Frontend/Tips & Tools/code_review.jfif",
     "Frontend/Tips & Tools/code_review.jfif.crdownload",
-    "Frontend/React/Where to put state.png",
+    "Frontend/Libraries/React/Where to put state.png",
     "Frontend/Tips & Tools/git-model.png",
     "Frontend/JavaScript/JS Overview.png",
-    "DevOps",
+    "DevSecOps",
     "New folder"
   ]
 }

@@ -1,4 +1,4 @@
-[[Frontend/TypeScript/Fundamentals]]
+[[TypeScript/Fundamentals]]
 [[TypeScript/Advanced]]
 
 Check [this](https://profy.dev/article/react-typescript) out.

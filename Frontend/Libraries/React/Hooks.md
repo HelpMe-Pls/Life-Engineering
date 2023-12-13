@@ -33,13 +33,13 @@ const [state, setState] = useState('initial')
 ---
 
 ### Lifting state
-- [[React/Performance#Where to put state |Lifting state]]: moving the **shared** state from components to their least common parent to avoid the problem of putting props into state (keep in mind the Separation of Concern in terms of performance).
+- [[Frontend/Libraries/React/Performance#Where to put state|Lifting state]]: moving the **shared** state from components to their least common parent to avoid the problem of putting props into state (keep in mind the Separation of Concern in terms of performance).
 - Just because you have an input doesn’t mean it needs to be controlled. You really only need a controlled input when you’re going to programmatically change the value of that input. Otherwise it’s just extra work [for no benefit](https://github.com/HelpMe-Pls/react-hooks/blob/extra/src/final/TS/03.tsx).
 - Consider using the `key` prop [as an alternative](https://tkdodo.eu/blog/putting-props-to-use-state#3-fully-uncontrolled-with-a-key)(for isolating state of a component instance)
 ---
 
 ### How to `useState`
-- **Derived** state: consider using this technique and see whether certain state variables can be [**computed on the fly**](https://github.com/HelpMe-Pls/react-hooks/blob/extra/src/final/TS/04.tsx) rather than having another state to store them, making it easier to keep your data in sync when changes occur (if computing those variables takes up a lot of resources, consider **[[React/Performance#`useMemo` - for expensive calculations |useMemo]]**. React's state should be *[a single source of truth](https://tkdodo.eu/blog/dont-over-use-state#an-example)* that you need to keep track of, while having its related values to be derived from it, which simplifies the state mutation.
+- **Derived** state: consider using this technique and see whether certain state variables can be [**computed on the fly**](https://github.com/HelpMe-Pls/react-hooks/blob/extra/src/final/TS/04.tsx) rather than having another state to store them, making it easier to keep your data in sync when changes occur (if computing those variables takes up a lot of resources, consider **[[Frontend/Libraries/React/Performance#`useMemo` - for expensive calculations|useMemo]]**. React's state should be *[a single source of truth](https://tkdodo.eu/blog/dont-over-use-state#an-example)* that you need to keep track of, while having its related values to be derived from it, which simplifies the state mutation.
 - If your state updates *independently*: use separate `useStates()`s.
 - For states that [updates together](https://tkdodo.eu/blog/use-state-vs-use-reducer#client-state), or only [one state's field](https://github.com/HelpMe-Pls/react-hooks/blob/master/src/final/TS/06.tsx) update at a time: use a single state object
 - For state where user interactions [update different parts](https://tkdodo.eu/blog/use-state-vs-use-reducer#passing-props-to-reducers) of the state: `useReducer()`.

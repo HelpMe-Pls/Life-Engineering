@@ -72,7 +72,6 @@ while (true) {
 
 
 - ==It's important to note that `setTimeout(..)` doesn't put your callback on the event loop queue immediately.== What it does is set up a timer; when the timer expires, the environment places your callback into the event loop, such that _some future tick_ will pick it up and execute it.
-
 	 - What if there are already 20 items in the event loop at that moment? Your callback **waits**. It gets in line behind the others -- there's not normally a path for preempting the queue and skipping ahead in line. This explains why `setTimeout(..)` timers may not fire with perfect temporal accuracy. You're guaranteed (roughly speaking) that your callback won't fire _before_ the time interval you specify, but ==it can happen at or after that time, depending on the state of the event queue.
 
 - In other words, your program is generally broken up into lots of small chunks, which happen one after the other in the event loop queue. And technically, other events not related directly to your program can be interleaved within the queue as well.

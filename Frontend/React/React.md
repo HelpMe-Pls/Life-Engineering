@@ -1,7 +1,0 @@
-[[React/Fundamentals]]
-[[Hooks]]
-[[Design Patterns]]
-[[Frontend/React/Performance]]
-[[Frontend/React/Testing]]
-[[Concurrency]]
-[[Util libs]]
