@@ -1,7 +1,20 @@
-HTML, CSS, and JavaScript. These are the foundational technologies upon which
-everything else on the web is based. They work together to create the excellent
-user experiences our users expect in web applications today.
+# URLs
+- Using the URL as the primary mechanism for storing state (e.g. bookmark, sharing, site navigation,...) is not only common, but often necessary for an excellent user experience. URLs can be broken into segments:
+![[url-breakdown.png]]
+- The pathname can be further broken into segments. For example, if we wanted to show a specific user's profile, we could use the pathname `/users/123` where `123` is the user's ID. The user's ID segment is often referred to as a "route parameter".
+  Route params are often represented by a `:` in the URL, e.g.: `https://github.com/:username/:repo`. This tells the router that the `username` and `repo` segments are params, and that they can be any value.
+- The "Parameters" in the figure above is often called "query params" or "search params."
+- You can also navigate to other pages on the web using a `<form>` tag. For example, if we wanted to search for users, we could use the following:
+```html
+<!-- This will take the value of the input and add it to the URL as a query param (`?q=...`)
+The `method` attribute tells the browser to use the `GET` HTTP method when submitting the form. -->
+<form action="/users/search" method="GET">
+	<input type="text" name="q" />
+	<button type="submit">Search</button>
+</form>
+```
 
+# <link/> tags 
 To get CSS loaded into your web application, there are a few options, but the
 best is to load a stylesheet file (in a `.css` file extension) via a special
 HTML tag called `<link>`.
