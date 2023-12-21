@@ -83,6 +83,13 @@
         "a": 1,
         "rgb": 2312961
       }
+    },
+    {
+      "query": "path:Backend/Golang  ",
+      "color": {
+        "a": 1,
+        "rgb": 32156
+      }
     }
   ],
   "collapse-display": false,
@@ -95,6 +102,6 @@
   "repelStrength": 12.3736979166667,
   "linkStrength": 1,
   "linkDistance": 342,
-  "scale": 0.4526649852147157,
+  "scale": 0.29672115249294545,
   "close": true
 }
