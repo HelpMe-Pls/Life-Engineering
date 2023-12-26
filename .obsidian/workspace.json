@@ -18,19 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/Frameworks/Routing.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "e53a13750a791b9c",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Frontend/HTML/Hyperlinks.md",
+                    "file": "Frontend/Network/Browser.md",
                     "mode": "source",
                     "source": false
                   }
@@ -108,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "router",
+                "query": "cookie",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,7 +113,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -145,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Frontend/Frameworks/Routing.md",
+                "file": "Frontend/Network/Browser.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -185,12 +174,24 @@
   },
   "active": "be31124b00e36591",
   "lastOpenFiles": [
-    "Frontend/Frameworks/Remix.md",
-    "Frontend/Frameworks/Routing.md",
-    "Frontend/HTML/Hyperlinks.md",
     "Backend/NodeJS/NodeJS.md",
-    "Tips & Tools/Tips & Tools.md",
+    "Frontend/Frameworks/Remix/Data handling.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Frontend/Frameworks/Remix/Routing.md",
+    "Frontend/CSS/CSS.md",
+    "Frontend/CSS/Typography and Images.md",
+    "Frontend/CSS/Animations.md",
+    "Frontend/Network/Data Transfer.md",
+    "Frontend/Network/Networking.md",
+    "Frontend/Frameworks/Remix/Remix.md",
+    "Frontend/Frameworks/Remix",
+    "Frontend/Network/HTTP & Server.md",
+    "Tips & Tools/Technical questions.md",
+    "Tips & Tools/Day-to-day work related.md",
     "Tips & Tools/Progressive Overload.md",
+    "Tips & Tools/Interview prep.md",
+    "Frontend/HTML/Hyperlinks.md",
+    "Tips & Tools/Tips & Tools.md",
     "Tips & Tools/Annual Review.md",
     "Backend/Backend.md",
     "Backend/Golang/Fundamentals.md",
@@ -202,18 +203,7 @@
     "Frontend/HTML/url-breakdown.png.crdownload",
     "Backend/Caching.md",
     "Frontend/Frameworks/Styling.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
     "Frontend/TypeScript/Type Transformation.md",
-    "Frontend/Libraries/React/react-router.md",
-    "Frontend/Frameworks/Next.md",
-    "DevSecOps/Security.md",
-    "DevSecOps/DevSecOps.md",
-    "DevSecOps/DevOps.md",
-    "Backend/Security.md",
-    "Frontend/TypeScript/Advanced.md",
-    "Frontend/JavaScript/Nested Scope.md",
-    "Backend/NodeJS/Frameworks.md",
-    "Tips & Tools/Technical questions.md",
     "Frontend/Libraries",
     "Untitled.canvas",
     "NodeJS",

@@ -38,22 +38,21 @@ console.log( a, b, c );	// 4 5 6
 console.log( x, y, z );	// 4 5 6
 
 //============ Destructuring function parameters =============
-const ctx = {params: {slug:'abc'}}
-
 // If we want to access the `params` property from the argument when invoking `fetchSth` function, we can define it in one of these 3 ways:
-// 1, the usual:
-function fetchSth(context) {
+// 1, using the dot notation:
+function fetchSth(context: {params: {slug: string}}) {
 	const slug = context.params.slug
 }
-// 2, type annotation:
-function fetchSth(context: {params}) {
+// 2, object destructuring is used in the function parameter itself:
+function fetchSth({params}: {params: {slug: string}}) {
 	const slug = params.slug
 }
-// 3, object destructuring is used in the function parameter itself:
-function fetchSth({params}) {
-	const slug = params.slug
+// 3, double destructuring:
+function fetchSth({params}: {params: {slug: string}}) {
+	const {slug} = params
 }
 // Then, invoke `fetchSth`:
+const ctx = {params: {slug:'abc'}}
 fetchSth(ctx)
 
 //===============================
@@ -64,6 +63,13 @@ let b = 3;
 [a, b] = [b, a];
 console.log(a); // 3
 console.log(b); // 1
+```
+
+- **Overwriting properties**: if the *same property* exists in both objects, the one *in the spread object* is applied:
+```ts
+const responseInit = {status : 404} 
+const res = { status: 500, ...responseInit }  
+console.log(res) // {status: 404}
 ```
 ### Spread vs rest:
 - ES6's rest syntax is like an inverse of the spread syntax: it offers a shorthand for including an arbitrary number of arguments to be passed to a function:
@@ -86,7 +92,7 @@ const {e, f, ...others} = {
 var a = [2,3,4];
 var [ b, ...c ] = a;
 
-console.log( b, c );   // 2 [3, 4]
+console.log( b, c );   // b:2, c:[3, 4]
 ```
 
 ## Assignments
@@ -223,7 +229,46 @@ const filteredNumbers = numbers.map((num, index) => {
 - Caution:
 	- `map` does ***not*** mutate the original array on which it is called (although `callbackFn`, if invoked, may do so).
 	- **Shouldn't** use `map` if: you're not using the array it returns; and/or you're not returning a value from the callback. Prefer [[Everyday methods & utils#.forEach() |.forEach()]] in those cases.
+- Tip: use `map` and object destructuring to return a desired shape of an object for better TS inference:
+```tsx
+export async function loader({ params }: DataFunctionArgs) {
+	// Instead of this, which is WRONG:
+	/* const notes = db.note.findMany({
+		where: {
+			owner: {
+				username: { equals: params.username },
+			},
+		},
+	})
 
+	return json({
+		notes: [{ id: notes[0].id, title: notes[0].title }],		
+	})*/
+	
+	// By doing this, we also trim down the size of the response instead of sending the whole `notes` array:
+	const notes = db.note.findMany({
+		where: {
+			owner: {
+				username: { equals: params.username },
+			},
+		},
+	}).map(({ id, title }) => ({ id, title }))
+
+	return json({notes})
+
+// Then is later used in tsx:
+const data = useLoaderData<typeof loader>()
+<ul className="overflow-y-auto overflow-x-hidden pb-12">
+		{data.notes.map(note => (
+		// Now TS only suggests `id` and `title` when hitting "Ctrl + Space" on `note.`, instead of suggesting all properties from `note`. And in this example, by using Remix, you're getting the benefits of trpc and graphQL.  
+			<li className="p-1 pr-0" key={note.id}>
+				<NavLink to={note.id}>
+					{note.title}
+				</NavLink>
+			</li>
+		))}
+</ul> 
+```
 ### .filter()
 - Returns a *shallow* copy of a portion of the original array, with its element(s) are the return value(s) of the `callbackFn`. If no elements pass the test, an ***empty array*** will be returned.
 - Does ***not*** mutate the original array. However, `callbackFn` may do so:
