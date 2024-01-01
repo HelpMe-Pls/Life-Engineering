@@ -18,6 +18,18 @@
                 "state": {
                   "type": "markdown",
                   "state": {
+                    "file": "Tips & Tools/Past Authoring.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "d172eb9fd577a0be",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
                     "file": "Frontend/Network/Browser.md",
                     "mode": "source",
                     "source": false
@@ -96,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cookie",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -113,8 +125,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -134,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Frontend/Network/Browser.md",
+                "file": "Tips & Tools/Past Authoring.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +162,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -174,7 +187,16 @@
   },
   "active": "be31124b00e36591",
   "lastOpenFiles": [
+    "Tips & Tools/Self Authoring.md",
+    "Tips & Tools/Past Authoring.md",
+    "Tips & Tools/Future Authoring.md",
+    "Tips & Tools/Present Authoring.md",
+    "Tips & Tools/Progressive Overload.md",
     "Backend/NodeJS/NodeJS.md",
+    "Frontend/Libraries/React/Hooks.md",
+    "Frontend/Libraries/React/Design Patterns.md",
+    "Frontend/Network/Browser.md",
+    "Frontend/HTML/Hyperlinks.md",
     "Frontend/Frameworks/Remix/Data handling.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
     "Frontend/Frameworks/Remix/Routing.md",
@@ -188,22 +210,13 @@
     "Frontend/Network/HTTP & Server.md",
     "Tips & Tools/Technical questions.md",
     "Tips & Tools/Day-to-day work related.md",
-    "Tips & Tools/Progressive Overload.md",
     "Tips & Tools/Interview prep.md",
-    "Frontend/HTML/Hyperlinks.md",
     "Tips & Tools/Tips & Tools.md",
     "Tips & Tools/Annual Review.md",
     "Backend/Backend.md",
-    "Backend/Golang/Fundamentals.md",
-    "Backend/Golang/Golang.md",
-    "Frontend/TypeScript/Fundamentals.md",
     "Backend/Golang",
-    "Frontend/TypeScript/Basic Types.md",
     "Frontend/HTML/url-breakdown.png",
     "Frontend/HTML/url-breakdown.png.crdownload",
-    "Backend/Caching.md",
-    "Frontend/Frameworks/Styling.md",
-    "Frontend/TypeScript/Type Transformation.md",
     "Frontend/Libraries",
     "Untitled.canvas",
     "NodeJS",

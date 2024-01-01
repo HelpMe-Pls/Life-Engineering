@@ -1,4 +1,5 @@
 [[Annual Review]]
+[[Self Authoring]]
 
 - Much needed for a promotion/ CV Update/ Interviews
 - Just start it right when a challenge arises, then document it along the way

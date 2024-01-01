@@ -106,7 +106,7 @@ const [state, setState] = useState('initial')
 
 ### `useContext`
 - Basic implementation of `context` API.
-- [Sometimes](https://github.com/HelpMe-Pls/advanced-react-hooks/blob/extra/src/final/TS/03.tsx) you don’t need context. The biggest use case for context is for libraries that need to implicitly share state between components (i.e. *[[Design Patterns#Compound Component |compound component]]*).
+- [Sometimes](https://github.com/HelpMe-Pls/advanced-react-hooks/blob/extra/src/final/TS/03.tsx) you don’t need context. The biggest use case for context is for libraries that need to implicitly share state between components (i.e. *[[Design Patterns#Container/Compound Component|compound component]]*).
 ---
 
 ### `useLayoutEffect`
