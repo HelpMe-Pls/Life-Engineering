@@ -35,7 +35,7 @@ export default function Child() {
 ### Route params
 - Define your route segments dynamically by having the `$` precedes the corresponding file name:
 ```ts
-Route: app/routes/chats+/$chatId.messages.tsx
+Route definition: app/routes/chats+/$chatId.messages.tsx
 					  // ^ Route param
 Resulting path: /chats/whatever/messages 
 ```
@@ -50,10 +50,9 @@ export default function PetRoute() {
 ```
 
 # Resource routes
-- Think of them as side-effect routes. Preferred in use cases for URLs that don't return UI, e.g. use the path `/images/some-image-id` to get an image. These kind of route requests expect JSON, or plaintext, or an image. In some cases these requests could be non-GET requests as well.
+- Think of them as side-effect routes. Preferred in use cases for ***URLs that don't return UI***, e.g. use the path `/images/some-image-id` to get an image. These kind of route requests expect JSON, or plaintext, or an image. In some cases these requests could be non-GET requests as well.
 - Resource routes are designed to be standalone and handle their own data fetching, which means that the [`loader`](https://remix.run/docs/en/main/route/loader) in the `app/root.tsx` will not be run whenever we access a resource route. 
-- A quick tip to differentiate between a regular route and a resource route is that the resource route's definition file doesn't have a `export default` component in it.
-
+- A quick tip to differentiate between a regular route and a resource route is that the resource route's definition file ***doesn't*** have a `export default` component in it.
 
 # Links
 - Use the `<Links/>` component to dynamically access the HTML `<link/>` tags from anywhere in your project (that being said, in those files that don't have access to the `<head/>` tag). For example, you can use the `links` to apply [[Routing#Resource routes |resource routes]] from any page, in this case, all the text from the `user/username` will be red, but its sibling route, e.g. `/users/username/notes` is unaffected:
@@ -110,6 +109,7 @@ export default function App() {
 }
 ```
 - Remix provides a [`<Link>` component](https://remix.run/docs/en/main/components/link) that you can use to create links (`<a>`) to other pages in your application without triggering a full-page refresh (which is what clicking a regular `<a>` will do). Prefer a [`<NavLink/>`](https://remix.run/docs/en/main/components/nav-link) for the support of styling active and pending states.
+- [Prefetch](https://remix.run/docs/en/main/components/link#prefetch) the links that you expect the user to visit frequently.
 
 ### Relative links
 #### The `relative` prop
@@ -134,7 +134,7 @@ To go back one level (`to='..'`) from the `users/kody/notes` path, there are 2 o
 </NavLink>
 ```
 2. The default: relative to the ***route*** (back to `/`, because that's the direct parent of `users/kody/notes` in terms of the route hierarchy): use `relative="route"` instead (or just not specified `relative="route"` at all, because it's the default).
-#### Relative path
+#### Relative & absolute path
 In `kody.tsx`, consider 2 cases:
 ```tsx
 // Relative path, takes you to `users/kody/notes`:
@@ -142,8 +142,54 @@ In `kody.tsx`, consider 2 cases:
 	Notes
 </Link>
 
-// Absolute path, redirect to `/notes` no matter which ruote you're at:
+// Absolute path, redirects to `/notes` no matter which route you're at:
 <Link to="/notes" className="underline">
 	Notes
 </Link>
+``` 
+
+# Navigation
+- The `useNavigation` hook provides information about a pending page navigation:
+```tsx
+import { useNavigation } from "@remix-run/react";
+
+function SomeComponent() {
+  const navigation = useNavigation();
+
+  return (
+     // This form has the `email` field, and the `Delete` button will be disabled when the `POST` request is pending
+	<Form method="post" action="/signup">
+	  <input name="email" />
+	  <Button
+		  name='intent'
+		  value='delete'
+		  disabled={navigation.formData?.get('intent') === 'delete'}
+	  >
+		  Delete
+	  </Button>
+    </Form>;
+  )  
+}
 ```
+
+- Use the `<ScrollRestoration/>` to emulate the browser’s scroll restoration on location changes after loaders have completed. This can be particularly useful in cases where you have a sidebar or a multi-step form, and you ***want*** the scroll position to be reset to the top of the window when the form is submitted:
+```tsx
+import {
+  Scripts,
+  ScrollRestoration,
+} from "@remix-run/react";
+
+export default function Root() {
+  return (
+    <html>
+      <body>
+        {/* ... */}
+        <ScrollRestoration />
+        <Scripts />
+      </body>
+    </html>
+  );
+}
+```
+ To customize the behavior of `<ScrollRestoration/>`, check [this](https://youtu.be/4_H8j3rkpjI?si=YSGQfo3ACs_FZc6P&t=109) out.
+ To opt out the behavior of `<ScrollRestoration/>` for particular `<Link/>`s or `<Form/>`s, add the `preventScrollReset` prop to them. But keep in mind that this *does not* prevent the scroll position from being restored when the user comes back to the location with the *back/forward buttons*, it just prevents the reset when the user clicks the link.

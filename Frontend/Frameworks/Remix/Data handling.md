@@ -79,4 +79,7 @@ export async function loader({ params }: DataFunctionArgs) {
 
 # Mutations
 ## Form submission
-- While Remix supports all `HTTP` methods for ***form submission***, the browser itself only supports `GET` (if `method="POST"` isn't declared) and `POST` methods. Which mean on slow connections or low-end devices, `HTTP` methods other than `GET` and `POST` may not work. Prefer cooking your mutating requests with `POST` instead to maintain the progressive enhancement aspect: 
+- While Remix supports all `HTTP` methods for ***form submission***, the browser itself only supports `GET` (the default - if `method="POST"` isn't declared) and `POST` methods. Which mean on slow connections or low-end devices, `HTTP` methods other than `GET` and `POST` may not work. Prefer cooking your mutating requests with `POST` and  [`action`](https://remix.run/docs/en/main/route/action) instead to maintain the progressive enhancement aspect:
+```tsx
+// Example with methods other than POST
+```
