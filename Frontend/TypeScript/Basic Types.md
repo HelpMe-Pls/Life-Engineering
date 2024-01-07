@@ -119,6 +119,37 @@ it("Should get the user id", () => {
 });
 ```
 
+- Have a safe fallback for `undefined` values:
+```tsx
+// For example, in Remix:
+export async function loader({ params }: DataFunctionArgs) {
+	const user = db.user.findFirst({
+		where: {
+			username: {
+				equals: params.username,
+			},
+		},
+	})
+
+	invariantResponse(user, 'User not found', { status: 404 })
+
+	return json({
+		user: { name: user.name, username: user.username },
+	})
+}
+
+export const meta: MetaFunction<typeof loader> = ({ data, params }) => {
+// The `??` fallback on `params.username` instead of `data?.user.username` is because `params.username` is always defined (assuming there's nothing wrong with your routing). You don't want to fallback a potentially `undefined` thing to another `undefined` thing.
+	const displayName = data?.user.name ?? params.username
+	return [
+		{ title: `${displayName} | Epic Notes` },
+		{
+			name: 'description',
+			content: `Profile of ${displayName} on Epic Notes`,
+		},
+	]
+}
+```
 ## Casting types
 ### The `as` keyword
 - Used for type assertion, when you want compiler to trust that you’ve ensured the value is of the asserted type. If the value is not actually of the asserted type, it could lead to *runtime* errors:

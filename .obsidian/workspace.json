@@ -18,26 +18,25 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/TypeScript/Basic Types.md",
+                    "file": "Frontend/Frameworks/Remix/SEO.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "20b7a90f87563b91",
+                "id": "b79d14430fbbebef",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/Frameworks/Remix/Routing.md",
+                    "file": "Frontend/Frameworks/Remix/SEO.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "4882bc6678dd9db8",
@@ -109,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "warning",
+                "query": "meta",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Frontend/Frameworks/Remix/Routing.md",
+                "file": "Frontend/Frameworks/Remix/SEO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,21 +185,26 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "20b7a90f87563b91",
+  "active": "be31124b00e36591",
   "lastOpenFiles": [
+    "Frontend/Frameworks/Remix/Routing.md",
+    "Frontend/TypeScript/Basic Types.md",
+    "Frontend/TypeScript/Fundamentals.md",
+    "Frontend/TypeScript/Generics.md",
+    "Frontend/Network/Development & Deploy.md",
+    "Frontend/Frameworks/Remix/SEO.md",
     "Frontend/Frameworks/Remix/Remix.md",
+    "Frontend/Network/Networking.md",
+    "Frontend/Network/SEO.md",
     "Frontend/Frameworks/Remix/Scripting.md",
     "Frontend/CSS/Typography and Images.md",
     "Frontend/CSS/CSS.md",
     "Frontend/CSS/Animations.md",
-    "Frontend/Frameworks/Remix/Routing.md",
-    "Frontend/TypeScript/Basic Types.md",
     "Frontend/TypeScript/Advanced.md",
     "Frontend/TypeScript/With React.md",
     "Frontend/TypeScript/Type Transformation.md",
     "Frontend/Frameworks/Remix/Data handling.md",
     "Frontend/Network/HTTP & Server.md",
-    "Frontend/Network/Networking.md",
     "Backend/NodeJS/NodeJS.md",
     "Tips & Tools/Past Authoring.md",
     "Frontend/Network/Browser.md",
@@ -209,12 +213,7 @@
     "Tips & Tools/Present Authoring.md",
     "Tips & Tools/Progressive Overload.md",
     "Frontend/Libraries/React/Hooks.md",
-    "Frontend/Libraries/React/Design Patterns.md",
-    "Frontend/HTML/Hyperlinks.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
-    "Frontend/Network/Data Transfer.md",
     "Frontend/Frameworks/Remix",
-    "Tips & Tools/Technical questions.md",
     "Backend/Golang",
     "Frontend/HTML/url-breakdown.png",
     "Frontend/HTML/url-breakdown.png.crdownload",

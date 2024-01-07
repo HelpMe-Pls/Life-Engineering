@@ -3,3 +3,4 @@
 [[Styling]]
 [[Data handling]]
 [[Scripting]]
+[[SEO]]

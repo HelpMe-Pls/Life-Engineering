@@ -1,14 +1,35 @@
-## SEO
-- Good SEO helps Google leverage a site's ranking and reliability.
-- Several ways to improve SEO:
+# SEO
+Helping search engines like Google to properly categorize your content is called Search Engine Optimization (SEO). Good SEO helps Google leverage a site's ranking and reliability.
 
-#### Meta 
-- Contains the keywords about the site:
+Lots of what applies to search engines also applies to other tools and social media platforms as well. So it's a good idea to spend some time thinking about your website's sources of traffic and learning how to optimize your website's presentation on those platforms.
+
+## HTML Tags
+### `<title/>` and `<head/>`
+- The `<title>` tag appears in the `<head>` and is typically what is displayed in the browser tab. It's also what is displayed in search engine results.
+### `<meta/>` 
+- The `<meta>` tag (also a child of `<head/>`) is typically used to provide information about the page to search engines. The `name` attribute is used to specify the type of metadata, and the `content` attribute is used to provide the actual metadata:
 ```HTML
+<!-- - You'll want around 5 keywords for each page -->
 <meta name="keywords" content="HTML, CSS, JavaScript">
 ```
-- You'll want around 5 keywords for each page.
 
+- The `description` metadata is used to provide a short description of the page and is often used in search engine results as well as social media preview cards:
+```tsx
+<meta name="description" content="This is my page" />
+```
+
+- The `viewport` metadata is used to configure the viewport of a mobile browser:
+```tsx
+<!-- tell the browser to set the width of the viewport to the width of the device, and to set the initial zoom level to 1. This is a common configuration for mobile browsers. -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+```
+
+- The `charset` metadata is used to specify the character encoding of the page:
+```tsx
+<meta charset="utf-8" />
+```
+
+## Optimizing SEO
 #### Regular Updates
 - The more recently your site has been updated, the higher it will rank in the results.
 - You should aim to update your site’s content about once per week or more.
@@ -19,7 +40,7 @@
 
 #### Views
 - It is what it is 
-- Use the Open Graph tags to improve the site's apperance on social media, so you can get more views:
+- Use the Open Graph tags to improve the site's appearance on social media, so you can get more views:
 ```HTML
 <meta property="og:url"               content="http://www.nytimes.com/arts/international/when-great-minds.html" />
 
