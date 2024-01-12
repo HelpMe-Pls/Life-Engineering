@@ -1,7 +1,7 @@
 # `<Meta/>
 - The [`<Meta />`](https://remix.run/docs/en/main/components/meta) component is placed in the `<head>` of your document in your `app/root.tsx` to render all of the *corresponding* `<meta>` tags created by your route module [`meta`](https://remix.run/docs/en/main/route/meta) export:
 ```tsx
-// These `<meta/>` tags are rendered in the `<head/>` of your document. The first 2 are fixed in `app/root.tsx`, and the last one is what was brought in from the corresponding currently active route (in this case, `app/routes/sandwiches.$sandwichId.tsx`):
+// These `<meta/>` tags are rendered in the `<head/>` of your document. The first 2 `<meta/>`s are fixed in `app/root.tsx`, and the `<title/>` and last one is dynamically returned from the corresponding currently active route (in this case, `app/routes/sandwiches.$sandwichId.tsx`):
 <title>Sandwich Shop</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />

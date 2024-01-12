@@ -22,7 +22,7 @@ export function invariantResponse(
 import { json, type DataFunctionArgs } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
 import { db } from '#app/utils/db.server.ts'
-import { invariantResponse } from '#app/utils/misc.tsx'
+import { errorHandler } from '#app/utils/misc.tsx'
 
 export async function loader({ params }: DataFunctionArgs) {
 	const note = db.note.findFirst({
@@ -33,7 +33,7 @@ export async function loader({ params }: DataFunctionArgs) {
 		},
 	})
 
-	invariantResponse(note, 'Note not found', { status: 404 })
+	errorHandler(note, 'Note not found', { status: 404 })
 	
 	// graphQL's benefit where you can specify exactly the shape of the data that the client needs
 	return json({

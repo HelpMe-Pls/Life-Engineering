@@ -542,7 +542,7 @@ a:focus img {
 - Use the [shadow generator](https://www.joshwcomeau.com/css/introducing-shadow-palette-generator) to get a natural-looking shadow for your element (keep in mind that it's probably a bad idea to try animating a layered shadow).
 - Using the HSL color format for the shadow, keep the saturation at around `60%` and the lightness at `50%` for a vivid-looking shadow, i.e. not too grayed out.
 ### `box-shadow`
-- `box-shadow` based on the box model and it's the most common way to apply shadows in CSS. When you apply `box-shadow` to an element, that element's box will cast a simulated shadow behind it with 6 values, respectively:
+- `box-shadow` based on the box model and it's the most common way to apply shadows in CSS. When you apply `box-shadow` to an element, that element's ***box*** (i.e. in cases where the shape of the element does not appear to be a box, *the box is still there*) will cast a simulated shadow behind it with 6 values, respectively:
 	- `inset`: an *optional* value which defaulted as not specified. Inset shadows are drawn inside the border (even transparent ones). They allow us to create the illusion that an element is _lower_ than its surrounding environment (e.g. the ["moat" effect](https://codesandbox.io/s/inset-moat-zf4wri?file=/index.html)) 
 	- **Horizontal offset**
 	- **Vertical offset**. You can change which side the shadow appears by tweaking the horizontal/vertical offsets.
@@ -567,7 +567,8 @@ a:focus img {
 </article>
 ```
 ### `drop-shadow`
-- `filter: drop-shadow()` takes the same arguments as `box-shadow`, without the `inset`, `<spread-radius>`, and the third argument specifies a “standard deviation” instead of a blur radius. It produces a softer, more-blended shadow by using the _Gaussian blurring_. This means that if we use `filter: drop-shadow()` on an image that ***supports transparency*** (e.g. png, gif, svg), the shadow will apply to the non-transparent parts of the image. This effect isn't limited to images, either—it works for any DOM node.
+- `filter: drop-shadow()` creates a shadow that conforms to ***the shape***. It’s not bound to the box model, meaning the outline of the element is recognized and the transparency around it is ignored so that the intended shape receives the shadow.
+	   It takes the same arguments as `box-shadow`, without the `inset`, `<spread-radius>`, and the third argument specifies a “standard deviation” instead of a blur radius. It produces a softer, more-blended shadow by using the _Gaussian blurring_. This means that if we use `filter: drop-shadow()` on an image that ***supports transparency*** (e.g. png, gif, svg), the shadow will apply to the non-transparent parts of the image. This effect isn't limited to images, either—it works for any DOM node.
 - When we apply `filter: drop-shadow()` to an element, it contours that element and [all of its descendants](https://codesandbox.io/s/drop-shadow-1otcu1?file=/index.html) (even non-contiguous ones, like the blue circle), and applies the shadow to that ***entire shape***. We can also apply it to a [_group_ of elements](https://codesandbox.io/s/drop-shadow-group-t5nh3k), to make sure we don't have any "shadow overlap" (which happens if we used `box-shadow`)
 - Make sure to test `drop-shadow` on Safari if your app supports it (browser's glitch). Opt for `box-shadow` instead, if the `drop-shadow` glitch happens too often.
 ### `text-shadow`
