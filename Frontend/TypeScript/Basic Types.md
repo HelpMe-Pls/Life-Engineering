@@ -170,6 +170,8 @@ export const fetchLukeSkywalker = async () => {
 
   return data;
 };
+// Or not having an assertion in the code, but explicitly on the call site instead:
+const data = fetchLukeSkywalker() as LukeSkywalker
 
 // Over this:
 export const fetchLukeSkywalker = async () => {
@@ -181,6 +183,7 @@ export const fetchLukeSkywalker = async () => {
   return data as LukeSkywalker;
 };
 ```
+> [!warning] The `as` assertion should be seen as `lying` to TS. What you **actually** need is E2E type safety, using tools like `tRPC` or `Remix`
 - Practical cases are when you need to make a variable to be read-only, or typing errors in a `catch` block:
 ```ts
 const tryCatchDemo = (state: "fail" | "succeed") => {

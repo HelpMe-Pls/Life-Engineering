@@ -1,5 +1,5 @@
 - Remix has a built-in router that enables you to easily map URLs and route parameters to files in your application's `app/routes` directory. Run the command `npx remix routes` to view the generated routes.
-- If a route doesn't have a `default` export then it'll be treated as a [[Routing#Resource routes |resource route]].
+- If a route doesn't have a `default` export then it'll be treated as a [[Routing & Navigation#Resource routes|resource route]].
 ----
 # Nested routes
 - For nested routes, use the `<Outlet/>` component as a *layout* wrapper for child layouts:
@@ -100,7 +100,7 @@ export function ErrorBoundary() {
 }
 ```
 # Links
-- Use the `<Links/>` component to dynamically access the HTML `<link/>` tags from anywhere in your project (that being said, in those files that don't have access to the `<head/>` tag). For example, you can use the `links` to apply [[Routing#Resource routes |resource routes]] from any page, in this case, all the text from the `user/username` will be red, but its sibling route, e.g. `/users/username/notes` is unaffected:
+- Use the `<Links/>` component to dynamically access the HTML `<link/>` tags from anywhere in your project (that being said, in those files that don't have access to the `<head/>` tag). For example, you can use the `links` to apply [[Routing & Navigation#Resource routes|resource routes]] from any page, in this case, all the text from the `user/username` will be red, but its sibling route, e.g. `/users/username/notes` is unaffected:
 ```tsx
 // Resource route: app > routes > resources+ > paint-it-red.tsx
 export async function loader() {

@@ -14,4 +14,4 @@ app.use(
 
 <!-- If you don't want to change the path, then the browser have to wait for the next `maxAge` tick so that the cache will automatically invalidates itself by then. Other options like having the "Disable cache" box checked in the browser's Devtool, or a hard reload would also work, but those options require maunal work from the user -->
 ```
-- Frameworks like [[Routing |Remix]] enables dynamic cache on the browser by adding a "fingerprint" to the cached resources.
+- Frameworks like [[Routing & Navigation|Remix]] enables dynamic cache on the browser by adding a "fingerprint" to the cached resources.

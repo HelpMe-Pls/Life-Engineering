@@ -110,4 +110,4 @@ export function ErrorBoundary() {
 }
 ```
 
-- Also checkout [[Routing#Splat route |splat route]] for a more fine-tuned 404 page.
+- Also checkout [[Routing & Navigation#Splat route|splat route]] for a more fine-tuned 404 page.

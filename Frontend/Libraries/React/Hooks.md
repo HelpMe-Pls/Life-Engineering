@@ -123,7 +123,7 @@ const [state, setState] = useState('initial')
 ---
 
 ### `useId`
-- The `useId()` hook takes no argument and helps generate a unique stable Id (as a `string`) [on both](https://youtu.be/_vwCKV7f_eA?t=188) the client-side and server-side.
+- The `useId()` hook takes *no argument* and helps generate a unique stable `Id` (as a `string`) [on both](https://youtu.be/_vwCKV7f_eA?t=188) the client-side and server-side.
 - Most common usage:
 ```js
 function Checkbox() {

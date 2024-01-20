@@ -18,6 +18,9 @@ A typical web application is made up of:
 3. **Sending an HTTP Request**: The browser sends an HTTP `GET` request to the web server for the resource specified in the URL.
 4. **Server Response**: The web server processes the request and sends back an HTTP response, typically containing HTML.
 5. **Rendering**: The browser receives the response and renders the HTML. It may need to send additional requests for resources such as images, stylesheets, or scripts that are linked in the HTML.
+##### Misconception
+- Sending a request and receiving a response from a website ***does not*** necessarily require JS. Before the advent of JavaScript, websites were primarily static and all interactions were handled through `HTTP` requests and responses.
+  JS is used to enhance UX by sending requests and receiving responses ***without requiring a full page reload*** (with AJAX) and add interactivity to your HTML & CSS.
 
 ---
 

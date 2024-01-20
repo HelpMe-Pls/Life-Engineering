@@ -1,7 +1,7 @@
 - Check [this](https://www.epicweb.dev/tips/javascript-module-evaluation-order-on-the-web) out.
-[[Routing]]
+[[Routing & Navigation]]
 [[Styling]]
-[[Data handling]]
+[[Request & Response]]
 [[Scripting]]
 [[SEO]]
 [[Error Handling]]
