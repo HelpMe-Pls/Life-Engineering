@@ -150,6 +150,29 @@ export const meta: MetaFunction<typeof loader> = ({ data, params }) => {
 	]
 }
 ```
+### `undefined` runtime errors
+- Destructured variables can be used to hide `undefined` values from TS, but it's not recommended:
+```ts
+// Suppose `params.noteId` could be `undefined`:
+const {noteId} = params
+await $prisma.noteImage.create({
+  select: { id: true },
+// when you destructure a property from `undefined` or `null`, it doesn’t throw an error. Instead, it assigns `undefined` to the destructured variable:
+  data: { ...newImage, noteId }, // No error, this value resolved to `{...newImage, undefined}` if `noteId` is `undefined`
+})
+
+// Same thing, but if you try to access a property directly from `undefined` or `null`, it will throw a `TypeError` at runtime:
+await $prisma.noteImage.create({
+  select: { id: true },
+  data: { ...newImage, noteId: params.noteId }, // `TS2322` error because we're `.noteId` which could possibly be `undefined` 
+})
+
+// So to properly fix it, prefer a type check before accessing the value:
+if (!params || !params.noteId) {
+  throw new Error('noteId is required');
+}
+```
+
 ## Casting types
 ### The `as` keyword
 - Used for type assertion, when you want compiler to trust that you’ve ensured the value is of the asserted type. If the value is not actually of the asserted type, it could lead to *runtime* errors:

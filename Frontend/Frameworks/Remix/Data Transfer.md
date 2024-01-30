@@ -1,3 +1,5 @@
+- Checkout [[Frontend/Network/Data Transfer |rate limiting]].
+----
 # Loaders
 - You can define handlers and the UI (have backend and frontend code) for a route inside of a single file by using the async `loader` function for `GET` requests. You can get some of the benefits from `graphQL` and `tRPC` when using it: 
 ```tsx
@@ -210,18 +212,7 @@ export default function NoteEdit() {
 ```tsx
 import { conform, useForm } from '@conform-to/react'
 import { getFieldsetConstraint, parse } from '@conform-to/zod'
-import { json, redirect, type DataFunctionArgs } from '@remix-run/node'
-import { Form, useActionData, useLoaderData } from '@remix-run/react'
 import { z } from 'zod'
-import { GeneralErrorBoundary } from '#app/components/error-boundary.tsx'
-import { floatingToolbarClassName } from '#app/components/floating-toolbar.tsx'
-import { Button } from '#app/components/ui/button.tsx'
-import { Input } from '#app/components/ui/input.tsx'
-import { Label } from '#app/components/ui/label.tsx'
-import { StatusButton } from '#app/components/ui/status-button.tsx'
-import { Textarea } from '#app/components/ui/textarea.tsx'
-import { db, updateNote } from '#app/utils/db.server.ts'
-import { invariantResponse, useIsSubmitting } from '#app/utils/misc.tsx'
 
 export async function loader({ params }: DataFunctionArgs) {
 	const note = db.note.findFirst({
@@ -249,8 +240,8 @@ const NoteEditorSchema = z.object({
 
 export async function action({ request, params }: DataFunctionArgs) {
 	invariantResponse(params.noteId, 'noteId param is required')
-
 	const formData = await request.formData()
+	
 	// Server side validation
 	const submission = parse(formData, {
 		schema: NoteEditorSchema,
@@ -358,25 +349,10 @@ export default function NoteEdit() {
 		</div>
 	)
 }
-
-export function ErrorBoundary() {
-	return (
-		<GeneralErrorBoundary
-			statusHandlers={{
-				404: ({ params }) => (
-					<p>No note with the id "{params.noteId}" exists</p>
-				),
-			}}
-		/>
-	)
-}
 ```
 
 ## Form submission
-- While Remix supports all `HTTP` methods for ***form submission***, the browser itself only supports `GET` (the default - if `method="POST"` isn't declared) and `POST` methods. Which mean on slow connections or low-end devices, `HTTP` methods other than `GET` and `POST` may not work. Prefer cooking your mutating requests with `POST` and  [`action`](https://remix.run/docs/en/main/route/action) instead to maintain the progressive enhancement aspect:
-```tsx
-// Example with methods other than POST
-```
+- While Remix supports all `HTTP` methods for ***form submission***, the browser itself only supports `GET` (the default - if `method="POST"` isn't declared) and `POST` methods. Which mean on slow connections or low-end devices, `HTTP` methods other than `GET` and `POST` may not work. Prefer cooking your mutating requests with `POST` and  [`action`](https://remix.run/docs/en/main/route/action) [[Frontend/Frameworks/Remix/Data Transfer#Complex structure |instead]] to maintain the progressive enhancement aspect.
 > For Progressive Enhancement, check this out [at 3:20](https://www.epicweb.dev/workshops/professional-web-forms/complex-structures/interactive-image-management/solution).
 ### Complex structure
 - By default, *nested forms and arrays aren't allowed*. By using `useFieldList` from `conform` and `z.array()` from `zod`, we can have a simulated interface to deal with that:
@@ -676,6 +652,7 @@ export async function action({ request }: DataFunctionArgs) {
 </Form>
 ```
 # CSRF
+- [[Security#CSRF |Checkout]] what CSRF is. Here's an example of its implementation:
 - On the server:
 ```tsx
 // csrf.server.ts
@@ -765,3 +742,4 @@ export async function action({ request, params }: DataFunctionArgs) {
 		</Button>
 </Form>
 ```
+

@@ -425,3 +425,5 @@ prerogative (n): privilege, a distinctive excellence
 innocuous (adj): harmless, inoffensive, insipid
 
 desolate (v-adj): to deprive of inhabitants, lifeless, deserted, dilapidated
+
+idempotent (adj-n): to run something as many times as you like and you get the same desired result

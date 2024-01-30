@@ -10,39 +10,26 @@
           {
             "id": "f64b5b413c78655e",
             "type": "tabs",
-            "dimension": 52.18446601941748,
+            "dimension": 53.72297838270617,
             "children": [
               {
-                "id": "88f215424bffec3c",
+                "id": "f08282fb5c5dc649",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "DevSecOps/Security.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "f018595158dc6f16",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Frontend/Frameworks/Remix/Request & Response.md",
+                    "file": "Backend/Databases.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "4882bc6678dd9db8",
             "type": "split",
-            "dimension": 47.81553398058252,
+            "dimension": 46.27702161729383,
             "children": [
               {
                 "id": "23f365afb1474865",
@@ -69,6 +56,18 @@
                       "type": "markdown",
                       "state": {
                         "file": "Frontend/JavaScript/Everyday methods & utils.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    }
+                  },
+                  {
+                    "id": "26e99061743f44e8",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Frontend/Frameworks/Remix/Data Transfer.md",
                         "mode": "source",
                         "source": false
                       }
@@ -109,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sr-",
+                "query": "injection",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,7 +145,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Frontend/Frameworks/Remix/Request & Response.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,34 +184,34 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "f018595158dc6f16",
+  "active": "1c3357224693bc87",
   "lastOpenFiles": [
-    "Frontend/Frameworks/Remix/Routing & Navigation.md",
+    "Backend/Databases.md",
     "DevSecOps/Security.md",
-    "Frontend/Frameworks/Remix/Request & Response.md",
+    "Frontend/Frameworks/Remix/Data Transfer.md",
+    "Backend/sql-joins.png",
+    "Frontend/HTML/Hyperlinks.md",
+    "Frontend/HTML/HTML.md",
+    "Frontend/TypeScript/Basic Types.md",
+    "Backend/Caching.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Frontend/TypeScript/Fundamentals.md",
+    "Tips & Tools/Tools & Util libs.md",
     "Frontend/Frameworks/Remix/Error Handling.md",
+    "Frontend/Frameworks/Remix/Routing & Navigation.md",
+    "Frontend/Frameworks/Remix/Remix.md",
+    "Frontend/Frameworks/Remix/Data Modeling.md",
+    "Tips & Tools/English vocab.md",
+    "Frontend/Network/Data Transfer.md",
+    "Frontend/Frameworks/Next.md",
     "Frontend/Network/Networking.md",
     "Tips & Tools/VSCode.md",
     "Frontend/Libraries/React/Hooks.md",
     "Frontend/Frameworks/Remix/Styling.md",
-    "Frontend/Frameworks/Remix/Remix.md",
     "Frontend/Frameworks/Remix/Scripting.md",
-    "Frontend/TypeScript/Basic Types.md",
     "Frontend/TypeScript/Type Transformation.md",
-    "Frontend/TypeScript/Fundamentals.md",
     "Frontend/TypeScript/TypeScript.md",
     "Tips & Tools/Git.md",
-    "Frontend/Frameworks/Next.md",
-    "Frontend/Frameworks/Remix/SEO.md",
-    "Frontend/Network/HTTP & Server.md",
-    "Backend/Backend.md",
-    "Frontend/CSS/CSS.md",
-    "Frontend/TypeScript/Generics.md",
-    "Frontend/Network/Development & Deploy.md",
-    "Frontend/Network/SEO.md",
-    "Frontend/CSS/Typography and Images.md",
-    "Frontend/CSS/Animations.md",
-    "Frontend/TypeScript/Advanced.md",
     "Frontend/Frameworks/Remix",
     "Backend/Golang",
     "Frontend/HTML/url-breakdown.png",

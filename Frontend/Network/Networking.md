@@ -26,6 +26,6 @@ A typical web application is made up of:
 
 [[HTTP & Server]]
 [[Browser]]
-[[Data Transfer]]
+[[Frontend/Network/Data Transfer]]
 [[Frontend/Network/Caching]]
 [[Development & Deploy]]

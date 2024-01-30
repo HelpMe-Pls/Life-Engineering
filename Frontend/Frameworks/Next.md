@@ -1,3 +1,4 @@
+- Next.js is a fullstack framework.
 - Next.js does code splitting automatically, so each page only loads what’s necessary for that page.
 - It means that pages become isolated. If a certain page (or part of a page) throws an error, the rest of the application would still work.
 - By default, Next.js **pre-renders** every page. This means that Next.js generates HTML for each page [in advance](https://www.youtube.com/watch?v=kUs-fH1k-aM) and can be served from a CDN geographically closer to the user, instead of having it **all** done by client-side JavaScript. Pre-rendering can result in better performance and SEO.
