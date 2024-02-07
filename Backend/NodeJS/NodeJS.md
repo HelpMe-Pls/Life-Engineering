@@ -1,6 +1,5 @@
 [[Backend/NodeJS/Frameworks]]
 [[Databases]]
-[[Auth]]
 [[APIs]]
 [Debugging](https://www.builder.io/blog/debug-nodejs)
 # Overview

@@ -90,6 +90,13 @@
         "a": 1,
         "rgb": 32156
       }
+    },
+    {
+      "query": "path:Frontend/Libraries/HTMX  ",
+      "color": {
+        "a": 1,
+        "rgb": 4027095
+      }
     }
   ],
   "collapse-display": false,
@@ -102,6 +109,6 @@
   "repelStrength": 12.3736979166667,
   "linkStrength": 1,
   "linkDistance": 342,
-  "scale": 0.45266498521471865,
+  "scale": 0.4526649852147197,
   "close": true
 }

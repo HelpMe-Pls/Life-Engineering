@@ -91,12 +91,14 @@ module.exports = mongoose.model("Book", BookSchema);
 	 Even though `NoteImage` and `UserImage` are almost identical, it's still recommended to separate them for better maintainability (polymorphism and databases don't mix well).
 ### One-to-one
 - By separating this one-to-one relationship out into two separate tables, it protects you from accidentally selecting (unwanted) stuff from one table.
+- One side of the relationship ***==must be optional==***. This allows you to create an instance of one model, and then create an instance of the other model and connect them.
 - The `@unique` attribute is essential for the foreign key in this relationship. An example in a `prisma.schema`:
 ```cs
 model Person {
   id             String          @unique @default(cuid())
   name           String
-  socialSecurity SocialSecurity?
+// One side of the relationship must be optional, in this case, a `SocialSecurity` must belongs to a `Person`, but a `Person` may not have a `SocialSecurity`
+  socialSecurity SocialSecurity?  
 }
 
 model SocialSecurity {
@@ -385,7 +387,7 @@ QUERY PLAN
 ### Keywords
 - **Schema**: written in Prisma's syntax (which is more human readable and easier to manage than SQL), it represents models and their relationships that map to tables in the actual database.
 - **Migrations**: allow you to track and synchronize schema changes across environments. Checkout the ["widen then narrow"](https://github.com/epicweb-dev/epic-stack/blob/main/docs/database.md#migrations) strategy.
-- **Seeding**: a script to [populate data](https://www.prisma.io/docs/orm/prisma-migrate/workflows/seeding) in your database that you can use to test your application and for initializing your database with data that you know you'll need. Typically it's best for this script to be idempotent (i.e. run the seed script as a way to refresh the data):
+- **Seeding**: a script to [populate data](https://www.prisma.io/docs/orm/prisma-migrate/workflows/seeding) in your database that you can use ***to test*** your application and ***for initializing*** your database with data that you know you'll need. Typically it's best for this script to be idempotent (i.e. run the seed script as a way to refresh the data):
 ```ts
 // In package.json:
 "prisma": {

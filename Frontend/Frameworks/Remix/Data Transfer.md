@@ -242,14 +242,16 @@ export async function action({ request, params }: DataFunctionArgs) {
 	invariantResponse(params.noteId, 'noteId param is required')
 	const formData = await request.formData()
 	
-	// Server side validation
+	// Server side validation, ensuring the values of `name` attributes of the <input/> fields to match the schema 
 	const submission = parse(formData, {
 		schema: NoteEditorSchema,
 	})
 // Progressive Enhancement: still submit the form with the action performed (in this case, it's something else other than the actual content edit - because that would have the `submission.intent === 'submit'`, e.g. add/remove an image) without relying on JS
+	// Check the `value` field of `name='intent'` tags
 	if (submission.intent !== 'submit') {
 		return json({ status: 'idle', submission } as const)
 	}
+	// Check if the `formData` conforms to `NoteEditorSchema`
 	if (!submission.value) {
 		return json({ status: 'error', submission } as const, {
 			status: 400,
@@ -655,7 +657,7 @@ export async function action({ request }: DataFunctionArgs) {
 - [[Security#CSRF |Checkout]] what CSRF is. Here's an example of its implementation:
 - On the server:
 ```tsx
-// csrf.server.ts
+//---------------------------- csrf.server.ts
 import { createCookie } from '@remix-run/node'
 import { CSRF } from 'remix-utils/csrf/server'
 
@@ -669,10 +671,10 @@ const cookie = createCookie('csrf', {
 
 export const csrf = new CSRF({ cookie })
 
-// .env
+//---------------------------- .env
 SESSION_SECRET="super-duper-secret"
 
-// env.server.ts: Make the CSRF secret available for the app
+//---------------------------- env.server.ts: Make the CSRF secret available for the app
 const schema = z.object({
 	SESSION_SECRET: z.string(),
 })
@@ -685,7 +687,7 @@ declare global {
 ```
 - On the client:
 ```tsx
-// root.tsx
+//---------------------------- root.tsx
 import { csrf } from './utils/csrf.server.ts'
 
 export async function loader({ request }: DataFunctionArgs) {
@@ -695,6 +697,7 @@ export async function loader({ request }: DataFunctionArgs) {
 	return json(
 		{ username: os.userInfo().username, ENV: getEnv(), honeyProps, csrfToken },
 		{
+		// Save it to a cookie so that we can validate across the entire app
 		headers: csrfCookieHeader ? { 'set-cookie': csrfCookieHeader } : {},
 		},
 	)
@@ -710,14 +713,14 @@ export default function AppWithProviders() {
 	)
 }
 
-// notes.$nodeId.tsx (or some UI route):
+//---------------------------- notes.$nodeId.tsx (or some UI route):
 import { AuthenticityTokenInput } from 'remix-utils/csrf/react'
 import { csrf } from '#app/utils/csrf.server.ts'
 
 export async function action({ request, params }: DataFunctionArgs) {
 	const formData = await request.formData()
 	try {
-	// Double Submit Cookie patterm=n:
+	// Double Submit Cookie pattern:
 		await csrf.validate(formData, request.headers)
 	} catch (error) {
 		if (error instanceof CSRFError) {
@@ -742,4 +745,3 @@ export async function action({ request, params }: DataFunctionArgs) {
 		</Button>
 </Form>
 ```
-

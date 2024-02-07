@@ -238,3 +238,31 @@ export default function Root() {
 ```
  To customize the behavior of `<ScrollRestoration/>`, check [this](https://youtu.be/4_H8j3rkpjI?si=YSGQfo3ACs_FZc6P&t=109) out.
  To opt out the behavior of `<ScrollRestoration/>` for particular `<Link/>`s or `<Form/>`s, add the `preventScrollReset` prop to them. But keep in mind that this *does not* prevent the scroll position from being restored when the user comes back to the location with the *back/forward buttons*, it just prevents the reset when the user clicks the link.
+## Non-navigation requests
+- In Remix, we have a `<Form />` component for navigation and `useNavigation` to have information about the current navigation. We can do this because there can only be one navigation at time. However, with non-navigation mutations, you can have many of them at once, and `useFetcher` gives us the ability to handle those mutations.
+- `useFetcher()` gives us the ability to perform any kind of fetch request. It definitely can result in a redirect, but often does not. It still uses `loader`s for `GET`s and `action`s for `POST`s, but all the information about the request is contained within the `fetcher` object itself:
+```ts
+import { useFetcher } from '@remix-run/react'
+
+function SomeComponent() {
+	const fetcher = useFetcher()
+
+	// trigger the fetch with these
+	const ui = <fetcher.Form {...formOptions} />
+	// for imperative fetches:
+	useEffect(() => {
+		// to submit data
+		fetcher.submit(data, options)
+		// or to get data:
+		fetcher.load(href)
+	}, [fetcher])
+
+	// build UI with these
+	fetcher.state
+	fetcher.formMethod
+	fetcher.formAction
+	fetcher.formData
+	fetcher.formEncType
+	fetcher.data
+}
+```
