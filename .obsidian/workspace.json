@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/Frameworks/Remix/Remix.md",
+                    "file": "Frontend/Frameworks/Remix/Authentication.md",
                     "mode": "source",
                     "source": false
                   }
@@ -30,19 +30,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Backend/Databases.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "c4512ab4b8a666d7",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Frontend/Frameworks/Remix/Data Transfer.md",
+                    "file": "Frontend/Frameworks/Remix/Authentication.md",
                     "mode": "source",
                     "source": false
                   }
@@ -133,7 +121,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "CSRF",
+                "query": "logout",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -150,7 +138,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -170,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Frontend/Frameworks/Remix/Remix.md",
+                "file": "Frontend/Frameworks/Remix/Authentication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -212,18 +201,20 @@
   },
   "active": "f08282fb5c5dc649",
   "lastOpenFiles": [
-    "Frontend/Frameworks/Remix/Authentication.md",
-    "Backend/Databases.md",
-    "Frontend/Frameworks/Remix/Remix.md",
-    "Frontend/Network/Browser.md",
-    "Frontend/Frameworks/Remix/Data Transfer.md",
     "DevSecOps/Security.md",
-    "Frontend/Frameworks/Remix/Routing & Navigation.md",
-    "Backend/Caching.md",
+    "Frontend/Network/Browser.md",
     "Frontend/Network/Data Transfer.md",
-    "README.md",
-    "Backend/Backend.md",
+    "Frontend/Frameworks/Remix/Remix.md",
+    "Frontend/Frameworks/Remix/Authentication.md",
+    "Frontend/TypeScript/Basic Types.md",
+    "Frontend/Frameworks/Remix/Data Transfer.md",
+    "Backend/Databases.md",
+    "Backend/Caching.md",
     "Backend/Auth.md",
+    "Backend/Backend.md",
+    "Frontend/Frameworks/Remix/Routing & Navigation.md",
+    "Frontend/TypeScript/Fundamentals.md",
+    "README.md",
     "Backend/NodeJS/NodeJS.md",
     "Frontend/Frameworks/Next.md",
     "Frontend/Libraries/HTMX/HTMX.md",
@@ -232,8 +223,6 @@
     "Backend/sql-joins.png",
     "Frontend/HTML/Hyperlinks.md",
     "Frontend/HTML/HTML.md",
-    "Frontend/TypeScript/Basic Types.md",
-    "Frontend/TypeScript/Fundamentals.md",
     "Tips & Tools/Tools & Util libs.md",
     "Frontend/Frameworks/Remix/Error Handling.md",
     "Frontend/Frameworks/Remix/Data Modeling.md",

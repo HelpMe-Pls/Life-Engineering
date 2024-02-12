@@ -17,18 +17,18 @@ const response = new Response(body, {
 	- Some cases where setting cookies from your client-side code is more suitable like when you use those stored values for client-side state management or there's no server involvement (no SSR).  
 	- Most of the time the only persistent data stored in a session cookie is an ID that can be used to look up the rest of the data in a database. Sometimes temporary data is also stored in the cookie using a pattern called a ["Cookie Flash"](https://remix.run/docs/en/main/utils/sessions#sessionflashkey-value).
 - Each cookie has a name, value, and a set of attributes. The attributes are optional and can be used to configure the cookie's behavior:
-	- `path`: The path on the server for which the cookie is valid. Defaults to the current path. This means if the path is set to `/my-page`, the cookie will only be sent to the server when the user is on the `/my-page` path.
-	- `domain`: The domain for which the cookie is valid. Defaults to the current domain. This means if the domain is set to `example.com`, the cookie will be sent to the server for *all subdomains* of `example.com`.
-	- `expires`: The date and time when the cookie expires. If not set, the cookie will expire when the browser is closed.
-	- `max-age`: The number of seconds until the cookie expires. If not set, the cookie will expire when the browser is closed.
-	- `secure`: If set, the cookie will only be sent to the server over `https`.
-	- `httpOnly`: If set, the cookie will not be accessible to JavaScript (browser extensions, malicious code,...). This is useful for preventing cross-site scripting attacks.
-	- `sameSite`: If set, the cookie will only be sent to the server if the request originated from the same site. This is useful for preventing [[Security#CSRF |CSRF]] attacks.
+	- `Path`: The path on the server for which the cookie is valid. Defaults to the current path. This means if the path is set to `/my-page`, the cookie will only be sent to the server when the user is on the `/my-page` path.
+	- `Domain`: The domain for which the cookie is valid. Defaults to the current domain. This means if the domain is set to `example.com`, the cookie will be sent to the server for *all subdomains* of `example.com`.
+	- `Expires`: The date and time when the cookie expires. When set, the deadline is *relative to the client* the cookie is being set on, not the server. If not set, the cookie will expire *when the browser is closed*.
+	- `Max-Age`: The number of seconds until the cookie expires. If not set, the cookie will expire *when the browser is closed*.  If both `Expires` and `Max-Age` are set, Max-Age has precedence.
+	- `Secure`: If set, the cookie will only be sent to the server over `https`.
+	- `HttpOnly`: If set, the cookie will not be accessible to JavaScript (browser extensions, malicious code,...). This is useful for preventing cross-site scripting attacks.
+	- `SameSite`: If set, the cookie will only be sent to the server if the request originated from the same site. This is useful for preventing [[Security#CSRF |CSRF]] attacks.
 - [[Authentication#Cookies and Sessions |Checkout]] a fullstack example in Remix.
 ### GDPR Banner
 - The GDPR (General Data Protection Regulation) banner is a pop-up or footer on a webpage that requests user's consent for the use of cookies on that website. It doesn't mean that if the user reject it, then *all* cookies for the site is disabled. It only applies for non-essential cookies (for tracking and advertising purposes). The essential cookies (for auth & security reasons) are still enabled (unless the user manually turn them off in the DevTools).
 ### Good practice
-It's recommended to use the [cookie](https://www.npmjs.com/package/cookie) package which provides a `sign` function that will sign the cookie value using a cryptographic hash function. It also provides a `verify` function that will verify the signature. This way, if the user modifies the cookie value, the signature will no longer match and we'll know the cookie has been tampered with.
+It's recommended to use the [cookie](https://www.npmjs.com/package/cookie) package which provides a `sign` function that will sign the cookie value using a cryptographic hash function. It also provides a `verify` function that will verify the signature. This way, if the user modifies the cookie value, the signature will no longer match and we'll know the cookie has been tampered with.
 
 ## Local storage
 - Stores data on browser only. Should not be used to store sensitive data (e.g., tokens, keys, etc.), as this could create a security vulnerability..

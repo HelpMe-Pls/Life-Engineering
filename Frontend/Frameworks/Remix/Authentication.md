@@ -1,5 +1,5 @@
 # Cookies and Sessions
-- [[Browser#Cookie |Checkout]] what cookies are. Here's an example in Remix:
+- [[Browser#Cookie |Checkout]] what cookies are. Here's an example using cookie to set the theme:
 ```tsx
 //------------------------------- /utils/theme.server.ts
 import * as cookie from 'cookie'
@@ -239,6 +239,99 @@ export async function loader({ request }: DataFunctionArgs) {
 	...
 }
 ```
+### Logout
+- Use React hooks and the `useSubmit` hook from Remix to implement an auto logout feature to enhance security for your user's account:
+```tsx
+//--------------------- logout.tsx
+import { type DataFunctionArgs, redirect } from '@remix-run/node'
+import { sessionStorage } from '#app/utils/session.server.ts'
+
+export async function loader() {
+	return redirect('/')
+}
+
+export async function action({ request }: DataFunctionArgs) {
+	const cookieSession = await sessionStorage.getSession(
+		request.headers.get('cookie'),
+	)
+	// Assuming we're only having ONE cookie session responsible for the user's session
+	return redirect('/', {
+		headers: {
+			'set-cookie': await sessionStorage.destroySession(cookieSession),
+		},
+	})
+}
+
+
+//--------------------- root.tsx
+import {useLocation, useSubmit} from '@remix-run/react'
+
+function LogoutTimer() {
+	const location = useLocation()
+	const submit = useSubmit()
+	const logoutTime = 1000 * 60 * 60 * 24;
+	const modalTime = logoutTime - 1000 * 60 * 2;
+	const modalTimer = useRef<ReturnType<typeof setTimeout>>()
+	const logoutTimer = useRef<ReturnType<typeof setTimeout>>()
+
+// `useCallback` to memoize this function (to prevent re-computing) because it's included in a `useCallback` dependency array				
+	const logout = useCallback(() => {
+		submit(null, { method: 'POST', action: '/logout' })
+	}, [submit])
+	
+// `useCallback` to prevent infinite re-render loop because this function is included in a `useEffect` dependency array
+	const cleanupTimers = useCallback(() => {
+		clearTimeout(modalTimer.current)
+		clearTimeout(logoutTimer.current)
+	}, [])
+
+	const resetTimers = useCallback(() => {
+		cleanupTimers()
+		modalTimer.current = setTimeout(() => {
+		   setSomeState(...)
+		}, modalTime)
+		logoutTimer.current = setTimeout(logout, logoutTime)
+	}, [cleanupTimers, logout, logoutTime, modalTime])
+
+	useEffect(() => resetTimers(), [resetTimers, location.key])
+	useEffect(() => cleanupTimers, [cleanupTimers])
+
+	return (
+		{/* JSX code... */}
+			<Form method="POST" action="/logout">
+				<AlertDialogAction type="submit">Logout</AlertDialogAction>
+			</Form>
+        {/* More JSX code...*/}
+	)
+}
+
+function Document({
+	children,
+	isLoggedIn = false,
+}: {
+	children: React.ReactNode
+	isLoggedIn?: boolean
+}) {
+	return (
+		<html>
+			<head/>
+			<body>
+				{children}
+				{isLoggedIn ? <LogoutTimer /> : null}
+			</body>
+		</html>
+	)
+}
+
+function App() {
+	const user = getUser()
+	return (
+		<Document isLoggedIn={Boolean(user)} 
+		// More JSX...
+		/>
+	)
+}
+```
 
 # Password Management
 ## Keywords
@@ -252,5 +345,112 @@ export async function loader({ request }: DataFunctionArgs) {
 ## Data model for passwords
 - It is preferred to have a separate `Password` model that has a one-to-one relationship to the `User` model. This way, the default of query the `User` will not include the password hash (at worst, it will include the `id` of the password which is not a concern):
 ```cs
+model User {
+  id          String  @id @default(cuid())
+  email       String  @unique
+  username    String  @unique
+  name        String?
 
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  image       UserImage?
+  password    Password?
+  notes       Note[]
+}
+
+model Password {
+  hash      String
+
+  user      User   @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  userId    String @unique
+}
+```
+
+## Using cookie to verify an user
+- We can utilize `bcrypt` and cookies to make sure the currently active user is legitimate: 
+```tsx
+//--------------------- signup.tsx
+export async function action({ request }: DataFunctionArgs) {
+	const formData = await request.formData()
+	const submission = await parse(formData, {
+		schema: SignupFormSchema.superRefine(async (data, ctx) => {
+			const existingUser = await prisma.user.findUnique({
+				where: { username: data.username },
+				select: { id: true },
+			})
+			if (existingUser) {
+				ctx.addIssue({
+					path: ['username'],
+					code: z.ZodIssueCode.custom,
+					message: 'A user already exists with this username',
+				})
+				return
+			}
+		}).transform(async data => {
+			const { username, email, name, password } = data
+
+			const user = await prisma.user.create({
+				select: { id: true },
+				data: {
+					email: email.toLowerCase(),
+					username: username.toLowerCase(),
+					name,
+					password: {   // <<< Here
+						create: {
+							hash: await bcrypt.hash(password, 10),
+						},
+					},
+				},
+			})
+
+			return { ...data, user }
+		}),
+		async: true,
+	})
+// More code to set the cookie...
+}
+
+//--------------------- login.tsx
+export async function action({ request }: DataFunctionArgs) {
+	const formData = await request.formData()
+	const submission = await parse(formData, {
+		schema: intent =>
+			LoginFormSchema.transform(async (data, ctx) => {
+				if (intent !== 'submit') return { ...data, user: null }
+
+				const userWithPassword = await prisma.user.findUnique({
+					select: { id: true, password: { select: { hash: true } } },
+					where: { username: data.username },
+				})
+				if (!userWithPassword || !userWithPassword.password) {
+					ctx.addIssue({
+						code: 'custom',
+						message: 'Invalid username or password',
+					})
+					return z.NEVER
+				}
+
+				const isValid = await bcrypt.compare( // <<< Here
+					data.password,
+					userWithPassword.password.hash,
+				)
+
+				if (!isValid) {
+					ctx.addIssue({
+						code: 'custom',
+						message: 'Invalid username or password',
+					})
+					return z.NEVER
+				}
+
+				return { ...data, user: { id: userWithPassword.id } }
+			}),
+		async: true,
+	})
+	// get the password off the payload that's sent back
+	delete submission.payload.password
+
+// More code to set the cookie...
+}
 ```

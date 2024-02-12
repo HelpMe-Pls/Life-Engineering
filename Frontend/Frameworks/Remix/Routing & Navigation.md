@@ -4,7 +4,7 @@
 # Nested routes
 - For nested routes, use the `<Outlet/>` component as a *layout* wrapper for child layouts:
 ```tsx
-// When you navigate to `/parent/child` path, you'll see "Parent" above "Child". If we swap the `<h1>` and `<Outlet />` in the parent, then the child will be above the parent. The parent gets to decide where its child goes.
+// When you navigate to `/parent/child` path, you'll see "Parent" above "Child". If we swap the `<h1>` and `<Outlet />` in the <Parent/>, then the "Child" will be above the "Parent". The parent gets to decide where its child goes.
 //-----------------------------------
 // app/routes/parent.tsx
 export default function Parent() {
@@ -51,6 +51,10 @@ export default function PetRoute() {
 }
 ```
 - Child routes inherit all params from their parent routes, so `useParams()` can also get those params.
+- Child routes have access to the data returned by their parent routes as well (using the [`useRouteLoaderData`](https://remix.run/docs/en/main/hooks/use-route-loader-data)hook:
+```ts
+const { user } = useRouteLoaderData<typeof rootLoader>('root')
+```
 # Resource routes
 - Think of them as side-effect routes. Preferred in use cases for ***URLs that don't return UI***, e.g. use the path `/images/some-image-id` to get an image. These kind of route requests expect JSON, or plaintext, or an image. In some cases these requests could be non-GET requests as well.
 - Resource routes are designed to be standalone and handle their own data fetching, which means that the [`loader`](https://remix.run/docs/en/main/route/loader) in the `app/root.tsx` will not be run whenever we access a resource route. 

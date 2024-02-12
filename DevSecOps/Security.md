@@ -5,4 +5,5 @@
 	2. **SameSite Cookies**: Setting it to `Strict` or `Lax` will ensure that the cookie isn't sent with cross-site requests.
 	3. **Check the Origin Header**: Servers can check the `Origin` and `Referer` headers of incoming requests. If the request's origin isn't what the server expects, it can reject the request.
 	4. **Always Logout**: Encourage users to log out of sessions when they're done, especially on public or shared computers. This reduces the window of opportunity for an attacker.
+> [[Authentication#Logout|An example]]: rather than having a link to a `/logout` page which is too common, you should have a button that performs a `POST` request to `/logout`
 - Checkout [[Frontend/Frameworks/Remix/Data Transfer#CSRF|an implementation]].
