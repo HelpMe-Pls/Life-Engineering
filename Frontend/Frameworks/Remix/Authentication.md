@@ -132,6 +132,16 @@ function App() {
 	)
 }
 ```
+## Role-based access
+- In an authenticated system, each user has a set of roles, and each role has a set of permissions. Then when the user is trying to perform an action, the app checks whether the user's roles have the necessary permissions.
+- The primary benefit of assigning roles instead of permissions to users is it makes it easier to manage permissions across a large number of users. 
+	  For example, if you have 100 users and you want to give them all the same permissions, it's easier to create a role with those permissions and assign the role to all 100 users than it is to assign the permissions to each user individually. Especially when you decide you want to change or add new permissions to those users.
+- It is highly recommended to have ***many-to-many relationships*** for our roles and permissions. User has many roles, roles can be assigned to many users. Role has many permissions and permissions can be assigned to many roles.
+- f
+- f
+
+
+
 ## Cookie sessions
 - We can leverage cookies as an alternative for client-side state management, using the [`createCookieSessionStorage`](https://remix.run/docs/en/main/utils/sessions#createcookiesessionstorage) API to create cookies that are tied to the user's session, from which we can use to store and retrieve state change triggered by the UI. For example, showing a toast notification when the user deletes something:
 ```tsx

@@ -270,3 +270,26 @@ function SomeComponent() {
 	fetcher.data
 }
 ```
+## Protecting routes
+- The concept of protecting a route is pretty simple: Check the request, and if it's coming from a user who doesn't have a valid session, then redirect them to the login page:
+```tsx
+//-------------------- utils/auth.server.ts
+export async function requireUserId(request: Request) {
+	const userId = await getUserId(request);
+	if (!userId) {
+		throw redirect('/login');
+	}
+	return userId;
+}
+
+//-------------------- profile.tsx 
+export async function loader({ request }: DataFunctionArgs) {
+	const userId = await requireUserId(request)
+	const user = await prisma.user.findUnique({
+		where: { id: userId },
+		select: { username: true },
+	})
+	invariantResponse(user, 'User not found', { status: 404 })
+	return json({})
+}
+```
