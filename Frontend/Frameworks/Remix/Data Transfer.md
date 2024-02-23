@@ -1,4 +1,4 @@
-- Checkout [[Frontend/Network/Data Transfer |rate limiting]].
+- Checkout [[Frontend/Network/Data Transfer#Rate Limiting|rate limiting]].
 ----
 # Loaders
 - You can define handlers and the UI (have backend and frontend code) for a route inside of a single file by using the async `loader` function for `GET` requests. You can get some of the benefits from `graphQL` and `tRPC` when using it: 

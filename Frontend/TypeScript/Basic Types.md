@@ -1,4 +1,4 @@
-# Utility types
+6# Utility types
 - Check out the [full list](https://www.typescriptlang.org/docs/handbook/utility-types.html).
 ## Record<Keys, Type>
 - Mostly used to *type **objects*** with properties of type `Keys` and values of type `Type`. Also useful in cases where you want to map the properties of a type to another type:
@@ -278,4 +278,18 @@ const createThenGetUser = async (
   return user;
 };
 ```
-
+- If you're having a conflict in a function's return type, consider a `throw` over a `return` where it makes sense:
+```ts
+async function requireOnboardingEmail(request: Request) {
+	await requireAnonymous(request)
+	const verifySession = await verifySessionStorage.getSession(
+		request.headers.get('cookie'),
+	)
+	const email = verifySession.get(onboardingEmailSessionKey)
+	if (typeof email !== 'string' || !email) {
+	// using a `throw` here instead of a `return` so that the return type of this function is a `string`, not a `Promise` (from `redirect`)
+		throw redirect('/signup')  
+	}
+	return email
+}
+```

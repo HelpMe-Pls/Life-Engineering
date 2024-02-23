@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Backend/Databases.md",
+                    "file": "Frontend/Frameworks/Remix/Routing & Navigation.md",
                     "mode": "source",
                     "source": false
                   }
@@ -36,7 +36,8 @@
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           },
           {
             "id": "4882bc6678dd9db8",
@@ -121,7 +122,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "filter(Bool",
+                "query": "vscode",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -158,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Backend/Databases.md",
+                "file": "Frontend/Frameworks/Remix/Authentication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,18 +199,20 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "bd8da6e5c07d12d4",
+  "active": "6fcdb514d8a1943b",
   "lastOpenFiles": [
     "Frontend/Frameworks/Remix/Data Transfer.md",
-    "Backend/Databases.md",
-    "Frontend/Frameworks/Remix/Routing & Navigation.md",
     "Frontend/Frameworks/Remix/Authentication.md",
+    "Frontend/Frameworks/Remix/Routing & Navigation.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
+    "Tips & Tools/Tools & Util libs.md",
+    "Tips & Tools/VSCode.md",
+    "Frontend/Network/Data Transfer.md",
+    "Frontend/TypeScript/Basic Types.md",
+    "Backend/Databases.md",
     "DevSecOps/Security.md",
     "Frontend/Network/Browser.md",
-    "Frontend/Network/Data Transfer.md",
     "Frontend/Frameworks/Remix/Remix.md",
-    "Frontend/TypeScript/Basic Types.md",
     "Backend/Caching.md",
     "Backend/Auth.md",
     "Backend/Backend.md",
@@ -222,12 +225,10 @@
     "Backend/sql-joins.png",
     "Frontend/HTML/Hyperlinks.md",
     "Frontend/HTML/HTML.md",
-    "Tips & Tools/Tools & Util libs.md",
     "Frontend/Frameworks/Remix/Error Handling.md",
     "Frontend/Frameworks/Remix/Data Modeling.md",
     "Tips & Tools/English vocab.md",
     "Frontend/Network/Networking.md",
-    "Tips & Tools/VSCode.md",
     "Frontend/Frameworks/Remix",
     "Backend/Golang",
     "Frontend/HTML/url-breakdown.png",
