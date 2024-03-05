@@ -1,5 +1,48 @@
 # Cookies and Sessions
-- [[Browser#Cookie |Checkout]] what cookies are. Here's an example using cookie to set the theme:
+- [[Browser#Cookie |Checkout]] what cookies are. 
+- The ***session*** data is ***created on the server*** *then* stored in a cookie (as an encoded value) on the user’s browser. This is done by serializing the session data, signing it with a secret key (or keys), and then setting it as a cookie. When the server receives the cookie, it decodes the value back into the original session data. It also verifies the signature to ensure that the data has not been tampered with. 
+  An example initiates a session:
+```tsx
+import { createCookieSessionStorage } from '@remix-run/node'
+
+export const sessionStorage = createCookieSessionStorage({
+	cookie: {
+		name: 'en_session',
+		sameSite: 'lax',
+		path: '/',
+		httpOnly: true,
+		secrets: process.env.SESSION_SECRET.split(','),
+		secure: process.env.NODE_ENV === 'production',
+	},
+})
+
+// we have to do this because every time you commit the session you overwrite it, and since we overwrite it, the session is reset to the one defined above (i.e. no `expiresAt` or any other settings)
+// so to persist the existing settings that may have been set while the user is using the app, we use this little JS magic below store the expiration time in the cookie and reset it every time we commit
+const originalCommitSession = sessionStorage.commitSession
+
+Object.defineProperty(sessionStorage, 'commitSession', {
+	value: async function commitSession(
+		...args: Parameters<typeof originalCommitSession>
+	) {
+		const [session, options] = args
+		if (options?.expires) {
+			session.set('expires', options.expires)
+		}
+		if (options?.maxAge) {
+			session.set('expires', new Date(Date.now() + options.maxAge * 1000))
+		}
+		const expires = session.has('expires')
+			? new Date(session.get('expires'))
+			: undefined
+		const setCookieHeader = await originalCommitSession(session, {
+			...options,
+			expires,
+		})
+		return setCookieHeader
+	},
+})
+```
+- An example using cookie to set the theme:
 ```tsx
 //------------------------------- /utils/theme.server.ts
 import * as cookie from 'cookie'
@@ -840,9 +883,7 @@ async function validateRequest(request: Request, body: URLSearchParams | FormDat
 // Set the `username` to the cookie then forward it to `/reset-password`
 			return handleResetPasswordVerification({ request, body, submission })
 		}
-		case 'onboarding': {
-			return handleOnboardingVerification({ request, body, submission })
-		}
+		// other cases...
 	}
 }
 
@@ -863,7 +904,7 @@ export async function action({ request }: DataFunctionArgs) {
 
 	const { password } = submission.value
 
-// The `resetuserPassword` hashes the new password using `bcrypt` and then update it for the corresponding `username`
+// The `resetUserPassword` hashes the new password using `bcrypt` and then update it for the corresponding `username`
 	await resetUserPassword({ username: resetPasswordUsername, password })
 	const verifySession = await verifySessionStorage.getSession(
 		request.headers.get('cookie'),
@@ -881,15 +922,15 @@ export async function action({ request }: DataFunctionArgs) {
 - Verification helps you to reduce the number of spam accounts made on your site, since you can require that a user verify their email address before they can use it. You need to make sure the only way to verify the information is if the user _actually_ has access to it.
 - Email is one of the most common ways to verify a user's identity. It's highly recommended to use [resend](https://resend.com) as a service for this. It's important to have [[Frontend/Network/Data Transfer#Rate Limiting |rate limiting]] for all verification codes that we're receiving from users.
 - An authentication flow with email may look like:
-	1. The user submits an email to the server
-	2. The server creates a verification in the database
-	3. The server redirects the user to a `/verify` route
-	4. The server sends the code to the user's email address
-	5. The user checks their email client for the code
-	6. The user submits the code
+	1. The user submits an email to the server.
+	2. The server creates a verification in the database.
+	3. The server redirects the user to a `/verify` route.
+	4. The server sends the code to the user's email address.
+	5. The user checks their email client for the code.
+	6. The user submits the code.
 	7. The server verifies the code with the verification in the database
-	8. The server redirects with a cookie
-	9. The user proceeds to onboard with a signed cookie identifying them as the owner of the email address their onboarding with
+	8. The server redirects with a cookie.
+	9. The user proceeds to onboard with a signed cookie identifying them as the owner of the email address their onboarding with.
 - An example of a `sendEmail` function from the server:
 ```ts
 import { getErrorMessage } from './misc.tsx'
@@ -971,14 +1012,14 @@ export async function handleVerification({ request, submission}: VerifyFunctionA
 		title: 'Email Changed',
 		type: 'success',
 		description: Your email address has been changed to ${user.email},
-	},
-	// Clean up
-	{
+	  },
+	  // Clean up
+	  {
 	    headers: {
 	      'set-ccokie': await verifySessionStorage.destroySession(verifySession),
-	   }
-	}
-  )
+	     }
+	  }
+    )
 }
 ```
 - Another approach which provides better UX more also more complicated is to allow multiple email addresses per user, and allow the user to designate one as primary. Then you can verify the new address before making it primary, and the user can always revert to the old address if they need to. Your GitHub account has an example of this.
@@ -986,9 +1027,9 @@ export async function handleVerification({ request, submission}: VerifyFunctionA
 # 2FA (Two factor Authentication)
 - This method is a way to add an extra layer of security to your user's accounts by requiring them to enter a code from another device (usually their phone) in addition to their username and password. The device is the second "factor" (in addition to the password) that is used to verify the user's identity.
 - The main difference from [[Authentication#TOTP (time-based one-time password) |TOTP]] is:
-	- It won't have an expiration
-	- The period will be much shorter (30 seconds)
-	- The code will be generated by the user's 2FA app instead of being sent to them via email
+	- It won't have an expiration.
+	- The period will be much shorter (30 seconds).
+	- The code will be generated by the user's 2FA app instead of being sent to them via email.
 ## Enable 2FA
 - Here are the steps to enable 2FA:
 	1. The user enables 2FA in their account settings
@@ -998,16 +1039,817 @@ export async function handleVerification({ request, submission}: VerifyFunctionA
 	5. The 2FA app generates a 6 digit code that is valid for 30 seconds.
 	6. The user submits that code
 	7. The server verifies the code
-	8. The server upgrades the verification from a "verify" type of verification to a "2FA" verification.
+	8. The server upgrades the verification from a "verify verification" type to a "2FA" verification.
 - Code flow example:
 ```tsx
+// Step 2: Create a "verify verification" on the server
+//-------------------- app/routes/settings+/profile.two-factor.index.tsx
+import { generateTOTP } from '@epic-web/totp'
+import { requireUserId } from '#app/utils/auth.server.ts'
 
+export async function action({ request }: ActionFunctionArgs) {
+	const userId = await requireUserId(request)
+
+	const { otp: _otp, ...config } = generateTOTP()
+	const verificationData = {
+		...config,
+		type: twoFAVerifyVerificationType,
+		target: userId,
+		expiresAt: new Date(Date.now() + 1000 * 60 * 10),
+	}
+	await prisma.verification.upsert({
+		where: {
+			target_type: { target: userId, type: twoFAVerifyVerificationType },
+		},
+		create: verificationData,
+		update: verificationData,
+	})
+	return redirect('/settings/profile/two-factor/verify')
+}
+
+// Step 3: The server confirms that the user is able to enable 2FA and provides the user with an Auth URI and a QR code
+//-------------------- profile.two-factor.verify.tsx
+export async function loader({ request }: DataFunctionArgs) {
+	const userId = await requireUserId(request)
+	
+	const verification = await prisma.verification.findUnique({
+		where: {
+			target_type: { type: twoFAVerifyVerificationType, target: userId },
+		},
+		select: {
+			id: true,
+			algorithm: true,
+			secret: true,
+			period: true,
+			digits: true,
+		},
+	})
+	if (!verification) {
+		return redirect('/settings/profile/two-factor')
+	}
+	
+	const user = await prisma.user.findUniqueOrThrow({
+		where: { id: userId },
+		select: { email: true },
+	})
+	const issuer = new URL(getDomainUrl(request)).host
+	const otpUri = getTOTPAuthUri({
+		...verification,
+		accountName: user.email,
+		issuer,
+	})
+	const qrCode = await QRCode.toDataURL(otpUri)
+	
+	return json({ otpUri, qrCode })  // << The meat
+}
+
+// Step 6 -> 8: Save the 2FA verification to the db
+//-------------------- profile.two-factor.verify.tsx
+import { isCodeValid } from '#app/routes/_auth+/verify.tsx'
+export const twoFAVerifyVerificationType = '2fa-verify'
+
+export async function action({ request }: DataFunctionArgs) {
+	const userId = await requireUserId(request)
+	const formData = await request.formData()
+	await validateCSRF(formData, request.headers)
+
+	if (formData.get('intent') === 'cancel') {
+		await prisma.verification.deleteMany({
+			where: { type: twoFAVerifyVerificationType, target: userId },
+		})
+		return redirect('/settings/profile/two-factor')
+	}
+	
+	// Step 6: Handling 2FA code from user's submission
+	const submission = await parse(formData, {
+		schema: () =>
+			VerifySchema.superRefine(async (data, ctx) => {
+			// Step 7: The server verifies the code
+				const codeIsValid = await isCodeValid({
+					code: data.code,
+					type: '2fa',
+					target: userId,
+				})
+				if (!codeIsValid) {
+					ctx.addIssue({
+						path: ['code'],
+						code: z.ZodIssueCode.custom,
+						message: `Invalid code`,
+					})
+					return z.NEVER
+				}
+			}),
+
+		async: true,
+	})
+	if (submission.intent !== 'submit') {
+		return json({ status: 'idle', submission } as const)
+	}
+	if (!submission.value) {
+		return json({ status: 'error', submission } as const, { status: 400 })
+	}
+
+	// Step 8: Persist the db
+	await prisma.verification.update({
+		where: {
+			target_type: { type: twoFAVerifyVerificationType, target: userId },
+		},
+		data: { 
+		    type: '2fa', 
+		    expiresAt: null  // So that 2FA stays enabled from now 
+		},
+	})
+	throw await redirectWithToast('/settings/profile/two-factor', {
+		type: 'success',
+		title: 'Enabled',
+		description: 'Two-factor authentication has been enabled.',
+	})
+}
 ```
-## Verify 2FA
-- f
-- f
-- f
-## Disable 2FA
-- f
-- f
+## Verify the user using 2FA
+- Quite similar to the [[Authentication#Reset password |password reset]] flow, an auth flow using 2FA might look like:
+	1. The user logs out (eventually).
+	2. The server unsets the session ID (we do all this already).
+	3. The user logs back in.
+	4. The server checks that the 2FA verification exists.
+	5. The server still create their managed session, but instead of the main `cookieSession`, we put it in a new `verifySession` and send them to the `/verify` route.
+	6. The user submits the 2FA code generated by their app.
+	7. The server verifies the code.
+	8. The server updates their session from the `verifySession` to the regular `cookieSession`.
+- Code example:
+```tsx
+// Step 5: Redirect the user to the `/verify` route to handle the 2FA code
+//-------------------- app/routes/auth+/login.tsx
+export async function action({ request }: DataFunctionArgs) {
+	const formData = await request.formData()
+	const submission = await parse(formData, {
+		schema: intent =>
+			LoginFormSchema.transform(async (data, ctx) => {
+				if (intent !== 'submit') return { ...data, session: null }
 
+				const session = await login(data)
+				if (!session) {
+					ctx.addIssue({
+						code: 'custom',
+						message: 'Invalid username or password',
+					})
+					return z.NEVER
+				}
+
+				return { ...data, session }
+			}),
+		async: true,
+	})
+	// get the password off the payload that's sent back
+	delete submission.payload.password
+
+	if (!submission.value?.session) {
+		return json({ status: 'error', submission } as const, { status: 400 })
+	}
+
+	const { session, remember, redirectTo } = submission.value
+
+	// determine whether the user has 2fa enabled 
+	const verification = await prisma.verification.findUnique({
+		select: { id: true },
+		where: {
+			target_type: { target: session.userId, type: twoFAVerificationType },
+		},
+	})
+
+	// create a new session for 2fa
+	const verifySession = await verifySessionStorage.getSession()
+	if (verification) {
+		// if the user has 2fa enabled, set the session.id in a verifySession cookie under an interim string like "unverified-session-id"
+		verifySession.set('unverified-session-id', session.id)
+		// also set the user's "remember me" preference in the verifySession cookie
+		verifySession.set('remember me', remember)
+		// use the getRedirectToUrl utility from the verify route.
+		const redirectUrl = getRedirectToUrl({
+			request,
+			type: twoFAVerificationType,
+			target: session.userId,
+			redirectTo  // send the user back to their pre-login route
+		})
+		//  redirect the user to the `/verify` route
+		return redirect(redirectUrl.toString(), {
+			headers: {
+				'set-cookie': await verifySessionStorage.commitSession(verifySession),
+			},
+		})
+	}
+	// if the user does not have 2fa enabled, then we can follow the old logic:
+	else {
+		const cookieSession = await sessionStorage.getSession(
+			request.headers.get('cookie'),
+		)
+		cookieSession.set(sessionKey, session.id)
+		return redirect(safeRedirect(redirectTo), {
+			headers: {
+				'set-cookie': await sessionStorage.commitSession(cookieSession, {
+					expires: remember ? session.expirationDate : undefined,
+				}),
+			},
+		})
+	}
+}
+
+// Step 7: The server verifies the 2FA code
+//-------------------- app/routes/auth+/verify.tsx
+import { handleLoginTwoFactorVerification } from './login.tsx'
+
+async function validateRequest(
+	request: Request,
+	body: URLSearchParams | FormData,
+) {
+	const submission = await parse(body, {
+		schema: () =>
+			VerifySchema.superRefine(async (data, ctx) => {
+				const codeIsValid = await isCodeValid({
+					code: data[codeQueryParam],
+					type: data[typeQueryParam],
+					target: data[targetQueryParam],
+				})
+				if (!codeIsValid) {
+					ctx.addIssue({
+						path: ['code'],
+						code: z.ZodIssueCode.custom,
+						message: `Invalid code`,
+					})
+					return z.NEVER
+				}
+			}),
+
+		async: true,
+	})
+	if (!submission.value) {
+		return json({ status: 'error', submission } as const, { status: 400 })
+	}
+
+	const { value: submissionValue } = submission
+
+	switch (submissionValue[typeQueryParam]) {
+		// Other cases...
+		case '2fa': {
+			return handleLoginTwoFactorVerification({ request, body, submission })
+		}
+	}
+}
+
+// Step 8: Set the corresponding cookie to manage the user's session 
+//-------------------- app/routes/auth+/login.tsx
+const unverifiedSessionIdKey = 'unverified-session-id'
+const rememberKey = 'remember-me'
+
+export async function handleLoginTwoFactorVerification({ request, submission }: VerifyFunctionArgs) {
+	invariant(submission.value, 'Submission should have a value by this point')
+	// Prepping for step 8
+	const cookieSession = await sessionStorage.getSession(
+		request.headers.get('cookie'),
+	)
+	const verifySession = await verifySessionStorage.getSession(
+		request.headers.get('cookie'),
+	)
+
+	const session = await prisma.session.findUnique({
+		select: { expirationDate: true },
+		where: { id: unverifiedSessionIdKey },
+	})
+	if (!session) {
+		throw await redirectWithToast('/login', {
+			type: 'error',
+			title: 'Invalid session',
+			description: 'Could not find session to verify. Please try again.',
+		})
+	}
+	// The meat
+	cookieSession.set(sessionKey, unverifiedSessionIdKey)
+
+	const remember = verifySession.get(rememberKey)
+	const { redirectTo } = submission.value
+
+	const headers = new Headers()
+	headers.append(
+		'set-cookie',
+		await sessionStorage.commitSession(cookieSession, {
+			expires: remember ? session.expirationDate : undefined,
+		}),
+	)
+	headers.append(
+		'set-cookie',
+		// clean up the interim session
+		await verifySessionStorage.destroySession(verifySession),
+	)
+
+	return redirect(safeRedirect(redirectTo), { headers })
+}
+```
+
+## Disable 2FA
+- It is recommended to follow these steps:
+	1. The user clicks the "Disable 2FA" button on the website.
+	2. The server sends them to `/verify` so they can re-verify their 2FA code.
+	3. The user submits a code from their 2FA app.
+	4. The server verifies the code (same handling as [[Authentication#Verify the user using 2FA |2FA login]]).
+	5. The user confirms they wish to disable 2FA.
+	6. The server deletes the 2FA verification and sends the user back to their settings page.
+- Code example:
+```tsx
+// Step 2:
+//--------------------- app/routes/auth+/login.tsx
+export async function handleVerification({
+	request,
+	submission,
+}: VerifyFunctionArgs) {
+	invariant(submission.value, 'Submission should have a value by this point')
+	const cookieSession = await sessionStorage.getSession(
+		request.headers.get('cookie'),
+	)
+	const verifySession = await verifySessionStorage.getSession(
+		request.headers.get('cookie'),
+	)
+
+	const remember = verifySession.get(rememberKey)
+	const { redirectTo } = submission.value
+	const headers = new Headers()
+	
+// Set the cookie to determine if the user should re-verify before committing to a destructive action
+	cookieSession.set(verifiedTimeKey, Date.now())
+
+// Existing 2FA flow
+	const unverifiedSessionId = verifySession.get(unverifiedSessionIdKey)
+	if (unverifiedSessionId) {
+		const session = await prisma.session.findUnique({
+			select: { expirationDate: true },
+			where: { id: unverifiedSessionId },
+		})
+		if (!session) {
+			throw await redirectWithToast('/login', {
+				type: 'error',
+				title: 'Invalid session',
+				description: 'Could not find session to verify. Please try again.',
+			})
+		}
+		cookieSession.set(sessionKey, unverifiedSessionId)
+
+		headers.append(
+			'set-cookie',
+			await sessionStorage.commitSession(cookieSession, {
+				expires: remember ? session.expirationDate : undefined,
+			}),
+		)
+	} else {
+	// Apply the "should re-verify" cookie
+		headers.append(
+			'set-cookie',
+			await sessionStorage.commitSession(cookieSession),
+		)
+	}
+
+	headers.append(
+		'set-cookie',
+		await verifySessionStorage.destroySession(verifySession),
+	)
+
+	return redirect(safeRedirect(redirectTo), { headers })
+}
+
+// This function will be called to complete step 2, i.e. the app `shouldRequest2FA` if the user has been authenticated with 2FA for more than 2hrs
+export async function shouldRequestTwoFA({
+	request,
+	userId,
+}: {
+	request: Request
+	userId: string
+}) {
+	const verifySession = await verifySessionStorage.getSession(
+		request.headers.get('cookie'),
+	)
+	if (verifySession.has(unverifiedSessionIdKey)) return true
+	// if it's over two hours since they last verified, we should request 2FA again
+	const userHasTwoFA = await prisma.verification.findUnique({
+		select: { id: true },
+		where: { target_type: { target: userId, type: twoFAVerificationType } },
+	})
+	if (!userHasTwoFA) return false
+	const cookieSession = await sessionStorage.getSession(
+		request.headers.get('cookie'),
+	)
+	const verifiedTime = cookieSession.get(verifiedTimeKey) ?? new Date(0)
+	const twoHours = 1000 * 60 * 60 * 2
+	return Date.now() - verifiedTime > twoHours
+}
+// Handle redirection if `shouldRequestTwoFA` is `true`
+export async function requireRecentVerification({
+	request,
+	userId,
+}: {
+	request: Request
+	userId: string
+}) {
+	const shouldReverify = await shouldRequestTwoFA({ request, userId })
+	if (shouldReverify) {
+		const reqUrl = new URL(request.url)
+		const redirectUrl = getRedirectToUrl({
+			request,
+			target: userId,
+			type: twoFAVerificationType,
+			redirectTo: reqUrl.pathname + reqUrl.search,
+		})
+		throw await redirectWithToast(redirectUrl.toString(), {
+			title: 'Please Reverify',
+			description: 'Please reverify your account before proceeding.',
+		})
+	}
+}
+
+// Step 3 -> 5: Check existing examples 
+// Step 6: Commit db
+//----------------------- app/routes/settings+/profile.two-factor.disable.tsx
+export async function action({ request }: DataFunctionArgs) {
+	const userId = await requireUserId(request)
+	await requireRecentVerification({ request, userId })
+	await prisma.verification.delete({
+		where: { target_type: { target: userId, type: twoFAVerificationType } },
+	})
+	throw await redirectWithToast('/settings/profile/two-factor', {
+		title: '2FA Disabled',
+		description: 'Two factor authentication has been disabled.',
+	})
+}
+```
+
+# OAuth
+- Open Authorization (OAuth) is an open standard for access delegation that a website/application used to define a flow for authenticating with a third party and getting back an access token that can be used to make requests on behalf of the user. The most common standard is [OAuth2](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2). Single sign-on (SSO) also uses this. 
+- It is [recommended](https://github.com/epicweb-dev/web-auth/blob/main/exercises/17.oauth/03.solution.mock/tests/mocks/github.ts) to use a mock service (like [msw](https://mswjs.io)) to develop the OAuth flow (your tests and development environment should be as free from third-party dependencies as possible to improve your productivity, e.g. in case their servers go down or you lose the internet connection,...). A typical flow using OAuth may look like:
+	1. The user clicks "login with provider".
+	2. The server redirects the user to the provider (and *sets a cookie to keep track* of the user so we remember them when they come back).
+	3. The user authenticates with the provider.
+	4. The provider redirects the user which triggers a request to the server with a code and some information to associate the user with their cookie.
+	5. The server exchanges the code for an access token and uses that to get the user's profile.
+	6. The server *gets* (when the provider account they authenticated with is already connected with an account in your app) or *creates* the connection (when the provider account they authenticated with is *not connected* with an account in your app, *but* the email address they authenticated in the provider account matches the email address of an account in your app) in the database for the user if the user already exists and redirects them home (i.e. log them in).
+	7. Otherwise, the server redirects to onboarding with a value in the `verifySession` that verifies the user owns the email address with which they authenticated on the provider.
+- Code example:
+```tsx
+// Setup OAuth using `remix-auth`
+//----------------------- app/utils/auth.server.ts
+import { Authenticator } from 'remix-auth'
+import { GitHubStrategy } from 'remix-auth-github'
+
+type ProviderUser = {
+	id: string
+	email: string
+	username?: string
+	name?: string
+	imageUrl?: string
+}
+export const authenticator = new Authenticator<ProviderUser>(
+	connectionSessionStorage,  // A new sessionStorage just for this case
+)
+
+authenticator.use(
+	new GitHubStrategy(
+		{
+			clientID: process.env.GITHUB_CLIENT_ID,
+			clientSecret: process.env.GITHUB_CLIENT_SECRET,
+			callbackURL: '/auth/github/callback',
+		},
+		async ({ profile }) => {
+			const email = profile.emails[0].value.trim().toLowerCase()
+			if (!email) {
+				throw await redirectWithToast('/login', {
+					title: 'No email found',
+					description: 'Please add a verified email to your GitHub account.',
+				})
+			}
+			const username = profile.displayName
+			const imageUrl = profile.photos[0].value
+			return {
+				email,
+				id: profile.id,
+				username,
+				name: profile.name.givenName,
+				imageUrl,
+			}
+		},
+	),
+	'github',
+)
+
+// Step 2: Create a route to redirect the user to the auth provider
+//----------------- app/routes/_auth+/auth.github.ts
+import { redirect, type ActionFunctionArgs } from '@remix-run/node'
+import { authenticator } from '#app/utils/auth.server.ts'
+
+export async function loader() {
+	return redirect('/login')
+}
+
+export async function action({ request }: ActionFunctionArgs) {
+	const providerName = 'github'
+	
+	// Simulate what `remix-auth` and `github` would do if we were to authenticate with it
+	if (process.env.GITHUB_CLIENT_ID?.startsWith('MOCK_')) {
+		const connectionSession = await connectionSessionStorage.getSession(
+			request.headers.get('cookie'),
+		)
+		const state = cuid()
+		connectionSession.set('oauth2:state', state)
+		const code = 'MOCK_GITHUB_CODE_KODY'
+		const searchParams = new URLSearchParams({ code, state })
+		throw redirect(`/auth/github/callback?${searchParams}`, {
+			headers: {
+				'set-cookie':
+					await connectionSessionStorage.commitSession(connectionSession),
+			},
+		})
+	}
+	
+	return await authenticator.authenticate(providerName, request)
+}
+
+// Step 5 - 6 - 7:
+//-------------------- app/routes/_auth+/auth.$provider.callback.ts
+import { type LoaderFunctionArgs } from '@remix-run/node'
+import { authenticator } from '#app/utils/auth.server.ts'
+import { redirectWithToast } from '#app/utils/toast.server.ts'
+
+export async function loader({ request }: LoaderFunctionArgs) {
+	const providerName = 'github'
+	const label = providerLabels[providerName]  // GitHub
+
+	// Step 5: 
+	const profile = await authenticator
+		.authenticate(providerName, request, { throwOnError: true })
+		.catch(async error => {
+			console.error(error)
+	// There's not much we can do in the event of a third party failure, so you can just redirect the user to `/login` and show the user a toast message letting them know of the error
+			throw await redirectWithToast('/login', {
+				type: 'error',
+				title: 'Auth Failed',
+				description: `There was an error authenticating with ${label}.`,
+			})
+		})
+
+	// We also need to respect the one-to-one unique relationships between the user's account and their 3rd party provider account:
+	const existingConnection = await prisma.connection.findUnique({
+		select: { userId: true },
+		where: {
+			providerName_providerId: { providerName, providerId: profile.id },
+		},
+	})
+	const userId = await getUserId(request)
+// Exception handling
+	if (existingConnection && userId) {
+		throw await redirectWithToast('/settings/profile/connections', {
+			title: 'Already Connected',
+			description:
+				existingConnection.userId === userId
+					? `Your "${profile.username}" ${label} account is already connected.`
+					: `The "${profile.username}" ${label} account is already connected to another account.`,
+		})
+	}
+
+	// Step 6.2: The provider account they authenticated with is already connected with an account in your app and the user has not logged in
+	if (existingConnection) {
+		// Make a new session and log them in
+		return makeSession({ request, userId: existingConnection.userId })
+	}
+
+	// Step 6.3.1: Create a new connection when the user has already logged in
+	if (userId) {
+		await prisma.connection.create({
+			data: { providerName, providerId: profile.id, userId },
+		})
+		throw await redirectWithToast('/settings/profile/connections', {
+			title: 'Connected',
+			type: 'success',
+			description: `Your "${profile.username}" ${label} account has been connected.`,
+		})
+	}
+
+	// Step 6.3.2: Same case, but the user has not logged in
+	const user = await prisma.user.findUnique({
+		select: { id: true },
+		where: { email: profile.email.toLowerCase() },
+	})
+	if (user) {
+		await prisma.connection.create({
+			data: { providerName, providerId: profile.id, userId: user.id },
+		})
+		return makeSession(
+			{
+				request,
+				userId: user.id,
+			// send them to the connections page to see their new connection
+				redirectTo: '/settings/profile/connections',
+			},
+			{
+				headers: await createToastHeaders({
+					title: 'Connected',
+					description: `Your "${profile.username}" ${label} account has been connected.`,
+				}),
+			},
+		)
+	}
+
+
+	// Step 7
+	const verifySession = await verifySessionStorage.getSession(
+		request.headers.get('cookie'),
+	)
+	verifySession.set(onboardingEmailSessionKey, profile.email)
+	verifySession.set(prefilledProfileKey, {
+		...profile,
+		username: profile.username
+			?.replace(/[^a-zA-Z0-9_]/g, '_')
+			.toLowerCase()
+			.slice(0, 20)
+			.padEnd(3, '_'),
+	})
+	verifySession.set(providerIdKey, profile.id)
+	// The loader from `app/routes/_auth+/onboarding_.$provider` will then get the inputs pre-filled with the data set above
+	return redirect(`/onboarding/${providerName}`, {
+		headers: {
+			'set-cookie': await verifySessionStorage.commitSession(verifySession),
+		},
+	})
+}
+
+// Step 6.1
+//-------------------- schema.prisma
+model Connection {
+  id           String @id @default(cuid())
+  providerName String
+  providerId   String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  userId String
+
+  @@unique([providerName, providerId])
+  // non-unique foreign key
+  @@index([userId])
+}
+
+// Step 7.2: This function is to be called in the Onboarding page of the OAuth option
+export async function signupWithConnection({
+	email,
+	username,
+	name,
+	providerId,
+	providerName,
+	imageUrl,
+}: {
+	email: User['email']
+	username: User['username']
+	name: User['name']
+	providerId: Connection['providerId']
+	providerName: ProviderName
+	imageUrl?: string
+}) {
+	const session = await prisma.session.create({
+		data: {
+			expirationDate: getSessionExpirationDate(),
+			user: {
+				create: {
+					email: email.toLowerCase(),
+					username: username.toLowerCase(),
+					name,
+					roles: { connect: { name: 'user' } },
+					connections: { create: { providerId, providerName } },
+					image: imageUrl
+						? { create: await downloadFile(imageUrl) }
+						: undefined,
+				},
+			},
+		},
+		select: { id: true, expirationDate: true },
+	})
+
+	return session
+}
+```
+## Redirect
+- We need to get the user back to where they left off after connecting with OAuth by: 
+	1. Keep track of the `redirectTo` query param that we're already sending to `/login` and `/signup`.
+	2. Set that into the `redirectTo` cookie.
+	3. Retrieve the path from `redirectTo` cookie when we get back to our callback URL, and delete the cookie when we redirect the user.
+- Code example:
+```tsx
+// Step 1:
+//------------------------ app/utils/connections.tsx
+import { Form } from '@remix-run/react'
+import { z } from 'zod'
+import { Icon } from '#app/components/ui/icon.tsx'
+import { StatusButton } from '#app/components/ui/status-button.tsx'
+import { useIsPending } from './misc.tsx'
+
+const GITHUB_PROVIDER_NAME = 'github'
+// to add another provider, set their name here and add it to the providerNames below
+
+export const providerNames = [GITHUB_PROVIDER_NAME] as const
+export const ProviderNameSchema = z.enum(providerNames)
+export type ProviderName = z.infer<typeof ProviderNameSchema>
+
+export const providerLabels: Record<ProviderName, string> = {
+	[GITHUB_PROVIDER_NAME]: 'GitHub',
+} as const
+
+export const providerIcons: Record<ProviderName, React.ReactNode> = {
+	[GITHUB_PROVIDER_NAME]: <Icon name="github-logo" />,
+} as const
+
+export function ProviderConnectionForm({
+	redirectTo,   
+	type,
+	providerName,
+}: {
+	redirectTo?: string | null  // The meat
+	type: 'Connect' | 'Login' | 'Signup'
+	providerName: ProviderName
+}) {
+	const label = providerLabels[providerName]
+	const formAction = `/auth/${providerName}`
+	const isPending = useIsPending({ formAction })
+	return (
+		<Form
+			className="flex items-center justify-center gap-2"
+			action={formAction}
+			method="POST"
+		>
+			{redirectTo ? (  // Here
+				<input type="hidden" name="redirectTo" value={redirectTo} />
+			) : null}
+			<StatusButton
+				type="submit"
+				className="w-full"
+				status={isPending ? 'pending' : 'idle'}
+			>
+				<span className="inline-flex items-center gap-1.5">
+					{providerIcons[providerName]}
+					<span>
+						{type} with {label}
+					</span>
+				</span>
+			</StatusButton>
+		</Form>
+	)
+}
+
+// Step 2:
+//------------------------ app/utils/_auth+/auth.$provider.ts
+export async function action({ request, params }: DataFunctionArgs) {
+	const providerName = ProviderNameSchema.parse(params.provider)
+
+	try {
+		await handleMockAction(providerName, request)
+		return await authenticator.authenticate(providerName, request)
+	} catch (error: unknown) {
+	// Because we were `throw`ing redirects
+		if (error instanceof Response) {
+			const formData = await request.formData()
+			const rawRedirectTo = formData.get('redirectTo')
+			const redirectTo =
+				typeof rawRedirectTo === 'string'
+					? rawRedirectTo
+	// `https://example.com/some/path` >> `/some/path`
+					: getReferrerRoute(request)
+			const redirectTo_cookie = getRedirectCookieHeader(redirectTo)
+			if (redirectTo_cookie) {
+				error.headers.append('set-cookie', redirectTo_cookie)
+			}
+		}
+		throw error
+	}
+}
+
+// Step 3:
+//-------------------- app/routes/_auth+/auth.$provider.callback.ts
+// Same as the example above, so I'm using its Step 7 to demonstrate the meat:
+import {
+	destroyRedirectToHeader,
+	getRedirectCookieValue,
+} from '#app/utils/redirect-cookie.server.ts'
+
+const destroyRedirectTo = { 'set-cookie': destroyRedirectToHeader }
+
+export async function loader({ request, params }: LoaderFunctionArgs) {
+	const redirectTo = getRedirectCookieValue(request)
+	//... Existing code
+
+	const onboardingRedirect = [
+		`/onboarding/${providerName}`,
+		redirectTo ? new URLSearchParams({ redirectTo }) : null,
+	]
+		.filter(Boolean)
+		.join('?')
+	return redirect(onboardingRedirect, {
+		headers: combineHeaders(
+			{ 'set-cookie': await verifySessionStorage.commitSession(verifySession) },
+			destroyRedirectTo,  // The meat
+		),
+	})
+```

@@ -402,6 +402,8 @@ leaven (v-n): lighten
 
 delectation (n): joy, treat, pleasure, satisfaction, contentment
 
+copacetic (adj): very satisfactory
+
 grandiose (n): magnificent, glorious, impressive, resplendent
 
 deity (n): god, divinity

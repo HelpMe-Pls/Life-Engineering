@@ -24,7 +24,7 @@ const response = new Response(body, {
 	- `Secure`: If set, the cookie will only be sent to the server over `https`.
 	- `HttpOnly`: If set, the cookie will not be accessible to JavaScript (browser extensions, malicious code,...). This is useful for preventing cross-site scripting attacks.
 	- `SameSite`: If set, the cookie will only be sent to the server if the request originated from the same site. This is useful for preventing [[Security#CSRF |CSRF]] attacks.
-- [[Authentication#Cookies and Sessions |Checkout]] a fullstack example in Remix.
+- [[Authentication#Cookies and Sessions |Checkout]] an examples of using cookie in Remix.
 ### GDPR Banner
 - The GDPR (General Data Protection Regulation) banner is a pop-up or footer on a webpage that requests user's consent for the use of cookies on that website. It doesn't mean that if the user reject it, then *all* cookies for the site is disabled. It only applies for non-essential cookies (for tracking and advertising purposes). The essential cookies (for auth & security reasons) are still enabled (unless the user manually turn them off in the DevTools).
 ### Good practice

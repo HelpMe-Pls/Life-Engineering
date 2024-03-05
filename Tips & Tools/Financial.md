@@ -1,0 +1,3 @@
+[[Investment]]
+[[Crypto]]
+[[Psychology]]

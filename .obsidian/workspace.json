@@ -13,18 +13,6 @@
             "dimension": 53.72297838270617,
             "children": [
               {
-                "id": "bd8da6e5c07d12d4",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Frontend/Frameworks/Remix/Routing & Navigation.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
                 "id": "6fcdb514d8a1943b",
                 "type": "leaf",
                 "state": {
@@ -36,8 +24,7 @@
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "4882bc6678dd9db8",
@@ -73,21 +60,8 @@
                         "source": false
                       }
                     }
-                  },
-                  {
-                    "id": "26e99061743f44e8",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "Frontend/Frameworks/Remix/Data Transfer.md",
-                        "mode": "source",
-                        "source": false
-                      }
-                    }
                   }
-                ],
-                "currentTab": 1
+                ]
               }
             ],
             "direction": "horizontal"
@@ -122,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "vscode",
+                "query": "volati",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -201,17 +175,25 @@
   },
   "active": "6fcdb514d8a1943b",
   "lastOpenFiles": [
-    "Frontend/Frameworks/Remix/Data Transfer.md",
-    "Frontend/Frameworks/Remix/Authentication.md",
     "Frontend/Frameworks/Remix/Routing & Navigation.md",
+    "Frontend/Frameworks/Remix/Authentication.md",
+    "Tips & Tools/Psychology.md",
+    "Tips & Tools/Financial.md",
+    "Tips & Tools/Crypto.md",
+    "Tips & Tools/Investment.md",
+    "Tips & Tools/Tips & Tools.md",
+    "Tips & Tools/Tips.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
+    "Backend/Databases.md",
+    "Frontend/Frameworks/Remix/Data Transfer.md",
+    "Tips & Tools/English vocab.md",
+    "Frontend/Network/Browser.md",
+    "Backend/NodeJS/Frameworks.md",
     "Tips & Tools/Tools & Util libs.md",
     "Tips & Tools/VSCode.md",
     "Frontend/Network/Data Transfer.md",
     "Frontend/TypeScript/Basic Types.md",
-    "Backend/Databases.md",
     "DevSecOps/Security.md",
-    "Frontend/Network/Browser.md",
     "Frontend/Frameworks/Remix/Remix.md",
     "Backend/Caching.md",
     "Backend/Auth.md",
@@ -219,16 +201,8 @@
     "Frontend/TypeScript/Fundamentals.md",
     "README.md",
     "Backend/NodeJS/NodeJS.md",
-    "Frontend/Frameworks/Next.md",
-    "Frontend/Libraries/HTMX/HTMX.md",
     "Frontend/Libraries/HTMX",
     "Backend/sql-joins.png",
-    "Frontend/HTML/Hyperlinks.md",
-    "Frontend/HTML/HTML.md",
-    "Frontend/Frameworks/Remix/Error Handling.md",
-    "Frontend/Frameworks/Remix/Data Modeling.md",
-    "Tips & Tools/English vocab.md",
-    "Frontend/Network/Networking.md",
     "Frontend/Frameworks/Remix",
     "Backend/Golang",
     "Frontend/HTML/url-breakdown.png",

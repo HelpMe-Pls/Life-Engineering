@@ -1,0 +1,1 @@
+- Keep your expectations low and DO NOT spend your money to impress other people.
