@@ -4,21 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "1ce8572171af97b6",
+        "id": "9380155ee882489c",
         "type": "split",
         "children": [
           {
-            "id": "f64b5b413c78655e",
+            "id": "2ed2b87e25932f50",
             "type": "tabs",
-            "dimension": 53.72297838270617,
             "children": [
               {
-                "id": "6fcdb514d8a1943b",
+                "id": "1c3357224693bc87",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/Frameworks/Remix/Authentication.md",
+                    "file": "Frontend/Frameworks/Remix/Testing.md",
                     "mode": "source",
                     "source": false
                   }
@@ -27,16 +26,15 @@
             ]
           },
           {
-            "id": "4882bc6678dd9db8",
+            "id": "1cc01226e096d652",
             "type": "split",
-            "dimension": 46.27702161729383,
             "children": [
               {
-                "id": "23f365afb1474865",
+                "id": "df80b4b423be8499",
                 "type": "tabs",
                 "children": [
                   {
-                    "id": "1c3357224693bc87",
+                    "id": "7b0f44ead5da5c78",
                     "type": "leaf",
                     "state": {
                       "type": "graph",
@@ -46,11 +44,11 @@
                 ]
               },
               {
-                "id": "9af5729fe3f4acc4",
+                "id": "c3184acf40a6477e",
                 "type": "tabs",
                 "children": [
                   {
-                    "id": "be13d4cca4b1e2fe",
+                    "id": "6c75a87113537011",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
@@ -96,7 +94,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "volati",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -133,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Frontend/Frameworks/Remix/Authentication.md",
+                "file": "Frontend/Frameworks/Remix/Testing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,17 +171,27 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "6fcdb514d8a1943b",
+  "active": "1c3357224693bc87",
   "lastOpenFiles": [
-    "Frontend/Frameworks/Remix/Routing & Navigation.md",
+    "Tips & Tools/Day-to-day work related.md",
+    "Frontend/Frameworks/Remix/Testing.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Tips & Tools/Best practices.md",
+    "Frontend/HTML/url-breakdown.png",
     "Frontend/Frameworks/Remix/Authentication.md",
+    "Frontend/JavaScript/Advanced.md",
+    "Frontend/Frameworks/Remix/Remix.md",
+    "Frontend/CSS/Typography and Images.md",
+    "Frontend/CSS/Utils.md",
+    "Frontend/CSS/CSS.md",
+    "Frontend/CSS/Media queries.md",
+    "Frontend/Frameworks/Remix/Routing & Navigation.md",
     "Tips & Tools/Psychology.md",
     "Tips & Tools/Financial.md",
     "Tips & Tools/Crypto.md",
     "Tips & Tools/Investment.md",
     "Tips & Tools/Tips & Tools.md",
     "Tips & Tools/Tips.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
     "Backend/Databases.md",
     "Frontend/Frameworks/Remix/Data Transfer.md",
     "Tips & Tools/English vocab.md",
@@ -192,20 +200,10 @@
     "Tips & Tools/Tools & Util libs.md",
     "Tips & Tools/VSCode.md",
     "Frontend/Network/Data Transfer.md",
-    "Frontend/TypeScript/Basic Types.md",
-    "DevSecOps/Security.md",
-    "Frontend/Frameworks/Remix/Remix.md",
-    "Backend/Caching.md",
-    "Backend/Auth.md",
-    "Backend/Backend.md",
-    "Frontend/TypeScript/Fundamentals.md",
-    "README.md",
-    "Backend/NodeJS/NodeJS.md",
     "Frontend/Libraries/HTMX",
     "Backend/sql-joins.png",
     "Frontend/Frameworks/Remix",
     "Backend/Golang",
-    "Frontend/HTML/url-breakdown.png",
     "Frontend/HTML/url-breakdown.png.crdownload",
     "Frontend/Libraries",
     "Untitled.canvas",

@@ -1481,7 +1481,7 @@ export async function action({ request }: DataFunctionArgs) {
 
 # OAuth
 - Open Authorization (OAuth) is an open standard for access delegation that a website/application used to define a flow for authenticating with a third party and getting back an access token that can be used to make requests on behalf of the user. The most common standard is [OAuth2](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2). Single sign-on (SSO) also uses this. 
-- It is [recommended](https://github.com/epicweb-dev/web-auth/blob/main/exercises/17.oauth/03.solution.mock/tests/mocks/github.ts) to use a mock service (like [msw](https://mswjs.io)) to develop the OAuth flow (your tests and development environment should be as free from third-party dependencies as possible to improve your productivity, e.g. in case their servers go down or you lose the internet connection,...). A typical flow using OAuth may look like:
+- When your application relies on external services, you need to have a way to test them without actually using them. It is [recommended](https://github.com/epicweb-dev/web-auth/blob/main/exercises/17.oauth/03.solution.mock/tests/mocks/github.ts) to use a mock service (like [msw](https://mswjs.io)) to develop the OAuth flow (your tests and development environment should be as free from third-party dependencies as possible to improve your productivity, e.g. in case their servers go down or you lose the internet connection,...). A typical flow using OAuth may look like:
 	1. The user clicks "login with provider".
 	2. The server redirects the user to the provider (and *sets a cookie to keep track* of the user so we remember them when they come back).
 	3. The user authenticates with the provider.
@@ -1805,7 +1805,9 @@ export async function action({ request, params }: DataFunctionArgs) {
 	const providerName = ProviderNameSchema.parse(params.provider)
 
 	try {
+	// Mocking the actions of `authenticator.authenticate`
 		await handleMockAction(providerName, request)
+	// The real thing
 		return await authenticator.authenticate(providerName, request)
 	} catch (error: unknown) {
 	// Because we were `throw`ing redirects
