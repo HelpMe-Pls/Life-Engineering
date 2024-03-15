@@ -13,7 +13,8 @@ const response = new Response(body, {
 	},
 })
 ```
-- *==**Prefer setting your cookies from your server**==* if the values you're going to store is vulnerable to security measures (e.g. access tokens). You often want to set the cookie as part of the response to a request anyway. But in practice, it's generally best to avoid storing too much data in the cookie itself as it will be sent to the server with every request. This can slow down the user's experience and can also cause problems if the cookie is getting closer to its capacity.
+- *==**Prefer setting your cookies from your server**==* if the values you're going to store is vulnerable to security measures (e.g. access tokens). You often want to set the cookie as part of ***the response*** to a request anyway. A response can have multiple `set-cookie` headers. One for each cookie we want to set. 
+  But in practice, it's generally best to avoid storing too much data in the cookie itself as it will be sent to the server with every request. This can slow down the user's experience and can also cause problems if the cookie is getting closer to its capacity.
 	- Some cases where setting cookies from your client-side code is more suitable like when you use those stored values for client-side state management or there's no server involvement (no SSR).  
 	- Most of the time the only persistent data stored in a session cookie is an ID that can be used to look up the rest of the data in a database. Sometimes temporary data is also stored in the cookie using a pattern called a ["Cookie Flash"](https://remix.run/docs/en/main/utils/sessions#sessionflashkey-value).
 - Each cookie has a name, value, and a set of attributes. The attributes are optional and can be used to configure the cookie's behavior:

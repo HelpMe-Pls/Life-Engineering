@@ -446,7 +446,6 @@ export class ErrorsInterceptor implements NestInterceptor {
 
 ```
 
-
 ## Techniques
 
 

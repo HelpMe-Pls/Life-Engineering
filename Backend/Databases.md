@@ -524,6 +524,7 @@ if (!global.prisma) {
 
 export const prisma = global.prisma
 ```
+> You can [setup](https://github.com/epicweb-dev/full-stack-testing/blob/main/exercises/11.test-db/03.solution.global-setup/app/utils/db.server.ts) to log debug queries in dev mode ([line 203](https://github.com/epicweb-dev/full-stack-testing/blob/main/exercises/11.test-db/03.solution.global-setup/server/index.ts)).
 #### Raw SQL
 - Be aware that the Prisma Client isn't as powerful as SQL. There are things that you may want to do which the Prisma Client cannot express. In such cases (e.g. using `ORDER BY`), we can use `prisma.$queryRaw` to execute raw SQL queries and `zod` to define a schema for the data we expect to get back from that raw query, then validate it:
 ```ts
