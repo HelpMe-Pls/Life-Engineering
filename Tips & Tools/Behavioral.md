@@ -1,5 +1,12 @@
-## Evaluation
-- You should search up a company's culture and values and ensure that you embody them within your answers. You'd also find it useful to speak with one of your connections currently working at the company you are applying for to find out more about which values are typically valued in the team
+- This stage is typically spread out between the [[Screening |screening]] rounds where they ask about your soft skills and how you react, how you performed in your latest/most impactful projects.
+- It could be an entirely separate round, depends on the company.
+- It seems like the key takeaway of this round (or these kind of questions) is to verify if you're a suitable team player.
+> [!important]- The better your story, the higher chance you get
+> - While it's necessary to tell a good story, you shouldn't make things up that you have to think very hard to craft your way around your answers for their follow-up questions.
+> - The interviewers have really prepared themselves for deep listening in these rounds, so make sure to base your story from a **real** event, they can smell bullshit from a mile away :)
+> - Check [[Progressive Overload |this]] out to see how to prepare your story.
+# Evaluation
+- You should search up a company's culture and values and ensure that you embody them within your answers. You'd also find it useful to speak with one of your connections currently working at the company you are applying for to find out more about which values are typically valued in the team.
 - Some examples of common values evaluated are:
 	- **Motivation**: What drives you? Ideal candidates are self-motivated, passionate about technologies and products that have a real impact.
 		- What project are you most proud of and why?
@@ -22,3 +29,6 @@
 		- Tell me about some constructive feedback you received from a manager or a peer
 		- Tell me about a skill set that you observed in a peer or mentor that you want to develop in the next six months.
 	- **Communication**: Are you able to clearly communicate your stories during the interview? There is also some overlap with Empathy and how they communicate with others.
+
+# Your turn
+- Consider yourself as [[You as an interviewer |an interviewer]] and see if their goal truly aligns with yours. Aim for personal growth potential. Imagine how better you could be if you work there and if the tradeoff of this opportunity makes you happy.

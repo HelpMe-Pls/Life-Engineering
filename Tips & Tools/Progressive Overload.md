@@ -2,7 +2,7 @@
 [[Self Authoring]]
 
 - Much needed for a promotion/ CV Update/ Interviews
-- Just start it right when a challenge arises, then document it along the way
+- Just start it right when a challenge arises, then document it along the way. Just begin with listing every obstacle that you faced, how you handle it, then clean them up and filter out those impactful ones later.
 - Focus more on the IMPACT (especially ***meaningful*** ones) rather than the output just for the sake of getting something done. Explain your trajectory/decisions **in terms of the value** you bring to others. You need to make it clear it’s not about you; it’s more about the value you bring.
 - Have the STAR method as your guidelines (master the Art of Storytelling)
 - Update every month/quarter

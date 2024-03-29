@@ -886,7 +886,7 @@ console.log(`Post: ${sorted}`);
 
 ### Dynamic programming
 - Dynamic programming (`dp`) is an extension of `d&c` and recursion which in addition involves keeping a record of results ([memoizing](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/961483057)) generated from running the sub problems each time they are newly run. 
-- The main advantage of `dp` is that it promotes memoization, where previous calculations are stored and used instead of rerunning the calculations when the compiler identifies that the computation has been run for a previous task. [Example](https://www.techinterviewhandbook.org/coding-interview-techniques/#example-3).
+- The main advantage of `dp` is that it promotes memoization, where previous calculations are stored and used instead of rerunning the calculations when the compiler identifies that the computation has been run for a previous task. Checkout an [example](https://www.techinterviewhandbook.org/coding-interview-techniques/#example-3).
 - The `dp` approach is commonly applied to combination or optimization problems. When computing `dp` solutions, you must firstly determine the *objective function* (i.e. the description of what the optimum outcome is to be). Next you must break the problem into smaller steps (using recursion) which should be written in such a way that you can change the outcome without altering the code for the methods already written.
 
 ### Greedy

@@ -1,47 +1,5 @@
 # Cookies and Sessions
 - [[Browser#Cookie |Checkout]] what cookies are. 
-- The ***session*** data is ***created on the server*** *then* stored in a cookie (as an encoded value) on the user’s browser. This is done by serializing the session data, signing it with a secret key (or keys), and then setting it as a cookie. When the server receives the cookie, it decodes the value back into the original session data. It also verifies the signature to ensure that the data has not been tampered with. 
-  An example initiates a session:
-```tsx
-import { createCookieSessionStorage } from '@remix-run/node'
-
-export const sessionStorage = createCookieSessionStorage({
-	cookie: {
-		name: 'en_session',
-		sameSite: 'lax',
-		path: '/',
-		httpOnly: true,
-		secrets: process.env.SESSION_SECRET.split(','),
-		secure: process.env.NODE_ENV === 'production',
-	},
-})
-
-// we have to do this because every time you commit the session you overwrite it, and since we overwrite it, the session is reset to the one defined above (i.e. no `expiresAt` or any other settings)
-// so to persist the existing settings that may have been set while the user is using the app, we use this little JS magic below store the expiration time in the cookie and reset it every time we commit
-const originalCommitSession = sessionStorage.commitSession
-
-Object.defineProperty(sessionStorage, 'commitSession', {
-	value: async function commitSession(
-		...args: Parameters<typeof originalCommitSession>
-	) {
-		const [session, options] = args
-		if (options?.expires) {
-			session.set('expires', options.expires)
-		}
-		if (options?.maxAge) {
-			session.set('expires', new Date(Date.now() + options.maxAge * 1000))
-		}
-		const expires = session.has('expires')
-			? new Date(session.get('expires'))
-			: undefined
-		const setCookieHeader = await originalCommitSession(session, {
-			...options,
-			expires,
-		})
-		return setCookieHeader
-	},
-})
-```
 - An example using cookie to set the theme:
 ```tsx
 //------------------------------- /utils/theme.server.ts
@@ -52,8 +10,8 @@ export type Theme = 'light' | 'dark'
 
 export function getTheme(request: Request): Theme {
 	const cookieHeader = request.headers.get('cookie')
-	const parsed = cookieHeader ? cookie.parse(cookieHeader)[cookieName] : 'light'
-	if (parsed === 'light' || parsed === 'dark') return parsed
+	const parsedTheme = cookieHeader ? cookie.parse(cookieHeader)[cookieName] : 'light'
+	if (parsedTheme === 'light' || parsedTheme === 'dark') return parsedTheme
 	return 'light'
 }
 
@@ -175,6 +133,70 @@ function App() {
 	)
 }
 ```
+## Session
+- The ***session*** data is ***created on the server*** (by creating an extra record in the `Session` table) then stored in a cookie (***as an encoded value***) on the user’s browser. This is done by serializing the session data, signing it with a secret key (or keys), and then setting it [[Authentication#Managed sessions |as a cookie]]. When the server receives the cookie, it decodes the value back into the original session data. It also verifies the signature to ensure that the data has not been tampered with. 
+- Code example:
+```tsx
+//----------------- Initiate a session
+import { createCookieSessionStorage } from '@remix-run/node'
+
+export const sessionStorage = createCookieSessionStorage({
+	cookie: {
+		name: 'en_session',
+		sameSite: 'lax',
+		path: '/',
+		httpOnly: true,
+		secrets: process.env.SESSION_SECRET.split(','),
+		secure: process.env.NODE_ENV === 'production',
+	},
+})
+
+// we have to do this because every time you commit the session you overwrite it, and since we overwrite it, the session is reset to the one defined above (i.e. no `expiresAt` or any other settings)
+// so to persist the existing settings that may have been set while the user is using the app, we use this little JS magic below to store the expiration time in the cookie and reset it every time we commit
+const originalCommitSession = sessionStorage.commitSession
+
+Object.defineProperty(sessionStorage, 'commitSession', {
+	value: async function commitSession(
+		...args: Parameters<typeof originalCommitSession>
+	) {
+		const [session, options] = args
+		if (options?.expires) {
+			session.set('expires', options.expires)
+		}
+		if (options?.maxAge) {
+			session.set('expires', new Date(Date.now() + options.maxAge * 1000))
+		}
+		const expires = session.has('expires')
+			? new Date(session.get('expires'))
+			: undefined
+		const setCookieHeader = await originalCommitSession(session, {
+			...options,
+			expires,
+		})
+		return setCookieHeader
+	},
+})
+
+//--------------------- Use the session:
+async function signOutOfSessionsAction({ request, userId }: ProfileActionArgs) {
+	const cookieSession = await sessionStorage.getSession(
+		request.headers.get('cookie'),
+	)
+	const sessionId = cookieSession.get(sessionKey)
+	invariantResponse(
+		sessionId,
+		'You must be authenticated to sign out of other sessions',
+	)
+	await prisma.session.deleteMany({
+		where: {
+			userId,
+			id: { not: sessionId },
+		},
+	})
+	return json({ status: 'success' } as const)
+}
+```
+
 - Checkout [an example](https://github.com/epicweb-dev/web-auth/tree/main/exercises/10.email/04.solution.session/app) of using cookie to pass data between routes and properly redirect users (`/utils/verification.server.ts` -> `routes/_auth+/onboarding.tsx > requireOnboardingEmail()` -> `routes/_auth+/signup.tsx > verifySession`) 
 
 ## Role-based access
@@ -183,7 +205,7 @@ function App() {
 	  For example, if you have 100 users and you want to give them all the same permissions, it's easier to create a role with those permissions and assign the role to all 100 users than it is to assign the permissions to each user individually. Especially when you decide you want to change or add new permissions to those users.
 - It is highly recommended to have [[Databases#Many-to-many |many-to-many relationships]] for our roles and permissions. User has many roles, roles can be assigned to many users. Role has many permissions and permissions can be assigned to many roles.
 
-## Cookie sessions
+## Handling client-side state
 - We can leverage cookies as an alternative for client-side state management, using the [`createCookieSessionStorage`](https://remix.run/docs/en/main/utils/sessions#createcookiesessionstorage) API to create cookies that are tied to the user's session, from which we can use to store and retrieve state change triggered by the UI. For example, showing a toast notification when the user deletes something:
 ```tsx
 //--------------------- /utils/toast.server.ts
@@ -385,7 +407,7 @@ function App() {
 ```
 
 ## Managed sessions
-- Instead of storing the user ID in a cookie, we can create a new database model called "session" which has an expiration time, ID, and a user ID. When a user logs in, we create a new session record for them in the database and *instead of putting the user's ID in the cookie*, we put the session ID. When the user makes a request, we use that to find the user attached to the (unexpired) session.
+- Instead of storing the user ID in a cookie, we can create a new database model called "session" which has an expiration time, ID, and a user ID. When a user logs in, we create a new session record for them in the database and *instead of putting the user's ID in the cookie*, we put the session's ID. When the user makes a request, we use that to find the user attached to the (unexpired) session.
 - Some apps even store the IP address of the session so users can use that to help them identify which session to delete.
 
 > [!info]- Expired sessions
@@ -497,7 +519,7 @@ export async function loader({ request }: DataFunctionArgs) {
 			_count: {
 				select: {
 					sessions: {
-						where: {
+						where: { // Filter out expired sessions
 							expirationDate: { gt: new Date() },
 						},
 					},
@@ -527,7 +549,6 @@ function SignOutOfSessions() {
 	)
 }
 ```
-
 
 # Password Management
 ## Keywords

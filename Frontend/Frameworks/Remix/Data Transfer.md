@@ -81,7 +81,8 @@ export async function loader({ params }: DataFunctionArgs) {
 
 # Forms and Mutations
 ## Form validation
-- Users can easily bypass simple form validation by manually adding `novalidate` to the `<form/>` tag or making the `HTTP` request directly using another tool. *==You **always** must validate on the server side==*. And you'll also want to render the errors from the server. Client-side validation should be seen as a nice progressive enhancement for a better user experience, not a replacement for server-side validation.
+- Users can easily bypass simple form validation by manually adding `novalidate` to the `<form/>` tag or making the `http` request directly using another tool. *==You **always** must validate on the server side==*. And you'll also want to render the errors from the server. Client-side validation should be seen as a nice progressive enhancement for a better user experience, not a replacement for server-side validation.
+	- Server-side validation ensures that data integrity is maintained in the database or server-side systems. Client-side validation relies on JavaScript being enabled in the user's browser, which could lead to data corruption or security vulnerabilities.
 - As far as the server is concerned, there is no standard way to handle validation other than to respond with a `400` status code if there are validation errors. Remix has a nice way to get the error messages the server responds with using the [`useActionData()`](https://remix.run/docs/en/main/hooks/use-action-data) hook.
 - You can manually control the `noValidate` prop on your `<Form/>` to enable server-side validation for better aesthetic, but it's still good practice to keep the client-side validation, in case of slow network:
 ```tsx
@@ -354,7 +355,7 @@ export default function NoteEdit() {
 ```
 
 ## Form submission
-- While Remix supports all `HTTP` methods for ***form submission***, the browser itself only supports `GET` (the default - if `method="POST"` isn't declared) and `POST` methods. Which mean on slow connections or low-end devices, `HTTP` methods other than `GET` and `POST` may not work. Prefer cooking your mutating requests with `POST` and  [`action`](https://remix.run/docs/en/main/route/action) [[Frontend/Frameworks/Remix/Data Transfer#Complex structure |instead]] to maintain the progressive enhancement aspect.
+- While Remix supports all `http` methods for ***form submission***, the browser itself only supports `GET` (the default - if `method="POST"` isn't declared) and `POST` methods. Which mean on slow connections or low-end devices, `http` methods other than `GET` and `POST` may not work. Prefer cooking your mutating requests with `POST` and  [`action`](https://remix.run/docs/en/main/route/action) [[Frontend/Frameworks/Remix/Data Transfer#Complex structure |instead]] to maintain the progressive enhancement aspect.
 > For Progressive Enhancement, check this out [at 3:20](https://www.epicweb.dev/workshops/professional-web-forms/complex-structures/interactive-image-management/solution).
 ### Complex structure
 - By default, *nested forms and arrays aren't allowed*. By using `useFieldList` from `conform` and `z.array()` from `zod`, we can have a simulated interface to deal with that:
@@ -602,7 +603,7 @@ export async function action({ request }: DataFunctionArgs) {
 
 // JSX:
 <Form method="POST">
-	<div style={{ display: 'none' }} aria-hidden>
+	<div style={{ display: 'none' }} aria-hidden> {/* << This */}
 		<label htmlFor="name-input">Please leave this field blank</label>
 		<input id="name-input" name="name" type="text" />
 	</div>
@@ -720,7 +721,7 @@ import { csrf } from '#app/utils/csrf.server.ts'
 export async function action({ request, params }: DataFunctionArgs) {
 	const formData = await request.formData()
 	try {
-	// Double Submit Cookie pattern:
+	// Double Submit Cookie pattern: The server will validate the token sent from the `<AuthenticityTokenInput />` against the cookie value (in the header) to authorize the action
 		await csrf.validate(formData, request.headers)
 	} catch (error) {
 		if (error instanceof CSRFError) {
@@ -734,14 +735,15 @@ export async function action({ request, params }: DataFunctionArgs) {
 
 // JSX:
 <Form method="post">
-	<AuthenticityTokenInput />
-		<Button
-			type="submit"
-			variant="destructive"
-			name="intent"
-			value="delete"
-		>
-			Delete
-		</Button>
+{/* Appends a token to the `formData` to be checked in the `action` */}
+	<AuthenticityTokenInput />  
+	<Button
+		type="submit"
+		variant="destructive"
+		name="intent"
+		value="delete"
+	>
+		Delete
+	</Button>
 </Form>
 ```

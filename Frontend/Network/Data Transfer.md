@@ -1,11 +1,3 @@
-# Web Socket
-- It is especially great for services that require ***continuous*** data exchange, e.g. online games, ***real-time*** trading systems and so on.
-- Once the socket is created, we should listen to events on it. There are totally 4 events:
-	-   **`open`** – connection established,
-	-   **`message`** – data received,
-	-   **`error`** – websocket error,
-	-   **`close`** – connection closed.
-- The events flow:  `open` → `message` → `close`
 # Rate Limiting
 - Rate limiting helps to control the flow of incoming requests, ensuring that our server isn't overwhelmed (as one of the common methods used to protect against DDOS attacks). It does this by limiting the number of requests a user can make in a specific window of time.
 - `GET` requests often have lower rate limit (than `POST`) because genuine users typically make many more of these types of requests than `POST` requests.

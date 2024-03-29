@@ -1,9 +1,8 @@
 # Storage
 - Useful when you need to store data so that it won't go away after a page refresh (like theme, user's settings, user's action...)
 - Only store data as key-value pairs and the value as `string`
-- Several types of storage
 ## Cookie
-- They were invented to solve the problem of state management in web applications. Cookies allow websites to store small pieces (maximum of `4KB` per cookie) of data on a user's device which is then sent along (*from the browser*) with every request to the server (along with `http` requests - on the `header`).
+- They were invented to solve the problem of state management in web applications. Cookies allow websites to store small pieces (maximum of `4KB` per cookie) of data on a user's device which is then sent along (*from the browser*) with every `http` request (on the `header`) to the server .
 - It enables the server to maintain session information and remember user preferences across different interactions.
 ```ts
 // Server-side
@@ -14,16 +13,16 @@ const response = new Response(body, {
 })
 ```
 - *==**Prefer setting your cookies from your server**==* if the values you're going to store is vulnerable to security measures (e.g. access tokens). You often want to set the cookie as part of ***the response*** to a request anyway. A response can have multiple `set-cookie` headers. One for each cookie we want to set. 
-  But in practice, it's generally best to avoid storing too much data in the cookie itself as it will be sent to the server with every request. This can slow down the user's experience and can also cause problems if the cookie is getting closer to its capacity.
-	- Some cases where setting cookies from your client-side code is more suitable like when you use those stored values for client-side state management or there's no server involvement (no SSR).  
-	- Most of the time the only persistent data stored in a session cookie is an ID that can be used to look up the rest of the data in a database. Sometimes temporary data is also stored in the cookie using a pattern called a ["Cookie Flash"](https://remix.run/docs/en/main/utils/sessions#sessionflashkey-value).
+  In practice, it's generally best to avoid storing too much data in the cookie itself as it will be sent to the server with every request. This can slow down the user's experience and can also cause problems if the cookie is getting closer to its capacity.
+	- Some cases where setting cookies from your client-side code is more suitable like when you use those stored values for client-side state management (e.g. storing theme preferences, UI layout settings,...) or there's no server involvement (no SSR). For such cases, sometimes it just make more sense to store those values in the [[Browser#Local storage |local storage]].  
+	- Most of the time the only persistent data stored in a [[Authentication#Cookies and Sessions |session cookie]] is an ID that can be used to look up the rest of the data in a database. Sometimes temporary data is also stored in the cookie using a pattern called a ["Cookie Flash"](https://remix.run/docs/en/main/utils/sessions#sessionflashkey-value).
 - Each cookie has a name, value, and a set of attributes. The attributes are optional and can be used to configure the cookie's behavior:
 	- `Path`: The path on the server for which the cookie is valid. Defaults to the current path. This means if the path is set to `/my-page`, the cookie will only be sent to the server when the user is on the `/my-page` path.
 	- `Domain`: The domain for which the cookie is valid. Defaults to the current domain. This means if the domain is set to `example.com`, the cookie will be sent to the server for *all subdomains* of `example.com`.
 	- `Expires`: The date and time when the cookie expires. When set, the deadline is *relative to the client* the cookie is being set on, not the server. If not set, the cookie will expire *when the browser is closed*.
-	- `Max-Age`: The number of seconds until the cookie expires. If not set, the cookie will expire *when the browser is closed*.  If both `Expires` and `Max-Age` are set, Max-Age has precedence.
-	- `Secure`: If set, the cookie will only be sent to the server over `https`.
-	- `HttpOnly`: If set, the cookie will not be accessible to JavaScript (browser extensions, malicious code,...). This is useful for preventing cross-site scripting attacks.
+	- `Max-Age`: The number of seconds until the cookie expires. If not set, the cookie will expire *when the browser is closed*.  If both `Expires` and `Max-Age` are set, `Max-Age` has precedence.
+	- `Secure`: If set, the cookie will only be sent to the server over `https`. This attribute can only be set from the server-side.
+	- `HttpOnly`: If set, the cookie will not be accessible to JavaScript (browser extensions, malicious code,...). This attribute can only be set from the server-side, so it's useful for preventing cross-site scripting attacks.
 	- `SameSite`: If set, the cookie will only be sent to the server if the request originated from the same site. This is useful for preventing [[Security#CSRF |CSRF]] attacks.
 - [[Authentication#Cookies and Sessions |Checkout]] an examples of using cookie in Remix.
 ### GDPR Banner

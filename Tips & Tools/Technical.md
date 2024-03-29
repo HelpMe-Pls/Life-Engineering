@@ -40,7 +40,7 @@
 - With the correct BCR determined, you now know the time complexity of the optimal solution lies between your initial solution and the BCR and can work your way towards it.
 - If your solution already has the BCR and the interviewer is asking you to optimize further, there are usually two things they are looking out for:
 	- Do even less work. Your solution could be O(n) but making two passes of the array and the interviewer is looking for the solution that uses a single pass.
-	- [[Technical questions#Optimize space complexity |Use less space]].
+	- [[Technical#Optimize space complexity|Use less space]].
 ##### Identify overlapping and repeated computation
 - When the code is doing an expensive operation that has been done before, take a moment to step back and consider if you can reuse results from previous computations ([[DSA#Dynamic programming |using `dp`]]).
 ##### Try different data structures
@@ -107,14 +107,14 @@ def contains_string(search_term, strings):
   The nice thing about the modular code is that it's easily testable because each component can be verified separately. As code gets more complex, it becomes increasingly important to write it in a modular way. This will make it easier to read and maintain. Your interviewer wants to see you demonstrate these skills in your interview:
 	- Let's say you're asked to build a car. You can just write a few high level functions first: `gatherMaterials()`, `assemble()`. 
 	- Then break down `assemble()` into smaller functions, `makeEngine()`, `getWheels()`, `constructCarFrame()`. 
-> **If you get confused or nervous, take a break.** No one is going to mark you down for saying "Do you guys mind if I take five minutes to work through this and get back to you?" in middle of the interview.
+> **If you get confused or nervous, take a break.** No one is going to mark you down for saying "Do you mind if I take five minutes to work through this and get back to you?" in middle of the interview.
 - Use a mix of functional and imperative programming paradigms:
 	- Pure functions are easier to reason about and can help to reduce bugs in your implementation.
 	- Avoid mutating the parameters passed into your function especially if they are passed by reference unless you are sure of what you are doing.
 	- However, functional programming is usually expensive in terms of space complexity because of non-mutation and the repeated allocation of new objects. On the other hand, imperative code is faster because you operate on existing objects. Hence you will need to achieve a balance between accuracy vs efficiency, by using the right amount of functional and imperative code where appropriate.
 	- Avoid relying on and mutating global variables. Global variables introduce state. And things will go wrong rapidly.
 	- If you have to rely on global variables, make sure that you do not mutate it by accident.
-> The biggest asset you have is honesty and intellectual curiosity.
+> The biggest asset you have is **honesty** and **intellectual curiosity**.
 - If you are cutting corners in your code, state that out loud to your interviewer and say what you would do in a non-interview setting (no time constraints). For instance:
 	- "Under non-interview settings, I would write a regex to parse this string rather than using `split()` which may not cover certain edge cases."
 - Scan through your code for mistakes - such as off-by-one errors:
@@ -122,13 +122,12 @@ def contains_string(search_term, strings):
 - Look out for places where you can refactor.
 - Brainstorm edge cases with the interviewer and add additional test cases (such as large sized inputs, empty sets, single item sets, negative numbers)
 ### Don'ts
-> Do not jumped into coding without explaining
+> Never jump right into coding without explaining.
 - Do not use extremely verbose (half a screen or longer) or single-character variable names (unless they're in a loop like `i`, `j`, `n`).
 - Do not repeat yourself (it's better to rephrase, not repeat, if your ideas weren't correctly understood).
 - Do not spend too much time writing comments.
 - Do not argue with the interviewer. They may be wrong but that is very unlikely given that they are familiar with the question.
 ---
-
 ## Tips
 - Traversing 2 arrays/strings: Instead of having nested `for` loops, try using a `while` loop with the indexes as variable:
 ```java

@@ -28,7 +28,7 @@ export default function App() {
 	)
 }
 
-// In any client-side `*.tsx` file, you can access the `ENV` variable and get TS suggestions like: 
+// In any client-side `.tsx` file, you can access the `ENV` variable and get TS suggestions like: 
 ENV.[Ctrl+Space] == 'some string from .env'
 ```
 > [!important]- Don't you ever set any user-submitted data as the value of `dangerouslySetInnerHTML`

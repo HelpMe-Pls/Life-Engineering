@@ -7,7 +7,7 @@
 		- "Does the development team get time to improve the quality of the software?"
 	- Ask about your role
 		- "Why is this role open? Is it a new role, or am I replacing someone? Why did that person leave?"
-		- "What is the ratio of testers to developers to program managers? What is the interaction like? How does project planning happen on the team?"
+		- "Tell me more about the life cycle of a project? How does project planning happen on the team?"
 		- "We had some challenges in scalability and testing from our current project, and I'd love to learn more about it. What opportunities are there at this company to learn about this?"
 		- "What would be the most important problem you would want me to solve if I joined your team?"
 		- "How is developer time spread between maintenance and building new features ?"
@@ -24,4 +24,4 @@
 		- "What assurance do you have that this company will be successful?"
 		- "Which companies are your main competitors and what differentiates your company?"
 		- "What are your highest priorities right now? For example, new features, new products, solidifying existing code, reducing operations overhead?"
-> End with appreciation, thanks for the interview.
+> End with appreciation, give an honest praise, thanks for the interview.

@@ -64,7 +64,7 @@ let b = 3;
 console.log(a); // 3
 console.log(b); // 1
 ```
-- Be aware of the [[Basic Types#`undefined` runtime errors|`undefined` runtime error]] when destructuring.
+- Be aware of the [[Basic Types#`undefined` runtime errors |runtime error]] when destructuring.
 - **Overwriting properties**: if the *same property* exists in both objects, the one *in the spread object* is applied:
 ```ts
 const responseInit = {status : 404} 
