@@ -422,7 +422,7 @@ console.log(arr.includes('c', 2))  // true
 ### .reduce()
 - Does ***not*** mutate the original array. However, `callbackFn` may do so.
 - Iterates and executes the "reducer" for all elements in the array.
-- The returned value depends on the "reducer":
+- The returned **value** depends on the "reducer":
 ```ts
 // `initialValue` is optional
 someArray.reduce(callbackFn, _initialValue)
@@ -486,7 +486,7 @@ console.log(flatten(nested)); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
 ### .slice()
-- Useful when you want to *extract or remove* a portion of an array.
+- Useful when you want to *extract* a portion of an array.
 - Does ***not*** mutate the original array.
 - Returns a **new** array (a *shallow* copy portion) of the original array with its element(s) selected from `start` (inclusive) to `end` (exclusive).
 - Returns an **empty** array when:

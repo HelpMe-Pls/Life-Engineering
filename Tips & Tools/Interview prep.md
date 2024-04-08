@@ -8,7 +8,7 @@
 # Before the interview
 - Pay attention to the yearly reports from Adecco, First Alliance, Navigos, Vietnamwork, Talentnet, NodeFlair,... to see where the market is heading, and base your skills on that.
 - Include keywords from job descriptions into your resume. Analyze the job description and determine how important each skill and experience is, then optimize the *frequency* of the keyword according to its importance/relevance.
-- The resume is all about selling how well you communicate. Be sure that you can answer 2-3 levels deep questions clarifying each and every of your bullet points. For example, the interviewer may ask 3 questions to clarify this one: "*With an everlasting curiosity and a relentless drive to adapt, I am experienced in modern web development with a strong foundation in web technologies*.":
+- The interview is all about selling how well you communicate. Be sure that you can answer 2-3 levels deep questions clarifying each and every of your bullet points in your CV. For example, the interviewer may ask 3 questions to clarify this one: "*With an everlasting curiosity and a relentless drive to adapt, I am experienced in modern web development with a strong foundation in web technologies*.":
 	- Give me an experience in your work that highlights your trait of "everlasting curiosity and a relentless drive to adapt".
 	- How does that have anything to do with a strong foundation in web technologies?
 	- Some random follow-up question based on your answer to those 2 questions above.

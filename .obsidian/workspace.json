@@ -18,38 +18,25 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Backend/Databases.md",
+                    "file": "Frontend/TypeScript/Basic Types.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "0c0dba4c1ea2000b",
+                "id": "33d3665f28414222",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/Technical.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "50097333e8b867b1",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Tips & Tools/Interview prep.md",
+                    "file": "Frontend/JavaScript/Conversion - Coercion.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "1cc01226e096d652",
@@ -85,8 +72,21 @@
                         "source": false
                       }
                     }
+                  },
+                  {
+                    "id": "10d8a0bebe709cff",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Frontend/JavaScript/Everyday methods & utils.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    }
                   }
-                ]
+                ],
+                "currentTab": 1
               }
             ],
             "direction": "horizontal"
@@ -121,7 +121,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "zod",
+                "query": "Error",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,7 +138,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -158,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tips & Tools/Technical.md",
+                "file": "Frontend/TypeScript/Basic Types.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,34 +199,34 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "0c0dba4c1ea2000b",
+  "active": "a05f14fac252d13c",
   "lastOpenFiles": [
-    "Frontend/TypeScript/Basic Types.md",
+    "Frontend/CSS/Flow layout.md",
+    "Frontend/JavaScript/Conversion - Coercion.md",
+    "Tips & Tools/DSA.md",
+    "Backend/NodeJS/NodeJS.md",
     "Tips & Tools/Technical.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
-    "Tips & Tools/DSA.md",
+    "Frontend/JavaScript/JavaScript.md",
+    "Frontend/Frameworks/Remix/Data Transfer.md",
+    "Frontend/Frameworks/Remix/Error Handling.md",
     "Tips & Tools/Interview prep.md",
-    "Tips & Tools/Screening.md",
+    "Frontend/JavaScript/this.md",
+    "Frontend/Frameworks/Remix/Authentication.md",
+    "Frontend/JavaScript/Foundation.md",
+    "Frontend/TypeScript/Basic Types.md",
     "Backend/Databases.md",
+    "Frontend/CSS/Animations.md",
+    "Tips & Tools/Git.md",
+    "Tips & Tools/Screening.md",
     "Untitled.md",
     "Tips & Tools/Behavioral.md",
     "Tips & Tools/Progressive Overload.md",
     "Tips & Tools/You as an interviewer.md",
     "Screening.md",
-    "Frontend/Frameworks/Remix/Data Transfer.md",
     "DevSecOps/Security.md",
     "Backend/Backend.md",
-    "Frontend/Frameworks/Remix/Authentication.md",
     "Frontend/Network/Connections and protocols.md",
-    "Tips & Tools/Day-to-day work related.md",
-    "Frontend/Frameworks/Remix/Testing.md",
-    "Frontend/Network/Data Transfer.md",
-    "Frontend/Frameworks/Remix/Styling.md",
-    "Frontend/Frameworks/Remix/SEO.md",
-    "Frontend/Frameworks/Remix/Scripting.md",
-    "Frontend/Network/Browser.md",
-    "Frontend/Network/Networking.md",
-    "Frontend/Network/Development & Deploy.md",
     "Frontend/HTML/url-breakdown.png",
     "Frontend/Libraries/HTMX",
     "Backend/sql-joins.png",

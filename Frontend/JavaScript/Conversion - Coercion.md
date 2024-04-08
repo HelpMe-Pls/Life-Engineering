@@ -21,7 +21,7 @@ String({})    // '[object Object]'
 
   
 
-// To detect an object's class:
+// To detect an object's data type:
 
 Object.prototype.toString.call({some: 'thing'});    // [object Object]
 

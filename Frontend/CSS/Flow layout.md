@@ -1,6 +1,6 @@
 - There are two main element types in Flow layout:
 	-   **Block elements:** things like headings, paragraphs, footers, asides. The chunks of content that make up a page.
-	-   **Inline elements:** things like links, or a string of bold text. Generally, inline elements are meant to highlight bits of text, or elements within a block container.
+	-   **Inline elements:** things like links, or a string of text. Generally, inline elements are meant to highlight bits of text, or elements within a block container.
 
 - Each HTML tag has a default type. For example `<div>` and `<header>` are [block elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements#elements), `<span>` and `<a>` are [inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#list_of_inline_elements).
 - In the flow layout, the `display` properties takes several values: `block` for vertical layout and `inline` for horizontal:
@@ -15,7 +15,7 @@ a.nav-link {
 - Elements that have `display: block` will stack in the **vertical** direction, regardless of their size.
 - In Flow layout, background colors and borders are truly meant to be _in the background_. The content will float on top.
 - Elements can be completely removed from the page by using `display: none` (e.g. a button which is set to `display: none` cannot be clicked or focused). The catch is it still takes memory for that element.
-- You can shift things in the *inline* direction with `margin-left` and `margin-right`, since that pushes it around in the inline direction, but you can't give it a `width` or `height`.
+- Inline elements have their width and height determined by the content they contain. You can shift them in the *inline* direction with `margin-left` and `margin-right`, since that pushes it around in the inline direction, and explicitly setting a `width`, `height` or any vertical layout property doesn't have any effect.
 - `inline-block` treats elements as **inline** _externally_ and **block** _internally_. So the term `inline-block` works outside-in. Properties like `width` and `margin-top` have no effect on an `inline` element, but they do work on `inline-block` elements. A big downside with `display: inline-block`: It disables line-wrapping.
 - To vertically align the content of a cell in a table or vertically position an image in a line of text, use [`vertical-align`](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align).
 ---
@@ -136,7 +136,7 @@ a.nav-link {
 - Measurement values (100%, 30vh, 5rem,...) and the `auto` keyword are _extrinsic_ (i.e. based on the **parent** element's *content space*).
 - `min-content` and `max-content` are _intrinsic_ (i.e. based on the target element's content space - the size of the children). 
 	- `max-content` doesn't fill the available space. An element with `width: max-content` pays no attention to the constraints set by the parent. It will size the element based purely on the length of its *unbroken* children. 
-	- `min-content` makes the element to become as narrow as it can, _based on the child contents_. For example a `<h1>` with `width: min-content` chooses the smallest possible value for `width` that still contains each word, which will be the `width` of the longest word (because `<h1>` is a block-level element. If `min-content` was applied for a `<span>`, the `width` will just be the intrinsic `width` of the *entire* string, horizontally, and line-wrap as needed).  
+	- `min-content` makes the element to become as narrow as it can, _based on the child contents_. For example a `<h1>` with `width: min-content` chooses the smallest possible value for `width` that still contains each whole word, which will be the `width` of the longest word (because `<h1>` is a block-level element. If `min-content` was applied for a `<span>`, the `width` will just be the intrinsic `width` of the *entire* string, horizontally, and line-wrap as needed).  
 - `fit-content` is like the combination of `min-content` and `max-content`. If that `width` can fit within the parent container, it behaves just like `max-content` by not adding any line-breaks. If the content is too wide to fit in the parent, however, it behaves just like `width: auto`: adds line-breaks as-needed to ensure it *never exceeds* the available space. 
 - `width: auto` has a different meaning for [replaced element](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element#replaced_elements). It doesn't mean “try to scale yourself to fill the container's space while respecting the aspect ratio” (that's `width: 100%` by the way), it means “use your intrinsic width”. For most of the other elements, `width: auto` still means “automatically grow to fill *as much space as possible*”.
 - `min-width: 100%`  to prevent horizontal overflow (so that it never grows above 100% of the container's space). Also keep this on top of your head when you want to position your content *in* some kind of a container.

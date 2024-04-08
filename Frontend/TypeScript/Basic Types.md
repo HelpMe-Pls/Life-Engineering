@@ -1,4 +1,4 @@
-6# Utility types
+# Utility types
 - Check out the [full list](https://www.typescriptlang.org/docs/handbook/utility-types.html).
 ## Record<Keys, Type>
 - Mostly used to *type **objects*** with properties of type `Keys` and values of type `Type`. Also useful in cases where you want to map the properties of a type to another type:

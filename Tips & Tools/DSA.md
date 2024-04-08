@@ -106,16 +106,18 @@ for i=0 to n
 - String immutability can reduce memory consumption. It reuses memory allocation by having all instances of a string value point to one location. So, when a change happens with a string value (e.g. "random"), say it becomes "random string", instead of changing the value "random", the variable is pointed to another instance of "random string", which is then added to the `String` pool.
 - Consider reading existing words instead of creating a memory location for each word, including repeating ones. Using a unique set *reduces* the required space. The drawback is that if your application constantly changes texts, a memory penalty is incurred for every alteration made.
 
-#### Integers
+#### Numbers
 - An integer is used to hold numeric values. An integer can either be *signed* (holds both positive and negative numbers), or *unsigned* (will only hold positive numbers).
 - There are several ways to represent integers in binary. One typical example is sign-magnitude. Sign-magnitude proposes using an indicator on the far left of the binary number to denote polarity: `1` for negative values and `0` for $\geq 0$ values.
 - An integer cannot represent fractions. For this, one would use decimal or float. A fixed number of bytes is used when representing integers, the size of which can be specified in some languages.
-- If you are developing an application that requires substantial amounts of available memory, using integers quickly and not having to worry about the detail may be the way to go.
+- If you are developing an application that requires substantial amounts of available memory, using integers quickly and not having to worry about the detail may be the way to go. The important thing is to be aware of the 64 bits storage for number (in JS) and treat fractional digital numbers as approximations, not as precise values.
+- In JS, the `NaN` value (which ironically has the type of `Number`) represents any numeric operations that don’t yield a meaningful result (e.g. `0/0` or `Infinity - Infinity`,...). It is supposed to denote the result of a nonsensical computation, and as such, it isn’t equal to the result of any _other_ nonsensical computations (including itself, i.e. `NaN == NaN` is `false`).
 
 #### Booleans 
 - Boolean expressions are either `true` or `false`, and their equivalence in binary would be `0` or `1`
 - Using Boolean expressions as indicators, you can then use relational operators to determine which line of code is to be executed. Finally, if you have not met any of your conditions, you might employ a catch-all code block (e.g. `else`).
 - The use of Boolean logic is the backbone of circuit design. It is a way of interpreting Boolean operators together. The shapes in the diagram below are gates triggered when certain Boolean operators are fired.
+- In JS, when comparing strings, it goes over the characters from left to right, comparing the Unicode codes one by one
 
 #### Arrays
 - [Arrays](https://www.techinterviewhandbook.org/algorithms/array/#techniques) can be created statically or dynamically. In static languages, an array would be kept on the stack and require that the array type be specified _a priori_. Stacks, by their nature, hold contiguous memory blocks, making accessing the information more manageable. Altering an array and returning it from the stack may lead to corrupted memory as the stack is discarded after the function completes.
