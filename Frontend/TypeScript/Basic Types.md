@@ -100,9 +100,10 @@ interface User {
 /**
  * We'd want to ensure that `defaultUser` is of type `User`
  * at THIS LINE - e.g. mispelling or missing a property's name
- * would throw a TS error right here
+ * would throw a TS error right here - by directly declaring the `User` type
+ * to `defaultUser`
  */
-const defaultUser: User = {   // The `:User` is what it is 
+const defaultUser: User = {  
   id: 6996,
   firstName: 'Random',
   lastName: "Guy",
@@ -173,8 +174,8 @@ if (!params || !params.noteId) {
 }
 ```
 
-## Casting types
-### The `as` keyword
+### Casting types
+#### The `as` keyword
 - Used for type assertion, when you want compiler to trust that you’ve ensured the value is of the asserted type. If the value is not actually of the asserted type, it could lead to *runtime* errors:
 ```ts
 interface LukeSkywalker {
@@ -216,10 +217,12 @@ const tryCatchDemo = (state: "fail" | "succeed") => {
     }
   } catch (e) {
     return (e as Error).message;
+    
     // But here's a better apporach, tho:
     if (e instanceof Error) {
       return e.message;
     }
+    else throw e
   }
 };
 ```

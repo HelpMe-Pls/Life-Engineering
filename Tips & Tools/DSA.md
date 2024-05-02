@@ -105,21 +105,37 @@ for i=0 to n
 - Some languages like Ruby and PHP allow strings to be changed after creation. It is more common, however, to use immutability, such as in Java, C#, JavaScript, Python, and Go.
 - String immutability can reduce memory consumption. It reuses memory allocation by having all instances of a string value point to one location. So, when a change happens with a string value (e.g. "random"), say it becomes "random string", instead of changing the value "random", the variable is pointed to another instance of "random string", which is then added to the `String` pool.
 - Consider reading existing words instead of creating a memory location for each word, including repeating ones. Using a unique set *reduces* the required space. The drawback is that if your application constantly changes texts, a memory penalty is incurred for every alteration made.
-
 #### Numbers
 - An integer is used to hold numeric values. An integer can either be *signed* (holds both positive and negative numbers), or *unsigned* (will only hold positive numbers).
 - There are several ways to represent integers in binary. One typical example is sign-magnitude. Sign-magnitude proposes using an indicator on the far left of the binary number to denote polarity: `1` for negative values and `0` for $\geq 0$ values.
 - An integer cannot represent fractions. For this, one would use decimal or float. A fixed number of bytes is used when representing integers, the size of which can be specified in some languages.
 - If you are developing an application that requires substantial amounts of available memory, using integers quickly and not having to worry about the detail may be the way to go. The important thing is to be aware of the 64 bits storage for number (in JS) and treat fractional digital numbers as approximations, not as precise values.
 - In JS, the `NaN` value (which ironically has the type of `Number`) represents any numeric operations that don’t yield a meaningful result (e.g. `0/0` or `Infinity - Infinity`,...). It is supposed to denote the result of a nonsensical computation, and as such, it isn’t equal to the result of any _other_ nonsensical computations (including itself, i.e. `NaN == NaN` is `false`).
-
 #### Booleans 
 - Boolean expressions are either `true` or `false`, and their equivalence in binary would be `0` or `1`
 - Using Boolean expressions as indicators, you can then use relational operators to determine which line of code is to be executed. Finally, if you have not met any of your conditions, you might employ a catch-all code block (e.g. `else`).
 - The use of Boolean logic is the backbone of circuit design. It is a way of interpreting Boolean operators together. The shapes in the diagram below are gates triggered when certain Boolean operators are fired.
-- In JS, when comparing strings, it goes over the characters from left to right, comparing the Unicode codes one by one
+- In JS, when comparing strings, it goes over the characters from left to right, comparing the Unicode codes one by one.
+#### Symbols
+- Being both *unique and usable as property names* makes symbols suitable for defining interfaces that can peacefully live alongside other properties, no matter what their names are.
+- It is required to use brackets when accessing a Symbol property:
+```js
+const length = Symbol("length");
+let myTrip = {
+  length: 2,
+  0: "Lankwitz",
+  1: "Babelsberg",
+  [length]: 21500
+};
+Array.prototype[length] = 0;
 
+console.log(length === Symbol("length")) // false
+console.log([1, 2].length); // 2
+console.log([1, 2][length]); // 0
+console.log(myTrip[length], myTrip.length);  // 21500 2
+```
 #### Arrays
+- Think of the Zero-based counting index as the number of items to skip, counting from the start of the array.
 - [Arrays](https://www.techinterviewhandbook.org/algorithms/array/#techniques) can be created statically or dynamically. In static languages, an array would be kept on the stack and require that the array type be specified _a priori_. Stacks, by their nature, hold contiguous memory blocks, making accessing the information more manageable. Altering an array and returning it from the stack may lead to corrupted memory as the stack is discarded after the function completes.
   Dynamic languages offer more fluidity, sometimes calling for the size to be set and do not require the type to be specified before use. Such an instance would be stored on a heap. Thus, the array remains unaffected when the function ends, and the stack is discarded. A heap is less organized and it can take more time to access the elements. You should consider the trade-off between size and convenience, or accessibility versus speed.
 - Making a shallow copy of an array optimizes memory usage; however, you must ensure that no unexpected changes are inadvertently made to an array shared by two variables.
@@ -135,7 +151,54 @@ for i=0 to n
  In the functional programming paradigm, functions are first-class objects.
 - Classes are commonly described as blueprints for an object. By extension, an object can be described as an instance of a class.
 - You can change the instances of a class through the constructor or an internal method of the object. The methods used to change attribute instances are generally called getters and setters.
-- This notion of having one general concept (e.g. human) that can manifest in different forms (male, female, non-binary,...) is known as polymorphism.
+- The notion of having one general concept (e.g. human) that can manifest in different forms (male, female, non-binary,...) is known as polymorphism.
+##### In JS
+- Reading a property that doesn’t exist will give you the value `undefined`.
+- When apply the `delete` unary operator to an object property, will remove the named property from the object:
+```js
+let anObject = {left: 1, right: 2};
+console.log(anObject.left);   // 1
+
+delete anObject.left;
+console.log(anObject); // {right: 2}
+
+// The binary `in` operator, when applied to a string and an object, tells you whether that object has a property with that name:
+console.log("left" in anObject);   // false
+console.log("right" in anObject);  // true
+```
+- The `Object.keys` method return an *array of strings*—the object’s *property names*. The `Object.assign` method copies all properties from one object into another:
+```js
+console.log(Object.keys({x: 0, y: 0, z: 2}));  //  ["x", "y", "z"]
+
+let objectA = {a: 1, b: 2};
+Object.assign(objectA, {b: 3, c: 4});
+console.log(objectA); //  {a: 1, b: 3, c: 4}
+```
+- There is a difference between having two references to the same object and having two different objects that contain the same properties:
+```js
+let object1 = {value: 10};
+let object2 = object1;
+let object3 = {value: 10};
+
+// `object1` and `object2` have the same IDENTITY: they're referencing the SAME object, which is why changing `object1` also changes the value of `object2`:
+object1.value = 15;
+console.log(object2.value); // 15
+// `object3` is unaffected:
+console.log(object3.value); // 10
+
+// When you compare objects with the `==` operator, it compares by identity: returns `true` only if both objects have the same reference:
+console.log(object1 == object2);  // true
+
+// There is no “deep” comparison operation built into JavaScript that compares objects by contents. Use lodash's `_.isEqual` for that: 
+console.log(object1 == object3);             // false
+console.log(_.isEqual(object1, object3));    // true
+```
+- A `const` binding to an object only prevent reassigning that object, not its _contents:_
+```js
+const score = {visitors: 0, home: 0};
+score.visitors = 1;    // valid
+score = {visitors: 1, home: 1};   // TypeError 
+```
 
 ### Collection
 #### Lists and sets
@@ -157,14 +220,14 @@ interface LinkedList<T> {
     get(index: number): T | undefined;
 }
 ```
-- A ***set*** will store its elements in an ***ordered*** (not sorted) way and will only hold ***unique*** elements. Once a value has been added to a set, it cannot change. Instead, you should and would have to delete it and add a new value. If you want to update a value in a collection, use an array. 
+- A ***set*** will store its elements in an ***ordered*** (*not sorted*) way and will only hold ***unique*** elements. Once a value has been added to a set, it cannot change. Instead, you should and would have to delete it and add a new value. If you want to update a value in a collection, better use an array. 
   *However*, objects that are added to sets can be treated differently depending on the language. In JavaScript, you can add mutable objects to a set, which is not permitted in Python. 
 - While sets can perform an exceptionally quick search, performance degrades when dealing with very large datasets due to its internal mechanism which uses hash tables.
-- Sets are beneficial when you need to keep track of a unique collection of values, such as removing duplicates from an array or checking membership efficiently.
+- Sets are beneficial when you need to keep track of a ***unique*** collection of values, such as removing duplicates from an array or checking membership efficiently.
 ##### [When to use which in JS](https://www.builder.io/blog/maps) (Object, Map, Set or Array)
 - **Object**: when the order of the keys are ***not*** important and their type is simple (e.g. `string | number`), or you *don't* need to iterate the collection. If you want to define a custom data structure or an object with methods, prefer `class` for better readability.
 - **Array**: when you need index-based access and want to perform complex operations on the collection of values.
-- **Map**: when the relationship between keys and values is important. Keys in a Map can be of any type and are not limited to sequential integer indices like in an Array. Use Map when you want *frequent* $O(1)$ **retrieval**/deletion values based on their key.
+- **Map**: when the relationship between keys and values is important. Keys in a Map can be ***of any type*** and are not limited to sequential integer indices like in an Array. A Map has its own separate prototype chain based on `Map.prototype` which inherits instance methods from `Object.prototype` and some extra methods (such as `set()`, `get()`, `has()`, `delete()`, `clear()`,...). Use Map when you want *frequent* $O(1)$ **retrieval**/deletion values based on their key, e.g. writing a data structure that can quickly search and update a large set of values.
 - **Set**: when you want an ***unique*** iterable collection of ***values*** (i.e. a Set will *automatically* remove duplicated values) , *frequent* $O(1)$ **search**/deletion and *don't* need random item retrieval (i.e. keys are *not* important). 
 > Map and Set are built-in objects. Keys in Object, Array, Map are unique.
 
@@ -785,7 +848,7 @@ let recursiveBinary = function (arr, x, start, end) {
 - It is the practice of having functions call themselves with a ***smaller*** instance of a problem *repeatedly* until some ***exit condition*** is met.
 - There are three requirements for implementing a recursive solution, namely the base case, the diminishing structure, and the recursive call. 
 	- The base case ensures that the function will not continue to call itself infinitely and eventually terminates.
-	- The diminishing structure is the base case oriented argument to the recursive call of the function itself:
+	- The diminishing structure is the *base case oriented* argument to the recursive call of the function itself:
 ```js
 function pow(x, n) {
   return (n == 1) ? x : (x * pow(x, n - 1)); // recursive call
@@ -793,7 +856,9 @@ function pow(x, n) {
   //      base case              diminishing structure
 }
 ```
-- Recursion vs regular loop: with recursion, you can simply call the function with a different input (diminishing structure) and it will *return a breakdown of the required steps*. Readability is a strong plus for recursion. Sometimes when a problem requires many checks (i.e. base cases), a loop can quickly become unwieldy. Recursive solutions reduce the amount of code required to solve a problem and can be easier to read and understand.
+- Recursion vs regular loop: with recursion, you can simply call the function with a different input (diminishing structure) and it will *return a breakdown of the required steps*. Readability is a strong plus for recursion. Sometimes when a problem requires many checks (i.e. base cases), a loop can quickly become unwieldy. In some cases, running through a simple loop is computationally cheaper than calling a function multiple times. 
+  Often, though, recursive solutions are helpful in giving up some efficiency in order to make the program more straightforward. Generally, these are problems that require exploring or processing several “branches”, each of which might branch out again into even more branches. 
+  You should generally start by writing something that’s correct and easy to understand. The art of programming lies in achieving a balance between human-friendliness and machine-friendliness.
 - It is highly recommended to employ a recursive approach as part of a `d&c` solution where the problem is broken into smaller steps and repeated to come upon the optimum solution.
 - Recursion increases computational cost as resources are required to make a function call. 
   However, the computation from each result will be *retained on the [call stack](https://www.codingninjas.com/codestudio/library/recursion-and-stack)*. 

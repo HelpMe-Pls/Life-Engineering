@@ -1,5 +1,6 @@
 ## Spread operator
- - It **deep** copies the data *if it is **not** nested*. For nested data, it deeply copies the topmost data and shallow copies of the nested data:
+- The "spread" syntax is applied for *arguments* in a function call where it expands iterable elements (like arrays or strings) into individual elements.
+- It **deep** copies the data *if it is **not** nested*. For nested data, it deeply copies the topmost data and shallow copies of the nested data:
 ```ts
 const oldObj = {a: {b: 10}, c: 2};
 
@@ -19,7 +20,7 @@ console.log('newObj:', newObj);       // newObj: { "a": { "b": 2 }, "c": 2
 > Use the built-in [structuredClone()](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone) if you want to deeply clone an object
 
 - Destructuring and alias:
-```js
+```ts
 function bar() {
 	return {
 		x: 4,
@@ -38,18 +39,21 @@ console.log( a, b, c );	// 4 5 6
 console.log( x, y, z );	// 4 5 6
 
 //============ Destructuring function parameters =============
-// If we want to access the `params` property from the argument when invoking `fetchSth` function, we can define it in one of these 3 ways:
+// If we want to access the `slug` property from the argument when invoking `fetchSth` function, we can define it in one of these 3 ways:
 // 1, using the dot notation:
 function fetchSth(context: {params: {slug: string}}) {
 	const slug = context.params.slug
+	console.log(slug)
 }
 // 2, object destructuring is used in the function parameter itself:
 function fetchSth({params}: {params: {slug: string}}) {
 	const slug = params.slug
+	console.log(slug)
 }
 // 3, double destructuring:
 function fetchSth({params}: {params: {slug: string}}) {
 	const {slug} = params
+	console.log(slug)
 }
 // Then, invoke `fetchSth`:
 const ctx = {params: {slug:'abc'}}
@@ -72,8 +76,9 @@ const res = { status: 500, ...responseInit }
 console.log(res) // {status: 404}
 ```
 ### Spread vs rest:
-- ES6's rest syntax is like an inverse of the spread syntax: it offers a shorthand for including an arbitrary number of arguments to be passed to a function:
+- The "rest" syntax is like an inverse of the spread syntax: it offers a shorthand for including an arbitrary number of *parameters* to be passed to a function. *It must be placed **at the end** of the parameter list*:
 ```js
+//----------------- rest:
 function addFiveToABunchOfNumbers(...numbers) {
   return numbers.map((x) => x + 5);
 }
@@ -89,10 +94,10 @@ const {e, f, ...others} = {
   h: 4,
 }; // e: 1, f: 2, others: { g: 3, h: 4 }
 
-var a = [2,3,4];
-var [ b, ...c ] = a;
-
-console.log( b, c );   // b:2, c:[3, 4]
+//----------------- spread:
+let words = ["never", "fully"];
+console.log(["will", ...words, "understand"]);
+// → ["will", "never", "fully", "understand"]
 ```
 
 ## Assignments
@@ -270,7 +275,7 @@ const data = useLoaderData<typeof loader>()
 </ul> 
 ```
 ### .filter()
-- Returns a *shallow* copy of a portion of the original array, with its element(s) are the return value(s) of the `callbackFn`. If no elements pass the test, an ***empty array*** will be returned.
+- Returns a *shallow* copy of a portion of the original array, with its element(s) are those when applied as argument for `callbackFn` returning `true`. If no elements pass the test, an ***empty array*** will be returned.
 - Does ***not*** mutate the original array. However, `callbackFn` may do so:
 ```ts
 // Modifying each word
@@ -743,9 +748,20 @@ console.log(str.includes("")); // true
 ```
 
 ### .trim()
-- Removes whitespace ***from both ends*** of a string and *returns a new string* (without modifying the original string).
+- Removes whitespace (spaces, newlines, tabs, and similar characters) ***from both ends*** of a string and *returns a new string* (without modifying the original string).
 - If neither the beginning or end of `str` has any whitespace, a new string is still returned (essentially a copy of `str`).
 - If you want to `trim()` on just one end,  use [`trimStart()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimStart) or [`trimEnd()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimEnd)
+- You can achieve the somewhat opposite effect of `trim()` by using padding methods which take the desired final length and padding characters as arguments:
+```js
+const fullNumber = '2034399002125581';
+const last4Digits = fullNumber.slice(-4);
+const maskedNumber = last4Digits.padStart(fullNumber.length, '*');
+
+console.log(maskedNumber);  // "************5581"
+
+const str2 = '6';
+console.log(str2.padEnd(9));   // "6        " 
+```
 
 ### .replace()
 ```js

@@ -13,30 +13,31 @@
             "dimension": 50.47095761381476,
             "children": [
               {
-                "id": "a05f14fac252d13c",
+                "id": "04b2f39ba07f5217",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/TypeScript/Basic Types.md",
+                    "file": "Frontend/JavaScript/class.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "33d3665f28414222",
+                "id": "e13145b95e341b4c",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/JavaScript/Conversion - Coercion.md",
+                    "file": "Tips & Tools/Tips.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           },
           {
             "id": "1cc01226e096d652",
@@ -62,18 +63,6 @@
                 "type": "tabs",
                 "children": [
                   {
-                    "id": "6c75a87113537011",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "Frontend/TypeScript/Basic Types.md",
-                        "mode": "source",
-                        "source": false
-                      }
-                    }
-                  },
-                  {
                     "id": "10d8a0bebe709cff",
                     "type": "leaf",
                     "state": {
@@ -85,8 +74,7 @@
                       }
                     }
                   }
-                ],
-                "currentTab": 1
+                ]
               }
             ],
             "direction": "horizontal"
@@ -121,10 +109,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Error",
-                "matchingCase": false,
+                "query": "strict",
+                "matchingCase": true,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "byCreatedTime"
               }
@@ -138,12 +126,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 218.5
+    "width": 220.5
   },
   "right": {
     "id": "82a9e7d6600420b4",
@@ -159,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Frontend/TypeScript/Basic Types.md",
+                "file": "Tips & Tools/Tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,37 +186,37 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "a05f14fac252d13c",
+  "active": "e13145b95e341b4c",
   "lastOpenFiles": [
-    "Frontend/CSS/Flow layout.md",
-    "Frontend/JavaScript/Conversion - Coercion.md",
-    "Tips & Tools/DSA.md",
-    "Backend/NodeJS/NodeJS.md",
-    "Tips & Tools/Technical.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
-    "Frontend/JavaScript/JavaScript.md",
-    "Frontend/Frameworks/Remix/Data Transfer.md",
-    "Frontend/Frameworks/Remix/Error Handling.md",
-    "Tips & Tools/Interview prep.md",
-    "Frontend/JavaScript/this.md",
-    "Frontend/Frameworks/Remix/Authentication.md",
-    "Frontend/JavaScript/Foundation.md",
+    "Frontend/JavaScript/class.md",
     "Frontend/TypeScript/Basic Types.md",
+    "Tips & Tools/Tips.md",
+    "Frontend/TypeScript/Type Transformation.md",
+    "Frontend/TypeScript/Fundamentals.md",
+    "Frontend/JavaScript/Lexical Scope.md",
+    "Tips & Tools/Lodash.md",
+    "Frontend/JavaScript/JavaScript.md",
+    "Frontend/JavaScript/Async.md",
+    "Frontend/Libraries/React/Fundamentals.md",
+    "Tips & Tools/Branching model.md",
     "Backend/Databases.md",
-    "Frontend/CSS/Animations.md",
-    "Tips & Tools/Git.md",
-    "Tips & Tools/Screening.md",
-    "Untitled.md",
-    "Tips & Tools/Behavioral.md",
-    "Tips & Tools/Progressive Overload.md",
-    "Tips & Tools/You as an interviewer.md",
-    "Screening.md",
-    "DevSecOps/Security.md",
-    "Backend/Backend.md",
-    "Frontend/Network/Connections and protocols.md",
+    "Frontend/JavaScript/Prototype.md",
+    "Frontend/JavaScript/Hoisting.md",
+    "Frontend/JavaScript/Closure.md",
+    "Frontend/JavaScript/Promises.md",
+    "Frontend/CSS/Flex.md",
+    "Frontend/CSS/Grid.md",
+    "Tips & Tools/DSA.md",
+    "Tips & Tools/System Design.md",
+    "Backend/NodeJS/Frameworks.md",
+    "Frontend/Frameworks/Remix/Scripting.md",
+    "Frontend/JavaScript/Objects.md",
+    "Frontend/JavaScript/Foundation.md",
+    "Frontend/JavaScript/Scope.md",
+    "Frontend/JavaScript/Modules.md",
+    "Backend/sql-joins.png",
     "Frontend/HTML/url-breakdown.png",
     "Frontend/Libraries/HTMX",
-    "Backend/sql-joins.png",
     "Frontend/Frameworks/Remix",
     "Backend/Golang",
     "Frontend/HTML/url-breakdown.png.crdownload",

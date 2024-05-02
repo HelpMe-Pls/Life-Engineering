@@ -4,7 +4,77 @@
 [[code-review.png |Code Review]]
 
 ---
-#### JS
+# JS
+- Generalized FizzBuzz using Map:
+```js
+var multipliers = [
+  [3, "Fizz"],
+  [5, "Buzz"]
+]
+
+for (let i = 1; i <= 100; i++) {
+  let output = "";
+
+  multipliers.forEach(function(item) {
+     if (i % item[0] === 0) {
+       output += item[1];
+     }
+  }); 
+
+  console.log(output || i);
+}
+```
+## Currying vs Piping 
+- **Currying** is a technique where a function with multiple arguments is transformed into *a sequence of functions* (i.e. function returning functions), each taking a single argument. It's used to enable partial function application and create specialized functions. Here's an example of currying:
+```javascript
+const add = x => y => x + y;
+const add5 = add(5);
+console.log(add5(3));  // Output: 8
+```
+
+- On the other hand, **piping** is a technique where multiple functions are composed together to form a pipeline of operations. The output of one function becomes the input for the next function in the pipeline. It enhances code readability and promotes modular data transformation pipelines. Here's an example of piping:
+```javascript
+const add5 = x => x + 5;
+const multiply2 = x => x * 2;
+const subtract10 = x => x - 10;
+
+const pipe = (...fns) => (value) => fns.reduce((acc, fn) => fn(acc), value);
+
+const calculate = pipe(
+  add5,
+  multiply2,
+  subtract10
+);
+
+console.log(calculate(3));  // Executes all those function sequentially, giving the output: 8 -> 16 -> 6
+```
+## Graceful error handling
+- Creating an empty `class` to enhance the readability of your code:
+```js
+class InputError extends Error {}
+
+function promptDirection(question) {
+  let result = prompt(question);
+  if (result.toLowerCase() == "left") return "L";
+  if (result.toLowerCase() == "right") return "R";
+  throw new InputError("Invalid direction: " + result);
+}
+
+for (;;) {
+  try {
+    let dir = promptDirection("Where?");
+    console.log("You chose ", dir);
+    break;
+  } catch (e) {
+    if (e instanceof InputError) {
+      console.log("Not a valid direction. Try again.");
+    } else {
+      throw e;  // Suppose you called `prompDirection("Where?")` in the `try` block, a `ReferenceError` will be caught here
+    }
+  }
+}
+```
+# JSX
 - Check for empty object: 
 ```jsx
 // Render this component only when `detailCampaign` object has data:
@@ -25,26 +95,6 @@
           <SkeletonCard key={i} />
      ))}
 </div>
-```
-- Centering trick with 1 side having content [in flex layout](https://github.com/css-for-js/sole-and-ankle/commit/ad2863febfccdcc58d87e5ad5210b2ebfcd2faf8) by using  *`flex: 1`  elements* to squeeze your desired center content.
-- Generalized FizzBuzz using Map:
-```js
-var multipliers = [
-  [3, "Fizz"],
-  [5, "Buzz"]
-]
-
-for (let i = 1; i <= 100; i++) {
-  let output = "";
-
-  multipliers.forEach(function(item) {
-     if (i % item[0] === 0) {
-       output += item[1];
-     }
-  }); 
-
-  console.log(output || i);
-}
 ```
 
 - If your component has styling transformation, better isolate that animation part to an API and keep your main component SoC from that animation:
@@ -99,32 +149,8 @@ export default function CustomDrawer() {
 
 ```
 
-##### Currying vs Piping 
-- **Currying** is a technique where a function with multiple arguments is transformed into *a sequence of functions* (i.e. function returning functions), each taking a single argument. It's used to enable partial function application and create specialized functions. Here's an example of currying:
-```javascript
-const add = x => y => x + y;
-const add5 = add(5);
-console.log(add5(3));  // Output: 8
-```
-
-- On the other hand, **piping** is a technique where multiple functions are composed together to form a pipeline of operations. The output of one function becomes the input for the next function in the pipeline. It enhances code readability and promotes modular data transformation pipelines. Here's an example of piping:
-```javascript
-const add5 = x => x + 5;
-const multiply2 = x => x * 2;
-const subtract10 = x => x - 10;
-
-const pipe = (...fns) => (value) => fns.reduce((acc, fn) => fn(acc), value);
-
-const calculate = pipe(
-  add5,
-  multiply2,
-  subtract10
-);
-
-console.log(calculate(3));  // Executes all those function sequentially, giving the output: 8 -> 16 -> 6
-```
-
-#### CSS
+# CSS
+- Centering trick with 1 side having content [in flex layout](https://github.com/css-for-js/sole-and-ankle/commit/ad2863febfccdcc58d87e5ad5210b2ebfcd2faf8) by using  *`flex: 1`  elements* to squeeze your desired center content.
 - To disable the flash of the "tap rectangle" for a button on mobile devices:
 ```css
 .pushable {
