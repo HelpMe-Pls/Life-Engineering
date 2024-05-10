@@ -105,6 +105,7 @@ for i=0 to n
 - Some languages like Ruby and PHP allow strings to be changed after creation. It is more common, however, to use immutability, such as in Java, C#, JavaScript, Python, and Go.
 - String immutability can reduce memory consumption. It reuses memory allocation by having all instances of a string value point to one location. So, when a change happens with a string value (e.g. "random"), say it becomes "random string", instead of changing the value "random", the variable is pointed to another instance of "random string", which is then added to the `String` pool.
 - Consider reading existing words instead of creating a memory location for each word, including repeating ones. Using a unique set *reduces* the required space. The drawback is that if your application constantly changes texts, a memory penalty is incurred for every alteration made.
+- Read more about [back tracking](https://eloquentjavascript.net/09_regexp.html#p-tCd15MFAty) in strings.
 #### Numbers
 - An integer is used to hold numeric values. An integer can either be *signed* (holds both positive and negative numbers), or *unsigned* (will only hold positive numbers).
 - There are several ways to represent integers in binary. One typical example is sign-magnitude. Sign-magnitude proposes using an indicator on the far left of the binary number to denote polarity: `1` for negative values and `0` for $\geq 0$ values.

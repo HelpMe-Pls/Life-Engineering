@@ -766,13 +766,30 @@ console.log(str2.padEnd(9));   // "6        "
 ### .replace()
 ```js
 // Syntax:
-someString.replace(pettern, replacement)
+someString.replace(pattern, replacement)
 ```
 - Returns a **new** string, with one or all matches of the `pattern` replaced by the specified `replacement`.
-- The `pattern` could be a `string` or a `regex`, the `replacement` could be a `string` or a `function`.
-- If `pattern` is a string, only the *first* occurrence will be replaced. 
+- The `pattern` could be a `string` or a `regex`, the `replacement` could be a `string` or a `function`:
+```js
+// If the `replacement` is a function, it will be called with the matched groups (as well as the whole match) as arguments, and its return value will be inserted into the new string:
+let stock = "1 lemon, 2 cabbages, and 101 eggs";
+function minusOne(match, amount, unit) { 
+  amount = Number(amount) - 1;
+  if (amount == 1) { // only one left, remove the 's'
+    unit = unit.slice(0, unit.length - 1);
+  } else if (amount == 0) {
+    amount = "no";
+  }
+  return amount + " " + unit;
+}
+
+// `(\d+)` is bound to `amount` and `(\p{L}+)/gu` to `unit`. So there are 3 matches: "1 lemon", "2 cabbages", "101 eggs"
+console.log(stock.replace(/(\d+) (\p{L}+)/gu, minusOne));
+// → no lemon, 1 cabbage, and 100 eggs
+```
+- If `pattern` is a ***string***, ==only the *first==* occurrence will be replaced. 
 - If `pattern` is an empty string, the replacement is prepended to the *start* of the string.
-- To replace all `pattern` matches, use a regex with the `g` flag, or use [`.replaceAll()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll) instead.
+- To replace ***all*** `pattern` matches, use a regex with the [[Regular Expressions#`g` |g]] flag, or use [`.replaceAll()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll) instead.
 ```js
 // Examples:
 const randomString = "I saw a dog jumps over three dogs, turns out it's just a cat."
@@ -783,6 +800,14 @@ console.log(randomString.replace('dog', 'cat'));
 const regex = /dog/g;
 // "I saw a weasel jumps over three weasels, turns out it's just a cat."
 console.log(randomString.replace(regex, 'weasel'));
+
+// `$1` is replaced by the text that matched against the first group, `$2` by the second, and so on, up to `$9`. The whole match can be referred to with `$&`:
+console.log(
+  "Liskov, Barbara\nMcCarthy, John\nMilner, Robin"
+    .replace(/(\p{L}+), (\p{L}+)/gu, "$2 $1"));
+// Barbara Liskov
+// John McCarthy
+// Robin Milner
 ```
 
 ### .split()

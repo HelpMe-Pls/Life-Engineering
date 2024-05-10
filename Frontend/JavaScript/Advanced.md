@@ -1,4 +1,3 @@
-[[OOP]]
 [[Async]]
 [[Everyday methods & utils]]
 [[Functional Programming]]

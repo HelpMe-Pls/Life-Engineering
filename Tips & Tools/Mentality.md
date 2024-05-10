@@ -1,0 +1,7 @@
+- Nobody is going to give you permission to do what you want. They don’t have the story that you are telling yourself.
+- At the end of the day, no one gives a fuck about you, unless you have some kind of impact (be it positive or negative) on them, or you provoked their insecurities. So why bother? Focus on yourself (and that doesn't mean you should be an uncompassionate person). Realize the human nature so that you don't dwell on the negative impacts from others.
+- The pain of not achieving your goals must outweigh the pain of living a comfortable life.
+- The path out of a low point is trial and error, the essence of life itself.
+- Self-confidence comes from doing what you think is uncomfortable, over and over again, and realizing it wasn't that bad in the first place.
+- There are no limits except for the ones you place on yourself. Practically speaking, you're the only one who can stop yourself and also the only one moving forward. Never compare yourself to someone who seems to effortlessly achieved your goals and underestimate your abilities. If there's proof that something is possible, you can make it happen.  
+- You aren’t confident because you are trapped in someone else’s story. You don’t have a chance to transform into who you were meant to become.

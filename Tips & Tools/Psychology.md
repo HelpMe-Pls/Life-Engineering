@@ -1,1 +1,2 @@
 - Keep your expectations low and DO NOT spend your money to impress other people.
+- Events are residual by-products of process. Focus on the process. Process cannot be outsourced, because process dawns wisdom, personal growth, strength, and ultimately, events.
