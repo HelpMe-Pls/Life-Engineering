@@ -109,9 +109,9 @@ var o1 = { a: 1, b: 2, c: 3 },
 	a2 = [];
 
 // Wrap the whole assignment expression in parentheses:
-( { a: a2[0], b: a2[1], c: a2[2] } = o1 );
+({ a: a2[0], b: a2[1], c: a2[2] } = o1);
 
-console.log( a2 );    // [1, 2, 3]
+console.log(a2);    // [1, 2, 3]
 ```
 
 - Array transformation:
@@ -126,12 +126,12 @@ console.log( o2.a, o2.b, o2.c );   // 1 2 3
 
 
 // Re-ordering an array:
-var a1 = [ 1, 2, 3 ],
+var a1 = [1, 2, 3],
 	a2 = [];
 
-[ a2[2], a2[0], a2[1] ] = a1;
+[a2[2], a2[0], a2[1]] = a1;
 
-console.log( a2 );   // [2, 3, 1] 
+console.log(a2);   // [2, 3, 1] 
 ```
 
 - Restructuring :
@@ -814,7 +814,7 @@ console.log(
 ```js
 someStr.split(separator, _limit)
 ```
-- Returns an array of strings, split at each point where the `separator` occurs in the given string.
+- Returns *an **array** of strings*, split at each point where the `separator` occurs in the given string.
 - The `seperator` could be a `string` or a `regex`, so be careful and don't omit it or passing `undefined` or the method will executed by the string `"undefined"`.
 - If the `seperator` is an empty `string`, it returns an array of all the characters in the given string
 - `limit` is an optional param which is a non-negative integer specifying the number of substrings to be included in the return value. If `limit` is `0`, an empty array is returned. 

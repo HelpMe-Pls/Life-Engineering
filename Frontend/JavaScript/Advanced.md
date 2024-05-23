@@ -1,5 +1,6 @@
 [[Async]]
 [[Everyday methods & utils]]
 [[Functional Programming]]
+[[Frontend/JavaScript/Performance|Performance]]
 [[Regular Expressions]]
 [[TypeScript]]

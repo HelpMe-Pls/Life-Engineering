@@ -12,62 +12,42 @@
 var name = 'K'
 
 function ask(question){
-
     // In lexical scope, the `name` below would be 'K'
-
     // But in dynamic scope, this function is called in the `otherClass` function,
-
     // so that's where the `name` get evaluated (to be 'L')
-
     console.log(name, question)
-
 }
 
 
 function otherClass(){
-
     var name = 'L'
-
-  
-
     ask('Why ?')
-
 }
 
 otherClass()
-
 ```
 
 - When a variable is declared as `const`, it means that the variable **can't be *reassign*** (**not** can't be mutated: _value immutability_ **is not** _assignment immutability_. In case you want an object to be "read-only", use `Object.freeze()`). The `const` keyword requires a variable to be initialized, so omitting an assignment from the declaration results in a `SyntaxError.
    It is best used to declare immutable primitive values (i.e. used as placeholders):
 ```javascript
 var someone = 'S'
-
 someone = 'D' // legit
 
 
 const anotherOne = someone
-
 anotherOne = 'F'  // TypeError
 
 
 const empty;   // SyntaxError
-
-
 const names = ['R', 'G']
-
 names[1] = 'P'    // still legit
 
   
 
 // Best cases for `const`:
-
 const MAGIC_NUMBER = 69
-
 const ENV_STRING = 'some-random-characters'
-
 const API_URL = 'https://example.com'
-
 const PAYLOAD = true
 
 

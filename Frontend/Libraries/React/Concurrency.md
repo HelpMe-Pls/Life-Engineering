@@ -46,6 +46,6 @@ const [isPending, startTransition] = useTransition();
 ---
 
 ### `useDeferredValue`
-- If you ***have access*** to the state updating code and have some state updates that should be treated with a lower priority, it makes sense to use `useTransition()`. In case you ***don't*** have that access (for example, if a third-party library handles it), you can use the `useDeferredValue()` hook instead. 
-- `useDeferredValue()` allows you to wrap the ***value*** generated or updated as a result of the state update (either the state value itself or a value computed based on the state value)
+- If you ***have access*** *to the state* updating code and have some state updates that should be treated with a lower priority, it makes sense to use `useTransition()`. In case you ***don't*** have that access (for example, if a third-party library handles it), you can use the `useDeferredValue()` hook instead. 
+- `useDeferredValue()` allows you to wrap the ***value*** generated or updated *as a result of the state update* (either the state value itself or a value computed based on the state value)
 - [How to use](https://blog.openreplay.com/usetransition-vs-usedeferredvalue-in-react-18) `useTransition()` or `useDeferredValue()`

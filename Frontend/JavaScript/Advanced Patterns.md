@@ -1,3 +1,4 @@
+[[Generators]]
 # async - await
 - First of all, it displays the asynchronous flow in a synchronous - easy to read manner. Consider this example:
 ```ts
@@ -30,7 +31,8 @@ fs.readFile(fileName, 'utf8', (err, data) => {
 });
 //---------------------------------------
 
-// Using async - await:
+// Using async - await
+// Notice how the try-catch block is placed INSIDE the `async` function:
 const fs = require('fs/promises');
 
 async function example() {
@@ -50,13 +52,13 @@ async function example() {
 example();
 ```
 
-- Besides, instead of the `function *main(){}` declaration, we declare with the `async function main(){}` form. And instead of `yield`ing a promise, we `await` the promise. The keyword `async` before a function means that function ***always*** returns a promise (i.e. its return values are automatically wrapped in a *resolved* promise).
-  The `await` operator is used to wait for a `Promise`. It's mostly used ***inside*** an `async function` within regular JavaScript code (i.e. if we try to use `await` in a non-async function, there would be a syntax error). Occasionally, it's used on its own with JavaScript modules:
+- Besides, instead of the `function *main(){}` [[Generators |declaration]], we declare with the `async function main(){}` form. And instead of `yield`ing a promise, we `await` the promise.
+	- An `async` function is a special type of generator. It *always* produces a promise when called, which is fulfilled when it returns (finishes) and rejected when it throws an exception. Whenever it yields (`await`s) a promise, the result of that promise (value or thrown exception) is the result of the `await` expression.
 
+- The `await` operator is used to wait for a `Promise`. It's mostly used ***inside*** an `async function` within regular JavaScript code (i.e. if we try to use `await` in a non-async function, there would be a syntax error). Occasionally, it's used on its own with JavaScript modules:
 ```js
 async function wait() {
   await new Promise(resolve => setTimeout(resolve, 1000));
-
   return "Done.";
 }
 
@@ -77,10 +79,9 @@ import { users } from "./users.js";
 console.log(users);
 ```
 
-- We can (and should) use `async` - `await` to replace Promise chaining (with `.then()` method) to enhance readability.
+> We can (and should) use `async` - `await` to replace Promise chaining (with `.then` method) to enhance readability.
 
 - When we use `async/await`, we rarely need `.then`, because `await` handles the waiting for us. We can also use a regular `try..catch` instead of `.catch`:
-
 ```js
 (async function f() {
   try {

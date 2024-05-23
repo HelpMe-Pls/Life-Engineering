@@ -2,5 +2,5 @@
 [[Tools & Util libs]]
 [[WIL from books]]
 [[Financial]]
-[[Casual]]
+[[Socialize]]
 [[Mentality]]

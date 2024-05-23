@@ -39,35 +39,6 @@ let re1 = new RegExp("abc");
 // using the regex literal (with forward slashses), useful when you're defining a "const" regex:
 const re2 = /abc/;
 ```
-- The backslash (`\`) is used for escaping the reserved characters that are used for defining a regex, which are  `.`, `*`, `+`, `?`, `^`, `$`, `(`, `)`, `[`, `]`, `{`, `}`, `|`, and the `\` itself. For example, if you want to indicate a literal `+` in your target (e.g. matching the literal `A+` string), then your regex would be: 
-```js
-// using the `RegExp` constructor:
-let re1 = new RegExp("A\\+"); 
-// when the regex is in a string format:
-// the first backslash immediately next to the `+` is used for escaping the `+` itself, i.e. matching the literal `+`, and so the second backslash is required for the first backslash to be correctly intepreted in the string format of the regex, i.e. to be resolved into `/A\+/`. 
-// without the second backslash, the resolved regex would be `/A+/`, which has a different meaning: matches one or more occurences of the literal `A`
-
-// using the regex literal:
-let re2 = /A\+/;
-```
-
-> For every **literal** backslash that you want a regex to match, three additional backslashes is required in the `RegExp` constructor form. For example:
-```js
-let re = new RegExp("a\\\\b")  // -> Match the literal `a\b` string
-```
-
-- Those special character tags with backslash (like `\n`, `\t`,...) still remain their intrinsic functionality, and their backslash must also be escaped with another backslash *if* you want to match a string which contains a special character tag, for example:
-```js
-// Match the literal `a\n` string:
-let re3 = /a\\n/
-
-// Match the following literal (an `a` followed by a `b` on the next line):
-`
-a
-b
-`
-let re4 = /a\nb/
-```
 
 ## Applying the regex
 ### Methods
@@ -178,7 +149,7 @@ let str = `1st place: Winnie
 console.log(str.match(/^\d/gm)); // ['1', '2', '3']
 ```
 #### `s`
-- Called the "dotAll". It works as an extension of the `/./` pattern which also matches `\n` tags:
+- Called the "dotAll". It works as an extension of the `.` pattern which also matches `\n` tags:
 ```js
 let text = "First line\nSecond line";
 let pattern = /First.*Second/s;
@@ -208,7 +179,7 @@ console.log(/🍎{3}/u.test("🍎🍎🍎"));  // true
 
 ### Set 
 - The square brackets (like the array notation: `[]`) holds the *inclusive* range (with a hyphen `-` in between) of *continuous (in-order) characters* to be matched with *a singular* target character. 
-- Reserved characters lose their meaning in a set.
+- `.` and `-` lose their meaning (treated as literals) in a set. The hyphen (`-`) only works if it's representing a range, other than that, it's treated as a literal match.
 - A "not" set, i.e. to express that you want to match *any* character except the ones in the set, is defined by adding a caret (`^`) at the beginning of the set.
 - For example:
 ```js
@@ -260,7 +231,7 @@ hasThanks("Thanksgiving is around the corner."); // null
 
 console.log(/ \B/.exec("abc "))  // [" "], the "end-of-string" is considered a pass for the `non-word boundary`, so the `space` after the `c` is matched 
 ```
-- If you want to use parentheses purely for grouping, without having them show up in the array of matches, you can put `?:` after the opening parenthesis:
+- If you want to use parentheses purely for grouping, without having the matched group to show up in the output array, you can put `?:` after the opening parenthesis:
 ```js
 console.log(/(?:na)+/.exec("banana"));  // ["nana"]
 ```
@@ -281,7 +252,7 @@ console.log(animalCount.test("15 pugs"));  // false
 ```
 
 ### Greedy
-- The repetition operators (`+`, `*`, `?`, and `{}`) are _greedy_, meaning they match as much as they can and backtrack from there. If you put a question mark after them (`+?`, `*?`, `??`, `{}?`), they become nongreedy and start by matching *as little as possible*, matching more only when the remaining pattern does not fit the smaller match:
+- The repetition operators (`+`, `*`, `?`, and `{}`) are _greedy_, meaning they match as much as they can and backtrack from there. If you put a question mark after them (`+?`, `*?`, `??`, `{}?`), they become nongreedy and start by matching *as little as possible*:
 ```js
 function stripComments(code) {
   return code.replace(/\/\/.*|\/\*[^]*?\*\//g, "");
@@ -292,13 +263,43 @@ console.log(stripComments("1 /* a */+/* b */ 1"));  // 1 + 1
 > When using a repetition operator, prefer the nongreedy variant.
 
 ### Escaping
+- The backslash (`\`) is used for escaping the reserved characters that are used for defining a regex, which are  `.`, `*`, `+`, `?`, `^`, `$`, `(`, `)`, `[`, `]`, `{`, `}`, `|`, and the `\` itself. For example, if you want to indicate a literal `+` in your target (e.g. matching the literal `A+` string), then your regex would be: 
+```js
+// using the `RegExp` constructor:
+let re1 = new RegExp("A\\+"); 
+// when the regex is in a string format:
+// the first backslash immediately next to the `+` is used for escaping the `+` itself, i.e. matching the literal `+`, and so the second backslash is required for the first backslash to be correctly intepreted in the string format of the regex, i.e. to be resolved into `/A\+/`. 
+// without the second backslash, the resolved regex would be `/A+/`, which has a different meaning: matches one or more occurences of the literal `A`
+
+// using the regex literal:
+let re2 = /A\+/;
+```
+
+> For every **literal** backslash that you want a regex to match, three additional backslashes is required in the `RegExp` constructor form. For example:
+```js
+let re = new RegExp("a\\\\b")  // -> Match the literal `a\b` string
+```
+
+- Those special character tags with backslash (like `\n`, `\t`,...) still remain their intrinsic functionality, and their backslash must also be escaped with another backslash *if* you want to match a string which contains a special character tag, for example:
+```js
+// Match the literal `a\n` string:
+let re3 = /a\\n/
+
+// Match the following literal (an `a` followed by a `b` on the next line):
+`
+a
+b
+`
+let re4 = /a\nb/
+```
+
 - If you want to match the reserved characters literally:
 ```js
 let name = "dea+hl[]rd";
-let escaped = name.replace(/[\\[.+*?(){|^$]/g, "\\$&");
+let escaped = name.replace(/[.+*?[{()\\|^$]/g, "\\$&");
 let regexp = new RegExp("(^|\\s)" + escaped + "($|\\s)", "gi");
 
 let text = "This dea+hl[]rd guy is super annoying.";
 console.log(regexp.test(text))  // true
 ```
-- **Both** the opening `(` and closing `)` parentheses are special characters in regex because they’re used for [[#Matching groups |grouping]], so they're escaped to match them literally, while only the opening `[`, `{`, and the `\` are escaped. The `]` and `}` are included as is because they’re *not special* characters when they’re not used in conjunction with their opening counterparts.
+- **Both** the opening `(` *and closing* `)` parentheses are special characters in regex because they’re used for [[#Matching groups |grouping]], so they're escaped to match them literally, while only the *opening* `{`, `[`, and the `\` are escaped. The closing `]` and `}` are included as is because they’re *not special* characters when they’re not used in conjunction with their opening counterparts, so it doesn't matter if they're escaped or not.

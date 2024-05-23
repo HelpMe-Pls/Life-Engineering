@@ -1,0 +1,2 @@
+- Just don't. It's gambling. 
+- "Invest" in crypto if gambling is your thing.

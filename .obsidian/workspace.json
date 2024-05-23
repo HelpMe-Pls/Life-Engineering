@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/Casual.md",
+                    "file": "Backend/NodeJS/NodeJS.md",
                     "mode": "source",
                     "backlinks": false,
                     "source": false
@@ -26,19 +26,31 @@
                 }
               },
               {
-                "id": "c6dadf9e367f4e5f",
+                "id": "abc6f8c3674bcfe7",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/JavaScript/Regular Expressions.md",
-                    "mode": "preview",
+                    "file": "Frontend/JavaScript/Generators.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "fca7f891104b66f4",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Tips & Tools/Psychology.md",
+                    "mode": "source",
                     "source": false
                   }
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           },
           {
             "id": "1cc01226e096d652",
@@ -110,7 +122,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "backtrack",
+                "query": "hoist",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -147,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Frontend/JavaScript/Regular Expressions.md",
+                "file": "Tips & Tools/Psychology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,34 +199,34 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "c6dadf9e367f4e5f",
+  "active": "fca7f891104b66f4",
   "lastOpenFiles": [
+    "Frontend/JavaScript/Generators.md",
+    "Frontend/JavaScript/class.md",
+    "Frontend/JavaScript/Objects.md",
+    "Frontend/JavaScript/Prototype.md",
+    "Backend/NodeJS/NodeJS.md",
+    "Frontend/JavaScript/Async.md",
+    "Frontend/JavaScript/Callbacks.md",
+    "Frontend/JavaScript/Hoisting.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
-    "Frontend/JavaScript/Regular Expressions.md",
-    "Tips & Tools/Casual.md",
-    "Tips & Tools/DSA.md",
-    "Tips & Tools/WIL from books.md",
-    "Tips & Tools/Mentality.md",
-    "Frontend/Frameworks/Remix/Authentication.md",
-    "Tips & Tools/Tips & Tools.md",
-    "Tips & Tools/Financial.md",
     "Tips & Tools/Psychology.md",
-    "Tips & Tools/Tips.md",
-    "Frontend/Frameworks/Remix/Remix.md",
-    "Tips & Tools/Best practices.md",
-    "Frontend/Frameworks/Antd.md",
-    "Tips & Tools/Technical.md",
-    "Tips & Tools/Progressive Overload.md",
+    "Frontend/JavaScript/Lexical Scope.md",
+    "Frontend/JavaScript/Nested Scope.md",
+    "Frontend/JavaScript/Types.md",
+    "Frontend/JavaScript/Scope.md",
+    "Frontend/JavaScript/Promise.md",
+    "Frontend/JavaScript/Advanced Patterns.md",
     "Frontend/JavaScript/Advanced.md",
     "Frontend/JavaScript/Functional Programming.md",
-    "Frontend/JavaScript/Async.md",
-    "Frontend/JavaScript/Generators.md",
-    "Frontend/JavaScript/OOP.md",
+    "Frontend/JavaScript/Performance.md",
+    "Backend/Golang/Fundamentals.md",
+    "Tips & Tools/Mentality.md",
+    "Frontend/JavaScript/Modules.md",
     "Frontend/JavaScript/JavaScript.md",
-    "Frontend/JavaScript/class.md",
-    "Frontend/TypeScript/Basic Types.md",
-    "Frontend/TypeScript/Type Transformation.md",
-    "Frontend/TypeScript/Fundamentals.md",
+    "Frontend/JavaScript/Foundation.md",
+    "Tips & Tools/English vocab.md",
+    "Tips & Tools/Socialize.md",
     "Backend/sql-joins.png",
     "Frontend/HTML/url-breakdown.png",
     "Frontend/Libraries/HTMX",

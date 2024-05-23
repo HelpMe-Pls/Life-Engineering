@@ -1,0 +1,2 @@
+- You weren't born with an interest. You were programmed into it. You were persuaded of its importance and adopted it to help you achieve your goals in life. So find a way to articulate that into story, make it intriguing enough so that you grasp the attention for your audience.
+- In brief, launch products around the ideas that do well for you. Every 3-6 months, launch at least one free product and one paid product until you have a brand and business you are satisfied with.

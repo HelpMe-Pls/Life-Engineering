@@ -1,2 +1,22 @@
-- Keep your expectations low and DO NOT spend your money to impress other people.
+- Spending money to show people how much money you have (or to impress other people) is the *fastest* way to have less money.
+- If you buy something and resort to mental gymnastics over affordability, YOU CAN’T AFFORD IT. Any kind of self-talk is a warning that you can’t afford it. True affordability doesn’t have strings attached. You can bluff yourself but you can’t bluff the consequences.
+- Money’s greatest intrinsic value—and this can’t be overstated—is its ability to give you control over your time.
 - Events are residual by-products of process. Focus on the process. Process cannot be outsourced, because process dawns wisdom, personal growth, strength, and ultimately, events.
+- Despite what you may have read or heard, wealth is a process, not an event (*and so does luck*). Wealth eludes most people because they are preoccupied with events while disregarding process. Without process, there is no event.
+- Wealth doesn’t drop from the sky or come from a game show. Wealth from lottery/gambling? Taking that route, you essentially become a hitchhiker with no seat belt. 
+- Luck is created by increased probabilities that are improved with the process of action. Process creates events that others see as luck.
+- Wealth is authored by strong familial relationships, fitness and health, and ***freedom***—not by material possessions. What steals freedom, steals wealth.
+- The happiest people in the world have a tight sense of community, social support, and strong family bonds.
+- Wealth is best experienced when you’re young, vibrant, and able, not in the twilight of your life.
+- Planning is important, but the most important part of every plan is to plan on the plan not going according to plan. Because things that have never happened before happen all the time. Risk is what’s left over when you think you’ve thought of everything.
+- Saving is the gap between your ego and your income.
+- Combining short-term caution with long-term optimism—is essential for navigating the uncertainties of life and the economy.
+- Spreading out your bets and staying the course through the ups and downs can lead to outsized successes, thanks to the power of tail events.
+- It is so important to remember when judging success — both your own and others’: “Nothing is as good or as bad as it seems.”
+- Everything has a price, but not all prices appear on labels.
+- Luck and risk are siblings. They are both the reality that every outcome in life is guided by forces other than individual effort. The accidental impact of actions outside of your control can be more consequential than the ones you consciously take.
+- “**Enough**” is realizing that the opposite — an insatiable appetite for more — will push you to the point of regret. 
+- You don’t need tremendous force to create tremendous results.
+- More money is not a solution to poor financial management.
+- You can’t be a victim if you don’t relinquish power to someone capable of making you a victim.
+

@@ -1,3 +1,4 @@
 [[Investment]]
 [[Crypto]]
 [[Psychology]]
+[[Entrepreneurship]]

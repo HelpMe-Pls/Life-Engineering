@@ -2,7 +2,7 @@ invariably (adv): always
 
 wither (v): to affect harmfully (with object); to fade, decay (w/o object)
 
-credo (n) <cri-do>: a fancy word for [ultimate belief]
+credo (n) <cri-do>: a fancy word for 'ultimate belief'
 
 endeavor (v-n): to try / an effort to do sth
 
@@ -429,3 +429,15 @@ innocuous (adj): harmless, inoffensive, insipid
 desolate (v-adj): to deprive of inhabitants, lifeless, deserted, dilapidated
 
 idempotent (adj-n): to run something as many times as you like and you get the same desired result
+
+maverick (adj-n): sigma guy
+
+consummate (adj-v): to make something complete & perfect. To consummate a marriage/relationship is to make it complete by having sex
+
+commensurate {with} (adj): eligible, in a correct and suitable amount compared to sth else
+
+conniving (adj): devious, Machiavellian, calculating, manipulative
+
+futility (n): meaningless, no effect, achieving nothing
+
+purgatory (n): hell, suffering

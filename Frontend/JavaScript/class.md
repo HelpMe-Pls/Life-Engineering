@@ -1,4 +1,4 @@
-- When a `class` defines the blueprint of a type of object, and it has a built-in `prototype` property. The methods you define inside the `class` (other than the `constructor`) are added to this `prototype` object. 
+- When a `class` defines the blueprint of a type of object, and it has a built-in `prototype` property. The methods you define inside the `class` (*other than the* `constructor`) are added to this `prototype` object. 
 - When a `class` does not declare a `constructor`, it will automatically get an empty one. A `class`'s `constructor` is the built-in property of that `class`'s `prototype`, which points to the `class` itself:
 ```js
 class ExampleClass {
@@ -35,11 +35,11 @@ Rabbit.prototype.teeth = 'huge'
 console.log(Rabbit.prototype.teeth);  // → huge
 ```
 
-- Javascript `class` is a form of syntactic sugar for `prototype` inheritance:
+> Javascript `class` is a form of syntactic sugar for `prototype` inheritance:
 ```js
 // Prototype:
 let protoRabbit = {
-  speak(line) {
+  squeak(line) {
     console.log(`The ${this.type} rabbit says '${line}'`);
   }
 };
@@ -50,36 +50,40 @@ function makeRabbit(type) {
 }
 
 // Make a new rabbit: 
-// the `speak` method serves as the prototype (and therfore, SHARED) among all instances created by `makeRabbit`
+// the `squeak` method serves as the prototype (and therfore, SHARED) among all instances created by `makeRabbit`
 const blackRabbit = makeRabbit('black')
-blackRabbit.speak('stfu') // "The black rabbit says 'stfu'"
+blackRabbit.squeak('stfu') // "The black rabbit says 'stfu'"
 
 //---------------------------Class
-// Define a binding called `Rabbit`, which holds a function that runs the code in `constructor` and has a `prototype` property which holds the `speak` method:
+// Define a class called `Rabbit`, which holds a constructor method that initializes the instance with a `type` property. 
+// The class also has a `squeak` method on its prototype, which ALL instances can access:
 class Rabbit {
-  constructor(type) {  // equivalent to `makeRabbit`
+  constructor(type) {  // equivalent to the `makeRabbit` above
     this.type = type;
   }
-  speak(line) {  // Rabbit.prototype
+  squeak(line) {  // Rabbit.prototype
     console.log(`The ${this.type} rabbit says '${line}'`);
   }
 }
 
 // Make a new rabbit:
-// Each instance of the `Rabbit` class will have its own COPY of the `speak` method (which could potentially lead to unnecessary memory overhead if many instances)
+// Each instance of the `Rabbit` class will inherit the `squeak` method from the `Rabbit.prototype`
 const blackRabbit = new Rabbit('black')
-blackRabbit.speak('stfu') // "The black rabbit says 'stfu'"
-// So in those rare cases where a class's methods might be shared among many instances, consider directly adding them to the `prototype`, as shown below:
+blackRabbit.squeak('stfu') // "The black rabbit says 'stfu'"
+// So in those cases where a class's methods are shared among many instances, consider directly adding them to the `prototype` (i.e. outside the `contructor`, as public methods, to avoid extra memory allocation for the same value over and over again)
 
 //---------------------------
 // Back in the days when `class` wasn't introduced in JS:
 function ArchaicRabbit(type) {
   this.type = type;
 }
-ArchaicRabbit.prototype.speak = function(line) {
+// the `squeak` method is now SHARED across new instances of this "class"
+ArchaicRabbit.prototype.squeak = function(line) {
   console.log(`The ${this.type} rabbit says '${line}'`);
 };
+
 let oldSchoolRabbit = new ArchaicRabbit("old school");
+oldSchoolRabbit.squeak('stfu') // "The old school rabbit says 'stfu'"
 ```
 ---
 # Properties

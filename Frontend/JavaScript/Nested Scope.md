@@ -66,9 +66,8 @@ var user = (function getUser(){
 ```
 
 ---
-
-### `var` vs `let`
-- `var` is used in a bigger scope than `let` and can surpase ***block*** scopes where `let` can't. If you see `let`, it tells you that you're dealing with a *localized declaration*. If you see `var`, it tells you that you're dealing with the *nearest function* scope. A `var` only has global scope if it's declared in the top-level code: 
+### `var` vs `let` vs `const`
+- `var` is used in a bigger scope than `let` and can surpass ***block*** scopes where `let` can't. If you see `let`, it tells you that you're dealing with a *localized declaration*. If you see `var`, it tells you that you're dealing with the *nearest function* scope. A `var` only has global scope if it's declared in the top-level code: 
 
 ```javascript
 // Function-scoped `var`:
@@ -136,9 +135,7 @@ for (let i = 0; i < 3; i++) {
 // i: 2
 ```
 
-
 - Use `let` when you need to explicitly narrow down the scope of your variables, and it's a best practice to put it on the first lines of the block:
-
 ```javascript
 function formatStr(str) {
     { 
@@ -152,7 +149,7 @@ function formatStr(str) {
 }
 ```
 
-> Redeclaring a variable with `var` will not throw an error, but `let` will:
+> `var` *declarations* can be re-declared (although there's no difference between that and re-assign) where `let` and `const` can't. 
 ```js
 var foo = 'foo';
 var foo = 'bar';

@@ -179,3 +179,5 @@ var mockLogin = Object.create(LoginFormController);
 mockLogin.handleResponse();
 mockLogin.onSubmit();
 mockAuth.authenticate();
+```
+
