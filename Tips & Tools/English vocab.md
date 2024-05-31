@@ -150,6 +150,8 @@ contrive <cân-traiv> (v): to form or create in an artistic or ingenious manner,
 
 purloin {sth from sb/sth} (v): to steal something or use it without permission
 
+pilfering (v): to steal stealthily in small amounts and often again and again
+
 endearing (adj): lovable, adorable
 
 ominous (adj): foreboding, suggesting that something bad is going to happen in the future
@@ -178,7 +180,9 @@ edifice <eh-dah-fits> (n): a building, a large abstract structure
 
 exodus (n): emigration
 
-emancipate (v): to free from restraint, control, or the power of another
+emancipate (v): unfettered, to free from restraint, control, or the power of another
+
+ransom (v-n): redeem, to free from captivity or punishment by paying a price
 
 paradigm (n): example, pattern, a philosophical or theoretical framework of any kind
 
@@ -197,6 +201,8 @@ dichotomy (n): cực, something with seemingly contradictory qualities
 primordial (adj): fundamental, primitive, primary, cardinal
 
 construe (v): interpret, to understand or explain with respect to a given set of circumstances
+
+concede (v): to acknowledge grudgingly or hesitantly, to accept as true, valid, or accurate, to grant as a right or privilege
 
 demise (n-v): death, decease, to transmit by succession or inheritance
 
@@ -292,7 +298,9 @@ covetous <cav-et-tus>(adj): greedy, selfish desire especially for material posse
 
 coveted (adj-v2): desired, craved, highly sought after
 
-harbinger (v-n): predict, imply, foreshadow, pioneer, precursor
+harbinger (v-n): predict, imply, foreshadow, prognosticate, pioneer, precursor
+
+contingent (adj-n): empirical, possible, unpredictable, delegacy
 
 abhorrent (adj): disgusting, horrible, contemptuous, malicious
 
@@ -386,7 +394,7 @@ congenital (adj): inherent, being such by nature, chronic, existing at or dating
 
 delinquent (n-adj): degenerate, incorrigible, delayed, overdue, belated
 
-malleable (adj): adaptable, flexible, moldable
+malleable (adj): adaptable, flexible, moldable, pliable
 
 idiosyncrasy (n): characteristic, trait, mannerism, peculiarity
 
@@ -407,6 +415,8 @@ copacetic (adj): very satisfactory
 grandiose (n): magnificent, glorious, impressive, resplendent
 
 deity (n): god, divinity
+
+blasphemy (n):  showing contempt or lack of reverence for the sacred or inviolable
 
 deign (v): disgrace, stoop, to descend to a level that is beneath one's dignity
 
@@ -441,3 +451,21 @@ conniving (adj): devious, Machiavellian, calculating, manipulative
 futility (n): meaningless, no effect, achieving nothing
 
 purgatory (n): hell, suffering
+
+coy (adj): increase interest in something by intentionally keeping secret
+
+ineptitude (n): skill issues
+
+treason (n): treachery, betrayal, phản quốc
+
+inundate (v): overwhelm
+
+endemic {to} (adj-n): native, peculiar, indigenous
+
+beget (v): sire, engender, to bring into being (by a father)
+
+corollary (n): something that results from something else
+
+surrogate (v-n): substitute
+
+contend (v): struggle, contest, argue, assert

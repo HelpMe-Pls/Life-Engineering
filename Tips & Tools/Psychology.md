@@ -1,22 +1,56 @@
-- Spending money to show people how much money you have (or to impress other people) is the *fastest* way to have less money.
+# Assets
+- Your most precious asset: time. Use it wisely.
 - If you buy something and resort to mental gymnastics over affordability, YOU CAN’T AFFORD IT. Any kind of self-talk is a warning that you can’t afford it. True affordability doesn’t have strings attached. You can bluff yourself but you can’t bluff the consequences.
 - Money’s greatest intrinsic value—and this can’t be overstated—is its ability to give you control over your time.
-- Events are residual by-products of process. Focus on the process. Process cannot be outsourced, because process dawns wisdom, personal growth, strength, and ultimately, events.
-- Despite what you may have read or heard, wealth is a process, not an event (*and so does luck*). Wealth eludes most people because they are preoccupied with events while disregarding process. Without process, there is no event.
-- Wealth doesn’t drop from the sky or come from a game show. Wealth from lottery/gambling? Taking that route, you essentially become a hitchhiker with no seat belt. 
-- Luck is created by increased probabilities that are improved with the process of action. Process creates events that others see as luck.
-- Wealth is authored by strong familial relationships, fitness and health, and ***freedom***—not by material possessions. What steals freedom, steals wealth.
-- The happiest people in the world have a tight sense of community, social support, and strong family bonds.
-- Wealth is best experienced when you’re young, vibrant, and able, not in the twilight of your life.
-- Planning is important, but the most important part of every plan is to plan on the plan not going according to plan. Because things that have never happened before happen all the time. Risk is what’s left over when you think you’ve thought of everything.
-- Saving is the gap between your ego and your income.
-- Combining short-term caution with long-term optimism—is essential for navigating the uncertainties of life and the economy.
-- Spreading out your bets and staying the course through the ups and downs can lead to outsized successes, thanks to the power of tail events.
-- It is so important to remember when judging success — both your own and others’: “Nothing is as good or as bad as it seems.”
-- Everything has a price, but not all prices appear on labels.
-- Luck and risk are siblings. They are both the reality that every outcome in life is guided by forces other than individual effort. The accidental impact of actions outside of your control can be more consequential than the ones you consciously take.
-- “**Enough**” is realizing that the opposite — an insatiable appetite for more — will push you to the point of regret. 
 - You don’t need tremendous force to create tremendous results.
-- More money is not a solution to poor financial management.
-- You can’t be a victim if you don’t relinquish power to someone capable of making you a victim.
+- Reshape life’s focus on producing, not consuming. Instead of digging for gold, sell shovels. Instead of taking a class, offer a class. Instead of borrowing money, lend it.
+- To consume richly, produce richly first.
+- Asset value, defined as appreciable assets created, founded, or bought.
+- Liquidation events transform appreciated assets (“paper” net worth) into money (“real” net worth) that can be transformed into another passive income stream: a money system.
 
+# Wealth
+- “Get Rich Quick” must not be confused with “Get Rich Easy.”
+- Wealth is authored by strong familial relationships, fitness and health, and ***freedom***—not by material possessions. What steals freedom, steals wealth.
+- Wealth doesn’t drop from the sky or come from a game show. Wealth from lottery/gambling? Taking that route, you essentially become a hitchhiker with no seat belt. 
+- The most important skill for getting rich is becoming a perpetual learner. You have to know how to learn anything you want to learn.
+- The leading cause of poorness is *poor* ***choices***. Blame/credit yourself and the choices you’ve made. Choices of *perception* precede choices of action. If you believe and perceive a certain idea, you are likely to act on that belief. If your car’s fuel tank had a small leak, how would you fix it?
+	- The symptomatic solver would increase his trips to the gas station to ensure a steady inflow of fuel. The problematic solver plugs up the hole.
+- People don’t choose to be poor. They make poor decisions that slowly assemble into a poorness puzzle. Retrace the footprints to poverty and it happens slowly, systematically, and methodically, under a steady diet of poor choices.
+- Wealth is best experienced when you’re young, vibrant, and able, not in the twilight of your life. Wealth is built with time as an asset, not as a liability.
+- The ultimate wealth is having the free time to live how you want to live.
+- The primary wealth accelerant of the rich boils down to one concept: Appreciable and controllable assets.
+- Getting rich is about knowing what to do, who to do it with, and when to do it.
+- Wealth is made up of coordinated commitment to ***action***: a conscious choice, and then a commitment to that choice in the form of relentless action.
+- Thinking - alone by itself - never made anyone free(or rich), unless that thinking manifests itself into consistent action toward application of laws that work.
+- The more lives you affect in an entity you control, in scale and/or magnitude, the richer you will become. Impact millions and make millions. The closer you get to the source of large numbers, the closer you will get to wealth. To serve millions is to make millions.
+
+# Factors
+## Perception
+- The happiest people in the world have a tight sense of community, social support, and strong family bonds.
+- Pursuing an intrinsic hierarchy of goals is a big key to happiness. It is how you reap the benefits of the good dopamine that comes from survival mechanisms in your brain.
+> It’s much more important today to be able to become an expert in a brand-new field in nine to twelve months than to have studied the “right” thing a long time ago. 
+> It’s much better to be at 9/10 or 10/10 on foundations than to try and get super deep into many things. You can only achieve mastery in one or two things. It’s usually things you’re obsessed about.
+- More money is not a solution to poor financial management.
+- Money doesn't buy happiness? Partially true. More precisely, *money buys free time* and eliminates indentured time.
+- Spending money to show people how much money you have (or to impress other people) is the *fastest* way to have less money.
+- Everything has a price, but not all prices appear on labels.
+- “**Enough**” is realizing that the insatiable appetite for more will push you to the point of regret. 
+- Planning is important, but the most important part of every plan is to plan on the plan not going according to plan. Because things that have never happened before happen all the time. Risk is what’s left over when you think you’ve thought of everything.
+- Combining short-term caution with long-term optimism is essential for navigating the uncertainties of life and the economy.
+- Saving is the gap between your ego and your income.
+- Events are residual by-products of process. Focus on the process. Process cannot be outsourced, because process dawns wisdom, personal growth, strength, and ultimately, events.
+- The smallest choices made in your daily life create habits and lifestyle that forms process—they are the ones that can make the biggest impact.
+- Value your time poorly and you will be poor. When time is wasted as a lifestyle choice you will be stranded in places you don’t want to be.
+- Take advice from people with a proven, successful track record of their espoused discipline. Many gurus teach one wealth equation while getting rich in another. They’re not rich from their own teachings. Beware of them.
+## Possibilities
+- Debt is **only** useful if it allows me to *build and grow* my system. Other than than, there's no reason to get in debt.
+- Luck is created by increased probabilities that are improved with the process of action. Process creates events that others see as luck.
+- Luck and risk are siblings. They are both the reality that every outcome in life is guided by forces other than individual effort. The accidental impact of actions outside of your control can be more consequential than the ones you consciously take.
+- Despite what you may have read or heard, wealth is a process, not an event (*and so does luck*). Wealth eludes most people because they are preoccupied with events while disregarding process. Without process, there is no event.
+## Actions
+- Spreading out your bets and staying the course through the ups and downs can lead to outsized successes, thanks to the power of tail events.
+- Answer three questions about every decision of *consequence*:
+	- What is the worst-case consequence of this choice?
+	- What is the probability of this outcome?
+	- Is this an acceptable risk?
+- Play the long term game. Compound interest always win.

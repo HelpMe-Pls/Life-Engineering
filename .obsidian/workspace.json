@@ -18,7 +18,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Backend/NodeJS/NodeJS.md",
+                    "file": "Tips & Tools/English vocab.md",
                     "mode": "source",
                     "backlinks": false,
                     "source": false
@@ -31,7 +31,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/JavaScript/Generators.md",
+                    "file": "Tips & Tools/Entrepreneurship.md",
                     "mode": "source",
                     "source": false
                   }
@@ -45,6 +45,7 @@
                   "state": {
                     "file": "Tips & Tools/Psychology.md",
                     "mode": "source",
+                    "backlinks": false,
                     "source": false
                   }
                 }
@@ -122,11 +123,11 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hoist",
+                "query": "port 80",
                 "matchingCase": true,
-                "explainSearch": false,
+                "explainSearch": true,
                 "collapseAll": true,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "byCreatedTime"
               }
             }
@@ -201,34 +202,34 @@
   },
   "active": "fca7f891104b66f4",
   "lastOpenFiles": [
-    "Frontend/JavaScript/Generators.md",
-    "Frontend/JavaScript/class.md",
-    "Frontend/JavaScript/Objects.md",
-    "Frontend/JavaScript/Prototype.md",
-    "Backend/NodeJS/NodeJS.md",
-    "Frontend/JavaScript/Async.md",
-    "Frontend/JavaScript/Callbacks.md",
-    "Frontend/JavaScript/Hoisting.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Tips & Tools/Entrepreneurship.md",
+    "Tips & Tools/English vocab.md",
     "Tips & Tools/Psychology.md",
-    "Frontend/JavaScript/Lexical Scope.md",
-    "Frontend/JavaScript/Nested Scope.md",
-    "Frontend/JavaScript/Types.md",
-    "Frontend/JavaScript/Scope.md",
-    "Frontend/JavaScript/Promise.md",
-    "Frontend/JavaScript/Advanced Patterns.md",
+    "Frontend/Network/Connections and protocols.md",
+    "Frontend/HTML/url-breakdown.png",
+    "Tips & Tools/Interview prep.md",
+    "Frontend/Network/Networking.md",
+    "Frontend/Network/Data Transfer.md",
+    "Frontend/Network/Development & Deploy.md",
+    "Frontend/Network/Browser.md",
     "Frontend/JavaScript/Advanced.md",
-    "Frontend/JavaScript/Functional Programming.md",
-    "Frontend/JavaScript/Performance.md",
-    "Backend/Golang/Fundamentals.md",
-    "Tips & Tools/Mentality.md",
-    "Frontend/JavaScript/Modules.md",
+    "Frontend/JavaScript/In Browser.md",
     "Frontend/JavaScript/JavaScript.md",
     "Frontend/JavaScript/Foundation.md",
-    "Tips & Tools/English vocab.md",
-    "Tips & Tools/Socialize.md",
+    "Frontend/JavaScript/Conversion - Coercion.md",
+    "Frontend/Network/Caching.md",
+    "Frontend/HTML/Hyperlinks.md",
+    "Frontend/HTML/Typography.md",
+    "Frontend/HTML/Meta.md",
+    "Frontend/HTML/HTML.md",
+    "Frontend/HTML/Document.md",
+    "Tips & Tools/DSA.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Tips & Tools/Investment.md",
+    "Frontend/JavaScript/Regular Expressions.md",
+    "Frontend/JavaScript/class.md",
+    "Tips & Tools/maslows.png",
     "Backend/sql-joins.png",
-    "Frontend/HTML/url-breakdown.png",
     "Frontend/Libraries/HTMX",
     "Frontend/Frameworks/Remix",
     "Backend/Golang",

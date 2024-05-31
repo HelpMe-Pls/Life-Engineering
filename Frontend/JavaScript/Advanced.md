@@ -4,3 +4,4 @@
 [[Frontend/JavaScript/Performance|Performance]]
 [[Regular Expressions]]
 [[TypeScript]]
+[[In Browser]]

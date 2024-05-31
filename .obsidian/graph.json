@@ -97,6 +97,13 @@
         "a": 1,
         "rgb": 4027095
       }
+    },
+    {
+      "query": "path:Frontend/Libraries  ",
+      "color": {
+        "a": 1,
+        "rgb": 6084269
+      }
     }
   ],
   "collapse-display": false,
@@ -109,6 +116,6 @@
   "repelStrength": 12.3736979166667,
   "linkStrength": 1,
   "linkDistance": 342,
-  "scale": 0.29672115249295034,
+  "scale": 0.32936591345494315,
   "close": true
 }

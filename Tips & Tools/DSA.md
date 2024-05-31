@@ -149,7 +149,7 @@ console.log(myTrip[length], myTrip.length);  // 21500 2
 	-   Be assigned to a variable
 	-   Be used as an argument
 	-   Be returned by a function call
- In the functional programming paradigm, functions are first-class objects.
+- In the functional programming paradigm, functions are first-class objects.
 - Classes are commonly described as blueprints for an object. By extension, an object can be described as an instance of a class.
 - You can change the instances of a class through the constructor or an internal method of the object. The methods used to change attribute instances are generally called getters and setters.
 - The notion of having one general concept (e.g. human) that can manifest in different forms (male, female, non-binary,...) is known as polymorphism.

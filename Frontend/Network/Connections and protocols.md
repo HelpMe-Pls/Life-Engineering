@@ -52,7 +52,8 @@ Content-Length: 50
 
 9sdfj923k4j2349sdfj9234k2j34k2j3k4j23k4j23k4j2k34  // Encrypted and can only be decrypted and read by the intended recipient
 ```
-
+- To be able to listen for different kinds of communication at the same time on a single machine, each listener has a number (called a _port_) associated with it. Most protocols specify which port should be used *by default*. For example, when we want to send an email using the SMTP protocol, the machine through which we send it is expected to be listening on port `25`.
+- Another computer can then establish a connection by connecting to the target machine using the correct port number. If the target machine can be reached and is listening on that port, the connection is successfully created. The listening computer is called the _server_, and the connecting computer is called the _client_.
 # Web Socket
 - It is especially great for services that require ***continuous*** data exchange, e.g. online games, ***real-time*** trading systems and so on.
 - WebSocket allows for ***server-initiated*** communication, whereas `http` relies on the client to initiate requests. WebSocket connections are initially established using an `http` request/response handshake. Once the handshake is completed successfully, the protocol is "upgraded" from `http` to the WebSocket (`ws://`) protocol. WebSocket connections can be secured (`wss://`) using `tls` encryption.  

@@ -1,32 +1,32 @@
 - Regular expressions (regex) are objects that represent (in-order) patterns in strings. They use their own language to express these patterns. They form a small, separate language that is part of JavaScript and many other languages and systems.
 - Properly understanding regular expressions will make you a more effective programmer. They simplify some tasks tremendously but can quickly become unmanageable when applied to complex problems. Part of knowing how to use them is resisting the urge to try to shoehorn things into them that they cannot cleanly express.
 
-| Regex       | Meaning                                                                                                                         |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `/abc/`     | A sequence of `abc`                                                                                                             |
-| `/[abc]/`   | Any character from a [[#Set \|set]] of `abc`                                                                                    |
-| `/[^abc]/`  | Any character **_not_** in a set of `abc`                                                                                       |
-| `/[0-9]/`   | Any digit in a range of `0` to `9`                                                                                              |
-| `/x+/`      | One or more occurrences of the *pattern* `x`                                                                                    |
-| `/x+?/`     | One or more occurrences, [[#Greedy \|nongreedy]]                                                                                |
-| `/x*/`      | Zero or more occurrences                                                                                                        |
-| `/x?/`      | Zero or **one** occurrence (e.g. `/ouu?r/.test("our")`  returns `true`)                                                         |
-| `/x{2,4}/`  | Two to four occurrences                                                                                                         |
-| `/(abc)/`   | A capturing [[#Matching groups \|group]]                                                                                        |
-| `/a\|b\|c/` | Any one of several patterns. Check out an example [[#Matching groups \|here]]                                                   |
-| `/\d/`      | Any *digit* character                                                                                                           |
-| `/\D/`      | Any _**non** digit_ character (notice the uppercase tag name)                                                                   |
-| `/\w/`      | Any Latin _alpha**numeric**_ character (letter or number or underscore)                                                         |
-| `/\W/`      | Any Latin _**non**alpha**numeric**_ character (e.g. `đ` or `β` will match this and `/\w/u`)                                     |
-| `/\s/`      | Any Unicode *whitespace* character                                                                                              |
-| `/\S/`      | Any Unicode _**non**whitespace_ character                                                                                       |
-| `/\b/`      | Word boundaries. It *checks* if the next character is a word character and if the previous character is *not* a word character. |
-| `/\B/`      | Non-word boundaries. Checkout an [[#Matching groups \|example]]                                                                 |
-| `/./`       | Any character except newlines. Checkout an [[#`s`\| exception]]                                                                 |
-| `/\p{L}/u`  | Any *letter* character from [[#`u`\| any language]], excluding underscore                                                       |
-| `/^/`       | Start of input (e.g. `/x^/` does not match any string)                                                                          |
-| `/$/`       | End of input                                                                                                                    |
-| `/(?=a)/`   | A [[#Matching groups \|look-ahead]] test                                                                                        |
+| Regex       | Meaning                                                                                                                 |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `/abc/`     | A sequence of `abc`                                                                                                     |
+| `/[abc]/`   | Any character from a [[#Set \|set]] of `abc`                                                                            |
+| `/[^abc]/`  | Any character **_not_** in a set of `abc`                                                                               |
+| `/[0-9]/`   | Any digit in a range of `0` to `9`                                                                                      |
+| `/x+/`      | One or more occurrences of the *pattern* `x`                                                                            |
+| `/x+?/`     | One or more occurrences, [[#Greedy \|nongreedy]]                                                                        |
+| `/x*/`      | Zero or more occurrences                                                                                                |
+| `/x?/`      | Zero or **one** occurrence (e.g. `/ouu?r/.test("our")`  returns `true`)                                                 |
+| `/x{2,4}/`  | Two to four occurrences                                                                                                 |
+| `/(abc)/`   | A capturing [[#Matching groups \|group]]                                                                                |
+| `/a\|b\|c/` | Any one of several patterns. Check out an example [[#Matching groups \|here]]                                           |
+| `/\d/`      | Any *digit* character                                                                                                   |
+| `/\D/`      | Any _**non** digit_ character (notice the uppercase tag name)                                                           |
+| `/\w/`      | Any Latin _alpha**numeric**_ character (a word - a letter or number or underscore)                                      |
+| `/\W/`      | Any Latin _**non**alpha**numeric**_ character (e.g. `đ` or `β` will match this and `/\w/u`)                             |
+| `/\s/`      | Any Unicode *whitespace* character                                                                                      |
+| `/\S/`      | Any Unicode _**non**whitespace_ character                                                                               |
+| `/\b/`      | Word boundaries. It *checks* one side of the pattern *is* a word character and the other side *is no*t a word character |
+| `/\B/`      | Non-word boundaries. Checkout an [[#Matching groups \|example]]                                                         |
+| `/./`       | Any character except newlines. Checkout an [[#`s`\| exception]]                                                         |
+| `/\p{L}/u`  | Any *letter* character from [[#`u`\| any language]], excluding underscore                                               |
+| `/^/`       | Start of input (e.g. `/x^/` does not match any string)                                                                  |
+| `/$/`       | End of input                                                                                                            |
+| `/(?=a)/`   | A [[#Matching groups \|look-ahead]] test                                                                                |
 
 ---
 # Test for matching patterns
@@ -209,7 +209,7 @@ console.log(dateTime.test("1-30-2003 8:45")); // true
 - You can also specify open-ended ranges when using braces by omitting the number after the comma. For example, `{5,}` means five or more times.
 
 ### Matching groups
-- Groups can be useful for extracting parts of a string. Matched subexpressions grouped with parentheses `()`, i.e. captured groups, are *shown from the second element* and beyond in the output array. If there's no match, it'll be `undefined`:
+- Groups can be useful for extracting parts of a string. Matched subexpressions grouped with parentheses `()`, i.e. *captured groups*, are ***shown from the second element*** and beyond in the output array. If there's no match, it'll be `undefined`:
 ```js
 let quotedText = /'([^']*)'/;
 // The whole matched target is the first element, and the matched target inside the parenthesis is the second element 

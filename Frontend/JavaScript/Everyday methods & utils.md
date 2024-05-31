@@ -1,5 +1,5 @@
 ## Spread operator
-- The "spread" syntax is applied for *arguments* in a function call where it expands iterable elements (like arrays or strings) into individual elements.
+- The "spread" syntax is applied for *arguments* in a function *call* where it expands iterable elements (like arrays or strings) into individual elements.
 - It **deep** copies the data *if it is **not** nested*. For nested data, it deeply copies the topmost data and shallow copies of the nested data:
 ```ts
 const oldObj = {a: {b: 10}, c: 2};
@@ -76,10 +76,11 @@ const res = { status: 500, ...responseInit }
 console.log(res) // {status: 404}
 ```
 ### Spread vs rest:
-- The "rest" syntax is like an inverse of the spread syntax: it offers a shorthand for including an arbitrary number of *parameters* to be passed to a function. *It must be placed **at the end** of the parameter list*:
+- The "rest" syntax is like an inverse of the spread syntax: it offers a shorthand for including an arbitrary number of *parameters* to be passed to a function as an array. *It must be placed **at the end** of the parameter list*:
 ```js
 //----------------- rest:
 function addFiveToABunchOfNumbers(...numbers) {
+  // `numbers` is now an array
   return numbers.map((x) => x + 5);
 }
 
