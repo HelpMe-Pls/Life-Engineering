@@ -2,6 +2,7 @@
 [[Interview prep]]
 [[Best practices]]
 [[code-review.png |Code Review]]
+[[Writing]]
 
 ---
 # JS

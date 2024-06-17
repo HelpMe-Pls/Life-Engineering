@@ -1,2 +1,3 @@
-- Just don't. It's gambling. 
+- Long story short: It's gambling. 
 - "Invest" in crypto if gambling is your thing.
+- Blockchain though, is different. It's a leverage if you know enough. We'll see.

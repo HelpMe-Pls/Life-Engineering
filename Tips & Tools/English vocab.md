@@ -36,7 +36,7 @@ gratify (v): satisfy, gladden, give pleasure to
 
 scour (v-n): search, scrub, polish
 
-ambiguous (adj): uncertain, fishy, suspicious
+ambiguous (adj): uncertain, fishy, suspicious, esoteric
 
 obstinate (adj): unpersuadable, stubborn, willful, rigid, tenacious
 
@@ -62,7 +62,7 @@ reverence (v-n) <rev-er-rence>: deep respect for someone or something
 
 stupendous (adj): astounding, extraordinary, remarkable, prodigious 
 
-audacity (n): daring, bravery, rude, disrespectful, impudence 
+audacity (n): daring, bravery, rude, disrespectful, impudence, insolent 
 
 posit (v-n): assume, presume, hypothesize
 
@@ -82,7 +82,7 @@ precede (v) {caution: it's not precEEd}: to be in front of, earlier than, to sur
 
 recede (v): withdraw, diminish, decrease 
 
-disparate (adj): uniquely different from each other
+disparate (adj): distinct, uniquely different from each other
 
 cater {to/for sb/sth} (v): to provide (food & drinks)
 
@@ -97,6 +97,8 @@ stipulate (v): specify, demand, prescribe
 vernacular (adj-n): native speech, regional language
 
 toil (v-n): labor, grind, exhausting hard work
+
+unscrupulous (adj): unethical, immoral, Machiavellian
 
 diatribe {against sb/sth} (n): a long and angry speech or piece of writing attacking and criticizing
 
@@ -202,6 +204,8 @@ primordial (adj): fundamental, primitive, primary, cardinal
 
 construe (v): interpret, to understand or explain with respect to a given set of circumstances
 
+ruminate (v): contemplation, reflect, ponder
+
 concede (v): to acknowledge grudgingly or hesitantly, to accept as true, valid, or accurate, to grant as a right or privilege
 
 demise (n-v): death, decease, to transmit by succession or inheritance
@@ -288,7 +292,7 @@ conjecture (v-n): guess, surmise, estimate, suppose, theory
 
 tacit (adj): implied, implicit
 
-enamored {of} (adj): obsessed, fascinated
+enamored {of} (adj): amorous (of), obsessed, fascinated
 
 sentiment (n): opinion, attitude, feeling, emotion
 
@@ -300,9 +304,13 @@ coveted (adj-v2): desired, craved, highly sought after
 
 harbinger (v-n): predict, imply, foreshadow, prognosticate, pioneer, precursor
 
+insinuate (v): imply, subtly introduce
+
 contingent (adj-n): empirical, possible, unpredictable, delegacy
 
 abhorrent (adj): disgusting, horrible, contemptuous, malicious
+
+atrocious (adj): detestable, appalling, abominable, barbaric
 
 futile <fiu-dtal> (adj): no value, useless, completely ineffective
 
@@ -343,6 +351,8 @@ altruism (n): generosity, philanthropy, empathy, compassion
 pretension (v-n):  purpose, intention, affection, arrogance
 
 disdain (v-n): contempt, disrespect, despise
+
+lamentable (adj): deplorable, mournful, wretched
 
 meticulous (adj): careful, diligent, engaged
 
@@ -434,6 +444,8 @@ penance <peh-nance> (n): sám hối
 
 prerogative (n): privilege, a distinctive excellence
 
+merit (v-n): deserve, earn, value, virtue
+
 innocuous (adj): harmless, inoffensive, insipid
 
 desolate (v-adj): to deprive of inhabitants, lifeless, deserted, dilapidated
@@ -469,3 +481,27 @@ corollary (n): something that results from something else
 surrogate (v-n): substitute
 
 contend (v): struggle, contest, argue, assert
+
+refute (v): disclaim, deny, reject
+
+heuristic (adj-n): trial-and-error, experimental techniques
+
+congruent (adj): congruous, coherent, harmonious
+
+aphorism (n): an ingeniously terse and concise style of statement/expression
+
+flatulence (n): flatus, medical term for "fart"
+
+ad hoc (adv-adj): ứng biến, without consideration of wider application
+
+patronage (n): custom, business, sự ủng hộ (in business context), transactions or economic support provided by customers → patron == customer
+
+exemplary (adj-n): gương tốt (để noi theo), dằn mặt
+
+egregious (adj): blatant, obvious, conspicuous, flagrant
+
+mar (v-n): spoil, tarnish, blemish, defect
+
+nuisance (n): harm, pest, injury
+
+revel (v-n): binge

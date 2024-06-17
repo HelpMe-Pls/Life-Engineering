@@ -4,7 +4,6 @@
 [[Progressive Overload]]
 
 ---
-
 # Before the interview
 - Pay attention to the yearly reports from Adecco, First Alliance, Navigos, Vietnamwork, Talentnet, NodeFlair,... to see where the market is heading, and base your skills on that.
 - Include keywords from job descriptions into your resume. Analyze the job description and determine how important each skill and experience is, then optimize the *frequency* of the keyword according to its importance/relevance.

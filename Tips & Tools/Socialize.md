@@ -21,7 +21,8 @@
 - What does your ideal relationship look like?
 - What do you believe the most with the least amount of evidence of it being true?
 - Do you spend more time defending what you already know instead of trying to learn something new?
-
+> [!info]- Talk about values
+> I think you just have to be very careful about doing things you are fundamentally not going to be proud of, because they will damage you. The first time someone acts this way, I will warn them. By the way, nobody changes. Then I just distance myself from them. I cut them out of my life. I just have this saying inside my head: “The closer you want to get to me, the better your values have to be.”
 - What annoys you about other people that you sometimes do yourself?
 - Tell me about some things that you really want to do, but didn't do/pursue it because someone else just talking it down.
 - What are your usual stressors/frustration? Tell me more about the things that you considered mentally painful. Why? How are you handling them?
@@ -29,14 +30,19 @@
 - Tell me more about the last time you had an emotional breakdown.
 - Tell me about an event that made you realized you've been coping/lying to yourself, and it made you accept the thing you're trying to hide so that you can peacefully live with it. 
 - What are some of the things that you think you deserve to have, but you couldn't have it? Why?
+>[!important]- Opinions and the Ego
+>- Don’t criticize the person—criticize the general approach or criticize the class of activities.
+>- Praise the person, and call out exactly what you're praising them for, specifically.
+>- Then people’s egos and identities, which we all have, don’t work against you. They work for you.
 
 # For potential mate
-- f
+- What are the topics that tend to cause entropy in a marriage? Start with your parents.
 - f
 - f
 - f
 # For business
-- f
-- f
-- f
-- f
+- Do you want to leave your friends behind? Or be the one left behind?
+- Tell me about a time when the outcome of your idea was far off from what you had planned. For example you planned to sell product X and ultimately ended up selling product Y.
+- How do you decide to trust someone for partnership?
+- Tell me about the time when a partner turned enemy and vice versa.
+- 
