@@ -30,6 +30,7 @@
 # Factors
 ## Perception
 - The happiest people in the world have a tight sense of community, social support, and strong family bonds.
+- Happiness is there when you remove the sense of something missing in your life.
 - Pursuing an intrinsic hierarchy of goals is a big key to happiness. It is how you reap the benefits of the good dopamine that comes from survival mechanisms in your brain.
 > It’s much more important today to be able to become an expert in a brand-new field in nine to twelve months than to have studied the “right” thing a long time ago. 
 > It’s much better to be at 9/10 or 10/10 on foundations than to try and get super deep into many things. You can only achieve mastery in one or two things. It’s usually things you’re obsessed about.

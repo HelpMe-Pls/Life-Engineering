@@ -120,7 +120,7 @@ abate (v): calm down, becoming less intense; taper
 
 delirium (n): not able to think or speak clearly, usually because of illness
 
-reciprocate {sth_with sth} (v): payback, make a return for
+reciprocate {sth_with sth} (v): payback, make a return for → repercussion (n)
 
 assiduous (adj): diligent, taking great care that everything is done as well as it can be
 
@@ -435,6 +435,8 @@ agnostic (adj): unbiased, atheistic, skeptic
 crux (n): essence, core, gist, kernel
 
 incur (v): suffer, exposed to, catch, cause
+
+instigate (v): provoke, incite, trigger, stir
 
 opulent (adj): rich, wealthy, affluent, sumptuous
 

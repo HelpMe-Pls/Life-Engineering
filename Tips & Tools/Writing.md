@@ -92,9 +92,9 @@
 	- **Writing beginner-friendly educational content**: we need a balance of growth and authority. Target a very beginner level (and low level of awareness) problem and educated people on how to overcome it. List style posts (bullet point steps) work the best in this scenario. Then turn each of the bullet points into their own post.
 	- **Boosting traffic through curation**: write a thread or a post and mention large accounts in it (they may engage with it). If you write a thread about fitness and go over a talking point that a large account talks about, recommend people to follow that account.
 	- **Immerse yourself in a conducive growth environment**: for the next 30 days, follow the people you aspire to be like and comment on their posts. Watch YouTube videos and only expose yourself to an echo chamber of content that you would want to create. Listen to audiobooks and podcasts on the topics you want to talk about. Read a book this month on something that you _may_ want to be known for. This alone will fill your mind with ideas on how to grow and write.
-> What makes your work go viral? Emotions. 
+> ==What makes your work go viral? **Emotions**.== 
 > Put yourself in the shoes of your audience. What makes you share a specific post/tweet? 
-> You **heavily agreed** on what that post delivered. It makes you feel/look a little "better" by sharing it.
+> You **heavily agreed** on what that post delivered. It makes you feel/look a little "better" by sharing it. It raises your perceived social status. 
 ## Content length
  - A recommended flow to funnel your audience to your products looks like:
  > Social media (short & medium form) → newsletter (long form) → landing page → profit
@@ -103,7 +103,9 @@
 - Focus on growing on one platform — in this case, Twitter is a good place to start, because it has the most powerful share feature of all platforms. Easy to go viral, especially in written format. A good leverage to approach other platforms.
 - ==The headline, the first item in the carousel ***must*** capture attention.== 
 > Medium and long form should follow the AIDA (**A**ttention - **I**nterest - **D**esire - **A**ction) and/or and PPP (**P**ull, **P**erspective, **P**unchline) structure (for each sub-topic or as a whole article).
-- Start with a long form, then condense your key ideas (actionable parts) into medium and short forms.
+- It's easier to start with a long form, then condense your key ideas (actionable parts) into medium and short forms. 
+	- You can also do it the other way around, it doesn't matter which form you start with, as varying content lengths cater effectively to different topics.
+	- In short and medium form, you can add a comment with a link to read the long form or download the [[Entrepreneurship#Lead magnet |lead magnet]].
 ### Short form
 - Time for consumption is around 30s to 5 minutes. 
 - Short-form - short attention span. No retention. They're hooks for enticing a new audience. The purpose is to spark their interest and curiosity. Take advantage of controversial topics and quotes.
@@ -131,28 +133,28 @@
 > [!note]- Tagging big accounts
 > - The creators tagged in the thread understand that if they engage with the post, they will probably get quite a few followers from it too.
 > - You can also do this on Instagram by putting all of the posts in a carousel and tagging the accounts in the image itself – they may share it to their story. For bonus effect, you can tag them all in a list in the caption.
-
 > - If your thread/tweet in a thread somehow increase the [[Entrepreneurship#Social leverage |social leverage]] of big accounts (by tagging them), there's a chance they'll share it to boost your exposure. 
 > - You can do this by summarize what you've learned from their tweets (add a touch of your uniqueness if possible), and tag them at the end of your thread. 
 - All medium-form content should have a call to action (e.g. ask people to RT, follow) at the bottom. Either a [[#Long form |link to your newsletter]] — or directions telling them where to find that newsletter (because you can’t post links in places like an Instagram caption). 
 ### Long form
 - Time for consumption is around 20 to 90 minutes. 
 - The ideal frequency for publishing is once a week.
-- Long-form prioritizes depth and [[Entrepreneurship#Authority |authority]]. This is where you audience turns into customers:
+- Long-form emphasizes depth and [[Entrepreneurship#Authority |authority]]. Long-form content sells more. It's just the truth. This is where you audience turns into customers:
 	- Newsletters, articles (i.e. blog)
 	- Podcasts
 	- YouTube videos
 	- A book (when and if you want to)
 - Most social media content is broad, beginner-level, and meant for quick entertainment. Few people will actually buy products straight from social media. 
 - Social media platforms owns the algorithm, your data, and anything you post. It's centralized. 
-- Your newsletter is the least friction path for you to detach from the dependency on algorithms and direct your followers to an email list for your paid products, giving you full ownership of your audience. Refer to your newsletter subscriptions. Pick out the format that you love. Copy that.
+- Your newsletter is the least friction path for you to detach from the dependency on algorithms and direct your followers to an email list for your paid products, giving you full ownership of your audience. Refer to your own newsletter subscriptions. Pick out the format that you love. Copy that.
 - Send a weekly newsletter expanding on your [[#Filter out your top performers |best]] social media posts.
 - ==Construct your content so that it's easy to extract the key takeaways== (e.g. craft your headers in a way that spark the reader's interest and guide their anticipation further down the post, eventually, to your products).
+- ==Remember to put your newsletter subscription at the top and bottom of your post.==Always try to remove the friction to turn a visitor into a subscriber, then eventually, into [[Entrepreneurship#Lead magnet |a customer]]. 
 - Once you've got a good number of audiences (thousands) in the list, you should focus on:
 	- **Customer creation**: educate your audience to the point of becoming customers for your other products.
 	- **Writing what you want**: all of your authoritative information on one subject is in one place. You don’t have to worry about writing so much about it on social media. Social media now serves as hooks to your newsletter.
 	- **Selling your product**: give people [[Entrepreneurship#The values |enough information]] to trust in buying your product. You should plug it toward the end of your lead magnet to make sales when the “leads” (free products) are hot.
-- All long-form content should have a call to action to purchase your product (with other newsletter issues and products linked throughout the newsletter). Use [Beehiiv](https://www.beehiiv.com) as your CMS. 
+- All long-form content should have a call to action to purchase your product (with other newsletter issues and products linked throughout the newsletter). Use [Beehiiv](https://www.beehiiv.com) or [Substack](https://substack.com) as your CMS. 
 #### Newsletter
  - This is where you build your uniqueness and authority along with a **diehard fan base**:
 ##### The headline
@@ -215,6 +217,18 @@
 ### Social proof
 - When you flex your results or credentials, people automatically assume that you know more than them. 
 - Truth: Your flex works best when it isn’t viewed as a “flex.”
+- Once you're in [[Entrepreneurship#Promotions |promotion]], your full time job to collect testimonials and social proof from your audience. 
+- To get testimonials, you can DM people within your direct network. In the creator economy, this usually means creators that are in [[Entrepreneurship#Build your tribe |your tribe]].
+	- The beautiful thing about testimonials from creators is that they are appreciating assets. As their popularity increases, so does the value of their testimonial.
+- You can create a "post your wins" space inside of Circle, Discord, Telegram, or whatever other platform you use.
+- This is both where customers can give you praise and where other students can gain inspiration to attempt to get more results. 
+	- When people post their wins, you can screenshot those and save them as testimonials, and other customers can use them as motivation to use your product to its maximum potential.
+- Whether you have a cohort, course, or community it is wise to create a testimonial automation by:
+	- Creating a free bonus that you will send to people who leave testimonials.
+	- Adding a module to the end of your product asking people to submit a testimonial in exchange for the free bonus.
+	- Automating or manually sending out an email after the cohort ends or after people have been in the course/community for enough time to get results.
+- Connect your [testimonials](https://testimonial.to) to your email marketing software like [ConvertKit](https://convertkit.com) and add them to an automated email. In that email sequence you include a link to the video, document, template (or anything that's your "free bonus") that they can download. Or use [zapier](https://zapier.com) to unlock the bonuses after they submitted a testimonial.
+- From there, you can embed the testimonials onto your landing page to enhance the sales for your next launch.
 ### Confidence & Conviction
 - Everyone is on social media to be told what to do in a confident way. Nobody is secure in their actions, choices, and beliefs. They are looking for someone to confirm them with confidence and give them that clarity to act.
 - Just by crafting your words to be more bold and assertive, you'll be able to gain people's trust: 
@@ -236,6 +250,12 @@
 - Continuously launching, improving, and iterating until you have the perfect combination of digital products that create a desired high base income (where its minimum is equal to 6 months of your living fixed costs).
 - If you don’t make more than you spend, your product/service isn’t broad or good enough.
 > You need people to buy your product in order to get results → be able to improve the product → become an expert yourself.
+
+> [!info] The process
+> When you have your product stack built out, your main focuses are:
+> - Growing an audience with broad attractive content.
+> - Nurturing that audience with lead magnets and weekly emails (while promoting your products inside)
+> - Launching cohorts, courses, community, price increases, or special offers every 2-3 months to your email list and on social media.
 ## Market research
 ### Filter out your top performers
 - Things to write about:
@@ -297,6 +317,7 @@
 - Give them a step-by-step action plan (a regimen) to achieve a desirable end result.
 - Use [kartra](https://kartra.com/) or [gumroad](https://gumroad.com) to structure your course.
 - Have them track their metrics in a template or spreadsheet you create (like their daily calories, weight, and lifts in the gym).
+- If you have a cohort and a course, solely focus on course sales in between cohort launches.
 ### Cohorts
 - A cohort is a subscription-based course with a specific start date and a *limited* number of students. 
 - It has some form of communication feature like a group chat (Discord, Telegram,...) and live calls that people can join for Q&A (Zoom, Google Meat,...) or specific education relating to the curriculum. You can usually charge more for this compared to a typical course.
@@ -305,16 +326,27 @@
 	- Use [Circle](https://circle.so) if your wallet is thick enough. Or just [gumroad](https://gumroad.com) instead. 
 	- Once the cohort starts, release your curriculum every week or evert other week so that you can track and keep them on the same page.
 - You can leverage scarcity and relaunch the cohort as much as you'd like, creating a predictable income stream.
-### Systems/schedules
-- This works best for unique systems you’ve built, usually it's the combination of tutorials and programs, requires trial and error to build a system that works for you:
+### Live events/workshops
+- Use this to sustain/boost your income in between the [[Entrepreneurship#Promotions |2-3 months]] launch cycles. The content for this should be short, focused and impactful; solving a specific pain point:
+	- Pick a high-value topic that is already selling.
+	- Create a short landing page around that topic.
+	- Set a date for the workshop, training, or event. Leverage this date as scarcity for people to enroll before that date.
+	- Promote it for 1 week on your email list and social accounts.
+	- Charge $49 to $150 for each access.
+	- Record the workshop, training, or event so customers have access after the live call.
+	- Repeat every 1-2 months to generate predictable revenue.
+	- Alternate between different topics if you want to.
+### Systems/communities
+- This works best for unique systems you’ve built, usually it's the combination of all the above, requires trial and error to build a system that works for you:
 	- Building a social media audience
 	- Lead generation for businesses
 	- Productivity systems ==in ***Notion***==
 - Recommended steps for building a system:
 	1. **List out steps people need to take to achieve your *clear* goal**: they need to be effective.
-	2. **Test those steps inside of Notion or just with pen and paper**
-	3. **Give this path/process a compelling name**: once you have the steps mapped out, the name will come easier. Write down 5 or so names - let it sit for a few days - and come back to it.
-	4. **The outcome**: have your customer build out their version of the necessary components of the system itself.
+	2. **Test those steps inside of Notion or just with pen and paper**.
+	3. **Content in video format**: prioritize video instructions over other formats.
+	4. **Give this path/process a compelling name**: once you have the steps mapped out, the name will come easier. Write down 5 or so names - let it sit for a few days - and come back to it.
+	5. **The outcome**: have your customer build out their version of the necessary components of the system itself.
 - Systems should be sold at $225 ~ $1000. Sell systems after you've had good [[Entrepreneurship#Social leverage |social leverage]].
 ## Copywriting
 - Copywriting is how you effectively communicate your marketing strategy on a landing page.
@@ -331,7 +363,7 @@
 	- **Lead**: a bullet point list of 5-6 qualifying pain points, unfulfilled ***needs*** (usually the lack of clarity to achieve something that your product will offer). Make them feel personal. Give them reasons to continue reading to find out what **the** solution could be (your unique mechanism).  
 	- **Transformation & Mechanism**: your job is to _give away **just enough**_ of what the product delivers to _make them **want more**_. Like a free demo for an upcoming game. A Teaser. Keep it short and simple.
 	- **Offer Introduction**: a curriculum of your product. Highlighting _**why**_ they should care about it. Answers to the "lead" above:
-		- "_`A solution` ==so that== (or ==so you can==) solve `the pain point`_."
+		- "_`[A solution]` ==so that== (or ==so you can==) solve `[the pain point]`_."
 	- **More social proof**: tweets and screenshots of good reviews on your product. If you are just starting out you need to make it your full time job to get social proof. 
 	- **[[Entrepreneurship#Guaranty |Risk Reversal]]**: cancel anytime or next round for free (if it's a subscription), refund,...
 	- **Call To Action**: remind them of a few of their pain points, then remind them of where they could be with your solution.

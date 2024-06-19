@@ -1,7 +1,6 @@
 - Self-improvement is about solving problems in your life. Entrepreneurship is about solving problems in others life. When you do both, you unlock purpose, meaning, and fulfillment.
 - You weren't born with an interest. You programmed yourself into it. You were persuaded of its importance and adopted it to help you achieve your goals in life. So find a way to articulate that into story, make it intriguing enough so that you grasp the attention for your audience.
 - [[Writing#Build an audience |Building an audience]] of people is to remove your dependency on your employer, government, and any other centralized entity that controls most aspects of your life.
-- In brief, launch products around the ideas that did well for you. Every 3-6 months, launch at least one free product and one paid product until you have a brand and business you are satisfied with.
 > If someone can “flip a switch” and destroy your business, you’re playing roulette with your financial plan. Take **extreme ownership** (that doesn't mean you must disregard delegation).
 > If you can outsource something or not do something for less than your ideal hourly rate, outsource it or don’t do it. If you can hire someone to do it for less than your hourly rate, hire them. That's how you spend your money to buy back your time.
 - You are to become the _source_ of your interests to attract an audience. Not an influencer, a producer. ***A value creator***, to be exact. You are trying to improve the lives of others by consuming, synthesizing, developing, creating, and distributing value. The heart of entrepreneurship is creation and innovation.
@@ -14,6 +13,7 @@
 - You must understand the big picture strategy with all of its moving parts before you start trying to make the system work. 
 - It is easy to get overwhelmed if you try to do everything at once. Start small, then work up.
 - Get in the habit of starting projects that you have a vague idea how to complete it and figure out along the way.
+- Launch products around the ideas that did well for you. Every 3-6 months, launch at least one free product and one paid product until you have a brand and business you are satisfied with.
 - Anyone can get any result they want in life with enough trial and error. Courses just help people skip a few of those trials and errors.
 - Embrace the struggle. That's where the most impactful lessons come from.
 
@@ -53,7 +53,7 @@ TL;DR: For online business, the principles are:
 	4. **Product Aware:** aware of your free or paid solution, but either haven't implemented it or are hesitant on purchasing
 	5. **Most Aware:** aware of your solution and are ready to act on it — all they need is a little push (with persuasion and influence)
 - Your top-of-funnel content (social media platforms) should target all of the above, with levels 1-3 as the priority.
-- Your bottom-of-funnel content (emails, lead magnets, and products) should also target all of the above, with levels 3-5 as the priority.
+- Your bottom-of-funnel content (emails, [[#Lead magnet |lead magnets]], and products) should also target all of the above, with levels 3-5 as the priority.
 ### Problems and solutions
 - If you've solved a problem in your life, you're qualified to start a business. Not just any business, an education business with minimal startup costs.
 - A business means you're selling something. Start with selling the solutions to the problems in your life. Every problem has a different method of being solved that is **_[[Entrepreneurship#The niche |unique to you]]_** (how you solve it).
@@ -63,6 +63,7 @@ TL;DR: For online business, the principles are:
 > People only care about what your business can do **for them**. How can your products make their life easier, more meaningful? What **value** are you adding to **their life**?
 - People want ***clear*** *education* from someone who is 1 to 2 steps ahead of them. So, we start with the ==eternal markets==:
 	- Health, wealth, relationships, and fulfilment. 
+	- _What creates a fulfilling existence?_
 	- Those markets can be broken down into sub-markets like fitness, online business, dating, and spirituality.
 	- If you have experience in any of those domains, you're good to go. 
 - Once you have a digital product, the amount of money you make is determined by how much traffic you send to the product.
@@ -97,7 +98,7 @@ TL;DR: For online business, the principles are:
 - Be a maker who makes something interesting people want. Show your craft, practice your craft, and the right people will eventually find you.
 - When in doubt — go beginner level. Here is a general, foolproof process for making a solid income:
 	- Post beginner and intermediate level content from *your unique perspective* (based on research and experience)
-	- Educate people and **go more in-depth** with longer-form emails, articles, and a ==lead magnet (i.e. free products - people who download it are added to your email list)== to raise them up [[maslows.png |Maslow's Hierarchy of Needs]] (this is where you can show how smart you are and build a deeper connection without having to worry about the algorithm).
+	- Educate people and **go more in-depth** with longer-form emails, articles, and a [[#Lead magnet |lead magnet]] to raise them up [[maslows.png |Maslow's Hierarchy of Needs]] (this is where you can show how smart you are and build a deeper connection without having to worry about the algorithm).
 - Sell a beginner level product to filter out buyers from free-loaders.
 - Again, you are educating them to the point of being a fit for your other *paid* products or services (creating your own customers in a sense).
 - Then, upsell other products, *membership*, ***subscriptions***, or freelance/consulting service to those that purchased your product.
@@ -117,7 +118,7 @@ TL;DR: For online business, the principles are:
 	- Self-awareness and observation
 	- Philosophy and spirituality
 #### Persuasion
-- The greatest skill of all is *persuasion*. You are creating an argument to adopt *your* perspective and ***[[Writing |see the benefit]]*** in viewing things in the way that you do. 
+- The greatest skill of all is *persuasion*. You are creating an argument to adopt *your* perspective and ***[[Writing |see the transformative benefit]]*** in viewing things in the way that you do. 
 - All persuasive writing starts with painting a picture of the problem.
 - The first human behavior you can count on is *selfishness*. It's primal human nature. People want what they want. Capitalize that.
 - Your persuasion should cause that raise in dopamine that sparks the "aha!" moment. The breakthrough. The =="this may ***finally*** be the solution to ***my*** problem"==.
@@ -129,7 +130,7 @@ TL;DR: For online business, the principles are:
 ##### The values
 - A good persuasion should be able to answer these questions:
 	- What are **the downsides** of viewing things from a certain perspective and the day-to-day ***pains*** associated with it? By painting a picture of the problem that an individual is facing, you begin to **make them aware** (without pitching your product yet, just make them aware) of it enough to seek a solution (*your* solution).
-	- What are **the upsides** of viewing things from a new perspective and the day-to-day ***benefits*** associated with it? You can guide people deeper into how the big problem is impacting their experience (raising their awareness even more). Get *specific* with the *benefits* of your product rather than its features. ==Extrapolate forward the benefit of a certain feature==. This is where you get ahead of your competitors:
+	- What are **the upsides** of viewing things from a new perspective and the day-to-day ***benefits*** associated with it? You can guide people deeper into how the big problem is impacting their experience (raising their awareness even more). Get *specific* with the *benefits* of your product rather than its features. ==Extrapolate forward the benefit of a certain feature. Make them *emotional and transformative*==. This is where you get ahead of your competitors:
 		- You don’t buy a Honda; you buy *reliability*.
 		- You don’t buy a vacation; you buy an *experience*.
 	- What is **the process** for getting there and can you ***make it simple*** enough to *act on immediately*?
@@ -141,7 +142,7 @@ TL;DR: For online business, the principles are:
 - A persuasive argument is [[Entrepreneurship#Networking |made up of]] 6 traits:
 	- **[[Entrepreneurship#Follow up |Reciprocity]]**: give out value and good things will come to you. When you do them the favor of (tactically) discount on your product they feel compelled to meet that favor.
 	- **Commitment/Consistency**: this can be used by easing people into things and getting them to take the *lowest friction* action first (e.g. liking a post, clicking a link, filling out a form,...)
-	- **[[Entrepreneurship#Bonus |Social Proof]]**: the human nature is constantly looking to confirm our beliefs, choices, and actions. Therefore: credentials, testimonials, results, and word of mouth marketing is the most powerful persuasion tool in your arsenal. The more *authentic and non-planned*, the better.
+	- **[[Entrepreneurship#Bonus |Social Proof]]**: the human nature is constantly looking to confirm our beliefs, choices, and actions. Therefore: credentials, testimonials, results, and word-of-mouth marketing is the most powerful persuasion tool in your arsenal. The more *authentic and non-planned*, the better.
 	- **[[Entrepreneurship#Compliment |Liking]]**: we tend to like people that like us. If you can compliment someone on their work, be interested in _them,_ and offer the value you can (even if its just a resource you came across relating to what they are working on), they will like you. This is just another level of reciprocity.
 	- **[[Entrepreneurship#Authority |Authority]]**: we tend to trust authoritative figures much quicker, and that's determined by: level of expertise, social proof, accomplishments in a specific area, well known labels or symbols,...
 	- **[[#Pricing |Scarcity]]**: this is on the emotion side of things. It's the FOMO. Make a deadline for the discount. The last day is always the day you make more sales.
@@ -265,13 +266,22 @@ TL;DR: For online business, the principles are:
 	- Serves as a secondary "bookmark" to your profile so you can come back later.
 ##### DMs
 - Check [[#Networking |this]] out.
-
+- ==If someone gets in your DMs to ask a question, that is your chance to refine your marketing strategies==. *Sincerely* help them, walk them through the process of improvement (it's important to ***display compassion*** here), and finally, introduce them to your products (free, then paid):
+	- "_I gotta go. It was my pleasure to connect with you. In the meantime, I've composed my solutions to your problems `[here]`._"
 ### Authority
 - Authority comes down to 2 things: depth and [[Entrepreneurship#The ingredients |social proof]].
 - Depth comes from long-form content: newsletters and blogs.
-> ***Start with a free product*** that gives away valuable advice or actionable insights for a specific skill or interest. From there, you can lead them into a paid product *around that same topic*.
-> Free products should help your audience achieve **one small desirable goal** with a mini course or eBook.
-- Once you've established authority you can easily pivot (since the content and other free information you've created to build that authority will be up forever - as long as the internet exists).
+- Once you've established authority you can easily pivot around more topics and get more ideas for your products (since the content and other free information you've created to build that authority will be up forever - as long as the internet exists).
+#### Lead magnet
+- ==***Start with a free product***== that gives away valuable advice or actionable insights for a specific skill or interest. From there, you can have their emails and lead them into a paid product *around that same topic*.
+	- If you want to see an increase in sales after your paid product launch, launch a new free product *relate to that same topic* with ***multiple*** embedded links to your desired paid product. 
+- Giving away free products is how you [[#Free advertising |build trust]] with your customers and get an idea of how to sell your paid products more easily (i.e. your free product is an excerpt from your paid product to gauge the feedback of your customers before promoting the paid product).
+> You should have twice or thrice as many free products as paid products.
+- Free products should help your audience achieve **one small desirable goal** with a mini course or eBook.
+- Build them in a way that opens a curiosity loop, so that after consuming them, they have no choice but to want more, so they purchase the paid products (by linking your paid products or affiliates in your free products). 
+-  Make them easy to consume and simple to implement. ==Make it completely obvious that you are here to offer as much _**value**_ as you can==. Remember how you bought online courses. You see the value in their free stuff, then you proceeded to buy the paid courses.
+-  If you want to build an automated system for free products, you may have to use a software like [gumroad](https://gumroad.com) and use [zapier](https://zapier.com) to transfer the emails over to [Beehiiv](https://www.beehiiv.com).
+
 ### Authenticity
 - Expressing opinions, likes, and dislikes to relate with those in your audience.
 - Documenting projects that you are working on. Show them the process, and what you've learnt from that.
@@ -295,7 +305,7 @@ TL;DR: For online business, the principles are:
 - **Showing interest makes you interesting**: ask them about: their goals, what drives them, what are they pursuing. 
 - Pay attention to their profile, from which you can pick up more hints about their vocation.
 ### Lead with value
-- Please, ==don't go straight for a transaction when you haven't given anything ***first***.==
+- Please, ==don't go straight for a transaction when you haven't given anything ***first***.== Always start with building a mutual connection. 
 - If you have to ask more questions in order to send better actionable tips or resources (YouTube videos, articles, or any *helpful* thing) do it. You have to ***truly*** want to help them — *or pique their interest*.
 - The least you can do: 
 	- Connect them with someone else in your network
@@ -343,11 +353,11 @@ TL;DR: For online business, the principles are:
 	- Transform anxiety and overwhelm into seamless productivity with our habit replacement system, efficiently accomplish your daily tasks within 4 hours of deep focus.
 - Use surveys, polls to get people to interact with your services/products and give you an idea of what they want.
 ### Bonus
-- Some people will buy just because of the bonuses. Bonus should be free. People love free stuff. Make a list of bonuses that you can include with your product to increase its perceived value:
+- Some people will buy just because of the bonuses. Bonuses should be free (or make them seem like that). People love free stuff. Make a list of bonuses that you can include with your main product to increase its perceived value:
 	- A free 30 minute coaching session to help them make better use of your main product.
 	- A Slack or Discord community where buyers can interact.
 	- Templates or frameworks to help them with guided education and work.
-	- Tips & tricks to quantify the values of your main product.
+	- Tips & tricks to quantify the values of your main product. Saying something like "This could be easily sold as a separate product, but I’ve bundled it into the `[main product]`."
 - The most effective way to distribute bonuses is by unlocking them through testimonials. Genuine positive reviews increase your product's [[Writing#Social proof |social proof]]. Your product has to provide tangible values to make this happen.
 ### Guaranty
 - You are attempting to reduce the perceived risk of investing in your product. 
@@ -360,22 +370,65 @@ TL;DR: For online business, the principles are:
 	- "*If we send you nothing, you pay nothing.*"
 	- “Delivered on time” → “_Delivered within 30 minutes or it’s free_.”
 - ==You must stick to your words and deliver your claim==, or get exposed and go bankrupt.
-> [!important]- Free marketing
-> - Determine your customers’ expectation profile. What are their expectations when they deal with your business? How do they relate to competitors and similar businesses in your industry? 
-> - Make a subjective call on how your customers expect service. Then **exceed** their expectation. Make it a **feel-good surprise**.
-> - Spend more effort on exceedingly serve existing clients rather than on new customer acquisition.
-
+### Free advertising
+ - Determine your customers’ expectation profile. What are their expectations when they deal with your business? How do they relate to competitors and similar businesses in your industry? 
+ - Make a subjective call on how your customers expect service. Then **exceed** their expectation. Make it a **feel-good surprise**.
+ - Spend more effort on exceedingly serve existing clients rather than on new customer acquisition.
+ - Once you get a loyal customer base, the power of "word-of-mouth" is in your hands.
+## Promotions
+- A promotion means that you are presenting an offer. You get X and I get Y. Promoting your work and receiving something of value in return, free or paid.
+- Make sure you've already had 2K+ followers and set up your weekly [[Writing#Content length |content]] flow (i.e. assuming you are posting short-form every day and one long-form a week) so that your promotions can scale seamlessly:
+	- When you promote your product launch in the newsletter, all you have to do is read the promotion to your camera because your newsletter is your YouTube script.
+	- When you plug the promotions under your short-form content, you just have to copy/paste both the content and promotion to other platforms.
+	- You also screenshot the post and promotion and post them to your Instagram story.
+- All of this is dependent on your audience size and how much traffic you can generate through people sharing your posts (through networking or paid means):
+	- With 1K followers, you could out earn someone with 50K if you paid for help from a larger account and understood how to build a network that shares your content.
+> It is expected that sales will be unstable, peaking around the launch date and tapering off over time (usually 2-3 months). Planning your promotions according to this pattern is key to generating a sustainable income from this.
+- When you only promote hard every 2-3 months, people see you as [[#Scarcity |trustworthy]]. You aren't spamming them to make a living every single day, and you make more because of it. Every 2-3 months you should either be:
+	- Launching a new cohort start date.
+	- Launching a course or community.
+	- Increasing the price of one of them.
+	- Launching a [[#Authority |lead magnet]] to get more targeted traffic to your products.
+- Challenge yourself to keep the ratio to 1:3 (1 promotion per 3 value posts) when you write a [[Writing#Medium form |medium]] and [[Writing#Long form |long]] form. Having a special offer for newsletter readers might push them over the edge.
+- Just don’t over-promote unless it is launch week. But when it's time, make sure to have [[#Scarcity]] leading up to your next product launch over ***3 weeks***, inducing impulsive buying:
+	- ==Narrow your focus to the topic (of your [[Writing#Content length |content]]) that your product is about for this period==. 
+	- This will prime your audience's minds to be ready for the product when it drops.
+### First week
+- Mention that you are launching a product in your newsletter or other long-form. Plug in the paid product's sales page at the top and bottom of your newsletter.
+	- Pick an excerpt from your product as a teaser.
+- For short-form content, pick out your top-performing post, then plug your long-form under it.
+### Second week
+- For long-form, give a list of the problems/struggles your product solves and position your product as the solution.
+- For short-form, instead of plugging your newsletter, you are going to plug the link to the product's landing page with [[#Scarcity]] embedded. You should make these points as clear as possible:
+	- **Who is it for?**: use the sentence “If you are…” followed by the pains they experience.
+	- **What will they get?**: list out the clear promise or a big benefit that implies a transformation based on what they are struggling with.
+	- **Why should they care?**: this is where you fill in the blank with one of your most compelling arguments in your marketing strategy.
+- You aren’t trying to sell them right then and there, you are trying to make them curious enough to click through and read your full landing page.
+### Final week
+- Focus on highlighting the scarcity in this week: 
+	- For the final 3 days: your short-form is now dedicated for the product along with its count down. 
+	- On the last day: send 2 emails, one for all-in [[#Persuasion]] for your product, the other to remind people that the price increases or `x` spots left, or enrollment closes in `x` hours.
+		- For short-form: make a dedicated countdown post, add a reply every 1-2 hours that bumps it back up in the feed so more people see it. The replies can be as-is or attached with testimonials, or something cute to trigger their impulsive buying.
 ## Pricing
 ### In
 > If you start too high and aren't making as many sales as you want to, it's going to be hard to justify to your current customers why you lowered the price without having to refund them.
 - Your price tag should promote an "impulse buy", i.e. it's cheap enough for them to buy without doing mental gymnastics on the decision. Start with a price that you think you'd buy without a second thought. 
 - 2000 ***authentic*** followers is a good place to start monetizing.
-- Start low and give yourself room to increase the price a few times. Work your way up from $20 → $50 → $69 → $100 → $150 → $225.
+- ***Start low*** and give yourself room to increase the price a few times. Give yourself space for 2-3 reasonable price increases. It's very hard to get [[Writing#Social proof |testimonials]] if you start at a high price. Your first products to be accessible to leverage [[#Authority]]. 
+	- Work your way up from $20 → $50 → $69 → $100 → $150 → $225.
+- Only launch a high-price (more than $200) product _**after**_ confirming that your previous products can cover fixed costs spending for _**6** consecutive months_.
 - Price implies value and worth. The more expensive your price, the higher its perceived value. Price is apart of the brand build. What makes your product different from the rest? Why should someone pay you more?
 	- Consumers make buying decisions based on emotions before practicality.
 	- If you can arouse audience emotions, convincing customers to buy is easier.
-- Enable early birds prices with 30% off from your desired price. Price increases are a "scarcity event". You will make the most money during your product launch and price increases while sustaining a baseline number of sales in between.
 - An [example](https://www.kboges.com/courses).
+#### Scarcity
+- This is where you can provoke humans primitive desires. Again, strong emotions always win. Leverage FOMO wisely. Get this right and you're golden.
+- Enable early birds prices with 30% off from your desired price. Price increases are a "scarcity event". You will make the most money during your product launch and price increases while sustaining a baseline number of sales in between.
+- Schedule your promotions for limited-time offers for a limited-number of customers:
+	- 20% discount for 30 customers on a random Wednesday.
+	- Special promotions (like a low-cost first month of your community/cohort or a limited time bonus for your course).
+	- Limited window for hidden bonus content. 
+	- Discount on holidays.
 ### Out
 - You can pay for legitimate big accounts (those that have a good number of ***organic*** audience members) to repost or reply to your posts, i.e. buying their shares.
 - DM them, ask if they offer help to grow, and negotiate a deal, something along the lines of:
@@ -391,7 +444,7 @@ TL;DR: For online business, the principles are:
 	- Reach out to personal brands with 20K+ followers.
 	- Be willing to pay more for quality (start with $25 for a repost).
 	- You can reach out to large anonymous accounts, just be sure that they have some personality and aren’t posting shallow basic content that gets ***loads*** of engagement, i.e. bots.
-	- [[Writing#Filter out your top performers |Pick/create]] tweets that resonate with the content realm of your seller. Make it relatable to *their* audience so that you have a chance to funnel their customers into your system. 
+	- [[Writing#Filter out your top performers |Pick/create]] tweets that *resonate with* the content realm of your seller. Make it relatable to *their* audience so that you have a chance to funnel their customers into your system. 
 - Prefer:
 	- Reposts on X
 	- Replies on LinkedIn
@@ -408,10 +461,12 @@ TL;DR: For online business, the principles are:
 - Fanatical customer service can overcome shortcomings, but fanatical features can’t overcome poor customer service.
 - Spectacular product features can’t overcome poor service.
 - Be creative to craft a superior *Unexpected* customer service. To create raving customers, you must exceed satisfaction. Good customer service is strong leverage for word-of-mouth.
-- Word of mouth, or [[#Authority |social proof]], is the best advertising there is. The ROI on happy customers is exponential.
+- ==Word of mouth, or [[#Authority |social proof]], is the best advertising there is. The ROI on happy customers is exponential.==
 # Partnership
 - Choose partners who seek synergy, _**not**_ diversification of risk, expense, and workload.
 	- If each partner looks to the other for the burden to bear, and when one bears more, resentment builds. That'll never end well.
+	- When people are financially invested, they want a return. ==When people are emotionally invested, they want to contribute.==
+	- When we intentionally create a work environment where others have a chance at fulfillment, we’re already improving the world substantially.
 - Investigate and interview your accountants and attorneys. Get referrals from successful, established entrepreneurs.
 > [!important]- Trust
 > You must make your trust an asset to be earned by others. Let actions speak louder than words. 

@@ -24,3 +24,6 @@
 - Live life by design, not default. _Your time is limited,_ **_so don’t waste it living someone else’s life_**. Have the courage to follow your heart and intuition.
 > Wisdom is knowing the long-term consequences of your actions. The direction you’re heading in matters more than how fast you move, especially with leverage.
 - A calm mind, a fit body, and a house full of love. These things cannot be bought. They must be earned.
+- We think of ourselves as fixed and the world as malleable, but it’s really we who are malleable and the world is largely fixed.
+- Try not to attach desire with happiness. Don't let your desire be a contract that you make with yourself to be unhappy until you get what you want. Realize the area where you've chosen to be unhappy. Choose your desire wisely.
+- A happy person isn’t someone who’s happy all the time. It’s someone who effortlessly interprets events in such a way that they don’t lose their innate peace.

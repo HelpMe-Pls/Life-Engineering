@@ -10,7 +10,7 @@
           {
             "id": "2ed2b87e25932f50",
             "type": "tabs",
-            "dimension": 52.61394101876675,
+            "dimension": 52.613941018766766,
             "children": [
               {
                 "id": "abc6f8c3674bcfe7",
@@ -54,7 +54,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/Socialize.md",
+                    "file": "Tips & Tools/Mentality.md",
                     "mode": "source",
                     "source": false
                   }
@@ -72,13 +72,12 @@
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "8cedd05142699eb5",
             "type": "split",
-            "dimension": 47.38605898123324,
+            "dimension": 47.386058981233234,
             "children": [
               {
                 "id": "c3184acf40a6477e",
@@ -166,8 +165,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 205.5,
-    "collapsed": true
+    "width": 205.5
   },
   "right": {
     "id": "82a9e7d6600420b4",
@@ -183,7 +181,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tips & Tools/Writing.md",
+                "file": "Tips & Tools/Entrepreneurship.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -212,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tips & Tools/Writing.md"
+                "file": "Tips & Tools/Entrepreneurship.md"
               }
             }
           }
@@ -233,18 +231,23 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "9cb550a0c3f46fdd",
+  "active": "abc6f8c3674bcfe7",
   "lastOpenFiles": [
-    "Tips & Tools/Entrepreneurship.md",
     "Tips & Tools/Writing.md",
-    "Tips & Tools/Psychology.md",
-    "Tips & Tools/English vocab.md",
-    "Tips & Tools/Socialize.md",
+    "Tips & Tools/Entrepreneurship.md",
     "Tips & Tools/WIL from books.md",
-    "Backend/NodeJS/Frameworks.md",
-    "Backend/NodeJS/NodeJS.md",
-    "Frontend/Frameworks/Remix/Authentication.md",
+    "Tips & Tools/Psychology.md",
+    "Tips & Tools/Mentality.md",
+    "Tips & Tools/English vocab.md",
+    "Frontend/Frameworks/Remix/Data Transfer.md",
+    "Backend/Caching.md",
+    "Backend/Backend.md",
     "Backend/Auth.md",
+    "Backend/NodeJS/NodeJS.md",
+    "Backend/NodeJS/APIs.md",
+    "Tips & Tools/Socialize.md",
+    "Backend/NodeJS/Frameworks.md",
+    "Frontend/Frameworks/Remix/Authentication.md",
     "Frontend/Network/Service Workers.md",
     "Frontend/Network/Networking.md",
     "Frontend/Network/Development & Deploy.md",
@@ -252,15 +255,10 @@
     "Frontend/Network/Connections and protocols.md",
     "Frontend/Network/Browser.md",
     "Frontend/Network/Caching.md",
-    "Tips & Tools/Mentality.md",
     "DevSecOps/Security.md",
     "Tips & Tools/Progressive Overload.md",
     "Tips & Tools/Investment.md",
     "Tips & Tools/Financial.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
-    "Frontend/JavaScript/JavaScript.md",
-    "Frontend/HTML/Hyperlinks.md",
-    "Frontend/Frameworks/Remix/Testing.md",
     "Untitled.canvas",
     "Frontend/HTML/url-breakdown.png",
     "Tips & Tools/maslows.png",
