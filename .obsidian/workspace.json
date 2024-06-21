@@ -49,7 +49,19 @@
                 }
               },
               {
-                "id": "12c434bbc8b5d74b",
+                "id": "a8628a423dae82f4",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Tips & Tools/English vocab.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "ef27449c06bd196f",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -61,18 +73,19 @@
                 }
               },
               {
-                "id": "a8628a423dae82f4",
+                "id": "8fa0d7e8a1ca2b84",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/English vocab.md",
+                    "file": "Tips & Tools/Socialize.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 4
           },
           {
             "id": "8cedd05142699eb5",
@@ -144,7 +157,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tweethunter",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -181,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tips & Tools/Entrepreneurship.md",
+                "file": "Tips & Tools/Mentality.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tips & Tools/Entrepreneurship.md"
+                "file": "Tips & Tools/Mentality.md"
               }
             }
           }
@@ -231,34 +244,35 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "abc6f8c3674bcfe7",
+  "active": "ef27449c06bd196f",
   "lastOpenFiles": [
-    "Tips & Tools/Writing.md",
     "Tips & Tools/Entrepreneurship.md",
-    "Tips & Tools/WIL from books.md",
+    "Tips & Tools/Writing.md",
     "Tips & Tools/Psychology.md",
-    "Tips & Tools/Mentality.md",
     "Tips & Tools/English vocab.md",
+    "Tips & Tools/Mentality.md",
+    "Tips & Tools/Socialize.md",
+    "Tips & Tools/OnePersonBusiness.png",
+    "Frontend/Frameworks/Remix/Authentication.md",
+    "Tips & Tools/Tools & Util libs.md",
+    "Tips & Tools/Screenshot 2024-06-20 105333.png",
+    "Frontend/TypeScript/Patterns.md",
+    "Frontend/CSS/Typography and Images.md",
+    "Frontend/TypeScript/Advanced.md",
+    "Frontend/TypeScript/TypeScript.md",
+    "Frontend/TypeScript/With React.md",
+    "Frontend/TypeScript/Type Transformation.md",
+    "Frontend/TypeScript/Fundamentals.md",
+    "Frontend/TypeScript/Basic Types.md",
+    "Frontend/TypeScript/Generics.md",
+    "Tips & Tools/WIL from books.md",
     "Frontend/Frameworks/Remix/Data Transfer.md",
     "Backend/Caching.md",
     "Backend/Backend.md",
     "Backend/Auth.md",
     "Backend/NodeJS/NodeJS.md",
     "Backend/NodeJS/APIs.md",
-    "Tips & Tools/Socialize.md",
     "Backend/NodeJS/Frameworks.md",
-    "Frontend/Frameworks/Remix/Authentication.md",
-    "Frontend/Network/Service Workers.md",
-    "Frontend/Network/Networking.md",
-    "Frontend/Network/Development & Deploy.md",
-    "Frontend/Network/Data Transfer.md",
-    "Frontend/Network/Connections and protocols.md",
-    "Frontend/Network/Browser.md",
-    "Frontend/Network/Caching.md",
-    "DevSecOps/Security.md",
-    "Tips & Tools/Progressive Overload.md",
-    "Tips & Tools/Investment.md",
-    "Tips & Tools/Financial.md",
     "Untitled.canvas",
     "Frontend/HTML/url-breakdown.png",
     "Tips & Tools/maslows.png",

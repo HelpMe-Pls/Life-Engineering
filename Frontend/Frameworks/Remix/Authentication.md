@@ -910,7 +910,7 @@ async function validateRequest(request: Request, body: URLSearchParams | FormDat
 
 //------------- reset-password.tsx
 export async function action({ request }: DataFunctionArgs) {
-// `requireResetPasswordusername` is an util function which verifies if it's the right user requesting this password reset to make sure unauthenticated can't get to this route, and returns the corresponding `username` for the password reset
+// `requireResetPasswordUsername` is an util function which verifies if it's the right user requesting this password reset to make sure an unauthenticated user can't get to this route, and returns the corresponding `username` for the password reset
 	const resetPasswordUsername = await requireResetPasswordUsername(request)
 	const formData = await request.formData()
 	const submission = parse(formData, {
@@ -932,7 +932,7 @@ export async function action({ request }: DataFunctionArgs) {
 	)
 	return redirect('/login', {
 		headers: {
-// We're done so it makes sense to destroy the session
+// We're done so it makes sense to destroy the previous session to prepare for the new session
 			'set-cookie': await verifySessionStorage.destroySession(verifySession),
 		},
 	})

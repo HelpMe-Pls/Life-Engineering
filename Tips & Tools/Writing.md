@@ -43,7 +43,7 @@
 - Your content over a 6-12 month timeframe is what determines your followers' perception of you.
 - Analyze and resolve issues from customers' [[Entrepreneurship#Feedback |feedback]] on the free products to create [[#Monetize your products |paid]] products.  
 - The more consistent you are, the more people you attract, and the more people trust you enough to invest in your product.
-- ==Formulate your content according to the List Format==. Lists and numbers make people stop and read. Each paragraph ([[#Medium form |medium]] - [[#Long form |long]] form) or sentence ([[#Short form]]) should clearly announce a key takeaway point.
+- ==Formulate your content according to the ***List Format***==. Lists and numbers make people stop and read. Each paragraph ([[#Medium form |medium]] - [[#Long form |long]] form) or sentence ([[#Short form]]) should clearly announce a key takeaway point.
 ## Criteria
 ### Who
 - You are writing to your past, present, and future ***self***. That "self" is your audience.
@@ -85,6 +85,7 @@
 	- **Tips and tricks**: something you tried that worked.
 	- **Identity**: describe the traits of yourself or the community you are in. Or just give a *controversial* opinion on a characterized group.
 	- **Polarity**: thinking in pair of extremes. What is the best, greatest, worst, most terrible thing someone can do?
+- Or just pick a problem, and write about it with [[#Product category |these qualifications]] in mind.
 ## Leverages
 - Here are some leads which can help you scale your audience:
 	- **Engaging with big accounts**: respond to accounts with a large following 10-20 times per day with _your personal experience relating to the topic they posted about._ **Do not** reply by rewording what they said. Remember — pains, benefits, and transformations for a specific awareness level — that is what will make people follow you.
@@ -108,7 +109,8 @@
 	- In short and medium form, you can add a comment with a link to read the long form or download the [[Entrepreneurship#Lead magnet |lead magnet]].
 ### Short form
 - Time for consumption is around 30s to 5 minutes. 
-- Short-form - short attention span. No retention. They're hooks for enticing a new audience. The purpose is to spark their interest and curiosity. Take advantage of controversial topics and quotes.
+- Short-form - short attention span. No retention. They're hooks for enticing a new audience. The purpose is to spark their interest and curiosity. People never buy things straight off of a short-form post.
+- Your job is to [[Entrepreneurship#Persuasion |convert]] your audience to the point where they become your customer. Take advantage of controversial topics and quotes.
 - A quote is like packaging up 10 years of experience in one sentence. They have _depth_ behind them.
 - You can also test new ideas and monitor your audience's engagement:
 	- Tweets
@@ -121,14 +123,16 @@
 - Time for consumption is around 5 to 15 minutes. 
 - Recommended to start on LinkedIn since it has a character limit. Perfect length for medium form.
 - The inspiration for this type of content can be derived from its corresponding long form or from your [[#Learn from others |conscious consumption]].
-- Medium-form is a mixture of depth and rapid growth, attracting a broad spectrum of people that have similar interests as you by giving your unique perspective on a particular topic:
+- Medium-form is a mixture of depth and rapid growth, attracting a broad spectrum of people that have similar interests as you by giving your unique perspective on a [particular topic](https://x.com/FitFounder/status/1800558829731500518):
 	- Threads: you should be able to post ***every*** tweet in the thread as a standalone tweet (so that it's easier to retweet and bring in more audience). Or chain the thread with cliffhangers if you're telling a story. The [[#Engagement |first tweet]] of your thread is the most important.
-	- Carousels
+	- Carousels (use Canva or Figma for this)
 	- Instagram captions
 	- Full-length LinkedIn posts
 	- Clipped videos
 - Use those to encourage them to dive into your long-form content, and from there you can sell your products or services without seeming like a timeline spammer or “overly salesy.” Our goal is to send as much traffic as we can to our [[#Long form]].
 - Threads lead to more followers because you are holding attention longer. You are building trust and giving people more of a reason to follow you. A viral thread can pull in 500-5,000+ followers and bring new opportunities to your DMs.
+- AI Prompt example:
+	- "I am a productivity coach who posts content online to help my audience work more efficiently and have better mental performance. Please generate *10* compelling ideas for ***listicle-style** articles* that have *viral potential*."
 
 > [!note]- Tagging big accounts
 > - The creators tagged in the thread understand that if they engage with the post, they will probably get quite a few followers from it too.
@@ -183,7 +187,7 @@
 ## Engagement
 - If you get someone’s attention, half the battle is won. The other half is letting selfishness take over your audience and tailor your messages to their self-interest.
 - Your job is to capture attention, hold attention, and deliver value to that attention throughout all of your writing.
-- Your reader’s ego is the foundation of capturing and holding attention. Once the curiosity loop is opened, the mind feels committed to figuring out the rest of the story. 
+- Your reader’s ego is the foundation of capturing and holding attention. You're trying to ==evoke their emotional response==. Once the curiosity loop is opened, the mind feels committed to figuring out the rest of the story. 
 - If you can take people on an emotional ride of love, hate, excitement, deceit, peaceful, offended, and any other emotion that eventually ends in a benefit for their life — you have mastered the art of content creation.
 	- Stories are layers of metaphors, concepts, perspectives, comparisons and experiences that take people on a journey. You present a problem and guide someone to overcome it. Craft a compelling - intriguing **[[#Active voice |story]]** is the way to go.
 - ***Controversy*** is an under-utilized factor. ==Framing your content to spark debate== is highly effective, as long as it avoids being extremely offensive (e.g. topics like religion or core values should be approached with careful consideration). **Use this as a way to *build a deeper connection* with your audience.** 
@@ -248,12 +252,16 @@
 - Once you built an audience (at around 10K+ followers), it's time to sell your products. _**Digital** products_. Those are courses, templates, trackers, software,...Something you built once, then sell forever.
 - Social media posts aren't the ones that directly generate income. Use them as leverage to funnel your audience to those actual products that you're selling. Write posts, write scripts for videos, then ultimately, write the content for your products. 
 - Continuously launching, improving, and iterating until you have the perfect combination of digital products that create a desired high base income (where its minimum is equal to 6 months of your living fixed costs).
-- If you don’t make more than you spend, your product/service isn’t broad or good enough.
+- If you don’t make more than you spend, it's:
+	- Your system isn't targeting a demand. 
+	- Your product/service isn’t broad or good enough. It should feel like a "*must-have*" rather than a "nice-to-have".
+	- Your [[Entrepreneurship#Marketing |marketing]] needs more volume. 
 > You need people to buy your product in order to get results → be able to improve the product → become an expert yourself.
+> Research and look into what's already selling well in the market, extract their essences (especially their hook & packaging) for your products.
 
 > [!info] The process
 > When you have your product stack built out, your main focuses are:
-> - Growing an audience with broad attractive content.
+> - Growing an audience with [[Entrepreneurship#Problems and solutions |broad attractive]] content.
 > - Nurturing that audience with lead magnets and weekly emails (while promoting your products inside)
 > - Launching cohorts, courses, community, price increases, or special offers every 2-3 months to your email list and on social media.
 ## Market research
@@ -291,10 +299,18 @@
 - Notice those followers who regularly engage, give them something free as a treat. See if you can help them in your area of expertise. Test your ideas and products on them before going big.
 ### Learn from others
 - Be a _**conscious** consumer_ of your inspiring creators. _**Learn**_ their system. Join their email lists, read their blogs, watch their viral content, study their product landing pages, and *buy their courses* to get new ideas for your own. Make your product a remix of theirs.
+- Always have this question in your mind: "What's so good about this? How can it be better?"
 ## Product category
 - Sell what's already selling. If someone isn’t selling it, you probably won’t succeed with your first product.
 > Again, to sell a product, you must [[Writing#Learn from others |know how]] a product is sold.
 - To increase the desire and effectiveness of your product, have them track their progress.
+- Your products should include these qualifications: 
+	- **Anti-vision**: how their lives are getting worse without the solutions that your product offers
+	- **Vision**: what could be better
+	- **Goal**: what to aim for
+	- **Project**: how to get there
+	- **Education**: the right mindset
+	- **Levers**: habits to instill
 - Most of these categories (except [[#Cohorts]]) require you to continuously market it in order to sustain sales.
 ### Tutorials
 - This works best for teaching a skill (in form of a course) like:
@@ -319,7 +335,8 @@
 - Have them track their metrics in a template or spreadsheet you create (like their daily calories, weight, and lifts in the gym).
 - If you have a cohort and a course, solely focus on course sales in between cohort launches.
 ### Cohorts
-- A cohort is a subscription-based course with a specific start date and a *limited* number of students. 
+- A cohort is a subscription-based course with a specific start date and a *limited* number of students where you host weekly live streams to guide that group of students (think of it as one-to-many consulting instead of 1:1). 
+- Scarcity is baked in for this type of product.
 - It has some form of communication feature like a group chat (Discord, Telegram,...) and live calls that people can join for Q&A (Zoom, Google Meat,...) or specific education relating to the curriculum. You can usually charge more for this compared to a typical course.
 	- You can also get testimonials easier because you have helped them on a deeper level just by how cohorts are structured.
 	- Rotate and iterate between cohorts and standalone courses: take a valuable part of your cohort and turn it into a lower-priced course. Leverage the testimonials and results you've gotten to sell to a larger audience. Upsell your course buyers to the cohort to increase sales.
@@ -356,11 +373,11 @@
 	- For example, offer a limited-time discount for certain type of customer or time of the year.
 ### The structure
 - Follow [this demo](https://cc.kortex.co), from top to bottom:
-	- **The callout**: the very first line - capture attention and open a curiosity loop
-	- **The headline**: the big **bold** line, the *most important* part of the page - your *main* qualifying pain point, the "[[Entrepreneurship#Persuasion |aha]]" trigger
-	- **The sub-headline**: a risk-reversal assurance, or a hint at your *unique* mechanism 
+	- **The callout**: the very first line - capture attention and open a curiosity loop.
+	- **The headline**: the big **bold** line, the *most important* part of the page - your *main* qualifying pain point, the "[[Entrepreneurship#Persuasion |aha]]" trigger.
+	- **The sub-headline**: a risk-reversal assurance, or a hint at your _**unique** mechanism_. 
 	- **[[#Social proof]]**: works best if you have a good [[Entrepreneurship#Networking |community]] where you can send a free trial of your product to get their *good* reviews.
-	- **Lead**: a bullet point list of 5-6 qualifying pain points, unfulfilled ***needs*** (usually the lack of clarity to achieve something that your product will offer). Make them feel personal. Give them reasons to continue reading to find out what **the** solution could be (your unique mechanism).  
+	- **Lead**: a bullet point list of 5-6 qualifying pain points, unfulfilled ***needs*** (usually the lack of clarity to achieve something that your product will offer, or something they wouldn't want to become, i.e. the *anti-vision*). Have some context around them, make them feel emotional & personal. Give them reasons to continue reading to find out what **the** solution could be (your unique mechanism).  
 	- **Transformation & Mechanism**: your job is to _give away **just enough**_ of what the product delivers to _make them **want more**_. Like a free demo for an upcoming game. A Teaser. Keep it short and simple.
 	- **Offer Introduction**: a curriculum of your product. Highlighting _**why**_ they should care about it. Answers to the "lead" above:
 		- "_`[A solution]` ==so that== (or ==so you can==) solve `[the pain point]`_."

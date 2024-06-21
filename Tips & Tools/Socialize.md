@@ -18,6 +18,7 @@
 - What would be your advice to the people of your gen?
 - Which of your current values would be different if you were raised by different parents?
 - What are the things about your life that making you "feel behind"? Are those the things you do that you know you shouldn't do?
+- What did you fail at this week?”
 - What does your ideal relationship look like?
 - What do you believe the most with the least amount of evidence of it being true?
 - Do you spend more time defending what you already know instead of trying to learn something new?
@@ -29,6 +30,7 @@
 - What was the most challenging period in your life and what did you learn from it?
 - Tell me more about the last time you had an emotional breakdown.
 - Tell me about an event that made you realized you've been coping/lying to yourself, and it made you accept the thing you're trying to hide so that you can peacefully live with it. 
+- Do you want to be the world's best player and known as the worst, or the world's worst player and known as the best ?
 - What are some of the things that you think you deserve to have, but you couldn't have it? Why?
 >[!important]- Opinions and the Ego
 >- Don’t criticize the person—criticize the general approach or criticize the class of activities.
@@ -37,7 +39,6 @@
 
 # For potential mate
 - What are the topics that tend to cause entropy in a marriage? Start with your parents.
-- f
 - f
 - f
 # For business

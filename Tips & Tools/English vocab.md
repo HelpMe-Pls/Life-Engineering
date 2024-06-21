@@ -6,7 +6,7 @@ credo (n) <cri-do>: a fancy word for 'ultimate belief'
 
 endeavor (v-n): to try / an effort to do sth
 
-cliché (n): an opinion that is overused and betrays a lack of original thought.
+cliché (n): triteness, an opinion that is overused and betrays a lack of original thought.
 
 profound (adj-n): deep af
 
@@ -127,6 +127,8 @@ assiduous (adj): diligent, taking great care that everything is done as well as 
 entropy (n): chaos, disorganization, randomness
 
 anomaly {in sth} (n): unusual, irregularity, paradox
+
+haphazard (adj-n): unplanned, aimless, arbitrary, erratic, random
 
 stagnant (adj): stale, not flowing
 
@@ -464,7 +466,9 @@ conniving (adj): devious, Machiavellian, calculating, manipulative
 
 futility (n): meaningless, no effect, achieving nothing
 
-purgatory (n): hell, suffering
+purgatory (n): 1 level above hell, suffering
+
+bane (v-n): curse, nemesis
 
 coy (adj): increase interest in something by intentionally keeping secret
 
