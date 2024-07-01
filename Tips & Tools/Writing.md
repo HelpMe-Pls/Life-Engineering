@@ -1,7 +1,7 @@
 - How do you attract people? Value.
 - What is the best way to deliver said value? Media or content.
 - What is the foundation of media or content? Writing.
-- What does writing mean? To connect the dots - which are your thoughts, ideas, and the purpose behind them - and then extract, deliver them in the best possible manner. To write is to think. To think is to evolve.
+- What does writing mean? To connect the dots - which are your thoughts, ideas, and the purpose behind them - and then extract, deliver them in the best possible manner. To write is to think. To think is to evolve. Writing is often the process by which you realize you do not understand what you are talking about.
 - Good writing is felt instantly. Not only is it packed with ideas and insight, it has a certain momentum that compels you to keep reading.
 - If you can write about your interests, you can generate new opportunities, and set yourself up for future monetization of said interests.
 - Such writing attracts attention, delivers a high-value message, and encourages people to follow you and your work, eventually raise the collective well-being.
@@ -12,7 +12,7 @@
 - You can tap into the creative (and chaotic) unconscious mind through **big picture thinking**, i.e. zooming out so that you can recognize patterns and pick your aim. *Creativity is about connection*.
 - You can tap into the productive (and ordered) conscious mind through deep & narrowed-down focus, i.e. now that you got your aim, tap into flow state to aid your execution. *Productivity is about clarity & execution*.
 - When your creative work aligns with the goals and tasks you have planned for a specific work block, you meet the requirements for reaching the flow state.
-- As a content creator, it is your job to create, produce, and *remix* from a database of content, quotes, anecdotes, metaphors, problems, benefits, topics, ideas, words, and other things that will lead to you creating truly unique content.
+- As a content creator, it is your job to create, produce, and *remix* from a database of content, quotes, anecdotes, metaphors, problems, [[Entrepreneurship#The values |benefits]], topics, ideas, words, and other things that will lead to you creating truly unique content.
 > Your content is the projection of your mind that creates a world for others to explore.
 ## Research
 - Everything you consume (or research) now has practical application. Which areas of your life can it apply to? You will only know this if you are intentional when improving your personal and professional life — life itself is inspiration.
@@ -39,7 +39,7 @@
 - Once you have your 3 interests that you plan to master, you can write about anything related to those interests.
 - The “why” is your greatest tool in all of your content. This is what sets you apart and is how you display your unique perspective/philosophy on the topic at hand.
 - As a beginner, you should not be focused on anything else unless it involves practicing getting results for a free client.
-- Build an audience of up to 2500 followers on all platforms then start releasing free products.
+- Build an audience of up to 2500 followers on all platforms then start releasing free products. ==Leverage your existing audience to get referrals== to your [[#Email list]].
 - Your content over a 6-12 month timeframe is what determines your followers' perception of you.
 - Analyze and resolve issues from customers' [[Entrepreneurship#Feedback |feedback]] on the free products to create [[#Monetize your products |paid]] products.  
 - The more consistent you are, the more people you attract, and the more people trust you enough to invest in your product.
@@ -64,7 +64,7 @@
 - Get creative. Make the process feel like play and/or experiment. People love to play, whether they admit it or not. You create a game-like mechanism by wrapping everything up into a clear, concise, and actionable way of getting a specific result — and making it clear on what they should do next. Remember that most of your audience are beginners. Being able to play reduces the friction towards any goal.
 ### Why
 - Your life experiences are the “why” behind your interests. The pains, benefits, and range of emotions associated with your lifestyle.
-- You're delivering a tangible promise: providing an _exact_ list of benefits customers will get from your product or service. Essentially, you’re offering a solution tailored to their *specific* need.
+- You're delivering a tangible promise: providing an _exact_ list of [[Entrepreneurship#The values |benefits]] customers will get from your product or service. Essentially, you’re offering a solution tailored to their *specific* need.
 ### Structure
 - These days people have short attention span. This is the recommended structure to cope with that:
 	- **Bullet lists** — use numbers, bullets, and other tactics that help you break apart what you are saying. These lists create a “story” in themselves.
@@ -101,6 +101,7 @@
  > Social media (short & medium form) → newsletter (long form) → landing page → profit
  > They all serve their unique purpose but also interconnect.
 - Think of your social media as the first layer of your business. Your salesman. Your newsletter/email list is where you gradually build trust in your brand.
+- ==Remember to put your newsletter subscription at the top and/or bottom of your content.== Always try to remove the friction to turn a visitor into a subscriber, then eventually, into [[Entrepreneurship#Lead magnet |a customer]]. 
 - Focus on growing on one platform — in this case, Twitter is a good place to start, because it has the most powerful share feature of all platforms. Easy to go viral, especially in written format. A good leverage to approach other platforms.
 - ==The headline, the first item in the carousel ***must*** capture attention.== 
 > Medium and long form should follow the AIDA (**A**ttention - **I**nterest - **D**esire - **A**ction) and/or and PPP (**P**ull, **P**erspective, **P**unchline) structure (for each sub-topic or as a whole article).
@@ -143,22 +144,40 @@
 ### Long form
 - Time for consumption is around 20 to 90 minutes. 
 - The ideal frequency for publishing is once a week.
-- Long-form emphasizes depth and [[Entrepreneurship#Authority |authority]]. Long-form content sells more. It's just the truth. This is where you audience turns into customers:
-	- Newsletters, articles (i.e. blog)
+- Long-form emphasizes depth and [[Entrepreneurship#Authority |authority]]. Long-form content sells more. It's just the truth. ==This is where you audience turns into customers==:
+	- ==Newsletters, articles (i.e. blog)==
 	- Podcasts
 	- YouTube videos
 	- A book (when and if you want to)
 - Most social media content is broad, beginner-level, and meant for quick entertainment. Few people will actually buy products straight from social media. 
-- Social media platforms owns the algorithm, your data, and anything you post. It's centralized. 
+- Social media platforms owns the algorithm, your data, and anything you post. It's centralized and your brand is at their mercy. 
 - Your newsletter is the least friction path for you to detach from the dependency on algorithms and direct your followers to an email list for your paid products, giving you full ownership of your audience. Refer to your own newsletter subscriptions. Pick out the format that you love. Copy that.
 - Send a weekly newsletter expanding on your [[#Filter out your top performers |best]] social media posts.
 - ==Construct your content so that it's easy to extract the key takeaways== (e.g. craft your headers in a way that spark the reader's interest and guide their anticipation further down the post, eventually, to your products).
-- ==Remember to put your newsletter subscription at the top and bottom of your post.==Always try to remove the friction to turn a visitor into a subscriber, then eventually, into [[Entrepreneurship#Lead magnet |a customer]]. 
 - Once you've got a good number of audiences (thousands) in the list, you should focus on:
 	- **Customer creation**: educate your audience to the point of becoming customers for your other products.
 	- **Writing what you want**: all of your authoritative information on one subject is in one place. You don’t have to worry about writing so much about it on social media. Social media now serves as hooks to your newsletter.
-	- **Selling your product**: give people [[Entrepreneurship#The values |enough information]] to trust in buying your product. You should plug it toward the end of your lead magnet to make sales when the “leads” (free products) are hot.
+	- **Selling your product**: give people [[Entrepreneurship#The values |enough information]] to trust in buying your product. ==This is where you slowly put your upcoming products into their subconscious minds==. You should plug it toward the end of your lead magnet to make sales when the “leads” (free products) are hot.
 - All long-form content should have a call to action to purchase your product (with other newsletter issues and products linked throughout the newsletter). Use [Beehiiv](https://www.beehiiv.com) or [Substack](https://substack.com) as your CMS. 
+#### Email list
+- The only way to consistently monetize whatever audience you build, wherever you build it, is with email. 
+	- That means that you’re not really “building an audience” if you don’t have their email.
+	- No matter how many new social media platforms pop up, email is still the most powerful channel for deepening your relationship with your audience.
+- It’s about quality, not quantity. A healthy email list has a ==20 percent open rate==. Target that.
+- Everyone in your audience matters forever, but _especially at the beginning_, you should respond to every single new subscriber.
+- ==Set up an autoresponder== and hit them up _right away_ (when they sign up) with your _**best**_ [[Entrepreneurship#Lead magnet |content]]. Use the existing [[#Copywriting |tools]] to help you with that. Here's the recommended sign up email sequence (or you can combine them all to one email):
+	1. Welcome email: "Thanks for joining `[my newsletter]`. ==_What could I write to provide value to you?_==". Or you can give them a form to fill out what they need most help with, so you can tailor your content and products accordingly.
+	2. Connection email: "Send me a connection request on LinkedIn, follow me on Twitter,..."
+	3. Content email: give them your [[Entrepreneurship#Lead magnet |lead magnet]]. 
+- An example for a cold invite to join your email list:
+	 _Hey `[name]`!
+	 I just wanted to let you know that I’m starting `[description of your new business]`.
+	 I’m going to publish `[one article per week/a weekly ACTIONABLE tip]` on how to `[subject]`. No spam ever, I promise :))
+	 If this something you're interested in, here’s an easy way to sign up! `[Insert landing page address]` 
+	 Or you can just simply write back with 1 word “Yes” and I’ll do it for you!
+	 Hope things are great!
+	 `[Your name]`_
+- When you add your landing page to your email and your social bios, you can measure the traffic and conversion rate you get from these mentions with [Bitly](https://bitly.com/) or [Linktree](https://linktr.ee), website address shorteners that track clicks.  
 #### Newsletter
  - This is where you build your uniqueness and authority along with a **diehard fan base**:
 ##### The headline
@@ -175,7 +194,7 @@
 ##### The body
  - Right after the headline is where you start to ***hold*** *attention* (make them wonder "what's next"). Several ways to get that retention:
 	 - **Personal experiences or anecdotes**: this is what they can relate the most with. Empathy and compassion never fail.
-	 - **A _[[#Active voice |story]]_ that illustrates the problem we are going to solve**: always start by hinting at a problem.==Articulate your story so that your audience (_**not**_ you) *feels* like they're solving the problem as they proceed with the reading. Make it *immersive*.==
+	 - **A _[[#Active voice |story]]_ that illustrates the problem we are going to solve**: always start by hinting at a problem. People's beliefs are more durably impacted by stories than by statistics. ==Articulate your story so that your audience (_**not**_ you) *feels* like they're solving the problem as they proceed with the reading. Make it *immersive*.==
 	 - **A common piece of advice or perspective that we will disprove and give better advice for**: your "better" advice is formulated by **[[Entrepreneurship#Authenticity |your]]** unique life experience and circumstances.
 	 - **A big idea that we will break down, dissect, and make practical**: clarify what the problem is about and the other problems that stem from it, what can you do about it.
  - The header is a high-impact text placed at the start of a subtopic to entice the reader where ==**[visualization](https://excalidraw.com/)** (charts, diagram, maps,...) or a one-liner is placed at the end for summarizing/consolidating what you've just discussed==. 
@@ -184,13 +203,16 @@
  - You must set the stage for them to implement your advice with good reasoning behind it.
  - Quotes can serve as a transition point between subtopics.
  - It's an art to make every subtopic stand out on its own while also ensuring that all the subtopics flow together coherently to form a complete piece.
+
 ## Engagement
 - If you get someone’s attention, half the battle is won. The other half is letting selfishness take over your audience and tailor your messages to their self-interest.
 - Your job is to capture attention, hold attention, and deliver value to that attention throughout all of your writing.
-- Your reader’s ego is the foundation of capturing and holding attention. You're trying to ==evoke their emotional response==. Once the curiosity loop is opened, the mind feels committed to figuring out the rest of the story. 
+> The most influential ideas are not the most intelligent ones but the most mediocre. Something that is easily resonates with everyone.
+- Give people what they want in a way they're not expecting. You're trying to ==evoke their emotional response==. Once the curiosity loop is opened, the mind feels committed to figuring out the rest of the story. 
 - If you can take people on an emotional ride of love, hate, excitement, deceit, peaceful, offended, and any other emotion that eventually ends in a benefit for their life — you have mastered the art of content creation.
 	- Stories are layers of metaphors, concepts, perspectives, comparisons and experiences that take people on a journey. You present a problem and guide someone to overcome it. Craft a compelling - intriguing **[[#Active voice |story]]** is the way to go.
 - ***Controversy*** is an under-utilized factor. ==Framing your content to spark debate== is highly effective, as long as it avoids being extremely offensive (e.g. topics like religion or core values should be approached with careful consideration). **Use this as a way to *build a deeper connection* with your audience.** 
+- Getting your audience involved helps them feel like an integral part of the show, which boosts the chances they’ll engage with your content, which pushes it up the rankings, and attracts even more subscribers.
 - The people you want to *attract* aren’t the people that “hate” on your work. Be cautious of this as it can destroy your authority in the market. There will always be haters, and your job is not to eliminate them, but rather not to attract them.
 - Start with 2-3 tweets a day, [[Entrepreneurship#Tactics |engage]] with your audience 10-20 times a day.
 > Pivot your engagement around emotions, curiosity, entertainment, education, and inspiration.
@@ -265,6 +287,8 @@
 > - Nurturing that audience with lead magnets and weekly emails (while promoting your products inside)
 > - Launching cohorts, courses, community, price increases, or special offers every 2-3 months to your email list and on social media.
 ## Market research
+> [!important] Verify the need
+> Have a look at the keywords of your products via Facebook Ads to verify the market's demand and see how many units you need to sell to reach your desired profit goal.
 ### Filter out your top performers
 - Things to write about:
 	- Your extreme beliefs (like "nobody should drink alcohol"). You should provide a good argument as to why to change people's minds. Spark controversy. Controversy brings engagement to your post. Which is always a good thing.
@@ -300,6 +324,19 @@
 ### Learn from others
 - Be a _**conscious** consumer_ of your inspiring creators. _**Learn**_ their system. Join their email lists, read their blogs, watch their viral content, study their product landing pages, and *buy their courses* to get new ideas for your own. Make your product a remix of theirs.
 - Always have this question in your mind: "What's so good about this? How can it be better?"
+
+## Idea validation
+- This is how you see if your product is gonna make millions:
+> Find _**three**_ customers in **_forty-eight_** hours who will give you **_money_** for your idea.
+- To do that:
+### Direct preselling
+- Make real contact with real people, tell them what I’m selling, ask for money, and see how they react.
+- Validation is a conversation. Not a sales pitch, but a chat to learn about the customer, see *how* you can help them and if they’ll actually pay you.
+- Use what or how questions to encourage a more open dialogue versus why or yes/no questions, which can limit your learning.
+### Marketplace
+- Use tools like Facebook Marketplace (or whatever pop social media platform in your area) 
+- Don’t overthink the design, the name, the language, the ads, or any of that. Just focus on good [[#Copywriting]] and see if you can get people to buy your product.
+
 ## Product category
 - Sell what's already selling. If someone isn’t selling it, you probably won’t succeed with your first product.
 > Again, to sell a product, you must [[Writing#Learn from others |know how]] a product is sold.
@@ -333,6 +370,7 @@
 - Give them a step-by-step action plan (a regimen) to achieve a desirable end result.
 - Use [kartra](https://kartra.com/) or [gumroad](https://gumroad.com) to structure your course.
 - Have them track their metrics in a template or spreadsheet you create (like their daily calories, weight, and lifts in the gym).
+	- Design your courses in a way that gives your customer a clear answer to "_How can I design a life, month, week, and day with this new habit that gives me a sense of control over my life?_"
 - If you have a cohort and a course, solely focus on course sales in between cohort launches.
 ### Cohorts
 - A cohort is a subscription-based course with a specific start date and a *limited* number of students where you host weekly live streams to guide that group of students (think of it as one-to-many consulting instead of 1:1). 
@@ -365,10 +403,17 @@
 	4. **Give this path/process a compelling name**: once you have the steps mapped out, the name will come easier. Write down 5 or so names - let it sit for a few days - and come back to it.
 	5. **The outcome**: have your customer build out their version of the necessary components of the system itself.
 - Systems should be sold at $225 ~ $1000. Sell systems after you've had good [[Entrepreneurship#Social leverage |social leverage]].
+- For communities, check [this](https://www.skool.com/games/about) out
 ## Copywriting
-- Copywriting is how you effectively communicate your marketing strategy on a landing page.
+- Copywriting is how you effectively communicate your marketing strategy on a ***[landing page](https://docs.google.com/document/d/e/2PACX-1vT6lOFtkw_6ucZbUQujJPsCCodiMmVHIrw2grKrv8hlO6K9j57UWRKUeRynPLeA8lWOAcMgi11cDGwO/pub)***.
 - In-depth copywriting is there to push people that aren’t already going to buy over the edge by clearing their doubts.
 - The depth of your content, quality of the product, quantity of promotions, and amount of social proof will do most of the heavy lifting.
+- Tools to build a [landing page](https://docs.google.com/document/d/e/2PACX-1vTdtSVW3YuOTArahgeJTGzVfMlNA5TSdJLl2YyCADJh6bPsrJxCp4INeDPAoT7EKrS6Plzb8MC8ifDb/pub):  
+	- [SendFox](https://sendfox.com)
+	- [MailChimp](https://mailchimp.com)
+	- [WebFlow](https://webflow.com)
+	- [ConvertKit](https://convertkit.com)
+	- Or build your own with code
 - The ultimate goal of this page/site is to trigger an impulsive buy without being blatant about it. 
 	- For example, offer a limited-time discount for certain type of customer or time of the year.
 ### The structure
@@ -376,11 +421,13 @@
 	- **The callout**: the very first line - capture attention and open a curiosity loop.
 	- **The headline**: the big **bold** line, the *most important* part of the page - your *main* qualifying pain point, the "[[Entrepreneurship#Persuasion |aha]]" trigger.
 	- **The sub-headline**: a risk-reversal assurance, or a hint at your _**unique** mechanism_. 
+		- "_I help `[targeted customers]` get `[desires]` without `[the painful trade-offs]` through `[my unique mechanism]`._"
 	- **[[#Social proof]]**: works best if you have a good [[Entrepreneurship#Networking |community]] where you can send a free trial of your product to get their *good* reviews.
 	- **Lead**: a bullet point list of 5-6 qualifying pain points, unfulfilled ***needs*** (usually the lack of clarity to achieve something that your product will offer, or something they wouldn't want to become, i.e. the *anti-vision*). Have some context around them, make them feel emotional & personal. Give them reasons to continue reading to find out what **the** solution could be (your unique mechanism).  
 	- **Transformation & Mechanism**: your job is to _give away **just enough**_ of what the product delivers to _make them **want more**_. Like a free demo for an upcoming game. A Teaser. Keep it short and simple.
 	- **Offer Introduction**: a curriculum of your product. Highlighting _**why**_ they should care about it. Answers to the "lead" above:
 		- "_`[A solution]` ==so that== (or ==so you can==) solve `[the pain point]`_."
+		- "_For `[a price]`, I will teach you how to `[achieve a desire]` in `[timeframe]`._"
 	- **More social proof**: tweets and screenshots of good reviews on your product. If you are just starting out you need to make it your full time job to get social proof. 
 	- **[[Entrepreneurship#Guaranty |Risk Reversal]]**: cancel anytime or next round for free (if it's a subscription), refund,...
 	- **Call To Action**: remind them of a few of their pain points, then remind them of where they could be with your solution.

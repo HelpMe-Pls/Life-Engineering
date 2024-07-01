@@ -13,11 +13,13 @@
 > [!important]- Deal with rejections
 > - If the question is: "Should I ask (for something)?", then the answer will always be "YES". If you ask and get rejected, you're not ending up worse off compared to not asking.
 > - Treat a "No" as a "Not now". Studies show that if you initially get a "no", your follow-up ask is ***twice*** as likely to get a "yes".
+> - No is a decision. Yes is a responsibility.
 > - The more rejections you get, the more refined your final result should be. Rejections can also come from your side. Imagine you ask for something and get accepted first try, then your options are limited to the point of that "acceptance".
 > - _Ask and it will be given to you; seek and you will find; knock and the door will be opened to you._
 - Charisma (or "rizz", as they say) is the ability to project confidence and love at the same time. It’s almost always possible to be honest and positive.
 - For important decisions, discard memory and identity, and focus on the problem. 
 > It’s not about having correct judgment. It’s about avoiding incorrect judgments.
+> It is not the strongest of the species that survives, nor the most intelligent. It is the one most adaptable to change.
 - You aren’t confident because you are trapped in someone else’s story. You don’t have a chance to transform into who you were meant to become.
 > When you are the principal, then you are the owner—you care, and you will do a great job. When you are the agent and you are doing it on somebody else’s behalf, you can do a bad job.
 - There are no limits except for the ones you place on yourself. Practically speaking, you're the only one who can stop yourself and also the only one moving forward. Never compare yourself to someone who seems to effortlessly achieved your goals and then underestimate your abilities. If there's proof that something is humanly possible, you can (partially) make it happen.  
@@ -36,3 +38,4 @@
 - When things happen not to be in your favor, stop and ask: "What can I learn from this?"
 - A happy person isn’t someone who’s happy all the time. It’s someone who effortlessly interprets events in such a way that they don’t lose their innate peace.
 - “I don’t have time” is just another way of saying “It’s not a priority”.
+- Value your time. It’s more important than your money. It’s more important than your friends. It is more important than anything. Your time is all you have. Time is literally a piece of your existence. Do not waste your time.

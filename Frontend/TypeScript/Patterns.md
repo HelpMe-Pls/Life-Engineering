@@ -1,3 +1,6 @@
+Check [this](https://www.npmjs.com/package/type-fest) out.
+
+----
 # `DistributiveOmit`
 ## The problem
 - Suppose we're having 3 types:
@@ -84,7 +87,7 @@ type Intersected = Admin & User & Guest
 
 type Prettify<T> = {
     [K in keyof T]: T[K]
-} 
+} & {}
 
 type ShowIntersected = Prettify<Intersected>
 // When you hover over `ShowIntersected`:
@@ -95,3 +98,23 @@ type ShowIntersected = Prettify<Intersected>
 //     age: number;
 // }
 ```
+# Resolved union of same type
+- When you want to allow any string, but still give suggestions for known string literals, you can use `string & {}`:
+```tsx
+// No string literal suggestions with this approach:
+type Color = "primary" | "secondary" | string; // Resolved to `type Color = string`
+
+// Existing string literal is now suggested:
+type Color = "primary" | "secondary" | (string & {});
+
+// Example usage:
+type IconProps = {
+  color: Color;
+};
+
+const Icon = ({ color }: IconProps) => {
+  // ...
+};
+<Icon color="" />; // "primary" & "secondary" is suggested here after applying the `string & {}` trick
+```
+- Notice that this is just a temporary fix. Someday, `string | "literal"` will just work.

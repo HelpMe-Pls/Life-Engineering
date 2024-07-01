@@ -41,6 +41,11 @@
 - What are the topics that tend to cause entropy in a marriage? Start with your parents.
 - f
 - f
+
+# For intimacy
+- What feelings are hard for you to communicate? How can I make it easier?
+- What is a compromise you've had to make since meeting me?
+- What was the most recent experience that made you feel closer to me?
 # For business
 - Do you want to leave your friends behind? Or be the one left behind?
 - Tell me about a time when the outcome of your idea was far off from what you had planned. For example you planned to sell product X and ultimately ended up selling product Y.

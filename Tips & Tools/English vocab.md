@@ -10,6 +10,8 @@ cliché (n): triteness, an opinion that is overused and betrays a lack of origin
 
 profound (adj-n): deep af
 
+rote (n): học vẹt
+
 omnipresent (adj) = ubiquitous, pervasive: present everywhere at the same time
 
 disarray (v-n): out of order, confusion
@@ -22,9 +24,9 @@ substitute (v-n): replacement, exchange
 
 conform {to} (v): abide by, comply with, adhere to
 
-pertinent (adj): apposite, relevant, appropriate
+==pertinent== (adj): apposite, relevant, appropriate
 
-judicious (adj): wise, thoughtful, sensible
+==judicious== (adj): wise, thoughtful, sensible
 
 punitive (adj) = penal, disciplinary: inflicting or intended as punishment
 
@@ -38,7 +40,7 @@ scour (v-n): search, scrub, polish
 
 ambiguous (adj): uncertain, fishy, suspicious, esoteric
 
-obstinate (adj): unpersuadable, stubborn, willful, rigid, tenacious
+obstinate (adj): unpersuadable, stubborn, willful, rigid, tenacious, adamant
 
 empirical (adj): based on observation or experience rather than theory or pure logic
 
@@ -88,23 +90,25 @@ cater {to/for sb/sth} (v): to provide (food & drinks)
 
 brevity (n): briefness, concision
 
+==ephemeral== (adj-n): short-lived
+
 de facto (adv-adj): in fact, actually, lowkey recognized 
 
 akin {to} (adj): alike, similar
 
-stipulate (v): specify, demand, prescribe
+==stipulate== (v): specify, demand, prescribe
 
 vernacular (adj-n): native speech, regional language
 
 toil (v-n): labor, grind, exhausting hard work
 
-unscrupulous (adj): unethical, immoral, Machiavellian
+==unscrupulous== (adj): unethical, immoral, Machiavellian
 
 diatribe {against sb/sth} (n): a long and angry speech or piece of writing attacking and criticizing
 
 perplexing (adj): puzzling, confusing, difficult to understand, elusive, quandary
 
-elusive (adj): hard to find, capture, or isolate
+==elusive== (adj): hard to find, capture, or isolate
 
 absurd (adj): ridiculous
 
@@ -116,7 +120,7 @@ malignant (adj): malevolent, benign/malignant (== harmless/harmful) tumour
 
 tumultuous (adj): loud, excited, and emotional; tempestuous
 
-abate (v): calm down, becoming less intense; taper
+==abate== (v): calm down, becoming less intense; taper
 
 delirium (n): not able to think or speak clearly, usually because of illness
 
@@ -158,13 +162,17 @@ pilfering (v): to steal stealthily in small amounts and often again and again
 
 endearing (adj): lovable, adorable
 
+==rapprochement== (n): rapport, fellowship, kinship, solidarity
+
 ominous (adj): foreboding, suggesting that something bad is going to happen in the future
 
 bequeath {sth to sb} (v): transmit, to give as a will
 
 knee-jerk (adj): quy chụp, disapproving
 
-radical (adj-n): extreme, fundamental, foundation, dire, rudimentary
+radical (adj-n): extreme, fundamental, foundation, rudimentary
+
+dire (adj): frightening, sinister, ominous
 
 incisive <in-xai-sive> (adj): impressively direct and decisive (as in manner or presentation)
 
@@ -196,7 +204,7 @@ anecdote (n): giai thoại
 
 apprehend (v): arrest, seize, to perceive, anticipate especially with anxiety, dread, or fear 
 
-trepidation (n): fear, dread, anxiety
+==trepidation== (n): fear, dread, anxiety
 
 precipitous (adj): having a very steep ascent
 
@@ -252,7 +260,7 @@ impetuous (adj): impulsive, thoughtless
 
 commensurate (adj): proportional, comparable, corresponding in size, amount, extent, or degree
 
-perturb (v): bother, disturb, unsettle, concern
+perturb (v): bother, disturb, unsettle, concern, pester
 
 endow (v): gift, bless, equip, provide, empower
 
@@ -266,7 +274,7 @@ sovereign (adj-n): supreme, paramount, absolute, tối cao
 
 mendacity (n): lie, falsehood, deceit
 
-formidable (adj): terrifying, intimidating, scary
+==formidable== (adj): terrifying, intimidating, scary
 
 ambivalent (adj): uncertain, dubious, hesitant, unsure
 
@@ -408,6 +416,8 @@ delinquent (n-adj): degenerate, incorrigible, delayed, overdue, belated
 
 malleable (adj): adaptable, flexible, moldable, pliable
 
+stringent (adj): strict, rigorous, rigid
+
 idiosyncrasy (n): characteristic, trait, mannerism, peculiarity
 
 strife (n): conflict, discord, rivalry, warfare, contention
@@ -417,6 +427,8 @@ ignominy (n): disgrace, shame, humiliation
 consternation (n): dismay, panic, a strong feeling of surprise or sudden disappointment that causes confusion
 
 embalm (v): ướp xác
+
+elixir (n): liquid magic potion, healing everything
 
 leaven (v-n): lighten
 
@@ -472,7 +484,9 @@ bane (v-n): curse, nemesis
 
 coy (adj): increase interest in something by intentionally keeping secret
 
-ineptitude (n): skill issues
+==riveting== (adj): enthralling, fascinating, gripping, intriguing
+
+==ineptitude== (n): skill issues
 
 treason (n): treachery, betrayal, phản quốc
 
@@ -508,6 +522,8 @@ egregious (adj): blatant, obvious, conspicuous, flagrant
 
 mar (v-n): spoil, tarnish, blemish, defect
 
-nuisance (n): harm, pest, injury
+nuisance (n): harm, pest, injury, detriment
 
 revel (v-n): binge
+
+bough (n): the main branch of a tree

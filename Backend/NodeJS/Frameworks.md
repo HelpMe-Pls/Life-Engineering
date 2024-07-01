@@ -335,7 +335,7 @@ async findAll(
 ```
 
 ### Guards
-- Guards are responsible for ***authorization*** (i.e. determine whether a given request will be handled by the route handler or not, depending on certain conditions (like permissions, roles, ACLs, etc.) present at run-time).
+- Guards are responsible for ***authorization*** (i.e. determine whether a given request will be handled by the [[#Controller |route handler]] or not, depending on certain conditions (like permissions, roles, ACLs, etc.) present at run-time).
 - A guard is defined with the `@Injectable()` decorator and `implements` the `CanActivate` interface:
 ```ts
 import { Injectable, CanActivate, ExecutionContext } from '@nestjs/common';
@@ -347,7 +347,7 @@ export class AuthGuard implements CanActivate {
     context: ExecutionContext,
   ): boolean | Promise<boolean> | Observable<boolean> {
     const request = context.switchToHttp().getRequest();
-    return validateRequest(request); // `validateRequest` could be imported of implemented as a private method in this same class
+    return validateRequest(request); // `validateRequest` could be imported or implemented as a private method in this same class
   }
 }
 ```
@@ -367,14 +367,7 @@ import { Reflector } from '@nestjs/core';
 
 export const Roles = Reflector.createDecorator<string[]>();
 
-// cats.controller.ts:
-@Post()
-@Roles(['admin'])
-async create(@Body() createCatDto: CreateCatDto) {
-  this.catsService.create(createCatDto);
-}
-
-// roles.guard.ts:
+//---------------------- roles.guard.ts:
 import { Injectable, CanActivate, ExecutionContext } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
 import { Roles } from './roles.decorator';
@@ -390,8 +383,15 @@ export class RolesGuard implements CanActivate {
     }
     const request = context.switchToHttp().getRequest();
     const user = request.user;
-    return matchRoles(roles, user.roles); // `matchRoles` could be imported of implemented as a private method in this same class
+    return matchRoles(roles, user.roles); // `matchRoles` could be imported or implemented as a private method in this same class
   }
+}
+
+//--------------------- cats.controller.ts:
+@Post()
+@Roles(['admin'])
+async create(@Body() createCatDto: CreateCatDto) {
+  this.catsService.create(createCatDto);
 }
 
 // When a user with insufficient privileges requests an endpoint, Nest automatically returns the following response:

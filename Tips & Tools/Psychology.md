@@ -55,6 +55,7 @@
 - Luck and risk are siblings. They are both the reality that every outcome in life is guided by forces other than individual effort. The accidental impact of actions outside of your control can be more consequential than the ones you consciously take.
 - Risk is escalated when you get into business doing what you love versus doing what needs to be done.
 - Risk is escalated when you cede control over major business functions to someone who you blindly trusted.
+- You never know what worse luck your bad luck has saved you from.
 - Despite what you may have read or heard, wealth is a process, not an event (*and so does luck*). Wealth eludes most people because they are preoccupied with events while disregarding process. ***Without process, there is no event***.
 - Ways to get lucky: 
 	• Hope luck finds you. 
@@ -62,6 +63,7 @@
 	• Prepare the mind and be sensitive to chances others miss. 
 	• Become the best at what you do. Refine what you do until this is true. Opportunity will seek you out. Luck becomes your destiny. 
 - Opportunity is rarely about some blockbuster breakthrough like the light bulb or the car, but as simple as an unmet need, or a need not met adequately. Opportunity is a solution to an inconvenience. Opportunity is simplification for better service. Opportunity is putting weak companies out of business.
+- Do not mistake a confident explanation for an accurate prediction.
 ## Execution
 - Spreading out your bets and staying the course through the ups and downs can lead to outsized successes, thanks to the power of tail events.
 - Answer three questions about every decision of *consequence*:
