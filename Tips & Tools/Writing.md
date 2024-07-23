@@ -90,6 +90,7 @@
 - Here are some leads which can help you scale your audience:
 	- **Engaging with big accounts**: respond to accounts with a large following 10-20 times per day with _your personal experience relating to the topic they posted about._ **Do not** reply by rewording what they said. Remember — pains, benefits, and transformations for a specific awareness level — that is what will make people follow you.
 	- **Networking with people you *want* to work with**: send 3-5 DMs per day complimenting someone you want to work with on a recent post of theirs. Follow up with them in a few days with content that you wrote using theirs as inspiration. DM it to them and tell them that they inspired what you wrote (many times they will engage with it, boosting the amount of impressions it gets).
+	- ==**The BIGGEST growth lever in business is customer retention and referrals**==: [[Entrepreneurship#Free advertising |Happy customers]] are more likely to spend more cash and buy your new products or services. The longer you retain customers, the more opportunity you have to earn more revenue from them.
 	- **Writing beginner-friendly educational content**: we need a balance of growth and authority. Target a very beginner level (and low level of awareness) problem and educated people on how to overcome it. List style posts (bullet point steps) work the best in this scenario. Then turn each of the bullet points into their own post.
 	- **Boosting traffic through curation**: write a thread or a post and mention large accounts in it (they may engage with it). If you write a thread about fitness and go over a talking point that a large account talks about, recommend people to follow that account.
 	- **Immerse yourself in a conducive growth environment**: for the next 30 days, follow the people you aspire to be like and comment on their posts. Watch YouTube videos and only expose yourself to an echo chamber of content that you would want to create. Listen to audiobooks and podcasts on the topics you want to talk about. Read a book this month on something that you _may_ want to be known for. This alone will fill your mind with ideas on how to grow and write.
@@ -113,6 +114,7 @@
 - Short-form - short attention span. No retention. They're hooks for enticing a new audience. The purpose is to spark their interest and curiosity. People never buy things straight off of a short-form post.
 - Your job is to [[Entrepreneurship#Persuasion |convert]] your audience to the point where they become your customer. Take advantage of controversial topics and quotes.
 - A quote is like packaging up 10 years of experience in one sentence. They have _depth_ behind them.
+- Try not to embed links in the.
 - You can also test new ideas and monitor your audience's engagement:
 	- Tweets
 	- IG posts & stories
@@ -208,7 +210,7 @@
 - If you get someone’s attention, half the battle is won. The other half is letting selfishness take over your audience and tailor your messages to their self-interest.
 - Your job is to capture attention, hold attention, and deliver value to that attention throughout all of your writing.
 > The most influential ideas are not the most intelligent ones but the most mediocre. Something that is easily resonates with everyone.
-- Give people what they want in a way they're not expecting. You're trying to ==evoke their emotional response==. Once the curiosity loop is opened, the mind feels committed to figuring out the rest of the story. 
+- Give people what they want in a way they're not expecting. You're trying to ==evoke their emotional response. Make it relatable==. Once the curiosity loop is opened, the mind feels committed to figuring out the rest of the story. 
 - If you can take people on an emotional ride of love, hate, excitement, deceit, peaceful, offended, and any other emotion that eventually ends in a benefit for their life — you have mastered the art of content creation.
 	- Stories are layers of metaphors, concepts, perspectives, comparisons and experiences that take people on a journey. You present a problem and guide someone to overcome it. Craft a compelling - intriguing **[[#Active voice |story]]** is the way to go.
 - ***Controversy*** is an under-utilized factor. ==Framing your content to spark debate== is highly effective, as long as it avoids being extremely offensive (e.g. topics like religion or core values should be approached with careful consideration). **Use this as a way to *build a deeper connection* with your audience.** 
@@ -310,7 +312,7 @@
 > Analyze and pick out a specific post time where your posts have the most engagement.
 - When you hit the right idea, capitalize on it, *fast*, when your name is still fresh in their minds.
 ### Refine your high-performers
-- _**Consciously** consume_ the content related to your high-performing topics and take notes on those that resonate well with you.
+- _**Consciously** consume_ the content related to your high-performing topics and take notes on those that resonate well with you. Only consume what you’d like to become.
 - Filter by popularity to pick up the hook, the thumbnail, the structure,... anything that makes their video/post went viral (by noticing your own reaction), note that down and try to imitate them.
 > Recycle them after a certain batch of new followers to keep them hooked.
 ### Engage with your audience
@@ -323,6 +325,7 @@
 - Notice those followers who regularly engage, give them something free as a treat. See if you can help them in your area of expertise. Test your ideas and products on them before going big.
 ### Learn from others
 - Be a _**conscious** consumer_ of your inspiring creators. _**Learn**_ their system. Join their email lists, read their blogs, watch their viral content, study their product landing pages, and *buy their courses* to get new ideas for your own. Make your product a remix of theirs.
+- Learning is problem-solving, not hoarding as much knowledge as you can.
 - Always have this question in your mind: "What's so good about this? How can it be better?"
 
 ## Idea validation
@@ -423,7 +426,7 @@
 	- **The sub-headline**: a risk-reversal assurance, or a hint at your _**unique** mechanism_. 
 		- "_I help `[targeted customers]` get `[desires]` without `[the painful trade-offs]` through `[my unique mechanism]`._"
 	- **[[#Social proof]]**: works best if you have a good [[Entrepreneurship#Networking |community]] where you can send a free trial of your product to get their *good* reviews.
-	- **Lead**: a bullet point list of 5-6 qualifying pain points, unfulfilled ***needs*** (usually the lack of clarity to achieve something that your product will offer, or something they wouldn't want to become, i.e. the *anti-vision*). Have some context around them, make them feel emotional & personal. Give them reasons to continue reading to find out what **the** solution could be (your unique mechanism).  
+	- **Lead**: a bullet point list of 5-6 qualifying pain points, unfulfilled ***needs*** (usually the lack of clarity to achieve something that your product will offer, or something they wouldn't want to become, i.e. the *anti-vision*). Have some context around them, make them feel personal & special. Give them reasons to continue reading to find out what **the** solution could be (your unique mechanism).  
 	- **Transformation & Mechanism**: your job is to _give away **just enough**_ of what the product delivers to _make them **want more**_. Like a free demo for an upcoming game. A Teaser. Keep it short and simple.
 	- **Offer Introduction**: a curriculum of your product. Highlighting _**why**_ they should care about it. Answers to the "lead" above:
 		- "_`[A solution]` ==so that== (or ==so you can==) solve `[the pain point]`_."

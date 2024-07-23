@@ -9,6 +9,7 @@
 - What are your insecurities?
 - Tell me about something interesting that you recently learnt. How did you learn that?
 - What's your rich life? Are those things the same things that make you happy?
+- What is your guilt-free spending ?
 - Tell me about something beautiful. Something artistic (a favorite/recent movie, song, writing,...), or a wholesome moment/memory and why do you think it's beautiful.
 - What's the most valuable thing in your opinion?
 - Who is your guardian? Someone who raises your awareness and helps you from taking unnecessary risks? Someone who you trust to give advice and make you feel safe in the face of uncertainty. Do you feel that the person also prevents you from taking opportunities? 
@@ -39,7 +40,7 @@
 
 # For potential mate
 - What are the topics that tend to cause entropy in a marriage? Start with your parents.
-- f
+- 
 - f
 
 # For intimacy

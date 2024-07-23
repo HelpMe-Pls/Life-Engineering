@@ -1,4 +1,8 @@
+- Freedom is your _final_ goal. To be able to do whatever you want, when you want, for as long as you want. As an entrepreneur, you get to design your own system. 
+- Entrepreneurship is your chance to build your work around your life, not be swallowed up by it. Entrepreneurship is _a mindset_, not a title.
+- The first minute of action is worth more than a year of perfect planning.
 - Self-improvement is about solving problems in your life. Entrepreneurship is about solving problems in others life. When you do both, you unlock purpose, meaning, and fulfillment.
+- As an entrepreneur, you “hunt” for your survival by gathering knowledge, creating a valuable product, and putting it in front of people who could benefit from it.
 - If you believe your product or service can fulfill a _true **need**_, it’s your moral obligation to sell it.
 - You weren't born with an interest. You programmed yourself into it. You were persuaded of its importance and adopted it to help you achieve your goals in life. That's your ***unfair advantage***. So find a way to articulate that into story, make it intriguing enough so that you grasp the attention for your audience. Embrace and amplify your uniqueness in a way that attracts people to become friends and customers.
 - You are to become the _source_ of your interests to attract an audience. Not an influencer, a producer. ***A value creator***, to be exact. You are trying to improve the lives of others by consuming, synthesizing, developing, creating, and distributing value. The heart of entrepreneurship is creation and innovation.
@@ -24,7 +28,8 @@
 > - 100 first posts.
 > - 100 DMs.
 > - 100 newsletters,...
-- Embrace the struggle. That's where the most impactful lessons come from. 
+
+- **Let your mind expand through the discomfort** - the worst thing you can do is quit when you are feeling growing pains.
 - Avoid the trap of expertise: pause, slow down, and consider whether "the way I've always done it" is really the best way.
 > Work compresses the mind, rest expands the mind. 
 > **Attaining the unprecedented demands unprecedented action**. 
@@ -144,7 +149,7 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 	- What are **the upsides** of viewing things from a new perspective and the day-to-day ***benefits*** associated with it? You can guide people deeper into how the big problem is impacting their experience (raising their awareness even more). Get *specific* with the *benefits* of your product rather than its features. ==Extrapolate forward the benefit of a certain feature. Make them *emotional and transformative*==. This is where you get ahead of your competitors:
 		- You don’t buy a Honda; you buy *reliability*.
 		- You don’t buy a vacation; you buy an *experience*.
-	- What is **the process** for getting there and can you ***make it simple*** enough to *act on immediately*?
+	- What is **the process** for getting there and can you ***make it simple*** enough to *act on immediately*? ==What’s in it for them?==
 - A successful persuasion should offer:
 	- **Positive behavior change**: behavior change is what makes people remember you for changing their life. If you can relate to the problems people are experiencing with personal or client stories, you show them that change is possible
 	- **The value conversion**: there has to be an exchange of value here, a transaction (e.g. making the sale, scheduling a date, getting engagement, having your content shared,...). ==An ideal persuasion gives people the one thing they crave (and often lack) — **_clarity**_==.
@@ -271,6 +276,9 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 - If your reply is ***good***, they may click on your profile, read your content, and *follow you*.
 	- Tell people what you’ve experienced in your life relating to whatever the creator said in the content you are replying to. Use aspects of your life’s story to add value to the post. Talking about yourself leads to the most profile clicks.
 - Start with replying to small accounts. That's how you refine your words. Small accounts are for building your tribe, not gaining new followers. Large accounts are for making your name known in the space and gaining followers. 
+- Follow this formula: compliment the post → expand on one point with your own insights → ask a thought-provoking question related your niche to gain a follower.
+- For your own posts, make it a habit to leave a thoughtful comment (crafted in a way that ==provokes discussion==) related your niche.
+	- Make them so valuable that they could be a standalone posts all by themselves.
 ##### Quotes and tags
 - Use this when you have something to say and want it to be in front of your audience rather than in the replies.
 - If you quote post or tag someone with valuable advice or something interesting (something that makes its reader _**feel good to share**_), the original creator may repost you to their audience. This means you get more eyes on your content, which increases the potential for people to click on your profile and follow you.
@@ -293,6 +301,9 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 #### Lead magnet
 - ==***Start with a free product***== that gives away _valuable_ advice or _actionable_ insights for a specific skill or interest. From there, you can have their emails and lead them into a paid product *around that same topic*.
 	- If you want to see an increase in sales after your paid product launch, launch a new [free product](https://docs.google.com/document/d/e/2PACX-1vR9erFVnrl2DW3pxLmxwwPc4-v7sWONWQS5Dp-c3URTtXEq3-dzDqIJMx1C9itaW47UxCpkHQanwatl/pub) *relate to that same topic* with ***multiple*** embedded links to your desired paid product. 
+	- Don't emphasize the idea that "it's free". Rather sell it as a ==*quick and easy*== solution. For example:
+		- Bad: Free workout plan
+		- Good: *2 hours a week for a gymnast's body* 
 - Giving away free products is how you [[#Free advertising |build trust]] with your customers and get an idea of how to sell your paid products more easily (i.e. your free product is an excerpt from your paid product to gauge the feedback of your customers before promoting the paid product).
 > You should have twice or thrice as many free products as paid products.
 - Free products should help your audience achieve **one small desirable goal** with a mini course or eBook.
@@ -309,28 +320,41 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 
 ## Networking
 - Knowing how to communicate and DM another person that you want to connect with will open up opportunities to paid work, social leverage, and meeting high-level people.
+- The email structure (if you're reaching out by emails):
+	- Hook (for the Subject)
+	- Short greeting
+	- [[#Compliment]]
+	- Offer meetings 
+	- Offer/show them your work
+	- P.S (about you): your social proof 
 > [!tips]- Smallest viable audience
 > - All you really need is “1000 true fans”— built by connecting with people whose particular challenges and interests overlapped with my particular skills and passions.
 > - A community who already knows you, who follows you, who is rooting for you is one of the most powerful forces in business, and it’s created through _**[[#Lead magnet |generosity]]**_.
 > - People get hooked on CHARACTERS (i.e. stories). People do business with REAL PEOPLE. Especially those who feel like a friend.
 - The final goal is to put your name in more peoples mouths. The more people that know about you, the more work and potential connections will be sent your way. **Get your name in front of as many eyes as possible.**
+> Make it a good habit to reach out to at least 3 influencers in your niche every week.
 - Leverage other people's audiences for traffic by getting your content shared to their audience.
 - Promote your product on content ***relevant*** to the topic of the product.
-- ==Closed mouths don't get fed==. Here are some steps to let more people know about your presence:
+- ==Closed mouths don't get fed==. Ask for _**referrals**_ at the right time and acknowledge the merit of those who helped you is the key to all of this.
+- Here are some steps to let more people know about your presence:
 ### Identify your target
 - **Find somebody that you WANT to DM**: these are the people from whom you are inspired by, the ones that you would want to work with, strategize with and most important of all, you see potential for ***mutual benefit***. 
 - Start within your circles, and once you have an audience and leverage, you can really reach out to anybody and get a warm response.
 - If you want to increase the chances of larger accounts responding to your DMs: follow them and engage with their content for a few days before reaching out so they are familiar with your face and profile picture.
 ### Compliment
-- **Send them an inspired compliment**: find a ==_**specific**_ piece== of their content, work, or current projects that you are *truly* inspired by (or related to) and tell them *how* it motivate/inspire you, or just simply ask them to further discuss on that topic, spark their engagement, create open loops. 
+- **Send them an inspired compliment**: find a ==_**specific**_ piece== of their content, work, or current projects that you are *truly* inspired by (or related to) and tell them *how* it motivate/inspire you. Be detailed to elevate the compliment, or just simply ask them to further discuss on that topic, spark their engagement, create open loops. 
 - Sometimes all it takes is a little ==boost to their self-esteem== with a simple compliment or encouragement. Something simple as "_You’re doing great, keep going._"
-- Again, this works because it leverages primal selfishness. People love praise, and per the principle of *reciprocity*, will feel obligated to repay this soft favor.
+- Again, this works because it leverages primal selfishness. People love praise, and per the principle of *reciprocity*, will feel obligated to repay this soft favor. 
+- ==_**Do not**_ ask for anything in your favor in this stage.== Asking for a "further discussion" is your only available option here. The more specific, the better. Something like:
+	- "_How’s next Tuesday at 10 am at Random Cafe for you? Or whatever is most convenient for you._"
 ### Show interest
 - **Showing interest makes you interesting**: ==be _**genuinely** curious_== about their goals, what drives them, what are they pursuing. 
+- Initiate further discussion. _**Do not**_ give them any hint that you're trying to take something away from them. 
+- Ask specific, thought-provoking question ==related to their expertise==. And then share their response as a post, _**tagging them**_.
 - Pay attention to their profile, from which you can pick up more hints about their vocation.
 ### Lead with value
 - Please, ==don't go straight for a transaction when you haven't given anything ***first***.== Always start with building a mutual connection. 
-- If you have to ask more questions in order to send better actionable tips or resources (YouTube videos, articles, or any *helpful* thing) do it. You have to ***truly*** want to help them — *or pique their interest*.
+- If you have to ask more questions in order to send better actionable tips or resources (YouTube videos, articles, or any *helpful* thing) do it. You have to ***truly*** want to help them — *or pique their interest*. 
 - The least you can do: 
 	- Connect them with someone else in your network.
 	- Just continue having a good conversation and showing interest.
@@ -352,6 +376,17 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 ## Marketing
 - The more developed the market, the more strategic you have to be. Stay out of false promises, countdown timers, marketing gimmicks, and bold claims.
 - People are loyal to brands and relationships, not corporations or businesses. A brand is the best defense to commoditization.
+- Reiterate on these questions throughout your marketing strategy. This is all about setting up a process that helps you identify which tactics work for you:
+	- What is your one goal for this year?
+	- Who exactly is your customer and where can you find them?
+	- What is one marketing activity you can double down on?
+	- How can you delight your first 100 customers?
+	- If you **had** to double your business with no money in thirty days, what would you do?
+> [!info]- Which way to go ?
+> - You never know what’s going to work when it comes to marketing.
+> - To find the thing that does work, what you need is a process of small _experiments_—based on your *best guess* of what might work. 
+> - It’s all about prioritizing tactics and ruthlessly testing them! Find what works (in _**30 days**_ of continuous effort) and double down on it; find what doesn’t work and kill it.
+> - The simple lesson here is that you need to find the tactics that are right for your business—not just what’s the “hottest” marketing strategy this month.
 - Derived from the [[Entrepreneurship#Problems and solutions |eternal markets]], whenever you write content, sales pages, or promotions for your product write it from the lens of one of (or a combination of) these desires:
 	- Career advancement
 	- Skill acquisition

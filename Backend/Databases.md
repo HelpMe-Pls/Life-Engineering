@@ -86,7 +86,7 @@ module.exports = mongoose.model("Book", BookSchema);
 
 # SQL (Squeal :))
 ## Relationships
-- For complex relationships, use the [prisma-erd-generator](https://github.com/keonik/prisma-erd-generator) to represent them visually.
+- For complex relationships, use the [prisma-erd-generator](https://github.com/keonik/prisma-erd-generator) to visualize them.
 - ==***Prefer isolating models***== according to their relationships rather than having a centralized model that is related to many other models. For example, having a `NoteImage` related to `Note` and `UserImage` related to `User` rather than having a single `Image` model which is referred to `User` and `Note`.
 	 Even though `NoteImage` and `UserImage` are almost identical, it's still recommended to separate them for better maintainability (polymorphism and databases don't mix well).
 ### One-to-one

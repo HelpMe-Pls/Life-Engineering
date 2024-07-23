@@ -567,7 +567,7 @@ a:focus img {
 </article>
 ```
 ### `drop-shadow`
-- `filter: drop-shadow()` creates a shadow that conforms to ***the shape***. It’s not bound to the box model, meaning the outline of the element is recognized and the transparency around it is ignored so that the intended shape receives the shadow.
+- `filter: drop-shadow()` creates a shadow that ==conforms to ***the shape***==. It’s not bound to the box model, meaning the outline of the element is recognized and the transparency around it is ignored so that the intended shape receives the shadow.
 	   It takes the same arguments as `box-shadow`, without the `inset`, `<spread-radius>`, and the third argument specifies a “standard deviation” instead of a blur radius. It produces a softer, more-blended shadow by using the _Gaussian blurring_. This means that if we use `filter: drop-shadow()` on an image that ***supports transparency*** (e.g. png, gif, svg), the shadow will apply to the non-transparent parts of the image. This effect isn't limited to images, either—it works for any DOM node.
 - When we apply `filter: drop-shadow()` to an element, it contours that element and [all of its descendants](https://codesandbox.io/s/drop-shadow-1otcu1?file=/index.html) (even non-contiguous ones, like the blue circle), and applies the shadow to that ***entire shape***. We can also apply it to a [_group_ of elements](https://codesandbox.io/s/drop-shadow-group-t5nh3k), to make sure we don't have any "shadow overlap" (which happens if we used `box-shadow`)
 - Make sure to test `drop-shadow` on Safari if your app supports it (browser's glitch). Opt for `box-shadow` instead, if the `drop-shadow` glitch happens too often.

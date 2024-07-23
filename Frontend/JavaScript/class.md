@@ -147,8 +147,10 @@ temp.fahrenheit = 86;
 console.log(temp.celsius);  // 30
 ```
 ## Instance vs static methods
-- Instance methods can only be called on instances of the class and can access the instance’s properties, while static methods can only be called *directly* on the class and *cannot* access instance properties.
-- Static methods or properties are stored *natively* in the class (i.e. only available for the class itself) instead of its prototype. They are defined with the `static` keyword:
+- Instance methods can only be called on instances of the class.
+- Instance methods can access static properties, but not the other way around:
+	- Static methods can ***only*** access static properties *and* methods.
+- Static methods or properties are ***only*** available for the class defining it and its value is ***shared*** among all instances of the class, and therefore, changes to a static property are reflected across all instances. They are defined with the `static` keyword:
 ```js
 class Temperature {
   // same code from above

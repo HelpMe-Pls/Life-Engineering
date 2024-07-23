@@ -11,6 +11,7 @@
 
 # Wealth
 - “Get Rich Quick” must not be confused with “Get Rich Easy”.
+- Money is like gasoline during a road trip. You don’t want to run out of gas on your trip, but you’re not doing a tour of gas stations.
 - You don’t get rich by spending your time to save money. You get rich by saving your time to make money.
 - Wealth is authored by strong familial relationships, fitness and health, and ***freedom***—not by material possessions. What steals freedom, steals wealth.
 - Wealth doesn’t drop from the sky or come from a game show. Wealth from lottery/gambling? Taking that route, you essentially become a hitchhiker with no seat belt. 
@@ -64,6 +65,7 @@
 	• Become the best at what you do. Refine what you do until this is true. Opportunity will seek you out. Luck becomes your destiny. 
 - Opportunity is rarely about some blockbuster breakthrough like the light bulb or the car, but as simple as an unmet need, or a need not met adequately. Opportunity is a solution to an inconvenience. Opportunity is simplification for better service. Opportunity is putting weak companies out of business.
 - Do not mistake a confident explanation for an accurate prediction.
+- You may not be able to control what luck you encounter, but you can certainly prepare to take advantage of it. Only the skilled are ready for their luck
 ## Execution
 - Spreading out your bets and staying the course through the ups and downs can lead to outsized successes, thanks to the power of tail events.
 - Answer three questions about every decision of *consequence*:

@@ -140,7 +140,7 @@ tentative (adj): uncertain, hesitant
 
 stultify (v): negate, to impair, invalidate, or make ineffective
 
-delineate (v): to indicate, portray, describe
+delineate (v): to indicate, portray, describe, define
 
 proclivity (n): predilection, tendency, a strong inherent inclination toward something objectionable
 
@@ -314,7 +314,7 @@ coveted (adj-v2): desired, craved, highly sought after
 
 harbinger (v-n): predict, imply, foreshadow, prognosticate, pioneer, precursor
 
-insinuate (v): imply, subtly introduce
+insinuate (v): imply, subtly introduce, innuendo (n)
 
 contingent (adj-n): empirical, possible, unpredictable, delegacy
 
@@ -478,7 +478,7 @@ conniving (adj): devious, Machiavellian, calculating, manipulative
 
 futility (n): meaningless, no effect, achieving nothing
 
-purgatory (n): 1 level above hell, suffering
+purgatory (n): 1 level above hell, temporary suffering
 
 bane (v-n): curse, nemesis
 
@@ -527,3 +527,11 @@ nuisance (n): harm, pest, injury, detriment
 revel (v-n): binge
 
 bough (n): the main branch of a tree
+
+==didactic== (n): designed or intended to teach >> autodidact: self-learner
+
+fortuitously: fortunately, luckily
+
+repercussion (n): reflection, influence, impact, effect
+
+pertain {to} (v): belong, a part of 
