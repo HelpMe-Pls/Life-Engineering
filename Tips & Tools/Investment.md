@@ -1,5 +1,6 @@
 # Leverages
 - We live in an age of infinite leverage, and the economic rewards for genuine intellectual curiosity have never been higher. 
+- All leverages lie in ==taking action==, not in hesitation.
 - Following your genuine intellectual curiosity is a better foundation for a career than following whatever is making money right now.
 - To invest is to use ***leverages*** to scale existing assets/businesses.
 ## Capital

@@ -22,9 +22,11 @@ conventional (adj): standard, traditional, typical
 
 substitute (v-n): replacement, exchange 
 
+vicarious (adj): substitutionary
+
 conform {to} (v): abide by, comply with, adhere to
 
-==pertinent== (adj): apposite, relevant, appropriate
+==pertinent== {to} (adj): apposite, relevant, appropriate
 
 ==judicious== (adj): wise, thoughtful, sensible
 
@@ -116,7 +118,9 @@ tether {sth_to sth} (v): to tie, connect
 
 eminent (adj): famous and respected, excellent
 
-malignant (adj): malevolent, benign/malignant (== harmless/harmful) tumour
+aristocratic (adj): socially exclusive, notably superior or excellent
+
+malignant (adj): malevolent, benign/malignant (== harmless/harmful) tumor
 
 tumultuous (adj): loud, excited, and emotional; tempestuous
 
@@ -230,7 +234,9 @@ incarnation (n): embodiment, manifestation, version, đời/kiếp
 
 tribulation (n) <tree-bulation>: misery, distress, torment
 
-accrue (v): accumulate, maximize, gain, conglomerate
+equanimity (n): balance, evenness of mind especially under stress
+
+accrue (v): accumulate, maximize, gain, conglomerate (adj-v-n)
 
 repression (n): restraint, suppresion, constraint
 
@@ -373,6 +379,8 @@ incumbent {on} (n-adj): required, necessary, obligatory
 unbidden (adj): unasked, uninvited, unsolicited
 
 peril (v-n): endanger, risk, threaten, danger, threat, menace
+
+ire (n): intense and usually openly displayed anger
 
 wend (v-n): travel, go, move, proceed 
 
@@ -535,3 +543,21 @@ fortuitously: fortunately, luckily
 repercussion (n): reflection, influence, impact, effect
 
 pertain {to} (v): belong, a part of 
+
+plunder (v-n): loot
+
+rhetoric (n): discourse, diễn đạt, hùng biện
+
+holistic (adj): toàn diện
+
+contort (v): to twist in a violent manner
+
+homage (n): respect, tribute
+
+bigot (n): a narrow-minded person
+
+clandestine (adj): furtive, sneaky, stealthy
+
+militate {against} (v): to have weight >> procrastination militates against progression
+
+excursion (n): expedition, amplitude

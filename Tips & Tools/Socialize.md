@@ -12,6 +12,7 @@
 - What is your guilt-free spending ?
 - Tell me about something beautiful. Something artistic (a favorite/recent movie, song, writing,...), or a wholesome moment/memory and why do you think it's beautiful.
 - What's the most valuable thing in your opinion?
+- Which of your current values would be different if you were raised by different parents?
 - Who is your guardian? Someone who raises your awareness and helps you from taking unnecessary risks? Someone who you trust to give advice and make you feel safe in the face of uncertainty. Do you feel that the person also prevents you from taking opportunities? 
 - Are you a religious person? What's the role of religion in your life?
 - Do you believe that life is intrinsically blissful or suffering? Why?
@@ -19,7 +20,7 @@
 - What would be your advice to the people of your gen?
 - Which of your current values would be different if you were raised by different parents?
 - What are the things about your life that making you "feel behind"? Are those the things you do that you know you shouldn't do?
-- What did you fail at this week?”
+- What did you fail at this week?
 - What does your ideal relationship look like?
 - What do you believe the most with the least amount of evidence of it being true?
 - Do you spend more time defending what you already know instead of trying to learn something new?
@@ -33,6 +34,7 @@
 - Tell me about an event that made you realized you've been coping/lying to yourself, and it made you accept the thing you're trying to hide so that you can peacefully live with it. 
 - Do you want to be the world's best player and known as the worst, or the world's worst player and known as the best ?
 - What are some of the things that you think you deserve to have, but you couldn't have it? Why?
+- Are you being as nice as you could be, rather than just as nice as you need to be?
 >[!important]- Opinions and the Ego
 >- Don’t criticize the person—criticize the general approach or criticize the class of activities.
 >- Praise the person, and call out exactly what you're praising them for, specifically.

@@ -4,7 +4,7 @@
 - What does writing mean? To connect the dots - which are your thoughts, ideas, and the purpose behind them - and then extract, deliver them in the best possible manner. To write is to think. To think is to evolve. Writing is often the process by which you realize you do not understand what you are talking about.
 - Good writing is felt instantly. Not only is it packed with ideas and insight, it has a certain momentum that compels you to keep reading.
 - If you can write about your interests, you can generate new opportunities, and set yourself up for future monetization of said interests.
-- Such writing attracts attention, delivers a high-value message, and encourages people to follow you and your work, eventually raise the collective well-being.
+- Such writing attracts attention, delivers a high-value message, and encourages people to follow you and your work, eventually raise the collective well-being. That's the meaning of life.
 > You were put on this earth to piece together the puzzle of reality – your writing is how you document your findings.
 ---
 # Preparation
@@ -89,7 +89,7 @@
 ## Leverages
 - Here are some leads which can help you scale your audience:
 	- **Engaging with big accounts**: respond to accounts with a large following 10-20 times per day with _your personal experience relating to the topic they posted about._ **Do not** reply by rewording what they said. Remember — pains, benefits, and transformations for a specific awareness level — that is what will make people follow you.
-	- **Networking with people you *want* to work with**: send 3-5 DMs per day complimenting someone you want to work with on a recent post of theirs. Follow up with them in a few days with content that you wrote using theirs as inspiration. DM it to them and tell them that they inspired what you wrote (many times they will engage with it, boosting the amount of impressions it gets).
+	- **==Networking with people== you *want* to work with**: send 3-5 DMs per day complimenting someone you want to work with on a recent post of theirs. Follow up with them in a few days with content that you wrote using theirs as inspiration. DM it to them and tell them that they inspired what you wrote (many times they will engage with it, boosting the amount of impressions it gets).
 	- ==**The BIGGEST growth lever in business is customer retention and referrals**==: [[Entrepreneurship#Free advertising |Happy customers]] are more likely to spend more cash and buy your new products or services. The longer you retain customers, the more opportunity you have to earn more revenue from them.
 	- **Writing beginner-friendly educational content**: we need a balance of growth and authority. Target a very beginner level (and low level of awareness) problem and educated people on how to overcome it. List style posts (bullet point steps) work the best in this scenario. Then turn each of the bullet points into their own post.
 	- **Boosting traffic through curation**: write a thread or a post and mention large accounts in it (they may engage with it). If you write a thread about fitness and go over a talking point that a large account talks about, recommend people to follow that account.
@@ -114,7 +114,7 @@
 - Short-form - short attention span. No retention. They're hooks for enticing a new audience. The purpose is to spark their interest and curiosity. People never buy things straight off of a short-form post.
 - Your job is to [[Entrepreneurship#Persuasion |convert]] your audience to the point where they become your customer. Take advantage of controversial topics and quotes.
 - A quote is like packaging up 10 years of experience in one sentence. They have _depth_ behind them.
-- Try not to embed links in the.
+- Try not to embed links in this format.
 - You can also test new ideas and monitor your audience's engagement:
 	- Tweets
 	- IG posts & stories
@@ -155,7 +155,8 @@
 - Social media platforms owns the algorithm, your data, and anything you post. It's centralized and your brand is at their mercy. 
 - Your newsletter is the least friction path for you to detach from the dependency on algorithms and direct your followers to an email list for your paid products, giving you full ownership of your audience. Refer to your own newsletter subscriptions. Pick out the format that you love. Copy that.
 - Send a weekly newsletter expanding on your [[#Filter out your top performers |best]] social media posts.
-- ==Construct your content so that it's easy to extract the key takeaways== (e.g. craft your headers in a way that spark the reader's interest and guide their anticipation further down the post, eventually, to your products).
+- ==Construct your content so that it's easy to extract the key takeaways== (e.g. craft your headers in a way that spark the reader's interest and guide their anticipation further down the post, eventually, to your products). Then, give them an opportunity to ***engage*** with your content, something like:
+	- _I'm going to start answering more of the common questions I receive from subscribers in these newsletters. If you're interested in seeing this, reply YES to the email. Send me your questions and I'll do my best to help!_
 - Once you've got a good number of audiences (thousands) in the list, you should focus on:
 	- **Customer creation**: educate your audience to the point of becoming customers for your other products.
 	- **Writing what you want**: all of your authoritative information on one subject is in one place. You don’t have to worry about writing so much about it on social media. Social media now serves as hooks to your newsletter.
@@ -342,6 +343,7 @@
 
 ## Product category
 - Sell what's already selling. If someone isn’t selling it, you probably won’t succeed with your first product.
+- Be intentional about ==keeping a limited product line==. More options also mean more buyer indecision, and therefore, less sales. Do less, but better.
 > Again, to sell a product, you must [[Writing#Learn from others |know how]] a product is sold.
 - To increase the desire and effectiveness of your product, have them track their progress.
 - Your products should include these qualifications: 

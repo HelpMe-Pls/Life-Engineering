@@ -1,9 +1,11 @@
 - Freedom is your _final_ goal. To be able to do whatever you want, when you want, for as long as you want. As an entrepreneur, you get to design your own system. 
 - Entrepreneurship is your chance to build your work around your life, not be swallowed up by it. Entrepreneurship is _a mindset_, not a title.
-- The first minute of action is worth more than a year of perfect planning.
+- The first minute of action is worth more than a year of perfect planning. It’s not just about doing more, ==it’s also about doing the right things better==.
 - Self-improvement is about solving problems in your life. Entrepreneurship is about solving problems in others life. When you do both, you unlock purpose, meaning, and fulfillment.
 - As an entrepreneur, you “hunt” for your survival by gathering knowledge, creating a valuable product, and putting it in front of people who could benefit from it.
 - If you believe your product or service can fulfill a _true **need**_, it’s your moral obligation to sell it.
+> Ethics in business means “*don’t sell anything you wouldn’t buy*”.
+- Understand that ethical wealth creation is possible. If you secretly despise wealth, it will elude you.
 - You weren't born with an interest. You programmed yourself into it. You were persuaded of its importance and adopted it to help you achieve your goals in life. That's your ***unfair advantage***. So find a way to articulate that into story, make it intriguing enough so that you grasp the attention for your audience. Embrace and amplify your uniqueness in a way that attracts people to become friends and customers.
 - You are to become the _source_ of your interests to attract an audience. Not an influencer, a producer. ***A value creator***, to be exact. You are trying to improve the lives of others by consuming, synthesizing, developing, creating, and distributing value. The heart of entrepreneurship is creation and innovation.
 - Value creators are those who dedicate themselves to their interests, take it on as their life’s work to explore them, and distill the information into education. 
@@ -191,6 +193,7 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 - ==Forget the money for a bit. Develop your value and practice offering it to others *without expectation* of anything in return.==
 ### The niche
 > It is You — but at scale. Curate your product with the same care and attention as if ***you*** were the intended customer. Your niche within a niche can be the most obscure thing imaginable, as long as it makes you and your audience passionate.
+- Specific knowledge is knowledge that you cannot be trained for. If society can train you, it can train someone else, and replace you.
 - It is so important to identify the ***need*** in the market. You can't just simply open a business to "do what you love" or "doing what you're good at". ==Your expertise must converge with the demands in the market. Your products exist to solve those needs==.
 - ==_**Be their savior**_==. Be the Guide, *not* the Guru. The goal here is to document what _you_ do, not what you think everyone else should do. Remember to always keep the _need_ prioritized:
 	- When hundreds of people get into a business solely because they know how or want to (not need based), you get put into commoditization position: price wars haggling over a few dollars.
@@ -291,8 +294,8 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 	- Serves as a secondary "bookmark" to your profile so you can come back later.
 ##### DMs
 - Check [[#Networking |this]] out.
-- Be playful, self-conscious & relatable also helps breaking the tension and drop their defenses.
-- ==If someone gets in your DMs to ask a question, that is your chance to refine your marketing strategies==. *Sincerely* help them, walk them through the process of improvement (it's important to ***display compassion*** here), and finally, introduce them to your products (free, then paid):
+- Be playful, self-conscious & relatable also helps breaking the tension and drop their defenses. So called “courtesy knocking”.
+- ==If someone gets in your DMs to ask a question, that is your chance to refine your marketing strategies==. ***Sincerely*** help them, walk them through the process of improvement (it's important to ***display compassion*** here), and finally, introduce them to your products (free, then paid):
 	- "_I gotta go. It was my pleasure to connect with you. In the meantime, I've composed my solutions to your problems `[product link]`._"
 ### Authority
 - Authority comes down to 2 things: depth and [[Entrepreneurship#The ingredients |social proof]].
@@ -376,6 +379,7 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 ## Marketing
 - The more developed the market, the more strategic you have to be. Stay out of false promises, countdown timers, marketing gimmicks, and bold claims.
 - People are loyal to brands and relationships, not corporations or businesses. A brand is the best defense to commoditization.
+- Make sure your messaging and branding are speaking to your core **_buyers_**. Sometimes the users are not those who bought your products. Just keep that in mind.
 - Reiterate on these questions throughout your marketing strategy. This is all about setting up a process that helps you identify which tactics work for you:
 	- What is your one goal for this year?
 	- Who exactly is your customer and where can you find them?
@@ -474,6 +478,7 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 ## Pricing
 ### In
 > If you start too high and aren't making as many sales as you want to, it's going to be hard to justify to your current customers why you lowered the price without having to refund them.
+- It’s often easier to get a BIG yes if you’ve already gotten a small yes.
 - Your price tag should promote an "impulse buy", i.e. it's cheap enough for them to buy without doing mental gymnastics on the decision. Start with a price that you think you'd buy without a second thought. 
 - 2000 ***authentic*** followers is a good place to start monetizing.
 - ***Start low*** and give yourself room to increase the price a few times. Give yourself space for 2-3 reasonable price increases. It's very hard to get [[Writing#Social proof |testimonials]] if you start at a high price. Your first products to be accessible to leverage [[#Authority]]. 
@@ -491,6 +496,10 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 	- Special promotions (like a low-cost first month of your community/cohort or a limited time bonus for your course).
 	- Limited window for hidden bonus content. 
 	- Discount on holidays.
+#### Double down on best sellers
+- Through repeated rounds of product refinement and tracking your metrics, you'll likely identify your best sellers.
+- Then, it's time to put even more sales into that product, by anchoring the buyer with a high price point to nudge them toward a lower-cost option. 
+
 ### Out
 - You can pay for legitimate big accounts (those that have a good number of ***organic*** audience members) to repost or reply to your posts, i.e. buying their shares.
 - DM them, ask if they offer help to grow, and negotiate a deal, something along the lines of:
@@ -546,4 +555,5 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 ## Competition
 - If your preoccupation is with every single thing your competition does, you’re cheating your business and your customers.
 - Forget about your competition 95% of the time. The other 5% should be used to exploit their weaknesses and differentiate your business. Mine their weaknesses and add value [[WIL from books#Rule 4 Notice that opportunity lurks where responsibility has been abdicated |where they aren’t]]. Uncover unfulfilled needs. What could be better?
+- Dissect what your competitors are doing, take note of what's working, put it together, and refined from there.
 - When you fill needs and your army of customers grows, something suddenly happens: Everyone follows you.

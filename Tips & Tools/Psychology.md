@@ -13,6 +13,9 @@
 - “Get Rich Quick” must not be confused with “Get Rich Easy”.
 - Money is like gasoline during a road trip. You don’t want to run out of gas on your trip, but you’re not doing a tour of gas stations.
 - You don’t get rich by spending your time to save money. You get rich by saving your time to make money.
+- You will get rich by giving society what it wants but does not yet know how to get. At scale.
+- Money follows mindful execution, not precedes it.
+- Diversification is for wealth preservation and protection, not wealth creation.
 - Wealth is authored by strong familial relationships, fitness and health, and ***freedom***—not by material possessions. What steals freedom, steals wealth.
 - Wealth doesn’t drop from the sky or come from a game show. Wealth from lottery/gambling? Taking that route, you essentially become a hitchhiker with no seat belt. 
 - The most important skill for getting rich is becoming a perpetual learner. You have to know how to learn anything you want to learn.
