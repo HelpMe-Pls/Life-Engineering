@@ -168,15 +168,10 @@ React.useEffect(() => {
 ```
 
 - Cypress ? Why ? How ?
-
   - Static: catch typos and type errors as you write the code.
-
   - Unit: verify that individual, isolated parts works as expected (we're often testing a single function).
-
   - Integration: verify that several units works together in harmony (we're normally testing a single screen).
-
   - End to End (AKA "e2e test" or "functional testing"): a helper that behaves like an user to click around the app and verify that things function the way you want (we're putting it all together and testing the application as a whole without access to any internals, without mocking the backend,...), which is Cypress (another worthy alternative is Playwright) in this case:
-
 ```tsx
 
 // the "role" could be specified by using the WAI-ARIA `role` attribute in HTML tags

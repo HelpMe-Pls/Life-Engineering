@@ -168,6 +168,8 @@
 	- No matter how many new social media platforms pop up, email is still the most powerful channel for deepening your relationship with your audience.
 - It’s about quality, not quantity. A healthy email list has a ==20 percent open rate==. Target that.
 - Everyone in your audience matters forever, but _especially at the beginning_, you should respond to every single new subscriber.
+	- Even better if you can find a way to get your audience reply to your email, which will move your future email to their "focus inbox", leading to a higher open rate.
+	  An example for this could be something like setting out a challenge and telling them to "_reply YES to this email if you're going to accept the challenge_".
 - ==Set up an autoresponder== and hit them up _right away_ (when they sign up) with your _**best**_ [[Entrepreneurship#Lead magnet |content]]. Use the existing [[#Copywriting |tools]] to help you with that. Here's the recommended sign up email sequence (or you can combine them all to one email):
 	1. Welcome email: "Thanks for joining `[my newsletter]`. ==_What could I write to provide value to you?_==". Or you can give them a form to fill out what they need most help with, so you can tailor your content and products accordingly.
 	2. Connection email: "Send me a connection request on LinkedIn, follow me on Twitter,..."

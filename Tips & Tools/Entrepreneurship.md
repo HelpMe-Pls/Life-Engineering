@@ -7,6 +7,7 @@
 > Ethics in business means “*don’t sell anything you wouldn’t buy*”.
 - Understand that ethical wealth creation is possible. If you secretly despise wealth, it will elude you.
 - You weren't born with an interest. You programmed yourself into it. You were persuaded of its importance and adopted it to help you achieve your goals in life. That's your ***unfair advantage***. So find a way to articulate that into story, make it intriguing enough so that you grasp the attention for your audience. Embrace and amplify your uniqueness in a way that attracts people to become friends and customers.
+> When there's no skin in the game, for many, it becomes just that— a game.
 - You are to become the _source_ of your interests to attract an audience. Not an influencer, a producer. ***A value creator***, to be exact. You are trying to improve the lives of others by consuming, synthesizing, developing, creating, and distributing value. The heart of entrepreneurship is creation and innovation.
 - Value creators are those who dedicate themselves to their interests, take it on as their life’s work to explore them, and distill the information into education. 
 - [[Writing#Build an audience |Building an audience]] of people is to remove your dependency on your employer, government, and any other centralized entity that controls most aspects of your life.
@@ -302,11 +303,11 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 - Depth comes from long-form content: newsletters and blogs.
 - Once you've established authority you can easily pivot around more topics and get more ideas for your products (since the content and other free information you've created to build that authority will be up forever - as long as the internet exists).
 #### Lead magnet
-- ==***Start with a free product***== that gives away _valuable_ advice or _actionable_ insights for a specific skill or interest. From there, you can have their emails and lead them into a paid product *around that same topic*.
+- ==***Start with a free product***== that gives away _valuable_ advice or _actionable_ insights for a specific skill or interest. It's meant to take away the friction, not encourage low appreciation. From there, you can have their emails and lead them into a paid product *around that same topic*.
 	- If you want to see an increase in sales after your paid product launch, launch a new [free product](https://docs.google.com/document/d/e/2PACX-1vR9erFVnrl2DW3pxLmxwwPc4-v7sWONWQS5Dp-c3URTtXEq3-dzDqIJMx1C9itaW47UxCpkHQanwatl/pub) *relate to that same topic* with ***multiple*** embedded links to your desired paid product. 
 	- Don't emphasize the idea that "it's free". Rather sell it as a ==*quick and easy*== solution. For example:
 		- Bad: Free workout plan
-		- Good: *2 hours a week for a gymnast's body* 
+		- **Good**: *2 hours a week for a gymnast's body* 
 - Giving away free products is how you [[#Free advertising |build trust]] with your customers and get an idea of how to sell your paid products more easily (i.e. your free product is an excerpt from your paid product to gauge the feedback of your customers before promoting the paid product).
 > You should have twice or thrice as many free products as paid products.
 - Free products should help your audience achieve **one small desirable goal** with a mini course or eBook.
@@ -489,6 +490,7 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 	- If you can arouse audience emotions, convincing customers to buy is easier.
 - An [example](https://www.kboges.com/courses).
 #### Scarcity
+- It may sound unethical, but the currency of advertisers is anxiety. They create a feeling of deficit to foster in us a residual worry that we are missing out. They guide the customers to think that the FOMO can only be alleviated through acquisition.
 - This is where you can provoke humans primitive desires. Again, strong emotions always win. Leverage FOMO wisely. Get this right and you're golden.
 - Enable early birds prices with 30% off from your desired price. Price increases are a "scarcity event". You will make the most money during your product launch and price increases while sustaining a baseline number of sales in between.
 - Schedule your promotions for limited-time offers for a limited-number of customers:

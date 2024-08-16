@@ -210,6 +210,8 @@ apprehend (v): arrest, seize, to perceive, anticipate especially with anxiety, d
 
 ==trepidation== (n): fear, dread, anxiety
 
+macabre (adj): dreadful, gruesome, horrid
+
 precipitous (adj): having a very steep ascent
 
 dichotomy (n): cực, something with seemingly contradictory qualities
@@ -302,7 +304,7 @@ proletariat (n): the laboring class, the lowest class of a community
 
 acolyte (n): follower
 
-putative (adj): presumed, apparent, alleged
+putative (adj): presumed, apparent, alleged, ostensive
 
 conjecture (v-n): guess, surmise, estimate, suppose, theory
 
@@ -354,6 +356,8 @@ foray {into} (v-n): raid, loot, invasion, an initial and often tentative attempt
 
 averse (adj): allergic, reluctant, loathe/loth/loath
 
+persecute (v): torment, agonize, pester
+
 vanguard (n): innovator, pioneer, forefront, avant-garde <avânt-gard>
 
 vicinity (n): surroundings, neighborhood, proximity
@@ -386,7 +390,7 @@ wend (v-n): travel, go, move, proceed
 
 barring (prep): excepting, aside from, excluding
 
-equivocal <ik-quiv-ocal> (adj): questionable, debatable, ambiguous, suspicious
+equivocal <ik-quiv-ocal> (adj): questionable, debatable, ambiguous, suspicious, opaque
 
 vindictive (adj): vengeful, spiteful, malicious
 
@@ -526,7 +530,7 @@ patronage (n): custom, business, sự ủng hộ (in business context), transact
 
 exemplary (adj-n): gương tốt (để noi theo), dằn mặt
 
-egregious (adj): blatant, obvious, conspicuous, flagrant
+egregious (adj): blatant, obvious, conspicuous, flagrant, prominent
 
 mar (v-n): spoil, tarnish, blemish, defect
 
@@ -561,3 +565,21 @@ clandestine (adj): furtive, sneaky, stealthy
 militate {against} (v): to have weight >> procrastination militates against progression
 
 excursion (n): expedition, amplitude
+
+procure (v): attain, earn, to obtain sth by particular care and effort
+
+lackadaisical (adj): lacking life, spirit, or zest
+
+poppycock (n): nonsense, baloney, humbuggery
+
+filial (adj): of, relating to, or befitting a son or daughter
+
+abrasion (n): irritation, rubbing away by friction
+
+impose (v): áp đặt (thuế)
+
+postmortem (adj-n): autopsy, necropsy
+
+modicum (n): a small portion
+
+==fraught {with}== (adj-v-n): load, full of (sth)
