@@ -13,6 +13,7 @@
 - Tell me about something beautiful. Something artistic (a favorite/recent movie, song, writing,...), or a wholesome moment/memory and why do you think it's beautiful.
 - What's the most valuable thing in your opinion?
 - Which of your current values would be different if you were raised by different parents?
+- Have you ever committed a crime ?
 - Who is your guardian? Someone who raises your awareness and helps you from taking unnecessary risks? Someone who you trust to give advice and make you feel safe in the face of uncertainty. Do you feel that the person also prevents you from taking opportunities? 
 - Are you a religious person? What's the role of religion in your life?
 - Do you believe that life is intrinsically blissful or suffering? Why?

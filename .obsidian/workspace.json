@@ -42,13 +42,14 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/Writing.md",
+                    "file": "Tips & Tools/WIL from books.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           },
           {
             "id": "8cedd05142699eb5",
@@ -120,7 +121,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "use client",
+                "query": "hasOwn",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -157,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tips & Tools/English vocab.md",
+                "file": "Tips & Tools/WIL from books.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tips & Tools/English vocab.md"
+                "file": "Tips & Tools/WIL from books.md"
               }
             }
           }
@@ -207,35 +208,36 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "4ad2498b8982437b",
+  "active": "e998ff104dd5ae6f",
   "lastOpenFiles": [
-    "Tips & Tools/Writing.md",
-    "Tips & Tools/Entrepreneurship.md",
     "Tips & Tools/English vocab.md",
-    "Frontend/CSS/Flow layout.md",
-    "Frontend/CSS/CSS.md",
-    "Frontend/CSS/Positioning.md",
-    "Tips & Tools/Tips.md",
-    "Tips & Tools/Career.md",
-    "Tips & Tools/Best practices.md",
-    "Tips & Tools/code-review.png",
-    "Tips & Tools/Interview prep.md",
-    "Tips & Tools/Repository structures.md",
-    "Tips & Tools/Crypto.md",
-    "Tips & Tools/Technical.md",
-    "Tips & Tools/Day-to-day work related.md",
-    "Tips & Tools/System Design.md",
-    "Tips & Tools/You as an interviewer.md",
-    "Tips & Tools/Psychology.md",
-    "Frontend/CSS/Grid.md",
-    "Tips & Tools/VSCode.md",
+    "Tips & Tools/WIL from books.md",
     "Tips & Tools/Socialize.md",
-    "Frontend/CSS/Flex.md",
-    "Tips & Tools/Mentality.md",
-    "Tips & Tools/DSA.md",
-    "Tips & Tools/Investment.md",
-    "Backend/NodeJS/Frameworks.md",
+    "Tips & Tools/Entrepreneurship.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Tips & Tools/Writing.md",
+    "Frontend/JavaScript/Objects.md",
+    "Frontend/TypeScript/Basic Types.md",
+    "Frontend/TypeScript/Fundamentals.md",
     "Frontend/JavaScript/Regular Expressions.md",
+    "Frontend/CSS/CSS.md",
+    "Frontend/HTML/Hyperlinks.md",
+    "Frontend/Frameworks/Remix/Authentication.md",
+    "Frontend/Frameworks/Remix/Routing & Navigation.md",
+    "Frontend/Frameworks/Remix/Data Transfer.md",
+    "Frontend/Network/Browser.md",
+    "Frontend/Network/Connections and protocols.md",
+    "Tips & Tools/Tips.md",
+    "Tips & Tools/Tips & Tools.md",
+    "Frontend/Frameworks/Remix/Error Handling.md",
+    "Frontend/Network/Data Transfer.md",
+    "Frontend/Network/Caching.md",
+    "Frontend/JavaScript/JS Overview.png",
+    "Frontend/JavaScript/In Browser.md",
+    "Backend/Caching.md",
+    "Backend/Backend.md",
+    "Backend/Auth.md",
+    "Tips & Tools/code-review.png",
     "Backend/sql-joins.png",
     "Tips & Tools/OnePersonBusiness.png",
     "Tips & Tools/Screenshot 2024-06-20 105333.png",
@@ -254,7 +256,6 @@
     "Frontend/Tips & Tools/code_review.jfif",
     "Frontend/Tips & Tools/code_review.jfif.crdownload",
     "Frontend/Libraries/React/Where to put state.png",
-    "Frontend/Tips & Tools/git-model.png",
     "DevSecOps"
   ]
 }

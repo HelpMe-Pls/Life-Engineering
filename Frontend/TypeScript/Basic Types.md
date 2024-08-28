@@ -46,7 +46,7 @@ const user: User = {
 - Interfaces can't express unions, mapped types, or conditional types. Type aliases can express any type:
 ```ts
 type StringOrNumber = string | number;
- 
+type Input = StringOrNumber   // type alias 
 const func = (arg: StringOrNumber) => {};
  
 func("hello"); // works

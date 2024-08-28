@@ -8,6 +8,8 @@ endeavor (v-n): to try / an effort to do sth
 
 cliché (n): triteness, an opinion that is overused and betrays a lack of original thought.
 
+banal (adj): dull, boring, insipid
+
 profound (adj-n): deep af
 
 rote (n): học vẹt
@@ -28,11 +30,17 @@ conform {to} (v): abide by, comply with, adhere to
 
 ==pertinent== {to} (adj): apposite, relevant, appropriate
 
-==judicious== (adj): wise, thoughtful, sensible
+==judicious== (adj): wise, thoughtful, sensible, prudent, insightful
 
 punitive (adj) = penal, disciplinary: inflicting or intended as punishment
 
-competent (adj): having the necessary skill to do something successfully. 
+competent (adj): deft, having the necessary skill to do something successfully
+
+adroit (adj): skillful (social)
+
+==ineptitude== (n): skill issues
+
+vie (v) <vai>:  compete, contend
 
 revelation (n): acknowledgement, admission, divulgence
 
@@ -42,13 +50,15 @@ scour (v-n): search, scrub, polish
 
 ambiguous (adj): uncertain, fishy, suspicious, esoteric
 
-obstinate (adj): unpersuadable, stubborn, willful, rigid, tenacious, adamant
+obstinate (adj): unpersuadable, stubborn, willful, rigid, adamant, implacable
 
 empirical (adj): based on observation or experience rather than theory or pure logic
 
 dogmatic (adj): dictatorial, doctrinaire, assertive
 
 refrain {from} (v): stop, restrain, abstain, desist 
+
+moribund (adj): dying (business/patient/tree,...)
 
 cursory (adj): hasty and therefore not thorough or detailed
 
@@ -58,7 +68,7 @@ complacency (n): pride, triumph, self-admiration, smugness
 
 benevolent (adj): !malevolent, altruistic, philanthropical, humanitarian
 
-enmity (n): malevolence, hostility, animosity, antagonism
+enmity (n): hatred, malevolence, hostility, animosity, antagonism
  
 astute (adj): showing sharp powers of judgment; clever, ingenious, insightful, shrewd
 
@@ -66,13 +76,17 @@ reverence (v-n) <rev-er-rence>: deep respect for someone or something
 
 stupendous (adj): astounding, extraordinary, remarkable, prodigious 
 
-audacity (n): daring, bravery, rude, disrespectful, impudence, insolent 
+audacity (n): daring, bravery, bold, disrespectful, impudence, insolent 
 
 posit (v-n): assume, presume, hypothesize
 
 trivial (adj): frivolous, petty, unimportant, futile, nugatory <nu-gâ-tory>
 
-repent (v): regret, be sorry for, be ashamed of, feel remorse for
+repent (v): rue, regret, be sorry for, be ashamed of, feel remorse for
+
+contrition (n): repentance, penitence, remorse, self-reproach
+
+penance <peh-nance> (n): sám hối
 
 ameliorate (v): a fancy word for [improve, refine, enhance]
 
@@ -85,6 +99,8 @@ theretofore (adv): up to that mentioned time
 precede (v) {caution: it's not precEEd}: to be in front of, earlier than, to surpass 
 
 recede (v): withdraw, diminish, decrease 
+
+assuage (v): ease, quench, appease, pacify
 
 disparate (adj): distinct, uniquely different from each other
 
@@ -104,17 +120,21 @@ vernacular (adj-n): native speech, regional language
 
 toil (v-n): labor, grind, exhausting hard work
 
+bellow (v): bawl, grawl, to shout in a deep voice
+
 ==unscrupulous== (adj): unethical, immoral, Machiavellian
 
 diatribe {against sb/sth} (n): a long and angry speech or piece of writing attacking and criticizing
 
 perplexing (adj): puzzling, confusing, difficult to understand, elusive, quandary
 
-==elusive== (adj): hard to find, capture, or isolate
+==elusive== (adj): fugitive, hard to find, capture, or isolate
 
 absurd (adj): ridiculous
 
 tether {sth_to sth} (v): to tie, connect
+
+condemn (v): sentence, convict, to pronounce guilty
 
 eminent (adj): famous and respected, excellent
 
@@ -122,9 +142,13 @@ aristocratic (adj): socially exclusive, notably superior or excellent
 
 malignant (adj): malevolent, benign/malignant (== harmless/harmful) tumor
 
-tumultuous (adj): loud, excited, and emotional; tempestuous
+tumultuous (adj): loud, confused, and violently emotional; tempestuous
+
+exuberant (adj): abundant of energy, excitement and happiness
 
 ==abate== (v): calm down, becoming less intense; taper
+
+equanimity (n): calmness, tranquility
 
 delirium (n): not able to think or speak clearly, usually because of illness
 
@@ -158,7 +182,13 @@ sojourn (v-n): a temporary stay
 
 cede (v): assign, transfer, to yield or grant typically by agreement
 
-contrive <cân-traiv> (v): to form or create in an artistic or ingenious manner, to devise, plan
+concede (v): to acknowledge grudgingly or hesitantly, to accept as true, valid, or accurate, to grant as a right or privilege -> concession (n)
+
+assent (v-n):  concur, agreement, approve
+
+contrive <cân-traiv> (v): to form or create in an artistic or ingenious manner, to devise, plan despite difficulties
+
+contrived (adj): unnatural, artificial and difficult to believe
 
 purloin {sth from sb/sth} (v): to steal something or use it without permission
 
@@ -222,7 +252,7 @@ construe (v): interpret, to understand or explain with respect to a given set of
 
 ruminate (v): contemplation, reflect, ponder
 
-concede (v): to acknowledge grudgingly or hesitantly, to accept as true, valid, or accurate, to grant as a right or privilege
+hysterical (adj): hilarious, unrestrained emotion
 
 demise (n-v): death, decease, to transmit by succession or inheritance
 
@@ -233,8 +263,6 @@ inexorable (adj): relentless
 predicate (v-n-adj): base/found (on), something that is affirmed or denied of the subject
 
 incarnation (n): embodiment, manifestation, version, đời/kiếp
-
-tribulation (n) <tree-bulation>: misery, distress, torment
 
 equanimity (n): balance, evenness of mind especially under stress
 
@@ -247,6 +275,8 @@ perdition (n): hell, inferno
 cacophony (n): noise, rattle, chatter, discordance
 
 chagrin (v-n): disappoint, upset, frustration, dismay
+
+==impugn== (v): to doubt someone's character, qualities, or reputation by criticizing them
 
 vicissitude (n): mutability, gauntlet, adversity
 
@@ -282,7 +312,7 @@ sovereign (adj-n): supreme, paramount, absolute, tối cao
 
 mendacity (n): lie, falsehood, deceit
 
-==formidable== (adj): terrifying, intimidating, scary
+==formidable== (adj): impressive, terrifying, intimidating, scary
 
 ambivalent (adj): uncertain, dubious, hesitant, unsure
 
@@ -310,15 +340,23 @@ conjecture (v-n): guess, surmise, estimate, suppose, theory
 
 tacit (adj): implied, implicit
 
+allusion (n): implication, indirect reference especially in literature
+
 enamored {of} (adj): amorous (of), obsessed, fascinated
+
+amorous (adj): showing sexual desire and love
 
 sentiment (n): opinion, attitude, feeling, emotion
 
+entreaty (n): emotional request
+
 fiat (n): dictate, an order publicly issued by an authority: decree
 
-covetous <cav-et-tus>(adj): greedy, selfish desire especially for material possessions, jealous
+covetous <cav-et-tus>(adj): greedy, selfish desire especially for material possessions
 
 coveted (adj-v2): desired, craved, highly sought after
+
+vanquish (v): conquer (in competition/war)
 
 harbinger (v-n): predict, imply, foreshadow, prognosticate, pioneer, precursor
 
@@ -326,11 +364,17 @@ insinuate (v): imply, subtly introduce, innuendo (n)
 
 contingent (adj-n): empirical, possible, unpredictable, delegacy
 
+vagaries (n): unpredictable, unexpected changes/events 
+
+aloof (adj): distant, detached, lack of friendliness
+
 abhorrent (adj): disgusting, horrible, contemptuous, malicious
 
 atrocious (adj): detestable, appalling, abominable, barbaric
 
 futile <fiu-dtal> (adj): no value, useless, completely ineffective
+
+vanity (n): inflated pride, empty, valueless
 
 buttress (v-n): support, strengthen, pillar, backbone
 
@@ -352,11 +396,15 @@ mundane (adj): typical, usual, prosaic
 
 emanate <em-anate> (v): emit, radiate, phát ra
 
+emaciated (adj): malnourished
+
 foray {into} (v-n): raid, loot, invasion, an initial and often tentative attempt to do something in a new or different field or area of activity
 
 averse (adj): allergic, reluctant, loathe/loth/loath
 
 persecute (v): torment, agonize, pester
+
+tribulation (n) <tree-bulation>: misery, distress, torment, affliction, woe
 
 vanguard (n): innovator, pioneer, forefront, avant-garde <avânt-gard>
 
@@ -366,11 +414,15 @@ ineffable (adj): indescribable, unspeakable, inexpressible
 
 aggregate (v-n-adj): accumulate, comprise, total, collective, combined
 
+eclectic (adj-n): composed of elements drawn from various sources
+
 altruism (n): generosity, philanthropy, empathy, compassion
 
 pretension (v-n):  purpose, intention, affection, arrogance
 
 disdain (v-n): contempt, disrespect, despise
+
+flout (v): disregard, despite, scorn
 
 lamentable (adj): deplorable, mournful, wretched
 
@@ -408,7 +460,11 @@ solitude (n): isolation, privacy, loneliness
 
 reclusive (adj): solitary, lonely
 
-enticement (n): lure, temptation, seduction
+pliant (adj): easy to influence
+
+entice (n): lure, temp, seduce
+
+ensnare (v): trap, tangle
 
 deciduous (adj): falling off or shed seasonally or at a certain stage of development in the life cycle
 
@@ -426,6 +482,8 @@ congenital (adj): inherent, being such by nature, chronic, existing at or dating
 
 delinquent (n-adj): degenerate, incorrigible, delayed, overdue, belated
 
+respite (v -n): delay, pause (before something unpleasant happens)
+
 malleable (adj): adaptable, flexible, moldable, pliable
 
 stringent (adj): strict, rigorous, rigid
@@ -438,7 +496,15 @@ ignominy (n): disgrace, shame, humiliation
 
 consternation (n): dismay, panic, a strong feeling of surprise or sudden disappointment that causes confusion
 
+quarrel (v-n): angry disagreement
+
+transfix (v): impale, paralyze (out of surprise)
+
 embalm (v): ướp xác
+
+commiserate (v): condole, sympathize
+
+apathy (n): not interested, complacence
 
 elixir (n): liquid magic potion, healing everything
 
@@ -450,9 +516,19 @@ copacetic (adj): very satisfactory
 
 grandiose (n): magnificent, glorious, impressive, resplendent
 
+quaint (adj): attractive in an unusual/vintage way
+
+frothy (adj): seeming attractive and fun but having no real value
+
+garish (adj): flashy, glaring, flamboyant
+
+lavish (adj): extravagant, wasteful
+
 deity (n): god, divinity
 
 blasphemy (n):  showing contempt or lack of reverence for the sacred or inviolable
+
+revere (v): venerate, very much respect and admire someone or something
 
 deign (v): disgrace, stoop, to descend to a level that is beneath one's dignity
 
@@ -460,7 +536,7 @@ agnostic (adj): unbiased, atheistic, skeptic
 
 crux (n): essence, core, gist, kernel
 
-incur (v): suffer, exposed to, catch, cause
+incur (v): to experience something bad as a result of actions you have taken
 
 instigate (v): provoke, incite, trigger, stir
 
@@ -468,13 +544,13 @@ opulent (adj): rich, wealthy, affluent, sumptuous
 
 glean (v): find out, to gather bit by bit
 
-penance <peh-nance> (n): sám hối
-
 prerogative (n): privilege, a distinctive excellence
 
 merit (v-n): deserve, earn, value, virtue
 
-innocuous (adj): harmless, inoffensive, insipid
+innocuous (adj): harmless, inoffensive
+
+gullible (adj): exploitable, easily duped or cheated
 
 desolate (v-adj): to deprive of inhabitants, lifeless, deserted, dilapidated
 
@@ -483,6 +559,8 @@ idempotent (adj-n): to run something as many times as you like and you get the s
 maverick (adj-n): sigma guy
 
 consummate (adj-v): to make something complete & perfect. To consummate a marriage/relationship is to make it complete by having sex
+
+matrimonial (adj): marriage-related
 
 commensurate {with} (adj): eligible, in a correct and suitable amount compared to sth else
 
@@ -498,11 +576,13 @@ coy (adj): increase interest in something by intentionally keeping secret
 
 ==riveting== (adj): enthralling, fascinating, gripping, intriguing
 
-==ineptitude== (n): skill issues
+thrall (v-n): slave, a state of complete absorption, in moral or mental servitude
 
 treason (n): treachery, betrayal, phản quốc
 
-inundate (v): overwhelm
+inundate (v): overwhelm, flood
+
+surmount (v): overcome
 
 endemic {to} (adj-n): native, peculiar, indigenous
 
@@ -514,13 +594,23 @@ surrogate (v-n): substitute
 
 contend (v): struggle, contest, argue, assert
 
+flounder (v): in an awkward or difficult situation, don't know what to do/say next
+
+dilemma (n): predicament, a problem involving a difficult choice
+
 refute (v): disclaim, deny, reject
 
 heuristic (adj-n): trial-and-error, experimental techniques
 
 congruent (adj): congruous, coherent, harmonious
 
+tenacious (adj): cohesive, retentive
+
+incessant (adj): continuous, perpetual
+
 aphorism (n): an ingeniously terse and concise style of statement/expression
+
+countenance (v-n): approve, sanction, expression (facial)
 
 flatulence (n): flatus, medical term for "fart"
 
@@ -531,6 +621,8 @@ patronage (n): custom, business, sự ủng hộ (in business context), transact
 exemplary (adj-n): gương tốt (để noi theo), dằn mặt
 
 egregious (adj): blatant, obvious, conspicuous, flagrant, prominent
+
+salient (adj): most important/noticable
 
 mar (v-n): spoil, tarnish, blemish, defect
 
@@ -570,7 +662,9 @@ procure (v): attain, earn, to obtain sth by particular care and effort
 
 lackadaisical (adj): lacking life, spirit, or zest
 
-poppycock (n): nonsense, baloney, humbuggery
+jaded (adj): exhausted, burned-out
+
+poppycock (n): nonsense, baloney, humbuggery, hoax
 
 filial (adj): of, relating to, or befitting a son or daughter
 
@@ -580,6 +674,12 @@ impose (v): áp đặt (thuế)
 
 postmortem (adj-n): autopsy, necropsy
 
-modicum (n): a small portion
+modicum (n): a small portion (especially of sth good)
+
+scanty (adj): insufficient what is needed
 
 ==fraught {with}== (adj-v-n): load, full of (sth)
+
+stratagem (n): scheme, ploy
+
+pine (v): languish, crave, yearn/lust {for}

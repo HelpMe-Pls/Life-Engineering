@@ -265,4 +265,70 @@
 	  Be grateful in spite of your suffering.
 ---
 
-# The millionaire Fastlane
+# Supercommunicators
+- The most important goal of any conversation is to ==_connect_==.
+- It's all about recognizing that we need to be engaged in the same _kind_ of conversation, at the same time, if we want to connect.
+- For the most meaningful discussions, it is crucial to have a "==learning conversation==". We all want meaningful conversations.
+- Every discussion is influenced by ==emotions==, no matter how rational the topic at hand. Emotions help us connect.
+## Three kinds of conversations
+- Miscommunication occurs when people are having different _kinds_ of conversations.
+- Effective communication requires _recognizing_ what _kind_ of conversation is occurring, and then _matching_ each other.
+> It is important to note that matching **isn't** mimicry. Rather, it's understanding someone's mindset, and **thinking** about how to **show empathy**.
+> We need to prove to others that we are listening closely. It requires explaining clearly how we, ourselves, are thinking and making choices, so that others can match us is return.
+
+- Within every conversation there is a quiet _negotiation_, determining what everyone wants, so that something meaningful can occur.
+
+> [!important]- The rules for the learning conversation
+> - **Pay attention** to what kind of conversation is occurring
+> - **Share** your goals, and **ask** what others are seeking
+> - Ask about others' **feelings**, and share your own
+> - **Explore** if identities are important to this discussion
+
+### What's this really about
+- First, recognize that this is ==a negotiation==:
+	- An important task in any negotiation is _asking_ lots of questions.
+	- How much of someone's decision depended on their own desires versus what people around them wanted?
+	- You _don't_ want to begin a negotiation assuming you know what the other side wants.
+- Second, figure out what does everyone ==want==:
+	- Ask _open-ended questions_ designed to get them talking about their values and what the wanted out of life, and then listen closely
+	- It's an _invitation_ for people to tell you who they are.
+	- Someone will make an invitation, and their partner will accept or make counter-invitations.
+- Then, _how_ will we ==make choices _**together**_==.
+	- The best negotiators didn't battle over who should get the biggest slice of pie. Rather, they focused on making the pie itself larger. It's an act of creativity.
+	- Begin by demonstrating that you appreciate theirs.
+- Understanding the difference between the practical _logic of costs and benefits_ and the empathetic _logic of similarities_ was critical.
+#### Logic of costs and benefits
+- Lean into data and reasoning.
+- They're agreeing to contrast potential costs with hoped-for benefits.
+- Ask yourself, "What does someone like me usually do in a situation like this?"
+- They want to draw on their _experiences_, even if they don't completely overlap with the situation at hand.
+- In these kinds of conversations, facts are less persuasive.
+#### Logic of similarities
+- Lean into stories and compassion.
+- In an empathetic mindset we are influenced be narratives.
+#### Ask questions
+- Ask them about their experiences:
+	- What was it like to....
+	- Tell me about...
+- Ask them to make a judgement:
+	- How'd you decide...
+	- What do you like about...
+	- What advice would you give...
+	- What's the best/worst thing about...
+- Get creative. Try interrupting, and then not interrupting. Give a matching response to their outputs.
+
+### How do we feel
+- It's about getting everyone to talk about more intimate things. Reciprocating vulnerability.
+- When something is interesting, you listen without thinking about it.
+> If we acknowledge someone else's **==vulnerability==**, and become vulnerable in return, we expose something that opens us to others' judgements. That's how we build trust, understanding, and connection.
+- When you describe how you feel, you're giving someone a map of the things you care about.
+- Invite others to share their preferences, beliefs, and values, and to describe experiences that caused them to _grow or change_.
+- Human typically synchronize their own emotions with the emotions expressed by those around them.
+- People don't announce their emotions. They perform them.
+#### Questions
+- Questions that pushed people to describe their beliefs, values, or meaningful experiences tended to result in emotional replies, even if the questions themselves didn't seem all that emotional. 
+- The difference between a shallow question and one that sparks an opportunity for emotional connection is _vulnerability_.
+- Ask them _how_ they're feeling about their life, their experiences, and then follow up with statements/questions that reveal your own emotions; **rather than talking about the facts**.
+> Follow up questions should allow self-disclosure without it seeming like self-obsession.
+
+### Who are we
