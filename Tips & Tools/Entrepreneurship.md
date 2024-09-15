@@ -1,6 +1,6 @@
 - Freedom is your _final_ goal. To be able to do whatever you want, when you want, for as long as you want. As an entrepreneur, you get to design your own system. 
 - Entrepreneurship is your chance to build your work around your life, not be swallowed up by it. Entrepreneurship is _a mindset_, not a title.
-- The first minute of action is worth more than a year of perfect planning. It’s not just about doing more, ==it’s also about doing the right things better==.
+- The first minute of action is worth more than a year of perfect planning. If information isn't nurtured with action, it loses its power. It’s not just about doing more, ==it’s also about doing the right things better==.
 - Self-improvement is about solving problems in your life. Entrepreneurship is about solving problems in others life. When you do both, you unlock purpose, meaning, and fulfillment.
 - As an entrepreneur, you “hunt” for your survival by gathering knowledge, creating a valuable product, and putting it in front of people who could benefit from it.
 - If you believe your product or service can fulfill a _true **need**_, it’s your moral obligation to sell it.
@@ -10,6 +10,7 @@
 > When there's no skin in the game, for many, it becomes just that— a game.
 - You are to become the _source_ of your interests to attract an audience. Not an influencer, a producer. ***A value creator***, to be exact. You are trying to improve the lives of others by consuming, synthesizing, developing, creating, and distributing value. The heart of entrepreneurship is creation and innovation.
 - Value creators are those who dedicate themselves to their interests, take it on as their life’s work to explore them, and distill the information into education. 
+> The key to differentiating yourself is to solve Obvious problems in Non-Obvious ways, or to solve Non-Obvious problems in Obvious ways.
 - [[Writing#Build an audience |Building an audience]] of people is to remove your dependency on your employer, government, and any other centralized entity that controls most aspects of your life.
 > If someone can “flip a switch” and destroy your business, you’re playing roulette with your financial plan. Take **extreme ownership** (that doesn't mean you're disregarding delegation).
 > If you can outsource something or not do something for less than your ideal hourly rate, outsource it or don’t do it. If you can hire someone to do it for less than your hourly rate, hire them. That's how you spend your money to buy back your time.
@@ -24,6 +25,8 @@
 - You must understand the big picture strategy with all of its moving parts before you start trying to make the system work. 
 - It is easy to get overwhelmed if you try to do everything at once. Start small, then work your way up. Nothing happens then everything happens.
 - Get in the habit of starting projects that you have a vague idea how to complete it and figure out along the way.
+> [!Info] Words of encouragement
+> **If you're actively working toward your dream, you're already living the dream.**
 - Launch products around the ideas that did well for you. Every 3-6 months, launch at least one free product and one paid product until you have a brand and business you are satisfied with.
 - The ability to start and to fail a lot is what separates wantrepreneurs from entrepreneurs. Persistence beats resistance.
 > [!important] 100 reps
@@ -161,7 +164,7 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 - A persuasive argument is [[Entrepreneurship#Networking |made up of]] 6 traits:
 	- **[[Entrepreneurship#Follow up |Reciprocity]]**: give out value and good things will come to you. When you do them the favor of (tactically) discount on your product they feel compelled to meet that favor.
 	- **Commitment/Consistency**: this can be used by easing people into things and getting them to take the *lowest friction* action first (e.g. liking a post, clicking a link, filling out a form,...)
-	- **[[Entrepreneurship#Bonus |Social Proof]]**: the human nature is constantly looking to confirm our beliefs, choices, and actions. Therefore: credentials, testimonials, results, and word-of-mouth marketing is the most powerful persuasion tool in your arsenal. The more *authentic and non-planned*, the better.
+	- **[[Entrepreneurship#Bonus |Social Proof]]**: the human nature is constantly looking to confirm our beliefs, choices, and actions. Therefore: credentials, testimonials, results, and word-of-mouth marketing is the most powerful persuasion tool in your arsenal. The goal here is to document what _you_ do/did, not what you think everyone else should do (in other words, "I am recommending you do this—because _I did it for myself, and it worked_."). The more *authentic and non-planned*, the better.
 	- **[[Entrepreneurship#Compliment |Liking]]**: we tend to like people that like us. If you can compliment someone on their work, be interested in _them,_ and offer the value you can (even if its just a resource you came across relating to what they are working on), they will like you. This is just another level of reciprocity.
 	- **[[Entrepreneurship#Authority |Authority]]**: we tend to trust authoritative figures much quicker, and that's determined by: level of expertise, social proof, accomplishments in a specific area, well known labels or symbols,...
 	- **[[#Pricing |Scarcity]]**: this is on the emotion side of things. It's the FOMO. Make a deadline for the discount. The last day is always the day you make more sales.
@@ -185,7 +188,7 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 	- Think big and small — write out broader interests and skills, then write out niche interests and skill relating to the 2-3 points you wrote out already. This starts to create a web of content ideas and curiosities to pursue
 	- Keep an eye out for books, content, podcasts, and life experiences that check one of those boxes
 	- Make a note of it and create some form of content around it. Opening a curiosity loop (by asking a question or implying a puzzle with a missing piece)
-- The skill of storytelling is vital for grabbing [[Entrepreneurship#The network |attention]].
+- No one ever made a decision because of a number. They need a story. The skill of storytelling is vital for grabbing [[Entrepreneurship#The network |attention]].
 
 ## Build your system
 - For your products to generate sustainable income, you need 2 things: 
@@ -193,10 +196,13 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 	- ***Interested*** traffic: you have to be intentional about ***where*** you are placing the offer, how it is perceived to that person, and place a heavy focus on _how_ it impacts their life.
 - ==Forget the money for a bit. Develop your value and practice offering it to others *without expectation* of anything in return.==
 ### The niche
-> It is You — but at scale. Curate your product with the same care and attention as if ***you*** were the intended customer. Your niche within a niche can be the most obscure thing imaginable, as long as it makes you and your audience passionate.
+> [!important]- What's the point?
+> - It is You — but at scale. Curate your product with the same care and attention as if ***you*** were the intended customer. Your niche within a niche can be the most obscure thing imaginable, as long as it makes you and your audience passionate.
+> - Get specific about WHO you help (1 Person), WHY (1 Problem), and ==**HOW**== (1 Way) so that you essentially have zero competition.
 - Specific knowledge is knowledge that you cannot be trained for. If society can train you, it can train someone else, and replace you.
 - It is so important to identify the ***need*** in the market. You can't just simply open a business to "do what you love" or "doing what you're good at". ==Your expertise must converge with the demands in the market. Your products exist to solve those needs==.
-- ==_**Be their savior**_==. Be the Guide, *not* the Guru. The goal here is to document what _you_ do, not what you think everyone else should do. Remember to always keep the _need_ prioritized:
+- ==_**Be their savior**_==. Be the Guide, *not* the Guru. Make them feel like you know them better than anyone else in the world. Pinpoint their problems. Give them recommendations. Show them things they might not have heard of or thought about. Approach sales in this value-first way: try to help them first, then, make your offer "conveniently" there to guide them further.
+- Remember to always keep the _need_ prioritized:
 	- When hundreds of people get into a business solely because they know how or want to (not need based), you get put into commoditization position: price wars haggling over a few dollars.
 	- Or, if you're *so good* at [[#Persuasion |persuading]], try to come up with ideas that create needs. Address problems they didn't know they had, or pain points that they have yet to solve.
 - To find your niche, ask yourself these questions:
@@ -368,7 +374,7 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 - You can also take the conversation to somewhere like Telegram and send voice messages to make yourself seem more human.
 - When you try and do business with somebody, if you have any bad thoughts or any judgments about them, they will feel it. Humans are wired to feel what the other person deep down inside feels. Beware of your emotional outputs.
 ### Follow up
-- Make sure to initiate your follow up with *you offering value* by taking notes about them, remember their goals and keep an eye out for any content, resources, or people you can send their way.  
+- Make sure to initiate your follow up with *you offering value* by taking notes about them, remember their goals and keep an eye out for any content, resources, or people you can send their way. Never do something like _“Hey — checking in! Wanna buy??”_
 - By this point you've built a pretty damn solid connection. You've given value to the point where they are ready to return the favor.
 - If your plan is to leverage their audience for growth, be sure to write a post that *they would want* to share. Then, you can send it to them and mention that they inspired that post. Remember to ask for their permission to mention their name/work in your post. For example:
 	- "*Ayy, I was inspired by our previous conversation. I'm planning to write a post about it. Could I mention you and your work in it?*"

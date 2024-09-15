@@ -6,6 +6,8 @@
 - If you can write about your interests, you can generate new opportunities, and set yourself up for future monetization of said interests.
 - Such writing attracts attention, delivers a high-value message, and encourages people to follow you and your work, eventually raise the collective well-being. That's the meaning of life.
 > You were put on this earth to piece together the puzzle of reality – your writing is how you document your findings.
+
+- Checkout [[Ghostwriting]]
 ---
 # Preparation
 - It is recommended to divide your working hours into 2 blocks: creative and then productive.

@@ -10,7 +10,7 @@
           {
             "id": "2ed2b87e25932f50",
             "type": "tabs",
-            "dimension": 51.57977883096366,
+            "dimension": 52.44865718799369,
             "children": [
               {
                 "id": "4ad2498b8982437b",
@@ -18,14 +18,15 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/English vocab.md",
+                    "file": "Tips & Tools/IELTS.md",
                     "mode": "source",
+                    "backlinks": false,
                     "source": false
                   }
                 }
               },
               {
-                "id": "f8b8746b8a1c308d",
+                "id": "e998ff104dd5ae6f",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -37,24 +38,24 @@
                 }
               },
               {
-                "id": "e998ff104dd5ae6f",
+                "id": "213082fef78356e9",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/WIL from books.md",
+                    "file": "Tips & Tools/English vocab.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
             "type": "split",
-            "dimension": 48.42022116903634,
+            "dimension": 47.55134281200631,
             "children": [
               {
                 "id": "c3184acf40a6477e",
@@ -158,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tips & Tools/WIL from books.md",
+                "file": "Tips & Tools/Entrepreneurship.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tips & Tools/WIL from books.md"
+                "file": "Tips & Tools/Entrepreneurship.md"
               }
             }
           }
@@ -211,32 +212,33 @@
   "active": "e998ff104dd5ae6f",
   "lastOpenFiles": [
     "Tips & Tools/English vocab.md",
-    "Tips & Tools/WIL from books.md",
-    "Tips & Tools/Socialize.md",
+    "Tips & Tools/IELTS.md",
     "Tips & Tools/Entrepreneurship.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Tips & Tools/Socialize.md",
+    "Tips & Tools/Tips & Tools.md",
     "Tips & Tools/Writing.md",
+    "Pasted image 20240902195101.png",
+    "Frontend/Frameworks/Remix/Authentication.md",
+    "Frontend/TypeScript/Advanced.md",
+    "Frontend/TypeScript/Patterns.md",
+    "Frontend/TypeScript/Type Transformation.md",
+    "Frontend/TypeScript/Fundamentals.md",
+    "Frontend/CSS/Typography and Images.md",
+    "Backend/Auth.md",
+    "Frontend/CSS/Media queries.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Frontend/CSS/CSS.md",
+    "Tips & Tools/Ghostwriting.md",
+    "Tips & Tools/Tools & Util libs.md",
+    "Tips & Tools/English grammar.md",
+    "Tips & Tools/Tips.md",
+    "Tips & Tools/Repository structures.md",
+    "Tips & Tools/WIL from books.md",
     "Frontend/JavaScript/Objects.md",
     "Frontend/TypeScript/Basic Types.md",
-    "Frontend/TypeScript/Fundamentals.md",
     "Frontend/JavaScript/Regular Expressions.md",
-    "Frontend/CSS/CSS.md",
     "Frontend/HTML/Hyperlinks.md",
-    "Frontend/Frameworks/Remix/Authentication.md",
-    "Frontend/Frameworks/Remix/Routing & Navigation.md",
-    "Frontend/Frameworks/Remix/Data Transfer.md",
-    "Frontend/Network/Browser.md",
-    "Frontend/Network/Connections and protocols.md",
-    "Tips & Tools/Tips.md",
-    "Tips & Tools/Tips & Tools.md",
-    "Frontend/Frameworks/Remix/Error Handling.md",
-    "Frontend/Network/Data Transfer.md",
-    "Frontend/Network/Caching.md",
     "Frontend/JavaScript/JS Overview.png",
-    "Frontend/JavaScript/In Browser.md",
-    "Backend/Caching.md",
-    "Backend/Backend.md",
-    "Backend/Auth.md",
     "Tips & Tools/code-review.png",
     "Backend/sql-joins.png",
     "Tips & Tools/OnePersonBusiness.png",
@@ -255,7 +257,6 @@
     "Frontend/Tips & Tools/code_review.png",
     "Frontend/Tips & Tools/code_review.jfif",
     "Frontend/Tips & Tools/code_review.jfif.crdownload",
-    "Frontend/Libraries/React/Where to put state.png",
     "DevSecOps"
   ]
 }

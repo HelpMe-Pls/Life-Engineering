@@ -43,8 +43,7 @@
 
 # For potential mate
 - What are the topics that tend to cause entropy in a marriage? Start with your parents.
-- 
-- f
+- How do you choose to suffer? What is the pain that you want to sustain?
 
 # For intimacy
 - What feelings are hard for you to communicate? How can I make it easier?
@@ -55,4 +54,3 @@
 - Tell me about a time when the outcome of your idea was far off from what you had planned. For example you planned to sell product X and ultimately ended up selling product Y.
 - How do you decide to trust someone for partnership?
 - Tell me about the time when a partner turned enemy and vice versa.
-- 

@@ -5,7 +5,6 @@
 - The `line-height` property only takes a *unitless number*. This number is multiplied by the element's font-size to calculate the actual line height.
 - Most of the properties that inherit are typography-related, like `color`, `font-size`, `text-shadow`, and so on.
 
-
 ## Text rendering
 - **Kerning** **algorithms** refer to the spacing between individual characters. Characters are nudged left or right (in direction) so that they "feel right". The letter placement is slightly different between browsers is that the browsers implement different kerning algorithms.
 - We can access the "kerning" with CSS by using `font-kerning`  and/or  `letter-spacing` property.
@@ -18,7 +17,6 @@
   /* Other values are `text`, `all`, `auto` (the default) */ 
 }
 ```
-
 
 ## Text overflow
 - A regular "white space" (created by pressing the `Space` button) or a dash (`-`) creates an opportunity for line-break a word when it's at the end of a line.
@@ -58,7 +56,6 @@ p {
 	</div>
 </article>
 ```
-
 
 ## Print-style layout
 ### Columns
