@@ -18,21 +18,9 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/IELTS.md",
+                    "file": "Tips & Tools/WIL from books.md",
                     "mode": "source",
                     "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "e998ff104dd5ae6f",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Tips & Tools/Entrepreneurship.md",
-                    "mode": "source",
                     "source": false
                   }
                 }
@@ -43,7 +31,31 @@
                 "state": {
                   "type": "markdown",
                   "state": {
+                    "file": "Tips & Tools/IELTS.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "e998ff104dd5ae6f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
                     "file": "Tips & Tools/English vocab.md",
+                    "mode": "preview",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "1f357aca7b9fa1f4",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Tips & Tools/English grammar.md",
                     "mode": "source",
                     "source": false
                   }
@@ -122,7 +134,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hasOwn",
+                "query": "ScrollRestoration",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -159,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tips & Tools/Entrepreneurship.md",
+                "file": "Tips & Tools/IELTS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +200,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tips & Tools/Entrepreneurship.md"
+                "file": "Tips & Tools/IELTS.md"
               }
             }
           }
@@ -209,11 +221,22 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "e998ff104dd5ae6f",
+  "active": "213082fef78356e9",
   "lastOpenFiles": [
-    "Tips & Tools/English vocab.md",
+    "Tips & Tools/WIL from books.md",
     "Tips & Tools/IELTS.md",
+    "Tips & Tools/English grammar.md",
+    "Tips & Tools/English vocab.md",
+    "Frontend/CSS/Typography and Images.md",
+    "Frontend/Frameworks/Remix/Data Transfer.md",
+    "Frontend/CSS/Animations.md",
+    "Frontend/Frameworks/Remix/Routing & Navigation.md",
+    "Frontend/CSS/Grid.md",
     "Tips & Tools/Entrepreneurship.md",
+    "Backend/Backend.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Frontend/Frameworks/Remix/Remix.md",
+    "Frontend/CSS/Flex.md",
     "Tips & Tools/Socialize.md",
     "Tips & Tools/Tips & Tools.md",
     "Tips & Tools/Writing.md",
@@ -223,21 +246,10 @@
     "Frontend/TypeScript/Patterns.md",
     "Frontend/TypeScript/Type Transformation.md",
     "Frontend/TypeScript/Fundamentals.md",
-    "Frontend/CSS/Typography and Images.md",
     "Backend/Auth.md",
     "Frontend/CSS/Media queries.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
     "Frontend/CSS/CSS.md",
     "Tips & Tools/Ghostwriting.md",
-    "Tips & Tools/Tools & Util libs.md",
-    "Tips & Tools/English grammar.md",
-    "Tips & Tools/Tips.md",
-    "Tips & Tools/Repository structures.md",
-    "Tips & Tools/WIL from books.md",
-    "Frontend/JavaScript/Objects.md",
-    "Frontend/TypeScript/Basic Types.md",
-    "Frontend/JavaScript/Regular Expressions.md",
-    "Frontend/HTML/Hyperlinks.md",
     "Frontend/JavaScript/JS Overview.png",
     "Tips & Tools/code-review.png",
     "Backend/sql-joins.png",

@@ -24,4 +24,6 @@
 		- You had better **go** now.
 		- I would rather **stay** home.
 		- She would sooner **die** than **admit** she was wrong.
-	
+- The word "shall" is only used for informal/personal *suggestions* ("Shall we go to...") but *not* for the future tense.
+	- The negative "shan’t" or "shall not" is almost never used in modern English today.
+- 

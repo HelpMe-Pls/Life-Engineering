@@ -206,6 +206,8 @@ cajole (v): to deceive, coax, or persuade with flattery
 
 sojourn (v-n): a temporary stay
 
+provisional (adj): interim, temporary
+
 cede (v): assign, transfer, to yield or grant typically by agreement
 
 concede (v): admitting defeat, to acknowledge grudgingly or hesitantly, to accept as true, valid, or accurate, to grant as a right or privilege 
@@ -243,6 +245,8 @@ incisive <in-xai-sive> (adj): impressively direct and decisive (as in manner or 
 amalgam (n): fusion, mixture, blend
 
 burgeoning <burg-jun-ning> (adj): growing, expanding, or developing rapidly
+
+==wax== (v): to grow in volume, strength, intensity, toward full development
 
 intricate (adj): complicated, sophisticated, pragmatic
 
@@ -544,6 +548,8 @@ ignominy (n): disgrace, shame, humiliation
 
 consternation (n): dismay, panic, a strong feeling of surprise or sudden disappointment that causes confusion
 
+commotion (n): agitation, steady or recurrent motion
+
 fluster (v): faze, confound, a state of agitated confusion
 
 quarrel (v-n): angry disagreement
@@ -709,6 +715,8 @@ contort (v): to twist in a violent manner
 homage (n): respect, tribute
 
 bigot (n): a narrow-minded person
+
+plebe (n): người ta, an ordinary person who lacks the knowledge of an insider
 
 clandestine (adj): furtive, sneaky, stealthy
 

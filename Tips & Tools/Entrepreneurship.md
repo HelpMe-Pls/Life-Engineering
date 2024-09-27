@@ -1,5 +1,8 @@
 - Freedom is your _final_ goal. To be able to do whatever you want, when you want, for as long as you want. As an entrepreneur, you get to design your own system. 
 - Entrepreneurship is your chance to build your work around your life, not be swallowed up by it. Entrepreneurship is _a mindset_, not a title.
+> [!info]- Should you quit your day job?
+> Don't quit your day job until you create tangible evidence of your ability to build a life around your side hustle. If you quit before you've created that evidence, you may make short-term, fear-based decisions with your new path that aren't sustainable. 
+> Don't burn the boats, because sometimes you need them to return to safety.
 - The first minute of action is worth more than a year of perfect planning. If information isn't nurtured with action, it loses its power. It’s not just about doing more, ==it’s also about doing the right things better==.
 - Self-improvement is about solving problems in your life. Entrepreneurship is about solving problems in others life. When you do both, you unlock purpose, meaning, and fulfillment.
 - As an entrepreneur, you “hunt” for your survival by gathering knowledge, creating a valuable product, and putting it in front of people who could benefit from it.

@@ -3,8 +3,8 @@
 # Loaders
 - You can define handlers and the UI (have backend and frontend code) for a route inside of a single file by using the async `loader` function for `GET` requests. You can get some of the benefits from `graphQL` and `tRPC` when using it: 
 ```tsx
-// In #app/utils/db.server.ts
-export function invariantResponse(
+// In #app/utils/misc.tsx:
+export function errorHandler(
 	condition: any,
 	message?: string | (() => string),
 	responseInit?: ResponseInit,
@@ -20,7 +20,7 @@ export function invariantResponse(
 	}
 }
 
-// In #app/routes/users+/$username_+/notes.$noteId.tsx
+// In #app/routes/users+/$username_+/notes.$noteId.tsx:
 import { json, type DataFunctionArgs } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
 import { db } from '#app/utils/db.server.ts'
@@ -61,7 +61,7 @@ export default function NoteRoute() {
 
 > Throw a `Response` with an appropriate status rather than throwing an `Error`:
 ```tsx
-// Prefer the above ↑ example for unexpected response rather than just throwing an ambiguous `Error`:
+// Prefer the above ↑ example for unexpected response rather than just throwing an ambiguous `Error` like this:
 export async function loader({ params }: DataFunctionArgs) {
 	const note = db.note.findFirst({
 		where: {

@@ -275,9 +275,7 @@
 - Effective communication requires _recognizing_ what _kind_ of conversation is occurring, and then _matching_ each other.
 > It is important to note that matching **isn't** mimicry. Rather, it's understanding someone's mindset, and **thinking** about how to **show empathy**.
 > We need to prove to others that we are listening closely. It requires explaining clearly how we, ourselves, are thinking and making choices, so that others can match us is return.
-
 - Within every conversation there is a quiet _negotiation_, determining what everyone wants, so that something meaningful can occur.
-
 > [!important]- The rules for the learning conversation
 > - **Pay attention** to what kind of conversation is occurring
 > - **Share** your goals, and **ask** what others are seeking

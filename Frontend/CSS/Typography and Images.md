@@ -37,7 +37,7 @@ p {
     /* Other declarations */
 }
 ```
-- Be mindful of flex layout when applying multi-line ellipsis: always apply line clamping to a paragraph that ***isn't*** being stretched or flexed *as part of flexbox or CSS Grid*. We can solve for this by using a wrapper  `div`:
+- Be mindful of flex layout when applying multi-line ellipsis: always apply line clamping to a paragraph that ***isn't*** being stretched or flexed *as part of flexbox or CSS Grid*. We can solve for this by using a `div` wrapper:
 ```html
 <style>
 .row {
@@ -344,9 +344,9 @@ render(<Header />)
 
 ## Positioning 
 - The `object-fit` property sets how ***the content*** of a replaced element (not just `<img>`) should be resized (or cropped) to fit its container. It takes the following values:
-	- `fill` (**default value**): the *entire* content will be scaled to *fully* contained inside the element (i.e. If the *entire* content aspect ratio does not match the aspect ratio of its box, then it will be *stretched* to fit, leading to distorted looking image)
-	- `contain`: the *entire* content is made to fit within the box (`width` or/and `height`), while *preserving* content's aspect ratio.
-	- `cover`: the *entire* content (while *preserving* its aspect ratio) is made to *fill* the box, but if the content's aspect ratio *does not* match the aspect ratio of its box, then the spilled portion will be *clipped*.
+	- `fill` (**default value**): the *entire* content will be scaled to ==*fully* contained inside== the element (i.e. If the *entire* content aspect ratio does not match the aspect ratio of its box, then it will be ==*stretched* to fit==, leading to distorted looking image)
+	- `contain`: the *entire* content is made to fit within the box (`width` or/and `height`), while ==*preserving* content's aspect ratio== (which may leave empty space - vertically or horizontally - around the image).
+	- `cover`: the *entire* content (while *preserving* its aspect ratio) is made to *fill* the box, but if the content's aspect ratio *does not* match the aspect ratio of its box, then the ==spilled portion will be *clipped*==.
 	- `none`: it only takes whatever fits the container starting from the top-left corner of the full-sized content.
 - The `object-position` property specifies *the offsets* of the content within its available space. It takes from 1 to 4 values that define the [2D position](https://developer.mozilla.org/en-US/docs/Web/CSS/position_value) of an element.
 - The `vertical-align` property is used to *vertically* position an image [in a line of text](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align#try_it).

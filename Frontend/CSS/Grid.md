@@ -68,7 +68,7 @@
 	  3. `align-content`: same as `justify-content` but for column axis. Also takes the same values. Only works when there's a fixed `height` set on the container (otherwise the rows are tightly packed together).
 	  4. `place-content`: sets both the `align-content` and `justify-content` properties in a single declaration, respectively. If the second value is omitted, the first value is assigned to both properties.
 	- For the grid *items*:
-		1. `justify-items`: controls the grid items position (_within_ a column) along the *row* axis - without affecting the shape of the grid. Its common values are `start` / `center` / `end` / `stretch`. The `space-*` properties only work when we're trying to distribute ***multiple** things* in a *shared space*, whereas `justify-items` is only concerned with each (single) item, within its own cell.
+		1. `justify-items`: controls the grid item**s** position (_within_ a column) along the *row* axis - without affecting the shape of the grid. Its common values are `start` / `center` / `end` / `stretch`. The `space-*` properties only work when we're trying to distribute ***multiple** things* in a *shared space*, whereas `justify-items` is only concerned with each (single) item, within its own cell.
 		2. `align-items`: same as `justify-items` but for column axis.
 		3. `justify-self`: places *the content* ***inside a cell*** along the *row axis*. Its common values are `start` / `center` / `end` / `stretch.`
 		4. `align-self`: same as `justify-self` but for the column axis.

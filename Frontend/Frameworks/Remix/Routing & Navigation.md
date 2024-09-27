@@ -1,10 +1,11 @@
 - Remix has a built-in router that enables you to easily map URLs and route parameters to files in your application's `app/routes` directory. Run the command `npx remix routes` to view the generated routes.
 - If a route doesn't have a `default` export then it'll be treated as a [[Routing & Navigation#Resource routes|resource route]].
+- Check out [this demo](https://interactive-remix-routing-v2.netlify.app).
 ----
 # Nested routes
 - For nested routes, use the `<Outlet/>` component as a *layout* wrapper for child layouts:
 ```tsx
-// When you navigate to `/parent/child` path, you'll see "Parent" above "Child". If we swap the `<h1>` and `<Outlet />` in the <Parent/>, then the "Child" will be above the "Parent". The parent gets to decide where its child goes.
+// When you navigate to `/parent/child` url path, you'll see "Parent" above "Child". If we swap the `<h1>` and `<Outlet />` in the <Parent/>, then the "Child" will be above the "Parent". The parent gets to decide where its child goes.
 //-----------------------------------
 // app/routes/parent.tsx
 export default function Parent() {
@@ -32,8 +33,8 @@ export default function Child() {
   > It's good practice to have the `_` precede the `+`
 
 ### Index route
-- Use an index route in case you want a dedicated UI for a parent path by adding a `.index` right before the file extension. For example within the file path `routes/users+/random_+/note.index.tsx`, you'll have a dedicated UI when visiting `/users/random/note` which doesn't persist through `users/random/note/some-note`.
-	  If you don't have an index route and put that "index UI" part to the `routes/users+/random_+/note.tsx` file instead, you'll get a clustered UI when visiting `users/random/note/some-note` because the UI of `some-note.tsx` is now rendered on top of that "index UI" part.
+- Use an index route in case you want a **dedicated** UI for a parent path by adding a `._index` right before the file extension. For example within the file path `routes/users+/random_+/note._index.tsx`, you'll have a dedicated UI when visiting `/users/random/note` which doesn't persist through `users/random/note/some-note`.
+	- If you don't have an index route and put that "index UI" part to the `routes/users+/random_+/note.tsx` file instead, you'll get a clustered UI when visiting `users/random/note/some-note` because the UI of `some-note.tsx` is now rendered on top of that "index UI" part.
 
 ### Route params
 - Define your route segments dynamically by having the `$` precedes the corresponding file name:

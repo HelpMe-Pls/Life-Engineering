@@ -12,7 +12,7 @@
 5. `gap`: specifies the space between its children. It receives 2 values for horizontal and/or vertical gap. If there's just one value then it's just the row gap. 
 
 - Centering items both vertically and horizontally had been an exceptionally difficult task on the web for many years, but Flexbox allows centering things fairly easily, such as `display: flex; justify-content: center; align-items: center;` (be mindful of the container's space - width/height - when applying flexbox).
-- If we want *a child* to have specific alignments, use `align-self` (which has all the same values as `align-items`). ***There is no `justify-self` in flexbox*** (just as how `justify-items` doesn't make sense in flexbox). In this example,  `← Go back`  sticks to the start of the container, while all other children are centered:
+- If we want *a child* to have specific alignments, use `align-self` (which has all the same values as `align-items`). ==***There is no `justify-self` in flexbox***== (just as how `justify-items` doesn't make sense in flexbox). In this example,  `← Go back`  sticks to the start of the container, while all other children are centered:
 ```css
 <style>
   section {
@@ -40,9 +40,9 @@
 ## Sizing and Ratios
 - The ***minimum content size*** is the smallest an item can get without its contents overflowing.
 - Setting `width` in a flex row (or `height` in a flex column) sets the **_hypothetical_ size**. It isn't a guarantee, it's a suggestion (i.e. it will apply that size value if there's *enough* space, and if its container is shrinking below that value, it will also scale along).
--  `flex-basis` has the same effect as `width` in a flex row (`height` in a column) - for the main axis - so it takes the value of length unit (e.g. `200px`). Both `width` and `flex-basis` will change the _hypothetical_ size of an element.
-  You can use them interchangeably, but `flex-basis` will win if there's a conflict (e.g. if the `flex-basis` prop (or it's included in the `flex` shorthand) is in the *same* rule with `width` || `height`, then `width` || `height` has no effect; but there's a catch: `width` can set that value *below* the minimum content size while `flex-basis` can't).
--  `flex-grow` controls how the _extra space is distributed_ when the items are *smaller* than their container. It will allow a child to *grow and **consume*** any excess space in the container (consider `margin: auto` if what you want is the positioning of the child within that extra space). It has no effect if there ***isn't*** any excess space.
+- `flex-basis` has the same effect as `width` in a flex row (or `height` in a flex column) - for the main axis - so it takes the value of length unit (e.g. `200px`). Both `width` and `flex-basis` will change the _hypothetical_ size of an element.
+  You can use them interchangeably, but `flex-basis` will win if there's a conflict (e.g. if the `flex-basis` prop (or it's included in the `flex` shorthand) is in the *same* rule with `width` or `height`, then `width` or `height` has no effect; but there's a catch: `width` can set that value *below* the minimum content size while `flex-basis` can't).
+-  `flex-grow` controls how the _extra space is distributed_ when the items are *smaller* than their container. It will allow a child to ==*grow and **consume***== any excess space in the container (consider `margin: auto` if what you want is the positioning of the child within that extra space). It has no effect if there ***isn't*** any excess space.
 -  `flex-shrink` controls how _space is removed_ when the items are *bigger* than their container. It will pick ***which element*** to consume space from, when the container is too small (you can set the threshold for the shrinking with  `min-width`, e.g. we can set an item to shrink to oblivion with `min-width: 0`, but please, don't). It has no effect if there **_is_** any excess space.
 -  `flex-shrink` can't shrink an item below its minimum content size (e.g. the length of the longest word in the item).
 -  `flex-grow`  and  `flex-shrink` values are in numbers, which indicate a _ratio of the available space_:
