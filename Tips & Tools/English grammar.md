@@ -26,4 +26,6 @@
 		- She would sooner **die** than **admit** she was wrong.
 - The word "shall" is only used for informal/personal *suggestions* ("Shall we go to...") but *not* for the future tense.
 	- The negative "shan’t" or "shall not" is almost never used in modern English today.
-- 
+## Proverbs, idioms
+- "That one's a lemon": a "lemon" product is one that is disappointing or unsatisfactory.
+- "By the same token": for the same reason

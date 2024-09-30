@@ -88,6 +88,8 @@ gobsmacked (adj): astounded, flabbergasted, shocked
 
 audacity (n): daring, bravery, bold, disrespectful, impudence, insolent 
 
+ exemption (n): immunity, impunity
+
 curt (adj): terse, brusque, rude or peremptory shortness
 
 peremptory (adj): imperious or arrogant self-assurance
@@ -121,6 +123,12 @@ recede (v): withdraw, diminish, decrease
 assuage (v): ease, quench, appease, pacify
 
 disparate (adj): distinct, uniquely different from each other
+
+disparage (v): degrade, belittle, depreciate
+
+pejorative (adj-n): denigrative, derogative, belittling, disparaging
+
+crass (adj): gross, rough, insensible, being beneath one's dignity
 
 cater {to/for sb/sth} (v): to provide (food & drinks)
 
@@ -172,6 +180,8 @@ prolific (adj): fruitful, productive
 
 ==abate== (v): calm down, becoming less intense; taper
 
+==abolish== (v): annul, invalidate, cancel, dissolve
+
 equanimity (n): calmness, tranquility
 
 delirium (n): not able to think or speak clearly, usually because of illness
@@ -186,13 +196,21 @@ anomaly {in sth} (n): unusual, irregularity, paradox
 
 haphazard (adj-n): unplanned, aimless, arbitrary, erratic, random
 
+==sporadic== (adj): occurring occasionally, singly, or in irregular/random instances
+
 stagnant (adj): stale, not flowing
+
+languor (n): lethargy, stupor, weakness or weariness of body or mind
+
+foible (n): weakness
 
 ==tentative== (adj): uncertain, hesitant
 
 bide (v): tarry/to wait awhile, keep up
 
 stultify (v): negate, to impair, invalidate, or make ineffective
+
+blight (v-n): impair the quality or effect of, a deteriorated condition, flaw, deformity
 
 delineate (v): to indicate, portray, describe, define
 
@@ -302,6 +320,8 @@ equanimity (n): balance, evenness of mind especially under stress
 
 accrue (v): accumulate, maximize, gain, conglomerate (adj-v-n)
 
+accede {to} (v): express approval/agreement or give consent
+
 repression (n): restraint, suppresion, constraint
 
 perdition (n): hell, inferno
@@ -360,7 +380,9 @@ lofty (adj): noble, high, superior, sublime, majestic, eloquent
 
 melancholy (adj): depressed, miserable, dejected, sad
 
-elucidate (v): explain, demonstrate, illustrate, eli5
+==bleak== (adj): cold, grim, depressing
+
+==elucidate== (v): explain, demonstrate, illustrate, eli5
 
 zeitgeist (n): the spirit of the times, the general intellectual, moral, and cultural climate of an era
 
@@ -379,6 +401,8 @@ ostensibly (adv): có vẻ như/dường như
 conjecture (v-n): guess, surmise, estimate, suppose, theory
 
 tacit (adj): implied, implicit
+
+connotation (n): implication
 
 allusion (n): implication, indirect reference especially in literature
 
@@ -424,7 +448,7 @@ vanity (n): inflated pride, empty, valueless
 
 buttress (v-n): support, strengthen, pillar, backbone
 
-ostracism (n): exclusion
+==ostracism== (n): exclusion
 
 nascent (adj): initial, first, sơ khai, nguyên thuỷ
 
@@ -452,7 +476,7 @@ persecute (v): torment, agonize, pester
 
 tribulation (n) <tree-bulation>: misery, distress, torment, affliction, woe
 
-lest (conj): for fear that...
+==lest== (conj): for fear that...
 
 vanguard (n): innovator, pioneer, forefront, avant-garde <avânt-gard>
 
@@ -522,7 +546,11 @@ speculation (n): gamble, venture, a risky undertaking
 
 fallible <fau-luh-bal> (adj): flawed, defective, faulty
 
+larceny (n): robbery, theft
+
 extricate (v): liberate, untangle, rescue
+
+sever (n): break up, divorce, dissociate, divide, ramify
 
 diminution (n): decrease, decline, reduction
 
@@ -534,7 +562,7 @@ delinquent (n-adj): degenerate, incorrigible, delayed, overdue, belated
 
 promptly (adv): without delay, immediately
 
-respite (v -n): delay, pause (before something unpleasant happens)
+==respite== (v -n): delay, pause (before something unpleasant happens)
 
 malleable (adj): adaptable, flexible, moldable, pliable
 
@@ -553,6 +581,8 @@ commotion (n): agitation, steady or recurrent motion
 fluster (v): faze, confound, a state of agitated confusion
 
 quarrel (v-n): angry disagreement
+
+imbroglio (n): scandal, embroilment, an intricate or complicated situation
 
 transfix (v): impale, paralyze (out of surprise)
 
@@ -594,13 +624,15 @@ crux (n): essence, core, gist, kernel
 
 incur (v): to experience something bad as a result of actions you have taken
 
-instigate (v): provoke, incite, trigger, stir
+==instigate== (v): provoke, incite, trigger, stir, prod
 
-opulent (adj): rich, wealthy, affluent, sumptuous
+==opulent== (adj): rich, wealthy, affluent, sumptuous
 
-==lucrative== (adj): profitable, moneymaking
+lucrative (adj): profitable, moneymaking
 
-glean (v): find out, to gather bit by bit
+installment (n): trả góp, one part of a serial story
+
+==glean== (v): find out, to gather bit by bit
 
 prerogative (n): privilege, a distinctive excellence
 
@@ -625,6 +657,8 @@ commensurate {with} (adj): eligible, in a correct and suitable amount compared t
 conniving (adj): devious, Machiavellian, calculating, manipulative
 
 futility (n): meaningless, no effect, achieving nothing
+
+debacle (n): tragedy catastrophe, a complete failure
 
 purgatory (n): 1 level above hell, temporary suffering
 
@@ -670,6 +704,8 @@ incessant (adj): continuous, perpetual
 
 cohort (n): band, group, companion, colleague
 
+consort (v-n): associate, harmonize, company, partner, spouse
+
 aphorism (n): an ingeniously terse and concise style of statement/expression
 
 countenance (v-n): approve, sanction, expression (facial)
@@ -689,6 +725,8 @@ egregious (adj): blatant, obvious, conspicuous, flagrant, prominent
 mar (v-n): spoil, tarnish, blemish, defect
 
 nuisance (n): harm, pest, injury, detriment
+
+sliver (n): splinter, scrap, flake, chip
 
 revel (v-n): binge
 
@@ -740,6 +778,8 @@ filial (adj): of, relating to, or befitting a son or daughter
 
 abrasion (n): irritation, rubbing away by friction
 
+scowl (v-n): frown, grimace, exhibit a threatening aspect, chau mày
+
 impose (v): ép buộc, áp đặt (thuế)
 
 postmortem (adj-n): autopsy, necropsy
@@ -752,4 +792,34 @@ scanty (adj): insufficient what is needed
 
 stratagem (n): scheme, ploy
 
-pine (v): languish, crave, yearn/lust {for}
+capisce (slang): nghe chưa? Hiểu chưa?
+
+magnate (n): boss, trùm, jefe (<hef-fei>), 
+
+tenement (n): residence, apartment, dwelling
+
+hypochondriac (adj-n): người mắc chứng nghi bệnh, lúc nào cũng bất an, tưởng mình đang bệnh
+
+pulmonary (adj): lung-related, bệnh về phổi
+
+polio (n): bại liệt
+
+symposium (n): hội thảo -> plural: symposia/symposiums
+
+eulogize (v): praise, extol, glorify (in a funeral) -> eulogy (n)
+
+hiatus (n): gap, break 
+
+next of kin: a fancy way to say "related"
+
+==propensity== (n): intense natural inclination or preference to sth
+
+trapping (n): outward signs/decoration
+
+purview (n): quyền hạn, the range/imit of authority, competence, responsibility, concern, or intention
+
+pronto (n): presto, chop-chop, quick, soon
+
+allegory (n): truyện ngụ ngôn, tu từ, fable, parable, apologue
+
+amenity (n): accommodation, convenience, pleasantry

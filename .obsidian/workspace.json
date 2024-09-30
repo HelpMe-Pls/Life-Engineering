@@ -10,21 +10,8 @@
           {
             "id": "2ed2b87e25932f50",
             "type": "tabs",
-            "dimension": 52.44865718799369,
+            "dimension": 52.21169036334913,
             "children": [
-              {
-                "id": "4ad2498b8982437b",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Tips & Tools/WIL from books.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
               {
                 "id": "213082fef78356e9",
                 "type": "leaf",
@@ -44,7 +31,7 @@
                   "type": "markdown",
                   "state": {
                     "file": "Tips & Tools/English vocab.md",
-                    "mode": "preview",
+                    "mode": "source",
                     "source": false
                   }
                 }
@@ -61,13 +48,12 @@
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "8cedd05142699eb5",
             "type": "split",
-            "dimension": 47.55134281200631,
+            "dimension": 47.788309636650865,
             "children": [
               {
                 "id": "c3184acf40a6477e",
@@ -223,10 +209,10 @@
   },
   "active": "213082fef78356e9",
   "lastOpenFiles": [
-    "Tips & Tools/WIL from books.md",
-    "Tips & Tools/IELTS.md",
-    "Tips & Tools/English grammar.md",
     "Tips & Tools/English vocab.md",
+    "Tips & Tools/IELTS.md",
+    "Tips & Tools/WIL from books.md",
+    "Tips & Tools/English grammar.md",
     "Frontend/CSS/Typography and Images.md",
     "Frontend/Frameworks/Remix/Data Transfer.md",
     "Frontend/CSS/Animations.md",
