@@ -351,7 +351,6 @@ render(<Header />)
 - The `object-position` property specifies *the offsets* of the content within its available space. It takes from 1 to 4 values that define the [2D position](https://developer.mozilla.org/en-US/docs/Web/CSS/position_value) of an element.
 - The `vertical-align` property is used to *vertically* position an image [in a line of text](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align#try_it).
 
-
 ## Responsive and proportion
 - Images by default have a `min-width` of their intrinsic width.
 - Different screen res needs different image res accordingly to properly display them. The `srcset` property is essentially a "plural" version of `src`. The browser will scan through the list of `srcset` and apply the first one that matches.

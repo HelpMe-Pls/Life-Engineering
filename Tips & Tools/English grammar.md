@@ -5,7 +5,8 @@
 	- **Future Perfect**: for actions that _will be ==completed before==_ a certain future time, e.g. "_She will **have walked** to school **by 9 AM**._"
 	- **Future Perfect Continuous**: for actions that _will be ==ongoing (**duration**) until==_ a certain point in the future, e.g. "_She will **have been walking** to school **for 30 minutes** by 10 AM._"
 # Misc.
-- **Adjective order** (**O**pinion - **S**ize - **A**ge - **S**hape - **C**olor - **O**rigin - **M**aterial - **P**urpose): I have a beautiful, small, old, round, blue, Chinese, porcelain vase.
+- **Adjective order** (**O**pinion - **S**ize - **A**ge - **S**hape - **C**olor - **O**rigin - **M**aterial - **P**urpose):
+	- *I have a beautiful, small, old, round, blue, Chinese, porcelain vase.*
 - **Primitive verb**:
 	- After modal verbs: can run, should eat, must sleep, might work
 	- After subjunctive (describing possibilities, hypothetical situations, formal requests and commands). For example: 

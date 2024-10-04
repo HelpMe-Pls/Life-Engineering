@@ -63,8 +63,8 @@
 #### Alignment
 - Grid syntax is extensive, and allows defining sets of columns and rows with varying *repeated patterns*:
   - For the grid *container*:
-	  1. `grid-gap` (or just `gap`):  specifies the size of rows and columns gutters (first value is for rows, the next one is for columns). If there's just 1 value, then it applies for both row and column gaps.
-	  2. `justify-content`: allows us to change how our columns are distributed on row axis. Its common values are `start`/ `center` / `end` / `stretch` / `space-between` / `space-around` / `space-evenly` .
+	  1. `grid-gap` (or just `gap`):  specifies the size of rows and *columns* gutters (first value is for rows, the next one is for columns). If there's just 1 value, then it applies for both row and column gaps.
+	  2. `justify-content`: allows us to change how our *columns* are distributed on row axis. Its common values are `start`/ `center` / `end` / `stretch` / `space-between` / `space-around` / `space-evenly` .
 	  3. `align-content`: same as `justify-content` but for column axis. Also takes the same values. Only works when there's a fixed `height` set on the container (otherwise the rows are tightly packed together).
 	  4. `place-content`: sets both the `align-content` and `justify-content` properties in a single declaration, respectively. If the second value is omitted, the first value is assigned to both properties.
 	- For the grid *items*:

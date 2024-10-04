@@ -82,20 +82,60 @@
 - Finally, spend about 5 minutes checking your letter for mistakes and paraphrasing.
 
 ## Task 2
-- Use ***cohesion*** in such a way that it attracts no attention. The linking / transition between sentences and paragraphs should help with the ==development== of ideas but *does ==not* overshadow== the ideas.
+- Use ==***cohesion***== in such a way that it attracts no attention. The linking / transition between sentences and paragraphs should help with the ==development== of ideas but *does ==**not*** overshadow== the ideas.
 - Present a fully developed position in ==answer to the question== with ***relevant***, fully extended and well supported ideas.
-- The taken position should be *clear throughout* the essay (i.e. presented in the introduction, and then supported in the rest of the essay, with ==no surprises / unexpected turn in the conclusion==)
+- ***MOST IMPORTANT***: The taken position should be *clear **throughout*** the essay (i.e. presented in the introduction, and then supported in the rest of the essay, with ==no surprises / unexpected turn in the conclusion==).
+### The topics
+#### Opinion
+- This is the most common prompt for the task. The question is "...do ***==you== agree or disagree***?" 
+- You can either strongly or *partly* agree/disagree. Take a clear, definitive position rather than offering an ambiguous/irrelevant response.
+
+> [!important]- Partly agree/disagree
+> - Use "On one hand..." to start the first paragraph, and "However..." or "On the other hand..." to start the second paragraph. 
+> - Be careful with "extreme" questions, e.g. those with strong claim such as "most important...", "absolute...", "totally...", especially where it ends **without** the "To what extend...". If you choose to disagree, then your answer should carry ==**equal**== weight to the question's subject matter.
+
+> [!danger] Get the topic right
+In the end, it's still your ***personal*** take on the subject, so you must **avoid** impersonal language like "**It** is believed...", "**It** is considered..."
+
+> [!info]- Counterarguments
+> If you feel like you need to include a counterargument (as an example), do so in a way that further reinforce your answer, ***not*** as a way to support that counterargument.
+> Your answer to the topic should behave as a counter to those counterarguments.
+#### Discussion
+- The question is "Discuss ==***both*** views== and give ***your*** opinion."
+- This is basically a [[#Opinion |partly]] agree/disagree prompt, but for social topics, rather than personal views.
+> If you can't pick a side, then you must give the 2 arguments equal weight.
+
+> [!danger] Get the topic right
+> - The discussion focuses on the use of "they" or other ==***plural pronouns***==. 
+> - The key to differentiate between a Discussion and an Opinion question is the pronoun it mentions.
+> - Make sure that your claim is still personal, i.e. "I believe that...", "I personally prefer..."
+#### Cause/problem and Solution
+- The question is "What **problems**/**issues**...", "Suggest some measures..."
+- First paragraph:
+	- First sentence: introduce various issues. For example: "...several related problems can be anticipated."
+	- Next sentences: extend 2 prominent issues. Elaborate *why* they are considered issues, what's wrong with them, and give example (optional)
+- Second paragraph:
+	- First sentence: introduce various solutions. For example: "There are several resolutions to alleviate..."
+	- Next sentences: corresponding solutions to the issues *mentioned in the first paragraph*. Optionally, you can add a general solution to the prompt's question or something like: "While there's no silver bullet to/for `the issue`, I’m confident that with dedication and integrity, we can steadily make progress and alleviate the difficulties.
+#### Two-part Question
+- The prompt's structure: a claim + first question about the prompt + second question about the claim (or follow up to the first question)
+- The introduction: 
+	- First sentence: *paraphrase* the given topic.
+	- Second sentence: further extend/acknowledge the claim/the questions (i.e. it's ok to not answer the questions *yet*), or you can answer both questions in this 1 sentence.
+- First paragraph: answer the first question, then further explain and reinforce your answers. Give examples where possible.
+- Second paragraph: same thing, for the second question.
 ### The structure
 #### The introduction
-- Ideal length: 2 sentences.
-	- **First sentence**: you can either paraphrase the given topic or mention other perspective on the topic. For example:
+- Ideal length: 2 sentences. This is the same for all topics, except for the "two-part question" type.
+	- **First sentence**: you can either *paraphrase* the given topic or *mention other perspective* on the topic. For example:
 		- Paraphrasing: "Governments should financially support businesses which are facing the possibility of going bankrupt."  → "It is of great necessity for governments to provide financial aids for businesses which are coping with the possibility of bankruptcy."
 		- Alternative viewpoints: use phrases like "Considering that perception is subjective...", "People have different views with regard to...",  "Given that perspectives differ..."
-	- **Last sentence**: explicitly answer the given question in a concise manner. Use phrases like: "It strikes me that...", "In my view...", "I firmly believe that...". For example:
-		- "While this..., I believe in general..."
-		- "While I agree/disagree that..., I think..."
+	- **Last sentence**: explicitly answer the given question in a concise, direct manner. Use phrases like: "It strikes ***me*** that...", "In ***my*** view...", "***I*** firmly believe that...". For example, when applying to a [[#Opinion |partly]] agree/disagree opinion:
+		- "While this..., I *believe* in general..." 
+		- "While I agree/disagree that..., I am confident that..."
+> Never include any question here.
 #### The body
-- Ideally 2 paragraphs, 4-6 sentences each. For a paragraph:
+- Ideally 2 paragraphs (so that you qualify the time constraint), 4-6 sentences each. For a paragraph:
 	- **First sentence**: introduce your take on the issue.
 	- **Next sentence**: clarify / extend your take (*why* do you think that...)
 	- **Next 1-2 sentences**: give specific examples/explanations to support your claim
@@ -103,20 +143,35 @@
 - For the first sentence of the *second* paragraph, it should demonstrate either a smooth transition from the first paragraph, or expressing a counterargument (base on the requirement).
 #### The conclusion
 - Always start with "In conclusion,..."
-- Reaffirm your answer in the introduction by paraphrasing / extending it.
+- ==***Reaffirm*** your answer in the introduction by paraphrasing / extending it==.
+### Tips
+- Spend *under* 10 minutes on planning when the timer starts. Get your topic right and map out the intended structure (e.g. what should your first and second paragraph discuss about)
+- Spend no more than 30 minutes on actually writing the essay. Take note of sentences that need paraphrasing as you write.
+	- Introduction: under 5 minutes
+	- Each paragraph of the body: no more than 8 minutes
+	- Conclusion: less than 4 minutes
+- If you're doing great, you should have less than 5 minutes to:
+	- ***Check for errors*** (grammatical and syntax)
+	- Paraphrase noted sentences. ==**Avoid perfectionism**==. 
 
 ## Things to NEVER do
+- Avoid questions of any form, *especially in the introduction*.
 - Never use idioms, clichés, proverbs, slang or text abbreviations in any type of letter:
 	- Common clichés *to avoid*: 
-		- At the end of the day
-		- Second of all
-		- Last but not least
-		- To cut a long story short / In a nutshell
-		- I look forward **to hearing** from you
+		- At the end of the day...
+		- Second of all...
+		- Last but not least...
+		- To cut a long story short... / In short.../ In a nutshell...
+		- To sum up... / To summarize... / In summary....
+		- All things considered....
+		- I look forward **to hearing** from you.
 	- Try to explain yourself clearly without using proverbs, e.g. you can replace the "Too many cooks spoil the broth" proverb with: 
 		- Formal voice: "I am worried that the team is too large and so the decision-making is slow."
 		- Personal voice: "There are too many people involved these days, and so not much is really getting done."
 	- Words like "a nerd/a geek/a creep" or "awesome/cool/wicked/sick" are considered slang.  don't use names for streets, buildings,... in your native language (e.g. Bến Nhà Rồng → Dragon House Harbor). If there is no direct translation, just create a suitable English name, e.g. "There is a big festival here called the National Spring Festival."
+- Don't use quotes. Quotations are marked as "memorized language", which heavily deducts your score.
+- Don't invent statistics, especially numeric statistics. Rather than relying on invented statistics, focus on expressing your own views.
+---
 # Speaking
 - Practice speaking your thoughts aloud.
 - A little bit of "how do you *feel* about it / how does it *affect* you" could help.
@@ -124,10 +179,12 @@
 - They expect you to speak in a manner that poses no difficulty in understanding what you're saying.
 - Initiate your voice from your chest, not from your throat.
 - Communicate in a clear and controlled manner. This is who you are. Express with a positive, engaging attitude.
+---
 # Reading
 - f
 - f
 - f
+---
 # Listening
 - f
 - f

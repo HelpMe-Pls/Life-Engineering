@@ -152,7 +152,7 @@ bellow (v): bawl, grawl, to shout in a deep voice
 
 diatribe {against sb/sth} (n): a long and angry speech or piece of writing attacking and criticizing
 
-perplexing (adj): puzzling, confusing, difficult to understand, elusive, quandary
+perplexing (adj): puzzling, confusing, difficult to understand, elusive, ==quandary==
 
 ==elusive== (adj): fugitive, hard to find, capture, or isolate
 
@@ -358,7 +358,9 @@ commensurate (adj): proportional, comparable, corresponding in size, amount, ext
 
 perturb (v): bother, disturb, unsettle, concern, pester
 
-endow (v): gift, bless, equip, provide, empower
+==subsidy== (n): a grant or gift of money (from the government) 
+
+==endow== (v): gift, bless, equip, provide, empower
 
 stalwart (adj-n): courageous, intrepid, valiant, powerful, advocate, activist
 
@@ -823,3 +825,5 @@ pronto (n): presto, chop-chop, quick, soon
 allegory (n): truyện ngụ ngôn, tu từ, fable, parable, apologue
 
 amenity (n): accommodation, convenience, pleasantry
+
+ostracize (v): cho ra rìa, bo xì
