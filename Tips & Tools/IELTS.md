@@ -1,10 +1,10 @@
 # Writing
-- Generally, 3 to 4 paragraphs is the sweet spot for an 8+ band, in terms of length (of course you must also be mindful of the minimum of 150 words for task 1 (the ideal is 180~220 words) and 250 words for task 2).
+- Generally, 2 to 4 paragraphs is the sweet spot for an 8+ band, in terms of length (of course you must also be mindful of the minimum of 150 words for task 1 (the ideal is 180~220 words) and 250~300 words for task 2).
 - It is very important to *separate your content ideas into clear paragraphs* so that the examiner can see them immediately.
 - The tasks last 20 minutes for task 1 and 40 minutes for task 2. Coordinate your execution accordingly.
 - In any case, your "padding" to the details should feel realistic, tangible and ==***relevant***==, rather than some made up statistics or being too dramatic or too many unnecessary specific details.
 ## Task 1
-- This test requires you to think very carefully about the recipient (the person reading the letter) the content (the ideas and details you create) and the style of the writing.
+- This test requires you to think very carefully about ***the recipient*** (the person reading the letter) ***the content*** (the ideas and details you create) and ***the style*** of the writing.
 	- If the IELTS examiner thinks you are confused about the recipient and the style, and if your content does not answer the task properly, you will get a low score – even if your English is quite good.
 	- Don’t invent too many complicated details about the situation, *even if you know a lot about the topic*. Try to ==keep the details quite simple==.
 ### Get this right
@@ -12,13 +12,16 @@
 	- The *imaginary* ***recipient*** of the letter (a stranger or someone you know personally)
 	- The correct ***style*** to use (personal, formal or semi-formal)
 	- The ***content*** of the letter (a typical *mix* of expressions: ==complaining, requesting, explaining/apologizing, suggesting==)
-> Ask yourself, ‘**Why** am I writing this letter? What **combination** of content do I need to create?’
+> Ask yourself, "**Why** am I writing this letter? What **combination** of content do I need to create?"
 - How to map them out (within the first ==3 minutes==):
-	- Recipient: 
-		- Semi Stranger - formal / semi-formal (you can recognize this style if the question mentions "the relevant person"): "Dear Mr./Mrs./Ms. `firstName`,..."
-		- Complete Stranger - formal (usually for complaining/requesting for a service offered by an organization): "Dear Sir or Madam,..."
+	- **Recipient**: 
+		- Semi Stranger - formal / semi-formal (you can recognize this style if the question mentions "*the relevant person*" or someone specific, e.g. the store manager, the governor,...): "Dear Mr./Mrs./Ms. `firstName`,..."
+		- Complete Stranger - formal (usually for *complaining/requesting* for a service offered by *an organization*): "Dear Sir or Madam,..."
 		- Someone you know personally - personal/semi-formal: "Dear `firstName`,"
-	- Content: read the prompt *very carefully* (specifically the part after "In your letter,...") and you should ==recognize the required *mix* of expressions you ***must*** include. You ***must not*** mention any expression that isn't in the requirement== (e.g. a seemingly polite "apologizing for contacting the recipient" *would be **invalid*** if the prompt doesn't explicitly state that you should apologize)
+	- **Content**: read the prompt *very carefully* (specifically the part after "In your letter,...") and you should ==recognize the required *mix* of expressions you ***must*** include. You ***must not*** mention any expression that *isn't* in the requirement== (e.g. a seemingly polite "apologizing for contacting the recipient" _would be **invalid**_ if the prompt doesn't explicitly state that you should apologize)
+		- **Complaining**: a letter of complaint to a business, requesting and suggesting are often similar in content, in *formal* style. You're expected to give a replacement/repair/immediate refund request if it's about a product. 
+			- Start with "*I am writing to express my dissatisfaction with*....". Try to craft your sentences in a contrast manner between `your expectation` and `your issue` (e.g. "*Although the headphones worked flawlessly in-store, their noise-cancelling function was noticeably ineffective when I used them in a local coffee shop.*"). For padding: "*I am confident that your offer is good enough to keep my custom*." End it with a "Kind regards,".
+		- **Requesting**: this should be in a polite but firm tone, e.g. "*I would appreciate it if you could...*". Use indirect questions to begin a request for help or information (e.g. "*I wonder if you could send me the course details urgently, as I wish to apply very soon.*")
 - The general structure:
 	1. Greeting (1 line): pay very close attention to the question, it should tell you something like =="Begin your letter ‘Dear --------’"==
 	2. First paragraph: An overview of "what is this about", addressing the first required expression
@@ -27,7 +30,7 @@
 	5. Closing (3 lines: CTA → farewell → your name)
 #### Tips
 - **For formal style**: use formal words such as "regarding, remains, considerable, commotion, appreciate, restrict,..."
-	- **Don't** use contractions (e.g. don’t, can’t, shouldn't,...) 
+	- ==**Don't** use contractions== (e.g. don’t, can’t, shouldn't,...) 
 	- Use formal phrases:
 		- I am writing regarding...
 		- I am sure you will appreciate that...
@@ -43,7 +46,7 @@
 		- Why don’t we... / How about...
 		- If I were you, I’d...
 		- Do you remember when we...
-		- Here’s an idea.
+		- Here’s an idea...
 		- The thing / the problem is that...
 		- I’m really sorry that...
 		- As you will appreciate... (it's a better way of saying "I am sure you can understand that...")
@@ -52,26 +55,30 @@
 		- Formal: the recipient *is senior* to you in age or authority, is not obliged to follow your suggestions (e.g. something like "I hope it will be acceptable if..." is preferable), or you're complaining or insisting on something.
 		- Semi-formal: the recipient is *probably not* senior to you, and you're inquiring some kind of explanation or expressing an interest.
 	- If you're not really sure if the style should be formal or personal, the safe bet is to go formal.
-	- Remember that formal and personal letter tasks are more common than semi-formal letter tasks.
+	- ==Remember that formal and personal letter tasks are way more common than semi-formal letter tasks.==
 - **For personal style**:
-	- Should begin with "Dear + `firstName`". ***Never*** open with "Dear friend"
+	- You can recognize this style if the question has the word "friend" in it.
+	- Should begin with "Dear + `firstName`". ***Never*** open with "Dear friend".
 	- Showing your feelings is actually recommended for this type of letter.
-	- It's ok to make a small joke. Remember, just ***one** small joke*. Don't over do this.
+	- It's ok to make a small joke. Remember, just _**one** small joke_. Don't over do this.
 	- You're free to use contractions, phrasal verbs and informal vocabulary (because they're less serious, indicating that you're trying to be friendly and "on the same level"). Words like "really, pretty, kind of,..." are acceptable.
-	- Using the "zero conditional" (`If` + `present simple` + `can`) or "first conditional" (`If` + `present tense` + `will`) is a good way to *make requests or suggestions*.
+	- ==For checking in, use "*I hope all is going well for you in...*" instead of "*How's it going in...*"==
+	- Using the "zero conditional" (`If` + `present simple` + `can` → "*If you let me know the arrival time, I can meet you in my car.*") or "first conditional" (`If` + `present tense` + `will` → "*If you send out the party invitations, I’ll bring all the food*.") is a good way to *make requests or suggestions*.
 	- For apologizing: keep it short and simple: "forgive me", "sorry". ==Use this: "If it’s any comfort, I feel terrible about it too." in case you want padding.==
 - **For endings**: 
-	- Formal recipient CTA: use "I look forward to + `V-ing`", "I would appreciate your reply with...", "Thank you for your help/consideration, and I await...".
-	- Senior recipient farewell: use "Kind **R**egards, / Yours **S**incerely, / Yours **F**aithfully,".
+	- Formal recipient CTA: use "I look forward to + `V-ing (NOT hearing)`...", "I would appreciate your reply with...", "Thank you for your help/consideration, and I await...".
+	- Formal recipient farewell: use "Kind regard***s***, / Yours sincerely, / Yours faithfully,".
 	- Formal and semi-formal recipient: finish with your `firstName lastName`.
 	- Personal CTA: "Do let me know...", "Please get in touch...", "I can’t wait to..."
-	- Personal recipient: finish with a friendly comment and "All the best, `\n yourFirstName`."
+	- Personal farewell: use "All the best, `\n yourFirstName`."
 		- Alternatives for "All the best,": Very best wishes, / Take care, / See you soon, / Thinking of you, / Keep in touch,.
 	- Always ==use your real first name + surname== in the way it appears on your IELTS candidate paper. Don’t use an imaginary name at the end, because this makes the letter unrealistic.
-	- CTA: remember to express appreciation if your content is requesting something.
+	- CTA: remember to express appreciation if your content is *requesting* something:
+		- Formal: =="*Your prompt attention to this matter would be greatly appreciated,== and I look forward to your response.*"
 	- Don't add anything to your name (i.e. the last line of your letter should only contain your name, no matter what style it is).
 	- ==The last character ***must not*** be a full stop (.)==
 	- Never use "PS" in a formal letter. It's the last ditch effort for a *personal* letter *if* it's not meeting the minimum length of 150 words.  
+
 > [!important]- Never include your opinions or ideas about topics or trends in society. For this task, it's considered "padding", which heavily reduces your score.
 - **About numbers**: don't write numbers in numeric format unless you're describing a universally expected numeric format, like date (September $6^{th}$, 1969), currency ($69,96), room number (room 69), a page of a book (page 96),...
 	- **Don't** use the dot (.) for decimal point, use the comma instead.
@@ -177,16 +184,53 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 - A little bit of "how do you *feel* about it / how does it *affect* you" could help.
 > Never stray away from the main topic that you're discussing.
 - They expect you to speak in a manner that poses no difficulty in understanding what you're saying.
-- Initiate your voice from your chest, not from your throat.
+- Initiate your voice from your chest, not from your throat. Speak clearly with natural intonation and stress.
 - Communicate in a clear and controlled manner. This is who you are. Express with a positive, engaging attitude.
 ---
 # Reading
-- f
-- f
-- f
+- It's better to answer fewer questions correctly than to rush through all of them making careless mistakes.
+	- Make sure to get the easy ones right, and *make **educated** guesses* for the harder ones.
+	- It's always better to have an answer for every question than to leave some blank.
+- This is the battle of paraphrasing. Read your question *carefully*, identify its *main* topic of discussion (i.e. what's this about) and then appropriately apply these strategies:
+## Strategies
+- These are the essential skills for every section that should (but not always) be applied in order:
+	1. **Skimming**: your goal is to *get a general idea* of the content and structure of "the text below".
+	2. **Scanning**: you must be able to *locate* the relevant part from "the text below" and the (possibly paraphrased) keywords of the statement.
+	3. **Close reading**: make sure to clearly identify its *main* topic of discussion.
+- ==Spend no more than 2 minutes for each answer.==
+### TFNG
+- There's always ==***at least one***== "True", one "False" and one "Not Given".
+- Aim to complete this task within a 10-minute window. 
+> [!info] Tackle the statements in order
+> The order of the statements are usually mapped to the order of the paragraphs.
+- Follow these steps *in order*:
+	1. **Skim** the questions and the text quickly (1-2 minutes): note main topics of each *paragraph* (in 5 words or less).
+	2. **Closely read** the statements carefully (1-2 minutes per statement): this is where the "paraphrasing" takes place.
+	3. **Predict** your answer (10 seconds): formulate your answer before going back to the paragraphs.
+	4. **Scan** for key words (30 seconds per statement): ***locate*** the relevant paragraph topic (that you noted in step 1), then ***locate*** the relevant ***keywords*** in the statement and keep your eyes for those (*possibly paraphrased*) keywords in the filtered passage excerpt.
+	5. Make your decision and move on (==do **not** spend more than 2 minutes in total for each statement==): if unsure, mark it as "Not Given".
+	6. Review (if you finished within 10 minutes): watch for qualifying words (all, some, never, always)
+#### How to identify a "NOT GIVEN"
+- A **NOT GIVEN** means the passage _**lacks** the information_ necessary to either *agree or disagree* with the statement.
+	- Don’t assume based on your lexical knowledge. Focus on the statement only: is the identified passage answer directly to the statement or not.
+	- The excerpt may seem true, but it's not strong enough to completely gravitate toward the claim in the statement → ==the statement *must* either confirm or deny it==. 
+- For example: 
+	- The statement: "Khoi is 25 years old."
+	- The excerpt: "Khoi is a mature person."
+### The order of execution
+- Complete the sections in their numerical order.
+- Complete your question types in this order:
+	1. Matching: Header → Information (paragraph/feature) matching, mostly require skimming and scanning
+	2. Fill in the blank
+	3. Multiple choice
+	4. TFNG
 ---
 # Listening
-- f
-- f
-- f
-- f
+- Listen carefully to differentiate between similar characters (`b` vs `p`, `m` vs `n`) when the track is spelling.
+- Listen carefully to the pronunciation to detect the correct form (singular/plural, tenses,...)
+- Again, this is the battle of paraphrasing. Read your question *carefully*, identify its *main* topic of discussion (i.e. what's this about), identify the keywords, recognize the synonyms.
+>  Don't spend too much time on a question that you miss the remaining part of the track.
+
+> [!important]- Memorize the track
+> - If it takes more than 10s to answer the question, mark it for later and focus on the remaining of the track.
+> - It's always better to ==memorize the key topic== of the conversations in the track, and then recall that to answer your questions, rather than lingering on the questions and try to get them right while the track is still running.

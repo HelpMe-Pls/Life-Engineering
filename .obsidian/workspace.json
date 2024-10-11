@@ -31,7 +31,7 @@
                   "type": "markdown",
                   "state": {
                     "file": "Tips & Tools/English vocab.md",
-                    "mode": "preview",
+                    "mode": "source",
                     "source": false
                   }
                 }
@@ -210,9 +210,11 @@
   "active": "213082fef78356e9",
   "lastOpenFiles": [
     "Tips & Tools/English grammar.md",
-    "Frontend/CSS/CSS.md",
-    "Tips & Tools/IELTS.md",
     "Tips & Tools/English vocab.md",
+    "Tips & Tools/IELTS.md",
+    "Tips & Tools/maslows.png",
+    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Frontend/CSS/CSS.md",
     "Tips & Tools/System Design.md",
     "Tips & Tools/WIL from books.md",
     "Frontend/CSS/Animations.md",
@@ -225,7 +227,6 @@
     "Frontend/Frameworks/Remix/Routing & Navigation.md",
     "Tips & Tools/Entrepreneurship.md",
     "Backend/Backend.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
     "Frontend/Frameworks/Remix/Remix.md",
     "Tips & Tools/Socialize.md",
     "Tips & Tools/Tips & Tools.md",
@@ -235,7 +236,6 @@
     "Frontend/TypeScript/Advanced.md",
     "Frontend/TypeScript/Patterns.md",
     "Frontend/TypeScript/Type Transformation.md",
-    "Frontend/TypeScript/Fundamentals.md",
     "Frontend/JavaScript/JS Overview.png",
     "Tips & Tools/code-review.png",
     "Backend/sql-joins.png",
@@ -243,7 +243,6 @@
     "Tips & Tools/Screenshot 2024-06-20 105333.png",
     "Untitled.canvas",
     "Frontend/HTML/url-breakdown.png",
-    "Tips & Tools/maslows.png",
     "Frontend/Libraries/HTMX",
     "Frontend/Frameworks/Remix",
     "Backend/Golang",

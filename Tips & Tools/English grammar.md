@@ -8,7 +8,7 @@
 - **Adjective order** (**O**pinion - **S**ize - **A**ge - **S**hape - **C**olor - **O**rigin - **M**aterial - **P**urpose):
 	- *I have a beautiful, small, old, round, blue, Chinese, porcelain vase.*
 - **Primitive verb**:
-	- After modal verbs: can run, should eat, must sleep, might work
+	- After modal verbs: can run, should eat, must sleep, might work, may seem,...
 	- After subjunctive (describing possibilities, hypothetical situations, formal requests and commands). For example: 
 		- It is **important** that he **be** on time.
 		- It is **essential** that we **finish** this project by Friday.
@@ -27,6 +27,18 @@
 		- She would sooner **die** than **admit** she was wrong.
 - The word "shall" is only used for informal/personal *suggestions* ("Shall we go to...") but *not* for the future tense.
 	- The negative "shan’t" or "shall not" is almost never used in modern English today.
+## Commonly misspelled
+- Nouns that end with "-tance" or "-tence":
+	- Acceptance
+	- Assistance
+	- Attendance
+	- Substance
+	- Distance
+	- Persistence
+	- Competence
+	- Dependence
+- Words ending in **-tance** typically relate to *actions or conditions*, while words ending in **-tence** often relate to *qualities or states of being*
+
 ## Proverbs, idioms
 - "That one's a lemon": a "lemon" product is one that is disappointing or unsatisfactory.
 - "By the same token": for the same reason

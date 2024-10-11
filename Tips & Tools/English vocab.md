@@ -34,6 +34,10 @@ conform {to} (v): abide by, comply with, adhere to
 
 ==judicious== (adj): wise, thoughtful, sensible, prudent, insightful
 
+shrewd (adj): based on good understanding or judgment
+
+==nibble== (n): an expression of interest in something
+
 punitive (adj) = penal, disciplinary: inflicting or intended as punishment
 
 competent (adj): deft, having the necessary skill to do something successfully
@@ -248,7 +252,7 @@ endearing (adj): lovable, adorable
 
 ==rapprochement== (n): rapport, fellowship, kinship, solidarity
 
-ominous (adj): foreboding, suggesting that something bad is going to happen in the future
+==ominous== (adj): foreboding, suggesting that something bad is going to happen in the future
 
 bequeath {sth to sb} (v): transmit, to give as a will
 
@@ -670,6 +674,8 @@ coy (adj): increase interest in something by intentionally keeping secret
 
 ==riveting== (adj): enthralling, fascinating, gripping, intriguing
 
+aficionado (n): someone who is very interested in and enthusiastic about a particular subject
+
 thrall (v-n): slave, a state of complete absorption, in moral or mental servitude
 
 treason (n): treachery, betrayal, phản quốc
@@ -827,3 +833,9 @@ allegory (n): truyện ngụ ngôn, tu từ, fable, parable, apologue
 amenity (n): accommodation, convenience, pleasantry
 
 ostracize (v): cho ra rìa, bo xì
+
+==gander== (n): a quick look
+
+hors d'oeuvre (n): small pieces of food eaten at a party
+
+acquit (v): vindicate, to free from allegation or blame, làm trọn (nghĩa vụ, bổn phận)
