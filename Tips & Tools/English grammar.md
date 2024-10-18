@@ -27,6 +27,7 @@
 		- She would sooner **die** than **admit** she was wrong.
 - The word "shall" is only used for informal/personal *suggestions* ("Shall we go to...") but *not* for the future tense.
 	- The negative "shan’t" or "shall not" is almost never used in modern English today.
+- How to read past tense verb with post-fix `-ed`:
 ## Commonly misspelled
 - Nouns that end with "-tance" or "-tence":
 	- Acceptance
@@ -38,7 +39,35 @@
 	- Competence
 	- Dependence
 - Words ending in **-tance** typically relate to *actions or conditions*, while words ending in **-tence** often relate to *qualities or states of being*
-
+- ~~Laughters~~ → Laughter
+- ~~Servere~~ → Severe
+- Regarding ~~to~~ → Regarding  / As for + noun
+- Extend (v) $\ne$ Extent (n)
+## Speaking
+### How to pronounce `-ed` postfix
+#### As a `/t/`
+- Verbs that _**end** with_ voiceless consonant: *p, k, s, sh, ch, f, th*. For example:
+	- Miss → missed /mɪst/
+	- Scratch → scratched /skrætʃt/
+	- Whip → whipped /wɪpt/
+	- Stuff → stuffed /stʌft/
+	- Sniff → sniffed /snɪft/
+#### As a `/d/`
+- Verbs that _**end** with_ a vowel or a voiced consonant: *b, g, v, z, j, m, n, ng, l, r*. For example:
+	- Claw → clawed /klɔːd/
+	- Slam → slammed /slæmd/
+	- Kneel - kneeled /niːld/
+	- Show - showed /ʃəʊd/ (Vowel `o`)
+	- Crawl - crawled /krɔːld/ (Vowel `a`)
+#### As an `/ɪd/`
+- Verbs that _**end** with_ a `t` or `d` *sound*:
+	- Graduate - graduated /ˈgrædʒueɪtɪd/
+	- Extend - extended /ɪkˈstendɪd/
+	- Delete - deleted /dɪˈliːtɪd/
+	- Hesitate - hesitated /ˈhezɪteɪtɪd/
+	- Insist - insisted /ɪnˈsɪstɪd/
+## Collocations
+- ill-equipped: under-prepared
 ## Proverbs, idioms
 - "That one's a lemon": a "lemon" product is one that is disappointing or unsatisfactory.
 - "By the same token": for the same reason

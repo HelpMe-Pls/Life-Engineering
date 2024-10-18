@@ -1,7 +1,5 @@
 invariably (adv): always
 
-wither (v): to affect harmfully (with object); to fade, decay (w/o object)
-
 credo (n) <cri-do>: a fancy word for 'ultimate belief'
 
 endeavor (v-n): to try / an effort to do sth
@@ -25,6 +23,8 @@ conventional (adj): standard, traditional, typical
 ossify (v): to become hardened or conventional and opposed to change
 
 substitute (v-n): replacement, exchange 
+
+==supplant== (v): to take the place of and serve as a substitute for especially by reason of superior excellence or power
 
 vicarious (adj): substitutionary
 
@@ -129,6 +129,8 @@ assuage (v): ease, quench, appease, pacify
 disparate (adj): distinct, uniquely different from each other
 
 disparage (v): degrade, belittle, depreciate
+
+derisory (adj): belittling, pathetic, uncomplimentary, contemptuous
 
 pejorative (adj-n): denigrative, derogative, belittling, disparaging
 
@@ -270,7 +272,7 @@ burgeoning <burg-jun-ning> (adj): growing, expanding, or developing rapidly
 
 ==wax== (v): to grow in volume, strength, intensity, toward full development
 
-intricate (adj): complicated, sophisticated, pragmatic
+intricate (adj): complicated, sophisticated, ==pragmatic==
 
 canonical (adj): orthodox
 
@@ -400,7 +402,7 @@ proletariat (n): the laboring class, the lowest class of a community
 
 acolyte (n): follower
 
-putative (adj): presumed, apparent, alleged, ostensive
+==putative== (adj): presumed, apparent, alleged, ostensive
 
 ostensibly (adv): có vẻ như/dường như
 
@@ -839,3 +841,5 @@ ostracize (v): cho ra rìa, bo xì
 hors d'oeuvre (n): small pieces of food eaten at a party
 
 acquit (v): vindicate, to free from allegation or blame, làm trọn (nghĩa vụ, bổn phận)
+
+irrigation (n): tưới, supply with water by artificial means

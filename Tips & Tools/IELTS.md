@@ -1,8 +1,9 @@
 # Writing
-- Generally, 2 to 4 paragraphs is the sweet spot for an 8+ band, in terms of length (of course you must also be mindful of the minimum of 150 words for task 1 (the ideal is 180~220 words) and 250~300 words for task 2).
+- Generally, 2 to 4 paragraphs is the sweet spot for an 8+ band, in terms of length (of course you must also be mindful of the minimum of 150 words for task 1 (the ideal is 170~220 words) and 250~300 words for task 2).
 - It is very important to *separate your content ideas into clear paragraphs* so that the examiner can see them immediately.
 - The tasks last 20 minutes for task 1 and 40 minutes for task 2. Coordinate your execution accordingly.
 - In any case, your "padding" to the details should feel realistic, tangible and ==***relevant***==, rather than some made up statistics or being too dramatic or too many unnecessary specific details.
+- Confusion ***must not*** be raised from your writing.
 ## Task 1
 - This test requires you to think very carefully about ***the recipient*** (the person reading the letter) ***the content*** (the ideas and details you create) and ***the style*** of the writing.
 	- If the IELTS examiner thinks you are confused about the recipient and the style, and if your content does not answer the task properly, you will get a low score – even if your English is quite good.
@@ -29,6 +30,7 @@
 	4. Third paragraph: Extra meat (but still meat, don't go veggie here), extending the previous expressions and focus on the final required expression. Remember that these 3 paragraphs don't have to be in the same length.
 	5. Closing (3 lines: CTA → farewell → your name)
 #### Tips
+- Straight up answering each required expression in 2-3 sentences is the way to go.
 - **For formal style**: use formal words such as "regarding, remains, considerable, commotion, appreciate, restrict,..."
 	- ==**Don't** use contractions== (e.g. don’t, can’t, shouldn't,...) 
 	- Use formal phrases:
@@ -63,7 +65,7 @@
 	- It's ok to make a small joke. Remember, just _**one** small joke_. Don't over do this.
 	- You're free to use contractions, phrasal verbs and informal vocabulary (because they're less serious, indicating that you're trying to be friendly and "on the same level"). Words like "really, pretty, kind of,..." are acceptable.
 	- ==For checking in, use "*I hope all is going well for you in...*" instead of "*How's it going in...*"==
-	- Using the "zero conditional" (`If` + `present simple` + `can` → "*If you let me know the arrival time, I can meet you in my car.*") or "first conditional" (`If` + `present tense` + `will` → "*If you send out the party invitations, I’ll bring all the food*.") is a good way to *make requests or suggestions*.
+	- Using the "zero conditional" (`If` + `present simple,` + `can` → "*If you let me know the arrival time, I can meet you in my car.*") or "first conditional" (`If` + `present tense,` + `will` → "*If you send out the party invitations, I’ll bring all the food*.") is a good way to *make requests or suggestions*.
 	- For apologizing: keep it short and simple: "forgive me", "sorry". ==Use this: "If it’s any comfort, I feel terrible about it too." in case you want padding.==
 - **For endings**: 
 	- Formal recipient CTA: use "I look forward to + `V-ing (NOT hearing)`...", "I would appreciate your reply with...", "Thank you for your help/consideration, and I await...".
@@ -94,8 +96,9 @@
 - ***MOST IMPORTANT***: The taken position should be *clear **throughout*** the essay (i.e. presented in the introduction, and then supported in the rest of the essay, with ==no surprises / unexpected turn in the conclusion==).
 ### The topics
 #### Opinion
-- This is the most common prompt for the task. The question is "...do ***==you== agree or disagree***?" 
+- This is the *most common* prompt for the task. The question is "...do ***==you== agree or disagree***?" 
 - You can either strongly or *partly* agree/disagree. Take a clear, definitive position rather than offering an ambiguous/irrelevant response.
+> If the question doesn't mention "to what extent...", then a one-sided perspective is always recommended. 
 
 > [!important]- Partly agree/disagree
 > - Use "On one hand..." to start the first paragraph, and "However..." or "On the other hand..." to start the second paragraph. 
@@ -108,7 +111,7 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 > If you feel like you need to include a counterargument (as an example), do so in a way that further reinforce your answer, ***not*** as a way to support that counterargument.
 > Your answer to the topic should behave as a counter to those counterarguments.
 #### Discussion
-- The question is "Discuss ==***both*** views== and give ***your*** opinion."
+- The question is "Discuss ==***both*** views== and give ***your*** opinion." or "***advantages/disadvantages***"
 - This is basically a [[#Opinion |partly]] agree/disagree prompt, but for social topics, rather than personal views.
 > If you can't pick a side, then you must give the 2 arguments equal weight.
 
@@ -117,7 +120,7 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 > - The key to differentiate between a Discussion and an Opinion question is the pronoun it mentions.
 > - Make sure that your claim is still personal, i.e. "I believe that...", "I personally prefer..."
 #### Cause/problem and Solution
-- The question is "What **problems**/**issues**...", "Suggest some measures..."
+- The question is "What _**problems**/**issues**_...", "Suggest some measures..."
 - First paragraph:
 	- First sentence: introduce various issues. For example: "...several related problems can be anticipated."
 	- Next sentences: extend 2 prominent issues. Elaborate *why* they are considered issues, what's wrong with them, and give example (optional)
@@ -133,21 +136,26 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 - Second paragraph: same thing, for the second question.
 ### The structure
 #### The introduction
-- Ideal length: 2 sentences. This is the same for all topics, except for the "two-part question" type.
+- Ideal length: 1 paragraph with 2 sentences. This is the same for all topics, except for the "two-part question" type.
 	- **First sentence**: you can either *paraphrase* the given topic or *mention other perspective* on the topic. For example:
 		- Paraphrasing: "Governments should financially support businesses which are facing the possibility of going bankrupt."  → "It is of great necessity for governments to provide financial aids for businesses which are coping with the possibility of bankruptcy."
-		- Alternative viewpoints: use phrases like "Considering that perception is subjective...", "People have different views with regard to...",  "Given that perspectives differ..."
+		- Alternative viewpoints: use phrases like "Considering that perspective is subjective...", "People have different views with regard to...",  "Given that perspectives differ..."
 	- **Last sentence**: explicitly answer the given question in a concise, direct manner. Use phrases like: "It strikes ***me*** that...", "In ***my*** view...", "***I*** firmly believe that...". For example, when applying to a [[#Opinion |partly]] agree/disagree opinion:
 		- "While this..., I *believe* in general..." 
-		- "While I agree/disagree that..., I am confident that..."
-> Never include any question here.
+		- "While it's undeniable that..., I am confident that..."
+- A full example: 
+	- Question: _All cars that burn fossil fuels should be banned and electric cars should replace them. Do you agree or disagree?_
+	- Introduction: 
+		- First sentence: Considering that perspective is subjective, some may argue that vehicles powered by fossil fuel ought to be prohibited supplanted by their electric counterparts.
+		- Next sentence: While it’s undeniable that burning fossil fuel is a major contributor to climate change, an outright ban on combustion engines may cause complex, unexpected problems we're ill-equipped to handle.
+> This part of the essay introduces your opinion, so use declarative statements only. Never include any question here.
 #### The body
 - Ideally 2 paragraphs (so that you qualify the time constraint), 4-6 sentences each. For a paragraph:
 	- **First sentence**: introduce your take on the issue.
 	- **Next sentence**: clarify / extend your take (*why* do you think that...)
-	- **Next 1-2 sentences**: give specific examples/explanations to support your claim
-	- **Last 1-2 sentences**: reaffirm *how* those examples strengthen your claim.
-- For the first sentence of the *second* paragraph, it should demonstrate either a smooth transition from the first paragraph, or expressing a counterargument (base on the requirement).
+	- **Next 1-2 sentences**: further clarify / extend your take
+	- **Last 1-2 sentences**: reaffirm / strengthen your claim with specific examples.
+- For the first sentence of the *second* paragraph, it should demonstrate either a smooth transition from the first paragraph (e.g. expanding/supplementing the previous statement), or expressing a counterargument (depending on the requirement).
 #### The conclusion
 - Always start with "In conclusion,..."
 - ==***Reaffirm*** your answer in the introduction by paraphrasing / extending it==.
@@ -162,8 +170,8 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 	- Paraphrase noted sentences. ==**Avoid perfectionism**==. 
 
 ## Things to NEVER do
-- Avoid questions of any form, *especially in the introduction*.
-- Never use idioms, clichés, proverbs, slang or text abbreviations in any type of letter:
+- Use questions of any form, *especially in the introduction*.
+- Use idioms, clichés, proverbs, slang or text abbreviations in any type of letter:
 	- Common clichés *to avoid*: 
 		- At the end of the day...
 		- Second of all...
@@ -176,13 +184,14 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 		- Formal voice: "I am worried that the team is too large and so the decision-making is slow."
 		- Personal voice: "There are too many people involved these days, and so not much is really getting done."
 	- Words like "a nerd/a geek/a creep" or "awesome/cool/wicked/sick" are considered slang.  don't use names for streets, buildings,... in your native language (e.g. Bến Nhà Rồng → Dragon House Harbor). If there is no direct translation, just create a suitable English name, e.g. "There is a big festival here called the National Spring Festival."
-- Don't use quotes. Quotations are marked as "memorized language", which heavily deducts your score.
-- Don't invent statistics, especially numeric statistics. Rather than relying on invented statistics, focus on expressing your own views.
+- Use quotes. Quotations are marked as "memorized language", which heavily deducts your score.
+- Invent statistics, especially numeric statistics. Rather than relying on invented statistics, focus on expressing your own views.
+- Raise mental bandwidth to understand what you're trying to convey. The easier it is to understand your writing, the higher your score.
 ---
 # Speaking
 - Practice speaking your thoughts aloud.
 - A little bit of "how do you *feel* about it / how does it *affect* you" could help.
-> Never stray away from the main topic that you're discussing.
+> You can expand the argument, but **NEVER** stray away from the main topic that you're discussing. Avoid pure listing. If you're trying to list, chain the items in a cohesive way. 
 - They expect you to speak in a manner that poses no difficulty in understanding what you're saying.
 - Initiate your voice from your chest, not from your throat. Speak clearly with natural intonation and stress.
 - Communicate in a clear and controlled manner. This is who you are. Express with a positive, engaging attitude.

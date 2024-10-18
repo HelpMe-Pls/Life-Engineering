@@ -21,7 +21,9 @@
                     "file": "Tips & Tools/IELTS.md",
                     "mode": "source",
                     "source": false
-                  }
+                  },
+                  "icon": "lucide-file",
+                  "title": "IELTS"
                 }
               },
               {
@@ -33,7 +35,9 @@
                     "file": "Tips & Tools/English vocab.md",
                     "mode": "source",
                     "source": false
-                  }
+                  },
+                  "icon": "lucide-file",
+                  "title": "English vocab"
                 }
               },
               {
@@ -45,7 +49,9 @@
                     "file": "Tips & Tools/English grammar.md",
                     "mode": "source",
                     "source": false
-                  }
+                  },
+                  "icon": "lucide-file",
+                  "title": "English grammar"
                 }
               }
             ]
@@ -64,7 +70,9 @@
                     "type": "leaf",
                     "state": {
                       "type": "graph",
-                      "state": {}
+                      "state": {},
+                      "icon": "lucide-git-fork",
+                      "title": "Graph view"
                     }
                   }
                 ]
@@ -82,7 +90,9 @@
                         "file": "Frontend/JavaScript/Everyday methods & utils.md",
                         "mode": "source",
                         "source": false
-                      }
+                      },
+                      "icon": "lucide-file",
+                      "title": "Everyday methods & utils"
                     }
                   }
                 ]
@@ -111,7 +121,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -126,7 +138,9 @@
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byCreatedTime"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -134,7 +148,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -157,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tips & Tools/IELTS.md",
+                "file": "Tips & Tools/English vocab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +181,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for English vocab"
             }
           },
           {
@@ -177,7 +195,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -186,8 +206,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tips & Tools/IELTS.md"
-              }
+                "file": "Tips & Tools/English vocab.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of English vocab"
             }
           }
         ],
@@ -209,8 +231,8 @@
   },
   "active": "213082fef78356e9",
   "lastOpenFiles": [
-    "Tips & Tools/English grammar.md",
     "Tips & Tools/English vocab.md",
+    "Tips & Tools/English grammar.md",
     "Tips & Tools/IELTS.md",
     "Tips & Tools/maslows.png",
     "Frontend/JavaScript/Everyday methods & utils.md",
