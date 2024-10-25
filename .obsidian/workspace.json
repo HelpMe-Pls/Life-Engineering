@@ -132,7 +132,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ScrollRestoration",
+                "query": "static",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -231,9 +231,9 @@
   },
   "active": "213082fef78356e9",
   "lastOpenFiles": [
-    "Tips & Tools/English vocab.md",
     "Tips & Tools/English grammar.md",
     "Tips & Tools/IELTS.md",
+    "Tips & Tools/English vocab.md",
     "Tips & Tools/maslows.png",
     "Frontend/JavaScript/Everyday methods & utils.md",
     "Frontend/CSS/CSS.md",

@@ -8,7 +8,7 @@
 - **Adjective order** (**O**pinion - **S**ize - **A**ge - **S**hape - **C**olor - **O**rigin - **M**aterial - **P**urpose):
 	- *I have a beautiful, small, old, round, blue, Chinese, porcelain vase.*
 - **Primitive verb**:
-	- After modal verbs: can run, should eat, must sleep, might work, may seem,...
+	- After modal verbs: **can** run, **should** eat, **must** sleep, **might** work, **may** seem, **ought to** try...
 	- After subjunctive (describing possibilities, hypothetical situations, formal requests and commands). For example: 
 		- It is **important** that he **be** on time.
 		- It is **essential** that we **finish** this project by Friday.
@@ -41,7 +41,10 @@
 - Words ending in **-tance** typically relate to *actions or conditions*, while words ending in **-tence** often relate to *qualities or states of being*
 - ~~Laughters~~ → Laughter
 - ~~Servere~~ → Severe
+- ~~Exhilerate~~ → Exhilarate
+- ~~Preferrable~~ → Preferrable 
 - Regarding ~~to~~ → Regarding  / As for + noun
+- Participate → Participate **_in_**
 - Extend (v) $\ne$ Extent (n)
 ## Speaking
 ### How to pronounce `-ed` postfix
@@ -68,6 +71,9 @@
 	- Insist - insisted /ɪnˈsɪstɪd/
 ## Collocations
 - ill-equipped: under-prepared
-## Proverbs, idioms
+- disarming simplicity: dead simple
+## Proverbs, idioms, phrases
 - "That one's a lemon": a "lemon" product is one that is disappointing or unsatisfactory.
 - "By the same token": for the same reason
+- "For some reason that escapes me": Inexplicably, I can't understand why
+- "In the finer print": in the details, in the additional terms

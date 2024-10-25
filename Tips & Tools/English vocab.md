@@ -46,6 +46,8 @@ adroit (adj): skillful (social)
 
 congenial (adj): amiable, pleasant and friendly (social)
 
+crony (n): who unfairly receives special treatment, a pal, cohort 
+
 ==ineptitude== (n): skill issues
 
 vie (v) <vai>:  compete, contend
@@ -164,7 +166,7 @@ perplexing (adj): puzzling, confusing, difficult to understand, elusive, ==quand
 
 absurd (adj): ridiculous, preposterous
 
-tether {sth_to sth} (v): to tie, connect
+==tether== {sth_to sth} (v): to tie, connect
 
 condemn (v): sentence, convict, to pronounce guilty
 
@@ -191,6 +193,8 @@ prolific (adj): fruitful, productive
 equanimity (n): calmness, tranquility
 
 delirium (n): not able to think or speak clearly, usually because of illness
+
+overt (adj): open to view, straightforward, obvious
 
 reciprocate {sth_with sth} (v): payback, make a return for → repercussion (n)
 
@@ -220,9 +224,9 @@ blight (v-n): impair the quality or effect of, a deteriorated condition, flaw, d
 
 delineate (v): to indicate, portray, describe, define
 
-proclivity (n): predilection, tendency, a strong inherent inclination toward something objectionable
+proclivity (n): ==predilection==, tendency, propensity, a strong inherent inclination toward something objectionable
 
-volatile <val-adal> (n): explosive, unstable, subject to rapid or unexpected change
+volatile <val-adal> (n): explosive, unstable, ==fickle==, subject to rapid or unexpected change
 
 dormant (adj): latent, inactive, idle
 
@@ -370,6 +374,8 @@ perturb (v): bother, disturb, unsettle, concern, pester
 
 stalwart (adj-n): courageous, intrepid, valiant, powerful, advocate, activist
 
+deterrent (adj): discourage, prevent, or inhibit
+
 complicit (adj): đồng loã
 
 reprisal (n): chống trả, đền bù, retaliation
@@ -394,7 +400,7 @@ melancholy (adj): depressed, miserable, dejected, sad
 
 zeitgeist (n): the spirit of the times, the general intellectual, moral, and cultural climate of an era
 
-fervent (adj): passionate, intense, ardent, avid
+==fervent== (adj): passionate, intense, ardent, avid
 
 bourgeoisie (n) <bua-zoa-zee>: middle class
 
@@ -405,6 +411,8 @@ acolyte (n): follower
 ==putative== (adj): presumed, apparent, alleged, ostensive
 
 ostensibly (adv): có vẻ như/dường như
+
+==postulate== (v-n): presume, posit
 
 conjecture (v-n): guess, surmise, estimate, suppose, theory
 
@@ -509,6 +517,8 @@ debase (v): profane, to lower in status/esteem/quality/character
 lamentable (adj): deplorable, mournful, wretched
 
 meticulous (adj): careful, diligent, engaged
+
+plight (v-n): engage (in a pledge), difficult / precarious (dubious) situation
 
 advertent (adj): attentive, careful, cautious, deliberate >> inadvertant: unintentional, accidental
 
@@ -650,6 +660,8 @@ innocuous (adj): harmless, inoffensive
 
 gullible (adj): exploitable, easily duped or cheated
 
+==predation== (n): the act of injuring, exploiting, or plundering others for personal gain 
+
 desolate (v-adj): to deprive of inhabitants, lifeless, deserted, dilapidated
 
 idempotent (adj-n): to run something as many times as you like and you get the same desired result
@@ -772,7 +784,7 @@ militate {against} (v): to have weight >> procrastination militates against prog
 
 excursion (n): expedition, amplitude
 
-procure (v): attain, earn, to obtain sth by particular care and effort
+==procure== (v): attain, earn, to obtain sth by particular care and effort
 
 lackadaisical (adj): lacking life, spirit, or zest
 
@@ -822,8 +834,6 @@ hiatus (n): gap, break
 
 next of kin: a fancy way to say "related"
 
-==propensity== (n): intense natural inclination or preference to sth
-
 trapping (n): outward signs/decoration
 
 purview (n): quyền hạn, the range/imit of authority, competence, responsibility, concern, or intention
@@ -843,3 +853,5 @@ hors d'oeuvre (n): small pieces of food eaten at a party
 acquit (v): vindicate, to free from allegation or blame, làm trọn (nghĩa vụ, bổn phận)
 
 irrigation (n): tưới, supply with water by artificial means
+
+enact (v): act out, to make into law

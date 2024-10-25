@@ -22,7 +22,7 @@
 	- **Content**: read the prompt *very carefully* (specifically the part after "In your letter,...") and you should ==recognize the required *mix* of expressions you ***must*** include. You ***must not*** mention any expression that *isn't* in the requirement== (e.g. a seemingly polite "apologizing for contacting the recipient" _would be **invalid**_ if the prompt doesn't explicitly state that you should apologize)
 		- **Complaining**: a letter of complaint to a business, requesting and suggesting are often similar in content, in *formal* style. You're expected to give a replacement/repair/immediate refund request if it's about a product. 
 			- Start with "*I am writing to express my dissatisfaction with*....". Try to craft your sentences in a contrast manner between `your expectation` and `your issue` (e.g. "*Although the headphones worked flawlessly in-store, their noise-cancelling function was noticeably ineffective when I used them in a local coffee shop.*"). For padding: "*I am confident that your offer is good enough to keep my custom*." End it with a "Kind regards,".
-		- **Requesting**: this should be in a polite but firm tone, e.g. "*I would appreciate it if you could...*". Use indirect questions to begin a request for help or information (e.g. "*I wonder if you could send me the course details urgently, as I wish to apply very soon.*")
+		- **Requesting**: this should be in a polite but firm tone, e.g. "*Given these circumstances, I request*...". ==Use indirect questions to begin a request for help or information== (e.g. "*I wonder if you could send me the course details urgently, as I wish to apply very soon.*")
 - The general structure:
 	1. Greeting (1 line): pay very close attention to the question, it should tell you something like =="Begin your letter ‘Dear --------’"==
 	2. First paragraph: An overview of "what is this about", addressing the first required expression
@@ -31,6 +31,7 @@
 	5. Closing (3 lines: CTA → farewell → your name)
 #### Tips
 - Straight up answering each required expression in 2-3 sentences is the way to go.
+- Use "although" instead of "even though"
 - **For formal style**: use formal words such as "regarding, remains, considerable, commotion, appreciate, restrict,..."
 	- ==**Don't** use contractions== (e.g. don’t, can’t, shouldn't,...) 
 	- Use formal phrases:
@@ -69,7 +70,7 @@
 	- For apologizing: keep it short and simple: "forgive me", "sorry". ==Use this: "If it’s any comfort, I feel terrible about it too." in case you want padding.==
 - **For endings**: 
 	- Formal recipient CTA: use "I look forward to + `V-ing (NOT hearing)`...", "I would appreciate your reply with...", "Thank you for your help/consideration, and I await...".
-	- Formal recipient farewell: use "Kind regard***s***, / Yours sincerely, / Yours faithfully,".
+	- Formal recipient farewell: use "Kind regard==***s***==, / Best regard==_**s**_==, /Yours sincerely, / Yours faithfully,".
 	- Formal and semi-formal recipient: finish with your `firstName lastName`.
 	- Personal CTA: "Do let me know...", "Please get in touch...", "I can’t wait to..."
 	- Personal farewell: use "All the best, `\n yourFirstName`."
@@ -92,7 +93,7 @@
 
 ## Task 2
 - Use ==***cohesion***== in such a way that it attracts no attention. The linking / transition between sentences and paragraphs should help with the ==development== of ideas but *does ==**not*** overshadow== the ideas.
-- Present a fully developed position in ==answer to the question== with ***relevant***, fully extended and well supported ideas.
+- Present a fully developed position in ==answer to the question with ***relevant***, easy to understand, straightforward, fully extended and well supported ideas==. Strong thesis statements and topic sentences are the main goal.
 - ***MOST IMPORTANT***: The taken position should be *clear **throughout*** the essay (i.e. presented in the introduction, and then supported in the rest of the essay, with ==no surprises / unexpected turn in the conclusion==).
 ### The topics
 #### Opinion
@@ -122,11 +123,11 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 #### Cause/problem and Solution
 - The question is "What _**problems**/**issues**_...", "Suggest some measures..."
 - First paragraph:
-	- First sentence: introduce various issues. For example: "...several related problems can be anticipated."
+	- First sentence: introduce various issues. For example: "..._several multifaceted problems can be anticipated_."
 	- Next sentences: extend 2 prominent issues. Elaborate *why* they are considered issues, what's wrong with them, and give example (optional)
 - Second paragraph:
-	- First sentence: introduce various solutions. For example: "There are several resolutions to alleviate..."
-	- Next sentences: corresponding solutions to the issues *mentioned in the first paragraph*. Optionally, you can add a general solution to the prompt's question or something like: "While there's no silver bullet to/for `the issue`, I’m confident that with dedication and integrity, we can steadily make progress and alleviate the difficulties.
+	- First sentence: introduce various solutions. For example: "_There are several resolutions to alleviate_..."
+	- Next sentences: corresponding solutions to the issues *mentioned in the first paragraph*. Optionally, you can add a general solution to the prompt's question or something like: "_While there's no silver bullet to/for `the issue`, I’m confident that with dedication and integrity, we can steadily make progress and alleviate the difficulties_".
 #### Two-part Question
 - The prompt's structure: a claim + first question about the prompt + second question about the claim (or follow up to the first question)
 - The introduction: 
@@ -138,15 +139,15 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 #### The introduction
 - Ideal length: 1 paragraph with 2 sentences. This is the same for all topics, except for the "two-part question" type.
 	- **First sentence**: you can either *paraphrase* the given topic or *mention other perspective* on the topic. For example:
-		- Paraphrasing: "Governments should financially support businesses which are facing the possibility of going bankrupt."  → "It is of great necessity for governments to provide financial aids for businesses which are coping with the possibility of bankruptcy."
-		- Alternative viewpoints: use phrases like "Considering that perspective is subjective...", "People have different views with regard to...",  "Given that perspectives differ..."
-	- **Last sentence**: explicitly answer the given question in a concise, direct manner. Use phrases like: "It strikes ***me*** that...", "In ***my*** view...", "***I*** firmly believe that...". For example, when applying to a [[#Opinion |partly]] agree/disagree opinion:
+		- Paraphrasing: "Governments should financially support businesses which are facing the possibility of going bankrupt."  → "_It is of great necessity for governments to provide financial aids for businesses which are coping with the possibility of bankruptcy_."
+		- Alternative viewpoints: use phrases like "*Considering the personal preferences in* `[the topic]`..., _various proponents argue for_...`[the topic]`", "When it comes to..., many supporters push for...",  "Given the subjective nature of..."
+	- **Last sentence**: explicitly answer the given question in a concise, direct manner. Use phrases like: "It strikes ***me*** that...", "In ***my*** view...", "==***I*** firmly believe that==...", "_**I**_ am convinced that..." For example, when applying to a [[#Opinion |partly]] agree/disagree opinion:
 		- "While this..., I *believe* in general..." 
 		- "While it's undeniable that..., I am confident that..."
 - A full example: 
 	- Question: _All cars that burn fossil fuels should be banned and electric cars should replace them. Do you agree or disagree?_
 	- Introduction: 
-		- First sentence: Considering that perspective is subjective, some may argue that vehicles powered by fossil fuel ought to be prohibited supplanted by their electric counterparts.
+		- First sentence: When it comes to how people choose to get around, many supporters push for switching from gas-powered cars to electric vehicles.
 		- Next sentence: While it’s undeniable that burning fossil fuel is a major contributor to climate change, an outright ban on combustion engines may cause complex, unexpected problems we're ill-equipped to handle.
 > This part of the essay introduces your opinion, so use declarative statements only. Never include any question here.
 #### The body
@@ -155,19 +156,24 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 	- **Next sentence**: clarify / extend your take (*why* do you think that...)
 	- **Next 1-2 sentences**: further clarify / extend your take
 	- **Last 1-2 sentences**: reaffirm / strengthen your claim with specific examples.
-- For the first sentence of the *second* paragraph, it should demonstrate either a smooth transition from the first paragraph (e.g. expanding/supplementing the previous statement), or expressing a counterargument (depending on the requirement).
+- For the first sentence of the *second* paragraph, it should demonstrate either a smooth transition from the first paragraph (e.g. expanding/supplementing the previous statement), or expressing a counterargument (depending on the requirement). For example: "Complementing `[the previous topic]`,..."
 #### The conclusion
 - Always start with "In conclusion,..."
 - ==***Reaffirm*** your answer in the introduction by paraphrasing / extending it==.
+	- You can also compose this part by combining and paraphrasing the thesis statement and the topic sentences in the body.
 ### Tips
 - Spend *under* 10 minutes on planning when the timer starts. Get your topic right and map out the intended structure (e.g. what should your first and second paragraph discuss about)
+- ==Get specific (*with examples*).== If you're overgeneralizing, the highest you can get is a 7.
 - Spend no more than 30 minutes on actually writing the essay. Take note of sentences that need paraphrasing as you write.
 	- Introduction: under 5 minutes
 	- Each paragraph of the body: no more than 8 minutes
 	- Conclusion: less than 4 minutes
+- For an 8+ TR yield, your thesis statement should be visible it the introduction **_and_** the conclusion.  
 - If you're doing great, you should have less than 5 minutes to:
 	- ***Check for errors*** (grammatical and syntax)
-	- Paraphrase noted sentences. ==**Avoid perfectionism**==. 
+	- Paraphrase noted sentences. ==**Avoid perfectionism**==. If you can't think of a synonym for a word/phrase within 10s, it's better to just repeat it.
+- Cohesion and coherence devices: Consequently, more over, Complimenting, Opposing, Instead,...
+- Describing trajectory: gaining traction, gaining momentum, becoming popular, undermining, compromising, downward/upward propensity/predilection,...
 
 ## Things to NEVER do
 - Use questions of any form, *especially in the introduction*.
@@ -186,7 +192,7 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 	- Words like "a nerd/a geek/a creep" or "awesome/cool/wicked/sick" are considered slang.  don't use names for streets, buildings,... in your native language (e.g. Bến Nhà Rồng → Dragon House Harbor). If there is no direct translation, just create a suitable English name, e.g. "There is a big festival here called the National Spring Festival."
 - Use quotes. Quotations are marked as "memorized language", which heavily deducts your score.
 - Invent statistics, especially numeric statistics. Rather than relying on invented statistics, focus on expressing your own views.
-- Raise mental bandwidth to understand what you're trying to convey. The easier it is to understand your writing, the higher your score.
+- Raise mental bandwidth to understand what you're trying to convey. ==The easier it is to understand your writing, the higher your score.==
 ---
 # Speaking
 - Practice speaking your thoughts aloud.
