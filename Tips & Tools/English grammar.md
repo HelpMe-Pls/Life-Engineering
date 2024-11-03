@@ -33,6 +33,7 @@
 	- Acceptance
 	- Assistance
 	- Attendance
+	- Appearance
 	- Substance
 	- Distance
 	- Persistence
@@ -42,10 +43,14 @@
 - ~~Laughters~~ → Laughter
 - ~~Servere~~ → Severe
 - ~~Exhilerate~~ → Exhilarate
-- ~~Preferrable~~ → Preferrable 
+- ~~Preferrable~~ → Preferable 
+- ~~Disscuss~~ → Discuss
+- ~~Scandle~~ → Scandal
+- ~~Fullfill~~ → Fulfill
 - Regarding ~~to~~ → Regarding  / As for + noun
+- In favor ~~for~~ → In favor ***of***
 - Participate → Participate **_in_**
-- Extend (v) $\ne$ Extent (n)
+- Extend (v) $\ne$ Extent (n) $\ne$ Extant (adj)
 ## Speaking
 ### How to pronounce `-ed` postfix
 #### As a `/t/`
@@ -77,3 +82,4 @@
 - "By the same token": for the same reason
 - "For some reason that escapes me": Inexplicably, I can't understand why
 - "In the finer print": in the details, in the additional terms
+- "To the tee": perfectly, exactly

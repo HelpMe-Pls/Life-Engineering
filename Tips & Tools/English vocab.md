@@ -36,7 +36,7 @@ conform {to} (v): abide by, comply with, adhere to
 
 shrewd (adj): based on good understanding or judgment
 
-==nibble== (n): an expression of interest in something
+==nibble== (n): a tentative expression of interest
 
 punitive (adj) = penal, disciplinary: inflicting or intended as punishment
 
@@ -92,9 +92,15 @@ reverence (v-n) <rev-er-rence>: deep respect for someone or something
 
 gobsmacked (adj): astounded, flabbergasted, shocked
 
+hideous (adj): shocking, exceedingly ugly, morally offensive
+
 audacity (n): daring, bravery, bold, disrespectful, impudence, insolent 
 
- exemption (n): immunity, impunity
+presumptuous (adj): taking liberties, presuming, bold, forward
+
+==intransigent== (adj): cứng đầu, uncompromising
+
+exemption (n): immunity, ==impunity==
 
 curt (adj): terse, brusque, rude or peremptory shortness
 
@@ -170,9 +176,11 @@ absurd (adj): ridiculous, preposterous
 
 condemn (v): sentence, convict, to pronounce guilty
 
-eminent (adj): famous and respected, excellent
+==eminent== (adj): famous and respected, excellent
 
 aristocratic (adj): socially exclusive, notably superior or excellent
+
+paragon {of} (n):  exemplar, ideal, a model of excellence or perfection
 
 malignant (adj): malevolent, benign/malignant (== harmless/harmful) tumor
 
@@ -183,6 +191,8 @@ windward (adj): !leeward, being in or facing the direction from which the wind i
 tumultuous (adj): loud, confused, and violently emotional; tempestuous
 
 exuberant (adj): abundant of energy, excitement and happiness
+
+==vivacious== (adj): sprightly, zesty, lively in temper
 
 prolific (adj): fruitful, productive 
 
@@ -410,7 +420,7 @@ acolyte (n): follower
 
 ==putative== (adj): presumed, apparent, alleged, ostensive
 
-ostensibly (adv): có vẻ như/dường như
+==ostensibly== (adv): có vẻ như/dường như → ostentatious (adj)
 
 ==postulate== (v-n): presume, posit
 
@@ -442,7 +452,7 @@ harbinger (v-n): predict, imply, foreshadow, prognosticate, pioneer, precursor
 
 insinuate (v): imply, subtly introduce, innuendo (n)
 
-contingent (adj-n): empirical, possible, unpredictable, delegacy
+==contingent== (adj-n): empirical, possible, unpredictable, delegacy
 
 ==allow of== (phrV): to permit/make something possible
 
@@ -500,7 +510,7 @@ vicinity (n): surroundings, neighborhood, proximity
 
 ineffable (adj): indescribable, unspeakable, inexpressible
 
-aggregate (v-n-adj): accumulate, comprise, total, collective, combined
+==aggregate== (v-n-adj): accumulate, comprise, total, collective, combined
 
 eclectic (adj-n): composed of elements drawn from various sources
 
@@ -855,3 +865,13 @@ acquit (v): vindicate, to free from allegation or blame, làm trọn (nghĩa v�
 irrigation (n): tưới, supply with water by artificial means
 
 enact (v): act out, to make into law
+
+attire (n): clothes, dress → ==sartorial== (adj)
+
+pedantic (adj): unimaginative, dull
+
+jettison (v-n): bỏ bớt, drop or get rid of (cargo) to lighten the load as part of a plan or as the result of some other decision
+
+maestro (n): connoisseur, a master usually in an art
+
+dictum (n): a noteworthy statement

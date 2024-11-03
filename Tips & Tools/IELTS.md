@@ -31,7 +31,7 @@
 	5. Closing (3 lines: CTA → farewell → your name)
 #### Tips
 - Straight up answering each required expression in 2-3 sentences is the way to go.
-- Use "although" instead of "even though"
+- Use "although" instead of "even though" at the start of a sentence.
 - **For formal style**: use formal words such as "regarding, remains, considerable, commotion, appreciate, restrict,..."
 	- ==**Don't** use contractions== (e.g. don’t, can’t, shouldn't,...) 
 	- Use formal phrases:
@@ -112,8 +112,9 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 > If you feel like you need to include a counterargument (as an example), do so in a way that further reinforce your answer, ***not*** as a way to support that counterargument.
 > Your answer to the topic should behave as a counter to those counterarguments.
 #### Discussion
-- The question is "Discuss ==***both*** views== and give ***your*** opinion." or "***advantages/disadvantages***"
+- The question is "Discuss ==***both*** views== and give ***your*** opinion" or "***advantages/disadvantages***"
 - This is basically a [[#Opinion |partly]] agree/disagree prompt, but for social topics, rather than personal views.
+- If it's a "discuss both views", then after 2 paragraphs for each view, you should have an extra paragraph that starts with "_Weighing these factors, I believe that..._"
 > If you can't pick a side, then you must give the 2 arguments equal weight.
 
 > [!danger] Get the topic right
@@ -140,15 +141,19 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 - Ideal length: 1 paragraph with 2 sentences. This is the same for all topics, except for the "two-part question" type.
 	- **First sentence**: you can either *paraphrase* the given topic or *mention other perspective* on the topic. For example:
 		- Paraphrasing: "Governments should financially support businesses which are facing the possibility of going bankrupt."  → "_It is of great necessity for governments to provide financial aids for businesses which are coping with the possibility of bankruptcy_."
-		- Alternative viewpoints: use phrases like "*Considering the personal preferences in* `[the topic]`..., _various proponents argue for_...`[the topic]`", "When it comes to..., many supporters push for...",  "Given the subjective nature of..."
-	- **Last sentence**: explicitly answer the given question in a concise, direct manner. Use phrases like: "It strikes ***me*** that...", "In ***my*** view...", "==***I*** firmly believe that==...", "_**I**_ am convinced that..." For example, when applying to a [[#Opinion |partly]] agree/disagree opinion:
+		- Alternative viewpoints: 
+			- *Considering the personal preferences in / disparity of perspectives on* `[the topic]`..., _various proponents argue for_...`[the topic]`
+			- _While the `[paraphrased first half of the topic]`, the claim that `[paraphrased second half of the topic]` oversimplifies a complex reality_.
+			- `[The paraphrased statement]` _is a subject of debate, with some arguing that_ `[paraphrased first half of the topic]`, _while others believe_ `[paraphrased second half of the topic]`
+	- **Last sentence**: explicitly answer the given question in a concise, direct manner. Use phrases like: "It strikes ***me*** that...", "In ***my*** view...", "==***I*** contend that==...", "_**I**_ am convinced that..." For example:
 		- "While this..., I *believe* in general..." 
-		- "While it's undeniable that..., I am confident that..."
+		- "While it's undeniable that..., I am _confident_ that..."
+		- "Although I recognize `[(paraphrased) first half of the topic]`, I disagree with this statement, as `[your take]`."
 - A full example: 
 	- Question: _All cars that burn fossil fuels should be banned and electric cars should replace them. Do you agree or disagree?_
 	- Introduction: 
-		- First sentence: When it comes to how people choose to get around, many supporters push for switching from gas-powered cars to electric vehicles.
-		- Next sentence: While it’s undeniable that burning fossil fuel is a major contributor to climate change, an outright ban on combustion engines may cause complex, unexpected problems we're ill-equipped to handle.
+		- **First sentence**: While many people advocate for a transition from gas-powered to electric vehicles as our main mode of transportation, an outright ban on combustion engines would have far-reaching consequences. 
+		- **Next sentence**: The negative impacts - affecting everything from employment and everyday convenience to unexpected environmental challenges - could outweigh the intended benefits.
 > This part of the essay introduces your opinion, so use declarative statements only. Never include any question here.
 #### The body
 - Ideally 2 paragraphs (so that you qualify the time constraint), 4-6 sentences each. For a paragraph:
@@ -156,7 +161,8 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 	- **Next sentence**: clarify / extend your take (*why* do you think that...)
 	- **Next 1-2 sentences**: further clarify / extend your take
 	- **Last 1-2 sentences**: reaffirm / strengthen your claim with specific examples.
-- For the first sentence of the *second* paragraph, it should demonstrate either a smooth transition from the first paragraph (e.g. expanding/supplementing the previous statement), or expressing a counterargument (depending on the requirement). For example: "Complementing `[the previous topic]`,..."
+- First sentence example: _The argument for_ replacing libraries with digital alternatives _rests on_ compelling technological advances.
+- For the first sentence of the *second* paragraph, it should demonstrate either a smooth transition from the first paragraph (e.g. expanding/supplementing the previous statement), or expressing a counterargument (depending on the requirement). For example: "Complementing/Opposing `[the previous topic]`,..."
 #### The conclusion
 - Always start with "In conclusion,..."
 - ==***Reaffirm*** your answer in the introduction by paraphrasing / extending it==.
@@ -172,8 +178,11 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 - If you're doing great, you should have less than 5 minutes to:
 	- ***Check for errors*** (grammatical and syntax)
 	- Paraphrase noted sentences. ==**Avoid perfectionism**==. If you can't think of a synonym for a word/phrase within 10s, it's better to just repeat it.
-- Cohesion and coherence devices: Consequently, more over, Complimenting, Opposing, Instead,...
-- Describing trajectory: gaining traction, gaining momentum, becoming popular, undermining, compromising, downward/upward propensity/predilection,...
+- Cohesion and coherence devices: Consequently, more over, Complimenting, Opposing, Additionally, Instead,...
+- Describing trajectory: gaining traction, gaining momentum, becoming popular, undermining, compromising, downward/upward propensity/predilection, evolved impressively, offering benefits like...
+- Comparison: stark disparity, clear contrast,
+- Use these words more often: genuine, meaningful, profound, authentic, foster, facilitate, develop,... 
+- Examples: A prime example would be..., 
 
 ## Things to NEVER do
 - Use questions of any form, *especially in the introduction*.
@@ -189,7 +198,7 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 	- Try to explain yourself clearly without using proverbs, e.g. you can replace the "Too many cooks spoil the broth" proverb with: 
 		- Formal voice: "I am worried that the team is too large and so the decision-making is slow."
 		- Personal voice: "There are too many people involved these days, and so not much is really getting done."
-	- Words like "a nerd/a geek/a creep" or "awesome/cool/wicked/sick" are considered slang.  don't use names for streets, buildings,... in your native language (e.g. Bến Nhà Rồng → Dragon House Harbor). If there is no direct translation, just create a suitable English name, e.g. "There is a big festival here called the National Spring Festival."
+	- Words like "a nerd/a geek/a creep" or "awesome/cool/wicked/sick" are considered slang. Don't use names for streets, buildings,... in your native language (e.g. Bến Nhà Rồng → Dragon House Harbor). If there is no direct translation, just create a suitable English name, e.g. "There is a big festival here called the National Spring Festival."
 - Use quotes. Quotations are marked as "memorized language", which heavily deducts your score.
 - Invent statistics, especially numeric statistics. Rather than relying on invented statistics, focus on expressing your own views.
 - Raise mental bandwidth to understand what you're trying to convey. ==The easier it is to understand your writing, the higher your score.==

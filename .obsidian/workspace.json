@@ -33,7 +33,7 @@
                   "type": "markdown",
                   "state": {
                     "file": "Tips & Tools/English vocab.md",
-                    "mode": "source",
+                    "mode": "preview",
                     "source": false
                   },
                   "icon": "lucide-file",
@@ -54,7 +54,8 @@
                   "title": "English grammar"
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           },
           {
             "id": "8cedd05142699eb5",
@@ -229,13 +230,13 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "213082fef78356e9",
+  "active": "1f357aca7b9fa1f4",
   "lastOpenFiles": [
-    "Tips & Tools/English grammar.md",
     "Tips & Tools/IELTS.md",
+    "Tips & Tools/English grammar.md",
     "Tips & Tools/English vocab.md",
-    "Tips & Tools/maslows.png",
     "Frontend/JavaScript/Everyday methods & utils.md",
+    "Tips & Tools/maslows.png",
     "Frontend/CSS/CSS.md",
     "Tips & Tools/System Design.md",
     "Tips & Tools/WIL from books.md",
