@@ -118,3 +118,65 @@ const Icon = ({ color }: IconProps) => {
 <Icon color="" />; // "primary" & "secondary" is suggested here after applying the `string & {}` trick
 ```
 - Notice that this is just a temporary fix. Someday, `string | "literal"` will just work.
+
+# Indexed Access Types
+- Use this `T[number]` pattern to extract the element's type by accessing the numeric keys from an object. For example:
+```ts
+const roles = ["admin", "editor", "contributor"] as const; // `as const` makes TypeScript infer the literal values of the array
+
+type RolesAsType = typeof roles;
+
+type Role = RolesAsType[number];
+
+// 🚁 Hovering over `Role` shows...
+type Role = "admin" | "editor" | "contributor"
+
+//-------------- Extract only the numeric values from the object:
+type ExampleObj = {
+  // String keys
+  stringKey1: "string-key";
+  stringKey2: "string-key";
+
+  // Numeric index signature
+  [key: number]: "number-key";
+};
+
+type NumericValuesOnly = ExampleObj[number];
+
+// 🚁 Hovering over `NumericValuesOnly` shows...
+type NumericValuesOnly = "number-key"
+
+//-------------- Extract the type of the elements in an array:
+const possibleResponses = [
+  {
+    status: 200,
+    body: "Hello, world!",
+  },
+  {
+    status: 404,
+    body: "Not found",
+  },
+  {
+    status: 500,
+    body: "Internal server error",
+  },
+];
+
+type PossibleResponse = PossibleResponses[number];
+
+// 🚁 Hovering over `PossibleResponse` shows...
+type PossibleResponse = {
+    status: number;
+    body: string;
+}
+
+type NavbarProps = {
+  onChange: () => void;
+};
+
+//-------------- Extract a property's type from an object:
+type OnChangeType = NavbarProps["onChange"];
+
+// 🚁 Hovering over `OnChangeType` shows...
+type OnChangeType = () => void
+```

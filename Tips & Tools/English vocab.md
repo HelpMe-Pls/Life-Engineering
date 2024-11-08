@@ -204,6 +204,8 @@ equanimity (n): calmness, tranquility
 
 delirium (n): not able to think or speak clearly, usually because of illness
 
+==panacea== (n): a cure-all remedy for all ills or difficulties
+
 overt (adj): open to view, straightforward, obvious
 
 reciprocate {sth_with sth} (v): payback, make a return for → repercussion (n)
@@ -345,6 +347,8 @@ accede {to} (v): express approval/agreement or give consent
 repression (n): restraint, suppresion, constraint
 
 perdition (n): hell, inferno
+
+==ravage== (v-n): to wreak havoc on sth, a violently destructive effect
 
 cacophony (n): noise, rattle, chatter, discordance
 
@@ -512,11 +516,15 @@ ineffable (adj): indescribable, unspeakable, inexpressible
 
 ==aggregate== (v-n-adj): accumulate, comprise, total, collective, combined
 
+coalition (n): union, combination
+
 eclectic (adj-n): composed of elements drawn from various sources
 
 altruism (n): generosity, philanthropy, empathy, compassion
 
-pretension (v-n):  purpose, intention, affection, arrogance
+==pretension== (v-n):  purpose, intention, affection, arrogance
+
+feign (v): pretend to feel or be affected by sth
 
 disdain (v-n): contempt, disrespect, despise
 
@@ -875,3 +883,4 @@ jettison (v-n): bỏ bớt, drop or get rid of (cargo) to lighten the load as pa
 maestro (n): connoisseur, a master usually in an art
 
 dictum (n): a noteworthy statement
+
