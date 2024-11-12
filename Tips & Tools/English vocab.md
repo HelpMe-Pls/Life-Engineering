@@ -38,6 +38,8 @@ shrewd (adj): based on good understanding or judgment
 
 ==nibble== (n): a tentative expression of interest
 
+masticate (v): chew, nibble, gnaw (on)
+
 punitive (adj) = penal, disciplinary: inflicting or intended as punishment
 
 competent (adj): deft, having the necessary skill to do something successfully
@@ -192,6 +194,8 @@ tumultuous (adj): loud, confused, and violently emotional; tempestuous
 
 exuberant (adj): abundant of energy, excitement and happiness
 
+jovial (adj): jolly, festive, merry
+
 ==vivacious== (adj): sprightly, zesty, lively in temper
 
 prolific (adj): fruitful, productive 
@@ -280,6 +284,8 @@ radical (adj-n): extreme, fundamental, foundation, rudimentary
 
 dire (adj): frightening, sinister, ominous
 
+goon (n): a stupid person, a man hired to terrorize or eliminate opponents
+
 incisive <in-xai-sive> (adj): impressively direct and decisive (as in manner or presentation)
 
 amalgam (n): fusion, mixture, blend
@@ -303,6 +309,8 @@ exodus (n): emigration
 emancipate (v): unfettered, to free from restraint, control, or the power of another
 
 ransom (v-n): redeem, to free from captivity or punishment by paying a price
+
+gratuitous (adj): unwarranted, free, costless
 
 paradigm (n): example, pattern, a philosophical or theoretical framework of any kind
 
@@ -400,7 +408,7 @@ mendacity (n): lie, falsehood, deceit
 
 ==formidable== (adj): impressive, terrifying, intimidating, scary
 
-ambivalent (adj): uncertain, dubious, hesitant, unsure
+ambivalent (adj): uncertain, ==dubious==, hesitant, unsure
 
 disseminate (v): spread, propagate, circulate
 
@@ -428,7 +436,7 @@ acolyte (n): follower
 
 ==postulate== (v-n): presume, posit
 
-conjecture (v-n): guess, surmise, estimate, suppose, theory
+==conjecture== (v-n): guess, surmise, estimate, suppose, theory
 
 tacit (adj): implied, implicit
 
@@ -530,7 +538,7 @@ disdain (v-n): contempt, disrespect, despise
 
 flout (v): disregard, despite, scorn
 
-debase (v): profane, to lower in status/esteem/quality/character
+debase (v): profane, dissolute, debauched, to lower in status/esteem/quality/character
 
 lamentable (adj): deplorable, mournful, wretched
 
@@ -554,7 +562,7 @@ barring (prep): excepting, aside from, excluding
 
 equivocal <ik-quiv-ocal> (adj): questionable, debatable, ambiguous, suspicious, opaque
 
-vindictive (adj): vengeful, spiteful, malicious
+==vindictive== (adj): vengeful, spiteful, malicious
 
 tangible (n-adj): physical, real, perceptible, palpable
 
@@ -567,6 +575,8 @@ enigma (n): obscure, mystery, conundrum
 confidant (n)  {caution: it's different from confidEnt}: intimate, the one to whom secrets are entrusted
 
 solitude (n): isolation, privacy, loneliness
+
+segregate (v): isolate, seclude, separate, withdraw
 
 reclusive (adj): solitary, lonely
 
@@ -592,6 +602,8 @@ diminution (n): decrease, decline, reduction
 
 interlocutor <inter-loc-cutor> (n): the one who takes part in dialogue or conversation
 
+colloquial (adj): conversational (informal) → lookie-loos (n)
+
 congenital (adj): inherent, being such by nature, chronic, existing at or dating from birth
 
 delinquent (n-adj): degenerate, incorrigible, delayed, overdue, belated
@@ -604,7 +616,7 @@ malleable (adj): adaptable, flexible, moldable, pliable
 
 stringent (adj): strict, rigorous, rigid
 
-idiosyncrasy (n): characteristic, trait, mannerism, peculiarity
+==idiosyncrasy== (n): characteristic, trait, mannerism, peculiarity
 
 strife (n): conflict, discord, rivalry, warfare, contention
 
@@ -617,6 +629,8 @@ commotion (n): agitation, steady or recurrent motion
 fluster (v): faze, confound, a state of agitated confusion
 
 quarrel (v-n): angry disagreement
+
+acrimonious (adj): bitter, resentful, ==rancorous==
 
 imbroglio (n): scandal, embroilment, an intricate or complicated situation
 
@@ -648,7 +662,7 @@ lavish (adj): extravagant, wasteful
 
 deity (n): god, divinity
 
-blasphemy (n):  showing contempt or lack of reverence for the sacred or inviolable
+blasphemy (n): sacrilege, irreverence, showing contempt or lack of reverence for the sacred or inviolable
 
 revere (v): venerate, very much respect and admire someone or something
 
@@ -834,6 +848,8 @@ stratagem (n): scheme, ploy
 
 capisce (slang): nghe chưa? Hiểu chưa?
 
+jive (slang): talk that has no meaning or is dishonest
+
 magnate (n): boss, trùm, jefe (<hef-fei>), 
 
 tenement (n): residence, apartment, dwelling
@@ -864,7 +880,7 @@ amenity (n): accommodation, convenience, pleasantry
 
 ostracize (v): cho ra rìa, bo xì
 
-==gander== (n): a quick look
+==gander== {at} (n): a quick look
 
 hors d'oeuvre (n): small pieces of food eaten at a party
 
@@ -884,3 +900,8 @@ maestro (n): connoisseur, a master usually in an art
 
 dictum (n): a noteworthy statement
 
+interdict (v-n): ban, proscribe, forbid
+
+satin shoes (n): shoes with smooth lustrous appearance or sleekness to touch
+
+==acumen== (n): keenness and depth of perception especially in practical matters

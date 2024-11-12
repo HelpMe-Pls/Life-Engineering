@@ -33,7 +33,7 @@
                   "type": "markdown",
                   "state": {
                     "file": "Tips & Tools/English vocab.md",
-                    "mode": "preview",
+                    "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
@@ -246,11 +246,11 @@
   },
   "active": "1f357aca7b9fa1f4",
   "lastOpenFiles": [
-    "Frontend/TypeScript/Patterns.md",
-    "Frontend/TypeScript/TypeScript.md",
-    "Tips & Tools/English grammar.md",
     "Tips & Tools/English vocab.md",
     "Tips & Tools/IELTS.md",
+    "Tips & Tools/English grammar.md",
+    "Frontend/TypeScript/Patterns.md",
+    "Frontend/TypeScript/TypeScript.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
     "Tips & Tools/maslows.png",
     "Frontend/CSS/CSS.md",

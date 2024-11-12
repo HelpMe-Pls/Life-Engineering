@@ -35,11 +35,11 @@
 - **For formal style**: use formal words such as "regarding, remains, considerable, commotion, appreciate, restrict,..."
 	- ==**Don't** use contractions== (e.g. don’t, can’t, shouldn't,...) 
 	- Use formal phrases:
-		- I am writing regarding...
+		- I am writing concerning...
 		- I am sure you will appreciate that...
 		- May I suggest that...
 		- I therefore request that you...
-		- Thank you for your attention to this important matter.
+		- Thank you for your immediate attention to this matter.
 	- Write in a calm and professional manner, show appreciation (with a positive comment regarding the topic) where appropriate.
 	- ==Keep your emotions to a minimum==.
 	- For apologizing: use phrases like "Please accept my apologies for this...", "On behalf of everyone concerned, I would like to offer apologies for this...". ==For padding, use: "I was very concerned when I realized that our misunderstanding caused you such inconvenience."==
@@ -164,7 +164,7 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 - First sentence example: _The argument for_ replacing libraries with digital alternatives _rests on_ compelling technological advances.
 - For the first sentence of the *second* paragraph, it should demonstrate either a smooth transition from the first paragraph (e.g. expanding/supplementing the previous statement), or expressing a counterargument (depending on the requirement). For example: "Complementing/Opposing `[the previous topic]`,..."
 #### The conclusion
-- Always start with "In conclusion,..."
+- Always start with "In conclusion,..." or "To recap,..."
 - ==***Reaffirm*** your answer in the introduction by paraphrasing / extending it==.
 	- You can also compose this part by combining and paraphrasing the thesis statement and the topic sentences in the body.
 ### Tips
@@ -204,12 +204,27 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 - Raise mental bandwidth to understand what you're trying to convey. ==The easier it is to understand your writing, the higher your score.==
 ---
 # Speaking
-- Practice speaking your thoughts aloud.
+- Practice speaking your thoughts aloud. 
 - A little bit of "how do you *feel* about it / how does it *affect* you" could help.
-> You can expand the argument, but **NEVER** stray away from the main topic that you're discussing. Avoid pure listing. If you're trying to list, chain the items in a cohesive way. 
-- They expect you to speak in a manner that poses no difficulty in understanding what you're saying.
+> [!error] Get this right
+> You can expand the argument, but ==**NEVER stray away from the main topic**== that you're discussing. Avoid pure listing. If you're trying to list, chain the items in a cohesive way. 
+- Avoid complex vocabulary. Keep it simple and down to earth. This ***IS NOT*** a show-off contest. They're expecting you to speak in a manner that poses no difficulty in understanding what you're saying.
 - Initiate your voice from your chest, not from your throat. Speak clearly with natural intonation and stress.
-- Communicate in a clear and controlled manner. This is who you are. Express with a positive, engaging attitude.
+- Communicate in a clear and controlled manner. Relax. This is who you are. Speak slower to get your words right, that's OK. Try to express with a positive, engaging attitude.
+- Minor grammar mistakes are acceptable as long as they don't significantly impair communication.
+## Part 1 
+- This part is about yourself. Questions about you. Tell your story. Lasts about 5 minutes.
+- Common topics: your connections, work, hometown, hobbies,...
+- You can expand your answers, but remember to keep them specific and keep the main topic relevant.
+## Part 2
+- The goal here is to speak fluently and coherently for 2 minutes ==about the main topic==.
+- The bullet points are just cues and suggestions to help you out, so don't take them too seriously. You have the option to add more bullet points as long as they support the main topic. 
+- You don't have to answer every bullet points as long as you're keeping the main topic relevant.
+## Part 3
+- This part ***discusses*** general topics in social contexts in about 5 minutes. The topics and how you answer them are similar to [[#The topics |Task 2 Writing]].
+- This is where you should develop your ideas. Be creative. 
+- d
+- d
 ---
 # Reading
 - It's better to answer fewer questions correctly than to rush through all of them making careless mistakes.
