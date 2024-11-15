@@ -27,7 +27,12 @@
 		- She would sooner **die** than **admit** she was wrong.
 - The word "shall" is only used for informal/personal *suggestions* ("Shall we go to...") but *not* for the future tense.
 	- The negative "shan’t" or "shall not" is almost never used in modern English today.
-- How to read past tense verb with post-fix `-ed`:
+- **Modal verbs**: only one should be used, for example:
+	- ~~might can~~ -> might be able to
+	- ~~should must~~ -> `must` or `should`
+	- ~~does might~~ -> might
+- **Auxiliary collocations**: Do/Does/Did must ***not*** be collocated with modal verbs.
+
 ## Commonly misspelled
 - Nouns that end with "-tance" or "-tence":
 	- Acceptance
@@ -45,9 +50,9 @@
 - ~~Exhilerate~~ → Exhilarate
 - ~~Preferrable~~ → Preferable 
 - ~~Disscuss~~ → Discuss
-- ~~Scandle~~ → Scandal
 - ~~Fullfill~~ → Fulfill
-- Crutial → Crucial
+- ~~Crutial~~ → Crucial
+- ~~Idiosyncracy~~ → Idiosyncrasy
 - Regarding ~~to~~ → Regarding  / As for + noun
 - In favor ~~for~~ → In favor ***of***
 - Participate → Participate **_in_**

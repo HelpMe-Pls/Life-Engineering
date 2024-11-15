@@ -36,6 +36,8 @@ conform {to} (v): abide by, comply with, adhere to
 
 shrewd (adj): based on good understanding or judgment
 
+==tactful== (adj): tế nhị, khéo léo (in social context)
+
 ==nibble== (n): a tentative expression of interest
 
 masticate (v): chew, nibble, gnaw (on)
@@ -84,6 +86,8 @@ dysentery (n): diarrhea
 
 enmity (n): hatred, malevolence, hostility, animosity, antagonism
 
+==odious== (adj): hateful, deserving repugnance
+
 diplomatic (adj): ngoại giao
  
 astute (adj): showing sharp powers of judgment; clever, ingenious, insightful, shrewd
@@ -97,6 +101,8 @@ gobsmacked (adj): astounded, flabbergasted, shocked
 hideous (adj): shocking, exceedingly ugly, morally offensive
 
 audacity (n): daring, bravery, bold, disrespectful, impudence, insolent 
+
+mensch (n): a person OF integrity and honor
 
 presumptuous (adj): taking liberties, presuming, bold, forward
 
@@ -194,7 +200,7 @@ tumultuous (adj): loud, confused, and violently emotional; tempestuous
 
 exuberant (adj): abundant of energy, excitement and happiness
 
-jovial (adj): jolly, festive, merry
+jovial (adj): jolly, festive, merry, (in) jest
 
 ==vivacious== (adj): sprightly, zesty, lively in temper
 
@@ -254,6 +260,8 @@ provisional (adj): interim, temporary
 
 cede (v): assign, transfer, to yield or grant typically by agreement
 
+impart (v): disclose, convey, transmit
+
 concede (v): admitting defeat, to acknowledge grudgingly or hesitantly, to accept as true, valid, or accurate, to grant as a right or privilege 
 
 concession (n): hạ giá, nhượng bộ
@@ -270,7 +278,7 @@ purloin {sth from sb/sth} (v): to steal something or use it without permission
 
 pilfering (v): to steal stealthily in small amounts and often again and again
 
-endearing (adj): lovable, adorable
+==endearing== (adj): lovable, adorable
 
 ==rapprochement== (n): rapport, fellowship, kinship, solidarity
 
@@ -283,6 +291,8 @@ knee-jerk (adj): quy chụp, disapproving
 radical (adj-n): extreme, fundamental, foundation, rudimentary
 
 dire (adj): frightening, sinister, ominous
+
+iniquity (n): wickedness, sin
 
 goon (n): a stupid person, a man hired to terrorize or eliminate opponents
 
@@ -338,7 +348,7 @@ hysterical (adj): hilarious, unrestrained emotion, ludicrous
 
 demise (n-v): death, decease, to transmit by succession or inheritance
 
-progeny (n): descendant, children, outcome, product
+==progeny== (n): descendant, children, outcome, product
 
 inexorable (adj): relentless
 
@@ -350,6 +360,8 @@ equanimity (n): balance, evenness of mind especially under stress
 
 accrue (v): accumulate, maximize, gain, conglomerate (adj-v-n)
 
+avail (v-n): serve, gain, use
+
 accede {to} (v): express approval/agreement or give consent
 
 repression (n): restraint, suppresion, constraint
@@ -360,6 +372,8 @@ perdition (n): hell, inferno
 
 cacophony (n): noise, rattle, chatter, discordance
 
+clamor (v-n): to become loudly insistent, noisy shouting
+
 chagrin (v-n): disappoint, upset, frustration, dismay
 
 ==impugn== (v): to doubt someone's character, qualities, or reputation by criticizing them
@@ -369,6 +383,8 @@ vicissitude (n): mutability, gauntlet, adversity
 contrition (n): remorse, regret, shame, repentance
 
 occlude (v): conceal, obstruct, block
+
+==stymie== (v): stand in the way of, encumber, impede
 
 bureaucracy (n): quan liêu, a system of administration in which most of the important decisions are made by state officials (rather than by elected representatives)
 
@@ -396,7 +412,7 @@ perturb (v): bother, disturb, unsettle, concern, pester
 
 stalwart (adj-n): courageous, intrepid, valiant, powerful, advocate, activist
 
-deterrent (adj): discourage, prevent, or inhibit
+deterrent (adj-n): discourage, prevent, or inhibit
 
 complicit (adj): đồng loã
 
@@ -440,7 +456,7 @@ acolyte (n): follower
 
 tacit (adj): implied, implicit
 
-connotation (n): implication
+==connotation== (n): implication
 
 allusion (n): implication, indirect reference especially in literature
 
@@ -544,6 +560,8 @@ lamentable (adj): deplorable, mournful, wretched
 
 meticulous (adj): careful, diligent, engaged
 
+wage (v): to carry on, in process of occurring
+
 plight (v-n): engage (in a pledge), difficult / precarious (dubious) situation
 
 advertent (adj): attentive, careful, cautious, deliberate >> inadvertant: unintentional, accidental
@@ -560,7 +578,7 @@ wend (v-n): travel, go, move, proceed
 
 barring (prep): excepting, aside from, excluding
 
-equivocal <ik-quiv-ocal> (adj): questionable, debatable, ambiguous, suspicious, opaque
+==equivocal== <ik-quiv-ocal> (adj): questionable, debatable, ambiguous, suspicious, opaque
 
 ==vindictive== (adj): vengeful, spiteful, malicious
 
@@ -610,6 +628,8 @@ delinquent (n-adj): degenerate, incorrigible, delayed, overdue, belated
 
 promptly (adv): without delay, immediately
 
+expedite (v): speed up, execute promptly
+
 ==respite== (v -n): delay, pause (before something unpleasant happens)
 
 malleable (adj): adaptable, flexible, moldable, pliable
@@ -630,7 +650,11 @@ fluster (v): faze, confound, a state of agitated confusion
 
 quarrel (v-n): angry disagreement
 
+dissensus (n): !consensus, difference of opinion
+
 acrimonious (adj): bitter, resentful, ==rancorous==
+
+vitriol (n): bitterly harsh or incisive language or criticism
 
 imbroglio (n): scandal, embroilment, an intricate or complicated situation
 
@@ -682,7 +706,7 @@ lucrative (adj): profitable, moneymaking
 
 installment (n): trả góp, one part of a serial story
 
-==glean== (v): find out, to gather bit by bit
+==glean== (v): find out, ascertain, to gather bit by bit
 
 prerogative (n): privilege, a distinctive excellence
 
@@ -778,7 +802,9 @@ egregious (adj): blatant, obvious, conspicuous, flagrant, prominent
 
 mar (v-n): spoil, tarnish, blemish, defect
 
-nuisance (n): harm, pest, injury, detriment
+detract {from} (v): divert, to diminish the value of something
+
+==nuisance== (n): harm, pest, injury, detriment
 
 sliver (n): splinter, scrap, flake, chip
 
@@ -884,7 +910,11 @@ ostracize (v): cho ra rìa, bo xì
 
 hors d'oeuvre (n): small pieces of food eaten at a party
 
+sect (n): party, faction
+
 acquit (v): vindicate, to free from allegation or blame, làm trọn (nghĩa vụ, bổn phận)
+
+reprehensible (adj): blameworthy, ==culpable==, reproachable
 
 irrigation (n): tưới, supply with water by artificial means
 
@@ -905,3 +935,21 @@ interdict (v-n): ban, proscribe, forbid
 satin shoes (n): shoes with smooth lustrous appearance or sleekness to touch
 
 ==acumen== (n): keenness and depth of perception especially in practical matters
+
+referendum (n): trưng cầu dân ý
+
+sultan (n): a king or sovereign especially of a Muslim state
+
+mortgage (v-n): thế chấp
+
+gilded (adj): mạ vàng, luxurious
+
+injunction (n): counsel or warning against fault or oversight, mệnh lệnh
+
+reparation (n): the payment of damages, indemnification 
+
+jubilee (n): celebration (of an anniversary)
+
+queasy (adj): nauseated, full of doubt, squeamish
+
+==remiss== (adj): negligent, neglectful

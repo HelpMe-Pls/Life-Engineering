@@ -3,7 +3,8 @@
 - It is very important to *separate your content ideas into clear paragraphs* so that the examiner can see them immediately.
 - The tasks last 20 minutes for task 1 and 40 minutes for task 2. Coordinate your execution accordingly.
 - In any case, your "padding" to the details should feel realistic, tangible and ==***relevant***==, rather than some made up statistics or being too dramatic or too many unnecessary specific details.
-- Confusion ***must not*** be raised from your writing.
+- Each paragraph must focus on ==**_one_**== *main* idea.
+> Confusion ***must not*** be raised from your writing. Don’t be tempted to use any word that you would be uncomfortable to use in spoken conversation.
 ## Task 1
 - This test requires you to think very carefully about ***the recipient*** (the person reading the letter) ***the content*** (the ideas and details you create) and ***the style*** of the writing.
 	- If the IELTS examiner thinks you are confused about the recipient and the style, and if your content does not answer the task properly, you will get a low score – even if your English is quite good.
@@ -12,7 +13,7 @@
 - There are 3 critical points to focus on for this task:
 	- The *imaginary* ***recipient*** of the letter (a stranger or someone you know personally)
 	- The correct ***style*** to use (personal, formal or semi-formal)
-	- The ***content*** of the letter (a typical *mix* of expressions: ==complaining, requesting, explaining/apologizing, suggesting==)
+	- The ***content*** of the letter (a typical *mix* of expressions: ==complaining, requesting, explaining/apologizing/thanking, suggesting==)
 > Ask yourself, "**Why** am I writing this letter? What **combination** of content do I need to create?"
 - How to map them out (within the first ==3 minutes==):
 	- **Recipient**: 
@@ -30,6 +31,7 @@
 	4. Third paragraph: Extra meat (but still meat, don't go veggie here), extending the previous expressions and focus on the final required expression. Remember that these 3 paragraphs don't have to be in the same length.
 	5. Closing (3 lines: CTA → farewell → your name)
 #### Tips
+- A paragraph for each bullet point. Sure, you can cram 2 bullet points into one paragraph, but a clear isolation of the paragraph-bullet point pair is always preferred.
 - Straight up answering each required expression in 2-3 sentences is the way to go.
 - Use "although" instead of "even though" at the start of a sentence.
 - **For formal style**: use formal words such as "regarding, remains, considerable, commotion, appreciate, restrict,..."
@@ -70,7 +72,7 @@
 	- For apologizing: keep it short and simple: "forgive me", "sorry". ==Use this: "If it’s any comfort, I feel terrible about it too." in case you want padding.==
 - **For endings**: 
 	- Formal recipient CTA: use "I look forward to + `V-ing (NOT hearing)`...", "I would appreciate your reply with...", "Thank you for your help/consideration, and I await...".
-	- Formal recipient farewell: use "Kind regard==***s***==, / Best regard==_**s**_==, /Yours sincerely, / Yours faithfully,".
+	- Formal recipient farewell: use "Kind regard==***s***==, / Best regard==_**s**_==, /Your==***s***== sincerely, / Your==***s***== faithfully,".
 	- Formal and semi-formal recipient: finish with your `firstName lastName`.
 	- Personal CTA: "Do let me know...", "Please get in touch...", "I can’t wait to..."
 	- Personal farewell: use "All the best, `\n yourFirstName`."
@@ -79,7 +81,7 @@
 	- CTA: remember to express appreciation if your content is *requesting* something:
 		- Formal: =="*Your prompt attention to this matter would be greatly appreciated,== and I look forward to your response.*"
 	- Don't add anything to your name (i.e. the last line of your letter should only contain your name, no matter what style it is).
-	- ==The last character ***must not*** be a full stop (.)==
+	- ==The very last character ***must not*** be a full stop (.)==
 	- Never use "PS" in a formal letter. It's the last ditch effort for a *personal* letter *if* it's not meeting the minimum length of 150 words.  
 
 > [!important]- Never include your opinions or ideas about topics or trends in society. For this task, it's considered "padding", which heavily reduces your score.
@@ -162,9 +164,10 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 	- **Next 1-2 sentences**: further clarify / extend your take
 	- **Last 1-2 sentences**: reaffirm / strengthen your claim with specific examples.
 - First sentence example: _The argument for_ replacing libraries with digital alternatives _rests on_ compelling technological advances.
-- For the first sentence of the *second* paragraph, it should demonstrate either a smooth transition from the first paragraph (e.g. expanding/supplementing the previous statement), or expressing a counterargument (depending on the requirement). For example: "Complementing/Opposing `[the previous topic]`,..."
+- For the first sentence of the *second* paragraph, it should demonstrate either a smooth transition from the first paragraph (e.g. expanding/supplementing the previous statement), or expressing a counterargument (depending on the requirement). For example: "Complementing/Opposing `[the previous topic]`,...", "Another crucial factor regarding...."
 #### The conclusion
-- Always start with "In conclusion,..." or "To recap,..."
+- Always start with "In conclusion,..." or "To recap,...". For padding, you may use "Looking at the broader picture, we can see that..."
+- For advantage/disadvantage discussion, use "To maximize the benefits while minimizing the drawbacks,".
 - ==***Reaffirm*** your answer in the introduction by paraphrasing / extending it==.
 	- You can also compose this part by combining and paraphrasing the thesis statement and the topic sentences in the body.
 ### Tips
@@ -178,7 +181,7 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 - If you're doing great, you should have less than 5 minutes to:
 	- ***Check for errors*** (grammatical and syntax)
 	- Paraphrase noted sentences. ==**Avoid perfectionism**==. If you can't think of a synonym for a word/phrase within 10s, it's better to just repeat it.
-- Cohesion and coherence devices: Consequently, more over, Complimenting, Opposing, Additionally, Instead,...
+- Cohesion and coherence devices: Consequently, more over, Complimenting, Opposing, Additionally, Instead, Even so, This results in,...
 - Describing trajectory: gaining traction, gaining momentum, becoming popular, undermining, compromising, downward/upward propensity/predilection, evolved impressively, offering benefits like...
 - Comparison: stark disparity, clear contrast,
 - Use these words more often: genuine, meaningful, profound, authentic, foster, facilitate, develop,... 
@@ -206,6 +209,7 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 # Speaking
 - Practice speaking your thoughts aloud. 
 - A little bit of "how do you *feel* about it / how does it *affect* you" could help.
+- Keep you speaking going with this formula: *Direct answer → Reasoning & evidence (if any) → Personal reflection (e.g. your emotions / What have you learned from it)*
 > [!error] Get this right
 > You can expand the argument, but ==**NEVER stray away from the main topic**== that you're discussing. Avoid pure listing. If you're trying to list, chain the items in a cohesive way. 
 - Avoid complex vocabulary. Keep it simple and down to earth. This ***IS NOT*** a show-off contest. They're expecting you to speak in a manner that poses no difficulty in understanding what you're saying.
@@ -216,32 +220,62 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 - This part is about yourself. Questions about you. Tell your story. Lasts about 5 minutes.
 - Common topics: your connections, work, hometown, hobbies,...
 - You can expand your answers, but remember to keep them specific and keep the main topic relevant.
+- Recommended structure for an answer: `Direct answer + Reason + Example/Personal experience`. For example:
+	- Q: "Do you like reading?" 
+	- A: "Yes, I'm quite passionate about reading `non-fiction`. It helps me develop a deeper understanding of `interpersonal dynamics and human behavior`. Currently, I'm reading `Skin in the Game` by `NNT` to decompress after work."
 ## Part 2
 - The goal here is to speak fluently and coherently for 2 minutes ==about the main topic==.
 - The bullet points are just cues and suggestions to help you out, so don't take them too seriously. You have the option to add more bullet points as long as they support the main topic. 
 - You don't have to answer every bullet points as long as you're keeping the main topic relevant.
+- Highly recommended: conclude with personal reflection.
 ## Part 3
-- This part ***discusses*** general topics in social contexts in about 5 minutes. The topics and how you answer them are similar to [[#The topics |Task 2 Writing]].
-- This is where you should develop your ideas. Be creative. 
-- d
-- d
+- This part ***discusses*** general topics in social contexts (relates to Part 2) in about 5 minutes. The way you answer them is similar to [[#The topics |Task 2 Writing]].
+- This is where you should develop your ideas. Be creative, but do not go off-topic.
+## Strategies
+- Paraphrasing:
+	- "Very good" → "exceptional"
+	- "Like" → "prefer"
+	- "Important" → "crucial/vital"
+	- "Think" → "believe/reckon/suppose"
+	- "I think..." → "In my experience..." 
+	- "Maybe..." → "It seems to me that..." 
+	- "I believe..." → "From my perspective..."
+- To buy time naturally (3s max):
+	- "I've never really thought about that..."
+	- "As far as I'm concerned..."
+	- "If I had to consider this..."
+	- "This reminds me of..."
+	- "Well, the thing is..."
+	- "Actually, a better example would be..."
+	- "This brings me to another point..."
 ---
 # Reading
-- It's better to answer fewer questions correctly than to rush through all of them making careless mistakes.
+- It's better to answer fewer questions correctly than to rush through all of them making careless mistakes:
 	- Make sure to get the easy ones right, and *make **educated** guesses* for the harder ones.
 	- It's always better to have an answer for every question than to leave some blank.
-- This is the battle of paraphrasing. Read your question *carefully*, identify its *main* topic of discussion (i.e. what's this about) and then appropriately apply these strategies:
+	- Watch for singular/plural answers.
+- This is the battle of paraphrasing. Carefully read your questions, identify its *main* topic of discussion (i.e. what's this about) and then appropriately apply these strategies:
 ## Strategies
+- For the total of 60 minutes, here's how you can optimally allocate your execution:
+	- Start with Section 3 (20 mins) 
+	- Then Section 2 (20 mins) 
+	- Finally Section 1 (15 mins)
+	- Review your answers and come back to those questions that you marked as "not sure" (5 mins)
 - These are the essential skills for every section that should (but not always) be applied in order:
 	1. **Skimming**: your goal is to *get a general idea* of the content and structure of "the text below".
 	2. **Scanning**: you must be able to *locate* the relevant part from "the text below" and the (possibly paraphrased) keywords of the statement.
 	3. **Close reading**: make sure to clearly identify its *main* topic of discussion.
-- ==Spend no more than 2 minutes for each answer.==
+- ==Spend no more than 2 minutes for each answer.== Move on quickly if you don't find an answer.
+- ==Practice reading in chunks== rather than word by word.
+- Focus on first/last sentences of paragraphs.
+- Always read the questions first, *except* for these:
+	- Matching (headings/paragraphs)
+	- Fill in the blank
 ### TFNG
-- There's always ==***at least one***== "True", one "False" and one "Not Given".
+- Don't make assumptions based on general knowledge or let previous answers influence your judgment.
 - Aim to complete this task within a 10-minute window. 
 > [!info] Tackle the statements in order
-> The order of the statements are usually mapped to the order of the paragraphs.
+> The order of the statements are *usually* mapped to the order of the paragraphs.
 - Follow these steps *in order*:
 	1. **Skim** the questions and the text quickly (1-2 minutes): note main topics of each *paragraph* (in 5 words or less).
 	2. **Closely read** the statements carefully (1-2 minutes per statement): this is where the "paraphrasing" takes place.
@@ -251,25 +285,35 @@ In the end, it's still your ***personal*** take on the subject, so you must **av
 	6. Review (if you finished within 10 minutes): watch for qualifying words (all, some, never, always)
 #### How to identify a "NOT GIVEN"
 - A **NOT GIVEN** means the passage _**lacks** the information_ necessary to either *agree or disagree* with the statement.
-	- Don’t assume based on your lexical knowledge. Focus on the statement only: is the identified passage answer directly to the statement or not.
+	- Don’t assume based on your lexical knowledge. Focus on the statement only: is the identified passage answer *directly* to the statement or not.
 	- The excerpt may seem true, but it's not strong enough to completely gravitate toward the claim in the statement → ==the statement *must* either confirm or deny it==. 
 - For example: 
 	- The statement: "Khoi is 25 years old."
 	- The excerpt: "Khoi is a mature person."
+- If you can't find related information quickly, it's *likely* NG.
 ### The order of execution
-- Complete the sections in their numerical order.
 - Complete your question types in this order:
-	1. Matching: Header → Information (paragraph/feature) matching, mostly require skimming and scanning
+	1. Multiple choice
 	2. Fill in the blank
-	3. Multiple choice
+	3. Matching: Header → Information (paragraph/feature) matching, mostly require skimming and scanning
 	4. TFNG
 ---
 # Listening
 - Listen carefully to differentiate between similar characters (`b` vs `p`, `m` vs `n`) when the track is spelling.
 - Listen carefully to the pronunciation to detect the correct form (singular/plural, tenses,...)
 - Again, this is the battle of paraphrasing. Read your question *carefully*, identify its *main* topic of discussion (i.e. what's this about), identify the keywords, recognize the synonyms.
->  Don't spend too much time on a question that you miss the remaining part of the track.
-
-> [!important]- Memorize the track
-> - If it takes more than 10s to answer the question, mark it for later and focus on the remaining of the track.
-> - It's always better to ==memorize the key topic== of the conversations in the track, and then recall that to answer your questions, rather than lingering on the questions and try to get them right while the track is still running.
+>  Don't spend too much time on a question that you miss the remaining part of the track. 
+## Strategies & Tips
+### Before 
+- Spend 30s on each section to skim the questions and note their keywords. Keep them in your RAM.
+- Note the requirements (i.e. word limits, question type).
+### During
+- Follow question order.
+- Write answers as you hear them and ==***listen ahead*** while writing==. 
+- Move to next question *immediately* after answering.
+- Listen for signposting language: "First," "Next," "Finally", "The main point is...", "There are `x` reasons..."
+- Pay attention to emotional expressions for opinion-based questions (e.g. surprised, disappointed, disagree,...).
+- Mark uncertain and/or unanswered questions to come back later.
+### After
+- Come back to those questions that you marked earlier.
+- Never leave any questions unanswered. Try to make educated guesses.
