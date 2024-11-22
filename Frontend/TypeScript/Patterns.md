@@ -1,4 +1,5 @@
 Check [this](https://www.npmjs.com/package/type-fest) out.
+[TSConfig](https://www.totaltypescript.com/tsconfig-cheat-sheet?ck_subscriber_id=2036870503)
 
 ----
 # `DistributiveOmit`

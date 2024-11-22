@@ -32,6 +32,8 @@ conform {to} (v): abide by, comply with, adhere to
 
 ==pertinent== {to} (adj): apposite, relevant, appropriate
 
+cogent (adj): convincing, pertinent
+
 ==judicious== (adj): wise, thoughtful, sensible, prudent, insightful
 
 shrewd (adj): based on good understanding or judgment
@@ -144,7 +146,7 @@ assuage (v): ease, quench, appease, pacify
 
 disparate (adj): distinct, uniquely different from each other
 
-disparage (v): degrade, belittle, depreciate
+==disparage== (v): degrade, belittle, depreciate
 
 derisory (adj): belittling, pathetic, uncomplimentary, contemptuous
 
@@ -183,6 +185,8 @@ absurd (adj): ridiculous, preposterous
 ==tether== {sth_to sth} (v): to tie, connect
 
 condemn (v): sentence, convict, to pronounce guilty
+
+accomplice (n): , đồng phạm
 
 ==eminent== (adj): famous and respected, excellent
 
@@ -246,7 +250,7 @@ blight (v-n): impair the quality or effect of, a deteriorated condition, flaw, d
 
 delineate (v): to indicate, portray, describe, define
 
-proclivity (n): ==predilection==, tendency, propensity, a strong inherent inclination toward something objectionable
+proclivity (n): ==predilection== {for}, tendency, propensity, a strong inherent inclination toward something objectionable
 
 volatile <val-adal> (n): explosive, unstable, ==fickle==, subject to rapid or unexpected change
 
@@ -294,7 +298,11 @@ dire (adj): frightening, sinister, ominous
 
 iniquity (n): wickedness, sin
 
+nefarious (adj): iniquitous, vicious, evil (law)
+
 goon (n): a stupid person, a man hired to terrorize or eliminate opponents
+
+folly (n): insanity, absurdity, criminally or tragically foolish actions or conduct
 
 incisive <in-xai-sive> (adj): impressively direct and decisive (as in manner or presentation)
 
@@ -358,7 +366,9 @@ incarnation (n): embodiment, manifestation, version, đời/kiếp
 
 equanimity (n): balance, evenness of mind especially under stress
 
-accrue (v): accumulate, maximize, gain, conglomerate (adj-v-n)
+accrue (v): accumulate, maximize, gain
+
+==conglomerate== (adj-v-n): gather, congregate, converge
 
 avail (v-n): serve, gain, use
 
@@ -618,6 +628,8 @@ sever (n): break up, divorce, dissociate, divide, ramify
 
 diminution (n): decrease, decline, reduction
 
+abatement (n): reduction, deduction
+
 interlocutor <inter-loc-cutor> (n): the one who takes part in dialogue or conversation
 
 colloquial (adj): conversational (informal) → lookie-loos (n)
@@ -720,6 +732,8 @@ gullible (adj): exploitable, easily duped or cheated
 
 desolate (v-adj): to deprive of inhabitants, lifeless, deserted, dilapidated
 
+decrepit (adj): worn-out, run-down, dilapidated
+
 idempotent (adj-n): to run something as many times as you like and you get the same desired result
 
 maverick (adj-n): sigma guy
@@ -768,7 +782,7 @@ contend (v): struggle, contest, argue, assert
 
 flounder (v): in an awkward or difficult situation, don't know what to do/say next
 
-dilemma (n): predicament, a problem involving a difficult choice
+dilemma (n): ==predicament==, a problem involving a difficult choice
 
 refute (v): disclaim, deny, reject
 
@@ -952,4 +966,22 @@ jubilee (n): celebration (of an anniversary)
 
 queasy (adj): nauseated, full of doubt, squeamish
 
+aflutter (adj): nervously excited
+
 ==remiss== (adj): negligent, neglectful
+
+seer (n): prophet, visionary
+
+truce (n): ceasefire, armistice
+
+omen (n): điềm (good/bad)
+
+matriculate (v): to enroll at a college or university
+
+embezzle (v): chiếm đoạt, biển thủ (law)
+
+lam (n): sudden or hurried flight especially from the law → on the lam
+
+eligible (adj-n): qualified (to be chosen)
+
+adjoin (v): lie next to or in contact with

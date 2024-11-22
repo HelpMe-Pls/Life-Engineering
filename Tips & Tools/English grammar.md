@@ -41,6 +41,7 @@
 	- Appearance
 	- Substance
 	- Distance
+	- Consistent
 	- Persistence
 	- Competence
 	- Dependence
@@ -50,9 +51,13 @@
 - ~~Exhilerate~~ → Exhilarate
 - ~~Preferrable~~ → Preferable 
 - ~~Disscuss~~ → Discuss
+- Discuss ~~about~~ → Discuss
 - ~~Fullfill~~ → Fulfill
 - ~~Crutial~~ → Crucial
 - ~~Idiosyncracy~~ → Idiosyncrasy
+- ~~Pernament~~ → Permanent
+- ~~Neccessary~~ → Necessary
+- ~~Eventhough~~ → even though
 - Regarding ~~to~~ → Regarding  / As for + noun
 - In favor ~~for~~ → In favor ***of***
 - Participate → Participate **_in_**
@@ -70,9 +75,10 @@
 - Verbs that _**end** with_ a vowel or a voiced consonant: *b, g, v, z, j, m, n, ng, l, r*. For example:
 	- Claw → clawed /klɔːd/
 	- Slam → slammed /slæmd/
-	- Kneel - kneeled /niːld/
-	- Show - showed /ʃəʊd/ (Vowel `o`)
-	- Crawl - crawled /krɔːld/ (Vowel `a`)
+	- Kneel → kneeled /niːld/
+	- Grab → grabbed /ɡræbd/
+	- Show → showed /ʃəʊd/ (Vowel `o`)
+	- Crawl → crawled /krɔːld/ (Vowel `a`)
 #### As an `/ɪd/`
 - Verbs that _**end** with_ a `t` or `d` *sound*:
 	- Graduate - graduated /ˈgrædʒueɪtɪd/
