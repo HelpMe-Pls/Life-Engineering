@@ -8,6 +8,8 @@ cliché (n): triteness, an opinion that is overused and betrays a lack of origin
 
 banal (adj): dull, boring, insipid
 
+arid (adj): jejune, dull, excessively dry, lacking in interest and life
+
 profound (adj-n): deep af
 
 rote (n): học vẹt
@@ -46,6 +48,8 @@ masticate (v): chew, nibble, gnaw (on)
 
 punitive (adj) = penal, disciplinary: inflicting or intended as punishment
 
+puny (adj): small, weak, helpless
+
 competent (adj): deft, having the necessary skill to do something successfully
 
 adroit (adj): skillful (social)
@@ -64,9 +68,11 @@ gratify (v): satisfy, gladden, give pleasure to
 
 scour (v-n): search, scrub, polish
 
-ambiguous (adj): uncertain, fishy, suspicious, esoteric
+ambiguous (adj): uncertain, fishy, suspicious, nebulous, obscure
 
 obstinate (adj): unpersuadable, stubborn, willful, rigid, adamant, implacable
+
+pertinacious (adj): obstinate, steadfast
 
 empirical (adj): based on observation or experience rather than theory or pure logic
 
@@ -78,7 +84,9 @@ moribund (adj): dying (business/patient/tree,...)
 
 cursory (adj): hasty and therefore not thorough or detailed
 
-trifle {with} (v-n) <trai-fal>: giỡn mặt. 
+trifle {with} (v-n) <trai-fal>: giỡn mặt
+
+dabble (v): try out, play around with, làm gì đó một cách hời hợt
 
 complacency (n): pride, triumph, self-admiration, smugness
 
@@ -92,7 +100,7 @@ enmity (n): hatred, malevolence, hostility, animosity, antagonism
 
 diplomatic (adj): ngoại giao
  
-astute (adj): showing sharp powers of judgment; clever, ingenious, insightful, shrewd
+==astute== (adj): showing sharp powers of judgment; clever, ingenious, insightful, shrewd, crafty
 
 reverence (v-n) <rev-er-rence>: deep respect for someone or something
 
@@ -186,6 +194,8 @@ absurd (adj): ridiculous, preposterous
 
 condemn (v): sentence, convict, to pronounce guilty
 
+enunciate (v): articulate, pronounce, announce 
+
 accomplice (n): , đồng phạm
 
 ==eminent== (adj): famous and respected, excellent
@@ -201,6 +211,8 @@ beset (v): surround, harass
 windward (adj): !leeward, being in or facing the direction from which the wind is blowing
 
 tumultuous (adj): loud, confused, and violently emotional; tempestuous
+
+conflate (v): confuse, blend/combine
 
 exuberant (adj): abundant of energy, excitement and happiness
 
@@ -249,6 +261,8 @@ stultify (v): negate, to impair, invalidate, or make ineffective
 blight (v-n): impair the quality or effect of, a deteriorated condition, flaw, deformity
 
 delineate (v): to indicate, portray, describe, define
+
+telltale (n): indication, informer, gossip
 
 proclivity (n): ==predilection== {for}, tendency, propensity, a strong inherent inclination toward something objectionable
 
@@ -308,17 +322,25 @@ incisive <in-xai-sive> (adj): impressively direct and decisive (as in manner or 
 
 amalgam (n): fusion, mixture, blend
 
+motley (adj-n): made up of many different people or things, a mixture especially of incongruous elements
+
 burgeoning <burg-jun-ning> (adj): growing, expanding, or developing rapidly
 
 ==wax== (v): to grow in volume, strength, intensity, toward full development
 
-intricate (adj): complicated, sophisticated, ==pragmatic==
+proliferate (v): multiply, grow by rapid production
+
+intricate (adj): complicated, sophisticated
+
+==pragmatic== (adj): practical, conveys simplicity, practicality, and efficiency
 
 canonical (adj): orthodox
 
 conundrum (n): nan giải, an intricate and difficult problem
 
 abet (v): undergird, to support, assist in the achievement of a purpose
+
+conducive (adj): promote or assist
 
 edifice <eh-dah-fits> (n): a building, a large abstract structure
 
@@ -342,7 +364,7 @@ apprehend (v): arrest, seize, to perceive, anticipate especially with anxiety, d
 
 macabre (adj): dreadful, gruesome, horrid
 
-precipitous (adj): having a very steep ascent
+precipitous (adj): having a very steep ascent → precipitate (v) 
 
 dichotomy (n): cực, something with seemingly contradictory qualities
 
@@ -385,6 +407,8 @@ cacophony (n): noise, rattle, chatter, discordance
 clamor (v-n): to become loudly insistent, noisy shouting
 
 chagrin (v-n): disappoint, upset, frustration, dismay
+
+despondent (adj): hopeless, dejected, disheartened, downhearted
 
 ==impugn== (v): to doubt someone's character, qualities, or reputation by criticizing them
 
@@ -470,7 +494,7 @@ tacit (adj): implied, implicit
 
 allusion (n): implication, indirect reference especially in literature
 
-enamored {of} (adj): amorous (of), obsessed, fascinated
+==enamored== {of} (adj): amorous (of), obsessed, fascinated
 
 amorous (adj): showing sexual desire and love
 
@@ -517,6 +541,8 @@ buttress (v-n): support, strengthen, pillar, backbone
 nascent (adj): initial, first, sơ khai, nguyên thuỷ
 
 stigma (n): stain, guilt, shame
+
+sully (v-n): to make soiled or tarnished, stain
 
 pervade (v): to spread throughout, permeate, suffuse, lan toả
 
@@ -572,7 +598,7 @@ meticulous (adj): careful, diligent, engaged
 
 wage (v): to carry on, in process of occurring
 
-plight (v-n): engage (in a pledge), difficult / precarious (dubious) situation
+plight (v-n): engage (in a pledge), difficult / ==precarious== (dubious) situation
 
 advertent (adj): attentive, careful, cautious, deliberate >> inadvertant: unintentional, accidental
 
@@ -592,13 +618,21 @@ barring (prep): excepting, aside from, excluding
 
 ==vindictive== (adj): vengeful, spiteful, malicious
 
-tangible (n-adj): physical, real, perceptible, palpable
+indict (v): charge, incriminate, impeach
+
+incarcerate (v): imprison, to put in prison, to subject to confinement
+
+penitentiary (n): prison, custodial institution, remand center
+
+tangible (n-adj): physical, real, perceptible, ==palpable==
 
 avid (adj): eager, enthusiastic, excited, voracious
 
 rectify (v): to set right, correct, debug
 
-enigma (n): obscure, mystery, conundrum
+enigma (n): mystery, conundrum
+
+esoteric (adj): emphasizing exclusivity or niche knowledge, often tied to expertise or deliberate inaccessibility
 
 confidant (n)  {caution: it's different from confidEnt}: intimate, the one to whom secrets are entrusted
 
@@ -626,6 +660,8 @@ extricate (v): liberate, untangle, rescue
 
 sever (n): break up, divorce, dissociate, divide, ramify
 
+ramification {for/of} (n): consequence, result/effect, impact
+
 diminution (n): decrease, decline, reduction
 
 abatement (n): reduction, deduction
@@ -645,6 +681,8 @@ expedite (v): speed up, execute promptly
 ==respite== (v -n): delay, pause (before something unpleasant happens)
 
 malleable (adj): adaptable, flexible, moldable, pliable
+
+lenient (adj): not harsh, severe, or strict, allow a lot of freedom and leeway
 
 stringent (adj): strict, rigorous, rigid
 
@@ -730,15 +768,19 @@ gullible (adj): exploitable, easily duped or cheated
 
 ==predation== (n): the act of injuring, exploiting, or plundering others for personal gain 
 
+pernicious (adj): deadly, detrimental
+
 desolate (v-adj): to deprive of inhabitants, lifeless, deserted, dilapidated
 
-decrepit (adj): worn-out, run-down, dilapidated
+decrepit (adj): worn-out, run-down, derelict, dilapidated
 
 idempotent (adj-n): to run something as many times as you like and you get the same desired result
 
 maverick (adj-n): sigma guy
 
 consummate (adj-v): to make something complete & perfect. To consummate a marriage/relationship is to make it complete by having sex
+
+androgynous (adj): neither specifically feminine nor masculine
 
 matrimonial (adj): marriage-related
 
@@ -796,6 +838,8 @@ incessant (adj): continuous, perpetual
 
 cohort (n): band, group, companion, colleague
 
+bevy (n): a large group or collection
+
 consort (v-n): associate, harmonize, company, partner, spouse
 
 aphorism (n): an ingeniously terse and concise style of statement/expression
@@ -827,6 +871,8 @@ revel (v-n): binge
 bough (n): the main branch of a tree
 
 ==didactic== (n): designed or intended to teach >> autodidact: self-learner
+
+inculcate (v): to teach and impress by frequent repetitions or admonitions
 
 fortuitously: fortunately, luckily
 
@@ -974,8 +1020,6 @@ seer (n): prophet, visionary
 
 truce (n): ceasefire, armistice
 
-omen (n): điềm (good/bad)
-
 matriculate (v): to enroll at a college or university
 
 embezzle (v): chiếm đoạt, biển thủ (law)
@@ -985,3 +1029,19 @@ lam (n): sudden or hurried flight especially from the law → on the lam
 eligible (adj-n): qualified (to be chosen)
 
 adjoin (v): lie next to or in contact with
+
+adjourn (v): suspend a session indefinitely or to another time or place
+
+ineluctable (adj): inevitable
+
+meander (v-n): wander aimlessly or casually without urgent destination, labyrinth
+
+recuperative (adj): restorative
+
+husbandry (n): agriculture, conservation
+
+offhanded (adj): unplanned, snap, improvised
+
+geriatric (adj-n): an aged person, relating to, or appropriate for elderly people 
+
+==serendipity== (n): the fact of finding interesting or valuable things by chance

@@ -361,6 +361,8 @@ const onExportHistory = async (campaignId) => {
 	- You can fetch data inside your components, and it Just Works™. No more `useEffect()` that are common with client-side fetching.
 	- You can stream data using `<Suspense>` to speed up the initial page load.
 	- You can execute more code on the server without shipping it to the client, keeping bundle sizes smaller.
+### IELTS
+- Tell them the story, weave in as much emotions as you can, make it as personal as possible about the score, then how you turned it into something good for the community.
 
 ### WIL
 - If you're indeterminate, Life will happen *to* you instead of happen *for* you. Do not allow that. You gotta take the wheel.

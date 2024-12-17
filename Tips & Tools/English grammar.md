@@ -36,15 +36,18 @@
 ## Commonly misspelled
 - Nouns that end with "-tance" or "-tence":
 	- Acceptance
+	- Accordance (with)
 	- Assistance
 	- Attendance
 	- Appearance
 	- Substance
 	- Distance
+	- Inadvertent 
 	- Consistent
-	- Persistence
+	- Existence
 	- Competence
 	- Dependence
+	- Persistence
 - Words ending in **-tance** typically relate to *actions or conditions*, while words ending in **-tence** often relate to *qualities or states of being*
 - ~~Laughters~~ → Laughter
 - ~~Servere~~ → Severe
@@ -54,11 +57,15 @@
 - Discuss ~~about~~ → Discuss
 - ~~Fullfill~~ → Fulfill
 - ~~Crutial~~ → Crucial
+- Calender → Calendar
+- ~~Benefitial~~ → Beneficial
 - ~~Idiosyncracy~~ → Idiosyncrasy
 - ~~Pernament~~ → Permanent
 - ~~Neccessary~~ → Necessary
-- ~~Eventhough~~ → even though
+- ~~Eventhough~~ → Even though
+- Everytime → Every time
 - Regarding ~~to~~ → Regarding  / As for + noun
+- A measured approach in ~~assess~~ → approach in + gerund (assessing)
 - In favor ~~for~~ → In favor ***of***
 - Participate → Participate **_in_**
 - Extend (v) $\ne$ Extent (n) $\ne$ Extant (adj)
@@ -96,3 +103,13 @@
 - "In the finer print": in the details, in the additional terms
 - "To the tee": perfectly, exactly
 - "Rear `its` head (again)": something negative or problematic, has become noticeable
+- "Hit the head": go to the restroom
+- "In all due haste": right away
+- "fubar": Fucked Up Beyond All Recognition
+- "Keep abreast of `sth`": stay informed about
+- "Out of the loop": lack knowledge about something that others are aware of
+- "A trophy husband": a young, attractive man who is married to an older, wealthier woman.
+- "Pigeonholed": being limited to one role or set of responsibilities; labeling people based on stereotypes
+- "Red herring": something intended to distract attention from the real problem
+- "Red tape": thủ tục hành chính
+- "Leg work": effort, exertion 

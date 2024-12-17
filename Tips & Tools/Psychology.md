@@ -65,7 +65,8 @@
 	• Hope luck finds you. 
 	• Hustle until you stumble into it. 
 	• Prepare the mind and be sensitive to chances others miss. 
-	• Become the best at what you do. Refine what you do until this is true. Opportunity will seek you out. Luck becomes your destiny. 
+	• Become the best at what you do. Refine what you do until this is true.
+	Opportunity will seek you out. Luck becomes your destiny. 
 - Opportunity is rarely about some blockbuster breakthrough like the light bulb or the car, but as simple as an unmet need, or a need not met adequately. Opportunity is a solution to an inconvenience. Opportunity is simplification for better service. Opportunity is putting weak companies out of business.
 - Do not mistake a confident explanation for an accurate prediction.
 - You may not be able to control what luck you encounter, but you can certainly prepare to take advantage of it. Only the skilled are ready for their luck
@@ -76,7 +77,7 @@
 	- What is the probability of this outcome?
 	- Is this an acceptable risk?
 - Play the long term game. Compound interest always win.
-- Thinking - alone by itself - never made anyone free(or rich), unless that thinking manifests itself into consistent action toward application of laws that worked.
+- Thinking - alone by itself - never made anyone free (or rich), unless that thinking manifests itself into consistent action toward application of laws that worked.
 - The *owner* of an idea is not he who imagines it, but he who *executes* it.
 - Execution is taking the neurological fart that is an idea and making it smell like a rose.
 - The best business plan in the world will always be a ***track record of execution***. Create a track record that others can see or touch. Dive into process. Be good enough and they will be fighting to give you money.

@@ -13,20 +13,6 @@
             "dimension": 51.8957345971564,
             "children": [
               {
-                "id": "213082fef78356e9",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Tips & Tools/IELTS.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "IELTS"
-                }
-              },
-              {
                 "id": "e998ff104dd5ae6f",
                 "type": "leaf",
                 "state": {
@@ -41,7 +27,7 @@
                 }
               },
               {
-                "id": "0b147edb9c6ebd0a",
+                "id": "f02798b2e6d19a18",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -53,8 +39,23 @@
                   "icon": "lucide-file",
                   "title": "English grammar"
                 }
+              },
+              {
+                "id": "3f2d2615432fb553",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Tips & Tools/Dream job.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Dream job"
+                }
               }
-            ]
+            ],
+            "currentTab": 2
           },
           {
             "id": "8cedd05142699eb5",
@@ -132,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "static",
+                "query": "continuous",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -229,18 +230,28 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "213082fef78356e9",
+  "active": "3f2d2615432fb553",
   "lastOpenFiles": [
     "Tips & Tools/English grammar.md",
-    "Tips & Tools/IELTS.md",
+    "Tips & Tools/Dream job.md",
     "Tips & Tools/English vocab.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Tips & Tools/Progressive Overload.md",
+    "Tips & Tools/Behavioral.md",
+    "Tips & Tools/IELTS 7.5.md",
+    "Tips & Tools/Writing.md",
+    "Tips & Tools/Psychology.md",
+    "Tips & Tools/Career.md",
+    "Frontend/Network/Networking.md",
+    "Tips & Tools/Interview prep.md",
+    "Tips & Tools/Mentality.md",
+    "Tips & Tools/Investment.md",
+    "Tips & Tools/Socialize.md",
+    "Tips & Tools/Entrepreneurship.md",
     "Frontend/TypeScript/Patterns.md",
     "Frontend/TypeScript/Advanced.md",
     "Frontend/TypeScript/TypeScript.md",
-    "Tips & Tools/Writing.md",
-    "Tips & Tools/Socialize.md",
     "Tips & Tools/You as an interviewer.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
     "Tips & Tools/maslows.png",
     "Frontend/CSS/CSS.md",
     "Tips & Tools/System Design.md",
@@ -248,17 +259,7 @@
     "Frontend/CSS/Animations.md",
     "Frontend/CSS/Box model.md",
     "Frontend/CSS/Flow layout.md",
-    "Frontend/CSS/Typography and Images.md",
-    "Frontend/CSS/Grid.md",
-    "Frontend/CSS/Flex.md",
-    "Frontend/Frameworks/Remix/Data Transfer.md",
-    "Frontend/Frameworks/Remix/Routing & Navigation.md",
-    "Tips & Tools/Entrepreneurship.md",
-    "Backend/Backend.md",
-    "Frontend/Frameworks/Remix/Remix.md",
-    "Tips & Tools/Tips & Tools.md",
     "Pasted image 20240902195101.png",
-    "Frontend/Frameworks/Remix/Authentication.md",
     "Frontend/JavaScript/JS Overview.png",
     "Tips & Tools/code-review.png",
     "Backend/sql-joins.png",
