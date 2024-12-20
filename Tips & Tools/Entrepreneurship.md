@@ -255,6 +255,7 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 ### The network
 - The first step towards any transaction of value is capturing attention. This is where the attention to your products come from:
 	- **The audience**: start by dominating one platform — then use your validated content, social proof, and network to grow rapidly on other platforms (and funnel your audience there). ==Give *free content* in exchange for engagement and shares. Give free products in exchange for their _**email**_==.
+		- To make it feel like you're not directly asking for their email, ==start by offering a quiz/survey==, then have them enter their email for the result.
 	- ==**The email list**==: great for people who are in the _working_ class (I.e. the ones who actually have money), one of the best funnel to your paid products.
 	- **[The community](https://rosie.land/posts/a-guide-to-minimum-viable-community-mvc/)**: deeper, more valuable content in exchange for a click on your paid products. Buyers buy again. It’s far easier to sell to an existing customer than it is to acquire new ones, so once we’ve built up a decent customer base, we can make even more products to sell to them. Think of a platform like Discord, Telegram, or somewhere else to *build authority **away** from the algorithm.*
 		- As these grows, you gain leverage. You can begin to free up time and focus on bigger levers.

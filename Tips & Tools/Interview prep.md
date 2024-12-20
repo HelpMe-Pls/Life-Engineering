@@ -34,9 +34,32 @@
 > - Make an effort to update your CV and scout for jobs every 6 months and apply selectively, just to see where you're at in the market and to take an opportunity if its tradeoff is good enough.
 > - You should typically stay with a company for 2-3 years before really **hunt** for a new one. It looks better on your CV, and you get to go **all the way** through the life cycle of a project and learn everything that evolved around it.
 > - It is almost a red flag if you change your job too frequently, so consider your time with a company in the "year" unit. 
+> - Be a generalist at life but a specialist at your job.
 # During the interview
 - Listen until the question is finished, and take a breath. Ask clarifying questions if you didn't really get what their intention is about.
+- Don't answer their questions just for the sake of answering questions, _==it's more about **delivering your key message**==_.
+- Be aware of the position you're applying to so that you can tell your story in a way that _highlights your expertise_.
+- If any of the interview rounds running over the scheduled time, then you got one foot in the door.
 > Initiate the speech from the diaphragm to add confidence in your voice.
+- If they ask you a question that caught you off guard, go with this: "_I've never went through this before, but here's my take_...". The key here is that you must ==let them know that you're willing to figure things out and take ownership of your problem==. 
+	- Skip the "_It depends..._" and get straight to fixing things. Show them you're a problem-solver, not just someone who explains why things went wrong.
+	- If it's about your employment gap, just be honest, tell them the story, then quickly pivot it back to how your goals align with theirs and why you decided to work at their company.
+
+> [!important] NEVER EVER play the victim
+> - You must show them that:
+> 	- You're in charge of your decisions
+> 	- You take ownership of your circumstances
+> 	- You've managed to turn tough situations around and make something good out of them and make it clear that you're in your current position because you wanted to.
+> - The "life happens to me" is a major red flag. Always try to give a solution, even if it's not correct. The key here is your will to get things done. Show initiative by owning your career narrative and showing that you're learning.
+
+## Your story
+- You know it's time to tell a story when the question is asking about the past or your background (e.g. questions that start with "_**tell** me why/how/about..._). For these type of questions, ==it is crucial that you craft your narrative so that your story finds common ground with their interests and includes details that align with their needs==. 
+- The crux of such questions is to see ==how you can be _particularly useful_ for their team/company== (i.e. to see if you're gonna be an asset or a liability).
+- The formula: Start with `relevant background` → (optional but highly recommended) `compliment/acknowledgement` about their products/achievements/work environment → your `specific engaging/impressive details` about your work/achievements (ideally list them out) → wrap up with your `key message`.
+	- No more than 2 sentences for each of those ideas. Keep it short and simple, straight to the point with an engaging attitude. Smile.
+- For example:
+	- Q: **_Tell me about yourself_** or _**Why do you want to work here**_ 
+	- A: _You know, after graduating from HCMUE, I was really drawn to how frontend and backend pieces fit together to `create great user experiences`. That's what led me to FPT Telecom, where I got to `dive deep into Node.js backend development while strengthening my React frontend skills`. I especially loved figuring out how different parts of the tech stack worked together to address practical user needs. One of my proudest moments was helping launch `our Cloudflare product` - we built it using `Node.js microservices and React components`, and it was amazing seeing `50,000 users jump on board in just the first week`! The whole experience really showed me how powerful good fullstack development can be. Now I'm excited about bringing both my technical skills and user-focused mindset to Acme Corp, especially to `help tackle those interesting scaling challenges` you're working on._
 ## Screening
 - Typically lasts *under an hour*. [[Screening|Checkout]] what kind of questions you should be expecting.
 - Usually starts with self introduction. First impression is important. Cultivate that.

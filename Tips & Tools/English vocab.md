@@ -38,9 +38,11 @@ cogent (adj): convincing, pertinent
 
 ==judicious== (adj): wise, thoughtful, sensible, prudent, insightful
 
-shrewd (adj): based on good understanding or judgment
+shrewd (adj): discerning, based on good understanding or judgment
 
 ==tactful== (adj): tế nhị, khéo léo (in social context)
+
+gregarious (adj): social, sociable
 
 ==nibble== (n): a tentative expression of interest
 
@@ -70,9 +72,13 @@ scour (v-n): search, scrub, polish
 
 ambiguous (adj): uncertain, fishy, suspicious, nebulous, obscure
 
+obfuscate (v): to make obscure, darken, confuse
+
 obstinate (adj): unpersuadable, stubborn, willful, rigid, adamant, implacable
 
-pertinacious (adj): obstinate, steadfast
+pertinacious (adj): tenacious, steadfast, determined
+
+dour (adj): gloomy, stern, sullen, morose, somber
 
 empirical (adj): based on observation or experience rather than theory or pure logic
 
@@ -151,6 +157,8 @@ precede (v) {caution: it's not precEEd}: to be in front of, earlier than, to sur
 recede (v): withdraw, diminish, decrease 
 
 assuage (v): ease, quench, appease, pacify
+
+extenuating (adj): providing a partial justification or excuse for something
 
 disparate (adj): distinct, uniquely different from each other
 
@@ -234,6 +242,8 @@ delirium (n): not able to think or speak clearly, usually because of illness
 
 overt (adj): open to view, straightforward, obvious
 
+candor (n): forthrightness, fairness
+
 reciprocate {sth_with sth} (v): payback, make a return for → repercussion (n)
 
 assiduous (adj): diligent, taking great care that everything is done as well as it can be
@@ -281,6 +291,8 @@ cede (v): assign, transfer, to yield or grant typically by agreement
 impart (v): disclose, convey, transmit
 
 concede (v): admitting defeat, to acknowledge grudgingly or hesitantly, to accept as true, valid, or accurate, to grant as a right or privilege 
+
+veracity (n): accuracy, truthfulness
 
 concession (n): hạ giá, nhượng bộ
 
@@ -377,6 +389,10 @@ ruminate (v): contemplation, reflect, ponder
 hysterical (adj): hilarious, unrestrained emotion, ludicrous
 
 demise (n-v): death, decease, to transmit by succession or inheritance
+
+decimate (v): reduce drastically especially in number, cause great destruction or harm to sth
+
+pare (v): trim off an outside, excess, or irregular part of
 
 ==progeny== (n): descendant, children, outcome, product
 
@@ -499,6 +515,8 @@ allusion (n): implication, indirect reference especially in literature
 amorous (adj): showing sexual desire and love
 
 sentiment (n): opinion, attitude, feeling, emotion
+
+poignant (adj): deeply affecting, designed to make an impression
 
 entreaty (n): emotional request
 
@@ -1045,3 +1063,5 @@ offhanded (adj): unplanned, snap, improvised
 geriatric (adj-n): an aged person, relating to, or appropriate for elderly people 
 
 ==serendipity== (n): the fact of finding interesting or valuable things by chance
+
+tantalize (v): tease or torment by or as if by presenting something desirable to the view but continually keeping it out of reach

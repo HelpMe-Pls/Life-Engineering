@@ -113,3 +113,4 @@
 - "Red herring": something intended to distract attention from the real problem
 - "Red tape": thủ tục hành chính
 - "Leg work": effort, exertion 
+- "Table stake": minimum requirement to compete, participate, or be taken seriously in a particular context
