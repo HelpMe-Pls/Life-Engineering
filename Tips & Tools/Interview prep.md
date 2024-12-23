@@ -40,9 +40,15 @@
 - Don't answer their questions just for the sake of answering questions, _==it's more about **delivering your key message**==_.
 - Be aware of the position you're applying to so that you can tell your story in a way that _highlights your expertise_.
 - If any of the interview rounds running over the scheduled time, then you got one foot in the door.
-> Initiate the speech from the diaphragm to add confidence in your voice.
-- If they ask you a question that caught you off guard, go with this: "_I've never went through this before, but here's my take_...". The key here is that you must ==let them know that you're willing to figure things out and take ownership of your problem==. 
+> [!important]- MOST IMPORTANT: Take ownership
+> - Take control of the interview. Show them that their questions are just guidelines for your upcoming answers, then answer those questions to the fullest extent possible (as if you're teaching them about your achievement, in a subtle way).
+> - There's a distinct difference between actually answering the question and rambling. To avoid rambling, you get straight to the point, cut out unnecessary information and ideally, your answers should serve as hooks to get them asking more clarifying questions (which you already anticipated). For example, if the question is: "**_what’s your dream job_**?", then your answer should be something like:
+> 	- _My dream job has three essential pieces. It involves **architectural design and strategic thinking**. It focuses on **scalable, reliable** software development. And it's **impactful** - creating software that solve users needs. Those three things which I believe are the core value at your team_.
+> 	- Those words in bold are the ones that serve as hooks.
+> - Initiate the speech from the diaphragm to add confidence in your voice.
+- If they ask you a question that caught you off guard, go with this: "_I've never went through this before, but here's my take_...". ==It's OK to take a moment before answering the question==. The key here is that you must ==let them know that you're willing to figure things out and take ownership of your problem==. 
 	- Skip the "_It depends..._" and get straight to fixing things. Show them you're a problem-solver, not just someone who explains why things went wrong.
+	- If you really know the answer, try to ==lay out on the table various relevant options==, something like: "_You know, I could answer that in three different ways. I could talk about tools, I could talk about strategies. I could talk about communications. Which one is valuable to you?_"
 	- If it's about your employment gap, just be honest, tell them the story, then quickly pivot it back to how your goals align with theirs and why you decided to work at their company.
 
 > [!important] NEVER EVER play the victim
@@ -53,10 +59,13 @@
 > - The "life happens to me" is a major red flag. Always try to give a solution, even if it's not correct. The key here is your will to get things done. Show initiative by owning your career narrative and showing that you're learning.
 
 ## Your story
-- You know it's time to tell a story when the question is asking about the past or your background (e.g. questions that start with "_**tell** me why/how/about..._). For these type of questions, ==it is crucial that you craft your narrative so that your story finds common ground with their interests and includes details that align with their needs==. 
-- The crux of such questions is to see ==how you can be _particularly useful_ for their team/company== (i.e. to see if you're gonna be an asset or a liability).
-- The formula: Start with `relevant background` → (optional but highly recommended) `compliment/acknowledgement` about their products/achievements/work environment → your `specific engaging/impressive details` about your work/achievements (ideally list them out) → wrap up with your `key message`.
+- You know it's time to tell a story when the question is asking about the past or your background (e.g. questions that start with "_**tell** me why/how/about..._). For these type of questions, ==it is crucial that you craft your narrative so that your story finds common ground with their interests and includes details that align with their needs==. _**Bridge the gap.**_
+- The crux of such questions is to see ==how _**you**_ can be _particularly useful_ for their team/company== (i.e. to see if you're gonna be an asset or a liability).
+- The point of a story is to pique their interest, give them _just enough_ to make them want more and so that they'll ask more questions to know about the details (which you already expected and prepared for).
+	- Again, the key message that you have to deliver is and always will be =="_**What's in it for them?**_"==. Pivot your narrative so that when you finished telling your story, they will want to have you for their benefits.
+- The formula: _**Set the stage**_ with `relevant background` → (optional but highly recommended) `compliment/acknowledgement` about their products/achievements/work environment → your `specific engaging/impressive details` about your work/achievements (ideally list them out, start with `let me give you an example`) → wrap up with your `key message`.
 	- No more than 2 sentences for each of those ideas. Keep it short and simple, straight to the point with an engaging attitude. Smile.
+	- As you're telling your story, it's highly recommend to ==give them the context ==**_before_** you put in the work and then emphasize how your work **has _transformed_** the product/campaign/etc...Ideally, you'd want your impact to be _measurable_ (in numbers)
 - For example:
 	- Q: **_Tell me about yourself_** or _**Why do you want to work here**_ 
 	- A: _You know, after graduating from HCMUE, I was really drawn to how frontend and backend pieces fit together to `create great user experiences`. That's what led me to FPT Telecom, where I got to `dive deep into Node.js backend development while strengthening my React frontend skills`. I especially loved figuring out how different parts of the tech stack worked together to address practical user needs. One of my proudest moments was helping launch `our Cloudflare product` - we built it using `Node.js microservices and React components`, and it was amazing seeing `50,000 users jump on board in just the first week`! The whole experience really showed me how powerful good fullstack development can be. Now I'm excited about bringing both my technical skills and user-focused mindset to Acme Corp, especially to `help tackle those interesting scaling challenges` you're working on._

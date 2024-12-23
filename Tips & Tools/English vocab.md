@@ -28,6 +28,8 @@ substitute (v-n): replacement, exchange
 
 ==supplant== (v): to take the place of and serve as a substitute for especially by reason of superior excellence or power
 
+auxiliary (adj-n): supplementary, functioning in a subsidiary capacity 
+
 vicarious (adj): substitutionary
 
 conform {to} (v): abide by, comply with, adhere to
@@ -85,6 +87,8 @@ empirical (adj): based on observation or experience rather than theory or pure l
 dogmatic (adj): dictatorial, doctrinaire, assertive
 
 refrain {from} (v): stop, restrain, abstain, desist 
+
+restive (adj): bồn chồn, fidgety
 
 moribund (adj): dying (business/patient/tree,...)
 
@@ -162,7 +166,7 @@ extenuating (adj): providing a partial justification or excuse for something
 
 disparate (adj): distinct, uniquely different from each other
 
-==disparage== (v): degrade, belittle, depreciate
+==disparage== (v): derogate, belittle, depreciate
 
 derisory (adj): belittling, pathetic, uncomplimentary, contemptuous
 
@@ -270,7 +274,7 @@ stultify (v): negate, to impair, invalidate, or make ineffective
 
 blight (v-n): impair the quality or effect of, a deteriorated condition, flaw, deformity
 
-delineate (v): to indicate, portray, describe, define
+==delineate== (v): to indicate, portray, describe, define
 
 telltale (n): indication, informer, gossip
 
@@ -300,7 +304,7 @@ assent (v-n):  concur, agreement, approve
 
 contrive <cân-traiv> (v): to form or create in an artistic or ingenious manner, to devise, plan despite difficulties
 
-criterion (n): tiêu chí/tiêu chuẩn -> criteria (plural)
+criterion (n): tiêu chí/tiêu chuẩn -> criteria (plural), rubric
 
 contrived (adj): unnatural, artificial and difficult to believe
 
@@ -616,6 +620,8 @@ meticulous (adj): careful, diligent, engaged
 
 wage (v): to carry on, in process of occurring
 
+transpire (v): take place, occur, develop, give off vaporous material
+
 plight (v-n): engage (in a pledge), difficult / ==precarious== (dubious) situation
 
 advertent (adj): attentive, careful, cautious, deliberate >> inadvertant: unintentional, accidental
@@ -776,7 +782,7 @@ installment (n): trả góp, one part of a serial story
 
 ==glean== (v): find out, ascertain, to gather bit by bit
 
-prerogative (n): privilege, a distinctive excellence
+==prerogative== (n): privilege, a distinctive excellence
 
 merit (v-n): deserve, earn, value, virtue
 
@@ -1065,3 +1071,5 @@ geriatric (adj-n): an aged person, relating to, or appropriate for elderly peopl
 ==serendipity== (n): the fact of finding interesting or valuable things by chance
 
 tantalize (v): tease or torment by or as if by presenting something desirable to the view but continually keeping it out of reach
+
+botch {up} (v-n): mess (up)
