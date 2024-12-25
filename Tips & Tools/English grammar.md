@@ -55,6 +55,7 @@
 - ~~Preferrable~~ → Preferable 
 - ~~Disscuss~~ → Discuss
 - Discuss ~~about~~ → Discuss
+- Ofcourse → Of course
 - ~~Fullfill~~ → Fulfill
 - ~~Crutial~~ → Crucial
 - Calender → Calendar

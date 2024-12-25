@@ -363,7 +363,6 @@ const onExportHistory = async (campaignId) => {
 	- You can execute more code on the server without shipping it to the client, keeping bundle sizes smaller.
 ### IELTS
 - Tell them the story, weave in as much emotions as you can, make it as personal as possible about the score, then how you turned it into something good for the community.
-
 ### WIL
 - If you're indeterminate, Life will happen *to* you instead of happen *for* you. Do not allow that. You gotta take the wheel.
 - Trust in your own ability

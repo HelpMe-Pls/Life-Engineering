@@ -10,6 +10,8 @@ banal (adj): dull, boring, insipid
 
 arid (adj): jejune, dull, excessively dry, lacking in interest and life
 
+desiccated (adj): dried up, drained of emotional or intellectual vigor or vitality
+
 profound (adj-n): deep af
 
 rote (n): học vẹt
@@ -106,6 +108,8 @@ dysentery (n): diarrhea
 
 enmity (n): hatred, malevolence, hostility, animosity, antagonism
 
+adversarial (adj): unsympathetic, hostile, antagonistic
+
 ==odious== (adj): hateful, deserving repugnance
 
 diplomatic (adj): ngoại giao
@@ -167,6 +171,10 @@ extenuating (adj): providing a partial justification or excuse for something
 disparate (adj): distinct, uniquely different from each other
 
 ==disparage== (v): derogate, belittle, depreciate
+
+subservient (adj): subordinate, truckling, submissive
+
+chauvinism (n): an attitude of superiority toward (of opposite sex)
 
 derisory (adj): belittling, pathetic, uncomplimentary, contemptuous
 
@@ -250,7 +258,7 @@ candor (n): forthrightness, fairness
 
 reciprocate {sth_with sth} (v): payback, make a return for → repercussion (n)
 
-assiduous (adj): diligent, taking great care that everything is done as well as it can be
+==assiduous== (adj): diligent, taking great care that everything is done as well as it can be
 
 entropy (n): chaos, disorganization, randomness
 
@@ -612,7 +620,9 @@ disdain (v-n): contempt, disrespect, despise
 
 flout (v): disregard, despite, scorn
 
-debase (v): profane, dissolute, debauched, to lower in status/esteem/quality/character
+meager (adj): thin, deficient in quality or quantity
+
+debase (v): profane, dissolute, debauch, to lower in status/esteem/quality/character
 
 lamentable (adj): deplorable, mournful, wretched
 
