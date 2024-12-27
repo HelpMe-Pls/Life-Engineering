@@ -1,3 +1,4 @@
+# Media queries
 - Rather than make completely different sites, we add CSS rules that only apply in certain cases, such as when the viewing device screen is in a specific size range. This is normally done using _media queries_, which allow us to _merge_ CSS rules together if the condition matches.
 	- Not all CSS props have corresponding media features (e.g. `@media (font-size: 32px) {...}` is invalid).
 	- Media queries aren't _just_ about screen sizes. For example, defining a "coarse pointer" for touch screens (i.e. if the user is using a mouse or other “fine” pointer, `--min-tap-height` will never be set), 
@@ -93,7 +94,6 @@ When we flip their order, `font-size: 1rem` and the pink text are ALWAYS applie
 }
 ```
 
-
 ## Breakpoints
 - A breakpoint is a specific ***VIEWPORT*** width (if you want to constrain specific layouts based on a *container's width*, use [[Responsive#Clamping values |the Fluid approach]] or flexbox) that lets us segment all devices into a small set of possible experiences. For example, we might set a breakpoint at `500px`. Any device *under*  `500px`  will be put in the same bucket, and can be styled separately. This ensures a consistent experience; someone on a  `375px`-wide phone will share the same layout as someone on a  `414px`-wide phone.
 - Setting exlcusive range (with the `and` keyword) is *not* always ideal, and you should only use this approach if the requirements explicitly demands:
@@ -124,4 +124,76 @@ When we flip their order, `font-size: 1rem` and the pink text are ALWAYS applie
 @media (min-width: 1500px) {
   /* Desktop: from 1500px and up */
 }
+```
+# Container queries
+- Container queries are like media queries, but instead of measuring the viewport, they measure an element’s container.
+- In order to use a container query, we first need to explicitly define its container (preferably with `container-type: inline-size` to overcome the extrinsic nature of `width` properties):
+```html
+<style>
+  section {
+    container-type: inline-size;
+    background-color: peachpuff;
+    border: 2px solid;
+  }
+
+  @container (max-width: 12rem) {
+    p {
+      font-weight: bold;
+      color: red;
+    }
+  }
+</style>
+
+<section>
+  <p>
+    Yay, it works! The parent’s height will
+    change dynamically to accommodate its
+    content, and the container query still
+    fires when the container is resized!
+  </p>
+</section>
+```
+
+> [!info] Address the multiple breakpoints fragility
+Refer to [this lesson](https://courses.joshwcomeau.com/css-for-js/05-responsive-css/18.01-container-query-patterns) for a case where the use of container queries reduce the fragility of multiple breakpoints if we used media queries instead.
+
+- We can also manually choose which container to use with the `container-name` property:
+```html
+<style>
+  main {
+    container: outer / inline-size;
+
+    /* Equivalent to: 
+    container-name: outer;
+    container-type: inline-size; */*
+  }
+  section {
+    container-name: inner;
+    container-type: inline-size;
+  }
+
+  @container outer (min-width: 12rem) {
+    .locked-to-main {
+      color: red;
+      font-weight: bold;
+    }
+  }
+  @container inner (min-width: 12rem) {
+    .locked-to-section {
+      color: red;
+      font-weight: bold;
+    }
+  }
+</style>
+
+<main>
+  <section>
+    <div class="locked-to-main">
+      Locked to <i>main</i>
+    </div>
+    <div class="locked-to-section">
+      Locked to <i>section</i>
+    </div>
+  </section>
+</main>
 ```

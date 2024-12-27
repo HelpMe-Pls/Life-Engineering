@@ -1,6 +1,6 @@
 [[Flex]]
 [[Grid]]
-[[Media queries]]
+[[Queries]]
 
 - **Responsive design** is the idea that all clients will receive identical HTML files from the server, but those HTML files will be flexible, and will display differently on different devices. Using CSS, we can tweak the layout to work across many different form factors.
 ---
@@ -60,7 +60,5 @@ h1 {
   margin-bottom: 0.5em;
 }
 ```
-
-
 ## Aspect ratio
 - The `aspect-ratio` property controls the `width` to `height` ratio of ***ANY*** element. Particularly useful when used to *proportionally scale* replaced elements (e.g. an image with an aspect ratio of `2 / 1` means that it will be twice as wide as it is tall and will keep that ratio when being scaled)

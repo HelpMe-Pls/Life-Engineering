@@ -109,7 +109,6 @@ element.addEventListener('onTransitionEnd', () => {
 ```
 - The drawback is that it's less flexible. You don't always want to wait for one element to stop moving before another one starts.
 
-
 ## Keyframes and `animation`
 - We can specify a transition from one set of CSS declarations to another using the `@keyframes` at-rule. Useful when an animation needs to run immediately when the page loads or the component mounts.
 - On the other hand, reach for `transition` when your CSS will change as a result of some application state or user action (i.e. use `transition` when you want to smooth out an otherwise harsh transition between values).

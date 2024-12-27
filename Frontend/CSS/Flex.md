@@ -89,7 +89,7 @@ When shrinking, the same concept applies; an element with `flex-shrink: 3` wil
 }
 ```
 - When we flip the order of flex children, it's just for cosmetic only (i.e. `aria`-ish is still having the original ordering).
-- The `flex-wrap` property (in a flex container) sets whether its *flex items* are allowed to overflow (with `nowrap` value) or can wrap onto multiple lines (with `wrap` *so that the items won't shrink below their hypothetical size*: highly consider this before reaching for [[Media queries |media queries]]). 
+- The `flex-wrap` property (in a flex container) sets whether its *flex items* are allowed to overflow (with `nowrap` value) or can wrap onto multiple lines (with `wrap` *so that the items won't shrink below their hypothetical size*: highly consider this before reaching for [[Queries|media queries]]). 
   Commonly used with `flex-basis` (shorthand form) and `max-width` || `min-width` for responsive designs.
 - `flex-wrap: wrap-reverse` causes elements to wrap upwards rather than downwards.
 - Nice trick: you can use DOM-ordering and `flex-direction` as a [substitute](https://courses.joshwcomeau.com/css-for-js/04-flexbox/10-ordering?videoId=513160445&bookmarkedTime=159.691) for HTML `tabindex`.

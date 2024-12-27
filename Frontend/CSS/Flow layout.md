@@ -11,8 +11,8 @@ a.nav-link {
 }
 ```
 
-- The browser treats inline elements as if they're typography. It makes sense that with text, you'd want a bit of *extra space*, so that the lines in a paragraph aren't crammed in too tightly. But when inline flow applied on replaced elements (which are block elements by default), that *extra space* becomes redundant. To fix that, add the `display: block` or `line-hight: 0` to the desired inline element.
-- Elements that have `display: block` will stack in the **vertical** direction, regardless of their size.
+- ==The browser treats inline elements as if they're typography==. It makes sense that with text, you'd want a bit of *extra space*, so that the lines in a paragraph aren't crammed in too tightly. But when inline flow applied on replaced elements (which are block elements by default), that *extra space* becomes redundant. To fix that, add the `display: block` or `line-height: 0` to the desired inline element.
+- Elements that have `display: block` will stack in the **vertical** direction, regardless of their size and take up the _full width_ of its parent container.
 - In Flow layout, background colors and borders are truly meant to be _in the background_. The content will float on top.
 - Elements can be completely removed from the page by using `display: none` (e.g. a button which is set to `display: none` cannot be clicked or focused). The catch is it still takes memory for that element.
 - Inline elements have their width and height determined by the content they contain. You can shift them in the *inline* direction with `margin-left` and `margin-right`, since that pushes it around in the inline direction, and explicitly setting a `width`, `height` or any vertical layout property doesn't have any effect.
@@ -133,7 +133,7 @@ a.nav-link {
 - Percentage value in `padding` always refer to `width`. For example, when we set `padding-bottom: 50%`, we're saying that the element's bottom padding should be half of its `width`, not its `height`.
 
 ## Width
-- Measurement values (100%, 30vh, 5rem,...) and the `auto` keyword are _extrinsic_ (i.e. based on the **parent** element's *content space*).
+- Measurement values (100%, 30vh, 5rem,...) and the `auto` keyword are _extrinsic_ (i.e. based on the _**parent**_ element's *content space*).
 - `min-content` and `max-content` are _intrinsic_ (i.e. based on the target element's content space - the size of the children). 
 	- `max-content` doesn't fill the available space. An element with `width: max-content` pays no attention to the constraints set by the parent. It will size the element based purely on the length of its *unbroken* children. 
 	- `min-content` makes the element to become as narrow as it can, _based on the child contents_. For example a `<h1>` with `width: min-content` chooses the smallest possible value for `width` that still contains each whole word, which will be the `width` of the longest word (because `<h1>` is a block-level element. If `min-content` was applied for a `<span>`, the `width` will just be the intrinsic `width` of the *entire* string, horizontally, and line-wrap as needed).  
@@ -142,7 +142,7 @@ a.nav-link {
 - `min-width: 100%`  to prevent horizontal overflow (so that it never grows above 100% of the container's space). Also keep this on top of your head when you want to position your content *in* some kind of a container.
 
 ## Height
-- The `height` of an element grows accordingly to its content (kinda like how `width: min-content` behaves). Setting an element to have a `height: 50%` will force that it to take up half of the *parent* element's content space, if that space has a ***fixed*** `height`:
+- The `height` of an element grows accordingly to its **_content_** (kinda like how `width: min-content` behaves). Setting an element to have a `height: 50%` will force that it to take up half of the *parent* element's content space, if that space has a ***fixed*** `height`:
 ```css
 .parent {
   height: 69vh

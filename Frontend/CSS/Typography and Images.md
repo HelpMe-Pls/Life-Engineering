@@ -118,6 +118,32 @@ p {
   display: table;
 }
 ```
+#### Wrapping complex shapes
+- By default, a floated element would "block out" a rectangle and text would wrap around that rectangle. Use the `shape-outside` property to customize this _wrapping_, making it possible to wrap text around [complex objects](https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside) rather than rectangular boxes:
+```html
+<style>
+  .floated {
+    float: right;
+    shape-outside: circle();
+    margin-left: 24px;
+    width: 125px;
+    border-radius: 50%;
+  }
+  
+  p {
+    text-align: justify; /* To adjust the spacing between words so that the text stretches to fill the ENTIRE width of its container */
+    hyphens: auto;
+  }
+</style>
+
+<div>
+  <p>
+    <img class="floated" src="https://courses.joshwcomeau.com/cfj-mats/cat-avatar-250px.jpg" alt="Yawning kitten" />
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+  </p>
+</div>
+```
+- Use `shape-margin`  to adjust the distance between the edges of the shape (the float element) and the surrounding content.
 
 ### Indentation
 - Use `text-indent` property to set the indentation for the first line of each paragraph.

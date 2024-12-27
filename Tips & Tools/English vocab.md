@@ -30,7 +30,7 @@ substitute (v-n): replacement, exchange
 
 ==supplant== (v): to take the place of and serve as a substitute for especially by reason of superior excellence or power
 
-auxiliary (adj-n): supplementary, functioning in a subsidiary capacity 
+auxiliary (adj-n): supplementary, ancillary, functioning in a subsidiary capacity 
 
 vicarious (adj): substitutionary
 
@@ -286,6 +286,8 @@ blight (v-n): impair the quality or effect of, a deteriorated condition, flaw, d
 
 telltale (n): indication, informer, gossip
 
+apprise (v): tell, give notice to
+
 proclivity (n): ==predilection== {for}, tendency, propensity, a strong inherent inclination toward something objectionable
 
 volatile <val-adal> (n): explosive, unstable, ==fickle==, subject to rapid or unexpected change
@@ -510,7 +512,7 @@ acolyte (n): follower
 
 ==putative== (adj): presumed, apparent, alleged, ostensive
 
-==ostensibly== (adv): có vẻ như/dường như → ostentatious (adj)
+==ostensibly== (adv): có vẻ như/dường như → ostentatious (adj): showy, boastful
 
 ==postulate== (v-n): presume, posit
 

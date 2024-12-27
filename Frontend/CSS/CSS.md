@@ -69,9 +69,64 @@ nav, aside {
 	flex: 1
 }
 ```
-- Pseudo-class goes right after the selector, like `:first-of-type` ,`:last-of-type`, `:hover`, `:active` and 
-`:not(<complex-selector-list>)`
+
+> [!info] Specificity
+Classes are "more specific" than tags, so if there is a conflict between a class and a tag, the class wins. IDs, however, are more specific than classes.
+### Pseudo selectors
+- Pseudo-class goes right after the selector, like `:first-of-type` ,`:last-of-type`, `:hover`, `:active` and `:not(<complex-selector-list>)`
 	- `:first-of-type` and `:last-of-type` only applied for _siblings_ **_within_** a container. Same for `:first-child` and `:last-child`.
+	- `:has` pseudo-selector works in a “bottom up” fashion; it allows us to **style a _parent_** based on its _children_:
+```css
+/*
+  Style ALL <p> tags that contain
+  AT LEAST 1 <a> tag:
+*/
+p:has(a) {
+  outline: 4px dashed hotpink;
+  outline-offset: 1px;
+  border-radius: 1px;
+}
+```
+```html
+<!-------------------------------------------------------->
+<!--Poor man's approach for dark mode without JS-->
+<style>
+  /* Default (light mode) colors: */
+  body {
+    --color-text: black;
+    --color-background: white;
+  }
+
+  /* Dark mode colors: */
+  body:has(#dark-mode-toggle:checked) {
+    --color-text: white;
+    --color-background: black;
+  }
+</style>
+
+<!-- Somewhere in the DOM: -->
+<input id="dark-mode-toggle" type="checkbox">
+<label for="dark-mode-toggle">
+  Enable Dark Mode
+</label>
+```
+```tsx
+//--------------------------------------------------------------------
+// If the HTML contains an element that sets this data attribute, no matter where it is in the DOM, we’ll apply `overflow: hidden`
+html:has([data-disable-document-scroll="true"]) {
+  overflow: hidden;
+}
+// Suppose we’re building a modal/dialog component. When the modal `isOpen`, we want to disable scrolling on the page
+function Modal({ isOpen, children }) {
+  return (
+    <div
+      data-disable-document-scroll={isOpen}
+    >
+      {/* Modal stuff here */}
+    </div>
+  );
+}
+```
 - Pseudo-element (remember: `e2` for 2 colons) also goes right after the selector, like `::before`, `::placeholder`
 	- `::before` and `::after` are really just secret `span`s, nothing more (i.e. they're visible but you can't select them like normal text)
 	- We can style the placeholder text in a form input with `::placeholder`:
@@ -82,31 +137,34 @@ input::placeholder {
 ```
 - When combining pseudo-classes and pseudo-elements, the pseudo-classes come first:
 ```css
-/* When chained, pseudo-element also works with just 1 colon: */
+/* When chained, pseudo-element (::first-letter) also works with just 1 colon: */
 p:first-of-type:first-letter {
   font-size: 2rem;
   font-weight: bold;
 }
 ```
-- Classes are "more specific" than tags, so if there is a conflict between a class and a tag, the class wins. IDs, however, are more specific than classes.
-
 
 ## Combinators
 - If there's no space between 2 selectors (or more), the CSS rule will be applied for all elements that have *both* (or all) of those selectors in their class name.
 - The comma `,` allows multiple selectors to have the same CSS rule.
 - Having a  `space`  between 2 selectors creates a descendant selector. The descendant selector will apply to **_all_** descendants, no matter how deeply nested they are:
 ```css
-/* ALL <a/> tags WITHIN the <nav/> will get this style*/
+/* ALL <a/> tags WITHIN a <nav/> will get this style*/
 nav a {
   color: red;
   font-weight: bold;
 }
 ```
 - The  `>` between 2 selectors creates a children selector (i.e. its style only applies for the *first* level of its descendants)
-- The  `+`  creates an *adjacent* sibling selector. The following example selects *the first* `<p>` element that are placed *immediately after* `<div>` elements:
+- The  `+`  creates an *adjacent* **_sibling_** selector. The following example selects *the first* `<p>` element that come *immediately after* `<div>` elements:
 ```css
 div + p {
   background-color: yellow;
+}
+
+/* With the :has pseudo selector, we can flip the order and select elements that come right BEFORE. In this example, we're selecting any <p/> that is right before a <figure/> */
+p:has(+ figure) {
+  font-weight: bold;
 }
 ```
 - The  `~`  creates a general sibling selector (i.e. it selects all elements that are *next siblings* - all the siblings that come *after* - of a specified element)
@@ -117,7 +175,6 @@ p.hometown { 
 	background-color: yellow;
 }
 ```
-
 
 ## Colors
 ### Formats
@@ -567,13 +624,12 @@ a:focus img {
 </article>
 ```
 ### `drop-shadow`
-- `filter: drop-shadow()` creates a shadow that ==conforms to ***the shape***==. It’s not bound to the box model, meaning the outline of the element is recognized and the transparency around it is ignored so that the intended shape receives the shadow.
+- `filter: drop-shadow()` creates a shadow that ==conforms to ***the shape***== (checkout [[#Shadows |this example]]). It’s not bound to the box model, meaning the outline of the element is recognized and the transparency around it is ignored so that the intended shape receives the shadow.
 	   It takes the same arguments as `box-shadow`, without the `inset`, `<spread-radius>`, and the third argument specifies a “standard deviation” instead of a blur radius. It produces a softer, more-blended shadow by using the _Gaussian blurring_. This means that if we use `filter: drop-shadow()` on an image that ***supports transparency*** (e.g. png, gif, svg), the shadow will apply to the non-transparent parts of the image. This effect isn't limited to images, either—it works for any DOM node.
 - When we apply `filter: drop-shadow()` to an element, it contours that element and [all of its descendants](https://codesandbox.io/s/drop-shadow-1otcu1?file=/index.html) (even non-contiguous ones, like the blue circle), and applies the shadow to that ***entire shape***. We can also apply it to a [_group_ of elements](https://codesandbox.io/s/drop-shadow-group-t5nh3k), to make sure we don't have any "shadow overlap" (which happens if we used `box-shadow`)
 - Make sure to test `drop-shadow` on Safari if your app supports it (browser's glitch). Opt for `box-shadow` instead, if the `drop-shadow` glitch happens too often.
 ### `text-shadow`
 - `text-shadow` is a shadow that applies only to the typography within the selected element. Commonly used to increase the contrast between light-colored text and a light background. Takes same values as `box-shadow`.
-
 
 ## Gradients
 ### Linear gradient
@@ -686,21 +742,298 @@ a:focus img {
 ```
 
 ## Clipping
-- s
-- s
-- s
-- s
+- `clip-path` allows us to trim a DOM node into a specific shape. Using the `polygon` function, we can use percentage-based points to create a multi-sided shape:
+```html
+<style>
+  .triangle {
+    width: 100px;
+    height: 80px;
+    background-color: deeppink;
+    clip-path: polygon(
+      0% 100%,
+      50% 0%,
+      100% 100%
+    );
+  }
+</style>
 
+<div class="triangle"></div>
+```
+- `clip-path` also has no effect on the layout (i.e. only affects the visual rendering of the element and cannot receive pointer events, like mouse clicks)
+- Refer to [this tool](https://bennettfeely.com/clippy) to quickly form your desired shape. 
+### Animation
+- Use `clip-path` as a value of the `transition` property to animate between shapes:
+```html
+<style>
+  .triangle-wrapper { /* To fix flashing transition */
+    border: none;
+    background: transparent;
+    padding: 0;
+   }
+  .triangle {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: deeppink;
+    clip-path: polygon( /* This one is intially a square */
+      0% 0%,
+      100% 0%,
+      100% 100%,
+      0% 100%
+    );
+    transition: clip-path 250ms;
+    will-change: transform; /* setting `will-change: transform` instead of `will-change: clip-path` appears to cut the average paint time from ~20ms to ~0.5ms in Chrome (and possibly other browsers) */
+  }
+  
+  .triangle-wrapper:hover .triangle,
+  .triangle-wrapper:focus .triangle {
+    clip-path: polygon(
+      0% 0%,
+      100% 50%, /* Notice that the end state still has 4 points, but these middle two points are in exactly the same spot, and so it appears to produce a 3-sided shape.*/
+      100% 50%,
+      0% 100%
+    );
+  }
+</style>
+
+<button class="triangle-wrapper">
+  <span class="triangle"></span>
+</button>
+```
+### Rounded shapes
+- `clip-path` supports both a `circle` function and an `ellipse` function by the following syntax:
+```css
+.wrapper {
+  clip-path: ellipse(
+    xRadius yRadius at xPosition yPosition
+  )
+}
+```
+- Examples:
+```html
+<style>
+  .wrapper {
+    clip-path: ellipse(
+      100px 200px at 50% 20%
+    );
+  }
+</style>
+
+<div class="wrapper">
+  <img src="https://courses.joshwcomeau.com/cfj-mats/architecture-joel-filipe.jpg" />
+</div>
+
+<!---------------------Another example------------------------->
+<style>
+  .wrapper img {
+    clip-path: circle(
+      80px at 100px 100px
+    );
+    transition: clip-path 400ms;
+    will-change: transform;
+  }
+  
+  .wrapper:hover img,
+  .wrapper:focus img {
+    clip-path: circle(
+      100px at 100px 100px
+    );
+    transition: clip-path 200ms;
+  }
+</style>
+
+<button class="wrapper">
+  <img src="https://courses.joshwcomeau.com/cfj-mats/architecture-joel-filipe.jpg" />
+</button>
+```
+### Shadows
+- `filter`s are applied _before_ `clip-path`. Move your shadow to the element's wrapper so that it can take effect:
+```html
+<style>
+  .wrapper {
+    filter: drop-shadow( /* Remember that `box-shadow` add the shadow to the rectangular box-model CONTAINER, so we're using `drop-shadow` here */
+      1px 2px 4px hsl(0deg 0% 0% / 0.5)
+    );
+  }
+  .triangle {
+    clip-path: polygon(
+      0% 100%,
+      50% 0%,
+      100% 100%
+    );
+  }
+</style>
+
+<div class="wrapper">
+  <div class="triangle"></div>
+</div>
+```
 
 ## Scrolling
-- s
-- s
-- s
+### Smooth scrolling
+- Enable smooth scrolling behavior when you're jumping between headings in a page. This property provides a sense of cohesion between where you started and where you landed:
+```css
+@media (prefers-reduced-motion: no-preference) {
+  html {
+/* smooth scrolling is disabled by default with the `auto` value */
+    scroll-behavior: smooth;
+  }
+}
+```
+- To manually set scrolling behavior with JS, use the `scrollTo` or `scrollIntoView` method.
+### Scroll snap
+- Use this feature for momentum-based scrolling (i.e. the scrolled to item is aligned by a predetermined pattern):
+	- `scroll-snap-type`: controls the direction and precision of the scroll snapping
+	- `scroll-snap-align`: controls which part of the child we want to snap
+```html
+<style>
+  .wrapper {
+/* `mandatory`: If the element has been scrolled by 49%, it will snap back to the beginning. If it's 51%, it'll jump to the next one */
+    scroll-snap-type: x mandatory;
+  }
+  .box {
+    scroll-snap-align: start;
+  }
+</style>
+<div class="wrapper">
+  <div class="box one">
+    First Box
+  </div>
+  <div class="box two">
+    Second Box
+  </div>
+  <div class="box three">
+    Third Box
+  </div>
+  <div class="box four">
+    Fourth Box
+  </div>
+</div>
+```
+### Scroll bar
+- A scroll bar is made of 2 parts: a thumb and a track. For now, the `scrollbar-color` is only available on Firefox, so we'll have to use the `-webkit` prefix to support other browsers:
+```css
+@media (min-width: 500px) {
+	html {
+	  --background: hsl(210deg, 15%, 6.25%);
+	  --text: hsl(210deg, 10%, 90%);
+	  --gray-300: hsl(210deg, 10%, 40%);
+	  --gray-500: hsl(210deg, 8%, 50%);
+	
+	  /* Official styles (Firefox) */
+	  scrollbar-color:
+	    var(--gray-300)
+	    var(--background);
+	  scrollbar-width: thin;
+	}
+	
+	::-webkit-scrollbar {
+	  width: 10px;
+	  background-color: var(--background);
+	}
+	::-webkit-scrollbar-thumb {
+	  border-radius: 1000px;
+	  background-color: var(--gray-300);
+	  border: 2px solid var(--background);
+	}
+	/*
+	  Little bonus: on non-Firefox browsers,
+	  the thumb will light up on hover!
+	*/
+	::-webkit-scrollbar-thumb:hover {
+	  background-color: var(--gray-500);
+	}
+}
 
+body {
+  padding: 24px;
+  background: var(--background);
+  color: var(--text);
+}
+p {
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+```
+- It is recommended that you wrap your scrollbar styles in a media query so that they're only applied for desktop breakpoints (because on mobile devices, the scrollbar doesn't take up any space and the thumb floats above the content).
+### Optimization
+- Use `scroll-margin-top` to define the distance that an element should sit from the top of the viewport when it's scrolled into view. Recommended when your page has a sticky header:
+```css
+h2 {
+  scroll-margin-top: 6rem;
+}
+```
+- Preventing layout shift: by default, when the scrollbar pops into view, _it causes a layout shift_. Every element on the page shifts a few pixels to the left, to make room for the scrollbar. Here are 2 ways to fix it:
+	- Use the [`scrollbar-gutter`](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter) property
+	- Use the `overflow-y: scroll` declaration to ensure that the page will _always_ have a visible scrollbar, even if the page isn't tall enough to warrant one.
 
 ## Focus
-- s
-- s
-- s
-- s
-- 
+- You can track which element is focused in JavaScript with `document.activeElement`
+- The `:focus` pseudo selector is used to style a descendant when its parent is focused:
+```html
+<style>
+  a:focus .highlighted {
+    background: hsl(55deg 100% 75%);
+  }
+</style>
+
+<a href="/">
+  Focus me and <span class="highlighted">see the magic!</span>
+</a>
+```
+- use the `:focus-within` if you wanted to apply a style to the _parent_ when a _child_ is focused:
+```html
+<style>
+  form {
+    transform: translateY(0px);
+    filter: drop-shadow(
+      1px 2px 4px hsl(0deg 0% 0% / 0.2)
+    );
+    transition:
+      filter 300ms, transform 300ms;
+    will-change: transform;
+  }
+
+/* Apply a shadow to the form when its inputs are focused */
+  form:focus-within {
+    transform: translateY(-4px);
+    filter: drop-shadow(
+      2px 4px 16px hsl(0deg 0% 0% / 0.2)
+    );
+  }
+</style>
+
+<form>
+  <div class="row">
+    <label for="full-name">
+      Name:
+    </label>
+    <input
+      id="full-name"
+      type="text"
+      placeholder="Jane Doe"
+    />
+  </div>
+  <div class="row">
+    <label for="email">
+      Email Address:
+    </label>
+    <input
+      id="email"
+      type="email"
+      placeholder="jane@domain.com"
+    />
+  </div>
+  <button>Submit</button>
+</form>
+```
+- We can override the default focus outline styles with similar values to the `border` property. In this example, we're having a red outline on the link as we click on it:
+```html
+<style>
+  a:focus {
+    outline: 2px solid red;
+  }
+</style>
+
+<a href="/">Typical link</a>
+```
