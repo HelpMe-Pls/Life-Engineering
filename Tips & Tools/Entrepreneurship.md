@@ -291,6 +291,7 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 	- Tell people what you’ve experienced in your life relating to whatever the creator said in the content you are replying to. Use aspects of your life’s story to add value to the post. Talking about yourself leads to the most profile clicks.
 - Start with replying to small accounts. That's how you refine your words. Small accounts are for building your tribe, not gaining new followers. Large accounts are for making your name known in the space and gaining followers. 
 - Follow this formula: compliment the post → expand on one point with your own insights → ask a thought-provoking question related your niche to gain a follower.
+	- If someone shares something good related to your work, get back to them with this: "_Can I put you in my contacts file as part of a sort of email reader panel I keep for when I’m really stuck on something and want to run it by smart people?_"
 - For your own posts, make it a habit to leave a thoughtful comment (crafted in a way that ==provokes discussion==) related your niche.
 	- Make them so valuable that they could be a standalone posts all by themselves.
 ##### Quotes and tags
@@ -325,7 +326,6 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 - Build them in a way that opens a curiosity loop, so that after consuming them, they have no choice but to want more (i.e. your free products are the prerequisites to fully utilize your paid products), so they purchase the paid products (by linking your paid products or affiliates in your free products). 
 - Make them easy to consume and simple to implement. ==Make it completely obvious that you are here to offer as much _**value**_ as you can==. Remember how you bought online courses. You see the value in their free stuff, then you proceeded to buy the paid courses.
 -  If you want to build an automated system for free products, you may have to use a software like [gumroad](https://gumroad.com) and use [zapier](https://zapier.com) to transfer the emails over to [Beehiiv](https://www.beehiiv.com).
-
 ### Authenticity
 - Expressing opinions, likes, and dislikes to relate with those in your audience.
 - Documenting projects that you are working on. Show them the process, and what you've learnt from that.
@@ -356,7 +356,7 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 - Start within your circles, and once you have an audience and leverage, you can really reach out to anybody and get a warm response.
 - If you want to increase the chances of larger accounts responding to your DMs: follow them and engage with their content for a few days before reaching out so they are familiar with your face and profile picture.
 ### Compliment
-- **Send them an inspired compliment**: find a ==_**specific**_ piece== of their content, work, or current projects that you are *truly* inspired by (or related to) and tell them *how* it motivate/inspire you. Be detailed to elevate the compliment, or just simply ask them to further discuss on that topic, spark their engagement, create open loops. 
+- **Send them an inspired compliment**: find a ==_**specific**_ piece== of their content, work, or current projects that you are *truly* inspired by (or related to) and tell them *how* it ==motivate/inspire== you. Be as detailed as you possibly can to elevate the compliment, or just simply ask them to further discuss on that topic, then you can offer a suggestion or feedback, spark their engagement, create open loops. 
 - Sometimes all it takes is a little ==boost to their self-esteem== with a simple compliment or encouragement. Something simple as "_You’re doing great, keep going._"
 - Again, this works because it leverages primal selfishness. People love praise, and per the principle of *reciprocity*, will feel obligated to repay this soft favor. 
 - ==_**Do not**_ ask for anything in your favor in this stage.== Asking for a "further discussion" is your only available option here. The more specific, the better. Something like:
@@ -511,7 +511,6 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 #### Double down on best sellers
 - Through repeated rounds of product refinement and tracking your metrics, you'll likely identify your best sellers.
 - Then, it's time to put even more sales into that product, by anchoring the buyer with a high price point to nudge them toward a lower-cost option. 
-
 ### Out
 - You can pay for legitimate big accounts (those that have a good number of ***organic*** audience members) to repost or reply to your posts, i.e. buying their shares.
 - DM them, ask if they offer help to grow, and negotiate a deal, something along the lines of:

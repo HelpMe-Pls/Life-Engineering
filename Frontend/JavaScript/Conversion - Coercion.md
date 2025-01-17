@@ -87,8 +87,8 @@ const b = {};       Boolean(b)  // true
 const c = "";       !!c // false
 
   
-// Any object of which the value is not undefined or null
-// (including a Boolean object whose value is false), evaluates to true:
+// Any object whose the value is not `undefined` or `null`
+// (including a Boolean object whose value is `false`), evaluates to `true`:
 Boolean(undefined)    // false
 
   
@@ -103,9 +103,7 @@ const f = new Boolean(null)
 const x = new Boolean(false);
 
 if (x) {
-
   // this code is executed
-
 }
 
   

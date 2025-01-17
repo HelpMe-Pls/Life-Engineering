@@ -1,3 +1,118 @@
+# Generic Object Type
+## Tuple
+- It's basically an `Array` type that knows _exactly **how many**_ elements it contains, and _exactly which types_ it contains at _specific **positions**_:
+```ts
+// Note that a tuple with a rest element has no set “length” - it only has a set of well-known elements in different positions:
+type StringBooleansNumberTuple = [string, ...boolean[], number];
+```
+- You can also set a tuple's member to be optional:
+```ts
+const goToLocation = (coordinates: [number, number, number?]) => {
+  const latitude = coordinates[0];
+  const longitude = coordinates[1];
+  const elevation = coordinates[2];
+  return { latitude, longitude, elevation };
+};
+
+goToLocation([10, 20]); // valid
+```
+
+- You can also set a tuple to be `readonly`:
+```ts
+function doSomething(pair: readonly [string, number]) {
+  pair[0] = "hello!";
+	   // ^ Cannot assign to '0' because it is a read-only property.
+}
+
+let point = [3, 4] as const;
+function distanceFromOrigin([x, y]: [number, number]) {
+  return Math.sqrt(x ** 2 + y ** 2);
+}
+distanceFromOrigin(point);
+// `point` is declared with `as const` (i.e. it's `readonly`), but the params of `distanceFromOrigin` is not declared with `readonly`, so there's a conflict of types here and it throws a type error at the function's call site.  
+```
+
+# Union
+- Union types works in a reversed funneled way, i.e. a "larger" type cannot be assigned to a "smaller" type:
+```ts
+let random = "sth-else" // Inferred type: string
+type Direction = "up" | "down" | "left" | "right";
+const aim = "up"
+
+function move(direction: Direction, distance: number) { 
+  return [direction, distance] 
+}
+
+move(aim, 69)  // valid: "up" is part of `Direction`, therefore it's smaller
+move(random, 96) // invalid: type `string` is larger than type `Direction`
+```
+- If there's a larger type in that union, the rest of that union will be resolved into that larger type:
+```ts
+// If you hover over `Direction`, you can see that its type is `string`
+type Direction = "up" | "down" | "left" | "right" | string;
+```
+## Resolved union of same type
+- When you want to allow any string, but still give suggestions for known string literals, you can use `string & {}`:
+```tsx
+// No string literal suggestions with this approach:
+type Color = "primary" | "secondary" | string; // Resolved to `type Color = string`
+
+// Existing string literal is now suggested:
+type Color = "primary" | "secondary" | (string & {});
+
+// Example usage:
+type IconProps = {
+  color: Color;
+};
+
+const Icon = ({ color }: IconProps) => {
+  // ...
+};
+<Icon color="" />; // "primary" & "secondary" is suggested here after applying the `string & {}` trick
+```
+- Notice that this is just a temporary fix. Someday, `string | "literal"` will just work.
+## Discriminated union
+- Commonly used to define a union for objects that have optional properties. It is crucial that a discriminated union has at least one property in common (`kind` in this example):
+```ts
+// Problem:
+type Shape = {
+  kind: string;
+  radius?: number;
+  sideLength?: number;
+};
+
+function calculateArea(shape: Shape) {
+  if (shape.kind === "circle") {
+    return Math.PI * shape.radius * shape.radius;  // 'shape.radius' is possibly 'undefined'.
+  } else {
+    return shape.sideLength * shape.sideLength; // 'shape.sideLength' is possibly 'undefined'.
+  }
+}
+
+// Solution:
+type Circle = {
+  kind: "circle";
+  radius: number; // No more optional
+};
+
+type Square = {
+  kind: "square";
+  sideLength: number;
+};
+
+type Shape = Circle | Square;  // The "optional" part is now handled by the union
+
+function calculateArea(shape: Shape) {
+  if (shape.kind === "circle") {
+    return Math.PI * shape.radius * shape.radius;  
+			    //   ^ shape: Circle
+  } else {
+    return shape.sideLength * shape.sideLength; 
+		//   ^ shape: Square
+  }
+}
+```
+
 # Utility types
 - Check out the [full list](https://www.typescriptlang.org/docs/handbook/utility-types.html).
 ## Record<Keys, Type>
@@ -85,6 +200,45 @@ type KnownAttributes = {
 ---
 # Techniques
 ## Scoping your TS errors
+### Explicitly extract the condition
+- Assign your condition and move it up a level so that TS can properly track its state throughout the scopes below it:
+```ts
+const findUsersByName = (
+  searchParams: { name?: string },
+  users: {
+    id: string;
+    name: string;
+  }[],
+) => {
+  if (searchParams.name) {
+ // The `searchParams.name` value could theoretically change between the check and the callback execution, therefore TS can't guarantee `searchParams.name` remains defined inside the `filter` callback, even though we checked it in the `if` statement 
+    return users.filter((user) => user.name.includes(searchParams.name));
+												  // ^ Argument of type 'string | undefined' is not assignable to parameter of type 'string'
+  }
+
+  return users;
+};
+
+// To fix it:
+const findUsersByName = (
+  searchParams: { name?: string },
+  users: {
+    id: string;
+    name: string;
+  }[],
+) => {
+  const searchParamsName = searchParams.name;
+  // let searchParamsName = searchParams.name; // Also works with `let`!
+  if (searchParamsName) {
+    return users.filter((user) => {
+      return user.name.includes(searchParamsName);
+    });
+  }
+
+  return users;
+};
+```
+
 ### Assigning types to variables
 - An explicit error right at the definition of a variable is more intuitive than having an error at its call site:
 ```ts
@@ -173,6 +327,20 @@ if (!params || !params.noteId) {
   throw new Error('noteId is required');
 }
 ```
+### Promptly throw `Error` with inferred `never` type
+- The type of a function that throws an `Error` without returning anything is inferred as `never`:
+```ts
+const throwError = (message: string) => {
+  throw new Error(message);
+};
+
+const handleSearchParams = (params: { id?: string }) => {
+  const id = params.id || throwError("No id provided");
+//      ^ `id` has type `string` | `never` which resolves to just `string`  
+  
+  return id;  // Guaranteed to be of type `string`
+};
+```
 
 ### Casting types
 #### The `as` keyword
@@ -226,6 +394,28 @@ const tryCatchDemo = (state: "fail" | "succeed") => {
   }
 };
 ```
+#### The `in` keyword
+- Most commonly used to check if a property exists in an _**object**_ (e.g. narrowing down the chosen type in a union):
+```ts
+type APIResponse =
+  | {
+      data: {
+        id: string;
+      };
+    }
+  | {
+      error: string;
+    };
+
+const handleResponse = (response: APIResponse) => {
+  if ("data" in response) {
+    return response.data.id;
+  } else {
+    throw new Error(response.error);
+  }
+};
+```
+
 ### Non-null expression
 - Prefer a non-null check over a non-null expression using the exclamation postfix:
 ```ts
@@ -251,21 +441,21 @@ export const links: LinksFunction = () => {
 	]
 }
 ```
-
 ## Typing functions
-- It is highly recommended to inline your function's type if you want to have strict type checking for it:
+- It is highly recommended to inline your function's type _only **if** you want to have **strict** type checking_ for it. Most of the time, it's safe to let TS infer the function's type:
 ```ts
+// Declaring the function's type enforces type checking, i.e. either explicitly returning an `undefined` value or completely omitting the `return` keyword, so
 // Prefer this:
-const myFunction = (isFocused: boolean): void  => {}
+const myFunction = (isFocused: boolean): void => {}
 
 // Over this:
-type FocusListener = (isFocused: boolean) => void;
-const myFunction: FocusListener = () => {}
+type FocusListener = (isFocused: boolean) => void; // Returning a `void` value means returning "no value"
 
 // Because, with the first approach, returning an empty object would cause an error:
-const myFunction = (isFocused: boolean): void  => { return {} } // TS error
+const myFunction = (isFocused: boolean): void  => { return {} } // TS ERROR
 // But with the second approach, it won't:
-const myFunction: FocusListener = () => { return {} } // TS valid
+const myFunction: FocusListener = () => { return {} } // TS valid, because an empty object means "no value"
+
 // Prefer the second approach when you're passing functions as arguments
 ```
 - You can type async functions like:
@@ -295,4 +485,48 @@ async function requireOnboardingEmail(request: Request) {
 	}
 	return email
 }
+```
+### Type guard for duplicated conditions 
+- You can extract repeated conditions by making a type guard function:
+```ts
+// Before:
+const joinNames = (value: unknown) => {
+  if (Array.isArray(value) && value.every((item) => typeof item === "string")) {
+    return value.join(" ");
+  }
+
+  throw new Error("Parsing error!");
+};
+
+const createSections = (value: unknown) => {
+  if (Array.isArray(value) && value.every((item) => typeof item === "string")) {
+    return value.map((item) => `Section: ${item}`);
+  }
+
+  throw new Error("Parsing error!");
+};
+
+// After:
+// It's actually a good idea to let TS infer the return type of this function (`value is string[]`) rather than explitcitly set it to `boolean` as it will not work
+const isArrayOfStrings = (value: unknown) => { 
+  return (
+    Array.isArray(value) && value.every((item) => typeof item === "string")
+  );
+};
+
+const joinNames = (value: unknown) => {
+  if (isArrayOfStrings(value)) { // Use the type guard function instead
+    return value.join(" ");
+  }
+
+  throw new Error("Parsing error!");
+};
+
+const createSections = (value: unknown) => {
+  if (isArrayOfStrings(value)) { // Use the type guard function instead
+    return value.map((item) => `Section: ${item}`);
+  }
+
+  throw new Error("Parsing error!");
+};
 ```

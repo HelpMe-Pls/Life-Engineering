@@ -77,7 +77,7 @@ console.log(res) // {status: 404}
 ```
 ### Spread vs rest:
 - The "rest" syntax is like an inverse of the spread syntax: it offers a shorthand for including an arbitrary number of *parameters* to be passed to a function as an array. *It must be placed **at the end** of the parameter list*:
-```js
+```ts
 //----------------- rest:
 function addFiveToABunchOfNumbers(...numbers) {
   // `numbers` is now an array
@@ -94,6 +94,18 @@ const {e, f, ...others} = {
   g: 3,
   h: 4,
 }; // e: 1, f: 2, others: { g: 3, h: 4 }
+
+// This:
+export function concatenate(...strings: string[]) {
+  return strings.join("");
+}
+concatenate("Hello", " ", "World");  // >> ["Hello World"]
+
+// Is the same as this:
+export function concatenate(strings: string[]) {
+  return strings.join("");
+}
+concatenate(["Hello", " ", "World"]);  // >> ["Hello World"]
 
 //----------------- spread:
 let words = ["never", "fully"];

@@ -99,27 +99,6 @@ type ShowIntersected = Prettify<Intersected>
 //     age: number;
 // }
 ```
-# Resolved union of same type
-- When you want to allow any string, but still give suggestions for known string literals, you can use `string & {}`:
-```tsx
-// No string literal suggestions with this approach:
-type Color = "primary" | "secondary" | string; // Resolved to `type Color = string`
-
-// Existing string literal is now suggested:
-type Color = "primary" | "secondary" | (string & {});
-
-// Example usage:
-type IconProps = {
-  color: Color;
-};
-
-const Icon = ({ color }: IconProps) => {
-  // ...
-};
-<Icon color="" />; // "primary" & "secondary" is suggested here after applying the `string & {}` trick
-```
-- Notice that this is just a temporary fix. Someday, `string | "literal"` will just work.
-
 # Indexed Access Types
 - Use this `T[number]` pattern to extract the element's type by accessing the numeric keys from an object. For example:
 ```ts

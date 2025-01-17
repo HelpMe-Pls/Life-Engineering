@@ -53,6 +53,9 @@
 - Embrace impermanence: The best thing you can do is make the optimal decision for you today, and then have confidence in yourself that if and when your needs change, you will be able to *adapt* down the road.
 ## Preparation
 - Try to investigate the pain points that the opening position is trying to solve. Craft your achievements and evidence accordingly (prepare a briefcase or slideshows for this).
+> [!important] Be specific
+> - Be prepared to demonstrate how you meet the qualifications of the job by sharing _**specific examples**_ from your past or ideas about how you would accomplish a specific task.
+> - Be sure to share how skills you have gained throughout your career will _**translate to the role**_ for which you are interviewing.
 - During the interview, present them your detailed plan, guide them through it, and show how tangible your contribution to their team can be.
 ### Profile
 - Keep in mind that your resume is not all there is. It's your network that helped you land your dream job to begin with. So put your effort in building your network before even thinking about this.
@@ -66,7 +69,7 @@
 - Turn their problems into rhetorical questions so that the hiring manager can nod along. These questions should feel like you're addressing their "pain point" and act as cohesive device for your next statements. Show your ambition and will to solve their problems.
 #### Resume
 - Your resume **_must_** gracefully answer these 2 questions: "Who are you?" and "==**_What_**== can you do for me?"
-- A narrative is a 1-2 sentences impression _about you_ that someone forms after a quick glance at your resume. A recommended formula to build your narrative: "_I'm _`...`, the `[your ideal role]` _who can help you_ `...`"
+- A narrative is a 1-2 sentences impression _about you_ that someone forms after a quick glance at your resume. A recommended formula to build your narrative: "_I'm `...`, the `[your ideal role]` who can help you_ `...`"
 - Choose your narrative then **_craft the bullet points around it_**. For example: "_I'm Khoi and I'm interested in technology and user experience with experimental knowledge in software engineering._"
 - Bullet points should be specific (credibility markers), quantitative, and express impact (what ==tangible value== does it bring) with descriptive words.
 > [!info]- Ideal situation
@@ -76,7 +79,11 @@
 
 # During the interview
 - Listen until the question is finished, and take a breath. Ask clarifying questions if you didn't really get what their intention is about.
+> [!info]- Connect over business
+> - If you're too stressed out, try to reframe your mindset by thinking: "We're not here for business, we're here to connect."
+>- Just make it pop with your enthusiasm. Work on your facial expressions. Smile. Chill. Pause and raise your eyebrows if their question is good. Connect with them and you'll have the business you want.
 - Don't answer their questions just for the sake of answering questions, _==it's more about **delivering your key message**==_. Ideally, your answers should be able to implicitly reassure them (or at least give a hint) that it's beneficial for them to have you on their team.
+	- If they're discussing the problems they're facing, try your very best to ==_relate and **show empathy**_==. That's how you leave a good impression with them on a subconscious level.
 - Be aware of the position you're applying to so that you can tell your story in a way that _highlights your expertise_.
 - If any of the interview rounds running over the scheduled time, then you got one foot in the door.
 > [!important]- MOST IMPORTANT: Take ownership
@@ -105,10 +112,10 @@
 	- Again, the key message that you have to deliver is and always will be =="_**What's in it for them?**_"==. Pivot your narrative so that when you finished telling your story, they will want to have you for their benefits.
 - The formula: _**Set the stage**_ with `relevant background` → (optional but highly recommended) `compliment/acknowledgement` about their products/achievements/work environment → your `specific engaging/impressive details` about your work/achievements (ideally list them out, start with `let me give you an example`) → wrap up with your `key message`.
 	- No more than 2 sentences for each of those ideas. Keep it short and simple, straight to the point with an engaging attitude. Smile.
-	- As you're telling your story, it's highly recommend to ==give them the context ==**_before_** you put in the work and then emphasize how your work **has _transformed_** the product/campaign/etc...Ideally, you'd want your impact to be _measurable_ (in numbers)
+	- As you're telling your story, it's highly recommend to ==give them the context== **_before_** you put in the work and then emphasize how your work **has _transformed_** the product/campaign/etc...Ideally, you'd want your impact to be _measurable_ (in numbers)
 - For example:
-	- Q: **_Tell me about yourself_** or _**Why do you want to work here**_ 
-	- A: _You know, after graduating from HCMUE, I was really drawn to how frontend and backend pieces fit together to `create great user experiences`. That's what led me to FPT Telecom, where I got to `dive deep into Node.js backend development while strengthening my React frontend skills`. I especially loved figuring out how different parts of the tech stack worked together to address practical user needs. One of my proudest moments was helping launch `our Cloudflare product` - we built it using `Node.js microservices and React components`, and it was amazing seeing `50,000 users jump on board in just the first week`! The whole experience really showed me how powerful good fullstack development can be. Now I'm excited about bringing both my technical skills and user-focused mindset to Acme Corp, especially to `help tackle those interesting scaling challenges` you're working on._
+	- Q: **_Tell me about yourself_** or _**Why do you want to work here**_. Notice that the underlying questions here are "who are you?", "what's your background?", "why are you here?", "how are you gonna help us?" 
+	- A: _I'm a CS grad from `HCMUE`, and I just love building stuff on both sides of an app - you know, `making everything work together nicely`. At FPT Telecom, that's exactly what I got to do with `React and Node.js`. Actually, we had this pretty cool project where we launched a `Cloudflare product that got something like 50,000 users in just a week`! That really showed me what good development can do, and I'd be `excited to bring that kind of energy to what you're working on here at Acme`._
 ## Screening
 - Typically lasts *under an hour*. [[Screening|Checkout]] what kind of questions you should be expecting.
 - Usually starts with self introduction. First impression is important. Cultivate that.
@@ -126,6 +133,9 @@
 - Your initial approach should be discussing with the interviewer and verify that your interpretation of the problem is on the right track with [pseudo code](https://www.interviewkickstart.com/learn/how-to-write-pseudocode) (the simplest form can be just a text-based line-by-line description that details the requirements). 
 - You should be vocal about every solution that you could think of (don't go too much into implementation details just yet), then *narrow down and explain why you're elected one approach over another* (including analysis of the time and space complexity, and you'd prefer choosing the one with *lower time complexity*).
 - Discuss the tradeoffs of each approach with your interviewer as if the interviewer was your coworker and you all are collaborating on a problem.
+> [!danger] Show potential
+> - Coding interview rounds are there to assess fundamental knowledge, capability, and _**learning potential**_.
+> - Ask clarifying questions that show your integrity, ==**_collaboration_**==, and ability to be resourceful.
 - If the problem appears too hard to even come up with pseudo code, walk through the brute force solution and look for areas to narrow down the goal, then optimize it.
 - Even if you can't come up with the code or DSA, don't fret. Always strive to demonstrate your reasoning and the follow the [[Technical#Best practices|best practices]] that you know of. *When possible, always use code that has been shown to be effective. Don't try to reinvent the wheel.*
 > Solve the problem **conceptually** first > Use the appropriate tools/DSA > Optimize the solution.

@@ -2,7 +2,7 @@
 - What is the best way to deliver said value? Media or content.
 - What is the foundation of media or content? Writing.
 - What does writing mean? To connect the dots - which are your thoughts, ideas, and the purpose behind them - and then extract, deliver them in the best possible manner. To write is to think. And it is important to think because action based on thinking is likely to be far less painful and more productive than action based upon ignorance. To think is to evolve. 
-- Writing is often the process by which you realize you do not understand what you are talking about.
+- Writing is often the process by which you realize you do not understand what you are talking about. There is someone out there with a wound in the exact shape of your words
 - Good writing is felt instantly. Not only is it packed with ideas and insight, it has a certain momentum that compels you to keep reading.
 - If you can write about your interests, you can generate new opportunities, and set yourself up for future monetization of said interests.
 - Such writing attracts attention, delivers a high-value message, and encourages people to follow you and your work, eventually raise the collective well-being. That's the meaning of life.

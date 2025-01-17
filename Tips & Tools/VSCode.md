@@ -1,4 +1,4 @@
-## Short keys 
+# Short keys 
 Ctrl + `[` or `]`: Code block indent
 
 Alt + ↑ or ↓: Move the selected *line*/code block 
@@ -28,21 +28,38 @@ To clear DevTool's console history: Ctrl + Shift + P then type "clear" then choo
 
 The equivalent of `npx` is `pn dlx` (for download) or `pn exec` for running executables
 
-#### Wrap a block of code inside a new scope:
+## Wrap a block of code inside a new scope:
 - Select text (optional)
 - Open command palette (usually Ctrl+Shift+P)
 - Type in: Emmet: Wrap with Abbreviation then hit Enter
 - Enter a tag name (or an abbreviation .className>p) then hit Enter
 
-#### ToLower - ToUpper:
+## ToLower - ToUpper:
 - Select text
 - Ctrl + Shift + P
 - Type in upper or lower on your preference
 - Hit Enter
 
+## Rename symbol
+- Right click on a parameter or press F2 where the cursor is at that param to rename it:
+```ts
+const users = [
+  { id: "1", name: "Robin" },
+  { id: "2", name: "Dennis" },
+  { id: "3", name: "Sara" },
+];
+
+// Imagine this function was 10x bigger
+// with 10x more references to `id`
+
+// We can rename the `id` param to `userId` by clicking on it then press F2
+const filterUsersById = (id: string) => {
+  return users.filter((user) => user.id === id);
+};
+```
 
 ---
-### Initial setups for a new project 
+# Initial setups for a new project 
 [1] Add this to `package.json` (or `.prettierrc` file) and you'll have to restart VSCode for it to work:
 "prettier": {	
     "trailingComma": "es5",	// or "none" || "all"

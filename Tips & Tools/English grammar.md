@@ -115,3 +115,8 @@
 - "Red tape": thủ tục hành chính
 - "Leg work": effort, exertion 
 - "Table stake": minimum requirement to compete, participate, or be taken seriously in a particular context
+- "To level with `someone`": to be honest and straightforward them
+- "To rail in": to criticize harshly or condemn
+- "Grist for one's mill": something turned to advantage or use 
+- "M.O": Modus Operandi - a person's or organization's typical method of operation (as a criminal's characteristic way of committing crimes)
+- "Play by ear": improvise or do something without a plan or preparation.

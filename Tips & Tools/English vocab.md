@@ -1,5 +1,3 @@
-invariably (adv): always
-
 credo (n) <cri-do>: a fancy word for 'ultimate belief'
 
 endeavor (v-n): to try / an effort to do sth
@@ -13,6 +11,8 @@ arid (adj): jejune, dull, excessively dry, lacking in interest and life
 desiccated (adj): dried up, drained of emotional or intellectual vigor or vitality
 
 profound (adj-n): deep af
+
+muse (v-n): ponder, ruminate, a state of deep thought or dreamy abstraction
 
 rote (n): học vẹt
 
@@ -41,6 +41,8 @@ conform {to} (v): abide by, comply with, adhere to
 cogent (adj): convincing, pertinent
 
 ==judicious== (adj): wise, thoughtful, sensible, prudent, insightful
+
+cognizant (adj): mindful, conscious, aware
 
 shrewd (adj): discerning, based on good understanding or judgment
 
@@ -178,7 +180,7 @@ chauvinism (n): an attitude of superiority toward (of opposite sex)
 
 derisory (adj): belittling, pathetic, uncomplimentary, contemptuous
 
-pejorative (adj-n): denigrative, derogative, belittling, disparaging
+==pejorative== (adj-n): denigrative, derogative, belittling, disparaging
 
 crass (adj): gross, rough, insensible, being beneath one's dignity
 
@@ -186,7 +188,7 @@ cater {to/for sb/sth} (v): to provide (food & drinks)
 
 brevity (n): briefness, concision
 
-==ephemeral== (adj-n): short-lived
+==ephemeral== (adj-n): short-lived, transitory, fleeting
 
 de facto (adv-adj): in fact, actually, lowkey recognized 
 
@@ -214,7 +216,9 @@ absurd (adj): ridiculous, preposterous
 
 condemn (v): sentence, convict, to pronounce guilty
 
-enunciate (v): articulate, pronounce, announce 
+enunciate (v): articulate, pronounce, announce
+
+herald (v-n):  hail, announce, publicize, foreshadow, one who actively promotes or advocates (exponent)
 
 accomplice (n): , đồng phạm
 
@@ -230,9 +234,11 @@ beset (v): surround, harass
 
 windward (adj): !leeward, being in or facing the direction from which the wind is blowing
 
-tumultuous (adj): loud, confused, and violently emotional; tempestuous
+tumultuous (adj): loud, confused, and violently emotional; tempestuous → tumult (n)
 
 conflate (v): confuse, blend/combine
+
+conjugate (adj-v-n): coupled, join together, coalesce 
 
 exuberant (adj): abundant of energy, excitement and happiness
 
@@ -404,6 +410,10 @@ hysterical (adj): hilarious, unrestrained emotion, ludicrous
 
 demise (n-v): death, decease, to transmit by succession or inheritance
 
+obituary (n): cáo phó
+
+eulogize (v): praise, extol, glorify (in a funeral) -> eulogy (n)
+
 decimate (v): reduce drastically especially in number, cause great destruction or harm to sth
 
 pare (v): trim off an outside, excess, or irregular part of
@@ -414,9 +424,13 @@ inexorable (adj): relentless
 
 predicate (v-n-adj): base/found (on), something that is affirmed or denied of the subject
 
+profess (v): affirm, pretend, claim; practice or claim to be versed in sth
+
 incarnation (n): embodiment, manifestation, version, đời/kiếp
 
 equanimity (n): balance, evenness of mind especially under stress
+
+vertigo (n): chóng mặt, a dizzy confused state of mind
 
 accrue (v): accumulate, maximize, gain
 
@@ -451,6 +465,8 @@ occlude (v): conceal, obstruct, block
 ==stymie== (v): stand in the way of, encumber, impede
 
 bureaucracy (n): quan liêu, a system of administration in which most of the important decisions are made by state officials (rather than by elected representatives)
+
+envoy (n): messenger, representative
 
 feasible (adj): suitable, reasonable, likely
 
@@ -500,6 +516,8 @@ melancholy (adj): depressed, miserable, dejected, sad
 
 ==elucidate== (v): explain, demonstrate, illustrate, eli5
 
+inexplicable (adj): incapable of being explained, interpreted, or accounted for
+
 zeitgeist (n): the spirit of the times, the general intellectual, moral, and cultural climate of an era
 
 ==fervent== (adj): passionate, intense, ardent, avid
@@ -514,7 +532,9 @@ acolyte (n): follower
 
 ==ostensibly== (adv): có vẻ như/dường như → ostentatious (adj): showy, boastful
 
-==postulate== (v-n): presume, posit
+fanfare (n): showy, màu mè
+
+==postulate== (v-n): presume, posit, premise
 
 ==conjecture== (v-n): guess, surmise, estimate, suppose, theory
 
@@ -536,9 +556,11 @@ entreaty (n): emotional request
 
 fiat (n): dictate, an order publicly issued by an authority: decree
 
-covetous <cav-et-tus>(adj): greedy, selfish desire especially for material possessions
+covetous <cav-et-tus>(adj): greedy (longing), selfish desire especially for material possessions
 
 coveted (adj-v2): desired, craved, highly sought after
+
+rapacious (adj): ravenous, greedy (exploitive), voracious  
 
 vanquish (v): conquer (in competition/war)
 
@@ -582,7 +604,7 @@ celestial (adj): heavenly, delightful
 
 rife {with} (adj): abundant, common, filled with
 
-connoisseur <ka-na-sur> (n): expert, critic, scholar, pundit
+connoisseur <ka-na-sur> (n): expert, critic, scholar, pundit, maven
 
 mundane (adj): typical, usual, prosaic
 
@@ -610,7 +632,7 @@ ineffable (adj): indescribable, unspeakable, inexpressible
 
 coalition (n): union, combination
 
-eclectic (adj-n): composed of elements drawn from various sources
+eclectic (adj-n): kết hợp, composed of elements drawn from various sources
 
 altruism (n): generosity, philanthropy, empathy, compassion
 
@@ -654,7 +676,9 @@ barring (prep): excepting, aside from, excluding
 
 ==vindictive== (adj): vengeful, spiteful, malicious
 
-indict (v): charge, incriminate, impeach
+indict (v): charge, incriminate, ==impeach==
+
+impervious (adj): impenetrable, not capable of being damaged or harmed
 
 incarcerate (v): imprison, to put in prison, to subject to confinement
 
@@ -751,6 +775,8 @@ embalm (v): ướp xác
 commiserate (v): condole, sympathize
 
 apathy (n): not interested, complacence
+
+perfunctory (adj): mechanical, uninterested, apathetic
 
 elixir (n): liquid magic potion, healing everything
 
@@ -878,6 +904,8 @@ bevy (n): a large group or collection
 
 consort (v-n): associate, harmonize, company, partner, spouse
 
+liaise {with} (v): associate, establishe and maintain communication for mutual understanding and cooperation
+
 aphorism (n): an ingeniously terse and concise style of statement/expression
 
 countenance (v-n): approve, sanction, expression (facial)
@@ -909,6 +937,8 @@ bough (n): the main branch of a tree
 ==didactic== (n): designed or intended to teach >> autodidact: self-learner
 
 inculcate (v): to teach and impress by frequent repetitions or admonitions
+
+admonish (v): give friendly earnest advice or encouragement to
 
 fortuitously: fortunately, luckily
 
@@ -984,8 +1014,6 @@ polio (n): bại liệt
 
 symposium (n): hội thảo -> plural: symposia/symposiums
 
-eulogize (v): praise, extol, glorify (in a funeral) -> eulogy (n)
-
 hiatus (n): gap, break 
 
 next of kin: a fancy way to say "related"
@@ -1020,13 +1048,15 @@ attire (n): clothes, dress → ==sartorial== (adj)
 
 pedantic (adj): unimaginative, dull
 
+obtuse (adj): blunt, difficult to comprehend, insensitive
+
 jettison (v-n): bỏ bớt, drop or get rid of (cargo) to lighten the load as part of a plan or as the result of some other decision
 
 maestro (n): connoisseur, a master usually in an art
 
 dictum (n): a noteworthy statement
 
-interdict (v-n): ban, proscribe, forbid
+interdict (v-n): ban, proscribe, forbid, veto
 
 satin shoes (n): shoes with smooth lustrous appearance or sleekness to touch
 
@@ -1085,3 +1115,12 @@ geriatric (adj-n): an aged person, relating to, or appropriate for elderly peopl
 tantalize (v): tease or torment by or as if by presenting something desirable to the view but continually keeping it out of reach
 
 botch {up} (v-n): mess (up)
+
+secular (adj-n): not overtly or specifically religious
+
+reify (v): actualize something abstract (a concept or an idea)
+
+vestige (n): footprint, a trace, mark, or visible sign left by something
+
+trough (n): cái máng heo; a conduit/drain or channel for water; the low point in a business cycle
+
