@@ -50,6 +50,8 @@ shrewd (adj): discerning, based on good understanding or judgment
 
 gregarious (adj): social, sociable
 
+segregate (v): isolate, seclude, separate, withdraw
+
 ==nibble== (n): a tentative expression of interest
 
 masticate (v): chew, nibble, gnaw (on)
@@ -172,13 +174,15 @@ extenuating (adj): providing a partial justification or excuse for something
 
 disparate (adj): distinct, uniquely different from each other
 
-==disparage== (v): derogate, belittle, depreciate
-
 subservient (adj): subordinate, truckling, submissive
+
+==condescending== (adj): having a patronizing or superior attitude toward others
 
 chauvinism (n): an attitude of superiority toward (of opposite sex)
 
 derisory (adj): belittling, pathetic, uncomplimentary, contemptuous
+
+==disparage== (v): derogate, belittle, depreciate
 
 ==pejorative== (adj-n): denigrative, derogative, belittling, disparaging
 
@@ -697,8 +701,6 @@ esoteric (adj): emphasizing exclusivity or niche knowledge, often tied to expert
 confidant (n)  {caution: it's different from confidEnt}: intimate, the one to whom secrets are entrusted
 
 solitude (n): isolation, privacy, loneliness
-
-segregate (v): isolate, seclude, separate, withdraw
 
 reclusive (adj): solitary, lonely
 

@@ -7,6 +7,8 @@ Alt + Shift + ⮜ or ⮞: Move the selected TEXT to left/right
 
 Alt + Click: Multiplying cursors at clicked position
 
+Ctrl + Alt + ↑ or ↓: Multiplying cursors at the same position on multiple lines
+
 Ctrl + D: Select next same text of the current selected one, Ctrl + D + K to skip the current selected
 
 Ctrl + Alt + ↑ or ↓: Multiline editing

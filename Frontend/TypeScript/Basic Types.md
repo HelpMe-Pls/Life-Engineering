@@ -1,3 +1,169 @@
+# Interface vs Types
+- You should ***use types by default*** _until_ you need a specific feature of interfaces, like `extends` (i.e. when you're working *with **objects** that **inherit*** from each other):
+```ts
+// When you're working with objects that inherit from each other, use interfaces. The `extends` keyword makes TypeScript's type checker run slightly faster than using `&`:
+interface WithId {
+  id: string;
+}
+
+// Both of these work, but prefer this (because future checks against it can be cached):
+interface User extends WithId {
+  name: string;
+}
+// Over this (recomputed every time):
+type User = WithId & {
+  name: string;
+};
+ 
+const user: User = {
+  id: "123",
+  name: "Karl",
+  wrongProperty: 123,  // expected error here
+};
+
+// You can also extend multiple interfaces, separated by commas:
+interface WithBase {
+  id: string;
+  name: string
+}
+
+interface WithCreatedAt {
+  createdAt: Date;
+}
+
+interface User extends WithBase, WithCreatedAt {
+  email: string;
+}
+// Resolves to:
+// interface User {
+//    email: string;
+//    id: string;
+//    name: string;
+//    createdAt: Date;
+// }
+```
+
+- If your _intersection_ were to have duplicated property keys with _different_ types, then you could opt for `interface` (it just gives a more intuitive error message):
+```ts
+type UserPart = {
+  id: number;
+  name: string;
+  age: number;
+};
+
+type UserPart2 = {
+  id: string;
+  phone: string;
+};
+
+// Resolves to:
+// interface User {
+//   id: number;  >> the first declaration in applied
+//   name: string;  
+//   age: number;  
+//   phone: string;  
+// }
+interface User extends UserPart, UserPart2 {}
+		// ^ Error here: Named property 'id' of types 'UserPart' and 'UserPart2' are not identical.
+
+const user: User = {
+  id: "1",   // Type 'string' is not assignable to type 'number'
+  name: "John",
+  age: 20,
+  phone: "123456789",
+};
+```
+
+- Interfaces can't express unions, mapped types, or conditional types. Type aliases can express any type:
+```ts
+// Union can't express unions:
+interface Base {
+  id: string;
+}
+
+// This won't work:
+interface User extends Base | {email: string} {}
+
+// Can't express mapped types:
+interface StringMap {
+  // This won't work:
+  [P in keyof T]: string;
+}
+
+// Can't express conditional types:
+interface User extends WithBase ? WithCreatedAt : { // error
+  email: string;
+}
+
+//----------------------------
+type StringOrNumber = string | number;
+type Input = StringOrNumber   // type alias 
+const func = (arg: StringOrNumber) => {};
+ 
+func("hello"); // works
+func(123);    // works
+ 
+func(true); // error
+```
+
+- Interfaces with the same name in the same scope _merge_ their declarations, leading to unexpected bugs, where `type` names in the same scope must be unique:
+```ts
+interface Logger {
+  log(message: string, level: number): void;
+}
+
+interface Logger {
+  log(message: string): void;
+}
+
+const myLogger: Logger = {
+  log: (message: string) => {
+    console.log(message);
+  },
+};
+
+// Valid:
+myLogger.log(
+  "My message"
+);
+
+// Also valid:
+myLogger.log(
+  "My message",
+  69,
+);
+
+// In case you just want one of those `Logger`s to take effect, declare ONE with `type`
+```
+
+- Type aliases have an implicit index signature of `Record<PropertyKey, unknown>`, which comes up occasionally:
+```ts
+interface KnownAttributes {
+  x: number;
+  y: number;
+}
+ 
+const knownAttributes: KnownAttributes = {
+  x: 1,
+  y: 2,
+};
+ 
+type RecordType = Record<string, number>;
+ 
+const oi: RecordType = knownAttributes;  // error
+// TS throws an error here because an interface COULD later be extended. It might have a property added that doesn't match the key of `string` or the value of `number` of `RecordType`. To fix this, update the `interface KnownAttributes` to be:
+interface KnownAttributes {
+  x: number;
+  y: number;
+  [index: string]: unknown; // new!
+}
+// Or just use `type` instead:
+type KnownAttributes = {
+  x: number;
+  y: number;
+};
+```
+---
 # Generic Object Type
 ## Tuple
 - It's basically an `Array` type that knows _exactly **how many**_ elements it contains, and _exactly which types_ it contains at _specific **positions**_:
@@ -17,7 +183,7 @@ const goToLocation = (coordinates: [number, number, number?]) => {
 goToLocation([10, 20]); // valid
 ```
 
-- You can also set a tuple to be `readonly`:
+- It is recommended to set a tuple as `readonly`:
 ```ts
 function doSomething(pair: readonly [string, number]) {
   pair[0] = "hello!";
@@ -30,6 +196,33 @@ function distanceFromOrigin([x, y]: [number, number]) {
 }
 distanceFromOrigin(point);
 // `point` is declared with `as const` (i.e. it's `readonly`), but the params of `distanceFromOrigin` is not declared with `readonly`, so there's a conflict of types here and it throws a type error at the function's call site.  
+//------------------------------------------------------------------
+// Why is it a good idea to make a tuple `readonly`? Consider this example:
+// In this case, the inferred return type of `fetchData` is `Promise<readonly [Error] | unknown[]>`
+const fetchData = async () => {
+  const result = await fetch("/");
+
+  if (!result.ok) {
+    return [new Error("Could not fetch data.")] as const
+  }
+
+  const data = await result.json();
+
+  return [undefined, data];
+}; 
+
+// Whereas in this case, it is `Promise<readonly [Error] | readonly [undefined, unknown]>`. Notice that the return type in case of a success fetch is preserved as a specific `[undefined, unknown]`, not just a general `unknown[]`
+const fetchData = async () => {
+  const result = await fetch("/");
+
+  if (!result.ok) {
+    return [new Error("Could not fetch data.")] as const
+  }
+
+  const data = await result.json();
+
+  return [undefined, data] as const
+};
 ```
 
 # Union
@@ -111,9 +304,161 @@ function calculateArea(shape: Shape) {
 		//   ^ shape: Square
   }
 }
+
+// Switch-case version:
+function calculateArea(shape: Shape) {
+  switch (shape.kind) {
+    case "circle": {
+      return Math.PI * shape.radius * shape.radius;
+    }
+    case "square": {
+      return shape.sideLength * shape.sideLength;
+    }
+  }
+}
+
+// Destructured version:
+function calculateArea(shape: Shape) { // The destructuring is only recognized within a condition
+  if (shape.kind === "circle") {
+    const { radius } = shape;  // Like this 
+    return Math.PI * radius * radius;
+  } else {
+    const { sideLength } = shape;
+    return sideLength * sideLength;
+  }
+}
 ```
 
+- Prefer discriminated union of tuples rather than a tuple of discriminated unions. You also need to explicitly state _**the value**_ of the "discriminated type" to make it work:
+```ts
+type User = {
+  id: string;
+};
+
+// Wrong (tuple of discriminated union):
+type ApiResponse = [boolean, User[] | string];
+
+// Correct (discriminated union of tuples). Notice how `boolean` is broken into `true` and `false`):
+type ApiResponse = [true, User[]] | [false, string];
+
+async function fetchData(): Promise<ApiResponse> {
+  try {
+    const response = await fetch("https://api.example.com/data");
+    if (!response.ok) {
+      return [
+        false,
+        // Imagine more detailed error handling here
+        "An error occurred",
+      ];
+    }
+
+    const data = await response.json();
+    return [true, data];
+  } catch (error) {
+    return [false, "An error occurred"];
+  }
+}
+
+async function exampleFunc() {
+  const [succeeded, value] = await fetchData();
+
+  if (succeeded) {
+    console.log(value); // Wrong: `value: string | User[]`
+		      // ^ Correct: Type of `value` is now `User[]`
+  } else {
+    console.error(value);  // Wrong: `value: string | User[]`
+				// ^ Correct: Type of `value` is now `string`
+  }
+}
+```
+
+- Make _a_ property optional if you want a default to take it. Notice that the default case is always at the end of the condition chain:
+```ts
+type Circle = {
+  kind?: "circle";  // Make this one optional so it'll be used as default
+  radius: number;
+};
+
+type Square = {
+  kind: "square";
+  sideLength: number;
+};
+
+type Shape = Circle | Square;
+
+function calculateArea(shape: Shape) {
+  if (shape.kind === "square") {
+    return shape.sideLength * shape.sideLength;
+  } else {
+// The default case is always at the end of the condition chain:  
+    return Math.PI * shape.radius * shape.radius;
+  }
+}
+
+// This test should pass:
+it("Should calculate the area of a circle when no kind is passed", () => {
+  const result = calculateArea({
+    radius: 5,
+  });
+  expect(result).toBe(78.53981633974483);
+});
+```
+# Enum
+- The `enum` keyword is only available in TS (not in standard JS). Use `enum` to define a set of named constants. `enum` members are numeric by default and starts at `0`.  You can define `enum` members with both `string` and `number`:
+```ts
+enum E {
+  X,  // E.X = 0
+  Y,
+  Z,  // E.Y = 2
+}
+
+// Auto-increment is only applied for numeric members, therefore, an `enum` member that follows a `string` member must be initialized:
+enum Mix {
+  Yes = "YES",
+  SS,  // Error: Enum member must have initializer
+  No = 69  // Valid
+}
+
+//-----------------------------------------------------
+// An object declared with `as const` behaves as an enum. Prefer this approach if you want to be consistent with JS:
+const ObjAsEnum = {
+  Up: 0,
+  Down: 1,
+  Left: 2,
+  Right: 3,
+} as const;
+
+// It requires an extra line to pull out the values
+type Direction = typeof ObjAsEnum[keyof typeof ObjAsEnum];
+//    ^ type Direction = 0 | 1 | 2 | 3
+
+function run(dir: Direction) {}
+run(ObjAsEnum.Right);  // valid
+```
+- Multiple `enum`s with the exact same value are still independent from each other:
+```ts
+enum Method {
+  GET = "GET",
+  POST = "POST",
+  PUT = "PUT",
+  DELETE = "DELETE",
+}
+
+const request = (url: string, method: Method) => { /* Do something...*/ };
+
+enum AnotherMethod {
+    GET = "GET",
+    POST = "POST",
+    PUT = "PUT",
+    DELETE = "DELETE",
+  }
+  request(
+    "https://example.com",
+    Method2.GET, // Error: Argument of type 'Method2.GET' is not assignable to parameter of type 'Method'.
+  );
+```
 # Utility types
+- Note that these are types, not interfaces, so you must declare them with `type`
 - Check out the [full list](https://www.typescriptlang.org/docs/handbook/utility-types.html).
 ## Record<Keys, Type>
 - Mostly used to *type **objects*** with properties of type `Keys` and values of type `Type`. Also useful in cases where you want to map the properties of a type to another type:
@@ -134,399 +479,115 @@ const cats: Record<CatName, CatInfo> = {
 // type OptionalCats = { [K in CatName]?: CatInfo }
 // It means 2 things: The properties of `cats` aren’t required to include all values listed in the `CatName`, and, in cases where a matched property is included, it could have an `undefined` value
 ```
-
-# Interface vs Types
-- You should ***use types by default*** until you need a specific feature of interfaces, like `extends` (i.e. when you're working *with objects that **inherit*** from each other):
+### Prefer the `Record` type instead of type `object`
+- The `object` type accepts _all non-primitive_ values but rejects primitive values. Consider using a generic `Record<PropertyKey, unknown>` or specific interfaces instead of `object`:
 ```ts
-// When you're working with objects that inherit from each other, use interfaces. `extends` makes TypeScript's type checker run slightly faster than using `&`:
-interface WithId {
-  id: string;
+const acceptAllNonPrimitiveTypes = (input: object) => {};
+
+acceptAllNonPrimitiveTypes({});
+acceptAllNonPrimitiveTypes([]);
+acceptAllNonPrimitiveTypes(() => {});
+acceptAllNonPrimitiveTypes(/foo/);
+acceptAllNonPrimitiveTypes(new Error("foo"));
+
+acceptAllNonPrimitiveTypes(
+  // @ts-expect-error
+  null,
+);
+acceptAllNonPrimitiveTypes(
+  // @ts-expect-error
+  undefined,
+);
+acceptAllNonPrimitiveTypes(
+  // @ts-expect-error
+  "hello",
+);
+acceptAllNonPrimitiveTypes(
+  // @ts-expect-error
+  42,
+);
+acceptAllNonPrimitiveTypes(
+  // @ts-expect-error
+  true,
+);
+acceptAllNonPrimitiveTypes(
+  // @ts-expect-error
+  Symbol("foo"),
+);
+
+// Using Record - flexible but with type safety
+function processGenericObject(obj: Record<PropertyKey, unknown>) {
+ if (typeof obj.name === 'string') {
+   console.log(obj.name.toUpperCase());
+ }
+ console.log(obj.nonexistent); // Inferred as 'unknown'
 }
-
-// Both of these work, but prefer this (because future checks against it can be cached):
-interface User extends WithId {
-  name: string;
-}
-// Over this (recomputed every time):
-type User = WithId & {
-  name: string;
-};
- 
-const user: User = {
-  id: "123",
-  name: "Karl",
-  wrongProperty: 123,
-};
 ```
-- Interfaces can't express unions, mapped types, or conditional types. Type aliases can express any type:
+## Pick<Type, Keys>
+- Use this to construct a sub-type from a larger **_object_** type (as if you're creating a dependency out of that larger object without messing it up):
 ```ts
-type StringOrNumber = string | number;
-type Input = StringOrNumber   // type alias 
-const func = (arg: StringOrNumber) => {};
- 
-func("hello"); // works
-func(123);    // works
- 
-func(true); // error
-```
-- Interfaces with the same name in the same scope merge their declarations, leading to unexpected bugs, where type names in the same scope must be unique.
-- Type aliases have an implicit index signature of `Record<PropertyKey, unknown>`, which comes up occasionally:
-```ts
-interface KnownAttributes {
-  x: number;
-  y: number;
+interface Todo {
+  title: string;
+  description: string;
+  completed: boolean;
 }
  
-const knownAttributes: KnownAttributes = {
-  x: 1,
-  y: 2,
-};
- 
-type RecordType = Record<string, number>;
- 
-const oi: RecordType = knownAttributes;  // error
-// The reason this errors is that an interface COULD later be extended. It might have a property added that doesn't match the key of `string` or the value of `number` of `RecordType`. To fix this, update the `interface KnownAttributes` to be:
-interface KnownAttributes {
-  x: number;
-  y: number;
-  [index: string]: unknown; // new!
-}
-// Or just use `type` instead:
-type KnownAttributes = {
-  x: number;
-  y: number;
-};
+type TodoPreview = Pick<Todo, "title" | "completed">;
+//    ^ type TodoPreview = {  
+//          title: string;  
+//          completed: boolean;  
+//      }
+
+// If it's not an object then Pick wouldn't work:
+type Union = "a" | "b" | "c"
+type SubUnion = Pick<Union, "a"> 
+						//  ^ error
 ```
----
-# Techniques
-## Scoping your TS errors
-### Explicitly extract the condition
-- Assign your condition and move it up a level so that TS can properly track its state throughout the scopes below it:
+- You _**can't**_ pick properties which don't exist:
 ```ts
-const findUsersByName = (
-  searchParams: { name?: string },
-  users: {
-    id: string;
-    name: string;
-  }[],
-) => {
-  if (searchParams.name) {
- // The `searchParams.name` value could theoretically change between the check and the callback execution, therefore TS can't guarantee `searchParams.name` remains defined inside the `filter` callback, even though we checked it in the `if` statement 
-    return users.filter((user) => user.name.includes(searchParams.name));
-												  // ^ Argument of type 'string | undefined' is not assignable to parameter of type 'string'
-  }
-
-  return users;
-};
-
-// To fix it:
-const findUsersByName = (
-  searchParams: { name?: string },
-  users: {
-    id: string;
-    name: string;
-  }[],
-) => {
-  const searchParamsName = searchParams.name;
-  // let searchParamsName = searchParams.name; // Also works with `let`!
-  if (searchParamsName) {
-    return users.filter((user) => {
-      return user.name.includes(searchParamsName);
-    });
-  }
-
-  return users;
-};
-```
-
-### Assigning types to variables
-- An explicit error right at the definition of a variable is more intuitive than having an error at its call site:
-```ts
-import { expect, it } from "vitest";
-
-interface User {
+type User = {
   id: number;
-  firstName: string;
-  lastName: string;
-  isAdmin: boolean;
-}
-
-/**
- * We'd want to ensure that `defaultUser` is of type `User`
- * at THIS LINE - e.g. mispelling or missing a property's name
- * would throw a TS error right here - by directly declaring the `User` type
- * to `defaultUser`
- */
-const defaultUser: User = {  
-  id: 6996,
-  firstName: 'Random',
-  lastName: "Guy",
-  isAdmin: true,
-};
-
-const getUserId = (user: User) => {
-  return user.id;
-};
-
-it("Should get the user id", () => {
-  expect(getUserId(defaultUser)).toEqual(6996);
-					// ^ Rather than having an error here
-});
-```
-
-- Have a safe fallback for `undefined` values:
-```tsx
-// For example, in Remix:
-export async function loader({ params }: DataFunctionArgs) {
-	const user = db.user.findFirst({
-		where: {
-			username: {
-				equals: params.username,
-			},
-		},
-	})
-
-	invariantResponse(user, 'User not found', { status: 404 })
-
-	return json({
-		user: { name: user.name, username: user.username },
-	})
-}
-
-export const meta: MetaFunction<typeof loader> = ({ data, params }) => {
-// The `??` fallback on `params.username` instead of `data?.user.username` is because `params.username` is always defined (assuming there's nothing wrong with your routing). You don't want to fallback a potentially `undefined` thing to another `undefined` thing.
-	const displayName = data?.user.name ?? params.username
-	return [
-		{ title: `${displayName} | Epic Notes` },
-		{
-			name: 'description',
-			content: `Profile of ${displayName} on Epic Notes`,
-		},
-	]
-}
-```
-### `undefined` runtime errors
-- Destructured variables can be used to hide `undefined` values from TS, but it's not recommended:
-```ts
-// Suppose `params.noteId` could be `undefined`:
-const {noteId} = params
-await $prisma.noteImage.create({
-  select: { id: true },
-// when you destructure a property from `undefined` or `null`, it doesn’t throw an error. Instead, it assigns `undefined` to the destructured variable:
-  data: { ...newImage, noteId }, // No error, this value resolved to `{...newImage, undefined}` if `noteId` is `undefined`
-})
-
-// Same thing, but if you try to access a property directly from `undefined` or `null`, it will throw a `TypeError` at runtime:
-await $prisma.noteImage.create({
-  select: { id: true },
-  data: { ...newImage, noteId: params.noteId }, // `TS2322` error because we're `.noteId` which could possibly be `undefined` 
-})
-
-// So to properly fix it, prefer a type check before accessing the value:
-if (!params || !params.noteId) {
-  throw new Error('noteId is required');
-}
-```
-### Promptly throw `Error` with inferred `never` type
-- The type of a function that throws an `Error` without returning anything is inferred as `never`:
-```ts
-const throwError = (message: string) => {
-  throw new Error(message);
-};
-
-const handleSearchParams = (params: { id?: string }) => {
-  const id = params.id || throwError("No id provided");
-//      ^ `id` has type `string` | `never` which resolves to just `string`  
-  
-  return id;  // Guaranteed to be of type `string`
-};
-```
-
-### Casting types
-#### The `as` keyword
-- Used for type assertion, when you want compiler to trust that you’ve ensured the value is of the asserted type. If the value is not actually of the asserted type, it could lead to *runtime* errors:
-```ts
-interface LukeSkywalker {
   name: string;
-  height: string;
-  gender: string;
-}
-// Note that this is a trivial example so there's no practical value of it for real-world cases like this (because you'll end up in runtime errors anyway), but the mindset is still valuable:
-// Prefer this approach, in most cases:
-export const fetchLukeSkywalker = async () => {
-  const data: LukeSkywalker = await fetch(
-    "https://swapi.dev/api/people/1"
-  ).then((res) => {
-    return res.json();
-  });
-
-  return data;
+  email: string;
 };
-// Or not having an assertion in the code, but explicitly on the call site instead:
-const data = fetchLukeSkywalker() as LukeSkywalker
 
-// Over this:
-export const fetchLukeSkywalker = async () => {
-  const data: unknown = 
-  await fetch("https://swapi.dev/api/people/1").then((res) => {
-    return res.json();
-  });
-// TS won’t raise a compile-time error even if the data doesn’t match the `LukeSkywalker` interface.
-  return data as LukeSkywalker;
-};
+type UserWithOnlyPhoneNumber = Pick<User, "phoneNumber">;
+										// ^ error
 ```
-> [!warning] The `as` assertion should be seen as `lying` to TS. What you **actually** need is E2E type safety, using tools like `tRPC` or `Remix`
-- Practical cases are when you need to make a variable to be read-only, or typing errors in a `catch` block:
+## Readonly
+- Mark a _type_ as immutable with the `readonly` keyword or the `Readonly<T>` signature:
 ```ts
-const tryCatchDemo = (state: "fail" | "succeed") => {
-  try {
-    if (state === "fail") {
-      throw new Error("Failure!");
-    }
-  } catch (e) {
-    return (e as Error).message;
-    
-    // But here's a better apporach, tho:
-    if (e instanceof Error) {
-      return e.message;
-    }
-    else throw e
+function printNames(names: readonly string[]) {  // `ReadonlyArray<string>` also works
+  for (const name of names) {
+    console.log(name);
   }
-};
-```
-#### The `in` keyword
-- Most commonly used to check if a property exists in an _**object**_ (e.g. narrowing down the chosen type in a union):
-```ts
-type APIResponse =
-  | {
-      data: {
-        id: string;
-      };
-    }
-  | {
-      error: string;
-    };
 
-const handleResponse = (response: APIResponse) => {
-  if ("data" in response) {
-    return response.data.id;
-  } else {
-    throw new Error(response.error);
-  }
-};
-```
-
-### Non-null expression
-- Prefer a non-null check over a non-null expression using the exclamation postfix:
-```ts
-// Prefer this:
- export const links: LinksFunction = () => {
-	return [
-		{ rel: 'icon', type: 'image/svg+xml', href: faviconAssetUrl },
-		{ rel: 'stylesheet', href: fontStylesheetUrl },
-		{ rel: 'stylesheet', href: tailwindStylesheetUrl },
-		cssBundleHref ? { rel: 'stylesheet', href: cssBundleHref } : null,
-	].filter(Boolean)
-}
-
-// Over this:
-export const links: LinksFunction = () => {
-	return [
-		{ rel: 'icon', type: 'image/svg+xml', href: faviconAssetUrl },
-		{ rel: 'stylesheet', href: fontStylesheetUrl },
-		{ rel: 'stylesheet', href: tailwindStylesheetUrl },
-// `href` only accepts `string`, and in this case, `cssBundleHref` is `string | undefined` so we're using `!` to assert it
-// A better alternative could be `cssBundleHref as string`, but still, not recommended
-		{ rel: 'stylesheet', href: cssBundleHref! }, 
-	]
+  names.push("John");  // error
+  names[0] = "Billy";  // error
 }
 ```
-## Typing functions
-- It is highly recommended to inline your function's type _only **if** you want to have **strict** type checking_ for it. Most of the time, it's safe to let TS infer the function's type:
+- You can always safely assign a less restrictive type (mutable) to a more restrictive one (immutable - `readonly`), but not vice versa:
 ```ts
-// Declaring the function's type enforces type checking, i.e. either explicitly returning an `undefined` value or completely omitting the `return` keyword, so
-// Prefer this:
-const myFunction = (isFocused: boolean): void => {}
+let mutable: number[] = [1, 2];
+let immutable: readonly number[] = [1, 2];
 
-// Over this:
-type FocusListener = (isFocused: boolean) => void; // Returning a `void` value means returning "no value"
+// More restrictive (readonly) cannot be assigned to less restrictive (mutable)
+// because mutable arrays allow operations that would violate readonly
+mutable = immutable;  // Error
+mutable.push(3);     // This would break readonly guarantee
 
-// Because, with the first approach, returning an empty object would cause an error:
-const myFunction = (isFocused: boolean): void  => { return {} } // TS ERROR
-// But with the second approach, it won't:
-const myFunction: FocusListener = () => { return {} } // TS valid, because an empty object means "no value"
-
-// Prefer the second approach when you're passing functions as arguments
+// Less restrictive (mutable) can be assigned to more restrictive (readonly)
+// because readonly prevents any operations that could mutate the array
+immutable = mutable;  // OK
+immutable.push(3);    // Error: Property 'push' does not exist on readonly array
 ```
-- You can type async functions like:
+- Use the `@total-typescript/ts-reset` to loosen up the default restrictive type check. Helpful in case where you need to verify if an element exists in a `readonly` collection:
 ```ts
-const createThenGetUser = async (
-  createUser: () => Promise<string>,
-  getUser: (id: string) => Promise<User>,
-): Promise<User> => {
-  const userId: string = await createUser();
+import "@total-typescript/ts-reset";  
 
-  const user = await getUser(userId);
+const users = ["matt", "sofia", "waqas"] as const;
 
-  return user;
-};
-```
-- If you're having a conflict in a function's return type, consider a `throw` over a `return` where it makes sense:
-```ts
-async function requireOnboardingEmail(request: Request) {
-	await requireAnonymous(request)
-	const verifySession = await verifySessionStorage.getSession(
-		request.headers.get('cookie'),
-	)
-	const email = verifySession.get(onboardingEmailSessionKey)
-	if (typeof email !== 'string' || !email) {
-	// using a `throw` here instead of a `return` so that the return type of this function is a `string`, not a `Promise` (from `redirect`)
-		throw redirect('/signup')  
-	}
-	return email
-}
-```
-### Type guard for duplicated conditions 
-- You can extract repeated conditions by making a type guard function:
-```ts
-// Before:
-const joinNames = (value: unknown) => {
-  if (Array.isArray(value) && value.every((item) => typeof item === "string")) {
-    return value.join(" ");
-  }
+users.includes("bryan");  // No error
 
-  throw new Error("Parsing error!");
-};
-
-const createSections = (value: unknown) => {
-  if (Array.isArray(value) && value.every((item) => typeof item === "string")) {
-    return value.map((item) => `Section: ${item}`);
-  }
-
-  throw new Error("Parsing error!");
-};
-
-// After:
-// It's actually a good idea to let TS infer the return type of this function (`value is string[]`) rather than explitcitly set it to `boolean` as it will not work
-const isArrayOfStrings = (value: unknown) => { 
-  return (
-    Array.isArray(value) && value.every((item) => typeof item === "string")
-  );
-};
-
-const joinNames = (value: unknown) => {
-  if (isArrayOfStrings(value)) { // Use the type guard function instead
-    return value.join(" ");
-  }
-
-  throw new Error("Parsing error!");
-};
-
-const createSections = (value: unknown) => {
-  if (isArrayOfStrings(value)) { // Use the type guard function instead
-    return value.map((item) => `Section: ${item}`);
-  }
-
-  throw new Error("Parsing error!");
-};
+users.indexOf("bryan");  // No error
 ```

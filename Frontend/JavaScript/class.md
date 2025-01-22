@@ -89,7 +89,7 @@ oldSchoolRabbit.squeak('stfu') // "The old school rabbit says 'stfu'"
 # Properties
 ## Methods
 - Methods are properties that hold function values. Typically a method needs to do something with the object on which it was called.
-- A private method/property (with the `#` prefix) can only be called from *inside* the `class` declaration that defines them. Regular properties can be created by just assigning to them, but *private properties **must** be declared* in the `class` declaration to be available at all:
+- A private method/property (with the `#` prefix) can only be called from *inside* the `class` declaration that defines them. Public properties can be created by just assigning to them, but *private properties **must** be declared* in the `class` declaration to be available at all:
 ```js
 class SecretiveObject {
   #max
@@ -109,11 +109,11 @@ class SecretiveObject {
 
 const hack = new SecretiveObject(10)
 console.log(hack.interrogate())  // valid
-console.log(hack.max)  // undefined
+console.log(hack.max)  // TypeError
 console.log(hack.getSecret())  // TypeError
 ```
 ### Getters, setters & `static`
-- You can define getters and setters to *secretly call* methods every time an object’s property is accessed:
+- You can define getters and setters to *intrinsically call* methods every time an object’s property is accessed:
 ```js
 let varyingSize = {
   get size() {
@@ -143,7 +143,7 @@ class Temperature {
 let temp = new Temperature(22);
 console.log(temp.fahrenheit); // 71.6
 
-temp.fahrenheit = 86;
+temp.fahrenheit = 86;  // Calling the setter
 console.log(temp.celsius);  // 30
 ```
 ## Instance vs static methods
@@ -177,7 +177,7 @@ console.log(Temperature.hasOwnProperty("fromFahrenheit")); // true
 ```
 
 # this
-- A function's `this` references the ==*execution __context__*== for that ***call***, determined entirely by *__how__ the function was **called***. A `this`-aware function can thus have a **different context** each time it's called, which makes it more flexible and reusable (sort of like *having dynamic scope*):
+- A function's `this` references the ==*execution __context__*== for that ***call***, determined entirely by *__how__ the function was **called***. A `this`-aware _function_ can thus have a **different context** each time it's called, which makes it more flexible and reusable (sort of like *having dynamic scope*):
 
 ```javascript
 // Implicit binding:
@@ -270,7 +270,7 @@ ask("in non-strict mode")     // "K in non-strict mode"
 askAgain("in strict mode")    // TypeError
 ```
 
-- `this` *__doesn't__ mean anything* inside of an arrow function. Therefore, it's the best practice to use arrow function if you want the "lexical `this`" behavior for a function:
+- `this` *__doesn't__ mean anything* inside of an arrow function. Therefore, it's best practice to use arrow function if you want the "lexical `this`" behavior for a function:
 ```javascript
 var this1 = {
     number: 123,
@@ -291,6 +291,33 @@ var w = {
 }
 
 w.ask("??") // "K ??"
+```
+- `this` also preserved for params:
+```ts
+function add(this: { x: number; y: number }) {
+  return this.x + this.y;
+}
+
+// Note that we're NOT declaring it as an arrow function
+function setValues(this: { x: number; y: number }, x: number, y: number) {
+  this.x = x;
+  this.y = y;
+}
+
+// Should pass
+it("Should add the numbers together", () => {
+  const calculator = {
+    x: 0,
+    y: 0,
+
+    add,
+    setValues,
+  };
+
+  calculator.setValues(1, 2);
+
+  expect(calculator.add()).toEqual(3);
+});
 ```
 
 - How to know ***when*** to use the arrow function: 
@@ -351,24 +378,31 @@ console.log(LengthList.fromArray([1, 2, 3]).length);  // 3
 ```
 
 ## Calling the parent constructor
-- You need to call `super()` in the constructor of the child class before you can use `this`. The `super()` call ensures that the parent class `constructor` is executed before we try to access `this` in the child class (which is important because, in this case, because if this new child class is to behave (roughly) like its parent, it is going to need the instance properties that its parent have):
+- You need to call `super()` within the child's constructor before you can use `this`. The `super()` call ensures that the parent class `constructor` is executed before we try to access `this` in the child class (which is important because, in this case, because if this new child class is to behave (roughly) like its parent, it is going to need the instance properties that its parent has):
 ```ts
 class Base {
-  constructor() {
-    console.log('Base constructor');
+  #x;
+  #y;
+
+  constructor(options?: { x: number; y: number }) {
+    this.#x = options?.x ?? 0;
+    this.#y = options?.y ?? 0;
   }
 }
 
+type ViewMode = "hidden" | "visible" | "selected";
+
 // `Derived` inherited `Base`
 class Derived extends Base {
-  constructor() {
+  #viewMode: ViewMode;
+// Same params passed into the constructor as its parent, and then the new `#viewMode` property
+  constructor(options?: { x: number; y: number; viewMode?: ViewMode }) {
     // console.log(this); >> Error: `super` must be called before accessing `this` in the constructor of a derived class.
-    super();
-    console.log(this); // Correct: `super` is called before accessing `this`.
+    super(options); // If you call the constructor with params then you must pass them along to the `super`
+    console.log(this.#viewMode); // Correct: `super` is called before accessing `this`.
   }
 }
-```
-- We can use `super.something` to call methods and getters on the superclass’s prototype, which is often useful.
+``` 
 ## Accessing parent methods
 - If you have a method that has the same name in a child class as in its parent, you can refer to parent *from the child* by using the `super.`:
 ```javascript
@@ -390,6 +424,7 @@ class AnotherWorkshop extends Workshop {
 var JSRecentParts = new AnotherWorkshop("K")
 JSRecentParts.speakUp("using super")      // "K USING SUPER"
 ```
+- We can use `super.something` to call methods and getters on the superclass’s prototype, which is often useful.
 ## `instanceof`
 - It is occasionally useful to know whether an object was derived from a specific class. The `instanceof` operator can, given an object and a `constructor`, tell you whether that object is an instance of that constructor:
 ```js

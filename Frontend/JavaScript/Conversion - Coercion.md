@@ -117,3 +117,20 @@ true > 1    
 
 1 > 1       // false  
 ```
+
+- The key differences between `||` and `??`: `??` is better for cases where falsy values (e.g. `0`, `""`, `false`) are _valid_ data you want to keep:
+```ts
+// || returns first "truthy" value
+console.log(false || 42);    // 42
+console.log(0 || 42);        // 42
+console.log("" || 42);       // 42
+console.log(null || 42);     // 42
+console.log(undefined || 42); // 42
+
+// ?? returns first "defined" value (i.e. not null/undefined)
+console.log(false ?? 42);    // false
+console.log(0 ?? 42);        // 0
+console.log("" ?? 42);       // ""
+console.log(null ?? 42);     // 42
+console.log(undefined ?? 42); // 42
+```

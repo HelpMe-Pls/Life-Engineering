@@ -40,6 +40,51 @@ _Sincerely,
 John Smith
 P.S. I'm sure you're busy, so if it's easier for you, I'd be happy to send my questions via email. Hope to connect with you soon!_
 - Having alternate options shifts their thinking from “Should I?” to “Which one?”
+#### Asking a friend for an introduction to one of their contacts
+- Send your friend a pre-formatted email to warm up, something like:
+
+    _Hey `Someone`,
+    I noticed you’re connected to Jennie Jones at Acme on LinkedIn. I would love to chat with her to get some advice about Acme. I promise to be respectful of her time._
+
+    _Would you mind connecting me? I can send you a pre-formatted introductory email to make things really easy for you. Is that OK?_
+
+    _Thanks,
+    Khoi_
+- If that `Someone`, said "yes", follow up with this:
+
+    Subject: Jennie, meet Khoi (considering interviewing at Acme). Khoi, meet Jennie.
+
+    _`Someone`, here’s a forwardable email. It should be ready to send, but please feel free to edit as needed!_
+
+    _Thanks,
+    Khoi_
+
+    —————————
+    _Khoi, please meet Jennie, who is an SVP at Acme.
+    Jennie, Khoi is a friend of mine and currently a project manager at Bluth Corp. He’s excellent at user-centered design and is curious about some of the opportunities at Acme. He wondered if you could spare 10 minutes to chat on the phone._
+
+    _Khoi, can you take it from here?_
+
+    _Thanks,
+    `Someone`_
+#### Warming up an old contact
+- Acknowledge that you’ve been out of touch and then move on to your point (don’t dwell on it):
+
+
+    _Hello `Someone`,_
+
+    _You and I met at the `Conference` last summer, where we talked about `The topic`. I’m currently at Bluth Corp working as a security researcher. I have to admit, I did a terrible job of keeping in touch after the conference. My apologies! But I hope it’s OK to reach out today._
+
+    _I’ve been doing some research on potential career paths and consulting is one that keeps coming up as a possible fit. I noticed you worked at Acme and -- if it’s OK with you -- I would love to ask you a few questions about your experiences at Acme._
+
+    _Do you have time for a 30 minute phone call next week? I’m free Wednesday, Nov 16 1:00pm–4:00pm Eastern or Thursday, Nov 17 2:30pm-4:00pm Eastern. I can also be flexible around your schedule._
+
+    _I would really appreciate it._
+
+    _Sincerely,
+    Khoi_
+
+    _P.S. I understand you’re busy, so if it’s easier for you, I’d be happy to send my questions via email. Thanks again._
 ### Asking the right questions
 - It is highly recommended to give your side of the story to set the context before asking a question, for example:
 	- _“I've been working at `z` company for 3 years, and it's been quite a ride. I was expecting to be working in a English speaking environment, but it turns out that I've only been working with Vietnamese. So, as someone who’s been in the `x` industry for `y` years, what has been the biggest surprise to you?”_
@@ -72,7 +117,6 @@ I’m reaching out to a friend there to learn all I can about Acme before I appl
 anyone else you think I should speak to, please let me know.
 Thanks again! `I’ll let you know how it goes`.
 Khoi_
-
 ### Ghosted ?
 - Send an email 3 days later, **replying to the original message**, like this:
     _Re: Hi from Scott -- would love to chat about Accenture
@@ -83,8 +127,7 @@ Khoi_
 ## For the joy of making new friends
 - Are you working on anything exciting recently?
 - What's your biggest goal right now?
-- What book/movie character is most like you? Why?
-
+- Which type of event/activity do you consider energy inducing?
 
 # Deep talk
 ## Questions

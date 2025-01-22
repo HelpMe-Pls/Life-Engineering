@@ -121,3 +121,56 @@ function processValue(val: string | number) {
    }
 }
 ```
+## Object properties inference
+- Prefer letting TS infer the type for your object properties to clean up your code:
+```ts
+type ButtonAttributes = {
+  type: "button" | "submit" | "reset";
+};
+
+const modifyButton = (attributes: ButtonAttributes) => {};
+
+// Prefer this:
+modifyButton({
+  type: "button",
+});
+
+// Over this:
+const buttonAttributes: ButtonAttributes = {
+  type: "button",
+};
+
+modifyButton(buttonAttributes);
+```
+## `Object.freeze`
+- `Object.freeze` has the same effect as `readonly` for an object, but only for the top-most level. Prefer using `as const` if you want to deeply apply the `readonly` effect:
+```ts
+const buttonAttributes = Object.freeze({
+  cancel: {
+    type: "button",
+  },
+  get: 'it'
+});
+// Hovering over `buttonAttributes` shows:
+// const buttonAttributes = Object.freeze({
+//   cancel: {
+//     type: string,  << not applied for nested levels
+//   },
+//   get: 'it'  << applied on top-most level 
+// });
+
+// Use `as const` instead:
+const buttonAttributes = Object.freeze({
+  cancel: {
+    type: "button",
+  },
+  get: 'it'
+}) as const;
+// Hovering over `buttonAttributes` shows:
+// const buttonAttributes = {
+//   readonly cancel: {
+//     readonly type: "button",
+//   },
+//   readonly get: "it"
+// });
+```

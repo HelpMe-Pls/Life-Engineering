@@ -404,3 +404,10 @@
 > [!important]- What's important
 > - What's important is ***wanting*** to connect, ***wanting*** to understand someone, ***wanting*** to have deep conversations, even when it is hard and scary, or when it would be so much easier to walk away.
 > - Achieving connection - authentic, meaningful connection - is the most important thing in life.
+
+# Man's Search For Meaning
+- d
+- d
+# Skin In The Game
+- d
+- d
