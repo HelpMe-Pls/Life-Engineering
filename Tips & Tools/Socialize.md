@@ -8,13 +8,16 @@
 	- Notice that if they do this trick on you, it's a cue to clarify your statements and gather feedback with something like "Does that make sense?" or "Any questions?". It's signals either confusion or skepticism. Your job is to figure out which one is it.  
 ## Gestures 
 - Flash your palm more often (especially on first impression). It signals that you have no bad intentions, unarmed. 
+- Handshake: thumb up & make it firm _just enough_ so that you grip their hand fully. Cupping (i.e. shake with both hands) signals warmth, so do it with a smile.
+	- _Not recommended_: If it gets adversarial, tighten your grip, pronate your palm and pull them in towards your body. 
 - Relax your shoulders, depress your scapular so that you maximize the distance between your earlobe and the side delts. It signals warmth.
 - A _slight_ head tilt or lean forward also signals warmth. Works best when paired with the lower eyelid flex. Use these intentionally. Overuse could make you look weak.
 - Triple nods: _slowly_ and gently nod three times in a row when they're telling you something good. It's like a non-verbal ellipsis. It signals warmth. 
 	- If you want to wrap up, give them a _fast_ triple-nod.
 - When you're discussing something technical, do the steeple hand gesture (keep it static, do _**not**_ tap your fingers). It signals competence.
+	- Aligning your elbows 45 degrees from your body and place them on the table also signals competence and confidence. 
 > [!danger]- Manipulative agreement
-> - When you're trying to persuade someone about your stories/statements, put your hand in front of your face and **_roll_** it (in **circular** motion) as if you're nodding with your hand (then you nod your head along). You know you got them when they actually nodding along.
+> - When you're trying to persuade someone about your stories/statements, put your hand in front of your face and **_roll_** it forward (in **circular** motion) as if you're nodding with your hand (then you nod your head along). You know you got them when they actually nodding along.
 ## Vocal cues
 - _**==End your statement with LOW intonations==**_. Statements end with a high pitch signal uncertainty and dishonesty. It signals that you're seeking validation, therefore, low competence.
 - Low intonation often indicates that a statement is complete and definitive. It conveys a sense of finality and certainty. Use it when you want to stand your ground. 

@@ -33,13 +33,11 @@ Lots of what applies to search engines also applies to other tools and social me
 #### Regular Updates
 - The more recently your site has been updated, the higher it will rank in the results.
 - You should aim to update your site’s content about once per week or more.
-
 #### Backlinks
 - A backlink is a link that goes to your page from another site. If other sites are linking to your page, it shows Google that you probably have helpful, accurate information.
 - The more reliable and successful the site that gives you a backlink is, the more that backlink will help your SEO.
-
 #### Views
-- It is what it is 
+- It is what it is. 
 - Use the Open Graph tags to improve the site's appearance on social media, so you can get more views:
 ```HTML
 <meta property="og:url"               content="http://www.nytimes.com/arts/international/when-great-minds.html" />
@@ -54,11 +52,10 @@ Lots of what applies to search engines also applies to other tools and social me
 - It is the percentage of people who come to your site but only visit one page before leaving. 
 - Google sees a high bounce rate as an indication of an unattractive website.
 - To reduce bounce rate: include similar articles at the end of each blog or page, suggesting other pages the user may find interesting.
-
 #### Optimize for Your Local Area
 - If you’re a local business rather than online only, you want to optimize your site for your local area.
 - Make sure your business name, address, and phone number are prominently displayed and consistent throughout your site.
 - It’s important to make sure Google Maps shows your correct contact information.
 ---
-
 # Deploy
+- To make it quick and easy, just opt for Vercel, Fly.io or Netlify. If you have enough resources, use [[DevOps#Docker |Docker|]] with a proper CI/CD pipeline.

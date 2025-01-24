@@ -10,7 +10,7 @@
           {
             "id": "2ed2b87e25932f50",
             "type": "tabs",
-            "dimension": 53.712480252764614,
+            "dimension": 53.001579778830965,
             "children": [
               {
                 "id": "e998ff104dd5ae6f",
@@ -32,12 +32,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/TypeScript/Patterns.md",
+                    "file": "Tips & Tools/English grammar.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Patterns"
+                  "title": "English grammar"
                 }
               },
               {
@@ -46,12 +46,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/TypeScript/Basic Types.md",
+                    "file": "Tips & Tools/Socialize.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Basic Types"
+                  "title": "Socialize"
                 }
               }
             ]
@@ -59,7 +59,7 @@
           {
             "id": "8cedd05142699eb5",
             "type": "split",
-            "dimension": 46.287519747235386,
+            "dimension": 46.998420221169035,
             "children": [
               {
                 "id": "c3184acf40a6477e",
@@ -231,7 +231,16 @@
   },
   "active": "e998ff104dd5ae6f",
   "lastOpenFiles": [
+    "Tips & Tools/Socialize.md",
+    "Tips & Tools/English vocab.md",
+    "Tips & Tools/English grammar.md",
+    "Tips & Tools/WIL from books.md",
+    "Frontend/Frameworks/Remix/Routing & Navigation.md",
+    "DevSecOps/DevOps.md",
+    "Frontend/Frameworks/Remix/Remix.md",
+    "Untitled.md",
     "Frontend/TypeScript/Basic Types.md",
+    "Frontend/Network/Development & Deploy.md",
     "Frontend/TypeScript/Patterns.md",
     "Frontend/TypeScript/Fundamentals.md",
     "Frontend/TypeScript/TypeScript.md",
@@ -239,24 +248,15 @@
     "Frontend/TypeScript/Advanced.md",
     "Frontend/JavaScript/class.md",
     "Frontend/JavaScript/Closure.md",
-    "Frontend/Frameworks/Remix/Remix.md",
-    "Tips & Tools/English vocab.md",
     "Frontend/JavaScript/Conversion - Coercion.md",
     "Frontend/JavaScript/Types.md",
     "Frontend/TypeScript/Type Transformation.md",
     "Frontend/JavaScript/Objects.md",
-    "Tips & Tools/Socialize.md",
     "Tips & Tools/VSCode.md",
     "Frontend/JavaScript/Nested Scope.md",
     "Tips & Tools/Interview prep.md",
-    "Tips & Tools/WIL from books.md",
     "Tips & Tools/You as an interviewer.md",
-    "Tips & Tools/English grammar.md",
     "Tips & Tools/DSA.md",
-    "Frontend/Libraries/React/Hooks.md",
-    "Backend/NodeJS/NodeJS.md",
-    "Tips & Tools/Tips.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
     "Tips & Tools/maslows.png",
     "Pasted image 20240902195101.png",
     "Frontend/JavaScript/JS Overview.png",

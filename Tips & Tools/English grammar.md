@@ -120,3 +120,4 @@
 - "Grist for one's mill": something turned to advantage or use 
 - "M.O": Modus Operandi - a person's or organization's typical method of operation (as a criminal's characteristic way of committing crimes)
 - "Play by ear": improvise or do something without a plan or preparation.
+- "Out and about": free, not being confined or restricted to a specific location

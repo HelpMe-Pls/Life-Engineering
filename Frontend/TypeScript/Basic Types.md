@@ -261,7 +261,7 @@ type IconProps = {
 const Icon = ({ color }: IconProps) => {
   // ...
 };
-<Icon color="" />; // "primary" & "secondary" is suggested here after applying the `string & {}` trick
+<Icon color="" />; // "primary" & "secondary" is suggested here after applying the `string & {}` trick, and any other valid color is also valid, e.g. "red"
 ```
 - Notice that this is just a temporary fix. Someday, `string | "literal"` will just work.
 ## Discriminated union

@@ -44,6 +44,8 @@ cogent (adj): convincing, pertinent
 
 cognizant (adj): mindful, conscious, aware
 
+epistemic (adj): cognitive
+
 shrewd (adj): discerning, based on good understanding or judgment
 
 ==tactful== (adj): tế nhị, khéo léo (in social context)
@@ -246,6 +248,8 @@ conjugate (adj-v-n): coupled, join together, coalesce
 
 exuberant (adj): abundant of energy, excitement and happiness
 
+titillating (adj): pleasantly stimulating or exciting, erotic
+
 jovial (adj): jolly, festive, merry, (in) jest
 
 ==vivacious== (adj): sprightly, zesty, lively in temper
@@ -259,6 +263,8 @@ prolific (adj): fruitful, productive
 equanimity (n): calmness, tranquility
 
 delirium (n): not able to think or speak clearly, usually because of illness
+
+bloviate (v): speak or write verbosely and windily
 
 ==panacea== (n): a cure-all remedy for all ills or difficulties
 
@@ -1004,6 +1010,8 @@ capisce (slang): nghe chưa? Hiểu chưa?
 
 jive (slang): talk that has no meaning or is dishonest
 
+steward (v-n): manager
+
 magnate (n): boss, trùm, jefe (<hef-fei>), 
 
 tenement (n): residence, apartment, dwelling
@@ -1126,3 +1134,6 @@ vestige (n): footprint, a trace, mark, or visible sign left by something
 
 trough (n): cái máng heo; a conduit/drain or channel for water; the low point in a business cycle
 
+contraption (n): device, gadget
+
+lodge (v-n): file (a complaint), a resort hotel (inn)
