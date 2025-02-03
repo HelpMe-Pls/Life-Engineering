@@ -28,10 +28,13 @@
 - The word "shall" is only used for informal/personal *suggestions* ("Shall we go to...") but *not* for the future tense.
 	- The negative "shan’t" or "shall not" is almost never used in modern English today.
 - **Modal verbs**: only one should be used, for example:
-	- ~~might can~~ -> might be able to
-	- ~~should must~~ -> `must` or `should`
-	- ~~does might~~ -> might
+	- ~~might can~~ → might be able to
+	- ~~should must~~ → `must` or `should`
+	- ~~does might~~ → might
 - **Auxiliary collocations**: Do/Does/Did must ***not*** be collocated with modal verbs.
+- "**Any**" can come before both plural and singular nouns. With singular nouns, it be replaced with "a" or "an" for _countable_ singular nouns:
+	- ~~Is there any apple in the fridge?~~ → _Is there `an` apple in the fridge?_
+	- _Is there `any` coffee left?_ ("coffee" is an _uncountable_ singular noun)
 
 ## Commonly misspelled
 - Nouns that end with "-tance" or "-tence":

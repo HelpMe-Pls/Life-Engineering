@@ -31,13 +31,12 @@ for (int a : arrA) {
 	 }
 }
 ```
-
 ### Time complexity
 - It is the variation (increase or reduction) in execution time (*how long* it takes) when the *number of operations* in an algorithm increases or decreases. It is an important tool as it helps us ***estimate the efficiency*** of an algorithm and *identify bottleneck*s in the code.
 - To estimate the time complexity, we need to calculate ***the number of times*** an operation is executed (in proportion to the *size and cost* of input): 
 	- $O(1)$ - Constant time: where `1` represents the ***same*** amount of time required for an algo to execute (i.e. it's ***independent*** of the size of the input). E.g. accessing an array element
-	- $O(n)$ - Linear time: the time it takes to run the algorithm is increased proportionately as the size of input `n` increases (e.g. traversing an array). $O(\sqrt{n})$ time complexity could be an improvement for $O(n)$ if you can't get it to $O(log\enspace n)$  
-	- $O(log\enspace n)$ - Logarithmic time: basically means execution time goes up *linearly* while the input size of `n` goes up *exponentially* (in CS we assume the base of `log` is `2`). Another way to put it: $\log_a{b}$ is the *number of times* you can divide `b` by `a` before reaching `1` (the base case), i.e. the number of levels in a recursion tree where it's divided by a factor of `a` from the input size `b`. Binary search is an example.
+	- $O(n)$ - Linear time: the time it takes to run the algorithm is increased proportionately as the size of input `n` increases (e.g. traversing an array). $O(\sqrt{n})$ time complexity could be an improvement for $O(n)$ if you can't get it to $O(log\enspace n)$ 
+	- $O(log\enspace n)$ - Logarithmic time: basically means **execution time** goes up *linearly* while the **input size** of `n` goes up *exponentially* (in CS we assume the base of `log` is `2`). Another way to put it: $\log_a{b}$ is the *number of times* you can divide `b` by `a` before reaching `1` (the base case), i.e. the number of levels in a recursion tree where it's divided by a factor of `a` from the input size `b`. Binary search is an example.
 	- $O(n^2)$ - Quadratic time: it is the reverse of logarithmic time, i.e. execution time grows *exponentially* proportional to the input size. E.g. nested loops iterating the ***same*** array, or search if 2 arrays have a common element.
 ```js
 // O(1):
@@ -51,8 +50,7 @@ for (let i = 0; i < arr.length; ++i) {
 }
 
 // O(log n):
-// When you see a problem where the number of elements in the
-// problem space gets halved each time, that will likely be a 0(log n) runtime
+// When you see a problem where each iteration doubles the previous value until reaching n (or halves the previous value until reaching 1), then it'll likely be an O(log n) runtime problem
 for (let i = 1; i < n; i*=2)  {
 	// For instance, if `n = 64`, then:
 	// `log n` in this case is log base 2 of 64, which is 6
@@ -65,7 +63,6 @@ for (let i = 1; i < n; i*=2)  {
 
 - Generally speaking, when you see an algorithm with multiple recursive calls, you're looking at exponential runtime.
 - To improve time complexity: terminate the iteration by including a `return` statement or using a Boolean dependent loop if you're searching for a value  
-
 ### Space complexity
 - It measures the total [*amount of memory*](https://www.scaler.com/topics/data-structures/space-complexity-in-data-structure/) that an algorithm or operation ***needs*** to run ***according to*** its input size.
 - `Space complexity = Input space + Auxiliary space`:
@@ -88,7 +85,6 @@ for i=0 to n
 ---
 
 # Tools and techniques
-
 ## Data Structures
 - Data structures are the containers in which programmers can store the data in an organized way such that it can be used later efficiently.
 - **Static data structures** (e.g. arrays) are of fixed size and memory is allocated at the compile time by the compiler and deallocates when they go out of scope or program ends. 
@@ -141,7 +137,6 @@ console.log(myTrip[length], myTrip.length);  // 21500 2
   Dynamic languages offer more fluidity, sometimes calling for the size to be set and do not require the type to be specified before use. Such an instance would be stored on a heap. Thus, the array remains unaffected when the function ends, and the stack is discarded. A heap is less organized and it can take more time to access the elements. You should consider the trade-off between size and convenience, or accessibility versus speed.
 - Making a shallow copy of an array optimizes memory usage; however, you must ensure that no unexpected changes are inadvertently made to an array shared by two variables.
 - A matrix is a two-dimensional array (or an array composed of arrays) that can act like a table. It can be used to represent rows and columns. A matrix will exhibit a *square* shape with the *same* number of columns and rows. Two index locations are required for a matrix, e.g. `arrayName[rowIndex][columnIndex]`.
-
 #### Objects
 - An object is a programming concept that means that a structure has both state/attributes and behavior/methods (ability to perform some action).
 - A first-class object is an entity within a programming language that can:
@@ -231,13 +226,11 @@ interface LinkedList<T> {
 - **Map**: when the relationship between ==_**keys** and **values**_== is important. Keys in a Map can be ***of any type*** and are not limited to sequential integer indices like in an Array. A Map has its own separate prototype chain based on `Map.prototype` which inherits instance methods from `Object.prototype` and some extra methods (such as `set()`, `get()`, `has()`, `delete()`, `clear()`,...). Use Map when you want *frequent* $O(1)$ **retrieval**/deletion values based on their key, e.g. writing a data structure that can quickly search and update a large set of values.
 - **Set**: when you want an ***unique*** iterable collection of ***values*** (i.e. a Set will *automatically* remove duplicated values) , *frequent* $O(1)$ **search**/deletion and *don't* need random item retrieval (i.e. keys are *not* important). 
 > Map and Set are built-in objects and they can have elements of different types. Keys in Object, Array, Map are unique.
-
 #### Stacks and queues
 - Stacks and queues employ *sequential* access (i.e. ***items are stored in the order in which they were added***). This limited approach to holding data can be very useful when you want to control *how* the data is accessed (i.e. LIFO for Stack and FIFO for Queue)
 - An implementation of Stack in JS is applying `.push()` and `.pop()` on an array. For Queue, it's `.push()` and `shift()`.
 - A common usage for stacks is to keep your browser history. Each time you hit the "back" button, the previously visited page loads in order.
 - Queue has some real-world benefits when implementing things like CPU and disk scheduling, where it is important to deal with tasks as they arrive.
-
 #### Trees
 - Trees are a powerful non-linear data structure that gives you great flexibility in *adding and searching* values. The non-linear nature of a tree means that there are many ways of traversing the data.
 - A tree is a hierarchy of nodes that are linked with one another:
@@ -858,12 +851,11 @@ function pow(x, n) {
 }
 ```
 - Recursion vs regular loop: with recursion, you can simply call the function with a different input (diminishing structure) and it will *return a breakdown of the required steps*. Readability is a strong plus for recursion. Sometimes when a problem requires many checks (i.e. base cases), a loop can quickly become unwieldy. In some cases, running through a simple loop is computationally cheaper than calling a function multiple times. 
-  Often, though, recursive solutions are helpful in giving up some efficiency in order to make the program more straightforward. Generally, these are problems that require exploring or processing several “branches”, each of which might branch out again into even more branches. 
-  You should generally start by writing something that’s correct and easy to understand. The art of programming lies in achieving a balance between human-friendliness and machine-friendliness.
+	- Often, though, recursive solutions are helpful in giving up some efficiency in order to make the program more straightforward. Generally, these are problems that require exploring or processing several “branches”, each of which might branch out again into even more branches. 
+- You should generally start by writing something that’s correct and easy to understand. The art of programming lies in achieving a balance between human-friendliness and machine-friendliness.
 - It is highly recommended to employ a recursive approach as part of a `d&c` solution where the problem is broken into smaller steps and repeated to come upon the optimum solution.
 - Recursion increases computational cost as resources are required to make a function call. 
-  However, the computation from each result will be *retained on the [call stack](https://www.codingninjas.com/codestudio/library/recursion-and-stack)*. 
-  This can be useful when computing hierarchical problems or problems where one can benefit from *knowing which steps resulted in a given outcome* like traversing a graph.
+	- However, the computation from each result will be *retained on the [call stack](https://www.codingninjas.com/codestudio/library/recursion-and-stack)*.  This can be useful when computing hierarchical problems or problems where one can benefit from *knowing which steps resulted in a given outcome* like traversing a graph.
 - Beware of the maximal recursion depth of the JavaScript engine. We can rely on it being 10000, some engines allow more, but 10000 is probably out of limit for the majority of them.
 
 ### Divide and Conquer
@@ -872,7 +864,7 @@ function pow(x, n) {
 	- In the conquer step, every task associated with a given segment is solved.
 	- The *optional* last step, combine, is combining all the solved segments.
 	- Use the Master Theorem to determine the complexity of a `d&c` approach:
-		- Assuming the segments (subproblems) have equal size, we have:
+		- Assuming the segments (sub-problems) have equal size, we have:
 						  $T(n) \leq aT\left(\frac{n}{b}\right) + O(n^d)$
 		- Where `a`, `b`, `d` are independent of the input size `n`:
 			- $aT\left(\frac{n}{b}\right) + O(n^d)$ is a constant for the base case (for all sufficiently small `n`)

@@ -80,7 +80,8 @@
 # During the interview
 - Listen until the question is finished, and take a breath. Ask clarifying questions if you didn't really get what their intention is about.
 > [!info]- Connect over business
-> - If you're too stressed out, try to reframe your mindset by thinking: "We're not here for business, we're here to connect."
+> - If you're too stressed out, try to reframe your mindset by thinking: "We're not here for business, we're here to connect. I'm here to have an _interesting_ conversation about my job." 
+> - If the interviewer mentioned anything that you are also interested in, whether it be their work or a hobby, that's your chance to show warmth.
 >- Just make it pop with your enthusiasm. Work on your facial expressions. Smile. Chill. Pause and raise your eyebrows if their question is good. Connect with them and you'll have the business you want.
 - Don't answer their questions just for the sake of answering questions, _==it's more about **delivering your key message**==_. Ideally, your answers should be able to implicitly reassure them (or at least give a hint) that it's beneficial for them to have you on their team.
 	- If they're discussing the problems they're facing, try your very best to ==_relate and **show empathy**_==. That's how you leave a good impression with them on a subconscious level.
@@ -128,17 +129,27 @@
 	5. Outside of Work: a bit about hobbies, adventurous,...
 	6. Wrap Up: I'm looking now for something new, and your company came up. I've always loved the connection with the user, and I really want to be a part of a great team.
 ## Technical
-- Coding questions tend to be vague and underspecified on purpose to allow the interviewer to gauge the candidate's attention to detail and carefulness. Ask at least 2-3 clarifying questions.
+>[!important]- Never memorize the solution
+> - You're a problem solver, capable of adapting and generalizing your solutions, not bound to any specific problem. Be water, my friend.
+- Coding questions tend to be vague and underspecified on purpose to allow the interviewer to gauge the candidate's attention to detail and carefulness. Ask at least 2-3 clarifying questions, something like:
+	- Will the input only have integers, or could there be other types?
+	- Will the input be sorted or unsorted?
+	- Is the input guaranteed to have elements or could it be empty?
+	- What's the expected input size?
+	- What should I do if an invalid input is given?
 > Make sure you understand **exactly** what they are asking. Do not ignore any piece of information given.
 - Your initial approach should be discussing with the interviewer and verify that your interpretation of the problem is on the right track with [pseudo code](https://www.interviewkickstart.com/learn/how-to-write-pseudocode) (the simplest form can be just a text-based line-by-line description that details the requirements). 
 - You should be vocal about every solution that you could think of (don't go too much into implementation details just yet), then *narrow down and explain why you're elected one approach over another* (including analysis of the time and space complexity, and you'd prefer choosing the one with *lower time complexity*).
 - Discuss the tradeoffs of each approach with your interviewer as if the interviewer was your coworker and you all are collaborating on a problem.
 > [!danger] Show potential
 > - Coding interview rounds are there to assess fundamental knowledge, capability, and _**learning potential**_.
+> - The more vocal you are, the easier it is for the interviewer to help you. If you can't capitalize on that, then it's skill issue.
 > - Ask clarifying questions that show your integrity, ==**_collaboration_**==, and ability to be resourceful.
-- If the problem appears too hard to even come up with pseudo code, walk through the brute force solution and look for areas to narrow down the goal, then optimize it.
+> - If they are giving you a hint, it is because they want you to succeed. It is **extremely** important that you are receptive to what the interviewer says at this stage.
+> - It doesn't matter how well you did on the technical portion if the interviewer doesn't like you in the end. After all, it's the human that you're working with, not the machines.
+- If the problem appears too hard to even come up with pseudo code, walk through the brute force solution (**while acknowledging** that it is a suboptimal solution) then look for areas to narrow down the goal and optimize it.
 - Even if you can't come up with the code or DSA, don't fret. Always strive to demonstrate your reasoning and the follow the [[Technical#Best practices|best practices]] that you know of. *When possible, always use code that has been shown to be effective. Don't try to reinvent the wheel.*
-> Solve the problem **conceptually** first > Use the appropriate tools/DSA > Optimize the solution.
+> Solve the problem **conceptually** first → Use the appropriate tools/DSA → Optimize the solution.
 
 ## Behavioral
 - Typically, behavioral interview [questions](https://www.techinterviewhandbook.org/behavioral-interview-questions) can be split into several types:

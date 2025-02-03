@@ -32,12 +32,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/English grammar.md",
+                    "file": "Frontend/TypeScript/Type Transformation.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "English grammar"
+                  "title": "Type Transformation"
                 }
               },
               {
@@ -46,15 +46,16 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/Socialize.md",
+                    "file": "Tips & Tools/Technical.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Socialize"
+                  "title": "Technical"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -120,7 +121,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -229,12 +231,18 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "e998ff104dd5ae6f",
+  "active": "f02798b2e6d19a18",
   "lastOpenFiles": [
-    "Tips & Tools/Socialize.md",
+    "Frontend/TypeScript/Fundamentals.md",
+    "Tips & Tools/Tips & Tools.md",
+    "Tips & Tools/DSA.md",
     "Tips & Tools/English vocab.md",
     "Tips & Tools/English grammar.md",
+    "Tips & Tools/Technical.md",
+    "Tips & Tools/Interview prep.md",
     "Tips & Tools/WIL from books.md",
+    "Tips & Tools/Socialize.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
     "Frontend/Frameworks/Remix/Routing & Navigation.md",
     "DevSecOps/DevOps.md",
     "Frontend/Frameworks/Remix/Remix.md",
@@ -242,7 +250,6 @@
     "Frontend/TypeScript/Basic Types.md",
     "Frontend/Network/Development & Deploy.md",
     "Frontend/TypeScript/Patterns.md",
-    "Frontend/TypeScript/Fundamentals.md",
     "Frontend/TypeScript/TypeScript.md",
     "Frontend/TypeScript/Generics.md",
     "Frontend/TypeScript/Advanced.md",
@@ -252,11 +259,6 @@
     "Frontend/JavaScript/Types.md",
     "Frontend/TypeScript/Type Transformation.md",
     "Frontend/JavaScript/Objects.md",
-    "Tips & Tools/VSCode.md",
-    "Frontend/JavaScript/Nested Scope.md",
-    "Tips & Tools/Interview prep.md",
-    "Tips & Tools/You as an interviewer.md",
-    "Tips & Tools/DSA.md",
     "Tips & Tools/maslows.png",
     "Pasted image 20240902195101.png",
     "Frontend/JavaScript/JS Overview.png",

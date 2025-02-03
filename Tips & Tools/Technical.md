@@ -27,6 +27,7 @@
 - Apply common [[DSA#Tools and techniques|data structures and algorithms]] at the problem. 
 
 ### Optimization
+- If they ask you something like: "Do you think the algorithm could be improved in terms of complexity?", then the answer is _usually_ yes, especially if your algorithm is slower than $O(n)$.
 - Initial approach for optimizing your solution: 
 	- Modularize the code into a function that is callable repeatedly and reuse the code when possible.
 	- If there are portions of your code that are no longer required as a result of modularizing, or as a result of an avenue of thought that was not completed, remove it.
@@ -104,9 +105,9 @@ def contains_string(search_term, strings):
 - Use variable names that explain your code (i.e. long variable names are acceptable)
 - Ask for permission to use native helper functions without having to implement them (e.g. `reduce`, `filter`, `min`, `max`, `push`,... should all be ok to use)
 - Write in a modular fashion, going from higher-level functions and breaking them down into smaller helper functions. 
-  The nice thing about the modular code is that it's easily testable because each component can be verified separately. As code gets more complex, it becomes increasingly important to write it in a modular way. This will make it easier to read and maintain. Your interviewer wants to see you demonstrate these skills in your interview:
-	- Let's say you're asked to build a car. You can just write a few high level functions first: `gatherMaterials()`, `assemble()`. 
-	- Then break down `assemble()` into smaller functions, `makeEngine()`, `getWheels()`, `constructCarFrame()`. 
+	- The nice thing about the modular code is that it's easily testable because each component can be verified separately. As code gets more complex, it becomes increasingly important to write it in a modular way. This will make it easier to read and maintain. Your interviewer wants to see you demonstrate these skills in your interview:
+		- Let's say you're asked to build a car. You can just write a few high level functions first: `gatherMaterials()`, `assemble()`. 
+		- Then break down `assemble()` into smaller functions, `makeEngine()`, `getWheels()`, `constructCarFrame()`. 
 > **If you get confused or nervous, take a break.** No one is going to mark you down for saying "Do you mind if I take five minutes to work through this and get back to you?" in middle of the interview.
 - Use a mix of functional and imperative programming paradigms:
 	- Pure functions are easier to reason about and can help to reduce bugs in your implementation.
@@ -129,6 +130,7 @@ def contains_string(search_term, strings):
 - Do not argue with the interviewer. They may be wrong but that is very unlikely given that they are familiar with the question.
 ---
 ## Tips
+- Check [this](https://leetcode.com/explore/interview/card/cheatsheets/720/resources/4725) out.
 - Traversing 2 arrays/strings: Instead of having nested `for` loops, try using a `while` loop with the indexes as variable:
 ```java
 // Check if you can insert ONE character into s1 to make s2 (if s1.length < s2.length)
@@ -151,3 +153,8 @@ boolean oneEditInsert(String s1, String s2) {
 ```
 - Use a hash table. Hash tables are widely used in interview questions and should be at the top of your mind.
 - When you find bugs (and you probably will), you should of course fix them. But don't just make the first correction you think of. Instead, carefully analyze why the bug occurred and ensure that your fix is the best one.
+### Input size
+- The given input size can help you figure out the desired algorithm. For example:
+	- if `n` is very small, it is likely backtracking. 
+	- If `n` is around `100 - 1000`, an $O(n^2)$ solution might be optimal. 
+	- If `n` is very large, then you might need to do better than $O(n)$.

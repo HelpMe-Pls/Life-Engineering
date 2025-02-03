@@ -1137,3 +1137,5 @@ trough (n): cái máng heo; a conduit/drain or channel for water; the low point 
 contraption (n): device, gadget
 
 lodge (v-n): file (a complaint), a resort hotel (inn)
+
+euphemism (n): nói giảm nói tránh

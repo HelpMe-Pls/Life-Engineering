@@ -439,5 +439,63 @@
 - He who has a why to live can bear almost any how.
 - The meaning of your life is to help others find the meaning of theirs.
 # Skin In The Game
-- d
-- d
+## Responsibility
+- In general, when you hear someone invoking abstract modernistic notions, you can assume that they got some education (but not enough, or in the wrong discipline) and have too little accountability.
+- Freedom entails risks - real skin in the game. Freedom is never free. 
+	- Freedom is always associated with risk taking, whether it leads to it or comes from it.
+	- Being reviewed or assessed by others matters if and only if one is subjected to the judgment of future - not just present - others. 
+## Society
+- Societies were run by risk takers, not risk transferers.
+	- Bureaucracy is a construction by which a person is conveniently separated from the consequences of his or her actions.
+- Decentralization reduces large structural asymmetries.
+- The curse of modernity is that we are increasingly populated by a class of people who are better at explaining than understanding.
+- What is presented as good for you is not really good for you but certainly good for the other party.
+> Sympathy for all would be tyranny for thee, my good neighbor.
+- What has been lost for the benefit of all must be made up by the contribution of all.
+- The majority rule leads to fluctuations around the average, with a high rate of survival. The minority rule produces low-variance in outcomes.
+- Every organization wants a certain number of people associated with it to be deprived of a certain share of their freedom.
+	- Someone who has been employed for a while is giving you strong evidence of submission.
+	- A slave has more downside. The best slave is someone you overpay and who knows it, terrified of losing his status.
+	- The more you have to lose, the more fragile you are.
+	- Whatever you do, just don't be a dog claiming to be a wolf. 
+- True equality is equality in probability.
+- The wealth process is dominated by winner-take-all effects.
+## Risk
+- The same mechanism of transferring risk also impedes learning. 
+- If you do not take risks for your opinion, you are nothing.
+- It is dishonorable to let others die in your stead.
+	- Cutting corners is dishonest.
+- Asymmetry in risk bearing leads to imbalances and, potentially, to systemic ruin.
+	- Skin in the game prevents systems from rotting.
+- Risk taking makes you look superficially less attractive, but vastly more convincing.
+- What matters isn't what a person has or doesn't have; it is what he or she is afraid of losing.
+	- Losing an argument to some lesser person exposes you more than if you lose to some hotshot.
+- If you do not undertake a risk of real harm, reparable or even potentially irreparable, from an adventure, it is not an adventure.
+	- Scars signal skin in the game.
+- In probability, volatility and time are the same.
+## Efficacy
+- You want maximal free time, not maximal activity, and you can access your own "success" according to such metrics.
+- Statistics isn't about data but distillation, rigor, and avoiding being fooled by randomness.
+## Virtue
+- We know with much more clarity what is bad than what is good.
+- Conduct yourself toward your parents as you would have your children conduct themselves toward you.
+- Those who talk should do and only those who do should talk.
+- Skin in the game comes with conflict of interest.
+- To make ethical choices you cannot have dilemmas between the particular (friends, family) and the general.
+> You can define a free person precisely as someone whose fate is not centrally or directly dependent on peer assessment.
+- Stay human, take as much as you can, under the condition that you give more than you take.
+## Faith
+- The human nature of Christ makes the divine possible for all of us.
+- F
+## Rationale
+- By definition, what works cannot be irrational.
+- Most of what is called "irrational" comes from misunderstanding of probability.
+## Misc
+- It is easier to know that something is wrong than to find the fix. Actions that remove are more robust than those that add because addition may have unseen, complicated feedback loops.
+> It is at the foundation of evolution that systems get smart by elimination.
+- What matters in life isn't how frequently one is "right" about outcomes, but how much one makes when one is right.
+- You may be beneficially exposed to rain, but not to floods.
+- The life expectancy of the nonfragile lengthens with time.
+- An addictive substance is like a magical potion that gives remarkable powers to those seeking it, but not those drinking it. 
+- The longer an idea has been around without being falsified, the longer its future life expectancy.
+- Men feel the good less intensely than the bad. The good is not as good as the absence of the bad.
