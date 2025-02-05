@@ -172,4 +172,105 @@ function log(opts: {
   }
 }
 ```
+### Gotcha
+- You can define a new type _with the same name_ from an existing value using `typeof`:
+```ts
+// In utils.ts:
+export const Logger = {
+  log: (message: string) => {
+    console.log(message);
+  },
+  info: (message: string) => {
+    console.info(`INFO: ${message}`);
+  },
+  warn: (message: string) => {
+    console.warn(`WARNING: ${message}`);
+  },
+  error: (message: string) => {
+    console.error(`ERROR: ${message}`);
+  },
+};
+
+export type Logger = typeof Logger;
+
+// Importing both of them in another file:
+import { Logger } from "./utils.ts";
+
+const myApp = (logger: Logger) => {  // Used as a type
+  logger.log("Hello");
+  logger.info("Hello");
+  logger.warn("Hello");
+  logger.error("Hello");
+};
+
+myApp(Logger);  // Used as a value
+```
+## Creating types from function
+- Use the `Parameters` util type to capture the type from a dynamic param:
+```ts
+const makeQuery = (
+  url: string,
+  opts?: {
+    method?: string;
+    headers?: {
+      [key: string]: string;
+    };
+    body?: string;
+  },
+) => {};
+
+// Assuming `opts` is dynamic:
+type MakeQueryParameters = Parameters<typeof makeQuery>[1]; // This wouldn't work if you're not using `typeof`
+
+const options: MakeQueryParameters = {
+// These properties are now suggested by TS Server
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ message: "Hello!" }),
+};
+
+makeQuery("https://api.example.com/data", options);
+```
+
+- We can also dynamically infer the _returned type_ of a **function** with the `ReturnType` util. If the function is asynchronous, then wrap the type with `Awaited` to get the actual returned type, not the promise:
+```ts
+const createUser = (id: string) => {
+// Assuming the return value here is dynamic:
+  return {
+    id,
+    name: "John Doe",
+    email: "example@email.com",
+  };
+};
+
+type User = ReturnType<typeof createUser>;
+
+const printUserInfo = (user: User) => {
+// `user.` is now suggested by TS Server:
+  console.log(`User ID: ${user.id}`);
+  console.log(`Name: ${user.name}`);
+  console.log(`Email: ${user.email}`);
+};
+
+const newUser = createUser("123");
+printUserInfo(newUser);
+
+//---------------------------------------------------------
+// For async function:
+const fetchUser = async (id: string) => {
+  return {
+    id,
+    name: "John Doe",
+    email: "example@email.com",
+  };
+};
+// Wrap it with `Awaited`
+type User = Awaited<ReturnType<typeof fetchUser>>;
+```
+
+> [!Warning]- `Parameters` and `ReturnType` only accepts `typeof` a function, **not** an object.
+
+
 

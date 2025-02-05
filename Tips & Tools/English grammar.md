@@ -101,7 +101,7 @@
 - ill-equipped: under-prepared
 - disarming simplicity: dead simple
 ## Proverbs, idioms, phrases
-- "That one's a lemon": a "lemon" product is one that is disappointing or unsatisfactory.
+- "That one's a lemon": a "lemon" product is one that is disappointing or unsatisfactory
 - "By the same token": for the same reason
 - "For some reason that escapes me": Inexplicably, I can't understand why
 - "In the finer print": in the details, in the additional terms
@@ -112,7 +112,7 @@
 - "fubar": Fucked Up Beyond All Recognition
 - "Keep abreast of `sth`": stay informed about
 - "Out of the loop": lack knowledge about something that others are aware of
-- "A trophy husband": a young, attractive man who is married to an older, wealthier woman.
+- "A trophy husband": a young, attractive man who is married to an older, wealthier woman
 - "Pigeonholed": being limited to one role or set of responsibilities; labeling people based on stereotypes
 - "Red herring": something intended to distract attention from the real problem
 - "Red tape": thủ tục hành chính
@@ -122,5 +122,6 @@
 - "To rail in": to criticize harshly or condemn
 - "Grist for one's mill": something turned to advantage or use 
 - "M.O": Modus Operandi - a person's or organization's typical method of operation (as a criminal's characteristic way of committing crimes)
-- "Play by ear": improvise or do something without a plan or preparation.
+- "Play by ear": improvise or do something without a plan or preparation
 - "Out and about": free, not being confined or restricted to a specific location
+- "Beat me to it": someone else did something before you could

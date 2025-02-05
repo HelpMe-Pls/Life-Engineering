@@ -32,7 +32,7 @@ const findUsersByName = (
   }[],
 ) => {
   const searchParamsName = searchParams.name;
-  // let searchParamsName = searchParams.name; // Also works with `let`!
+  // let searchParamsName = searchParams.name; >> Also works with `let`!
   if (searchParamsName) {
     return users.filter((user) => {
       return user.name.includes(searchParamsName);
@@ -41,6 +41,26 @@ const findUsersByName = (
 
   return users;
 };
+
+// The non-null assertion or type casting also works, but less safe:
+const findUsersByName = (
+  searchParams: { name?: string },
+  users: {
+    id: string;
+    name: string;
+  }[],
+) => {
+  if (searchParams.name) {
+    return users.filter((user) => {
+      return user.name.includes(searchParams.name!);
+      // or this: `return user.name.includes(searchParams.name as string);`
+    });
+  }
+
+  return users;
+};
+
+// Optional chaining also works, but again, it is recommended that you handle the exception rather than quietly dismissing it.
 ```
 
 ### Assigning types to variables
@@ -179,8 +199,16 @@ export const fetchLukeSkywalker = async () => {
 // TS won’t raise a compile-time error even if the data doesn’t match the `LukeSkywalker` interface.
   return data as LukeSkywalker;
 };
+
+//------------------------------------
+// It is recommended that you choose type annotation over type assertion:
+const res: LukeSkywalker = fetchLukeSkywalker()  // Type annotation, safer
+const res = fetchLukeSkywalker() as LukeSkywalker  // Type assertion
 ```
-> [!warning] The `as` assertion should be seen as `lying` to TS. What you **actually** need is E2E type safety, using tools like `tRPC` or `Remix`
+
+> [!warning] Prefer type annotation over type assertion
+> - The `as` assertion should be seen as `lying` to TS. What you **actually** need is E2E type safety, using tools like `tRPC` or `Remix`
+
 - Practical cases are when you need to make a variable to be read-only, or typing errors in a `catch` block:
 ```ts
 const tryCatchDemo = (state: "fail" | "succeed") => {
@@ -251,6 +279,7 @@ const buttonsToChange: {
 }[]
 ```
 > There's no cost to using `as const` in your code, as it disappears at runtime.
+
 ### The `in` keyword
 - Most commonly used to check if a property exists in an _**object**_ (e.g. narrowing down the chosen type in a union):
 ```ts
@@ -343,9 +372,9 @@ const myFunction = (isFocused: boolean): void => {}
 type FocusListener = (isFocused: boolean) => void; // Returning a `void` value means returning "no value"
 
 // Because, with the first approach, returning an empty object would cause an error:
-const myFunction = (isFocused: boolean): void  => { return {} } // TS ERROR
+const myFunction = (isFocused: boolean): void  => { return {} } // ERROR
 // But with the second approach, it won't:
-const myFunction: FocusListener = () => { return {} } // TS valid, because an empty object means "no value"
+const myFunction: FocusListener = () => { return {} } // Valid, because an empty object means "no value"
 
 // Prefer the second approach when you're passing functions as arguments
 ```
@@ -559,14 +588,68 @@ type PossibleResponse = {
     status: number;
     body: string;
 }
-
-//-------------- Extract a property's type from an object:
+```
+## Bracket notation
+- Extracting a property's type from an object:
+```ts
 type NavbarProps = {
   onChange: () => void;
 };
 
 type OnChangeType = NavbarProps["onChange"];
 //    ^ type OnChangeType = () => void
+```
+
+- Access the values of a read-only property:
+```ts
+export const programModeEnumMap = {
+	GROUP: "group",
+	ANNOUNCEMENT: "announcement",
+	ONE_ON_ONE: "1on1",
+	SELF_DIRECTED: "selfDirected",
+	PLANNED_ONE_ON_ONE: "planned1on1",
+	PLANNED_SELF_DIRECTED: "plannedSelfDirected",
+} as const;
+
+type ProgramModeMap = typeof programModeEnumMap;
+type Group = ProgramModeMap["GROUP"];
+//    ^ type Group = "group"
+// TS Server should suggest the properties as you type `ProgramModeMap[""]`
+
+// Similarly, this feature can be used to keep types up to date with their single source of truth:
+type User = {
+	id: string
+	name: string
+	phone: number
+}
+type Comment = User["id"]  // string
+// `User["id"]` is correspond to future updates of the `id`'s type in `User`
+```
+
+- This syntax also accepts union types:
+```ts
+export const programModeEnumMap = {
+  GROUP: "group",
+  ANNOUNCEMENT: "announcement",
+  ONE_ON_ONE: "1on1",
+  SELF_DIRECTED: "selfDirected",
+  PLANNED_ONE_ON_ONE: "planned1on1",
+  PLANNED_SELF_DIRECTED: "plannedSelfDirected",
+} as const;
+
+type ProgramModeMap = typeof programModeEnumMap;
+type Key = "PLANNED_ONE_ON_ONE" | "PLANNED_SELF_DIRECTED"
+
+// Prefer this:
+type PlannedPrograms = ProgramModeMap[Key];
+// ^ type PlannedPrograms = "planned1on1" | "plannedSelfDirected"
+
+// Over this:
+type PlannedPrograms = ProgramModeMap["PLANNED_ONE_ON_ONE"] | ProgramModeMap["PLANNED_SELF_DIRECTED"]
+
+//------------------------------------
+// Use `keyof` in case you want to extract a union of ALL values:
+type AllPrograms = ProgramModeMap[keyof ProgramModeMap];
 ```
 ## Narrowed key type
 - Same as above, and instead of type `number`, you just need to update the type of keys accordingly:
@@ -580,9 +663,6 @@ const scores: IndexSig = { english: '69' };
 scores.math = 95;
 scores.english = 90;
 scores.science = 85;
-
-// You can also use the `Record` utility type:
-const scores: Record<string, number | string> = {};
 ```
 - Use the built-in `PropertyKey` type if you _aren't sure_ which type your object's keys gonna be:
 ```ts

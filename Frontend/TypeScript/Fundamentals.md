@@ -245,3 +245,59 @@ class DD implements ZZ {
   }
 }
 ```
+
+# Type annotation
+- Use the `satisfies` operator when you want want compile-time validation without type widening:
+```ts
+type Color =
+  | string
+  | {
+      r: number;
+      g: number;
+      b: number;
+    };
+
+// With type annotation:
+const config: Record<string, Color> = {
+  foreground: { r: 255, g: 255, b: 255 },
+  background: { r: 0, g: 0 },  // ❌ Error: missing property `b`
+  border: "transparent"
+};
+
+config.border.toUpperCase(); // ❌ TS Error & no autocomplete on `config.`
+//   ^ `config.border` is possibly `undefined`, because `config.` could be any string, as per `Record<string, Color>`
+
+// Without type annotation, TS will automatically infer its type, but there's no type check as we define the properties:
+const config = {
+  foreground: { r: 255, g: 255, b: 255 },
+  background: { r: 0, g: 0 },  // ⚠️ This could be anything
+  border: "transparent",
+};
+
+config.border.toUpperCase();  // No more errors, `config.` is suggested by TS Server inference
+
+// What if we wanted the best of both worlds: to keep the `Record<string, Color>` annotation so that we're still able to benefit from the enforced type safety while keeping the suggestions from TS Server? That's where `satisfies` comes in handy:
+const config = {
+  foreground: { r: 255, b: 255 },  // ❌ Error: missing property `g`
+  background: { r: 0, g: 0, b: 0 },
+  border: "transparent",
+  69: '96' 
+} satisfies Record<string, Color>;
+
+config.border.toUpperCase();  // No more errors & autocomplete is now available on `config.` 
+```
+
+- Use with `as const` for more specific errors. Note that `as const` _precedes_ `satisfies`, because `as const` is only applicable for values, not types:
+```ts
+const routes = {
+  "/": {
+    component: "Home",
+  },
+  "/about": {
+    component: "About",
+    search: "?foo=bar", // ❌ Error: violates the `Record<...>` annotation
+  },
+} as const satisfies Record<string, { component: string }>;
+
+routes["/"].component = "About"; // ❌ Error: violates the `as const` assertion
+```

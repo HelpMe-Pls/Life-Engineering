@@ -210,12 +210,11 @@ console.log(config)
 To access object’s properties, there are 2 ways:
 - Bracket Notation:
 	- Property identifiers have to be a string, number or a variable that references a string (including non-ASCII (UTF-8) characters):
-```js
-obj["1prop"], obj["ダ"], 
+	```js
+obj["1prop"], obj["ダ"], // String 
 var foo = myResponse["bar.Baz"];   // to access a property called bar.Baz
 ```
-
-- Property identifiers are computed (evaluated) variables (are yet to be defined at the point of writing the query):
+	- Property identifiers are computed (evaluated) variables (are yet to be defined at the point of writing the query):
 ```js
 for (var i = 0; i < 10; i++) {
   someFunction(myQuery["someNum" + i]);

@@ -472,15 +472,31 @@ type CatName = "miffy" | "boris" | "mordred";
 // Be aware that with this approach, you must include everything that's in `CatsName`:
 const cats: Record<CatName, CatInfo> = {
   miffy: { age: 10, breed: "Persian" },
-  // TS error: missing properties
+  // TS error: missing remaining properties
 };
 
 // If you want your `cats` object to be more flexible, use optional keys:
 // type OptionalCats = { [K in CatName]?: CatInfo }
-// It means 2 things: The properties of `cats` aren’t required to include all values listed in the `CatName`, and, in cases where a matched property is included, it could have an `undefined` value
+// It means 2 things: The properties of `cats` aren’t required to include all values listed in the `CatName`, and, in cases where a matched property is included, it could have an `undefined` value.
+```
+- Note that TS Server inference can't narrow down to the specific properties if you're annotating with primitives:
+```ts
+interface CatInfo {
+  age: number;
+  breed: string;
+}
+
+// In this case we're annotating the keys as `string`:
+const cats: Record<string, CatInfo> = {
+  miffy: { age: 10, breed: "Persian" },
+  boris: { age: 10, breed: "Persian" },
+  mordred: { age: 10, breed: "Persian" },
+};
+
+cats. // So there's no property suggestion available here
 ```
 ### Prefer the `Record` type instead of type `object`
-- The `object` type accepts _all non-primitive_ values but rejects primitive values. Consider using a generic `Record<PropertyKey, unknown>` or specific interfaces instead of `object`:
+- The `object` type accepts _all non-primitive_ values but rejects primitive values. Consider using a generic `Record<PropertyKey, unknown>` or more specific interfaces instead of `object`:
 ```ts
 const acceptAllNonPrimitiveTypes = (input: object) => {};
 
@@ -581,7 +597,7 @@ mutable.push(3);     // This would break readonly guarantee
 immutable = mutable;  // OK
 immutable.push(3);    // Error: Property 'push' does not exist on readonly array
 ```
-- Use the `@total-typescript/ts-reset` to loosen up the default restrictive type check. Helpful in case where you need to verify if an element exists in a `readonly` collection:
+- Use the `@total-typescript/ts-reset` to loosen up the default restrictive type check. Helpful in case where you need to verify _if_ an element exists in a `readonly` collection:
 ```ts
 import "@total-typescript/ts-reset";  
 
