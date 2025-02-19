@@ -225,8 +225,8 @@ for (var i = 0; i < 10; i++) {
 	- Property identifies can only be alphanumeric (also `_` and  `$`), **cannot** start with a number.
 	- Property identifiers are pre-defined
 ---
-
 ## Array traversing methods
+- These methods returns a new array
 ### .map()
 - Returns a ***NEW*** (separate ref) **array** with its elements based on what the `callbackFn` does:
 ```ts
@@ -594,7 +594,6 @@ console.log(elements.join(''));    // "Fire{a: 2}3"
 console.log(elements.join('__'));  // "Fire__{a: 2}__3"
 ```
 ---
-
 ## Array mutating methods
 ### .push()
 - Adds one (*or more*) elements to the ***end*** of an array.
@@ -687,13 +686,13 @@ console.log('array1:', array1);
 ### .splice()
 - Useful when you want to add/remove/***replace*** element(s) at (or *from*) a specific index in an array.
 - ==***Changes***== the original array. In case you want this feature without mutating the original array, use `.toSpliced()`
-- Returns an array containing the ***deleted*** element(s). Returns empty array if no elements are removed.
+- Returns an array containing the ***deleted*** element(s). Returns empty array if _no_ elements are removed.
 ```ts
 someArray.splice(start, deleteCount, item1, item2, itemN)
 // `start` is similar to `.slice()`, except that if it's >= the array length, `.splice()` will act as `.push()` if the third argument (`item1, item2, itemN`) is passed in.
 // `deleteCount` is number of elements in the array to be removed FROM the index of `start` (`start` element is included)
 // `deleteCount` MUST be included if the third argument is passed in.
-// If `deleteCount` is `undefined`-ish (`0`, negative number, -Infinity, NaN), you should pass in the third argument. Then, `splice()` will act as `.push()` FROM the index of `start`
+// If `deleteCount` is `undefined`-ish (0, negative number, -Infinity, NaN), you should pass in the third argument. Then, `splice()` will act as `.push()` FROM the index of `start`
 
 ------------------------
 const myItems = ['parrot', 'anemone', 'blue', 'trumpet'];

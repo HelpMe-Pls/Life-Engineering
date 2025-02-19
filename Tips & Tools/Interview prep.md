@@ -84,7 +84,7 @@
 > - If the interviewer mentioned anything that you are also interested in, whether it be their work or a hobby, that's your chance to show warmth.
 >- Just make it pop with your enthusiasm. Work on your facial expressions. Smile. Chill. Pause and raise your eyebrows if their question is good. Connect with them and you'll have the business you want.
 - Don't answer their questions just for the sake of answering questions, _==it's more about **delivering your key message**==_. Ideally, your answers should be able to implicitly reassure them (or at least give a hint) that it's beneficial for them to have you on their team.
-	- If they're discussing the problems they're facing, try your very best to ==_relate and **show empathy**_==. That's how you leave a good impression with them on a subconscious level.
+	- If they're discussing _the problems_ they're facing, try your very best to ==_relate and **show empathy**_==. That's how you leave a good impression with them on a subconscious level.
 - Be aware of the position you're applying to so that you can tell your story in a way that _highlights your expertise_.
 - If any of the interview rounds running over the scheduled time, then you got one foot in the door.
 > [!important]- MOST IMPORTANT: Take ownership
@@ -140,11 +140,11 @@
 > Make sure you understand **exactly** what they are asking. Do not ignore any piece of information given.
 - Your initial approach should be discussing with the interviewer and verify that your interpretation of the problem is on the right track with [pseudo code](https://www.interviewkickstart.com/learn/how-to-write-pseudocode) (the simplest form can be just a text-based line-by-line description that details the requirements). 
 - You should be vocal about every solution that you could think of (don't go too much into implementation details just yet), then *narrow down and explain why you're elected one approach over another* (including analysis of the time and space complexity, and you'd prefer choosing the one with *lower time complexity*).
-- Discuss the tradeoffs of each approach with your interviewer as if the interviewer was your coworker and you all are collaborating on a problem.
+- Discuss the tradeoffs of each approach with your interviewer ==as if the interviewer was your coworker and you all are collaborating on a problem==.
 > [!danger] Show potential
 > - Coding interview rounds are there to assess fundamental knowledge, capability, and _**learning potential**_.
 > - The more vocal you are, the easier it is for the interviewer to help you. If you can't capitalize on that, then it's skill issue.
-> - Ask clarifying questions that show your integrity, ==**_collaboration_**==, and ability to be resourceful.
+> - Ask clarifying questions that show your integrity, ==**_collaboration_**==, and ability to be resourceful. Use language like "_how does that sound to you_", or "_is that sufficient_", etc. makes them feel included and helps them imagine collaborating with you in real life when you have the job.
 > - If they are giving you a hint, it is because they want you to succeed. It is **extremely** important that you are receptive to what the interviewer says at this stage.
 > - It doesn't matter how well you did on the technical portion if the interviewer doesn't like you in the end. After all, it's the human that you're working with, not the machines.
 - If the problem appears too hard to even come up with pseudo code, walk through the brute force solution (**while acknowledging** that it is a suboptimal solution) then look for areas to narrow down the goal and optimize it.

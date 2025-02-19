@@ -234,6 +234,26 @@ const options: MakeQueryParameters = {
 makeQuery("https://api.example.com/data", options);
 ```
 
+- To type your param as a function:
+```ts
+type Event = "click" | "hover" | "scroll";
+
+type CallbackType = (
+  event: Event,
+  x: number,
+  y: number,
+  screenId: number,
+) => void;
+
+const listenToEvent = (callback: CallbackType) => {
+  callback("click", 0, 0, 1); // ✅ These args are type safe
+};
+
+// Just because a function can receive some params doesn't mean it has to handle all of them
+listenToEvent(() => {});  // ✅ No error
+
+```
+
 - We can also dynamically infer the _returned type_ of a **function** with the `ReturnType` util. If the function is asynchronous, then wrap the type with `Awaited` to get the actual returned type, not the promise:
 ```ts
 const createUser = (id: string) => {

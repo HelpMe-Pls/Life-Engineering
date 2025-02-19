@@ -270,7 +270,7 @@ config.border.toUpperCase(); // ❌ TS Error & no autocomplete on `config.`
 // Without type annotation, TS will automatically infer its type, but there's no type check as we define the properties:
 const config = {
   foreground: { r: 255, g: 255, b: 255 },
-  background: { r: 0, g: 0 },  // ⚠️ This could be anything
+  background: { r: 0, g: 0 },  // ⚠️ No type safety: this could be anything
   border: "transparent",
 };
 
@@ -280,11 +280,37 @@ config.border.toUpperCase();  // No more errors, `config.` is suggested by TS Se
 const config = {
   foreground: { r: 255, b: 255 },  // ❌ Error: missing property `g`
   background: { r: 0, g: 0, b: 0 },
-  border: "transparent",
+  border: "transparent", 
   69: '96' 
 } satisfies Record<string, Color>;
 
 config.border.toUpperCase();  // No more errors & autocomplete is now available on `config.` 
+```
+
+- It also works for callbacks:
+```ts
+interface User {
+  id: number;
+  name: string;
+}
+
+const users = [
+  {
+    name: "Waqas",
+  },
+  {
+    name: "Zain",
+  },
+];
+
+const usersWithIds: User[] = users.map(
+  (user, index) =>
+    ({
+      ...user,
+      id: index,
+      age: 30, // ❌ Error: `age` does not exist in type `User`
+    } satisfies User),
+);
 ```
 
 - Use with `as const` for more specific errors. Note that `as const` _precedes_ `satisfies`, because `as const` is only applicable for values, not types:

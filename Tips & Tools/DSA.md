@@ -14,7 +14,7 @@
 ## Big O
 - Big O time is the metric we use to analyze the **scalability** and **efficiency** of algorithms. It measure of how much *slower* the code will get as the *inputs* grow. It helps you understand how an algorithm _scales_.
 - Big O just describes the ***rate*** of increase (i.e. allows us to express how the runtime scales). For this reason, we *drop the constants* in runtime. An algorithm that might have described as $O(2n)$ is actually $O(n)$.
-- If your algorithm is in the form "do this, *then*, when you're *all done*, do that" then you ***add*** the runtimes. If your algorithm is in the form "do this *for each time* you do that" then you ***multiply*** the runtimes:
+- If your algorithm is in the form "do this, *then*, when you're *all done* with this, do that" then you ***add*** the runtimes. If your algorithm is in the form "do this *for each time* you do that" then you ***multiply*** the runtimes:
 ```java
 // O(A + B)
 for (int a : arrA) {
@@ -67,8 +67,8 @@ for (let i = 1; i < n; i*=2)  {
 - It measures the total [*amount of memory*](https://www.scaler.com/topics/data-structures/space-complexity-in-data-structure/) that an algorithm or operation ***needs*** to run ***according to*** its input size.
 - `Space complexity = Input space + Auxiliary space`:
 	- **Input space**: refers to the space required to add data to the function, algorithm, application or system that you are evaluating. For instance, if the algorithm sorts an array of integers, then the input space is the memory occupied by that array.
-	- **Auxiliary space**: is the *temporary* space needed to compute a given solution (i.e. the space required to hold any *additional* variables *during* the computations of an application, the space that the algorithm needs _on top_ of input space). When we try to compare two algorithms, we usually have a similar type of input, that is, the size of the input can be disregarded and thus what we do end up comparing is the auxiliary space of the algorithms.
-	- The expanding rate of memory required for an algorithm is essentially what space complexity is all about:
+	- **Auxiliary space**: is the *temporary* space needed to compute a given solution (i.e. the space required to hold any *additional* variables *during* the computations of an application, the space that the algorithm needs _on top_ of input space). When we try to compare two algorithms, we usually have a similar type of input, that is, the size of the input can be disregarded and thus what we do _end up comparing is the auxiliary space of the algorithms_.
+	- The _expanding rate_ of memory required for an algorithm is essentially what space complexity is all about:
 ```js 
 let arr = []
 
@@ -81,7 +81,7 @@ for i=0 to n
 ```
 - Space complexity is a parallel concept to time complexity. **Increasing speed (reduced time complexity) will most often (*not always*) lead to increased memory consumption and vice-versa**.
 - If we need to *create* an array of size `n` (from the process of running the algo), this will require $O(n)$ space. If we need a two-dimensional array of size `n` $×$ `n`, this will require $O(n^2)$ space.
-- However, just because you have `n` function calls in total doesn't mean it takes $O(n)$ space, i.e. the space complexity only increased when each execution of the algo requires the ***acquisition*** of ***more*** memory (i.e. auxiliary space) for it. Therefore, a suggestion for improving space complexity is to overwrite existing variables and avoid creating more variables/data structures than needed.
+- However, just because you have `n` function calls in total doesn't mean it takes $O(n)$ space, i.e. the ==space complexity only increased when _each_ execution of the algo requires the ***acquisition*** of ***more*** memory== (i.e. auxiliary space) for it. Therefore, a suggestion for improving space complexity is to overwrite existing variables and avoid creating more variables/data structures than needed.
 ---
 
 # Tools and techniques
@@ -308,12 +308,12 @@ function bfs(head: BinaryNode<number>, needle: number): boolean {
 
 ### Advanced
 #### Hash table (hash map)
-- Hash tables (represented as arrays in JS) provide access to elements *in constant time*, so they are highly recommended for algorithms that prioritize *search and data retrieval* operations. Mostly used to index large amounts of data (i.e. maps keys to values)
+- Hash tables (represented as arrays in JS) provide access to elements *in constant time*, so they are ==highly recommended for algorithms that prioritize *search and data retrieval* operations==. Mostly used to index large amounts of data (i.e. maps keys to values)
 - This means that when you want to know if an item is in the data structure, instead of looking through every item and making a comparison, you only need to apply the hashing function and see if that item has been hashed to memory.
 - Hash tables are thread-safe (e.g. if 69 different processes are using and changing the same information in a table, the information is always correct).
 - Load factor: the amount of data points vs the amount of storage (`data.length/storage.capacity`). Hash tables increase in size when they are near a certain threshold. 
 
-> There are some distinct differences between hash table and hash map: a hash map will **allow** the use of nulls for keys and values, and it's **not** thread-safe. We can use a hash map and modify it to behave like a hash table in languages that don't have native implementation of hash table (e.g. Kotlin, Python). JS has `Object` and `Map` classes which are native hash table implementation.
+> There are some distinct differences between hash table and hash map: a hash map will **allow** the use of nulls for keys and values, and it's **not** thread-safe. We can use a hash map and modify it to behave like a hash table in languages that don't have native implementation of hash table (e.g. Kotlin, Python). JS has `Object` and `Map` classes which are native hash table implementation. If you want flexible key-value store (i.e. allow any value as a key (not just strings or symbols) and maintains insertion order), prefer `Map`
 
 - The address/index (i.e. hash code) of each key is *calculated* using the  `key`  itself. This could be done with a "hash function", returns something like `key % array_length | <some-random-number>`:
 ```js
@@ -943,14 +943,273 @@ console.log(`Post: ${sorted}`);
 	- Parallelism is when you have different threads or computers working on the same problem at the same time to complete it in a quicker time.
 	- Memory management: in the merge sort example, consider that each array can be sent to a different core or server depending on the architecture of your organization and the results are then returned.
 	  It might be the data being processed is too large to hold in memory and must be processed in chunks. Additionally, you may have provisioned access to cloud computing. So the solution can involve accessing an online server and exporting some of the problems from the company servers.
-
 ### Dynamic programming
 - Dynamic programming (`dp`) is an extension of `d&c` and recursion which in addition involves keeping a record of results ([memoizing](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/961483057)) generated from running the sub problems each time they are newly run. 
 - The main advantage of `dp` is that it promotes memoization, where previous calculations are stored and used instead of rerunning the calculations when the compiler identifies that the computation has been run for a previous task. Checkout an [example](https://www.techinterviewhandbook.org/coding-interview-techniques/#example-3).
 - The `dp` approach is commonly applied to combination or optimization problems. When computing `dp` solutions, you must firstly determine the *objective function* (i.e. the description of what the optimum outcome is to be). Next you must break the problem into smaller steps (using recursion) which should be written in such a way that you can change the outcome without altering the code for the methods already written.
-
 ### Greedy
 - Greedy algorithm assumes that the simplest solution is almost always the best one. This problem solving principle argues that simplicity is better than complexity. It looks at the list of solutions and implement a local optimization. Usually, the current most rewarding option is chosen.
-- This is an alternative approach to dynamic programming as this approach seeks to present an immediate solution for a task and favors local optimization over a more holistic global approach.
+- This is an alternative approach to dynamic programming as this approach seeks to present an immediate solution for a task and *favors local optimization over a more holistic global approach*.
 - For example, in a CPU tasks execution context, a greedy approach would involve selecting first the shortest running program and then the next shortest program and so on. While this might not lead to a globally optimized solution, it will reduce any overhead in calculating the most efficient subset of items. [Dijkstra's shortest path](https://www.youtube.com/watch?v=pVfj6mxhdMw) is also a well-known instance of the greedy algo.
 - Greedy vs `dp`: while the overhead for a greedy algorithm is low and coding a solution is quite straightforward, it will not always guarantee that the best option is returned.
+---
+# Patterns
+## Sliding Windows
+- f
+- f
+## Two Pointers
+- Use this pattern to traverse arrays/strings when you think of:
+	- Opposite ends: both pointers move towards each other to find pairs that meet specific criteria
+	- Single pass with conditions: pointers traverse in the same direction but are used to track conditions (e.g. finding duplicates, valid segments,...)
+	- At different speeds: one pointer moves faster than the other to achieve tasks like cycle detection or finding midpoints
+> Use this pattern to optimize space usage if arrays are pre-sorted. 
+### Examples
+#### In-place replacement
+- [An example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/727) for "fast and slow" pointers working on an in-place problem:
+```ts
+// O(n) time & O(1) space
+function removeDuplicates(nums: number[]): number {  
+    if (nums.length === 0) return 0;  
+    
+	// `k = 1` because the first element is guaranteed to be unique 
+    let k = 1;  // Slow pointer  
+    
+	// Traversing the array with fast pointer `i`
+    for (let i = 1; i < nums.length; i++) { 
+    // When a new unique element is found by comparing the value at the fast pointer vs the slow pointer
+        if (nums[i] !== nums[k - 1]) {  
+            nums[k] = nums[i];  // In-place replacement
+            k++;   // Keeping track of unique elements
+        }  
+    }  
+
+    return k;  
+};  
+```
+
+- Another "[fast and slow](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/567)" problem:
+```ts
+// O(n) time & O(1) space
+function moveZeroes(nums: number[]): void {
+  // Slow pointer to track the position where the next non-zero should be placed
+  let lastNonZeroFoundAt = 0;
+
+  // Iterate the array with the `fastPointer`
+  for (let fastPointer = 0; fastPointer < nums.length; ++fastPointer) {
+    if (nums[fastPointer] !== 0) {
+      // Only swap if the non-zero ISN'T already in the correct position
+      if (fastPointer !== lastNonZeroFoundAt) {
+        [nums[fastPointer], nums[lastNonZeroFoundAt]] = [nums[lastNonZeroFoundAt], nums[fastPointer]];
+      }
+      // Advancing the slow pointer
+      lastNonZeroFoundAt++;
+    }
+  }
+}
+
+// A solution with similar complexity, but more intuitive:
+function moveZeroes(nums: number[]): void {
+    let writePointer = 0;
+	
+    // Move non-zeros to front
+    for (const num of nums) {
+        if (num !== 0) nums[writePointer++] = num;
+    }
+	
+    // Fill remaining slots with zeros
+    while (writePointer < nums.length) {
+        nums[writePointer++] = 0;
+    }
+}
+```
+
+## Binary Search
+- f
+- f
+## BFS & DFS
+- f
+- f
+## Recursion & Backtracking
+- f
+- f
+## Dynamic Programming
+- f
+- f
+## Greedy
+- Think of it like hiking up a hill: you want to reap all the benefits for each forward step.
+- An [example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/564):
+```ts
+// In Layman's term: the sum of all the consecutive increases is the return value. Therefore, if the price today is higher than yesterday, you IMMEDIATELY sell and take that profit 
+// O(n) time, O(1) space
+function maxProfit(prices: number[]): number {
+    return prices.reduce((profit, currentPrice, day) => {
+        // Make a profit if current price > previous day's price
+        return day > 0 && currentPrice > prices[day - 1] 
+            ? profit + (currentPrice - prices[day - 1]) 
+            : profit;
+    }, 0);
+}
+```
+## Divide and Conquer
+- f
+- f
+## Hash Map/Set
+### Hash Map
+- The built-in `Map` is a hash map. It's like a _notebook_ where you store _extra_ details for an item, e.g. "_I saw the number 6 **at position** 9_". As [an example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/674), use it to efficiently handles duplicates and unsorted arrays:
+```ts
+function getIntersect(nums1: number[], nums2: number[]): number[] {
+  const freqMap = nums1.reduce((map, num1) => 
+    // For each `num1` in `nums1`, keep track of its frequency (by adding 1 for each occurence). "Its frequency" here is the "extra detail" mentioned above
+    map.set(num1, (map.get(num1) ?? 0) + 1), 
+    new Map<number, number>()
+  );
+
+  // For each `num2` in `nums2`:
+  // 1. Check if the `num2` exists in `freqMap` (i.e. if `freqMap.get(num2)` is truthy)
+  // 2. If yes, we include it in the result array (that's just how `.filter()` works)
+  return nums2.filter(num2 =>
+    freqMap.get(num2) && 
+    // Decrease the count for that number in the map by 1,
+    // to reflect that one occurrence has been used. 
+    // Therefore, if `freqMap.get(num2)` is 0, it means that `num2` is no longer an intersect
+    // and it WON'T be included in the result array
+    freqMap.set(num2, freqMap.get(num2)! - 1)
+  );
+}
+```
+
+- Leverage the hash `Map` to avoid duplicates in iterations. For [this example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/546), using nested loops would result in $O(n^2)$ complexity. Hash `Map` can solve it with $O(n)$: 
+```ts
+// O(n) time & space:
+function twoSum(nums: number[], target: number): number[] {
+    const indexMap = new Map<number, number>();
+    for (let i in nums) {
+// Store each operand
+        const complement = target - nums[+i];
+        if (indexMap.has(complement)) {
+            return [indexMap.get(complement)!, +i]; // Found
+        }
+        indexMap.set(nums[i], +i); // Add current element to map
+    }
+  
+    throw new Error("No solution found");
+}
+```
+### Hash Set
+- The built-in `Set` is a hash set. Think of a it as a _checklist_ where you only care _if_ an item _exists_. Use it to solve problems [like this one](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/578):
+```ts
+function containsDuplicate(nums: number[]): boolean {
+  return new Set(nums).size < nums.length
+};
+```
+- First thing to think of when you're [checking for _uniqueness_](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/769):
+```ts
+// O(1) time & space (due to the constraints)
+function isValidSudoku(board: string[][]): boolean {
+  const [rows, cols, squares] = [9, 9, 9].map(() => 
+      Array.from({ length: 9 }, () => new Set<number>()));
+  
+  for (let row = 0; row < 9; row++) {
+    for (let col = 0; col < 9; col++) {
+      // For each cell
+      const cell = board[row][col];
+      if (cell === '.') continue; // Skip empty cells
+    // Since the `sqrIdx` is determined by the "left-to-right for each row" order, we're multiplying 3 on the rows to shift it into the correct "square row"
+      const sqrIdx = ~~(row / 3) * 3 + ~~(col / 3); // Double bitwise NOT is equivalent to `Math.floor` by TRUNCATING decimals for POSITIVE numbers
+        
+        // Check for the number's UNIQUENESS in each corresponding row, column, or box
+      if (rows[row].has(+cell) || cols[col].has(+cell) || squares[sqrIdx].has(+cell)) {
+        return false; // Duplicate found, Sudoku is invalid
+       }
+        
+        // Add the curren cell to the corresponding Sets of row, column, and box 
+      [rows[row], cols[col], squares[sqrIdx]].forEach(set => set.add(+cell));
+    }
+  }
+  return true; 
+}
+```
+## Stack & Queue
+- f
+- f
+## Heap
+- f
+- f
+## Trie
+- f
+- f
+## Bit Manipulation
+### The XOR operator
+- Think of XOR like procreation. One sex can _only_ procreate with the _opposite_ sex. Same sex consummation or masturbation leads to termination of a species. 
+- Perfect for problems where duplicates cancel out. Leverage this property to solve cancellation or identity issues, such as:
+	- `x^x == 0`: This means duplicate numbers cancel each other out.
+	- `x^0 == x`: A number XORs with `0` returns itself.
+- For [example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/549):
+```ts
+// O(n) time & O(1) space
+function singleNumber(nums: number[]): number {
+    return nums.reduce((res, num) => res ^ num, 0);
+}
+
+// Let's say we call `singleNumber([4,1,2,1,2])`, here's how it works:
+// 4 ^ 1 ^ 2 ^ 1 ^ 2 = 4 ^ (1 ^ 1) ^ (2 ^ 2) = 4 ^ (0 ^ 0) = 4
+```
+
+## Matrix Manipulation
+- A [transpose then reverse](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/770) problem:
+```ts
+// O(n^2) time & O(1) space
+function rotate(matrix: number[][]): void {
+    const n = matrix.length;
+    
+    // Step 1: Transpose the matrix by turning columns into rows
+    for (let i = 0; i < n; i++) {
+        for (let j = i; j < n; j++) {
+            // Swap elements across the diagonal
+            [matrix[i][j], matrix[j][i]] = [matrix[j][i], matrix[i][j]];
+        }
+    }
+    
+    // Step 2: Reverse each row to complete the 90-degree rotation
+    for (let i = 0; i < n; i++) {
+        matrix[i].reverse();
+    }
+}
+
+// This solution is a bit unintuitive, but it shows coherent logic without "trying to be smart" as the one above
+// It solves the problem by using layer-by-layer swapping (swap elements in groups of four)
+function rotateMatrixPure(matrix: number[][]): void {
+  const n = matrix.length;
+  // Process layer by layer
+  for (let layer = 0; layer < Math.floor(n / 2); layer++) {
+// Marks the boundaries of the current layer
+    const first = layer;
+    const last = n - layer - 1;
+		
+    for (let i = first; i < last; i++) {
+   // To keep track of your position within the layer by how far from the edge you are in the current layer
+      const offset = i - first;
+      
+      // Save the top element
+      const top = matrix[first][i];
+      
+      // Move left element to top
+      matrix[first][i] = matrix[last - offset][first];
+      
+      // Move bottom element to left
+      matrix[last - offset][first] = matrix[last][last - offset];
+      
+      // Move right element to bottom
+      matrix[last][last - offset] = matrix[i][last];
+      
+      // Assign top element to right
+      matrix[i][last] = top;
+    }
+  }
+}
+```
+- g
+
+## Prefix Sum
+- f
+- f

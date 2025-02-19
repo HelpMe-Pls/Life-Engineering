@@ -108,7 +108,7 @@ def contains_string(search_term, strings):
 	- The nice thing about the modular code is that it's easily testable because each component can be verified separately. As code gets more complex, it becomes increasingly important to write it in a modular way. This will make it easier to read and maintain. Your interviewer wants to see you demonstrate these skills in your interview:
 		- Let's say you're asked to build a car. You can just write a few high level functions first: `gatherMaterials()`, `assemble()`. 
 		- Then break down `assemble()` into smaller functions, `makeEngine()`, `getWheels()`, `constructCarFrame()`. 
-> **If you get confused or nervous, take a break.** No one is going to mark you down for saying "Do you mind if I take five minutes to work through this and get back to you?" in middle of the interview.
+> **If you get confused or nervous, take a break.** No one is going to mark you down for saying "Do you mind if I take a minute to work through this and get back to you?" in middle of the interview.
 - Use a mix of functional and imperative programming paradigms:
 	- Pure functions are easier to reason about and can help to reduce bugs in your implementation.
 	- Avoid mutating the parameters passed into your function especially if they are passed by reference unless you are sure of what you are doing.

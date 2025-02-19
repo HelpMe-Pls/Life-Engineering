@@ -228,7 +228,7 @@ const fetchData = async () => {
 # Union
 - Union types works in a reversed funneled way, i.e. a "larger" type cannot be assigned to a "smaller" type:
 ```ts
-let random = "sth-else" // Inferred type: string
+let random = "sth-else" // Inferred type: `string`
 type Direction = "up" | "down" | "left" | "right";
 const aim = "up"
 
@@ -402,6 +402,21 @@ it("Should calculate the area of a circle when no kind is passed", () => {
   });
   expect(result).toBe(78.53981633974483);
 });
+```
+## With functions
+- When you have a union of functions, the parameters get intersected and the return types get union-ed:
+```ts
+type Fn1 = (x: string) => string;
+type Fn2 = (x: number) => string; 
+type UnionFn = Fn1 | Fn2;
+
+// The parameter's type is intersected (`string & number`) and resolves to `never`
+const unionFn: UnionFn = Math.random() > 0.5
+  ? (x: string) => x.toUpperCase()
+  : (x: number) => x.toFixed(2); 
+
+unionFn("hello"); // Error: Argument of type 'string' is not assignable to parameter of type 'never'.
+unionFn(42);  //  // Error: Argument of type 'number' is not assignable to parameter of type 'never'.
 ```
 # Enum
 - The `enum` keyword is only available in TS (not in standard JS). Use `enum` to define a set of named constants. `enum` members are numeric by default and starts at `0`.  You can define `enum` members with both `string` and `number`:

@@ -63,7 +63,7 @@ strong {
 }
 
 /* Rendered result:
-The "hole" sits below the "flag" (like how `block` displayed in Flow Layout) and the "ball" sits on top of the "hole" as if the "hole" isn't there*/
+The "hole" sits below the "flag" (like how `block` displayed in Flow Layout) and the "ball" sits on top of the "hole" as if the "hole" isn't there */
 <div class="green">
 	<div class="flag">🚩</div>
 	<div class="hole">🕳</div>

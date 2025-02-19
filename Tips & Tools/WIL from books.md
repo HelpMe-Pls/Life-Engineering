@@ -444,6 +444,7 @@
 - Freedom entails risks - real skin in the game. Freedom is never free. 
 	- Freedom is always associated with risk taking, whether it leads to it or comes from it.
 	- Being reviewed or assessed by others matters if and only if one is subjected to the judgment of future - not just present - others. 
+- Really successful people say no to almost everything.
 ## Society
 - Societies were run by risk takers, not risk transferers.
 	- Bureaucracy is a construction by which a person is conveniently separated from the consequences of his or her actions.
@@ -465,6 +466,9 @@
 - Verbal threads reveal nothing beyond weakness and unreliability.
 - We are largely collaborative - except when institutions get in the way.
 	- Real people are interested in commonalities and peace, not conflicts and wars.
+- Individual ruin is not as big as a deal as collective ruin.
+	- The point is that my death is never the worst-case scenario unless it correlates to that of others.
+- The fragility of the system's components (provided that they are renewable and replaceable) is required to ensure the solidity of the system as a whole.
 ## Risk
 - The same mechanism of transferring risk also impedes learning. 
 - If you do not take risks for your opinion, you are nothing.
@@ -480,6 +484,8 @@
 - In probability, volatility and time are the same.
 - Trades that lose money infrequently are more stable, even if they end up eventually wiping you out.
 - Skin in the game means that you do not pay attention to what people say, only to what they do, and to how much of their necks they are putting on the line.
+- If there is a possibility of ruin, cost-benefit analyses are no longer possible.
+- Volatility is not necessarily risk, and the reverse is also true.
 ## Efficacy
 - You want maximal free time, not maximal activity, and you can access your own "success" according to such metrics.
 - Statistics isn't about data but distillation, rigor, and avoiding being fooled by randomness.
@@ -491,6 +497,8 @@
 - What looks scientific is usually scientism, not science.
 - Actions that harm you are detectable, if not observable.
 - Our knowledge of the world is fundamentally incomplete, so we need to avoid getting into unanticipated trouble.
+> We do not need to be overly paranoid about ourselves, we need to shift some of our worries to bigger things.
+- Establish a high filter, then pick opportunities that pass such a threshold.
 ## Virtue
 - We know with much more clarity what is bad than what is good.
 - Conduct yourself toward your parents as you would have your children conduct themselves toward you.
@@ -505,24 +513,32 @@
 > Never engage in rent-seeking.
 - Doing business will always help (because it brings about economic activity without large-scale risky changes in the economy)
 > Courage (risk taking) is the highest virtue. We need entrepreneurs.
+- Courage is when you sacrifice your own well-being for the sake of the survival of a layer higher than yours.
 ## Faith
 - The human nature of Christ makes the divine possible for all of us.
 - In science, belief is literal belief; it is right or wrong, never metaphorical. In real life, belief is an instrument to do things, not the end product.
-- 
+> How much you truly "believe" in something can be manifested only through what you are willing to risk for it.
 ## Rationale
 - By definition, what works cannot be irrational.
 - Most of what is called "irrational" comes from misunderstanding of probability.
 - Very few people understand their own choices, and end up being manipulated by those who want to sell them something.
 - Survival comes first, truth, understanding, and science later.
 - Making some types of errors is the most rational thing to do, when the errors are of little cost, as they lead to discoveries.
+- We do not have enough grounds to discuss "irrational beliefs". We do with irrational actions.
+> Collective rationality might require some individual biases.
+- What is rational is that which allows for survival.
+- Rationality is avoidance of systemic ruin.
 ## Misc
 - It is easier to know that something is wrong than to find the fix. Actions that remove are more robust than those that add because addition may have unseen, complicated feedback loops.
 > It is at the foundation of evolution that systems get smart by elimination.
 - What matters in life isn't how frequently one is "right" about outcomes, but how much one makes when one is right.
-- You may be beneficially exposed to rain, but not to floods.
+- You may be beneficially exposed to rains, but not to floods.
 - The life expectancy of the nonfragile lengthens with time.
 - An addictive substance is like a magical potion that gives remarkable powers to those seeking it, but not those drinking it. 
 - The longer an idea has been around without being falsified, the longer its future life expectancy.
 - Men feel the good less intensely than the bad. The good is not as good as the absence of the bad.
 - If wealth is giving you fewer options instead of more (and more varied) options, you're doing it wrong.
 - A living enemy is worth ten dead ones.
+- Not everything that happens happens for reason, but everything that survives survives for a reason.
+- In order to succeed, you must first survive.
+- A situation is deemed non-ergodic when observed past probabilities do not apply to future processes.
