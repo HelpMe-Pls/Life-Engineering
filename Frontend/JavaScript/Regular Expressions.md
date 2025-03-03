@@ -5,8 +5,8 @@
 | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
 | `/abc/`     | A sequence of `abc`                                                                                                     |
 | `/[abc]/`   | Any character from a [[#Set \|set]] of `abc`                                                                            |
-| `/[^abc]/`  | Any character **_not_** in a set of `abc`                                                                               |
-| `/[0-9]/`   | Any digit in a range of `0` to `9`                                                                                      |
+| `/[^abc]/`  | Any character **_not in_** a set of `abc`                                                                               |
+| `/[0-9]/`   | Any digit in an inclusive range of `0` to `9`                                                                           |
 | `/x+/`      | One or more occurrences of the *pattern* `x`                                                                            |
 | `/x+?/`     | One or more occurrences, [[#Greedy \|nongreedy]]                                                                        |
 | `/x*/`      | Zero or more occurrences                                                                                                |
@@ -14,7 +14,7 @@
 | `/x{2,4}/`  | Two to four occurrences                                                                                                 |
 | `/(abc)/`   | A capturing [[#Matching groups \|group]]                                                                                |
 | `/a\|b\|c/` | Any one of several patterns. Check out an example [[#Matching groups \|here]]                                           |
-| `/\d/`      | Any *digit* character                                                                                                   |
+| `/\d/`      | Any *Unicode digit* character                                                                                           |
 | `/\D/`      | Any _**non** digit_ character (notice the uppercase tag name)                                                           |
 | `/\w/`      | Any Latin _alpha**numeric**_ character (a word - a letter or number or underscore)                                      |
 | `/\W/`      | Any Latin _**non**alpha**numeric**_ character (e.g. `đ` or `β` will match this and `/\w/u`)                             |
@@ -36,7 +36,7 @@
 // using the `RegExp` constructor, useful when you need to DYNAMICALLY construct a regular expression based on user input or other variables:
 let re1 = new RegExp("abc");
 
-// using the regex literal (with forward slashses), useful when you're defining a "const" regex:
+// using the regex literal (with forward slashses), useful when you're defining a read only regex:
 const re2 = /abc/;
 ```
 
@@ -55,8 +55,9 @@ console.log(res.index);  // 8: tells us where in the string the FIRST successful
 ```
 - The `match` method behaves similarly to the `exec`, with some main differences:
 	- The `match` takes the regex as its argument while `exec` takes the target string
+	- See [[#Matching groups |capturing group]] to understand its return value
 	- The `exec` doesn't work with `g` flag
-	- To avoid the confusion with `g` flag, use `matchAll` instead (i.e. the regex given to `matchAll` _must_ come with a `g`)
+	- To avoid the `g` flag gotcha, use `matchAll` instead (i.e. the regex given to `matchAll` _must_ come with a `g`)
 ```js
 const regex = /hello/ig;
 const str = "Hello, world! hellooo";
@@ -178,15 +179,15 @@ console.log(/🍎{3}/u.test("🍎🍎🍎"));  // true
 ```
 
 ### Set 
-- The square brackets (like the array notation: `[]`) holds the *inclusive* range (with a hyphen `-` in between) of *continuous (in-order) characters* to be matched with *a singular* target character. 
+- The square brackets (like the array notation: `[]`) holds the ***inclusive*** range (with a hyphen `-` in between) of *continuous (in-order) characters* to be matched with *a singular* target character. 
 - `.` and `-` lose their meaning (treated as literals) in a set. The hyphen (`-`) only works if it's representing a range, other than that, it's treated as a literal match.
 - A "not" set, i.e. to express that you want to match *any* character except the ones in the set, is defined by adding a caret (`^`) at the beginning of the set.
 - For example:
 ```js
 console.log(/[5-9]/.test("96")); // true, `9` matched
 console.log(/[56789]/.test("69"));  // true, `6` matched
-console.log(/0-9/.test("69")); // false, because the regex is not a set
-console.log(/0-9/.test("0-9"));  // true
+console.log(/0-9/.test("69")); // false, because the regex is not a set 
+console.log(/0-9/.test("0-9"));  // true, because this regex is checking if it matches the literal string "0-9"
 
 // false, the regex is checking for 2 characters
 console.log(/\d./.test("4"));  

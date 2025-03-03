@@ -217,14 +217,17 @@ interface LinkedList<T> {
 }
 ```
 - A ***set*** will store its elements in an ***ordered*** (*not sorted*) way and will only hold ***unique*** elements. Once a value has been added to a set, it cannot change. Instead, you should and would have to delete it and add a new value. If you want to update a value in a collection, better use an array. 
-  *However*, objects that are added to sets can be treated differently depending on the language. In JavaScript, you can add mutable objects to a set, which is not permitted in Python. 
+- *However*, objects that are added to sets can be treated differently depending on the language. In JavaScript, you can add mutable objects to a set, which is not permitted in Python. 
 - While sets can perform an exceptionally quick search, performance degrades when dealing with very large datasets due to its internal mechanism which uses hash tables.
 - Sets are beneficial when you need to keep track of a ***unique*** collection of values, such as removing duplicates from an array or checking membership efficiently.
 ##### [When to use which in JS](https://www.builder.io/blog/maps) (Object, Map, Set or Array)
 - **Object**: when the order of the keys are ***not*** important and their type is simple (e.g. `string | number`), or you *don't* need to iterate the collection. If you want to define a custom data structure or an object with methods, prefer `class` for better readability.
 - **Array**: when you need index-based access and want to perform complex operations on the collection of values.
 - **Map**: when the relationship between ==_**keys** and **values**_== is important. Keys in a Map can be ***of any type*** and are not limited to sequential integer indices like in an Array. A Map has its own separate prototype chain based on `Map.prototype` which inherits instance methods from `Object.prototype` and some extra methods (such as `set()`, `get()`, `has()`, `delete()`, `clear()`,...). Use Map when you want *frequent* $O(1)$ **retrieval**/deletion values based on their key, e.g. writing a data structure that can quickly search and update a large set of values.
-- **Set**: when you want an ***unique*** iterable collection of ***values*** (i.e. a Set will *automatically* remove duplicated values) , *frequent* $O(1)$ **search**/deletion and *don't* need random item retrieval (i.e. keys are *not* important). 
+- **Set**: when you want an ***unique*** iterable collection of ***values*** (i.e. a Set will *automatically* remove duplicated _**primitive** values_) , *frequent* $O(1)$ **search**/deletion and *don't* need random item retrieval (i.e. keys are *not* important). 
+>[!important]- Set elements are ==unique in reference==, not their content
+>- Two different **objects** with _**identical** _ properties are still considered valid entries in a Set.
+
 > Map and Set are built-in objects and they can have elements of different types. Keys in Object, Array, Map are unique.
 #### Stacks and queues
 - Stacks and queues employ *sequential* access (i.e. ***items are stored in the order in which they were added***). This limited approach to holding data can be very useful when you want to control *how* the data is accessed (i.e. LIFO for Stack and FIFO for Queue)
@@ -958,7 +961,7 @@ console.log(`Post: ${sorted}`);
 - f
 - f
 ## Two Pointers
-- Use this pattern to traverse arrays/strings when you think of:
+- Use this pattern to _**traverse**_ arrays/strings when you think of:
 	- Opposite ends: both pointers move towards each other to find pairs that meet specific criteria
 	- Single pass with conditions: pointers traverse in the same direction but are used to track conditions (e.g. finding duplicates, valid segments,...)
 	- At different speeds: one pointer moves faster than the other to achieve tasks like cycle detection or finding midpoints
@@ -1006,20 +1009,33 @@ function moveZeroes(nums: number[]): void {
     }
   }
 }
-
-// A solution with similar complexity, but more intuitive:
-function moveZeroes(nums: number[]): void {
-    let writePointer = 0;
-	
-    // Move non-zeros to front
-    for (const num of nums) {
-        if (num !== 0) nums[writePointer++] = num;
+```
+#### Single pass
+- It solves [this problem](https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/885) sub-optimally by using a pointer in the haystack and checks character-by-character if the needle matches starting at that position:
+```ts
+// O(n*m) time & O(1) space
+function strStrTwoPointers(haystack: string, needle: string): number {
+  // Edge case: if `needle` is empty, return 0.
+  if (needle.length === 0) return 0;
+  
+  const hLen = haystack.length;
+  const nLen = needle.length;
+  
+  // Loop over each possible starting index in `haystack` where `needle` can fit
+  for (let i = 0; i <= hLen - nLen; i++) {
+    let j = 0;
+    // Use a second pointer `j` to check if `needle` matches `haystack` at position `i`
+    while (j < nLen && haystack[i + j] === needle[j]) {
+      j++;
     }
-	
-    // Fill remaining slots with zeros
-    while (writePointer < nums.length) {
-        nums[writePointer++] = 0;
+    // If we can reach the END of `needle`, it means that we found a match
+    if (j === nLen) {
+      return i;
     }
+  }
+  
+  // Catch
+  return -1;
 }
 ```
 
@@ -1055,8 +1071,14 @@ function maxProfit(prices: number[]): number {
 - f
 ## Hash Map/Set
 ### Hash Map
-- The built-in `Map` is a hash map. It's like a _notebook_ where you store _extra_ details for an item, e.g. "_I saw the number 6 **at position** 9_". As [an example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/674), use it to efficiently handles duplicates and unsorted arrays:
+- The built-in `Map` is a hash map. It's like a _notebook_ where you store _extra_ details for an item, e.g. "_I saw the number 6 **at position** 9_". 
+- Mostly used for:
+	- Character frequency matching
+	- **Non**-sequential pattern matching
+- As [an example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/674), use it to efficiently handles duplicates and unsorted arrays:
 ```ts
+// Suppose `n == nums1.length` and `m == nums2.length`
+// O(n + m) time & O(min(n, m)) space
 function getIntersect(nums1: number[], nums2: number[]): number[] {
   const freqMap = nums1.reduce((map, num1) => 
     // For each `num1` in `nums1`, keep track of its frequency (by adding 1 for each occurence). "Its frequency" here is the "extra detail" mentioned above
@@ -1065,31 +1087,30 @@ function getIntersect(nums1: number[], nums2: number[]): number[] {
   );
 
   // For each `num2` in `nums2`:
-  // 1. Check if the `num2` exists in `freqMap` (i.e. if `freqMap.get(num2)` is truthy)
-  // 2. If yes, we include it in the result array (that's just how `.filter()` works)
+  // 1. Check if the `num2` exists in `freqMap` (if `freqMap.get(num2)` > 0)
+  // 2. If it does, we include it in the result array (that's just how `.filter()` works)
   return nums2.filter(num2 =>
     freqMap.get(num2) && 
-    // Decrease the count for that number in the map by 1,
-    // to reflect that one occurrence has been used. 
-    // Therefore, if `freqMap.get(num2)` is 0, it means that `num2` is no longer an intersect
-    // and it WON'T be included in the result array
+    // Decrease the frequency by 1
+    // When it reaches 0, subsequent occurrences of this number will be excluded, i.e. no more intersect with that number 
+    // since `freqMap.get(num2)` will return 0
     freqMap.set(num2, freqMap.get(num2)! - 1)
   );
 }
 ```
 
-- Leverage the hash `Map` to avoid duplicates in iterations. For [this example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/546), using nested loops would result in $O(n^2)$ complexity. Hash `Map` can solve it with $O(n)$: 
+- Leverage the hash `Map` to avoid duplicates in iterations. For [this example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/546), using nested loops would result in $O(n^2)$ time complexity. Hash `Map` can solve it with $O(n)$: 
 ```ts
 // O(n) time & space:
 function twoSum(nums: number[], target: number): number[] {
     const indexMap = new Map<number, number>();
     for (let i in nums) {
-// Store each operand
+// Store each operand and check for its complement
         const complement = target - nums[+i];
         if (indexMap.has(complement)) {
             return [indexMap.get(complement)!, +i]; // Found
         }
-        indexMap.set(nums[i], +i); // Add current element to map
+        indexMap.set(nums[i], +i); // Store the current element and its index 
     }
   
     throw new Error("No solution found");
@@ -1120,7 +1141,7 @@ function isValidSudoku(board: string[][]): boolean {
         // Check for the number's UNIQUENESS in each corresponding row, column, or box
       if (rows[row].has(+cell) || cols[col].has(+cell) || squares[sqrIdx].has(+cell)) {
         return false; // Duplicate found, Sudoku is invalid
-       }
+      }
         
         // Add the curren cell to the corresponding Sets of row, column, and box 
       [rows[row], cols[col], squares[sqrIdx]].forEach(set => set.add(+cell));
@@ -1129,6 +1150,96 @@ function isValidSudoku(board: string[][]): boolean {
   return true; 
 }
 ```
+## Linked list
+### In-place reversal
+- We can also apply [[#Two Pointers |two pointers]] for the Linked List data structure. In [this example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/93/linked-list/560), we're using the `prev` and `current` pointers: 
+```ts
+class ListNode {
+    val: number;
+    next: ListNode | null;
+    constructor(val?: number, next?: ListNode | null) {
+        this.val = (val ?? 0)
+        this.next = (next ?? null)
+    }
+}
+
+// O(n) time & O(1) space
+function reverseList(head: ListNode | null): ListNode | null {    
+    let prev: ListNode | null = null;
+    let current: ListNode | null = head;
+    
+    while (current) {
+// Note that ALL the right-side values are captured in temporary variables first, AND THEN assigned to the left-side variables all AT ONCE (not sequentially)    
+        [current.next, prev, current] = [prev, current, current.next];
+    }
+    
+    return prev;
+}
+
+// Let's look at the `1→2→3→null` linked list as an example:
+// Initially: prev=null, current=1, next=null
+// First iteration: 1→null, prev=1, current=2 
+// Second iteration: 2→1→null, prev=2, current=3
+// Third iteration: 3→2→1→null, prev=3, current=null
+```
+### Merging
+- Again, the [[#Two Pointers |two pointers]] technique can be useful for problems like [this one](https://leetcode.com/explore/interview/card/top-interview-questions-easy/93/linked-list/771):
+```ts
+function mergeTwoListsOptimized(list1: ListNode | null, list2: ListNode | null): ListNode | null {  
+    const dummy = new ListNode();  
+    let current = dummy;  
+    
+// Two pointers: `list1` and `list2`. `current` is our extra pointer that we'll use to build the result list. 
+    while (list1 && list2) {  
+        // 4 things happening here:
+        // 1. Compare the values of the current nodes from both lists
+        // 2. Shorten the list with smaller head value
+        // 3. Create the "next" node of our result list with that smaller node
+        // 4. Advance our current node of our result list to that new "next" node 
+        [list1, list2, current.next, current] =  
+            list1.val <= list2.val  
+                ? [list1.next, list2, list1, list1]  
+                : [list1, list2.next, list2, list2];  
+    } 
+     
+	// The lists are pre-sorted so we're adding the remaining list to the result list
+    current.next = list1 ?? list2;  
+
+	// Our result list started RIGHT AFTER our `dummy`, as per `let current = dummy`, so we're returning the result list as `dummy.next`
+    return dummy.next;  
+}  
+
+// Example: let's say we start with 
+// list1: 1 → 3 → 5 → null
+// list2: 2 → 4 → null
+// dummy: null
+
+// Iteration 1:
+// list1: 3 → 5 → null 
+// list2: 2 → 4 → null
+// dummy → 1
+
+// Iteration 2:
+// list1: 3 → 5 → null 
+// list2: 4 → null
+// dummy → 1 → 2
+
+// Iteration 3:
+// list1: 5 → null 
+// list2: 4 → null
+// dummy → 1 → 2 → 3
+
+// Iteration 4:
+// list1: 5 → null 
+// list2: null 
+// dummy → 1 → 2 → 3 → 4
+// Exit `while` loop (because `list2` is `null`)
+
+// current.next = list1 ?? list2  >> resolves to `list1`
+// Result list: dummy → 1 → 2 → 3 → 4 → 5 → null
+// Return dummy.next: 1 → 2 → 3 → 4 → 5 → null
+```
+
 ## Stack & Queue
 - f
 - f
@@ -1193,13 +1304,13 @@ function rotateMatrixPure(matrix: number[][]): void {
       // Save the top element
       const top = matrix[first][i];
       
-      // Move left element to top
+      // Move left element to top: `last - offset` gives you the ROW in the LEFT COLUMN that corresponds to your current position along the top row.
       matrix[first][i] = matrix[last - offset][first];
       
-      // Move bottom element to left
+      // Move bottom element to left: `last - offset` gives the correct COLUMN in the BOTTOM ROW that mirrors your position on the top row.
       matrix[last - offset][first] = matrix[last][last - offset];
       
-      // Move right element to bottom
+      // Move right element to bottom: since you’re simply moving from the top row horizontally to the right column, you keep the same row index `i` and use `last` for the column.
       matrix[last][last - offset] = matrix[i][last];
       
       // Assign top element to right
@@ -1208,8 +1319,15 @@ function rotateMatrixPure(matrix: number[][]): void {
   }
 }
 ```
-- g
 
-## Prefix Sum
-- f
-- f
+## String manipulation
+### Knuth-Morris-Pratt (KMP)
+- Use this pattern to a pattern (needle) inside a text (haystack) [without re-checking](https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/885) characters unnecessarily (as if "we've already matched several characters and then encounter a mismatch, we can _use what we already know_ about the pattern to skip ahead rather than starting over.").
+- It's basically an advanced [[#Two Pointers  |two pointers]] technique which guarantees $O(n+m)$ time and $O(m)$ space, where `n` is the length of the haystack and `m` is the length of the needle.
+#### How it works
+- **Preprocessing**: Before searching, KMP analyzes the pattern to build a "partial match" table (the LPS or Longest Prefix which is also Suffix array).
+- **The LPS Table**: For each position in the pattern, this table tells us "if we encounter a mismatch here, how many characters back should we jump in the pattern?" It essentially remembers portions of the pattern that repeat.
+- **Smart Matching**: When a mismatch occurs after matching several characters, instead of sliding the pattern forward by just one position (naive approach), KMP jumps ahead based on the LPS table, skipping comparisons that are guaranteed to fail.
+- In an interview, acknowledging how it works is already a win. You don't need to remember how to use it. [Visualization](https://claude.ai/share/eac95702-72b2-435a-acee-caa7cba0452c)
+
+

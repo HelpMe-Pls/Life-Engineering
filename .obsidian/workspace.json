@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/English vocab.md",
+                    "file": "Tips & Tools/English grammar.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "English vocab"
+                  "title": "English grammar"
                 }
               },
               {
@@ -46,12 +46,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/DSA.md",
-                    "mode": "source",
+                    "file": "Frontend/CSS/Grid.md",
+                    "mode": "preview",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "DSA"
+                  "title": "Grid"
                 }
               },
               {
@@ -60,16 +60,16 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/WIL from books.md",
+                    "file": "Tips & Tools/DSA.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "WIL from books"
+                  "title": "DSA"
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -148,7 +148,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "XOR",
+                "query": "center",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -212,8 +212,8 @@
                 "showSearch": false,
                 "searchQuery": ""
               },
-              "icon": "lucide-archive",
-              "title": "All properties"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -227,6 +227,35 @@
               "icon": "lucide-list",
               "title": "Outline of English vocab"
             }
+          },
+          {
+            "id": "4a86b8c5f9778882",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Tips & Tools/DSA.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from DSA"
+            }
+          },
+          {
+            "id": "4705d7a5eb9738dd",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
           }
         ],
         "currentTab": 1
@@ -238,41 +267,42 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
       "graph:Open graph view": false,
       "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
       "canvas:Create new canvas": false
     }
   },
-  "active": "579d0c8d39e3a9ff",
+  "active": "7f07a632c024cc73",
   "lastOpenFiles": [
-    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Tips & Tools/English grammar.md",
+    "Tips & Tools/English vocab.md",
     "Tips & Tools/DSA.md",
-    "Frontend/CSS/Positioning.md",
-    "Tips & Tools/WIL from books.md",
+    "Backend/NodeJS/NodeJS.md",
+    "Frontend/CSS/Grid.md",
+    "Frontend/CSS/Flex.md",
+    "Frontend/CSS/Animations.md",
     "Frontend/CSS/CSS.md",
+    "Frontend/JavaScript/Regular Expressions.md",
+    "Frontend/CSS/Positioning.md",
+    "Tips & Tools/IELTS 7.5.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Tips & Tools/WIL from books.md",
     "Tips & Tools/Interview prep.md",
     "Tips & Tools/Technical.md",
     "Backend/NodeJS/Frameworks.md",
-    "Tips & Tools/English vocab.md",
-    "Tips & Tools/IELTS 7.5.md",
     "Frontend/TypeScript/TypeScript.md",
     "Tips & Tools/Tips.md",
     "Frontend/TypeScript/Basic Types.md",
     "Frontend/TypeScript/Type Transformation.md",
-    "Tips & Tools/English grammar.md",
     "Frontend/TypeScript/Patterns.md",
     "Frontend/TypeScript/Generics.md",
     "Frontend/TypeScript/Fundamentals.md",
     "Backend/Backend.md",
-    "Backend/NodeJS/NodeJS.md",
     "Frontend/TypeScript/Advanced.md",
     "Tips & Tools/Tips & Tools.md",
-    "Tips & Tools/Socialize.md",
-    "Frontend/Frameworks/Remix/Routing & Navigation.md",
-    "DevSecOps/DevOps.md",
-    "Frontend/Frameworks/Remix/Remix.md",
     "Tips & Tools/maslows.png",
     "Pasted image 20240902195101.png",
     "Frontend/JavaScript/JS Overview.png",

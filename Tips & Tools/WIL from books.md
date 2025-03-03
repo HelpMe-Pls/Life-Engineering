@@ -542,3 +542,11 @@
 - Not everything that happens happens for reason, but everything that survives survives for a reason.
 - In order to succeed, you must first survive.
 - A situation is deemed non-ergodic when observed past probabilities do not apply to future processes.
+# Barking Up The Wrong Tree
+- f
+- f
+- f
+# The ONE Thing
+- fg
+- f
+- f

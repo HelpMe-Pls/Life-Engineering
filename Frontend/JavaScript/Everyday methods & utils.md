@@ -505,7 +505,7 @@ console.log(flatten(nested)); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ### .slice()
 - Useful when you want to *extract* a portion of an array.
 - Does ***not*** mutate the original array.
-- Returns a **new** array (a *shallow* copy portion) of the original array with its element(s) selected from `start` (inclusive) to `end` (exclusive).
+- Returns a **new** array (a *shallow* copy portion) of the original array with its element(s) selected within the `[start, end)` range .
 - Returns an **empty** array when:
 	- `start` is `>=` array length.
 	- `end` is `0`.
@@ -742,7 +742,6 @@ console.log(`The character at index 3 is '${anyString.charAt(3)}'`);
 //The character at index 999 is ''
 console.log(`The character at index 999 is '${anyString.charAt(999)}'`);
 ```
-
 ### .includes()
 - Performs a **case-sensitive** search to determine whether one string may be found *within* another string
 - Returns `true` or `false` accordingly.
@@ -756,6 +755,26 @@ const str = "To be, or not to be, that is the question."
 console.log(str.includes("nonexistent")); // false
 console.log(str.includes("be", 4)); // true
 console.log(str.includes("")); // true
+```
+### indexOf()
+- Returns the index of the _first_ occurrence of the specified substring.
+- It also takes an _optional_ second argument as an _inclusive_ specified index and returns the _first_ occurrence of the specified substring _from_ that index.
+```ts
+const sentence = "I think Ruth's dog is cuter than your dog!";
+
+const searchTerm = "dog";
+const indexOfFirst = paragraph.indexOf(searchTerm);
+
+console.log(`The index of the first "${searchTerm}" is ${indexOfFirst}`);
+// "The index of the first "dog" is 15"
+
+console.log(
+  `The index of the second "${searchTerm}" is ${paragraph.indexOf(
+    searchTerm,
+    indexOfFirst + 1,
+  )}`,
+);
+// "The index of the second "dog" is 38"
 ```
 
 ### .trim()
@@ -773,7 +792,6 @@ console.log(maskedNumber);  // "************5581"
 const str2 = '6';
 console.log(str2.padEnd(9));   // "6        " 
 ```
-
 ### .replace()
 ```js
 // Syntax:
@@ -820,7 +838,6 @@ console.log(
 // John McCarthy
 // Robin Milner
 ```
-
 ### .split()
 ```js
 someStr.split(separator, _limit)
@@ -828,7 +845,7 @@ someStr.split(separator, _limit)
 - Returns *an **array** of strings*, split at each point where the `separator` occurs in the given string.
 - The `seperator` could be a `string` or a `regex`, so be careful and don't omit it or passing `undefined` or the method will executed by the string `"undefined"`.
 - If the `seperator` is an empty `string`, it returns an array of all the characters in the given string
-- `limit` is an optional param which is a non-negative integer specifying the number of substrings to be included in the return value. If `limit` is `0`, an empty array is returned. 
+- `limit` is an optional param which is a _non-negative_ integer specifying the number of substrings (from the start) to be included in the return value. If `limit` is `0`, an empty array is returned. 
 - If no param supplied, it returns an array with the given string as the only element.
 - Commonly used in pair with the [[Everyday methods & utils#.join() |Array.join()]] method for string format.
 ```js
@@ -842,7 +859,7 @@ const chars = str.split('');
 // ["S", "o", "m", "e", " ", "l", "o", "n", "g", " ", "r", "a", "n", "d", "o", "m", " ", "s", "t", "r", "i", "n", "g", "."]
 console.log(chars[8]);    
 
-const strCopy = str.split();
+const strCopy = str.split('');
 console.log(strCopy);    // ["Some long random string."]
 
 const wordsLimit = str.split(' ', 2);
