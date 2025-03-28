@@ -409,6 +409,12 @@ const isBelowThreshold = (currentValue) => currentValue < 40;
 const array1 = [1, 30, 39, 29, 10, 13];
 
 console.log(array1.every(isBelowThreshold));  // true
+
+// Use it to quickly check if an array of numbers is sorted:
+const values = [6, 9, 9, 6]
+const isSorted = values.every((value, idx) => idx === 0 || values[idx - 1] <= value)
+
+console.log(isSorted)   // false
 ```
 
 ### .some()
@@ -447,11 +453,11 @@ someArray.reduce(callbackFn, _initialValue)
 // Inline `callbackFn`:
 someArray.reduce((previousValue, currentValue) => { something... }, initialValue)
 
-// If exists `initialValue`, it will be assigned to `previousValue` for the FIRST time the callback is called and the `currentValue` will be treated as the FIRST VALUE in the array.
+// If `initialValue` exists, it will be assigned to `previousValue` for the FIRST iteration and the `currentValue` will be treated as the FIRST VALUE in the array.
 
 // If there’s no `initialValue`, the first value of the array will be assigned to `previousValue` and `currentValue` will be the 2nd value of the array
 
-// The `reduce` method executes { something... } on each element iteration of` the array, from left to right,  and its result is assigned to `previousValue`. Then the `currentValue` will be the param for the next execution of { something... }. The final result of running the reducer across all elements of the array is a SINGLE value (that value could be a number, string, boolean, object, or even a function). Example:
+// The `reduce` method executes { something... } on each element iteration of the array, from left to right, and its result is assigned to `previousValue`. Then the `currentValue` will be the param for the next execution of { something... }. The final result of running the reducer across all elements of the array is a SINGLE value (that value could be a number, string, boolean, object, or even a function). Example:
 
 const arr = [21, 18, 42, 40, 69, 63, 34];
 
@@ -510,7 +516,6 @@ console.log(flatten(nested)); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 	- `start` is `>=` array length.
 	- `end` is `0`.
 	- `start` and `end` are overlapped.
-	
 ```ts
 const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
 

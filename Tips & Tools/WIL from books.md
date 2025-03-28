@@ -510,6 +510,7 @@
 - It is much more immoral to claim virtue without fully living with its direct consequences.
 - If your private life conflicts with your intellectual opinion, it cancels your intellectual ideas, not your private life.
 	- If your private actions do not generalize, then you cannot have general ideas.
+
 > Never engage in rent-seeking.
 - Doing business will always help (because it brings about economic activity without large-scale risky changes in the economy)
 > Courage (risk taking) is the highest virtue. We need entrepreneurs.

@@ -29,6 +29,5 @@
 		- Tell me about some constructive feedback you received from a manager or a peer
 		- Tell me about a skill set that you observed in a peer or mentor that you want to develop in the next six months.
 	- **Communication**: Are you able to clearly communicate your stories during the interview? There is also some overlap with Empathy and how they communicate with others.
-
 # Your turn
 - Consider yourself as [[You as an interviewer |an interviewer]] and see if their goal truly aligns with yours. Aim for personal growth potential. Imagine how better you could be if you work there and if the tradeoff of this opportunity makes you happy.

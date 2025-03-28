@@ -155,7 +155,7 @@
 - Typically, behavioral interview [questions](https://www.techinterviewhandbook.org/behavioral-interview-questions) can be split into several types:
 	- Getting to know your career preferences, ambitions and plans
 	- Discuss [[Progressive Overload#Behavioral - What to tell |the details]] of experiences or projects written in your resume
-	- "_Tell me about a time where you_" type of questions where you describe how you demonstrated certain traits or responded to a situation
+	- "_Tell me about a time where you..._" type of questions where you describe how you demonstrated certain traits or responded to a situation
 - Display pride in previous work-related experiences you've had. And have some questions [[You as an interviewer|prepared]]. Take this time to learn something about what is being sought.
 - Prepare your stories to [[Behavioral|showcase fit]] to the company's culture / core values.
 - Refrain from exaggerating your abilities or being negative towards yourself.

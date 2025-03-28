@@ -150,7 +150,7 @@ console.log(myTrip[length], myTrip.length);  // 21500 2
 - The notion of having one general concept (e.g. human) that can manifest in different forms (male, female, non-binary,...) is known as polymorphism.
 ##### In JS
 - Reading a property that doesn’t exist will give you the value `undefined`.
-- When apply the `delete` unary operator to an object property, will remove the named property from the object:
+- When apply the `delete` unary operator to an object property, will remove _the named property_ from the object:
 ```js
 let anObject = {left: 1, right: 2};
 console.log(anObject.left);   // 1
@@ -246,18 +246,23 @@ interface LinkedList<T> {
 - A path refers to a series of connected nodes.
 - The depth of a node refers to how many edges there are from the root to that node. The depth of a tree is the depth of its deepest leaf node.
 - The height of a node is the number of edges present in the longest path connecting that node to a leaf node (i.e. the leaf nodes have a height of `0`). The height of the tree is the height of its root node.
-- A tree is _perfectly_ height-balanced if the *left and right* subtrees of any node are the same height
+- A tree is _perfectly_ height-balanced if the *left and right* subtrees of any node are the same height.
 - The size of a tree is the sum of nodes within the tree. 
 - Because trees are an abstract data type, there is no built-in method for them. It is crucial to keep in mind the important characteristics of a tree so that you can correctly implement them.
 ##### Binary tree
 - The most straightforward and common tree is a *binary tree*:
-	- Every node has a maximum of two child nodes.
-	- Every node must have a key so that it can be easily identified.
-	- Values found to be ***less*** than (or equal) the node are placed in the ***left*** child node, and values that are greater are placed in the right child node.
+	- Every node has a _maximum of two_ child nodes (therefore, a tree with a single node or an empty tree is still a valid binary tree).
+	- If each node of a binary only has either _only_ a left child or right child then that tree becomes a linked list. 
+	- Every node is assumed to have a key so that it can be easily identified.
 	- The fundamental methods are:
 		- **Lookup** method: a tree can be queried for the existence or absence of information. 
 		- **Insertion** method: finding out where a node should go by placing it on the left or right side of the nearest higher value node. 
 		- **Removal** method: when removing a node, it is necessary to check all its children nodes and ensure that a new connection is made with the node of the next highest value. 
+##### Binary search tree
+- A **valid BST** is a binary tree with these extra properties:
+	- The left subtree of a node contains only nodes with keys **less than** the node's key.
+	- The right subtree of a node contains only nodes with keys **greater than** the node's key.
+	- Those attributes hold _recursively_ for **_all_** of its _subtrees_.
 ##### Searching in trees
 > BFS is better when target is closer to source. DFS is better when target is far from source.
 - A depth-first search (***DFS***) method involves visiting every node *sequentially* from top to bottom as far as possible along each branch *before backtracking* (i.e. checking the adjacent branch using ***recursion***). 
@@ -282,7 +287,8 @@ function dfs(currentNode: BinaryNode<number> | null, needle: number): boolean {
 }
 ```
 - A breadth-first search (***BFS***) method involves searching each node on the same level (using ***queue***) *before descending* to the next level, and repeating until the requested node (or deepest leaf node) has been reached.
-- Extra memory, usually a ***queue***, is needed to keep track of the child nodes that were encountered but not yet explored. :
+- **BFS** has the same time complexity as DFS. However, its space complexity is proportional to the number of nodes at the deepest level, i.e. $O(V)$.
+- Extra memory, usually a ***queue***, is needed to keep track of the child nodes that were encountered but not yet explored:
 ```ts
 // Suppose we're applying BFS on a binary tree
 function bfs(head: BinaryNode<number>, needle: number): boolean {
@@ -303,7 +309,6 @@ function bfs(head: BinaryNode<number>, needle: number): boolean {
   return false
 }
 ```
-- **BFS** has the same time complexity as DFS. However, its space complexity is proportional to the number of nodes at the deepest level, i.e. $O(V)$.
 ##### Trie 
 - They are pronounced like "try" (named after Re"trie"val Tree). It's a kind of [search tree](https://stackfull.dev/trie-in-javascript-the-data-structure-behind-autocomplete) - an ordered tree data structure used for locating specific keys from within a set. 
 - These keys are most often *strings*, with links between nodes defined not by the entire key, but by *individual characters* (i.e. strings/words can be re**trie**ved by traversing down a branch path). In order to access a key (to recover its value, change it, or remove it), the trie is traversed [*depth-first*](https://learnersbucket.com/tutorials/data-structures/trie-data-structure-in-javascript/), following the links between nodes, which represent each character in the key.
@@ -329,13 +334,12 @@ const hashed = [1, 4, 2, 6, 2, 3, 3, 5, 2, 2, 6, 0]
 - Index collision/clashing (when two different hash codes could map to the same index or two different keys have the same hash code) is a problem because every slot in a hash table is supposed to store a single element. The larger the dataset used, the more likely clashing is prone to happen. It is resolved with close addressing (most common - using linked list) or open addressing (linear probing, quadratic probing, double hashing)
 ##### Close addressing
 - The most common approach to solve index collision is to use a linked list: each slot of our hash table holds a pointer to a linked list. Every entry at that index will be inserted into the linked list for that index. This strategy greatly increases performance, but it is costly in terms of space.
-
 #### Heaps
 - Heaps were first introduced as a means of storing and searching data efficiently. A heap is a [specialized data structure](https://www.cs.auckland.ac.nz/software/AlgAnim/heaps.html) that is modeled like a tree but behaves in a similar way to a ***queue***, but with different ***priority*** applied to its elements (i.e. ==priority queue==). Heaps are often built using ***binary trees*** (called *binary heaps*) though another approach would be to make an *array* act in a way that mimics the behavior of a binary tree (i.e. heapify). 
 - A heap is built for specialized purpose, that involves identifying the ***most important item*** and returning this in the ***shortest time possible***. Then queuing up the next item of importance. 
 - A heap is always a complete binary tree (i.e. a node always have *left **and** right* children or no children at all)
 - Heaps that place priority on the lowest valued key are called *min heaps* (i.e. the minimum value is placed *at the root*) and ones that place the priority on the maximum value are called *max heaps*. Reverse all the methods of min heaps and you'll have the methods for max heaps:
-	- **Insert**: similar to how insertion works in a binary tree with $O(log\enspace n)$ time. If the node to be inserted has the smallest value in the tree, then it'll bubble up to be the root.
+	- **Insert**: similar to how insertion works in a binary tree with $O(logn)$ time. If the node to be inserted has the smallest value in the tree, then it'll bubble up to be the root.
 	- **Find/Peek min**: retrieve the minimum value from a heap is $O(1)$ because it will be stored always at the root.
 	- **Delete min**: a heap should not support operations such as deleting items other than the min element (i.e. the root). Deleting arbitrary items in the tree would require restructuring the tree and this would lead to a degradation in performance. If you are looking for a data structure that can act in this way, then you might consider structures other than a heap:
 ```ts
@@ -423,9 +427,8 @@ class MinHeap {
     }
 }
 ```
-
 #### Graphs
-- A graph is a non-linear data structure that can store information in a way that allows you to extract some relations between the data.
+- A graph is a _non-linear **data structure**_ that can store information in a way that allows you to extract some relations between the data.
 - A graphs is like a [sophisticated](https://www.shiksha.com/online-courses/articles/graphs-in-data-structure-types-representation-operations/) tree without beginning or end. Graphs can also be traversed with DFS (by using stack) and BFS (by using queue).
 - A graph is an abstract representation of relationships between two or more connected *objects, entities*, or *locations*. The ***objects***, entities, or locations in a graph are represented by the ***vertices***, while the ***relationships*** between those objects are represented by the ***edges***.
 - Unlike a tree, nodes do not have to be connected and can exist independently from the other nodes. An edge connects two nodes. An edge can be said to have a weight (i.e. a value that is stored in the connection that infers some information on the strength of the connection between the two nodes).
@@ -542,7 +545,6 @@ function dfs(graph: WeightedAdjacencyList, source: number, needle: number): numb
 }
 console.log(dfs(sampleList, 0, 6))
 ```
-
 #### Custom
 - Data structures can be augmented to achieve efficient time complexities across different operations.
 - For example, a hash map can be used together with a doubly-linked list to build a LRU: a caching layer that will cache `n` items based on key. When `n` is exceeded, the cache will eject the Least Recently Used item from cache. It runs in $O(1)$ time and $O(n)$ space:
@@ -635,107 +637,56 @@ class LRU<K, V> {
 ## Algorithms
 - An algorithm can be defined as a precise sequence of instructions to solve a problem. It can be helpful to first generalize the problem and then more precisely outline the sequence of required instructions before coding an implementation.
 - Whenever we say that our algorithm is sufficient then it means that the algorithm is solving the problem in less amount of time while taking the least amount of space, or, its worst-case running time grows *slowly* with its input size.
-
 ### Sorting 
 - Working with sorted data or having the ability to sort your own data can result in significant time savings. Therefore, a dataset of elements that can be ordered is fundamentally necessary.
 - The actual metric that is used to sort is less important than the fact that they can be arranged in an ascending or descending order (although when saying an array is sorted without stating anything else, ***the ascending order is implied***). 
 - It's worth taking into consideration that whether the sorting is happening in-place or has been accomplished by creating a clone whilst keeping the original list.
 
-#### Bubble sort
-- Suppose we're sorting in ascending order. It is an in-place sorting algorithm that finds the ***max*** element in each cycle and puts it in appropriate position in the list by repeatedly performing swapping adjacent elements.
-- Visualizing the algorithm:
-	- In the first iteration:
-	    1.  Start by comparing `1st` and `2nd` element and swap them if `1st` element is greater.
-	    2.  Do the same for `2nd` and `3rd` element.
-	    3.  At the end of cycle you will get max element *at the end* of list.
-	- Now do the same in all subsequent iterations.
-	- Perform this for `array.length` times:
-```js
-function bubbleSort(arr) {
-	const 
-	for (let i = 0; i < n; i++) {
-	    for (let j = 0; j < n-i-1; j++) {
-	        if (arr[j] > arr[j+1]) {
-		        swap(arr,j,j+1);
-	        }
-	    }
-	}
-}
-```
-- As we need to iterate the whole array for every element, the time complexity is $O(n^2)$. Saying its time complexity increases with the array size is still a valid statement. The variables created in the loops are independent from the `array.length`, therefore, space complexity is $O(1)$.
-
-#### Selection sort
-- Take an array of items and iterate from left to right. Starting with the first place on the index, iterate over the entire array and swap this value *with the lowest value found on the right*. Repeat until the entire array is sorted:
-```js
-const arr = [62, 24, 15, 22, 1]
-// Pseudo code:
-for(i=0; i<arr.length-1; i++) {
-	let min_index = i
-	    for(j=i+1; j<n; j++) {
-	        if(arr[j] < arr[min_index]) {
-	            min_index = j 
-			}
-	    }
-	    swap(arr[i], arr[min_index])
-}
-
-// First iteration:
-{62} 24 15 22 {1}
--> 1 24 15 22 62
-
-// Next iteration:
-1 {24} {15} 22 62
--> 1 15 24 22 62
-
-// Next iteration:
-1 15 {24} {22} 62
--> 1 15 22 24 62 // `arr` sorted
-```
-- Because an in-place swap is being performed, no temporary array is required. There are 3 temporary variables `i`, `j` and `min_index`; however, they are *not dependent* on the list size (i.e. they don't scale with input size), so, the space complexity is $O(1)$. Time complexity is similar to the bubble sort.
-
+> [!important] Essential sorting algorithms
+> - Quick Sort is great for average cases, Merge Sort for stability, and Heap Sort for priority-based sorting.
+> - All of them have $O(nlogn)$ average time complexity.
 #### Insertion sort
 - It is appropriate for datasets which are *already partially sorted* and the number of elements is small.
 - Assume we're sorting in ascending order. Rather than searching through all the elements, this approach begins by examining the *first two elements* in a list and proceed *in pair* of subsequent elements. The smaller of the two is then moved to the left. This is repeated for every pair of elements where each one being compared to the element on its left, then, a subsequent switch to the left is made if it's found to be *smaller*:
 ```js
 const arr = [12, 11, 13, 5, 6]
-// Pseudo code:
-for(i=0; i<arr.length-1; i++) {
+
+// Pseudo code using nested loops with O(n^2) time & O(1) space:
+for (i=0; i<arr.length-1; i++) {
     let j = i
-    while (j > 0 && A[j-1] > A[j]) {
-        swap(A[j], A[j-1])
-        j = j - 1
+    while (j > 0 && arr[j-1] > arr[j]) {
+        swap(arr[j], arr[j-1])
+        j -= 1
     }
 }            
 
 // First iteration:
-{12} {11} 13 5 6
+{12} {11} 13 5 6 // i == 1; j == 1
 -> 11 12 13 5 6
 
 // Next iteration, 12 < 13, no swap occurred:
-11 12 13 5 6
+11 12 13 5 6  // i == 2; j == 2
 
 // Next iteration:
-11 12 {13} {5} 6
+11 12 {13} {5} 6  // i == 3; j == 3
 -> 11 12 5 13 6
-11 {12} {5} 13 6
+11 {12} {5} 13 6  // i == 3; j == 2
 -> 11 5 12 13 6
-{11} {5} 12 13 6
+{11} {5} 12 13 6  // i == 3; j == 1
 -> 5 11 12 13 6
 
 // Next iteration:
-5 11 12 {13} {6}
+5 11 12 {13} {6}  // i == 4; j == 4
 -> 5 11 12 6 13
-5 11 {12} {6} 13
+5 11 {12} {6} 13  // i == 4; j == 3
 -> 5 11 6 12 13
-5 {11} {6} 12 13
+5 {11} {6} 12 13  // i == 4; j == 2
 -> 5 6 11 12 13 // arr sorted
 ```
-- The time and space complexity is similar to selection sort.
-
 #### Quick sort
 - It uses a *divide-and-conquer* methodology. Suppose we're sorting in ascending order. Given an array of items, a place is determined on the array on which to split the array and this is called *the pivot point*. The original array is *partitioned* into two arrays one of which holds values smaller than the pivot, and the other array holds values greater than the pivot value. Recursively, we find the pivot for each sub-lists until all lists contains only one element:
 ```js
-function quicksort(arr: number[]):  number[] {
+function quickSort(arr: number[]):  number[] {
   if (arr.length <= 1) {
     return arr;
   }
@@ -764,15 +715,73 @@ function quicksort(arr: number[]):  number[] {
   console.log('next step:', [...left, pivot, ...right]);
 
   // Recursively sort and bubbling up the recursive stack to combine sub-arrays
-  return [...quicksort(left), pivot, ...quicksort(right)];
+  return [...quickSort(left), pivot, ...quickSort(right)];
 }
 
 const unsortedArray = [5, 2, 7, 3, 1, 6, 4, 8];
-const sortedArray = quicksort(unsortedArray);
+const sortedArray = quickSort(unsortedArray);
 console.log(sortedArray);
 ```
-- Quick Sort is quite similar to merge sort. Its main advantage over merge sort, is that the sorting can be done in-place. This saves time because we don’t have to create new arrays. If you're looking for a general-purpose sorting algorithm with a predictable performance regardless of the input, Merge Sort is a solid choice. On the other hand, Quick Sort can be faster in practice for smaller datasets and is often favored when memory usage is a concern.
-- Quick Sort consumes more space but returns overall quicker solutions. It has the time complexity of $O(nlogn)$ for average cases, $O(n^2)$ for the worst case (applied on a sorted or reverse-sorted array) and space complexity $O(n)$
+- Quick Sort is quite similar to merge sort. Its main advantage over merge sort, is that the sorting can be done in-place. This saves time because we don’t have to create new arrays. It can be faster in practice for smaller datasets and is often favored when memory usage is a concern.
+- Quick Sort consumes $O(n)$ space but returns overall quicker solutions. It has the time complexity of $O(nlogn)$ for average cases, $O(n^2)$ for the worst case (applied on a sorted or reverse-sorted array).
+#### Merge sort
+- Preferred as a general-purpose sorting algorithm with predictable performance (guarantees $O(nlogn)$ time) regardless of the input.
+	- It is the go-to sorting algorithm ==_when working with linked lists_==, due to its sequential access nature, offering $O(1)$ space with an iterative implementation.
+- Same $O(n)$ space on average as Quick Sort because it uses an extra array [[#Divide and Conquer |for the merge step]].
+
+#### Heap sort
+- As the name suggests, we use it when a heap implementation is readily available.
+- Preferred when you need to find the $k^{th}$ largest/smallest elements (can stop early). As an comparison-based and in-place sorting algorithm, it has $O(nlogn)$ time & $O(1)$ space:
+```ts
+function heapify<T>(arr: T[], n: number, i: number): void {
+  let largest = i;
+  const left = 2 * i + 1;
+  const right = 2 * i + 2;
+  
+  // Find the `largest` among `i` (root), `left` child and `right` child
+  if (left < n && arr[left] > arr[largest]) {
+    largest = left;
+  }
+  
+  if (right < n && arr[right] > arr[largest]) {
+    largest = right;
+  }
+  
+  // If `largest` is not root (i.e. the child that's bigger than the parent), 
+  // swap them and recursively heapifying until we hit the base case (which is `largest == i`)
+  if (largest !== i) {  
+    [arr[i], arr[largest]] = [arr[largest], arr[i]]; // put the bigger value where the parent should be
+    heapify(arr, n, largest);
+  }
+}
+
+// O(nlogn) time overall
+function heapSort<T>(arr: T[]): T[] {
+  const n = arr.length;
+  
+  // Step 1: Build a max heap from `arr` with O(n) time
+  // We're building a max heap because it naturally works with the ASCENDING order of "Step 2"
+  for (let i = Math.floor(n / 2) - 1; i >= 0; i--) {
+    heapify(arr, n, i);
+  }
+  
+  // Step 2: Going bottom-up for ascending order
+  for (let i = n - 1; i > 0; i--) {  // O(n) time
+    // Move current root to end to place the current maximum element directly in its final sorted position
+    // Forming the "sorted section"
+    [arr[0], arr[i]] = [arr[i], arr[0]];
+    
+    // Call max heapify on the remaining "heap section" with O(logn) time
+    heapify(arr, i, 0);
+  }
+  
+  return arr;
+}
+
+const array = [12, 11, 13, 5, 6, 7];
+heapSort(array);
+console.log(array); // [5, 6, 7, 11, 12, 13]
+```
 
 ### Searching
 #### Linear
@@ -781,7 +790,7 @@ console.log(sortedArray);
 function linearSearch(arr, item) {
   // Go through all the elements of `arr` to look for the target item:
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === item) { // Found it!
+    if (arr[i] == item) { // Found it!
       return i;
     }
   }
@@ -791,22 +800,21 @@ function linearSearch(arr, item) {
 }
 ```
 - Linear search has $O(n)$ time & space complexity
-
 #### Binary
 > To conduct a binary search, the list **must first be sorted**.
 - A binary search is performed by comparing the target element to *the mid-point* on a *sorted* list and discarding the half that is *less than* the target element. This halving at the mid-point is repeated until the target element is found or there is no more list to half:
 ```js
 // Iterative approach (using loops):
 let iterativeBinary = function (arr, x) {
-    let start=0, end=arr.length-1;
+    let start = 0, end = arr.length-1;
          
     // Iterate while start not meets end
-    while (start<=end){
+    while (start <= end){
         // Find the mid index
-        let mid=Math.floor((start + end)/2);
+        let mid = Math.floor((start + end)/2);
   
         // Found it!
-        if (arr[mid]===x) return true;
+        if (arr[mid] == x) return true;
  
         // Else look in left or right half respectively
         else if (arr[mid] < x)
@@ -824,10 +832,10 @@ let recursiveBinary = function (arr, x, start, end) {
     if (start > end) return false;
   
     // Find the middle index
-    let mid=Math.floor((start + end)/2);
+    let mid = Math.floor((start + end)/2);
   
     // Compare mid with given key x
-    if (arr[mid]===x) return true;
+    if (arr[mid] == x) return true;
          
     // If element at mid is greater than x,
     // search in the left half of mid
@@ -839,8 +847,7 @@ let recursiveBinary = function (arr, x, start, end) {
         return recursiveFunction(arr, x, mid+1, end);
 }
 ```
-- Binary search runs with $O(log\enspace n)$ time and $O(n)$ space.
-
+- Binary search runs with $O(logn)$ time and $O(n)$ space.
 ### Recursion
 - It is the practice of having functions call themselves with a ***smaller*** instance of a problem *repeatedly* until some ***exit condition*** is met.
 - There are three requirements for implementing a recursive solution, namely the base case, the diminishing structure, and the recursive call. 
@@ -852,6 +859,16 @@ function pow(x, n) {
   //      ^^^^^^                 ^^^^^^^^^
   //      base case              diminishing structure
 }
+
+// How it works:
+// Suppose `x==2` & `n==4`:
+pow(2, 4) = 2 * pow(2, 3) // `pow(2,4)` returns `2*pow(2,3)`
+               = 2 * (2 * pow(2, 2))  // `pow(2,3)` returns `2*pow(2,2)`
+                    = 2 * (2 * (2 * pow(2, 1))) // base case `n==1` 
+                              = 2 * (2 * (2 * 2))
+                              = 2 * (2 * 4)
+                              = 2 * 8
+                              = 16
 ```
 - Recursion vs regular loop: with recursion, you can simply call the function with a different input (diminishing structure) and it will *return a breakdown of the required steps*. Readability is a strong plus for recursion. Sometimes when a problem requires many checks (i.e. base cases), a loop can quickly become unwieldy. In some cases, running through a simple loop is computationally cheaper than calling a function multiple times. 
 	- Often, though, recursive solutions are helpful in giving up some efficiency in order to make the program more straightforward. Generally, these are problems that require exploring or processing several “branches”, each of which might branch out again into even more branches. 
@@ -860,7 +877,6 @@ function pow(x, n) {
 - Recursion increases computational cost as resources are required to make a function call. 
 	- However, the computation from each result will be *retained on the [call stack](https://www.codingninjas.com/codestudio/library/recursion-and-stack)*.  This can be useful when computing hierarchical problems or problems where one can benefit from *knowing which steps resulted in a given outcome* like traversing a graph.
 - Beware of the maximal recursion depth of the JavaScript engine. We can rely on it being 10000, some engines allow more, but 10000 is probably out of limit for the majority of them.
-
 ### Divide and Conquer
 - The algorithm comprises two mandatory steps, namely, divide and conquer (`d&c`) with an optional third, is combine.
 	- In the divide step, the input is split into smaller segments and processed individually. 
@@ -884,6 +900,7 @@ function mergeSort(arr: number[]): { sorted: number[]; count: number } {
     return { sorted: arr, count: 0 };
   }
 
+// We divide the array into two halves until each subarray contains a single element
   const middle = Math.floor(arr.length / 2);
   const left = arr.slice(0, middle);
   const right = arr.slice(middle);
@@ -905,6 +922,7 @@ function merge(left: number[], right: number[]): { sorted: number[]; count: numb
   let leftIndex = 0;
   let rightIndex = 0;
 
+// Comparing elements from both arrays and add the smaller one to the `result`
   while (leftIndex < left.length && rightIndex < right.length) {
     if (left[leftIndex] <= right[rightIndex]) {
       result.push(left[leftIndex]);
@@ -912,12 +930,16 @@ function merge(left: number[], right: number[]): { sorted: number[]; count: numb
     } else {
       result.push(right[rightIndex]);
       rightIndex++;
+      // If the element in the right subarray is smaller, it means that every remaining element in the left subarray (from the current `leftIndex` onward) forms an inversion with this "right element"
       count += left.length - leftIndex;
     }
   }
 
+// Concatenates the leftover elements from `left` then `right` after the `while` loop to ensure ascending order
   return {
-    sorted: result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex)),
+    sorted:
+	    result.concat(left.slice(leftIndex))
+			  .concat(right.slice(rightIndex)),
     count,
   };
 }
@@ -937,10 +959,10 @@ for (let i = arr.length - 1; i > 0; i--) {
 
 console.log(`Randomized: ${[arr]}`);
 
+// The extra `count` variable essentially calculates how far the array is from being completely sorted. A higher `count` indicates a more unsorted (or more "inverted") array, while a `count` of zero means the array is already sorted.
 const { sorted, count } = mergeSort(arr);
 console.log(`Number of inversions: ${count}`);
 console.log(`Post: ${sorted}`);
-
 ```
 - Parallelization and memory management are two immediate advantages when applying `d&c`:
 	- Parallelism is when you have different threads or computers working on the same problem at the same time to complete it in a quicker time.
@@ -956,125 +978,50 @@ console.log(`Post: ${sorted}`);
 - For example, in a CPU tasks execution context, a greedy approach would involve selecting first the shortest running program and then the next shortest program and so on. While this might not lead to a globally optimized solution, it will reduce any overhead in calculating the most efficient subset of items. [Dijkstra's shortest path](https://www.youtube.com/watch?v=pVfj6mxhdMw) is also a well-known instance of the greedy algo.
 - Greedy vs `dp`: while the overhead for a greedy algorithm is low and coding a solution is quite straightforward, it will not always guarantee that the best option is returned.
 ---
-# Patterns
-## Sliding Windows
-- f
-- f
-## Two Pointers
+# Patterns (what ACTUALLY matters)
+## Essentials
+### Two Pointers
 - Use this pattern to _**traverse**_ arrays/strings when you think of:
-	- Opposite ends: both pointers move towards each other to find pairs that meet specific criteria
-	- Single pass with conditions: pointers traverse in the same direction but are used to track conditions (e.g. finding duplicates, valid segments,...)
-	- At different speeds: one pointer moves faster than the other to achieve tasks like cycle detection or finding midpoints
-> Use this pattern to optimize space usage if arrays are pre-sorted. 
-### Examples
-#### In-place replacement
-- [An example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/727) for "fast and slow" pointers working on an in-place problem:
-```ts
-// O(n) time & O(1) space
-function removeDuplicates(nums: number[]): number {  
-    if (nums.length === 0) return 0;  
-    
-	// `k = 1` because the first element is guaranteed to be unique 
-    let k = 1;  // Slow pointer  
-    
-	// Traversing the array with fast pointer `i`
-    for (let i = 1; i < nums.length; i++) { 
-    // When a new unique element is found by comparing the value at the fast pointer vs the slow pointer
-        if (nums[i] !== nums[k - 1]) {  
-            nums[k] = nums[i];  // In-place replacement
-            k++;   // Keeping track of unique elements
-        }  
-    }  
-
-    return k;  
-};  
-```
-
-- Another "[fast and slow](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/567)" problem:
-```ts
-// O(n) time & O(1) space
-function moveZeroes(nums: number[]): void {
-  // Slow pointer to track the position where the next non-zero should be placed
-  let lastNonZeroFoundAt = 0;
-
-  // Iterate the array with the `fastPointer`
-  for (let fastPointer = 0; fastPointer < nums.length; ++fastPointer) {
-    if (nums[fastPointer] !== 0) {
-      // Only swap if the non-zero ISN'T already in the correct position
-      if (fastPointer !== lastNonZeroFoundAt) {
-        [nums[fastPointer], nums[lastNonZeroFoundAt]] = [nums[lastNonZeroFoundAt], nums[fastPointer]];
-      }
-      // Advancing the slow pointer
-      lastNonZeroFoundAt++;
-    }
-  }
-}
-```
-#### Single pass
-- It solves [this problem](https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/885) sub-optimally by using a pointer in the haystack and checks character-by-character if the needle matches starting at that position:
-```ts
-// O(n*m) time & O(1) space
-function strStrTwoPointers(haystack: string, needle: string): number {
-  // Edge case: if `needle` is empty, return 0.
-  if (needle.length === 0) return 0;
-  
-  const hLen = haystack.length;
-  const nLen = needle.length;
-  
-  // Loop over each possible starting index in `haystack` where `needle` can fit
-  for (let i = 0; i <= hLen - nLen; i++) {
-    let j = 0;
-    // Use a second pointer `j` to check if `needle` matches `haystack` at position `i`
-    while (j < nLen && haystack[i + j] === needle[j]) {
-      j++;
-    }
-    // If we can reach the END of `needle`, it means that we found a match
-    if (j === nLen) {
-      return i;
-    }
-  }
-  
-  // Catch
-  return -1;
-}
-```
-
-## Binary Search
+	- Opposite ends: both pointers move towards each other to find pairs that meet specific criteria.
+	- Single pass with conditions: pointers traverse in the same direction but are used to track conditions (e.g. finding duplicates, valid segments,...).
+	- At different speeds: one pointer moves faster than the other to achieve tasks like cycle detection or finding midpoints.
+> Use this pattern to optimize space usage if arrays are **pre-sorted**. 
+#### Examples
+- [Move Zeros](https://leetcode.com/problems/move-zeroes/description)
+- [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description)
+- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description)
+- [Two Sum II](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description)
+- [3Sum](https://leetcode.com/problems/3sum/description): this one is actually 3 pointers
+- [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description)
+- [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
+- [Linked List Cycle II]()
+- [Sort Colors]()
+- [Container With Most Water]()
+#### Sliding Windows
+- This is a variant of Two Pointer. Efficient for problems with:
+	- Min/max length subarray/substring meeting certain conditions
+	- Consecutive elements (e.g. longest/shortest streak of characters)
+	- Subarrays of fixed size `k`
+##### Examples
+- [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)
+- [Minimum Size Subarray Sum]()
+- [Fruit Into Basket]()
+- [Minimum Window Substring]()
+### Sorting & Searching
+- Essentials: [[#Merge sort]], [[#Quick sort]] and [[#Binary |Binary search]]. 
+### BFS & DFS
+#### BFS
+- Useful when traversing trees/graphs with connected components.
+#### DFS
+- Ideal for level-order traversals and finding the _**shortest path**_ in _unweighted_ graphs.
 - f
-- f
-## BFS & DFS
-- f
-- f
-## Recursion & Backtracking
-- f
-- f
-## Dynamic Programming
-- f
-- f
-## Greedy
-- Think of it like hiking up a hill: you want to reap all the benefits for each forward step.
-- An [example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/564):
-```ts
-// In Layman's term: the sum of all the consecutive increases is the return value. Therefore, if the price today is higher than yesterday, you IMMEDIATELY sell and take that profit 
-// O(n) time, O(1) space
-function maxProfit(prices: number[]): number {
-    return prices.reduce((profit, currentPrice, day) => {
-        // Make a profit if current price > previous day's price
-        return day > 0 && currentPrice > prices[day - 1] 
-            ? profit + (currentPrice - prices[day - 1]) 
-            : profit;
-    }, 0);
-}
-```
-## Divide and Conquer
-- f
-- f
-## Hash Map/Set
-### Hash Map
-- The built-in `Map` is a hash map. It's like a _notebook_ where you store _extra_ details for an item, e.g. "_I saw the number 6 **at position** 9_". 
+### Hash Map/Set
+- It's crucial for frequent searches with $O(1)$ time for average lookups, sacrificing $O(n)$ space to store the extra Map/Set (assuming we apply it to a single array input). 
+#### Hash Map
+- The built-in JS `Map` is a hash map. It's like a _notebook_ where you store _extra_ details for an item, e.g. "_I saw the number 6 **at position** 9_". 
 - Mostly used for:
 	- Character frequency matching
-	- **Non**-sequential pattern matching
+	- **Non**-sequential pattern matching 
 - As [an example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/674), use it to efficiently handles duplicates and unsorted arrays:
 ```ts
 // Suppose `n == nums1.length` and `m == nums2.length`
@@ -1104,8 +1051,9 @@ function getIntersect(nums1: number[], nums2: number[]): number[] {
 // O(n) time & space:
 function twoSum(nums: number[], target: number): number[] {
     const indexMap = new Map<number, number>();
+    
+// Store each operand and check for its complement's index
     for (let i in nums) {
-// Store each operand and check for its complement
         const complement = target - nums[+i];
         if (indexMap.has(complement)) {
             return [indexMap.get(complement)!, +i]; // Found
@@ -1116,7 +1064,7 @@ function twoSum(nums: number[], target: number): number[] {
     throw new Error("No solution found");
 }
 ```
-### Hash Set
+#### Hash Set
 - The built-in `Set` is a hash set. Think of a it as a _checklist_ where you only care _if_ an item _exists_. Use it to solve problems [like this one](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/578):
 ```ts
 function containsDuplicate(nums: number[]): boolean {
@@ -1135,7 +1083,7 @@ function isValidSudoku(board: string[][]): boolean {
       // For each cell
       const cell = board[row][col];
       if (cell === '.') continue; // Skip empty cells
-    // Since the `sqrIdx` is determined by the "left-to-right for each row" order, we're multiplying 3 on the rows to shift it into the correct "square row"
+      // Since the `sqrIdx` is determined by the "left-to-right for each row" order, we're multiplying 3 on the rows to shift it into the correct "square row"
       const sqrIdx = ~~(row / 3) * 3 + ~~(col / 3); // Double bitwise NOT is equivalent to `Math.floor` by TRUNCATING decimals for POSITIVE numbers
         
         // Check for the number's UNIQUENESS in each corresponding row, column, or box
@@ -1150,8 +1098,32 @@ function isValidSudoku(board: string[][]): boolean {
   return true; 
 }
 ```
-## Linked list
-### In-place reversal
+### Recursion & Backtracking
+- Essential for exploring all possibilities (think permutations and combinations).
+- f
+- f
+### Greedy
+- Think of it like hiking up a hill: you want to reap all the benefits for each forward step. It’s not always perfect, but it's efficient.
+- An [example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/564):
+```ts
+// In Layman's term: the sum of all the consecutive increases is the return value. Therefore, if the price today is higher than yesterday, you IMMEDIATELY sell and take that profit 
+// O(n) time, O(1) space
+function maxProfit(prices: number[]): number {
+    return prices.reduce((profit, currentPrice, day) => {
+        // Make a profit if current price > previous day's price
+        return day > 0 && currentPrice > prices[day - 1] 
+            ? profit + (currentPrice - prices[day - 1]) 
+            : profit;
+    }, 0);
+}
+```
+### Dynamic Programming
+- Use it when you need to optimize overlapping subproblems with memoization or tabulation.
+- f
+
+## Extras
+### Linked list
+#### In-place reversal
 - We can also apply [[#Two Pointers |two pointers]] for the Linked List data structure. In [this example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/93/linked-list/560), we're using the `prev` and `current` pointers: 
 ```ts
 class ListNode {
@@ -1182,7 +1154,7 @@ function reverseList(head: ListNode | null): ListNode | null {
 // Second iteration: 2→1→null, prev=2, current=3
 // Third iteration: 3→2→1→null, prev=3, current=null
 ```
-### Merging
+#### Merging
 - Again, the [[#Two Pointers |two pointers]] technique can be useful for problems like [this one](https://leetcode.com/explore/interview/card/top-interview-questions-easy/93/linked-list/771):
 ```ts
 function mergeTwoListsOptimized(list1: ListNode | null, list2: ListNode | null): ListNode | null {  
@@ -1240,17 +1212,20 @@ function mergeTwoListsOptimized(list1: ListNode | null, list2: ListNode | null):
 // Return dummy.next: 1 → 2 → 3 → 4 → 5 → null
 ```
 
-## Stack & Queue
+### Heap (priority queue)
+- Use it when you need quick access to the smallest or largest element (i.e. `k` problems).
+- f
+### Tree
+#### Binary Search Tree
 - f
 - f
-## Heap
+#### Trie
+- Perfect for fast string searching and autocomplete scenarios.
 - f
-- f
-## Trie
-- f
-- f
-## Bit Manipulation
-### The XOR operator
+
+### Bit Manipulation
+- These low-level operations that can turn a brute force approach into something sleek.
+#### The XOR operator
 - Think of XOR like procreation. One sex can _only_ procreate with the _opposite_ sex. Same sex consummation or masturbation leads to termination of a species. 
 - Perfect for problems where duplicates cancel out. Leverage this property to solve cancellation or identity issues, such as:
 	- `x^x == 0`: This means duplicate numbers cancel each other out.
@@ -1266,7 +1241,7 @@ function singleNumber(nums: number[]): number {
 // 4 ^ 1 ^ 2 ^ 1 ^ 2 = 4 ^ (1 ^ 1) ^ (2 ^ 2) = 4 ^ (0 ^ 0) = 4
 ```
 
-## Matrix Manipulation
+### Matrix Manipulation
 - A [transpose then reverse](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/770) problem:
 ```ts
 // O(n^2) time & O(1) space
@@ -1320,11 +1295,11 @@ function rotateMatrixPure(matrix: number[][]): void {
 }
 ```
 
-## String manipulation
-### Knuth-Morris-Pratt (KMP)
+### String manipulation
+#### Knuth-Morris-Pratt (KMP)
 - Use this pattern to a pattern (needle) inside a text (haystack) [without re-checking](https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/885) characters unnecessarily (as if "we've already matched several characters and then encounter a mismatch, we can _use what we already know_ about the pattern to skip ahead rather than starting over.").
 - It's basically an advanced [[#Two Pointers  |two pointers]] technique which guarantees $O(n+m)$ time and $O(m)$ space, where `n` is the length of the haystack and `m` is the length of the needle.
-#### How it works
+##### How it works
 - **Preprocessing**: Before searching, KMP analyzes the pattern to build a "partial match" table (the LPS or Longest Prefix which is also Suffix array).
 - **The LPS Table**: For each position in the pattern, this table tells us "if we encounter a mismatch here, how many characters back should we jump in the pattern?" It essentially remembers portions of the pattern that repeat.
 - **Smart Matching**: When a mismatch occurs after matching several characters, instead of sliding the pattern forward by just one position (naive approach), KMP jumps ahead based on the LPS table, skipping comparisons that are guaranteed to fail.

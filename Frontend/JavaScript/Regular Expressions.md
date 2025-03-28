@@ -3,7 +3,7 @@
 
 | Regex       | Meaning                                                                                                                 |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `/abc/`     | A sequence of `abc`                                                                                                     |
+| `/abc/`     | A sequence of `abc` (i.e. the literal string "`abc`")                                                                   |
 | `/[abc]/`   | Any character from a [[#Set \|set]] of `abc`                                                                            |
 | `/[^abc]/`  | Any character **_not in_** a set of `abc`                                                                               |
 | `/[0-9]/`   | Any digit in an inclusive range of `0` to `9`                                                                           |
@@ -108,7 +108,7 @@ let re1 = new RegExp("aBc", "i");
 const re2 = /aBc/i;
 ```
 #### `g`
-- Stands for "*g*lobal search". Use this when you want to get *all* matches, not just the first one. Without the global flag, subsequent searches will return the same match
+- Stands for "`g`lobal search". Use this when you want to get *all* matches, not just the first one. Without the global flag, subsequent searches will return the same match of the first one.
 > [!important]- `lastIndex` gotcha
 > The global search also updates the `lastIndex` value, and therefore, your regex might be accidentally starting at an index left over from a previous call
 ```js

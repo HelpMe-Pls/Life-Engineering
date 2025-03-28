@@ -1,5 +1,3 @@
-credo (n) <cri-do>: a fancy word for 'ultimate belief'
-
 endeavor (v-n): to try / an effort to do sth
 
 cliché (n): triteness, an opinion that is overused and betrays a lack of original thought.
@@ -61,6 +59,8 @@ masticate (v): chew, nibble, gnaw (on)
 punitive (adj) = penal, disciplinary: inflicting or intended as punishment
 
 puny (adj): small, weak, helpless
+
+pander (v-n): say, do, or provide what someone wants even though it is not good
 
 competent (adj): deft, having the necessary skill to do something successfully
 
@@ -313,6 +313,8 @@ dormant (adj): latent, inactive, idle
 cajole (v): to deceive, coax, or persuade with flattery
 
 sojourn (v-n): a temporary stay
+
+transient (adj-n): transitory, affecting something or producing results beyond itself
 
 provisional (adj): interim, temporary
 
@@ -808,6 +810,8 @@ deity (n): god, divinity
 
 blasphemy (n): sacrilege, irreverence, showing contempt or lack of reverence for the sacred or inviolable
 
+sanctum (n): a sacred place where one is free from intrusion
+
 revere (v): venerate, very much respect and admire someone or something
 
 deign (v): disgrace, stoop, to descend to a level that is beneath one's dignity
@@ -1104,7 +1108,9 @@ lam (n): sudden or hurried flight especially from the law → on the lam
 
 eligible (adj-n): qualified (to be chosen)
 
-adjoin (v): lie next to or in contact with
+==adjoin== (v): lie next to or in contact with
+
+fringe (v-n): border, a group or activity that are unconventional or on the periphery of mainstream society 
 
 adjourn (v): suspend a session indefinitely or to another time or place
 
@@ -1139,3 +1145,5 @@ contraption (n): device, gadget
 lodge (v-n): file (a complaint), a resort hotel (inn)
 
 euphemism (n): nói giảm nói tránh
+
+coddle (v): pamper, treat with extreme or excessive care or kindness

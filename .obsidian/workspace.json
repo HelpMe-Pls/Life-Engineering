@@ -10,7 +10,7 @@
           {
             "id": "2ed2b87e25932f50",
             "type": "tabs",
-            "dimension": 53.001579778830965,
+            "dimension": 53.317535545023695,
             "children": [
               {
                 "id": "e998ff104dd5ae6f",
@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/English grammar.md",
+                    "file": "Tips & Tools/English vocab.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "English grammar"
+                  "title": "English vocab"
                 }
               },
               {
@@ -32,26 +32,26 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/CSS/Positioning.md",
+                    "file": "Frontend/JavaScript/Regular Expressions.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Positioning"
+                  "title": "Regular Expressions"
                 }
               },
               {
-                "id": "579d0c8d39e3a9ff",
+                "id": "4b2a3eedcdfaf59a",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/CSS/Grid.md",
-                    "mode": "preview",
+                    "file": "Tips & Tools/Progressive Overload.md",
+                    "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Grid"
+                  "title": "Progressive Overload"
                 }
               },
               {
@@ -60,21 +60,21 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/DSA.md",
+                    "file": "Tips & Tools/Entrepreneurship.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "DSA"
+                  "title": "Entrepreneurship"
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 3
           },
           {
             "id": "8cedd05142699eb5",
             "type": "split",
-            "dimension": 46.998420221169035,
+            "dimension": 46.682464454976305,
             "children": [
               {
                 "id": "c3184acf40a6477e",
@@ -103,7 +103,7 @@
                       "type": "markdown",
                       "state": {
                         "file": "Frontend/JavaScript/Everyday methods & utils.md",
-                        "mode": "source",
+                        "mode": "preview",
                         "source": false
                       },
                       "icon": "lucide-file",
@@ -148,7 +148,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "center",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -275,34 +275,35 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "7f07a632c024cc73",
+  "active": "c17c5d67d3a206d6",
   "lastOpenFiles": [
-    "Tips & Tools/English grammar.md",
-    "Tips & Tools/English vocab.md",
+    "Tips & Tools/Writing.md",
     "Tips & Tools/DSA.md",
-    "Backend/NodeJS/NodeJS.md",
+    "Tips & Tools/Progressive Overload.md",
+    "Tips & Tools/English vocab.md",
+    "Tips & Tools/English grammar.md",
+    "Pasted image 20250326161107.png",
+    "Frontend/JavaScript/Regular Expressions.md",
+    "Tips & Tools/Interview prep.md",
+    "Tips & Tools/Career.md",
+    "Tips & Tools/Behavioral.md",
+    "Tips & Tools/Screening.md",
+    "Tips & Tools/You as an interviewer.md",
+    "Frontend/CSS/Positioning.md",
+    "Tips & Tools/System Design.md",
+    "Tips & Tools/WIL from books.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
+    "[[.md",
+    "Tips & Tools/Git.md",
+    "Tips & Tools/Tips.md",
+    "Tips & Tools/Tools & Util libs.md",
+    "Frontend/Network/Connections and protocols.md",
+    "Frontend/Network/Networking.md",
     "Frontend/CSS/Grid.md",
+    "Backend/NodeJS/NodeJS.md",
     "Frontend/CSS/Flex.md",
     "Frontend/CSS/Animations.md",
     "Frontend/CSS/CSS.md",
-    "Frontend/JavaScript/Regular Expressions.md",
-    "Frontend/CSS/Positioning.md",
-    "Tips & Tools/IELTS 7.5.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
-    "Tips & Tools/WIL from books.md",
-    "Tips & Tools/Interview prep.md",
-    "Tips & Tools/Technical.md",
-    "Backend/NodeJS/Frameworks.md",
-    "Frontend/TypeScript/TypeScript.md",
-    "Tips & Tools/Tips.md",
-    "Frontend/TypeScript/Basic Types.md",
-    "Frontend/TypeScript/Type Transformation.md",
-    "Frontend/TypeScript/Patterns.md",
-    "Frontend/TypeScript/Generics.md",
-    "Frontend/TypeScript/Fundamentals.md",
-    "Backend/Backend.md",
-    "Frontend/TypeScript/Advanced.md",
-    "Tips & Tools/Tips & Tools.md",
     "Tips & Tools/maslows.png",
     "Pasted image 20240902195101.png",
     "Frontend/JavaScript/JS Overview.png",
@@ -320,7 +321,6 @@
     "NodeJS",
     "Backend/NodeJS",
     "Frontend/Tips & Tools/code-review.png",
-    "Frontend/Tips & Tools/code_review.png",
     "Frontend/Tips & Tools/code_review.jfif",
     "Frontend/Tips & Tools/code_review.jfif.crdownload",
     "DevSecOps"
