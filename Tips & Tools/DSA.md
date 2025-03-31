@@ -722,7 +722,7 @@ const unsortedArray = [5, 2, 7, 3, 1, 6, 4, 8];
 const sortedArray = quickSort(unsortedArray);
 console.log(sortedArray);
 ```
-- Quick Sort is quite similar to merge sort. Its main advantage over merge sort, is that the sorting can be done in-place. This saves time because we don’t have to create new arrays. It can be faster in practice for smaller datasets and is often favored when memory usage is a concern.
+- Quick Sort is quite similar to merge sort. Its main advantage over merge sort, is that the sorting can be done _in-place_. This saves time because we don’t have to create new arrays. It can be faster in practice for smaller datasets and is often favored when memory usage is a concern.
 - Quick Sort consumes $O(n)$ space but returns overall quicker solutions. It has the time complexity of $O(nlogn)$ for average cases, $O(n^2)$ for the worst case (applied on a sorted or reverse-sorted array).
 #### Merge sort
 - Preferred as a general-purpose sorting algorithm with predictable performance (guarantees $O(nlogn)$ time) regardless of the input.
@@ -1004,8 +1004,8 @@ console.log(`Post: ${sorted}`);
 	- Subarrays of fixed size `k`
 ##### Examples
 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)
-- [Minimum Size Subarray Sum]()
-- [Fruit Into Basket]()
+- [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)
+- [Fruit Into Basket](https://leetcode.com/problems/fruit-into-baskets)
 - [Minimum Window Substring]()
 ### Sorting & Searching
 - Essentials: [[#Merge sort]], [[#Quick sort]] and [[#Binary |Binary search]]. 

@@ -14,7 +14,7 @@
 # FPT
 ## Autocall
 ### Account hierarchies
-"Resolved **_critical_** nine-month **_security management deficiencies_** through strategic _**database architecture redesign**_, driving reliable **_scalability_** and ensuring robust **_consistency_** across multi-tier _**account hierarchies**_."
+"Engineered **_secure API queries_** that fixed critical nine-month **_security management_** gaps, cutting cross-site **_data inconsistencies_** by 95% across 3-tier account hierarchies."
 #### Security deficiencies identification
 - Looking at our security timeline, we had a nine-month period from when issues were first flagged to when I completed the implementation, which was like 3 months of narrowing down the bug, 2 months of planning, and 4 months of implementation and migration. My analysis of our audit records reported that most of our vulnerabilities were about permission inconsistencies. More specifically: 
 	- Our **_AWS CloudTrail_** security audits and database access logs revealed child accounts occasionally accessing parent data through ==_race conditions_== during permission checks.
@@ -24,7 +24,7 @@
 #### Technical deep dives
 ##### MariaDB
 - "_What specific **features of MariaDB** did you leverage in your redesign that addressed the security vulnerabilities?_"
-	- Before the fix, we had ==_raw queries exposed to the application layer_== where the permission handlings were exposed in the backend code.
+	- Before the fix, we had ==_raw queries exposed to the application layer_== where the permission handlings were exposed in the backend code with Eloquent ORM.
 	- To fix it, I implemented ==_parameterized views_== (through **_stored procedures_**) to make sure that the backend code only calls the procedure by its name so that ==_the actual filtering logic stays secured in the database_==.
 	- So we enhanced speed by leveraging _**database indexing**_ (with `WHERE`/`JOIN` clauses) and improved security in case our backend code got compromised, the hackers still can’t access unauthorized data without the stored procedure.
 - "_Walk me through your database **schema design**, specifically focusing on foreign key constraints, **indexing strategies**, and how they related to **security enforcement**."_
@@ -44,7 +44,7 @@ CREATE INDEX idx_hierarchy ON accounts(hierarchy_path);
 ``` 
 	- I also added constraints **_preventing circular references_** when ==_updating an account's parent_== by checking the new parent's `hierarchy_path` to make sure that it doesn't include the current account's ID.
 		- It's like saying: "Before making someone your parent, check their family tree. If you already see your name in their tree, then you're trying to be your own grandparent—which is invalid." 
-		- We actually didn't think this case would happen in production until we got notified on Sentry. I just can't imagine the consequences if we hadn't _==conformed to the ACID properties== for destructive operations_. So I just added the constraint for good measure so that we don't have to rely on the database's default lock wait timeout mechanism for blocking operations.  
+		- We actually didn't think this case would happen in production until we got notified on Sentry. I just can't imagine the consequences if we hadn't _==conformed to the ACID properties== for destructive operations_. So I just added the constraint for good measure so that we don't have to rely on the database's default lock wait timeout mechanism for blocking operations (which was 50s).  
 	- Our business also enforced maximum depth based on `subscription_tier`.
 - "_How did you ensure consistency across these hierarchies during **concurrent operations**?_"
 	- I addressed that by applying ==_ACID-compliant transactions_ using **_row-level locking_**== (via `lockForUpdate()` in Laravel) to ensure that only one operation can modify a particular parent record at a time.
@@ -71,23 +71,58 @@ CREATE INDEX idx_hierarchy ON accounts(hierarchy_path);
 	- In that case, I'd identify and implement _**hierarchy partitioning**_ for wide trees (by adding a `root_id` column to the `account` table) as well as denormalizing frequently traversed paths with **_database trigger_** to automatically update the `hierarchy_path` column whenever an account is inserted.
 ##### Race condition
 - "_Walk me through a specific race condition that could occur in your system and how your architecture prevents it._"
-	- A critical race condition occurred when two administrators attempted to modify the same user's permissions simultaneously. We tracked and handled such incidents by:
+	- Race condition is not something that happen very often, however, there was a case where _==two administrators attempted to modify the same user's permissions simultaneously==_. We tracked and handled such incidents by:
 		- Creating an event log table that recorded all permission change attempts
-		- Implementing row-level locks (using Laravel's `lockForUpdate()`) during permission change transactions, preventing conflicting modifications.
-		- Using database constraints to enforce hierarchy rules by checking if an accounts' parent is valid (i.e. must exist via a foreign key) and an account cannot be its own parent. 
-			- So even if two admins trigger changes simultaneously, any attempt to violate the hierarchy rules will be rejected by the database.
+		- **_Implementing row-level locks_** (using Laravel's `lockForUpdate()`) during permission change transactions, preventing conflicting modifications.
+		- Using database constraints to enforce hierarchy rules by **_checking if an accounts' parent is valid_** (i.e. must exist via a foreign key) and an account cannot be its own parent. 
+			- So even if two admins trigger changes simultaneously, _==any attempt to violate the hierarchy rules will be rejected by the database==_.
 #### Team work & Impact
 ##### Measurables
- - We achieved a significant in enterprise tier upgrades due to confidence in our isolation guarantees, as well as 95% reduction in permission-related support tickets
- - Our quality control also reported that permission bypass incidents are no longer a thing, and customers are very happy with their permission query performance.
+ - We achieved a significant in **_enterprise tier upgrades_** due to confidence in our isolation guarantees between the tiers, as well as 95% reduction in permission-related support tickets.
+ - Our quality control reports **_zero permission bypass incidents_** in production over the past 3 months, validated through Sentry audits, and permission queries now sustain sub-100ms p99 latency at scale, _==meeting all customer SLAs==_.
 ##### Resolving conflicts
-- f
-- f
+- The most challenging disagreement was whether to implement the solution at the application or database layer. I resolved this by:
+	- Building **_proof-of-concept implementations_** of both approaches
+	- Facilitating a **_technical design review_** with the team to compare the trade offs
+	- **_Building consensus_** around the hybrid approach that leveraged database constraints for permission related operations and keep other business logic handlings with Eloquent for maintainability.
+##### Cutting-edge alternatives
+- If I were to build everything from scratch, I'd probably use NestJS with Prisma, you know, just **_switch the tech stack_** to my advantage without changing anything about the business logic and the way we conceptualize the system.  
 ##### Persuasion
-- f
-- f
+- I secured our technical stakeholders buy-in by:
+	- Building a **_working MVP_** that demonstrated the solution with some mock data
+	- Developing a **_phased migration approach_** that minimized customer disruption
+- For non-technical stakeholders, I created visual hierarchy **_diagrams showing "before/after"_** permission flows and framed the discussion around **_competitive advantage and reduced security liability_** rather than implementation details.
+
 ### Responsive design
-"Transformed the **_desktop-first_** application by integrating _**responsive mobile layouts**_, ensuring a seamless and engaging experience across all devices."
+"Owned the front-end implementation of **_responsive layouts_** for authentication screens of a **_legacy desktop application_**, ensuring **_rendering fidelity_** and better navigation on mobile and tablet devices."
+#### Problem identification
+- _"When you say you '**owned**' the implementation, explain exactly what **your responsibilities** were versus your team members. What specific code or components did you personally write versus oversee?"_
+	- When I say I 'owned' the implementation, I did collaborate closely with our design team on wireframes and prototypes, but I was the primary engineer responsible for the end-to-end delivery of the responsive authentication UI. Specifically I wrote:
+		- The media query breakpoints for mobile, tablet, and desktop views
+		- The form element resizing logic for the authentication pages (login, register, password reset)
+		- The integration between new TailwindCSS classes and existing Laravel Blade templates
+- _"You mentioned a **legacy** desktop-only application - explain the specific **architectural constraints** you faced when implementing responsive design on a system not originally built for it."_
+	- The most challenging constraint was the side-by-side layout pattern used throughout the app. 
+		- Authentication screens had the form on the left and a background image on the right at fixed widths. 
+		- This made it impossible to shrink the form fields to accommodate smaller screens without breaking the UI.
+		- Additionally, each view relied on a mix of server-rendered Blade templates and jQuery for client-side interactivity, creating tight coupling between markup, styling, and behavior.
+#### Biggest challenges
+##### Technical
+- _"How did you balance **business requirements** for mobile support against **technical limitations** of the legacy system? Give me an example of a **tradeoff** you had to make."_
+	- ds
+	- s
+	- s
+- "_What was the most difficult and time consuming technical challenge that you faced while migrating to mobile-friendly?_"
+	- d
+	- d
+##### People
+- "_Describe a conflict that arose regarding design or implementation decisions during this project. How did you handle it, and what was the outcome?_"
+	- f
+	- d
+#### Ownership
+- "_Let's imagine we're building a new authentication system from scratch today that needs to work across all devices. Walk me through your architecture decisions, focusing on frontend considerations._"
+	- f
+	- f
 
 ## Cloudflare
 ### Transformed manual testing process
