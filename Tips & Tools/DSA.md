@@ -728,7 +728,6 @@ console.log(sortedArray);
 - Preferred as a general-purpose sorting algorithm with predictable performance (guarantees $O(nlogn)$ time) regardless of the input.
 	- It is the go-to sorting algorithm ==_when working with linked lists_==, due to its sequential access nature, offering $O(1)$ space with an iterative implementation.
 - Same $O(n)$ space on average as Quick Sort because it uses an extra array [[#Divide and Conquer |for the merge step]].
-
 #### Heap sort
 - As the name suggests, we use it when a heap implementation is readily available.
 - Preferred when you need to find the $k^{th}$ largest/smallest elements (can stop early). As an comparison-based and in-place sorting algorithm, it has $O(nlogn)$ time & $O(1)$ space:
@@ -959,7 +958,7 @@ for (let i = arr.length - 1; i > 0; i--) {
 
 console.log(`Randomized: ${[arr]}`);
 
-// The extra `count` variable essentially calculates how far the array is from being completely sorted. A higher `count` indicates a more unsorted (or more "inverted") array, while a `count` of zero means the array is already sorted.
+// The debugging `count` variable essentially calculates how far the array is from being completely sorted. A higher `count` indicates a more unsorted (or more "inverted") array, while a `count` of zero means the array is already sorted.
 const { sorted, count } = mergeSort(arr);
 console.log(`Number of inversions: ${count}`);
 console.log(`Post: ${sorted}`);
@@ -968,24 +967,24 @@ console.log(`Post: ${sorted}`);
 	- Parallelism is when you have different threads or computers working on the same problem at the same time to complete it in a quicker time.
 	- Memory management: in the merge sort example, consider that each array can be sent to a different core or server depending on the architecture of your organization and the results are then returned.
 	  It might be the data being processed is too large to hold in memory and must be processed in chunks. Additionally, you may have provisioned access to cloud computing. So the solution can involve accessing an online server and exporting some of the problems from the company servers.
-### Dynamic programming
-- Dynamic programming (`dp`) is an extension of `d&c` and recursion which in addition involves keeping a record of results ([memoizing](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/961483057)) generated from running the sub problems each time they are newly run. 
-- The main advantage of `dp` is that it promotes memoization, where previous calculations are stored and used instead of rerunning the calculations when the compiler identifies that the computation has been run for a previous task. Checkout an [example](https://www.techinterviewhandbook.org/coding-interview-techniques/#example-3).
-- The `dp` approach is commonly applied to combination or optimization problems. When computing `dp` solutions, you must firstly determine the *objective function* (i.e. the description of what the optimum outcome is to be). Next you must break the problem into smaller steps (using recursion) which should be written in such a way that you can change the outcome without altering the code for the methods already written.
 ### Greedy
 - Greedy algorithm assumes that the simplest solution is almost always the best one. This problem solving principle argues that simplicity is better than complexity. It looks at the list of solutions and implement a local optimization. Usually, the current most rewarding option is chosen.
 - This is an alternative approach to dynamic programming as this approach seeks to present an immediate solution for a task and *favors local optimization over a more holistic global approach*.
 - For example, in a CPU tasks execution context, a greedy approach would involve selecting first the shortest running program and then the next shortest program and so on. While this might not lead to a globally optimized solution, it will reduce any overhead in calculating the most efficient subset of items. [Dijkstra's shortest path](https://www.youtube.com/watch?v=pVfj6mxhdMw) is also a well-known instance of the greedy algo.
 - Greedy vs `dp`: while the overhead for a greedy algorithm is low and coding a solution is quite straightforward, it will not always guarantee that the best option is returned.
+### Dynamic programming
+- Dynamic programming (`dp`) is an extension of `d&c` and recursion which in addition involves keeping a record of results ([memoizing](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/961483057)) generated from running the sub problems each time they are newly run. 
+- The main advantage of `dp` is that it promotes memoization, where previous calculations are stored and used instead of rerunning the calculations when the compiler identifies that the computation has been run for a previous task. Checkout an [example](https://www.techinterviewhandbook.org/coding-interview-techniques/#example-3).
+- The `dp` approach is commonly applied to combination or optimization problems. When computing `dp` solutions, you must firstly determine the *objective function* (i.e. the description of what the optimum outcome is to be). Next you must break the problem into smaller steps (using recursion) which should be written in such a way that you can change the outcome without altering the code for the methods already written.
 ---
 # Patterns (what ACTUALLY matters)
 ## Essentials
 ### Two Pointers
 - Use this pattern to _**traverse**_ arrays/strings when you think of:
 	- Opposite ends: both pointers move towards each other to find pairs that meet specific criteria.
-	- Single pass with conditions: pointers traverse in the same direction but are used to track conditions (e.g. finding duplicates, valid segments,...).
+	- Single pass with conditions: pointers traverse in the same direction but are _**used to track conditions**_ (e.g. finding duplicates, valid segments,...).
 	- At different speeds: one pointer moves faster than the other to achieve tasks like cycle detection or finding midpoints.
-> Use this pattern to optimize space usage if arrays are **pre-sorted**. 
+> Use this pattern to optimize space usage if arrays are **pre-sorted**. Guarantees $O(n)$ in most cases.
 #### Examples
 - [Move Zeros](https://leetcode.com/problems/move-zeroes/description)
 - [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description)
@@ -998,23 +997,38 @@ console.log(`Post: ${sorted}`);
 - [Sort Colors]()
 - [Container With Most Water]()
 #### Sliding Windows
-- This is a variant of Two Pointer. Efficient for problems with:
-	- Min/max length subarray/substring meeting certain conditions
+- This is a variant of Two Pointer. Guarantees $O(n)$ in most cases. Efficient for problems with:
+	- **_Min/max_** length _==subarray/substring==_ meeting certain conditions
 	- Consecutive elements (e.g. longest/shortest streak of characters)
 	- Subarrays of fixed size `k`
+- Use `left` and `right` pointers. Expand the `right`, check condition, shrink `left` (if condition is violated) until `right` reaches the end.
 ##### Examples
 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)
 - [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)
 - [Fruit Into Basket](https://leetcode.com/problems/fruit-into-baskets)
+- [Find All Anagrams in a String]()
 - [Minimum Window Substring]()
 ### Sorting & Searching
 - Essentials: [[#Merge sort]], [[#Quick sort]] and [[#Binary |Binary search]]. 
 ### BFS & DFS
 #### BFS
-- Useful when traversing trees/graphs with connected components.
+- Useful when you need the **_shortest path_** in terms of _steps or levels_ (like fewest moves, nearest neighbor in an _unweighted graph_). It explores _**==layer by layer==**_, so it _==finds the closest stuff first==_, using the ==**_queue_** data structure==.
+##### Examples
+- [Minimum Depth of Binary Tree]()
+- [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description)
+- [Rotting Oranges]()
+- [Number of Islands]()
+- [Word Ladder]()
 #### DFS
-- Ideal for level-order traversals and finding the _**shortest path**_ in _unweighted_ graphs.
-- f
+- You need to ==_**explore options deeply**_==, _check if a path simply **exists**_ (not necessarily the shortest), check for cycles, or visit everything _in a branch_ before moving on with backtracking (like traversing a maze or doing topological sort).
+- Implemented with recursion, or iteration by using a **_==stack==_** and a `visited` set/array
+##### Examples
+- [Binary Tree Inorder Traversal]()
+- [Number of Islands]()
+- [Subsets]()
+- [Permutations]()
+- [Course Schedule]()
+
 ### Hash Map/Set
 - It's crucial for frequent searches with $O(1)$ time for average lookups, sacrificing $O(n)$ space to store the extra Map/Set (assuming we apply it to a single array input). 
 #### Hash Map
@@ -1067,6 +1081,7 @@ function twoSum(nums: number[], target: number): number[] {
 #### Hash Set
 - The built-in `Set` is a hash set. Think of a it as a _checklist_ where you only care _if_ an item _exists_. Use it to solve problems [like this one](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/578):
 ```ts
+// O(n) time & space
 function containsDuplicate(nums: number[]): boolean {
   return new Set(nums).size < nums.length
 };
@@ -1099,11 +1114,21 @@ function isValidSudoku(board: string[][]): boolean {
 }
 ```
 ### Recursion & Backtracking
-- Essential for exploring all possibilities (think permutations and combinations).
+- While recursion processes all states, backtracking intelligently prunes the search space by abandoning invalid path early.
+#### Recursion
+- Use pure recursion when problems naturally break down into identical subproblems (think of Fibonacci, tree traversals,...) or when they follow [[#Divide and Conquer]] patterns.
+##### Examples
 - f
 - f
+#### Backtracking
+- Use backtracking when you spot these keywords: "_**all**_ possible...", "generate _**all**_...", "find _**all**_ solutions...". It answers "yes" to the question: "==Am I building _multiple solutions_ and need to _try different choice at each step_?==" or "Does the problem _involve undoing choices to try alternatives_?"
+##### Examples
+- f
+- f
+
 ### Greedy
-- Think of it like hiking up a hill: you want to reap all the benefits for each forward step. It’s not always perfect, but it's efficient.
+- Think of it like hiking up a hill: you want to _**reap** all the benefits_ for each forward step. In other words, you're making locally optimal choice at each step, and hope that it leads to a globally optimal solution. It’s not always perfect, but it's efficient.
+- A _**sorted** input_ is preferred for this algorithm.
 - An [example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/564):
 ```ts
 // In Layman's term: the sum of all the consecutive increases is the return value. Therefore, if the price today is higher than yesterday, you IMMEDIATELY sell and take that profit 
@@ -1118,7 +1143,19 @@ function maxProfit(prices: number[]): number {
 }
 ```
 ### Dynamic Programming
-- Use it when you need to optimize overlapping subproblems with memoization or tabulation.
+- Use it when you need to optimize _**overlapping** subproblems_ with _memoization_ (top-down) or _tabulation_ (bottom-up). Store & reuse.
+- With memoization, use recursion with a cache (like a map or an array) to store result:
+	- Check the cache to see if it contains the answer for the current state. If it does, we're done. If it doesn't, we keep the recursion going, and remember that:
+	- _Before_ returning the computed answer, _store_ it in the cache.
+- With tabulation, we only use loops with a table (array) built from base cases:
+	- First, figure out the dimensions of your DP table (e.g. `dp[n+1]` or `dp[rows][cols]`), then:
+	- Identify the _**smallest** subproblems_ you know the answer to (i.e. base cases) and fill those in the table using a loop (or nested loops).
+	- The loop order matters: make sure you compute smaller subproblems _before_ you need them for bigger ones.
+	- Each answer `dp[i]` (or `dp[i][j]`) is calculated using previously computed values in the table (e.g. `dp[i] = dp[i-1] + dp[i-2]`)
+	- The final answer is usually the last entry (or one of the last entries) in the table.
+##### Examples
+- f
+- f
 - f
 
 ## Extras

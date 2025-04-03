@@ -10,7 +10,7 @@
           {
             "id": "2ed2b87e25932f50",
             "type": "tabs",
-            "dimension": 53.317535545023695,
+            "dimension": 55.20751761942052,
             "children": [
               {
                 "id": "e998ff104dd5ae6f",
@@ -68,13 +68,12 @@
                   "title": "DSA"
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           },
           {
             "id": "8cedd05142699eb5",
             "type": "split",
-            "dimension": 46.682464454976305,
+            "dimension": 44.792482380579486,
             "children": [
               {
                 "id": "c3184acf40a6477e",
@@ -173,7 +172,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 226.5
+    "width": 215.5
   },
   "right": {
     "id": "82a9e7d6600420b4",
@@ -275,17 +274,18 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "4b2a3eedcdfaf59a",
+  "active": "e998ff104dd5ae6f",
   "lastOpenFiles": [
+    "Tips & Tools/DSA.md",
+    "Tips & Tools/Progressive Overload.md",
     "Frontend/CSS/CSS.md",
+    "Tips & Tools/English vocab.md",
+    "Tips & Tools/WIL from books.md",
     "Frontend/CSS/Grid.md",
     "Frontend/JavaScript/Regular Expressions.md",
-    "Tips & Tools/Progressive Overload.md",
-    "Tips & Tools/DSA.md",
     "().md",
     "Tips & Tools/Entrepreneurship.md",
     "Tips & Tools/Writing.md",
-    "Tips & Tools/English vocab.md",
     "Tips & Tools/English grammar.md",
     "Pasted image 20250326161107.png",
     "Tips & Tools/Interview prep.md",
@@ -295,7 +295,6 @@
     "Tips & Tools/You as an interviewer.md",
     "Frontend/CSS/Positioning.md",
     "Tips & Tools/System Design.md",
-    "Tips & Tools/WIL from books.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
     "[[.md",
     "Tips & Tools/Git.md",

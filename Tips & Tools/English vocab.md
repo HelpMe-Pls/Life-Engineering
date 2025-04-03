@@ -476,6 +476,8 @@ occlude (v): conceal, obstruct, block
 
 ==stymie== (v): stand in the way of, encumber, impede
 
+impediment (n): something that impedes
+
 bureaucracy (n): quan liêu, a system of administration in which most of the important decisions are made by state officials (rather than by elected representatives)
 
 envoy (n): messenger, representative
@@ -1147,3 +1149,5 @@ lodge (v-n): file (a complaint), a resort hotel (inn)
 euphemism (n): nói giảm nói tránh
 
 coddle (v): pamper, treat with extreme or excessive care or kindness
+
+synopsis (n), a tl;dr, a condensed statement or outline
