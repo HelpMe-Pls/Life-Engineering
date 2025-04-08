@@ -708,7 +708,9 @@ enigma (n): mystery, conundrum
 
 esoteric (adj): emphasizing exclusivity or niche knowledge, often tied to expertise or deliberate inaccessibility
 
-confidant (n)  {caution: it's different from confidEnt}: intimate, the one to whom secrets are entrusted
+confidant (n)  {caution: it's different from confidEnt}: intimate, the one to whom secrets are entrusted.
+
+plausible (adj): superficially pleasing or persuasive, appearing worthy of belief
 
 solitude (n): isolation, privacy, loneliness
 
@@ -754,7 +756,7 @@ expedite (v): speed up, execute promptly
 
 malleable (adj): adaptable, flexible, moldable, pliable
 
-lenient (adj): not harsh, severe, or strict, allow a lot of freedom and leeway
+==lenient== (adj): not harsh, severe, or strict, allow a lot of freedom and leeway
 
 stringent (adj): strict, rigorous, rigid
 

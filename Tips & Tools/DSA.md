@@ -425,6 +425,11 @@ class MinHeap {
 
         return value
     }
+	// Returns the smallest element without removing it
+    peek(): number {
+        if (this.length === 0) return -1;
+        return this.data[0];
+    }
 }
 ```
 #### Graphs
@@ -863,7 +868,7 @@ function pow(x, n) {
 // Suppose `x==2` & `n==4`:
 pow(2, 4) = 2 * pow(2, 3) // `pow(2,4)` returns `2*pow(2,3)`
                = 2 * (2 * pow(2, 2))  // `pow(2,3)` returns `2*pow(2,2)`
-                    = 2 * (2 * (2 * pow(2, 1))) // base case `n==1` 
+                    = 2 * (2 * (2 * pow(2, 1))) // base case `n==1`, pop the stack 
                               = 2 * (2 * (2 * 2))
                               = 2 * (2 * 4)
                               = 2 * 8
@@ -984,6 +989,7 @@ console.log(`Post: ${sorted}`);
 	- Opposite ends: both pointers move towards each other to find pairs that meet specific criteria.
 	- Single pass with conditions: pointers traverse in the same direction but are _**used to track conditions**_ (e.g. finding duplicates, valid segments,...).
 	- At different speeds: one pointer moves faster than the other to achieve tasks like cycle detection or finding midpoints.
+	- _Finding **pairs**_, check properties, detect cycles. The focus is on the elements **_at_** the pointers.
 > Use this pattern to optimize space usage if arrays are **pre-sorted**. Guarantees $O(n)$ in most cases.
 #### Examples
 - [Move Zeros](https://leetcode.com/problems/move-zeroes/description)
@@ -999,35 +1005,15 @@ console.log(`Post: ${sorted}`);
 #### Sliding Windows
 - This is a variant of Two Pointer. Guarantees $O(n)$ in most cases. Efficient for problems with:
 	- **_Min/max_** length _==subarray/substring==_ meeting certain conditions
-	- Consecutive elements (e.g. longest/shortest streak of characters)
+	- **_==Consecutive==_** elements (e.g. longest/shortest streak of characters)
 	- Subarrays of fixed size `k`
-- Use `left` and `right` pointers. Expand the `right`, check condition, shrink `left` (if condition is violated) until `right` reaches the end.
+- Use `left` and `right` pointers. Expand the `right`, check condition, shrink `left` (if condition is violated) in the _==same direction==_ until `right` reaches the end.
 ##### Examples
 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)
 - [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)
 - [Fruit Into Basket](https://leetcode.com/problems/fruit-into-baskets)
 - [Find All Anagrams in a String]()
 - [Minimum Window Substring]()
-### Sorting & Searching
-- Essentials: [[#Merge sort]], [[#Quick sort]] and [[#Binary |Binary search]]. 
-### BFS & DFS
-#### BFS
-- Useful when you need the **_shortest path_** in terms of _steps or levels_ (like fewest moves, nearest neighbor in an _unweighted graph_). It explores _**==layer by layer==**_, so it _==finds the closest stuff first==_, using the ==**_queue_** data structure==.
-##### Examples
-- [Minimum Depth of Binary Tree]()
-- [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description)
-- [Rotting Oranges]()
-- [Number of Islands]()
-- [Word Ladder]()
-#### DFS
-- You need to ==_**explore options deeply**_==, _check if a path simply **exists**_ (not necessarily the shortest), check for cycles, or visit everything _in a branch_ before moving on with backtracking (like traversing a maze or doing topological sort).
-- Implemented with recursion, or iteration by using a **_==stack==_** and a `visited` set/array
-##### Examples
-- [Binary Tree Inorder Traversal]()
-- [Number of Islands]()
-- [Subsets]()
-- [Permutations]()
-- [Course Schedule]()
 
 ### Hash Map/Set
 - It's crucial for frequent searches with $O(1)$ time for average lookups, sacrificing $O(n)$ space to store the extra Map/Set (assuming we apply it to a single array input). 
@@ -1113,22 +1099,49 @@ function isValidSudoku(board: string[][]): boolean {
   return true; 
 }
 ```
+
+### Sorting & Searching
+- Essentials: [[#Merge sort]], [[#Quick sort]] and [[#Binary |Binary search]]. 
+
 ### Recursion & Backtracking
 - While recursion processes all states, backtracking intelligently prunes the search space by abandoning invalid path early.
 #### Recursion
 - Use pure recursion when problems naturally break down into identical subproblems (think of Fibonacci, tree traversals,...) or when they follow [[#Divide and Conquer]] patterns.
 ##### Examples
-- f
-- f
+- [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)
+- [Binary Tree Preorder Traversal]()
+- [Binary Tree Inorder Traversal]()
+- [Binary Tree Postorder Traversal]()
 #### Backtracking
 - Use backtracking when you spot these keywords: "_**all**_ possible...", "generate _**all**_...", "find _**all**_ solutions...". It answers "yes" to the question: "==Am I building _multiple solutions_ and need to _try different choice at each step_?==" or "Does the problem _involve undoing choices to try alternatives_?"
 ##### Examples
-- f
-- f
+- [Combinations]()
+- [Subsets]()
+- [Permutations]()
+- [Generate Parentheses]()
+
+### BFS & DFS
+#### BFS
+- Useful when you need the ==**_shortest path_**== in terms of _steps or levels_ (like fewest moves, nearest neighbor in an _unweighted graph_). It explores _**==layer by layer==**_, so it _==finds the closest stuff first==_, using the ==**_queue_** data structure==.
+##### Examples
+- [Minimum Depth of Binary Tree]()
+- [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description)
+- [Rotting Oranges]()
+- [Number of Islands]()
+- [Word Ladder]()
+#### DFS
+- You need to ==_**explore options deeply**_==, _check if a path simply **exists**_ (not necessarily the shortest), check for cycles, or visit everything _in a branch_ before moving on with *backtracking* (like traversing a maze or doing topological sort).
+- Implemented with recursion, or iteration by using a **_==stack==_** and a `visited` set/array.
+##### Examples
+- [Binary Tree Inorder Traversal]()
+- [Number of Islands]()
+- [Subsets]()
+- [Permutations]()
+- [Course Schedule]()
 
 ### Greedy
 - Think of it like hiking up a hill: you want to _**reap** all the benefits_ for each forward step. In other words, you're making locally optimal choice at each step, and hope that it leads to a globally optimal solution. It’s not always perfect, but it's efficient.
-- A _**sorted** input_ is preferred for this algorithm.
+> A _**sorted** input_ is preferred for this algorithm.
 - An [example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/564):
 ```ts
 // In Layman's term: the sum of all the consecutive increases is the return value. Therefore, if the price today is higher than yesterday, you IMMEDIATELY sell and take that profit 
@@ -1142,21 +1155,29 @@ function maxProfit(prices: number[]): number {
     }, 0);
 }
 ```
+#### More examples
+- [Assign Cookies]()
+- [Non-overlapping Intervals]()
+- [Merge Intervals]()
+- [Jump Game]()
+
 ### Dynamic Programming
 - Use it when you need to optimize _**overlapping** subproblems_ with _memoization_ (top-down) or _tabulation_ (bottom-up). Store & reuse.
-- With memoization, use recursion with a cache (like a map or an array) to store result:
+- With memoization, _==use recursion with a cache==_ (like a map or an array) to store result:
 	- Check the cache to see if it contains the answer for the current state. If it does, we're done. If it doesn't, we keep the recursion going, and remember that:
 	- _Before_ returning the computed answer, _store_ it in the cache.
-- With tabulation, we only use loops with a table (array) built from base cases:
+- With tabulation, we only _==use loops with a table==_ (array) built from base cases:
 	- First, figure out the dimensions of your DP table (e.g. `dp[n+1]` or `dp[rows][cols]`), then:
 	- Identify the _**smallest** subproblems_ you know the answer to (i.e. base cases) and fill those in the table using a loop (or nested loops).
 	- The loop order matters: make sure you compute smaller subproblems _before_ you need them for bigger ones.
 	- Each answer `dp[i]` (or `dp[i][j]`) is calculated using previously computed values in the table (e.g. `dp[i] = dp[i-1] + dp[i-2]`)
 	- The final answer is usually the last entry (or one of the last entries) in the table.
 ##### Examples
-- f
-- f
-- f
+- [Fibonacci Number]()
+- [House Robber]()
+- [Coin Change]()
+- [Word Break]()
+- [Longest Common Subsequence]()
 
 ## Extras
 ### Linked list
@@ -1174,7 +1195,7 @@ class ListNode {
 
 // O(n) time & O(1) space
 function reverseList(head: ListNode | null): ListNode | null {    
-    let prev: ListNode | null = null;
+    let prev: ListNode | null = null;  // initial "dummy" node
     let current: ListNode | null = head;
     
     while (current) {
@@ -1250,15 +1271,29 @@ function mergeTwoListsOptimized(list1: ListNode | null, list2: ListNode | null):
 ```
 
 ### Heap (priority queue)
-- Use it when you need quick access to the smallest or largest element (i.e. `k` problems).
-- f
+- Use it when you need quick access to the smallest or largest element (i.e. `k` problems) in a changing collection.
+- Also useful for problems where you need to process things based on priority. Heaps keep track of the next highest priority item efficiently.
+#### Examples
+- [Kth Largest Element in an Array]()
+- [Top K Frequent Elements]()
+- [Find Median from Data Stream]()
+
 ### Tree
 #### Binary Search Tree
-- f
-- f
+- It's just a binary tree, but _ordered_. BSTs are all about that `left < root < right` property
+- Think of it when you need ordered data + fast lookups/inserts/deletes with in-order traversal and $O(logn)$ time on average.
+##### Examples
+- [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)
+- [Insert into a Binary Search Tree]()
+- [Delete Node in a BST]()
+
 #### Trie
-- Perfect for fast string searching and autocomplete scenarios.
-- f
+- It's a tree where each path from the root represents a prefix.
+- Has practical values. Perfect for fast string searching (i.e. prefix searching), autocomplete, and scenarios. 
+##### Examples
+- [Implement Trie (Prefix Tree)]()
+- [Design Add and Search Words Data Structure]()
+- [Word Search II]()
 
 ### Bit Manipulation
 - These low-level operations that can turn a brute force approach into something sleek.
