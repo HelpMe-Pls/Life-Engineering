@@ -388,7 +388,7 @@
 - It has some form of communication feature like a group chat (Discord, Telegram,...) and live calls that people can join for Q&A (Zoom, Google Meat,...) or specific education relating to the curriculum. You can usually charge more for this compared to a typical course.
 	- You can also get testimonials easier because you have helped them on a deeper level just by how cohorts are structured.
 	- Rotate and iterate between cohorts and standalone courses: take a valuable part of your cohort and turn it into a lower-priced course. Leverage the testimonials and results you've gotten to sell to a larger audience. Upsell your course buyers to the cohort to increase sales.
-	- Use [Circle](https://circle.so) if your wallet is thick enough. Or just [gumroad](https://gumroad.com) instead. 
+	- Use [Circle](https://circle.so) if your wallet is thick enough. Or just go with [gumroad](https://gumroad.com) instead. 
 	- Once the cohort starts, release your curriculum every week or evert other week so that you can track and keep them on the same page.
 - You can leverage scarcity and relaunch the cohort as much as you'd like, creating a predictable income stream.
 ### Live events/workshops
@@ -446,5 +446,5 @@
 - None of these would work until you actually promote the page. Then, analyze and tailor to the market.
 > Marketing is about testing, not having the first iteration perfect. 
 - You're a software engineer. Build your own site for this, or: 
-	- The best way to get your product out without any design skills is with [gumroad](https://gumroad.com)
-	- [Carrd](https://thedankoe.com/get/carrd) and [Components UI](https://thedankoe.com/get/componentsui)
+	- Use [gumroad](https://gumroad.com) as the most low effort, least friction path possible
+	- Use [Carrd](https://thedankoe.com/get/carrd) and [Components UI](https://thedankoe.com/get/componentsui)

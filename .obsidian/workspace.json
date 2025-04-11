@@ -10,7 +10,7 @@
           {
             "id": "2ed2b87e25932f50",
             "type": "tabs",
-            "dimension": 55.20751761942052,
+            "dimension": 53.09318715740016,
             "children": [
               {
                 "id": "e998ff104dd5ae6f",
@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/English vocab.md",
+                    "file": "Tips & Tools/Entrepreneurship.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "English vocab"
+                  "title": "Entrepreneurship"
                 }
               },
               {
@@ -68,13 +68,12 @@
                   "title": "DSA"
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           },
           {
             "id": "8cedd05142699eb5",
             "type": "split",
-            "dimension": 44.792482380579486,
+            "dimension": 46.90681284259984,
             "children": [
               {
                 "id": "c3184acf40a6477e",
@@ -275,20 +274,21 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "7f07a632c024cc73",
+  "active": "e998ff104dd5ae6f",
   "lastOpenFiles": [
+    "DevSecOps/Security.md",
     "Tips & Tools/DSA.md",
     "Tips & Tools/Progressive Overload.md",
     "Tips & Tools/System Design.md",
-    "Backend/NodeJS/APIs.md",
+    "Frontend/Frameworks/Remix/Data Transfer.md",
+    "Tips & Tools/English vocab.md",
+    "Frontend/Frameworks/Remix/Authentication.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
+    "Tips & Tools/Entrepreneurship.md",
+    "Tips & Tools/Writing.md",
+    "Backend/NodeJS/APIs.md",
     "Frontend/Network/Connections and protocols.md",
     "Frontend/Network/Networking.md",
-    "Tips & Tools/English vocab.md",
-    "Tips & Tools/Entrepreneurship.md",
-    "Frontend/Frameworks/Remix/Authentication.md",
-    "Frontend/Frameworks/Remix/Data Transfer.md",
-    "DevSecOps/Security.md",
     "Backend/Databases.md",
     "Frontend/Network/Development & Deploy.md",
     "Frontend/Network/Data Transfer.md",
@@ -302,7 +302,6 @@
     "().md",
     "Tips & Tools/WIL from books.md",
     "Frontend/CSS/Grid.md",
-    "Frontend/JavaScript/Regular Expressions.md",
     "Pasted image 20250326161107.png",
     "Tips & Tools/maslows.png",
     "Pasted image 20240902195101.png",

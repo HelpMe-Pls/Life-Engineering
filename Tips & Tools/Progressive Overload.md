@@ -15,6 +15,162 @@
 ---
 
 # FPT
+## Cloudflare
+### Microservices
+"Designed and implemented an _**event-driven microservice**_ that bridged backend systems with RabbitMQ as part of a strategic **_monolith decomposition_** while ensuring _**==eventual consistency==**_ and adaptability to meet evolving business demands."
+#### Context
+- "_What was the primary business driver or technical limitation that necessitated building this particular EDA (event-driven architecture)?_"
+	- The primary driver was a critical **technical limitation** causing significant **business impact**.
+		- Our initial NextJS monolith was becoming severely bogged down by handling _==increasingly complex RBAC logic and long-running synchronous REST API calls to essential third-party services==_. A single incoming API request could trigger a cascade of these external calls, tying up server resources for seconds, sometimes leading to timeouts _on our side_ before the third-party even responded.
+		- Our goal was to _==ensure failures originated only from the third parties==_, not our own infrastructure limitations. We _==needed a way to decouple==_ these long-running, non-critical-path operations from the main request/response cycle to ensure the core application remained responsive and stable, allowing the business to scale its operations reliably.
+- _What aspects of the design and code did you **personally own**?_
+	- My ownership was centered entirely on the worker microservice, _==the consumer side==_ of this event-driven flow, which mainly focus:
+		- **The design**: deciding on core libraries, logging patterns, and error handling strategies for this Node & TS worker service.
+		- **The implementation**: developing the _==idempotency logic==_ to safely handle potential message redeliveries from RabbitMQ, implementing _==retry mechanisms==_ (with exponential backoff) for transient third-party API failures, and integrating with the _==Dead Letter Queue mechanism==_ for undeliverable messages.
+		- **Testing**: writing comprehensive _==unit tests and integration tests==_ using Vitest that mocked RabbitMQ interactions and mocked the third-party APIs (using `msw`) to verify the end-to-end flow within the worker under various success and failure conditions (e.g. API errors, redeliveries).
+- _Given the goal of eventual consistency, **why using RabbitMQ** (not Kafka) ultimately was selected as the most appropriate solution, **despite other alternatives** like synchronous APIs with retries, change data capture, batch processing?_
+	- Our SLAs required that "any specific _==task must eventually completes or is explicitly handled==_" and "the tasks needed to be initiated relatively quickly after the user action, _==even if the final result took time==_".
+	- To satisfy those requirements, **batch processing** seems like a viable option, but it. would introduce unwanted latency. It's _better suited for scheduled, non-time-sensitive bulk operations_.
+		- Synchronous APIs with retries is exactly the initial cause of our problems. Simply adding more retries wouldn't solve the fundamental issue of blocking the primary API server and resource exhaustion, so there's no point to stick with it.
+	- Compared to Kafka, which is more suitable for a distributed _streaming platform_, our use case leans toward _==discrete, individual task processing==_ (the third-party API calls) that _==needed robust acknowledgement, retry logic, and potential dead-lettering==_, so that's why RabbitMQ felt like a more natural fit.
+#### Skin in the game
+##### Technical
+###### Implementation
+- "_How was the RabbitMQ cluster itself **configured and operated** to ensure high **availability and eventual consistency** for the application?_"
+	- We agreed on these configs and conventions for our worker service:
+		- **Clustering**: the RabbitMQ server was run as a multi-node cluster (typically 3 nodes spread across availability zones) to provide fault tolerance at the broker level.
+		- **Mirrored Queues**: to ensure that if one node went down, the queue remained available on the others, preventing message loss.
+		- **Heartbeats & Monitoring**: network heartbeats were configured between consumers and the broker to detect dead connections quickly. Our monitoring put an emphasis on unacknowledged messages to spot issues proactively.
+		- **==Durable Queues==**: with the `durable: true` flag, the queue definition itself would survive a broker restart.
+		- ==**Persistent Messages**==: the NestJS producer published messages with the `{persistent: true}` flag ,allowing messages to survive broker restarts.
+		- ==**Manual Acknowledgements**==: to prevent message loss if the worker crashes mid-processing. I made sure that a message was _only_ removed from the queue after my service successfully processed it (via `channel.ack(msg)`) or explicitly rejected/dead-lettered it via `channel.nack(msg, false, requeue=false)`.
+		- **Publisher Confirms**: the producer side used Publisher Confirms to ensure RabbitMQ actually received and accepted the message before the producer considered its job done.
+- "_What were the **key trade-offs** made in this project, particularly concerning eventual consistency?_"
+	- **Operational Overhead**: running and monitoring RabbitMQ and the worker service added operational overhead compared to the single monolith deployment.
+	- **Debugging Complexity**: issues across distributed components (`producer → broker → consumer`) is inherently more complex and more time consuming to debug compared to a single application stack.
+	- **Latency**: ==users lost immediate confirmation that the _entire operation_ was complete, receiving only confirmation that it was _accepted_ for processing==. We updated our loading UI to compensate this UX compromise.
+###### When shit hit the fan
+- "_How did you prevent divergence and maintain idempotency in certain failure conditions like **message loss or redeliveries**?_"
+	- I followed the _**Check-Read-Write convention**_ to guarantee _at-least-once_ delivery: 
+		- First, the NestJS producer included a _==unique identifier==_ (e.g. UUID based on the originating request or operation) _within each message payload_.
+		- Next, apply the Check-Read-Write pattern with our Redis distributed cache as follows:
+			- **Check:** upon receiving a message, the worker extracted the unique ID.
+			- **Read:** then it read this ID from the _==Redis idempotency store==_.
+			- **Write**: 2 things might happen:
+				- First delivery: the ID did **not** exist in Redis → the worker **write** the ID to Redis.
+					- If the write succeeded: the worker would process the message. On success, it would `ack` the message. If processing failed definitively (non-retryable), it would `nack` (without requeue) and log the operation.
+					- If the write failed, the worker treats that message as a redelivery.
+				- Redelivery: the ID **existed** → the worker logged it then `ack` the message 
+- "_Tell me the most significant technical hurdles or **unexpected challenges** encountered specifically in the pursuit of **ensuring eventual consistency** during this project. How did you diagnose and overcome them?_"
+	- The most time consuming challenge that I faced was to reliably _==distinguishing between transient, retryable errors and permanent, non-retryable errors==_ originating from poorly documented third-party APIs.
+		- Getting eventual consistency right heavily depends on correctly _==deciding whether to retry a failed operation==_. Retrying permanent errors would waste worker resources and delayed other messages. _Not_ retrying transient errors meant the operation for that message might _never_ complete, breaking eventual consistency for that specific task.
+		- This often required painstaking manual work when messages landed in the DLQ or logs showed repeated failures:
+			- We created a rule regarding `http` status codes: _==5xx/timeouts → Retry==_ (with exponential backoff + max attempts). For _==4xx → Don't retry==_ (assume bad request data), log details, push it to the DLQ.
+			- By _==analyzing the DLQ==_, we were able to refine the classification logic and _==identify underlying data issues or new third-party error patterns==_.
+#### Ownership
+- "_If you were to scale this microservice, what would be your initial approach?_"
+	- My initial approach would be straightforward ==_horizontal scaling_== of the worker consumer instances. 
+	- **Increase Consumer Instances**: since _==RabbitMQ distributes messages round-robin to consumers on the same queue==_, simply deploying more identical instances of the worker service (e.g. increasing the replica count in Kubernetes) will increase the overall message processing throughput.
+	- **Broker Scaling (secondary)**: if message rates become extremely high, eventually the RabbitMQ cluster itself might need scaling (more nodes, better hardware), but consumer scaling is the first lever to pull.
+
+### Transformed manual testing process
+"Accelerated release velocity **_by 70%_** through implementation of an **_automated QA pipeline_** with Vitest for unit/integration testing and Playwright for E2E validation, eliminating **_critical bottlenecks of ==previously manual== testing process_** in the development lifecycle."
+#### Metrics validation
+- _"How confident are you that this pipeline was the primary driver of that specific 70% gain, and how did you isolate its impact?"_
+	- Before the pipeline, we tracked metrics like the _average time bug tickets remained open_ (which was around 3 days), the duration of the manual QA cycle per release candidate, and the frequency of hotfixes needed shortly after deployment due to regressions.
+	- Following the pipeline's implementation, our QA team could approve release candidates faster because their effort shifted from _==repetitive regression checks==_ (now automated) to more valuable exploratory testing and validation of new features, dropping our bug-fix cycle time _==from 3 days to 1 day on average==_.
+- _"What were the **primary bottlenecks** in the previous manual testing process that this pipeline aimed to solve?_"
+	- Implementing this pipeline was about _==shifting from reactive bug fixing to proactive quality assurance==_.
+	- The throughput of our releases was limited by QA's capacity to _manually_ test everything. Automation removed QA from being a blocker for **_verifying existing functionality_**, freeing them to _focus on higher-value tasks_ like usability testing, exploratory testing of new features, and _edge case analysis_.
+#### Skin in the game
+##### Technical
+###### Implementation
+- "_How did you decide what to cover with Vitest (unit/integration) versus Playwright (E2E)?_"
+	- We followed the _**Testing Pyramid model**_ where we have a large base of fast, isolated unit tests, a smaller layer of integration tests, and a very selective top layer of E2E tests.
+		- For testing _individual functions, components_ in isolation, and to pinpoint failures precisely, we go for _**unit tests**_. All external dependencies (like database calls, API calls, other modules) were mocked or stubbed.
+		- For testing the _==interaction between several units==_ within a single service or application boundary, we use **_integration tests_**. A mocked database layer or a test database instance is usually required for this stage.
+		- To ==_validate complete user flows **through the UI**_==, interacting with the deployed application (usually on a staging environment) just like a real user, we use E2E tests. They provide the highest confidence that the system works as a whole from the user's perspective. However, they are the slowest, most brittle, and most expensive to write and maintain, so we focus mostly on the absolute critical paths (i.e. smoke tests).
+- "_What was your **strategy for test coverage**, and how did you decide what was **'enough' coverage**? What patterns did you implement to share test utilities and fixtures?_"
+	- Our strategy focused on _**risk and value**_, not just hitting arbitrary code coverage percentages:
+		- **_For unit tests_**, we aimed for a high line/branch coverage _==(80%+) for core business logic==_, complex algorithms, and utility functions. Lower coverage was acceptable for simple code (like basic CRUD controllers with little logic).
+		- **_For integration tests_**, we focused on covering the ==_contracts between major components or services_== – ensuring API endpoints behaved as expected, key service methods interacted correctly.
+		- _**For E2E tests**_, we explicitly decided _not_ to cover every edge case or UI variation but we did put an emphasis on the _==critical "**happy paths**"==_ of major user workflows like authentication and core features usage.
+	- Our test coverage was considered 'enough' when:
+		- The automated tests were regularly catching regressions _before_ they reached manual QA or production.
+		- The time spent maintaining the tests felt proportionate to the value they provided (i.e., not bogged down fixing flaky tests constantly).
+	- We had a _==`test/utils` directory containing helper functions==_ for common tasks like setting up mock data, mock services or initializing common test states.
+	- We also made tests more readable and maintainable using Playwright's _==Page Object Model and fixtures==_ to handle common setup like browser context creation, logging in users via API before tests.
+- "_Were there any tradeoffs between more comprehensive testing and maintaining fast CI/CD pipelines (e.g., speed vs. coverage vs. maintainability)?_"
+	- More tests mean more confidence but longer feedback loops. We _==prioritized writing tests for areas known to be complex, critical, or historically buggy==_, rather than trying to achieve 100% coverage which includes unnecessary tests for implementation details.
+	- We configured our CI environment (GitLab CI in this case) to _==run tests in parallel across multiple runners/jobs==_. Both Vitest and Playwright have excellent support for parallel execution, which drastically reduced the overall wall-clock time for the test suites. More specifically, we employed a _tiered execution strategy_:
+		- _**On Pull Requests/Commits**:_ Run all fast unit and integration tests.
+		- _**On Merge to Main/Pre-Deployment**:_ Run the _full_ E2E suite.
+		- _**Nightly Builds**:_ Run the full E2E suite and potentially longer-running integration tests or performance tests.
+###### When shit hit the fan
+- "_Describe a specific test you wrote that **caught a regression** that would have otherwise gone to production. What made this particular test valuable?_"
+	- We had a Playwright E2E test for our user profile update flow. A developer was refactoring the backend API endpoint and updated the JSON payload structure for updating the user's time zone preference – the frontend was sending `tzId` but the refactored backend now expected `timeZoneId`.
+	- The unit tests for the backend endpoint passed (as they were updated with the new expectation), and the frontend unit tests for the profile component also passed (as they mocked the API call). However, the _**Playwright E2E test failed**_. It filled out the profile form (including the time zone dropdown), clicked 'Save', waited for the success notification, then reloaded the page and _asserted that the time zone dropdown **still held the newly selected value**_. Because the _==backend save failed silently==_ (or perhaps returned an unhandled error code the frontend didn't react to) _==due to the mismatched payload key, the assertion failed==_ – the time zone reverted to its old value on reload.
+	- This test was valuable because:
+		1. It _==tested the full flow==_ from UI interaction to data persistence and back to UI verification and _detected the mismatched payload_.
+		2. It _==prevented a subtle bug==_ that would likely frustrate users without being immediately obvious, _saving us from deploying a broken profile update feature_.
+- "_Tell me about **a critical production bug** that your automated tests failed to catch. How did you diagnose the bug and adjust your testing approach afterward?_"
+	- A critical bug occurred where users under very specific network conditions (high latency, intermittent packet loss – more common on mobile networks) _experienced duplicate form submissions when registering_, ==_occasionally creating two user accounts_== with slightly different states _**due to a race condition**_ between the client-side retry logic and the _==backend's non-idempotent registration endpoint==_.
+	- Why our tests missed it:
+	    - **Unit/Integration Tests:** These operated under ideal conditions, mocking network calls instantly or interacting with a fast local database. They _couldn't replicate real-world network flakiness_.
+	    - **E2E Tests (Playwright):** Our standard E2E tests ran in CI environments with stable, fast network connections. While Playwright _can_ throttle network speed, _==we hadn't explicitly configured tests to simulate the specific kind of intermittent failure==_ that triggered the duplicate submission logic in the frontend JavaScript. _==The backend endpoint also wasn't designed to be fully idempotent for this specific call==_.
+	- Solutions:
+	    1. **Enhanced E2E Scenarios:** We added specific Playwright test cases that used its network throttling capabilities (`page.route()`, `route.abort()`, or network condition emulation) to _simulate poor network conditions_ during the registration submission, specifically aiming to trigger the client-side retry logic and assert that only one account was created.
+	    2. **Backend Idempotency:** We updated the registration endpoint to be idempotent (_==using a unique `Idempotency-Key` sent by the client in the request header==_), preventing duplicate account creation even if the request arrived twice. This was the _real_ fix, but the E2E test ensures the frontend handles related errors gracefully too.
+	    3. **Improved Client-Side State:** We also updated the frontend JavaScript to _==disable the submit button immediately on the first click attempt==_, reducing the window for accidental double clicks during latency.
+- "_Give me a specific **example of a flaky test** you encountered and how you stabilized it._"
+	- We had a flaky Vitest integration test that checked _our notification service_. The test would trigger an action, then _==poll a mocked WebSocket connection for an expected notification message==_. It failed maybe 5% of the time in CI with a timeout waiting for the message.
+	- We realized the notification service had some asynchronous processing internally. While _usually_ fast, _==under certain CI load conditions, the processing could occasionally take slightly longer==_ than the fixed 500ms timeout we'd arbitrarily chosen. The test logic itself was correct, but the timing assumption was too tight and didn't reflect potential real-world variability.
+	- So we decided to increase the timeout duration to accommodate CI load conditions and replace manual `setTimeout` loops with Vitest built-in `expect.poll` method with a timeout argument for better maintainability.
+##### People
+- "_When implementing this pipeline, you likely faced resistance from some team members. Tell me about the **most significant push back** you received and how you addressed it._"
+	- The most significant pushback, as mentioned in the context, was the cultural resistance based on the idea that **'_testing is QA's job, not developers_'**. This manifested as reluctance to allocate time for writing tests alongside feature code and _==skepticism about the ROI==_.
+	- Getting _==buy-in from our team lead==_ was crucial. They helped reinforce the message that quality and sustainable pace were team priorities, supported by the evidence of customer impact from the existing technical debt.
+	- I built a small but functional POC pipeline with a simple unit test for a function which returns the strictest (i.e., smallest or most limiting) directives for _Cache-Control headers_. This demonstrated _concretely_ how tests could be written, how fast they could run in CI, and _==how they could catch a simple, simulated regression==_. Seeing it in action was more powerful than just talking about it.
+	- I emphasized how automated tests _==benefit **developers** directly==_ by providing faster feedback, increased confidence in refactoring, and _==scalable as they reduce time spent debugging regressions==_.
+#### Ownership
+- "_Looking back, what is the single biggest thing you would do differently if you were to build this QA pipeline again today, knowing what you know now?_"
+	- The single biggest thing I would do differently is integrate automated testing culture and practices _==even earlier and more deeply into the team's workflow==_ from day one of the initiative.
+	- Leverage TDD principles where appropriate, rather than treating it as an afterthought.
+	- Embedding the _habit_ and ==_shared ownership of testing more strongly and formally from the absolute beginning_== would likely have smoothed the adoption curve and accelerated the cultural shift even further.
+
+### Fullstack development
+"Developed a production-grade web application using **_Next.js and TailwindCSS_** to modularize service features through a granular _**role-based access control**_ system to gate premium features based on **_subscription tiers_** defined in a flexible pay-as-you-go billing model."
+#### Context
+- "_What was the product's primary **purpose**, who were the **target users**, and what were your specific **responsibilities**?_"
+	- The application served as a platform providing tools and workflows built on top of unique capabilities derived from integrating with _==third-party APIs==_.
+	- The users were _==professionals within our enterprise partner organizations==_ who needed access to these specialized tools and data to _perform their job functions_.
+	- I developed the user-facing sections related to _==account management and user profiles==_, allowing users to view their subscription status, manage settings, and potentially initiate upgrades.
+		- I also own a worker service which handled the _==asynchronous business logic and interactions with the core third-party APIs==_, often applying different logic or quotas based on the user's subscription tier determined by the RBAC system.
+- "_What kind of **features** were gated, and how did the RBAC system reflect the billing status?_"
+	- Access control was applied to various aspects based on the subscription tier (Trial, Tier 1, Tier 2):
+		- **Feature Access:** enabling/disabling entire sections or specific functionalities.
+		- **Usage Quotas:** limiting the number of API calls to the underlying third-party service per month or the number of specific resources a user could create. Higher tiers received higher or unlimited quotas.
+	- Through _==Stripe webhooks==_, changes in subscription status (e.g., `customer.subscription.updated`, `checkout.session.completed`) triggered updates in our application's database, assigning a corresponding _role_ (e.g., `ROLE_TRIAL`, `ROLE_TIER_1`, `ROLE_TIER_2`) to the user record.
+		- This **role** was then used by the backend (and potentially included in the user's session/token) to determine their specific **permissions** (e.g., `feature:export:enabled`, `quota:api_calls:5000`).
+- "_Why were **Next.js and TailwindCSS** chosen for this project? What are the **trade-offs**?_"
+	- I wasn't the one who decided to choose NextJS, but if I had to make a guess, the main reason would be that it has a large ecosystem and community support in case things go sideways.
+	- Choosing TailwindCSS is just a matter of convention, because most of NextJS app out there go with it. Besides, its utility classes with built-in responsive modifiers make creating adaptive layouts straightforward.
+	- The main trade-off is that this tech stack decision presents a slight learning curve overhead for those who are not familiar with the modern frontend conventions.
+#### Implementation
+##### Technical
+- "_Tell me about the key **Next.js features** that you used and your rationale behind them._"
+	- **Server Components** for Initial Load: this keeps the initial load fast and secure by _==fetching the core profile data **on the server before** the page is sent to the browser==_ (using `async/await` and the `fetch` API)
+	- **Client Components** for Dynamic/Interactive Parts: for parts of the profile _==where the data is fetched **in the browser** and needs to update frequently **after** the page loads==_ (e.g. recent activity, notifications)
+	- **Server Actions** for Updates: when server actions are triggered by a form submission, we can securely _==handle that update on the server and then revalidate the cached data==_ so the profile screen shows the latest info.
+- "_How was the **RBAC system** designed and implemented? How did you ensure role integrity?_"
+	- It was not my responsibility to handle the user roles and permissions, but as far as I know, we use _==Stripe webhooks updated the user's role in our application database based on their subscription status==_. A payment related event from Stripe is what drives the RBAC system.
+	- By using _==JWT signatures==_, we secure the session token containing role/permission information.
+	- Permissions (from the validated token) is what gate the features of our products. _==Guards and Decorators from NestJS are the primary handlers for these operations==_.
+#### Security
+- "_Describe how you secured sensitive operations, particularly those related to updating billing information or modifying user roles/permissions, against **common web vulnerabilities** (e.g., CSRF, XSS, unauthorized access)._"
+	- Regarding authentication, we used ==_JWTs stored in secure, `HttpOnly` cookies to prevent XSS from easily stealing tokens_==. Short token expiry times with refresh token rotation.
+	- Strict enforcement of permissions on **every backend API call** related to sensitive data or actions are handled by the Guards and Decorators from our NestJS backend. 
+
 ## Autocall
 ### Account hierarchies
 "Engineered **_secure API queries_** that resolved critical 9-month **_security management_** gaps, reducing cross-site **_data inconsistencies_** by 90% across 3-tier account hierarchies."
@@ -143,147 +299,6 @@ CREATE INDEX idx_hierarchy ON accounts(hierarchy_path);  --Indexing
 - "_Let's imagine we're building a new authentication system **from scratch** today that needs to work across all devices. Walk me through your **architecture decisions**, focusing on frontend considerations._"
 	- If building a new, modern, responsive authentication system from scratch today, my frontend architecture decisions would _==prioritize maintainability, developer experience, performance, and security==_ with RemixJS, ShadcnUI, rely entirely on backend validation. Client-side validation is for UX only.
 	- For testing, I'd employ Vitest for unit test and Playwright for integration and end-to-end tests. 
-
-## Cloudflare
-### Microservices
-"Designed and implemented _**event-driven microservice**_ that bridged backend systems with RabbitMQ as part of a strategic **_monolith decomposition_** while ensuring _**==eventual consistency==**_ and adaptability to meet evolving business demands."
-#### Context
-- "_What was the primary business driver or technical limitation that necessitated building this particular EDA (event-driven architecture)?_"
-	- d
-	- d
-	- q
-- _What aspects of the design and code did you **personally own**?_
-	- d
-	- d
-- _Given the goal of eventual consistency, **why using RabbitMQ** ultimately was selected as the most appropriate solution, **despite other alternatives** like synchronous APIs with retries, change data capture, batch processing?_
-	- sd
-	- d
-#### Skin in the game
-##### Technical
-- "_How was the RabbitMQ cluster itself **configured and operated** to ensure high **availability and eventual consistency** for the application?_"
-	- f
-	- f
-- "_How did you prevent divergence and maintain idempotency in certain failure conditions like **message loss or redeliveries**?_"
-	- s
-	- s
-- "_What specific **testing strategies** were employed to explicitly verify the eventual consistency properties of the system under potential failure scenarios?_"
-	- dsd
-	- d
-- "_Tell me the most significant technical hurdles or **unexpected challenges** encountered specifically in the pursuit of ensuring eventual consistency during this project. How did you diagnose and overcome them?_"
-	- d
-	- d
-##### People
-- "_What were the **key trade-offs** made in this project, particularly concerning eventual consistency?_"
-	- f
-	- f
-#### Ownership
-- "_If you were to scale this microservice, what would be your initial approach?_"
-	- f
-	- f
-
-### Transformed manual testing process
-"Accelerated release velocity **_by 70%_** through implementation of an **_automated QA pipeline_** with Vitest for unit/integration testing and Playwright for E2E validation, eliminating **_critical bottlenecks of ==previously manual== testing process_** in the development lifecycle."
-#### Metrics validation
-- _"How confident are you that this pipeline was the primary driver of that specific 70% gain, and how did you isolate its impact?"_
-	- Before the pipeline, we tracked metrics like the _average time bug tickets remained open_ (which was around 3 days), the duration of the manual QA cycle per release candidate, and the frequency of hotfixes needed shortly after deployment due to regressions.
-	- Following the pipeline's implementation, our QA team could approve release candidates faster because their effort shifted from _==repetitive regression checks==_ (now automated) to more valuable exploratory testing and validation of new features, dropping our bug-fix cycle time _==from 3 days to 1 day on average==_.
-- _"What were the **primary bottlenecks** in the previous manual testing process that this pipeline aimed to solve?_"
-	- Implementing this pipeline was about _==shifting from reactive bug fixing to proactive quality assurance==_.
-	- The throughput of our releases was limited by QA's capacity to _manually_ test everything. Automation removed QA from being a blocker for **_verifying existing functionality_**, freeing them to _focus on higher-value tasks_ like usability testing, exploratory testing of new features, and _edge case analysis_.
-#### Skin in the game
-##### Technical
-###### Implementation
-- "_How did you decide what to cover with Vitest (unit/integration) versus Playwright (E2E)?_"
-	- We followed the _**Testing Pyramid model**_ where we have a large base of fast, isolated unit tests, a smaller layer of integration tests, and a very selective top layer of E2E tests.
-		- For testing _individual functions, components_ in isolation, and to pinpoint failures precisely, we go for _**unit tests**_. All external dependencies (like database calls, API calls, other modules) were mocked or stubbed.
-		- For testing the _==interaction between several units==_ within a single service or application boundary, we use **_integration tests_**. A mocked database layer or a test database instance is usually required for this stage.
-		- To ==_validate complete user flows **through the UI**_==, interacting with the deployed application (usually on a staging environment) just like a real user, we use E2E tests. They provide the highest confidence that the system works as a whole from the user's perspective. However, they are the slowest, most brittle, and most expensive to write and maintain, so we focus mostly on the absolute critical paths (i.e. smoke tests).
-- "_What was your **strategy for test coverage**, and how did you decide what was **'enough' coverage**? What patterns did you implement to share test utilities and fixtures?_"
-	- Our strategy focused on _**risk and value**_, not just hitting arbitrary code coverage percentages:
-		- **_For unit tests_**, we aimed for a high line/branch coverage _==(80%+) for core business logic==_, complex algorithms, and utility functions. Lower coverage was acceptable for simple code (like basic CRUD controllers with little logic).
-		- **_For integration tests_**, we focused on covering the ==_contracts between major components or services_== – ensuring API endpoints behaved as expected, key service methods interacted correctly.
-		- _**For E2E tests**_, we explicitly decided _not_ to cover every edge case or UI variation but we did put an emphasis on the _==critical "**happy paths**"==_ of major user workflows like authentication and core features usage.
-	- Our test coverage was considered 'enough' when:
-		- The automated tests were regularly catching regressions _before_ they reached manual QA or production.
-		- The time spent maintaining the tests felt proportionate to the value they provided (i.e., not bogged down fixing flaky tests constantly).
-	- We had a _==`test/utils` directory containing helper functions==_ for common tasks like setting up mock data, mock services or initializing common test states.
-	- We also made tests more readable and maintainable using Playwright's _==Page Object Model and fixtures==_ to handle common setup like browser context creation, logging in users via API before tests.
-- "_Were there any tradeoffs between more comprehensive testing and maintaining fast CI/CD pipelines (e.g., speed vs. coverage vs. maintainability)?_"
-	- More tests mean more confidence but longer feedback loops. We _==prioritized writing tests for areas known to be complex, critical, or historically buggy==_, rather than trying to achieve 100% coverage which includes unnecessary tests for implementation details.
-	- We configured our CI environment (GitLab CI in this case) to _==run tests in parallel across multiple runners/jobs==_. Both Vitest and Playwright have excellent support for parallel execution, which drastically reduced the overall wall-clock time for the test suites. More specifically, we employed a _tiered execution strategy_:
-		- _**On Pull Requests/Commits**:_ Run all fast unit and integration tests.
-		- _**On Merge to Main/Pre-Deployment**:_ Run the _full_ E2E suite.
-		- _**Nightly Builds**:_ Run the full E2E suite and potentially longer-running integration tests or performance tests.
-###### When shit hit the fan
-- "_Describe a specific test you wrote that **caught a regression** that would have otherwise gone to production. What made this particular test valuable?_"
-	- We had a Playwright E2E test for our user profile update flow. A developer was refactoring the backend API endpoint and updated the JSON payload structure for updating the user's time zone preference – the frontend was sending `tzId` but the refactored backend now expected `timeZoneId`.
-	- The unit tests for the backend endpoint passed (as they were updated with the new expectation), and the frontend unit tests for the profile component also passed (as they mocked the API call). However, the _**Playwright E2E test failed**_. It filled out the profile form (including the time zone dropdown), clicked 'Save', waited for the success notification, then reloaded the page and _asserted that the time zone dropdown **still held the newly selected value**_. Because the _==backend save failed silently==_ (or perhaps returned an unhandled error code the frontend didn't react to) _==due to the mismatched payload key, the assertion failed==_ – the time zone reverted to its old value on reload.
-	- This test was valuable because:
-		1. It _==tested the full flow==_ from UI interaction to data persistence and back to UI verification and _detected the mismatched payload_.
-		2. It _==prevented a subtle bug==_ that would likely frustrate users without being immediately obvious, _saving us from deploying a broken profile update feature_.
-- "_Tell me about **a critical production bug** that your automated tests failed to catch. How did you diagnose the bug and adjust your testing approach afterward?_"
-	- A critical bug occurred where users under very specific network conditions (high latency, intermittent packet loss – more common on mobile networks) _experienced duplicate form submissions when registering_, ==_occasionally creating two user accounts_== with slightly different states _**due to a race condition**_ between the client-side retry logic and the _==backend's non-idempotent registration endpoint==_.
-	- Why our tests missed it:
-	    - **Unit/Integration Tests:** These operated under ideal conditions, mocking network calls instantly or interacting with a fast local database. They _couldn't replicate real-world network flakiness_.
-	    - **E2E Tests (Playwright):** Our standard E2E tests ran in CI environments with stable, fast network connections. While Playwright _can_ throttle network speed, _==we hadn't explicitly configured tests to simulate the specific kind of intermittent failure==_ that triggered the duplicate submission logic in the frontend JavaScript. _==The backend endpoint also wasn't designed to be fully idempotent for this specific call==_.
-	- Solutions:
-	    1. **Enhanced E2E Scenarios:** We added specific Playwright test cases that used its network throttling capabilities (`page.route()`, `route.abort()`, or network condition emulation) to _simulate poor network conditions_ during the registration submission, specifically aiming to trigger the client-side retry logic and assert that only one account was created.
-	    2. **Backend Idempotency:** We updated the registration endpoint to be idempotent (_==using a unique `Idempotency-Key` sent by the client in the request header==_), preventing duplicate account creation even if the request arrived twice. This was the _real_ fix, but the E2E test ensures the frontend handles related errors gracefully too.
-	    3. **Improved Client-Side State:** We also updated the frontend JavaScript to _==disable the submit button immediately on the first click attempt==_, reducing the window for accidental double clicks during latency.
-- "_Give me a specific **example of a flaky test** you encountered and how you stabilized it._"
-	- We had a flaky Vitest integration test that checked _our notification service_. The test would trigger an action, then _==poll a mocked WebSocket connection for an expected notification message==_. It failed maybe 5% of the time in CI with a timeout waiting for the message.
-	- We realized the notification service had some asynchronous processing internally. While _usually_ fast, _==under certain CI load conditions, the processing could occasionally take slightly longer==_ than the fixed 500ms timeout we'd arbitrarily chosen. The test logic itself was correct, but the timing assumption was too tight and didn't reflect potential real-world variability.
-	- So we decided to increase the timeout duration to accommodate CI load conditions and replace manual `setTimeout` loops with Vitest built-in `expect.poll` method with a timeout argument for better maintainability.
-##### People
-- "_When implementing this pipeline, you likely faced resistance from some team members. Tell me about the **most significant push back** you received and how you addressed it._"
-	- The most significant pushback, as mentioned in the context, was the cultural resistance based on the idea that **'_testing is QA's job, not developers_'**. This manifested as reluctance to allocate time for writing tests alongside feature code and _==skepticism about the ROI==_.
-	- Getting _==buy-in from our team lead==_ was crucial. They helped reinforce the message that quality and sustainable pace were team priorities, supported by the evidence of customer impact from the existing technical debt.
-	- I built a small but functional POC pipeline with a simple unit test for a function which returns the strictest (i.e., smallest or most limiting) directives for Cache-Control headers. This demonstrated _concretely_ how tests could be written, how fast they could run in CI, and _==how they could catch a simple, simulated regression==_. Seeing it in action was more powerful than just talking about it.
-	- I emphasized how automated tests _==benefit **developers** directly==_ by providing faster feedback, increased confidence in refactoring, and _==scalable as they reduce time spent debugging regressions==_.
-#### Ownership
-- "_Looking back, what is the single biggest thing you would do differently if you were to build this QA pipeline again today, knowing what you know now?_"
-	- The single biggest thing I would do differently is integrate automated testing culture and practices _==even earlier and more deeply into the team's workflow==_ from day one of the initiative.
-	- Leverage TDD principles where appropriate, rather than treating it as an afterthought.
-	- Embedding the _habit_ and ==_shared ownership of testing more strongly and formally from the absolute beginning_== would likely have smoothed the adoption curve and accelerated the cultural shift even further.
-
-### Fullstack development
-"Developed a production-grade web application using **_Next.js and TailwindCSS_** to modularize service features through a granular _**role-based access control**_ system to gate premium features based on **_subscription tiers_** defined in a flexible pay-as-you-go billing model."
-#### Context
-- "_What was the product's primary **purpose**, who were the **target users**, and what were your specific **responsibilities**?_"
-	- f
-	- f
-	- d
-- "_What kind of **features** were gated, and how did the RBAC system reflect the billing status?_"
-	- d
-	- d
-- "_Why were **Next.js and TailwindCSS** chosen for this project? What are the **trade-offs**?_"
-	- d
-	- d
-#### Implementation
-##### Technical
-- "_Tell me about the key **Next.js features** that you used and your rationale behind them._"
-	- f
-	- f
-- "_Describe your approach to **data fetching in Next.js** for this application._"
-	- d
-	- d
-- "_How did you manage **application state**, particularly user authentication status, permissions, and **feature flags** derived from RBAC/billing?_"
-	- d
-	- d
-- "_How was the **RBAC system** designed and implemented? How did you ensure role integrity?_"
-	- d
-	- d
-- "_How did the application interact with the **billing system**? Was it direct API calls, webhooks (e.g. Stripe), or some other mechanism?_"
-	- d
-	- d
-##### People
-- "_What were the **most significant challenges** you faced while developing this application?_"
-	- f
-	- s
-#### Security
-- "_Describe how you secured sensitive operations, particularly those related to updating billing information or modifying user roles/permissions, against **common web vulnerabilities** (e.g., CSRF, XSS, unauthorized access)._"
-	- fs
-	- s
 
 ## Oncall Report
 ### WebSocket

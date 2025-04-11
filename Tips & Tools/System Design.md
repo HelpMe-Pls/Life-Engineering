@@ -23,7 +23,7 @@
 		- Multi-device support: good memory management, increasing the hit box of interactive elements,...
 		- Security: XSS, CSRF, [`rel=noopener`](https://mathiasbynens.github.io/rel-noopener/), [clickjacking](https://owasp.org/www-community/attacks/Clickjacking),...
 ---
-# Essentials
+# Essentials (for interviews)
 - Know [[Networking#What happens when an user type an URL in the address bar and hit enter? |this]].
 ## General ideas
 - Relate each of your design choice directly to these core system properties and discuss the inherent _tradeoffs_.
@@ -90,7 +90,7 @@
 		- How fast should it be? How available? Is data consistency critical?
 		- How many users? How much data? Reads vs. writes?
 	2. **Quick guesstimate**: put some rough numbers down. This helps justify needing replicas or caches later.
-	3. **Sketch it out**: high-level boxes and arrows. Something like `Client -> LB -> Servers -> DB/Cache` 
+	3. **Sketch it out**: high-level boxes and arrows. Something like `Client → LB → Servers → DB/Cache` 
 	4. **Zoom in**: pick **_1-2 areas_** to flesh out based on the requirements or interviewer's prompts. Play to your advantage. Usual suspects:
 		- DB Schema: show them why you choose SQL over NoSQL or vice versa.
 		- API Endpoints: make sure to follow the path convention

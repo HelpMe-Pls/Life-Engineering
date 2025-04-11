@@ -1114,29 +1114,28 @@ function isValidSudoku(board: string[][]): boolean {
 - [Binary Tree Postorder Traversal]()
 #### Backtracking
 - Use backtracking when you spot these keywords: "_**all**_ possible...", "generate _**all**_...", "find _**all**_ solutions...". It answers "yes" to the question: "==Am I building _multiple solutions_ and need to _try different choice at each step_?==" or "Does the problem _involve undoing choices to try alternatives_?"
+- This technique is the foundation for [[#DFS]].
 ##### Examples
-- [Combinations]()
-- [Subsets]()
-- [Permutations]()
+- [Combinations](https://leetcode.com/problems/combinations)
 - [Generate Parentheses]()
 
 ### BFS & DFS
 #### BFS
 - Useful when you need the ==**_shortest path_**== in terms of _steps or levels_ (like fewest moves, nearest neighbor in an _unweighted graph_). It explores _**==layer by layer==**_, so it _==finds the closest stuff first==_, using the ==**_queue_** data structure==.
 ##### Examples
-- [Minimum Depth of Binary Tree]()
+- [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)
 - [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description)
 - [Rotting Oranges]()
 - [Number of Islands]()
 - [Word Ladder]()
 #### DFS
-- You need to ==_**explore options deeply**_==, _check if a path simply **exists**_ (not necessarily the shortest), check for cycles, or visit everything _in a branch_ before moving on with *backtracking* (like traversing a maze or doing topological sort).
+- You need to ==_**explore options deeply**_==, _check if a path simply **exists**_ (not necessarily the shortest), check for cycles, or visit everything _in a branch_ before moving on with [[#Backtracking |backtracking]] (like traversing a maze or doing topological sort).
 - Implemented with recursion, or iteration by using a **_==stack==_** and a `visited` set/array.
 ##### Examples
 - [Binary Tree Inorder Traversal]()
 - [Number of Islands]()
 - [Subsets]()
-- [Permutations]()
+- [Permutations](https://leetcode.com/problems/permutations)
 - [Course Schedule]()
 
 ### Greedy

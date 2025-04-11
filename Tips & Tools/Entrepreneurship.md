@@ -327,7 +327,7 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 - Free products should help your audience achieve **one small desirable goal** with a mini course or eBook.
 	- Something like a short, relevant [[Writing#Email list |tease]] that they can use to put your advice into practice.
 - Build them in a way that opens a curiosity loop, so that after consuming them, they have no choice but to want more (i.e. your free products are the prerequisites to fully utilize your paid products), so they purchase the paid products (by linking your paid products or affiliates in your free products). 
-- Make them easy to consume and simple to implement. ==Make it completely obvious that you are here to offer as much _**value**_ as you can==. Remember how you bought online courses. You see the value in their free stuff, then you proceeded to buy the paid courses.
+- Make them easy to consume and simple to implement. ==Make it completely obvious that you are here to offer as much _**value**_ as you can==. Remember how you bought online courses. You see the _value_ in their _free_ stuff, then you proceeded to buy the paid courses.
 -  If you want to build an automated system for free products, you may have to use a software like [gumroad](https://gumroad.com) and use [zapier](https://zapier.com) to transfer the emails over to [Beehiiv](https://www.beehiiv.com).
 ### Authenticity
 - Expressing opinions, likes, and dislikes to relate with those in your audience.
