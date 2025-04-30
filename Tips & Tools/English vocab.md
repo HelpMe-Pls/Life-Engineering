@@ -36,6 +36,8 @@ conform {to} (v): abide by, comply with, adhere to
 
 ==pertinent== {to} (adj): apposite, relevant, appropriate
 
+non sequitur (n): a statement (such as a response) that does not follow logically from or is not clearly related to anything previously said
+
 cogent (adj): convincing, pertinent
 
 ==judicious== (adj): wise, thoughtful, sensible, prudent, insightful
@@ -248,6 +250,8 @@ conjugate (adj-v-n): coupled, join together, coalesce
 
 exuberant (adj): abundant of energy, excitement and happiness
 
+exhilarating (adj): thrilling
+
 titillating (adj): pleasantly stimulating or exciting, erotic
 
 jovial (adj): jolly, festive, merry, (in) jest
@@ -255,6 +259,8 @@ jovial (adj): jolly, festive, merry, (in) jest
 ==vivacious== (adj): sprightly, zesty, lively in temper
 
 prolific (adj): fruitful, productive 
+
+orchard (n): vườn cây ăn quả
 
 ==abate== (v): calm down, becoming less intense; taper
 
@@ -356,7 +362,7 @@ dire (adj): frightening, sinister, ominous
 
 iniquity (n): wickedness, sin
 
-nefarious (adj): iniquitous, vicious, evil (law)
+nefarious (adj): iniquitous, diabolical, vicious, evil (law)
 
 goon (n): a stupid person, a man hired to terrorize or eliminate opponents
 
@@ -399,6 +405,8 @@ gratuitous (adj): unwarranted, free, costless
 paradigm (n): example, pattern, a philosophical or theoretical framework of any kind
 
 apogee (n): culmination, climax, đỉnh cao
+
+cusp (n): turning point, edge, verge
 
 anecdote (n): giai thoại
 
@@ -546,7 +554,7 @@ acolyte (n): follower
 
 ==ostensibly== (adv): có vẻ như/dường như → ostentatious (adj): showy, boastful
 
-fanfare (n): showy, màu mè
+fanfare (n): showy, a short loud piece of music that is played to celebrate
 
 ==postulate== (v-n): presume, posit, premise
 
@@ -582,7 +590,7 @@ harbinger (v-n): predict, imply, foreshadow, prognosticate, pioneer, precursor
 
 insinuate (v): imply, subtly introduce, innuendo (n)
 
-==contingent== (adj-n): empirical, possible, unpredictable, delegacy
+==contingent== (adj-n): empirical, possible, unpredictable, delegacy, backup
 
 ==allow of== (phrV): to permit/make something possible
 

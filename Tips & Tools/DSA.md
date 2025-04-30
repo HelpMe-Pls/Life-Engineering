@@ -224,7 +224,7 @@ interface LinkedList<T> {
 - **Object**: when the order of the keys are ***not*** important and their type is simple (e.g. `string | number`), or you *don't* need to iterate the collection. If you want to define a custom data structure or an object with methods, prefer `class` for better readability.
 - **Array**: when you need index-based access and want to perform complex operations on the collection of values.
 - **Map**: when the relationship between ==_**keys** and **values**_== is important. Keys in a Map can be ***of any type*** and are not limited to sequential integer indices like in an Array. A Map has its own separate prototype chain based on `Map.prototype` which inherits instance methods from `Object.prototype` and some extra methods (such as `set()`, `get()`, `has()`, `delete()`, `clear()`,...). Use Map when you want *frequent* $O(1)$ **retrieval**/deletion values based on their key, e.g. writing a data structure that can quickly search and update a large set of values.
-- **Set**: when you want an ***unique*** iterable collection of ***values*** (i.e. a Set will *automatically* remove duplicated _**primitive** values_) , *frequent* $O(1)$ **search**/deletion and *don't* need random item retrieval (i.e. keys are *not* important). 
+- **Set**: when you want an ***unique*** iterable collection of ***values*** (i.e. a Set will *automatically* remove duplicated _**primitive** values_), *frequent* $O(1)$ **search**/deletion and *don't* need random item retrieval (i.e. keys are *not* important). 
 >[!important]- Set elements are ==unique in reference==, not their content
 >- Two different **objects** with _**identical** _ properties are still considered valid entries in a Set.
 
@@ -338,7 +338,7 @@ const hashed = [1, 4, 2, 6, 2, 3, 3, 5, 2, 2, 6, 0]
 - Heaps were first introduced as a means of storing and searching data efficiently. A heap is a [specialized data structure](https://www.cs.auckland.ac.nz/software/AlgAnim/heaps.html) that is modeled like a tree but behaves in a similar way to a ***queue***, but with different ***priority*** applied to its elements (i.e. ==priority queue==). Heaps are often built using ***binary trees*** (called *binary heaps*) though another approach would be to make an *array* act in a way that mimics the behavior of a binary tree (i.e. heapify). 
 - A heap is built for specialized purpose, that involves identifying the ***most important item*** and returning this in the ***shortest time possible***. Then queuing up the next item of importance. 
 - A heap is always a complete binary tree (i.e. a node always have *left **and** right* children or no children at all)
-- Heaps that place priority on the lowest valued key are called *min heaps* (i.e. the minimum value is placed *at the root*) and ones that place the priority on the maximum value are called *max heaps*. Reverse all the methods of min heaps and you'll have the methods for max heaps:
+- Heaps that place priority on the lowest valued key are called *min heaps* (i.e. the minimum value is placed *at the root*) and the ones that place the priority on the maximum value are called *max heaps*. Reverse all the methods of min heaps and you'll have the methods for max heaps:
 	- **Insert**: similar to how insertion works in a binary tree with $O(logn)$ time. If the node to be inserted has the smallest value in the tree, then it'll bubble up to be the root.
 	- **Find/Peek min**: retrieve the minimum value from a heap is $O(1)$ because it will be stored always at the root.
 	- **Delete min**: a heap should not support operations such as deleting items other than the min element (i.e. the root). Deleting arbitrary items in the tree would require restructuring the tree and this would lead to a degradation in performance. If you are looking for a data structure that can act in this way, then you might consider structures other than a heap:
@@ -352,7 +352,7 @@ class MinHeap {
         this.length = 0
     }
 
-    // Get the parent node's index of a node
+    // Get the parent's index of a node
     private parent(idx: number): number {
         return Math.floor((idx - 1) / 2)
     }
@@ -362,6 +362,8 @@ class MinHeap {
     private rightChild(idx: number): number {
         return 2 * idx + 2
     }
+    // Restores heap property upwards from a given index
+    // Ensures the children node is larger than its parent
     private heapifyUp(idx: number): void {
         // Base case: reached the root
         if (idx == 0) return
@@ -371,13 +373,15 @@ class MinHeap {
         const nodeValue = this.data[idx]
 
         if (parentValue > nodeValue) {
-            // Swap the current node with its parent
+            // Swap the current node's value with its parent
             this.data[idx] = parentValue
             this.data[parentIndex] = nodeValue
 
             this.heapifyUp(parentIndex)
         }
     }
+    // Restores heap property downwards from a given index
+    // Ensures the parent node is smaller than its children
     private heapifyDown(idx: number): void {
         const leftChildIndex = this.leftChild(idx)
         const rightChildIndex = this.rightChild(idx)
@@ -385,8 +389,8 @@ class MinHeap {
         const rightChildValue = this.data[rightChildIndex]
         const nodeValue = this.data[idx]
 
-        // Base case: reached a leaf or beyond
-        if (idx >= this.length || leftChildIndex >= this.length) return
+        // Base case: reached a leaf
+        if (leftChildIndex >= this.length) return
 
         // The right child is smallest
         if (leftChildValue > rightChildValue && nodeValue > rightChildValue) {
@@ -409,8 +413,8 @@ class MinHeap {
         // Bubble up the smallest node so that the minHeap remains its structure
         this.heapifyUp(this.length++)
     }
-    delete(): number {
-        if (this.length === 0) return -1
+    extractMin(): number {
+        if (this.length === 0) return null
         
 		// Deletion always starts at the root
         const value = this.data[0]
@@ -419,7 +423,7 @@ class MinHeap {
             this.data = []
             return value
         }
-		// Get the leaf node at the tree's height and place it at the root, then drill it down so that the minHeap remains its structure
+		// Get the leaf node at the tree's height and place it at the root, then drill it down so that the minHeap remains its integrity
         this.data[0] = this.data[this.length]
         this.heapifyDown(0)
 
@@ -427,8 +431,7 @@ class MinHeap {
     }
 	// Returns the smallest element without removing it
     peek(): number {
-        if (this.length === 0) return -1;
-        return this.data[0];
+        return this.length > 0 ? this.data[0] : null
     }
 }
 ```
@@ -734,7 +737,7 @@ console.log(sortedArray);
 	- It is the go-to sorting algorithm ==_when working with linked lists_==, due to its sequential access nature, offering $O(1)$ space with an iterative implementation.
 - Same $O(n)$ space on average as Quick Sort because it uses an extra array [[#Divide and Conquer |for the merge step]].
 #### Heap sort
-- As the name suggests, we use it when a heap implementation is readily available.
+- As the name suggests, we use it when a [[#Heaps |heap implementation]] is readily available.
 - Preferred when you need to find the $k^{th}$ largest/smallest elements (can stop early). As an comparison-based and in-place sorting algorithm, it has $O(nlogn)$ time & $O(1)$ space:
 ```ts
 function heapify<T>(arr: T[], n: number, i: number): void {
@@ -803,7 +806,7 @@ function linearSearch(arr, item) {
   return null;
 }
 ```
-- Linear search has $O(n)$ time & space complexity
+- Linear search has $O(n)$ time & space complexity.
 #### Binary
 > To conduct a binary search, the list **must first be sorted**.
 - A binary search is performed by comparing the target element to *the mid-point* on a *sorted* list and discarding the half that is *less than* the target element. This halving at the mid-point is repeated until the target element is found or there is no more list to half:
@@ -999,7 +1002,7 @@ console.log(`Post: ${sorted}`);
 - [3Sum](https://leetcode.com/problems/3sum/description): this one is actually 3 pointers
 - [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description)
 - [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
-- [Linked List Cycle II]()
+- [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)
 - [Sort Colors]()
 - [Container With Most Water]()
 #### Sliding Windows
@@ -1125,7 +1128,7 @@ function isValidSudoku(board: string[][]): boolean {
 ##### Examples
 - [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)
 - [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description)
-- [Rotting Oranges]()
+- [Rotting Oranges](https://leetcode.com/problems/rotting-oranges)
 - [Number of Islands]()
 - [Word Ladder]()
 #### DFS
@@ -1157,22 +1160,22 @@ function maxProfit(prices: number[]): number {
 #### More examples
 - [Assign Cookies]()
 - [Non-overlapping Intervals]()
-- [Merge Intervals]()
+- [Merge Intervals](https://leetcode.com/problems/merge-intervals)
 - [Jump Game]()
 
 ### Dynamic Programming
-- Use it when you need to optimize _**overlapping** subproblems_ with _memoization_ (top-down) or _tabulation_ (bottom-up). Store & reuse.
-- With memoization, _==use recursion with a cache==_ (like a map or an array) to store result:
+- Use it when you need to ==optimize _**overlapping** subproblems==_ with _memoization_ (top-down) or _tabulation_ (bottom-up). Store & reuse.
+- With _**memoization**_, _==use recursion with a cache==_ (like a map or an array) to store result:
 	- Check the cache to see if it contains the answer for the current state. If it does, we're done. If it doesn't, we keep the recursion going, and remember that:
 	- _Before_ returning the computed answer, _store_ it in the cache.
-- With tabulation, we only _==use loops with a table==_ (array) built from base cases:
+- With _**tabulation**_, we only _==use loops with a table==_ (array) built from base cases:
 	- First, figure out the dimensions of your DP table (e.g. `dp[n+1]` or `dp[rows][cols]`), then:
 	- Identify the _**smallest** subproblems_ you know the answer to (i.e. base cases) and fill those in the table using a loop (or nested loops).
 	- The loop order matters: make sure you compute smaller subproblems _before_ you need them for bigger ones.
 	- Each answer `dp[i]` (or `dp[i][j]`) is calculated using previously computed values in the table (e.g. `dp[i] = dp[i-1] + dp[i-2]`)
 	- The final answer is usually the last entry (or one of the last entries) in the table.
 ##### Examples
-- [Fibonacci Number]()
+- [Fibonacci Number](https://leetcode.com/problems/fibonacci-number)
 - [House Robber]()
 - [Coin Change]()
 - [Word Break]()
@@ -1273,7 +1276,7 @@ function mergeTwoListsOptimized(list1: ListNode | null, list2: ListNode | null):
 - Use it when you need quick access to the smallest or largest element (i.e. `k` problems) in a changing collection.
 - Also useful for problems where you need to process things based on priority. Heaps keep track of the next highest priority item efficiently.
 #### Examples
-- [Kth Largest Element in an Array]()
+- [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array): the `MinHeap` handles the "without sorting" part
 - [Top K Frequent Elements]()
 - [Find Median from Data Stream]()
 
@@ -1290,7 +1293,7 @@ function mergeTwoListsOptimized(list1: ListNode | null, list2: ListNode | null):
 - It's a tree where each path from the root represents a prefix.
 - Has practical values. Perfect for fast string searching (i.e. prefix searching), autocomplete, and scenarios. 
 ##### Examples
-- [Implement Trie (Prefix Tree)]()
+- [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)
 - [Design Add and Search Words Data Structure]()
 - [Word Search II]()
 

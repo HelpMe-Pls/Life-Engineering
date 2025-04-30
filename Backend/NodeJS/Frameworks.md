@@ -2,21 +2,21 @@
 
 ## Overview
 - A minimal data flow of a RESTful backend using NestJS:
-	1. **Module**: The application is structured into modules in NestJS. Each module encapsulates a specific feature or functionality of the application. Modules are responsible for importing and exporting dependencies, including controllers, services, and other modules.
+	1. **Module**: The application is structured into modules in NestJS. Each module encapsulates a _==specific feature==_ or functionality of the application. Modules are responsible for _==importing and exporting dependencies, including controllers, services, and other modules==_.
 	2. **Request**: The client sends an `HTTP` request to the server, specifying the desired resource and the desired operation (`GET`, `POST`, `PUT`, `DELETE`,...).
 	3. **Routing**: The server receives the request and the routing mechanism in NestJS identifies the appropriate controller and method to handle the request based on the URL and `HTTP` method.
-	4. **Controller**: responsible for handling incoming requests and returning responses to the client. It extracts any parameters or body data that may be included in the request, then delegates the actual business logic to a service class.
-	5. **Service/Provider**: performs any necessary operations, such as querying or updating data from a database or performing calculations.
+	4. **Controller**: responsible for _==handling incoming requests and returning responses==_ to the client. It extracts any parameters or body data that may be included in the request, then _==delegates the actual business logic to a service class==_.
+	5. **Service/Provider**: _==encapsulates business logic==_, such as querying or updating data from a database or performing calculations. They're designed to be _==injected into controllers or other providers==_.
 	6. **Response**: Once the service has completed its operations, it returns the result back to the controller. The controller then prepares the response to be sent back to the client.
 	7. **Serialization**: The response data is serialized into the desired format (JSON, XML, etc.) based on the client's request and the response headers are set accordingly.
 	8. **Sending Response**: finally, the serialized response is sent back to the client as an `HTTP` response.
-- There are also **Middleware** (basically the same concepts of middleware in Express, they are used to modify the request and response objects before they are passed to the controllers) standing between step 2-3; and **Interceptors** (which wrap the request/response stream, allowing you to implement custom logic both *before and after* the execution of the final route handler) which wraps around step 4-5 and/or 6-7.
+- There are also **Middleware** (basically the same concepts of middleware in Express, they are used to _==modify the request and response objects==_ _before_ they are passed to the controllers) standing between step 2-3; and **Interceptors** (which wrap the request/response stream, allowing you to implement custom logic both *before and after* the execution of the final route handler) which wraps around step 4-5 and/or 6-7.
 
 ## Concepts
 ### Dependency Injection
 - It helps us to write code that is loosely coupled, more maintainable, and easier to test by manipulating the desired class's constructor.
 - In NestJS, a dependency is marked with the `@Injectable` decorator will later be *injected* to its target consumer (as a parameter in the consumer's `constructor`).
-- With dependency injection (DI), we can easily swap out dependencies for a different implementation or a mock when running tests, without having to changing the code of the classes that use them:
+- With dependency injection (DI), we can easily _==swap out dependencies for a different implementation==_ or a mock when running tests, without having to changing the code of the classes that use them:
 ```ts
 // Without DI:
 class Engine {
@@ -530,7 +530,9 @@ async create(@Body() newCat: CreateCatDto) {
 
 ### Interceptors
 - An interceptor is a class annotated with the `@Injectable()` decorator _**and**_ implements the `NestInterceptor` interface.
-- Use it to bind extra logic before / after method execution, *transform* the result returned from a function, extend or override a function:
+- Use it to bind extra logic before / after method execution, *transform* the result returned from a function, extend or override a function.
+	- Common use cases are response transformation, caching, logging.
+- Examples:
 ```ts
 //----------------- exclude-null.interceptor.ts
 // For example: transform each occurrence of a `null` value to an empty string:
@@ -610,5 +612,5 @@ export class ErrorsInterceptor implements NestInterceptor {
 ```
 
 ## Techniques
-
+- To be continued.
 

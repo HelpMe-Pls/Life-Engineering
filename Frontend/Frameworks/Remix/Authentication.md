@@ -135,6 +135,35 @@ function App() {
 ```
 ## Session
 - The ***session*** data is ***created on the server*** (by creating an extra record in the `Session` table) then stored in a cookie (***as an encoded value***) on the user’s browser. This is done by serializing the session data, signing it with a secret key (or keys), and then setting it [[Authentication#Managed sessions |as a cookie]]. When the server receives the cookie, it decodes the value back into the original session data. It also verifies the signature to ensure that the data has not been tampered with. 
+- This whole flow is stateful (the server _maintains_ the user's authentication state). Checkout [[APIs#JWTs |JWTs]] for stateless authentication.
+- To [visualize](https://mermaid.live) how it works, paste this code in:
+```
+graph TD
+    subgraph Initial Request / Login
+        A[User visits site / tries to access protected page] --> B(Client: Sends HTTP Request);
+        B --> C{Server: Session ID received & valid?};
+        C -- No --> D[Server: Shows Login Page];
+        D --> E[User: Submits Username + Password];
+        E --> F(Client: Sends Login Request);
+        F --> G{Server: Credentials Valid?};
+        G -- Yes --> H[Server: Creates Session];
+        H --> I[Server: Generates Session ID];
+        I --> J[Server: Sends Response with Set-Cookie header that contains Session ID];
+        J --> K(Client: Stores Cookie);
+        K --> L[Client: Redirects / Shows Protected Content];
+        G -- No --> M[Server: Shows Login Error];
+        M --> D; 
+    end
+
+    subgraph Subsequent Request
+        N[User: Accesses another protected page] --> O(Client: Sends HTTP Request + Cookie with Session ID);
+        O --> P{Server: Session ID received & valid?};
+        P -- Yes --> Q[Server: Serves Protected Content];
+        P -- No --> D; 
+        C -- Yes --> Q;
+    end
+```
+
 - Code example:
 ```tsx
 //----------------- Initiate a session

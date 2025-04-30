@@ -17,20 +17,21 @@
 # FPT
 ## Cloudflare
 ### Microservices
-"Designed and implemented an _**event-driven microservice**_ that bridged backend systems with RabbitMQ as part of a strategic **_monolith decomposition_** while ensuring _**==eventual consistency==**_ and adaptability to meet evolving business demands."
-#### Context
+"Designed and developed an _**event-driven microservice**_ with RabbitMQ to decompose a monolith, ensuring _**eventual consistency**_ for inventory-update APIs and cutting timeout incidents by 75%."
+#### The context
 - "_What was the primary business driver or technical limitation that necessitated building this particular EDA (event-driven architecture)?_"
-	- The primary driver was a critical **technical limitation** causing significant **business impact**.
-		- Our initial NextJS monolith was becoming severely bogged down by handling _==increasingly complex RBAC logic and long-running synchronous REST API calls to essential third-party services==_. A single incoming API request could trigger a cascade of these external calls, tying up server resources for seconds, sometimes leading to timeouts _on our side_ before the third-party even responded.
-		- Our goal was to _==ensure failures originated only from the third parties==_, not our own infrastructure limitations. We _==needed a way to decouple==_ these long-running, non-critical-path operations from the main request/response cycle to ensure the core application remained responsive and stable, allowing the business to scale its operations reliably.
-- _What aspects of the design and code did you **personally own**?_
-	- My ownership was centered entirely on the worker microservice, _==the consumer side==_ of this event-driven flow, which mainly focus:
-		- **The design**: deciding on core libraries, logging patterns, and error handling strategies for this Node & TS worker service.
-		- **The implementation**: developing the _==idempotency logic==_ to safely handle potential message redeliveries from RabbitMQ, implementing _==retry mechanisms==_ (with exponential backoff) for transient third-party API failures, and integrating with the _==Dead Letter Queue mechanism==_ for undeliverable messages.
+	- The primary driver was a critical **technical limitation** causing significant **business impact**:
+		- Our initial NextJS monolith was becoming severely bogged down by handling _==increasingly complex RBAC logic and long-running synchronous REST API calls to essential third-party services==_. A single incoming API request could trigger a cascade of these external calls, tying up server resources for seconds, sometimes leading to ==_timeouts on our side_ before the third-party even responded==.
+		- Our goal was to _==ensure failures originated only from the third party==_, not our own infrastructure limitations. We _==needed a way to decouple==_ these long-running, non-critical-path operations from the main request/response cycle to _==ensure the core application remained responsive and stable==_, allowing the business to reliably scale its operations.
+		- After the decomposition, timeout incidents dropped from an average of _==4 timeouts for every 10 requests down to 1 in every 10==_.
+- "_What aspects of the design and code did you **personally own**?_"
+	- My ownership was centered entirely on _==the worker microservice, the consumer side==_ of this event-driven flow, which mainly focus:
+		- **The design**: deciding on core libraries, logging patterns, and error handling strategies for this Node & TS _==modular structure==_ worker service (e.g. `src > messaging / core / shared`).
+		- **The implementation**: developing the _==idempotency logic==_ to safely handle potential message redeliveries from RabbitMQ, implementing _==retry mechanisms (with exponential backoff)==_ for transient third-party API failures, and integrating with the _==Dead Letter Queue mechanism==_ for undeliverable messages.
 		- **Testing**: writing comprehensive _==unit tests and integration tests==_ using Vitest that mocked RabbitMQ interactions and mocked the third-party APIs (using `msw`) to verify the end-to-end flow within the worker under various success and failure conditions (e.g. API errors, redeliveries).
-- _Given the goal of eventual consistency, **why using RabbitMQ** (not Kafka) ultimately was selected as the most appropriate solution, **despite other alternatives** like synchronous APIs with retries, change data capture, batch processing?_
-	- Our SLAs required that "any specific _==task must eventually completes or is explicitly handled==_" and "the tasks needed to be initiated relatively quickly after the user action, _==even if the final result took time==_".
-	- To satisfy those requirements, **batch processing** seems like a viable option, but it. would introduce unwanted latency. It's _better suited for scheduled, non-time-sensitive bulk operations_.
+- "_Given the goal of eventual consistency, **why RabbitMQ** (not Kafka) was selected as the most appropriate solution, **despite other alternatives** like synchronous APIs with retries, change data capture, batch processing?_"
+	- Our SLAs required that "any specific _==task must eventually completes or is explicitly handled==_" and "the tasks need to be initiated relatively quickly after the user action, _==even if the final result takes time==_".
+	- To satisfy those requirements, **batch processing** seems like a viable option, but it would introduce unwanted latency. It's _better suited for scheduled, non-time-sensitive **bulk operations**_.
 		- Synchronous APIs with retries is exactly the initial cause of our problems. Simply adding more retries wouldn't solve the fundamental issue of blocking the primary API server and resource exhaustion, so there's no point to stick with it.
 	- Compared to Kafka, which is more suitable for a distributed _streaming platform_, our use case leans toward _==discrete, individual task processing==_ (the third-party API calls) that _==needed robust acknowledgement, retry logic, and potential dead-lettering==_, so that's why RabbitMQ felt like a more natural fit.
 #### Skin in the game
@@ -42,17 +43,23 @@
 		- **Mirrored Queues**: to ensure that if one node went down, the queue remained available on the others, preventing message loss.
 		- **Heartbeats & Monitoring**: network heartbeats were configured between consumers and the broker to detect dead connections quickly. Our monitoring put an emphasis on unacknowledged messages to spot issues proactively.
 		- **==Durable Queues==**: with the `durable: true` flag, the queue definition itself would survive a broker restart.
-		- ==**Persistent Messages**==: the NestJS producer published messages with the `{persistent: true}` flag ,allowing messages to survive broker restarts.
-		- ==**Manual Acknowledgements**==: to prevent message loss if the worker crashes mid-processing. I made sure that a message was _only_ removed from the queue after my service successfully processed it (via `channel.ack(msg)`) or explicitly rejected/dead-lettered it via `channel.nack(msg, false, requeue=false)`.
+		- ==**Persistent Messages**==: the NestJS producer published messages with the `{persistent: true}` flag, allowing messages to survive broker restarts.
+		- ==**Manual Acknowledgements**==: to prevent message loss if the worker crashes mid-processing, I made sure that a message was _only_ removed from the queue after my service successfully processed it (via `channel.ack(msg)`) or explicitly rejected/dead-lettered it via `channel.nack(msg, false, requeue=false)`.
 		- **Publisher Confirms**: the producer side used Publisher Confirms to ensure RabbitMQ actually received and accepted the message before the producer considered its job done.
 - "_What were the **key trade-offs** made in this project, particularly concerning eventual consistency?_"
-	- **Operational Overhead**: running and monitoring RabbitMQ and the worker service added operational overhead compared to the single monolith deployment.
-	- **Debugging Complexity**: issues across distributed components (`producer → broker → consumer`) is inherently more complex and more time consuming to debug compared to a single application stack.
-	- **Latency**: ==users lost immediate confirmation that the _entire operation_ was complete, receiving only confirmation that it was _accepted_ for processing==. We updated our loading UI to compensate this UX compromise.
+	- ==**Operational Overhead**==: running and monitoring RabbitMQ and the worker service added operational overhead compared to the single monolith deployment.
+	- ==**Debugging Complexity**==: issues across distributed components (`producer → broker → consumer`) is inherently more complex and more time consuming to debug compared to a single application stack.
+	- **Latency**: users lost immediate confirmation that the _entire operation_ was complete, receiving only confirmation that it was _accepted_ for processing. We updated our loading UI to compensate this UX compromise.
 ###### When shit hit the fan
-- "_How did you prevent divergence and maintain idempotency in certain failure conditions like **message loss or redeliveries**?_"
+- "_Tell me the most significant technical hurdles or **unexpected challenges** encountered specifically in the pursuit of **ensuring eventual consistency** during this project. How did you diagnose and overcome them?_"
+	- The most time consuming challenge that I faced was to reliably _==distinguishing between transient, retryable errors and permanent, non-retryable errors==_ originating from poorly documented third-party APIs.
+		- Getting eventual consistency right heavily depends on correctly _==deciding whether to retry a failed operation==_. Retrying permanent errors would waste worker resources and delayed other messages. _Not_ retrying transient errors meant the operation for that message might _never_ complete, breaking eventual consistency for that specific task.
+		- This often required painstaking manual work when messages landed in the DLQ or logs showed repeated failures:
+			- We created a rule regarding `http` status codes: _==5xx/timeouts → Retry==_ (with exponential backoff + max attempts). For _==4xx → Don't retry==_ (assume bad request data), log details, push it to the DLQ.
+			- By _==analyzing the DLQ==_, we were able to refine the classification logic and _==identify underlying data issues or new third-party error patterns==_.
+- "_How did you prevent divergence and maintain **idempotency** in certain failure conditions like **message loss or redeliveries**?_"
 	- I followed the _**Check-Read-Write convention**_ to guarantee _at-least-once_ delivery: 
-		- First, the NestJS producer included a _==unique identifier==_ (e.g. UUID based on the originating request or operation) _within each message payload_.
+		- First, the NestJS producer included a _==unique identifier==_ within each message _payload_ (e.g. UUID based on the originating request or operation, and this is _not_ the `correlationID`).
 		- Next, apply the Check-Read-Write pattern with our Redis distributed cache as follows:
 			- **Check:** upon receiving a message, the worker extracted the unique ID.
 			- **Read:** then it read this ID from the _==Redis idempotency store==_.
@@ -60,49 +67,43 @@
 				- First delivery: the ID did **not** exist in Redis → the worker **write** the ID to Redis.
 					- If the write succeeded: the worker would process the message. On success, it would `ack` the message. If processing failed definitively (non-retryable), it would `nack` (without requeue) and log the operation.
 					- If the write failed, the worker treats that message as a redelivery.
-				- Redelivery: the ID **existed** → the worker logged it then `ack` the message 
-- "_Tell me the most significant technical hurdles or **unexpected challenges** encountered specifically in the pursuit of **ensuring eventual consistency** during this project. How did you diagnose and overcome them?_"
-	- The most time consuming challenge that I faced was to reliably _==distinguishing between transient, retryable errors and permanent, non-retryable errors==_ originating from poorly documented third-party APIs.
-		- Getting eventual consistency right heavily depends on correctly _==deciding whether to retry a failed operation==_. Retrying permanent errors would waste worker resources and delayed other messages. _Not_ retrying transient errors meant the operation for that message might _never_ complete, breaking eventual consistency for that specific task.
-		- This often required painstaking manual work when messages landed in the DLQ or logs showed repeated failures:
-			- We created a rule regarding `http` status codes: _==5xx/timeouts → Retry==_ (with exponential backoff + max attempts). For _==4xx → Don't retry==_ (assume bad request data), log details, push it to the DLQ.
-			- By _==analyzing the DLQ==_, we were able to refine the classification logic and _==identify underlying data issues or new third-party error patterns==_.
+				- Redelivery: the ID **existed** → the worker logged it then `ack` the message. 
 #### Ownership
 - "_If you were to scale this microservice, what would be your initial approach?_"
 	- My initial approach would be straightforward ==_horizontal scaling_== of the worker consumer instances. 
-	- **Increase Consumer Instances**: since _==RabbitMQ distributes messages round-robin to consumers on the same queue==_, simply deploying more identical instances of the worker service (e.g. increasing the replica count in Kubernetes) will increase the overall message processing throughput.
+	- **Increase Consumer Instances**: since _==RabbitMQ distributes messages round-robin to consumers on the same queue==_, simply deploying _==more identical instances==_ of the worker service (e.g. increasing the replica count in Kubernetes) will increase the overall message processing throughput.
 	- **Broker Scaling (secondary)**: if message rates become extremely high, eventually the RabbitMQ cluster itself might need scaling (more nodes, better hardware), but consumer scaling is the first lever to pull.
 
 ### Transformed manual testing process
-"Accelerated release velocity **_by 70%_** through implementation of an **_automated QA pipeline_** with Vitest for unit/integration testing and Playwright for E2E validation, eliminating **_critical bottlenecks of ==previously manual== testing process_** in the development lifecycle."
+"Implemented an **_automated QA pipeline_** with Vitest unit/integration and Playwright E2E that reduced the manual testing phase from 3 days to 1 day on average, contributing to a 67% reduction in _**deployment latency**_."
 #### Metrics validation
-- _"How confident are you that this pipeline was the primary driver of that specific 70% gain, and how did you isolate its impact?"_
+- _"How confident are you that this pipeline was the primary driver of that specific 67% gain, and how did you isolate its impact?"_
 	- Before the pipeline, we tracked metrics like the _average time bug tickets remained open_ (which was around 3 days), the duration of the manual QA cycle per release candidate, and the frequency of hotfixes needed shortly after deployment due to regressions.
 	- Following the pipeline's implementation, our QA team could approve release candidates faster because their effort shifted from _==repetitive regression checks==_ (now automated) to more valuable exploratory testing and validation of new features, dropping our bug-fix cycle time _==from 3 days to 1 day on average==_.
 - _"What were the **primary bottlenecks** in the previous manual testing process that this pipeline aimed to solve?_"
 	- Implementing this pipeline was about _==shifting from reactive bug fixing to proactive quality assurance==_.
-	- The throughput of our releases was limited by QA's capacity to _manually_ test everything. Automation removed QA from being a blocker for **_verifying existing functionality_**, freeing them to _focus on higher-value tasks_ like usability testing, exploratory testing of new features, and _edge case analysis_.
+	- The throughput of our releases was limited by QA's capacity to _manually_ test everything. _==Automation removed QA from being a blocker for **verifying existing functionalities**==_, freeing them to _focus on higher-value tasks_ like usability testing, exploratory testing of new features, and _edge case analysis_.
 #### Skin in the game
 ##### Technical
 ###### Implementation
 - "_How did you decide what to cover with Vitest (unit/integration) versus Playwright (E2E)?_"
-	- We followed the _**Testing Pyramid model**_ where we have a large base of fast, isolated unit tests, a smaller layer of integration tests, and a very selective top layer of E2E tests.
-		- For testing _individual functions, components_ in isolation, and to pinpoint failures precisely, we go for _**unit tests**_. All external dependencies (like database calls, API calls, other modules) were mocked or stubbed.
+	- We followed the _**Testing Pyramid model**_ where we have _==a large base of fast, **isolated** unit tests, a smaller layer of integration tests, and a very selective top layer of E2E tests==_.
+		- For testing ==_individual functions, components_ in isolation==, and to pinpoint failures precisely, we go for _**unit tests**_. All external dependencies (like database calls, API calls, other modules) were mocked or stubbed.
 		- For testing the _==interaction between several units==_ within a single service or application boundary, we use **_integration tests_**. A mocked database layer or a test database instance is usually required for this stage.
 		- To ==_validate complete user flows **through the UI**_==, interacting with the deployed application (usually on a staging environment) just like a real user, we use E2E tests. They provide the highest confidence that the system works as a whole from the user's perspective. However, they are the slowest, most brittle, and most expensive to write and maintain, so we focus mostly on the absolute critical paths (i.e. smoke tests).
 - "_What was your **strategy for test coverage**, and how did you decide what was **'enough' coverage**? What patterns did you implement to share test utilities and fixtures?_"
 	- Our strategy focused on _**risk and value**_, not just hitting arbitrary code coverage percentages:
 		- **_For unit tests_**, we aimed for a high line/branch coverage _==(80%+) for core business logic==_, complex algorithms, and utility functions. Lower coverage was acceptable for simple code (like basic CRUD controllers with little logic).
-		- **_For integration tests_**, we focused on covering the ==_contracts between major components or services_== – ensuring API endpoints behaved as expected, key service methods interacted correctly.
-		- _**For E2E tests**_, we explicitly decided _not_ to cover every edge case or UI variation but we did put an emphasis on the _==critical "**happy paths**"==_ of major user workflows like authentication and core features usage.
+		- **_For integration tests_**, we focused on covering ==_**the contracts** between major components or services_== – ensuring API endpoints behaved as expected, key service methods interacted correctly.
+		- _**For E2E tests**_, we explicitly decided _not_ to cover every edge case or UI variation but we did put an emphasis on the _==critical "**happy paths**" of major user **workflows**_== like authentication and core features usage.
 	- Our test coverage was considered 'enough' when:
-		- The automated tests were regularly catching regressions _before_ they reached manual QA or production.
+		- The automated tests were regularly _==catching regressions **before** they reached manual QA or production==_.
 		- The time spent maintaining the tests felt proportionate to the value they provided (i.e., not bogged down fixing flaky tests constantly).
 	- We had a _==`test/utils` directory containing helper functions==_ for common tasks like setting up mock data, mock services or initializing common test states.
 	- We also made tests more readable and maintainable using Playwright's _==Page Object Model and fixtures==_ to handle common setup like browser context creation, logging in users via API before tests.
 - "_Were there any tradeoffs between more comprehensive testing and maintaining fast CI/CD pipelines (e.g., speed vs. coverage vs. maintainability)?_"
 	- More tests mean more confidence but longer feedback loops. We _==prioritized writing tests for areas known to be complex, critical, or historically buggy==_, rather than trying to achieve 100% coverage which includes unnecessary tests for implementation details.
-	- We configured our CI environment (GitLab CI in this case) to _==run tests in parallel across multiple runners/jobs==_. Both Vitest and Playwright have excellent support for parallel execution, which drastically reduced the overall wall-clock time for the test suites. More specifically, we employed a _tiered execution strategy_:
+	- We configured our CI environment (GitLab CI in this case) to _==run tests in parallel across multiple runners/jobs==_. Both Vitest and Playwright have excellent support for parallel execution, which drastically reduced the overall wall-clock time for the test suites. More specifically, ==we employed a _tiered execution strategy_==:
 		- _**On Pull Requests/Commits**:_ Run all fast unit and integration tests.
 		- _**On Merge to Main/Pre-Deployment**:_ Run the _full_ E2E suite.
 		- _**Nightly Builds**:_ Run the full E2E suite and potentially longer-running integration tests or performance tests.
@@ -114,23 +115,23 @@
 		1. It _==tested the full flow==_ from UI interaction to data persistence and back to UI verification and _detected the mismatched payload_.
 		2. It _==prevented a subtle bug==_ that would likely frustrate users without being immediately obvious, _saving us from deploying a broken profile update feature_.
 - "_Tell me about **a critical production bug** that your automated tests failed to catch. How did you diagnose the bug and adjust your testing approach afterward?_"
-	- A critical bug occurred where users under very specific network conditions (high latency, intermittent packet loss – more common on mobile networks) _experienced duplicate form submissions when registering_, ==_occasionally creating two user accounts_== with slightly different states _**due to a race condition**_ between the client-side retry logic and the _==backend's non-idempotent registration endpoint==_.
+	- A critical bug occurred where users _==under very specific network conditions==_ (high latency, intermittent packet loss – more common on mobile networks) _experienced duplicate form submissions when registering_, ==_occasionally creating two user accounts_== with slightly different states _**due to a race condition**_ between the client-side retry logic and the _==backend's non-idempotent registration endpoint==_.
 	- Why our tests missed it:
 	    - **Unit/Integration Tests:** These operated under ideal conditions, mocking network calls instantly or interacting with a fast local database. They _couldn't replicate real-world network flakiness_.
 	    - **E2E Tests (Playwright):** Our standard E2E tests ran in CI environments with stable, fast network connections. While Playwright _can_ throttle network speed, _==we hadn't explicitly configured tests to simulate the specific kind of intermittent failure==_ that triggered the duplicate submission logic in the frontend JavaScript. _==The backend endpoint also wasn't designed to be fully idempotent for this specific call==_.
 	- Solutions:
 	    1. **Enhanced E2E Scenarios:** We added specific Playwright test cases that used its network throttling capabilities (`page.route()`, `route.abort()`, or network condition emulation) to _simulate poor network conditions_ during the registration submission, specifically aiming to trigger the client-side retry logic and assert that only one account was created.
-	    2. **Backend Idempotency:** We updated the registration endpoint to be idempotent (_==using a unique `Idempotency-Key` sent by the client in the request header==_), preventing duplicate account creation even if the request arrived twice. This was the _real_ fix, but the E2E test ensures the frontend handles related errors gracefully too.
+	    2. **Backend Idempotency:** We updated the registration endpoint to be idempotent (_==using a unique `Idempotency-Key` sent **by the client** in the request header==_), preventing duplicate account creation even if the request arrived twice. This was the _real_ fix, but the E2E test ensures the frontend handles related errors gracefully too.
 	    3. **Improved Client-Side State:** We also updated the frontend JavaScript to _==disable the submit button immediately on the first click attempt==_, reducing the window for accidental double clicks during latency.
 - "_Give me a specific **example of a flaky test** you encountered and how you stabilized it._"
 	- We had a flaky Vitest integration test that checked _our notification service_. The test would trigger an action, then _==poll a mocked WebSocket connection for an expected notification message==_. It failed maybe 5% of the time in CI with a timeout waiting for the message.
 	- We realized the notification service had some asynchronous processing internally. While _usually_ fast, _==under certain CI load conditions, the processing could occasionally take slightly longer==_ than the fixed 500ms timeout we'd arbitrarily chosen. The test logic itself was correct, but the timing assumption was too tight and didn't reflect potential real-world variability.
-	- So we decided to increase the timeout duration to accommodate CI load conditions and replace manual `setTimeout` loops with Vitest built-in `expect.poll` method with a timeout argument for better maintainability.
+	- So we decided to increase the timeout duration to accommodate CI load conditions and ==_replace manual `setTimeout` loops with Vitest built-in `expect.poll` method with a timeout argument for better maintainability_==.
 ##### People
 - "_When implementing this pipeline, you likely faced resistance from some team members. Tell me about the **most significant push back** you received and how you addressed it._"
 	- The most significant pushback, as mentioned in the context, was the cultural resistance based on the idea that **'_testing is QA's job, not developers_'**. This manifested as reluctance to allocate time for writing tests alongside feature code and _==skepticism about the ROI==_.
 	- Getting _==buy-in from our team lead==_ was crucial. They helped reinforce the message that quality and sustainable pace were team priorities, supported by the evidence of customer impact from the existing technical debt.
-	- I built a small but functional POC pipeline with a simple unit test for a function which returns the strictest (i.e., smallest or most limiting) directives for _Cache-Control headers_. This demonstrated _concretely_ how tests could be written, how fast they could run in CI, and _==how they could catch a simple, simulated regression==_. Seeing it in action was more powerful than just talking about it.
+	- _==I built a small but functional POC pipeline with a simple unit test==_ for a function which returns the strictest (i.e., smallest or most limiting) directives for _Cache-Control headers_. This demonstrated _concretely_ how tests could be written, how fast they could run in CI, and _==how they could catch a simple, simulated regression==_. Seeing it in action was more powerful than just talking about it.
 	- I emphasized how automated tests _==benefit **developers** directly==_ by providing faster feedback, increased confidence in refactoring, and _==scalable as they reduce time spent debugging regressions==_.
 #### Ownership
 - "_Looking back, what is the single biggest thing you would do differently if you were to build this QA pipeline again today, knowing what you know now?_"
@@ -139,23 +140,23 @@
 	- Embedding the _habit_ and ==_shared ownership of testing more strongly and formally from the absolute beginning_== would likely have smoothed the adoption curve and accelerated the cultural shift even further.
 
 ### Fullstack development
-"Developed a production-grade web application using **_Next.js and TailwindCSS_** to modularize service features through a granular _**role-based access control**_ system to gate premium features based on **_subscription tiers_** defined in a flexible pay-as-you-go billing model."
+"Developed a Next.js application implementing role-based access control (**_RBAC_**) to restrict user access to **_specific features_** based on their subscription tier in a pay-as-you-go model."
 #### Context
 - "_What was the product's primary **purpose**, who were the **target users**, and what were your specific **responsibilities**?_"
-	- The application served as a platform providing tools and workflows built on top of unique capabilities derived from integrating with _==third-party APIs==_.
+	- The application served as a platform _==providing tools and workflows==_ built on top of unique capabilities derived from integrating with _==third-party APIs==_.
 	- The users were _==professionals within our enterprise partner organizations==_ who needed access to these specialized tools and data to _perform their job functions_.
 	- I developed the user-facing sections related to _==account management and user profiles==_, allowing users to view their subscription status, manage settings, and potentially initiate upgrades.
 		- I also own a worker service which handled the _==asynchronous business logic and interactions with the core third-party APIs==_, often applying different logic or quotas based on the user's subscription tier determined by the RBAC system.
 - "_What kind of **features** were gated, and how did the RBAC system reflect the billing status?_"
 	- Access control was applied to various aspects based on the subscription tier (Trial, Tier 1, Tier 2):
 		- **Feature Access:** enabling/disabling entire sections or specific functionalities.
-		- **Usage Quotas:** limiting the number of API calls to the underlying third-party service per month or the number of specific resources a user could create. Higher tiers received higher or unlimited quotas.
+		- **Usage Quotas:** _==limiting the number of API calls to the underlying third-party service==_ per month or the number of specific resources a user could create. Higher tiers received higher or unlimited quotas.
 	- Through _==Stripe webhooks==_, changes in subscription status (e.g., `customer.subscription.updated`, `checkout.session.completed`) triggered updates in our application's database, assigning a corresponding _role_ (e.g., `ROLE_TRIAL`, `ROLE_TIER_1`, `ROLE_TIER_2`) to the user record.
-		- This **role** was then used by the backend (and potentially included in the user's session/token) to determine their specific **permissions** (e.g., `feature:export:enabled`, `quota:api_calls:5000`).
+		- This **role** was then used by the backend (and potentially included in the user's session/token) to _==determine their specific **permissions**==_ (e.g., `feature:export:enabled`, `quota:api_calls:5000`).
 - "_Why were **Next.js and TailwindCSS** chosen for this project? What are the **trade-offs**?_"
-	- I wasn't the one who decided to choose NextJS, but if I had to make a guess, the main reason would be that it has a large ecosystem and community support in case things go sideways.
-	- Choosing TailwindCSS is just a matter of convention, because most of NextJS app out there go with it. Besides, its utility classes with built-in responsive modifiers make creating adaptive layouts straightforward.
-	- The main trade-off is that this tech stack decision presents a slight learning curve overhead for those who are not familiar with the modern frontend conventions.
+	- I wasn't the one who decided to choose NextJS, but if I had to make a guess, the main reason would be that it has a _==large ecosystem and community support==_ in case things go sideways.
+	- Choosing TailwindCSS is _==just a matter of convention==_, because most of NextJS app out there go with it. Besides, its utility classes with built-in responsive modifiers make creating adaptive layouts straightforward.
+	- The main trade-off is that this tech stack decision presents a _==slight learning curve overhead==_ for those who are not familiar with the modern frontend conventions.
 #### Implementation
 ##### Technical
 - "_Tell me about the key **Next.js features** that you used and your rationale behind them._"
@@ -164,7 +165,7 @@
 	- **Server Actions** for Updates: when server actions are triggered by a form submission, we can securely _==handle that update on the server and then revalidate the cached data==_ so the profile screen shows the latest info.
 - "_How was the **RBAC system** designed and implemented? How did you ensure role integrity?_"
 	- It was not my responsibility to handle the user roles and permissions, but as far as I know, we use _==Stripe webhooks updated the user's role in our application database based on their subscription status==_. A payment related event from Stripe is what drives the RBAC system.
-	- By using _==JWT signatures==_, we secure the session token containing role/permission information.
+	- By using _==JWT signatures==_, we secure the API responses containing role/permission information.
 	- Permissions (from the validated token) is what gate the features of our products. _==Guards and Decorators from NestJS are the primary handlers for these operations==_.
 #### Security
 - "_Describe how you secured sensitive operations, particularly those related to updating billing information or modifying user roles/permissions, against **common web vulnerabilities** (e.g., CSRF, XSS, unauthorized access)._"
@@ -173,18 +174,18 @@
 
 ## Autocall
 ### Account hierarchies
-"Engineered **_secure API queries_** that resolved critical 9-month **_security management_** gaps, reducing cross-site **_data inconsistencies_** by 90% across 3-tier account hierarchies."
+"Developed secure API queries that resolved a long-standing _**security vulnerability**_ related to _**missing authorization**_ in account management, reducing unauthorized data access incidents by **94%** across different account types."
 #### Security deficiencies identification
 - Looking at our security timeline, we had a nine-month period from when issues were first flagged to when I completed the implementation, which was like 3 months of narrowing down the bug, 2 months of planning, and 4 months of implementation and migration. My analysis of our audit records reported that most of our vulnerabilities were about permission inconsistencies. More specifically: 
 	- Our **_AWS CloudTrail_** security audits and database access logs revealed unauthorized access through ==_race conditions_== during permission checks.
 - So here's how it all started: we took over this project from a team that had just been let go, right when they were in the middle of scaling it up for new business requirements. 
-  Originally, they used a simple boolean flag (`is_root`) for permission management, which worked swimmingly for the old business where they had very few customers; but ever since they upgraded the business model, it led to _==scattered permission handling throughout the backend code==_, **not scaling** with their multi-tiered account structure, and the company was actually **_losing serious revenue_** because of all these _==permission-related security holes==_ that kept popping up.
+- Originally, they used a simple boolean flag (`is_root`) for permission management, which worked swimmingly for the old business where they had very few customers; but ever since they upgraded the business model, it led to _==scattered permission handling throughout the backend code==_, **not scaling** with their multi-tiered account structure, and the company was actually **_losing serious revenue_** because of all these _==permission-related security holes==_ that kept popping up.
 	- Our business logic was updated to include ==_three subscription packages_==, which resulted in breaking changes to the database schema. 
 	- For example, in the highest tier, root accounts (level 1) have full administrative privileges, whereas accounts at levels 2 through 4 are granted progressively fewer permissions.
 #### Technical deep dives
 ##### MariaDB
 - "_What specific **features of MariaDB** did you leverage in your redesign that addressed the security vulnerabilities?_"
-	- Before the fix, we had ==_permission queries exposed to the application layer_== in the backend code with Eloquent ORM. We had slightly _**different checks scattered**_ across multiple controllers or services for this, which led to _**bugs in distributed logic**_ where fixing a bug one place might not get replicated correctly elsewhere, leading to diverging logic and **_inconsistent access control_** over time.
+	- Before the fix, we had ==_permission queries exposed to the application layer_== in the backend code with Eloquent ORM. We had *slightly* _**different checks scattered**_ across multiple controllers or services for this, which led to _**bugs in distributed logic**_ where fixing a bug one place might not get replicated correctly elsewhere, leading to diverging logic and **_inconsistent access control_** over time.
 	- To fix it, I implemented those centralized, Single Source of Truth "_secure API queries_" which were essentially calls to ==_parameterized views_== (through **_stored procedures_**) to make sure that the backend code only calls the procedure by its name so that ==_the actual filtering logic stays secured in the database_==.
 	- We also enhanced speed by leveraging _**database indexing**_. Without it, the stored procedure approach wouldn't have been viable performance-wise.
 - "_Walk me through your database **schema design**, specifically focusing on foreign key constraints, **indexing strategies**, and how they related to **security enforcement**."_
@@ -232,14 +233,14 @@ CREATE INDEX idx_hierarchy ON accounts(hierarchy_path);  --Indexing
 ##### Race condition
 - "_Walk me through a specific **cross-site data inconsistencies** that could occur in your system and how your architecture prevents it._"
 	- The 'cross-site' inconsistencies primarily referred to discrepancies in data visibility and state _**across the different tiers and branches of our account hierarchy**_. It wasn't about geographically separate sites, but rather logical separation within the data structure.
-	- Race condition is not something that happen very often, however, there was a case where _==two administrators attempted to modify the same account's permissions concurrently==_ (e.g. moving a child account while changing its parent's permissions). We tracked and handled such incidents by:
+	- Race condition is not something that happen very often, however, there was a case where _==two administrators attempted to modify the same account's permissions concurrently==_ (e.g. one admin is moving a child account while the other is changing its parent's permissions). We tracked and handled such incidents by:
 		- Creating an event log table that recorded all permission change attempts.
 		- **_Implementing row-level locks_** (using Laravel's `lockForUpdate()`) during permission change transactions, preventing partial update inconsistencies.
 		- Using database constraints to enforce hierarchy rules by **_checking if an accounts' parent is valid_** (i.e. must exist via a foreign key) and an account cannot be its own parent. 
 			- So even if two admins trigger changes simultaneously, _==any attempt to violate the hierarchy rules will be rejected by the database==_.
 #### Team work & Impact
 ##### Measurables
- - We achieved a significant in **_enterprise tier upgrades_** due to confidence in our isolation guarantees between the tiers, as well as 90% reduction in permission-related support tickets.
+ - We achieved a significant in **_enterprise tier upgrades_** due to confidence in our isolation guarantees between the tiers, as well as _==90% reduction in permission-related support tickets==_.
  - Our quality control reports **_zero permission bypass incidents_** in production over the past 3 months, validated through Sentry audits, and permission queries now sustain sub-100ms p99 latency at scale, _==meeting all customer SLAs==_.
 ##### Resolving conflicts
 - The most challenging disagreement was whether to implement the solution at the application or database layer. I resolved this by:
@@ -258,25 +259,25 @@ CREATE INDEX idx_hierarchy ON accounts(hierarchy_path);  --Indexing
 - For non-technical stakeholders, I created visual hierarchy **_diagrams showing "before/after"_** permission flows and framed the discussion around **_competitive advantage and reduced security liability_** rather than implementation details.
 
 ### Responsive design
-"Owned the front-end implementation of **_responsive layouts_** for authentication screens of a **_legacy desktop application_**, ensuring **_rendering fidelity_** and better navigation on mobile and tablet devices."
+"Owned the front-end implementation of _**responsive layouts using CSS Grids**_ for authentication screens of a _**legacy desktop-only application**_, ensuring correct display and usability across desktop, tablet, and mobile viewports."
 #### Problem identification
 - _"When you say you '**owned**' the implementation, explain exactly what **your responsibilities** were versus your team members. What specific code or components did you personally write versus oversee?"_
 	- When I say I 'owned' the implementation, I did collaborate closely with our design team on wireframes and prototypes, but I was the primary engineer responsible for the end-to-end delivery of the responsive authentication UI. Specifically I wrote:
-		- The media query breakpoints for mobile, tablet, and desktop views
-		- The form element resizing logic for the authentication pages (login, register, password reset)
+		- The _==media query breakpoints==_ for mobile, tablet, and desktop views
+		- The form element _==resizing logic==_ for the authentication pages (login, register, password reset)
 		- The integration between new TailwindCSS classes and existing Laravel Blade templates
 - _"You mentioned a **legacy** desktop-only application - explain the specific **architectural constraints** you faced when implementing responsive design on a system not originally built for it."_
-	- The most challenging constraint was the side-by-side layout pattern used throughout the app. 
+	- The most challenging constraint was the _==side-by-side layout pattern==_ used throughout the app. 
 		- Authentication screens had the form on the left and a prominent background image on the right at fixed widths. 
 		- On narrow mobile screens, this forced the form to become very narrow, causing long input fields like 'Email' to look too cramped and unusable.
 		- Additionally, each view relied on a mix of server-rendered Blade templates and jQuery for client-side interactivity, creating tight coupling between markup, styling, and behavior.
 #### Biggest challenges
 ##### Technical
 - _"How did you balance **business requirements** for mobile support against **technical limitations** of the legacy system? Give me an example of a **tradeoff** you had to make."_
-	- The core business requirement was enabling mobile signups to _==increase conversion rates==_ without disrupting the existing desktop experience.
+	- The core business requirement was _==enabling mobile signups to increase conversion rates==_ without disrupting the existing desktop experience.
 	- We had to find the path of least resistance to deliver the _most critical_ aspect of the mobile experience (usability of auth forms) without destabilizing the existing application or requiring a massive refactor. This meant focusing _only_ on the auth screens first, and accepting that we'd be working _within_ the legacy constraints (jQuery, Blade, Bootstrap)
 	- I proposed using Tailwind classes _specifically_ for its layout utilities (Flexbox, Grid, spacing) on these new auth screens. _==The cost was the initial setup effort, some developer discussion==_ (mitigated by its utility focus resembling Bootstrap conventions), and the need for careful management of CSS scope.
-	- We agreed _not_ to refactor existing Bootstrap components immediately but to allow Tailwind for _new_ layout work. We were just so fed up with fighting those _CSS specificity problems_ and maintaining backward compatibility felt like keep piling more overrides onto that already bloated legacy stylesheet.
+	- We agreed _not_ to refactor existing Bootstrap components immediately but to allow Tailwind for _new_ layout work. We were just so ==fed up with fighting those _CSS specificity problems_ and maintaining backward compatibility== felt like keep piling more overrides onto that already bloated legacy stylesheet.
 - "_What was the most difficult and time consuming **technical challenge** that you faced while migrating to mobile-friendly?_"
 	- CSS specificity battles were the biggest hurdle. It limited how cleanly we could structure our new CSS, often forcing us into overrides rather than clean implementation.
 	- Coming from a React background, working directly with _==jQuery for DOM manipulation, event handling, and simple state management==_ (like showing/hiding error messages or loading spinners) **_felt imperative_** and less organized.
@@ -302,33 +303,40 @@ CREATE INDEX idx_hierarchy ON accounts(hierarchy_path);  --Indexing
 
 ## Oncall Report
 ### WebSocket
+"Increased user response rate to critical task deadline alerts by 38% and eliminated **_distractions caused by context-switching_** with the integration of a centralized **_WebSocket real-time notification system_** using Antd UI."
 #### Context
 - "_What was the product's primary **purpose**, who were the **target users**, and what were your specific **responsibilities**?_"
-	- f
-	- f
+	- The application served as a centralized digital platform to manage workflows previously handled by manual paperwork and scattered communications (email, Workchat) within a specific department. Its core functions included task management, displaying task-related data visualizations, and _==providing prioritized notifications for required actions. Like a simplified version of the Jira ticketing system._==
+	- The end-users were employees within that specific internal department who relied on this application daily to _==receive, track, and act upon their assigned tasks==_.
+	- My role was primarily focused on designing and implementing the entire _==real-time notification system==_, including the UI elements (bell icon dropdown using Antd, toast popups using `react-toastify`) and the client-side WebSocket integration logic.
+- "_Why did you prefer **RemixJS** over NextJS for this project?_"
+	- RemixJS felt like a particularly strong fit for _this specific **dashboard** application_ at the time, primarily due to its intuitive handling of nested routes where the _==parent route's component file itself acts as the layout==_, compared to the manual setup in NextJS where you have to explicitly create a layout file in each folder to act as the shared layout for that section of your app and its children, which may feel more fragmented and less immediately obvious in how they relate.
 - "_What were these '**critical alerts**', and why was improving the **response rate** important for users or the business?_"
-	- d
-	- d
+	- Those are alerts for the most urgent tasks where failure to act promptly could lead to missed deadlines, operational disruptions, or violations of internal SLAs.
+	- The notification system _reduced the time employees spent ==context-switching or searching for urgent tasks amongst less important notifications==_.
 - "_Can you walk me through how the '**38% increase** in user response rate' was measured?_"
-	- d
-	- d
+	- It was measured by comparing the average time taken for users to acknowledge or ==complete Level 1 tasks _before_ and _after_== the real-time system was implemented.
+	- The formula to calculate that percentage increase is as simple as `((Baseline Average Time - New Average Time) / Baseline Average Time) * 100%`
 #### Implementation
 - "_How did you **authenticate WebSocket connections** and **authorize users** to receive specific alerts?_"
-	- f
-	- f
-- "_What was the **message format** used over the WebSocket?_"
-	- d
-	- d
+	- The primary application login issued a _==JWT stored in a secure `HttpOnly` cookie==_. 
+		- When the Remix frontend initiated the WebSocket connection, the handshake request included the necessary authentication credentials.
+		- The backend WebSocket endpoint validated these credentials _before_ upgrading the `http` request to a WebSocket connection. Unauthenticated connection attempts were rejected.
+	- Once authenticated, the backend associated the WebSocket connection with the specific `userId`.
+		- When an alert needed to be sent, the backend logic _==looked up the active WebSocket connection(s)==_ for the targeted `userId`(s) and pushed the notification message _only_ to those specific, authorized connections.
 - "_How was the **reliability** of delivering these 'critical alerts' ensured? What happened if a user was temporarily disconnected when an alert was sent?_"
-	- d
-	- d
-	- d
+	- The WebSocket push was a delivery enhancement, not the primary record. The source of truth was always the backend database. A notification was _**persisted first** before_ any attempt was made to push it via WebSocket. 
+	- We _==configured WebSocket ping/pong frames to allow both client and server to detect unresponsive connections more quickly==_ than relying solely on TCP timeouts, triggering reconnection logic sooner.
 - "_Why were WebSockets chosen over **alternatives** like Server-Sent Events or polling for this specific use case?_"
-	- d
-	- d
+	- SSE is a great option for _one-way_ server-to-client communication and is simpler than WebSockets. ==We could have used SSE _just for receiving_ notifications==, but our SLAs stated that the user must be able to update their notification statuses.   
+	- Real-time experience is crucial for the product, and polling introduces latency, which doesn't provide a true real-time experience. It also _==puts unnecessary load on the server if we were to shrink the intervals==_.
 - "_What were the most significant **technical challenges** you encountered during this integration?_"
-	- Antd implementation, UI/UX considerations, especially for 'critical' alerts or potentially high frequency
+	- Since it was a back office app which serves a single department, scalability wasn't an issue. As a frontend developer, my struggles were mostly UI related.
+	- So the requirement was to mark notifications as "Read" if the user _manually_ close its corresponding toast, except for Level 1 (highest priority) notifications.
+	- And I caused a bug where _==manually closing a Level 1 severity alert would also mark it as "Read"==_, whereas such notifications could only be marked as "Read" _after_ the user checked off all the boxes in the detail screen.
+	- There were no automated testing back then, so _==the bug was caught by our manual tester.==_ It was a quick fix nonetheless, but certainly gave me a lesson early in my career.
 #### Incident
 - "_If the backend system generating the source events experienced **delays or became unavailable**, how would the notification system behave? How were users informed of **potential staleness**, if applicable?_"
-	- f
-	- d
+	- The real-time system can only deliver events as fast as they are produced upstream. _==There wasn't much the frontend could do other than reflect the timestamps accurately when notifications **did** arrive==_.
+	- As soon as the WebSocket backend recovered and the client reconnected, _==the **catch-up API call** would execute, fetching all notifications missed during the outage==_, ensuring eventual consistency of the notification list.
+		- Implementation detail: using `useEffect` and Remix's `useFetcher` to call a backend endpoint defined by the `loader` function.

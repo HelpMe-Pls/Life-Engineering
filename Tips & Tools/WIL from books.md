@@ -1,6 +1,5 @@
 # Beyond Order
 ## Rule 1: Do not carelessly denigrate social institutions or creative achievement 
-
 - People remain mentally healthy not merely because of the integrity of their own minds, but because they are constantly being reminded how to think, act, and speak by those around them.
 
 - The best player is therefore not the winner of any given game but, among many other things, he or she who is invited by the largest number of others to play the most extensive series of games.
@@ -11,9 +10,7 @@
 
 - Every rule was once a creative act, breaking other rules. Every creative act, genuine in its creativity, is likely to transform itself, with time, into a useful rule.
 
-
 ## Rule 2: Imagine who you could be, and then aim single-mindedly at that
-
 - You do not chose what interest you. It chooses you. Something manifests itself out of the darkness as compelling, as worth living for; following that, something moves us further down the road, to the next meaningful manifestation - and so it goes, as we continue to seek, develop, grow and thrive. It is a perilous journey, but it is also the adventure of our lives. 
 
 - What is interesting and meaningful (and novel and unexpected, as those all go together) manifests itself in a form that is both dangerous and promising, particularly when its grip is intense and irresistible.
@@ -22,9 +19,7 @@
 
 - Aim at something. Pick the best target you can currently conceptualize. Stumble toward it. Notice your errors and misconceptions along the way, face them, and correct them. Get your stories straight.
 
-
 ## Rule 3: Do not hide unwanted things in the fog
-
 - Life is what repeats. And it's worth getting what repeats right. 
 
 - It is difficult to win an argument, or even begin one, if you have not carefully articulated what you want (or do not) and need (or do not).
@@ -32,9 +27,7 @@
 - With careful searching, with careful attention, you might tip the balance toward opportunity and against obstacle sufficiently so that life is clearly worth living, despite its fragility and suffering. 
   But there will be times in your life when it will take everything you have to face what is in front of you, instead of hiding away from a truth so terrible that the only thing worse is the falsehood you long to replace with.
 
-
 ## Rule 4: Notice that opportunity lurks where responsibility has been abdicated
-
 - What is the antidote to the suffering and malevolence of life? The highest possible goal. What is the prerequisite to pursuit of the highest possible goal? Willingness to adopt the maximum degree of responsibility - and this includes the responsibilities that others disregard or neglect.
 
 - It is a bad idea to sacrifice yourself uncomplainingly so that someone else can take the credit. Nonetheless, under such circumstances - if you're a wise and attentive person - you might still notice that your unproductive coworkers are leaving a plethora of valuable tasks undone.
@@ -59,9 +52,7 @@
 
 - It is probable - inevitable - that the adventure of your life will frustrate and disappoint and unsettle you, as you heed the call of conscience and shoulder your responsibility and endeavor to set yourself and the world right. But that is where the deep meaning that orients you and shelters you to be found.
 
-
 ## Rule 5: Do not do what you hate
-
 - We do the things we do because we think those things important, compared to all the other things that could be important. We regard what we value as worthy of sacrifice and pursuit. That worthiness motivates us to act, despite the fact that action is difficult and dangerous.
 
 - Without careful attention, culture itself tilts toward corruption. Tyranny grows slowly, and asks us to retreat in comparatively tiny steps. But each retreat increases the possibility for next retreat.
@@ -74,9 +65,7 @@
 
 - Maybe following the dictates of conscience is in fact the best possible plan that you have - at minimum, otherwise you have to live with your sense of self-betrayal and the knowledge that you put up with what you truly could not tolerate. Nothing about that is good.
 
-
 ## Rule 6: Abandon ideology
-
 - Helping people bridge the gap between what they profoundly intuit but cannot articulate seems to be a reasonable and valuable function for a public intellectual.
 
 - It might be that the true meaning of life is available for discovery, if it can be discovered at all, by each individual, alone - although in communication with others, past and present.
@@ -91,13 +80,11 @@
 - It is probable that your own imperfections are evident and plentiful, and could profitably be addressed, as step one in your Redeemer's quest to improve the world.
   It is much more psychologically appropriate (and much less dangerous socially) to assume that you are the enemy - that it is your weaknesses and insufficiencies that are damaging the world - than to assume saintlike goodness on the part of you and your party, and to pursue the enemy you will then be inclined to see everywhere.
 
-- Like God, however, ideology is dead. The bloody excesses of the twentieth century killed it. We should let it go, and begin to address and consider smaller. more precisely defined problems. We should conceptualize them at the scale at which we might begin to solve them, not by blaming others, but by trying to address them personally while simutaneously taking responsibility for the outcome.
+- Like God, however, ideology is dead. The bloody excesses of the twentieth century killed it. We should let it go, and begin to address and consider smaller. more precisely defined problems. We should conceptualize them at the scale at which we might begin to solve them, not by blaming others, but by trying to address them personally while simultaneously taking responsibility for the outcome.
 
-- Have some humility. Clean up your bedroom. Take care of your family. Follow your conscience. Straighthen up your life. Find something productive and interesting to do and commit to it. When you can do all that, find a bigger problem and try to solve that if you dare. If that works, too, move on to even more ambitious projects. And, as the necessary beginning to that process...abandon ideology.
-
+- Have some humility. Clean up your bedroom. Take care of your family. Follow your conscience. Straighten up your life. Find something productive and interesting to do and commit to it. When you can do all that, find a bigger problem and try to solve that if you dare. If that works, too, move on to even more ambitious projects. And, as the necessary beginning to that process...abandon ideology.
 
 ## Rule 7: Work as hard as you possibly can on at least one thing and see what happens
-
 - Human beings are conscious during the day, when it is light. Much of that consciousness is visual and therefore dependent on light. To be illuminated or enlightened is to be exceptionally awake and aware - to attain a state of being associated with divinity.
 
 - Without clear, well-defined, and noncontradictory goals, the sense of positive engagement that makes life worthwhile is very difficult to obtain. Clear goals limit and simplify the world, as well, reducing uncertainty, anxiety, shame, and the self-devouring physiological forces unleashed by stress.
@@ -115,9 +102,7 @@
 - If you work as hard as you can on one thing, you will change. You will start to also become one thing, instead of the clamoring multitude you once were. 
   That one thing, developed properly, is not only the disciplined entity formed by sacrifice, commitment, and concentration. It is that which creates, destroys, and transforms discipline itself - civilization itself - by expressing its unity of personality and society. It is the very Word of truth, upon whose function all habitable order, wrenched out of chaos, eternally depends.
 
-
 ## Rule 8: Try to make one room in your home as beautiful as possible
-
 - Making something beautiful is difficult, but it is amazingly worthwhile. If you learn to make something in your life truly beautiful - even one thing - then you have established a relationship with beauty.
   From there you can begin to expand that relationship out into other elements of your life and the world. That is an invitation to the divine. That is the reconnection with the immortality of childhood, and the true beauty and majesty of the Being you can no longer see. You must be daring to try that.
 
@@ -130,9 +115,7 @@
 - Beauty leads you back to what you have lost. Beauty reminds you of what remains forever immune to cynicism. Beauty beckons in a manner that straightens your aim. Beauty reminds you that there is lesser and greater value.
   Many things make life worth living: love, play, courage, gratitude, work, friendship, truth, grace, hope, virtue, and responsibility. But beauty is among the greatest of these. 
 
-
 ## Rule 9: If old memories still upset you, write them down carefully and completely
-
 - Learn from the past. Or repeat its horrors, in imagination, endlessly. We must recollect our experiences and derive from them their moral.
   It is a psychological truism that anything sufficiently threatening or harmful once encountered can never be forgotten if it has never been understood.
 
@@ -151,9 +134,7 @@
 
 - We have every reason to avoid facing the bitter truth. But making what is - and what was - clear and fully comprehended can only protect us. If you are suffering from memories that will not stop tormenting you, there is a possibility - possibility that could be your salvation - waiting there to be discovered.
 
-
 ## Rule 10: Plan and work diligently to maintain the romance in your relationship
-
 - For each person is in truth an unfathomable enigma. With care, you might keep rediscovering, in the person you have chosen, enough residual mystery to maintain the spirit that first brought you together.
   With care, you can avoid stowing each other away in a conveniently sized box, punishment at hand should either of you dare to emerge, and contempt for the consequent predictability you both now face lurking not so far beneath the surface.
 
@@ -195,9 +176,7 @@
 
 - Devote yourself to the higher ideal upon which an honest and courageous relationship is necessarily dependent, and do that with the seriousness that will keep your soul intact. Maintain your marital vows, so that you are desperate enough to negotiate honestly. Do not let your partner brush you off with protestations of ignorance of refusal to communicate. Do not be naive, and do not expect the beauty of love to maintain itself without all-out effort on your part. Distribute the requirements of your household in a manner you both find acceptable, and do not tyrannize or subject yourself to slavery. Decide what you need to keep yourself satisfied both in bed and out of it.
 
-
 ## Rule 11: Do not allow yourself to become resentful, deceitful, or arrogant
-
 - The great experimenters and scientific writers I have known are passionate about their pursuit. Something emotional drives them. They hope that their learning (disinterested though it may be, as at present it has no specific aim except that of learning) will have some genuinely positive outcome: making the world a better place. That provides the entire pursuit with a narrative element, the motive that accompanies any good plot, and the transformation of character that makes up the best of stories.
 
 - We conceptualize what we experience as a story. That story is, roughly speaking, the description of the place we are at right now, as well as the place that we are going to, the strategies and adventures that we implement and experience along the way, and our downfalls and reconstitutions during that journey.
@@ -220,7 +199,7 @@
 
 - The first conspiracy between deceit and arrogance might be regarded as a denial or rejection of the relationship between divinity, truth, and goodness.
   The second form of arrogance that enables deceit has something to do with the attempted theft of the power of divinity itself. The liar acts out the belief that the false world he brings into being, however temporarily, will serve at least his own interests better than the alternative.
-  The third form of arrogance that underlies deceit has to do with the belief that the deceiful act (which, as we already discussed, has bent or warped the structure of reality) will stand on its own powerfully, without being revealed and destroyed as reality itself straightens and reforms, as it inevitably will.
+  The third form of arrogance that underlies deceit has to do with the belief that the deceitful act (which, as we already discussed, has bent or warped the structure of reality) will stand on its own powerfully, without being revealed and destroyed as reality itself straightens and reforms, as it inevitably will.
   The fourth form of arrogance that justifies deceit has to do with a warped sense of justice, often brought about by resentment. People employ deception in this fourth set of circumstances because they are resentful and angry about their victimized positions in the hell and tragedy of the world.
 
 - If you take your turn at the difficult tasks, people learn to trust you, you learn to trust yourself, and you get better at doing difficult things. All of that is good.
@@ -236,9 +215,7 @@
 - Perhaps you could live in a manner whose nobility, grandeur, and intrinsic meaning would be of sufficient import that you could tolerate the negative elements of existence without becoming so bitter as to transform everything around you into something resembling hell.
   What if we could constrain our malevolence a bit more, serve and transform our institutions more responsibly, and be less resentful? God only knows what the ultimate limit to that might be.
 
-
 ## Rule 12: Be grateful in spite of your suffering
-
 - The fact of your voluntary focus on the abyss, so to speak, indicates to yourself at the deepest of levels that you are capable of taking on without avoidance the difficulties of existence and the responsibility attendant upon that.
   That mere act of courage is deeply reassuring at the most fundamental levels of psychological being.
 
@@ -405,6 +382,12 @@
 > - What's important is ***wanting*** to connect, ***wanting*** to understand someone, ***wanting*** to have deep conversations, even when it is hard and scary, or when it would be so much easier to walk away.
 > - Achieving connection - authentic, meaningful connection - is the most important thing in life.
 
+# The Art of Communicating
+- d
+- d
+# Never Split The Difference
+- d
+- d
 # Man's Search For Meaning
 - We can discover this meaning in life in three different ways:
 	1. By creating a work or doing a deed
@@ -549,5 +532,15 @@
 - f
 # The ONE Thing
 - fg
+- f
+- f
+# Fear
+- d
+- d
+# Anger
+- f
+- d
+- d
+# Extreme Ownership
 - f
 - f

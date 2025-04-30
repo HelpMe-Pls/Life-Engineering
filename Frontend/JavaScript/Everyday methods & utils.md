@@ -640,7 +640,7 @@ arr.unshift([-7, -6], [-5])  // the new array length is 8
 ```
 
 ### .pop()
-- Removes the **last** element from an array ==and returns ***that element==*** (returns `undefined` if the array is empty).
+- Removes the **last** element from an array ==and returns ***that element***== (returns `undefined` if the array is empty).
 - This method changes the length of the array and it ***doesn't*** receive any argument.
 
 ```ts

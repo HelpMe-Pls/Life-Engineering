@@ -655,7 +655,7 @@ export async function action({ request }: DataFunctionArgs) {
 </Form>
 ```
 # CSRF
-- [[Security#CSRF |Checkout]] what CSRF is. Here's an example of its implementation:
+- Checkout [[Security#CSRF|what CSRF is]]. Here's an example of its implementation:
 - On the server:
 ```tsx
 //---------------------------- csrf.server.ts

@@ -45,6 +45,7 @@
 	- Appearance
 	- Substance
 	- Distance
+	- Tolerance
 	- Inadvertent 
 	- Consistent
 	- Existence
@@ -125,3 +126,4 @@
 - "Play by ear": improvise or do something without a plan or preparation
 - "Out and about": free, not being confined or restricted to a specific location
 - "Beat me to it": someone else did something before you could
+- "Tongue-in-cheek": sarcastic expression
