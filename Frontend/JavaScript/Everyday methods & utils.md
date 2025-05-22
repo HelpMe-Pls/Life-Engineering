@@ -148,7 +148,6 @@ console.log(a2);   // [2, 3, 1]
 ```
 
 - Restructuring :
-
 ```js
 var settings = {
 	options: {

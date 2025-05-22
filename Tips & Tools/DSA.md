@@ -990,7 +990,7 @@ console.log(`Post: ${sorted}`);
 ### Two Pointers
 - Use this pattern to _**traverse**_ arrays/strings when you think of:
 	- Opposite ends: both pointers move towards each other to find pairs that meet specific criteria.
-	- Single pass with conditions: pointers traverse in the same direction but are _**used to track conditions**_ (e.g. finding duplicates, valid segments,...).
+	- Single pass with conditions: pointers traverse in the same direction but are ==_**used to track conditions**_== (e.g. finding duplicates, valid segments,...).
 	- At different speeds: one pointer moves faster than the other to achieve tasks like cycle detection or finding midpoints.
 	- _Finding **pairs**_, check properties, detect cycles. The focus is on the elements **_at_** the pointers.
 > Use this pattern to optimize space usage if arrays are **pre-sorted**. Guarantees $O(n)$ in most cases.
@@ -1008,14 +1008,14 @@ console.log(`Post: ${sorted}`);
 #### Sliding Windows
 - This is a variant of Two Pointer. Guarantees $O(n)$ in most cases. Efficient for problems with:
 	- **_Min/max_** length _==subarray/substring==_ meeting certain conditions
-	- **_==Consecutive==_** elements (e.g. longest/shortest streak of characters)
+	- **_==Consecutive==_** elements (e.g. longest/shortest **_streak_** of characters)
 	- Subarrays of fixed size `k`
-- Use `left` and `right` pointers. Expand the `right`, check condition, shrink `left` (if condition is violated) in the _==same direction==_ until `right` reaches the end.
+- Use `left` and `right` pointers. Expand the `right`, check condition, shrink `left` (if condition is violated) in the _==same direction==_ (left to right) until `right` reaches the end.
 ##### Examples
 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)
 - [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)
 - [Fruit Into Basket](https://leetcode.com/problems/fruit-into-baskets)
-- [Find All Anagrams in a String]()
+- [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)
 - [Minimum Window Substring]()
 
 ### Hash Map/Set
@@ -1068,7 +1068,7 @@ function twoSum(nums: number[], target: number): number[] {
 }
 ```
 #### Hash Set
-- The built-in `Set` is a hash set. Think of a it as a _checklist_ where you only care _if_ an item _exists_. Use it to solve problems [like this one](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/578):
+- The JS built-in `Set` is a hash set. Think of a it as a _checklist_ where you only care ==_if_ an item _exists_==. Use it to solve problems [like this one](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/578):
 ```ts
 // O(n) time & space
 function containsDuplicate(nums: number[]): boolean {
@@ -1112,9 +1112,7 @@ function isValidSudoku(board: string[][]): boolean {
 - Use pure recursion when problems naturally break down into identical subproblems (think of Fibonacci, tree traversals,...) or when they follow [[#Divide and Conquer]] patterns.
 ##### Examples
 - [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)
-- [Binary Tree Preorder Traversal]()
 - [Binary Tree Inorder Traversal]()
-- [Binary Tree Postorder Traversal]()
 #### Backtracking
 - Use backtracking when you spot these keywords: "_**all**_ possible...", "generate _**all**_...", "find _**all**_ solutions...". It answers "yes" to the question: "==Am I building _multiple solutions_ and need to _try different choice at each step_?==" or "Does the problem _involve undoing choices to try alternatives_?"
 - This technique is the foundation for [[#DFS]].
@@ -1132,12 +1130,10 @@ function isValidSudoku(board: string[][]): boolean {
 - [Number of Islands]()
 - [Word Ladder]()
 #### DFS
-- You need to ==_**explore options deeply**_==, _check if a path simply **exists**_ (not necessarily the shortest), check for cycles, or visit everything _in a branch_ before moving on with [[#Backtracking |backtracking]] (like traversing a maze or doing topological sort).
+- You need to ==_explore options **deeply**_==, _check if a path simply **exists**_ (not necessarily the shortest), check for cycles, or visit everything _in a branch_ before moving on with [[#Backtracking |backtracking]] (like traversing a maze or doing topological sort).
 - Implemented with recursion, or iteration by using a **_==stack==_** and a `visited` set/array.
 ##### Examples
-- [Binary Tree Inorder Traversal]()
-- [Number of Islands]()
-- [Subsets]()
+- [Subsets](https://leetcode.com/problems/subsets/description)
 - [Permutations](https://leetcode.com/problems/permutations)
 - [Course Schedule]()
 
@@ -1282,8 +1278,8 @@ function mergeTwoListsOptimized(list1: ListNode | null, list2: ListNode | null):
 
 ### Tree
 #### Binary Search Tree
-- It's just a binary tree, but _ordered_. BSTs are all about that `left < root < right` property
-- Think of it when you need ordered data + fast lookups/inserts/deletes with in-order traversal and $O(logn)$ time on average.
+- It's just a binary tree, but _ordered_. BSTs are all about the `left < root < right` property.
+- Think of it when you need ordered data + fast lookups/inserts/deletes with _==in-order traversal==_ and $O(logn)$ time on average.
 ##### Examples
 - [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)
 - [Insert into a Binary Search Tree]()
@@ -1303,6 +1299,7 @@ function mergeTwoListsOptimized(list1: ListNode | null, list2: ListNode | null):
 - Think of XOR like procreation. One sex can _only_ procreate with the _opposite_ sex. Same sex consummation or masturbation leads to termination of a species. 
 - Perfect for problems where duplicates cancel out. Leverage this property to solve cancellation or identity issues, such as:
 	- `x^x == 0`: This means duplicate numbers cancel each other out.
+	- `0^0 == 0`: Obviously.
 	- `x^0 == x`: A number XORs with `0` returns itself.
 - For [example](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/549):
 ```ts

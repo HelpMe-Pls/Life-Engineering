@@ -386,8 +386,65 @@
 - d
 - d
 # Never Split The Difference
-- d
-- d
+## What negotiation is about
+- It all starts with the universally applicable premise that people want to be understood and accepted.
+- Negotiation serves two distinct, vital life functions - information gathering and behavior influencing.
+- Negotiation is the heart of collaboration. It is what makes conflict potentially meaningful and productive for all parties.
+- You don't need to like it; you just need to understand how the world works.
+- Being right isn't the key to a successful negotiation - having the right mindset is.
+- In this world, ==_you get what you ask for; you just have to ask correctly_==.
+> Just remember, to successfully negotiate it is crucial to prepare.
+
+## Techniques
+### Mirroring
+- Realize this: we engage in selective listening, hearing only what we want to hear, our minds acting on a cognitive bias for consistency rather than truth. 
+- We are easily overwhelmed; everyone just listening to the voice in their head.
+> It begins with listening, making it about other people, validating their emotions, and creating enough trust and safety for a real conversation to begin.
+#### Use your voice
+- When we radiate warmth and acceptance, conversations just seem to flow.
+- You can use your voice to intentionally reach into someone's brain and flip an emotional switch. Use these 3 voices:
+	- The late-night FM DJ voice
+	- The positive/playful voice
+	- The direct or assertive voice
+> [!info]- Chill tf out
+>- The key here is to _==relax and smile while you're talking==_. Talking slowly and clearly you convey one idea: _I'm in control._
+>- Your attitude is light and encouraging. Create safety by a tone of voice that says _"I'm okay, you're okay, let's figure things out."_
+- We copy each other to comfort each other. It can be done with speech patterns, body language, vocabulary, tempo, and tone of voice.
+	- It's a sign that people are bonding, in sync, and establishing the kind of rapport that leads to trust.
+	- We fear what's different and are drawn to what's similar.
+
+> [!important] How it works
+> - A "mirror" is when you repeat the last three words (or the critical one to three words) of what someone has just said.
+> - For a mirror to be effective, you've got to let it sit there and do its work. _==It needs a bit of silence (at least 4 seconds)==_.
+> - The intention behind most mirrors should be "Please, help me understand."
+
+> When another person's tone of voice or body language is inconsistent with his words, a good mirror can be particularly useful.
+### Labelling or Accusation Audit
+- f
+- f
+### Summarize
+- f
+- f
+### Calibrated Questions
+- f
+- f
+## Preparation
+### The Goal
+- f
+- f
+### Summary
+- f
+- f
+### Labels/Accusation Audit
+- f
+- f
+### Calibrated Questions
+- e
+- c
+### Non-cash Offers
+- f
+- F
+
 # Man's Search For Meaning
 - We can discover this meaning in life in three different ways:
 	1. By creating a work or doing a deed
@@ -534,6 +591,12 @@
 - fg
 - f
 - f
+# IWT
+- f
+- f
+# MDW
+- 
+- 
 # Fear
 - d
 - d

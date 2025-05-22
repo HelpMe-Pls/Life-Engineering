@@ -82,7 +82,7 @@
 #### Routing strategies
 - There are 2 common strategies to manage how incoming traffic is distributed among the servers: 
 	- **Round-Robin**: works best when all servers have similar capacity and load. It cycles through your pool of servers one by one. Every new request goes to the next server in line, ensuring an even distribution.
-	- **Least Connection**: effective when your servers experience varying loads or the duration of each connection differs. It checks each server's current number of active connections and directs the new request to the one with the fewest connections
+	- **Least Connection**: effective when your servers experience varying loads or the duration of each connection differs. It checks each server's current number of active connections and directs the new request to the one with the fewest connections.
 
 ### Databases
 - Have a look at the [[Databases |deep dive]].
@@ -120,6 +120,97 @@
 		- Message queues: writes are heavy or slow, use this to handle them asynchronously. Kafka vs RabbitMQ.
 		- Trade offs: last but not least, explain the pros and cons of every choice
 ### Examples
+#### e-learning Platform
+##### Intro
+- That's an excellent and highly relevant system to discuss, thank you. `Their requirement` touches so many critical aspects of modern applications – reliability, scalability, and user experience are paramount.
+	- Break down the core requirements & scope as well as the high-level components for `their requirement`. Make use of the [[#General ideas]].
+	- Then, pivot to your thing.
+##### Pivoting
+- Before I dive into a hypothetical design for that, I actually faced a very similar set of design decisions for a project I've been architecting and building—an online learning platform. 
+- The primary objective from the get-go was **extreme cost-minimization** without sacrificing user experience or essential features, especially with just a two-developer team where we had to _==wear many hats==_ – architect, developer, DevOps – and truly own the system end-to-end. I also prepared the architectural decisions focusing precisely on these aspects — ==_**theatrically** pull out the briefcase and give them ADR_==.
+- Would it be helpful if I _==briefly walk you through==_ how I tackled those real-world constraints? I believe this practical, ownership-driven approach to problem-solving, especially with a _==strong focus on frugality and delivering value efficiently==_, is something that would allow me to _**contribute effectively**_ here at `Company Name`.
+##### Deep dive
+- **Cost efficiency**: Cloudflare's free and low-cost tiers are incredibly compelling. The Workers Paid plan at $5/month bundles significant D1 usage, making the initial database cost almost negligible. _==Zero egress fees==_ are also a huge win.
+- **Edge-native**: running logic at the edge (with Cloudflare Workers) _==minimizes latency==_ for a global user base.
+- **DX**: managed services abstract away a lot of infrastructure complexity and offers low operational overhead so we can focus on business logic.
+##### Walkthrough
+- Leveraging the Cloudflare ecosystem, a high-level orchestration for this system [might look](https://mermaid.live/edit) something like:
+```
+graph TD
+    %% Main User Flow and Core Platform
+    subgraph "User Facing Platform"
+        direction LR
+        User["👤<br/>End User"]
+
+        subgraph "Cloudflare Edge Network"
+            direction TB
+            CF_CDN["🌐<br/>Cloudflare CDN<br/>(Global Content Delivery)"]
+            CF_Pages["📄<br/>Cloudflare Pages<br/>(React Frontend - Static Assets)"]
+            CF_Workers["⚡<br/>Cloudflare Workers<br/>(Edge Functions - Backend API Logic)<br/><i>Modular Monolith with react-router</i>"]
+        end
+    end
+
+    %% Data & Services Layer
+    subgraph "Backend Services & Data Layer"
+        direction TB
+        Drizzle["💧<br/>Drizzle ORM<br/>(Type-Safe SQL Query Builder)"]
+        
+        subgraph "Cloudflare Data Services (Edge)"
+            CF_D1["🗃️<br/>Cloudflare D1<br/>(SQLite Database)"]
+            CF_Stream["🎬<br/>Cloudflare Stream<br/>(Video Hosting & Delivery)"]
+        end
+
+        subgraph "Third-Party Integrations"
+            Clerk["🔑<br/>Clerk<br/>(Authentication & User Mgmt)"]
+            Stripe["💳<br/>Stripe<br/>(Payment Processing)"]
+        end
+    end
+
+    %% Developer Workflow
+    subgraph "Development & Deployment Pipeline"
+        direction LR
+        GitHub["🐙<br/>GitHub<br/>(Source Code Repository)"]
+        GitHubActions["⚙️<br/>GitHub Actions<br/>(CI/CD Pipeline)"]
+    end
+
+    %% Connections - Numbered for flow explanation
+    User -->|1\. Accesses Platform| CF_CDN
+    CF_CDN -->|2\. Serves Static Frontend| CF_Pages
+    CF_Pages -->|"3\. API Requests (Data/Actions)"| CF_Workers
+    
+    CF_Workers -->|4a. Authentication| Clerk
+    CF_Workers -->|4b. Business Logic & Data Orchestration| Drizzle
+    Drizzle -->|4c. CRUD Operations| CF_D1
+    CF_Workers -->|4d. Video Management/Signed URLs| CF_Stream
+    CF_Workers -->|4e. Handle Payments| Stripe
+    
+    User -->|5\. Direct Video Streaming| CF_Stream
+
+    GitHub-->|6\. Push/PR Triggers Workflow|GitHubActions
+    GitHubActions -->|7\. Deploys Static Site| CF_Pages
+    GitHubActions -->|8\. Deploys Server Logic| CF_Workers
+
+    %% Styling (Enhances readability if supported by the renderer)
+    classDef user fill:#cce5ff,stroke:#007bff,stroke-width:2px,color:#333
+    classDef cloudflare fill:#f6821f,stroke:#f37515,stroke-width:1px,color:#fff
+    classDef thirdparty fill:#e6e6fa,stroke:#7b68ee,stroke-width:1px,color:#333
+    classDef devops fill:#f0f0f0,stroke:#555,stroke-width:1px,color:#333
+    classDef datalayer fill:#e0f2f1,stroke:#00796b,stroke-width:1px,color:#333
+
+    class User user;
+    class CF_CDN,CF_Pages,CF_Workers,CF_D1,CF_Stream cloudflare;
+    class Clerk,Stripe thirdparty;
+    class GitHub,GitHubActions devops;
+    class Drizzle datalayer;
+```
+
+> [!info] Masterfully transitioning between your product and their requirement
+> - As you talk about your product, **don't forget** to weave in their requirements whenever you spot overlapping features (especially when you talk about scalability)
+> 	- The serverless nature of Workers provides **auto-scaling**.
+> - The key is to show you're not just reciting something, but actively applying a well-thought-out design philosophy to **their problem**, backed by tangible work and deep consideration of trade-offs.
+##### Considerations
+- Check [this](https://docs.google.com/document/d/1yQ3Yw7T4rgb36yVK9m02hSEEhKZE3KP8HMsUdI9dacM/edit?usp=sharing) out.
+
 #### Excalidraw
 ##### Clarifying questions
 - Real-time collaboration?

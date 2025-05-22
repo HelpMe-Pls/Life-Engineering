@@ -32,7 +32,7 @@ app.use(cors({
 
 # TCP, TLS, HTTP, HTTPS
 - **TCP** (Transmission Control Protocol) operates at the transport layer, it establishes a connection between two devices and responsible for breaking data into packets, sending them, and reassembling them at the destination, without any loss or duplication.
-- **TLS** (Transport Layer Security) requires `tcp`. It operates at the session layer (*above the transport layer*), which has those reliable data transmission capabilities of `tcp` but adds encryption, authentication, and data integrity features to secure the communication channel.
+- **TLS** (Transport Layer Security) requires `tcp`. It operates _==at the session layer==_ (*above the transport layer*), which has those reliable data transmission capabilities of `tcp` but adds encryption, authentication, and data integrity features to secure the communication channel.
 - **HTTP** is the language that web browsers and servers use to communicate with each other. The client (web browser) sends a `http` request and the server sends a corresponding `http` response.
 - **HTTPS** is the combination of `http` (for communication) and `tls` (for encryption and security):
 ```

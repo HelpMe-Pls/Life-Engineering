@@ -21,25 +21,28 @@
 #### The context
 - "_What was the primary business driver or technical limitation that necessitated building this particular EDA (event-driven architecture)?_"
 	- The primary driver was a critical **technical limitation** causing significant **business impact**:
-		- Our initial NextJS monolith was becoming severely bogged down by handling _==increasingly complex RBAC logic and long-running synchronous REST API calls to essential third-party services==_. A single incoming API request could trigger a cascade of these external calls, tying up server resources for seconds, sometimes leading to ==_timeouts on our side_ before the third-party even responded==.
-		- Our goal was to _==ensure failures originated only from the third party==_, not our own infrastructure limitations. We _==needed a way to decouple==_ these long-running, non-critical-path operations from the main request/response cycle to _==ensure the core application remained responsive and stable==_, allowing the business to reliably scale its operations.
+		- Our application was initially built as a NextJS monolith to handle several _==synchronous calls to external third-party services for our core features==_, like inventory updates where each REST API call to the third-party service triggers a cascade of multiple reads and writes on our database. _==As usage grew==_ (e.g. multi-user scenario during high-traffic periods), the entire end-to-end business process for a single update would take a significant amount of time – sometimes several seconds – due to the _==third-party latency combined with the serial nature of the internal processing steps, leading to frequent timeouts==_ (504 Gateway Timeout to be specific).
+		- The underlying reason is that _==the total duration==_ required to complete the _==entire transaction flow for one request==_ tied up the event loop thread for too long, preventing it from rapidly cycling through and processing other pending events or handling new incoming requests efficiently.
+		- Roughly 4 out of every 10 requests for ==certain operations would fail _on our end_== simply because of these blocking synchronous events.
+		- So to make our system **more resilient and responsive**, we introduced the event-driven approach with _==RabbitMQ specifically to decouple the third-party communication from the main request-response cycle==_.
 		- After the decomposition, timeout incidents dropped from an average of _==4 timeouts for every 10 requests down to 1 in every 10==_.
 - "_What aspects of the design and code did you **personally own**?_"
-	- My ownership was centered entirely on _==the worker microservice, the consumer side==_ of this event-driven flow, which mainly focus:
+	- My ownership was centered entirely on _==the worker microservice, which serves as both a consumer and a producer==_ of this event-driven flow, where:
 		- **The design**: deciding on core libraries, logging patterns, and error handling strategies for this Node & TS _==modular structure==_ worker service (e.g. `src > messaging / core / shared`).
 		- **The implementation**: developing the _==idempotency logic==_ to safely handle potential message redeliveries from RabbitMQ, implementing _==retry mechanisms (with exponential backoff)==_ for transient third-party API failures, and integrating with the _==Dead Letter Queue mechanism==_ for undeliverable messages.
-		- **Testing**: writing comprehensive _==unit tests and integration tests==_ using Vitest that mocked RabbitMQ interactions and mocked the third-party APIs (using `msw`) to verify the end-to-end flow within the worker under various success and failure conditions (e.g. API errors, redeliveries).
+			- A simplified flow looks something like: `Producer (pub) → Open a connection → createChannel → Exchange (routing msg) → Queue → Consumer (sub)`
+		- **Testing**: writing comprehensive _==unit tests and integration tests==_ using Vitest that mocked RabbitMQ interactions with third-party APIs (using `msw`) to verify the end-to-end flow within the worker under various success and failure conditions (e.g. API errors, redeliveries).
 - "_Given the goal of eventual consistency, **why RabbitMQ** (not Kafka) was selected as the most appropriate solution, **despite other alternatives** like synchronous APIs with retries, change data capture, batch processing?_"
-	- Our SLAs required that "any specific _==task must eventually completes or is explicitly handled==_" and "the tasks need to be initiated relatively quickly after the user action, _==even if the final result takes time==_".
+	- Our SLAs required that "any specific _==user action must eventually completes or is explicitly handled==_" and "the tasks need to be initiated relatively quickly after the user action, _==even if the final result takes time==_".
 	- To satisfy those requirements, **batch processing** seems like a viable option, but it would introduce unwanted latency. It's _better suited for scheduled, non-time-sensitive **bulk operations**_.
-		- Synchronous APIs with retries is exactly the initial cause of our problems. Simply adding more retries wouldn't solve the fundamental issue of blocking the primary API server and resource exhaustion, so there's no point to stick with it.
+		- Synchronous APIs with retries is exactly the initial cause of our problems. Simply adding more retries wouldn't solve the fundamental issue of blocking the primary API server and resource exhaustion, so there's no point sticking with it.
 	- Compared to Kafka, which is more suitable for a distributed _streaming platform_, our use case leans toward _==discrete, individual task processing==_ (the third-party API calls) that _==needed robust acknowledgement, retry logic, and potential dead-lettering==_, so that's why RabbitMQ felt like a more natural fit.
 #### Skin in the game
 ##### Technical
 ###### Implementation
 - "_How was the RabbitMQ cluster itself **configured and operated** to ensure high **availability and eventual consistency** for the application?_"
 	- We agreed on these configs and conventions for our worker service:
-		- **Clustering**: the RabbitMQ server was run as a multi-node cluster (typically 3 nodes spread across availability zones) to provide fault tolerance at the broker level.
+		- **Clustering**: the RabbitMQ server was run as a multi-node cluster (typically 3 nodes _spread across availability zones_) to provide fault tolerance at the broker level.
 		- **Mirrored Queues**: to ensure that if one node went down, the queue remained available on the others, preventing message loss.
 		- **Heartbeats & Monitoring**: network heartbeats were configured between consumers and the broker to detect dead connections quickly. Our monitoring put an emphasis on unacknowledged messages to spot issues proactively.
 		- **==Durable Queues==**: with the `durable: true` flag, the queue definition itself would survive a broker restart.
@@ -58,10 +61,10 @@
 			- We created a rule regarding `http` status codes: _==5xx/timeouts → Retry==_ (with exponential backoff + max attempts). For _==4xx → Don't retry==_ (assume bad request data), log details, push it to the DLQ.
 			- By _==analyzing the DLQ==_, we were able to refine the classification logic and _==identify underlying data issues or new third-party error patterns==_.
 - "_How did you prevent divergence and maintain **idempotency** in certain failure conditions like **message loss or redeliveries**?_"
-	- I followed the _**Check-Read-Write convention**_ to guarantee _at-least-once_ delivery: 
-		- First, the NestJS producer included a _==unique identifier==_ within each message _payload_ (e.g. UUID based on the originating request or operation, and this is _not_ the `correlationID`).
+	- I followed the _**Check-Read-Write convention**_ to guarantee ==_at-least-once_ delivery==: 
+		- First, the NestJS producer included an _==`Idempotency-Key` within each message_== (and this is _not_ the `correlationID` where it ensures that a response is matched with the correct request).
 		- Next, apply the Check-Read-Write pattern with our Redis distributed cache as follows:
-			- **Check:** upon receiving a message, the worker extracted the unique ID.
+			- **Check:** upon receiving a message, the worker extracted the unique ID (i.e. the `Idempotency-Key`).
 			- **Read:** then it read this ID from the _==Redis idempotency store==_.
 			- **Write**: 2 things might happen:
 				- First delivery: the ID did **not** exist in Redis → the worker **write** the ID to Redis.
@@ -81,19 +84,19 @@
 	- Before the pipeline, we tracked metrics like the _average time bug tickets remained open_ (which was around 3 days), the duration of the manual QA cycle per release candidate, and the frequency of hotfixes needed shortly after deployment due to regressions.
 	- Following the pipeline's implementation, our QA team could approve release candidates faster because their effort shifted from _==repetitive regression checks==_ (now automated) to more valuable exploratory testing and validation of new features, dropping our bug-fix cycle time _==from 3 days to 1 day on average==_.
 - _"What were the **primary bottlenecks** in the previous manual testing process that this pipeline aimed to solve?_"
-	- Implementing this pipeline was about _==shifting from reactive bug fixing to proactive quality assurance==_.
-	- The throughput of our releases was limited by QA's capacity to _manually_ test everything. _==Automation removed QA from being a blocker for **verifying existing functionalities**==_, freeing them to _focus on higher-value tasks_ like usability testing, exploratory testing of new features, and _edge case analysis_.
+	- Implementing this pipeline was about _==making sure that the existing features keep on working throughout the monolith decomposition process==_.
+	- The throughput of our releases was limited by QA's capacity to _manually_ test everything. _==Automation removed QA from being a blocker for **verifying existing functionalities**==_, freeing them to _focus on higher-value tasks_ like usability testing, ==exploratory testing of new features, and _edge case analysis_==.
 #### Skin in the game
 ##### Technical
 ###### Implementation
 - "_How did you decide what to cover with Vitest (unit/integration) versus Playwright (E2E)?_"
 	- We followed the _**Testing Pyramid model**_ where we have _==a large base of fast, **isolated** unit tests, a smaller layer of integration tests, and a very selective top layer of E2E tests==_.
 		- For testing ==_individual functions, components_ in isolation==, and to pinpoint failures precisely, we go for _**unit tests**_. All external dependencies (like database calls, API calls, other modules) were mocked or stubbed.
-		- For testing the _==interaction between several units==_ within a single service or application boundary, we use **_integration tests_**. A mocked database layer or a test database instance is usually required for this stage.
+		- For testing the _==interaction between several units within a single service_== or application boundary, we use **_integration tests_**. A mocked database layer or a test database instance is usually required for this stage.
 		- To ==_validate complete user flows **through the UI**_==, interacting with the deployed application (usually on a staging environment) just like a real user, we use E2E tests. They provide the highest confidence that the system works as a whole from the user's perspective. However, they are the slowest, most brittle, and most expensive to write and maintain, so we focus mostly on the absolute critical paths (i.e. smoke tests).
 - "_What was your **strategy for test coverage**, and how did you decide what was **'enough' coverage**? What patterns did you implement to share test utilities and fixtures?_"
 	- Our strategy focused on _**risk and value**_, not just hitting arbitrary code coverage percentages:
-		- **_For unit tests_**, we aimed for a high line/branch coverage _==(80%+) for core business logic==_, complex algorithms, and utility functions. Lower coverage was acceptable for simple code (like basic CRUD controllers with little logic).
+		- **_For unit tests_**, we aimed for a high line/branch coverage _==(80%+) for **core business logic**==_, complex algorithms, and utility functions. Lower coverage was acceptable for simple code (like basic CRUD controllers with little logic).
 		- **_For integration tests_**, we focused on covering ==_**the contracts** between major components or services_== – ensuring API endpoints behaved as expected, key service methods interacted correctly.
 		- _**For E2E tests**_, we explicitly decided _not_ to cover every edge case or UI variation but we did put an emphasis on the _==critical "**happy paths**" of major user **workflows**_== like authentication and core features usage.
 	- Our test coverage was considered 'enough' when:
@@ -109,8 +112,8 @@
 		- _**Nightly Builds**:_ Run the full E2E suite and potentially longer-running integration tests or performance tests.
 ###### When shit hit the fan
 - "_Describe a specific test you wrote that **caught a regression** that would have otherwise gone to production. What made this particular test valuable?_"
-	- We had a Playwright E2E test for our user profile update flow. A developer was refactoring the backend API endpoint and updated the JSON payload structure for updating the user's time zone preference – the frontend was sending `tzId` but the refactored backend now expected `timeZoneId`.
-	- The unit tests for the backend endpoint passed (as they were updated with the new expectation), and the frontend unit tests for the profile component also passed (as they mocked the API call). However, the _**Playwright E2E test failed**_. It filled out the profile form (including the time zone dropdown), clicked 'Save', waited for the success notification, then reloaded the page and _asserted that the time zone dropdown **still held the newly selected value**_. Because the _==backend save failed silently==_ (or perhaps returned an unhandled error code the frontend didn't react to) _==due to the mismatched payload key, the assertion failed==_ – the time zone reverted to its old value on reload.
+	- We had a Playwright E2E test for our user profile update flow. A developer was refactoring the backend API endpoint and _==updated the JSON payload structure for updating the user's time zone preference==_ – the frontend was sending `tzId` but the refactored backend now expected `timeZoneId`.
+	- The unit tests for the backend endpoint passed (as they were updated with the new expectation), and the frontend unit tests for the profile component also passed (as they mocked the API call). However, the _**Playwright E2E test failed**_. It filled out the profile form (including the time zone dropdown), clicked 'Save', waited for the success notification, then reloaded the page and _asserted that the time zone dropdown **still held the newly selected value**_ (e.g. `await expect(page.locator('[data-testid="timezone-select"]')).toHaveValue('america_new_york');`. And _==due to the mismatched payload key, the assertion failed==_ – the time zone reverted to its old value on reload.
 	- This test was valuable because:
 		1. It _==tested the full flow==_ from UI interaction to data persistence and back to UI verification and _detected the mismatched payload_.
 		2. It _==prevented a subtle bug==_ that would likely frustrate users without being immediately obvious, _saving us from deploying a broken profile update feature_.
@@ -124,19 +127,17 @@
 	    2. **Backend Idempotency:** We updated the registration endpoint to be idempotent (_==using a unique `Idempotency-Key` sent **by the client** in the request header==_), preventing duplicate account creation even if the request arrived twice. This was the _real_ fix, but the E2E test ensures the frontend handles related errors gracefully too.
 	    3. **Improved Client-Side State:** We also updated the frontend JavaScript to _==disable the submit button immediately on the first click attempt==_, reducing the window for accidental double clicks during latency.
 - "_Give me a specific **example of a flaky test** you encountered and how you stabilized it._"
-	- We had a flaky Vitest integration test that checked _our notification service_. The test would trigger an action, then _==poll a mocked WebSocket connection for an expected notification message==_. It failed maybe 5% of the time in CI with a timeout waiting for the message.
+	- So flaky tests happen in pretty much the _==same conditions as those transient API failures==_. We had a flaky Vitest integration test that checked _our notification service_. The test would trigger an action, then _==poll a mocked WebSocket connection for an expected notification message==_. It failed maybe 5% of the time in CI with a timeout waiting for the message.
 	- We realized the notification service had some asynchronous processing internally. While _usually_ fast, _==under certain CI load conditions, the processing could occasionally take slightly longer==_ than the fixed 500ms timeout we'd arbitrarily chosen. The test logic itself was correct, but the timing assumption was too tight and didn't reflect potential real-world variability.
 	- So we decided to increase the timeout duration to accommodate CI load conditions and ==_replace manual `setTimeout` loops with Vitest built-in `expect.poll` method with a timeout argument for better maintainability_==.
 ##### People
 - "_When implementing this pipeline, you likely faced resistance from some team members. Tell me about the **most significant push back** you received and how you addressed it._"
 	- The most significant pushback, as mentioned in the context, was the cultural resistance based on the idea that **'_testing is QA's job, not developers_'**. This manifested as reluctance to allocate time for writing tests alongside feature code and _==skepticism about the ROI==_.
 	- Getting _==buy-in from our team lead==_ was crucial. They helped reinforce the message that quality and sustainable pace were team priorities, supported by the evidence of customer impact from the existing technical debt.
-	- _==I built a small but functional POC pipeline with a simple unit test==_ for a function which returns the strictest (i.e., smallest or most limiting) directives for _Cache-Control headers_. This demonstrated _concretely_ how tests could be written, how fast they could run in CI, and _==how they could catch a simple, simulated regression==_. Seeing it in action was more powerful than just talking about it.
+	- _==I built a small but functional PoC pipeline with a simple unit test==_ for a function which returns the strictest (i.e., smallest or most limiting) directives for _Cache-Control headers_. This demonstrated _concretely_ how tests could be written, how fast they could run in CI, and _==how they could catch a simple, simulated regression==_. Seeing it in action was more powerful than just talking about it.
 	- I emphasized how automated tests _==benefit **developers** directly==_ by providing faster feedback, increased confidence in refactoring, and _==scalable as they reduce time spent debugging regressions==_.
 #### Ownership
 - "_Looking back, what is the single biggest thing you would do differently if you were to build this QA pipeline again today, knowing what you know now?_"
-	- The single biggest thing I would do differently is integrate automated testing culture and practices _==even earlier and more deeply into the team's workflow==_ from day one of the initiative.
-	- Leverage TDD principles where appropriate, rather than treating it as an afterthought.
 	- Embedding the _habit_ and ==_shared ownership of testing more strongly and formally from the absolute beginning_== would likely have smoothed the adoption curve and accelerated the cultural shift even further.
 
 ### Fullstack development
@@ -174,7 +175,7 @@
 
 ## Autocall
 ### Account hierarchies
-"Developed secure API queries that resolved a long-standing _**security vulnerability**_ related to _**missing authorization**_ in account management, reducing unauthorized data access incidents by **94%** across different account types."
+"Developed secure API queries that resolved a long-standing _**security vulnerability**_ related to _**missing authorization**_ in account management, reducing unauthorized data access incidents by **90%** across different account types."
 #### Security deficiencies identification
 - Looking at our security timeline, we had a nine-month period from when issues were first flagged to when I completed the implementation, which was like 3 months of narrowing down the bug, 2 months of planning, and 4 months of implementation and migration. My analysis of our audit records reported that most of our vulnerabilities were about permission inconsistencies. More specifically: 
 	- Our **_AWS CloudTrail_** security audits and database access logs revealed unauthorized access through ==_race conditions_== during permission checks.
@@ -185,8 +186,21 @@
 #### Technical deep dives
 ##### MariaDB
 - "_What specific **features of MariaDB** did you leverage in your redesign that addressed the security vulnerabilities?_"
-	- Before the fix, we had ==_permission queries exposed to the application layer_== in the backend code with Eloquent ORM. We had *slightly* _**different checks scattered**_ across multiple controllers or services for this, which led to _**bugs in distributed logic**_ where fixing a bug one place might not get replicated correctly elsewhere, leading to diverging logic and **_inconsistent access control_** over time.
+	- Before the fix, we had ==_permission queries exposed to the application layer_== in the backend code with Eloquent ORM. We had *slightly* _**different checks scattered**_ across multiple controllers or services for this, which led to **bugs in distributed logic** where fixing a bug one place might not get replicated correctly elsewhere, leading to ==diverging logic and **_inconsistent access control_**== over time.
 	- To fix it, I implemented those centralized, Single Source of Truth "_secure API queries_" which were essentially calls to ==_parameterized views_== (through **_stored procedures_**) to make sure that the backend code only calls the procedure by its name so that ==_the actual filtering logic stays secured in the database_==.
+	  ```sql
+CREATE PROCEDURE sp_GetAccountDetails_Secure (
+    IN p_requesting_user_id INT,  -- ID of the user making the request, its value is passed into the stored procedure from the caller
+    IN p_target_account_id INT    -- ID of the account being requested
+)
+BEGIN
+    SELECT
+    FROM
+    WHERE
+    IF
+    ELSEIF
+END
+		```
 	- We also enhanced speed by leveraging _**database indexing**_. Without it, the stored procedure approach wouldn't have been viable performance-wise.
 - "_Walk me through your database **schema design**, specifically focusing on foreign key constraints, **indexing strategies**, and how they related to **security enforcement**."_
 	- I implemented a _**self-referential schema**_ with `level`, `parent_id`, and `hierarchy_path` columns, like:
@@ -269,7 +283,7 @@ CREATE INDEX idx_hierarchy ON accounts(hierarchy_path);  --Indexing
 - _"You mentioned a **legacy** desktop-only application - explain the specific **architectural constraints** you faced when implementing responsive design on a system not originally built for it."_
 	- The most challenging constraint was the _==side-by-side layout pattern==_ used throughout the app. 
 		- Authentication screens had the form on the left and a prominent background image on the right at fixed widths. 
-		- On narrow mobile screens, this forced the form to become very narrow, causing long input fields like 'Email' to look too cramped and unusable.
+		- On narrow mobile screens, this _==forced the form to become very narrow, causing long input fields like 'Email' to look too cramped and unusable==_.
 		- Additionally, each view relied on a mix of server-rendered Blade templates and jQuery for client-side interactivity, creating tight coupling between markup, styling, and behavior.
 #### Biggest challenges
 ##### Technical
@@ -306,7 +320,7 @@ CREATE INDEX idx_hierarchy ON accounts(hierarchy_path);  --Indexing
 "Increased user response rate to critical task deadline alerts by 38% and eliminated **_distractions caused by context-switching_** with the integration of a centralized **_WebSocket real-time notification system_** using Antd UI."
 #### Context
 - "_What was the product's primary **purpose**, who were the **target users**, and what were your specific **responsibilities**?_"
-	- The application served as a centralized digital platform to manage workflows previously handled by manual paperwork and scattered communications (email, Workchat) within a specific department. Its core functions included task management, displaying task-related data visualizations, and _==providing prioritized notifications for required actions. Like a simplified version of the Jira ticketing system._==
+	- The application served as a centralized digital platform to manage workflows previously handled by manual paperwork and scattered communications (email, Workchat) within a specific department. Its core functions included task management, displaying task-related data visualizations, and _==providing **prioritized notifications for required actions**. Like a simplified version of the Jira ticketing system._==
 	- The end-users were employees within that specific internal department who relied on this application daily to _==receive, track, and act upon their assigned tasks==_.
 	- My role was primarily focused on designing and implementing the entire _==real-time notification system==_, including the UI elements (bell icon dropdown using Antd, toast popups using `react-toastify`) and the client-side WebSocket integration logic.
 - "_Why did you prefer **RemixJS** over NextJS for this project?_"
@@ -326,10 +340,10 @@ CREATE INDEX idx_hierarchy ON accounts(hierarchy_path);  --Indexing
 		- When an alert needed to be sent, the backend logic _==looked up the active WebSocket connection(s)==_ for the targeted `userId`(s) and pushed the notification message _only_ to those specific, authorized connections.
 - "_How was the **reliability** of delivering these 'critical alerts' ensured? What happened if a user was temporarily disconnected when an alert was sent?_"
 	- The WebSocket push was a delivery enhancement, not the primary record. The source of truth was always the backend database. A notification was _**persisted first** before_ any attempt was made to push it via WebSocket. 
-	- We _==configured WebSocket ping/pong frames to allow both client and server to detect unresponsive connections more quickly==_ than relying solely on TCP timeouts, triggering reconnection logic sooner.
+	- We _==configured WebSocket **ping/pong frames** to allow both client and server to detect unresponsive connections more quickly==_ than relying solely on TCP timeouts, triggering reconnection logic sooner.
 - "_Why were WebSockets chosen over **alternatives** like Server-Sent Events or polling for this specific use case?_"
-	- SSE is a great option for _one-way_ server-to-client communication and is simpler than WebSockets. ==We could have used SSE _just for receiving_ notifications==, but our SLAs stated that the user must be able to update their notification statuses.   
-	- Real-time experience is crucial for the product, and polling introduces latency, which doesn't provide a true real-time experience. It also _==puts unnecessary load on the server if we were to shrink the intervals==_.
+	- SSE is a great option for _one-way_ server-to-client communication and is simpler than WebSockets. ==We could have used **SSE _just for receiving_** notifications==, but our SLAs stated that the user _==must be able to update their notification statuses==_.   
+	- Real-time experience is crucial for the product, and _==**polling introduces latency**==_, which doesn't provide a true real-time experience. It also _==puts unnecessary load on the server **if we were to shrink the intervals**==_.
 - "_What were the most significant **technical challenges** you encountered during this integration?_"
 	- Since it was a back office app which serves a single department, scalability wasn't an issue. As a frontend developer, my struggles were mostly UI related.
 	- So the requirement was to mark notifications as "Read" if the user _manually_ close its corresponding toast, except for Level 1 (highest priority) notifications.
