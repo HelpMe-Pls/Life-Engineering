@@ -35,17 +35,16 @@
   <a href="">Request a loan</a>
 </section>
 ```
----
 
 ## Sizing and Ratios
 - The ***minimum content size*** is the smallest an item can get without its contents overflowing.
 - Setting `width` in a flex row (or `height` in a flex column) sets the **_hypothetical_ size**. It isn't a guarantee, it's a suggestion (i.e. it will apply that size value if there's *enough* space, and if its container is shrinking below that value, it will also scale along).
 - `flex-basis` has the same effect as `width` in a flex row (or `height` in a flex column) - for the main axis - so it takes the value of length unit (e.g. `200px`). Both `width` and `flex-basis` will change the _hypothetical_ size of an element.
   You can use them interchangeably, but `flex-basis` will win if there's a conflict (e.g. if the `flex-basis` prop (or it's included in the `flex` shorthand) is in the *same* rule with `width` or `height`, then `width` or `height` has no effect; but there's a catch: `width` can set that value *below* the minimum content size while `flex-basis` can't).
--  `flex-grow` controls how the _extra space is distributed_ when the items are *smaller* than their container. It will allow a child to ==*grow and **consume***== any excess space in the container (consider `margin: auto` if what you want is the positioning of the child within that extra space). It has no effect if there ***isn't*** any excess space.
--  `flex-shrink` controls how _space is removed_ when the items are *bigger* than their container. It will pick ***which element*** to consume space from, when the container is too small (you can set the threshold for the shrinking with  `min-width`, e.g. we can set an item to shrink to oblivion with `min-width: 0`, but please, don't). It has no effect if there **_is_** any excess space.
--  `flex-shrink` can't shrink an item below its minimum content size (e.g. the length of the longest word in the item).
--  `flex-grow`  and  `flex-shrink` values are in numbers, which indicate a _ratio of the available space_:
+- `flex-grow` controls how the _extra space is distributed_ when the items are *smaller* than their container. It will allow a child to ==*grow and **consume***== any _excess_ space in the container (consider `margin: auto` if what you want is the positioning of the child within that extra space). It has no effect if there ***isn't*** any excess space.
+- `flex-shrink` controls how _space is removed_ when the items are *bigger* than their container. It will pick ***which element*** to consume space from, when the container is too small (you can set the threshold for the shrinking with  `min-width`, e.g. we can set an item to shrink to oblivion with `min-width: 0`, but please, don't). It has no effect if there **_is_** any excess space.
+- `flex-shrink` can't shrink an item below its minimum content size (e.g. the length of the longest word in the item).
+- `flex-grow`  and  `flex-shrink` values are in numbers, which indicate a _ratio of the available space_:
 ```html
 <!--
 We want the `main` element to consume _3 times_ as much space as `nav` or `aside`. It gets 3 "units" of space, whereas `nav` and `aside` only get 1 unit.
@@ -77,7 +76,6 @@ When shrinking, the same concept applies; an element with `flex-shrink: 3` wil
 - The short hand  `flex`  property (in a flex item) represents all 3 props:  `flex-grow`, `flex-shrink`, `flex-basis`. For example `flex: 1` will assign `flex-grow: 1`, but it will _also_ set `flex-basis: 0`  (and _the value_ `0` will override any `width` you set with `width: min-content`) and it won't affect the default value for `flex-shrink` (which is `1`).
 
 > It is *highly recommended* to use the  `flex`  shorthand (with  `flex-basis` value included) instead of having  `flex`  props AND `width` / `height` in the same declaration.
-
 
 ## Ordering and overflow
 - `flex-direction: row-reverse || column-reverse`  flips the order of its children (like in `Array.reverse()`) on the main axis.

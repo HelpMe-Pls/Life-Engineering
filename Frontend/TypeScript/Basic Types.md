@@ -136,7 +136,7 @@ myLogger.log(
 // In case you just want one of those `Logger`s to take effect, declare ONE with `type`
 ```
 
-- Type aliases have an implicit index signature of `Record<PropertyKey, unknown>`, which comes up occasionally:
+- Type aliases have an _implicit_ index signature of `Record<PropertyKey, unknown>`, which comes up occasionally:
 ```ts
 interface KnownAttributes {
   x: number;

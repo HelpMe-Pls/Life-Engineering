@@ -568,6 +568,6 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 > Everyone has an invisible sign hanging from their neck saying: "I'm different. Make me feel valuable". Never forget that message when working with people.
 ## Competition
 - If your preoccupation is with every single thing your competition does, you’re cheating your business and your customers.
-- Forget about your competition 95% of the time. The other 5% should be used to exploit their weaknesses and differentiate your business. Mine their weaknesses and add value [[WIL from books#Rule 4 Notice that opportunity lurks where responsibility has been abdicated |where they aren’t]]. Uncover unfulfilled needs. What could be better?
+- Forget about your competition 95% of the time. The other 5% should be used to exploit their weaknesses and differentiate your business. Mine their weaknesses and add value [[Beyond Order#Rule 4 Notice that opportunity lurks where responsibility has been abdicated |where they aren’t]]. Uncover unfulfilled needs. What could be better?
 - Dissect what your competitors are doing, take note of what's working, put it together, and refined from there.
 - When you fill needs and your army of customers grows, something suddenly happens: Everyone follows you.

@@ -5,7 +5,6 @@
 [[Responsive]]
 [[Typography and Images]]
 [[Animations]]
-[[Utils]]
 
 - We can put the CSS rules in whichever order we'd like (however, be mindful of [CSS specificity](https://www.w3schools.com/css/css_specificity.asp), especially on the pseudo classes); the only thing that matters is the [[Positioning |order of HTML elements]].
 - Be careful when using the wildcard selector (`*`) because its declaration applies for every possible valid selector:

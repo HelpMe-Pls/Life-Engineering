@@ -1,6 +1,6 @@
 [[Tips]]
 [[Tools & Util libs]]
-[[WIL from books]]
+[[Books]]
 [[Financial]]
 [[Socialize]]
 [[Mentality]]

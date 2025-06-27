@@ -1,5 +1,4 @@
-# Beyond Order
-## Rule 1: Do not carelessly denigrate social institutions or creative achievement 
+# Rule 1: Do not carelessly denigrate social institutions or creative achievement 
 - People remain mentally healthy not merely because of the integrity of their own minds, but because they are constantly being reminded how to think, act, and speak by those around them.
 
 - The best player is therefore not the winner of any given game but, among many other things, he or she who is invited by the largest number of others to play the most extensive series of games.
@@ -10,7 +9,7 @@
 
 - Every rule was once a creative act, breaking other rules. Every creative act, genuine in its creativity, is likely to transform itself, with time, into a useful rule.
 
-## Rule 2: Imagine who you could be, and then aim single-mindedly at that
+# Rule 2: Imagine who you could be, and then aim single-mindedly at that
 - You do not chose what interest you. It chooses you. Something manifests itself out of the darkness as compelling, as worth living for; following that, something moves us further down the road, to the next meaningful manifestation - and so it goes, as we continue to seek, develop, grow and thrive. It is a perilous journey, but it is also the adventure of our lives. 
 
 - What is interesting and meaningful (and novel and unexpected, as those all go together) manifests itself in a form that is both dangerous and promising, particularly when its grip is intense and irresistible.
@@ -19,7 +18,7 @@
 
 - Aim at something. Pick the best target you can currently conceptualize. Stumble toward it. Notice your errors and misconceptions along the way, face them, and correct them. Get your stories straight.
 
-## Rule 3: Do not hide unwanted things in the fog
+# Rule 3: Do not hide unwanted things in the fog
 - Life is what repeats. And it's worth getting what repeats right. 
 
 - It is difficult to win an argument, or even begin one, if you have not carefully articulated what you want (or do not) and need (or do not).
@@ -27,7 +26,7 @@
 - With careful searching, with careful attention, you might tip the balance toward opportunity and against obstacle sufficiently so that life is clearly worth living, despite its fragility and suffering. 
   But there will be times in your life when it will take everything you have to face what is in front of you, instead of hiding away from a truth so terrible that the only thing worse is the falsehood you long to replace with.
 
-## Rule 4: Notice that opportunity lurks where responsibility has been abdicated
+# Rule 4: Notice that opportunity lurks where responsibility has been abdicated
 - What is the antidote to the suffering and malevolence of life? The highest possible goal. What is the prerequisite to pursuit of the highest possible goal? Willingness to adopt the maximum degree of responsibility - and this includes the responsibilities that others disregard or neglect.
 
 - It is a bad idea to sacrifice yourself uncomplainingly so that someone else can take the credit. Nonetheless, under such circumstances - if you're a wise and attentive person - you might still notice that your unproductive coworkers are leaving a plethora of valuable tasks undone.
@@ -52,7 +51,7 @@
 
 - It is probable - inevitable - that the adventure of your life will frustrate and disappoint and unsettle you, as you heed the call of conscience and shoulder your responsibility and endeavor to set yourself and the world right. But that is where the deep meaning that orients you and shelters you to be found.
 
-## Rule 5: Do not do what you hate
+# Rule 5: Do not do what you hate
 - We do the things we do because we think those things important, compared to all the other things that could be important. We regard what we value as worthy of sacrifice and pursuit. That worthiness motivates us to act, despite the fact that action is difficult and dangerous.
 
 - Without careful attention, culture itself tilts toward corruption. Tyranny grows slowly, and asks us to retreat in comparatively tiny steps. But each retreat increases the possibility for next retreat.
@@ -65,7 +64,7 @@
 
 - Maybe following the dictates of conscience is in fact the best possible plan that you have - at minimum, otherwise you have to live with your sense of self-betrayal and the knowledge that you put up with what you truly could not tolerate. Nothing about that is good.
 
-## Rule 6: Abandon ideology
+# Rule 6: Abandon ideology
 - Helping people bridge the gap between what they profoundly intuit but cannot articulate seems to be a reasonable and valuable function for a public intellectual.
 
 - It might be that the true meaning of life is available for discovery, if it can be discovered at all, by each individual, alone - although in communication with others, past and present.
@@ -84,7 +83,7 @@
 
 - Have some humility. Clean up your bedroom. Take care of your family. Follow your conscience. Straighten up your life. Find something productive and interesting to do and commit to it. When you can do all that, find a bigger problem and try to solve that if you dare. If that works, too, move on to even more ambitious projects. And, as the necessary beginning to that process...abandon ideology.
 
-## Rule 7: Work as hard as you possibly can on at least one thing and see what happens
+# Rule 7: Work as hard as you possibly can on at least one thing and see what happens
 - Human beings are conscious during the day, when it is light. Much of that consciousness is visual and therefore dependent on light. To be illuminated or enlightened is to be exceptionally awake and aware - to attain a state of being associated with divinity.
 
 - Without clear, well-defined, and noncontradictory goals, the sense of positive engagement that makes life worthwhile is very difficult to obtain. Clear goals limit and simplify the world, as well, reducing uncertainty, anxiety, shame, and the self-devouring physiological forces unleashed by stress.
@@ -102,7 +101,7 @@
 - If you work as hard as you can on one thing, you will change. You will start to also become one thing, instead of the clamoring multitude you once were. 
   That one thing, developed properly, is not only the disciplined entity formed by sacrifice, commitment, and concentration. It is that which creates, destroys, and transforms discipline itself - civilization itself - by expressing its unity of personality and society. It is the very Word of truth, upon whose function all habitable order, wrenched out of chaos, eternally depends.
 
-## Rule 8: Try to make one room in your home as beautiful as possible
+# Rule 8: Try to make one room in your home as beautiful as possible
 - Making something beautiful is difficult, but it is amazingly worthwhile. If you learn to make something in your life truly beautiful - even one thing - then you have established a relationship with beauty.
   From there you can begin to expand that relationship out into other elements of your life and the world. That is an invitation to the divine. That is the reconnection with the immortality of childhood, and the true beauty and majesty of the Being you can no longer see. You must be daring to try that.
 
@@ -115,7 +114,7 @@
 - Beauty leads you back to what you have lost. Beauty reminds you of what remains forever immune to cynicism. Beauty beckons in a manner that straightens your aim. Beauty reminds you that there is lesser and greater value.
   Many things make life worth living: love, play, courage, gratitude, work, friendship, truth, grace, hope, virtue, and responsibility. But beauty is among the greatest of these. 
 
-## Rule 9: If old memories still upset you, write them down carefully and completely
+# Rule 9: If old memories still upset you, write them down carefully and completely
 - Learn from the past. Or repeat its horrors, in imagination, endlessly. We must recollect our experiences and derive from them their moral.
   It is a psychological truism that anything sufficiently threatening or harmful once encountered can never be forgotten if it has never been understood.
 
@@ -134,7 +133,7 @@
 
 - We have every reason to avoid facing the bitter truth. But making what is - and what was - clear and fully comprehended can only protect us. If you are suffering from memories that will not stop tormenting you, there is a possibility - possibility that could be your salvation - waiting there to be discovered.
 
-## Rule 10: Plan and work diligently to maintain the romance in your relationship
+# Rule 10: Plan and work diligently to maintain the romance in your relationship
 - For each person is in truth an unfathomable enigma. With care, you might keep rediscovering, in the person you have chosen, enough residual mystery to maintain the spirit that first brought you together.
   With care, you can avoid stowing each other away in a conveniently sized box, punishment at hand should either of you dare to emerge, and contempt for the consequent predictability you both now face lurking not so far beneath the surface.
 
@@ -176,7 +175,7 @@
 
 - Devote yourself to the higher ideal upon which an honest and courageous relationship is necessarily dependent, and do that with the seriousness that will keep your soul intact. Maintain your marital vows, so that you are desperate enough to negotiate honestly. Do not let your partner brush you off with protestations of ignorance of refusal to communicate. Do not be naive, and do not expect the beauty of love to maintain itself without all-out effort on your part. Distribute the requirements of your household in a manner you both find acceptable, and do not tyrannize or subject yourself to slavery. Decide what you need to keep yourself satisfied both in bed and out of it.
 
-## Rule 11: Do not allow yourself to become resentful, deceitful, or arrogant
+# Rule 11: Do not allow yourself to become resentful, deceitful, or arrogant
 - The great experimenters and scientific writers I have known are passionate about their pursuit. Something emotional drives them. They hope that their learning (disinterested though it may be, as at present it has no specific aim except that of learning) will have some genuinely positive outcome: making the world a better place. That provides the entire pursuit with a narrative element, the motive that accompanies any good plot, and the transformation of character that makes up the best of stories.
 
 - We conceptualize what we experience as a story. That story is, roughly speaking, the description of the place we are at right now, as well as the place that we are going to, the strategies and adventures that we implement and experience along the way, and our downfalls and reconstitutions during that journey.
@@ -215,7 +214,7 @@
 - Perhaps you could live in a manner whose nobility, grandeur, and intrinsic meaning would be of sufficient import that you could tolerate the negative elements of existence without becoming so bitter as to transform everything around you into something resembling hell.
   What if we could constrain our malevolence a bit more, serve and transform our institutions more responsibly, and be less resentful? God only knows what the ultimate limit to that might be.
 
-## Rule 12: Be grateful in spite of your suffering
+# Rule 12: Be grateful in spite of your suffering
 - The fact of your voluntary focus on the abyss, so to speak, indicates to yourself at the deepest of levels that you are capable of taking on without avoidance the difficulties of existence and the responsibility attendant upon that.
   That mere act of courage is deeply reassuring at the most fundamental levels of psychological being.
 
@@ -240,370 +239,3 @@
 
 - So, you might love people despite their limitations, but you also love then *because* of their limitations. That is something very much worth understanding. Doing so may help you see how gratitude remains possible. Despite the fact that the world is a very dark place, and that each of us has our black elements of the soul, we see each other in a unique blend of actuality and possibility that is a kind of miracle: one that can manifest itself, truly, in the world, in the relationships we have that are grounded in trust and love. That is something for which you can courageously thankful. That is something in which you can discover part of the antidote to the abyss and the darkness.
 	  Be grateful in spite of your suffering.
----
-
-# Supercommunicators
-- The most important goal of any conversation is to ==_connect_==.
-- It's all about recognizing that we need to be engaged in the same _kind_ of conversation, at the same time, if we want to connect.
-- For the most meaningful discussions, it is crucial to have a "==learning conversation==". We all want meaningful conversations.
-- Every discussion is influenced by ==emotions==, no matter how rational the topic at hand. Emotions help us connect.
-
-## The guidelines
-- **Pay attention** to what kind of conversation is occurring.
-- **Share** your goals, and **ask** what others are seeking.
-- Ask about others' **feelings**, and share your own.
-- **Explore** if identities are important to this discussion.
-
-## Three kinds of conversations
-- Miscommunication occurs when people are having different _kinds_ of conversations.
-- Effective communication requires _recognizing_ what _kind_ of conversation is occurring, and then _matching_ each other.
-> It is important to note that matching **isn't** mimicry. Rather, it's understanding someone's mindset, and **thinking** about how to **show empathy**.
-> We need to prove to others that we are listening closely. It requires explaining clearly how we, ourselves, are thinking and making choices, so that others can match us is return.
-- Within every conversation there is a quiet _negotiation_, determining what everyone wants, so that something meaningful can occur.
-### What's this really about
-- First, recognize that this is ==a negotiation==:
-	- An important task in any negotiation is _asking_ lots of questions.
-	- How much of someone's decision depended on their own desires versus what people around them wanted?
-	- You _don't_ want to begin a negotiation assuming you know what the other side wants.
-- Second, figure out what does everyone ==want==:
-	- Ask _open-ended questions_ designed to get them talking about their values and what the wanted out of life, and then listen closely.
-	- It's an _invitation_ for people to tell you who they are.
-	- Someone will make an invitation, and their partner will accept or make counter-invitations.
-- Then, _how_ will we ==make choices _**together**_==.
-	- The best negotiators didn't battle over who should get the biggest slice of pie. Rather, they focused on making the pie itself larger. It's an act of creativity.
-	- Begin by demonstrating that you appreciate theirs.
-- Understanding the difference between the practical _logic of costs and benefits_ and the empathetic _logic of similarities_ was critical.
-#### Logic of costs and benefits
-- Lean into data and reasoning.
-- They're agreeing to contrast potential costs with hoped-for benefits.
-- Ask yourself, "What does someone like me usually do in a situation like this?"
-- They want to draw on their _experiences_, even if they don't completely overlap with the situation at hand.
-- In these kinds of conversations, facts are less persuasive.
-#### Logic of similarities
-- Lean into stories and compassion.
-- In an empathetic mindset we are influenced be narratives.
-#### Ask questions
-- Ask them about their experiences:
-	- What was it like to....
-	- Tell me about...
-- Ask them to make a judgement:
-	- How'd you decide...
-	- What do you like about...
-	- What advice would you give...
-	- What's the best/worst thing about...
-- Get creative. Try interrupting, and then not interrupting. Give a matching response to their outputs.
-
-### How do we feel
-- It's about getting everyone to talk about more intimate things. Reciprocating vulnerability. Vulnerability sparks emotional contagion, which makes us more aligned.
-- When something is interesting, you listen without thinking about it.
-> If we acknowledge someone else's **==vulnerability==**, and become vulnerable in return, we expose something that opens us to others' judgements. That's how we build trust, understanding, and connection.
-- Laughter is one way of proving that we hear how someone feels. When people genuinely laughed together, their mood and energy almost always matched.
-- When you describe how you feel, you're giving someone a map of the things you care about.
-- Human typically synchronize their own emotions with the emotions expressed by those around them.
-- People don't announce their emotions. They perform them.
-- Saying things aloud that "leave people feeling more vulnerable to others' evaluations," causes participants to feel "more connected," "more caring," and "to listen attentively."  
-> [!important]- Mood and Energy
-> - What matters isn't speaking and acting alike, but rather matching one another in ways that convey the ***desire*** to align. Make it obvious you are ***working*** to understand their emotions.
-> - Mood and energy are non-linguistic tools for creating emotional connection.
-> - Pay attention to someone's mood (Do they seem negative or positive?) and their energy level (Are they high energy or low energy?). Then, focus on matching those two attributes.
-#### Questions
-- Questions that pushed people to describe their beliefs, values, or meaningful experiences tended to result in emotional replies, even if the questions themselves didn't seem all that emotional. 
-- The difference between a shallow question and one that sparks an opportunity for emotional connection is _vulnerability_.
-- Ask them _how_ they're feeling about their life, their experiences, and then follow up with statements/questions that *reveal your own emotions*; **rather than talking about the facts**.
-	- Invite others to share their preferences, beliefs, and values, and to describe experiences that caused them to grow or change.
-> [!info]- Find the common ground
->- Follow up questions should allow self-disclosure without it seeming like self-obsession.
->- Ask people how they feel and reciprocate the vulnerability they share with us.
->- Ask honest questions. and become vulnerable enough to reveal feelings that, if you were lucky, lead to finding common emotional ground.
-#### Connecting amid conflicts
-- Peace is not the absence of conflict, but the ability to cope with it.
-- Work together to determine if there are any "zones of possible agreement," and arrive at a mutual understanding about why this dispute matters, and what's needed for it to end.
-> [!info]- Emotions
-> - We learn why we are fighting by discussing emotions. If we can't talk across our differences, we can't make decisions together.
-> - Emotional intelligence comes from showing someone we have heard their emotions, proving we want to see things from their perspective by ***looping for understanding***.
-> - ==Trying to force someone to listen, or see our side, only inflames the battle.==
-> - When you start to understand each other's stories, that's when you can start talking about what's actually going on.
-- Happy couples tended to focus on controlling themselves, their environment, and the conflict itself.
-- Happy spouses find things they could control ***together***. When you prove to someone you are *listening*, you are, in effect, giving them some control over the conversation. 
-- ***Listening*** means letting someone else tell their story and then, even if you don't agree with them, trying to understand why they feel that way.
-> Find specific points of agreement. Remind everyone that, though we have differences, we want to be ***aligned***.
-
-> [!important] Your goal is to understand, and be understood, rather than to win.
-##### Responding to emotions
-- Repeat back, in your own words, what you heard. Distill another person's thoughts in your own language, show them that you're working hard to see their perspective.
-- We reciprocate vulnerability by:
-	- Looking for what someone needs (comfort, empathy, advice, love,....)
-	- Asking permission (e.g. "Can I share how I've seen others handle this?", "Would it be okay if I told you how your words affect me?",...)
-	- Matching in return (describe honestly how you feel about them/the conversation, being emotionally available, listening to how someone feels and what they need, and sharing our own emotional reactions.) 
-
-### Who are we
-- If a speaker said something that lumped a listener into a group against her or his will, the discussion would likely go south.
-- With anger and alienation, a conversation fell apart.
-- The listener, offended, would become defensive as their sense of self - their identity - was attacked.
-#### Acknowledgement
-- Sometimes just acknowledging someone's experience and feelings can make a big difference. 
-- Just because we're worried about a conversation, that doesn't mean we ought to avoid it.
-- Remind ourselves why this conversation matters and we can diminish our anxieties by acknowledging, to ourselves and others, that these conversations may be awkward at first, but will get easier.
-- Before any challenging conversation, think for a few moments about:
-	- What you hope will happen
-	- Who is the person with the least power (they should speak first)
-	- What might go wrong (and how you will react when it does)
-	- Finally, what are the benefits of this dialogue?
-
-> [!info]- When they talk about their struggles
-> - We must not give in to the temptation to minimize someone's struggles, or try to solve their problems, simply because witnessing their discomfort is so difficult. 
-> - When they talk about something painful, just listen. Don't try to solve or diminish.
-#### Guidelines for hard conversations
-- Talk about boundaries (when you're unsure if something is offensive, ask for their permission).
-- Acknowledge discomfort.
-- We will make mistakes: the aim is ***not** perfection*, but curiosity and understanding.
-- Share *your* experiences and perspective, ==*without* blaming, shaming or attacks==.
-- Confidentiality is important (their secrets will be safe with you).
-- Respect is essential.
-- Sometimes we just need to pause: go slow. Blatant painful/traumatic expressions are the signal to stop.
-> All of us can recognize the sting of exclusion. This commonality, instead of dividing us, can help us empathize.
-#### Keep in mind
-- If you're trying to say the perfect thing, nothing authentic is going to happen.
-- Perfection is not the goal. You're inviting people to participate and learn, to take responsibility for improving things.
-- You have to contribute, rather than just criticize.
-- When we create space to discuss conflicting beliefs, we make connection more likely.
-- Identify emotional goals, practical goals and group goals. Keep acknowledging that discomfort is natural and useful.
-#### During the discussion
-- **Draw out multiple identities**: we all contain multiple selves, none of us is one-dimensional. Ask people about their backgrounds, communities they belong to, and causes they support.
-- **Equal footing**: seek to frame topics so everyone is an expert, or everyone a novice.
-- **Look for genuine similarities**: use common ground to understand each other better. Even if we don't have similarities, simply acknowledging others' experiences - showing you have heard them - can create a sense of oneness. 
-- **Manage your environment**: shift the conversation to what feels safe, and who feels welcomed. When an environment makes someone feel left out, it can determine our sense of security.
-## Happiness
-- Having loving parents made it easier to find happiness as an adult. A lifelong commitment to learning, also provide a leg up.
-- The people who were the most satisfied in their relationships at age 50 were the healthiest (mentally and physically) at age 80.
-> The most important influence, by far, on a flourishing life is love.
-- Happy people engaged in many, many conversations over the years that brought them closer to others.
-> [!important]- What's important
-> - What's important is ***wanting*** to connect, ***wanting*** to understand someone, ***wanting*** to have deep conversations, even when it is hard and scary, or when it would be so much easier to walk away.
-> - Achieving connection - authentic, meaningful connection - is the most important thing in life.
-
-# The Art of Communicating
-- d
-- d
-# Never Split The Difference
-## What negotiation is about
-- It all starts with the universally applicable premise that people want to be understood and accepted.
-- Negotiation serves two distinct, vital life functions - information gathering and behavior influencing.
-- Negotiation is the heart of collaboration. It is what makes conflict potentially meaningful and productive for all parties.
-- You don't need to like it; you just need to understand how the world works.
-- Being right isn't the key to a successful negotiation - having the right mindset is.
-- In this world, ==_you get what you ask for; you just have to ask correctly_==.
-> Just remember, to successfully negotiate it is crucial to prepare.
-
-## Techniques
-### Mirroring
-- Realize this: we engage in selective listening, hearing only what we want to hear, our minds acting on a cognitive bias for consistency rather than truth. 
-- We are easily overwhelmed; everyone just listening to the voice in their head.
-> It begins with listening, making it about other people, validating their emotions, and creating enough trust and safety for a real conversation to begin.
-#### Use your voice
-- When we radiate warmth and acceptance, conversations just seem to flow.
-- You can use your voice to intentionally reach into someone's brain and flip an emotional switch. Use these 3 voices:
-	- The late-night FM DJ voice
-	- The positive/playful voice
-	- The direct or assertive voice
-> [!info]- Chill tf out
->- The key here is to _==relax and smile while you're talking==_. Talking slowly and clearly you convey one idea: _I'm in control._
->- Your attitude is light and encouraging. Create safety by a tone of voice that says _"I'm okay, you're okay, let's figure things out."_
-- We copy each other to comfort each other. It can be done with speech patterns, body language, vocabulary, tempo, and tone of voice.
-	- It's a sign that people are bonding, in sync, and establishing the kind of rapport that leads to trust.
-	- We fear what's different and are drawn to what's similar.
-
-> [!important] How it works
-> - A "mirror" is when you repeat the last three words (or the critical one to three words) of what someone has just said.
-> - For a mirror to be effective, you've got to let it sit there and do its work. _==It needs a bit of silence (at least 4 seconds)==_.
-> - The intention behind most mirrors should be "Please, help me understand."
-
-> When another person's tone of voice or body language is inconsistent with his words, a good mirror can be particularly useful.
-### Labelling or Accusation Audit
-- f
-- f
-### Summarize
-- f
-- f
-### Calibrated Questions
-- f
-- f
-## Preparation
-### The Goal
-- f
-- f
-### Summary
-- f
-- f
-### Labels/Accusation Audit
-- f
-- f
-### Calibrated Questions
-- e
-- c
-### Non-cash Offers
-- f
-- F
-
-# Man's Search For Meaning
-- We can discover this meaning in life in three different ways:
-	1. By creating a work or doing a deed
-	2. By experiencing something or encountering someone
-	3. By the attitude we take toward unavoidable suffering
-## Love
-- Love is the only way to grasp another human being in the innermost core of his personality.
-- The salvation of man is through love and in love.
-## Sufferings
-- Suffering ceases to be suffering at the moment it finds a meaning, such as a meaning of sacrifice.
-- To suffer unnecessarily is masochistic rather than heroic.
-- There is only one thing that I dread: not to be worthy of my sufferings.
-- There was no need to be ashamed of tears, for tears bore witness that a man had the greatest of courage, the courage to suffer.
-## Hope
-- Humor was another of the soul's weapons in the fight of self-preservation.
-- The attempt to develop a sense of humor and to see things in a humorous light is some kind of a trick learned while mastering the art of living.
-- The neurotic who learns to laugh at himself may be on the way to self-management, perhaps to cure.
-- What matters is to make the best of any given situation.
-- Live as if you were living already for the second time and as if you had acted the first time as wrongly as you are about to act now!
-- Happiness cannot be pursued; it must ensue.
-
-## Mindfulness
-- Human being is completely and unavoidably influenced by his surroundings.
-- Every situation is distinguished by its uniqueness, and there is always only one right answer to the problem posed by the situation at hand.
-- No man should judge unless he asks himself in absolute honesty whether in a similar situation he might not have done the same.
-- The sort of person the prisoner became was the result of an inner decision, and not the result of camp influences alone.
-- Instead of possibilities, I have realities in my past, not only the reality of work done and of love loved, but of sufferings bravely suffered.
-- The place of frustrated will to meaning is taken by the will to pleasure. That is why existential frustration often eventuates in sexual compensation.
-- In the past, nothing is irretrievably lost, but rather, on the contrary, everything is irrevocably stored and treasured.
-- Persons facing difficult choices may not fully appreciate how much their own attitude interferes with the decision they need to make or the action they need to take.
-- It did not really matter what we expected from life, but rather what life expected from us.
-- He who has a why to live can bear almost any how.
-- The meaning of your life is to help others find the meaning of theirs.
-# Skin In The Game
-## Responsibility
-- In general, when you hear someone invoking abstract modernistic notions, you can assume that they got some education (but not enough, or in the wrong discipline) and have too little accountability.
-- Freedom entails risks - real skin in the game. Freedom is never free. 
-	- Freedom is always associated with risk taking, whether it leads to it or comes from it.
-	- Being reviewed or assessed by others matters if and only if one is subjected to the judgment of future - not just present - others. 
-- Really successful people say no to almost everything.
-## Society
-- Societies were run by risk takers, not risk transferers.
-	- Bureaucracy is a construction by which a person is conveniently separated from the consequences of his or her actions.
-- Decentralization reduces large structural asymmetries.
-- The curse of modernity is that we are increasingly populated by a class of people who are better at explaining than understanding.
-- What is presented as good for you is not really good for you but certainly good for the other party.
-> Sympathy for all would be tyranny for thee, my good neighbor.
-- What has been lost for the benefit of all must be made up by the contribution of all.
-- The majority rule leads to fluctuations around the average, with a high rate of survival. The minority rule produces low-variance in outcomes.
-- Every organization wants a certain number of people associated with it to be deprived of a certain share of their freedom.
-	- Someone who has been employed for a while is giving you strong evidence of submission.
-	- A slave has more downside. The best slave is someone you overpay and who knows it, terrified of losing his status.
-	- The more you have to lose, the more fragile you are.
-	- Whatever you do, just don't be a dog claiming to be a wolf. 
-- True equality is equality in probability.
-- The wealth process is dominated by winner-take-all effects.
-- When results come from dealing directly with reality rather than through the agency of commentators, image matters less, even if it correlates to skills. 
-- People need to be equal, at least for the purpose of conversation, otherwise it fails. It has to be hierarchy-free and equal in contribution.
-- Verbal threads reveal nothing beyond weakness and unreliability.
-- We are largely collaborative - except when institutions get in the way.
-	- Real people are interested in commonalities and peace, not conflicts and wars.
-- Individual ruin is not as big as a deal as collective ruin.
-	- The point is that my death is never the worst-case scenario unless it correlates to that of others.
-- The fragility of the system's components (provided that they are renewable and replaceable) is required to ensure the solidity of the system as a whole.
-## Risk
-- The same mechanism of transferring risk also impedes learning. 
-- If you do not take risks for your opinion, you are nothing.
-- It is dishonorable to let others die in your stead.
-	- Cutting corners is dishonest.
-- Asymmetry in risk bearing leads to imbalances and, potentially, to systemic ruin.
-	- Skin in the game prevents systems from rotting.
-- Risk taking makes you look superficially less attractive, but vastly more convincing.
-- What matters isn't what a person has or doesn't have; it is what he or she is afraid of losing.
-	- Losing an argument to some lesser person exposes you more than if you lose to some hotshot.
-- If you do not undertake a risk of real harm, reparable or even potentially irreparable, from an adventure, it is not an adventure.
-	- Scars signal skin in the game.
-- In probability, volatility and time are the same.
-- Trades that lose money infrequently are more stable, even if they end up eventually wiping you out.
-- Skin in the game means that you do not pay attention to what people say, only to what they do, and to how much of their necks they are putting on the line.
-- If there is a possibility of ruin, cost-benefit analyses are no longer possible.
-- Volatility is not necessarily risk, and the reverse is also true.
-## Efficacy
-- You want maximal free time, not maximal activity, and you can access your own "success" according to such metrics.
-- Statistics isn't about data but distillation, rigor, and avoiding being fooled by randomness.
-- Most gains in physical strength come from working the tails of the distribution, close to your limit.
-- Avoid mistaking the lurid for the empirical or confusing intensity with frequency.
-## Perception
-- You are rewarded for perception, not results.
-- True intellect should not appear to be intellectual.
-- What looks scientific is usually scientism, not science.
-- Actions that harm you are detectable, if not observable.
-- Our knowledge of the world is fundamentally incomplete, so we need to avoid getting into unanticipated trouble.
-> We do not need to be overly paranoid about ourselves, we need to shift some of our worries to bigger things.
-- Establish a high filter, then pick opportunities that pass such a threshold.
-## Virtue
-- We know with much more clarity what is bad than what is good.
-- Conduct yourself toward your parents as you would have your children conduct themselves toward you.
-- Those who talk should do and only those who do should talk.
-- Skin in the game comes with conflict of interest.
-- To make ethical choices you cannot have dilemmas between the particular (friends, family) and the general.
-> You can define a free person precisely as someone whose fate is not centrally or directly dependent on peer assessment.
-- Stay human, take as much as you can, under the condition that you give more than you take.
-- It is much more immoral to claim virtue without fully living with its direct consequences.
-- If your private life conflicts with your intellectual opinion, it cancels your intellectual ideas, not your private life.
-	- If your private actions do not generalize, then you cannot have general ideas.
-
-> Never engage in rent-seeking.
-- Doing business will always help (because it brings about economic activity without large-scale risky changes in the economy)
-> Courage (risk taking) is the highest virtue. We need entrepreneurs.
-- Courage is when you sacrifice your own well-being for the sake of the survival of a layer higher than yours.
-## Faith
-- The human nature of Christ makes the divine possible for all of us.
-- In science, belief is literal belief; it is right or wrong, never metaphorical. In real life, belief is an instrument to do things, not the end product.
-> How much you truly "believe" in something can be manifested only through what you are willing to risk for it.
-## Rationale
-- By definition, what works cannot be irrational.
-- Most of what is called "irrational" comes from misunderstanding of probability.
-- Very few people understand their own choices, and end up being manipulated by those who want to sell them something.
-- Survival comes first, truth, understanding, and science later.
-- Making some types of errors is the most rational thing to do, when the errors are of little cost, as they lead to discoveries.
-- We do not have enough grounds to discuss "irrational beliefs". We do with irrational actions.
-> Collective rationality might require some individual biases.
-- What is rational is that which allows for survival.
-- Rationality is avoidance of systemic ruin.
-## Misc
-- It is easier to know that something is wrong than to find the fix. Actions that remove are more robust than those that add because addition may have unseen, complicated feedback loops.
-> It is at the foundation of evolution that systems get smart by elimination.
-- What matters in life isn't how frequently one is "right" about outcomes, but how much one makes when one is right.
-- You may be beneficially exposed to rains, but not to floods.
-- The life expectancy of the nonfragile lengthens with time.
-- An addictive substance is like a magical potion that gives remarkable powers to those seeking it, but not those drinking it. 
-- The longer an idea has been around without being falsified, the longer its future life expectancy.
-- Men feel the good less intensely than the bad. The good is not as good as the absence of the bad.
-- If wealth is giving you fewer options instead of more (and more varied) options, you're doing it wrong.
-- A living enemy is worth ten dead ones.
-- Not everything that happens happens for reason, but everything that survives survives for a reason.
-- In order to succeed, you must first survive.
-- A situation is deemed non-ergodic when observed past probabilities do not apply to future processes.
-# Barking Up The Wrong Tree
-- f
-- f
-- f
-# The ONE Thing
-- fg
-- f
-- f
-# IWT
-- f
-- f
-# MDW
-- 
-- 
-# Fear
-- d
-- d
-# Anger
-- f
-- d
-- d
-# Extreme Ownership
-- f
-- f

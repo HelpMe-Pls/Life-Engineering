@@ -10,6 +10,7 @@
 	6. **Response**: Once the service has completed its operations, it returns the result back to the controller. The controller then prepares the response to be sent back to the client.
 	7. **Serialization**: The response data is serialized into the desired format (JSON, XML, etc.) based on the client's request and the response headers are set accordingly.
 	8. **Sending Response**: finally, the serialized response is sent back to the client as an `HTTP` response.
+- Long story short: `Client Request → Middleware → Guards → Interceptors (Before) → Pipes → Controller → Service → Interceptors (After) → Response`
 - There are also **Middleware** (basically the same concepts of middleware in Express, they are used to _==modify the request and response objects==_ _before_ they are passed to the controllers) standing between step 2-3; and **Interceptors** (which wrap the request/response stream, allowing you to implement custom logic both *before and after* the execution of the final route handler) which wraps around step 4-5 and/or 6-7.
 
 ## Concepts

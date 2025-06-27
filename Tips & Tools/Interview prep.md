@@ -8,6 +8,13 @@
 # Before the interview
 - Pay attention to the yearly reports from Adecco, First Alliance, Navigos, Vietnamwork, Talentnet, NodeFlair,... to see where the market is heading, and base your skills on that.
 - Include keywords from job descriptions into your resume. Analyze the job description and determine how important each skill and experience is, then optimize the *frequency* of the keyword according to its importance/relevance.
+
+> [!important] Do your homework
+> - Big companies (with the benefits that you're looking for) always value the "**product mindset**" (i.e. what they're working on). Refer to their JD for this.
+> 	- If you see URLs _about them_ in their emails, they'll almost certainly ask something like "_What do you know **about them**_" kind of questions.
+> - Update your CV with the life cycle duration (start and finish dates), tech stack of each project.
+> 	- You should also have a good grip on the personnel (and their roles) of each project. The interviewer is judging the people & technical complexities that you've been through.
+
 - The interview is all about selling how well you communicate. Be sure that you can answer 2-3 levels deep questions clarifying each and every of your bullet points in your CV. For example, the interviewer may ask 3 questions to clarify this one: "*With an everlasting curiosity and a relentless drive to adapt, I am experienced in modern web development with a strong foundation in web technologies*.":
 	- Give me an experience in your work that highlights your trait of "everlasting curiosity and a relentless drive to adapt".
 	- How does that have anything to do with a strong foundation in web technologies?
@@ -18,7 +25,7 @@
 - [Watch this](https://www.youtube.com/watch?v=IInaPtwdNCQ)
 - If you're unsure whether or not the interview will be technical, ask your recruiting coordinator what position your interviewer holds (or what the interview might cover). An engineer will usually perform a technical interview.
 - You typically do one or two virtual interviews before being brought on-site.
-- [Do your research](https://www.experis.com/en/insights/articles/2021/05/25/20-tips-for-great-job-interviews), figure out what problems their business is trying to solve. Ask for an example of their product, and it'd be great if you can offer *specific* improvements and/or alternate approaches, better yet, mention the trade offs of your suggestions as well (get [refactoring UI](https://www.refactoringui.com/?ref=biblidev.fr))
+- [Do your research](https://www.experis.com/en/insights/articles/2021/05/25/20-tips-for-great-job-interviews), _==figure out what problems their business is trying to solve==_. Ask for an example of their product, and it'd be great if you can offer *specific* improvements and/or alternate approaches, better yet, mention the trade offs of your suggestions as well (get [refactoring UI](https://www.refactoringui.com/?ref=biblidev.fr))
 - Be _extremely_ familiar with the following concepts:
 	- CSS: Specificity, Box model, Layout, Positioning
 	- JS: `this` keyword, Prototypes, closures, Async-style code, Promises, Timers (`setTimeout`, `setInterval`)
@@ -27,10 +34,15 @@
 	- Vanilla JS, or jQuery at the very least. Not all interviews allow you to use React as they want to see mastery of the fundamentals.
 	- [[Networking |Basic]] networking knowledge.
 - Many ***startups*** might post job listings, but for the hottest startups, often *the best way in is through a personal referral*. This reference doesn't necessarily need to be a close friend or a coworker. Often just by reaching out and expressing your interest, you can get someone to pick up your resume to see if you're a good fit.
-- Regardless of the outcome, always ask yourself, did I present myself to the best of my ability? If you did, then there's no reason to keep lingering on it. If you didn't, ask yourself: "What are the things that I learned from this interview that can help me to get better in subsequent interviews?"
+
+> [!important] Don't dwell
+>- Regardless of the outcome, always ask yourself, did I present myself to the best of my ability? 
+>	- If you did, then there's no reason to keep lingering on it. 
+>	- If you didn't, ask yourself: "What are the things that I learned from this interview that can help me to get better in subsequent interviews?"
+
 - Aim for the companies that on the bottom of your list in the first month of applying (i.e. treat them as foreplay for the companies that you *really* want to work at)
 > [!Info]- Good to know
-> - It is recommended to carefully pick your next company once you already have 1+ YoE. It's not just about the benefits that the company offers, you should also have a good sense that the company fits you.
+> - It is recommended to carefully pick your next company once you already have 1+ YoE in your current company. It's not just about the benefits that the company offers, you should also have a good sense that the company fits you.
 > - Make an effort to update your CV and scout for jobs every 6 months and apply selectively, just to see where you're at in the market and to take an opportunity if its tradeoff is good enough.
 > - You should typically stay with a company for 2-3 years before really **hunt** for a new one. It looks better on your CV, and you get to go **all the way** through the life cycle of a project and learn everything that evolved around it.
 > - It is almost a red flag if you change your job too frequently, so consider your time with a company in the "year" unit. 

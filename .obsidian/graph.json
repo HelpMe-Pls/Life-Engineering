@@ -104,6 +104,13 @@
         "a": 1,
         "rgb": 6084269
       }
+    },
+    {
+      "query": "path:Books  ",
+      "color": {
+        "a": 1,
+        "rgb": 16466297
+      }
     }
   ],
   "collapse-display": false,
@@ -116,6 +123,6 @@
   "repelStrength": 12.3736979166667,
   "linkStrength": 1,
   "linkDistance": 342,
-  "scale": 0.38984328011347535,
+  "scale": 0.3898432801134784,
   "close": true
 }
