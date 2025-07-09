@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/zui2xf8v#3yc4gCDdoR39+YtOsnkQT0F5g8OQUBzF9ni5NyJYreM
+share_updated: 2025-07-03T16:58:49+07:00
+---
 - This stage typically last for 1-2 rounds. 
 	1. With the recruiter: briefly introduce your current role, your stack and what are your responsibilities. Maybe some mundane technical questions. 
 	2. With the HR/Engineering Manager: same questions, but deep dive and ask more follow-up questions based on your answers.

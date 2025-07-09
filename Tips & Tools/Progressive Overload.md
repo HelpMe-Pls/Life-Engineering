@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/5t0i7zv3#mTMEnUJJ40T303eSgKs2qMiOettp0c7fc+zBrSBjXn4
+share_updated: 2025-07-03T16:53:30+07:00
+---
 [[Annual Review]]
 [[Self Authoring]]
 

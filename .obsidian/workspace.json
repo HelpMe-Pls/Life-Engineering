@@ -46,16 +46,30 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/CSS/Flex.md",
+                    "file": "Tips & Tools/Screening.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Flex"
+                  "title": "Screening"
                 }
               },
               {
-                "id": "ea1332afce0cbd5f",
+                "id": "a43938905bd9d5f7",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Backend/Databases.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Databases"
+                }
+              },
+              {
+                "id": "ca7f8fe6a8b3c784",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -69,7 +83,7 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 4
           },
           {
             "id": "8cedd05142699eb5",
@@ -148,7 +162,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Object.entries",
+                "query": "Idempotent",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -261,35 +275,35 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "5e05328a3d24fd44",
+  "active": "ca7f8fe6a8b3c784",
   "lastOpenFiles": [
-    "Backend/Backend.md",
-    "Backend/NodeJS/Frameworks.md",
-    "Frontend/CSS/Flex.md",
     "Tips & Tools/System Design.md",
     "Tips & Tools/Progressive Overload.md",
+    "Backend/Databases.md",
+    "Backend/NodeJS/APIs.md",
+    "Tips & Tools/Screening.md",
+    "Backend/NodeJS/Frameworks.md",
+    "Backend/NodeJS/NodeJS.md",
+    "Frontend/JavaScript/Async.md",
+    "Frontend/JavaScript/Callbacks.md",
+    "Frontend/Frameworks/Next.md",
+    "Frontend/CSS/Flex.md",
     "Backend/sql-joins.png",
+    "Backend/Backend.md",
     "Tips & Tools/DSA.md",
     "Frontend/CSS/CSS.md",
     "Frontend/TypeScript/Basic Types.md",
-    "Tips & Tools/Screening.md",
     "Frontend/CSS/Grid.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
     "Frontend/TypeScript/TypeScript.md",
-    "Backend/NodeJS/APIs.md",
-    "Frontend/JavaScript/Async.md",
-    "Backend/NodeJS/NodeJS.md",
     "Frontend/Network/Connections and protocols.md",
     "DevSecOps/Security.md",
     "Frontend/Network/Networking.md",
     "Frontend/Frameworks/Remix/Routing & Navigation.md",
     "Frontend/Frameworks/Remix/Error Handling.md",
-    "Frontend/Frameworks/Next.md",
     "Frontend/CSS/Responsive.md",
     "Frontend/CSS/Positioning.md",
     "Frontend/CSS/Flow layout.md",
-    "Tips & Tools/Interview prep.md",
-    "Books/Never Split The Difference.md",
     "Books",
     "Tips & Tools/OnePersonBusiness.png",
     "Frontend/Network/SW life cycle.png",

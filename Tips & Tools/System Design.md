@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/nkj7vl6q#ut0xNlCm8bEEN2hB3dv2a4I3ipOCl/ui6fH1pzzOZIQ
+share_updated: 2025-07-03T16:58:21+07:00
+---
 - Check [this](https://gist.github.com/vasanthk/485d1c25737e8e72759f)out.
 - [This](https://github.com/checkcheckzz/system-design-interview) also.
 - Guidelines to follow:

@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/ji1mjbbp#ylnxdyisJq1hE/VwV1ZMfPFyLasLWcikKuMRG4+Nv4Q
+share_updated: 2025-07-03T16:52:00+07:00
+---
 # NestJS
 
 ## Overview
