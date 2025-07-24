@@ -535,8 +535,12 @@ async create(@Body() newCat: CreateCatDto) {
 
 ### Interceptors
 - An interceptor is a class annotated with the `@Injectable()` decorator _**and**_ implements the `NestInterceptor` interface.
-- Use it to bind extra logic before / after method execution, *transform* the result returned from a function, extend or override a function.
-	- Common use cases are response transformation, caching, logging.
+- Use it to bind extra logic before / after method execution, *transform* the result returned from a function, extend or override a function. Common use cases:
+	- **Before** `Controller`: caching lookups (check an in-memory/Redis cache before hitting the service) or enforcing timeouts (`TimeoutInterceptor`)
+	- **After** `Controller`:
+		- Wrapping every response in a standard envelope (e.g. `{ status, data, error }`)
+		- Final logging of response status and timing
+		- Global error mapping or enrichment
 - Examples:
 ```ts
 //----------------- exclude-null.interceptor.ts

@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Frontend/TypeScript/Basic Types.md",
+                    "file": "Backend/NodeJS/Frameworks.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Basic Types"
+                  "title": "Frameworks"
                 }
               },
               {
@@ -262,6 +262,8 @@
   },
   "active": "a90d73df7a4ad379",
   "lastOpenFiles": [
+    "Backend/NodeJS/NodeJS.md",
+    "Frontend/TypeScript/Basic Types.md",
     "Frontend/TypeScript/TypeScript.md",
     "Tips & Tools/Screening.md",
     "Tips & Tools/System Design.md",
@@ -274,7 +276,6 @@
     "Tips & Tools/DSA.md",
     "Backend/NodeJS/APIs.md",
     "Backend/NodeJS/Frameworks.md",
-    "Backend/NodeJS/NodeJS.md",
     "Frontend/JavaScript/Async.md",
     "Frontend/JavaScript/Callbacks.md",
     "Frontend/Frameworks/Next.md",
@@ -282,7 +283,6 @@
     "Backend/sql-joins.png",
     "Backend/Backend.md",
     "Frontend/CSS/CSS.md",
-    "Frontend/TypeScript/Basic Types.md",
     "Frontend/CSS/Grid.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
     "Frontend/Network/Networking.md",
