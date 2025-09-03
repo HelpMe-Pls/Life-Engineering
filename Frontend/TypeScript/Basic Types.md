@@ -450,7 +450,8 @@ type Direction = typeof ObjAsEnum[keyof typeof ObjAsEnum];
 function run(dir: Direction) {}
 run(ObjAsEnum.Right);  // valid
 ```
-- Multiple `enum`s with the exact same value are still independent from each other:
+
+- Multiple `enum`s with the exact same value are still _independent_ from each other:
 ```ts
 enum Method {
   GET = "GET",
@@ -467,10 +468,10 @@ enum AnotherMethod {
     PUT = "PUT",
     DELETE = "DELETE",
   }
-  request(
+request(
     "https://example.com",
-    Method2.GET, // Error: Argument of type 'Method2.GET' is not assignable to parameter of type 'Method'.
-  );
+    AnotherMethod.GET, // Error: Argument of type 'AnotherMethod.GET' is not assignable to parameter of type 'Method'.
+);
 ```
 # Utility types
 - Note that these are types, not interfaces, so you must declare them with `type`

@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Backend/NodeJS/Frameworks.md",
+                    "file": "Frontend/CSS/CSS.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Frameworks"
+                  "title": "CSS"
                 }
               },
               {
@@ -147,7 +147,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "websocket",
+                "query": "enum",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -262,10 +262,12 @@
   },
   "active": "a90d73df7a4ad379",
   "lastOpenFiles": [
-    "Backend/NodeJS/NodeJS.md",
     "Frontend/TypeScript/Basic Types.md",
-    "Frontend/TypeScript/TypeScript.md",
     "Tips & Tools/Screening.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Backend/NodeJS/Frameworks.md",
+    "Backend/NodeJS/NodeJS.md",
+    "Frontend/TypeScript/TypeScript.md",
     "Tips & Tools/System Design.md",
     "Tips & Tools/Tools & Util libs.md",
     "Frontend/Network/Browser.md",
@@ -275,7 +277,6 @@
     "DevSecOps/Security.md",
     "Tips & Tools/DSA.md",
     "Backend/NodeJS/APIs.md",
-    "Backend/NodeJS/Frameworks.md",
     "Frontend/JavaScript/Async.md",
     "Frontend/JavaScript/Callbacks.md",
     "Frontend/Frameworks/Next.md",
@@ -284,7 +285,6 @@
     "Backend/Backend.md",
     "Frontend/CSS/CSS.md",
     "Frontend/CSS/Grid.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
     "Frontend/Network/Networking.md",
     "Frontend/Frameworks/Remix/Routing & Navigation.md",
     "Frontend/Frameworks/Remix/Error Handling.md",
