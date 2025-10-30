@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/English grammar.md",
+                    "file": "Tips & Tools/Tools & Util libs.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "English grammar"
+                  "title": "Tools & Util libs"
                 }
               },
               {
@@ -39,8 +39,23 @@
                   "icon": "lucide-file",
                   "title": "Extreme Ownership"
                 }
+              },
+              {
+                "id": "4b3d6c27b099ba42",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Tips & Tools/Weekly Tasks.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Weekly Tasks"
+                }
               }
-            ]
+            ],
+            "currentTab": 2
           },
           {
             "id": "8cedd05142699eb5",
@@ -233,12 +248,17 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "a90d73df7a4ad379",
+  "active": "4b3d6c27b099ba42",
   "lastOpenFiles": [
-    "Extreme Ownership.md",
-    "Books/Books.md",
-    "Tips & Tools/English grammar.md",
+    "Tips & Tools/Annual Review.md",
+    "Tips & Tools/Tips & Tools.md",
     "Tips & Tools/Tools & Util libs.md",
+    "Tips & Tools/Weekly Tasks.md",
+    "Tips & Tools/Tips.md",
+    "Books/Never Split The Difference.md",
+    "Tips & Tools/English grammar.md",
+    "Books/Extreme Ownership.md",
+    "Books/Books.md",
     "Tips & Tools/Screening.md",
     "Frontend/CSS/CSS.md",
     "Frontend/TypeScript/Basic Types.md",
@@ -256,12 +276,7 @@
     "Backend/NodeJS/APIs.md",
     "Frontend/JavaScript/Async.md",
     "Frontend/JavaScript/Callbacks.md",
-    "Frontend/Frameworks/Next.md",
-    "Frontend/CSS/Flex.md",
     "Backend/sql-joins.png",
-    "Backend/Backend.md",
-    "Frontend/CSS/Grid.md",
-    "Frontend/Network/Networking.md",
     "Books",
     "Tips & Tools/OnePersonBusiness.png",
     "Frontend/Network/SW life cycle.png",
