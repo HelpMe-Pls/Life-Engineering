@@ -1,25 +1,26 @@
-### 27/10: 
-- HubSpot meeting
-- TF UPDATE/DELETE tags
-- Remind Mac offer
-### 28/10: 	
-- Markdown Bullet points
-- Record Sprint Review
-### 29/10: 	
-- Sprint Review + Planning
-### 30/10: 
+### 10/11: 
 - MVP++
-- Lark btn
-- EO Meeting
-### 31/10: 	
+- Md table
+### 11/11: 	
+- HubSpot (sprint review & 1-1)
+- Shopee
+- Lark columns
+- Record sprint review
+### 12/11: 	
 - MVP++
-- Haircut
-### 1/11: 
+- Sprint review
+### 13/11: 
+- MVP++
+- Sprint planning
+### 14/11: 	
+- MVP++
+- Remind laptop
+### 15/11: 
 - 1k @2:06
 - PG2
 - Groceries
-- 330PM MVP++
-- Dinner
-### 2/11:
+- Scout kbd
+### 16/11:
 - Breakfast
 - English 
+- Scout laptops
