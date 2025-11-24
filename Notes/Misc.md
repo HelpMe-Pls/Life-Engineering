@@ -1,0 +1,13 @@
+Ask Duong:
+- What's the hardest task that you had so far in this team?
+- Time management? Walk me through your typical day.
+- Tell me about the mobile version of the TF app. Did you rewrite the entire thing in Flutter?
+- What's the hardest part about being an indie dev?
+- How do you manage payments in your app?
+- Is it true that the main reason you're working here is for the stable income so that you can focus on your ultimate goal which is to be an indie dev? Why?
+- I chose indie hacking to keep myself from burning out
+- Is this the best job that you had so far? How's it gonna be in the next 6 months?
+- You've been here for almost a year now. So when you leave the team, what could be the reason?
+- Are there any particular things that you're looking for at your upcoming workplace?
+- Is there any tradeoff that you take to get to where you at rn?
+- Any questions?
