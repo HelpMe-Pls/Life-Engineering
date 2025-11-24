@@ -109,7 +109,14 @@
       "query": "path:Books  ",
       "color": {
         "a": 1,
-        "rgb": 16466297
+        "rgb": 19891
+      }
+    },
+    {
+      "query": "path:Notes  ",
+      "color": {
+        "a": 1,
+        "rgb": 15597823
       }
     }
   ],
@@ -123,6 +130,6 @@
   "repelStrength": 12.3736979166667,
   "linkStrength": 1,
   "linkDistance": 342,
-  "scale": 0.3898432801134784,
+  "scale": 0.10090651076025423,
   "close": true
 }
