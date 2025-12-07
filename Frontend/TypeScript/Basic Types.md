@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/5zzxiphi#yc+JF2UWtJ4PgztADAphaKqq9Di+etdZdJ+g08yw1aw
+share_updated: 2025-11-28T17:16:51+07:00
+---
 # Interface vs Types
 - You should ***use types by default*** _until_ you need a specific feature of interfaces, like `extends` (i.e. when you're working *with **objects** that **inherit*** from each other):
 ```ts

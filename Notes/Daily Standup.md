@@ -1,5 +1,6 @@
-- Thanks, `name`. Good morning everyone. Uhm, last week I was working with Dave to wrap up the HubSpot data issues that we're having for EOVN.
-- For today I'll wrap up the remaining tasks of this sprint to get ready for tomorrow's sprint review. 
+- Thanks, `name`. Good morning everyone. So, yesterday I spent most of my time reviewing Trac's PR and figuring out how to integrate the end-to-end authentication flow with NextJS proxy route.
+- So for today I'm gonna keep working on that and hopefully get the login feature working.
 ---
 
-- I'm gonna try to cleanup the code a bit, but for the most part I think I'll be focusing on HubSpot automation unless something urgent pops up.
+
+

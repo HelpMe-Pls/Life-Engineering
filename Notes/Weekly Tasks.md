@@ -8,38 +8,25 @@
 - Read books from 8-9PM
 - Hit the bed by 930PM
 - Rinse & repeat
-### 24/11: 
-- PTO
-- Setup Mac
-	- Lark
-	- Chrome & Firefox dev
-	- Personal AI accounts
-	- fnm
-	- bun
-	- NodeJS
-	- vscode profile
-	- Github logins & user config
-	- Docker (via Orbstack)
-	- Obsidian
-	- Ytb login
-- Ask for AI hero sponsor
-### 25/11: 	
-- n8n
-- HubSpot Annual Revenue form
-- Team catchup
-### 26/11: 	
-- Sprint review + planning
-- Ask for paid AI accounts access
-- Run TF locally (both be & fe)
-### 27/11: 
-- Planning
+### 8/12: 
+- HubSpot meeting
+### 9/12: 	
+- HubSpot++
+- 1-1 with Trac
+- Prepare for sprint review 
+### 10/12: 	
+- Sprint review
+### 11/12: 
+- Military health check
+- Contingencies
+### 12/12: 	
 - MVP++
-### 28/11: 	
-- MVP++
-- HubSpot check-in
-### 29/11: 
+- Haircut
+- LA trip
+### 13/12: 
+- Wedding
 - 1k @2:06
-- Black Friday shopping
-### 30/11:
+### 14/12:
 - English speaking
 - Planning
+- MVP++
