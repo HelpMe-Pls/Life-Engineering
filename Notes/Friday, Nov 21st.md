@@ -9,6 +9,7 @@
 > 	- dru@tictag.io: Applicant → Lead
 > 	- Customer → Member (many types?)
 > 	- Elumni → ??
+> - Kanban board 
 > - Emails (cluster fuck that has forms but no submissions saved)
 > - Annual Revenue form submission?
 > - Automation

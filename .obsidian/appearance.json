@@ -1,7 +1,7 @@
 {
   "baseFontSize": 15,
   "translucency": true,
-  "theme": "system",
+  "theme": "obsidian",
   "cssTheme": "Dark Moss",
-  "accentColor": "#1fff6d"
+  "accentColor": "#01f411"
 }

@@ -40,7 +40,7 @@ var require_manifest = __commonJS({
     module2.exports = {
       id: "share-note",
       name: "Share Note",
-      version: "1.2.0",
+      version: "1.2.2",
       minAppVersion: "0.15.0",
       description: "Instantly share a note, with the full theme and content exactly like you see in Reading View. Data is shared encrypted by default, and only you and the person you send it to have the key.",
       author: "Alan Grainger",
@@ -1031,6 +1031,7 @@ var DEFAULT_SETTINGS = {
   titleSource: 0 /* Note title */,
   removeYaml: true,
   removeBacklinksFooter: true,
+  removeElements: "",
   expiry: "",
   clipboard: true,
   shareUnencrypted: false,
@@ -1070,7 +1071,6 @@ var ShareSettingsTab = class extends import_obsidian.PluginSettingTab {
       toggle.setValue(this.plugin.settings.clipboard).onChange(async (value) => {
         this.plugin.settings.clipboard = value;
         await this.plugin.saveSettings();
-        this.display();
       });
     });
     new import_obsidian.Setting(containerEl).setName("Note options").setHeading();
@@ -1099,21 +1099,24 @@ var ShareSettingsTab = class extends import_obsidian.PluginSettingTab {
       toggle.setValue(this.plugin.settings.removeYaml).onChange(async (value) => {
         this.plugin.settings.removeYaml = value;
         await this.plugin.saveSettings();
-        this.display();
       });
     });
     new import_obsidian.Setting(containerEl).setName("Remove backlinks footer").setDesc("Remove backlinks footer from the shared note").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.removeBacklinksFooter).onChange(async (value) => {
         this.plugin.settings.removeBacklinksFooter = value;
         await this.plugin.saveSettings();
-        this.display();
+      });
+    });
+    new import_obsidian.Setting(containerEl).setName("Remove custom elements").setDesc("Remove elements before sharing by targeting them with CSS selectors. One selector per line.").addTextArea((text) => {
+      text.setPlaceholder("div.class-to-remove").setValue(this.plugin.settings.removeElements).onChange(async (value) => {
+        this.plugin.settings.removeElements = value;
+        await this.plugin.saveSettings();
       });
     });
     new import_obsidian.Setting(containerEl).setName("Share as encrypted by default").setDesc("If you turn this off, you can enable encryption for individual notes by adding a `share_encrypted` checkbox into a note and ticking it.").addToggle((toggle) => {
       toggle.setValue(!this.plugin.settings.shareUnencrypted).onChange(async (value) => {
         this.plugin.settings.shareUnencrypted = !value;
         await this.plugin.saveSettings();
-        this.display();
       });
     }).then((setting) => addDocs(setting, "https://docs.note.sx/notes/encryption"));
     new import_obsidian.Setting(containerEl).setName("Default note expiry").setDesc("If you want, your notes can auto-delete themselves after a period of time. You can set this as a default for all notes here, or you can set it on a per-note basis.").addText((text) => text.setValue(this.plugin.settings.expiry).onChange(async (value) => {
@@ -1262,9 +1265,8 @@ var StatusMessage = class extends import_obsidian2.Notice {
     var _a;
     const messageDoc = new DocumentFragment();
     const icon = ((_a = statuses[type]) == null ? void 0 : _a.icon) || "";
-    const messageEl = messageDoc.createEl("div", {
-      text: `${icon}${pluginName}: ${text}`
-    });
+    const messageEl = messageDoc.createEl("div");
+    messageEl.innerHTML = `${icon}${pluginName}: ${text}`;
     super(messageDoc, duration);
     if (messageEl.parentElement) {
       if (statuses[type]) {
@@ -14917,9 +14919,8 @@ var Note = class {
       }
       el.replaceWith(el.innerText);
     }
-    for (const el of this.contentDom.querySelectorAll("a.external-link")) {
-      el.removeAttribute("target");
-    }
+    this.contentDom.querySelectorAll("a.external-link").forEach((el) => el.removeAttribute("target"));
+    this.plugin.settings.removeElements.split("\n").map((s2) => s2.trim()).filter(Boolean).forEach((selector2) => this.contentDom.querySelectorAll(selector2).forEach((el) => el.remove()));
     this.expiration = this.getExpiration();
     const uploadResult = await this.processMedia();
     this.cssResult = uploadResult.css;
@@ -14993,7 +14994,7 @@ var Note = class {
       }
     }
     this.status.hide();
-    new StatusMessage(shareMessage, 3 /* Success */);
+    new StatusMessage(shareMessage + `<br><br><a href="${shareLink}">\u2197\uFE0F Open shared note</a>`, 3 /* Success */, 6e3);
   }
   /**
    * Upload media attachments
