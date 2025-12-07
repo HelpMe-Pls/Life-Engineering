@@ -1,1 +1,1 @@
-[[Friday, Nov 21st]]
+[[EO]]

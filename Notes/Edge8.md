@@ -5,7 +5,7 @@
 > Focus on internal automations if you want promotion.
 # Notes
 [[Daily Standup]]
-[[HubSpot]]
+[[EO]
 [[TF]]
 [[Scripts]]
 [[Brag Doc]]

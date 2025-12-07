@@ -14,8 +14,10 @@
 - HubSpot++
 - 1-1 with Trac
 - Prepare for sprint review 
+- Dinner
 ### 10/12: 	
 - Sprint review
+- Dinner
 ### 11/12: 
 - Military health check
 - Contingencies
