@@ -14,7 +14,27 @@
 > - Automation
 ----
 # Monday, Dec 8th, 2025
-- Are you aware of the EO Podcast on Ytb? I mean this channel. At first I thought it was ours, but as I took a closer look, it turned out to be Entrepreneur & Opportunities, not Organization.
-	- I mean, I just wanna say that for a guy like me who's already interested in entrepreneurship, my experience is that this channel got my attention on social media first, not our EO thing. 
-	- So, what's your take? How can we stand out and make a distinction so that people are clear that we're fundamentally different from them?
-- You told me that I only need to spend like 20% of my time on this HubSpot stuff, but given the load ahead, fine if I clue in the engineering team know that I'm gonna spend more time on this? Like 50/50? 
+- All-in on this HubSpot thing until Dave finds more experts
+- Dave's dog named `Nah`
+- Notes: https://docs.google.com/document/d/1QxnWTzkjVTL9ee__1kfqVF7ApBA0caQkBPKhaSVQP-s/edit?pli=1&tab=t.44mngk70agp#heading=h.nd5u94qfzzza
+## Events
+- Build workflows for the first 2 stages: https://app-na2.hubspot.com/contacts/243769902/objects/0-3/views/all/board
+### Sync these
+- Wix event signups to HubSpot
+- Survey submissions to HubSpot
+## Funnels
+- Some of the records not showed up in the `Prospect` funnel (i.e. they're like 30 sth but only a handful of them showed up): https://app-na2.hubspot.com/contacts/243769902/objects/0-3/views/all/board  --> The corresponding [report](https://app-na2.hubspot.com/reports-list/243769902/231590198/) doesn't work for the `Paid` stage (3 in the pipeline but none in the report)
+- Rise || Podcast --> Prospect.
+## Leads
+- SQL: Rise || Podcast
+- Opportunity == Deal
+- Active Leads should not have Members
+## Workflows
+- https://docs.google.com/document/d/1QxnWTzkjVTL9ee__1kfqVF7ApBA0caQkBPKhaSVQP-s/edit?pli=1&tab=t.fl2wzaws6jjb
+- Audit the existing workflows: 
+	- Rename them to follow a better convention
+	- Update the corresponding Lead statuses
+- ==Rise funnel==: 2 workflows (if we already have their numbers --> create a task for Arlene to call them)
+	- If we don't have their phone numbers: ask for their number in the email
+	- If they don't response after 3 attempts -> update their Lead status to `Connected` or `Attempted...`
+- What we ultimately want: Leads -> Prospect -> Member or not

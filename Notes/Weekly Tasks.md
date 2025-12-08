@@ -13,7 +13,6 @@
 ### 9/12: 	
 - HubSpot++
 - 1-1 with Trac
-- Prepare for sprint review 
 - Dinner
 ### 10/12: 	
 - Sprint review

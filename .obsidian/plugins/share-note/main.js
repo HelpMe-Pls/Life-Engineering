@@ -40,7 +40,7 @@ var require_manifest = __commonJS({
     module2.exports = {
       id: "share-note",
       name: "Share Note",
-      version: "1.2.2",
+      version: "1.3.0",
       minAppVersion: "0.15.0",
       description: "Instantly share a note, with the full theme and content exactly like you see in Reading View. Data is shared encrypted by default, and only you and the person you send it to have the key.",
       author: "Alan Grainger",
@@ -1169,7 +1169,7 @@ function arrayBufferToBase64(buffer) {
   return window.btoa(binary);
 }
 function base64ToArrayBuffer(base64) {
-  return Uint8Array.from(window.atob(base64), (c2) => c2.charCodeAt(0));
+  return Uint8Array.from(window.atob(base64), (c2) => c2.charCodeAt(0)).buffer;
 }
 function _getAesGcmKey(secret) {
   return window.crypto.subtle.importKey(
@@ -1188,7 +1188,7 @@ async function encryptString(plaintext, existingKey) {
   if (existingKey) {
     key = base64ToArrayBuffer(existingKey);
   } else {
-    key = await _generateKey(window.crypto.getRandomValues(new Uint8Array(64)));
+    key = await _generateKey(window.crypto.getRandomValues(new Uint8Array(64)).buffer);
   }
   const aesKey = await _getAesGcmKey(key);
   const ciphertext = [];
@@ -14807,7 +14807,9 @@ var Note = class {
     this.status = new StatusMessage("If this message is showing, please do not change to another note as the current note data is still being parsed.", 0 /* Default */, 60 * 1e3);
     const startMode = this.leaf.getViewState();
     const previewMode = this.leaf.getViewState();
-    previewMode.state.mode = "preview";
+    if (previewMode.state) {
+      previewMode.state.mode = "preview";
+    }
     await this.leaf.setViewState(previewMode);
     await new Promise((resolve) => setTimeout(resolve, 40));
     this.leaf.view.previewMode.applyScroll(0);
@@ -15005,20 +15007,35 @@ var Note = class {
     for (const el of this.contentDom.querySelectorAll(elements.join(","))) {
       const src = el.getAttribute("src");
       if (!src) continue;
+      let content, filetype;
       if (src.startsWith("http") && !src.match(/^https?:\/\/localhost/)) {
         continue;
       }
-      let content;
-      try {
-        const res = await fetch(src);
-        if (res && res.status === 200) {
-          content = await res.arrayBuffer();
+      const filesource = el.getAttribute("filesource");
+      if (filesource == null ? void 0 : filesource.match(/excalidraw/i)) {
+        console.log("Processing Excalidraw drawing...");
+        try {
+          const excalidraw = this.plugin.app.plugins.getPlugin("obsidian-excalidraw-plugin");
+          if (!excalidraw) continue;
+          content = await excalidraw.ea.createSVG(filesource);
+          content = content.outerHTML;
+          filetype = "svg";
+        } catch (e2) {
+          console.error("Unable to process Excalidraw drawing:");
+          console.error(e2);
         }
-      } catch (e2) {
-        continue;
+      } else {
+        try {
+          const res = await fetch(src);
+          if (res && res.status === 200) {
+            content = await res.arrayBuffer();
+            const parsed = new URL(src);
+            filetype = parsed.pathname.split(".").pop();
+          }
+        } catch (e2) {
+          continue;
+        }
       }
-      const parsed = new URL(src);
-      const filetype = parsed.pathname.split(".").pop();
       if (filetype && content) {
         const hash = await sha1(content);
         await this.plugin.api.queueUpload({
