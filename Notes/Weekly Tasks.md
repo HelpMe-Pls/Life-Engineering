@@ -8,26 +8,22 @@
 - Read books from 8-9PM
 - Hit the bed by 930PM
 - Rinse & repeat
-### 8/12: 
+### 15/12: 
 - HubSpot meeting
-### 9/12: 	
+### 16/12: 	
 - HubSpot++
-- 1-1 with Trac
-- Dinner
-### 10/12: 	
-- Sprint review
-- Dinner
-### 11/12: 
-- Military health check
-- Contingencies
-### 12/12: 	
+### 17/12: 	
 - MVP++
-- Haircut
-- LA trip
-### 13/12: 
-- Wedding
+- HubSpot++
+### 18/12: 
+- Contingencies
+- MVP++
+### 19/12: 	
+- MVP++
+### 20/12: 
 - 1k @2:06
-### 14/12:
+- Groceries
+### 11/12:
 - English speaking
 - Planning
 - MVP++

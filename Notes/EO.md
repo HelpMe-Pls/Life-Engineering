@@ -38,3 +38,4 @@
 	- If we don't have their phone numbers: ask for their number in the email
 	- If they don't response after 3 attempts -> update their Lead status to `Connected` or `Attempted...`
 - What we ultimately want: Leads -> Prospect -> Member or not
+---

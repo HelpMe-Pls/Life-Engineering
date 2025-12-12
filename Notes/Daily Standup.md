@@ -1,6 +1,3 @@
-- Thanks, `name`. Good morning everyone. So, yesterday I spent most of my time on a meeting with Dave and Thành to figure out what we're gonna do for the upcoming stages of EOVN.
-- So for today I'm gonna working on auditing the existing workflows and create new workflows for the Rise funnel.
+- Thanks, `name`. Good morning everyone. Last Friday I set up the general lead workflow for EOVN to create a new deal when a contact’s lifecycle stage is set to Opportunity, and categorized the existing workflows to filter out the ones that we're actually using.
+- So for today I’ll work with Thành to document what we've got so far and also discuss how we should use HubSpot with best practices so that we don't make the same mistakes that we had. 
 ---
-
-
-

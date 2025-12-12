@@ -46,15 +46,16 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/EO.md",
+                    "file": "Tips & Tools/English grammar.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "EO"
+                  "title": "English grammar"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -247,13 +248,14 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "478413438be88e10",
+  "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
-    "Notes/Weekly Tasks.md",
+    "Tips & Tools/English grammar.md",
+    "Tips & Tools/English vocab.md",
     "Notes/EO.md",
+    "Notes/Weekly Tasks.md",
     "Notes/Daily Standup.md",
     "Notes/Edge8.md",
-    "Tips & Tools/English grammar.md",
     "Tips & Tools/Entrepreneurship.md",
     "Notes/Notes.md",
     "Notes/HubSpot.md",
@@ -275,7 +277,6 @@
     "Notes",
     "Books/Never Split The Difference.md",
     "Tips & Tools/Tools & Util libs.md",
-    "Tips & Tools/Tips.md",
     "Backend/sql-joins.png",
     "Books",
     "Tips & Tools/OnePersonBusiness.png",
