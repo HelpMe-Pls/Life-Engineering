@@ -1,3 +1,3 @@
-- Thanks, `name`. Good morning everyone. Last Friday I set up the general lead workflow for EOVN to create a new deal when a contact’s lifecycle stage is set to Opportunity, and categorized the existing workflows to filter out the ones that we're actually using.
-- So for today I’ll work with Thành to document what we've got so far and also discuss how we should use HubSpot with best practices so that we don't make the same mistakes that we had. 
+- Thanks, `name`. Yesterday I created the Regional Base Instance Pilot document to create a list of items that we can update right away for EOVN to prepare for Queensland and Bangkok rollouts.
+- So for today I'll be working on those tasks that Dave confirmed in the docs.
 ---

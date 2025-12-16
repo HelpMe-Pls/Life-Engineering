@@ -54,8 +54,7 @@
                   "title": "English grammar"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "8cedd05142699eb5",
@@ -248,20 +247,20 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "8e81d5625c66b75e",
+  "active": "478413438be88e10",
   "lastOpenFiles": [
+    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Notes/Daily Standup.md",
     "Tips & Tools/English grammar.md",
+    "Notes/Weekly Tasks.md",
     "Tips & Tools/English vocab.md",
     "Notes/EO.md",
-    "Notes/Weekly Tasks.md",
-    "Notes/Daily Standup.md",
     "Notes/Edge8.md",
     "Tips & Tools/Entrepreneurship.md",
     "Notes/Notes.md",
     "Notes/HubSpot.md",
     "Notes/Brag Doc.md",
     "Frontend/TypeScript/Basic Types.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
     "Frontend/Frameworks/Next.md",
     "Notes/Contingencies.md",
     "Notes/Automation.md",
