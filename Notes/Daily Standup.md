@@ -1,3 +1,3 @@
-- Thanks, `name`. Yesterday I created the Regional Base Instance Pilot document to create a list of items that we can update right away for EOVN to prepare for Queensland and Bangkok rollouts.
+- Thanks, `name`. Good morning everyone. Yesterday I created the Regional Base Instance Pilot document to create a list of items that we can update right away for EOVN to prepare for Queensland and Bangkok rollouts.
 - So for today I'll be working on those tasks that Dave confirmed in the docs.
 ---

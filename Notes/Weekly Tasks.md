@@ -13,10 +13,9 @@
 ### 16/12: 	
 - HubSpot++
 ### 17/12: 	
-- MVP++
 - HubSpot++
 ### 18/12: 
-- Contingencies
+- Offline meeting
 - MVP++
 ### 19/12: 	
 - MVP++
