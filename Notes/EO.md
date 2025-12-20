@@ -40,6 +40,6 @@
 - What we ultimately want: Leads -> Prospect -> Member or not
 ---
 # Thursday, Dec 18th, 2025
-[Growth Shared Services – APAC Implementation Plan - Google Docs](https://docs.google.com/document/d/1QxnWTzkjVTL9ee__1kfqVF7ApBA0caQkBPKhaSVQP-s/edit?pli=1&tab=t.nvxbqpqgbecb)
-[‍‬‍​‍‌‬​​​‌﻿‍⁠‌​​​​​⁠​​‌‌​‬​​‍​​﻿​⁠​​​‬​⁠⁠‬​​​‌‬​​EOVN HubSpot Base Instance Action Plan - Lark Docs](https://edge8company.sg.larksuite.com/wiki/SHHpwHjVdiXw4SkgVTml4LXWg4g)
-[‌⁠​‍​‍﻿​​‌‬‍﻿﻿⁠﻿﻿‬‬​‍⁠​​‬﻿​​⁠‬​‍﻿﻿﻿﻿⁠​⁠​‍​‌‌​​‌​‌​EO - Tasks - Lark Docs](https://edge8company.sg.larksuite.com/base/Y7iYbXiqba9taisYJFLlZ4vFgue?table=tblyddf12zQaGIJ2&view=vewZP3yo9U)
+- Clean up the properties/pipelines
+- Rename the existing workflow
+- Build new workflows with the new properties.

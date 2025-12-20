@@ -1,3 +1,4 @@
-- Thanks, `name`. Good morning everyone. Yesterday I created the Regional Base Instance Pilot document to create a list of items that we can update right away for EOVN to prepare for Queensland and Bangkok rollouts.
-- So for today I'll be working on those tasks that Dave confirmed in the docs.
+- Thanks, `name`. Good morning everyone. Last Friday I updated the existing pipelines and workflows to align with the new props.
+- So for today I'll keep iterating on the remaining tasks and build the rest of the workflows for EO Membership.
 ---
+- Bump the `rows` in `CourseSettings.tsx` to `12`

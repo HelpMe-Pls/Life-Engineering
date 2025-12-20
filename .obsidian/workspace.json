@@ -54,8 +54,7 @@
                   "title": "EO"
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           },
           {
             "id": "8cedd05142699eb5",
@@ -248,14 +247,14 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "a90d73df7a4ad379",
+  "active": "478413438be88e10",
   "lastOpenFiles": [
-    "Tips & Tools/English grammar.md",
     "Notes/Weekly Tasks.md",
-    "Notes/Daily Standup.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
-    "Tips & Tools/English vocab.md",
     "Notes/EO.md",
+    "Notes/Daily Standup.md",
+    "Tips & Tools/English grammar.md",
+    "Tips & Tools/English vocab.md",
     "Notes/Edge8.md",
     "Tips & Tools/Entrepreneurship.md",
     "Notes/Notes.md",

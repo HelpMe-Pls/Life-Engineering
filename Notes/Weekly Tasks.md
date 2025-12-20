@@ -18,10 +18,12 @@
 - Offline meeting
 - MVP++
 ### 19/12: 	
+- HubSpot clean up
 - MVP++
 ### 20/12: 
 - 1k @2:06
 - Groceries
+- MVP: Resolve UI issues
 ### 11/12:
 - English speaking
 - Planning
