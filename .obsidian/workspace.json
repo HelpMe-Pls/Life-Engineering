@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/Daily Standup.md",
+                    "file": "Books/Never Split The Difference.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Daily Standup"
+                  "title": "Never Split The Difference"
                 }
               },
               {
@@ -46,15 +46,16 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/EO.md",
+                    "file": "Notes/Daily Standup.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "EO"
+                  "title": "Daily Standup"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -158,7 +159,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 215.5
+    "width": 227.5
   },
   "right": {
     "id": "82a9e7d6600420b4",
@@ -247,13 +248,16 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "478413438be88e10",
+  "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
-    "Notes/Weekly Tasks.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
-    "Notes/EO.md",
+    "Books/Never Split The Difference.md",
     "Notes/Daily Standup.md",
+    "Notes/Weekly Tasks.md",
     "Tips & Tools/English grammar.md",
+    "Books/Books.md",
+    "Tips & Tools/Tips & Tools.md",
+    "Notes/EO.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
     "Tips & Tools/English vocab.md",
     "Notes/Edge8.md",
     "Tips & Tools/Entrepreneurship.md",
@@ -267,15 +271,12 @@
     "Notes/Hackathon.md",
     "Notes/E-learning MVP.md",
     "Notes/2025.md",
-    "Tips & Tools/Tips & Tools.md",
     "Tips & Tools/Annual Review.md",
     "Tips & Tools/Progressive Overload.md",
     "Notes/Misc.md",
     "Notes/Scripts.md",
     "Notes/TF.md",
     "Notes",
-    "Books/Never Split The Difference.md",
-    "Tips & Tools/Tools & Util libs.md",
     "Backend/sql-joins.png",
     "Books",
     "Tips & Tools/OnePersonBusiness.png",

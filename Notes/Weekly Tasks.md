@@ -8,23 +8,24 @@
 - Read books from 8-9PM
 - Hit the bed by 930PM
 - Rinse & repeat
-### 15/12: 
-- HubSpot meeting
-### 16/12: 	
+### 22/12: 
+- HubSpot workflow confirmation
+- Social insurance inquiries
+### 23/12: 	
 - HubSpot++
-### 17/12: 	
-- HubSpot++
-### 18/12: 
-- Offline meeting
+### 24/12: 	
+- Sprint review
+### 25/12: 
+- Request refund progress
 - MVP++
-### 19/12: 	
-- HubSpot clean up
+### 26/12: 	
+- Contingencies
 - MVP++
-### 20/12: 
+### 27/12: 
 - 1k @2:06
 - Groceries
-- MVP: Resolve UI issues
-### 11/12:
 - English speaking
+### 28/12:
 - Planning
-- MVP++
+- MVP wrap up
+- Dinner?
