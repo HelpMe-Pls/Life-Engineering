@@ -18,7 +18,7 @@
 ### 24/12: 	
 - Sprint review
 ### 25/12: 
-- Request refund progress
+- HubSpot doc++
 - MVP++
 ### 26/12: 	
 - Contingencies
