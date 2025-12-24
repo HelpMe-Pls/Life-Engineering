@@ -10,9 +10,11 @@
 - Rinse & repeat
 ### 22/12: 
 - HubSpot workflow confirmation
-- Social insurance inquiries
+- Prep social insurance inquiries
 ### 23/12: 	
-- HubSpot++
+- Send social insurance inquiries
+- HubSpot meeting?
+- MVP clean up
 ### 24/12: 	
 - Sprint review
 ### 25/12: 
