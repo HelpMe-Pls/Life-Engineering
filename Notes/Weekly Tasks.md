@@ -8,26 +8,29 @@
 - Read books from 8-9PM
 - Hit the bed by 930PM
 - Rinse & repeat
-### 22/12: 
-- HubSpot workflow confirmation
-- Prep social insurance inquiries
-### 23/12: 	
-- Send social insurance inquiries
-- HubSpot meeting?
-- MVP clean up
-### 24/12: 	
-- Sprint review
-### 25/12: 
-- HubSpot doc++
+### 29/12: 
+- MVP Video/image implementation
+	- Env setup
+	- CRUD assets (conform to existing convention)
+- MVP Cleanup 
+### 30/12: 	
+- HubSpot quick prep
+- MVP file/image CRUD
+- Annual review
+### 31/12: 	
+- HubSpot offline
+- Gym
+### 1/1: 
+- Vide coding session?
+- Yearly planning
+### 2/1: 	
+- HubSpot++
 - MVP++
-### 26/12: 	
-- Contingencies
-- MVP++
-### 27/12: 
+### 3/1: 
 - 1k @2:06
 - Groceries
 - English speaking
-### 28/12:
+### 4/1:
 - Planning
 - MVP wrap up
 - Dinner?

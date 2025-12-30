@@ -43,3 +43,5 @@
 - Clean up the properties/pipelines
 - Rename the existing workflow
 - Build new workflows with the new properties.
+# Wednesday, Dec 31st, 2025
+- What's the most important thing that needs to happen in 2026 so that on this day, one year later, you can look back and say that you succeeded?

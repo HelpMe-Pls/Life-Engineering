@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Books/Never Split The Difference.md",
+                    "file": "Tips & Tools/English vocab.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Never Split The Difference"
+                  "title": "English vocab"
                 }
               },
               {
@@ -46,12 +46,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/Daily Standup.md",
+                    "file": "Notes/EO.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Daily Standup"
+                  "title": "EO"
                 }
               }
             ],
@@ -250,15 +250,16 @@
   },
   "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
+    "Notes/EO.md",
     "Notes/Daily Standup.md",
     "Notes/Weekly Tasks.md",
+    "Notes/2025.md",
+    "Tips & Tools/English vocab.md",
     "Books/Never Split The Difference.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
     "Tips & Tools/English grammar.md",
     "Books/Books.md",
     "Tips & Tools/Tips & Tools.md",
-    "Notes/EO.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
-    "Tips & Tools/English vocab.md",
     "Notes/Edge8.md",
     "Tips & Tools/Entrepreneurship.md",
     "Notes/Notes.md",
@@ -270,7 +271,6 @@
     "Notes/Automation.md",
     "Notes/Hackathon.md",
     "Notes/E-learning MVP.md",
-    "Notes/2025.md",
     "Tips & Tools/Annual Review.md",
     "Tips & Tools/Progressive Overload.md",
     "Notes/Misc.md",
