@@ -8,29 +8,26 @@
 - Read books from 8-9PM
 - Hit the bed by 930PM
 - Rinse & repeat
-### 29/12: 
-- MVP Video/image implementation
-	- Env setup
-	- CRUD assets (conform to existing convention)
-- MVP Cleanup 
-### 30/12: 	
-- HubSpot quick prep
-- MVP file/image CRUD
-- Annual review
-### 31/12: 	
-- HubSpot offline
-- Gym
-### 1/1: 
-- Vide coding session?
-- Yearly planning
-### 2/1: 	
+### 5/1: 
+- EO dashboards & docs
+- EO Membership meeting & intel gathering
+### 6/1: 	
+- APAC docs
+- Ask the folks to add new member to the group
+### 7/1: 	
+- Sprint review + planning
+### 8/1: 
 - HubSpot++
-- MVP++
-### 3/1: 
+- MVP media handling
+### 9/1: 	
+- HubSpot++
+- `coffee-finder` pivot?
+### 10/1: 
 - 1k @2:06
 - Groceries
+- Shopee
 - English speaking
-### 4/1:
+### 11/1:
 - Planning
 - MVP wrap up
-- Dinner?
+- `coffee-finder`++

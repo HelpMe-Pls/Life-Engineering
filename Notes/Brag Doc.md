@@ -8,4 +8,7 @@
 ## Q4
 - Meeting Notes UI++
 - HubSpot involvement
+# 2026
+## Q1
+- QLD 7 BKK rollouts with proper docs
 
