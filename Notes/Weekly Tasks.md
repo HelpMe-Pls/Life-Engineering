@@ -16,8 +16,10 @@
 - Ask the folks to add new member to the group
 ### 7/1: 	
 - Sprint review + planning
+- 1-1 prep
+- Context prep & request Arlene interview
 ### 8/1: 
-- HubSpot++
+- Arlene?
 - MVP media handling
 ### 9/1: 	
 - HubSpot++

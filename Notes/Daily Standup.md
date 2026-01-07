@@ -1,5 +1,3 @@
 - Thanks, `name`. Yesterday we had a review of the second sprint of EOVN and planned some of the tasks for this third sprint.
 - And for today I'll start the new sprint by working with Arlene, our Sales Qualification Rep to gather and clarify the metrics that she wants to see on her dashboard.
 ---
-
-
