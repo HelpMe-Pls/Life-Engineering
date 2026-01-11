@@ -10,41 +10,42 @@
 - Hit the bed by 930PM
 - Rinse & repeat
 
-### 5/1:
+### 12/1:
 
-- EO dashboards & docs
-- EO Membership meeting & intel gathering
+- SQR Dashboard with Dave's input
+- SQR workflow
+- Review [Chapter Board Tracker](https://docs.google.com/spreadsheets/d/1Eq_T_2rBimERzMZ7aHXvE6V4RG8OjITqK0al8Sv55TQ/edit?usp=sharing)
 
-### 6/1:
+### 13/1:
 
-- APAC docs
-- Ask the folks to add new member to the group
+- Sync APAC docs with new updates
+- Decouple n8n from HubSpot
 
-### 7/1:
+### 14/1:
 
-- Sprint review + planning
-- 1-1 prep
-- Context prep & request Arlene interview
+- n8n++
+- Contingencies
 
-### 8/1:
+### 15/1:
 
-- HubSpot++
+- ==MVP Pilot==:
+  - Make sure that the content is guarded by auth
+  - Resolve feedback
+- Contingencies
 
-### 9/1:
+### 16/1:
 
-- HubSpot++
-- MVP media handling
+- MVP++
 - `coffee-finder` pivot?
 
-### 10/1:
+### 17/1:
 
 - 1k @2:06
 - Groceries
 - Shopee
 - English speaking
 
-### 11/1:
+### 18/1:
 
 - Planning
-- MVP wrap up
-- `coffee-finder`++
+- Dinner
