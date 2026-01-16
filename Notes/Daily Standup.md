@@ -1,18 +1,22 @@
-- Thanks, `name`. Good morning everyone. Last Friday I had an interview with Arlene, our Sales Qualification Rep to help her with the dashboards and other interfaces in HubSpot.
-- So I'll start the day by building the Outreach workflow to help her with the email and whatsapp message automation.
-
+- Thanks, `name`.  Good morning everyone. Last Friday I joined the EO Bangkok rollout meeting, so there were a few things that we needed to do following up on it. One of them is to create a data mapping document to show the chapter how we would migrate their existing attributes in the Monday app that they're using to HubSpot.
+- So the main thing today is to review the data mapping dictionary that we created for Queensland to prepare for the meeting tomorrow.
 ---
-
 # 1-1
-
 - You too. You deserve so much more than this; considering all the things you've done for the company so far.
-
 ---
+# HubSpot
+> I'm a software engineer over at Edge8, and I also handle the technical support for any HubSpot issues that pop up in the EO Chapters.
 
-# Arlene
 
-## Build this workflow
+1. Get them excited, why HubSpot makes sense (centralized and properly structured). Show 'em the dashboards.
+2. Next Friday: actual rollout
+3. What they're gonna do (steps they need to take): 
+	1. Give us your context give us the exports of the things that you have
+	2. We're gonna support them with the config
+> Prefer native HubSpot props if they're asking about data. Tell them to refer to the data dictionary before making changes to the props or pipelines.
 
-- FIRST OUTREACH-SEND AN E-MAIL TO PROSPECT (for those with e-mail address on our record).
-- SECOND OUTREACH-SEND A WHATSAPP MESSAGE FOR THOSE WHO HAVE WHATSAPP NUMBER ON OUR FILE. - FOR THOSE WHO WILL RESPOND (INTERESTED), SEND A CALENDAR INVITE FOR A SCHEDULED CALL. - FOR THOSE WHO WON’T RESPOND, DO ANOTHER OUTREACH by sending E-MAIL/WHATSAPP MESSAGES.
-  > Inspect how similar it is to the existing `WF – Deal – Rise → Membership Package Outreach Sequence` and build it from there.
+- Monday: CRM (too flexible, they're struggling with structure: centralized records tracking everything in one place, and that's what they're expecting from HubSpot to solve that structured system)
+	- Same record duplicated in multiple tables without a relationship/connection between any of them
+- Plausible -> Calendy: automation and meeting schedule connected to Monday
+## Task
+- Data & props mapping from Monday to HubSpot

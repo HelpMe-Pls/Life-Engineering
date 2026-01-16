@@ -9,43 +9,35 @@
 - Read books from 8-9PM
 - Hit the bed by 930PM
 - Rinse & repeat
-
+---
 ### 12/1:
-
 - SQR Dashboard with Dave's input
-- SQR workflow
+- Outreach workflow
 - Review [Chapter Board Tracker](https://docs.google.com/spreadsheets/d/1Eq_T_2rBimERzMZ7aHXvE6V4RG8OjITqK0al8Sv55TQ/edit?usp=sharing)
-
 ### 13/1:
-
 - Sync APAC docs with new updates
-- Decouple n8n from HubSpot
-
+- Call Arlene 
 ### 14/1:
-
-- n8n++
-- Contingencies
-
+- AIO Post (FarCry2 radio with Gemini)
+	- Deep research for the best childhood story telling author.
+	- Mention the prompt
+	- Keep it no longer than 500 words 
+- MVP final touches: audio upload
 ### 15/1:
-
 - ==MVP Pilot==:
-  - Make sure that the content is guarded by auth
-  - Resolve feedback
-- Contingencies
-
+	- Make sure that the content is guarded by auth
+	- Resolve FIXMEs & feedback
+- QLD Monday data mapping dictionary
 ### 16/1:
-
-- MVP++
-- `coffee-finder` pivot?
-
+- BKK rollout meeting
+- `coffee-finder` pivot
+- Haircut
 ### 17/1:
-
 - 1k @2:06
 - Groceries
-- Shopee
 - English speaking
-
+- Bounty doc++
+- Planning
 ### 18/1:
-
 - Planning
 - Dinner
