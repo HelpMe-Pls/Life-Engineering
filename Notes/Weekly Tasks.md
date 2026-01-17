@@ -10,34 +10,26 @@
 - Hit the bed by 930PM
 - Rinse & repeat
 ---
-### 12/1:
-- SQR Dashboard with Dave's input
-- Outreach workflow
-- Review [Chapter Board Tracker](https://docs.google.com/spreadsheets/d/1Eq_T_2rBimERzMZ7aHXvE6V4RG8OjITqK0al8Sv55TQ/edit?usp=sharing)
-### 13/1:
-- Sync APAC docs with new updates
-- Call Arlene 
-### 14/1:
-- AIO Post (FarCry2 radio with Gemini)
-	- Deep research for the best childhood story telling author.
-	- Mention the prompt
-	- Keep it no longer than 500 words 
-- MVP final touches: audio upload
-### 15/1:
-- ==MVP Pilot==:
-	- Make sure that the content is guarded by auth
-	- Resolve FIXMEs & feedback
-- QLD Monday data mapping dictionary
-### 16/1:
-- BKK rollout meeting
-- `coffee-finder` pivot
-- Haircut
-### 17/1:
+### 19/1:
+- Arlene checkin
+- Prepare docs for QLD to answer the question: "What do they want to hear from us next?" given that we completed the data dictionary
+### 20/1:
+- QLD docs++
+- `coffee-finder` ADR++
+### 21/1:
+- BKK docs++
+- Sprint review + planning
+### 22/1:
+- `coffee-finder` ADR++
+- Contingencies
+### 23/1:
+- Contingencies
+- `coffee-finder` ADR++
+### 24/1:
 - 1k @2:06
 - Groceries
-- English speaking
 - Bounty doc++
 - Planning
-### 18/1:
-- Planning
-- Dinner
+### 25/1:
+- `coffee-finder` ADR++
+- English speaking

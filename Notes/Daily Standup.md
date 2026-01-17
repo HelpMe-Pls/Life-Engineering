@@ -1,5 +1,5 @@
 - Thanks, `name`.  Good morning everyone. Last Friday I joined the EO Bangkok rollout meeting, so there were a few things that we needed to do following up on it. One of them is to create a data mapping document to show the chapter how we would migrate their existing attributes in the Monday app that they're using to HubSpot.
-- So the main thing today is to review the data mapping dictionary that we created for Queensland to prepare for the meeting tomorrow.
+- So the main thing today is to review the data mapping dictionary and the rollout checklist that `Thành` created for Queensland to prepare for tomorrow's meeting.
 ---
 # 1-1
 - You too. You deserve so much more than this; considering all the things you've done for the company so far.
