@@ -1,8 +1,17 @@
-- Thanks, `name`.  Good morning everyone. Last Friday I joined the EO Bangkok rollout meeting, so there were a few things that we needed to do following up on it. One of them is to create a data mapping document to show the chapter how we would migrate their existing attributes in the Monday app that they're using to HubSpot.
-- So the main thing today is to review the data mapping dictionary and the rollout checklist that `Thành` created for Queensland to prepare for tomorrow's meeting.
+- Thanks, `name`. Good morning everyone. Last Friday I built the SAP renewal pipelines in HubSpot to handle the term renewal stages for SAPs.
+- So the main thing today for me is to wrap up the Bangkok data migration doc and then build the corresponding workflows for the SAP renewal pipeline. 
+
+> Update APAC doc to include new pipelines
+> Create another "[Stage Action]([WF – Deal – Member Renewal - Stage Actions | HubSpot](https://app-na2.hubspot.com/workflows/243769902/platform/flow/3521654515/edit)" workflow for SAP to handle tasks. 
 ---
 # 1-1
 - You too. You deserve so much more than this; considering all the things you've done for the company so far.
+---
+# MVP
+- [ ] Translate hardcoded text to Vietnamese
+- [ ] Merge `staging` & `production`
+- [ ] `Clerk` handoff with official domain.
+- [ ] `Tiptap` editor?
 ---
 # HubSpot
 > I'm a software engineer over at Edge8, and I also handle the technical support for any HubSpot issues that pop up in the EO Chapters.
@@ -20,3 +29,4 @@
 - Plausible -> Calendy: automation and meeting schedule connected to Monday
 ## Task
 - Data & props mapping from Monday to HubSpot
+- Lifecycle of Members and SAP

@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Books/Never Split The Difference.md",
+                    "file": "Notes/2025.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Never Split The Difference"
+                  "title": "2025"
                 }
               },
               {
@@ -55,7 +55,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -134,7 +134,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "enum",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -248,19 +248,20 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "a90d73df7a4ad379",
+  "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
-    "Notes/Weekly Tasks.md",
     "Notes/Daily Standup.md",
+    "Notes/Weekly Tasks.md",
+    "Notes/2025.md",
+    "Books/Supercommunicators.md",
+    "Books/Never Split The Difference.md",
     "Books/Extreme Ownership.md",
     "Notes/2026.md",
-    "Notes/2025.md",
     "Notes/Notes.md",
     "Notes/Edge8.md",
     "Notes/Brag Doc.md",
     "Tips & Tools/English vocab.md",
     "Notes/EO.md",
-    "Books/Never Split The Difference.md",
     "Tips & Tools/English grammar.md",
     "Books/Books.md",
     "Tips & Tools/Tips & Tools.md",
@@ -275,7 +276,6 @@
     "Frontend/TypeScript/Basic Types.md",
     "Frontend/Frameworks/Next.md",
     "Notes/Contingencies.md",
-    "Notes/Automation.md",
     "Notes",
     "Backend/sql-joins.png",
     "Books",

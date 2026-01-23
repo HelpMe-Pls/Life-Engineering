@@ -11,23 +11,31 @@
 - Rinse & repeat
 ---
 ### 19/1:
-- Arlene checkin
-- Prepare docs for QLD to answer the question: "What do they want to hear from us next?" given that we completed the data dictionary
+- Ask `Trọng` about new NET salary: https://luatvietnam.vn/thue-phi-le-phi/cach-tinh-thue-tncn-2026-565-106276-article.html 
+- Prepare docs for BKK to answer the question: "What do they want to hear from us next?" given that we got the checklist
+- Sign the dotted line?
+- ==MVP prod==
 ### 20/1:
-- QLD docs++
+- QLD present
+- Resolve ==MVP bugs==
 - `coffee-finder` ADR++
 ### 21/1:
-- BKK docs++
 - Sprint review + planning
+- BKK docs++
 ### 22/1:
 - `coffee-finder` ADR++
-- Contingencies
+- BKK docs++
+- Renewal pipeline docs
 ### 23/1:
-- Contingencies
-- `coffee-finder` ADR++
+- Implement SAP Renewal pipeline + WF
+- Resolve ==MVP bugs==
+- Conversation script
+- Dinner
 ### 24/1:
 - 1k @2:06
 - Groceries
+	- Back scrubber
+	- Oats
 - Bounty doc++
 - Planning
 ### 25/1:
