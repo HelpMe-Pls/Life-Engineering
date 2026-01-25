@@ -326,7 +326,7 @@ provisional (adj): interim, temporary
 
 cede (v): assign, transfer, to yield or grant typically by agreement
 
-impart (v): disclose, convey, transmit
+==impart== (v): disclose, convey, transmit
 
 concede (v): admitting defeat, to acknowledge grudgingly or hesitantly, to accept as true, valid, or accurate, to grant as a right or privilege 
 
@@ -1161,3 +1161,24 @@ euphemism (n): nói giảm nói tránh
 coddle (v): pamper, treat with extreme or excessive care or kindness
 
 synopsis (n), a tl;dr, a condensed statement or outline
+
+coterie (n): inner circle nhóm thân cận
+
+pillager (n): raider, looter, marauders, plunderers
+
+backstop (v-n): safety net, safeguard, fallback
+
+monarchy (n): quân chủ lập hiến
+
+retinue (n): entourage, escort, đoàn hộ tống
+
+==casuistry== (n): case-based reasoning, sophistry, hair-splitting, lập luận quanh co
+
+theocratic (n): religious-rule, clerical-rule, thần quyền
+
+trope (n): motif, convention, cliché, phép tu từ / lối nói ẩn dụ
+
+==autocratic== (adj): authoritarian, dictatorial, despotic
+
+inductive (adj): bottom-up, based on observations, generalizing from examples/data, quy nạp
+
