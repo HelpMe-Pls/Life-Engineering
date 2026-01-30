@@ -55,7 +55,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -248,10 +248,11 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "a90d73df7a4ad379",
+  "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
-    "Notes/Weekly Tasks.md",
     "Notes/Daily Standup.md",
+    "Notes/Weekly Tasks.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
     "Notes/2026.md",
     "Notes/2025.md",
     "Tips & Tools/English vocab.md",
@@ -269,7 +270,6 @@
     "Tips & Tools/English grammar.md",
     "Books/Books.md",
     "Notes/EO.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
     "Notes/Edge8.md",
     "Notes/Notes.md",
     "Notes/HubSpot.md",

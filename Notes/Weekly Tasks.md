@@ -13,19 +13,17 @@
 ### 26/1
 - Company meeting
 - Member Renewal pipeline & WF review
-- MVP++
 ### 27/1
-- QLD import
+- New pipelines doc update
 - MVP++
 ### 28/1
-- BKK follow-up
-- `coffee-finder` ADR++
+- Update `Member Renewal` pipeline & workflows
+- Gave Ryan feedback for QLD staging
 ### 29/1
 - MVP++
-- HubSpot staging++
 ### 30/1
-- `coffee-finder` ADR++
-- Contingencies
+- MVP++ (create a `resolve-issues` branch from `staging` for this)
+- APAC doc update (workflows)
 ### 31/1
 - Morning splurge
 - Groceries
@@ -33,5 +31,4 @@
 - Bounty doc++
 - Planning
 ### 1/2
-- `coffee-finder` ADR++
-- English speaking
+- MVP++

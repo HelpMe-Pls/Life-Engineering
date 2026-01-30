@@ -1,18 +1,12 @@
-- Thanks, `name`. Good morning everyone. Last Friday I built the SAP renewal pipelines in HubSpot to handle the term renewal stages for SAPs.
-- So the main thing today for me is to wrap up the Bangkok data migration doc and then update the APAC doc to include new pipelines as well as create another [Stage Action]([WF – Deal – Member Renewal - Stage Actions | HubSpot](https://app-na2.hubspot.com/workflows/243769902/platform/flow/3521654515/edit) workflow for the tasks related to the SAP Renewal pipeline. 
+- Thanks, `name`. Good morning everyone. Last Friday I updated the APAC docs to include more details for the automation that we have in HubSpot. Still nothing from Ryan's side, which is a bit of a bummer.
+- So the main thing today for me is to see if there's any progress from Ryan and if we get access to the portals then I'll start the migration. If not, then I guess we'll just keep cleaning up EOVN to make sure that the things we built run properly.
 
 ---
 # 1-1
 - You too. You deserve so much more than this; considering all the things you've done for the company so far.
 ---
-# MVP
-- [ ] Translate hardcoded text to Vietnamese
-- [ ] Merge `staging` & `production`
-- [ ] `Clerk` handoff with official domain & handle i18n for auth
-- [ ] SLAs with TDD
-- [ ] Note taking feature?
-- [ ] Quiz?
-- [ ] `Tiptap` editor?
+# MVP `coffee-finder`
+- [ ] ADR & ggl-maps APIs
 ---
 # HubSpot
 
