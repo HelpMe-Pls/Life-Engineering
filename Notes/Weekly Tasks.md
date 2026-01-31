@@ -10,25 +10,21 @@
 - Pass out by 9:30PM
 - Rinse & repeat
 ---
-### 26/1
-- Company meeting
-- Member Renewal pipeline & WF review
-### 27/1
-- New pipelines doc update
+### 2/2
+- HubSpot issues
+### 3/2
+- Same
+### 4/2
+- Same
+### 5/2
 - MVP++
-### 28/1
-- Update `Member Renewal` pipeline & workflows
-- Gave Ryan feedback for QLD staging
-### 29/1
-- MVP++
-### 30/1
-- MVP++ (create a `resolve-issues` branch from `staging` for this)
-- APAC doc update (workflows)
-### 31/1
+### 6/2
+- 6AM HubSpot EO Global meeting 
+### 7/2
 - Morning splurge
 - Groceries
 - 1k @2:06 with paddles
 - Bounty doc++
 - Planning
-### 1/2
+### 8/2
 - MVP++
