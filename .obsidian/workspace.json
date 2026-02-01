@@ -53,9 +53,23 @@
                   "icon": "lucide-file",
                   "title": "Daily Standup"
                 }
+              },
+              {
+                "id": "ef36fe01368bda42",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Tips & Tools/English vocab.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "English vocab"
+                }
               }
             ],
-            "currentTab": 1
+            "currentTab": 3
           },
           {
             "id": "8cedd05142699eb5",
@@ -248,13 +262,13 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "8e81d5625c66b75e",
+  "active": "ef36fe01368bda42",
   "lastOpenFiles": [
-    "Notes/Daily Standup.md",
     "Notes/Weekly Tasks.md",
+    "Tips & Tools/English vocab.md",
+    "Notes/Daily Standup.md",
     "Notes/2026.md",
     "Notes/2025.md",
-    "Tips & Tools/English vocab.md",
     "Tips & Tools/Tips & Tools.md",
     "Tips & Tools/Tips.md",
     "Tips & Tools/Writing.md",

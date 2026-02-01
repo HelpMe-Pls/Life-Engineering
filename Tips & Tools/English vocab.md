@@ -522,7 +522,7 @@ reprisal (n): chống trả, đền bù, retaliation
 
 sovereign (adj-n): supreme, paramount, absolute, tối cao
 
-mendacity (n): lie, falsehood, deceit
+mendacity (n): lie, falsehood, deceit → mendacious (adj)
 
 ==formidable== (adj): impressive, terrifying, intimidating, scary
 
@@ -1182,3 +1182,10 @@ trope (n): motif, convention, cliché, phép tu từ / lối nói ẩn dụ
 
 inductive (adj): bottom-up, based on observations, generalizing from examples/data, quy nạp
 
+lurid (adj): horrific, gruesome, sensational (giật gân), trashy, glaring, garish,
+
+lurch (v-n): leave hanging (bail on), abandon, jerk, jolt, stagger, sway
+
+staunch (adj-v): loyal, committed, devoted, stanch, stop (a flow)
+
+whet (v): pique, spark (interest/curiosity), sharpen, hone 

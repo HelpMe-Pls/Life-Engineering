@@ -33,6 +33,6 @@
 - Morning splurge
 - Groceries
 - Bounty doc++
-- Planning
+- Planning + 1-1 prep
 ### 8/2
 - `coffee-finder` ADR++
