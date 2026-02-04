@@ -1,5 +1,5 @@
-- Thanks, `name`. Yesterday I resolved several HubSpot related issues that we have for the reports and the onboarding track pipeline
-- So the main thing today for me is to review the work we've done for this sprint to prepare for tomorrow sprint review and make sure that the things we built run properly before the global demo this friday.
+- Thanks, `name`. Yesterday we had an overview of what we did for the last sprint
+- So the main thing today for me is to keep working on the Queensland setup and make sure that the things we built run properly before the global demo this friday.
 
 > I'd love to hear your comments on Monday about how we can make Vietnam perfect so I am never surprised again with avoidable problems demo'ing at a global event.
 ---
@@ -22,3 +22,55 @@
 - Monday: CRM (too flexible, they're struggling with structure: centralized records tracking everything in one place, and that's what they're expecting from HubSpot to solve that structured system)
 	- Same record duplicated in multiple tables without a relationship/connection between any of them
 - Plausible -> Calendy: automation and meeting schedule connected to Monday
+
+## Tmp
+### Total (6)
+- Total: Prospect
+- Total: Members
+- Total: New Members
+- ~~Total: At-risk Members
+- ~~Total: SAP Money
+- ~~Total: SAP Partners~~~
+### Membership (7)
+- Membership: Leads by Lifecycle Stage
+- Membership: Prospect funnel Detailed
+- Membership: New Member Opportunities
+- Membership: Current Month Opportunities Conversion Rate
+- Membership: Stalled Opportunities
+- Membership: Lost Opportunities Reasons
+- Membership: Renewal Watchlist
+### Forum (6)
+- Forum: Statistics
+- Forum: New Member Status
+- Forum: Participants
+- Forum: Placement Funnel
+- Forum: Time To Forum Placed
+- Forum: Time Awaiting Forum Placement
+### Marcoms (4)
+- Marcoms: Submission by Form
+- Marcoms: Form Submissions
+- Marcoms: Email Open + Click-through Rate
+- Marcoms: Contacts by Channel Source
+### SQR (9)
+- SQR: Recent Scheduled Tasks
+- SQR: Experience EO Call List
+- SQR: All Completed Tasks (This Month)
+- SQR: Completed Qualifying Calls (This Month)
+- SQR: Leads → Opportunities (This Month)
+- SQR: Post-call Qualification Outcomes 
+- SQR: Monthly Outreach Volume (By Email)
+- SQR: Pipeline movement (This Month)
+- SQR: Stalled Leads (Pre-Pipeline)
+### Operations (6)
+- Operations: Tasks
+- Operations: Open Tasks (Not Overdue) by Activity Date
+- Operations: Contacts without owner
+- Operations: Deals without owner
+- Operations: Deals without planned activities
+- Operations: New Deals Created (Last Month)
+### SAP (3)
+- SAP: Opportunities by Stage
+- SAP: Deal Intake by Tier
+- SAP: Deal Outcomes by Tier
+### Onboarding
+- Onboarding: First Year Journey
