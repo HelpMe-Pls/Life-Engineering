@@ -30,8 +30,7 @@
 - Ask about SAP Renewal
 - Tell us what you're gonna demo on Friday so we make sure we don't show avoidable mistakes.
 ### 5/2
-- MVP++ (if any)
-- Global prep
+- QLD setup & sync your update [here](https://docs.google.com/document/d/1FYCIrYddQpZzWDz3WEKlkKbbN8PanBjnYCVLGg92j8k/edit?tab=t.0#heading=h.4irmbjphplzr)
 ### 6/2
 - 6AM HubSpot EO Global meeting 
 ### 7/2
