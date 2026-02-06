@@ -39,8 +39,9 @@
 ### 7/2
 - Tảo mộ
 - ~~1k @2:06 with paddles
-- ~~Morning splurge
-- ~~Groceries
-- Bounty doc++
+- Published/Draft course content
+- Planning
 ### 8/2
+- Morning splurge
+- Groceries
 - `coffee-finder` ADR++

@@ -6,7 +6,13 @@
 > - The things you think you have done well over the last 6 months.
 > - The results of your work. What value did it bring to the business.
 > - What would you do differently if we could go back and do it again.
-- You too. You deserve so much more than this; considering all the things you've done for the company so far.
+## For the record
+- For the record, I think I'll just quickly walk through what we're working on at EO so you get the idea.
+- So now that we’re part of EO Global, I think we’ll know we’re really hitting the mark when we roll out chapters and they’re showing a high satisfaction rate.
+- And EO renews around June, so if we nail it, that usually means they hire more and expand. 
+- So our job is to make the chapter setup simple enough that people can track the two growth levers—retention and acquisition—with the 8% NET new growth goal each year. 
+- Leading indicators to watch are clean data and the leads-to-opportunities numbers in the deal funnel. And if we can scale that to 60 chapters by the end of the year, you’re basically looking at at least a 30% raise.
+> You too. To be fair, if I were the boss, I'd have doubled your salary by now. You deserve so much more than this; considering all the things you've done for the company so far. 
 
 ---
 # MVP `coffee-finder`
@@ -16,15 +22,14 @@
 
 > [!info] Intro
 > - I'm a software engineer over at Edge8, and I also handle the technical support for any HubSpot issues that pop up in the EO Chapters.
-> - I'm a technical guy, so I can't think of the top of my head  one thing that I need from group, but there's definitely one thing I need from myself is to better my communication. 
-> - I'll try my best to be aligned with the team when it comes to the technical side of EO.
+
 ## Key metrics
-- Chapters are able to track their two levers of growth, member retention and member acquisition with a goal of 8% net new growth every year.
-	- The leading indicators of this is <u>data cleanliness</u> from our perspective and `number of leads` to `number of opportunities` from a deal funnel perspective → ==figure out the related deal pipelines==. 
+- Chapters are able to track their two levers of growth, member retention and member acquisition with a goal of 8% NET new growth every year.
+	- The leading indicators of this is <u>data cleanliness</u> and `number of leads` to `number of opportunities` from a deal funnel perspective → ==figure out the related deal pipelines==. 
 	- Check [this](https://chatgpt.com/share/e/698078bc-a34c-8009-bd8d-a53183e6de0f) out.
-	- We roll out chapters and they have a high rate of satisfaction
-	- We are on track to do 60 by the end of the year
+	- As we're part of EO Global, we'd know we hit the mark when we roll out chapters and they have a high rate of satisfaction.
 	- EO renews in June. High success means they hire more and expand.
+	- We are on track to do 60 chapters by the end of the year.
 ## QLD & BKK
 - Prefer native HubSpot props if they're asking about data. Tell them to refer to the data dictionary before making changes to the props or pipelines.
 - Monday: CRM (too flexible, they're struggling with structure: centralized records tracking everything in one place, and that's what they're expecting from HubSpot to solve that structured system)
