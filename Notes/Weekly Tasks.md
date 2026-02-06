@@ -30,14 +30,17 @@
 - Ask about SAP Renewal
 - Tell us what you're gonna demo on Friday so we make sure we don't show avoidable mistakes.
 ### 5/2
-- QLD setup & sync your update [here](https://docs.google.com/document/d/1FYCIrYddQpZzWDz3WEKlkKbbN8PanBjnYCVLGg92j8k/edit?tab=t.0#heading=h.4irmbjphplzr)
+- QLD setup & sync your updates [here](https://docs.google.com/document/d/1FYCIrYddQpZzWDz3WEKlkKbbN8PanBjnYCVLGg92j8k/edit?tab=t.0#heading=h.4irmbjphplzr)
 ### 6/2
 - 6AM HubSpot EO Global meeting 
-### 7/2
-- 1k @2:06 with paddles
-- Morning splurge
-- Groceries
-- Bounty doc++
 - Planning + 1-1 prep
+- Bounty doc++
+- Dinner
+### 7/2
+- Tảo mộ
+- ~~1k @2:06 with paddles
+- ~~Morning splurge
+- ~~Groceries
+- Bounty doc++
 ### 8/2
 - `coffee-finder` ADR++
