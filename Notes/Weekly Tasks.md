@@ -10,38 +10,26 @@
 - Pass out by 9:30PM
 - Rinse & repeat
 ---
-### 2/2
-- Resolve HubSpot issues
-### 3/2
-- Sprint review prep
-	- Done:
-		- Member Renewal pipeline & most of its workflows
-		- Rollout checklist for QLD & BKK
-		- Secondary Member management
-	- InProgress:
-		- SAP Renewal pipeline & workflows
-		- QLD & BKK rollouts (depends on Ryan or global instances)
-	- Demo:
-		- Member Renewal pipeline & how the deals move through its stages
-		- Secondary Member management
-- Review key metrics
-### 4/2
-- Sprint review + planning
-- Ask about SAP Renewal
-- Tell us what you're gonna demo on Friday so we make sure we don't show avoidable mistakes.
-### 5/2
-- QLD setup & sync your updates [here](https://docs.google.com/document/d/1FYCIrYddQpZzWDz3WEKlkKbbN8PanBjnYCVLGg92j8k/edit?tab=t.0#heading=h.4irmbjphplzr)
-### 6/2
-- 6AM HubSpot EO Global meeting 
-- Planning + 1-1 prep
+### 9/2
+- QLD Excel transformation & import
+- EO Global Sandbox access
+- 1-1
+### 10/2
+- 6AM meeting
+### 11/2
+- Wrap up QLD & sync your updates [here](https://docs.google.com/document/d/1FYCIrYddQpZzWDz3WEKlkKbbN8PanBjnYCVLGg92j8k/edit?tab=t.0#heading=h.4irmbjphplzr)
+- Contingencies
+### 12/2
+- Deep clean the room
+### 13/2
 - Bounty doc++
-- Dinner
-### 7/2
+- Planning
+- Dinner?
+### 14/2
 - Tảo mộ
 - ~~1k @2:06 with paddles
-- Published/Draft course content
-- Planning
-### 8/2
+- SLAs with TDD
+### 15/2
 - Morning splurge
 - Groceries
 - `coffee-finder` ADR++

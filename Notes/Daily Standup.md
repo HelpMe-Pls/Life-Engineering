@@ -1,5 +1,7 @@
 - Thanks, `name`. Good morning everyone. Yesterday I set up the dashboards and reports for Queensland, and I also made a list of the properties we're still missing.
 - So the main thing today for me is to keep working on the Queensland setup to add the missing props and reports, then clean up the Views and Segments.
+
+> Emails from this domain deserves to be placed in the inbox (not spam).
 ---
 # 1-1
 > [!important] For promotion
@@ -9,9 +11,11 @@
 ## For the record
 - For the record, I think I'll just quickly walk through what we're working on at EO so you get the idea.
 - So now that we’re part of EO Global, I think we’ll know we’re really hitting the mark when we roll out chapters and they’re showing a high satisfaction rate.
-- And EO renews around June, so if we nail it, that usually means they hire more and expand. 
+- And EO renews around June, so if we crush it, that usually means they'll hire more and expand. 
 - So our job is to make the chapter setup simple enough that people can track the two growth levers—retention and acquisition—with the 8% NET new growth goal each year. 
-- Leading indicators to watch are clean data and the leads-to-opportunities numbers in the deal funnel. And if we can scale that to 60 chapters by the end of the year, you’re basically looking at at least a 30% raise.
+- Leading indicators to watch are clean data and the leads-to-opportunities numbers in the deal funnel. And if we can scale that to 60 chapters by the end of the year, then the 20% raise KPI for everyone starts looking a lot more realistic.
+- I'll try my best to make that happen.
+
 > You too. To be fair, if I were the boss, I'd have doubled your salary by now. You deserve so much more than this; considering all the things you've done for the company so far. 
 
 ---
