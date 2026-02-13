@@ -10,26 +10,20 @@
 - Pass out by 9:30PM
 - Rinse & repeat
 ---
-### 9/2
-- QLD Excel transformation & import
-- EO Global Sandbox access
-- 1-1
-### 10/2
-- 6AM meeting
-### 11/2
-- Wrap up QLD & sync your updates [here](https://docs.google.com/document/d/1FYCIrYddQpZzWDz3WEKlkKbbN8PanBjnYCVLGg92j8k/edit?tab=t.0#heading=h.4irmbjphplzr)
-- Contingencies
-### 12/2
-- Deep clean the room
-### 13/2
-- Bounty doc++
-- Planning
-- Dinner?
-### 14/2
-- Tảo mộ
-- ~~1k @2:06 with paddles
+### 23/2
+- BKK
+### 24/2
+- BKK++ with docs
+### 25/2
+- Same
+### 26/2
+- `coffee-finder` ADR++
+### 27/2
+- BKK Handoff
+### 28/2
+- 1k @2:06 with paddles
 - SLAs with TDD
-### 15/2
+### 1/3
 - Morning splurge
 - Groceries
 - `coffee-finder` ADR++

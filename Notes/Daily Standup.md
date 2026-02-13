@@ -1,7 +1,7 @@
-- Thanks, `name`. Good morning everyone. Yesterday I set up the dashboards and reports for Queensland, and I also made a list of the properties we're still missing.
-- So the main thing today for me is to keep working on the Queensland setup to add the missing props and reports, then clean up the Views and Segments.
+- Thanks, `name`. Good morning everyone. Before Tet, we wrapped up Queensland, so if things go well, we can expect delivery within this week.
+- And for today, I’m gonna keep working on their handoff documentation so we can keep track of the things we've been working on.
 
-> Emails from this domain deserves to be placed in the inbox (not spam).
+> Emails from this domain deserve to be placed in the inbox (not spam).
 ---
 # 1-1
 > [!important] For promotion
@@ -11,11 +11,12 @@
 ## For the record
 - For the record, I think I'll just quickly walk through what we're working on at EO so you get the idea.
 - So now that we’re part of EO Global, I think we’ll know we’re really hitting the mark when we roll out chapters and they’re showing a high satisfaction rate.
-- And EO renews around June, so if we crush it, that usually means they'll hire more and expand. 
-- So our job is to make the chapter setup simple enough that people can track the two growth levers—retention and acquisition—with the 8% NET new growth goal each year. 
+- And EO renews around June, so if we crush it, that usually means they'll hire more and expand.
+- So our job is to make dah chapter setup — simple enough — that people can track the two main growth levers — which are retention and acquisition—so basically we're expecting 8% NET new growth goal each year. 
 - Leading indicators to watch are clean data and the leads-to-opportunities numbers in the deal funnel. And if we can scale that to 60 chapters by the end of the year, then the 20% raise KPI for everyone starts looking a lot more realistic.
-- I'll try my best to make that happen.
+- And I'll try my best to make that happen.
 
+> I'm aware that the outcome is what we're aiming for, but a lot of stuff affects outcomes, whereas if we judge your performance purely based on your output, which is something that you have full control of, then I'm pretty sure that you're the one who's setting the standard for everyone here. 
 > You too. To be fair, if I were the boss, I'd have doubled your salary by now. You deserve so much more than this; considering all the things you've done for the company so far. 
 
 ---
@@ -34,6 +35,15 @@
 	- As we're part of EO Global, we'd know we hit the mark when we roll out chapters and they have a high rate of satisfaction.
 	- EO renews in June. High success means they hire more and expand.
 	- We are on track to do 60 chapters by the end of the year.
+## For Global
+### Main goals
+- Intake leads and seamlessly run local and global processes that convert them to members (this implies visibility at each level).
+- Help chapter managers effectively run local processes related to their members and non-members.
+- Help global professionals effectively run global processes related to their members.
+### Short term
+1. Spin up a brand license for EO Vietnam
+2. Explore how we would move the Member Acquisition funnel into it
+3. Explore how we would connect the local member acquisition funnel to the global
 ## QLD & BKK
 - Prefer native HubSpot props if they're asking about data. Tell them to refer to the data dictionary before making changes to the props or pipelines.
 - Monday: CRM (too flexible, they're struggling with structure: centralized records tracking everything in one place, and that's what they're expecting from HubSpot to solve that structured system)
@@ -41,54 +51,5 @@
 - Plausible -> Calendy: automation and meeting schedule connected to Monday
 
 ## Tmp
-### Total (6) - Done
-- Total: Prospect
-- Total: Members
-- Total: New Members
-- ~~Total: At-risk Members
-- ~~Total: SAP Money
-- ~~Total: SAP Partners~~~
-### Membership (7) - Done
-- Membership: Leads by Lifecycle Stage
-- Membership: Prospect funnel Detailed
-- Membership: New Member Opportunities
-- Membership: Current Month Opportunities Conversion Rate
-- Membership: Stalled Opportunities
-- Membership: Lost Opportunities Reasons
-- ~~Membership: Renewal Watchlist~~
-### Forum (6) - Done
-- [x] Forum: Statistics
-- Forum: New Member Status
-- [x] Forum: Participants
-- Forum: Placement Funnel
-- [x] Forum: Time To Forum Placed
-- [x] Forum: Time Awaiting Forum Placement
-### Marcoms (4) - Done
-- Marcoms: Submission by Form
-- Marcoms: Form Submissions
-- Marcoms: Email Open + Click-through Rate
-- Marcoms: Contacts by Channel Source
-### SQR (9) - Done
-- SQR: Recent Scheduled Tasks
-- SQR: Experience EO Call List
-- SQR: All Completed Tasks (This Month)
-- SQR: Completed Qualifying Calls (This Month)
-- SQR: Leads → Opportunities (This Month)
-- SQR: Post-call Qualification Outcomes 
-- SQR: Monthly Outreach Volume (By Email)
-- SQR: Pipeline movement (This Month)
-- SQR: Stalled Leads (Pre-Pipeline)
-### Operations (6) - Done
-- Operations: Tasks
-- Operations: Open Tasks (Not Overdue) by Activity Date
-- Operations: Contacts without owner
-- Operations: Deals without owner
-- Operations: Deals without planned activities
-- Operations: New Deals Created (Last Month)
-### SAP (3) - Done
-- SAP: Opportunities by Stage
-- SAP: Deal Intake by Tier
-- SAP: Deal Outcomes by Tier
-### Onboarding - Done
-- ~~Onboarding: First Year Journey
-- Onboarding: Active Members
+- The only input that I got is the documentation and the conventions that you guys are following, because we've been documenting everything 
+- I just noticed that you guys are using Tickets. We've never used that feature before, and it seems kinda similar to Tasks. Would you mind walking us through an example of when we should use one over the other?

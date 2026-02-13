@@ -234,7 +234,7 @@ accomplice (n): , đồng phạm
 
 aristocratic (adj): socially exclusive, notably superior or excellent
 
-paragon {of} (n):  exemplar, ideal, a model of excellence or perfection
+paragon {of} (n):  exemplar, ideal, epitome, a model of excellence or perfection
 
 malignant (adj): malevolent, benign/malignant (== harmless/harmful) tumor
 
@@ -365,6 +365,8 @@ iniquity (n): wickedness, sin
 nefarious (adj): iniquitous, diabolical, vicious, evil (law)
 
 goon (n): a stupid person, a man hired to terrorize or eliminate opponents
+
+injudicious (adj): imprudent, unwise, indiscreet, tactless
 
 folly (n): insanity, absurdity, criminally or tragically foolish actions or conduct
 
@@ -818,6 +820,8 @@ garish (adj): flashy, glaring, flamboyant
 
 lavish (adj): extravagant, wasteful
 
+squander (v): waste, throw away, blow, misspend, run through
+
 deity (n): god, divinity
 
 blasphemy (n): sacrilege, irreverence, showing contempt or lack of reverence for the sacred or inviolable
@@ -832,7 +836,7 @@ agnostic (adj): unbiased, atheistic, skeptic
 
 crux (n): essence, core, gist, kernel
 
-incur (v): to experience something bad as a result of actions you have taken
+==incur== (v): rack up, run into, take on, to experience something bad as a result of actions you have taken
 
 ==instigate== (v): provoke, incite, trigger, stir, prod
 
@@ -988,7 +992,7 @@ plebe (n): người ta, an ordinary person who lacks the knowledge of an insider
 
 clandestine (adj): furtive, sneaky, stealthy
 
-militate {against} (v): to have weight >> procrastination militates against progression
+militate {against} (v): to have weight → procrastination militates against progression
 
 excursion (n): expedition, amplitude
 
@@ -1038,7 +1042,7 @@ pulmonary (adj): lung-related, bệnh về phổi
 
 polio (n): bại liệt
 
-symposium (n): hội thảo -> plural: symposia/symposiums
+symposium (n): hội thảo → plural: symposia/symposiums
 
 hiatus (n): gap, break 
 
@@ -1189,3 +1193,23 @@ lurch (v-n): leave hanging (bail on), abandon, jerk, jolt, stagger, sway
 staunch (adj-v): loyal, committed, devoted, stanch, stop (a flow)
 
 whet (v): pique, spark (interest/curiosity), sharpen, hone 
+
+primacy (n): preeminence, supremacy, priority
+
+parlance (n): terminology, jargon, the way people say it
+
+equable (adj): calm, steady, mild, stable, consistent
+
+procurement (n): buying stuff, getting supplies, acquisition, đấu thầu
+
+close quarters (adj-n): in tight spaces, in cramped conditions, cận chiến
+
+statism (n): etatism, state interventionism, state control
+
+sagacity (n): wisdom, street smarts, shrewdness, good judgment → sagacious (adj)
+
+spur (v-n): prompt, encourage, get the ball rolling 
+
+spurious (adj): false, bogus, unfounded, misleading
+
+percolation (n): seepage, filtration, diffusion, sink in
