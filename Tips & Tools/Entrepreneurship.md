@@ -4,11 +4,13 @@
 > - You should keep your day job until you create tangible evidence of your ability to build a life around your side hustle. 
 > - If you quit before you've created that evidence, you may make short-term, fear-based decisions with your new path that aren't sustainable.
 > - Don't burn the boats, because sometimes you need them to return to safety.
+> - You can consider switching jobs if there's no visible progress for 6 months straight in your current one.
 > - All that said, if your job is causing you pain and suffering, AND you already have at LEAST 6 months of emergency fund to cover unemployment, then I'd say go for it. Free yourself.
 - The first minute of action is worth more than a year of perfect planning. If information isn't nurtured with action, it loses its power. It’s not just about doing more, ==it’s also about doing the right things _better_==.
 - Self-improvement is about solving problems in your life. ==_Entrepreneurship is about solving problems in others life_==. When you do both, you unlock purpose, meaning, and fulfillment.
 - As an entrepreneur, you “hunt” for your survival by gathering knowledge, creating a valuable product, and putting it in front of people who could benefit from it.
 - If you believe your product or service can fulfill a _true **need**_, it’s your moral obligation to sell it.
+- ==People don't know what they want until you provide them with it.==
 > Ethics in business means “*don’t sell anything you wouldn’t buy*”.
 - Understand that ethical wealth creation is possible. If you secretly despise wealth, it will elude you.
 - You weren't born with an interest. You programmed yourself into it. You were persuaded of its importance and adopted it to help you achieve your goals in life. That's your ***unfair advantage***. So find a way to articulate that into story, make it intriguing enough so that you grasp the attention for your audience. Embrace and amplify your uniqueness in a way that attracts people to become friends and customers.

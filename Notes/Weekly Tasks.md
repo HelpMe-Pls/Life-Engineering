@@ -9,6 +9,11 @@
 - Read books from 8-9PM
 - Pass out by 9:30PM
 - Rinse & repeat
+
+# Pivot
+- 6 months if no progress.
+- Put yourself out there.
+- Connect the dots.
 ---
 ### 23/2
 - BKK

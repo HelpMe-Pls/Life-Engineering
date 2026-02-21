@@ -1,5 +1,5 @@
 - Thanks, `name`. Good morning everyone. Before Tet, we wrapped up Queensland, so if things go well, we can expect delivery within this week.
-- And for today, I’m gonna keep working on their handoff documentation so we can keep track of the things we've been working on.
+- And for today, I’m gonna keep working on their handoff documentation so we can keep track of the things we've been working on; and also keep going with the Bangkok setup.
 
 > Emails from this domain deserve to be placed in the inbox (not spam).
 ---
@@ -41,9 +41,9 @@
 - Help chapter managers effectively run local processes related to their members and non-members.
 - Help global professionals effectively run global processes related to their members.
 ### Short term
-1. Spin up a brand license for EO Vietnam
-2. Explore how we would move the Member Acquisition funnel into it
-3. Explore how we would connect the local member acquisition funnel to the global
+1. Spin up a brand license for EO Vietnam.
+2. Explore how we would move the Member Acquisition funnel into it.
+3. Explore how we would connect the local member acquisition funnel to the global.
 ## QLD & BKK
 - Prefer native HubSpot props if they're asking about data. Tell them to refer to the data dictionary before making changes to the props or pipelines.
 - Monday: CRM (too flexible, they're struggling with structure: centralized records tracking everything in one place, and that's what they're expecting from HubSpot to solve that structured system)
