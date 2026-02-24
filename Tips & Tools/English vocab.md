@@ -668,6 +668,8 @@ disdain (v-n): contempt, disrespect, despise
 
 flout (v): disregard, despite, scorn
 
+lout (n): jackass, a jerk
+
 meager (adj): thin, deficient in quality or quantity
 
 debase (v): profane, dissolute, debauch, to lower in status/esteem/quality/character
@@ -1213,3 +1215,12 @@ spur (v-n): prompt, encourage, get the ball rolling
 spurious (adj): false, bogus, unfounded, misleading
 
 percolation (n): seepage, filtration, diffusion, sink in
+
+reprovingly (adv): sternly, reproachfully, disapprovingly
+
+homemaker (n): nội trợ
+
+perambulate (v): take a walk
+
+welch (v): to not keep a promise
+

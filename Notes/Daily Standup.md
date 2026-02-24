@@ -1,5 +1,5 @@
-- Thanks, `name`. Good morning everyone. Before Tet, we wrapped up Queensland, so if things go well, we can expect delivery within this week.
-- And for today, I’m gonna keep working on their handoff documentation so we can keep track of the things we've been working on; and also keep going with the Bangkok setup.
+- Thanks, `name`. Yesterday I set up the reports and dashboards for the Bangkok portal using the data they gave us, and I updated the rollout progress doc to match the current state.
+- So the main thing for today for me is to keep working on dah workflows setup for Bangkok, hopefully we can get everything squared away by the end of the week.
 
 > Emails from this domain deserve to be placed in the inbox (not spam).
 ---

@@ -129,3 +129,5 @@
 - "Tongue-in-cheek": sarcastic expression
 - "Sight for sore eyes": a person or thing that you are extremely pleased or relieved to see, often because you haven't seen them for a long time.
 - "In for a penny, in for a pound": go all in
+- "on the sly": secretly
+- "misty-eyed": tearful, choked up, emotional

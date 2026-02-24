@@ -16,19 +16,37 @@
 - Connect the dots.
 ---
 ### 23/2
-- BKK
+- [x] Import contacts, companies (with associated contacts), and deals (with associated contacts)
+- [x] Cook the dictionary
 ### 24/2
-- BKK++ with docs
+- [x] Update BKK Data Mapping sheet
+- [x] Add BKK Reports & Dashboards
+	- [x] Operations
+	- [x] Onboarding
+	- [x] SAP
+	- [x] Marcoms 
+	- [x] Membership
+	- [x] Total
+	- [x] SQR
+	- [x] Forum
+
 ### 25/2
-- Same
+- [ ] Add BKK workflows
+- [ ] Update Rollout doc:
+	- No SAP related data
+	- Marcoms: Submissions by Form (no `Form type`)
+	- Marcoms: Email Open + Click-through Rate (Compared To | Previous 30 days)
 ### 26/2
-- `coffee-finder` ADR++
+- Refine BKK
+- Resolve QLD feedback (if any)
 ### 27/2
 - BKK Handoff
 ### 28/2
 - 1k @2:06 with paddles
+- `coffee-finder` ADR++
 - SLAs with TDD
 ### 1/3
 - Morning splurge
 - Groceries
 - `coffee-finder` ADR++
+
