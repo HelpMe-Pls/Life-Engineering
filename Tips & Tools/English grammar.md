@@ -131,3 +131,4 @@
 - "In for a penny, in for a pound": go all in
 - "on the sly": secretly
 - "misty-eyed": tearful, choked up, emotional
+- "make amends": to apologize and/or compensate so the situation is repaired
