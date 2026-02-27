@@ -55,7 +55,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -248,11 +248,12 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "06519a3a427616a6",
+  "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
-    "Notes/Weekly Tasks.md",
     "Notes/Daily Standup.md",
+    "Notes/Weekly Tasks.md",
     "Notes/HubSpot.md",
+    "Notes/2026.md",
     "Tips & Tools/English vocab.md",
     "Tips & Tools/English grammar.md",
     "Books/Extreme Ownership.md",
@@ -261,7 +262,6 @@
     "Books/Man's Search For Meaning.md",
     "Books/Never Split The Difference.md",
     "Books/Skin In The Game.md",
-    "Notes/2026.md",
     "Notes/2025.md",
     "Tips & Tools/Tips & Tools.md",
     "Tips & Tools/Tips.md",

@@ -1,5 +1,5 @@
-- Thanks, `name`. Yesterday I set up the reports and dashboards for the Bangkok portal using the data they gave us, and I updated the rollout progress doc to match the current state.
-- So the main thing for today for me is to keep working on dah workflows setup for Bangkok, hopefully we can get everything squared away by the end of the week.
+- Thanks, `name`. Good morning everyone. Last Friday I notified EO Bangkok members about the current state of their portal so they’re aligned with where we’re at. And I also checked out the documentation for the upcoming steps in EO Global.
+- So for today, I’m gonna check for Bangkok’s comments, and if there are any, we’ll set up a meeting to work through them. Aside from that, I’m gonna start addressing the feedback from Queensland.
 
 > Emails from this domain deserve to be placed in the inbox (not spam).
 ---
@@ -26,13 +26,14 @@
 # HubSpot
 
 > [!info] Intro
-> - I'm a software engineer over at Edge8, and I also handle the technical support for any HubSpot issues that pop up in the EO Chapters.
+> - I’m a software engineer over at Edge8, on Dave's team, and I'm the guy who carries out the HubSpot implementation for EO chapters.
+> - I figure it's a good idea to join the meeting, see what you guys are talking about so I get what I'm about to do for the next couple of months.
 
 ## Key metrics
 - Chapters are able to track their two levers of growth, member retention and member acquisition with a goal of 8% NET new growth every year.
-	- The leading indicators of this is <u>data cleanliness</u> and `number of leads` to `number of opportunities` from a deal funnel perspective → ==figure out the related deal pipelines==. 
+	- The leading indicators of this is <u>data cleanliness</u> and `number of leads` to `number of opportunities` from a deal funnel perspective → more deals → more potential for more money.
 	- Check [this](https://chatgpt.com/share/e/698078bc-a34c-8009-bd8d-a53183e6de0f) out.
-	- As we're part of EO Global, we'd know we hit the mark when we roll out chapters and they have a high rate of satisfaction.
+	- As we're part of EO Global, ==we'd know we hit the mark when we roll out chapters and they have a high rate of satisfaction.==
 	- EO renews in June. High success means they hire more and expand.
 	- We are on track to do 60 chapters by the end of the year.
 ## For Global

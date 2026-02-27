@@ -31,22 +31,24 @@
 	- [x] Forum
 
 ### 25/2
-- [ ] Add BKK workflows
-- [ ] Update Rollout doc:
+- [x] Add BKK workflows
+- [x] Update Rollout doc:
 	- No SAP related data
-	- Marcoms: Submissions by Form (no `Form type`)
-	- Marcoms: Email Open + Click-through Rate (Compared To | Previous 30 days)
+	- `WF — Deal — Member Acquisition → Onboarding Track Handoff`: update `Amount`
+	- `WF — Contact — Membership Application Form → Create Task`: update Assignee = `SQR`
+	- Address & sender (`{{owner.email}}`) for the `Revenue Verification Form` email to build this: `WF — Deal — Member Acquisition → Stage-based Emails`
 ### 26/2
-- Refine BKK
-- Resolve QLD feedback (if any)
+- Checking in with BKK
+- Resolve QLD feedback 
 ### 27/2
 - BKK Handoff
 ### 28/2
 - 1k @2:06 with paddles
+- Groceries
+- Bragdoc++
 - `coffee-finder` ADR++
-- SLAs with TDD
+
 ### 1/3
 - Morning splurge
-- Groceries
 - `coffee-finder` ADR++
 
