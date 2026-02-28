@@ -204,7 +204,7 @@ akin {to} (adj): alike, similar
 
 ==stipulate== (v): specify, demand, prescribe
 
-vernacular (adj-n): native speech, regional language
+==vernacular== (adj-n): native speech, regional language
 
 toil (v-n): labor, grind, exhausting hard work
 
@@ -842,6 +842,8 @@ crux (n): essence, core, gist, kernel
 
 ==instigate== (v): provoke, incite, trigger, stir, prod
 
+impecunious (adj): poor, penniless
+
 ==opulent== (adj): rich, wealthy, affluent, sumptuous
 
 lucrative (adj): profitable, moneymaking
@@ -1216,6 +1218,10 @@ spurious (adj): false, bogus, unfounded, misleading
 
 percolation (n): seepage, filtration, diffusion, sink in
 
+imbibe (v): nhậu, drinking, absorb, internalize 
+
+imbue (v): full of, fill with, endow with, pervade
+
 reprovingly (adv): sternly, reproachfully, disapprovingly
 
 homemaker (n): nội trợ
@@ -1223,4 +1229,9 @@ homemaker (n): nội trợ
 perambulate (v): take a walk
 
 welch (v): to not keep a promise
+
+mercantile (adj): commercial, trade, business → merchant (n)
+
+down payment (n): deposit, upfront payment, tiền đặt cọc
+
 

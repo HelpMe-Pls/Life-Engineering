@@ -15,40 +15,27 @@
 - Put yourself out there.
 - Connect the dots.
 ---
-### 23/2
-- [x] Import contacts, companies (with associated contacts), and deals (with associated contacts)
-- [x] Cook the dictionary
-### 24/2
-- [x] Update BKK Data Mapping sheet
-- [x] Add BKK Reports & Dashboards
-	- [x] Operations
-	- [x] Onboarding
-	- [x] SAP
-	- [x] Marcoms 
-	- [x] Membership
-	- [x] Total
-	- [x] SQR
-	- [x] Forum
-
-### 25/2
-- [x] Add BKK workflows
-- [x] Update Rollout doc:
-	- No SAP related data
-	- `WF — Deal — Member Acquisition → Onboarding Track Handoff`: update `Amount`
-	- `WF — Contact — Membership Application Form → Create Task`: update Assignee = `SQR`
-	- Address & sender (`{{owner.email}}`) for the `Revenue Verification Form` email to build this: `WF — Deal — Member Acquisition → Stage-based Emails`
-### 26/2
-- Checking in with BKK
-- Resolve QLD feedback 
-### 27/2
-- BKK Handoff
-### 28/2
-- 1k @2:06 with paddles
+### 2/3
+- [ ] Resolve QLD feedback
+- [ ] Checkout EO Global
+### 3/3
+- [ ] Same
+- [ ] Know what to do get the raise (check KPIs)
+### 4/3
+- [ ] Same
+- [ ] Checkin with BKK
+### 5/3
+- [ ] Contingencies
+- [ ] `coffee-finder` biz
+### 6/3
+- [ ] Contingencies
+- [ ] Team building
+### 7/3
+- Morning splurge
 - Groceries
 - Bragdoc++
 - `coffee-finder` ADR++
-
-### 1/3
-- Morning splurge
+### 8/3
+- 1k @2:06 with paddles
 - `coffee-finder` ADR++
 
