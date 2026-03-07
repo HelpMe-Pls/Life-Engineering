@@ -1,7 +1,5 @@
-- Thanks, `name`. Good morning everyone. Last Friday I notified EO Bangkok members about the current state of their portal so they’re aligned with where we’re at. And I also checked out the documentation for the upcoming steps in EO Global.
-- So for today, I’m gonna check for Bangkok’s comments, and if there are any, we’ll set up a meeting to work through them. Aside from that, I’m gonna start addressing the feedback from Queensland.
-
-> Emails from this domain deserve to be placed in the inbox (not spam).
+- Thanks, `name`. Good morning everyone. Yesterday I **notified Queensland of** the current status of their HubSpot portal and the blockers we **ran into** during the data migration. Bangkok also **got back to us** with more **member data**.
+- So today I’m gonna start importing **Bangkok’s new members** and update some **deal-related properties** for Queensland.
 ---
 # 1-1
 > [!important] For promotion
@@ -26,7 +24,7 @@
 # HubSpot
 
 > [!info] Intro
-> - I’m a software engineer over at Edge8, on Dave's team, and I'm the guy who carries out the HubSpot implementation for EO chapters.
+> - I’m a software engineer over at Edge8, on Dave's team, and I'm the guy who carries out the HubSpot technical implementation for EO chapters.
 > - I figure it's a good idea to join the meeting, see what you guys are talking about so I get what I'm about to do for the next couple of months.
 
 ## Key metrics
