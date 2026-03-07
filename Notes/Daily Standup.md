@@ -1,5 +1,5 @@
-- Thanks, `name`. Good morning everyone. Yesterday I **notified Queensland of** the current status of their HubSpot portal and the blockers we **ran into** during the data migration. Bangkok also **got back to us** with more **member data**.
-- So today I’m gonna start importing **Bangkok’s new members** and update some **deal-related properties** for Queensland.
+- Thanks, `name`. Good morning everyone. Last Friday I **notified Bangkok of** the current status of their HubSpot portal and the blockers we **ran into** during the data migration. I also reviewed some of the deal-related props and workflows for Queensland.
+- So my plan for today is to resolve those deal-related issues and then get back to setting up the Bangkok portal with the latest feedback they just gave us.
 ---
 # 1-1
 > [!important] For promotion
