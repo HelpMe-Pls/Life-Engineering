@@ -26,7 +26,7 @@
 - [ ] Same
 ### 13/3
 - [ ] Contingencies
-- [ ] `coffee-finder` biz
+- [ ] `coffee-finder` biz: identify the low-cost mistakes, with known maximum losses, and large potential payoff (the central feature of positive Black Swans).
 ### 14/3
 - Morning splurge
 - Groceries
