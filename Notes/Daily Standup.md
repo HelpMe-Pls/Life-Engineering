@@ -7,12 +7,7 @@
 > - The results of your work. What value did it bring to the business.
 > - What would you do differently if we could go back and do it again.
 ## For the record
-- For the record, I think I'll just quickly walk through what we're working on at EO so you get the idea.
-- So now that we’re part of EO Global, I think we’ll know we’re really hitting the mark when we roll out chapters and they’re showing a high satisfaction rate.
-- And EO renews around June, so if we crush it, that usually means they'll hire more and expand.
-- So our job is to make dah chapter setup — simple enough — that people can track the two main growth levers — which are retention and acquisition—so basically we're expecting 8% NET new growth goal each year. 
-- Leading indicators to watch are clean data and the leads-to-opportunities numbers in the deal funnel. And if we can scale that to 60 chapters by the end of the year, then the 20% raise KPI for everyone starts looking a lot more realistic.
-- And I'll try my best to make that happen.
+- The hard part
 
 > I'm aware that the outcome is what we're aiming for, but a lot of stuff affects outcomes, whereas if we judge your performance purely based on your output, which is something that you have full control of, then I'm pretty sure that you're the one who's setting the standard for everyone here. 
 > You too. To be fair, if I were the boss, I'd have doubled your salary by now. You deserve so much more than this; considering all the things you've done for the company so far. 

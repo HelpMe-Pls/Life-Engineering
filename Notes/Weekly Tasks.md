@@ -21,7 +21,8 @@
 ### 10/3
 - [ ] Same & setup BKK meeting
 ### 11/3
-- [ ] Same & checking in QLD
+- [ ] Sprint review/planning
+- [ ] Checking in QLD
 ### 12/3
 - [ ] Same
 ### 13/3

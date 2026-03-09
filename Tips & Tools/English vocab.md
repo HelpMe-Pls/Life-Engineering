@@ -212,7 +212,7 @@ bellow (v): bawl, grawl, to shout in a deep voice
 
 ==unscrupulous== (adj): unethical, immoral, Machiavellian
 
-diatribe {against sb/sth} (n): a long and angry speech or piece of writing attacking and criticizing
+diatribe {against sb/sth} (n): a tirade, a long and angry speech or piece of writing attacking and criticizing
 
 perplexing (adj): puzzling, confusing, difficult to understand, elusive, ==quandary==
 
@@ -952,7 +952,7 @@ exemplary (adj-n): gương tốt (để noi theo), dằn mặt
 
 egregious (adj): blatant, obvious, conspicuous, flagrant, prominent
 
-==salient== (adj): most prominent/noticable
+==salient== (adj): most prominent/noticeable
 
 mar (v-n): spoil, tarnish, blemish, defect
 
@@ -1078,7 +1078,7 @@ irrigation (n): tưới, supply with water by artificial means
 
 enact (v): act out, to make into law
 
-attire (n): clothes, dress → ==sartorial== (adj)
+attire (n): clothes, garb, dress → ==sartorial== (adj)
 
 pedantic (adj): unimaginative, dull
 
