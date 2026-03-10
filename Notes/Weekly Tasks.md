@@ -16,15 +16,25 @@
 - Connect the dots.
 ---
 ### 9/3
-- [ ] [Resolve](https://t3.chat/chat/7da7dc8d-abcf-49da-a212-159aa806e7e0) QLD deals
-- [ ] Review BKK feedback
+- [x] Review BKK feedback:
+	- [x] Form confirmation 
+	- [x] Associated companies + leads/prospects import
+	- [x] Update `Membership Start Date`
+	- [x] Review data dictionary
 ### 10/3
-- [ ] Same & setup BKK meeting
+- [x] Notify BKK to review your work (https://docs.google.com/document/d/1HLYKDu0Z6rE8tdgv41HjxkmR9wu93DnIIStHCfwwQeo/edit?tab=t.0#heading=h.m11bjmml592h) 
+	- [x] Use `Close Date` instead of `Membership Start Date`
+- [x] Check in with QLD
+- [x] Update the `Conditional stage properties` to remind the responsible personnel to update the `Closed Lost Description` when a deal is moved to `Closed Lost`
+- [ ] Prepare for sprint review
 ### 11/3
 - [ ] Sprint review/planning
-- [ ] Checking in QLD
+- [ ] [Address](https://t3.chat/chat/7da7dc8d-abcf-49da-a212-159aa806e7e0) QLD feedback:
+	- [ ] Create/[update](https://app-ap1.hubspot.com/workflows/442233097/platform/flow/3621113330/edit) a workflow to sync `Close Date` (Contact → Deal information) value to `EO Chapter Join Date`
 ### 12/3
-- [ ] Same
+- [ ] Luma hackathon check in
+- [ ] Rebalance stock portfolio
+- [ ] Contingencies
 ### 13/3
 - [ ] Contingencies
 - [ ] `coffee-finder` biz: identify the low-cost mistakes, with known maximum losses, and large potential payoff (the central feature of positive Black Swans).

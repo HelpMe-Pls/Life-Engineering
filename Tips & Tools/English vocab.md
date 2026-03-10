@@ -14,6 +14,8 @@ muse (v-n): ponder, ruminate, a state of deep thought or dreamy abstraction
 
 rote (n): học vẹt
 
+ornithologist (n): bird scientist
+
 omnipresent (adj) = ubiquitous, pervasive: present everywhere at the same time
 
 disarray (v-n): out of order, confusion

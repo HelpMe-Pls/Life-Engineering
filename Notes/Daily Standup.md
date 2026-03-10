@@ -1,5 +1,7 @@
-- Thanks, `name`. Good morning everyone. Last Friday I **notified Bangkok of** the current status of their HubSpot portal and the blockers we **ran into** during the data migration. I also reviewed some of the deal-related props and workflows for Queensland.
-- So my plan for today is to resolve those deal-related issues and then get back to setting up the Bangkok portal with the latest feedback they just gave us.
+- Thanks, `name`. Yesterday I presented what we got so far for both EO Bangkok and Queensland.
+- So my plan for today is to check in with the stakeholders to see if they have any input for the next steps of the rollout process.
+
+> Proper INSURANCE compliance is literally the BASELINE expectation. I'm pretty sure that I'm not the only one impacted by this, so I urge you to honor our contracts and resolve this IMMEDIATELY. Rent's due.
 ---
 # 1-1
 > [!important] For promotion
@@ -7,7 +9,8 @@
 > - The results of your work. What value did it bring to the business.
 > - What would you do differently if we could go back and do it again.
 ## For the record
-- The hard part
+- I don’t think I’ve gotten any extra updates from EO about the tasks.
+- But if I had to sum it up, I’ve realized one of the hardest parts of my job is balancing chapter accessibility with CRM best practices to keep the system maintainable and scalable.
 
 > I'm aware that the outcome is what we're aiming for, but a lot of stuff affects outcomes, whereas if we judge your performance purely based on your output, which is something that you have full control of, then I'm pretty sure that you're the one who's setting the standard for everyone here. 
 > You too. To be fair, if I were the boss, I'd have doubled your salary by now. You deserve so much more than this; considering all the things you've done for the company so far. 
@@ -40,10 +43,4 @@
 3. Explore how we would connect the local member acquisition funnel to the global.
 ## QLD & BKK
 - Prefer native HubSpot props if they're asking about data. Tell them to refer to the data dictionary before making changes to the props or pipelines.
-- Monday: CRM (too flexible, they're struggling with structure: centralized records tracking everything in one place, and that's what they're expecting from HubSpot to solve that structured system)
-	- Same record duplicated in multiple tables without a relationship/connection between any of them
-- Plausible -> Calendy: automation and meeting schedule connected to Monday
-
-## Tmp
-- The only input that I got is the documentation and the conventions that you guys are following, because we've been documenting everything 
-- I just noticed that you guys are using Tickets. We've never used that feature before, and it seems kinda similar to Tasks. Would you mind walking us through an example of when we should use one over the other?
+- See how they're working with their existing stages and propose something [like this](https://docs.google.com/spreadsheets/d/1_fXks4xySVRB8DKgZbvaZ7zFzTglXM6WlxkF1fGb5sg/edit?usp=sharing)
