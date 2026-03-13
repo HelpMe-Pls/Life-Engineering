@@ -26,24 +26,23 @@
 	- [x] Use `Close Date` instead of `Membership Start Date`
 - [x] Check in with QLD
 - [x] Update the `Conditional stage properties` to remind the responsible personnel to update the `Closed Lost Description` when a deal is moved to `Closed Lost`
-- [ ] Prepare for sprint review
+- [x] Prepare for sprint review
 ### 11/3
-- [ ] Sprint review/planning
-- [ ] [Address](https://t3.chat/chat/7da7dc8d-abcf-49da-a212-159aa806e7e0) QLD feedback:
-	- [ ] Create/[update](https://app-ap1.hubspot.com/workflows/442233097/platform/flow/3621113330/edit) a workflow to sync `Close Date` (Contact → Deal information) value to `EO Chapter Join Date`
+- [x] Sprint review/planning
+- [x] [Address](https://t3.chat/chat/7da7dc8d-abcf-49da-a212-159aa806e7e0) QLD feedback:
+	- [x] Create/[update](https://app-ap1.hubspot.com/workflows/442233097/platform/flow/3621113330/edit) a workflow to sync `Close Date` (Contact → Deal information) value to `EO Chapter Join Date`
 ### 12/3
-- [ ] Luma hackathon check in
-- [ ] Rebalance stock portfolio
-- [ ] Contingencies
+- [x] Luma hackathon Discord check in
+- [x] Remind QLD & BKK with (updated) next steps
 ### 13/3
-- [ ] Contingencies
-- [ ] `coffee-finder` biz: identify the low-cost mistakes, with known maximum losses, and large potential payoff (the central feature of positive Black Swans).
+- [x] BKK Meeting
+- [x] Rebalance stock portfolio
+- [x] Verify QLD `Contact Type`: extract all `Lifecycle Stage` values from `[Original] QLD Members.xlsx`
 ### 14/3
-- Morning splurge
+- Morning splurge (get creatine)
 - Groceries
 - Bragdoc++
-- 1-1 doc++
-- `coffee-finder` ADR++ (with t3)
+- `coffee-finder` ADR++ (with t3): identify the low-cost mistakes, with known maximum losses, and large potential payoff (the central feature of positive Black Swans)
 ### 15/3
 - 1k @2:06 with paddles
 - `coffee-finder` ADR++

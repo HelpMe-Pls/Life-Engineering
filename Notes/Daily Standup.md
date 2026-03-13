@@ -1,5 +1,5 @@
-- Thanks, `name`. Yesterday I presented what we got so far for both EO Bangkok and Queensland.
-- So my plan for today is to check in with the stakeholders to see if they have any input for the next steps of the rollout process.
+- Thanks, `name`. Good morning everyone. Last Friday I had a meeting with Bangkok to address their concerns and answer their questions about their HubSpot portal.
+- So the plan for today is that I’m gonna 
 
 > Proper INSURANCE compliance is literally the BASELINE expectation. I'm pretty sure that I'm not the only one impacted by this, so I urge you to honor our contracts and resolve this IMMEDIATELY. Rent's due.
 ---
@@ -44,3 +44,16 @@
 ## QLD & BKK
 - Prefer native HubSpot props if they're asking about data. Tell them to refer to the data dictionary before making changes to the props or pipelines.
 - See how they're working with their existing stages and propose something [like this](https://docs.google.com/spreadsheets/d/1_fXks4xySVRB8DKgZbvaZ7zFzTglXM6WlxkF1fGb5sg/edit?usp=sharing)
+### QLD
+- Verify `Contact Type`
+- Training checklist
+### BKK
+- Ask about the seats and their permission once they accept their invitations and poked around.
+## Altai sync with HubSpot
+- [Overview](https://eonetworkorg.sharepoint.com/:w:/r/sites/Hubspot/Shared%20Documents/General/Sharable%20Resources/Standing%20Hubspot%20Dev%20Call%20Transcripts.docx?d=wd4b3171e5bcf4391bc6ccf265fcee3d9&e=4%3a8c8f2b42468e4b798d1f86dc24241131&sharingv2=true&fromShare=true&at=9)
+
+
+
+
+
+
