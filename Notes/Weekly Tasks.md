@@ -27,7 +27,7 @@
 ### 19/3
 - [ ] LotusHack prep (EP doc)
 ### 20/3
-- [ ] VNG checkin
+- [ ] CIS checkin @4PM
 ### 21/3
 - Morning splurge
 - Groceries
