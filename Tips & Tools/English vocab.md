@@ -1236,4 +1236,4 @@ mercantile (adj): commercial, trade, business → merchant (n)
 
 down payment (n): deposit, upfront payment, tiền đặt cọc
 
-
+nomenclature (n): terminology, classification terms, danh pháp
