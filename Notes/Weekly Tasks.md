@@ -27,7 +27,8 @@
 	- [x] [QnA for Hubspot - Legacy - Altai](https://docs.google.com/document/d/1nnKmEohq3eiLLvZhwpSSjnfzI6iFyE2lGJhSSy31L_E/edit?tab=t.0)
 	- [x] Review the recording transcript
 ### 18/3
-- [ ] Fill in QLD & BKK handoff docs & remind them about the next steps in the WhatsApp group
+- [ ] Remind QLD & BKK about the next steps in the WhatsApp group
+	- [ ] Fill in their handoff docs
 - [ ] Ask Matt if he uses AI for the arts
 - [ ] [Learn this](https://www.aihero.dev/ai-engineer-roadmap)
 - [ ] [Purchase cohort](https://www.aihero.dev/cohorts/claude-code-for-real-engineers-2026-04)
