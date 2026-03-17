@@ -21,14 +21,16 @@
 - [x] [Learn this](https://animations.dev/learn/animation-theory/intro)
 ### 17/3
 - [x] Review QLD feedback (remind Kimmy about the file that you got for the import)
-- [ ] Ask Matt if he uses AI for the arts
-- [ ] Setup missing Segments for BKK
 - [x] Handoff doc for chapters
+- [ ] Setup missing Segments for BKK
 - [ ] Review these:
 	- [ ] [QnA for Hubspot - Legacy - Altai](https://docs.google.com/document/d/1nnKmEohq3eiLLvZhwpSSjnfzI6iFyE2lGJhSSy31L_E/edit?tab=t.0)
 	- [ ] Review the recording transcript
-- [ ] [Learn this](https://www.aihero.dev/ai-engineer-roadmap)
+- [ ] Ask Matt if he uses AI for the arts
+
 ### 18/3
+- [ ] Remind BKK
+- [ ] [Learn this](https://www.aihero.dev/ai-engineer-roadmap)
 - [ ] [Purchase cohort](https://www.aihero.dev/cohorts/claude-code-for-real-engineers-2026-04)
 - [ ] Introduce yourself to the Hackathon
 - [ ] Clean up EP for the hackathon
