@@ -1,5 +1,5 @@
-- Thanks, `name`. Yesterday I documented the HubSpot handoff checklist and rollout template so we can prepare for the upcoming chapter rollouts once we're done with the EO Global setup.
-- So today I’m gonna get back to EO Queensland as well as EO Bangkok to fill in any configurations that were missed during setup.
+- Thanks, `name`. Yesterday I documented the handoff doc for the chapters as well as the rollout checklist, and reviewed the recording from our last meeting with EO Global to prepare for the weekly meeting this morning. 
+- So today I’m gonna remind QLD & BKK to do their part so we can **move into** the final stages of the process.
 
 > Proper INSURANCE compliance is literally the BASELINE expectation. I'm pretty sure that I'm not the only one impacted by this, so I urge you to honor our contracts and resolve this IMMEDIATELY. Rent's due.
 ---
