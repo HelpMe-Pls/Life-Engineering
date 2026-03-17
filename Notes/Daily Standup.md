@@ -1,5 +1,5 @@
-- Thanks, `name`. Good morning everyone. Last Friday I **met with** Bangkok to address their concerns and answer their questions about their HubSpot portal.
-- So today I’m gonna check in with Queensland, then write up the training and onboarding steps for the chapters since we’re getting close to the end of the rollout.
+- Thanks, `name`. Yesterday I documented the HubSpot handoff checklist and rollout template so we can prepare for the upcoming chapter rollouts once we're done with the EO Global setup.
+- So today I’m gonna get back to EO Queensland as well as EO Bangkok to fill in any configurations that were missed during setup.
 
 > Proper INSURANCE compliance is literally the BASELINE expectation. I'm pretty sure that I'm not the only one impacted by this, so I urge you to honor our contracts and resolve this IMMEDIATELY. Rent's due.
 ---
@@ -41,12 +41,31 @@
 1. Spin up a brand license for EO Vietnam.
 2. Explore how we would move the Member Acquisition funnel into it.
 3. Explore how we would connect the local member acquisition funnel to the global.
-## QLD & BKK
+## For Chapters
 - Prefer native HubSpot props if they're asking about data. Tell them to refer to the data dictionary before making changes to the props or pipelines.
 - See how they're working with their existing stages and propose something [like this](https://docs.google.com/spreadsheets/d/1_fXks4xySVRB8DKgZbvaZ7zFzTglXM6WlxkF1fGb5sg/edit?usp=sharing)
 - Ask about the seats and their permission once they accept their invitations and poked around.
+- Check out the template and the checklist.
 ## Altai sync with HubSpot
 - [Overview](https://eonetworkorg.sharepoint.com/:w:/r/sites/Hubspot/Shared%20Documents/General/Sharable%20Resources/Standing%20Hubspot%20Dev%20Call%20Transcripts.docx?d=wd4b3171e5bcf4391bc6ccf265fcee3d9&e=4%3a8c8f2b42468e4b798d1f86dc24241131&sharingv2=true&fromShare=true&at=9)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -16,16 +16,25 @@
 - Connect the dots.
 ---
 ### 16/3
-- [ ] Handoff doc
-- [ ] Refine Rollout template
-- [ ] Review QLD feedback
+- [x] Handoff doc
+- [x] Refine Rollout template
+- [x] [Learn this](https://animations.dev/learn/animation-theory/intro)
 ### 17/3
-- [ ] Same
+- [x] Review QLD feedback (remind Kimmy about the file that you got for the import)
+- [ ] Ask Matt if he uses AI for the arts
+- [ ] Setup missing Segments for BKK
+- [x] Handoff doc for chapters
+- [ ] Review these:
+	- [ ] [QnA for Hubspot - Legacy - Altai](https://docs.google.com/document/d/1nnKmEohq3eiLLvZhwpSSjnfzI6iFyE2lGJhSSy31L_E/edit?tab=t.0)
+	- [ ] Review the recording transcript
+- [ ] [Learn this](https://www.aihero.dev/ai-engineer-roadmap)
 ### 18/3
-- [ ] Same
-- [ ] Contingencies
+- [ ] [Purchase cohort](https://www.aihero.dev/cohorts/claude-code-for-real-engineers-2026-04)
+- [ ] Introduce yourself to the Hackathon
+- [ ] Clean up EP for the hackathon
 ### 19/3
 - [ ] LotusHack prep (EP doc)
+- [ ] `coffee-finder` ADR++ (with t3): identify the low-cost mistakes, with known maximum losses, and large potential payoff (the central feature of positive Black Swans)
 ### 20/3
 - [ ] CIS checkin @4PM
 ### 21/3
@@ -33,9 +42,9 @@
 - Groceries
 - Bragdoc++
 - VNG checkin
-- `coffee-finder` ADR++ (with t3): identify the low-cost mistakes, with known maximum losses, and large potential payoff (the central feature of positive Black Swans)
 ### 22/3
-- 1k @2:06 with paddles
+- ~~1k @2:06 with paddles
 - VNG checkin
+- Attend graduation
 - `coffee-finder` ADR++
 

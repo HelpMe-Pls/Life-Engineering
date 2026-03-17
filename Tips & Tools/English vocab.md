@@ -830,6 +830,8 @@ deity (n): god, divinity
 
 blasphemy (n): sacrilege, irreverence, showing contempt or lack of reverence for the sacred or inviolable
 
+profanity (n): swearing,  cursing
+
 sanctum (n): a sacred place where one is free from intrusion
 
 revere (v): venerate, very much respect and admire someone or something
@@ -1197,6 +1199,8 @@ lurid (adj): horrific, gruesome, sensational (giật gân), trashy, glaring, gar
 lurch (v-n): leave hanging (bail on), abandon, jerk, jolt, stagger, sway
 
 staunch (adj-v): loyal, committed, devoted, stanch, stop (a flow)
+
+suffrage (n): the right to vote
 
 whet (v): pique, spark (interest/curiosity), sharpen, hone 
 
