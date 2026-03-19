@@ -10,7 +10,7 @@
           {
             "id": "2ed2b87e25932f50",
             "type": "tabs",
-            "dimension": 53.09318715740016,
+            "dimension": 52.82534246575342,
             "children": [
               {
                 "id": "d655e157dbd2a336",
@@ -74,7 +74,7 @@
           {
             "id": "8cedd05142699eb5",
             "type": "split",
-            "dimension": 46.90681284259984,
+            "dimension": 47.17465753424658,
             "children": [
               {
                 "id": "c3184acf40a6477e",
@@ -148,7 +148,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "enum",
+                "query": "frequency",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -265,12 +265,14 @@
   "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
     "Notes/Daily Standup.md",
-    "Notes/Weekly Tasks.md",
-    "Tips & Tools/English grammar.md",
     "Tips & Tools/English vocab.md",
+    "Notes/Weekly Tasks.md",
+    "Notes/2026.md",
+    "Tips & Tools/English grammar.md",
+    "Tips & Tools/DSA.md",
+    "Tips & Tools/Interview prep.md",
     "Notes/HubSpot.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
-    "Notes/2026.md",
     "Books/Extreme Ownership.md",
     "Books/Supercommunicators.md",
     "Books/Beyond Order.md",
@@ -288,8 +290,6 @@
     "Notes/Brag Doc.md",
     "Notes/EO.md",
     "Books/Books.md",
-    "Notes/EO.md",
-    "Notes/Edge8.md",
     "Notes",
     "Backend/sql-joins.png",
     "Books",

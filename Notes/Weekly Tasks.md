@@ -27,23 +27,24 @@
 	- [x] [QnA for Hubspot - Legacy - Altai](https://docs.google.com/document/d/1nnKmEohq3eiLLvZhwpSSjnfzI6iFyE2lGJhSSy31L_E/edit?tab=t.0)
 	- [x] Review the recording transcript
 ### 18/3
-- [ ] Remind QLD & BKK about the next steps in the WhatsApp group
-	- [ ] Fill in their handoff docs
-- [ ] Ask Matt if he uses AI for the arts
-- [ ] [Learn this](https://www.aihero.dev/ai-engineer-roadmap)
-- [ ] [Purchase cohort](https://www.aihero.dev/cohorts/claude-code-for-real-engineers-2026-04)
-- [ ] Introduce yourself & team formation for the Hackathon
-- [ ] Clean up EP for the hackathon
+- [x] Remind QLD & BKK about the next steps in the WhatsApp group
+	- [x] Fill in QLD Forums
+- [x] Set up for EOVN/EO Global data mapping: https://applink.larksuite.com/client/message/link/open?token=AmiEGb%2FtwEAmabppNq%2BBDt0%3D
+- [x] Ask Matt if he uses AI for the arts
 ### 19/3
-- [ ] LotusHack prep (EP doc)
+- [x] Wrap up EOVN/EOGlobal data dictionary
 - [ ] `coffee-finder` ADR++ (with t3): identify the low-cost mistakes, with known maximum losses, and large potential payoff (the central feature of positive Black Swans)
 ### 20/3
+- [ ] Clean up EP for the hackathon
+- [ ] [Learn this](https://www.aihero.dev/ai-engineer-roadmap)
+- [ ] [Purchase cohort](https://www.aihero.dev/cohorts/claude-code-for-real-engineers-2026-04)
+- [ ] Ask `vojta` for the art
 - [ ] CIS checkin @4PM
 ### 21/3
 - Morning splurge
 - Groceries
 - Bragdoc++
-- VNG checkin
+- VNG checkin & lock tf in with EP
 ### 22/3
 - ~~1k @2:06 with paddles
 - VNG checkin
