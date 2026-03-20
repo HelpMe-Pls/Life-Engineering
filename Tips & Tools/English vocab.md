@@ -742,6 +742,8 @@ speculation (n): gamble, venture, a risky undertaking
 
 fallible <fau-luh-bal> (adj): flawed, defective, faulty
 
+foible (n): harmless little imperfection, quirk
+
 larceny (n): robbery, theft
 
 extricate (v): liberate, untangle, rescue
@@ -1231,6 +1233,8 @@ imbue (v): full of, fill with, endow with, pervade
 reprovingly (adv): sternly, reproachfully, disapprovingly
 
 homemaker (n): nội trợ
+
+abode (n): a slightly humorous or polite way to say “my home”
 
 perambulate (v): take a walk
 

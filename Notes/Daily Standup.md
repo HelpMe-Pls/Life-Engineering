@@ -1,5 +1,5 @@
-- Thanks, `name`. Good morning everyone. Yesterday I documented the rollout cost estimates in working hours for the chapters. I also created the custom props audit for EO Global to help us decide how to configure the portal for the upcoming rollout stages.
-- So today I’m gonna start filling in the handoff docs for QLD & BKK while waiting for their feedback.
+- Thanks, `name`. Good morning everyone. Last Friday I was filling in the handoff docs for QLD while waiting for their feedback.
+- So today I’m gonna keep working on their handoff doc and then do the same for BKK. 
 
 > Proper INSURANCE compliance is literally the BASELINE expectation. I'm pretty sure that I'm not the only one impacted by this, so I urge you to honor our contracts and resolve this IMMEDIATELY. Rent's due.
 ---
