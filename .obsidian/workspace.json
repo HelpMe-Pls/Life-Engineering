@@ -69,7 +69,7 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 2
           },
           {
             "id": "8cedd05142699eb5",
@@ -262,12 +262,12 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "06519a3a427616a6",
+  "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
-    "Tips & Tools/English vocab.md",
     "Notes/Daily Standup.md",
-    "Tips & Tools/English grammar.md",
     "Notes/Weekly Tasks.md",
+    "Tips & Tools/English vocab.md",
+    "Tips & Tools/English grammar.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
     "Notes/2026.md",
     "Tips & Tools/DSA.md",

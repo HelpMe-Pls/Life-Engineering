@@ -1,5 +1,5 @@
-- Thanks, `name`. Good morning everyone. Last Friday I was filling in the handoff docs for QLD while waiting for their feedback.
-- So today I’m gonna keep working on their handoff doc and then do the same for BKK. 
+- Thanks, `name`. Yesterday I had an offline session with the EO team to figure out the data model and sandbox configurations for a chapter in EO Global.
+- So today I’m gonna keep working on the setup and then fill in the handoff doc for Queensland to prepare for the sprint review tomorrow morning.
 
 > Proper INSURANCE compliance is literally the BASELINE expectation. I'm pretty sure that I'm not the only one impacted by this, so I urge you to honor our contracts and resolve this IMMEDIATELY. Rent's due.
 ---
@@ -49,17 +49,6 @@
 ## Altai sync with HubSpot
 - [Overview](https://eonetworkorg.sharepoint.com/:w:/r/sites/Hubspot/Shared%20Documents/General/Sharable%20Resources/Standing%20Hubspot%20Dev%20Call%20Transcripts.docx?d=wd4b3171e5bcf4391bc6ccf265fcee3d9&e=4%3a8c8f2b42468e4b798d1f86dc24241131&sharingv2=true&fromShare=true&at=9)
 ## Misc
-Hi everyone — here’s a quick overview of where things stand right now:
-
-Overall: We’re moving into the final stages of the rollout. The main focus now is data fidelity and the portal is easy to work with. The key next steps are making sure all of your data—leads, prospects, members, and so on—is synced into HubSpot, and that the responsible team members know how to navigate and use it.
-
-For QLD: I’ve already updated the forum list, so you can move forward with the “Next Steps” section.
-
-For BKK: We had a meeting to walk you through what we’ve built so far, so I hope you’ve had a chance to review the portal, verify the data integrity, and get a high-level understanding of how everything is configured. Again, questions are welcome in the Feedback section.
-
-I hope we can keep the momentum going and wrap this up in the next couple of weeks. I’m also preparing your handoff doc, which I’ll share with you as we move into the final stage of the process.
-
-
 
 
 

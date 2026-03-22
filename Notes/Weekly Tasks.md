@@ -15,39 +15,28 @@
 - Put yourself out there.
 - Connect the dots.
 ---
-### 16/3
-- [x] Handoff doc
-- [x] Refine Rollout template
-- [x] [Learn this](https://animations.dev/learn/animation-theory/intro)
-### 17/3
-- [x] Review QLD feedback (remind Kimmy about the file that you got for the import)
-- [x] Handoff doc for chapters
-- [x] Setup missing Segments for BKK
-- [x] Review these:
-	- [x] [QnA for Hubspot - Legacy - Altai](https://docs.google.com/document/d/1nnKmEohq3eiLLvZhwpSSjnfzI6iFyE2lGJhSSy31L_E/edit?tab=t.0)
-	- [x] Review the recording transcript
-### 18/3
-- [x] Remind QLD & BKK about the next steps in the WhatsApp group
-	- [x] Fill in QLD Forums
-- [x] Set up for EOVN/EO Global data mapping: https://applink.larksuite.com/client/message/link/open?token=AmiEGb%2FtwEAmabppNq%2BBDt0%3D
-- [x] Ask Matt if he uses AI for the arts
-### 19/3
-- [x] Wrap up EOVN/EOGlobal data dictionary
-- [ ] `coffee-finder` ADR++ (with t3): identify the low-cost mistakes, with known maximum losses, and large potential payoff (the central feature of positive Black Swans)
-### 20/3
-- [ ] Clean up EP for the hackathon
+### 23/3
+- [ ] Offline meeting to work on EO Global
+### 24/3
+- [ ] Fill in Handoff doc for QLD & BKK
+- [ ] Fill in Rollout template for QLD & BKK
+### 25/3
+- [ ] Same
+### 26/3
+- [ ] Same
 - [ ] [Learn this](https://www.aihero.dev/ai-engineer-roadmap)
 - [ ] [Purchase cohort](https://www.aihero.dev/cohorts/claude-code-for-real-engineers-2026-04)
+### 27/3
+- [ ] Same
 - [ ] Ask `vojta` for the art
-- [ ] CIS checkin @4PM
-### 21/3
+- [ ] TDD for EP
+### 28/3
 - Morning splurge
 - Groceries
 - Bragdoc++
-- VNG checkin & lock tf in with EP
-### 22/3
-- ~~1k @2:06 with paddles
-- VNG checkin
-- Attend graduation
+- [Learn this](https://animations.dev/learn/animation-theory/intro)
+- TDD++ for EP
+### 29/3
+- 1k @2:06 with paddles
 - `coffee-finder` ADR++
 
