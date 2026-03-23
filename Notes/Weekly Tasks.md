@@ -16,12 +16,13 @@
 - Connect the dots.
 ---
 ### 23/3
-- [ ] Offline meeting to work on EO Global
+- [x] Offline meeting to work on EO Global
 ### 24/3
+- [ ] Document existing workflows in EO Global
 - [ ] Fill in Handoff doc for QLD & BKK
 - [ ] Fill in Rollout template for QLD & BKK
 ### 25/3
-- [ ] Same
+- [ ] Sprint review + planning
 ### 26/3
 - [ ] Same
 - [ ] [Learn this](https://www.aihero.dev/ai-engineer-roadmap)
