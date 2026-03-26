@@ -1,5 +1,5 @@
-- Thanks, `name`. Yesterday I had an offline session with the EO team to figure out the data model and sandbox configurations for a chapter in EO Global.
-- So today I’m gonna keep working on the workflow audit for EO Global to see what they're about and categorize them in a doc with suggestions.
+- Thanks, `name`. Good morning everyone. Last Friday I finalized the ETL documentation and share it to the group to prepare for the upcoming data migration and restructuring of EO Global.
+- So today I'm gonna be working on the HubSpot tracking code on the Wix website for EOVN to support the marketing campaign.
 
 > Proper INSURANCE compliance is literally the BASELINE expectation. I'm pretty sure that I'm not the only one impacted by this, so I urge you to honor our contracts and resolve this IMMEDIATELY. Rent's due.
 ---
@@ -42,9 +42,11 @@
 2. Explore how we would move the Member Acquisition funnel into it.
 3. Explore how we would connect the local member acquisition funnel to the global.
 #### Normalization
-- Track member events with custom `Event` object and API to sync from external services
+- Track member events with custom `Event` & `Feedback` objects and API to sync from external services. This is low priority & reserved for better solutions. They're just nice to have for now.
+	- Nisha said: *All we need is logging activity from chapter staff which could be free text and they can write and say “recruiting event attended” in “Applicant engagement”*
 - `Forum`, `Member Feedback`  custom object
 - No need for the custom `Application` object
+- About data integrity: keep the `Tickets` & `Emails` in EO Global
 - Figure out what are they're trying to achieve with the [existing workflows](https://docs.google.com/spreadsheets/d/19I0Vu0pmOjyoCbYoy4KAMTr--K9Bkh_4/edit?usp=sharing&ouid=118330895762225798973&rtpof=true&sd=true):
 	- See the workflow descriptions and then maybe fill in the missing ones.
 - See how the Lifecycle Stages in EOVN can be mapped to EO Global.
@@ -56,7 +58,6 @@
 - Check out the template and the checklist.
 ## Altai sync with HubSpot
 - [Overview](https://eonetworkorg.sharepoint.com/:w:/r/sites/Hubspot/Shared%20Documents/General/Sharable%20Resources/Standing%20Hubspot%20Dev%20Call%20Transcripts.docx?d=wd4b3171e5bcf4391bc6ccf265fcee3d9&e=4%3a8c8f2b42468e4b798d1f86dc24241131&sharingv2=true&fromShare=true&at=9)
-
 
 
 

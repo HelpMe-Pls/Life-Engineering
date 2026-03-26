@@ -21,3 +21,16 @@
 - [ ] Create workflows
 - [ ] Import data
 - [ ] Handoff doc
+# Trackers for lead scoring (out of 100)
+- Fill in our form
+- Joined our events
+- Read our emails
+- Which page on our website they visited our EO site & their bounce rate
+	- Good for personalization
+- Gave us their phone number
+- Their social media interaction
+- Example: lead score = 25 → MQL; lead score = 100 → SQL; qualification passed → Opportunity → Moved into the `Member Acquistion` pipeline
+## What to do about it
+- Set up workflows based on the conditional triggers mentioned above
+	- Tailor the campaigns based on their interactions and interests.
+	- Segmenting the contacts based on that would be a good start.

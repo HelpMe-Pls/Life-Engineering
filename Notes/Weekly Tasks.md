@@ -9,7 +9,6 @@
 - Read books from 8-9PM
 - Pass out by 9:30PM
 - Rinse & repeat
-
 # Pivot
 - 6 months if no progress.
 - Put yourself out there.
@@ -17,20 +16,23 @@
 ---
 ### 23/3
 - [x] Offline meeting to work on EO Global
+- [x] [Purchase cohort](https://www.aihero.dev/cohorts/claude-code-for-real-engineers-2026-04)
 ### 24/3
-- [ ] Document existing workflows in EO Global
-- [ ] Fill in Handoff doc for QLD & BKK
-- [ ] Fill in Rollout template for QLD & BKK
+- [x] Document existing workflows in EO Global
+	- [x] Combine with the suggested data model to conclude your findings
+	- [x] Connect HubSpot to company's Claude
 ### 25/3
-- [ ] Sprint review + planning
+- [x] EO Global meeting
+- [x] Sprint review + planning
+- [x] Create a mapping doc for Legacy & new model
 ### 26/3
-- [ ] Same
-- [ ] [Learn this](https://www.aihero.dev/ai-engineer-roadmap)
-- [ ] [Purchase cohort](https://www.aihero.dev/cohorts/claude-code-for-real-engineers-2026-04)
+- [x] Reply `vojta`
+- [x] Review ETL
+- [x] HPBD Tam
 ### 27/3
-- [ ] Same
-- [ ] Ask `vojta` for the art
-- [ ] TDD for EP
+- [x] Set up CC
+- [ ] [Learn this](https://www.aihero.dev/ai-engineer-roadmap)
+- [x] Publish ETL
 ### 28/3
 - Morning splurge
 - Groceries
@@ -40,4 +42,7 @@
 ### 29/3
 - 1k @2:06 with paddles
 - `coffee-finder` ADR++
-
+---
+# Backlog
+- [ ] Fill in Handoff doc for QLD & BKK
+- [ ] Fill in Rollout template for QLD & BKK

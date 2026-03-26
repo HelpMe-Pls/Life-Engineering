@@ -132,3 +132,4 @@
 - "on the sly": secretly
 - "misty-eyed": tearful, choked up, emotional
 - "make amends": to apologize and/or compensate so the situation is repaired
+- "Can I call in that favor?": You owe me for something I did before, now it's time to return the favor

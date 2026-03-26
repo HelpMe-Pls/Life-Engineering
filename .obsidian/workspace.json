@@ -10,7 +10,7 @@
           {
             "id": "2ed2b87e25932f50",
             "type": "tabs",
-            "dimension": 52.25806451612903,
+            "dimension": 52.82534246575342,
             "children": [
               {
                 "id": "d655e157dbd2a336",
@@ -74,7 +74,7 @@
           {
             "id": "8cedd05142699eb5",
             "type": "split",
-            "dimension": 47.74193548387097,
+            "dimension": 47.17465753424658,
             "children": [
               {
                 "id": "c3184acf40a6477e",
@@ -265,11 +265,12 @@
   "active": "06519a3a427616a6",
   "lastOpenFiles": [
     "Notes/Weekly Tasks.md",
-    "Notes/HubSpot.md",
     "Notes/Daily Standup.md",
+    "Notes/HubSpot.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
     "Tips & Tools/English vocab.md",
     "Tips & Tools/English grammar.md",
-    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Notes/Notes.md",
     "Notes/2026.md",
     "Tips & Tools/DSA.md",
     "Tips & Tools/Interview prep.md",
@@ -285,7 +286,6 @@
     "Tips & Tools/Writing.md",
     "Tips & Tools/Entrepreneurship.md",
     "Tips & Tools/Ghostwriting.md",
-    "Notes/Notes.md",
     "Notes/Edge8.md",
     "Notes/Brag Doc.md",
     "Notes/EO.md",
