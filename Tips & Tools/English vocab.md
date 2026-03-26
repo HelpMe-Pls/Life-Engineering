@@ -210,8 +210,6 @@ akin {to} (adj): alike, similar
 
 toil (v-n): labor, grind, exhausting hard work
 
-latrine (n): restroom, pit toilet, privy
-
 bellow (v): bawl, grawl, to shout in a deep voice
 
 ==unscrupulous== (adj): unethical, immoral, Machiavellian
@@ -524,7 +522,7 @@ deterrent (adj-n): discourage, prevent, or inhibit
 
 complicit (adj): đồng loã
 
-reprisal (n): chống trả, đền bù, retaliation, revenge, counter-strike
+reprisal (n): chống trả, đền bù, retaliation
 
 sovereign (adj-n): supreme, paramount, absolute, tối cao
 
@@ -944,7 +942,7 @@ bevy (n): a large group or collection
 
 consort (v-n): associate, harmonize, company, partner, spouse
 
-==liaise== {with} (v): associate, establishe and maintain communication for mutual understanding and cooperation
+liaise {with} (v): associate, establishe and maintain communication for mutual understanding and cooperation
 
 aphorism (n): an ingeniously terse and concise style of statement/expression
 
