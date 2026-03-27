@@ -18,49 +18,31 @@
 - Connect the dots.
 
 ---
-
 ### 23/3
-
 - [x] Offline meeting to work on EO Global
-
 ### 24/3
-
-- [ ] Document existing workflows in EO Global
-- [ ] Fill in Handoff doc for QLD & BKK
-- [ ] Fill in Rollout template for QLD & BKK
-
+- [x] Document existing workflows in EO Global
 ### 25/3
-
-- [ ] Sprint review + planning
-
+- [x] Sprint review + planning
 ### 26/3
-
 - [x] Reply `vojta`
 - [x] Review ETL
 - [x] HPBD Tam
-
 ### 27/3
-
 - [x] Set up CC
 - [ ] [Learn this](https://www.aihero.dev/ai-engineer-roadmap)
 - [x] Publish ETL
-
 ### 28/3
-
 - Morning splurge
 - Groceries
 - Bragdoc++
 - [Learn this](https://animations.dev/learn/animation-theory/intro)
 - TDD++ for EP
-
 ### 29/3
-
 - 1k @2:06 with paddles
 - `coffee-finder` ADR++
-
 ---
-
 # Backlog
-
+- [ ] Work on mkt features for EOVN
 - [ ] Fill in Handoff doc for QLD & BKK
 - [ ] Fill in Rollout template for QLD & BKK
