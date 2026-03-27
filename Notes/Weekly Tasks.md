@@ -30,7 +30,7 @@
 - [x] HPBD Tam
 ### 27/3
 - [x] Set up CC
-- [ ] [Learn this](https://www.aihero.dev/ai-engineer-roadmap)
+- [x] [Learn this](https://www.aihero.dev/ai-engineer-roadmap)
 - [x] Publish ETL
 ### 28/3
 - Morning splurge
