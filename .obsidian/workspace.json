@@ -18,26 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/HubSpot.md",
+                    "file": "Tips & Tools/English vocab.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "HubSpot"
-                }
-              },
-              {
-                "id": "06519a3a427616a6",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Notes/Daily Standup.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Daily Standup"
+                  "title": "English vocab"
                 }
               },
               {
@@ -53,9 +39,37 @@
                   "icon": "lucide-file",
                   "title": "AI Engineer Roadmap"
                 }
+              },
+              {
+                "id": "e38e4696ae88d68b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "AI/With Claude Code.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "With Claude Code"
+                }
+              },
+              {
+                "id": "06519a3a427616a6",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Notes/Daily Standup.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Daily Standup"
+                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 3
           },
           {
             "id": "8cedd05142699eb5",
@@ -110,7 +124,8 @@
                       "title": "2026"
                     }
                   }
-                ]
+                ],
+                "currentTab": 1
               }
             ],
             "direction": "horizontal"
@@ -265,13 +280,13 @@
   "active": "d655e157dbd2a336",
   "lastOpenFiles": [
     "Notes/Daily Standup.md",
-    "AI/AI Engineer Roadmap.md",
-    "Notes/Weekly Tasks.md",
     "Notes/2026.md",
-    "AI/With Claude Code.md",
-    "AI",
-    "Notes/HubSpot.md",
     "Tips & Tools/English vocab.md",
+    "Notes/HubSpot.md",
+    "AI/AI Engineer Roadmap.md",
+    "AI/With Claude Code.md",
+    "Notes/Weekly Tasks.md",
+    "AI",
     "Tips & Tools/English grammar.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
     "Tips & Tools/DSA.md",
