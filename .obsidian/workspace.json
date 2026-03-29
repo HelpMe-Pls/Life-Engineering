@@ -69,7 +69,7 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -277,13 +277,13 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "d655e157dbd2a336",
+  "active": "3a79f449488355fd",
   "lastOpenFiles": [
+    "AI/AI Engineer Roadmap.md",
     "Notes/Daily Standup.md",
     "Notes/2026.md",
     "Tips & Tools/English vocab.md",
     "Notes/HubSpot.md",
-    "AI/AI Engineer Roadmap.md",
     "AI/With Claude Code.md",
     "Notes/Weekly Tasks.md",
     "AI",
