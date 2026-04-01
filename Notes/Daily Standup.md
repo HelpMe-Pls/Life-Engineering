@@ -1,5 +1,5 @@
-- Thanks, `name`. Good morning everyone. Last Friday I finalized the ETL documentation and share it to the group to prepare for the upcoming data migration and restructuring of EO Global.
-- So today I'm gonna be working on the HubSpot tracking code on the Wix website for EOVN to support the marketing campaign.
+- Thanks, `name`. Yesterday I set up some workflows to automate task creation for our sales rep based on **the** lifecycle stage updates from the lead scores so the sales rep can convert the leads into members.
+- So today I'm gonna take a deep dive into what we can do with HubSpot APIs to enable some read and write operations without paying for extra seats and document the software architecture for the custom app that we're about to build.
 
 > Proper INSURANCE compliance is literally the BASELINE expectation. I'm pretty sure that I'm not the only one impacted by this, so I urge you to honor our contracts and resolve this IMMEDIATELY. Rent's due.
 

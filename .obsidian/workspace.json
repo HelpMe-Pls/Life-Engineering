@@ -69,7 +69,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           },
           {
             "id": "8cedd05142699eb5",
@@ -124,8 +124,7 @@
                       "title": "2026"
                     }
                   }
-                ],
-                "currentTab": 1
+                ]
               }
             ],
             "direction": "horizontal"
@@ -277,15 +276,16 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "3a79f449488355fd",
+  "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
-    "AI/AI Engineer Roadmap.md",
-    "Notes/Daily Standup.md",
-    "Notes/2026.md",
-    "Tips & Tools/English vocab.md",
-    "Notes/HubSpot.md",
     "AI/With Claude Code.md",
+    "AI/AI Engineer Roadmap.md",
     "Notes/Weekly Tasks.md",
+    "Notes/Daily Standup.md",
+    "Pasted image 20260401141615.png",
+    "Tips & Tools/English vocab.md",
+    "Notes/2026.md",
+    "Notes/HubSpot.md",
     "AI",
     "Tips & Tools/English grammar.md",
     "Frontend/JavaScript/Everyday methods & utils.md",
@@ -305,7 +305,6 @@
     "Tips & Tools/Ghostwriting.md",
     "Notes/Notes.md",
     "Notes/Edge8.md",
-    "Notes/Brag Doc.md",
     "Notes",
     "Backend/sql-joins.png",
     "Books",
@@ -318,7 +317,6 @@
     "Tips & Tools/code-review.png",
     "Tips & Tools/Screenshot 2024-06-20 105333.png",
     "Untitled.canvas",
-    "Frontend/HTML/url-breakdown.png",
     "Frontend/Libraries/HTMX",
     "Frontend/Frameworks/Remix",
     "Backend/Golang",

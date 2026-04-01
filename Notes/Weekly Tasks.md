@@ -16,29 +16,36 @@
 - Connect the dots.
 
 ---
+### 30/3
+- [x] Onboarding new member
+- [x] Work on mkt features for EOVN
+- [x] Finish [this](https://www.aihero.dev/workshops/getting-to-know-claude-code-was8j/managing-your-claude-code-session~6ccb8)
 ### 31/3
-- [ ] Onboarding new member
-- [ ] Work on mkt features for EOVN
+- [x] Fill in Handoff doc for QLD & BKK
+- [x] EOVN lead scoring workflows with descriptions
+- [x] EP++
+- [x] Meeting with Summer for QLD & BKK knowledge transfer
+- [x] Claude Cowork micro session
 ### 1/4
-- [ ] EOVN mkt++
+- [x] EO Global meeting
+- [x] Research on what's possible with HubSpot APIs
+- [ ] [Finish this](https://www.aihero.dev/workshops/day-1-claude-code-fundamentals-ju4au)
 ### 2/4
-- [ ] EO Global meeting
-- [ ] Fill in Handoff doc for QLD & BKK
-- [ ] Fill in Rollout template for QLD & BKK
+- [ ] HubSpot API docs + prototype plan
+- [x] EP: resolve P1s
+- [ ] [Finish this](https://www.aihero.dev/workshops/day-2-steering-7ucsx)
 ### 3/4
-- [ ] Handoff doc & rollout template++
-### 5/4
-- [ ] Contingencies
-- [ ] [Learn this](https://www.aihero.dev/workshops/day-1-claude-code-fundamentals-ju4au)
-### 6/4
+- [ ] EP++
+- [ ] [Finish this](https://www.aihero.dev/workshops/day-3-planning-jgqlj)
+- [ ] Haircut
+### 4/4
 - Morning splurge
 - Groceries
 - Bragdoc++
 - [Learn this](https://animations.dev/learn/animation-theory/intro)
-- TDD++ for EP
-### 7/4
+### 5/4
 - 1k @2:06 with paddles
-- `coffee-finder` ADR++
+- Wrap up EP essentials
 ---
 # Backlog
 

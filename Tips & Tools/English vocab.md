@@ -10,7 +10,7 @@ desiccated (adj): dried up, drained of emotional or intellectual vigor or vitali
 
 profound (adj-n): deep af
 
-muse (v-n): ponder, ruminate, a state of deep thought or dreamy abstraction
+muse (v-n): ponder, ruminate, cogitate, a state of deep thought or dreamy abstraction
 
 rote (n): học vẹt
 
@@ -394,6 +394,8 @@ conundrum (n): nan giải, an intricate and difficult problem
 
 abet (v): undergird, to support, assist in the achievement of a purpose
 
+laurel (n): glory, accolade, earned recognition, a symbol of achievement, nguyệt quế
+
 conducive (adj): promote or assist
 
 edifice <eh-dah-fits> (n): a building, a large abstract structure
@@ -419,6 +421,8 @@ apprehend (v): arrest, seize, to perceive, anticipate especially with anxiety, d
 ==trepidation== (n): fear, dread, anxiety
 
 macabre (adj): dreadful, gruesome, horrid
+
+putrefaction (n): decomposition, decay, rot
 
 precipitous (adj): having a very steep ascent → precipitate (v) 
 
@@ -987,7 +991,7 @@ pertain {to} (v): belong, a part of
 
 plunder (v-n): loot
 
-rhetoric (n): discourse, diễn đạt, hùng biện
+rhetoric (n): discourse, dialectic, diễn đạt, hùng biện
 
 holistic (adj): toàn diện
 
