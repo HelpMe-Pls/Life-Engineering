@@ -28,19 +28,20 @@
 - [x] Claude Cowork micro session
 ### 1/4
 - [x] EO Global meeting
-- [x] Research on what's possible with HubSpot APIs
-- [ ] [Finish this](https://www.aihero.dev/workshops/day-1-claude-code-fundamentals-ju4au)
-### 2/4
-- [ ] HubSpot API docs + prototype plan
+- [x] HubSpot API docs + prototype plan
 - [x] EP: resolve P1s
-- [ ] [Finish this](https://www.aihero.dev/workshops/day-2-steering-7ucsx)
+### 2/4
+- [x] Init HubSpot API PoC repo
+- [x] Wrap up HubSpot Legacy App
 ### 3/4
 - [ ] EP++
+- [x] [Finish this](https://www.aihero.dev/workshops/day-1-claude-code-fundamentals-ju4au)
+- [ ] [Finish this](https://www.aihero.dev/workshops/day-2-steering-7ucsx)
 - [ ] [Finish this](https://www.aihero.dev/workshops/day-3-planning-jgqlj)
 - [ ] Haircut
 ### 4/4
 - Morning splurge
-- Groceries
+- Groceries + cacao powder
 - Bragdoc++
 - [Learn this](https://animations.dev/learn/animation-theory/intro)
 ### 5/4

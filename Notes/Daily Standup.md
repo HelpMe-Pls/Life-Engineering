@@ -1,5 +1,5 @@
-- Thanks, `name`. Yesterday I set up some workflows to automate task creation for our sales rep based on **the** lifecycle stage updates from the lead scores so the sales rep can convert the leads into members.
-- So today I'm gonna take a deep dive into what we can do with HubSpot APIs to enable some read and write operations without paying for extra seats and document the software architecture for the custom app that we're about to build.
+- Thanks, `name`. Good morning everyone. Yesterday I was building the proof of concept app and connect it to our HubSpot sandbox to prove that it's possible to update the contacts' lifecycle stage from a non-HubSpot UI.
+- So for today I'm gonna add the final touches and deploy the app to Cloudflare to see if it works. 
 
 > Proper INSURANCE compliance is literally the BASELINE expectation. I'm pretty sure that I'm not the only one impacted by this, so I urge you to honor our contracts and resolve this IMMEDIATELY. Rent's due.
 
