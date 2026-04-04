@@ -84,7 +84,7 @@ gratify (v): satisfy, gladden, give pleasure to
 
 scour (v-n): search, scrub, polish
 
-ambiguous (adj): uncertain, fishy, suspicious, nebulous, obscure
+ambiguous (adj): uncertain, fishy, suspicious, nebulous, obscure, arcane
 
 obfuscate (v): to make obscure, darken, confuse
 

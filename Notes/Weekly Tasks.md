@@ -16,37 +16,27 @@
 - Connect the dots.
 
 ---
-### 30/3
-- [x] Onboarding new member
-- [x] Work on mkt features for EOVN
-- [x] Finish [this](https://www.aihero.dev/workshops/getting-to-know-claude-code-was8j/managing-your-claude-code-session~6ccb8)
-### 31/3
-- [x] Fill in Handoff doc for QLD & BKK
-- [x] EOVN lead scoring workflows with descriptions
-- [x] EP++
-- [x] Meeting with Summer for QLD & BKK knowledge transfer
-- [x] Claude Cowork micro session
-### 1/4
-- [x] EO Global meeting
-- [x] HubSpot API docs + prototype plan
-- [x] EP: resolve P1s
-### 2/4
-- [x] Init HubSpot API PoC repo
-- [x] Wrap up HubSpot Legacy App
-### 3/4
+### 6/4
+- [ ] PRD for the official middleware
 - [ ] EP++
-- [x] [Finish this](https://www.aihero.dev/workshops/day-1-claude-code-fundamentals-ju4au)
-- [ ] [Finish this](https://www.aihero.dev/workshops/day-2-steering-7ucsx)
-- [ ] [Finish this](https://www.aihero.dev/workshops/day-3-planning-jgqlj)
-- [ ] Haircut
+### 7/4
+- [ ] Fill in QLD & BKK Handoff doc
+### 8/4
+- [ ] EO Global meeting
+- [ ] [Finish this](https://www.aihero.dev/workshops/day-4-feedback-loops-fcqu2)
+### 9/4
+- [ ] Finish all pending EP tasks
+- [ ] [Finish this](https://www.aihero.dev/workshops/day-5-ralph-dj2dh
+### 10/4
+- [ ] Bragdoc++
+- [ ] [Finish this](https://www.aihero.dev/workshops/day-6-taste-kgy4d)
 ### 4/4
 - Morning splurge
 - Groceries + cacao powder
-- Bragdoc++
-- [Learn this](https://animations.dev/learn/animation-theory/intro)
 ### 5/4
 - 1k @2:06 with paddles
-- Wrap up EP essentials
+- Set up global skills for CC
+
 ---
 # Backlog
-
+- [Learn this](https://animations.dev/learn/animation-theory/intro) 
