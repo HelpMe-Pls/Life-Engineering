@@ -756,6 +756,8 @@ sever (n): break up, divorce, dissociate, divide, ramify
 
 ramification {for/of} (n): consequence, result/effect, impact
 
+bifurcated (adj): split, divided, separated into two phases
+
 diminution (n): decrease, decline, reduction
 
 abatement (n): reduction, deduction

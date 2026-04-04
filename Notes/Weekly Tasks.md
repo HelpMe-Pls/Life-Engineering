@@ -36,6 +36,7 @@
 ### 5/4
 - 1k @2:06 with paddles
 - Set up global skills for CC
+- Switch OpenRouter account for CC and see if it still works
 
 ---
 # Backlog

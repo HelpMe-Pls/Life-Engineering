@@ -68,8 +68,7 @@
                   "title": "Daily Standup"
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           },
           {
             "id": "8cedd05142699eb5",
@@ -276,12 +275,12 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "e38e4696ae88d68b",
+  "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
-    "Notes/Weekly Tasks.md",
-    "AI/With Claude Code.md",
-    "Notes/Daily Standup.md",
     "Tips & Tools/English vocab.md",
+    "AI/With Claude Code.md",
+    "Notes/Weekly Tasks.md",
+    "Notes/Daily Standup.md",
     "Pasted image 20260404120816.png",
     "Pasted image 20260404115157.png",
     "Pasted image 20260404114933.png",
