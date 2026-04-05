@@ -33,11 +33,13 @@
 ### 11/4
 - Morning splurge
 - Groceries + cacao powder
-### 5/4
+### 12/4
 - 1k @2:06 with paddles
 - Resolve backlog
 
 ---
 # Backlog
-- [Learn this](https://animations.dev/learn/animation-theory/intro)
-- [Learn this]()
+- [Learn about animations](https://animations.dev/learn/animation-theory/intro)
+- [Learn to be an AI Engineer](https://www.aihero.dev/ai-engineer-roadmap)
+- [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
+- [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
