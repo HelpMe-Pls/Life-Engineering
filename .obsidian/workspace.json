@@ -68,7 +68,8 @@
                   "title": "Daily Standup"
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           },
           {
             "id": "8cedd05142699eb5",
@@ -277,7 +278,6 @@
   },
   "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
-    "Tips & Tools/English vocab.md",
     "AI/With Claude Code.md",
     "Notes/Weekly Tasks.md",
     "Notes/Daily Standup.md",
@@ -286,6 +286,7 @@
     "Pasted image 20260404114933.png",
     "AI/AI Engineer Roadmap.md",
     "Pasted image 20260401141615.png",
+    "Tips & Tools/English vocab.md",
     "Notes/2026.md",
     "Notes/HubSpot.md",
     "AI",

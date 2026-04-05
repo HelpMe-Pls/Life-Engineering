@@ -30,14 +30,14 @@
 ### 10/4
 - [ ] Bragdoc++
 - [ ] [Finish this](https://www.aihero.dev/workshops/day-6-taste-kgy4d)
-### 4/4
+### 11/4
 - Morning splurge
 - Groceries + cacao powder
 ### 5/4
 - 1k @2:06 with paddles
-- Set up global skills for CC
-- Switch OpenRouter account for CC and see if it still works
+- Resolve backlog
 
 ---
 # Backlog
-- [Learn this](https://animations.dev/learn/animation-theory/intro) 
+- [Learn this](https://animations.dev/learn/animation-theory/intro)
+- [Learn this]()

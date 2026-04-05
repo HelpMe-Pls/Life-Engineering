@@ -1,5 +1,5 @@
-- Thanks, `name`. Good morning everyone. Yesterday I was building the proof of concept app and connect it to our HubSpot sandbox to prove that it's possible to update the contacts' lifecycle stage from a non-HubSpot UI.
-- So for today I'm gonna add the final touches and deploy the app to Cloudflare to see if it works. 
+- Thanks, `name`. Good morning everyone. Last Friday I was building the HubSpot API prototype and deployed it to Cloudflare. We proved that it's possible to update the contacts' lifecycle stage from a non-HubSpot UI.
+- So for today I'm gonna pick up from where I left off for EO with fill in the handoff docs for 
 
 > Proper INSURANCE compliance is literally the BASELINE expectation. I'm pretty sure that I'm not the only one impacted by this, so I urge you to honor our contracts and resolve this IMMEDIATELY. Rent's due.
 
