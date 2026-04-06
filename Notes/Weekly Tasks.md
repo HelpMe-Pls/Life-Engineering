@@ -17,22 +17,28 @@
 
 ---
 ### 6/4
-- [ ] PRD for the official middleware
-- [ ] EP++
+- [x] Fill in BKK & QLD Handoff doc
+- [x] EP++
 ### 7/4
-- [ ] Fill in QLD & BKK Handoff doc
+- [ ] Prepare 1-1 doc & demo script
+- [ ] Fill in the form and ask Dave how he'd start over with AI
+- [ ] EP: merge PR & call resolve auto-save PRD
 ### 8/4
 - [ ] EO Global meeting
+- [ ] Sprint review
+- [ ] 1-1
 - [ ] [Finish this](https://www.aihero.dev/workshops/day-4-feedback-loops-fcqu2)
 ### 9/4
+- [ ] PRD for the official middleware
 - [ ] Finish all pending EP tasks
+- [ ] Contingencies
 - [ ] [Finish this](https://www.aihero.dev/workshops/day-5-ralph-dj2dh
 ### 10/4
 - [ ] Bragdoc++
 - [ ] [Finish this](https://www.aihero.dev/workshops/day-6-taste-kgy4d)
 ### 11/4
 - Morning splurge
-- Groceries + cacao powder
+- Groceries + cacao powder + super glue
 ### 12/4
 - 1k @2:06 with paddles
 - Resolve backlog
@@ -43,3 +49,4 @@
 - [Learn to be an AI Engineer](https://www.aihero.dev/ai-engineer-roadmap)
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
+- For CC on M4: set OpenRouter API to your personal account once the company's usage reaches below $20

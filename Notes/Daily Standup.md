@@ -1,5 +1,5 @@
-- Thanks, `name`. Good morning everyone. Last Friday I was building the HubSpot API prototype and deployed it to Cloudflare. We proved that it's possible to update the contacts' lifecycle stage from a non-HubSpot UI.
-- So for today I'm gonna pick up where I left off for EO Queensland and EO Bangkok by filling out their handoff docs. 
+- Thanks, `name`. Yesterday I filled out the handoff docs for EO Bangkok and EO Queensland.
+- So for today, I'm gonna research the software architecture and scope of work for the production version of the app I prototyped last week and prepare for tomorrow's sprint review.
 
 > Proper INSURANCE compliance is literally the BASELINE expectation. I'm pretty sure that I'm not the only one impacted by this, so I urge you to honor our contracts and resolve this IMMEDIATELY. Rent's due.
 

@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/81itz5rx#SqkgrteBBhPUOIpHuC2sbsAlGnDp0s3fGJElIjRPTFc
+share_updated: 2026-04-06T08:01:20+07:00
+---
 How it works:
 ![[Pasted image 20260401141615.png]]
 ==**It's all Prompt Engineering**==. This guide focuses on Claude Code CLI (in the terminal).
@@ -34,7 +38,7 @@ How it works:
 - **What Are Tracer Bullets**: the idea behind tracer bullets is that systems have layers (db, api, fe, etc.). By using Tracer Bullets, we can create plans that have phases that actually go through each layer instead of phases that span an entire layer. That way we, as the human, are able to go in and take a look and provide feedback if needed.
 - **Use Tracer Bullets in Our Multi Phase Plan**: apply tracer bullets (as a skill) to create vertical-slice phases that wire up the full stack incrementally:
 	- Install the skill: `bunx skills add mattpocock/skills/prd-to-plan
-	- Use the skill with your PRD file: `/prd-to-plan @<your-prd-file>`
+	- Use the skill with your PRD file: `Use the /prd-to-plan skill and refer to @<your-prd-file> to build out the plan with proper safeguards against any regression.`
 	- Review the plan and make necessary adjustments. 
 - **Executing Our Multi Phase Plan**: implement a multi-phase plan one phase at a time with Claude Code:
 	- Mention ***both*** the PRD and the PLAN files in your first prompt & `Shift + Tab` to auto accept its output:
