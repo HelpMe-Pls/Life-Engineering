@@ -1,5 +1,5 @@
-- Thanks, `name`. Yesterday I filled out the handoff docs for EO Bangkok and EO Queensland.
-- So for today, I'm gonna research the software architecture and scope of work for the production version of the app I prototyped last week and prepare for tomorrow's sprint review.
+- Thanks, `name`. Yesterday I joined the sprint review and planning session to figure out the tasks for this sprint.
+- So for today, I'm gonna have a look at the Altai data structure and research the software architecture and scope of work for the production version of the app I prototyped last week.
 
 > Proper INSURANCE compliance is literally the BASELINE expectation. I'm pretty sure that I'm not the only one impacted by this, so I urge you to honor our contracts and resolve this IMMEDIATELY. Rent's due.
 
@@ -66,3 +66,9 @@
 - Check out the template and the checklist.
 ## Altai sync with HubSpot
 - [Overview](https://eonetworkorg.sharepoint.com/:w:/r/sites/Hubspot/Shared%20Documents/General/Sharable%20Resources/Standing%20Hubspot%20Dev%20Call%20Transcripts.docx?d=wd4b3171e5bcf4391bc6ccf265fcee3d9&e=4%3a8c8f2b42468e4b798d1f86dc24241131&sharingv2=true&fromShare=true&at=9)
+### Demo script
+- This proof of concept gives our teams a lightweight way to manage HubSpot contact lifecycle stages through a custom interface, without purchasing HubSpot seats for every end user. 
+- It runs as a single Cloudflare Worker, which keeps the HubSpot private app token secure on the server side while serving both the UI and API from one simple deployment. 
+- The app already demonstrates the core workflow of viewing contacts and updating lifecycle stages, including handling a known HubSpot edge case where backward stage changes can appear successful but are actually ignored unless we verify and force the update correctly. 
+- The prototype shows we can add lower-cost access, better control, and more reliable process handling around a critical CRM workflow. 
+- The next step to move from PoC to MVP is relatively straightforward: add authentication, pagination, and search, then complete deployment verification for a controlled internal rollout.

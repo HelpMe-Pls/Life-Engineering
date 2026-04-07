@@ -20,21 +20,25 @@
 - [x] Fill in BKK & QLD Handoff doc
 - [x] EP++
 ### 7/4
-- [ ] Prepare 1-1 doc & demo script
-- [ ] Fill in the form and ask Dave how he'd start over with AI
-- [ ] EP: merge PR & call resolve auto-save PRD
+- [x] Prepare 1-1 doc & demo script
+- [x] Fill in the form and ask Dave how he'd start over with AI
+- [x] EP: review issues & merge PR
 ### 8/4
 - [ ] EO Global meeting
 - [ ] Sprint review
 - [ ] 1-1
+- [ ] EO task prep
 - [ ] [Finish this](https://www.aihero.dev/workshops/day-4-feedback-loops-fcqu2)
 ### 9/4
-- [ ] PRD for the official middleware
-- [ ] Finish all pending EP tasks
-- [ ] Contingencies
+- [ ] PRD for the official middleware?
+- [ ] EO contingencies
+- [ ] EP: resolve all issues
+	- [ ] Remove the `free-course-access-gate-prd.md` file once you're done
 - [ ] [Finish this](https://www.aihero.dev/workshops/day-5-ralph-dj2dh
 ### 10/4
 - [ ] Bragdoc++
+- [ ] EP: resolve auto-save PRD
+	- [ ] Update the `critical-fixes-before-optimization.md` accordingly
 - [ ] [Finish this](https://www.aihero.dev/workshops/day-6-taste-kgy4d)
 ### 11/4
 - Morning splurge

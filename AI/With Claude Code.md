@@ -38,12 +38,13 @@ How it works:
 - **What Are Tracer Bullets**: the idea behind tracer bullets is that systems have layers (db, api, fe, etc.). By using Tracer Bullets, we can create plans that have phases that actually go through each layer instead of phases that span an entire layer. That way we, as the human, are able to go in and take a look and provide feedback if needed.
 - **Use Tracer Bullets in Our Multi Phase Plan**: apply tracer bullets (as a skill) to create vertical-slice phases that wire up the full stack incrementally:
 	- Install the skill: `bunx skills add mattpocock/skills/prd-to-plan
-	- Use the skill with your PRD file: `Use the /prd-to-plan skill and refer to @<your-prd-file> to build out the plan with proper safeguards against any regression.`
+	- Use the skill with your PRD file: `Use the /prd-to-plan skill and refer to @<your-prd-file> to build out the plan with proper safeguards against any regression and suboptimal UX.`
 	- Review the plan and make necessary adjustments. 
 - **Executing Our Multi Phase Plan**: implement a multi-phase plan one phase at a time with Claude Code:
 	- Mention ***both*** the PRD and the PLAN files in your first prompt & `Shift + Tab` to auto accept its output:
-		- `@prd/<your-prd> @plan/<your-plan> Proceed with Phase 1`
-	- QA the slop, inject necessary adjustments & commit at the end of each phase.
+		- `@prd/<your-prd> @plan/<your-plan> Proceed with Phase 1 of the plan`
+	- QA the slop, inject necessary adjustments & commit at the end of each phase:
+		- `Now review the @plans/<your-plan> and analyze the latest changes that you've just made to decide if it passes ALL of the acceptance criteria for the current phase, then update the plan accordingly to reflect that state.`
 	- Start the new phase with a new context window if you're out of the smart zone.
 - **Use a skill the review the slop**: when you have a vague concept that you want to be hardened into something that the LLM can actually produce, use this:
 	- `bunx skills add mattpocock/skills/grill-me`
