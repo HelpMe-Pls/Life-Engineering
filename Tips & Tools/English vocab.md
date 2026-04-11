@@ -326,6 +326,8 @@ transient (adj-n): transitory, affecting something or producing results beyond i
 
 provisional (adj): interim, temporary
 
+kludge (n): a patch, workaround, improvised fix, makeshift solution
+
 cede (v): assign, transfer, to yield or grant typically by agreement
 
 ==impart== (v): disclose, convey, transmit
@@ -615,6 +617,8 @@ obscene (adj): repulsive, abhorrent (to morality or virtue)
 atrocious (adj): detestable, appalling, abominable, barbaric
 
 futile <fiu-dtal> (adj): no value, useless, completely ineffective
+
+doodads (n): thingamajig, whatchamacallit, things that you can't remember or don't know
 
 vanity (n): inflated pride, empty, valueless
 

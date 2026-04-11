@@ -16,34 +16,25 @@
 - Connect the dots.
 
 ---
-### 6/4
-- [x] Fill in BKK & QLD Handoff doc
-- [x] EP++
-### 7/4
-- [x] Prepare 1-1 doc & demo script
-- [x] Fill in the form and ask Dave how he'd start over with AI
-- [x] EP: review issues & merge PR
-### 8/4
-- [ ] EO Global meeting
-- [ ] Sprint review
-- [ ] 1-1
-- [ ] EO task prep
-- [ ] [Finish this](https://www.aihero.dev/workshops/day-4-feedback-loops-fcqu2)
-### 9/4
-- [ ] PRD for the official middleware?
-- [ ] EO contingencies
-- [ ] EP: resolve all issues
-	- [ ] Remove the `free-course-access-gate-prd.md` file once you're done
-- [ ] [Finish this](https://www.aihero.dev/workshops/day-5-ralph-dj2dh
-### 10/4
+### 13/4
+- [ ] Altai APIs & middleware prototype planning
+### 14/4
+- [ ] Same
+### 15/4
+- [ ] Same
+- [ ] Resolve backlog
+### 16/4
+- [ ] Contingencies
+- [ ] Try out Codex CLI
+- [ ] EP++
+### 17/4
+- [ ] Same
 - [ ] Bragdoc++
-- [ ] EP: resolve auto-save PRD
-	- [ ] Update the `critical-fixes-before-optimization.md` accordingly
-- [ ] [Finish this](https://www.aihero.dev/workshops/day-6-taste-kgy4d)
-### 11/4
+### 18/4
 - Morning splurge
-- Groceries + cacao powder + super glue
-### 12/4
+- Groceries
+- EP `/improve-codebase-architecture`
+### 19/4
 - 1k @2:06 with paddles
 - Resolve backlog
 
@@ -54,3 +45,6 @@
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
 - For CC on M4: set OpenRouter API to your personal account once the company's usage reaches below $20
+- EP: Improve page loading speed for R2-stored assets & resolve BACKLOG
+- [ ] EP: resolve auto-save PRD
+	- [ ] Update the `critical-fixes-before-optimization.md` accordingly

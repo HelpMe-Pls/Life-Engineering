@@ -32,20 +32,6 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "AI/AI Engineer Roadmap.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "AI Engineer Roadmap"
-                }
-              },
-              {
-                "id": "e38e4696ae88d68b",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
                     "file": "AI/With Claude Code.md",
                     "mode": "source",
                     "source": false
@@ -53,23 +39,9 @@
                   "icon": "lucide-file",
                   "title": "With Claude Code"
                 }
-              },
-              {
-                "id": "06519a3a427616a6",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Notes/Daily Standup.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Daily Standup"
-                }
               }
             ],
-            "currentTab": 3
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -162,7 +134,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "frequency",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -276,18 +248,27 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "06519a3a427616a6",
+  "active": "d655e157dbd2a336",
   "lastOpenFiles": [
-    "Notes/Weekly Tasks.md",
+    "AI/Pasted image 20260401141615.png",
+    "AI/Pasted image 20260404120816.png",
     "AI/With Claude Code.md",
-    "Notes/Daily Standup.md",
-    "Pasted image 20260404120816.png",
-    "Pasted image 20260404115157.png",
-    "Pasted image 20260404114933.png",
     "AI/AI Engineer Roadmap.md",
-    "Pasted image 20260401141615.png",
     "Tips & Tools/English vocab.md",
+    "Tips & Tools/maslows.png",
+    "AI/Pasted image 20260404114933.png",
+    "AI/Pasted image 20260404115157.png",
+    "Tips & Tools/code-review.png",
+    "Tips & Tools/cron.png",
+    "Pasted image 20260404120816.png",
+    "README.md",
+    "Notes/Daily Standup.md",
+    "Untitled.md",
+    "Pasted image 20260401141615.png",
+    "Tips & Tools/OnePersonBusiness.png",
+    "Notes/Weekly Tasks.md",
     "Notes/2026.md",
+    "DevSecOps/Security.md",
     "Notes/HubSpot.md",
     "AI",
     "Tips & Tools/English grammar.md",
@@ -305,17 +286,8 @@
     "Tips & Tools/Tips.md",
     "Tips & Tools/Writing.md",
     "Tips & Tools/Entrepreneurship.md",
-    "Tips & Tools/Ghostwriting.md",
-    "Notes/Notes.md",
-    "Notes/Edge8.md",
     "Notes",
-    "Backend/sql-joins.png",
     "Books",
-    "Tips & Tools/OnePersonBusiness.png",
-    "Frontend/Network/SW life cycle.png",
-    "Pasted image 20250326161107.png",
-    "Tips & Tools/maslows.png",
-    "Pasted image 20240902195101.png",
     "Untitled.canvas",
     "Frontend/Libraries/HTMX",
     "Frontend/Frameworks/Remix",
