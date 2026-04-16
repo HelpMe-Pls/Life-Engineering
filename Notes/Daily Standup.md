@@ -1,7 +1,9 @@
-- Thanks, `name`. Good morning everyone. Last Friday I mapped out the minimum specifications that we need syncing members data between Altai and HubSpot.
-- So for today, I'm gonna review Altai docs to come up with a plan for the middleware prototype.
+My standup report for the day:
+- Yesterday I tried to log into the Hivebrite sandbox with the credentials that they gave me, but there was an issue with my EO account, so we're trying to get that squared away.
+- For today, I'll be reviewing the EOVN sandbox to make sure that it replicates the real EOVN portal as closely as possible.
 
-> Proper INSURANCE compliance is literally the BASELINE expectation. I'm pretty sure that I'm not the only one impacted by this, so I urge you to honor our contracts and resolve this IMMEDIATELY. Rent's due.
+> Y'ALL CHECK THIS OUT: https://tphcm.baohiemxahoi.gov.vn/content/tintuc/Lists/News/Attachments/16954/DANH%20S%C3%81CH%20%20%C4%90%C6%A0N%20V%E1%BB%8A%20CH%E1%BA%ACM%20%C4%90%C3%93NG%203%20TH%C3%81NG%20(04102026).pdf
+> Again, one month left to sort out the statutory social & unemployment insurance obligations before The Law comes knocking. Consequences ahead.
 
 ---
 
@@ -21,7 +23,10 @@
 > You too. To be fair, if I were the boss, I'd have doubled your salary by now. You deserve so much more than this; considering all the things you've done for the company so far.
 
 ---
+# EP
+- Now that the @prd/hybrid-saving-ux.md and @plans/hybrid-saving-ux.md are considered "done" (i.e. acceptable), I need you to close the corresponding open issue by referring to the latest commit on this branch and then create a CHANGELOG file (similar to @docs/CHANGELOG_2026-04-07.md) to document this auto-save feature and the breaking changes that come with it.
 
+---
 # MVP `coffee-finder`
 
 - [ ] ADR & ggl-maps APIs
@@ -71,4 +76,6 @@
 - For the 60 rollout chapters, HubSpot manages the pre-membership funnel and non-membership programs — Lead and Prospect tracking — via the external UI used by chapter staff and officers to move applicants through stages and approve members.
 - Once a prospect converts to a member in HubSpot, that record syncs back to Altai as the official member record.
 
-So the flow is: Altai → HubSpot (existing members) and HubSpot → Altai (new members, post-approval).
+> So the flow is: Altai → HubSpot (existing members) and HubSpot → Altai (new members, post-approval).
+## Events syncing between services
+- 

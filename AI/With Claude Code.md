@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/81itz5rx#SqkgrteBBhPUOIpHuC2sbsAlGnDp0s3fGJElIjRPTFc
-share_updated: 2026-04-11T17:29:17+07:00
+share_updated: 2026-04-12T20:20:57+07:00
 ---
 
 How it works:
@@ -10,7 +10,7 @@ How it works:
 - Append this to your `~/.claude/settings.json` file to use non-Anthropic models:
 ```json
   "env": {
-    "ANTHROPIC_BASE_URL": "https://openrouter.ai/api/v1",
+    "ANTHROPIC_BASE_URL": "https://openrouter.ai/api",
     "ANTHROPIC_AUTH_TOKEN": "sk-or-v1-<key>",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "<your-desired-model>",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "<your-desired-model>",

@@ -17,23 +17,29 @@
 
 ---
 ### 13/4
-- [ ] Altai APIs & middleware prototype planning
+- [x] Altai APIs & middleware prototype planning
+- [x] EP Manual QA
 ### 14/4
-- [ ] Same
+- [x] Research Events handling in EO Global & note your findings
+- [x] EP++
 ### 15/4
-- [ ] Same
-- [ ] Resolve backlog
+- [x] EO Global standup
+- [x] HubSpot EOVN Sandbox
+	- [x] Make it identical to the real one
+	- [x] Anonymize & import the deals data
+- [x] EP: clean up Phase 2
 ### 16/4
-- [ ] Contingencies
-- [ ] Try out Codex CLI
-- [ ] EP++
+- [x] Review EOVN Sandbox
+- [x] Request HubSpot meeting recording + events related docs
+- [ ] Dinner?
+- [x] EP: Resolve BFCache & Phase 3
 ### 17/4
 - [ ] Same
 - [ ] Bragdoc++
 ### 18/4
 - Morning splurge
 - Groceries
-- EP `/improve-codebase-architecture`
+- Resolve backlog
 ### 19/4
 - 1k @2:06 with paddles
 - Resolve backlog
@@ -44,7 +50,8 @@
 - [Learn to be an AI Engineer](https://www.aihero.dev/ai-engineer-roadmap)
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
-- For CC on M4: set OpenRouter API to your personal account once the company's usage reaches below $20
+- Integrate Altai calls in the prototype so that the only blocker left is the API Token
 - EP: Improve page loading speed for R2-stored assets & resolve BACKLOG
-- [ ] EP: resolve auto-save PRD
-	- [ ] Update the `critical-fixes-before-optimization.md` accordingly
+- [x] EP: resolve auto-save PRD
+- [ ] EP: confirm only 1 email prompt for free course access
+- [ ] EP `/improve-codebase-architecture` & E2E test setup for happy paths

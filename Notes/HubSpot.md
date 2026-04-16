@@ -34,3 +34,12 @@
 - Set up workflows based on the conditional triggers mentioned above
 	- Tailor the campaigns based on their interactions and interests.
 	- Segmenting the contacts based on that would be a good start.
+# Notes
+## April 15th 
+- 26:00 → Add an extra stage to the pipeline
+- 30:00 → HubSpot - Altai flow. Member's *source* is always Altai.
+- 35:00 → How members flow back from Altai to HubSpot. Your highest priority now.
+- 40:00 → Move EOVN to global
+- 42:00 → What HubSpot is *actually* needed for
+- 46:00 → Events
+- 50:00 → The (wishful) centralized db for Events

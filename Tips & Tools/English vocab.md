@@ -794,6 +794,8 @@ ignominy (n): disgrace, shame, humiliation
 
 consternation (n): dismay, panic, a strong feeling of surprise or sudden disappointment that causes confusion
 
+spate {of} (n): sudden, concentrated burst of similar events
+
 commotion (n): agitation, steady or recurrent motion, lộn xộn
 fluster (v): faze, confound, a state of agitated confusion
 
@@ -841,9 +843,11 @@ deity (n): god, divinity
 
 blasphemy (n): sacrilege, irreverence, showing contempt or lack of reverence for the sacred or inviolable
 
-profanity (n): swearing,  cursing
+profanity (n): swearing, cursing
 
 sanctum (n): a sacred place where one is free from intrusion
+
+hallow (v): sanctify, consecrate, venerate, honor, thánh hoá, tôn sùng
 
 revere (v): venerate, very much respect and admire someone or something
 
@@ -1212,6 +1216,8 @@ lurch (v-n): leave hanging (bail on), abandon, jerk, jolt, stagger, sway
 staunch (adj-v): loyal, committed, devoted, stanch, stop (a flow)
 
 suffrage (n): the right to vote
+
+ballot (n): vote, ticket, poll, electoral form
 
 whet (v): pique, spark (interest/curiosity), sharpen, hone 
 
