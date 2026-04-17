@@ -35,8 +35,8 @@
 - [x] EP: Resolve BFCache & Phase 3
 ### 17/4
 - [x] Data dictionary for EOVN sandbox. Only include custom props & core objects
-- [ ] Set up wf to covert HubSpot prospect into Altai member
-- [ ] Bragdoc++
+- [x] Set up wf to covert HubSpot prospect into Altai member
+- [x] Bragdoc++
 ### 18/4
 - Morning splurge
 - Groceries
