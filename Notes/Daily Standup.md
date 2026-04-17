@@ -1,6 +1,6 @@
 My standup report for the day:
-- Yesterday I tried to log into the Hivebrite sandbox with the credentials that they gave me, but there was an issue with my EO account, so we're trying to get that squared away.
-- For today, I'll be reviewing the EOVN sandbox to make sure that it replicates the real EOVN portal as closely as possible.
+- Last Friday I set up a PoC workflow in the sandbox to convert a HubSpot prospect to a member in Altai (I'll show you how to verify this).
+- For today, I'll keep reviewing the EOVN sandbox to make sure that it replicates the real EOVN portal as closely as possible.
 
 > Y'ALL CHECK THIS OUT: https://tphcm.baohiemxahoi.gov.vn/content/tintuc/Lists/News/Attachments/16954/DANH%20S%C3%81CH%20%20%C4%90%C6%A0N%20V%E1%BB%8A%20CH%E1%BA%ACM%20%C4%90%C3%93NG%203%20TH%C3%81NG%20(04102026).pdf
 > Again, one month left to sort out the statutory social & unemployment insurance obligations before The Law comes knocking. Consequences ahead.
@@ -24,7 +24,8 @@ My standup report for the day:
 
 ---
 # EP
-- Now that the @prd/hybrid-saving-ux.md and @plans/hybrid-saving-ux.md are considered "done" (i.e. acceptable), I need you to close the corresponding open issue by referring to the latest commit on this branch and then create a CHANGELOG file (similar to @docs/CHANGELOG_2026-04-07.md) to document this auto-save feature and the breaking changes that come with it.
+- Refer to @app/components/layouts/Footer.tsx, @app/components/dashboard/CurriculumBuilder.tsx, and
+  @app/components/dashboard/SortableContentItem.tsx to analyze the sonarqube warnings and use your available skills/plugins to refactor the code to resolve those warnings.
 
 ---
 # MVP `coffee-finder`

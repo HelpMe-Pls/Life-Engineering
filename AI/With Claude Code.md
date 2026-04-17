@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/81itz5rx#SqkgrteBBhPUOIpHuC2sbsAlGnDp0s3fGJElIjRPTFc
-share_updated: 2026-04-12T20:20:57+07:00
+share_updated: 2026-04-17T09:54:03+07:00
 ---
 
 How it works:

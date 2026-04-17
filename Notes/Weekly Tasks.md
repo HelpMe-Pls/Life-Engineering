@@ -31,10 +31,11 @@
 ### 16/4
 - [x] Review EOVN Sandbox
 - [x] Request HubSpot meeting recording + events related docs
-- [ ] Dinner?
+- [x] Dinner
 - [x] EP: Resolve BFCache & Phase 3
 ### 17/4
-- [ ] Same
+- [x] Data dictionary for EOVN sandbox. Only include custom props & core objects
+- [ ] Set up wf to covert HubSpot prospect into Altai member
 - [ ] Bragdoc++
 ### 18/4
 - Morning splurge
@@ -50,8 +51,9 @@
 - [Learn to be an AI Engineer](https://www.aihero.dev/ai-engineer-roadmap)
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
-- Integrate Altai calls in the prototype so that the only blocker left is the API Token
+- Create simple prototype + full plan to sync events from Wix to Hivebrite for EO Vietnam
 - EP: Improve page loading speed for R2-stored assets & resolve BACKLOG
 - [x] EP: resolve auto-save PRD
+- [ ] Reply emails: clarify their needs for event-related stuff
 - [ ] EP: confirm only 1 email prompt for free course access
 - [ ] EP `/improve-codebase-architecture` & E2E test setup for happy paths
