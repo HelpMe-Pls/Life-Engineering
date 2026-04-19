@@ -16,32 +16,32 @@
 - Connect the dots.
 
 ---
-### 13/4
-- [x] Altai APIs & middleware prototype planning
-- [x] EP Manual QA
-### 14/4
-- [x] Research Events handling in EO Global & note your findings
-- [x] EP++
-### 15/4
-- [x] EO Global standup
-- [x] HubSpot EOVN Sandbox
-	- [x] Make it identical to the real one
-	- [x] Anonymize & import the deals data
-- [x] EP: clean up Phase 2
-### 16/4
-- [x] Review EOVN Sandbox
-- [x] Request HubSpot meeting recording + events related docs
-- [x] Dinner
-- [x] EP: Resolve BFCache & Phase 3
-### 17/4
-- [x] Data dictionary for EOVN sandbox. Only include custom props & core objects
-- [x] Set up wf to covert HubSpot prospect into Altai member
-- [x] Bragdoc++
-### 18/4
+### 20/4
+- [ ] Clone HubSpot ⇌ Altai wf to EOVN Sandbox
+- [ ] Research how to push Wix events to Hivebrite
+- [ ] EP: 
+	- [ ] merge `staging` 
+	- [ ] Review BACKLOG with unchecked items in the plans
+	- [ ] Plan for new Sonarqube warnings
+### 21/4
+- [ ] Propose Wix ⇌ Hivebrite event sync plan & prototype arch
+- [ ] EP: resolve Sonarqube warnings
+### 22/4
+- [ ] EO Global standup WITH SCREEN RECORDING
+- [ ] HubSpot EOVN Sandbox clearance
+- [ ] EP: Sonarqube warnings++
+### 23/4
+- [ ] Review EOVN Sandbox (workflows & dictionary)
+- [ ] EP: Sonarqube warnings++
+### 24/4
+- [ ] Data dictionary for EOVN sandbox. Only include custom props & core objects
+- [ ] EP: resolve backlogs
+- [ ] Bragdoc++
+### 25/4
 - Morning splurge
 - Groceries
 - Resolve backlog
-### 19/4
+### 26/4
 - 1k @2:06 with paddles
 - Resolve backlog
 
@@ -51,9 +51,10 @@
 - [Learn to be an AI Engineer](https://www.aihero.dev/ai-engineer-roadmap)
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
-- Create simple prototype + full plan to sync events from Wix to Hivebrite for EO Vietnam
-- EP: Improve page loading speed for R2-stored assets & resolve BACKLOG
-- [x] EP: resolve auto-save PRD
-- [ ] Reply emails: clarify their needs for event-related stuff
-- [ ] EP: confirm only 1 email prompt for free course access
-- [ ] EP `/improve-codebase-architecture` & E2E test setup for happy paths
+- EO:
+	- [ ] Create simple prototype + full plan to sync events from Wix to Hivebrite for EO Vietnam
+	- [ ] Clarify their needs for event-related stuff (via email/whatsapp)
+- EP: 
+	- [ ] Resolve all Sonarqube warnings
+	- [ ] Improve page loading speed for R2-stored assets
+	- [ ] Run `/improve-codebase-architecture` & E2E test setup for happy paths

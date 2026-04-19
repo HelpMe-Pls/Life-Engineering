@@ -412,6 +412,8 @@ gratuitous (adj): unwarranted, free, costless
 
 paradigm (n): example, pattern, a philosophical or theoretical framework of any kind
 
+aphorist (n): philosopher, sage, wit, moralist
+
 apogee (n): culmination, climax, đỉnh cao
 
 cusp (n): turning point, edge, verge
@@ -488,7 +490,7 @@ despondent (adj): hopeless, dejected, disheartened, downhearted
 
 vicissitude (n): mutability, gauntlet, adversity
 
-contrition (n): remorse, regret, shame, repentance
+contrite(v) → contrition (n): remorse, regret, shame, repentance  
 
 occlude (v): conceal, obstruct, block
 
@@ -1262,3 +1264,5 @@ down payment (n): deposit, upfront payment, tiền đặt cọc
 nomenclature (n): terminology, classification terms, danh pháp
 
 sediment (n): cặn, bã, residue, settlings
+
+in lieu of (prepositional phrase): instead of

@@ -1,6 +1,6 @@
 My standup report for the day:
-- Last Friday I set up a PoC workflow in the sandbox to convert a HubSpot prospect to a member in Altai (I'll show you how to verify this).
-- For today, I'll keep reviewing the EOVN sandbox to make sure that it replicates the real EOVN portal as closely as possible.
+- Yesterday they came through with Altai's API tokens, so I got a PoC workflow set up in the sandbox to convert HubSpot prospects to Altai members (I'll show you how to verify this).
+- For today, I'll look into how Wix events are stored and how to get them into the Hivebrite sandbox.
 
 > Y'ALL CHECK THIS OUT: https://tphcm.baohiemxahoi.gov.vn/content/tintuc/Lists/News/Attachments/16954/DANH%20S%C3%81CH%20%20%C4%90%C6%A0N%20V%E1%BB%8A%20CH%E1%BA%ACM%20%C4%90%C3%93NG%203%20TH%C3%81NG%20(04102026).pdf
 > Again, one month left to sort out the statutory social & unemployment insurance obligations before The Law comes knocking. Consequences ahead.
@@ -24,8 +24,7 @@ My standup report for the day:
 
 ---
 # EP
-- Refer to @app/components/layouts/Footer.tsx, @app/components/dashboard/CurriculumBuilder.tsx, and
-  @app/components/dashboard/SortableContentItem.tsx to analyze the sonarqube warnings and use your available skills/plugins to refactor the code to resolve those warnings.
+- Resolve backlogs
 
 ---
 # MVP `coffee-finder`
@@ -78,5 +77,8 @@ My standup report for the day:
 - Once a prospect converts to a member in HubSpot, that record syncs back to Altai as the official member record.
 
 > So the flow is: Altai → HubSpot (existing members) and HubSpot → Altai (new members, post-approval).
+### Questions
+- Which `Current Status` do we need to set a new converted member from HubSpot prospect to? Currently, it's set to `Approved Applicant` by default and we can't find a way to overwrite that.
+	- What's the correct API-driven way to transition a new `altai_mbr_participant` from `Approved Applicant` to `Active`? Is there a custom action, or a specific field (like `altai_pipelinemanager`) to set?
 ## Events syncing between services
 - 

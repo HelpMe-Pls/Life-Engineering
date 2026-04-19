@@ -49,15 +49,15 @@ How it works:
 # Plan & Execute
 ## Product Requirement Doc
 - **How to Tackle Massive Tasks**: large features tend to break down in a single context window and we need a strategy for splitting them up with the `PRD.md` file (stands for *Product Requirements Document* — a description of the destination) and the `PLAN.md` file (a description of the journey — `N phases` get to the destination). You're saying `we're going to do phase N`, then you pass in the PRD and you pass in the entire plan.
-- **Write Great PRDs with This Skill**: use a PRD-writing skill (`bunx skills add mattpocock/skills/write-a-prd`) to have Claude Code interview you and produce a detailed product requirements document.
+- **Write Great PRDs with This Skill**: use a PRD-writing skill (`bunx skills add mattpocock/skills/to-prd`) to have Claude Code produce a detailed product requirements document.
 - **Split Features Across Multiple Context Windows**: you can lazily turn a PRD into a multi-phase plan that distributes work across multiple sessions with a simple prompt like:
 	- "*Turn this into a multi-phase plan and save it as a local Markdown file.*"
 	- There's a high chance that the plan produced from this is sub-optimal. See the ***Tracer Bullet pattern*** below to refine your plan.
 ## Tracer Bullets
 - **What Are Tracer Bullets**: the idea behind tracer bullets is that systems have layers (db, api, fe, etc.). By using Tracer Bullets, we can create plans that have phases that actually go through each layer instead of phases that span an entire layer. That way we, as the human, are able to go in and take a look and provide feedback if needed.
 - **Use Tracer Bullets in Our Multi Phase Plan**: apply tracer bullets (as a skill) to create vertical-slice phases that wire up the full stack incrementally:
-	- Install the skill: `bunx skills add mattpocock/skills/prd-to-plan
-	- Use the skill with your PRD file: `Use the /prd-to-plan skill and refer to @<your-prd-file> to build out the plan with proper safeguards against any regression and suboptimal UX.`
+	- Install the skill: `bunx skills add mattpocock/skills/to-issues
+	- Use the skill with your PRD file: `Use the /to-issues skill and refer to @<your-prd-file> to build out the plan with proper safeguards against any regression and suboptimal UX.`
 	- Review the plan and make necessary adjustments. 
 ## Execute & Review
 - **Executing Our Multi Phase Plan**: implement a multi-phase plan one phase at a time with Claude Code:
@@ -76,7 +76,7 @@ How it works:
 ## Quality Assurance
 - **Fixing Agents Broken Formatting with Pre Commit**: add [Git pre-commit hooks](https://www.aihero.dev/essential-ai-coding-feedback-loops-for-type-script-projects) with lint and type checks so every commit is validated automatically.
 	- Paste the Markdown text (maybe replace `pnpm` with `bun`) and then prompt: "*implement this in my project*."
-- **Red Green Refactor**: the TDD cycle (and its Red-Green-Refactor implementation) creates tight feedback loops for safer AI-driven development. Update your `/do-work` skill to use red-green-refactor and the Tracer Bullet pattern for back-end code and direct implementation for front-end:
+- **Red Green Refactor**: the TDD cycle (and its Red-Green-Refactor implementation) creates tight feedback loops for safer AI-driven development. Use the `/test-driven-development` skill (via `bunx skills add https://github.com/obra/superpowers --skill test-driven-development`) or update your `/do-work` skill to use red-green-refactor and the Tracer Bullet pattern for back-end code and direct implementation for front-end:
 	- `/write-a-skill add red-green-refactor guidance into the implementation step of the /do-work skill to encourage one test at a time in a tracer-bullet style, and only apply this to backend code, not frontend code`
 	- Frontend code changes too fluidly during development for test-first to be practical anyway. The [`agent-browser`](https://agent-browser.dev/) is the closest thing you can get for frontend QA.
 	- Review the skill and make sure that if it wants to go through multiple rounds of Red-Green, then the "Refactor" phase is always at the end of the iteration.
@@ -92,11 +92,8 @@ How it works:
 # HITL Pattern
 ## Human Judgment
 - **HITL and AFK Tasks**: the code implementation can be fully delegated to AI, but the planning, QA, and soul of the product should be judged by a human.
-- **Kanban Over Plans**: replace rigid multi-phase plans with a flexible Kanban board of independently grabbable issues:
-	- `bunx skills add mattpocock/skills/prd-to-issues`
-	- Then prompt: `/prd-to-issues #<your-issue-number>`
 - **Using the Kanban Skill**: break a PRD into vertical slice GitHub issues with AFK and human-in-the-loop designations, then run an autonomous loop:
-	- Review the issues created by the previous prompt, then run `./ralph/afk.sh <number-of-iterations>`
+	- Review the issues created by the `/to-issues` skill, then run `./ralph/afk.sh <number-of-iterations>`
 	- Once it's done, you're left with HITL issues for QA
 ## Prototyping
 - **Trying Out Research**: collaborate with AI to evaluate approaches, compare services, and produce a focused research asset so that you can cache expensive explore phases into local research documents to speed up every subsequent AI loop:
