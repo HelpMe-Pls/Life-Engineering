@@ -42,12 +42,10 @@
 - [x] Finish page 229 Antifragile
 - [x] Zero porn
 ### 24/4
-- [ ] EO: Gather chapter/global approval context
-- [ ] EP:
-	- [ ] Sonarqube warnings Phase 4 & 5
-	- [ ] Review BACKLOG with unchecked items in the plans
+- [x] EO: Gather chapter/global approval context
+- [x] EP: Sonarqube warnings Phase 4 & 5
 - [ ] Finish page 234 Antifragile
-- [ ] Bragdoc++
+- [x] Bragdoc++
 ### 25/4
 - Morning splurge
 - Groceries
@@ -69,4 +67,5 @@
 - EP: 
 	- [ ] Resolve all Sonarqube warnings
 	- [ ] Improve page loading speed for R2-stored assets
+	- [ ] Review BACKLOG with unchecked items in the plans
 	- [ ] Run `/improve-codebase-architecture` & E2E test setup for happy paths

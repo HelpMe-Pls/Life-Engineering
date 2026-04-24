@@ -1,6 +1,6 @@
 My standup report for the day:
 - Last Friday I reviewed the Chapter & Global approval process for prod.
-- For today, I'll keep working on the data structure cleanup in prod to prepare for EOVN's real data import.
+- For today, I'll start working on the workflows cleanup in prod to prepare for EOVN's real data import.
 
 >I want to flag what appears to be a contract violation, specifically, outstanding SHUI owed ever since my start date as a full-time employee.
 >No hard feelings, it's just business.
@@ -24,7 +24,7 @@ My standup report for the day:
 
 ---
 # EP
-- Refer to the @plans/sonarqube-warnings-refactor.md file and review the code diffs to verify if the resolution for Phase 4 is good enough to move on to Phase 5 (that is, the implementation conforms to the conventions set in /react-router-framework-mode and modern TypeScript best practices so that the latest code is OPTIMIZED for readability, maintainability, and scalability (antifragile), leaving no dead (or unreachable) code and no Sonarqube warnings along the way. Utilize the existing skills and plugins in your repertoire to help you with this.
+- Refer to the @plans/sonarqube-warnings-refactor.md file and proceed with the "To-do before starting Phase 5" section. Once you're done with that, keep going for the rest of Phase 5. Make sure that your implementation conforms to the conventions set in /react-router-framework-mode and modern TypeScript best practices so that the latest code is OPTIMIZED for readability, maintainability, and scalability (antifragile), leaving no dead (or unreachable) code and no Sonarqube warnings along the way. Utilize the existing skills and plugins in your repertoire to help you with this.
 
 > [!important] Conventions
 > - No-dead-code discipline
@@ -67,6 +67,7 @@ My standup report for the day:
 1. Spin up a brand license for EO Vietnam.
 2. Explore how we would move the Member Acquisition funnel into it.
 3. Explore how we would connect the local member acquisition funnel to the global.
+4. Application form and approval process will be managed in HubSpot for all chapters, with global approval handled via portal or middleware as needed.
 #### Normalization
 - Track member events with custom `Event` object and API to sync from external services
 - `Forum`, `Member Feedback` custom object
@@ -93,5 +94,6 @@ My standup report for the day:
 	- What's the correct API-driven way to transition a new `altai_mbr_participant` from `Approved Applicant` to `Active`? Is there a custom action, or a specific field (like `altai_pipelinemanager`) to set?
 ## Events syncing between services
 - Request Wix & Hivebrite APIs
+- Middleware: mainly for global approval, especially for chapters not using HubSpot directly.
 # Misc
 - 
