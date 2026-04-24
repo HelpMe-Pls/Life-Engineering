@@ -17,25 +17,36 @@
 
 ---
 ### 20/4
-- [ ] Clone HubSpot ⇌ Altai wf to EOVN Sandbox
-- [ ] Research how to push Wix events to Hivebrite
-- [ ] EP: 
-	- [ ] merge `staging` 
-	- [ ] Review BACKLOG with unchecked items in the plans
-	- [ ] Plan for new Sonarqube warnings
+- [x] Clone HubSpot ⇌ Altai wf to EOVN Sandbox
+- [x] Research how to push Wix events to Hivebrite
+- [x] EP: 
+	- [x] merge `staging` 
+	- [x] Plan for new Sonarqube warnings
+- [x] Finish page 210 Antifragile
+- [x] Zero porn
 ### 21/4
-- [ ] Propose Wix ⇌ Hivebrite event sync plan & prototype arch
-- [ ] EP: resolve Sonarqube warnings
+- [x] Propose Wix ⇌ Hivebrite event sync plan & prototype arch
+- [x] EO: reach out to Nisha
+- [x] EP: resolve Sonarqube warnings Phase 1 & 2
+- [x] QTT
+- [x] Finish chapter 14 Antifragile
+- [x] Zero porn
 ### 22/4
-- [ ] EO Global standup WITH SCREEN RECORDING
-- [ ] HubSpot EOVN Sandbox clearance
-- [ ] EP: Sonarqube warnings++
+- [x] EO Global standup WITH SCREEN RECORDING
+- [x] EO sprint planning
+- [x] EP: Sonarqube warnings Phase 3
+- [x] Finish page 223 Antifragile
+- [x] Zero porn
 ### 23/4
-- [ ] Review EOVN Sandbox (workflows & dictionary)
-- [ ] EP: Sonarqube warnings++
+- [x] Config EOVN prod (lifecycle stages)
+- [x] Finish page 229 Antifragile
+- [x] Zero porn
 ### 24/4
-- [ ] Data dictionary for EOVN sandbox. Only include custom props & core objects
-- [ ] EP: resolve backlogs
+- [ ] EO: Gather chapter/global approval context
+- [ ] EP:
+	- [ ] Sonarqube warnings Phase 4 & 5
+	- [ ] Review BACKLOG with unchecked items in the plans
+- [ ] Finish page 234 Antifragile
 - [ ] Bragdoc++
 ### 25/4
 - Morning splurge
@@ -52,8 +63,9 @@
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
 - EO:
+	- [ ] Config EOVN prod (workflows & pipelines)
+	- [ ] Altai ⇌ HubSpot middleware
 	- [ ] Create simple prototype + full plan to sync events from Wix to Hivebrite for EO Vietnam
-	- [ ] Clarify their needs for event-related stuff (via email/whatsapp)
 - EP: 
 	- [ ] Resolve all Sonarqube warnings
 	- [ ] Improve page loading speed for R2-stored assets

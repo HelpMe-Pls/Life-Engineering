@@ -1,10 +1,10 @@
 My standup report for the day:
-- Yesterday they came through with Altai's API tokens, so I got a PoC workflow set up in the sandbox to convert HubSpot prospects to Altai members (I'll show you how to verify this).
-- For today, I'll look into how Wix events are stored and how to get them into the Hivebrite sandbox.
+- Last Friday I reviewed the Chapter & Global approval process for prod.
+- For today, I'll keep working on the data structure cleanup in prod to prepare for EOVN's real data import.
 
-> Y'ALL CHECK THIS OUT: https://tphcm.baohiemxahoi.gov.vn/content/tintuc/Lists/News/Attachments/16954/DANH%20S%C3%81CH%20%20%C4%90%C6%A0N%20V%E1%BB%8A%20CH%E1%BA%ACM%20%C4%90%C3%93NG%203%20TH%C3%81NG%20(04102026).pdf
-> Again, one month left to sort out the statutory social & unemployment insurance obligations before The Law comes knocking. Consequences ahead.
-
+>I want to flag what appears to be a contract violation, specifically, outstanding SHUI owed ever since my start date as a full-time employee.
+>No hard feelings, it's just business.
+>Once this is squared away, the company gets its five-star rating back (as it should), and I'm genuinely looking forward to that :-)
 ---
 
 # 1-1
@@ -24,12 +24,19 @@ My standup report for the day:
 
 ---
 # EP
-- Resolve backlogs
+- Refer to the @plans/sonarqube-warnings-refactor.md file and review the code diffs to verify if the resolution for Phase 4 is good enough to move on to Phase 5 (that is, the implementation conforms to the conventions set in /react-router-framework-mode and modern TypeScript best practices so that the latest code is OPTIMIZED for readability, maintainability, and scalability (antifragile), leaving no dead (or unreachable) code and no Sonarqube warnings along the way. Utilize the existing skills and plugins in your repertoire to help you with this.
+
+> [!important] Conventions
+> - No-dead-code discipline
+> - Minimize defensive/unnecessary logical check or type assertions
+> - Optimize for readability, maintainability, and scalability (antifragile)
+
 
 ---
-# MVP `coffee-finder`
+# Next big thing
 
-- [ ] ADR & ggl-maps APIs
+- [ ] Pivot `coffee-finder`
+- [ ] Brainstorm with AI for a true `antifragile` & `Fat Tony` business model
 
 ---
 # HubSpot
@@ -48,6 +55,10 @@ My standup report for the day:
   - We are on track to do 60 chapters by the end of the year.
 
 ## For Global
+### Lifecyle Stages map
+- `Public` → `Lead`
+- `Applicant` → `MQL`
+- `Participant` → `Opportunity`
 ### Main goals
 - Intake leads and seamlessly run local and global processes that convert them to members (this implies visibility at each level).
 - Help chapter managers effectively run local processes related to their members and non-members.
@@ -81,4 +92,6 @@ My standup report for the day:
 - Which `Current Status` do we need to set a new converted member from HubSpot prospect to? Currently, it's set to `Approved Applicant` by default and we can't find a way to overwrite that.
 	- What's the correct API-driven way to transition a new `altai_mbr_participant` from `Approved Applicant` to `Active`? Is there a custom action, or a specific field (like `altai_pipelinemanager`) to set?
 ## Events syncing between services
+- Request Wix & Hivebrite APIs
+# Misc
 - 

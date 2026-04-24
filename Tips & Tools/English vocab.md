@@ -38,6 +38,8 @@ conform {to} (v): abide by, comply with, adhere to
 
 ==pertinent== {to} (adj): apposite, relevant, appropriate
 
+orthogonal (adj): irrelevant, unrelated, mutually exclusive, beside the point, decoupled, modular, independent
+
 non sequitur (n): a statement (such as a response) that does not follow logically from or is not clearly related to anything previously said
 
 cogent (adj): convincing, pertinent
@@ -226,6 +228,10 @@ absurd (adj): ridiculous, preposterous
 
 condemn (v): sentence, convict, to pronounce guilty
 
+expropriate (v): seize, confiscate, requisition, strip, dispossess
+
+deplore (v): condemn, denounce, censure, decry, abhor, lên án
+
 enunciate (v): articulate, pronounce, announce
 
 herald (v-n):  hail, announce, publicize, foreshadow, one who actively promotes or advocates (exponent)
@@ -286,6 +292,10 @@ reciprocate {sth_with sth} (v): payback, make a return for → repercussion (n)
 
 entropy (n): chaos, disorganization, randomness
 
+tumult (n): commotion, upheaval, convulsion, strife
+
+strife (n): conflict, discord, rivalry, warfare, contention
+
 anomaly {in sth} (n): unusual, irregularity, paradox
 
 haphazard (adj-n): unplanned, aimless, arbitrary, erratic, random
@@ -328,6 +338,8 @@ provisional (adj): interim, temporary
 
 kludge (n): a patch, workaround, improvised fix, makeshift solution
 
+bricolage (n): kludging, collage, pastiche, improvisation
+
 cede (v): assign, transfer, to yield or grant typically by agreement
 
 ==impart== (v): disclose, convey, transmit
@@ -340,11 +352,11 @@ concession (n): hạ giá, nhượng bộ
 
 assent (v-n):  concur, agreement, approve
 
-contrive <cân-traiv> (v): to form or create in an artistic or ingenious manner, to devise, plan despite difficulties
-
-criterion (n): tiêu chí/tiêu chuẩn -> criteria (plural), rubric
+contrive <cân-traiv> (v): to form or create in an artistic or ingenious manner, to devise, plan despite difficulties → contrivance (n)
 
 contrived (adj): unnatural, artificial and difficult to believe
+
+criterion (n): tiêu chí/tiêu chuẩn → criteria (plural), rubric
 
 purloin {sth from sb/sth} (v): to steal something or use it without permission
 
@@ -420,7 +432,7 @@ cusp (n): turning point, edge, verge
 
 anecdote (n): giai thoại
 
-apprehend (v): arrest, seize, to perceive, anticipate especially with anxiety, dread, or fear 
+apprehend (v): arrest, seize, to perceive, anticipate especially with anxiety, dread, or fear, áp giải
 
 ==trepidation== (n): fear, dread, anxiety
 
@@ -452,6 +464,8 @@ pare (v): trim off an outside, excess, or irregular part of
 
 ==progeny== (n): descendant, children, outcome, product
 
+posterity (n): future generations, descendants, those who come after
+
 inexorable (adj): relentless
 
 predicate (v-n-adj): base/found (on), something that is affirmed or denied of the subject
@@ -467,6 +481,8 @@ vertigo (n): chóng mặt, a dizzy confused state of mind
 accrue (v): accumulate, maximize, gain
 
 ==conglomerate== (adj-v-n): gather, congregate, converge
+
+huddle (v): standup, quick meeting, brief, bunch together
 
 avail (v-n): serve, gain, use
 
@@ -550,11 +566,13 @@ melancholy (adj): depressed, miserable, dejected, sad
 
 ==elucidate== (v): explain, demonstrate, illustrate, eli5
 
+rendition (n): dẫn độ, covert deportation, illustration, visualization, mock-up
+
 inexplicable (adj): incapable of being explained, interpreted, or accounted for
 
 zeitgeist (n): the spirit of the times, the general intellectual, moral, and cultural climate of an era
 
-==fervent== (adj): passionate, intense, ardent, avid
+==fervent== (adj): passionate, intense, ardent, vehement, avid
 
 bourgeoisie (n) <bua-zoa-zee>: middle class
 
@@ -572,7 +590,7 @@ fanfare (n): showy, a short loud piece of music that is played to celebrate
 
 ==conjecture== (v-n): guess, surmise, estimate, suppose, theory
 
-tacit (adj): implied, implicit
+==tacit== (adj): implied, implicit
 
 ==connotation== (n): implication
 
@@ -617,6 +635,8 @@ abhorrent (adj): disgusting, horrible, contemptuous
 obscene (adj): repulsive, abhorrent (to morality or virtue)
 
 atrocious (adj): detestable, appalling, abominable, barbaric
+
+anathema (n): abomination, unacceptable, taboo, deeply offensive, excommunication, ecclesiastical curse
 
 futile <fiu-dtal> (adj): no value, useless, completely ineffective
 
@@ -673,6 +693,8 @@ eclectic (adj-n): kết hợp, composed of elements drawn from various sources
 altruism (n): generosity, philanthropy, empathy, compassion
 
 ==pretension== (v-n):  purpose, intention, affection, arrogance
+
+teleological (adj): purpose-driven, goal-oriented, intention-based
 
 feign (v): pretend to feel or be affected by sth
 
@@ -768,6 +790,8 @@ diminution (n): decrease, decline, reduction
 
 abatement (n): reduction, deduction
 
+decadence (n): moral decay, corruption, degeneracy, indulgence, opulence
+
 interlocutor <inter-loc-cutor> (n): the one who takes part in dialogue or conversation
 
 colloquial (adj): conversational (informal) → lookie-loos (n)
@@ -789,8 +813,6 @@ malleable (adj): adaptable, flexible, moldable, pliable
 stringent (adj): strict, rigorous, rigid
 
 ==idiosyncrasy== (n): characteristic, trait, mannerism, peculiarity
-
-strife (n): conflict, discord, rivalry, warfare, contention
 
 ignominy (n): disgrace, shame, humiliation
 
@@ -844,6 +866,8 @@ squander (v): waste, throw away, blow, misspend, run through
 deity (n): god, divinity
 
 blasphemy (n): sacrilege, irreverence, showing contempt or lack of reverence for the sacred or inviolable
+
+vicar (n): parish priest, rector, cha xứ, pastor, clergyman
 
 profanity (n): swearing, cursing
 
@@ -921,7 +945,7 @@ thrall (v-n): slave, a state of complete absorption, in moral or mental servitud
 
 treason (n): treachery, betrayal, phản quốc
 
-==inundate== (v): overwhelm, flood
+==inundate== (v): overwhelm, flood, besiege
 
 surmount (v): overcome
 
@@ -1099,6 +1123,8 @@ irrigation (n): tưới, supply with water by artificial means
 
 enact (v): act out, to make into law
 
+magistrate (n): thẩm phán, judicial officer, hearing judge, quan chức, state representative
+
 attire (n): clothes, garb, dress → ==sartorial== (adj)
 
 pedantic (adj): unimaginative, dull
@@ -1240,6 +1266,8 @@ sagacity (n): wisdom, street smarts, shrewdness, good judgment → sagacious (ad
 spur (v-n): prompt, encourage, get the ball rolling 
 
 spurious (adj): false, bogus, unfounded, misleading
+
+confabulation (n): fabrication, memory distortion, false recollection
 
 percolation (n): seepage, filtration, diffusion, sink in
 
