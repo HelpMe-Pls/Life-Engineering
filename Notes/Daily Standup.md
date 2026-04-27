@@ -24,7 +24,7 @@ My standup report for the day:
 
 ---
 # EP
-- Refer to the @plans/sonarqube-warnings-refactor.md file and proceed with the "To-do before starting Phase 5" section. Once you're done with that, keep going for the rest of Phase 5. Make sure that your implementation conforms to the conventions set in /react-router-framework-mode and modern TypeScript best practices so that the latest code is OPTIMIZED for readability, maintainability, and scalability (antifragile), leaving no dead (or unreachable) code and no Sonarqube warnings along the way. Utilize the existing skills and plugins in your repertoire to help you with this.
+- I'm planning to start introducing TDD to the repo. But first, I need you to perform a comprehensive DEEP SCAN of the codebase for any high ROI or glaring critical gaps improvements that the @plans/BACKLOG is missing, then update the BACKLOG with those missing high ROIs. The ultimate goal BEFORE moving on to TDD is to bump the codebase health to A++ with the (new) plan in the BACKLOG. I want to make sure that the implementation suggested by this (new) BACKLOG conforms to the conventions set in /react-router-framework-mode and modern TypeScript best practices (i.e. truly type safe at the system level rather than just trying to blindly suppressing type errors) so that the entire codebase is OPTIMIZED for readability, maintainability, performance, and scalability (i.e. TRULY antifragile), follows the no-dead-code discipline and leaves no Sonarqube warnings along the way. Utilize the existing skills and plugins in your repertoire to help you with this.
 
 > [!important] Conventions
 > - No-dead-code discipline
@@ -36,7 +36,9 @@ My standup report for the day:
 # Next big thing
 
 - [ ] Pivot `coffee-finder`
-- [ ] Brainstorm with AI for a true `antifragile` & `Fat Tony` business model
+- [ ] Brainstorm with AI for a true `antifragile` & `Fat Tony` business model. Don't fall into the `green lumber fallacy`. Aim for something with limited losses and unlimited potential.
+	- Make sure that you're barbelled, whatever that means in your business.
+	- Identify & leverage positive Black Swans in this economy.
 
 ---
 # HubSpot

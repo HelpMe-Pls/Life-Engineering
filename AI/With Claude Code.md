@@ -65,6 +65,7 @@ How it works:
 		- `Explore the codebase then refer to the @prd/<your-prd> and @plan/<your-plan> to proceed with Phase 1 of the plan`
 	- QA the slop, inject necessary adjustments & commit at the end of each phase:
 		- `Now review the @plans/<your-plan> and analyze the latest changes that you've just made to decide if it passes ALL of the acceptance criteria for the current phase, then update the plan accordingly to reflect that state.`
+		- Or use [Codex](https://github.com/openai/codex-plugin-cc?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExcnFFM1RORFNIaGJocDdROXNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR5hVqqr2q75i4ZHjEQjO6IMCBaK1511auYBJVTCbyN6t3nmDI1tjHSRR2SE2A_aem_DUNUUwq-MG_-9BLN-o7wWw) to review Claude's work instead.
 	- Start the new phase with a new context window if you're out of the smart zone.
 - **Use a skill the review the slop**: when you have a vague concept that you want to be hardened into something that the LLM can actually produce, use this:
 	- `bunx skills add mattpocock/skills/grill-me`

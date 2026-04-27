@@ -2,9 +2,11 @@ endeavor (v-n): to try / an effort to do sth
 
 cliché (n): triteness, an opinion that is overused and betrays a lack of original thought.
 
-banal (adj): dull, boring, insipid
+banal (adj): dull, boring, insipid, vapid
 
 arid (adj): jejune, dull, excessively dry, lacking in interest and life
+
+unprepossessing (adj): plain, underwhelming, unimpressive, deceptively modest, unassuming, nondescript
 
 desiccated (adj): dried up, drained of emotional or intellectual vigor or vitality
 
@@ -21,6 +23,8 @@ omnipresent (adj) = ubiquitous, pervasive: present everywhere at the same time
 disarray (v-n): out of order, confusion
 
 deceit (n): misleading, fraud, cheating
+
+charlatan (n): quack (medical), imposter, con artist, mountebank, snake-oil salesman
 
 conventional (adj): standard, traditional, typical
 
@@ -110,6 +114,8 @@ cursory (adj): hasty and therefore not thorough or detailed
 
 trifle {with} (v-n) <trai-fal>: giỡn mặt
 
+ludic (adj): playful (psychology), gamesome, recreational
+
 dabble (v): try out, play around with, làm gì đó một cách hời hợt
 
 complacency (n): pride, triumph, self-admiration, smugness
@@ -129,6 +135,8 @@ diplomatic (adj): ngoại giao
 ==astute== (adj): showing sharp powers of judgment; clever, ingenious, insightful, shrewd, crafty
 
 reverence (v-n) <rev-er-rence>: deep respect for someone or something
+
+piety (n): filial duty, respect for elders, lòng hiếu thảo → pious (adj)
 
 ==stupendous== (adj): astounding, extraordinary, remarkable, prodigious 
 
@@ -164,6 +172,8 @@ penance <peh-nance> (n): sám hối
 
 ameliorate (v): a fancy word for [improve, refine, enhance]
 
+accentuate (v): emphasize, highlight, underscore, exacerbate, draw focus to
+
 respectively (adv): in the order given 
 
 heretofore (adv): up to now
@@ -190,6 +200,8 @@ chauvinism (n): an attitude of superiority toward (of opposite sex)
 
 derisory (adj): belittling, pathetic, uncomplimentary, contemptuous
 
+sneering (adj): contemptuous expression, condescending, dismissive, derisive, scornful expression
+
 ==disparage== (v): derogate, belittle, depreciate
 
 ==pejorative== (adj-n): denigrative, derogative, belittling, disparaging
@@ -207,6 +219,10 @@ de facto (adv-adj): in fact, actually, lowkey recognized
 akin {to} (adj): alike, similar
 
 ==stipulate== (v): specify, demand, prescribe
+
+to wit (expression): namely, specifically
+
+eponymous (adj): self-titled, title character, named after
 
 ==vernacular== (adj-n): native speech, regional language
 
@@ -231,6 +247,8 @@ condemn (v): sentence, convict, to pronounce guilty
 expropriate (v): seize, confiscate, requisition, strip, dispossess
 
 deplore (v): condemn, denounce, censure, decry, abhor, lên án
+
+vituperate (v): lash out at verbally, fulminate against, anathematize, rail against, tear apart, lambaste, excoriate, berate, harangue, revile, insult
 
 enunciate (v): articulate, pronounce, announce
 
@@ -278,6 +296,8 @@ equanimity (n): calmness, tranquility
 
 delirium (n): not able to think or speak clearly, usually because of illness
 
+haggard (adj): gaunt, drawn, hollow-eyed, wan, worn, exhausted-looking
+
 bloviate (v): speak or write verbosely and windily
 
 ==panacea== (n): a cure-all remedy for all ills or difficulties
@@ -296,7 +316,7 @@ tumult (n): commotion, upheaval, convulsion, strife
 
 strife (n): conflict, discord, rivalry, warfare, contention
 
-anomaly {in sth} (n): unusual, irregularity, paradox
+anomaly {in sth} (n): unusual, irregularity, deviation, irregularity, abberation
 
 haphazard (adj-n): unplanned, aimless, arbitrary, erratic, random
 
@@ -339,6 +359,8 @@ provisional (adj): interim, temporary
 kludge (n): a patch, workaround, improvised fix, makeshift solution
 
 bricolage (n): kludging, collage, pastiche, improvisation
+
+seat-of-the-pants (adj): winging it, improvising, acting on instinct, unplanned, spontaneous.
 
 cede (v): assign, transfer, to yield or grant typically by agreement
 
@@ -426,6 +448,8 @@ paradigm (n): example, pattern, a philosophical or theoretical framework of any 
 
 aphorist (n): philosopher, sage, wit, moralist
 
+rectitude (n): moral uprightness, correctness of conduct or character, sự chính trực, đức hạnh
+
 apogee (n): culmination, climax, đỉnh cao
 
 cusp (n): turning point, edge, verge
@@ -484,6 +508,8 @@ accrue (v): accumulate, maximize, gain
 
 huddle (v): standup, quick meeting, brief, bunch together
 
+vignette (n): sketch, snippet, brief scene, snapshot
+
 avail (v-n): serve, gain, use
 
 accede {to} (v): express approval/agreement or give consent
@@ -504,6 +530,8 @@ despondent (adj): hopeless, dejected, disheartened, downhearted
 
 ==impugn== (v): to doubt someone's character, qualities, or reputation by criticizing them
 
+oppugn (v): call into question, dispute, challenge, criticize
+
 vicissitude (n): mutability, gauntlet, adversity
 
 contrite(v) → contrition (n): remorse, regret, shame, repentance  
@@ -513,6 +541,8 @@ occlude (v): conceal, obstruct, block
 ==stymie== (v): stand in the way of, encumber, impede
 
 impediment (n): something that impedes
+
+mandarin (n): bureaucrat, a high-ranking civil servant, quan lại
 
 bureaucracy (n): quan liêu, a system of administration in which most of the important decisions are made by state officials (rather than by elected representatives)
 
@@ -710,6 +740,8 @@ debase (v): profane, dissolute, debauch, to lower in status/esteem/quality/chara
 
 lamentable (adj): deplorable, mournful, wretched
 
+harrowing (adj): painful to go through or witness, traumatic, agonizing, extremely distressing
+
 meticulous (adj): careful, diligent, engaged
 
 wage (v): to carry on, in process of occurring
@@ -729,6 +761,8 @@ peril (v-n): endanger, risk, threaten, danger, threat, menace
 ire (n): intense and usually openly displayed anger
 
 wend (v-n): travel, go, move, proceed 
+
+itinerant (adj): nomadic, traveling, wandering, migrant, roaming
 
 barring (prep): excepting, aside from, excluding
 
@@ -790,7 +824,7 @@ diminution (n): decrease, decline, reduction
 
 abatement (n): reduction, deduction
 
-decadence (n): moral decay, corruption, degeneracy, indulgence, opulence
+decadence (n): moral decay, depravity, corruption, degeneracy, indulgence
 
 interlocutor <inter-loc-cutor> (n): the one who takes part in dialogue or conversation
 
@@ -837,6 +871,8 @@ transfix (v): impale, paralyze (out of surprise)
 
 embalm (v): ướp xác
 
+angiogenesis (n): tumor vascularization, blood vessel growth, capillary growth
+
 commiserate (v): condole, sympathize
 
 apathy (n): not interested, complacence
@@ -848,6 +884,8 @@ elixir (n): liquid magic potion, healing everything
 leaven (v-n): lighten
 
 delectation (n): joy, treat, pleasure, satisfaction, contentment
+
+sensuous (adj): richly textured, aesthetically lush, sensorially vivid, voluptuous in form, deeply resonant
 
 copacetic (adj): very satisfactory
 
@@ -865,9 +903,15 @@ squander (v): waste, throw away, blow, misspend, run through
 
 deity (n): god, divinity
 
+vicar (n): parish priest, rector, cha xứ, pastor, clergyman
+
+incantation (n): spell, chant, charm, hex, mantra, thần chú
+
+fideist (n): faith-alone believer, anti-rationalist in religion, non-rationalist believer
+
 blasphemy (n): sacrilege, irreverence, showing contempt or lack of reverence for the sacred or inviolable
 
-vicar (n): parish priest, rector, cha xứ, pastor, clergyman
+impious (adj): irreverent, sacrilegious, blasphemous
 
 profanity (n): swearing, cursing
 
@@ -927,6 +971,8 @@ commensurate {with} (adj): eligible, in a correct and suitable amount compared t
 
 conniving (adj): devious, Machiavellian, calculating, manipulative
 
+flunk (v): fail (rớt môn) 
+
 futility (n): meaningless, no effect, achieving nothing
 
 debacle (n): tragedy catastrophe, a complete failure
@@ -967,6 +1013,8 @@ dilemma (n): ==predicament==, a problem involving a difficult choice
 
 refute (v): disclaim, deny, reject
 
+expunge (v): erase, legally destroying or sealing a person's criminal record
+
 heuristic (adj-n): trial-and-error, experimental techniques
 
 congruent (adj): congruous, coherent, harmonious
@@ -981,7 +1029,7 @@ bevy (n): a large group or collection
 
 consort (v-n): associate, harmonize, company, partner, spouse
 
-liaise {with} (v): associate, establishe and maintain communication for mutual understanding and cooperation
+liaise {with} (v): associate, establishe and maintain communication for mutual understanding and cooperation → liaison (n)
 
 aphorism (n): an ingeniously terse and concise style of statement/expression
 
@@ -1029,6 +1077,8 @@ plunder (v-n): loot
 
 rhetoric (n): discourse, dialectic, diễn đạt, hùng biện
 
+treatise (n): dissertation, discourse, bài luận văn
+
 holistic (adj): toàn diện
 
 contort (v): to twist in a violent manner
@@ -1064,6 +1114,8 @@ abrasion (n): irritation, rubbing away by friction
 scowl (v-n): frown, grimace, exhibit a threatening aspect, chau mày
 
 impose (v): ép buộc, áp đặt (thuế)
+
+underwriter (n): insurer, risk assessor, mortgage reviewer, benefactor, patron
 
 postmortem (adj-n): autopsy, necropsy
 
@@ -1168,6 +1220,8 @@ seer (n): prophet, visionary
 truce (n): ceasefire, armistice
 
 matriculate (v): to enroll at a college or university
+
+baccalaureate (n): bachelor's degree, undergraduate degree
 
 embezzle (v): chiếm đoạt, biển thủ (law)
 

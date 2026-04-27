@@ -14,45 +14,40 @@
 - 6 months if no progress.
 - Put yourself out there.
 - Connect the dots.
+- Barbell strategy.
 
 ---
-### 20/4
-- [x] Clone HubSpot ⇌ Altai wf to EOVN Sandbox
-- [x] Research how to push Wix events to Hivebrite
-- [x] EP: 
-	- [x] merge `staging` 
-	- [x] Plan for new Sonarqube warnings
-- [x] Finish page 210 Antifragile
-- [x] Zero porn
-### 21/4
-- [x] Propose Wix ⇌ Hivebrite event sync plan & prototype arch
-- [x] EO: reach out to Nisha
-- [x] EP: resolve Sonarqube warnings Phase 1 & 2
-- [x] QTT
-- [x] Finish chapter 14 Antifragile
-- [x] Zero porn
-### 22/4
-- [x] EO Global standup WITH SCREEN RECORDING
-- [x] EO sprint planning
-- [x] EP: Sonarqube warnings Phase 3
-- [x] Finish page 223 Antifragile
-- [x] Zero porn
-### 23/4
-- [x] Config EOVN prod (lifecycle stages)
-- [x] Finish page 229 Antifragile
-- [x] Zero porn
-### 24/4
-- [x] EO: Gather chapter/global approval context
-- [x] EP: Sonarqube warnings Phase 4 & 5
-- [ ] Finish page 234 Antifragile
-- [x] Bragdoc++
-### 25/4
-- Morning splurge
-- Groceries
-- Resolve backlog
-### 26/4
+### 27/4
+- [ ] Finish Antifragile Chapter 17
+- [ ] Live up to your standards
+### 28/4
+- [ ] EO: Clean up [the workflows]([EOVN_Production_Deployment_Checklist - Lark Docs](https://edge8company.sg.larksuite.com/docx/QwGbd50G2oFy3txUzq3lQOkbgce)) in prod
+- [ ] EP: "Save Settings" btn
+- [ ] Finish p.269 Antifragile
+- [ ] Live up to your standards
+### 29/4
+- [ ] EO Global sprint planning WITH SCREEN RECORDING
+- [ ] Get Claude Team slot from the boss
+- [ ] Finish page 273 Antifragile
+- [ ] Live up to your standards
+### 30/4
+- [ ] EP: Resolve BACKLOG++
+- [ ] Finish Chapter 18 Antifragile
+- [ ] Live up to your standards
+### 1/5
+- [ ] EP: Wrap up BACKLOG and prepare for TDD
+- [ ] Bragdoc++
+- [ ] Live up to your standards
+### 2/5
 - 1k @2:06 with paddles
+- Groceries
+- Finish page 234 Antifragile
+- Live up to your standards
+### 3/5
+- Morning splurge
 - Resolve backlog
+- Weekly planning
+- Live up to your standards
 
 ---
 # Backlog
@@ -65,7 +60,8 @@
 	- [ ] Altai ⇌ HubSpot middleware
 	- [ ] Create simple prototype + full plan to sync events from Wix to Hivebrite for EO Vietnam
 - EP: 
-	- [ ] Resolve all Sonarqube warnings
-	- [ ] Improve page loading speed for R2-stored assets
-	- [ ] Review BACKLOG with unchecked items in the plans
+	- [x] Resolve all Sonarqube warnings
+	- [x] Improve page loading speed for R2-stored assets
+	- [x] Review BACKLOG with unchecked items in the plans
+	- [ ] [Refine UI/UX](https://app.plane.so/e-learning-platform/projects/ba70aceb-3699-40af-8a1a-9160e11d50e6/issues/) & fix img caption save with `draggable-block-add-button` behavior. Refer to the latest version on Github
 	- [ ] Run `/improve-codebase-architecture` & E2E test setup for happy paths

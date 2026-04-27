@@ -32,12 +32,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "AI/With Claude Code.md",
+                    "file": "Tips & Tools/English grammar.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "With Claude Code"
+                  "title": "English grammar"
                 }
               },
               {
@@ -54,8 +54,7 @@
                   "title": "Daily Standup"
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           },
           {
             "id": "8cedd05142699eb5",
@@ -263,14 +262,17 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "3669b2aaab402d75",
+  "active": "8e701c92c4b0d885",
   "lastOpenFiles": [
     "Notes/Weekly Tasks.md",
-    "Notes/Daily Standup.md",
-    "AI/With Claude Code.md",
     "Tips & Tools/English vocab.md",
-    "Tips & Tools/System Design.md",
     "Notes/2026.md",
+    "Tips & Tools/English grammar.md",
+    "Notes/Daily Standup.md",
+    "Frontend/CSS/CSS.md",
+    "Frontend/CSS/Animations.md",
+    "AI/With Claude Code.md",
+    "Tips & Tools/System Design.md",
     "Tips & Tools/code-review.png",
     "Tips & Tools/cron.png",
     "Pasted image 20260417091615.png",
@@ -298,8 +300,6 @@
     "AI/Pasted image 20260404114933.png",
     "AI/Pasted image 20260404115157.png",
     "Pasted image 20260404120816.png",
-    "README.md",
-    "Untitled.md",
     "AI",
     "Notes",
     "Books",

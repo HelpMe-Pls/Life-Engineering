@@ -103,6 +103,7 @@
 - disarming simplicity: dead simple
 ## Proverbs, idioms, phrases
 - "That one's a lemon": a "lemon" product is one that is disappointing or unsatisfactory
+- "Call shotgun": sit next to the driver's seat
 - "By the same token": for the same reason
 - "For some reason that escapes me": Inexplicably, I can't understand why
 - "In the finer print": in the details, in the additional terms
