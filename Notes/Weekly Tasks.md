@@ -18,7 +18,7 @@
 
 ---
 ### 27/4
-- [ ] Finish Antifragile Chapter 17
+- [x] Finish Antifragile Chapter 17
 - [ ] Live up to your standards
 ### 28/4
 - [ ] EO: Clean up [the workflows]([EOVN_Production_Deployment_Checklist - Lark Docs](https://edge8company.sg.larksuite.com/docx/QwGbd50G2oFy3txUzq3lQOkbgce)) in prod
