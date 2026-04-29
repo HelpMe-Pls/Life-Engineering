@@ -21,17 +21,18 @@
 - [x] Finish Antifragile Chapter 17
 - [ ] Live up to your standards
 ### 28/4
-- [ ] EO: Clean up [the workflows]([EOVN_Production_Deployment_Checklist - Lark Docs](https://edge8company.sg.larksuite.com/docx/QwGbd50G2oFy3txUzq3lQOkbgce)) in prod
-- [ ] EP: "Save Settings" btn
-- [ ] Finish p.269 Antifragile
-- [ ] Live up to your standards
+- [x] EO: [Phase 1](https://edge8company.sg.larksuite.com/docx/QwGbd50G2oFy3txUzq3lQOkbgce#share-DcnQdpPD3oXwjkx2ToilDd9SgCe) 
+- [x] EP: "Save Settings" btn
+- [x] Finish p.278 Antifragile
+- [x] Live up to your standards
 ### 29/4
-- [ ] EO Global sprint planning WITH SCREEN RECORDING
+- [x] EO Global sprint planning WITH SCREEN RECORDING
 - [ ] Get Claude Team slot from the boss
-- [ ] Finish page 273 Antifragile
+- [ ] Finish page 282 Antifragile
 - [ ] Live up to your standards
 ### 30/4
 - [ ] EP: Resolve BACKLOG++
+	- [ ] Check if [this issue](https://app.plane.so/e-learning-platform/projects/ba70aceb-3699-40af-8a1a-9160e11d50e6/issues/) is resolved or not
 - [ ] Finish Chapter 18 Antifragile
 - [ ] Live up to your standards
 ### 1/5
@@ -63,5 +64,5 @@
 	- [x] Resolve all Sonarqube warnings
 	- [x] Improve page loading speed for R2-stored assets
 	- [x] Review BACKLOG with unchecked items in the plans
-	- [ ] [Refine UI/UX](https://app.plane.so/e-learning-platform/projects/ba70aceb-3699-40af-8a1a-9160e11d50e6/issues/) & fix img caption save with `draggable-block-add-button` behavior. Refer to the latest version on Github
+	- [x] [Refine UI/UX](https://app.plane.so/e-learning-platform/projects/ba70aceb-3699-40af-8a1a-9160e11d50e6/issues/) & fix img caption save with `draggable-block-add-button` behavior. Refer to the latest version on Github
 	- [ ] Run `/improve-codebase-architecture` & E2E test setup for happy paths

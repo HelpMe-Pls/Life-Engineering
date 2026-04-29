@@ -40,7 +40,7 @@ vicarious (adj): substitutionary
 
 conform {to} (v): abide by, comply with, adhere to
 
-==pertinent== {to} (adj): apposite, relevant, appropriate
+==pertinent== {to} (adj): apposite, apt to, relevant, appropriate
 
 orthogonal (adj): irrelevant, unrelated, mutually exclusive, beside the point, decoupled, modular, independent
 
@@ -186,7 +186,7 @@ precede (v) {caution: it's not precEEd}: to be in front of, earlier than, to sur
 
 recede (v): withdraw, diminish, decrease 
 
-assuage (v): ease, quench, appease, pacify
+assuage (v): ease, quench, appease, pacify, solace, succor
 
 extenuating (adj): providing a partial justification or excuse for something
 
@@ -590,7 +590,9 @@ disseminate (v): spread, propagate, circulate
 
 lofty (adj): noble, high, superior, sublime, majestic, eloquent
 
-melancholy (adj): depressed, miserable, dejected, sad
+melancholy (adj): depressed, miserable, dejected, sad,
+
+alas (expr): unfortunately, sadly, regrettably
 
 ==bleak== (adj): cold, grim, depressing
 
@@ -636,7 +638,7 @@ poignant (adj): deeply affecting, designed to make an impression
 
 entreaty (n): emotional request
 
-fiat (n): dictate, an order publicly issued by an authority: decree
+fiat (n): dictate, an order publicly issued by an authority: decree, edict
 
 covetous <cav-et-tus>(adj): greedy (longing), selfish desire especially for material possessions
 

@@ -2,9 +2,9 @@ My standup report for the day:
 - Last Friday I reviewed the Chapter & Global approval process for prod.
 - For today, I'll start working on the workflows cleanup in prod to prepare for EOVN's real data import.
 
->I want to flag what appears to be a contract violation, specifically, outstanding SHUI owed ever since my start date as a full-time employee.
->No hard feelings, it's just business.
->Once this is squared away, the company gets its five-star rating back (as it should), and I'm genuinely looking forward to that :-)
+>Just flagging again: there's a contract violation around SHUI owed since I came on full-time.
+>Don't get me wrong, I'm incredibly grateful for this job, but baseline expectations need to be honored.
+>"I'm not letting this go until we get it resolved, or at least have a date to work toward :-)
 ---
 
 # 1-1
@@ -24,7 +24,7 @@ My standup report for the day:
 
 ---
 # EP
-- I'm planning to start introducing TDD to the repo. But first, I need you to perform a comprehensive DEEP SCAN of the codebase for any high ROI or glaring critical gaps improvements that the @plans/BACKLOG is missing, then update the BACKLOG with those missing high ROIs. The ultimate goal BEFORE moving on to TDD is to bump the codebase health to A++ with the (new) plan in the BACKLOG. I want to make sure that the implementation suggested by this (new) BACKLOG conforms to the conventions set in /react-router-framework-mode and modern TypeScript best practices (i.e. truly type safe at the system level rather than just trying to blindly suppressing type errors) so that the entire codebase is OPTIMIZED for readability, maintainability, performance, and scalability (i.e. TRULY antifragile), follows the no-dead-code discipline and leaves no Sonarqube warnings along the way. Utilize the existing skills and plugins in your repertoire to help you with this.
+- Analyze this plan and explore the codebase to tell me if the latest diffs fully and optimally address the plan. If there's any error (or unseen critical gap), pls flag it and suggest the best way forward. Also tell me what `CF_STREAM_SIGNING_KEY_ID` and `CF_STREAM_SIGNING_KEY_JWK` are used for and how to get their values. Utilize the existing skills and plugins in your repertoire to help you with this.
 
 > [!important] Conventions
 > - No-dead-code discipline
@@ -39,6 +39,7 @@ My standup report for the day:
 - [ ] Brainstorm with AI for a true `antifragile` & `Fat Tony` business model. Don't fall into the `green lumber fallacy`. Aim for something with limited losses and unlimited potential.
 	- Make sure that you're barbelled, whatever that means in your business.
 	- Identify & leverage positive Black Swans in this economy.
+	- Exploit the convexity effect
 
 ---
 # HubSpot
@@ -98,4 +99,6 @@ My standup report for the day:
 - Request Wix & Hivebrite APIs
 - Middleware: mainly for global approval, especially for chapters not using HubSpot directly.
 # Misc
-- 
+- `30:00` → Form 
+- `32:00` → Build new form in the sandbox
+- `33:00` → Approval process

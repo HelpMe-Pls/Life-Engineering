@@ -54,7 +54,8 @@
                   "title": "Daily Standup"
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           },
           {
             "id": "8cedd05142699eb5",
@@ -264,11 +265,12 @@
   },
   "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
-    "Tips & Tools/English vocab.md",
-    "Notes/Weekly Tasks.md",
-    "Notes/2026.md",
-    "Tips & Tools/English grammar.md",
     "Notes/Daily Standup.md",
+    "Notes/Weekly Tasks.md",
+    "Tips & Tools/English vocab.md",
+    "Tips & Tools/English grammar.md",
+    "[EOVN_Production_Deployment_Checklist.md",
+    "Notes/2026.md",
     "Frontend/CSS/CSS.md",
     "Frontend/CSS/Animations.md",
     "AI/With Claude Code.md",
@@ -295,7 +297,6 @@
     "Books/Books.md",
     "AI/Pasted image 20260401141615.png",
     "AI/Pasted image 20260404120816.png",
-    "AI/AI Engineer Roadmap.md",
     "Tips & Tools/maslows.png",
     "AI/Pasted image 20260404114933.png",
     "AI/Pasted image 20260404115157.png",
