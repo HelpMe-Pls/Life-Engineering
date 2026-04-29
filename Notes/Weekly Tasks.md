@@ -27,7 +27,7 @@
 - [x] Live up to your standards
 ### 29/4
 - [x] EO Global sprint planning WITH SCREEN RECORDING
-- [ ] Get Claude Team slot from the boss
+- [x] Get Claude Team slot from the boss
 - [ ] Finish page 282 Antifragile
 - [ ] Live up to your standards
 ### 30/4
