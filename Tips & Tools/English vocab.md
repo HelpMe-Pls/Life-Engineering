@@ -104,6 +104,8 @@ empirical (adj): based on observation or experience rather than theory or pure l
 
 dogmatic (adj): dictatorial, doctrinaire, assertive
 
+tenet (n): principle, doctrine, belief, dogma, postulate
+
 refrain {from} (v): stop, restrain, abstain, desist 
 
 restive (adj): bồn chồn, fidgety
@@ -436,7 +438,9 @@ conducive (adj): promote or assist
 
 edifice <eh-dah-fits> (n): a building, a large abstract structure
 
-exodus (n): emigration
+exodus (n): emigration (!immigration)
+
+defector (n): traitor, escapee, turncoat, apostate, jumping ship
 
 emancipate (v): unfettered, to free from restraint, control, or the power of another
 
@@ -457,6 +461,8 @@ cusp (n): turning point, edge, verge
 anecdote (n): giai thoại
 
 apprehend (v): arrest, seize, to perceive, anticipate especially with anxiety, dread, or fear, áp giải
+
+interdict (v-n): interception, disruption, blocking, seizure, injunction, prohibition, ecclesiastical ban, forbid, proscribe, enjoin
 
 ==trepidation== (n): fear, dread, anxiety
 
@@ -674,7 +680,7 @@ futile <fiu-dtal> (adj): no value, useless, completely ineffective
 
 doodads (n): thingamajig, whatchamacallit, things that you can't remember or don't know
 
-vanity (n): inflated pride, empty, valueless
+vanity (n): inflated pride, narcissism, worthlessness, transience, futility, the world of appearances, showpiece
 
 buttress (v-n): support, strengthen, pillar, backbone
 
@@ -917,6 +923,8 @@ impious (adj): irreverent, sacrilegious, blasphemous
 
 profanity (n): swearing, cursing
 
+souk (n): bazaar, traditional market, chợ kiểu Middle East
+
 sanctum (n): a sacred place where one is free from intrusion
 
 hallow (v): sanctify, consecrate, venerate, honor, thánh hoá, tôn sùng
@@ -942,6 +950,8 @@ lucrative (adj): profitable, moneymaking
 installment (n): trả góp, one part of a serial story
 
 ==glean== (v): find out, ascertain, to gather bit by bit
+
+ferreting {out} (v): uncovering, digging up, rooting out, hunting down, tracking down
 
 ==prerogative== (n): privilege, a distinctive excellence
 
@@ -1251,7 +1261,7 @@ geriatric (adj-n): an aged person, relating to, or appropriate for elderly peopl
 
 ==serendipity== (n): the fact of finding interesting or valuable things by chance
 
-tantalize (v): tease or torment by or as if by presenting something desirable to the view but continually keeping it out of reach
+tantalize (v): trêu ngươi, tease or torment by or as if by presenting something desirable to the view but continually keeping it out of reach
 
 botch {up} (v-n): mess (up)
 
@@ -1274,6 +1284,8 @@ coddle (v): pamper, treat with extreme or excessive care or kindness
 synopsis (n), a tl;dr, a condensed statement or outline
 
 coterie (n): inner circle nhóm thân cận
+
+gyration (n): rotation, swivel, circular movement, swings, turbulence, ups and downs, shimmy (hip movement)
 
 pillager (n): raider, looter, marauders, plunderers
 
@@ -1350,3 +1362,5 @@ nomenclature (n): terminology, classification terms, danh pháp
 sediment (n): cặn, bã, residue, settlings
 
 in lieu of (prepositional phrase): instead of
+
+ream {of} (n): (paper) volumes of, piles of, masses of, mountains of

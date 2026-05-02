@@ -24,7 +24,7 @@ My standup report for the day:
 
 ---
 # EP
-- Analyze this plan and explore the codebase to tell me if the latest diffs fully and optimally address the plan. If there's any error (or unseen critical gap), pls flag it and suggest the best way forward. Also tell me what `CF_STREAM_SIGNING_KEY_ID` and `CF_STREAM_SIGNING_KEY_JWK` are used for and how to get their values. Utilize the existing skills and plugins in your repertoire to help you with this.
+- Use the /to-issues skill to help me walkthrough the @plans/BACKLOG.md file.
 
 > [!important] Conventions
 > - No-dead-code discipline

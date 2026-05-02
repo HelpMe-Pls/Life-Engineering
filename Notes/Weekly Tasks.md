@@ -28,26 +28,28 @@
 ### 29/4
 - [x] EO Global sprint planning WITH SCREEN RECORDING
 - [x] Get Claude Team slot from the boss
-- [ ] Finish page 282 Antifragile
-- [ ] Live up to your standards
+- [x] Finish page 282 Antifragile
+- [x] Live up to your standards
 ### 30/4
-- [ ] EP: Resolve BACKLOG++
-	- [ ] Check if [this issue](https://app.plane.so/e-learning-platform/projects/ba70aceb-3699-40af-8a1a-9160e11d50e6/issues/) is resolved or not
-- [ ] Finish Chapter 18 Antifragile
-- [ ] Live up to your standards
+- [x] EP: Resolve BACKLOG++
+- [x] Finish Chapter 18 Antifragile
+- [x] Live up to your standards
 ### 1/5
-- [ ] EP: Wrap up BACKLOG and prepare for TDD
-- [ ] Bragdoc++
-- [ ] Live up to your standards
+- [x] EP: BACKLOG++
+- [x] Bragdoc++
+- [ ] Finish Chapter 19 Antifragile
+- [x] Live up to your standards
 ### 2/5
 - 1k @2:06 with paddles
 - Groceries
-- Finish page 234 Antifragile
+- Weekly planning
+- Finish pg.300 Antifragile
+- Finish Walkthrough A
 - Live up to your standards
 ### 3/5
 - Morning splurge
-- Resolve backlog
-- Weekly planning
+- Finish Walkthrough C + D
+- Finish p320 Antifragile
 - Live up to your standards
 
 ---
@@ -66,3 +68,4 @@
 	- [x] Review BACKLOG with unchecked items in the plans
 	- [x] [Refine UI/UX](https://app.plane.so/e-learning-platform/projects/ba70aceb-3699-40af-8a1a-9160e11d50e6/issues/) & fix img caption save with `draggable-block-add-button` behavior. Refer to the latest version on Github
 	- [ ] Run `/improve-codebase-architecture` & E2E test setup for happy paths
+- [ ] Set fitness goals (strength & endurance)

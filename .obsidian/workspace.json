@@ -54,8 +54,7 @@
                   "title": "Daily Standup"
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           },
           {
             "id": "8cedd05142699eb5",
@@ -263,17 +262,22 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "8e81d5625c66b75e",
+  "active": "8e701c92c4b0d885",
   "lastOpenFiles": [
     "Notes/Daily Standup.md",
     "Notes/Weekly Tasks.md",
-    "Tips & Tools/English vocab.md",
-    "Tips & Tools/English grammar.md",
-    "[EOVN_Production_Deployment_Checklist.md",
     "Notes/2026.md",
+    "Tips & Tools/English grammar.md",
+    "Tips & Tools/English vocab.md",
+    "Books/Extreme Ownership.md",
+    "Books/Books.md",
+    "AI/With Claude Code.md",
+    "Notes/Notes.md",
+    "Notes/E-learning MVP.md",
+    "Notes/Edge8.md",
+    "[EOVN_Production_Deployment_Checklist.md",
     "Frontend/CSS/CSS.md",
     "Frontend/CSS/Animations.md",
-    "AI/With Claude Code.md",
     "Tips & Tools/System Design.md",
     "Tips & Tools/code-review.png",
     "Tips & Tools/cron.png",
@@ -289,12 +293,7 @@
     "Backend/Databases.md",
     "Frontend/Network/Connections and protocols.md",
     "Frontend/Network/Service Workers.md",
-    "Frontend/Network/Data Transfer.md",
-    "Frontend/Network/Development & Deploy.md",
-    "DevSecOps/Security.md",
-    "Notes/HubSpot.md",
     "Pasted image 20260414111250.png",
-    "Books/Books.md",
     "AI/Pasted image 20260401141615.png",
     "AI/Pasted image 20260404120816.png",
     "Tips & Tools/maslows.png",

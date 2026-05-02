@@ -107,7 +107,7 @@
 - "By the same token": for the same reason
 - "For some reason that escapes me": Inexplicably, I can't understand why
 - "In the finer print": in the details, in the additional terms
-- "To the tee": perfectly, exactly
+- "To a/the tee": perfectly, exactly
 - "Rear `its` head (again)": something negative or problematic, has become noticeable
 - "Hit the head": go to the restroom
 - "In all due haste": right away
@@ -124,11 +124,14 @@
 - "To rail in": to criticize harshly or condemn
 - "Grist for one's mill": something turned to advantage or use 
 - "M.O": Modus Operandi - a person's or organization's typical method of operation (as a criminal's characteristic way of committing crimes)
+- "Semper Fi": always faithful
 - "Play by ear": improvise or do something without a plan or preparation
 - "Out and about": free, not being confined or restricted to a specific location
 - "Beat me to it": someone else did something before you could
 - "Tongue-in-cheek": sarcastic expression
+- "Molto facile" very easy
 - "Sight for sore eyes": a person or thing that you are extremely pleased or relieved to see, often because you haven't seen them for a long time.
+- "We ride at dawn": (sarcastic) We’re united, committed, and ready for action.
 - "In for a penny, in for a pound": go all in
 - "on the sly": secretly
 - "misty-eyed": tearful, choked up, emotional
