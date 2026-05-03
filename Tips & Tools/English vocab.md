@@ -170,7 +170,7 @@ repent (v): rue, regret, be sorry for, be ashamed of, feel remorse for
 
 contrition (n): repentance, penitence, remorse, self-reproach
 
-penance <peh-nance> (n): sám hối
+penance <peh-nance> (n): sám hối, shrift
 
 ameliorate (v): a fancy word for [improve, refine, enhance]
 
@@ -654,7 +654,7 @@ rapacious (adj): ravenous, greedy (exploitive), voracious
 
 vanquish (v): conquer (in competition/war)
 
-harbinger (v-n): predict, imply, foreshadow, prognosticate, pioneer, precursor
+harbinger (v-n): predict, imply, foreshadow, prognosticate, adumbration, pioneer, precursor
 
 insinuate (v): imply, subtly introduce, innuendo (n)
 
@@ -1357,7 +1357,7 @@ mercantile (adj): commercial, trade, business → merchant (n)
 
 down payment (n): deposit, upfront payment, tiền đặt cọc
 
-nomenclature (n): terminology, classification terms, danh pháp
+nomenclature (n): terminology, taxonomy, classification terms, danh pháp
 
 sediment (n): cặn, bã, residue, settlings
 

@@ -24,12 +24,12 @@
 - [ ] Live up to your standards
 ### 5/5
 - [ ] EO++
-- [ ] EP: Last vuln & perf bottlenecks scan with `gpt-5.5-xhigh`
+- [ ] EP: Walkthrough D
 - [ ] Finish pg.327 Antifragile
 - [ ] Live up to your standards
 ### 6/5
 - [ ] EO Global sprint planning
-- [ ] Get Claude Team slot from the boss
+- [ ] EP: Last vuln & perf bottlenecks scan with `gpt-5.5-xhigh`
 - [ ] Finish Chapter 20 Antifragile
 - [ ] Live up to your standards
 ### 7/5
@@ -70,5 +70,5 @@
 	- [x] Improve page loading speed for R2-stored assets
 	- [x] Review BACKLOG with unchecked items in the plans
 	- [x] [Refine UI/UX](https://app.plane.so/e-learning-platform/projects/ba70aceb-3699-40af-8a1a-9160e11d50e6/issues/) & fix img caption save with `draggable-block-add-button` behavior. Refer to the latest version on Github
-	- [ ] Run `/improve-codebase-architecture` & E2E test setup for happy paths
+	- [ ] Run `/improve-codebase-architecture` (with `CLAUDE.md` guardrails) & E2E test setup for happy paths
 - [ ] Set fitness goals (strength & endurance)
