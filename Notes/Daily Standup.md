@@ -1,10 +1,11 @@
 My standup report for the day:
-- Last Friday I reviewed the Chapter & Global approval process for prod.
-- For today, I'll start working on the workflows cleanup in prod to prepare for EOVN's real data import.
+- Last Wednesday we got together to show James a quick demo of EOVN in prod and got our Claude Team accounts set up.
+- For today, Queensland just reached out and agreed to launch their portal this week, so I'll shift my focus to that and also help the team finalize the EOVN migration to prod.
 
+> [!warning] Chewsday ping
 >Just flagging again: there's a contract violation around SHUI owed since I came on full-time.
 >Don't get me wrong, I'm incredibly grateful for this job, but baseline expectations need to be honored.
->"I'm not letting this go until we get it resolved, or at least have a date to work toward :-)
+>I'm not gonna let this slide until we get it resolved, or at least have a date to work toward :-)
 ---
 
 # 1-1
@@ -99,6 +100,7 @@ My standup report for the day:
 - Request Wix & Hivebrite APIs
 - Middleware: mainly for global approval, especially for chapters not using HubSpot directly.
 # Misc
-- `30:00` → Form 
-- `32:00` → Build new form in the sandbox
-- `33:00` → Approval process
+## QLD
+- For the high-level overview of your portal handoff checklist, I've prepared this file: https://docs.google.com/document/d/17c6cawfpZGOVj92P721ZfDQPqQkdGkyR46kFD1oAUQA/edit?tab=t.0
+- But first, check out these views to verify whether the current lists of leads/prospects & members are correct. If they're stale/wrong, I'm happy to show you how to get them up-to-date, since you'll eventually be doing it yourself.
+- Second, your action items for **today** can be found right here: https://docs.google.com/document/d/1FYCIrYddQpZzWDz3WEKlkKbbN8PanBjnYCVLGg92j8k/edit?tab=t.0. 

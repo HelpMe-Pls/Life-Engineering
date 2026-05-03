@@ -17,39 +17,42 @@
 - Barbell strategy.
 
 ---
-### 27/4
-- [x] Finish Antifragile Chapter 17
+### 4/5
+- [ ] Wrap up EO QLD
+- [ ] EOVN [prod++](https://edge8company.sg.larksuite.com/docx/QwGbd50G2oFy3txUzq3lQOkbgce#share-DcnQdpPD3oXwjkx2ToilDd9SgCe)
+- [ ] Finish pg.320 Antifragile
 - [ ] Live up to your standards
-### 28/4
-- [x] EO: [Phase 1](https://edge8company.sg.larksuite.com/docx/QwGbd50G2oFy3txUzq3lQOkbgce#share-DcnQdpPD3oXwjkx2ToilDd9SgCe) 
-- [x] EP: "Save Settings" btn
-- [x] Finish p.278 Antifragile
-- [x] Live up to your standards
-### 29/4
-- [x] EO Global sprint planning WITH SCREEN RECORDING
-- [x] Get Claude Team slot from the boss
-- [x] Finish page 282 Antifragile
-- [x] Live up to your standards
-### 30/4
-- [x] EP: Resolve BACKLOG++
-- [x] Finish Chapter 18 Antifragile
-- [x] Live up to your standards
-### 1/5
-- [x] EP: BACKLOG++
-- [x] Bragdoc++
-- [ ] Finish Chapter 19 Antifragile
-- [x] Live up to your standards
-### 2/5
+### 5/5
+- [ ] EO++
+- [ ] EP: Last vuln & perf bottlenecks scan with `gpt-5.5-xhigh`
+- [ ] Finish pg.327 Antifragile
+- [ ] Live up to your standards
+### 6/5
+- [ ] EO Global sprint planning
+- [ ] Get Claude Team slot from the boss
+- [ ] Finish Chapter 20 Antifragile
+- [ ] Live up to your standards
+### 7/5
+- [ ] EO: Same
+- [ ] EP: Resolve [Backlog](#Backlog)
+- [ ] Finish pg.342 Antifragile
+- [ ] Live up to your standards
+### 8/5
+- [ ] EO: Same
+- [ ] EP: BACKLOG++
+- [ ] Bragdoc++
+- [ ] Finish pg.352 Antifragile
+- [ ] Live up to your standards
+### 9/5
 - 1k @2:06 with paddles
 - Groceries
 - Weekly planning
-- Finish pg.300 Antifragile
-- Finish Walkthrough A
+- Finish Chapter 21 Antifragile
 - Live up to your standards
-### 3/5
-- Morning splurge
-- Finish Walkthrough C + D
-- Finish p320 Antifragile
+### 10/5
+- Library
+- Finish EP TDD
+- Finish pg.364 Antifragile
 - Live up to your standards
 
 ---
