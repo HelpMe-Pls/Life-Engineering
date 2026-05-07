@@ -32,6 +32,8 @@ ossify (v): to become hardened or conventional and opposed to change
 
 substitute (v-n): replacement, exchange 
 
+bandy (v): throw around, toss about, exchange carelessly, argue, spar verbally,
+
 ==supplant== (v): to take the place of and serve as a substitute for especially by reason of superior excellence or power
 
 auxiliary (adj-n): supplementary, ancillary, functioning in a subsidiary capacity 
@@ -96,6 +98,8 @@ obfuscate (v): to make obscure, darken, confuse
 
 obstinate (adj): unpersuadable, stubborn, willful, rigid, adamant, implacable
 
+refractory (adj): obstinate, unresponsive, recalcitrant, intractable, defiant,
+
 pertinacious (adj): tenacious, steadfast, determined
 
 dour (adj): gloomy, stern, sullen, morose, somber
@@ -115,6 +119,8 @@ moribund (adj): dying (business/patient/tree,...)
 cursory (adj): hasty and therefore not thorough or detailed
 
 trifle {with} (v-n) <trai-fal>: giỡn mặt
+
+trinket (n): souvenir, keepsake, little something, knickknack
 
 ludic (adj): playful (psychology), gamesome, recreational
 
@@ -216,6 +222,8 @@ brevity (n): briefness, concision
 
 ==ephemeral== (adj-n): short-lived, transitory, fleeting
 
+perennial (adj): evergreen, enduring, recurring, persistent, chronic, inveterate
+
 de facto (adv-adj): in fact, actually, lowkey recognized 
 
 akin {to} (adj): alike, similar
@@ -225,6 +233,8 @@ akin {to} (adj): alike, similar
 to wit (expression): namely, specifically
 
 eponymous (adj): self-titled, title character, named after
+
+dub (v): nickname, label, designate, reggae remix, record over
 
 ==vernacular== (adj-n): native speech, regional language
 
@@ -266,6 +276,8 @@ paragon {of} (n):  exemplar, ideal, epitome, a model of excellence or perfection
 
 malignant (adj): malevolent, benign/malignant (== harmless/harmful) tumor
 
+deleterious (adj): harmful, damaging, injurious, toxic, noxious, detrimental
+
 beset (v): surround, harass
 
 windward (adj): !leeward, being in or facing the direction from which the wind is blowing
@@ -291,6 +303,8 @@ prolific (adj): fruitful, productive
 orchard (n): vườn cây ăn quả
 
 ==abate== (v): calm down, becoming less intense; taper
+
+calmative (adj): sedative, relaxant, tranquilizer, soothing
 
 ==abolish== (v): annul, invalidate, cancel, dissolve
 
@@ -496,7 +510,7 @@ pare (v): trim off an outside, excess, or irregular part of
 
 posterity (n): future generations, descendants, those who come after
 
-inexorable (adj): relentless
+inexorable (adj): relentless, unremitting
 
 predicate (v-n-adj): base/found (on), something that is affirmed or denied of the subject
 
@@ -604,6 +618,8 @@ alas (expr): unfortunately, sadly, regrettably
 
 ==elucidate== (v): explain, demonstrate, illustrate, eli5
 
+exposition (n): explanation, backstory presentation, explication,
+
 rendition (n): dẫn độ, covert deportation, illustration, visualization, mock-up
 
 inexplicable (adj): incapable of being explained, interpreted, or accounted for
@@ -628,9 +644,11 @@ fanfare (n): showy, a short loud piece of music that is played to celebrate
 
 ==conjecture== (v-n): guess, surmise, estimate, suppose, theory
 
+==interpolation== (n): estimation, value approximation, editorial addition, aside
+
 ==tacit== (adj): implied, implicit
 
-==connotation== (n): implication
+==connotation== (n): implication, shade of meaning
 
 allusion (n): implication, indirect reference especially in literature
 
@@ -674,6 +692,8 @@ obscene (adj): repulsive, abhorrent (to morality or virtue)
 
 atrocious (adj): detestable, appalling, abominable, barbaric
 
+philistinism (n): anti-intellectualism, unrefined taste, vocationalism
+
 anathema (n): abomination, unacceptable, taboo, deeply offensive, excommunication, ecclesiastical curse
 
 futile <fiu-dtal> (adj): no value, useless, completely ineffective
@@ -710,7 +730,7 @@ foray {into} (v-n): raid, loot, invasion, an initial and often tentative attempt
 
 averse (adj): allergic, reluctant, loathe/loth/loath
 
-persecute (v): torment, agonize, pester
+persecute (v): torment, agonize, pester, nag
 
 tribulation (n) <tree-bulation>: misery, distress, torment, affliction, woe
 
@@ -1027,6 +1047,8 @@ refute (v): disclaim, deny, reject
 
 expunge (v): erase, legally destroying or sealing a person's criminal record
 
+raze (v): clear, demolish, annihilate, obliterate
+
 heuristic (adj-n): trial-and-error, experimental techniques
 
 congruent (adj): congruous, coherent, harmonious
@@ -1147,7 +1169,9 @@ steward (v-n): manager
 
 magnate (n): boss, trùm, jefe (<hef-fei>), 
 
-tenement (n): residence, apartment, dwelling
+==tenement== (n): chung cư, residence, apartment, dwelling
+
+pied-à-terre (n): city apartment, second home, urban retreat, luxury apartment
 
 hypochondriac (adj-n): người mắc chứng nghi bệnh, lúc nào cũng bất an, tưởng mình đang bệnh
 
@@ -1333,6 +1357,8 @@ sagacity (n): wisdom, street smarts, shrewdness, good judgment → sagacious (ad
 
 spur (v-n): prompt, encourage, get the ball rolling 
 
+induce (v): cause, bring about, produce, probabilistic reasoning
+
 spurious (adj): false, bogus, unfounded, misleading
 
 confabulation (n): fabrication, memory distortion, false recollection
@@ -1359,8 +1385,14 @@ down payment (n): deposit, upfront payment, tiền đặt cọc
 
 nomenclature (n): terminology, taxonomy, classification terms, danh pháp
 
+genera (n): plural of genus, taxonomic groups, biological categories, classification units
+
 sediment (n): cặn, bã, residue, settlings
 
 in lieu of (prepositional phrase): instead of
 
 ream {of} (n): (paper) volumes of, piles of, masses of, mountains of
+
+neomania (n): fomo
+
+dilettante (n): amateur, hobbyist, dabbler

@@ -18,42 +18,54 @@
 
 ---
 ### 4/5
-- [ ] Wrap up EO QLD
-- [ ] EOVN [prod++](https://edge8company.sg.larksuite.com/docx/QwGbd50G2oFy3txUzq3lQOkbgce#share-DcnQdpPD3oXwjkx2ToilDd9SgCe)
-- [ ] Finish pg.320 Antifragile
-- [ ] Live up to your standards
+- [x] Wrap up EO QLD
+- [x] EOVN prod: clean up wf
+- [x] EP: Walkthrough D
+- [x] Finish pg.323 Antifragile
+- [x] Live up to your standards
 ### 5/5
-- [ ] EO++
-- [ ] EP: Walkthrough D
-- [ ] Finish pg.327 Antifragile
-- [ ] Live up to your standards
+- [x] EOVN prod: dashboards++, middleware props remind
+- [x] Edge8: Kudo Luan + SHUI remind
+- [x] EP: refactor `SortableContentItem`
+- [x] Finish pg.328 Antifragile
+- [x] Live up to your standards
 ### 6/5
-- [ ] EO Global sprint planning
-- [ ] EP: Last vuln & perf bottlenecks scan with `gpt-5.5-xhigh`
+- [x] EO Global sprint planning
+	- [x] Demo imported data & Membership pipeline
+- [x] EP: Resolve #112
+- [x] Finish pg.331 Antifragile
+- [x] Live up to your standards
+### 7/5
+- [x] EO: record EOVN prod
+- [ ] EP: 
+	- [ ] Review & Close #112
+	- [ ] Resolve #113 with Opus & #114 with Sonnet
+- [ ] AIO prep
 - [ ] Finish Chapter 20 Antifragile
 - [ ] Live up to your standards
-### 7/5
-- [ ] EO: Same
-- [ ] EP: Resolve [Backlog](#Backlog)
-- [ ] Finish pg.342 Antifragile
-- [ ] Live up to your standards
 ### 8/5
-- [ ] EO: Same
-- [ ] EP: BACKLOG++
+- [ ] EO: 
+	- [ ] Altai request body review
+	- [ ] EOVN Prod launch
+- [ ] EP: 
+	- [ ] Optimize `CLAUDE.md` with Opus Max & `/react-router-framework-mode` skill + antifragile software architecture conventions
+	- [ ] Last vuln & perf bottlenecks scan with `gpt-5.5-xhigh`
 - [ ] Bragdoc++
-- [ ] Finish pg.352 Antifragile
+- [ ] Finish pg.347 Antifragile
 - [ ] Live up to your standards
 ### 9/5
-- 1k @2:06 with paddles
-- Groceries
-- Weekly planning
-- Finish Chapter 21 Antifragile
-- Live up to your standards
+- [ ] 1k @2:06 with paddles
+- [ ] Groceries
+- [ ] Resolve [backlog](#backlog)
+- [ ] Finish Chapter 21 Antifragile
+- [ ] Live up to your standards
 ### 10/5
-- Library
-- Finish EP TDD
-- Finish pg.364 Antifragile
-- Live up to your standards
+- [ ] AIO
+- [ ] Finish EP TDD
+- [ ] Finish pg.364 Antifragile
+- [ ] Resolve [backlog](#backlog)
+- [ ] Weekly planning
+- [ ] Live up to your standards
 
 ---
 # Backlog
@@ -66,9 +78,5 @@
 	- [ ] Altai ⇌ HubSpot middleware
 	- [ ] Create simple prototype + full plan to sync events from Wix to Hivebrite for EO Vietnam
 - EP: 
-	- [x] Resolve all Sonarqube warnings
-	- [x] Improve page loading speed for R2-stored assets
-	- [x] Review BACKLOG with unchecked items in the plans
-	- [x] [Refine UI/UX](https://app.plane.so/e-learning-platform/projects/ba70aceb-3699-40af-8a1a-9160e11d50e6/issues/) & fix img caption save with `draggable-block-add-button` behavior. Refer to the latest version on Github
-	- [ ] Run `/improve-codebase-architecture` (with `CLAUDE.md` guardrails) & E2E test setup for happy paths
-- [ ] Set fitness goals (strength & endurance)
+	- [ ] Run `/improve-codebase-architecture` (with `CLAUDE.md` guardrails) & E2E test setup for happy paths. Refresh the skills from source before calling them
+- [x] Set fitness goals (strength & endurance)
