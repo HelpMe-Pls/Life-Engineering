@@ -37,18 +37,16 @@
 - [x] Live up to your standards
 ### 7/5
 - [x] EO: record EOVN prod
-- [ ] EP: 
-	- [ ] Review & Close #112
-	- [ ] Resolve #113 with Opus & #114 with Sonnet
-- [ ] AIO prep
+- [x] EP: 
+	- [x] Review & Close #112
+	- [x] Resolve #113 with Opus
 - [ ] Finish Chapter 20 Antifragile
 - [ ] Live up to your standards
 ### 8/5
-- [ ] EO: 
-	- [ ] Altai request body review
-	- [ ] EOVN Prod launch
+- [ ] Vibe code with the boss
 - [ ] EP: 
 	- [ ] Optimize `CLAUDE.md` with Opus Max & `/react-router-framework-mode` skill + antifragile software architecture conventions
+	- [ ] Resolve #114 with Sonnet
 	- [ ] Last vuln & perf bottlenecks scan with `gpt-5.5-xhigh`
 - [ ] Bragdoc++
 - [ ] Finish pg.347 Antifragile

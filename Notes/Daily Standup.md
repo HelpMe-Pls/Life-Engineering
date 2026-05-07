@@ -25,6 +25,7 @@ My standup report for the day:
 
 ---
 # EP
+- Review the last commit to verify whether it's safe to close #113
 ## 113
 ```
 Resolve GitHub issue #113 in this repo. Run `gh issue view 113 --repo HelpMe-Pls/elearning-platform` first — the editor decomposition table and the prop-setter callback table are non-negotiable.
@@ -160,17 +161,14 @@ This is HITL. Do NOT write any implementation code until the Option A/B/C decisi
 PHASE 1 — DECISION (no code):
   1. Invoke `/grill-with-docs` to stress-test Option A vs B vs C. Frame the grilling around: shell line count after #114 lands, whether the reducer
   + dispatch closures are reused outside this component, the `app/hooks/useAutoSave.ts` precedent, and the AFK-vs-HITL impact of choosing extraction
-  2. Append a one-line note to the Phase 4 heading in `docs/plans/BACKLOG.md` recording the choice (A, B, or C) and a one-sentence justification —
-  this MUST land before any code change
-  3. If Option B was chosen: commit an ADR at `docs/adr/<YYYYMMDD>-content-item-editor-lifecycle.md` capturing the chosen state union, dispatch
-  events, and selector signature
-  4. STOP and confirm with the user before proceeding to PHASE 2
+  1. Append a one-line note to the Phase 4 heading in `docs/plans/BACKLOG.md` recording the choice (A, B, or C) and a one-sentence justification — this MUST land before any code change
+  2. If Option B was chosen: commit an ADR at `docs/adr/<YYYYMMDD>-content-item-editor-lifecycle.md` capturing the chosen state union, dispatch events, and selector signature
+  3. STOP and confirm with the user before proceeding to PHASE 2
 
 PHASE 2 — IMPLEMENTATION (only after decision is recorded and user has confirmed):
   - Reducer location follows the choice: Option A → `app/components/dashboard/SortableContentItem.tsx` as named exports; Option B → `app/hooks/useContentItemSave.ts`; Option C → `app/lib/content-item-editor-lifecycle.ts`
   - Promote `R2UploadContext` to a named export from `app/lib/content-items.ts`
-  - Reducer state is EXACTLY the seven-variant locked discriminated union from the issue body — no extras, no `& { ... }` intersections, no
-  superset, no subset
+  - Reducer state is EXACTLY the seven-variant locked discriminated union from the issue body — no extras, no `& { ... }` intersections, no superset, no subset
   - Reducer + selector are exported regardless of the chosen option (testable from outside the component)
   - Switch on `state.kind`; the default branch MUST call `assertNever(state)`. Add `export function assertNever(value: never): never { throw new Error(\`Unhandled variant: ${JSON.stringify(value)}\`); }` to `~/lib/utils.ts` if missing
   - Video-processing UI state stays a separate `useState<"processing" | "ready" | "error" | null>` slot — do NOT fold it into the lifecycle reducer (the issue body explains why; do not relitigate)
