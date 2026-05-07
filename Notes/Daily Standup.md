@@ -15,17 +15,20 @@ My standup report for the day:
 > - The things you think you have done well over the last 6 months.
 > - The results of your work. What value did it bring to the business.
 > - What would you do differently if we could go back and do it again.
+> - Pair the NSTD doc with this, make sure to end with the key question: 
+> 	- If we can pull this off — actually, scratch that. It's not if, it's when — because I have high hopes for this. When we pull this off and generate some real capital out of the retreats, I think it's only fair that I get a raise rather than a bonus — considering my contributions to EO so far, and now this. It's more than justifiable. I remember when you jokingly told Mai to give me a raise and we had a good laugh over the 'have you tried women' for weight loss thing. Now it's time to make that a reality.
 
 ## For the record
 - I don’t think I’ve gotten any extra updates from EO about the tasks.
 - But if I had to sum it up, I’ve realized one of the hardest parts of my job is balancing chapter accessibility with CRM best practices to keep the system maintainable and scalable.
+
 
 > I'm aware that the outcome is what we're aiming for, but a lot of stuff affects outcomes, whereas if we judge your performance purely based on your output, which is something that you have full control of, then I'm pretty sure that you're the one who's setting the standard for everyone here.
 > You too. To be fair, if I were the boss, I'd have doubled your salary by now. You deserve so much more than this; considering all the things you've done for the company so far.
 
 ---
 # EP
-- Review the last commit to verify whether it's safe to close #113
+- Read #113 and refer to the current state of the codebase to close any remaining gaps in your ability.
 ## 113
 ```
 Resolve GitHub issue #113 in this repo. Run `gh issue view 113 --repo HelpMe-Pls/elearning-platform` first — the editor decomposition table and the prop-setter callback table are non-negotiable.

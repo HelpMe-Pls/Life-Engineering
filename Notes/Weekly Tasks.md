@@ -40,26 +40,25 @@
 - [x] EP: 
 	- [x] Review & Close #112
 	- [x] Resolve #113 with Opus
-- [ ] Finish Chapter 20 Antifragile
-- [ ] Live up to your standards
+- [x] Finish Chapter 20 Antifragile
+- [x] Live up to your standards
 ### 8/5
 - [ ] Vibe code with the boss
-- [ ] EP: 
-	- [ ] Optimize `CLAUDE.md` with Opus Max & `/react-router-framework-mode` skill + antifragile software architecture conventions
-	- [ ] Resolve #114 with Sonnet
-	- [ ] Last vuln & perf bottlenecks scan with `gpt-5.5-xhigh`
+- [ ] Tax return
 - [ ] Bragdoc++
 - [ ] Finish pg.347 Antifragile
 - [ ] Live up to your standards
 ### 9/5
 - [ ] 1k @2:06 with paddles
 - [ ] Groceries
-- [ ] Resolve [backlog](#backlog)
+- [ ] EP: 
+	- [ ] Optimize `CLAUDE.md` with Opus Max & `/react-router-framework-mode` skill + antifragile software architecture conventions
+	- [ ] Resolve #114 with Sonnet
+	- [ ] Last vuln & perf bottlenecks scan with `gpt-5.5-xhigh`
 - [ ] Finish Chapter 21 Antifragile
 - [ ] Live up to your standards
 ### 10/5
-- [ ] AIO
-- [ ] Finish EP TDD
+- [ ] Vibe code with the boss
 - [ ] Finish pg.364 Antifragile
 - [ ] Resolve [backlog](#backlog)
 - [ ] Weekly planning

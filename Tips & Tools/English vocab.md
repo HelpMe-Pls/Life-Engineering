@@ -244,7 +244,7 @@ bellow (v): bawl, grawl, to shout in a deep voice
 
 ==unscrupulous== (adj): unethical, immoral, Machiavellian
 
-diatribe {against sb/sth} (n): a tirade, a long and angry speech or piece of writing attacking and criticizing
+diatribe {against sb/sth} (n): a tirade, rant, philippic, a long and angry speech or piece of writing attacking and criticizing
 
 perplexing (adj): puzzling, confusing, difficult to understand, elusive, ==quandary==
 
@@ -345,6 +345,8 @@ languor (n): lethargy, stupor, weakness or weariness of body or mind
 foible (n): weakness
 
 ==tentative== (adj): uncertain, hesitant
+
+reticence (n): sự dè dặt (reluctance to speak)
 
 bide (v): tarry/to wait awhile, keep up
 
@@ -463,6 +465,8 @@ ransom (v-n): redeem, to free from captivity or punishment by paying a price
 gratuitous (adj): unwarranted, free, costless
 
 paradigm (n): example, pattern, a philosophical or theoretical framework of any kind
+
+nominally (adv): theoretically, supposedly
 
 aphorist (n): philosopher, sage, wit, moralist
 
@@ -653,6 +657,8 @@ fanfare (n): showy, a short loud piece of music that is played to celebrate
 allusion (n): implication, indirect reference especially in literature
 
 ==enamored== {of} (adj): amorous (of), obsessed, fascinated
+
+idolatrous (adj): fanatical, obsessive, worshipful.
 
 amorous (adj): showing sexual desire and love
 
@@ -1145,6 +1151,8 @@ filial (adj): of, relating to, or befitting a son or daughter
 
 abrasion (n): irritation, rubbing away by friction
 
+irascible (adj): irritable, cục cằn, grumpy, nóng nảy
+
 scowl (v-n): frown, grimace, exhibit a threatening aspect, chau mày
 
 impose (v): ép buộc, áp đặt (thuế)
@@ -1362,6 +1370,8 @@ induce (v): cause, bring about, produce, probabilistic reasoning
 spurious (adj): false, bogus, unfounded, misleading
 
 confabulation (n): fabrication, memory distortion, false recollection
+
+apocryphal (adj): fictitious, mythical, fabricated, unverified.
 
 percolation (n): seepage, filtration, diffusion, sink in
 

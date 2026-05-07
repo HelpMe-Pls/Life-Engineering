@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/81itz5rx#SqkgrteBBhPUOIpHuC2sbsAlGnDp0s3fGJElIjRPTFc
-share_updated: 2026-05-07T15:25:37+07:00
+share_updated: 2026-05-07T20:53:04+07:00
 ---
 
 How it works:
@@ -73,7 +73,7 @@ How it works:
 # Feedback Loops
 - **Is Code Cheap**: if your code is easy to change without introducing regression, then it's high quality. But if it's cheap, then it means that your software entropy increases with every iteration.
 - **Using The Do Work Skill**: build your own `/do-work` reusable skill that gives Claude Code a repeatable process for planning, implementing, and validating changes. You can use the `/do-work` skill end-to-end by implementing an in-app notifications feature from a PRD. Example:
-	- `Use the /do-work skill and refer to @<your-prd> and proceed with Phase 1 of the @plans/<your-plan>
+	- `Use the /do-work skill and refer to @<your-prd> and proceed with Phase 1 of the @<your-plan>`
 ## Quality Assurance
 - **Fixing Agents Broken Formatting with Pre Commit**: add [Git pre-commit hooks](https://www.aihero.dev/essential-ai-coding-feedback-loops-for-type-script-projects) with lint and type checks so every commit is validated automatically.
 	- Paste the Markdown text (maybe replace `pnpm` with `bun`) and then prompt: "*implement this in my project*."
