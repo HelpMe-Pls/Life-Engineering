@@ -308,4 +308,4 @@ You are done when the PR URL (or BACKLOG-only commit URL for Path A) is reported
 ## QLD
 - sth
 ## PAKN
-
+- Vào ngày 22 tháng 4 năm 2026 tôi đã gửi đề nghị hoàn thuế và nhận được tin nhắn từ cục thuế rằng yêu cầu sẽ được giải quyết sau 6 ngày làm việc. Nhưng tới hôm nay (ngày 12 tháng 5) thì đã là 12 ngày làm việc kể từ ngày tôi nhận được thông báo. 
