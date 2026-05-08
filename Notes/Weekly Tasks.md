@@ -43,9 +43,10 @@
 - [x] Finish Chapter 20 Antifragile
 - [x] Live up to your standards
 ### 8/5
-- [ ] Vibe code with the boss
-- [ ] Tax return
-- [ ] Bragdoc++
+- [x] Vibe code with the boss
+- [x] EO: reply Nisha
+- [x] PAKN
+- [x] Bragdoc++
 - [ ] Finish pg.347 Antifragile
 - [ ] Live up to your standards
 ### 9/5
