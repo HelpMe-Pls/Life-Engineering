@@ -28,101 +28,12 @@ My standup report for the day:
 
 ---
 # EP
-- Read #113 and refer to the current state of the codebase to close any remaining gaps in your ability.
-## 113
-```
-Resolve GitHub issue #113 in this repo. Run `gh issue view 113 --repo HelpMe-Pls/elearning-platform` first — the editor decomposition table and the prop-setter callback table are non-negotiable.
-
-**Pre-flight: commits already on `resolve-issues` from prior sessions:**
-   - `getFullUrl` is at module scope in `SortableContentItem.tsx` (was inside the component)
-   - `type R2UploadContext = "content-image" | "content-audio" | "content-file"` is at module scope in `SortableContentItem.tsx`
-   - `getUploadSaveStatus` is at module scope in `SortableContentItem.tsx`
-   - Redundant `if (!file) return` guards removed from `handleFileUpload` / `handleVideoUpload`
-   - `alert()` calls replaced with `setUploadError()` in video upload handlers
-Do not re-introduce any of the above.
-
- **Branching strategy:**
- Phase 0 (PR #118, closes #112) is already merged into `staging` before this prompt runs. For Phase 1+2: commit your changes to the current branch (`resolve-issue`) and open a new PR to `staging` with those changes.
-
-Test infrastructure setup (one-time, before any editor extraction):
-   1. Install devDependencies: `bun add -d @testing-library/react @testing-library/user-event @testing-library/jest-dom jsdom`
-   2. Update `vitest.config.ts`: set `test.environment = "jsdom"` and `test.setupFiles = ["./vitest.setup.ts"]`. Preserve the existing `test.include` glob.
-   3. Create `vitest.setup.ts` at the repo root containing:
-      ```ts
-      import "@testing-library/jest-dom";
-      import { vi } from "vitest";
-
-      Object.defineProperty(URL, "createObjectURL", {
-        writable: true,
-        value: vi.fn(() => "blob:test"),
-      });
-      Object.defineProperty(URL, "revokeObjectURL", {
-        writable: true,
-        value: vi.fn(),
-      });
-      ```
-   4. Verify with `bun run typecheck` then `bun run test:run`. The pre-existing tests (`app/lib/course-navigation.test.ts`,
- `app/lib/lesson-access.test.ts`) must still pass under the new jsdom environment before you proceed.
-
-**Implementation order:**
-   1. Move `getFullUrl` and `type R2UploadContext` from `SortableContentItem.tsx` into `app/lib/content-items.ts` (alongside existing `buildContentItemFormData` and `ContentItemType`). Export both. Update the import in `SortableContentItem.tsx`. Do this BEFORE creating any editor components: the editors you'll create in step 3 need to import `getFullUrl` and `R2UploadContext`, and they MUST import them from `~/lib/content-items` (the neutral utility module). Editors must NEVER import from `~/components/dashboard/SortableContentItem` — that's the parent that already imports the editors, so an editor importing back from the parent would create a circular dependency.
-      - `getUploadSaveStatus` STAYS in `SortableContentItem.tsx` — it's shell-internal status derivation, not consumed by editors.
-
-   2. Move `SaveStatusIndicator` (currently lines ~1663–1737 of `SortableContentItem.tsx`) verbatim into `app/components/dashboard/content-editors/SaveStatusIndicator.tsx`. Re-export from `content-editors/index.ts`. Update the shell's import to read from `~/components/dashboard/content-editors`. Preserve the `Readonly<{ status, lastSavedAt, errorMessage, onRetry }>` props and the 3-second `Saved` auto-dismiss exactly.
-
-   3. Extract six per-type editors into `app/components/dashboard/content-editors/`: `TextContentEditor.tsx`, `VideoContentEditor.tsx`, `ImageContentEditor.tsx`, `FileContentEditor.tsx`, `AudioContentEditor.tsx`, `QuizContentEditor.tsx`. Re-export each from `content-editors/index.ts`. The shell stays the orchestration owner — fetchers, TUS upload (preserve the dynamic `await import("tus-js-client")` pattern; do not promote to a top-level import), stream polling, asset cleanup, and all draft/saved state remain in `SortableContentItem.tsx`. Editors are presentational only. Shell cleanup that MUST happen as part of this step:
-      - Remove `localImagePreviewUrl` state and its `useEffect` cleanup from the shell; they move into `ImageContentEditor`.
-      - Remove all four file-input `useRef`s (`videoInputRef`, `imageInputRef`, `audioInputRef`, `fileInputRef`) from the shell; they move into the respective editor components.
-	
-	`ImageContentEditor` preview-handoff rule: the editor renders the image from one of two sources during a single user flow:
-    - **Before R2 upload completes**: when the user picks a file, the editor calls `URL.createObjectURL(file)` to get a temporary `blob:...`
- URL, stores it in `localImagePreviewUrl` state, and renders `<img src={localImagePreviewUrl}>`. The user sees their image immediately without
- waiting for the upload.
-    - **After R2 upload completes**: the shell uploads the file in the background and, on success, sets `draftItem.fileR2Key` to a non-null R2 key. The editor then renders from `getFullUrl(draftItem.fileR2Key)` — the permanent server URL.
-	The editor MUST detect the moment of handoff. Use a `useEffect` watching `draftItem.fileR2Key`: when it transitions from `null` to non-null, call `URL.revokeObjectURL(localImagePreviewUrl)` to release the browser's hold on the blob URL, then `setLocalImagePreviewUrl(null)` so the local URL is no longer rendered. If you skip the handoff, the local blob URL and the R2 URL are alive at the same time — the user sees a flicker of two images stacked or rapidly swapping during the transition. Smoke-test step "Image upload local preview → R2 swap" exists specifically to catch this regression.
-
-   3. Replace the exhaustive `switch (draftItem.type)` in the shell with a typed dispatch: one component per case. For the `default` branch, exhaust the type while preserving the existing runtime UX:
-    ```ts
-      default: {
-        const _exhaustive: never = draftItem.type;
-        return <div>Unsupported content type: {String(_exhaustive)}</div>;
-      }
-    ```
-    TypeScript narrows `draftItem.type` to `never` after all 6 cases, making the assignment a compile-time exhaustiveness check on top of the runtime fallback.
-
-**Hard rules:**
-   - Each editor receives:
-     - `draftItem: ContentItem`
-     - Disabled flags: `isUploading: boolean`, `isSubmitting: boolean`, `isUploadSaving: boolean` (drive `disabled` on inputs and buttons)
-     - ONLY the explicit field-setter callbacks listed in the issue's prop-setter table — NO `Partial<ContentItem>` patches; identity/server fields (`id`, `lessonId`, `priority`, `status`, `createdAt`, `updatedAt`) are not reachable through editor props
-   - `ImageContentEditor` owns its `localImagePreviewUrl` state, its `URL.createObjectURL` allocation, and its `URL.revokeObjectURL` cleanup (on unmount AND on R2-swap detection per the rule above); the shell does not see this state
-   - File-backed editors import `getFullUrl` from `~/lib/content-items`; never from `~/components/dashboard/SortableContentItem`
-   - Editors do NOT call `performUploadSave`, do NOT touch `pendingAssetCleanupRef`, do NOT call `cleanupOrphanedAsset`, do NOT own any fetcher
-   - `VideoContentEditor` does NOT import `tus-js-client` in this phase — TUS stays in the shell with its existing dynamic-import pattern
-   - Function declarations only, no `React.FC`; prop typing via inline `interface`/`type`
-   - Reuse existing primitives from `content-editors/` — `ContentFieldsHeader`, `ContentTypeSelect`, `UploadProgressBar`, and the newly-extracted `SaveStatusIndicator`. Do not duplicate.
-
- **Render tests required (sibling-co-located, NOT inside a `__tests__/` folder):** 
-   - Place each test next to the editor it covers. Vitest's `test.include = ["app/**/*.test.{ts,tsx}"]` already picks them up.
-   - `app/components/dashboard/content-editors/ImageContentEditor.test.tsx`: render the editor with a `draftItem` of type `image`. Locate the hidden file input (e.g. `container.querySelector('input[type="file"]')`) and fire a `change` event with a synthetic `File` (or use `@testing-library/user-event`'s `userEvent.upload`). Assert `URL.createObjectURL` was called with that file. Then unmount and assert `URL.revokeObjectURL` was called exactly once with the returned blob URL (`"blob:test"` from the setup mock).
-   - `app/components/dashboard/content-editors/FileContentEditor.test.tsx`: simulate a file-input `change` event with a synthetic `File`. Assert `onFileSelected` was called with `(file, "content-file")` exactly — the context arg must be `"content-file"`, not `"content-image"` or `"content-audio"`.
-   - `app/components/dashboard/content-editors/AudioContentEditor.test.tsx`: render with a `draftItem` whose `fileR2Key` is a non-null string (e.g. `"audio/test.mp3"`). Assert `<AudioPlayer>` is in the document with `src="/api/r2-serve/audio/test.mp3"` (the value `getFullUrl` produces).
-
-**Verification gates:**
-   - `bun run typecheck` passes
-   - `bun run test:run` passes (the three new render tests are in the green set)
-   - `rg "(function|const)\s+SaveStatusIndicator" app/components/dashboard/SortableContentItem.tsx` returns zero
-
-**When gates pass:**
-   1. Invoke `/simplify` against the local diff — this phase is the highest-payoff slimming opportunity, and `/simplify` will catch any "moved code, didn't slim it" regressions.
-   2. Push `resolve-issues-phase-1-2` and open a PR against `staging`. PR body must include `Closes #113` and the manual-smoke checklist copied verbatim from issue #113 (do NOT start `bun dev`).
-   3. Invoke `/review` on the open PR.
-
-You are done when the PR URL is reported and both `/simplify` + `/review` have run.
-```
+- Review this prompt and explore the codebase to determine if it's ready to resolve #114:
+- Review #114 and evaluate the current branch to determine if it's ready to open a PR into staging.
+- Update the @BACKLOG file to address the unchecked items in #118, #119,
 ## 114
 ```
-Resolve GitHub issue #114 in HelpMe-Pls/elearning-platform. Run `gh issue view 114` first — the `AssetRef` tagged union, the cleanup-failure semantics, and the unchanged `actionSuccess` payload are non-negotiable.
+Resolve GitHub issue #114 in the repo. Run `gh issue view 114` first — the `AssetRef` tagged union, the cleanup-failure semantics, and the unchanged `actionSuccess` payload are non-negotiable.
 
 Approach: TDD-first. Tests before implementation.
 
@@ -309,3 +220,4 @@ You are done when the PR URL (or BACKLOG-only commit URL for Path A) is reported
 - sth
 ## PAKN
 - Vào ngày 22 tháng 4 năm 2026 tôi đã gửi đề nghị hoàn thuế và nhận được tin nhắn từ cục thuế rằng yêu cầu sẽ được giải quyết sau 6 ngày làm việc. Nhưng tới hôm nay (ngày 12 tháng 5) thì đã là 12 ngày làm việc kể từ ngày tôi nhận được thông báo. 
+- Ngày nộp: 13/04/2026 Trạng thái hiện tại: Cơ quan thuế đã chấp nhận lúc 22:10 ngày 13/04/2026. Tính đến nay đã quá thời hạn giải quyết theo quy định thông thường đối với loại hồ sơ này, nhưng trên hệ thống vẫn chưa cập nhật thêm bước xử lý tiếp theo hoặc thông báo yêu cầu bổ sung (nếu có). Việc chậm trễ này đang gây ảnh hưởng trực tiếp đến kế hoạch công việc và các thủ tục pháp lý liên quan của tôi. Kính mong Quý cơ quan kiểm tra và phản hồi giúp tôi về: 1. Tình trạng hiện tại của hồ sơ đang dừng tại bộ phận nào? 2. Thời gian dự kiến sẽ có kết quả cuối cùng hoặc thông báo tiếp theo.

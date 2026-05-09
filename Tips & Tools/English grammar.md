@@ -112,6 +112,7 @@
 - "Hit the head": go to the restroom
 - "In all due haste": right away
 - "fubar": Fucked Up Beyond All Recognition
+- "go postal": snap, crash out, go berserk, freak out,
 - "Keep abreast of `sth`": stay informed about
 - "Out of the loop": lack knowledge about something that others are aware of
 - "A trophy husband": a young, attractive man who is married to an older, wealthier woman

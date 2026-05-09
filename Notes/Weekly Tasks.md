@@ -47,21 +47,19 @@
 - [x] EO: reply Nisha
 - [x] PAKN
 - [x] Bragdoc++
-- [ ] Finish pg.347 Antifragile
-- [ ] Live up to your standards
+- [x] Finish pg.340 Antifragile
+- [x] Live up to your standards
 ### 9/5
-- [ ] 1k @2:06 with paddles
-- [ ] Groceries
-- [ ] EP: 
-	- [ ] Optimize `CLAUDE.md` with Opus Max & `/react-router-framework-mode` skill + antifragile software architecture conventions
-	- [ ] Resolve #114 with Sonnet
-	- [ ] Last vuln & perf bottlenecks scan with `gpt-5.5-xhigh`
-- [ ] Finish Chapter 21 Antifragile
-- [ ] Live up to your standards
+- [x] Perfect dive start + 500m with paddles
+- [x] Groceries
+- [x] Pay raise script
+- [x] PAKN + mail
+- [x] Finish pg.340 Antifragile
+- [x] Live up to your standards
 ### 10/5
 - [ ] Vibe code with the boss
-- [ ] Finish pg.364 Antifragile
-- [ ] Resolve [backlog](#backlog)
+	- [ ] Reply Nisha
+- [ ] Finish pg.343 Antifragile
 - [ ] Weekly planning
 - [ ] Live up to your standards
 
@@ -72,9 +70,12 @@
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
 - EO:
-	- [ ] Config EOVN prod (workflows & pipelines)
+	- [ ] Config EOVN prod form. Resolve backlogs in the chat.
 	- [ ] Altai ⇌ HubSpot middleware
 	- [ ] Create simple prototype + full plan to sync events from Wix to Hivebrite for EO Vietnam
 - EP: 
-	- [ ] Run `/improve-codebase-architecture` (with `CLAUDE.md` guardrails) & E2E test setup for happy paths. Refresh the skills from source before calling them
+	- [ ] Run `/improve-codebase-architecture` (with `CLAUDE.md` guardrails) & E2E test setup for happy paths. Refresh the skills from source before calling them	
+	- [ ] Optimize `CLAUDE.md` with Opus Max & `/react-router-framework-mode` skill + antifragile software architecture conventions
+	- [ ] Resolve #114 with Sonnet
+	- [ ] Last vuln & perf bottlenecks scan with `gpt-5.5-xhigh`
 - [x] Set fitness goals (strength & endurance)

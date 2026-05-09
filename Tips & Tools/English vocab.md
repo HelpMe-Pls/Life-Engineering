@@ -578,6 +578,8 @@ veritable (adj): real, genuine, definite
 
 subjugation {to} (n): domination, takeover, defeat, take control
 
+preponderate (adj): outweigh, predominate, prevail, more likely than not
+
 overarching (adj): most important/dominating, because it includes or influences many things
 
 imperative (adj): very important/urgent, expressing authority
@@ -875,6 +877,8 @@ expedite (v): speed up, execute promptly
 ==respite== (v -n): delay, pause (before something unpleasant happens)
 
 malleable (adj): adaptable, flexible, moldable, pliable
+
+liable (adj): legally responsible, accountable, likely to, apt to, inclined to, at risk of
 
 ==lenient== (adj): not harsh, severe, or strict, allow a lot of freedom and leeway
 
