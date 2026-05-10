@@ -1,6 +1,6 @@
 My standup report for the day:
-- Yesterday I walked through the IL phases with the team, get some context on how to spin up the setup for the EOVN staff tmr.
-- Today I'm gonna onboard the new guy and clean up the remaining tasks from the sprint for EOVN in prod.
+- Yesterday I walked through the IL phases with the team, get some context on how to spin up the blueprint for the EOVN staff tmr.
+- Today I'm gonna onboard the new guy and clean up the remaining tasks from the sprint for EOVN prod.
 
 > [!warning] Chewsday ping
 >Just flagging again: there's a contract violation around SHUI owed since I came on full-time.
