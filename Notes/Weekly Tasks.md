@@ -17,49 +17,44 @@
 - Barbell strategy.
 
 ---
-### 4/5
-- [x] Wrap up EO QLD
-- [x] EOVN prod: clean up wf
-- [x] EP: Walkthrough D
-- [x] Finish pg.323 Antifragile
-- [x] Live up to your standards
-### 5/5
-- [x] EOVN prod: dashboards++, middleware props remind
-- [x] Edge8: Kudo Luan + SHUI remind
-- [x] EP: refactor `SortableContentItem`
-- [x] Finish pg.328 Antifragile
-- [x] Live up to your standards
-### 6/5
-- [x] EO Global sprint planning
-	- [x] Demo imported data & Membership pipeline
-- [x] EP: Resolve #112
-- [x] Finish pg.331 Antifragile
-- [x] Live up to your standards
-### 7/5
-- [x] EO: record EOVN prod
-- [x] EP: 
-	- [x] Review & Close #112
-	- [x] Resolve #113 with Opus
-- [x] Finish Chapter 20 Antifragile
-- [x] Live up to your standards
-### 8/5
-- [x] Vibe code with the boss
-- [x] EO: reply Nisha
-- [x] PAKN
-- [x] Bragdoc++
-- [x] Finish pg.340 Antifragile
-- [x] Live up to your standards
-### 9/5
-- [x] Perfect dive start + 500m with paddles
-- [x] Groceries
-- [x] Pay raise script
-- [x] PAKN + mail
-- [x] Finish pg.340 Antifragile
-- [x] Live up to your standards
-### 10/5
+### 11/5
+- [ ] Send tax return mail
+- [ ] Onboard new member
+- [ ] Reply Nisha
+- [ ] Remind the team to resolve backlog
+- [ ] Finish pg.347 Antifragile
+- [ ] Live up to your standards
+### 12/5
+- [ ] Onboard EOVN staff to IL
+- [ ] EO Global report
+- [ ] PAKN
+- [ ] Finish Chapter 21 Antifragile
+- [ ] Live up to your standards
+### 13/5
+- [ ] EO Global sprint planning
+- [ ] EP++
+- [ ] Antifragile++
+- [ ] Live up to your standards
+### 14/5
+- [ ] IL++
+- [ ] EP++
+- [ ] Antifragile++
+- [ ] Live up to your standards
+### 15/5
+- [ ] IL++
+- [ ] Bragdoc
+- [ ] EP++
+- [ ] Antifragile++
+- [ ] Live up to your standards
+### 16/5
+- [ ] Perfect dive start + 500m with paddles
+- [ ] Groceries
+- [ ] EP++
+- [ ] Antifragile++
+- [ ] Live up to your standards
+### 17/5
 - [ ] Vibe code with the boss
-	- [ ] Reply Nisha
-- [ ] Finish pg.343 Antifragile
+- [ ] Antifragile++
 - [ ] Weekly planning
 - [ ] Live up to your standards
 
@@ -78,4 +73,3 @@
 	- [ ] Optimize `CLAUDE.md` with Opus Max & `/react-router-framework-mode` skill + antifragile software architecture conventions
 	- [ ] Resolve #114 with Sonnet
 	- [ ] Last vuln & perf bottlenecks scan with `gpt-5.5-xhigh`
-- [x] Set fitness goals (strength & endurance)

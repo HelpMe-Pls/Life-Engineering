@@ -1,6 +1,6 @@
 My standup report for the day:
-- Yesterday I prepared Queensland for their launch and updated the dashboards for EOVN prod.
-- Today I'm gonna pick up where I left off and keep going, then close the remaining gaps for tomorrow's sprint review.
+- Yesterday I walked through the IL phases with the team, get some context on how to spin up the setup for the EOVN staff tmr.
+- Today I'm gonna onboard the new guy and clean up the remaining tasks from the sprint for EOVN in prod.
 
 > [!warning] Chewsday ping
 >Just flagging again: there's a contract violation around SHUI owed since I came on full-time.
@@ -15,8 +15,6 @@ My standup report for the day:
 > - The things you think you have done well over the last 6 months.
 > - The results of your work. What value did it bring to the business.
 > - What would you do differently if we could go back and do it again.
-> - Pair the NSTD doc with this, make sure to end with the key question: 
-> 	- If we can pull this off — actually, scratch that. It's not if, it's when — because I have high hopes for this. When we pull this off and generate some real capital out of the retreats, I think it's only fair that I get a raise rather than a bonus — considering my contributions to EO so far, and now this. It's more than justifiable. I remember when you jokingly told Mai to give me a raise and we had a good laugh over the 'have you tried women' for weight loss thing. Now it's time to make that a reality.
 
 ## For the record
 - I don’t think I’ve gotten any extra updates from EO about the tasks.
@@ -215,6 +213,14 @@ You are done when the PR URL (or BACKLOG-only commit URL for Path A) is reported
 ## Events syncing between services
 - Request Wix & Hivebrite APIs
 - Middleware: mainly for global approval, especially for chapters not using HubSpot directly.
+# Infinite Leverage
+- Set up Claude Code in way that it's easy for the clients to use our design system (and agents) to customize their web app.
+	- Maybe build some kind of a workflow (or CLI prompts) to walk them through a series of questions (with the option of `amend`, `No, tell CLaude what to do instead`) so they can personalize their stuff.
+## Agents
+- Build "agents" as employees in the team, each with their own expertise. Sth like ClaudeKit ?
+- P0 & P1: config the setup for the client
+- P2: Setup/help the client use the skills/agents that we created
+
 # Misc
 ## QLD
 - sth
