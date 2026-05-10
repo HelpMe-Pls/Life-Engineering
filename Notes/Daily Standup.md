@@ -1,5 +1,5 @@
 My standup report for the day:
-- Yesterday I walked through the IL phases with the team, get some context on how to spin up the blueprint for the EOVN staff tmr.
+- Yesterday I walked through the IL phases with the team to get some context on how to spin up the blueprint for the EOVN staff tmr.
 - Today I'm gonna onboard the new guy and clean up the remaining tasks from the sprint for EOVN prod.
 
 > [!warning] Chewsday ping
@@ -36,32 +36,44 @@ Resolve GitHub issue #114 in the repo. Run `gh issue view 114` first — the `As
 Approach: TDD-first. Tests before implementation.
 
 Implementation order:
-  1. Write `app/lib/content-items.test.ts` covering the seven cases in the issue's "Unit tests" section: draft-only R2 cleanup, draft-only Stream cleanup, draft matches saved (no cleanup), saved asset orphaned by type change, saved asset orphaned by replacement, title/description-only edit (no cleanup), AND the `[]` empty-result case for each helper
-  2. Implement `getDraftOnlyAssetsForCleanup(draft, lastSaved)` and `getSavedAssetsOrphanedByUpdate(before, after)` in `app/lib/content-items.ts` as named exports — return type is `AssetRef[]`, returning `[]` when nothing needs cleanup
-  3. Extend `handleUpdateContentItem` in `app/routes/dashboard/edit-lesson.tsx`: fetch the existing content item BEFORE the DB update, run the DB update, then iterate the result of `getSavedAssetsOrphanedByUpdate(before, after)` calling `deleteFileFromR2` / `deleteStreamVideo` per `ref.kind`
-  4. Remove `pendingAssetCleanupRef` and the saved-asset type-change cleanup queue from `SortableContentItem.tsx`. Keep client cleanup ONLY for unsaved draft uploads on cancel/discard, driven by `getDraftOnlyAssetsForCleanup(...)`
+    1. Write `app/lib/content-items.test.ts` covering the seven cases in the issue's "Unit tests" section: draft-only R2 cleanup, draft-only Stream cleanup, draft matches saved (no cleanup), saved asset orphaned by type change, saved asset orphaned by replacement, title/description-only edit (no cleanup), AND the `[]` empty-result case for each helper
+
+    2. Implement `getDraftOnlyAssetsForCleanup(draft, lastSaved)` and `getSavedAssetsOrphanedByUpdate(before, after)` in `app/lib/content-items.ts` as named exports — return type is `AssetRef[]`, returning `[]` when nothing needs cleanup
+
+    3. Add `getContentItemById(db, lessonId, id)` to `app/lib/queries/lessons.server.ts` (next to `updateContentItemById`) — uses `db.query.contentItems.findFirst({ where: and(eq(contentItems.id, id), eq(contentItems.lessonId, lessonId)) })`. Do NOT inline this lookup in the route — every DB read goes through `app/lib/queries/` per the project conventions
+
+    4. Update the two now-stale tests in `app/components/dashboard/SortableContentItem.test.tsx` (currently at lines ~248 and ~280, titled `"deletes the saved R2 key exactly once after the type-change save succeeds"` and `"deletes the saved streamId after a video→text type-change save succeeds"`). They were written against the OLD client-side cleanup contract. Flip them to assert the NEW invariant — `getDeleteCalls("/api/r2-upload")` and `getDeleteCalls("/api/stream-upload")` are both empty after a successful type-change save, because saved-asset cleanup is now server-owned. Reuse the existing `flushMicrotasks()` helper. Keep the same describe block; rename the tests so the title reflects the new assertion
+
+    5. Extend `handleUpdateContentItem` in `app/routes/dashboard/edit-lesson.tsx`: call `getContentItemById` BEFORE the DB update (return `actionError("Content item not found", 404, "updateContentItem")` if missing), run `updateContentItemById`, then iterate the result of `getSavedAssetsOrphanedByUpdate(before, after)` calling `deleteFileFromR2` / `deleteStreamVideo` per `ref.kind`
+
+    6. Remove `pendingAssetCleanupRef` and the saved-asset type-change cleanup queue from `SortableContentItem.tsx`. Keep client cleanup ONLY for unsaved draft uploads on cancel/discard, driven by `getDraftOnlyAssetsForCleanup(...)`. Refactor the local `cleanupOrphanedAsset({ r2Key?, streamId? })` helper into a `cleanupDraftAssets(refs: AssetRef[])` that switches on `ref.kind`
 
 Hard rules:
-  - Locked tagged union: `type AssetRef = { kind: "r2"; r2Key: string } | { kind: "stream"; streamId: string }` — no optional fields, no
-  objects-with-maybe-keys, no other variants
-  - Callers iterate via `for (const ref of refs)` + `switch (ref.kind)` — no optional-chaining gymnastics
-  - Server cleanup runs ONLY after the DB update succeeds — if the DB update fails, no R2/Stream delete fires
-  - Cleanup-failure semantics: `console.warn` only (Worker tail logs). Do NOT add `cleanupWarnings` to the action payload, do NOT fail the action, do NOT retry
-  - `actionSuccess("updateContentItem", { contentItem })` contract stays IDENTICAL — no new intent, no new payload fields
+    - Locked tagged union: `type AssetRef = { kind: "r2"; r2Key: string } | { kind: "stream"; streamId: string }` — no optional fields, no objects-with-maybe-keys, no other variants
+    - Callers iterate via `for (const ref of refs)` + `switch (ref.kind)` — no optional-chaining gymnastics
+    - Server cleanup runs ONLY after the DB update succeeds — if the DB update fails, no R2/Stream delete fires
+    - Cleanup-failure semantics: `console.warn` only (Worker tail logs). Do NOT add `cleanupWarnings` to the action payload, do NOT fail the action, do NOT retry
+    - `actionSuccess("updateContentItem", { contentItem })` contract stays IDENTICAL — no new intent, no new payload fields
+    - Do NOT touch `bun.lock` or `worker-configuration.d.ts` — `bun run typecheck` regenerates the latter; if either ends up dirty, `git checkout --` it before staging
 
 Verification gates:
-  - `bun run test:run app/lib/content-items.test.ts` passes
-  - `bun run typecheck` passes
-  - `bun run test:run` passes
-  - `rg "pendingAssetCleanupRef" app/components/dashboard/SortableContentItem.tsx` returns zero
-  - `rg "export function getDraftOnlyAssetsForCleanup|export function getSavedAssetsOrphanedByUpdate" app/lib/content-items.ts` returns matches
-  - `rg "console\.warn" app/routes/dashboard/edit-lesson.tsx` includes the cleanup-failure call site
-
+    - `bun run test:run app/lib/content-items.test.ts` passes
+    - `bun run test:run app/components/dashboard/SortableContentItem.test.tsx` passes (the two flipped tests in particular)
+    - `bun run typecheck` passes
+    - `bun run test:run` passes (full suite — confirms nothing else regressed)
+    - `rg "pendingAssetCleanupRef" app/components/dashboard/SortableContentItem.tsx` returns zero
+    - `rg "cleanupOrphanedAsset" app/` returns zero (the helper was renamed/removed)
+    - `rg "export function getDraftOnlyAssetsForCleanup|export function getSavedAssetsOrphanedByUpdate" app/lib/content-items.ts` returns matches
+    - `rg "export async function getContentItemById" app/lib/queries/lessons.server.ts` returns a match
+    - `rg "console\.warn" app/routes/dashboard/edit-lesson.tsx` includes the cleanup-failure call site
+      
 When gates pass:
-  1. Open PR with `Closes #114` in the body, copy the failure-simulation manual-smoke steps from the issue into the PR body (the user runs them — they need a running dev server with network failure simulation)
-  2. **Invoke `/security-review` on the open PR** — Phase 3 is the only phase that changes server-side data-deletion behavior. Specifically verify: a forged `contentItemId` in the form data cannot delete another user's R2/Stream assets — the instructor-ownership gate in `requireInstructor` must run BEFORE the orphan-delete loop
-  3. Invoke `/review` on the open PR
+    1. Open PR with `Closes #114` in the body, copy the failure-simulation manual-smoke steps from the issue into the PR body (the user runs them — they need a running dev server with network failure simulation)
 
+    2. **Invoke `/security-review` on the open PR** — Phase 3 is the only phase that changes server-side data-deletion behavior. Specifically verify: a forged `contentItemId` in the form data cannot delete another user's R2/Stream assets — the instructor-ownership gate in `requireInstructor` + `getCourseIfOwner` + module/lesson scoping must run BEFORE the orphan-delete loop, AND `getContentItemById` / `updateContentItemById` must filter on `lessonId` so a forged id outside the current lesson returns nothing
+
+    3. Invoke `/review` on the open PR
+  
 You are done when the PR URL is reported and both `/security-review` + `/review` have run.
 ```
 ## 115
