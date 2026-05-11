@@ -18,27 +18,28 @@
 
 ---
 ### 11/5
-- [ ] Send tax return mail
-- [ ] Onboard new member
-- [ ] Reply Nisha
-- [ ] Remind the team to resolve backlog
+- [x] Send tax return mail
+- [x] Onboard new member
+- [x] Reply Nisha
+- [x] Ask the boss for `eo-vietnam` Vercel
+- [ ] EP: merge PR & solve #114
 - [ ] Finish pg.347 Antifragile
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 12/5
-- [ ] Onboard EOVN staff to IL
+- [ ] Onboard EOVN staff to `eo-vietnam` repo @8:30
 - [ ] EO Global report
-- [ ] PAKN
-- [ ] Finish Chapter 21 Antifragile
+- [ ] Finish pg.349 Antifragile
 - [ ] Live up to your standards
 ### 13/5
 - [ ] EO Global sprint planning
 - [ ] EP++
-- [ ] Antifragile++
+- [ ] PAKN
+- [ ] Finish pg.352 Antifragile
 - [ ] Live up to your standards
 ### 14/5
 - [ ] IL++
 - [ ] EP++
-- [ ] Antifragile++
+- [ ] Finish Chapter 21 Antifragile
 - [ ] Live up to your standards
 ### 15/5
 - [ ] IL++

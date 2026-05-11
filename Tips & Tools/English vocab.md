@@ -420,6 +420,8 @@ iniquity (n): wickedness, sin
 
 nefarious (adj): iniquitous, diabolical, vicious, evil (law)
 
+catch-22 (n): circular prerequisite, vicious circle, structural paradox, no-win system
+
 goon (n): a stupid person, a man hired to terrorize or eliminate opponents
 
 injudicious (adj): imprudent, unwise, indiscreet, tactless
@@ -651,6 +653,8 @@ fanfare (n): showy, a short loud piece of music that is played to celebrate
 ==conjecture== (v-n): guess, surmise, estimate, suppose, theory
 
 ==interpolation== (n): estimation, value approximation, editorial addition, aside
+
+extrapolate (v):
 
 ==tacit== (adj): implied, implicit
 

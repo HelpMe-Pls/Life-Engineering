@@ -26,7 +26,6 @@ My standup report for the day:
 
 ---
 # EP
-- Review this prompt and explore the codebase to determine if it's ready to resolve #114:
 - Review #114 and evaluate the current branch to determine if it's ready to open a PR into staging.
 - Update the @BACKLOG file to address the unchecked items in #118, #119,
 ## 114
