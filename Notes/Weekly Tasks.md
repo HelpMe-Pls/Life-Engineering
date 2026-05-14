@@ -26,23 +26,25 @@
 - [ ] Finish pg.347 Antifragile
 - [x] Live up to your standards
 ### 12/5
-- [ ] Onboard EOVN staff to `eo-vietnam` repo @8:30
-- [ ] EO Global report
+- [x] Onboard EOVN staff to `eo-vietnam` repo @8:30
+- [x] EO Global report
+- [x] Tracy
 - [ ] Finish pg.349 Antifragile
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 13/5
-- [ ] EO Global sprint planning
+- [x] EO Global sprint review
+- [x] Tracy
 - [ ] EP++
-- [ ] PAKN
+- [x] PAKN
 - [ ] Finish pg.352 Antifragile
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 14/5
-- [ ] IL++
+- [x] Tracy Auth work: Dramatic af 
 - [ ] EP++
 - [ ] Finish Chapter 21 Antifragile
 - [ ] Live up to your standards
 ### 15/5
-- [ ] IL++
+- [ ] EO++
 - [ ] Bragdoc
 - [ ] EP++
 - [ ] Antifragile++
@@ -54,7 +56,6 @@
 - [ ] Antifragile++
 - [ ] Live up to your standards
 ### 17/5
-- [ ] Vibe code with the boss
 - [ ] Antifragile++
 - [ ] Weekly planning
 - [ ] Live up to your standards
@@ -69,6 +70,7 @@
 	- [ ] Config EOVN prod form. Resolve backlogs in the chat.
 	- [ ] Altai ⇌ HubSpot middleware
 	- [ ] Create simple prototype + full plan to sync events from Wix to Hivebrite for EO Vietnam
+	- [ ] Remind [the bonus](https://applink.larksuite.com/client/message/link/open?token=AmiZVc0jwEAfagZW2xIADtw%3D)
 - EP: 
 	- [ ] Run `/improve-codebase-architecture` (with `CLAUDE.md` guardrails) & E2E test setup for happy paths. Refresh the skills from source before calling them	
 	- [ ] Optimize `CLAUDE.md` with Opus Max & `/react-router-framework-mode` skill + antifragile software architecture conventions

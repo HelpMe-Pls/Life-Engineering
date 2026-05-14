@@ -1,6 +1,7 @@
 My standup report for the day:
 - Yesterday I walked through the IL phases with the team to get some context on how to spin up the blueprint for the EOVN staff tmr.
 - Today I'm gonna onboard the new guy and clean up the remaining tasks from the sprint for EOVN prod.
+- Psyllium husk
 
 > [!warning] Chewsday ping
 >Just flagging again: there's a contract violation around SHUI owed since I came on full-time.
@@ -176,14 +177,14 @@ You are done when the PR URL (or BACKLOG-only commit URL for Path A) is reported
 
 ## Key metrics
 - Chapters are able to track their two levers of growth, member retention and member acquisition with a goal of 8% NET new growth every year.
-  - The leading indicators of this is <u>data cleanliness</u> and `number of leads` to `number of opportunities` from a deal funnel perspective → more deals → more potential for more money.
-  - Check [this](https://chatgpt.com/share/e/698078bc-a34c-8009-bd8d-a53183e6de0f) out.
-  - As we're part of EO Global, ==we'd know we hit the mark when we roll out chapters and they have a high rate of satisfaction.==
-  - EO renews in June. High success means they hire more and expand.
-  - We are on track to do 60 chapters by the end of the year.
+- The leading indicators of this is <u>data cleanliness</u> and `number of leads` to `number of opportunities` from a deal funnel perspective → more deals → more potential for more money.
+- Check [this](https://chatgpt.com/share/e/698078bc-a34c-8009-bd8d-a53183e6de0f) out.
+- As we're part of EO Global, ==we'd know we hit the mark when we roll out chapters and they have a high rate of satisfaction.==
+- EO renews in June. High success means they hire more and expand.
+- We are on track to do 60 chapters by the end of the year.
 
 ## For Global
-### Lifecyle Stages map
+### Lifecycle Stages map
 - `Public` → `Lead`
 - `Applicant` → `MQL`
 - `Participant` → `Opportunity`
@@ -233,8 +234,7 @@ You are done when the PR URL (or BACKLOG-only commit URL for Path A) is reported
 - P2: Setup/help the client use the skills/agents that we created
 
 # Misc
+## Tracy
+- DB pw: `Tracy@InfiniteLeverage2026`
 ## QLD
 - sth
-## PAKN
-- Vào ngày 22 tháng 4 năm 2026 tôi đã gửi đề nghị hoàn thuế và nhận được tin nhắn từ cục thuế rằng yêu cầu sẽ được giải quyết sau 6 ngày làm việc. Nhưng tới hôm nay (ngày 12 tháng 5) thì đã là 12 ngày làm việc kể từ ngày tôi nhận được thông báo. 
-- Ngày nộp: 13/04/2026 Trạng thái hiện tại: Cơ quan thuế đã chấp nhận lúc 22:10 ngày 13/04/2026. Tính đến nay đã quá thời hạn giải quyết theo quy định thông thường đối với loại hồ sơ này, nhưng trên hệ thống vẫn chưa cập nhật thêm bước xử lý tiếp theo hoặc thông báo yêu cầu bổ sung (nếu có). Việc chậm trễ này đang gây ảnh hưởng trực tiếp đến kế hoạch công việc và các thủ tục pháp lý liên quan của tôi. Kính mong Quý cơ quan kiểm tra và phản hồi giúp tôi về: 1. Tình trạng hiện tại của hồ sơ đang dừng tại bộ phận nào? 2. Thời gian dự kiến sẽ có kết quả cuối cùng hoặc thông báo tiếp theo.
