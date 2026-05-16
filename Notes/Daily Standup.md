@@ -1,7 +1,7 @@
 My standup report for the day:
-- Yesterday I walked through the IL phases with the team to get some context on how to spin up the blueprint for the EOVN staff tmr.
-- Today I'm gonna onboard the new guy and clean up the remaining tasks from the sprint for EOVN prod.
-- Psyllium husk
+- Last Friday I cleaned up the sale pipelines in EO global and fixed the corrupted prospect phone numbers for EOVN prod.
+- Today I'm gonna keeping cleaning up the redundant props for EO global.
+
 
 > [!warning] Chewsday ping
 >Just flagging again: there's a contract violation around SHUI owed since I came on full-time.
@@ -17,106 +17,128 @@ My standup report for the day:
 > - The results of your work. What value did it bring to the business.
 > - What would you do differently if we could go back and do it again.
 
-## For the record
-- I don’t think I’ve gotten any extra updates from EO about the tasks.
-- But if I had to sum it up, I’ve realized one of the hardest parts of my job is balancing chapter accessibility with CRM best practices to keep the system maintainable and scalable.
-
-
-> I'm aware that the outcome is what we're aiming for, but a lot of stuff affects outcomes, whereas if we judge your performance purely based on your output, which is something that you have full control of, then I'm pretty sure that you're the one who's setting the standard for everyone here.
-> You too. To be fair, if I were the boss, I'd have doubled your salary by now. You deserve so much more than this; considering all the things you've done for the company so far.
+## For The Old Infant
+### On the last 2 weeks before the paycheck
+- Still can't this outta my head. 
+- I want to know exactly what it takes to get back on track, secure the bonus, and prove that I can bring a lot more to the table.
+- If you're still upset about me not being attentive, I truly apologize. I really did try to make it right before we left Sol Kitchen. I get the sense we still haven't fully cleared the air. Understandable. 
+- But if the Tracy situation was a dealbreaker, I need to know where I stand. I'm perfectly happy to collect my pay for covering K2 and just keep my head down on EO until my time's up. Keep things strictly business. No more, no less. No hard feelings.
+### After the paycheck
+ - I just reviewed my paycheck, and the agreed-upon bonus is missing. Maybe you forgot this, but I don't. We had a clear agreement regarding this compensation.
+ - We need to have a direct conversation this deduction. Punishing me financially without a word, especially after I stepped up to cover K2's absence, is deeply disrespectful.
+ - Between this unannounced pay cut and the fact that the company breaching my contract by withholding 7 months of SHUI contributions, this situation has become utterly unacceptable. I expect this to be resolved immediately. 
+ - This reminds me of that cat food - beef jerky situation we had. Feels like a scam. 
+ - **NUKE:** I didn't think you were that cheap of a person (especially since you said so yourself). Turns out you just love to prove me wrong.
 
 ---
 # EP
 - Review #114 and evaluate the current branch to determine if it's ready to open a PR into staging.
-- Update the @BACKLOG file to address the unchecked items in #118, #119,
-## 114
-```
-Resolve GitHub issue #114 in the repo. Run `gh issue view 114` first — the `AssetRef` tagged union, the cleanup-failure semantics, and the unchanged `actionSuccess` payload are non-negotiable.
-
-Approach: TDD-first. Tests before implementation.
-
-Implementation order:
-    1. Write `app/lib/content-items.test.ts` covering the seven cases in the issue's "Unit tests" section: draft-only R2 cleanup, draft-only Stream cleanup, draft matches saved (no cleanup), saved asset orphaned by type change, saved asset orphaned by replacement, title/description-only edit (no cleanup), AND the `[]` empty-result case for each helper
-
-    2. Implement `getDraftOnlyAssetsForCleanup(draft, lastSaved)` and `getSavedAssetsOrphanedByUpdate(before, after)` in `app/lib/content-items.ts` as named exports — return type is `AssetRef[]`, returning `[]` when nothing needs cleanup
-
-    3. Add `getContentItemById(db, lessonId, id)` to `app/lib/queries/lessons.server.ts` (next to `updateContentItemById`) — uses `db.query.contentItems.findFirst({ where: and(eq(contentItems.id, id), eq(contentItems.lessonId, lessonId)) })`. Do NOT inline this lookup in the route — every DB read goes through `app/lib/queries/` per the project conventions
-
-    4. Update the two now-stale tests in `app/components/dashboard/SortableContentItem.test.tsx` (currently at lines ~248 and ~280, titled `"deletes the saved R2 key exactly once after the type-change save succeeds"` and `"deletes the saved streamId after a video→text type-change save succeeds"`). They were written against the OLD client-side cleanup contract. Flip them to assert the NEW invariant — `getDeleteCalls("/api/r2-upload")` and `getDeleteCalls("/api/stream-upload")` are both empty after a successful type-change save, because saved-asset cleanup is now server-owned. Reuse the existing `flushMicrotasks()` helper. Keep the same describe block; rename the tests so the title reflects the new assertion
-
-    5. Extend `handleUpdateContentItem` in `app/routes/dashboard/edit-lesson.tsx`: call `getContentItemById` BEFORE the DB update (return `actionError("Content item not found", 404, "updateContentItem")` if missing), run `updateContentItemById`, then iterate the result of `getSavedAssetsOrphanedByUpdate(before, after)` calling `deleteFileFromR2` / `deleteStreamVideo` per `ref.kind`
-
-    6. Remove `pendingAssetCleanupRef` and the saved-asset type-change cleanup queue from `SortableContentItem.tsx`. Keep client cleanup ONLY for unsaved draft uploads on cancel/discard, driven by `getDraftOnlyAssetsForCleanup(...)`. Refactor the local `cleanupOrphanedAsset({ r2Key?, streamId? })` helper into a `cleanupDraftAssets(refs: AssetRef[])` that switches on `ref.kind`
-
-Hard rules:
-    - Locked tagged union: `type AssetRef = { kind: "r2"; r2Key: string } | { kind: "stream"; streamId: string }` — no optional fields, no objects-with-maybe-keys, no other variants
-    - Callers iterate via `for (const ref of refs)` + `switch (ref.kind)` — no optional-chaining gymnastics
-    - Server cleanup runs ONLY after the DB update succeeds — if the DB update fails, no R2/Stream delete fires
-    - Cleanup-failure semantics: `console.warn` only (Worker tail logs). Do NOT add `cleanupWarnings` to the action payload, do NOT fail the action, do NOT retry
-    - `actionSuccess("updateContentItem", { contentItem })` contract stays IDENTICAL — no new intent, no new payload fields
-    - Do NOT touch `bun.lock` or `worker-configuration.d.ts` — `bun run typecheck` regenerates the latter; if either ends up dirty, `git checkout --` it before staging
-
-Verification gates:
-    - `bun run test:run app/lib/content-items.test.ts` passes
-    - `bun run test:run app/components/dashboard/SortableContentItem.test.tsx` passes (the two flipped tests in particular)
-    - `bun run typecheck` passes
-    - `bun run test:run` passes (full suite — confirms nothing else regressed)
-    - `rg "pendingAssetCleanupRef" app/components/dashboard/SortableContentItem.tsx` returns zero
-    - `rg "cleanupOrphanedAsset" app/` returns zero (the helper was renamed/removed)
-    - `rg "export function getDraftOnlyAssetsForCleanup|export function getSavedAssetsOrphanedByUpdate" app/lib/content-items.ts` returns matches
-    - `rg "export async function getContentItemById" app/lib/queries/lessons.server.ts` returns a match
-    - `rg "console\.warn" app/routes/dashboard/edit-lesson.tsx` includes the cleanup-failure call site
-      
-When gates pass:
-    1. Open PR with `Closes #114` in the body, copy the failure-simulation manual-smoke steps from the issue into the PR body (the user runs them — they need a running dev server with network failure simulation)
-
-    2. **Invoke `/security-review` on the open PR** — Phase 3 is the only phase that changes server-side data-deletion behavior. Specifically verify: a forged `contentItemId` in the form data cannot delete another user's R2/Stream assets — the instructor-ownership gate in `requireInstructor` + `getCourseIfOwner` + module/lesson scoping must run BEFORE the orphan-delete loop, AND `getContentItemById` / `updateContentItemById` must filter on `lessonId` so a forged id outside the current lesson returns nothing
-
-    3. Invoke `/review` on the open PR
-  
-You are done when the PR URL is reported and both `/security-review` + `/review` have run.
-```
+- Update the @BACKLOG file to address the unchecked items in #118, #119, #120,
 ## 115
+### Phase 1
 ```
-Resolve GitHub issue #115 in HelpMe-Pls/elearning-platform. Run `gh issue view 115` first — the `ContentItemEditorLifecycle` and `ContentItemEditorEvent` discriminated unions are non-negotiable.
+Resolve PHASE 1 of GitHub issue #115 in HelpMe-Pls/elearning-platform.
 
-This is HITL. Do NOT write any implementation code until the Option A/B/C decision is recorded in `docs/plans/BACKLOG.md` (and an ADR if Option B). The decision blocks all subsequent work.
+The binding spec is `docs/plans/BACKLOG.md` lines 676-753 (Phase 4 section). The GitHub issue body is empty — `gh issue view 115` returns only a
+  triage note. READ BACKLOG FIRST; the locked `ContentItemEditorLifecycle` and `ContentItemEditorEvent` discriminated unions at BACKLOG lines
+  700-723 are non-negotiable.
 
-PHASE 1 — DECISION (no code):
-  1. Invoke `/grill-with-docs` to stress-test Option A vs B vs C. Frame the grilling around: shell line count after #114 lands, whether the reducer
-  + dispatch closures are reused outside this component, the `app/hooks/useAutoSave.ts` precedent, and the AFK-vs-HITL impact of choosing extraction
-  1. Append a one-line note to the Phase 4 heading in `docs/plans/BACKLOG.md` recording the choice (A, B, or C) and a one-sentence justification — this MUST land before any code change
-  2. If Option B was chosen: commit an ADR at `docs/adr/<YYYYMMDD>-content-item-editor-lifecycle.md` capturing the chosen state union, dispatch events, and selector signature
-  3. STOP and confirm with the user before proceeding to PHASE 2
+This is HITL. Phase 1 produces a recorded decision only. Do NOT write any implementation code in this prompt — Phase 2 is a separate run.
 
-PHASE 2 — IMPLEMENTATION (only after decision is recorded and user has confirmed):
-  - Reducer location follows the choice: Option A → `app/components/dashboard/SortableContentItem.tsx` as named exports; Option B → `app/hooks/useContentItemSave.ts`; Option C → `app/lib/content-item-editor-lifecycle.ts`
-  - Promote `R2UploadContext` to a named export from `app/lib/content-items.ts`
-  - Reducer state is EXACTLY the seven-variant locked discriminated union from the issue body — no extras, no `& { ... }` intersections, no superset, no subset
-  - Reducer + selector are exported regardless of the chosen option (testable from outside the component)
-  - Switch on `state.kind`; the default branch MUST call `assertNever(state)`. Add `export function assertNever(value: never): never { throw new Error(\`Unhandled variant: ${JSON.stringify(value)}\`); }` to `~/lib/utils.ts` if missing
-  - Video-processing UI state stays a separate `useState<"processing" | "ready" | "error" | null>` slot — do NOT fold it into the lifecycle reducer (the issue body explains why; do not relitigate)
-  - DOM-handle refs (`videoInputRef`, `imageInputRef`, `audioInputRef`, `fileInputRef`) stay as refs
-  - `ContentItemEditorState` (parent-facing snapshot through `onEditorStateChange`) is *derived* from reducer state in exactly one selector — not assembled from sibling `useState` slots, not constructed inline in `useEffect`. Cadence and shape match #114 behavior exactly
-  - If Option B: the hook owns lifecycle ONLY. It must NOT interpret action results into business decisions, encode auth gates, or own asset-cleanup policy
+  STEP 1 — Pre-load measured facts before grilling (no editing):
+    - Run `wc -l app/components/dashboard/SortableContentItem.tsx` and record the result. The shell was 1298 lines on 2026-05-15 after #114 merged.
+    - Confirm `R2UploadContext` is already a named export at `app/lib/content-items.ts:5` (and is already imported at `SortableContentItem.tsx:36`).
+   The BACKLOG language about "promoting" it is stale — that work is done.
+    - Confirm `assertNever` is currently absent from `app/lib/utils.ts` (it will be added in Phase 2 if so).
+    - Confirm #114 (Phase 3) is merged: `gh issue view 114` should show CLOSED.
+    - Grep for any external consumer of `contentItemEditorReducer` / `selectContentItemEditorState` (there should be none yet — Phase 4 introduces
+  them). This answers "is the reducer reused outside the component?" — relevant for Option A vs B.
 
-Tests required:
-  - Transition tests for every dispatched event from every reachable state (issue body lists the matrix)
-  - Selector tests for `selectContentItemEditorState(state)` — the four-field `ContentItemEditorState` snapshot for every reducer state
+  STEP 2 — Invoke `/grill-with-docs` to stress-test Option A vs B vs C. Frame the grilling around:
+    - Measured shell line count vs Option A's BACKLOG precondition of "≤400 lines". Option A requires an explicit waiver if the shell is over the
+  ceiling; otherwise the grill should focus on B vs C.
+    - Whether the reducer + dispatch closures are reused outside `SortableContentItem.tsx` (use the grep result from Step 1).
+    - The `app/hooks/useAutoSave.ts` precedent: it only sets the file *location* convention for hooks (`app/hooks/`, not
+  `app/components/dashboard/hooks/`). It is a behavior hook (refs + effects), not a state-machine hook — it sets NO precedent for the
+  discriminated-union shape. The shape precedent is being established by Phase 4 itself.
+    - AFK-vs-HITL impact of choosing extraction (Option B's ADR cost vs Option C's pure-function ergonomics). Option C is the lowest-friction path
+  to exporting a testable reducer without committing to a hook contract.
 
-Hard rules: no `any`, no `!`, no `as`, no optional-chaining gymnastics, no `unknown`-cast guards.
+  STEP 3 — Record the decision in `docs/plans/BACKLOG.md`. Append a one-line note directly under the "#### Phase 4 — Collapse the implicit ref state-machine into one explicit state" heading at line 676, formatted as:
+    > **Decision (2026-05-15):** Option <A|B|C> — <one-sentence justification grounded in measured facts from Step 1>.
 
-Verification gates:
-  - `bun run typecheck` passes
-  - `bun run test:run` passes (transition + selector tests in green set)
-  - `rg "pendingCloseRef|pendingBackgroundSaveRef|pendingUploadSaveRef|previousFetcherStateRef|previousArchiveFetcherStateRef" app/components/dashboard/SortableContentItem.tsx` returns zero
-  - `rg -c 'kind: "(idle|drafting|uploading|saving-text|saving-upload|type-changing|save-error)"' <reducer-location>` returns at least 7
-  - `rg "assertNever\(state\)" <reducer-location>` returns at least one
-  - `rg "export function contentItemEditorReducer|export function selectContentItemEditorState" <reducer-location>` returns matches
+  STEP 4 — If Option B was chosen, commit an ADR at `docs/adr/20260515-content-item-editor-lifecycle.md`. The `docs/adr/` directory does not yet exist — create it. The ADR must capture:
+    - Chosen state union (verbatim from BACKLOG lines 700-707)
+    - Dispatch events (verbatim from BACKLOG lines 709-723)
+    - Selector signature: `selectContentItemEditorState(state: ContentItemEditorLifecycle): ContentItemEditorState` returning the four fields { isDirty, isSaving, hasError, isUploading }
+    - Why Option B over A or C (one paragraph, grounded in Step 1 facts)
 
-When gates pass:
-  1. Open PR with `Closes #115` in the body, copy the Phase 2 manual-smoke regression sweep into the PR body (the user runs it)
-  2. Invoke `/review` on the open PR
+  STEP 5 — STOP. Do not start implementation. Report back:
+    - The recorded decision (with the BACKLOG line where it was added)
+    - The ADR commit SHA if Option B
+    - The exact prompt text for Phase 2 (Prompt B), so the user can paste it into a new run
+
+Hard rules for Phase 1: zero source code changes outside `docs/plans/BACKLOG.md` and (if Option B)
+  `docs/adr/20260515-content-item-editor-lifecycle.md`. No edits to `app/`, no test scaffolding, no `assertNever` helper yet.
+```
+### Phase 2
+```
+Resolve PHASE 2 of GitHub issue #115 in HelpMe-Pls/elearning-platform.
+
+PRECONDITION CHECK — fail fast if any of these is not true:
+    1. Read `docs/plans/BACKLOG.md` lines 676-690 and locate the line `**Decision (YYYY-MM-DD):** Option <A|B|C> — ...` directly under the Phase 4 heading. If absent, STOP and tell the user to run Phase 1 first.
+    2. If the recorded decision is Option B, verify `docs/adr/20260515-content-item-editor-lifecycle.md` exists. If absent, STOP.
+    3. Confirm `R2UploadContext` is already exported at `app/lib/content-items.ts:5`. Do NOT redefine, re-export, or "promote" it.
+    4. The locked `ContentItemEditorLifecycle` and `ContentItemEditorEvent` discriminated unions live at BACKLOG lines 700-723. They are non-negotiable: exactly seven state variants, exactly the listed event types, no extras, no `& { ... }` intersections, no superset, no subset.
+
+REDUCER LOCATION — follows the recorded decision:
+    - Option A → reducer + selector as named exports inside `app/components/dashboard/SortableContentItem.tsx`
+    - Option B → `app/hooks/useContentItemSave.ts` (DO NOT create `app/components/dashboard/hooks/` — that subfolder is forbidden by BACKLOG line 685)
+    - Option C → `app/lib/content-item-editor-lifecycle.ts`
+
+REQUIRED CODE:
+    - `export function contentItemEditorReducer(state: ContentItemEditorLifecycle, event: ContentItemEditorEvent): ContentItemEditorLifecycle` — exhaustive `switch (state.kind)` with the trailing unreachable arm calling `assertNever(<state-parameter-name>)`. Both reducer AND selector exported regardless of which option was chosen — they must be testable without rendering the component.
+    - `export function selectContentItemEditorState(state: ContentItemEditorLifecycle): ContentItemEditorState` — derives the four-field snapshot { isDirty, isSaving, hasError, isUploading } from reducer state in exactly one place. The current implementation at `SortableContentItem.tsx:502-536` (which assembles the snapshot from sibling `useState` slots inside `useEffect`) is the anti-pattern being removed.
+    - Add to `~/lib/utils.ts` if missing:
+      `export function assertNever(value: never): never { throw new Error(\`Unhandled variant: \${JSON.stringify(value)}\`); }`
+    - Import `R2UploadContext` from `~/lib/content-items` (already a named export — do not redefine).
+
+ELIMINATE THESE REFS from `app/components/dashboard/SortableContentItem.tsx` (they encode the implicit state machine being collapsed): `pendingCloseRef`, `pendingBackgroundSaveRef`, `pendingUploadSaveRef`, `previousFetcherStateRef`, `previousArchiveFetcherStateRef`.
+
+KEEP THESE AS REFS (legitimate DOM-handle use per CLAUDE.md): `videoInputRef`, `imageInputRef`, `audioInputRef`, `fileInputRef`.
+
+VIDEO-PROCESSING UI STATE stays a separate `useState<"processing" | "ready" | "error" | null>` slot alongside `pendingStreamId: string | null`. Do NOT fold it into the lifecycle reducer. Cloudflare Stream processing is a server-side observable, orthogonal to local editor lifecycle. The user can keep editing text while a video processes. Do not relitigate this — BACKLOG line 726 explains why.
+
+OPTION B SCOPE GUARD (only if Option B was chosen): the hook owns lifecycle ONLY. It MUST NOT interpret action results into business decisions, encode auth gates, or own asset-cleanup policy. The route/action result still gets interpreted in the shell, then converted into reducer events via dispatch.
+
+UNCHANGED BY THIS WORK:
+    `app/hooks/useAutoSave.ts` (text auto-save behavior, orthogonal to lifecycle).
+
+TESTS REQUIRED:
+    - Transition tests for every dispatched event from every reachable state. The matrix is listed in BACKLOG line 728.
+    - Selector tests for `selectContentItemEditorState(state)` returning the four-field snapshot for every reducer state.
+    - Place tests adjacent to the reducer file: `<reducer-location>.test.ts`.
+
+HARD RULES (per CLAUDE.md "Before Declaring Done" + Phase 4 constraints):
+    No `any`. No non-null assertions (`!`). No `as`-casts unless truly unavoidable. No `unknown`-cast guards. No optional-chaining gymnastics. Use `~/` path alias — no relative `../../`. Function declarations, not `React.FC`. `// INFO:` / `// NOTE:` only — no other comment prefixes.
+
+VERIFICATION GATES (all must pass before opening PR):
+    - `bun typecheck` passes (both tsconfigs)
+    - `bun run test:run` passes (transition + selector tests in green set)
+    - Negative grep: `rg "pendingCloseRef|pendingBackgroundSaveRef|pendingUploadSaveRef|previousFetcherStateRef|previousArchiveFetcherStateRef" app/components/dashboard/SortableContentItem.tsx` returns ZERO matches
+    - Positive grep (locked union present, no dropped/invented variants): `rg "kind:
+  \"(idle|drafting|uploading|saving-text|saving-upload|type-changing|save-error)\"" <reducer-location>` matches all seven variant strings at least once each
+    - Exhaustiveness wired: `rg "assertNever\(" <reducer-location>` returns at least one match (loosened from `assertNever(state)` — the reducer parameter name is the implementor's choice)
+    - Reducer + selector are exported: `rg "export function contentItemEditorReducer|export function selectContentItemEditorState" <reducer-location>` returns matches
+    - If Option B: `app/components/dashboard/hooks/` does NOT exist; reducer file is `app/hooks/useContentItemSave.ts`; ADR is committed
+    - **MANUAL — `LessonContentManager` navigation-guard regression sweep** (audit BOTH stuck-on AND false-positive per CLAUDE.md "Pending UI" and saved memory `feedback_audit_both_directions.md` — this is the highest-leverage regression to miss because the refactor changes how
+  `onEditorStateChange` is computed): test the guard fires correctly under (a) dirty text edit, (b) in-flight text auto-save, (c) in-flight upload save, (d) archived item, and that it does NOT false-fire from sibling forms or link navigation.
+    - **MANUAL — Phase 2 behavioural regression sweep**: locate the Phase 2 manual-smoke list in `docs/plans/BACKLOG.md` (search for "Verification:" within the Phase 2 H4 section, roughly lines 597-670) and copy that checklist into the PR body for the user to run.
+
+WHEN GATES PASS:
+    1. Open PR with `Closes #115` in the body. Paste the Phase 2 manual-smoke regression sweep + the LessonContentManager nav-guard checklist into the PR body (the user runs them).
+    2. **If the PR targets `staging` (not `main`)**, `Closes #115` will NOT auto-close the issue — per saved memory `project_pr_into_staging_no_autoclose.md`. Add a note at the bottom of the PR body: "After merge: `gh issue close 115`."
+    3. Invoke `/review` on the open PR.
 
 You are done when the PR URL is reported and `/review` has run.
 ```
@@ -234,6 +256,8 @@ You are done when the PR URL (or BACKLOG-only commit URL for Path A) is reported
 - P2: Setup/help the client use the skills/agents that we created
 
 # Misc
+## PAKN
+- PAKN.20260516.0256
 ## Tracy
 - DB pw: `Tracy@InfiniteLeverage2026`
 ## QLD

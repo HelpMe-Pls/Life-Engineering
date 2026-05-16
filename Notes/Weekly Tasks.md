@@ -22,7 +22,7 @@
 - [x] Onboard new member
 - [x] Reply Nisha
 - [x] Ask the boss for `eo-vietnam` Vercel
-- [ ] EP: merge PR & solve #114
+- [x] EP: merge PR & solve #114
 - [ ] Finish pg.347 Antifragile
 - [x] Live up to your standards
 ### 12/5
@@ -34,25 +34,27 @@
 ### 13/5
 - [x] EO Global sprint review
 - [x] Tracy
-- [ ] EP++
+- [x] EP++
 - [x] PAKN
 - [ ] Finish pg.352 Antifragile
 - [x] Live up to your standards
 ### 14/5
 - [x] Tracy Auth work: Dramatic af 
-- [ ] EP++
+- [x] EP++
+- [ ] Antifragile++
+- [x] Live up to your standards
+### 15/5
+- [x] EO++: 
+	- [x] Clean up pipelines
+	- [x] Fix corrupted EOVN Prospect phone numbers
+- [x] Bragdoc
+- [x] EP++
 - [ ] Finish Chapter 21 Antifragile
 - [ ] Live up to your standards
-### 15/5
-- [ ] EO++
-- [ ] Bragdoc
-- [ ] EP++
-- [ ] Antifragile++
-- [ ] Live up to your standards
 ### 16/5
-- [ ] Perfect dive start + 500m with paddles
-- [ ] Groceries
-- [ ] EP++
+- [x] Perfect dive start + 500m with paddles
+- [x] Groceries
+- [x] EP++
 - [ ] Antifragile++
 - [ ] Live up to your standards
 ### 17/5
@@ -74,5 +76,4 @@
 - EP: 
 	- [ ] Run `/improve-codebase-architecture` (with `CLAUDE.md` guardrails) & E2E test setup for happy paths. Refresh the skills from source before calling them	
 	- [ ] Optimize `CLAUDE.md` with Opus Max & `/react-router-framework-mode` skill + antifragile software architecture conventions
-	- [ ] Resolve #114 with Sonnet
-	- [ ] Last vuln & perf bottlenecks scan with `gpt-5.5-xhigh`
+	- [ ] Last vuln & high ROI perf bottlenecks scan with `gpt-5.5-xhigh`
