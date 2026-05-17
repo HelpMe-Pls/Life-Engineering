@@ -993,7 +993,7 @@ merit (v-n): deserve, earn, value, virtue
 
 innocuous (adj): harmless, inoffensive
 
-gullible (adj): exploitable, easily duped or cheated
+gullible (adj): exploitable, easily duped/cheated
 
 ==predation== (n): the act of injuring, exploiting, or plundering others for personal gain 
 

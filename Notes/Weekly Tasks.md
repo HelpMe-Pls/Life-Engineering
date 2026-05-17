@@ -22,9 +22,9 @@
 ---
 ### 18/5
 - [ ] EO: 
+	- [ ] The new guy: remind him about the events APIs & the middleware
 	- [ ] Clean up custom props & workflows
-	- [ ] The new guy: events & middleware remind
-- [ ] EP: resolve [backlog](#backlog)
+- [ ] EP: merge #123, resolve [backlog](#backlog)
 - [ ] Finish pg.362 Antifragile
 - [ ] Live up to your standards
 ### 19/5
@@ -72,6 +72,7 @@
 	- [ ] Create simple prototype + full plan to sync events from Wix to Hivebrite for EO Vietnam
 	- [ ] Remind [the bonus](https://applink.larksuite.com/client/message/link/open?token=AmiZVc0jwEAfagZW2xIADtw%3D)
 - EP: 
-	- [ ] Run `/improve-codebase-architecture` (with `CLAUDE.md` guardrails) & E2E test setup for happy paths. Refresh the skills from source before calling them	
 	- [ ] Optimize `CLAUDE.md` with Opus Max & `/react-router-framework-mode` skill + antifragile software architecture conventions
+	- [ ] Run `/improve-codebase-architecture` (with `CLAUDE.md` guardrails) & E2E test setup for happy paths. Refresh the skills from source before calling them	
 	- [ ] Last vuln & high ROI perf bottlenecks scan with `gpt-5.5-xhigh`
+	- [ ] Update the master `README.md` to give an overview of how to navigate around the codebase, which skills to use when encountering a bug and to create new features.
