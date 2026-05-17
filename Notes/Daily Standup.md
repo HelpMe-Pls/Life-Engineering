@@ -10,12 +10,6 @@ My standup report for the day:
 ---
 # EP
 - I need you to read the @CLAUD file and utilize the existing skills in your repertoire to OPTIMIZE it for Claude Code. The ultimate goal is that as Claude Code follow those instructions, the codebase is antifragile and optimized for readability, maintainability, and scalability.
-
-> [!important] Conventions
-> - No-dead-code discipline
-> - Minimize defensive/unnecessary logical check or type assertions
-> - Optimize for readability, maintainability, and scalability (antifragile)
-
 ---
 # Next big thing
 
@@ -35,16 +29,18 @@ My standup report for the day:
 
 ## For The Old Infant
 ### After the paycheck
- - I just reviewed my paycheck, and the agreed-upon bonus is missing. Maybe you forgot this, but I don't. I thought we had a clear agreement regarding this compensation. 
- - I understand that I won't get the full 10m bonus, fair enough, but withholding my pay without a word, especially after I stepped up to cover K2's absence, does not sit right with me. 
- - I expect a clear explanation regarding this unannounced pay cut.
+ - I just reviewed my paycheck, and the agreed-upon bonus is missing. You may have forgotten this, but I have not. We had a clear agreement regarding this compensation.
+ - I already owned up to my mistake regarding my inattentiveness, however, weaponizing my pay as a punishment without a single word of discussion is completely unacceptable and deeply disrespectful. This reaction is entirely disproportionate and unprofessional. 
+ - I know $380 might sound like pocket change to you, but for me, I earned some of that money stepping up for K2. I get that the full bonus is off the table, fair enough. But silently docking my pay for the time that I already put in does not sit right with me. 
+ - I expect you to be straight with me moving forward, and not play games with my compensation.
+ - How do you propose we resolve this outstanding balance so we can move forward professionally?
 ### Escalate
  - I can tolerate mistakes, but between this unannounced pay cut and the company actively breaching my contract by withholding my SHUI contributions for 7 months (that is seven consecutive pay cycles, to be explicitly clear), this situation has become utterly unacceptable. 
  - I'm bringing this up because it's obvious that this SHUI debt doesn't just affect me. Even the highest performers on our team (and former team members) are in the same boat. Given that there is clearly still budget to hire new people, leaving this debt unpaid is incredibly hard to justify.
  - Maybe you aren't aware of this, but you've been given far more grace for your own oversights than I ever received for being "inattentive," yet I am the one being penalized. The double standard here is glaring.
  - I expect this to be resolved immediately. 
- - **NUKE:** This reminds me of that cat food - beef jerky situation we had. Feels like a scam. 
-	 - I didn't think you were that cheap of a person (especially since you said so yourself). Turns out you just love to prove me wrong.
+ - **NUKE:** This reminds me of that whole cat food/beef jerky situation that James joked about. Feels like a scam. 
+	 - You always claimed you weren't cheap. Turns out you just love to prove me wrong.
 ---
 # EO
 

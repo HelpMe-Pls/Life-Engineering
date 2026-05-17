@@ -14,6 +14,7 @@
 - EO: Chapter rollouts, Middleware, Events sync
 - Launch EP BEFORE the contract ends.
 - `/grill-me` with what you've learned from Antifragile to form a new business.
+- Always have a plan. When in doubts, stack reps.
 # Pivot
 - 6 months if no progress.
 - Put yourself out there.
@@ -24,7 +25,7 @@
 - [ ] EO: 
 	- [ ] The new guy: remind him about the events APIs & the middleware
 	- [ ] Clean up custom props & workflows
-- [ ] EP: merge #123, resolve [backlog](#backlog)
+- [ ] EP: resolve [backlog](#backlog)
 - [ ] Finish pg.362 Antifragile
 - [ ] Live up to your standards
 ### 19/5
@@ -56,6 +57,7 @@
 - [ ] Finish pg.381 Antifragile
 - [ ] Live up to your standards
 ### 24/5
+- [ ] Claim GPT+
 - [ ] Finish Chapter 23 Antifragile
 - [ ] Weekly planning
 - [ ] Live up to your standards
