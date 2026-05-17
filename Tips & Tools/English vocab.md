@@ -1414,3 +1414,11 @@ ream {of} (n): (paper) volumes of, piles of, masses of, mountains of
 neomania (n): fomo
 
 dilettante (n): amateur, hobbyist, dabbler
+
+goiter (n): bướu cổ
+
+sciatic (adj): thần kinh toạ
+
+bariatric (adj): giảm béo (surgical/medical)
+
+hysterectomies (n): a major surgical operation to remove the uterus

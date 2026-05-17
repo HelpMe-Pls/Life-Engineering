@@ -18,17 +18,15 @@ My standup report for the day:
 > - What would you do differently if we could go back and do it again.
 
 ## For The Old Infant
-### On the last 2 weeks before the paycheck
-- Still can't this outta my head. 
-- I want to know exactly what it takes to get back on track, secure the bonus, and prove that I can bring a lot more to the table.
-- If you're still upset about me not being attentive, I truly apologize. I really did try to make it right before we left Sol Kitchen. I get the sense we still haven't fully cleared the air. Understandable. 
-- But if the Tracy situation was a dealbreaker, I need to know where I stand. I'm perfectly happy to collect my pay for covering K2 and just keep my head down on EO until my time's up. Keep things strictly business. No more, no less. No hard feelings.
 ### After the paycheck
- - I just reviewed my paycheck, and the agreed-upon bonus is missing. Maybe you forgot this, but I don't. We had a clear agreement regarding this compensation.
- - We need to have a direct conversation this deduction. Punishing me financially without a word, especially after I stepped up to cover K2's absence, is deeply disrespectful.
- - Between this unannounced pay cut and the fact that the company breaching my contract by withholding 7 months of SHUI contributions, this situation has become utterly unacceptable. I expect this to be resolved immediately. 
- - This reminds me of that cat food - beef jerky situation we had. Feels like a scam. 
- - **NUKE:** I didn't think you were that cheap of a person (especially since you said so yourself). Turns out you just love to prove me wrong.
+ - I just reviewed my paycheck, and the agreed-upon bonus is missing. Maybe you forgot this, but I don't. I thought we had a clear agreement regarding this compensation. 
+ - I understand that I won't get the full 10m bonus, fair enough, but withholding my pay without a word, especially after I stepped up to cover K2's absence, is deeply disrespectful. 
+ - I can tolerate mistakes, but between this unannounced pay cut and the company actively breaching my contract by withholding my SHUI contributions for 7 months (that is seven consecutive pay cycles, to be explicitly clear), this situation has become utterly unacceptable. 
+ - I'm bringing this up because it's obvious that this SHUI debt doesn't just affect me. Even the highest performers on our team (and former team members) are in the same boat.
+ - You've been given far more grace for your own oversights than I ever received for being "inattentive," yet I am the one being penalized. The double standard here is glaring.
+ - I expect this to be resolved immediately. 
+ - **NUKE:** This reminds me of that cat food - beef jerky situation we had. Feels like a scam. 
+	 - I didn't think you were that cheap of a person (especially since you said so yourself). Turns out you just love to prove me wrong.
 
 ---
 # EP
