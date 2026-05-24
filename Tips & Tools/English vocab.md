@@ -138,6 +138,8 @@ adversarial (adj): unsympathetic, hostile, antagonistic
 
 ==odious== (adj): hateful, deserving repugnance
 
+revulsion (n): repugnance, deep disgust, repulsion
+
 diplomatic (adj): ngoại giao
  
 ==astute== (adj): showing sharp powers of judgment; clever, ingenious, insightful, shrewd, crafty
@@ -151,6 +153,8 @@ piety (n): filial duty, respect for elders, lòng hiếu thảo → pious (adj)
 gobsmacked (adj): astounded, flabbergasted, shocked
 
 hideous (adj): shocking, exceedingly ugly, morally offensive
+
+chivalry (n): gallantry, courtesy, gentlemanliness, tinh thần hào hiệp
 
 audacity (n): daring, bravery, bold, disrespectful, impudence, insolent 
 
@@ -194,7 +198,7 @@ precede (v) {caution: it's not precEEd}: to be in front of, earlier than, to sur
 
 recede (v): withdraw, diminish, decrease 
 
-assuage (v): ease, quench, appease, pacify, solace, succor
+assuage (v): ease, quench, appease, mollify, pacify, solace, succor
 
 extenuating (adj): providing a partial justification or excuse for something
 
@@ -236,6 +240,8 @@ eponymous (adj): self-titled, title character, named after
 
 dub (v): nickname, label, designate, reggae remix, record over
 
+earmark (v): allocate, designate, set aside, reserve
+
 ==vernacular== (adj-n): native speech, regional language
 
 toil (v-n): labor, grind, exhausting hard work
@@ -266,7 +272,7 @@ enunciate (v): articulate, pronounce, announce
 
 herald (v-n):  hail, announce, publicize, foreshadow, one who actively promotes or advocates (exponent)
 
-accomplice (n): , đồng phạm
+accomplice (n): đồng phạm
 
 ==eminent== (adj): famous and respected, excellent
 
@@ -324,6 +330,8 @@ candor (n): forthrightness, fairness
 
 reciprocate {sth_with sth} (v): payback, make a return for → repercussion (n)
 
+unrequited (adj): one-sided, unreciprocated, unreturned.
+
 ==assiduous== (adj): diligent, taking great care that everything is done as well as it can be
 
 entropy (n): chaos, disorganization, randomness
@@ -332,7 +340,7 @@ tumult (n): commotion, upheaval, convulsion, strife
 
 strife (n): conflict, discord, rivalry, warfare, contention
 
-anomaly {in sth} (n): unusual, irregularity, deviation, irregularity, abberation
+anomaly {in sth} (n): unusual, irregularity, deviation, irregularity, aberration
 
 haphazard (adj-n): unplanned, aimless, arbitrary, erratic, random
 
@@ -472,6 +480,8 @@ nominally (adv): theoretically, supposedly
 
 aphorist (n): philosopher, sage, wit, moralist
 
+epigram (n): one-liner, quip, witticism, maxim
+
 rectitude (n): moral uprightness, correctness of conduct or character, sự chính trực, đức hạnh
 
 apogee (n): culmination, climax, đỉnh cao
@@ -501,6 +511,8 @@ construe (v): interpret, to understand or explain with respect to a given set of
 ruminate (v): contemplation, reflect, ponder
 
 hysterical (adj): hilarious, unrestrained emotion, ludicrous
+
+distraught (adj): devastated, shattered, inconsolable, deeply agitated, frantic
 
 demise (n-v): death, decease, to transmit by succession or inheritance
 
@@ -587,6 +599,8 @@ overarching (adj): most important/dominating, because it includes or influences 
 imperative (adj): very important/urgent, expressing authority
 
 manifold (adj-n-v-adv): many, various, diversity, multiply, many times
+
+variegated (adj): multicolored, dappled, mottled, heterogeneous, diversified, multifaceted, vaired
 
 impetuous (adj): impulsive, thoughtless
 
@@ -696,6 +710,8 @@ vagaries (n): unpredictable, unexpected changes/events
 
 unheralded (adj): not previously mentioned; happening without any warning
 
+renunciation (n): asceticism, abnegation, abdication of worldly things, detachment, relinquishment
+
 aloof (adj): distant, detached, lack of friendliness
 
 abhorrent (adj): disgusting, horrible, contemptuous
@@ -744,7 +760,7 @@ averse (adj): allergic, reluctant, loathe/loth/loath
 
 persecute (v): torment, agonize, pester, nag
 
-tribulation (n) <tree-bulation>: misery, distress, torment, affliction, woe
+tribulation (n) <tree-bulation>: misery, distress, torment, affliction, woe, travail
 
 ==lest== (conj): for fear that...
 
@@ -780,7 +796,7 @@ debase (v): profane, dissolute, debauch, to lower in status/esteem/quality/chara
 
 lamentable (adj): deplorable, mournful, wretched
 
-harrowing (adj): painful to go through or witness, traumatic, agonizing, extremely distressing
+==harrowing== (adj): painful to go through or witness, traumatic, agonizing, extremely distressing
 
 meticulous (adj): careful, diligent, engaged
 
@@ -812,7 +828,9 @@ barring (prep): excepting, aside from, excluding
 
 indict (v): charge, incriminate, ==impeach==
 
-impervious (adj): impenetrable, not capable of being damaged or harmed
+litigate (v): sue, take to court, press charges, drag up the past
+
+impervious {to} (adj): impenetrable, not capable of being damaged or harmed
 
 incarcerate (v): imprison, to put in prison, to subject to confinement
 
@@ -890,7 +908,9 @@ stringent (adj): strict, rigorous, rigid
 
 ==idiosyncrasy== (n): characteristic, trait, mannerism, peculiarity
 
-ignominy (n): disgrace, shame, humiliation
+disposition (n): temperament, character, mood, settlement, disposal
+
+ignominy (n): disgrace, shame, humiliation, ignominious (adj)
 
 consternation (n): dismay, panic, a strong feeling of surprise or sudden disappointment that causes confusion
 
@@ -944,6 +964,8 @@ lavish (adj): extravagant, wasteful
 squander (v): waste, throw away, blow, misspend, run through
 
 deity (n): god, divinity
+
+enshrining (v): codify, constitutionalize, consecrate, sanctify, honor formally, induct, formalize
 
 vicar (n): parish priest, rector, cha xứ, pastor, clergyman
 
@@ -1075,6 +1097,10 @@ cohort (n): band, group, companion, colleague
 
 bevy (n): a large group or collection
 
+corpus (n): text collection, language database, oeuvre, complete works, main part (body)
+
+prose (n): writing style, phrasing, text, ordinary writing
+
 consort (v-n): associate, harmonize, company, partner, spouse
 
 liaise {with} (v): associate, establishe and maintain communication for mutual understanding and cooperation → liaison (n)
@@ -1095,7 +1121,7 @@ egregious (adj): blatant, obvious, conspicuous, flagrant, prominent
 
 ==salient== (adj): most prominent/noticeable
 
-mar (v-n): spoil, tarnish, blemish, defect
+==mar== (v-n): spoil, tarnish, blemish, defect
 
 detract {from} (v): divert, to diminish the value of something
 
@@ -1141,6 +1167,8 @@ clandestine (adj): furtive, sneaky, stealthy
 
 militate {against} (v): to have weight → procrastination militates against progression
 
+gradation (n): gradient, progression, transition, continuum, spectrum, incremental change
+
 excursion (n): expedition, amplitude
 
 ==procure== (v): attain, earn, to obtain sth by particular care and effort
@@ -1151,7 +1179,7 @@ zest (n): phấn khởi, đam mê
 
 zeal (n): nhiệt huyết, hăng say cháy bỏng
 
-jaded (adj): exhausted, burned-out
+==jaded== (adj): exhausted, burned-out
 
 poppycock (n): nonsense, baloney, humbuggery, hoax
 
@@ -1167,15 +1195,17 @@ impose (v): ép buộc, áp đặt (thuế)
 
 underwriter (n): insurer, risk assessor, mortgage reviewer, benefactor, patron
 
+subsidize (v): trợ cấp, bao cấp, fund, back, finance, underwrite
+
 postmortem (adj-n): autopsy, necropsy
 
 modicum (n): a small portion (especially of sth good)
 
 scanty (adj): insufficient what is needed
 
-==fraught {with}== (adj-v-n): load, full of (sth)
+==fraught {with}== (adj-v-n): load, full of (sth), replete {with}
 
-stratagem (n): scheme, ploy
+stratagem (n): scheme, ploy, ruse, feint, maneuver
 
 capisce (slang): nghe chưa? Hiểu chưa?
 
@@ -1221,6 +1251,8 @@ sect (n): party, faction
 
 acquit (v): vindicate, to free from allegation or blame, làm trọn (nghĩa vụ, bổn phận)
 
+impute {to} (v): attribute, credit, blame
+
 reprehensible (adj): blameworthy, ==culpable==, reproachable
 
 irrigation (n): tưới, supply with water by artificial means
@@ -1232,6 +1264,8 @@ magistrate (n): thẩm phán, judicial officer, hearing judge, quan chức, stat
 attire (n): clothes, garb, dress → ==sartorial== (adj)
 
 pedantic (adj): unimaginative, dull
+
+stickler (n): proceduralist, nitpicker, perfectionist, pedant, purist, formalist, traditionalist
 
 obtuse (adj): blunt, difficult to comprehend, insensitive
 
@@ -1422,3 +1456,17 @@ sciatic (adj): thần kinh toạ
 bariatric (adj): giảm béo (surgical/medical)
 
 hysterectomies (n): a major surgical operation to remove the uterus
+
+mammogram (n): breast cancer screening, breast X-ray, nhũ ảnh
+
+epistolary (adj): letter-based, written in letters
+
+sanatoria (n - plural of sanatorium): asylums, long-term care facilities
+
+celiac (n): gluten-intolerant
+
+confectionery (n): sweets, candy, baked goods
+
+connatural (adj): innate, natural attunement, inborn, intrinsic, inherent
+
+subprime loan (v): vay nặng lãi

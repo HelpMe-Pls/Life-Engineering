@@ -14,51 +14,55 @@
 - EO: Chapter rollouts, Middleware, Events sync
 - Launch EP BEFORE the contract ends.
 - `/grill-me` with what you've learned from Antifragile to form a new business.
-- Always have a plan. When in doubts, stack reps.
+- Always have a plan. When in doubts, stack reps. Exploit AI consultancy for separating signals from noise.
 # Pivot
 - 6 months if no progress.
 - Put yourself out there.
 - Connect the dots.
 - Barbell strategy.
 ---
-### 18/5
+### 25/5
 - [ ] EO: 
-	- [ ] The new guy: remind him about the events APIs & the middleware
-	- [ ] Clean up custom props & workflows
-- [ ] EP: resolve [backlog](#backlog)
-- [ ] Finish pg.362 Antifragile
+	- [ ] Run Altai → HubSpot flow in sandbox with new mkt props
+	- [ ] Migrate it to prod
+- [ ] Claim GPT+
+- [ ] EP: finish wave 1
+- [ ] Finish pg.408 Antifragile
 - [ ] Live up to your standards
-### 19/5
+### 26/5
 - [ ] EO weekly report & sprint goals update
-- [ ] EP++
-- [ ] PAKN
-- [ ] Finish pg.367 Antifragile
+	- [ ] Remind them about the Altai prod keys & what to not touch in HubSpot prod
+- [ ] EP: review wave 1 + finish wave 2
+- [ ] Finish pg.411 Antifragile
 - [ ] Live up to your standards
-### 20/5
+### 27/5
 - [ ] EO Global sprint review
-- [ ] EP++
-- [ ] Finish Chapter 22 Antifragile
+- [ ] EP: review wave 2 + finish wave 3
+- [ ] Finish pg.415 Antifragile
 - [ ] Live up to your standards
-### 21/5
-- [ ] EO minimal work: Cleanup++
-- [ ] EP++
-- [ ] Finish pg.379 Antifragile
+### 28/5
+- [ ] EO minimal work: Melbourne & contingencies
+- [ ] EP++: review wave 3 + finish wave 4
+- [ ] Finish pg.418 Antifragile
 - [ ] Live up to your standards
-### 22/5
-- [ ] EO minimal work: Cleanup++
+### 29/5
+- [ ] EO minimal work
 - [ ] Bragdoc
-- [ ] EP++
-- [ ] Finish pg.381 Antifragile
+- [ ] EP++: resolve [backlog](#backlog)
+- [ ] Antifragile++
 - [ ] Live up to your standards
-### 23/5
+### 30/5
 - [ ] Perfect dive start + 500m with paddles
 - [ ] Groceries
-- [ ] EP++
+- [ ] Haircut
+- [ ] EP++: resolve [backlog](#backlog)
 - [ ] Finish pg.381 Antifragile
 - [ ] Live up to your standards
 ### 24/5
-- [ ] Claim GPT+
-- [ ] Finish Chapter 23 Antifragile
+- [ ] Claim GPT+?
+- [ ] EP++: resolve [backlog](#backlog)
+- [ ] Checkout the local gym?
+- [ ] Finish Antifragile
 - [ ] Weekly planning
 - [ ] Live up to your standards
 
@@ -69,12 +73,16 @@
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
 - EO:
-	- [ ] Clean up custom props & excess workflows. Resolve backlogs in the chat.
+	- [ ] Resolve [this](https://applink.larksuite.com/client/message/link/open?token=AmnLmpTOGc7dahAbDbTZjuI%3D)
 	- [ ] Altai ⇌ HubSpot middleware
 	- [ ] Create simple prototype + full plan to sync events from Wix to Hivebrite for EO Vietnam
 	- [ ] Remind [the bonus](https://applink.larksuite.com/client/message/link/open?token=AmiZVc0jwEAfagZW2xIADtw%3D)
 - EP: 
-	- [ ] Optimize `CLAUDE.md` with Opus Max & `/react-router-framework-mode` skill + antifragile software architecture conventions
-	- [ ] Run `/improve-codebase-architecture` (with `CLAUDE.md` guardrails) & E2E test setup for happy paths. Refresh the skills from source before calling them	
-	- [ ] Last vuln & high ROI perf bottlenecks scan with `gpt-5.5-xhigh`
-	- [ ] Update the master `README.md` to give an overview of how to navigate around the codebase, which skills to use when encountering a bug and to create new features.
+	- [x] Optimize `CLAUDE.md` with Opus Max & `/react-router-framework-mode` skill + antifragile software architecture conventions
+	- [ ] E2E test setup for happy paths (paths that are critical to the core features of the app). No flaky, noisy, and implementation detail tests. Tests must be meaningful and guarantee no regressions for any code change. Refresh the skills from source before calling them.	
+	- [ ] How many CCU can the app withstand before noticeable perf degradation shows up?
+	- [ ] Last vuln & high ROI perf bottlenecks scan with `gpt-5.5-xhigh`. Perform a via negativa approach if you see fit. 
+	- [ ] Run `/improve-codebase-architecture` with gpt-5.5-xhigh
+	- [ ] Grade the codebase out of 10 for enterprise-grade
+	- [ ] Optimize `CLAUDE.md` & `BACKLOG.md` once again with Opus Max based on the new architecture.
+	- [ ] Update the master `README.md` to give an overview of how to navigate around the codebase, which skills to use when encountering a bug and to create new features. Export an html file to visualize it.

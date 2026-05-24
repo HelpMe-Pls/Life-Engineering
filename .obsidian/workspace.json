@@ -54,8 +54,7 @@
                   "title": "Daily Standup"
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           },
           {
             "id": "8cedd05142699eb5",
@@ -263,14 +262,15 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "8e81d5625c66b75e",
+  "active": "8e701c92c4b0d885",
   "lastOpenFiles": [
     "Notes/Daily Standup.md",
-    "Tips & Tools/English vocab.md",
     "Notes/Weekly Tasks.md",
-    "AI/With Claude Code.md",
+    "Tips & Tools/English vocab.md",
     "Tips & Tools/English grammar.md",
+    "Frontend/Libraries/React/Testing.md",
     "Notes/2026.md",
+    "AI/With Claude Code.md",
     "Books/Beyond Order.md",
     "Books/Man's Search For Meaning.md",
     "Notes/HubSpot.md",
@@ -293,7 +293,6 @@
     "DevSecOps/DevSecOps.md",
     "Backend/Backend.md",
     "Backend/Caching.md",
-    "Backend/NodeJS/APIs.md",
     "Pasted image 20260414111250.png",
     "AI/Pasted image 20260401141615.png",
     "AI/Pasted image 20260404120816.png",
