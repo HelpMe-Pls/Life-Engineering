@@ -56,12 +56,10 @@
 - [ ] Groceries
 - [ ] Haircut
 - [ ] EP++: resolve [backlog](#backlog)
-- [ ] Finish pg.381 Antifragile
+- [ ] Antifragile++
 - [ ] Live up to your standards
-### 24/5
-- [ ] Claim GPT+?
+### 31/5
 - [ ] EP++: resolve [backlog](#backlog)
-- [ ] Checkout the local gym?
 - [ ] Finish Antifragile
 - [ ] Weekly planning
 - [ ] Live up to your standards
