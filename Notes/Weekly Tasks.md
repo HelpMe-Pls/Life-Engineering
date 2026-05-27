@@ -22,31 +22,31 @@
 - Barbell strategy.
 ---
 ### 25/5
-- [ ] EO: 
-	- [ ] Run Altai → HubSpot flow in sandbox with new mkt props
-	- [ ] Migrate it to prod
-- [ ] Claim GPT+
-- [ ] EP: finish wave 1
-- [ ] Finish pg.408 Antifragile
-- [ ] Live up to your standards
+- [x] EO: 
+	- [x] Update HubSpot data model with new mkt props
+- [x] EP: Wave 1++
+- [x] Finish pg.391 Antifragile
+- [x] Live up to your standards
 ### 26/5
-- [ ] EO weekly report & sprint goals update
-	- [ ] Remind them about the Altai prod keys & what to not touch in HubSpot prod
-- [ ] EP: review wave 1 + finish wave 2
-- [ ] Finish pg.411 Antifragile
-- [ ] Live up to your standards
+- [x] EO weekly report & sprint goals update
+	- [x] Update the Altai → HubSpot wf to include mkt props
+- [x] EP: Wave 1++
+- [x] Finish pg.394 Antifragile
+- [x] Live up to your standards
 ### 27/5
-- [ ] EO Global sprint review
-- [ ] EP: review wave 2 + finish wave 3
-- [ ] Finish pg.415 Antifragile
-- [ ] Live up to your standards
+- [x] EO Global sprint review
+	- [x] Remind them about the Altai prod keys & what to not touch in HubSpot prod
+- [x] EP: wave 1++
+- [x] Finish pg.408 Antifragile
+- [x] Live up to your standards
 ### 28/5
-- [ ] EO minimal work: Melbourne & contingencies
-- [ ] EP++: review wave 3 + finish wave 4
+- [ ] EO minimal work: mkt++
+- [ ] Claim GPT+
+- [ ] EP: Wave 2++ 
 - [ ] Finish pg.418 Antifragile
 - [ ] Live up to your standards
 ### 29/5
-- [ ] EO minimal work
+- [ ] EO minimal work: mkt++
 - [ ] Bragdoc
 - [ ] EP++: resolve [backlog](#backlog)
 - [ ] Antifragile++
@@ -54,7 +54,9 @@
 ### 30/5
 - [ ] Perfect dive start + 500m with paddles
 - [ ] Groceries
+- [ ] Clean the fan
 - [ ] Haircut
+- [ ] Metal showerhead 
 - [ ] EP++: resolve [backlog](#backlog)
 - [ ] Antifragile++
 - [ ] Live up to your standards
@@ -71,7 +73,7 @@
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
 - EO:
-	- [ ] Resolve [this](https://applink.larksuite.com/client/message/link/open?token=AmnLmpTOGc7dahAbDbTZjuI%3D)
+	- [ ] Resolve [this](https://applink.larksuite.com/client/message/link/open?token=AmnLmpTOGc7dahVvo0fATtw%3D)
 	- [ ] Altai ⇌ HubSpot middleware
 	- [ ] Create simple prototype + full plan to sync events from Wix to Hivebrite for EO Vietnam
 	- [ ] Remind [the bonus](https://applink.larksuite.com/client/message/link/open?token=AmiZVc0jwEAfagZW2xIADtw%3D)

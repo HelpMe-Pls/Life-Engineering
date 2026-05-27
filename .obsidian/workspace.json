@@ -262,14 +262,15 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "8e81d5625c66b75e",
+  "active": "8e701c92c4b0d885",
   "lastOpenFiles": [
-    "Tips & Tools/English vocab.md",
     "Notes/Daily Standup.md",
     "Notes/Weekly Tasks.md",
+    "Tips & Tools/English vocab.md",
+    "Notes/2026.md",
+    "Notes/2025.md",
     "Tips & Tools/English grammar.md",
     "Frontend/Libraries/React/Testing.md",
-    "Notes/2026.md",
     "AI/With Claude Code.md",
     "Books/Beyond Order.md",
     "Books/Man's Search For Meaning.md",
@@ -292,7 +293,6 @@
     "DevSecOps/DevOps.md",
     "DevSecOps/DevSecOps.md",
     "Backend/Backend.md",
-    "Backend/Caching.md",
     "Pasted image 20260414111250.png",
     "AI/Pasted image 20260401141615.png",
     "AI/Pasted image 20260404120816.png",

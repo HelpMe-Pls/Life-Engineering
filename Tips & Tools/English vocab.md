@@ -40,11 +40,13 @@ auxiliary (adj-n): supplementary, ancillary, functioning in a subsidiary capacit
 
 vicarious (adj): substitutionary
 
-conform {to} (v): abide by, comply with, adhere to
+conform {to} (v): abide by, comply with, adhere to, hew to
 
 ==pertinent== {to} (adj): apposite, apt to, relevant, appropriate
 
 orthogonal (adj): irrelevant, unrelated, mutually exclusive, beside the point, decoupled, modular, independent
+
+unilateral (adj): one-sided, independent
 
 non sequitur (n): a statement (such as a response) that does not follow logically from or is not clearly related to anything previously said
 
@@ -111,6 +113,8 @@ dogmatic (adj): dictatorial, doctrinaire, assertive
 tenet (n): principle, doctrine, belief, dogma, postulate
 
 refrain {from} (v): stop, restrain, abstain, desist 
+
+sumptuary (adj): restrictive spending
 
 restive (adj): bồn chồn, fidgety
 
@@ -568,6 +572,8 @@ despondent (adj): hopeless, dejected, disheartened, downhearted
 
 ==impugn== (v): to doubt someone's character, qualities, or reputation by criticizing them
 
+vilify (v): demonize, smear, defame, slander
+
 oppugn (v): call into question, dispute, challenge, criticize
 
 vicissitude (n): mutability, gauntlet, adversity
@@ -583,6 +589,8 @@ impediment (n): something that impedes
 mandarin (n): bureaucrat, a high-ranking civil servant, quan lại
 
 bureaucracy (n): quan liêu, a system of administration in which most of the important decisions are made by state officials (rather than by elected representatives)
+
+apparatus (n): equipment, gear, machinery, device, bureaucracy, system, structure, establishment
 
 envoy (n): messenger, representative
 
@@ -660,6 +668,8 @@ acolyte (n): follower
 
 ==ostensibly== (adv): có vẻ như/dường như → ostentatious (adj): showy, boastful
 
+bombast (n): bluster, hot air, grandiloquence, boasting, intentionally fancy, loud, and dramatic
+
 fanfare (n): showy, a short loud piece of music that is played to celebrate
 
 ==postulate== (v-n): presume, posit, premise
@@ -711,6 +721,10 @@ vagaries (n): unpredictable, unexpected changes/events
 unheralded (adj): not previously mentioned; happening without any warning
 
 renunciation (n): asceticism, abnegation, abdication of worldly things, detachment, relinquishment
+
+austerity (n): belt-tightening, budget cuts, frugality
+
+chary (adj): sparing, stingy, frugal, wary, cautious, hesitant, circumspect
 
 aloof (adj): distant, detached, lack of friendliness
 
@@ -777,6 +791,8 @@ coalition (n): union, combination
 eclectic (adj-n): kết hợp, composed of elements drawn from various sources
 
 altruism (n): generosity, philanthropy, empathy, compassion
+
+largess (n): generosity, philanthropy, patronage, bounty
 
 ==pretension== (v-n):  purpose, intention, affection, arrogance
 
@@ -999,6 +1015,8 @@ crux (n): essence, core, gist, kernel
 
 impecunious (adj): poor, penniless
 
+pauper (n): beggar, destitute person
+
 ==opulent== (adj): rich, wealthy, affluent, sumptuous
 
 lucrative (adj): profitable, moneymaking
@@ -1216,6 +1234,8 @@ steward (v-n): manager
 magnate (n): boss, trùm, jefe (<hef-fei>), 
 
 ==tenement== (n): chung cư, residence, apartment, dwelling
+
+constituent (n): voter, elector, resident; component, ingredient, element
 
 pied-à-terre (n): city apartment, second home, urban retreat, luxury apartment
 
@@ -1470,3 +1490,15 @@ confectionery (n): sweets, candy, baked goods
 connatural (adj): innate, natural attunement, inborn, intrinsic, inherent
 
 subprime loan (v): vay nặng lãi
+
+parlor (n): shop, salon, studio
+
+recourse (n): a legal remedy, a formal option available to you when someone has wronged you, broken a contract, or stolen your money
+
+dexterity (n): agility, nimbleness, coordination, sleight of hand
+
+peruse (v): browse, skim, scan, scrutinize
+
+cobbler (n): fruit pie; shoemaker
+
+milieu (n): environment, atmosphere, setting, social circle.
