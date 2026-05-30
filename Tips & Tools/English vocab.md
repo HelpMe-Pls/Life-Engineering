@@ -22,7 +22,11 @@ omnipresent (adj) = ubiquitous, pervasive: present everywhere at the same time
 
 disarray (v-n): out of order, confusion
 
+fibbing (v-n): a tiny, inconsequential lie, stretching the truth 
+
 deceit (n): misleading, fraud, cheating
+
+hoodwinking (v): bamboozling, tricking, making someone look a bit foolish by hiding the truth from them
 
 charlatan (n): quack (medical), imposter, con artist, mountebank, snake-oil salesman
 
@@ -49,6 +53,8 @@ orthogonal (adj): irrelevant, unrelated, mutually exclusive, beside the point, d
 unilateral (adj): one-sided, independent
 
 non sequitur (n): a statement (such as a response) that does not follow logically from or is not clearly related to anything previously said
+
+correlation (n): connection, link, association
 
 cogent (adj): convincing, pertinent
 
@@ -302,6 +308,8 @@ exuberant (adj): abundant of energy, excitement and happiness
 
 exhilarating (adj): thrilling
 
+elation (n): euphoria, ecstasy, exhilaration, immense joy
+
 titillating (adj): pleasantly stimulating or exciting, erotic
 
 jovial (adj): jolly, festive, merry, (in) jest
@@ -450,7 +458,7 @@ burgeoning <burg-jun-ning> (adj): growing, expanding, or developing rapidly
 
 ==wax== (v): to grow in volume, strength, intensity, toward full development
 
-proliferate (v): multiply, grow by rapid production
+proliferate (v): multiply, abound, teem, grow by rapid production
 
 intricate (adj): complicated, sophisticated
 
@@ -552,7 +560,7 @@ huddle (v): standup, quick meeting, brief, bunch together
 
 vignette (n): sketch, snippet, brief scene, snapshot
 
-avail (v-n): serve, gain, use
+==avail== (v-n): serve, gain, use
 
 accede {to} (v): express approval/agreement or give consent
 
@@ -576,6 +584,8 @@ vilify (v): demonize, smear, defame, slander
 
 oppugn (v): call into question, dispute, challenge, criticize
 
+contention (n): dispute, friction, conflict
+
 vicissitude (n): mutability, gauntlet, adversity
 
 contrite(v) → contrition (n): remorse, regret, shame, repentance  
@@ -589,6 +599,8 @@ impediment (n): something that impedes
 mandarin (n): bureaucrat, a high-ranking civil servant, quan lại
 
 bureaucracy (n): quan liêu, a system of administration in which most of the important decisions are made by state officials (rather than by elected representatives)
+
+dean (n): admin, department head
 
 apparatus (n): equipment, gear, machinery, device, bureaucracy, system, structure, establishment
 
@@ -756,6 +768,8 @@ sully (v-n): to make soiled or tarnished, stain
 
 pervade (v): to spread throughout, permeate, suffuse, lan toả
 
+diffusion (n): the spreading of ideas, culture, or technology among a population
+
 celestial (adj): heavenly, delightful
 
 rife {with} (adj): abundant, common, filled with
@@ -862,7 +876,9 @@ enigma (n): mystery, conundrum
 
 esoteric (adj): emphasizing exclusivity or niche knowledge, often tied to expertise or deliberate inaccessibility
 
-confidant (n)  {caution: it's different from confidEnt}: intimate, the one to whom secrets are entrusted.
+confidant (n)  {caution: it's different from confidEnt}: intimate, the one to whom secrets are entrusted
+
+discretion (n): tact, behaving or speaking in a way that avoids causing offense or revealing private information
 
 plausible (adj): superficially pleasing or persuasive, appearing worthy of belief
 
@@ -879,6 +895,8 @@ ensnare (v): trap, tangle
 deciduous (adj): falling off or shed seasonally or at a certain stage of development in the life cycle
 
 speculation (n): gamble, venture, a risky undertaking
+
+dicey (adj): sketchy, risky, tricky, iffy
 
 fallible <fau-luh-bal> (adj): flawed, defective, faulty
 
@@ -962,6 +980,8 @@ elixir (n): liquid magic potion, healing everything
 leaven (v-n): lighten
 
 delectation (n): joy, treat, pleasure, satisfaction, contentment
+
+debauchery (n): depravity, vice, revelry, extreme indulgence in bodily pleasures, 
 
 sensuous (adj): richly textured, aesthetically lush, sensorially vivid, voluptuous in form, deeply resonant
 
@@ -1181,7 +1201,7 @@ bigot (n): a narrow-minded person
 
 plebe (n): người ta, an ordinary person who lacks the knowledge of an insider
 
-clandestine (adj): furtive, sneaky, stealthy
+clandestine (adj): furtive, sneaky, stealthy, surreptitious
 
 militate {against} (v): to have weight → procrastination militates against progression
 
@@ -1304,6 +1324,8 @@ satin shoes (n): shoes with smooth lustrous appearance or sleekness to touch
 referendum (n): trưng cầu dân ý
 
 sultan (n): a king or sovereign especially of a Muslim state
+
+baron (n): tycoon, magnate, mogul, kingpin; an incredibly wealthy, powerful, and sometimes ruthless business leader who dominates an entire industry
 
 mortgage (v-n): thế chấp
 
@@ -1429,7 +1451,7 @@ spur (v-n): prompt, encourage, get the ball rolling
 
 induce (v): cause, bring about, produce, probabilistic reasoning
 
-spurious (adj): false, bogus, unfounded, misleading
+==spurious== (adj): false, bogus, unfounded, misleading
 
 confabulation (n): fabrication, memory distortion, false recollection
 
@@ -1501,4 +1523,12 @@ peruse (v): browse, skim, scan, scrutinize
 
 cobbler (n): fruit pie; shoemaker
 
-milieu (n): environment, atmosphere, setting, social circle.
+milieu (n): environment, atmosphere, setting, social circle
+
+sinecure (n): cushy job, easy ride, nominal role, a job that requires little to no actual work, but still pays a salary and gives the person a fancy title
+
+by dint of (idiom): by means of, thanks to, as a result of, by virtue of
+
+contra (preposition): against, in opposition to
+
+rivulet (n): liquid (sweat, tears, or rain) running down a surface in tiny, winding streams

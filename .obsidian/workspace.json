@@ -148,7 +148,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gdpr",
+                "query": "XOR",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -264,9 +264,10 @@
   },
   "active": "8e701c92c4b0d885",
   "lastOpenFiles": [
-    "Notes/Daily Standup.md",
     "Notes/Weekly Tasks.md",
     "Tips & Tools/English vocab.md",
+    "Tips & Tools/DSA.md",
+    "Notes/Daily Standup.md",
     "Notes/2026.md",
     "Notes/2025.md",
     "Tips & Tools/English grammar.md",
@@ -292,7 +293,6 @@
     "Tips & Tools/Interview prep.md",
     "DevSecOps/DevOps.md",
     "DevSecOps/DevSecOps.md",
-    "Backend/Backend.md",
     "Pasted image 20260414111250.png",
     "AI/Pasted image 20260401141615.png",
     "AI/Pasted image 20260404120816.png",

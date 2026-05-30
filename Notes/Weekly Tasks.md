@@ -40,29 +40,29 @@
 - [x] Finish pg.408 Antifragile
 - [x] Live up to your standards
 ### 28/5
-- [ ] EO minimal work: mkt++
-- [ ] Claim GPT+
-- [ ] EP: Wave 2++ 
-- [ ] Finish pg.418 Antifragile
-- [ ] Live up to your standards
+- [x] EO minimal work: data analysis for mel
+- [x] Finish pg.420 Antifragile
+- [x] Live up to your standards
 ### 29/5
-- [ ] EO minimal work: mkt++
-- [ ] Bragdoc
-- [ ] EP++: resolve [backlog](#backlog)
-- [ ] Antifragile++
-- [ ] Live up to your standards
+- [x] EO minimal work: review the filters
+- [x] Bragdoc
+- [ ] Claim GPT+
+- [x] EP++: resolve [backlog](#backlog)
+- [x] Finish pg.426 Antifragile
+- [x] Live up to your standards
 ### 30/5
-- [ ] Perfect dive start + 500m with paddles
-- [ ] Groceries
-- [ ] Clean the fan
+- [x] Perfect dive start + 500m with paddles
+- [x] Groceries
+- [x] Clean the fan & mousepad & floor & bathroom
 - [ ] Haircut
-- [ ] Metal showerhead 
-- [ ] EP++: resolve [backlog](#backlog)
-- [ ] Antifragile++
-- [ ] Live up to your standards
+- [x] Showerhead 
+- [x] EP++: resolve [backlog](#backlog)
+- [x] Antifragile++
+- [x] Live up to your standards
 ### 31/5
 - [ ] EP++: resolve [backlog](#backlog)
 - [ ] Finish Antifragile
+- [ ] Craft Claude Premium Seat nego using NSTD
 - [ ] Weekly planning
 - [ ] Live up to your standards
 
@@ -73,8 +73,8 @@
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
 - EO:
-	- [ ] Resolve [this](https://applink.larksuite.com/client/message/link/open?token=AmnLmpTOGc7dahVvo0fATtw%3D)
-	- [ ] Altai ⇌ HubSpot middleware
+	- [x] Resolve [this](https://applink.larksuite.com/client/message/link/open?token=AmnLmpTOGc7dahVvo0fATtw%3D)
+	- [ ] Altai ⇌ HubSpot middleware: finish the mkt sync
 	- [ ] Create simple prototype + full plan to sync events from Wix to Hivebrite for EO Vietnam
 	- [ ] Remind [the bonus](https://applink.larksuite.com/client/message/link/open?token=AmiZVc0jwEAfagZW2xIADtw%3D)
 - EP: 

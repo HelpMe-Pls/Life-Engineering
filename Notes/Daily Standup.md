@@ -1,6 +1,5 @@
-- Yesterday the team aligned on the sprint goals for this week, and I sent them the rollout overview doc with Melbourne as an example.
-- Today I'm gonna set up the marketing-related configs in prod based on the items on their Monday board.
-
+- Yesterday I put together the data analysis for EO Melbourne and reviewed the discrepancies in the records synced from Altai to HubSpot
+- Today I'm gonna pick up where I left off and update our data model to align with Altai's data structure so the sync is fully covered.
 
 > [!warning] Chewsday ping
 >Just flagging again: there's a contract violation around SHUI owed since I came on full-time.
@@ -99,7 +98,7 @@ Commit format (CLAUDE.md "Commit Messages"): `<type>(<scope>): :gitmoji-text-cod
 > - What would you do differently if we could go back and do it again.
 
 ## For The Old Infant
->[!danger] Refine with AI before sending
+>[!danger] Refine with AI & ask for the payslip before sending
 ### After the paycheck
  - I just reviewed my paycheck, and the agreed-upon extra pay is missing. You may have forgotten this, but I have not. We had a clear agreement regarding this compensation.
  - I know 10m might sound like a rounding error to you, but for me, I earned some of that money stepping up for K2. I get that the full bonus is already off the table, fair enough. 
@@ -108,7 +107,7 @@ Commit format (CLAUDE.md "Commit Messages"): `<type>(<scope>): :gitmoji-text-cod
  - Pls tell me this just slipped your mind, maybe due to lack of sleep, because I'd hate to think I'm being punished financially for an oversight I *already* owned up to. 
  - I still remember one of the slides you showed me on my onboarding day, mentioning "assume good intentions" somewhere along the lines. That being said, now I'm really struggling to assume positive intent and give you the benefit of the doubt here.
  - If you're still holding out on me for some reason, now's the time to clear the air. How do you plan to make this right so we can keep our relationship strictly professional?
-### Escalate
+### Escalate with SHUI
 >[!warning] Confirm with Minh Vu to see if his SHUI is covered
 
  - I expect you to be straight with me moving forward, and not play games with my compensation.
@@ -177,15 +176,11 @@ Commit format (CLAUDE.md "Commit Messages"): `<type>(<scope>): :gitmoji-text-cod
 - Middleware: mainly for global approval, especially for chapters not using HubSpot directly.
 
 # Misc
-## PAKN
-- PAKN.20260516.0256
-- PAKN.20260520.0239
-- PAKN.20260522.0138
-- Quá hạn hoàn thuế TNCN
-	- Tôi có nộp Hồ Sơ QTT TNCN từ ngày 21/04/2026 đến nay (đã hơn 14 ngày làm việc so với 6 ngày làm việc như đã cam kết), nhưng tôi vẫn chưa nhận được Quyết Định Hoàn Thuế hay bất cứ thông báo nào liên quan đến tiến độ giải quyết hồ sơ.
-- Kính mong các bộ phận liên quan hỗ trợ xử lý Mã Hồ Sơ Dịch Vụ Công: G12.18-260421-00430053
-- 18/5: 16 days
-## Tracy
-- DB pw: `Tracy@InfiniteLeverage2026`
+## Altai
+- No access to prod (yet)
+	- The lists you gave us seem to be exported from prod
+- Duplicated filter tags in the sandbox, so we tried to include them all, therefore the returned rows are not fully matched (because of duplicated filters & sandbox vs prod difference)
+	- **CHAPTER STAFF**: duplicated `Chapter Staff` on the `Position Title` filter
+- A while ago, I received this data dictionary for Altai, but I'm not sure if it's for the sandbox or prod. I assume it's from the sandbox because I haven't had access to prod yet, so if there's a divergence with prod, pls sent us that similar file, but for prod.
 ## QLD
 - sth
