@@ -21,48 +21,48 @@
 - Connect the dots.
 - Barbell strategy.
 ---
-### 25/5
-- [x] EO: 
-	- [x] Update HubSpot data model with new mkt props
-- [x] EP: Wave 1++
-- [x] Finish pg.391 Antifragile
-- [x] Live up to your standards
-### 26/5
-- [x] EO weekly report & sprint goals update
-	- [x] Update the Altai → HubSpot wf to include mkt props
-- [x] EP: Wave 1++
-- [x] Finish pg.394 Antifragile
-- [x] Live up to your standards
-### 27/5
-- [x] EO Global sprint review
-	- [x] Remind them about the Altai prod keys & what to not touch in HubSpot prod
-- [x] EP: wave 1++
-- [x] Finish pg.408 Antifragile
-- [x] Live up to your standards
-### 28/5
-- [x] EO minimal work: data analysis for mel
-- [x] Finish pg.420 Antifragile
-- [x] Live up to your standards
-### 29/5
-- [x] EO minimal work: review the filters
-- [x] Bragdoc
-- [ ] Claim GPT+
-- [x] EP++: resolve [backlog](#backlog)
-- [x] Finish pg.426 Antifragile
-- [x] Live up to your standards
-### 30/5
-- [x] Perfect dive start + 500m with paddles
-- [x] Groceries
-- [x] Clean the fan & mousepad & floor & bathroom
-- [ ] Haircut
-- [x] Showerhead 
-- [x] EP++: resolve [backlog](#backlog)
-- [x] Antifragile++
-- [x] Live up to your standards
-### 31/5
+### 1/6
+- [ ] EO: 
+	- [ ] Offline?
+	- [ ] Wrap up the Altai sync to fill in the segments
+- [ ] EP: Wave 2++
+- [ ] MDW++
+- [ ] Live up to your standards
+### 2/6
+- [ ] EO weekly report & sprint goals update
+	- [ ] Verify the Altai → HubSpot wf to include mkt props
+	- [ ] Migrate the sandbox mkt-related data structure to prod
+	- [ ] Remind them about the Altai prod keys & what to not touch in HubSpot prod
+- [ ] EP: Wave 2++
+- [ ] MDW++
+- [ ] Live up to your standards
+### 3/6
+- [ ] EO Global sprint review
+- [ ] EP: wave 3++
+- [ ] MDW++
+- [ ] Live up to your standards
+### 4/6
+- [ ] EO minimal work: codebase for mel?
+- [ ] EP: wave 3++
+- [ ] MDW++
+- [ ] Live up to your standards
+### 5/6
+- [ ] EO minimal work: contingencies
+- [ ] Bragdoc
+- [ ] EP: refresh BACKLOG, cut the noise & grade the codebase
+- [ ] MDW++
+- [ ] Live up to your standards
+### 6/6
+- [ ] Perfect dive start + 500m with paddles
+- [ ] Groceries
+- [ ] Clean the mousepad & blanket & bathroom
+- [ ] Remind [the bonus](https://applink.larksuite.com/client/message/link/open?token=AmiZVc0jwEAfagZW2xIADtw%3D)
+- [ ] EP++
+- [ ] MDW++
+- [ ] Live up to your standards
+### 7/6
 - [ ] EP++: resolve [backlog](#backlog)
-- [ ] Finish Antifragile
-- [ ] Craft Claude Premium Seat nego using NSTD
+- [ ] Antifragile note
 - [ ] Weekly planning
 - [ ] Live up to your standards
 
@@ -73,14 +73,13 @@
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
 - EO:
-	- [x] Resolve [this](https://applink.larksuite.com/client/message/link/open?token=AmnLmpTOGc7dahVvo0fATtw%3D)
 	- [ ] Altai ⇌ HubSpot middleware: finish the mkt sync
 	- [ ] Create simple prototype + full plan to sync events from Wix to Hivebrite for EO Vietnam
-	- [ ] Remind [the bonus](https://applink.larksuite.com/client/message/link/open?token=AmiZVc0jwEAfagZW2xIADtw%3D)
+	
 - EP: 
 	- [x] Optimize `CLAUDE.md` with Opus Max & `/react-router-framework-mode` skill + antifragile software architecture conventions
 	- [ ] E2E test setup for happy paths (paths that are critical to the core features of the app). No flaky, noisy, and implementation detail tests. Tests must be meaningful and guarantee no regressions for any code change. Refresh the skills from source before calling them.	
-	- [ ] How many CCU can the app withstand before noticeable perf degradation shows up?
+	- [ ] How many CCU (approximately) can the app withstand before noticeable perf degradation shows up?
 	- [ ] Last vuln & high ROI perf bottlenecks scan with `gpt-5.5-xhigh`. Perform a via negativa approach if you see fit. 
 	- [ ] Run `/improve-codebase-architecture` with gpt-5.5-xhigh
 	- [ ] Grade the codebase out of 10 for enterprise-grade

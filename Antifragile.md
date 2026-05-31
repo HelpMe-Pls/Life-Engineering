@@ -1,0 +1,39 @@
+- The fragility of the whole often depends on the fragility of the parts.
+- The resilient resists shocks and stays the same; the antifragile gets better.
+- Antifragility has a singular property of allowing us to deal with the unknown. to do things without understanding them—and do them well.
+- I'd rather be dumb and antifragile then extremely smart and fragile, anytime.
+- Antifragility makes us understand fragility better.
+- It is far easier to figure out if something is fragile than to predict the occurrence of an event that may harm it.
+- Anything that has more upside than downside from random events (or certain shocks) is antifragile; the reverse is fragile.
+- As with neurotically overprotective parents, those trying to help are often hurting us the most.
+- The process of discovery (or innovation, or technological progress) itself depends on antifragile tinkering, aggressive risk bearing rather than formal education.
+- I want to happily live in a world I don't understand.
+- Black Swans hijack our brains, making us feel we "sort of" or "almost" predicted them, because they are retrospectively explainable.
+- You get pseudo-order when you seek order; you only get a measure of order and control when you embrace randomness.
+- You need perfect robustness for a crack not to end up crashing the system.
+- Simplicity has been difficult to implement in modern life because it is against the spirit of certain brand of people who seek sophistication so they can justify their profession.
+- Dare to look our ignorance in the face and not be ashamed of being human—be aggressive and profoundly human.
+- If you label them "fragile," then you necessarily want them to be left alone in peace, quiet, order, and predictability.
+- Time is functionally similar to volatility: the more time, the more events, the more disorder. The fragile breaks with time.
+- The fragile wants tranquility, the antifragile grows from disorder, and the robust doesn't care too much
+- A certain system of tinkering and trial and error would have the attributes of antifragility.
+- One can die from being immortal.
+- Perhaps being deprived of poison makes us fragile and that the road to robustification starts with a modicum of harm.
+- A little bit of an otherwise offending substance, not too much, acts to benefits the organism and make it better overall as it triggers some overreaction.
+- Low-does poisoning triggers healthy benefits.
+- Hormesis is the norm, and its absence is what hurts us.
+- We can now see that depriving systems of stressors, vital stressors, not necessarily a good thing, and can be downright harmful.
+- Humans somehow fail to recognize situations outside the contexts in which they usually learn about them.
+- The excess energy released from overreaction to setbacks is what innovates.
+- Under-compensation from the absences of a stressor, inverse hormesis, absence of challenge, degrades the best of the best.
+- Most humans manage to squander their free time, as free time makes them dysfunctional, lazy, and unmotivated.
+- Like tormenting love, some thoughts are so antifragile that you feed them by trying to get rid of them, turning them into obsessions.
+- The more you insist that it remain a secret, the more it will spread.
+- So if you really want people to read a book, tell them it is "overrated," with a sense of outrage (and use the attribute "underrated" for the opposite effect).
+- Only when you don't care about your reputation that you tend to have a good one.
+- Those from whom we have benefited the most aren't those who have tried to help us (say with "advice") but rather those who have actively tried—but eventually failed—to harm us.
+- Everything that has life in it is to some extent antifragile (but not the reverse). It looks like the secret of life is antifragility.
+- Humans tend to do better with acute than with chronic stressors, particularly when the former are followed by ample time for recovery, which allows the stressors to do their jobs as messengers.
+- Everything alive needs stressors, but not all machines need to be left alone.
+- If you are alive—something deep in your soul likes a certain measure of randomness and disorder.
+- Pg.66

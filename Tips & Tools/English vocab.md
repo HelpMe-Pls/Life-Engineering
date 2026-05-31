@@ -106,7 +106,9 @@ obfuscate (v): to make obscure, darken, confuse
 
 obstinate (adj): unpersuadable, stubborn, willful, rigid, adamant, implacable
 
-refractory (adj): obstinate, unresponsive, recalcitrant, intractable, defiant,
+refractory (adj): obstinate, unresponsive, recalcitrant, intractable, defiant
+
+tractable (adj): manageable, solvable, approachable, workable, compliant
 
 pertinacious (adj): tenacious, steadfast, determined
 
@@ -746,7 +748,7 @@ obscene (adj): repulsive, abhorrent (to morality or virtue)
 
 atrocious (adj): detestable, appalling, abominable, barbaric
 
-philistinism (n): anti-intellectualism, unrefined taste, vocationalism
+==philistinism== (n): anti-intellectualism, unrefined taste, vocationalism
 
 anathema (n): abomination, unacceptable, taboo, deeply offensive, excommunication, ecclesiastical curse
 
@@ -1532,3 +1534,5 @@ by dint of (idiom): by means of, thanks to, as a result of, by virtue of
 contra (preposition): against, in opposition to
 
 rivulet (n): liquid (sweat, tears, or rain) running down a surface in tiny, winding streams
+
+epidemiology (n): public health, disease pattern analysis, outbreak investigation

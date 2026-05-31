@@ -8,83 +8,229 @@
 ---
 # EP
 ## Next
-### 128
-#### Prompt
-Resolve GitHub issue #128 on this repo. Review the proposed @docs\plans\2026-05-26-issue-128-curriculum-foundation.md file to decide if you should follow it. If not, proceed with the instructions below:
+- Wave 2
 
-Wave 1 — Foundation, second-to-last to land. Runs CONCURRENTLY with #133 on its own ephemeral branch off `resolve-issues`. **Your branch: `refactor/128-curriculum-foundation`. Your worktree: `../platform-128`.** The user has already created both — do NOT recreate them. All commits land on `refactor/128-curriculum-foundation`; do NOT push to `resolve-issues` directly and do NOT open the `staging` PR yourself.
-
-Before any code changes, read these in order:
-  1. `.claude/CLAUDE.md` — invariants. Especially: Rule 5 (no relative imports across modules — `~/` alias only), Rule 11 (no `any`/`!`/`as Type` — use Zod parsing / type narrowing / `satisfies`), Rule 13 (`Cloudflare.Env` only — added 2026-05-25 via #137; any new `env:` annotation MUST be `Cloudflare.Env`), the action-envelope helper module at `app/lib/route-helpers.server.ts` (`actionSuccess` / `actionError` / `parseIntent` / `parseJsonBody` / `parseCloudflareResponse`), and the "Before Declaring Done" checklist (run `bun typecheck` THEN `bun run test:run` *sequentially* — never parallel; load-bearing Windows rule).
-  2. `CONTEXT.md` — domain glossary. Use `Course`/`Module`/`Lesson`/`Curriculum`/`Enrollment`/`Progress` exactly; never drift to synonyms.
-  3. `docs/adr/0001-curriculum-is-data-not-process.md` — locks the "Curriculum is data + invariants, not a process" guarantee. **Do NOT re-author.** If missing from your worktree, halt — branch base is wrong.
-  4. `gh issue view 128 --comments` — full issue body including the LOCKED Curriculum surface. **Live GitHub body is canonical**; if anything below diverges from `gh issue view`, the GitHub body wins.
-  5. `docs/plans/issues-126-135-handoff.md` — §4 file-overlap matrix, §6 wave ordering, §10.2 live progress. **Wave 1 status as of 2026-05-25:** #126, #132, #137 already merged into `resolve-issues`; #133 dispatching concurrently with you.
-
-Scope reminders (issue body is authoritative; this is emphasis on the easy-to-miss bits):
-  - Create the Curriculum module per the locked surface. Branded ID types — `CourseId`, `ModuleId`, `LessonId`, `InstructorId`, `CourseSlug` — with constructors at parse boundaries. NO `as` casts (Rule 11).
-  - `PublishedCurriculum` and `FullCurriculum` are DISTINCT types. Passing one where the other is required must be a typecheck error.
-  - This slice migrates ONLY the two Student-facing routes: `app/routes/course-overview.tsx` and `app/routes/lesson-detail.tsx`.
-  - In `lesson-detail.tsx`: replace `assertLessonMatchesRoute` pattern + the inline `getNextLessonSlug` call. **DO NOT touch the Stream-signing code** (`getStreamSigningKey`, `streamSignedUrl`, `signingKey` threading) — that's #134's territory.
-  - **DO NOT delete `app/lib/course-navigation.ts`** in this slice — `enrollments.server.ts` still imports from it; #130 deletes the file after migrating the third importer.
-  - Guards (`require*`) throw `Response`; walkers return `| null`.
-  - Deletion test MUST pass: removing the new Curriculum module file alone re-emerges the inline patterns across the two migrated routes (proves the module IS the encapsulation, not decoration).
-  - Writes stay in the existing query files; do NOT add write functions to the Curriculum surface.
-
-After implementation, run the "Before Declaring Done" checklist sequentially (typecheck → tests, never parallel). Surface completion: report your branch name (`refactor/128-curriculum-foundation`) and the commit range to the user. The user merges your branch into `resolve-issues` with `git merge --no-ff`, deletes the branch + removes the worktree (rename-then-delete workaround on Windows if miniflare locks the `.wrangler/` dir — see handoff §10.2), and batches the wave-carrying `resolve-issues → staging` PR. When that PR merges, `gh issue close 128` (staging-targeted PRs do NOT auto-close — see `project_pr_into_staging_no_autoclose` in project memory).
-
-If you discover a spec gap mid-implementation, do NOT silently deviate. Stop, surface it as a comment on the issue, and wait for guidance. (Precedent: #137 hit a spec gap on `workers/app.ts` — see the GitHub body's 2026-05-25 post-implementation correction at the top.)
-
-Commit format (CLAUDE.md "Commit Messages"): `<type>(<scope>): :gitmoji-text-code: #128 <description>`. Use gitmoji TEXT codes (`:sparkles:`, `:recycle:`, `:memo:`, etc. — see gitmoji.dev), NEVER unicode glyphs. Pick the emoji by intent, not type (e.g., `refactor(curriculum): :sparkles: #128 add Curriculum module` if the slice introduces new functionality, `refactor(curriculum): :recycle: #128 collapse Student-facing curriculum walkers` if it's pure restructure).
-#### Clean up
-- Check off the AC, update the handoff, then:
-```
-git merge --no-ff refactor/128-curriculum-foundation -m "Merge refactor/128-curriculum-foundation (Wave 1, issue #128)"
-git worktree remove ../platform-128 --force
-git branch -d refactor/128-curriculum-foundation
-```
-
-### 133
-#### Create worktree
-```
-git worktree add ../platform-133 -b refactor/133-asset-foundation resolve-issues
-cd ../platform-133 && bun install ; cd -
-```
-#### Prompt
-Resolve GitHub issue #133 in this repo.
-
-Wave 1 — Foundation, second-to-last to land. Runs CONCURRENTLY with #128 on its own ephemeral branch off `resolve-issues`. **Your branch `refactor/133-asset-foundation`. Your worktree: `../platform-133`.** The user has already created both — do NOT recreate them. All commits land on `refactor/133-asset-foundation`; do NOT push to `resolve-issues` directly and do NOT open the `staging` PR yourself.
-
-Before any code changes, read these in order:
-  1. `.claude/CLAUDE.md` — invariants. Especially: Rule 5 (no relative imports across modules), Rule 11 (no `any`/`!`/`as Type`), Rule 13 (`Cloudflare.Env` only — added 2026-05-25 via #137; any new `env:` annotation MUST be `Cloudflare.Env`), the action-envelope helper module at `app/lib/route-helpers.server.ts`, and the "Before Declaring Done" checklist (sequential typecheck → tests on Windows, never parallel).
-  2. `CONTEXT.md` — domain glossary. Use `Asset`/`AssetKind`/`AssetRef` exactly per the locked vocabulary.
-  3. `docs/adr/0002-assets-as-domain-with-kind-catalog.md` — locks the Asset-as-domain shape with the kind catalog. **Do NOT re-author.** If missing, halt — branch base is wrong. Per `feedback_docs_high_level.md`, fabricated ADR rationale is unacceptable.
-  4. `gh issue view 133 --comments` — full issue body including the locked ~25-export surface for `app/lib/assets.server.ts` and the 2026-05-22 amendment adding `getStreamPlaybackToken`. **Live GitHub body is canonical.**
-  5. `docs/plans/issues-126-135-handoff.md` — §4 file-overlap matrix, §6 wave ordering, §10.2 live progress. **Wave 1 status as of 2026-05-25:** #126, #132, #137 already merged into `resolve-issues`; #128 dispatching concurrently with you.
-
-Scope reminders (issue body is authoritative; this is emphasis):
-  - Create `app/lib/assets.server.ts` with the locked surface (~25 exports including the `getStreamPlaybackToken` from the 2026-05-22 amendment).
-  - Co-located test file covering: ASSET_KINDS catalog invariants (every kind has storage; mimes nonempty; maxBytes > 0; every r2 kind has a directory; no two kinds share a directory prefix); `classifyR2Key` 4 happy paths + 1 unknown-prefix → `null`; `storeFile` validation branches (invalid-kind, invalid-mime, too-large, empty-file); `cleanupAssets` mixed pass/fail; `getStreamPlaybackToken` 3-segment JWT structure + base64url segments + expiry math + geo-claim default `["VN"]` + override + `null` on empty inputs.
-  - Migrate THREE API routes: `app/routes/api/r2-upload.ts`, `app/routes/api/stream-upload.ts`, `app/routes/api/stream-status.ts`. DELETE inline `ALLOWED_*_TYPES` constants, the 10MB/50MB byte caps, the TUS header construction, and the Cloudflare API URLs from those three route files.
-  - **DO NOT TOUCH** in this slice (deferred to #134): `app/routes/dashboard/edit-lesson.tsx`, `app/routes/dashboard/curriculum-builder.tsx`,
-  `app/routes/dashboard/course-settings.tsx`, `app/routes/api/r2-serve.$.ts`, `app/routes/lesson-detail.tsx`, `app/lib/asset-urls.server.ts`,
-  `app/components/layouts/LessonItem.tsx`. Also do NOT touch `streamSignedUrl` (or `bytesToBase64Url` / `objectToBase64url`) in `app/lib/utils.ts` — your `getStreamPlaybackToken` coexists with the legacy `streamSignedUrl` for this slice; #134 deletes the legacy.
-  - `app/lib/content-items.ts` MAY keep an `AssetRef` re-export shim if it makes type imports easier across consumers; #134 removes the shim.
-  - The three API routes you touch should access secrets through `context.cloudflare.env` (already typed as `Cloudflare.Env` post-#137 — no manual annotation needed).
-
-After implementation, run the "Before Declaring Done" checklist sequentially (typecheck → tests). Spot-check using the grep commands in the issue body. Surface completion: report your branch name (`refactor/133-asset-foundation`) and the commit range to the user. The user merges into `resolve-issues` with `git merge --no-ff`, deletes the branch + removes the worktree (rename-then-delete workaround on Windows if miniflare locks `.wrangler/` — see handoff §10.2), and batches the wave-carrying staging PR. When that PR merges, `gh issue close 133` (staging-targeted PRs do NOT auto-close — see `project_pr_into_staging_no_autoclose` in project memory).
-
-If you discover a spec gap mid-implementation, do NOT silently deviate. Stop, surface as a comment on the issue, and wait for guidance (Precedent: #137 hit a spec gap on `workers/app.ts` — see the GitHub body's 2026-05-25 post-implementation correction at the top.)
-
-Commit format (CLAUDE.md "Commit Messages"): `<type>(<scope>): :gitmoji-text-code: #133 <description>`. Use gitmoji TEXT codes only (`:sparkles:`, `:recycle:`, etc. — see gitmoji.dev), never unicode glyphs. Pick the emoji by intent, not type.
 ## Later
-- Explore the relevant skills in your repertoire to give me an OPTIMIZED prompt for an agent to grade the overall quality of the codebase. Give me an HONEST assessment. The main criteria it should grade against are enterprise readiness and antifragility.
+- Explore the relevant skills in your repertoire to give me an OPTIMIZED prompt for an agent to grade the overall quality of the codebase. I want the prompt's output to give me an HONEST assessment. The main criteria it should grade against are enterprise readiness and antifragility.
 - Using GPT5.5-xhigh: Perform an exhaustive scan on the codebase and run the /improve-codebase-architecture with its relevant skills to see how you can optimize the codebase for maximum antifragility.
+### The scoring prompt
+```
+You are a brutally honest principal engineer auditing this repository for overall codebase quality.
+
+Your primary grading criteria are:
+
+1. **Enterprise readiness**: Can this codebase support a real production SaaS with multiple contributors, incidents, migrations, paid users, security concerns, operational pressure, and long-term maintenance?
+2. **Antifragility**: Does the codebase get stronger when stressed by bugs, new features, incidents, audits, onboarding, scale, and changing requirements?
+
+Do not optimize for politeness. Optimize for truth, evidence, and useful prioritization.
+
+## Required Context First
+
+Before judging, read:
+
+- `CONTEXT.md`
+- `.claude/CLAUDE.md`
+- `docs/agents/domain.md`
+- all files in `docs/adr/`
+- `package.json`
+- `app/routes.ts`
+- representative files under:
+  - `app/routes/`
+  - `app/lib/queries/`
+  - `app/lib/curriculum/`
+  - `app/lib/checkout/`
+  - `app/database/`
+  - `app/test/`
+
+Use the domain vocabulary from `CONTEXT.md`. If you discuss Course, Module, Lesson, Curriculum, Checkout, Payment, Enrollment, Asset, Bundle, Waitlist, Certificate, or Progress, use those terms exactly.
+
+Respect ADRs. If you think the codebase should violate or revisit an ADR, say so explicitly and explain why.
+
+## Method
+
+Do a real audit, not a vibe check.
+
+1. Map the codebase at a high level:
+   - main domain modules
+   - route/load/action flow
+   - database and query structure
+   - external integrations
+   - test structure
+   - deployment/runtime assumptions
+
+2. Look for evidence of enterprise readiness:
+   - auth and authorization correctness
+   - validation at boundaries
+   - data integrity and transactionality
+   - migration safety
+   - idempotency and auditability
+   - error handling
+   - observability/loggability
+   - secret/config isolation
+   - CI/build/typecheck discipline
+   - dependency and runtime risk
+   - security posture
+   - operational rollback/recovery paths
+
+3. Look for evidence of antifragility:
+   - fast deterministic feedback loops
+   - tests at the right seams
+   - regression tests for risky behavior
+   - deep modules with small interfaces
+   - localized change surfaces
+   - explicit state machines or discriminated unions
+   - documented decisions and domain language
+   - ability to debug incidents from stored events/logs
+   - low coupling between domain concepts
+   - whether fixes naturally improve tests/docs/contracts
+
+4. Apply the architecture lens:
+   - Identify shallow modules using the deletion test.
+   - Identify modules with real depth, leverage, and locality.
+   - Note seams that are real because they have multiple adapters.
+   - Note hypothetical seams that add abstraction without payoff.
+   - Call out places where understanding one behavior requires bouncing through too many files.
+
+5. Run available verification commands if practical:
+   - `bun run typecheck`
+   - `bun test`
+   - relevant focused tests
+   - static searches with `rg`
+
+If you cannot run a command, say so. Do not pretend.
+
+## Scoring
+
+Give separate scores from 0-10:
+
+- Overall codebase quality
+- Enterprise readiness
+- Antifragility
+- Domain modeling
+- Architecture/module depth
+- Test strategy
+- Type safety
+- Data integrity
+- Security/auth posture
+- Operational maturity
+- Frontend robustness
+- Maintainability/onboarding
+
+Use this calibration:
+
+- 10: production-grade, resilient under real organizational and operational stress
+- 8: strong, with manageable gaps
+- 6: promising but not yet enterprise-ready
+- 4: fragile; quality depends heavily on current maintainers
+- 2: structurally risky
+- 0: unsafe or incoherent
+
+Penalize unknowns. If an area lacks evidence, score it lower or mark confidence as low.
+
+## Output Format
+
+Return this structure:
+
+### 1. Executive Verdict
+
+One blunt paragraph with:
+- overall grade
+- enterprise readiness grade
+- antifragility grade
+- confidence level
+- whether you would trust this for paid production users today
+
+### 2. Scorecard
+
+A table:
+
+| Area | Score / 10 | Confidence | Evidence | Main Risk |
+|---|---:|---|---|---|
+
+### 3. What Is Strong
+
+List only strengths backed by concrete file references or observed patterns.
+
+### 4. Top Risks
+
+Rank findings by severity.
+
+For each finding include:
+
+- **Severity**: Blocker / High / Medium / Low
+- **Area**
+- **Evidence**: file paths and line references where possible
+- **Why it matters**
+- **Enterprise readiness impact**
+- **Antifragility impact**
+- **Recommended fix**
+- **How to verify the fix**
+
+### 5. Architectural Deepening Opportunities
+
+List deepening opportunities using this format:
+
+- **Files/modules involved**
+- **Problem**
+- **Deletion test result**
+- **Proposed direction**
+- **Benefit to locality**
+- **Benefit to leverage**
+- **Testing improvement**
+
+Do not propose huge rewrites. Prefer focused changes that reduce future fragility.
+
+### 6. Enterprise Readiness Gap Analysis
+
+Cover:
+- security/auth
+- data integrity
+- migrations/backups
+- observability
+- incident recovery
+- CI/CD
+- operational runbooks
+- dependency/runtime risk
+
+### 7. Antifragility Gap Analysis
+
+Cover:
+- feedback loops
+- test seams
+- regression capture
+- state modeling
+- domain language
+- ADR discipline
+- blast-radius containment
+- debugging/replay ability
+
+### 8. 30/60/90-Day Improvement Plan
+
+Give a pragmatic plan:
+- first 30 days: highest-risk fixes
+- next 60 days: structural improvements
+- next 90 days: hardening and operational maturity
+
+Each item should be actionable and verifiable.
+
+### 9. Unknowns And Audit Limits
+
+State what you could not determine, what commands failed, what areas need deeper inspection, and how that affects the grade.
+
+## Honesty Rules
+
+- Do not give credit for intentions. Give credit for working code, tests, docs, or enforceable contracts.
+- Do not average away critical risks. A serious data integrity, auth, migration, or payment risk should cap the enterprise-readiness score.
+- Do not praise abstractions unless they provide locality or leverage.
+- Do not call something antifragile merely because it is documented. It must improve behavior under stress.
+- Prefer direct, specific criticism over generic advice.
+- If the codebase is good, say why. If it is fragile, say exactly where.
+```
 ---
 # Next big thing
 
 - [ ] Pivot `coffee-finder`
-- [ ] Brainstorm with AI for a true `antifragile` & `Fat Tony` business model. Don't fall into the `green lumber fallacy`. Aim for something with limited losses and unlimited potential.
+- [ ] Brainstorm with AI for a true `antifragile` & `Fat Tony` (or at least robust) business model. Don't fall into the `green lumber fallacy`. Aim for something with limited losses and unlimited potential.
 	- Make sure that you're barbelled, whatever that means in your business.
 	- Identify & leverage positive Black Swans in this economy.
 	- Exploit the convexity effect
@@ -98,6 +244,12 @@ Commit format (CLAUDE.md "Commit Messages"): `<type>(<scope>): :gitmoji-text-cod
 > - What would you do differently if we could go back and do it again.
 
 ## For The Old Infant
+### Claude Team Premium
+- Hey boss, I can finally see the "opportunity" you mentioned. I'll be the one owning the EO codebases end-to-end: managing them, maintaining them, getting them production-ready.
+- Quick flag before I'm deep in it: even now (I'm barely coding yet), I've been hitting my weekly cap on the Standard seat 3-4 days in. So I'm throttled for the back half of most weeks, and the heavy coding hasn't even started.
+- So as a workaround, I've been bouncing across my personal free accounts till the limit resets. But that's a hack, it doesn't scale, and honestly company work shouldn't be living on my personal accounts.
+- Would it be a bad idea to move me to a Premium seat right now so I can actually keep pace with all this?
+
 >[!danger] Refine with AI & ask for the payslip before sending
 ### After the paycheck
  - I just reviewed my paycheck, and the agreed-upon extra pay is missing. You may have forgotten this, but I have not. We had a clear agreement regarding this compensation.
