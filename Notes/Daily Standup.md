@@ -1,5 +1,5 @@
-- Yesterday I put together the data analysis for EO Melbourne and reviewed the discrepancies in the records synced from Altai to HubSpot
-- Today I'm gonna pick up where I left off and update our data model to align with Altai's data structure so the sync is fully covered.
+- Yesterday I resolved the discrepancies in the records synced from Altai to HubSpot in staging
+- Today I'm gonna ask them for the credentials and data structure of Altai  prod so that I can migrate the sync flow to prod
 
 > [!warning] Chewsday ping
 >Just flagging again: there's a contract violation around SHUI owed since I came on full-time.
@@ -9,7 +9,6 @@
 # EP
 ## Next
 - Wave 2
-
 ## Later
 - Explore the relevant skills in your repertoire to give me an OPTIMIZED prompt for an agent to grade the overall quality of the codebase. I want the prompt's output to give me an HONEST assessment. The main criteria it should grade against are enterprise readiness and antifragility.
 - Using GPT5.5-xhigh: Perform an exhaustive scan on the codebase and run the /improve-codebase-architecture with its relevant skills to see how you can optimize the codebase for maximum antifragility.
@@ -330,9 +329,7 @@ State what you could not determine, what commands failed, what areas need deeper
 # Misc
 ## Altai
 - No access to prod (yet)
-	- The lists you gave us seem to be exported from prod
-- Duplicated filter tags in the sandbox, so we tried to include them all, therefore the returned rows are not fully matched (because of duplicated filters & sandbox vs prod difference)
-	- **CHAPTER STAFF**: duplicated `Chapter Staff` on the `Position Title` filter
-- A while ago, I received this data dictionary for Altai, but I'm not sure if it's for the sandbox or prod. I assume it's from the sandbox because I haven't had access to prod yet, so if there's a divergence with prod, pls sent us that similar file, but for prod.
+- The Altai views are rooted on the Position object (one row per position). The HubSpot segments are Contact segments = one row per distinct
+  contact. A person holding two roles — or the same role in both 2025/2026 and 2026/2027 — is 2 Altai rows but 1 HubSpot contact. So a Contact segment is always ≤ the Altai position count; they cannot be equal by definition.
 ## QLD
 - sth

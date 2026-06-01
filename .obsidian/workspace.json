@@ -32,7 +32,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Antifragile.md",
+                    "file": "Books/Antifragile.md",
                     "mode": "source",
                     "source": false
                   },
@@ -55,7 +55,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           },
           {
             "id": "8cedd05142699eb5",
@@ -149,7 +149,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gdpr",
+                "query": "XOR",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -263,16 +263,19 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "d655e157dbd2a336",
+  "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
-    "Tips & Tools/English vocab.md",
-    "Antifragile.md",
-    "Notes/Weekly Tasks.md",
     "Notes/Daily Standup.md",
+    "Notes/Weekly Tasks.md",
+    "Books/Antifragile.md",
     "Books/Books.md",
     "Tips & Tools/English grammar.md",
-    "AI/With Claude Code.md",
+    "Tips & Tools/English vocab.md",
+    "Tips & Tools/DSA.md",
     "Notes/2026.md",
+    "Notes/2025.md",
+    "Frontend/Libraries/React/Testing.md",
+    "AI/With Claude Code.md",
     "Books/Beyond Order.md",
     "Books/Man's Search For Meaning.md",
     "Notes/HubSpot.md",
@@ -291,9 +294,6 @@
     "Tips & Tools/Technical.md",
     "Tips & Tools/Interview prep.md",
     "DevSecOps/DevOps.md",
-    "DevSecOps/DevSecOps.md",
-    "Backend/Backend.md",
-    "Backend/Caching.md",
     "Pasted image 20260414111250.png",
     "AI/Pasted image 20260401141615.png",
     "AI/Pasted image 20260404120816.png",

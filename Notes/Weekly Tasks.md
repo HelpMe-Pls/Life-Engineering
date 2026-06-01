@@ -22,17 +22,16 @@
 - Barbell strategy.
 ---
 ### 1/6
-- [ ] EO: 
-	- [ ] Offline?
-	- [ ] Wrap up the Altai sync to fill in the segments
-- [ ] EP: Wave 2++
-- [ ] MDW++
-- [ ] Live up to your standards
+- [x] EO: Wrap up the Altai sync to fill in the segments
+- [x] EP: Close #127
+- [x] MDW++
+- [x] Live up to your standards
 ### 2/6
 - [ ] EO weekly report & sprint goals update
-	- [ ] Verify the Altai → HubSpot wf to include mkt props
-	- [ ] Migrate the sandbox mkt-related data structure to prod
+	- [x] Verify the Altai → HubSpot wf to include mkt props
 	- [ ] Remind them about the Altai prod keys & what to not touch in HubSpot prod
+	- [ ] Migrate the sandbox mkt-related data structure to prod
+	- [ ] Offline
 - [ ] EP: Wave 2++
 - [ ] MDW++
 - [ ] Live up to your standards
@@ -85,3 +84,4 @@
 	- [ ] Grade the codebase out of 10 for enterprise-grade
 	- [ ] Optimize `CLAUDE.md` & `BACKLOG.md` once again with Opus Max based on the new architecture.
 	- [ ] Update the master `README.md` to give an overview of how to navigate around the codebase, which skills to use when encountering a bug and to create new features. Export an html file to visualize it.
+	- [ ] Set up YOUR bank account (MBBank or BIDV) for PayOS Prod
