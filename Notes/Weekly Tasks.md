@@ -27,38 +27,39 @@
 - [x] MDW++
 - [x] Live up to your standards
 ### 2/6
-- [ ] EO weekly report & sprint goals update
+- [x] EO weekly report & sprint goals update
 	- [x] Verify the Altai → HubSpot wf to include mkt props
-	- [ ] Remind them about the Altai prod keys & what to not touch in HubSpot prod
-	- [ ] Migrate the sandbox mkt-related data structure to prod
-	- [ ] Offline
-- [ ] EP: Wave 2++
-- [ ] MDW++
-- [ ] Live up to your standards
+	- [x] Remind them about the Altai prod keys & what to not touch in HubSpot prod
+- [x] EP: Wave 2++
+- [x] MDW++
+- [x] Live up to your standards
 ### 3/6
-- [ ] EO Global sprint review
-- [ ] EP: wave 3++
-- [ ] MDW++
-- [ ] Live up to your standards
+- [x] EO Global sprint review
+	- [x] Offline
+	- [x] Migrate the sandbox mkt-related data structure to prod
+- [x] EP: wave 3
+- [x] MDW++
+- [x] Live up to your standards
 ### 4/6
-- [ ] EO minimal work: codebase for mel?
-- [ ] EP: wave 3++
-- [ ] MDW++
-- [ ] Live up to your standards
+- [x] EO minimal work: `global-hubspot` dev (create a master plan)
+- [x] EP: clean up + review the draft PR
+- [x] MDW++
+- [x] Live up to your standards
 ### 5/6
-- [ ] EO minimal work: contingencies
-- [ ] Bragdoc
-- [ ] EP: refresh BACKLOG, cut the noise & grade the codebase
-- [ ] MDW++
-- [ ] Live up to your standards
+- [x] EO minimal work: close ALL open issues (except for #21)
+	- [x] Request Altai prod access for the rest of the team
+	- [x] Merge #15 into `dev`
+- [x] Bragdoc
+- [x] EP: next
+- [x] MDW++
+- [x] Live up to your standards
 ### 6/6
-- [ ] Perfect dive start + 500m with paddles
-- [ ] Groceries
-- [ ] Clean the mousepad & blanket & bathroom
-- [ ] Remind [the bonus](https://applink.larksuite.com/client/message/link/open?token=AmiZVc0jwEAfagZW2xIADtw%3D)
-- [ ] EP++
-- [ ] MDW++
-- [ ] Live up to your standards
+- [x] Perfect dive start + 500m with paddles
+- [x] Groceries
+- [x] Clean the mousepad & blanket & bathroom
+- [x] EP++
+- [x] MDW++
+- [x] Live up to your standards
 ### 7/6
 - [ ] EP++: resolve [backlog](#backlog)
 - [ ] Antifragile note
@@ -72,16 +73,58 @@
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
 - EO:
-	- [ ] Altai ⇌ HubSpot middleware: finish the mkt sync
-	- [ ] Create simple prototype + full plan to sync events from Wix to Hivebrite for EO Vietnam
-	
+	- [ ] Altai ⇌ HubSpot prod: finish the mkt sync
+	- [ ] Resolve conflicts and merge #22
+	- [ ] Install `mattpocock` skills on the repo and run `/tdd` once you're done with the issues
+	- [ ] Refresh `README.md` by using the `/understand` skill
+	- [ ] Extract the general rules from `file.md` for `global-hubspot`
+	- [ ] Setup CI/CD workflow
 - EP: 
 	- [x] Optimize `CLAUDE.md` with Opus Max & `/react-router-framework-mode` skill + antifragile software architecture conventions
-	- [ ] E2E test setup for happy paths (paths that are critical to the core features of the app). No flaky, noisy, and implementation detail tests. Tests must be meaningful and guarantee no regressions for any code change. Refresh the skills from source before calling them.	
-	- [ ] How many CCU (approximately) can the app withstand before noticeable perf degradation shows up?
-	- [ ] Last vuln & high ROI perf bottlenecks scan with `gpt-5.5-xhigh`. Perform a via negativa approach if you see fit. 
-	- [ ] Run `/improve-codebase-architecture` with gpt-5.5-xhigh
-	- [ ] Grade the codebase out of 10 for enterprise-grade
+	- [x] E2E test setup for happy paths (paths that are critical to the core features of the app). No flaky, noisy, and implementation detail tests. Tests must be meaningful and guarantee no regressions for any code change. Refresh the skills from source before calling them.	
+	- [ ] How many CCU (approximately) can the app withstand before noticeable perf degradation shows up? Maybe set up a `k6/artillery` run against staging with the two profiles that matter — steady learning (nav + complete-lesson) and checkout burst?
+	- [x] Last vuln & high ROI perf bottlenecks scan with `gpt-5.5-xhigh`. Perform a via negativa approach if you see fit. 
+	- [ ] Run `/improve-codebase-architecture` and refer to the `docs\plans\architectural-deepening-grill.md` file to follow this prompt AFTER closing #131 & #135:
+		```
+		Architecture session: re-open the grill loop per docs/plans/architectural-deepening-grill.md.
+
+  Context: Issues #126–#135 all shipped and closed (waves 1–3 + HITL smokes done). The grill
+  loop closed 2026-05-22 with one deferred target — candidate #5 (asset-tracking / editor-state
+  rename) — gated on #133+#134 shipping. That trigger has fired (#133 Wave 1, #134 Wave 2
+  commit 4c9e81e). Re-scope candidate #5 now.
+
+  Steps — follow the doc's own "Re-opening the grill loop (procedure)" section:
+
+  1. Read docs/plans/architectural-deepening-grill.md in full — especially "Candidate #5 —
+     Asset-tracking / editor-state rename (deferred)", the rejected-design history, the
+     leave-alone verdicts, and the friction-undercount lessons. If that file, CONTEXT.md, or
+     any docs/adr/* is missing from the tree, HALT — do not re-create docs.
+  2. Invoke the improve-codebase-architecture skill.
+  3. Re-walk the post-#134 reality first — do NOT design from the doc's pre-#4 framing (doc
+     itself warns it may be obsolete). Read app/lib/content-items.ts and
+     app/lib/content-item-editor-lifecycle.ts as they exist NOW. Grep for the leftover
+     surface: orphan-detection helpers, FormData builder, normalisation helpers,
+     encodeTusMetadataValue. Every prior grill undercounted friction — grep before designing.
+  4. Run the deletion test on what remains. Then decide:
+     a. Still two tangled concerns with real friction → lock a candidate: draft 3 design
+        shapes spanning the design space (interface, impl sketch, test strategy, call-site
+        before/after, depth/locality/leverage tradeoffs), then grill me with multi-option
+        questions until locked. Slice into tracer-bullet issues via the to-issues skill
+        (labels: enhancement,ready-for-agent).
+     b. Too small to justify a grill → mark candidate #5 dead in the doc with one sentence
+        of real reasoning. No issues, no ADR.
+  5. Either way, write back to architectural-deepening-grill.md: new dated session delta +
+     update the deferred-candidate state. While there, trim the stale "Start here" /
+     implementation-order section (all #126–#135 shipped) — keep rejected-design history,
+     leave-alone verdicts, and the re-open procedure.
+  6. CONTEXT.md only if a new DOMAIN term emerged (helper names don't count). ADR only if
+     real re-litigation risk — never fabricate rationale.
+  7. Constraints: ~/ imports only, no any/!/as casts. Before done: bun typecheck THEN
+     bun run test:run — sequential, never parallel (Windows jsdom false-timeout). Commit
+     conventional + gitmoji on resolve-issues; do not open a staging PR unless I ask.
+		```
+	- [ ] Re-run the grading prompt
 	- [ ] Optimize `CLAUDE.md` & `BACKLOG.md` once again with Opus Max based on the new architecture.
-	- [ ] Update the master `README.md` to give an overview of how to navigate around the codebase, which skills to use when encountering a bug and to create new features. Export an html file to visualize it.
+	- [ ] Update the master `README.md` (with the `/understand` skill) to give an overview of how to navigate around the codebase, which skills to use when encountering a bug and to create new features. Export an html file to visualize it
+	- [ ] Setup CI/CD workflow
 	- [ ] Set up YOUR bank account (MBBank or BIDV) for PayOS Prod

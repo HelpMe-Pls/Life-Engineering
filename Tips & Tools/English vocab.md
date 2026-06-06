@@ -632,6 +632,8 @@ perturb (v): bother, disturb, unsettle, concern, pester
 
 ==subsidy== (n): a grant or gift of money (from the government) 
 
+alimony (n): financial support paid to an ex-spouse after a divorce, designed to help the lower-earning spouse maintain their standard of living
+
 ==endow== (v): gift, bless, equip, provide, empower
 
 stalwart (adj-n): courageous, intrepid, valiant, powerful, advocate, activist
