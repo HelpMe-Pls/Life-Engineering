@@ -7,8 +7,53 @@
 >I'm not gonna let this slide until we get it resolved, or at least have a date to work toward :-)
 ---
 # EP
+> [!important] For prompts
+> Remove line clamps so that every bullet/paragraph is one logical line, and the text reflows correctly in any input box
 ## Next
-- Run /to-issues docs/plans/2026-06-06-audit-remediation.md  → /triage → dispatch BACKLOG item 9 + Slice 1 AFK → Resolve #131 & #135 + PayOS staging webhook → let the slice train run 3 - 4 - 2 - 5 - 8 - 9 - 6 - 7.
+- Run /to-issues docs/plans/2026-06-06-audit-remediation.md  → /triage → amend Slice 2 (with the prompt below) → dispatch #153 - #154 (with the prompt below) → let the slice train run #155 - #156 - #157 - #158 - #160 - #159 (with the prompt below) → Staging PR & run the migration → HITL for #131 & #135 → Re-open the grill loop, folding in BACKLOG item 10 (#146 P1–P8)
+- [ ] Slice train prompt:
+```
+Execute the audit-remediation slice train SEQUENTIALLY on the `resolve-issues` branch, in this exact order: #155 → #156 → #157 → #158 → #160 → #159. One item must be fully committed, green, pushed, checked off, and closed before the next begins. Commits land on `resolve-issues` only: no staging PR, no deploys, no remote D1 — remote migrations and the staging PR happen in a later session. If a referenced doc or issue is missing, halt and report — do not re-create it. General rule: if any spec premise fails to verify against the working tree, stop at the last green checkpoint and report findings — do not improvise around the spec.
+  
+  **Pre-flight (halt and report on any failure, without touching code or GitHub):** `git branch --show-current` prints `resolve-issues`; `git status` is clean; `git merge-base --is-ancestor 3743d1a HEAD` exits 0 (the train builds on #153/#154's work, both already implemented, pushed, and closed). Record the baseline test count from `bun run test:run` (expected 203 tests / 22 files at `3743d1a`; a higher starting count is fine if HEAD has moved past `3743d1a` — only a red suite halts) so the final report's before/after is measured, not recalled. Then run the E2E baseline: `bun run test:e2e` (operating manual: `e2e/README.md`; one-time Clerk setup already done per #147) — this is the only automated coverage of the client→server content-item create seam #154 changed; never run Playwright and Vitest concurrently; the harness resets the local dev DB (recoverable later with `bun db:seed`); a red E2E baseline is a pre-existing break from the #153/#154 base — halt and report it, it is not the train's to fix.
+
+  **gh quirk (non-negotiable):** chain EVERY gh command as `gh auth switch --user HelpMe-Pls && gh <command>` — same invocation, every time; the active account silently flips back between shell invocations.
+
+  ## Ground rules
+  - The authoritative spec for each item is its GitHub issue body + the Agent Brief comment (`gh auth switch --user HelpMe-Pls && gh issue view <N> --comments`). The briefs carry explicit Out-of-scope boundaries — honor them; do not gold-plate. #157's body is the amended spec (2026-06-07 amendment: registry scoped to lesson kinds only + client/server delete bifurcation); its amendment comment carries the verification evidence.
+  - Function names are authoritative over the `1f81f07`-pinned file:line anchors — #154 (`355773d`) already moved several of them.
+  - Gates after EACH item, in order, never in parallel: `bun typecheck` → `bun run test:run` → `bun run build:staging`. Do not proceed past a failure.
+  - Use the `tdd` skill for every code slice (failing tests first). Authorization and data-integrity tests are workers-pool D1-backed tests (`*.workers.test.ts`) — infra from #153 (`8b17de0`), NOT fake-db unit tests. Worked examples to copy: `app/lib/queries/lessons.server.workers.test.ts` (query-level gate tests, self-seeding with unique key suffixes — the pool has no isolated storage) and
+  `app/routes/api/r2-upload.workers.test.ts` (action-level tests: `vi.mock` ONLY `~/lib/route-helpers.server`'s `requireInstructor` to resolve the Instructor from seeded D1 by clerkId; D1 + miniflare R2 stay real; action/loader args need `{ request, url, params, pattern, context }` with a `RouterContextProvider`; the CF_STREAM-unconfigured 500 fail-fast doubles as the "owner passed the gate" signal with zero outbound fetches).
+  - D1 migrations (#157, and any other item that ships one): generate against `local.db` only per `drizzle.config.ts`; NEVER `db:push`; NEVER touch remote D1 in this session.
+  - BACKLOG edits required by an item's acceptance criteria land as a small separate `docs(backlog)` commit referencing the code commit's SHA.
+  - Exclusive lock: while this session runs, nothing else touches `package.json` / `bun.lock` / `vitest.config.ts`. #156 mutates the lockfile — assume no concurrent mutations and do not spawn any parallel work that mutates them.
+
+  ## Per-item checkpoint (repeat for every issue, in order — do not start the next item before completing all five steps)
+  1. Gates green; the mandated commit message from the issue's AC used verbatim; `git status` clean.
+  2. Push: `git push origin resolve-issues` — push BEFORE commenting, because comments cite SHAs that only resolve on GitHub once pushed.
+  3. Check off the issue's Acceptance criteria: fetch the body verbatim (`gh auth switch --user HelpMe-Pls && gh issue view <N> --json body -q .body > /tmp/issue-<N>.md`), flip ONLY the `- [ ]` → `- [x]` markers of criteria verified first-hand against the working tree and commits, leave every other byte identical, then `gh auth switch --user HelpMe-Pls && gh issue edit <N> --body-file /tmp/issue-<N>.md` and re-view to confirm the boxes render checked.
+  4. Close the issue: `gh auth switch --user HelpMe-Pls && gh issue close <N> --comment "<body>"` where the comment starts with `> *This was generated by AI during implementation.*`, lists commit SHA(s), gate results, test delta, and one evidence line per criterion. Owner-directed: these close NOW, ahead of the staging merge — this deliberately overrides the issue footers' close-after-merge note (same pattern as the already-closed #153/#154); cite the override in the comment.
+  5. Only then start the next item.
+  
+  ## Per-item couplings (the issues remain authoritative; these are cross-item facts only)
+  - **#155 (S3 Progress-write gate):** first item; its authorization tests use the workers-pool patterns above.
+  - **#156 (S4 Clerk deps refresh):** lockfile mutation — confirm what bun actually resolves at install time; if satisfying the refresh would force a toolchain bump beyond the issue's scope, STOP and report. If bindings or generated types drift, re-run `bun typegen` and commit the regenerated `worker-configuration.d.ts` with the item (it is checked in; a stale copy re-dirties the tree on every typecheck).
+  - **#157 (S2 Asset registry — amended):** registry covers lesson kinds ONLY (`course-thumbnail` is never registered — server-managed, no draft→attached lifecycle); client-facing deletes resolve refs only through the registry (unknown ref → 404 envelope, foreign → 403), server-derived deletes bypass the registry gate with an `// INFO:` tag. Resolve the interim `// NOTE:` in `app/routes/api/stream-status.ts` by replacing the content-item lookup with registry resolution (draft uids become resolvable again — the interim 404-until-first-save behavior ends here). The #154 tests that encode the interim semantics — the draft-uid cases in `app/routes/api/stream-status.workers.test.ts` and the `findLessonIdByStreamUid` tests in `app/lib/queries/lessons.server.workers.test.ts` — must be UPDATED to the registry semantics (an
+  unregistered uid → 404, a draft registry row → resolvable), not deleted; do not lose the cross-Instructor 403 coverage. Per the amendment, also add the extra #135 smoke box (client `DELETE /api/r2-upload` with a known thumbnail r2Key → 404 envelope) in the same `docs(backlog)` commit as the item's other BACKLOG edits.
+  - **#158 (S5 r2-serve indexes):** if shipped as a D1 migration, the local-only migration rule applies.
+  - **#160 then #159 (merged dispatch units):** each merged issue preserves DISTINCT commits per original concern (per the triage decision: #160 = S8+S9, #159 = S6+S7) — do not squash the concerns into one commit; #159 runs last in the train.
+
+  ## Partial failure
+  If an item halts (STOP condition, unresolvable spec premise, or a gate that cannot be made green within the issue's scope), still complete the full five-step checkpoint for every finished item, comment the blocker findings on the halted issue (same attribution line; leave its boxes unchecked and the issue OPEN), leave all later train items untouched, and stop the train — later items may assume earlier rewrites, so do not skip ahead.
+
+  ## Close-out (after the last completed item)
+  Run the post-train E2E pass: `bun run test:e2e` (same caveats: never concurrently with Vitest; resets the local dev DB). If red, do NOT start ad-hoc fixes or un-close issues — report the failing journey/spec with suspect item(s) prominently in the final report as a blocker for the staging PR. Finish with `bun db:seed` so the local dev DB is left usable.
+
+  ## Final report
+  Per item: commit SHA(s), gate results, test count before/after, deviations from the issue spec, every `// NOTE:` added or resolved, BACKLOG edits made. Then: E2E baseline and post-train results, confirmation the tree is clean and pushed, which issues closed, and which (if any) remain open with their blockers.
+```
+
 - Run this with `ultracode`:
 ```
 Resolve the #146 parked architecture matrix (P1–P8) to closure: one judgment session that decides each item, updates the contract docs, executes only the doc/config-shaped consequences, and seeds everything code-shaped as grabbable issues.

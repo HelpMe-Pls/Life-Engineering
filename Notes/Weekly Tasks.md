@@ -21,49 +21,51 @@
 - Connect the dots.
 - Barbell strategy.
 ---
-### 1/6
-- [x] EO: Wrap up the Altai sync to fill in the segments
-- [x] EP: Close #127
-- [x] MDW++
-- [x] Live up to your standards
-### 2/6
-- [x] EO weekly report & sprint goals update
-	- [x] Verify the Altai → HubSpot wf to include mkt props
-	- [x] Remind them about the Altai prod keys & what to not touch in HubSpot prod
-- [x] EP: Wave 2++
-- [x] MDW++
-- [x] Live up to your standards
-### 3/6
-- [x] EO Global sprint review
-	- [x] Offline
-	- [x] Migrate the sandbox mkt-related data structure to prod
-- [x] EP: wave 3
-- [x] MDW++
-- [x] Live up to your standards
-### 4/6
-- [x] EO minimal work: `global-hubspot` dev (create a master plan)
-- [x] EP: clean up + review the draft PR
-- [x] MDW++
-- [x] Live up to your standards
-### 5/6
-- [x] EO minimal work: close ALL open issues (except for #21)
-	- [x] Request Altai prod access for the rest of the team
-	- [x] Merge #15 into `dev`
-- [x] Bragdoc
-- [x] EP: next
-- [x] MDW++
-- [x] Live up to your standards
-### 6/6
-- [x] Perfect dive start + 500m with paddles
-- [x] Groceries
-- [x] Clean the mousepad & blanket & bathroom
-- [x] EP++
-- [x] MDW++
-- [x] Live up to your standards
-### 7/6
+### 8/6
+- [ ] EO: Close #19 & run the Fallow prompt
+	- [ ] Create a prompt to help you close #20, then close it
+	- [ ] Remind them about the Altai prod keys & what to not touch in HubSpot prod
+- [ ] EP: run the slice train prompt
+- [ ] MDW++
+- [ ] Live up to your standards
+### 9/6
+- [ ] EO weekly report & sprint goals update
+	- [ ] Setup the Altai → HubSpot wf in prod
+- [ ] EP: Merge the PR into `staging` & run the migration
+- [ ] MDW++
+- [ ] Live up to your standards
+### 10/6
+- [ ] EO Global sprint review
+	- [ ] Altai prod sync++
+	- [ ] Refine `global-hubspot`
+- [ ] EP: HITL
+- [ ] Offline?
+- [ ] MDW++
+- [ ] Live up to your standards
+### 11/6
+- [ ] EO minimal work: Refine `global-hubspot`/`eo-vietnam
+- [ ] EP: HITL++
+- [ ] MDW++
+- [ ] Live up to your standards
+### 12/6
+- [ ] EO minimal work: close ALL open issues
+	- [ ] Wrap up the Altai prod sync
+- [ ] Bragdoc
+- [ ] EP: Re-grill & close #146
+- [ ] MDW++
+- [ ] Live up to your standards
+### 13/6
+- [ ] Perfect dive start + 500m with paddles
+- [ ] Groceries
+- [ ] Splurge if you earned it (i.e. done EP HITL & confirmed `global-hubspot` MVP)
+- [ ] EP++
+- [ ] MDW++
+- [ ] Live up to your standards
+### 14/6
 - [ ] EP++: resolve [backlog](#backlog)
 - [ ] Antifragile note
 - [ ] Weekly planning
+- [ ] MDW++
 - [ ] Live up to your standards
 
 ---
@@ -74,10 +76,74 @@
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
 - EO:
 	- [ ] Altai ⇌ HubSpot prod: finish the mkt sync
-	- [ ] Resolve conflicts and merge #22
-	- [ ] Install `mattpocock` skills on the repo and run `/tdd` once you're done with the issues
+	- [x] Resolve conflicts and merge #22
+	- [x] Install `mattpocock` skills on the repo and run `/tdd` once you're done with the issues
 	- [ ] Refresh `README.md` by using the `/understand` skill
-	- [ ] Extract the general rules from `file.md` for `global-hubspot`
+		- [ ] /understand website --auto-update
+		- [ ] /understand-dashboard
+		- [ ] Commit & open PR into `dev` and merge it
+		- [ ] Read the `next-steps.md` and follow its instructions
+		- [ ] /understand-onboard (optional)
+		- [ ] /understand-chat (optional)
+	- [x] Extract the general rules from `file.md` for `global-hubspot`
+	- [ ] After #19 closed:
+		```
+		Adopt Fallow (deterministic dead-code/duplication analysis) in website/ as a
+  one-session, one-PR tooling task. Issue #19 is closed and merged to dev; #20
+  has not started. This task is evidence-tooling only — it must NOT expand into
+  a cleanup crusade, CI work, or gating.
+
+  Source of truth: next-steps.md. Honor .claude/rules/global-engineering.md and
+  the website/CLAUDE.md engineering contract. Branch off dev; I approve pushes
+  and the PR merge. Ask me one question at a time with a recommended default.
+
+  Steps, in order:
+
+  1. Create a tracking issue: "Adopt Fallow static analysis (evidence-only, no
+     gates)" — category enhancement, state ready-for-agent. Reference it in
+     commits.
+
+  2. From website/: npm install --save-dev --save-exact fallow
+     (pin exact — upstream releases multiple times a day).
+
+  3. Before running ANY fallow command, read node_modules/fallow/skills/fallow/
+     SKILL.md and every file in its references/ directory completely, and obey
+     its agent rules: always `--format json --quiet 2>/dev/null` with `|| true`;
+     never run `fallow watch`; never `fix --yes` anything whose --dry-run I have
+     not seen.
+
+  4. Run `fallow dead-code` and `fallow dupes` (JSON) and triage every finding
+     into exactly three buckets:
+     a. FRAMEWORK FALSE POSITIVES — Next.js server actions exported from
+        actions.ts files (consumed via form action= props) and React Email
+        template default exports under lib/notifications/templates/ (consumed
+        via @react-email/render). Fix via entryPoints in .fallowrc.json — not
+        inline suppressions.
+     b. KNOWN-FALSE DEPENDENCY FINDINGS — @mdx-js/loader and @mdx-js/react
+        (wired through next.config.ts) and react-dom (bundled by Next). Ignore
+        in config with an INFO comment; never uninstall them.
+     c. GENUINELY DEAD — delete only what is trivially safe with tests green.
+        Skip everything under app/prototype/ (removed wholesale in #20). List
+        every remaining candidate in the PR description; do not chase them.
+
+  5. Establish the baseline per SKILL.md so future runs report new issues only,
+     and add a package.json script "audit:dead" = the fallow audit invocation,
+     so reviewers never invoke the binary ad hoc.
+
+  6. Add one short paragraph to website/CLAUDE.md (verification section):
+     `npm run audit:dead -- --base dev` is review EVIDENCE on every PR —
+     new-only findings, never a blocking gate. Record the adoption + known
+     false-positive patterns in next-steps.md in 3-4 lines.
+
+  7. FORBIDDEN in this task: `fallow hooks install` (git or agent), any GitHub
+     Actions/CI wiring, registering the MCP server, `fallow license` anything,
+     `fallow security` as a substitute for #20's security verification, and any
+     attempt to reduce the duplication percentage.
+
+  8. Verify per the contract from website/ (typecheck, lint, test, build), commit
+     conventional+gitmoji, open the PR into dev, and report: counts per bucket,
+     what was configured vs deleted, and the one command reviewers run from now on.
+		```
 	- [ ] Setup CI/CD workflow
 - EP: 
 	- [x] Optimize `CLAUDE.md` with Opus Max & `/react-router-framework-mode` skill + antifragile software architecture conventions

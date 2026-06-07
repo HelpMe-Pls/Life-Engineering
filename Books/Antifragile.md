@@ -36,4 +36,61 @@
 - Humans tend to do better with acute than with chronic stressors, particularly when the former are followed by ample time for recovery, which allows the stressors to do their jobs as messengers.
 - Everything alive needs stressors, but not all machines need to be left alone.
 - If you are alive—something deep in your soul likes a certain measure of randomness and disorder.
-- Pg.66
+- Some parts on the inside of a system may be required to be fragile in order to make the system antifragile as a result.
+- The gene pool takes advantage of shocks to enhance its fitness.
+- Post-event adaptation, no matter how fast, would always be a bit late.
+- Predictive systems cause fragility. When you want deviations, and you don't care about the possible dispersion of outcomes that the future can bring, since most will be helpful, you are antifragile.
+- Someone who has made plenty of errors—though never the same error more than once—is more reliable than someone who has never made any.
+- Antifragility of the higher level may require the fragility—and sacrifice—of the lower one.
+- They want local, but not global, overconfidence.
+- Some class of rash, even suicidal, risk taking is healthy for the economy—under the condition that not all people take the same risks and that these risks remain small and localized.
+- What does not kill me kill others. What did not kill me did not make me stronger, but spared me because I am stronger than others; but it killed others and the average population is now stronger because the weak are gone.
+- "Volatility" comes from *volare*, "to fly" in Latin.
+- for a self-employed person, a small (nonterminal) mistake is information, valuable information, one that directs him in his adaptive approach.
+- Avoidance of small mistakes makes the large ones more severe.
+- Our emotional energy is blind to probability.
+- The size of the unit may matter more than the system.
+- Stability is achieved by managing noise, having a mechanism for letting it run its natural course, not by minimizing it.
+- Things should be handled by the smallest possible unit that can manage them with efficacy.
+- You cannot double your weight in a single day, not even a month, not possibly a year—but you can double your net worth or lose half of it in a single moment.
+- We saw that the world is too random and unpredictable to base a policy on visibility of the future. What survives comes from the interplay of some fitness and environmental conditions.
+- When a currency never varies, a slight, very slight move makes people believe that the world is ending. Injecting some confusion stabilizes the system.
+- A "weak hand" is clearly someone who is fragile but doesn't know it and is lulled by a false sense of security. When many such weak hands rush to the door, they collectively cause crashes.
+- Remember that volatility is information. One of life's packages: no stability without volatility.
+- Interventionism depletes mental and economic resources; it is rarely available when it is needed the most.
+- Over-intervention comes with under-intervention.
+- It's much easier to sell "Look what I did for you" than "Look what I avoided for you".
+- Nature is less error-prone than scientists. Human may have an instinct to procrastinate only when no life is in danger.
+- One should lead a life in which procrastination is good, as a naturalistic-risk-based form of decision making.
+- Someone who procrastinates is not irrational; it is his environment that is irrational.
+- Noise is what you are supposed to ignore, signal is what you need to heed.
+- Access to data increases intervention.
+- The best solution is to only look at very large changes in data or conditions, never at small ones.
+- Significant signals have a way to reach you.
+- The best way to mitigate interventionism is to ration the supply of information, as naturalistically as possible.
+- It is the suppressed risk in the statistical "tails" that matters—not the failure to see the last grain of sand.
+- The focus is wrong even if the logic is comforting. It is the system and its fragility, not events, that must be studied.
+- Those, because of their fragility, need to predict with more, a lot more, accuracy.
+- Antifragility is necessarily how things move forward under the mother of all stressors, called time.
+- Inject some randomness into your schedule by never deciding on the next destination until you had spent some time in the first one.
+- Excess wealth, if you don't need it, is a heavy burden.
+- A system based on verbal warnings will be dominated by non-risk0taking-babblers.
+- Stay robust to how others treat you.
+- Someone who predicts will be fragile to prediction errors. An overconfident pilot will eventually crash the plane.
+- Possessions make us worry about downside, thus acting as a punishment as we depend on them.
+- I would go through the mental exercise of assuming every morning that the worst possible thing had actually happened—the rest of the day would be a bonus.
+- Actually the method of mentally adjusting "to the worst" had advantages way beyond therapeutic, as it made me take a certain class of risks for which the worst  case is clear and unambiguous, with limited and known downside.
+- Things can be taken away from us—not good deeds and acts of virtue.
+- Wealth is the slave of the wise man and master of the fool.
+- If you have more to lose than to benefit from events of fate, there is an asymmetry, and not a good one.
+- The first step toward antifragility consists in first decreasing downside, rather than increasing upside; that is, by lowering exposure to negative Black Swans and letting natural antifragility work by itself.
+- If something is fragile, its risk of breaking makes anything you do to improve it or make it "efficient" inconsequential unless you first reduce that risk of breaking.
+- Economic growth with fragilities is not to be called growth, something that has not yet been understood by governments.
+- Medium risks can be subjected to huge measurement errors.
+- Overcompensation, to work, requires some harm and stressors as tools of discovery.
+- Every line you write under someone else's standards, like prostitution, kills a corresponding segment deep inside.
+- If you dislike someone, leave him alone or eliminate him; don't attack him verbally.
+- make sure that the probability of the unacceptable (i.e,. the risk of ruin) is nil.
+- Stoicism is the domestication, of emotions, so is the barbell a domestication, not the elimination, of uncertainty.
+- An agent does not move except out of intention for an end.
+- Pg.170
