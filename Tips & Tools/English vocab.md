@@ -694,7 +694,9 @@ fanfare (n): showy, a short loud piece of music that is played to celebrate
 
 ==interpolation== (n): estimation, value approximation, editorial addition, aside
 
-extrapolate (v):
+premonition (n): a feeling that something is going to happen, especially something unpleasant
+
+extrapolate (v): project, forecast, to estimate something or form an opinion about something, using the facts that you have now and that are relevant to one situation and supposing that they will be relevant to the new one
 
 ==tacit== (adj): implied, implicit
 
@@ -1538,3 +1540,5 @@ contra (preposition): against, in opposition to
 rivulet (n): liquid (sweat, tears, or rain) running down a surface in tiny, winding streams
 
 epidemiology (n): public health, disease pattern analysis, outbreak investigation
+
+gauche (adj: shy or uncomfortable when dealing with people and often saying or doing the wrong thing

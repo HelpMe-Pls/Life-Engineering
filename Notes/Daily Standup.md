@@ -1,8 +1,11 @@
-- Last Friday was I fixing the onboarding and authentication flow for the global-hubspot app
-- Today I'm gonna keep working on that and implement the rest of the plan.
+> [!important] A mindful reminder
+> If you're still getting paid each month + have access to AI, you're still winning. EVERYTHING ELSE is noise.
+
+- Last Friday I simplified the app by removing the approval flow and adding the region-to-chapter mapping to improve the UX
+- Today I'm gonna have the team QA and test it on our own on behalf of Melbourne. I'll also resume the Altai sync as we have everything we need for that.
 
 > [!warning] Chewsday ping
->Just flagging again: there's a contract violation around SHUI owed since I came on full-time.
+>Just flagging again: there's a contract violation around SHUI owed ever since I came on full-time.
 >Don't get me wrong, I'm incredibly grateful for this job, but baseline expectations need to be honored.
 >I'm not gonna let this slide until we get it resolved, or at least have a date to work toward :-)
 ---
@@ -10,48 +13,34 @@
 > [!important] For prompts
 > Remove line clamps so that every bullet/paragraph is one logical line, and the text reflows correctly in any input box
 ## Next
-- Run /to-issues docs/plans/2026-06-06-audit-remediation.md  → /triage → amend Slice 2 (with the prompt below) → dispatch #153 - #154 (with the prompt below) → let the slice train run #155 - #156 - #157 - #158 - #160 - #159 (with the prompt below) → Staging PR & run the migration → HITL for #131 & #135 → Re-open the grill loop, folding in BACKLOG item 10 (#146 P1–P8)
-- [ ] Slice train prompt:
+- ~~Run /to-issues docs/plans/2026-06-06-audit-remediation.md  → /triage → amend Slice 2 (with the prompt below) → dispatch #153 - #154 (with the prompt below) → let the slice train run #155 - #156 - #157 - #158 - #160 - #159 (with the prompt below) → Staging PR & run the migration~~ → HITL for #131 & #135 → Close #161 → Re-open the grill loop, folding in BACKLOG item 10 (#146 P1–P8)
+- [ ] Close #161:
 ```
-Execute the audit-remediation slice train SEQUENTIALLY on the `resolve-issues` branch, in this exact order: #155 → #156 → #157 → #158 → #160 → #159. One item must be fully committed, green, pushed, checked off, and closed before the next begins. Commits land on `resolve-issues` only: no staging PR, no deploys, no remote D1 — remote migrations and the staging PR happen in a later session. If a referenced doc or issue is missing, halt and report — do not re-create it. General rule: if any spec premise fails to verify against the working tree, stop at the last green checkpoint and report findings — do not improvise around the spec.
-  
-  **Pre-flight (halt and report on any failure, without touching code or GitHub):** `git branch --show-current` prints `resolve-issues`; `git status` is clean; `git merge-base --is-ancestor 3743d1a HEAD` exits 0 (the train builds on #153/#154's work, both already implemented, pushed, and closed). Record the baseline test count from `bun run test:run` (expected 203 tests / 22 files at `3743d1a`; a higher starting count is fine if HEAD has moved past `3743d1a` — only a red suite halts) so the final report's before/after is measured, not recalled. Then run the E2E baseline: `bun run test:e2e` (operating manual: `e2e/README.md`; one-time Clerk setup already done per #147) — this is the only automated coverage of the client→server content-item create seam #154 changed; never run Playwright and Vitest concurrently; the harness resets the local dev DB (recoverable later with `bun db:seed`); a red E2E baseline is a pre-existing break from the #153/#154 base — halt and report it, it is not the train's to fix.
+Implement GitHub issue #161 (image-upload magic-byte validation, audit A3) end-to-end and close it. This is a single self-contained security enhancement — no paid Cloudflare and no manual QA are needed (the whole thing is verifiable via the workers-pool Vitest project against miniflare R2).
 
-  **gh quirk (non-negotiable):** chain EVERY gh command as `gh auth switch --user HelpMe-Pls && gh <command>` — same invocation, every time; the active account silently flips back between shell invocations.
+  PRE-FLIGHT (halt and report on failure):
+  - Confirm PR #162 (resolve-issues → staging) has MERGED. #161 modifies `storeFile`, which the #157 Asset-registry work reshaped (`storeFileOwned`, the `ASSET_KINDS` catalog with its `registry` property). You MUST work on a base that already contains that registry code. Branch a feature branch off the up-to-date `staging` (e.g. `fix/161-image-magic-bytes`). If #162 has NOT merged yet, STOP and say so.
+  - `git status` clean; record the baseline `bun run test:run` count.
 
-  ## Ground rules
-  - The authoritative spec for each item is its GitHub issue body + the Agent Brief comment (`gh auth switch --user HelpMe-Pls && gh issue view <N> --comments`). The briefs carry explicit Out-of-scope boundaries — honor them; do not gold-plate. #157's body is the amended spec (2026-06-07 amendment: registry scoped to lesson kinds only + client/server delete bifurcation); its amendment comment carries the verification evidence.
-  - Function names are authoritative over the `1f81f07`-pinned file:line anchors — #154 (`355773d`) already moved several of them.
-  - Gates after EACH item, in order, never in parallel: `bun typecheck` → `bun run test:run` → `bun run build:staging`. Do not proceed past a failure.
-  - Use the `tdd` skill for every code slice (failing tests first). Authorization and data-integrity tests are workers-pool D1-backed tests (`*.workers.test.ts`) — infra from #153 (`8b17de0`), NOT fake-db unit tests. Worked examples to copy: `app/lib/queries/lessons.server.workers.test.ts` (query-level gate tests, self-seeding with unique key suffixes — the pool has no isolated storage) and
-  `app/routes/api/r2-upload.workers.test.ts` (action-level tests: `vi.mock` ONLY `~/lib/route-helpers.server`'s `requireInstructor` to resolve the Instructor from seeded D1 by clerkId; D1 + miniflare R2 stay real; action/loader args need `{ request, url, params, pattern, context }` with a `RouterContextProvider`; the CF_STREAM-unconfigured 500 fail-fast doubles as the "owner passed the gate" signal with zero outbound fetches).
-  - D1 migrations (#157, and any other item that ships one): generate against `local.db` only per `drizzle.config.ts`; NEVER `db:push`; NEVER touch remote D1 in this session.
-  - BACKLOG edits required by an item's acceptance criteria land as a small separate `docs(backlog)` commit referencing the code commit's SHA.
-  - Exclusive lock: while this session runs, nothing else touches `package.json` / `bun.lock` / `vitest.config.ts`. #156 mutates the lockfile — assume no concurrent mutations and do not spawn any parallel work that mutates them.
+  gh quirk (non-negotiable): the active gh account silently flips back between shell invocations, and a GH_TOKEN env var blocks account switching.
+  Prefix EVERY gh call with: clear the token then switch — `$env:GH_TOKEN=$null; $env:GITHUB_TOKEN=$null; gh auth switch --user HelpMe-Pls && gh <command>` (PowerShell) or `unset GH_TOKEN GITHUB_TOKEN; gh auth switch --user HelpMe-Pls && gh <command>` (bash).
 
-  ## Per-item checkpoint (repeat for every issue, in order — do not start the next item before completing all five steps)
-  1. Gates green; the mandated commit message from the issue's AC used verbatim; `git status` clean.
-  2. Push: `git push origin resolve-issues` — push BEFORE commenting, because comments cite SHAs that only resolve on GitHub once pushed.
-  3. Check off the issue's Acceptance criteria: fetch the body verbatim (`gh auth switch --user HelpMe-Pls && gh issue view <N> --json body -q .body > /tmp/issue-<N>.md`), flip ONLY the `- [ ]` → `- [x]` markers of criteria verified first-hand against the working tree and commits, leave every other byte identical, then `gh auth switch --user HelpMe-Pls && gh issue edit <N> --body-file /tmp/issue-<N>.md` and re-view to confirm the boxes render checked.
-  4. Close the issue: `gh auth switch --user HelpMe-Pls && gh issue close <N> --comment "<body>"` where the comment starts with `> *This was generated by AI during implementation.*`, lists commit SHA(s), gate results, test delta, and one evidence line per criterion. Owner-directed: these close NOW, ahead of the staging merge — this deliberately overrides the issue footers' close-after-merge note (same pattern as the already-closed #153/#154); cite the override in the comment.
-  5. Only then start the next item.
-  
-  ## Per-item couplings (the issues remain authoritative; these are cross-item facts only)
-  - **#155 (S3 Progress-write gate):** first item; its authorization tests use the workers-pool patterns above.
-  - **#156 (S4 Clerk deps refresh):** lockfile mutation — confirm what bun actually resolves at install time; if satisfying the refresh would force a toolchain bump beyond the issue's scope, STOP and report. If bindings or generated types drift, re-run `bun typegen` and commit the regenerated `worker-configuration.d.ts` with the item (it is checked in; a stale copy re-dirties the tree on every typecheck).
-  - **#157 (S2 Asset registry — amended):** registry covers lesson kinds ONLY (`course-thumbnail` is never registered — server-managed, no draft→attached lifecycle); client-facing deletes resolve refs only through the registry (unknown ref → 404 envelope, foreign → 403), server-derived deletes bypass the registry gate with an `// INFO:` tag. Resolve the interim `// NOTE:` in `app/routes/api/stream-status.ts` by replacing the content-item lookup with registry resolution (draft uids become resolvable again — the interim 404-until-first-save behavior ends here). The #154 tests that encode the interim semantics — the draft-uid cases in `app/routes/api/stream-status.workers.test.ts` and the `findLessonIdByStreamUid` tests in `app/lib/queries/lessons.server.workers.test.ts` — must be UPDATED to the registry semantics (an
-  unregistered uid → 404, a draft registry row → resolvable), not deleted; do not lose the cross-Instructor 403 coverage. Per the amendment, also add the extra #135 smoke box (client `DELETE /api/r2-upload` with a known thumbnail r2Key → 404 envelope) in the same `docs(backlog)` commit as the item's other BACKLOG edits.
-  - **#158 (S5 r2-serve indexes):** if shipped as a D1 migration, the local-only migration rule applies.
-  - **#160 then #159 (merged dispatch units):** each merged issue preserves DISTINCT commits per original concern (per the triage decision: #160 = S8+S9, #159 = S6+S7) — do not squash the concerns into one commit; #159 runs last in the train.
+  AUTHORITATIVE SPEC: the issue body + the "## Agent Brief" comment. Fetch both: `gh issue view 161 --comments`. The Agent Brief is the contract; honor its Out-of-scope boundaries (image kinds only; no doc/audio sniffing; no content re-encoding; reuse the existing `invalid-mime` envelope; don't touch the allowed-MIME lists or the too-large/empty-file paths). Do NOT gold-plate.
 
-  ## Partial failure
-  If an item halts (STOP condition, unresolvable spec premise, or a gate that cannot be made green within the issue's scope), still complete the full five-step checkpoint for every finished item, comment the blocker findings on the halted issue (same attribution line; leave its boxes unchecked and the issue OPEN), leave all later train items untouched, and stop the train — later items may assume earlier rewrites, so do not skip ahead.
+  IMPLEMENTATION (use the tdd skill — red before green):
+  - The check belongs in `storeFile` (`app/lib/assets.server.ts`), on the path that handles the image kinds (`lesson-image`, `course-thumbnail`), gated off the `ASSET_KINDS` catalog — add a catalog property, never call-site special-casing (mirror how #157 added the `registry` property). Sniff the leading bytes of the buffer storeFile already reads for the R2 put; on mismatch return the existing `storeFailure(400, "invalid-mime",
+  …)` BEFORE any `env.STORAGE.put`. Signatures: PNG `89 50 4E 47 0D 0A 1A 0A`; JPEG `FF D8 FF`; GIF `47 49 46 38`; WEBP `52 49 46 46` @0 + `57 45 42 50` @8.
+  - Tests are workers-pool (`*.workers.test.ts`) against miniflare R2 — copy the pattern in `app/lib/assets.server.workers.test.ts` (seeds via drizzle, calls the storeFile family, asserts against real `env.STORAGE`). Cover: declared image/png with non-image bytes → `{ ok:false, status:400, reason:"invalid-mime" }` and NO object in R2; each real PNG/JPEG/GIF/WEBP signature → success; a non-image kind (lesson-file/lesson-audio) → unaffected.
 
-  ## Close-out (after the last completed item)
-  Run the post-train E2E pass: `bun run test:e2e` (same caveats: never concurrently with Vitest; resets the local dev DB). If red, do NOT start ad-hoc fixes or un-close issues — report the failing journey/spec with suspect item(s) prominently in the final report as a blocker for the staging PR. Finish with `bun db:seed` so the local dev DB is left usable.
+  GATES after the change, in order, sequential — never parallel (Windows jsdom/workers CPU-contention causes false 5s timeouts): `bun typecheck` → `bun run test:run` → `bun run build:staging`. Do not proceed past a failure. Honor CLAUDE.md: no `any` / `!` / `as Type`; `~/` alias only (no relative imports); `import type` for types.
 
-  ## Final report
-  Per item: commit SHA(s), gate results, test count before/after, deviations from the issue spec, every `// NOTE:` added or resolved, BACKLOG edits made. Then: E2E baseline and post-train results, confirmation the tree is clean and pushed, which issues closed, and which (if any) remain open with their blockers.
+  CLOSE-OUT (staging-targeted PRs never auto-close — close manually):
+  1. Commit (conventional + gitmoji `:name:` text-code, pick emoji by intent): e.g. `feat(assets): :lock: validate image-upload magic bytes against declared MIME (audit A3)`. Co-author footer: `Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>`.
+  2. Push the branch; open a PR to `staging` (body references #161 — no `Closes #N`, it won't fire on a staging PR).
+  3. Flip the issue's `- [ ]` AC boxes to `- [x]` for criteria verified first-hand (fetch body via `gh issue view 161 --json body -q .body`, edit only the markers, re-apply with `gh issue edit 161 --body-file`).
+  4. Close #161 with a comment that starts `> *This was generated by AI during implementation.*` and lists: commit SHA, the three gate results, test delta (before → after), and one evidence line per AC. Note the close is manual per the staging-PR rule.
+
+  If any spec premise fails to verify against the working tree, or the change can't be made green within the Brief's scope, STOP at the last green checkpoint and report — do not improvise around the spec.
 ```
 
 - Run this with `ultracode`:
@@ -329,7 +318,6 @@ State what you could not determine, what commands failed, what areas need deeper
 ```
 ---
 # Next big thing
-
 - [ ] Pivot `coffee-finder`
 - [ ] Brainstorm with AI for a true `antifragile` & `Fat Tony` (or at least robust) business model. Don't fall into the `green lumber fallacy`. Aim for something with limited losses and unlimited potential.
 	- Make sure that you're barbelled, whatever that means in your business.
@@ -346,17 +334,140 @@ State what you could not determine, what commands failed, what areas need deeper
 
 ## For The Old Infant
 
->[!danger] Refine with AI & ask for the payslip before sending
->
 ### Escalate with SHUI
->[!warning] Confirm with Minh Vu to see if his SHUI is covered
 
- - I expect you to be straight with me moving forward, and not play games with my compensation.
- - I can tolerate mistakes, but between this unannounced pay cut and the company actively breaching my contract by withholding my SHUI contributions for 7 months straight (that is seven consecutive pay cycles, 7 chances to make it right, just to be clear), this situation has become utterly unacceptable and completely unprofessional. 
- - I'm calling this out because it's obvious that this SHUI debt doesn't just affect me. Even the highest performers on our team (and former team members) are in the same boat. Given that there is clearly still budget to hire new people, leaving this debt unpaid is incredibly hard to justify.
- - Maybe you aren't aware of this, but you've been given far more grace for your own oversights than I ever received for being "inattentive," yet I am the one being penalized. The double standard here is glaring, and I need to know your recourse immediately.
- - **NUKE:** This reminds me of that whole cat food/beef jerky situation that James joked about. Feels like a scam. 
-	 - You always claimed you weren't cheap. Turns out you just love to prove me wrong.
+> [!important] The play
+> ==He can refuse, but every branch must cost him more than paying — and you bank evidence either way.== The amount is never negotiable, **only the schedule**. You're not asking a favor; you're collecting already-deducted salary. Calm, warm, in control: _"I'm okay, you're okay, let's figure things out."_
+> Physics on your side: at contract end (Oct) he must pay **everything + late interest** anyway, or the sổ BHXH can't be confirmed. Ignoring you doesn't make the debt expire — it compounds.
+#### Pre-send checklist (ALL of these, before the opener)
+- **Archive everything off company systems**: contract, payslips, VssID screenshots, every SHUI ping, ==the May 19 letter, your same-evening response, and the full Dave chat threads==. If access is ever cut, the evidence survives.
+- [ ] **Minh Vu**: confirm whether his SHUI is covered. Decide *now*: this script speaks **solo** ("my own payslip"). A joint front is a different, bigger move — don't drift into it mid-chat.
+- [ ] **The number**: `[N]` months × (gross × 10.5%) ≈ `[amount]` of *your* money. (His unpaid employer share is ~21.5% on top — know it, don't lecture it.)
+- [ ] **Goal card** (keep beside you): GOAL → first remittance visible in VssID by **Jun 30**; full cure with dates ≤ **Sep 30**; July eval date + criteria locked. TRIGGER → any missed verified date = file, no more reminders.
+- [ ] **Calendar the filing date now** (first business day after the first milestone can be missed). Escalation must be the *default*, not a decision you'll have to summon courage for later.
+- [ ] Calm weekday morning. Re-read once in the late-night FM DJ voice. Send.
+#### The opener — four SEPARATE messages, in order
+Wait ~30–60s between them; if he starts typing, stop and let him.
+
+```
+1) Hey [Boss]
+Before July planning kicks off, I want to properly close out the SHUI thing. You're probably expecting another reminder you can park 🙂 
+I want us to land an actual plan *with dates*, so the compensation eval can be a clean discussion about the future instead of the past.
+```
+```
+2) It seems like the books got behind during the crunch, the plan was always to make it right quietly, and every month that passes makes it more awkward to bring up, not less
+```
+*(Label + a face-saving story he can adopt. Target answer: "that's right" — and if he corrects you, even better: he's talking. **Silence after this one.**)*
+```
+3) Where that leaves me: 8 months of SHUI *already deducted* from my salary that hasn't reached the fund — so to this day I have no health or unemployment cover despite paying for it the whole time. That part isn't a raise or bonus topic — it's already my money, so I'm keeping it separate from the compensation eval.
+```
+```
+4) I genuinely want to renew my contract to be there for the successful delivery of the EO project (which I certainly have high hopes for), and I want this solved between us, before evals, so it doesn't color them. Would it be unreasonable to have the my SHUI contribution paid in full by end of July? I can tolerate partial payments on the way there, as long as we agree on date when my SHUI is paid in full.
+```
+*(No-oriented question — "no, that's not unreasonable" is him saying yes — then the calibrated handoff so **he** authors the schedule.)*
+#### Pin it (the moment he offers anything)
+Restate whatever he proposes and bolt it down — then ==the trigger, stated once, neutral==:
+```
+So: [amount] showing in VssID by [Jun 30], the rest by [date]. Putting both in my calendar — I'll check VssID on each date. If it's there, we never talk about this again and the compensation eval is purely about the future. If a date passes without it showing, I'll take it that we couldn't solve this directly and I'll go through the standard channel — which I'd genuinely rather not.
+```
+- **Acceptance floor** (pre-decided — never negotiate it live): first remittance in VssID ≤ 30 days; full cure ≤ Sep 30 (well before contract end); any miss = file.
+#### Branch playbook — if he says X, send Y
+- **Vague promise** (*"soon, don't worry, I'm on it"*) → "Love it. Which date do I put in the calendar to check VssID?"
+- **"After July / we'll sort it with the eval"** → "July is about my next year's value. This is last year's salary that never reached the fund — how do we settle the past first, so July is clean?"
+- **Cash-flow sob story** → *(label, then calibrated)* "It sounds like the timing is genuinely brutal right now. What *can* move by end of June, even partial?"
+- **"When EO/clients pay, you'll get yours"** → "It was deducted from my salary in months the company *did* get paid — it isn't contingent revenue. What's realistic from this side regardless?"
+- **Anger / blow-up** → "Okay — I apologize. Let's go back to where this started feeling unfair and fix that part first." *(then SILENCE — let him fill it)*
+- **Guilt-trip** (*"after everything I've done for you…"*) → "Gratitude is why I keep solving this directly with you. It doesn't change whose money it is."
+- **"A formal warning last month, and now this?"** → "The May letter has my written response and my full ownership — happy to continue that thread any time. This is payroll: the deductions left my salary in every one of those months, warning or no warning. What's realistic by end of June?"
+- **"You should be glad you still have a job"** → "I am glad — and the deductions still left my salary every month. Gratitude and bookkeeping are separate things. Which date do I put in the calendar?"
+- **Threatens a write-up for asking** (*"this attitude is going on file"*) → "Noted — and I'll keep this exactly this professional. The question stands: what's realistic by end of June?" *(a write-up that follows a polite payroll request only proves the sequence — keep yours immaculate and date-stamped)*
+- **SHUI offered as the raise/bonus** → "Bringing it current is the floor, not the offer — that money was already mine. The eval is about what my work is worth going forward."
+- **"Let's hop on a call"** → take it (refusing reads hostile), but bracket it. Before: "Sure. So we use the time well: I'm looking for dates on [N] months of contributions, first chunk by end of June." Same day after: "Confirming what we agreed on the call: [amounts/dates] — correct me if I'm wrong." *(his silence = agreement, on paper)*
+- **Cash in hand / "I'll transfer you directly"** → "Appreciate the instinct — it has to be remittance to the fund, visible in VssID. Cash doesn't close the book or count for anything."
+- **"Did Minh put you up to this? Who else?"** → "I'm only speaking for my own payslip."
+- **Partial counteroffer** (*"half by August?"*) → hold the floor: "First chunk by Jun 30 is the part I can't move — what does the rest of the schedule look like?"
+- **"Are you threatening the EO project?"** → "EO gets my best work regardless — that's not on the table. This is about the company's own books."
+- **"You'd really go legal over this?"** → "I'd rather we never find out — that's why I'm here in chat. What's realistic by end of June?"
+- **Anything surprising** → mirror his last 1–3 words with a question mark, then wait. (*"Restructuring the payroll?"*)
+#### Silence & stonewall protocol
+- **Day 3 of silence** (working days): "Have you given up on solving this between us?" *(the un-ignorable no-oriented question)*
+- **Day 5**: "I'll take the silence as your answer and proceed through the standard channel." → then actually proceed. ==Never send reminder #15.==
+- **Open refusal** (*"do what you want"*): "If we can't fix it between us, the next step is the standard one — a BHXH complaint. I'd rather not: that process reviews everyone's contributions, not just mine. It seems like my side of this isn't visible right now." Then stop chatting and execute *If the trigger fires*. Last word stays professional: "Understood. EO work continues as normal on my end."
+#### Hard rules
+- ==The amount is fixed; only the **schedule** is negotiable.== Never split the difference on money that's already yours.
+- No criminal-law / police talk, ever — that's where lawful debt collection starts reading as extortion. Civil words only ("standard channel", "BHXH complaint").
+- Never write any sentence connecting EO / the renewal / the rollout to the money. He knows the dependency; writing it adds risk and zero information.
+- One label per message, then **silence** (the chat version of the 4-second rule). Never double-text. Never answer your own question.
+- His "last warning" makes tone a tripwire — and your shield: every message reads like the politest creditor alive. If paper follows a clean payroll request, the timestamps tell that story on their own. (Never say "retaliation" in chat; let the sequence say it.)
+- No "why" questions — use "What caused…" / "How do we…".
+- Never bluff: don't name a step you won't take that same week.
+- Never sign anything same-day (waiver, "voluntary resignation", cash receipt). "Let me read it properly tonight."
+- Screenshot everything, same day, off company systems.
+- Every number you send must already be verified (VssID + payslips).
+#### If the trigger fires
+1. 30-minute sanity check with a labor lawyer or the BHXH support line *(procedure check, not strategy — nothing in the script depends on legal citations)*.
+2. File the complaint with the BHXH agency where Edge8 is registered; labor inspectorate next; court last. Bring: contract, payslips, VssID history, chat recaps.
+3. Remember the physics: at contract end he owes **everything + late interest** regardless — filing just moves up the date and takes the schedule out of his hands.
+#### Vent block — things you'll want to say. ==DON'T.==
+*(Feelings honored here so they never reach the send box. Each one converts you from creditor to combatant inside an exhibit he can screenshot.)*
+- ~~The cat food / beef jerky "scam" jab + "you love to prove me wrong"~~ → an insult in evidence; instantly the villain.
+- ~~"You've been given far more grace than I ever received… the double standard is glaring"~~ → starts a character war; he wins those by rank.
+- ~~"I've been doing you favors instead of keeping this professional"~~ → self-undermining on paper.
+- ~~"8 chances to make it right" scorekeeping~~ → stale math by now, and scorekeeping invites a rebuttal, not a payment.
+- ~~"Hard to see you in the same light / assume good intention" sermon~~ → the BHXH line does this work without the sermon.
+- ~~"There's clearly budget to hire new people"~~ → true, but it reads as auditing his spending; the leverage already exists without the jab.
+### Warning-letter defense (the May 19 file)
+
+> [!warning] What it is, and what it's for
+> A first formal warning (May 19, Mai → you, CC Dave): meeting/lunch attention ×2, the magic links, "failure to return to EO" — plus a "last warning" threat in chat. Paper built ==right before an eval cycle== has one job: to be the July raise-killer and the "you're in no position to make demands" card. Assume it WILL be played.
+> Two facts defang it: ==it has zero bearing on SHUI== (deducted salary must reach the fund no matter what anyone's performance file says), and ==you already answered it well== — same-evening ownership + context + three named changes. That response is now *your* exhibit.
+> The real trap is the word **"defensive"**: it's pre-loaded so that any pushback confirms the label. So this defense is built to never look like defense: ==agree first, redirect to criteria, let receipts talk.==
+#### If he plays it (the aikido, in order)
+1. **You raise it first** (accusation audit — deny him the reveal): "Before we get into the year — you might be thinking about May. Let's start there so it's not sitting under the table."
+2. **Own → convert**: "You gave me direct feedback. I owned it in writing that same evening and changed three things: presence over context-switching, real prep for client-facing settings, and flagging overload early instead of absorbing it silently. Since May 19: no repeats — and the year shipped [EO renewal / chapters live / onboarding + auth]. To me that letter is the best evidence in this room that feedback I'm given turns into changes you can see."
+3. **Proportion** (calibrated — HE does the math): "What's the fair way to weigh three weeks in May against the full year of delivery?"
+4. **Still anchoring on it** → label + silence: "It seems like May has become the lens for the whole year."
+5. **Flat "no raise — you got a warning"** → convert the denial into a contract: "Okay. What specifically would need to be true by September for this to be a yes? Let's write it down — if I hit it, we reopen before renewal."
+6. **No criteria offered** → "How am I supposed to commit to another year without a path that exists on paper?" If still nothing, that's your answer about the whole game: the floor (47.5), and the market are the rest of the conversation. ==No deal is better than a bad deal.==
+
+**Side-branches:**
+- *"You're being defensive again"* → "You're right that I can push back fast. So here's me not doing that: what makes this a yes by September?"
+- *He quotes the chat ("you told your CEO to test it himself / who do you think you are?")* → one clause of ownership, then pivot: "Fair — I'd phrase that differently today. Same week, the QA items were green in the tracker; both things are true. What matters for this conversation is what the year produced."
+- *It surfaces in the SHUI chat instead* → the warning branches in the playbook above; the lanes never merge.
+
+#### Never do
+- ~~Relitigate items 1–4 point by point~~ → turns the eval into a trial of May; he wins those by rank, and "defensive" gets confirmed for free.
+- ~~Defend the chat tone beyond one clause~~ → lengthy justification is how the label sticks.
+- ~~Volunteer the receipts unprompted~~ → a rebuttal offered before the attack reads as guilt.
+- ~~Say "retaliation" / "hostile" / anything legal-flavored about the letter~~ → that card belongs to the inspectorate stage, not chat.
+- ~~Mock the lunch-attention item~~ → padding in a formal letter *does* signal a thin file; knowing it is leverage, saying it is war.
+### July raise card
+
+> [!important] Sequencing
+> Send the process-pin **a few days after** the SHUI dates land — never in the same conversation. If SHUI isn't pinned by late June, July prep continues anyway; the two tracks must never blur.
+
+**Pin the process now (chat):**
+```
+Separate thing, much happier topic — for the July evals: what date are we doing mine, and what will you be looking at to size it? I want to bring receipts, not vibes.
+```
+*(Locks date + criteria in writing — and his answer tells you whether July is real. If fuzzy: "What does a strong result look like in this seat between now and then?")*
+
+**Prep for the live conversation:**
+- Open with the May accusation audit and run the *Warning-letter defense* aikido (above) — ==you raise it first; it must never be his reveal==.
+- Answer his three questions (callout above) in a doc, with numbers: chapters shipped, the EO renewal, onboarding/auth fixes, middleware — value to the business, not effort spent.
+- Ask: _"What does it take to be successful here?"_ — advice given = a personal stake in your success.
+- Define, in the meeting, the metrics for the *next* raise.
+- He said "bonuses": a bonus is one-time, the raise is the base. ==Don't let one substitute for the other.==
+
+**Pre-empts (have ready, use only if needed):**
+- If he lowballs "because the arrears hit the budget": "Arrears were last year's payroll cost — booked the day it was deducted. July is about next year."
+- Expect ==zero goodwill credit== for repaying what he owed. The case is EO value only.
+
+**Ackerman card** (floor **47.5M gross** — your own note; target **52M**):
+- Let *him* anchor first. If forced to name a number, give a range: "Given what this seat carries now, I'm looking at **58.5–64.5M** as the market band." (He'll grab the low end — 58.5 is still above target.)
+- Concession ladder if bargaining down from 64.5: **64.5 → 56.8 → 53.4 → final 52.35** (decreasing steps; pause ~5s before the odd final = "thoughtful calculation, I'm at my limit").
+- Below 52.35: trade, don't slide — non-monetary asks: title bump, explicit remote/flex, training budget, the July bonus itself.
+- Below **47.5M**: _"I'm sorry, I'm afraid I just can't do that."_ — and mean it. Contract ends in October. ==Never be needy for a deal.==
 ---
 # EO
 
@@ -365,6 +476,9 @@ State what you could not determine, what commands failed, what areas need deeper
 > - I’m a software engineer over at Edge8, on Dave's team, and I'm the guy who carries out the HubSpot technical implementation for EO chapters.
 > - I figure it's a good idea to join the meeting, see what you guys are talking about so I get what I'm about to do for the next couple of months.
 
+## Prompts
+- General `next-steps.md`: 
+	- I need you to optimize the `next-steps.md` file so that I can start a fresh Claude Code session with this simple prompt: "Read @docs/plans/next-steps.md to follow its instructions" and it will know EXACTLY what to do, as well as keeping @docs/plans/next-steps.md up-to-date as it goes.
 ## Key metrics
 - Chapters are able to track their two levers of growth, member retention and member acquisition with a goal of 8% NET new growth every year.
 - The leading indicators of this is <u>data cleanliness</u> and `number of leads` to `number of opportunities` from a deal funnel perspective → more deals → more potential for more money.
@@ -418,8 +532,5 @@ State what you could not determine, what commands failed, what areas need deeper
 
 # Misc
 ## Altai
-- No access to prod (yet)
-- The Altai views are rooted on the Position object (one row per position). The HubSpot segments are Contact segments = one row per distinct
-  contact. A person holding two roles — or the same role in both 2025/2026 and 2026/2027 — is 2 Altai rows but 1 HubSpot contact. So a Contact segment is always ≤ the Altai position count; they cannot be equal by definition.
-## QLD
-- sth
+- Sync mkt lists to prod
+
