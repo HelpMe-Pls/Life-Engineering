@@ -1,8 +1,8 @@
 > [!important] A mindful reminder
 > If you're still getting paid each month + have access to AI, you're still winning. EVERYTHING ELSE is noise.
 
-- Last Friday I simplified the app by removing the approval flow and adding the region-to-chapter mapping to improve the UX
-- Today I'm gonna have the team QA and test it on our own on behalf of Melbourne. I'll also resume the Altai sync as we have everything we need for that.
+- Yesterday I simplified the app by removing the approval flow and adding the region-to-chapter mapping to improve the UX
+- Today I'm gonna have the team QA and test it on our own on behalf of Melbourne. I'll also pick the Altai sync back up since we have everything we need.
 
 > [!warning] Chewsday ping
 >Just flagging again: there's a contract violation around SHUI owed ever since I came on full-time.
@@ -351,24 +351,30 @@ Wait ~30–60s between them; if he starts typing, stop and let him.
 
 ```
 1) Hey [Boss]
-Before July planning kicks off, I want to properly close out the SHUI thing. You're probably expecting another reminder you can park 🙂 
-I want us to land an actual plan *with dates*, so the compensation eval can be a clean discussion about the future instead of the past.
+Before July planning kicks off, I want to properly close out the SHUI (Social, Health, Unemployment Insurance) thing. You're probably expecting another reminder you can park 🙂 
+
+2) I know the books fell behind during the crunch, and honestly, the longer it sits, the more awkward it gets between us, not less. 
+So the plan was always to quietly make it right.
 ```
 ```
-2) It seems like the books got behind during the crunch, the plan was always to make it right quietly, and every month that passes makes it more awkward to bring up, not less
+3) Here's where that leaves things: for the past 8 months, SHUI deductions have come out of my paycheck every single month, but none of it has ever reached the fund. 
+As a result, I still have zero social insurance or unemployment insurance coverage to this day, even though I've been paying into the system the whole time.
+
+And to be clear, this isn't a raise or bonus conversation, it's already my money, so I'm keeping it completely separate from the comp review.
+
+I'd really like us to land on an actual plan with dates, so the comp review can be a clean conversation about the future rather than getting tangled up with the past.
 ```
-*(Label + a face-saving story he can adopt. Target answer: "that's right" — and if he corrects you, even better: he's talking. **Silence after this one.**)*
+
+ **Silence, wait for his answers**
+ 
 ```
-3) Where that leaves me: 8 months of SHUI *already deducted* from my salary that hasn't reached the fund — so to this day I have no health or unemployment cover despite paying for it the whole time. That part isn't a raise or bonus topic — it's already my money, so I'm keeping it separate from the compensation eval.
-```
-```
-4) I genuinely want to renew my contract to be there for the successful delivery of the EO project (which I certainly have high hopes for), and I want this solved between us, before evals, so it doesn't color them. Would it be unreasonable to have the my SHUI contribution paid in full by end of July? I can tolerate partial payments on the way there, as long as we agree on date when my SHUI is paid in full.
+4) I genuinely want to renew my contract and stick around to help deliver the EO project (which I certainly have high hopes for), and I'd like to get this sorted between us before the evals so it doesn't end up coloring that conversation. Would it be unreasonable to ask for my SHUI contributions to be paid in full by the end of July? I'm fine with partial payments along the way, as long as we land on a date for getting it fully squared away
 ```
 *(No-oriented question — "no, that's not unreasonable" is him saying yes — then the calibrated handoff so **he** authors the schedule.)*
 #### Pin it (the moment he offers anything)
 Restate whatever he proposes and bolt it down — then ==the trigger, stated once, neutral==:
 ```
-So: [amount] showing in VssID by [Jun 30], the rest by [date]. Putting both in my calendar — I'll check VssID on each date. If it's there, we never talk about this again and the compensation eval is purely about the future. If a date passes without it showing, I'll take it that we couldn't solve this directly and I'll go through the standard channel — which I'd genuinely rather not.
+So: [amount] showing in VssID by [Jun 30], the rest by [date]. Putting both in my calendar — I'll check VssID on each date. If it's there, we never talk about this again and the compensation eval is purely about the future. If a date passes without it showing, I'll take it that we couldn't solve this directly and I'll go through official channels instead, which, honestly, I'd rather avoid. Bureaucratic paperwork with the government has never exactly been something to look forward to.
 ```
 - **Acceptance floor** (pre-decided — never negotiate it live): first remittance in VssID ≤ 30 days; full cure ≤ Sep 30 (well before contract end); any miss = file.
 #### Branch playbook — if he says X, send Y

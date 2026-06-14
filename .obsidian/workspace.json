@@ -27,7 +27,7 @@
                 }
               },
               {
-                "id": "d655e157dbd2a336",
+                "id": "fb467ff5f9d3f31b",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -55,7 +55,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -149,7 +149,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "XOR",
+                "query": "gdpr",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -265,21 +265,14 @@
   },
   "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
-    "Notes/Daily Standup.md",
-    "Notes/Weekly Tasks.md",
     "Books/Antifragile.md",
+    "Notes/Daily Standup.md",
     "Tips & Tools/English vocab.md",
+    "Notes/Weekly Tasks.md",
     "Notes/2026.md",
-    "Notes/Daily Standup.md.tmp.23972.5073911369bf",
-    "Notes/Daily Standup.md.tmp.23972.288a37677b82",
-    "Notes/Daily Standup.md.tmp.23972.21d39b2847c7",
-    "Notes/Daily Standup.md.tmp.23972.04cd4b13c6fe",
-    "Notes/Daily Standup.md.tmp.23972.b85713c9ec30",
+    "Antifragile.md",
     "Books/Books.md",
     "Tips & Tools/English grammar.md",
-    "Tips & Tools/DSA.md",
-    "Notes/2025.md",
-    "Frontend/Libraries/React/Testing.md",
     "AI/With Claude Code.md",
     "Books/Beyond Order.md",
     "Books/Man's Search For Meaning.md",
@@ -298,6 +291,9 @@
     "Frontend/Network/Networking.md",
     "Tips & Tools/Technical.md",
     "Tips & Tools/Interview prep.md",
+    "DevSecOps/DevOps.md",
+    "DevSecOps/DevSecOps.md",
+    "Backend/Backend.md",
     "Pasted image 20260414111250.png",
     "AI/Pasted image 20260401141615.png",
     "AI/Pasted image 20260404120816.png",
@@ -310,6 +306,11 @@
     "Books",
     "Untitled.canvas",
     "Frontend/Libraries/HTMX",
-    "Frontend/Frameworks/Remix"
+    "Frontend/Frameworks/Remix",
+    "Backend/Golang",
+    "Frontend/HTML/url-breakdown.png.crdownload",
+    "Frontend/Libraries",
+    "NodeJS",
+    "Backend/NodeJS"
   ]
 }

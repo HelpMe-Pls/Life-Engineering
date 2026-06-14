@@ -93,4 +93,95 @@
 - make sure that the probability of the unacceptable (i.e,. the risk of ruin) is nil.
 - Stoicism is the domestication, of emotions, so is the barbell a domestication, not the elimination, of uncertainty.
 - An agent does not move except out of intention for an end.
-- Pg.170
+- The opposite if opportunism in human relations is loyalty, a noble sentiment—but one that needs to be invested in the right places, that is, in human relations and moral commitments.
+- People don't know what they want until you provide them with it.
+- The worst side effect of wealth is the social associations it forces on its victims.
+- The option is an agent of antifragility.
+- If you make more when you are right than you are hurt when you are wrong, then you will benefit, in the long run, from volatility (and the reverse).
+- Most interesting options are free, or at the worst, cheap.
+- We do not need to understand things when we have some edge. And the edge from optionality is in the larger payoff when you are right, which makes it unnecessary to be right too often.
+- Freedom is the ultimate option. The more uncertainty, the more valuable the option.
+- You are better off having a high percentage of people disliking you and your message (even intensely), combined with extreme loyal and enthusiastic supporters.
+- All you need is the wisdom to *not do* unintelligent things to hurt yourself (some acts of omission) and recognize favorable outcomes when they occur. (The key is that your assessment doesn't need to be made beforehand, only after the outcome.)
+- Try to make do with what you've got by recycling pieces that would be otherwise wasted.
+- Nature is all about the exploitation of optionality; it illustrates how optionality is a substitute for intelligence.
+- Ethical rules do not have to spring from optionality. It is not about luck, but about optionality. Optionality is about getting the upper half of luck.
+- Be crazy but retain the rationality of choosing the upper bound when you see it.
+- The fragile has no option. But the antifragile needs to select what's best—the best option.
+- In trial and error, the rationality consists in not rejecting something that is markedly better than what you had before.
+- An option is the weapon of antifragility. The option is a substitute for knowledge.
+- Many things we think are derived by skill com largely from options, rather than from what we claim to be understanding.
+- The intellectual society rewards "difficult" derivations, compared to practice in which there is no penalty for simplicity.
+- We talk big but hardly have any imagination, except for a few visionaries who seem to recognize the optionality of things.
+- All you need is the wisdom to realize what you have on your hands.
+- The simpler and more obvious the discovery, the less equipped we are to figure it out by complicated methods.
+- The key is that the significant can only be revealed through practice.
+- Few want to jeopardize their jobs and reputation for the sake of change.
+- Nobody discusses the possibility of the birds' not needing lectures.
+- if the student is smart, the teacher takes the credit.
+- The Soviet-Havard illusion (lecturing birds on flying and believing that the lecture is the cause of these wonderful skills) belongs to a class of causal illusions call epiphenomena.
+- In epiphenomenal situations, you end up seeing A and B together.
+- Learning was for learning's sake, to make someone a good person ,worth talking to, not to increase the stock of gold in the city's heavily guarded coffers.
+- Theory should stay independent from practice and vice versa.
+- You cannot look at the future by naive projection of the past.
+- The antifragile can benefit from suckers and turkey problems.
+- An idea does not survive because it is better than the competition, but rather because the person who holds it has survived.
+- When you are fragile you need to know a lot more than when you are antifragile. Conversely, when you think you know more than you do, you are fragile (to error).
+- Overconfidence leads to reliance on forecasts, which causes borrowing, then to the fragility of leverage.
+- A patent side effect of mathematics is making people over-optimize and cut corners, causing fragility.
+- Small amounts per trial, lots of trials, broader than you want. Why? Because in Extremistan, it is more important to be in something in a small amount than to miss it.
+- Knowledge, or what is called "knowledge", in complex domains inhibits research.
+- Absence of evidence is not evidence of absence.
+- Rare events are rare, and tend not to show up in past samples, and given that the rare is almost always negative, we get a rosier picture than reality.
+- What you don't see can be both significant and hidden from the past.
+- Rank things according to optionality. Do not invest in business plans but in people. Make sure you are barbelled, whatever that means in your business.
+- School has a selection bias as it favors those quicker in such an environment, and like anything competitive, at the expense of performance outside it.
+- Overshooting accidentally once in a while, and only getting in trouble a few times by undershooting.
+- The trick is to be bored with a specific book, rather than with the act of reading.
+- And you find gold, so to speak, effortlessly, just as in rational but undirected trial-and-error-based research.
+- Trial and error is freedom. 
+- Play it safe at school and read on your own, have zero expectation from school. Much of what other people know isn't worth knowing.
+- If you cannot get a map from a territory, build a territory out of the map.
+- What is not intelligible to me is not necessarily unintelligent? 
+- A hero is someone imbued with intellectual confidence and ego, and death is something too small for him.
+- The payoff, what happens to you (the benefits or harm from it), is always the most important thing, not the event itself.
+- The probability (hence True/False) does not work in the real world; it is the payoff that matters.
+- We know that collectively society doesn't appear to advance with organized education.
+- The Procrustean bed in life consists precisely in simplifying the nonlinear and making it linear—the simplification that distorts.
+- When a collection of people write "There is nothing new here" and each one cites a different originator of the idea, one can safely say there is something effectively new.
+- For the fragile, shocks bring higher harm as their intensity increases (up to a certain level). An increase in intensity brings more harm than a corresponding decrease offers benefits.
+- For the antifragile, shocks bring more benefits (equivalently, less harm) as their intensity increases (up to a point).
+- All kind of exercise are just exploitation of convexity effects.
+- Projects take longer than planned because the estimates are too optimistic.
+- It all boils down to the following: figuring out if our miscalculations or misforecasts are on balance more harmful than they are beneficial, and how accelerating the damage is.
+- The technique—detecting *acceleration* of harm—applies to anything that entails decision making under uncertainty, and risk management.
+- If in the long run we get as much variation in the source of randomness one way as the other, the harm would severely outweigh the benefits. Equal probability does not mean equal consequence.
+- The notion of average is of no significance when one is fragile to variations.
+- The more linear the response, the less relevant the average, and the more relevant the stability around such average.
+- The hidden harm of fragility is that you need to be much, much better than random in your prediction and knowing where you are going, just to offset the negative effect.
+- The more uncertainty, the more role for optionality to kick in, and the more you will outperform.
+- In life, antifragility is reached by *not* being a sucker. 
+- Negative knowledge (what is wrong, what does not work) is more robust to error than positive knowledge (what is right, what works)
+- Disconfirmation is more rigorous than confirmation.
+- A good system is one that protects the ordinary guy from bad influences.
+- Keeping one's distance from an ignorant person is equivalent to keeping company with a wise man.
+- Just worry about Black Swan exposures, and life is easy.
+- Obvious decisions (robust to error) *require* no more than a single reason.
+- Positive Black Swans are more unpredictable than negative ones. The most fragile are the predictive, what is built on the basis of predictability.
+- In the presence of nonlinearities, the longer the forecast the worse its accuracy.
+- You will be forced to give weight to things that have been around, things that have survived.
+- We noticed what varies and changes more than what plays a large role but doesn't change.
+- If the person is very ill, there are no iatrogenics to worry about. So it is the marginal case that brings danger.
+- Evolution proceeds by undirected, convex bricolage or tinkering, inherently robust, i.e., with the achievement of stochastic gains thanks to continuous, repetitive, small, localized mistakes.
+- We only understand the risks after the damage takes place, yet we keep making the mistake.
+- What Mother Nature does is rigorous until proven otherwise; what human and science do is flawed until proven otherwise.
+- Things break on a small scale all the time, in order to avoid large-scale generalized catastrophes.
+- It is easier to talk about weigh loss theories than to stick to them.
+- To be sophisticated you need to accept that you are not so.
+- We can generalize the mammogram problem to unconditional laboratory tests, finding deviations from the norm, and acting to "cure" them.
+- The good is mostly in the absence of bad. The "pursuit of happiness" is not equivalent to the "avoidance of unhappiness".
+- Being poorer might not be completely devoid of benefits if one does it right.
+- The best test of empirical wisdom in someone is in where he puts the burden of evidence.
+- We get sharper and fitter in response to the stress of the constraint.
+- Skin in the game is the only true mitigator of fragility.
+- Pg.380
