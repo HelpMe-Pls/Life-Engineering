@@ -1,8 +1,8 @@
-> [!important] A mindful reminder
+> [!important] A friendly reminder
 > If you're still getting paid each month + have access to AI, you're still winning. EVERYTHING ELSE is noise.
 
-- Yesterday I simplified the app by removing the approval flow and adding the region-to-chapter mapping to improve the UX
-- Today I'm gonna have the team QA and test it on our own on behalf of Melbourne. I'll also pick the Altai sync back up since we have everything we need.
+- Yesterday I finished the setup for the new `eochapterhubspotrollout.com` domain. Now it's production-ready.
+- Today I'm gonna add the final touches to polish the UX, then introduce the app to EO Melbourne so they'll start using it to track their rollout progress. 
 
 > [!warning] Chewsday ping
 >Just flagging again: there's a contract violation around SHUI owed ever since I came on full-time.
@@ -12,94 +12,10 @@
 # EP
 > [!important] For prompts
 > Remove line clamps so that every bullet/paragraph is one logical line, and the text reflows correctly in any input box
+
 ## Next
-- ~~Run /to-issues docs/plans/2026-06-06-audit-remediation.md  → /triage → amend Slice 2 (with the prompt below) → dispatch #153 - #154 (with the prompt below) → let the slice train run #155 - #156 - #157 - #158 - #160 - #159 (with the prompt below) → Staging PR & run the migration~~ → HITL for #131 & #135 → Close #161 → Re-open the grill loop, folding in BACKLOG item 10 (#146 P1–P8)
-- [ ] Close #161:
-```
-Implement GitHub issue #161 (image-upload magic-byte validation, audit A3) end-to-end and close it. This is a single self-contained security enhancement — no paid Cloudflare and no manual QA are needed (the whole thing is verifiable via the workers-pool Vitest project against miniflare R2).
-
-  PRE-FLIGHT (halt and report on failure):
-  - Confirm PR #162 (resolve-issues → staging) has MERGED. #161 modifies `storeFile`, which the #157 Asset-registry work reshaped (`storeFileOwned`, the `ASSET_KINDS` catalog with its `registry` property). You MUST work on a base that already contains that registry code. Branch a feature branch off the up-to-date `staging` (e.g. `fix/161-image-magic-bytes`). If #162 has NOT merged yet, STOP and say so.
-  - `git status` clean; record the baseline `bun run test:run` count.
-
-  gh quirk (non-negotiable): the active gh account silently flips back between shell invocations, and a GH_TOKEN env var blocks account switching.
-  Prefix EVERY gh call with: clear the token then switch — `$env:GH_TOKEN=$null; $env:GITHUB_TOKEN=$null; gh auth switch --user HelpMe-Pls && gh <command>` (PowerShell) or `unset GH_TOKEN GITHUB_TOKEN; gh auth switch --user HelpMe-Pls && gh <command>` (bash).
-
-  AUTHORITATIVE SPEC: the issue body + the "## Agent Brief" comment. Fetch both: `gh issue view 161 --comments`. The Agent Brief is the contract; honor its Out-of-scope boundaries (image kinds only; no doc/audio sniffing; no content re-encoding; reuse the existing `invalid-mime` envelope; don't touch the allowed-MIME lists or the too-large/empty-file paths). Do NOT gold-plate.
-
-  IMPLEMENTATION (use the tdd skill — red before green):
-  - The check belongs in `storeFile` (`app/lib/assets.server.ts`), on the path that handles the image kinds (`lesson-image`, `course-thumbnail`), gated off the `ASSET_KINDS` catalog — add a catalog property, never call-site special-casing (mirror how #157 added the `registry` property). Sniff the leading bytes of the buffer storeFile already reads for the R2 put; on mismatch return the existing `storeFailure(400, "invalid-mime",
-  …)` BEFORE any `env.STORAGE.put`. Signatures: PNG `89 50 4E 47 0D 0A 1A 0A`; JPEG `FF D8 FF`; GIF `47 49 46 38`; WEBP `52 49 46 46` @0 + `57 45 42 50` @8.
-  - Tests are workers-pool (`*.workers.test.ts`) against miniflare R2 — copy the pattern in `app/lib/assets.server.workers.test.ts` (seeds via drizzle, calls the storeFile family, asserts against real `env.STORAGE`). Cover: declared image/png with non-image bytes → `{ ok:false, status:400, reason:"invalid-mime" }` and NO object in R2; each real PNG/JPEG/GIF/WEBP signature → success; a non-image kind (lesson-file/lesson-audio) → unaffected.
-
-  GATES after the change, in order, sequential — never parallel (Windows jsdom/workers CPU-contention causes false 5s timeouts): `bun typecheck` → `bun run test:run` → `bun run build:staging`. Do not proceed past a failure. Honor CLAUDE.md: no `any` / `!` / `as Type`; `~/` alias only (no relative imports); `import type` for types.
-
-  CLOSE-OUT (staging-targeted PRs never auto-close — close manually):
-  1. Commit (conventional + gitmoji `:name:` text-code, pick emoji by intent): e.g. `feat(assets): :lock: validate image-upload magic bytes against declared MIME (audit A3)`. Co-author footer: `Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>`.
-  2. Push the branch; open a PR to `staging` (body references #161 — no `Closes #N`, it won't fire on a staging PR).
-  3. Flip the issue's `- [ ]` AC boxes to `- [x]` for criteria verified first-hand (fetch body via `gh issue view 161 --json body -q .body`, edit only the markers, re-apply with `gh issue edit 161 --body-file`).
-  4. Close #161 with a comment that starts `> *This was generated by AI during implementation.*` and lists: commit SHA, the three gate results, test delta (before → after), and one evidence line per AC. Note the close is manual per the staging-PR rule.
-
-  If any spec premise fails to verify against the working tree, or the change can't be made green within the Brief's scope, STOP at the last green checkpoint and report — do not improvise around the spec.
-```
-
-- Run this with `ultracode`:
-```
-Resolve the #146 parked architecture matrix (P1–P8) to closure: one judgment session that decides each item, updates the contract docs, executes only the doc/config-shaped consequences, and seeds everything code-shaped as grabbable issues.
-
-# READ FIRST (in this order — the matrix is the agenda, not a suggestion):
-    1. `gh issue view 146 --comments` — the "Parked decision matrix" table (P1–P8) with per-item options + inputs, and my close-out comment (final fallow counts, the INTERIM playground scope). #146 is closed; it stays the matrix's home — decisions get recorded there.
-    2. `.fallowrc.jsonc` — every comment in it is policy; P8's decision must explicitly lift or ratify the block marked INTERIM.
-    3. `grep -rn "Parked decision P" app/` — the five inline suppressions (P1 ×3, P6, P7) whose NOTEs this session must convert from
-  "parked/deferred" into decided rationale, or delete along with the code.
-    4. @CONTEXT.md, @docs/adr/ (ADR-0001 curriculum-is-data, ADR-0003 webhook-is-source-of-truth, ADR-0004 provider seam), the curriculum
-  encapsulation test, and @docs/agents/domain.md for how skills consume these.
-    5. @docs/agents/issue-tracker.md + @docs/agents/triage-labels.md — conventions for the issues you'll emit.
-
-  # SETUP: git fetch origin && git checkout resolve-issues && git pull
-    Then refresh evidence — `bunx fallow --format json` (dead-code now ~zero by design; the *dupes* and *health* sections are this session's live
-  evidence for P3/P4) plus a consumer inventory for P1/P2: grep who imports from `~/lib/curriculum` / `~/lib/checkout` barrels vs deep paths.
-  Evidence in the issue body is stale by rule; fresh runs are authoritative (#146 precedent).
-
-  # EXECUTE — drive the whole session through /improve-codebase-architecture (it reads CONTEXT.md + docs/adr/ as its inputs). For EACH of P1–P8, in
-  order:
-    6. Gather the matrix row's named inputs (fan out evidence-readers if useful; judgment stays in the main loop).
-    7. Pick an option — or explicitly RE-PARK with the named missing evidence (re-parking is a legitimate outcome; deciding without grounds is not).
-    8. Pressure-test the eight draft decisions as one batch via /grill-with-docs — it owns updating CONTEXT.md and writing/amending ADRs inline as
-  decisions crystallise. P5 (Drizzle relations-in-schema vs extracted-relations module) must check current Drizzle idiom via context7 before
-  deciding, not from memory.
-    9. Record the decision log as ONE consolidated comment on #146 starting with "> *This was generated by AI.*" — per-P verdict, option chosen,
-  one-paragraph why, pointer to any ADR.
-    10. Consequences split by shape:
-       - EXECUTE INLINE (this session, one commit per P): P6 and P7 (delete-or-document — if delete, the helper AND its suppression AND the naming
-  line in CLAUDE.md Rule 8 / DB section go in the same commit; if keep, reword the NOTE from "parked" to the decided rationale). P8's config
-  consequence (lift the INTERIM rules, or ratify freeze: reword the config comment + ADR ref). Any decided-keep NOTE rewording for P1/P2.
-       - EMIT AS ISSUES via /to-issues (tracer-bullet vertical slices), then label via /triage: P1/P2 barrel narrowing or bypass-redirect, P3
-  dashboard-clone verdict (if extract), P4 return-twin consolidation (if consolidate — inside app/lib/checkout/responses.server.ts ONLY; route
-  modules may not export helpers, dot-server rule is build-enforced), P5 relation extraction (if extract). Each issue body must name its test seam
-  from the #146 PRD: P1 → extend the encapsulation test to assert the narrowed API; P4 → existing route tests + shell tests against the fake
-  provider, behavior unchanged; P5 → existing query unit tests against the seeded local.db (worktree caveat: use the bun:sqlite harness against the
-  main repo's local.db). Backtick non-issue `#N` refs in bodies.
-
-  # GUARDRAILS:
-    - This session DECIDES P1–P8; it does NOT implement P1–P5 (issues are the deliverable). NEVER auto-fix Drizzle cycles regardless of P5's
-  verdict.
-    - ADRs only with a genuine "why" — an ADR without real rationale is worse than none; if the honest why is thin, the decision lives in the #146
-  comment only. Keep CONTEXT.md/CLAUDE.md edits high-level (invariants + skill delegation, not implementation pointers).
-    - Domain language is law: Course/Module/Lesson/Enrollment per CONTEXT.md in every issue title and ADR.
-    - Suppression lifecycle is part of acceptance: after inline executions, `bunx fallow --format json` must show 0 stale-suppressions and `grep -rn
-  "Parked decision P" app/` must return ONLY re-parked items.
-
-  # ACCEPTANCE + SHIP:
-    - All eight Ps: decided or explicitly re-parked; decision-log comment on #146; CONTEXT.md/ADRs updated only where real why exists; code-shaped
-  decisions exist as labeled, independently-grabbable issues naming their test seams.
-    - Inline changes pass the full done-pipeline SEQUENTIALLY: `bun typecheck` → `bun run test:run` → `bun run build:staging` (never parallelize
-  typecheck with vitest on Windows).
-    - PR → staging (root-cause-style body: per-P verdict table + fresh fallow summary), squash-merge per repo precedent, watch "Workers Builds:
-  vunguyen-staging" on the staging head until success.
-    - Staging PRs never auto-close anything: #146 is already closed (comment only); add the @docs/plans/BACKLOG.md History line; finish with the
-  re-sync merge of staging back into resolve-issues (branch convention).
-```
+- Pls go ahead and do the merge so I can start a fresh session with the instructions in @docs/plans/next-steps.md
+- Refresh `README.md` with `/understand`
 ## Later
 - Explore the relevant skills in your repertoire to give me an OPTIMIZED prompt for an agent to grade the overall quality of the codebase. I want the prompt's output to give me an HONEST assessment. The main criteria it should grade against are enterprise readiness and antifragility.
 - Using GPT5.5-xhigh: Perform an exhaustive scan on the codebase and run the /improve-codebase-architecture with its relevant skills to see how you can optimize the codebase for maximum antifragility.
@@ -341,7 +257,7 @@ State what you could not determine, what commands failed, what areas need deeper
 > Physics on your side: at contract end (Oct) he must pay **everything + late interest** anyway, or the sổ BHXH can't be confirmed. Ignoring you doesn't make the debt expire — it compounds.
 #### Pre-send checklist (ALL of these, before the opener)
 - **Archive everything off company systems**: contract, payslips, VssID screenshots, every SHUI ping, ==the May 19 letter, your same-evening response, and the full Dave chat threads==. If access is ever cut, the evidence survives.
-- [ ] **Minh Vu**: confirm whether his SHUI is covered. Decide *now*: this script speaks **solo** ("my own payslip"). A joint front is a different, bigger move — don't drift into it mid-chat.
+- [x] **Minh Vu**: confirm whether his SHUI is covered. Decide *now*: this script speaks **solo** ("my own payslip"). A joint front is a different, bigger move — don't drift into it mid-chat.
 - [ ] **The number**: `[N]` months × (gross × 10.5%) ≈ `[amount]` of *your* money. (His unpaid employer share is ~21.5% on top — know it, don't lecture it.)
 - [ ] **Goal card** (keep beside you): GOAL → first remittance visible in VssID by **Jun 30**; full cure with dates ≤ **Sep 30**; July eval date + criteria locked. TRIGGER → any missed verified date = file, no more reminders.
 - [ ] **Calendar the filing date now** (first business day after the first milestone can be missed). Escalation must be the *default*, not a decision you'll have to summon courage for later.
@@ -351,30 +267,32 @@ Wait ~30–60s between them; if he starts typing, stop and let him.
 
 ```
 1) Hey [Boss]
-Before July planning kicks off, I want to properly close out the SHUI (Social, Health, Unemployment Insurance) thing. You're probably expecting another reminder you can park 🙂 
+Before July planning kicks off, I want to properly close out the SHUI (Social, Health, Unemployment Insurance) thing.
 
-2) I know the books fell behind during the crunch, and honestly, the longer it sits, the more awkward it gets between us, not less. 
+2) I know the books fell behind during the crunch, and honestly, the longer it sits, the more awkward it gets between us (which it kinda is as I'm typing this out)
 So the plan was always to quietly make it right.
 ```
 ```
-3) Here's where that leaves things: for the past 8 months, SHUI deductions have come out of my paycheck every single month, but none of it has ever reached the fund. 
+3) Here's where that leaves things: for the past 7 months (soon to be 8), SHUI deductions have come out of my paycheck every single month, but none of it has ever reached the fund. 
 As a result, I still have zero social insurance or unemployment insurance coverage to this day, even though I've been paying into the system the whole time.
 
-And to be clear, this isn't a raise or bonus conversation, it's already my money, so I'm keeping it completely separate from the comp review.
+And to be clear, this isn't a raise or bonus conversation, it's already my money (as mentioned in my contract), so I'm keeping it completely separate from the comp review.
 
-I'd really like us to land on an actual plan with dates, so the comp review can be a clean conversation about the future rather than getting tangled up with the past.
+I'd really like us to land on a concrete plan with actual dates, so the comp review can be a clean conversation about the future rather than getting tangled up with the past.
 ```
 
  **Silence, wait for his answers**
  
 ```
-4) I genuinely want to renew my contract and stick around to help deliver the EO project (which I certainly have high hopes for), and I'd like to get this sorted between us before the evals so it doesn't end up coloring that conversation. Would it be unreasonable to ask for my SHUI contributions to be paid in full by the end of July? I'm fine with partial payments along the way, as long as we land on a date for getting it fully squared away
+4) I genuinely want to renew my contract and stick around to help deliver the EO project (which I certainly have high hopes for), and I'd like to get this sorted between us before the evals so it doesn't end up coloring that conversation. 
+   
+   Would it be unreasonable to ask for my SHUI contributions to be paid in full by the end of July? I'm fine with partial payments along the way, as long as we land on a date for getting it fully squared away. And I understand that a full reconciliation of this SHUI thing might not be a viable option right now, so I do have a better alternative in mind as a way to settle this. Let me know if you're interested. 
 ```
 *(No-oriented question — "no, that's not unreasonable" is him saying yes — then the calibrated handoff so **he** authors the schedule.)*
 #### Pin it (the moment he offers anything)
 Restate whatever he proposes and bolt it down — then ==the trigger, stated once, neutral==:
 ```
-So: [amount] showing in VssID by [Jun 30], the rest by [date]. Putting both in my calendar — I'll check VssID on each date. If it's there, we never talk about this again and the compensation eval is purely about the future. If a date passes without it showing, I'll take it that we couldn't solve this directly and I'll go through official channels instead, which, honestly, I'd rather avoid. Bureaucratic paperwork with the government has never exactly been something to look forward to.
+So: [amount] showing in VssID by [Jun 30], the rest by [date]. Putting both in my calendar — I'll check VssID on each date. If it's there, we never talk about this again and the compensation eval is purely about the future. If a date passes without it showing, I'll take it that we couldn't solve this directly and I'll have to go through official channels instead, which, honestly, I'd rather avoid. Bureaucratic paperwork with the government has never exactly been something to look forward to.
 ```
 - **Acceptance floor** (pre-decided — never negotiate it live): first remittance in VssID ≤ 30 days; full cure ≤ Sep 30 (well before contract end); any miss = file.
 #### Branch playbook — if he says X, send Y
@@ -459,7 +377,13 @@ Separate thing, much happier topic — for the July evals: what date are we doin
 *(Locks date + criteria in writing — and his answer tells you whether July is real. If fuzzy: "What does a strong result look like in this seat between now and then?")*
 
 **Prep for the live conversation:**
-- Open with the May accusation audit and run the *Warning-letter defense* aikido (above) — ==you raise it first; it must never be his reveal==.
+```
+Core tenet: assume good intentions
+	- His good intentions: want me to grow, to be a better person
+	- I know you may see me as more of a pain in the ass than someone perfect for the role. But if you can assume my behaviors as "for good intentions", what would that look like?
+	- Right, I've never wanted to be a blocker in your way, nor did I ever wanted to hurt your feelings. It's just that I made some mistakes, and mistakes are an essential part of learning, right? Tbh, I would much rather fail gloriously than never risk making mistakes.
+	- And to be fair, none of my mistakes were detrimental to the company's growth, they're more like annoying pet peeves that were part of my oversights.
+```
 - Answer his three questions (callout above) in a doc, with numbers: chapters shipped, the EO renewal, onboarding/auth fixes, middleware — value to the business, not effort spent.
 - Ask: _"What does it take to be successful here?"_ — advice given = a personal stake in your success.
 - Define, in the meeting, the metrics for the *next* raise.

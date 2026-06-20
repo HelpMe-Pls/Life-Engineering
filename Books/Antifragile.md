@@ -184,4 +184,27 @@
 - The best test of empirical wisdom in someone is in where he puts the burden of evidence.
 - We get sharper and fitter in response to the stress of the constraint.
 - Skin in the game is the only true mitigator of fragility.
-- Pg.380
+- Dignity is worth nothing unless you earn it, unless you are willing to pay the price for it.
+- If you take risks and face your fate with dignity, there is nothing you can do that makes you small; if you don't take risks, there is nothing you can do that makes you grand, nothing.
+- Note that in traditional societies even those who fail—but have taken risks—have a higher status than those who are not exposed.
+- If you see fraud and don't say fraud, you are a fraud.
+- The past is fluid, marred with selection biases and constantly revised memories.
+- Never ask anyone for their opinion, forecast, or recommendation. Just ask them what they have – or don't have – in their portfolio.
+- Never ask the doctor what *you* should do. Ask him what *he* would do if he were in your place. You would be surprised at the difference.
+- Betting against the fragile is antifragile.
+- Does the scientific researcher whose ideas are applicable to the real world apply his idea to his daily life? If so, take him seriously. Otherwise, ignore him.
+- Word of mouth is a potent naturalistic filter. Actually, the only filter.
+- Anything one needs to market heavily is necessarily either an inferior product or an evil one. Marketing beyond conveying information is insecurity.
+- Never trust the words of a man who is not free. He is free who owns his own opinion.
+- A very, very specific definition of a free person: someone who cannot be squeezed into doing something he would otherwise never do.
+- Only he who has courage is free with his opinion.
+- Data can only truly deliver *via negativa*–style knowledge—it can be effectively used to debunk, not confirm.
+- Knowledge must not have an agency problem.
+- Education, in the sense of the formation of character, personality, and acquisition of true knowledge, likes disorder.
+- We can build Black Swan–protected systems thanks to detection of concavity.
+- Ethics is largely about stolen convexities and optionality.
+- We can control a function of *x, f(x)* even if *x* remains vastly beyond our understanding.
+- Everything big is short volatility. So is everything fast. Big and fast are abominations.
+- The best way to verify that you are alive is by checking if you like variations.
+- In research and entrepreneurship, being a flâneur is called "looking for optionality". A non-narrative approach to life.
+- The most dangerous of all: pseudo-convexity. Local antifragility, global fragility.

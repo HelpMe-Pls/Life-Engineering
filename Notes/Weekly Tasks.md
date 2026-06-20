@@ -22,54 +22,53 @@
 - Barbell strategy.
 ---
 ### 15/6
-- [ ] EO: 
-	- [ ] Onboard the new guy
-	- [ ] Push prod, get the team QA it, remind Ha to update the manual
-	- [ ] Remind the old infant
-	- [ ] Altai sync
-- [ ] EP: update the master `README.md` (with the `/understand` skill)
-- [ ] Anger++
-- [ ] Live up to your standards
+- [x] EO: 
+	- [x] Onboard the new guy
+	- [x] Push prod, get the team QA it, remind Ha to update the manual
+	- [x] Altai sync with external repo
+- [x] EP: Pending
+- [x] Anger++
+- [x] Live up to your standards
 ### 16/6
-- [ ] EO weekly report & sprint goals update
-	- [ ] QA the Altai sync
-	- [ ] `global-hubspot`: refresh `/understand-anything`
-- [ ] EP: Re-run the grading prompt
-- [ ] Anger++
-- [ ] Live up to your standards
+- [x] EO weekly report & sprint goals update
+	- [x] QA the Altai sync
+	- [x]  Remind the old infant
+- [x] EP: Re-run the grading prompt
+- [x] Anger++
+- [x] Live up to your standards
 ### 17/6
-- [ ] EO Sprint review
-	- [ ] Record the transcript
-	- [ ] Ask Minh about his SHUI
-- [ ] EP: Resolve new issues?
-- [ ] Anger++
-- [ ] Live up to your standards
+- [x] EO Sprint review:
+	- [x] Record the transcript
+	- [x] Ask Minh/My about their SHUI
+- [x] EP: Pick up `next-steps.md` and proceed from there
+- [x] Anger++
+- [x] Live up to your standards
 ### 18/6
-- [ ] EO minimal work: 
-	- [ ] Resolve `global-hubspot` feedback
-	- [ ] Send the SHUI messages
-	- [ ] Contingencies
-- [ ] EP: review the Plane board
-- [ ] Anger++
-- [ ] Live up to your standards
+- [x] EO minimal work: 
+	- [x] Debug sync failure
+	- [x] Alex
+- [x] EP: `next-steps.md`
+- [x] Anger++
+- [x] Live up to your standards
 ### 19/6
-- [ ] EO minimal work:
-	- [ ] Resolve issues (if any)
-- [ ] Bragdoc
-- [ ] EP: Resolve backlog
-- [ ] Anger++
-- [ ] Live up to your standards
+- [x] EO minimal work:
+	- [x] `next-steps.md`++
+	- [x] Introduce the app to Melbourne
+- [x] Bragdoc
+- [x] EP: Resolve backlog
+- [x] Anger++
+- [x] Live up to your standards
 ### 20/6
-- [ ] Perfect dive start + 500m with paddles
-- [ ] Groceries
+- [x] Perfect dive start + 500m with paddles
+- [x] Groceries
 - [ ] Splurge if you earned it (i.e. done EP HITL & confirmed `global-hubspot` MVP)
-- [ ] EP: Start implementing the quiz
-- [ ] Anger++
-- [ ] Live up to your standards
+- [x] EP: `next-steps.md`++
+- [x] Anger++
+- [x] Live up to your standards
 ### 21/6
-- [ ] EP: test the sidebar for lesson & module boundary
+- [ ] EP: `next-steps.md`++
 - [ ] Antifragile & MDW note
-- [ ] `global-hubspot` AFK
+- [ ] `global-hubspot`: e2e setup
 - [ ] Weekly planning
 - [ ] Anger++
 - [ ] Live up to your standards
@@ -81,8 +80,10 @@
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
 - EO:
-	- [ ] Make sure that the "definition of done" for a sprint is that a non-tech stakeholder can use it without any friction
-	- [ ] Altai ⇌ HubSpot prod: finish the mkt sync
+	- [ ] Send the SHUI messages
+	- [x] Make sure that the "definition of done" for a sprint is that a non-tech stakeholder can use it without any friction
+	- [x] Add email hook (or SMTP) to send more than 2 `resetPw` emails an hour
+	- [x] Altai ⇌ HubSpot prod: finish the mkt sync
 	- [ ] E2E for `global-hubspot` with this prompt in plan mode once the MVP is approved: *Explore the repo and utilize the appropriate skills in your repertoire to give me the OPTIMAL prompt to start implementing E2E tests and make sure that the entire testing infrastructure is enterprise-grade, no flaky/noisy tests and zero test for implementation details. Above all, the tests are there to prevent regression.*
 	- [x] Resolve conflicts and merge #22
 	- [x] Install `mattpocock` skills on the repo and run `/tdd` once you're done with the issues
@@ -119,6 +120,7 @@ Adopt Fallow (deterministic dead-code/duplication analysis) in website/ as a one
 	- [x] Fix the missing white background for lessons in read-only mode
 	- [x] Fix the `Error: useCollaborationContext: no context provider found` on `http://localhost:5173/courses/intro-to-web-dev/html-css-fundamentals/html-structuring-your-first-web-page`
 	- [x] For the learner's view: automatically open the associated module in the sidebar as the learner crosses the module boundary (e.g. finishing the last lesson on a module should open up the next module in the sidebar and close the previous one accordingly. This belongs to the Accordion state management)
+	- [ ] Bump deps
 	- [ ] Maybe set up a `k6/artillery` run against staging with the two profiles that matter — steady learning (nav + complete-lesson) and checkout burst?
 	- [x] Last vuln & high ROI perf bottlenecks scan with `gpt-5.5-xhigh`. Perform a via negativa approach if you see fit. 
 	- [ ] Run `/improve-codebase-architecture` AFTER closing #131 & #135:

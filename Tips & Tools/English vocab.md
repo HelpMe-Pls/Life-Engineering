@@ -74,6 +74,8 @@ segregate (v): isolate, seclude, separate, withdraw
 
 ==nibble== (n): a tentative expression of interest
 
+morsel (n): bite, nibble, crumb, tidbit
+
 masticate (v): chew, nibble, gnaw (on)
 
 punitive (adj) = penal, disciplinary: inflicting or intended as punishment
@@ -1542,3 +1544,5 @@ rivulet (n): liquid (sweat, tears, or rain) running down a surface in tiny, wind
 epidemiology (n): public health, disease pattern analysis, outbreak investigation
 
 gauche (adj: shy or uncomfortable when dealing with people and often saying or doing the wrong thing
+
+hermetically (adv): airtight, vacuum-sealed, completely sealed
