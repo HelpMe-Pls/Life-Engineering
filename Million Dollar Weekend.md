@@ -1,1 +1,35 @@
+- Risky is spending your life at a job you hate, with people you don't like, working on problems you don't care about.
+- Keep it simple and easy for yourself. Don't think about scaling, focus on starting.
+- If it's a priority, we can make the time.
+- You will never feel 100% ready to start. You just need to start.
+- Don't spend another dime until you make your first dollar.
+- Marketing is easy when you have a product people want.
+- Your customer don't want more software, they just want solutions.
+- Find a problem → simple market research → preselling it before you build it.
+- At some point people are told entrepreneurship is a huge risk, and you believed it.
+- Small experiments, repeated over time, are the recipe for transformation in business, and life.
+- You have to be able to ask in order to get. Once you reframe rejection as something desirable, the act of asking becomes a power all its own.
+- Experiments are supposed to fail. And should they fail, you just take what you've learned and try again a little bit differently.
+- That we eventually succeeded is a byproduct of the fact that we just try more things, period.
+- Leaping is all that matters. The most courageous creators just leap more—in spite of their fear—and successful creation eventually follows.
+- If you're afraid to start or ask, you can't experiment. And if you can't experiment, you can't do business.
+- Make it fun and you'll overcome the fear.
+- Business is an amazing opportunity to learn about yourself, play with ideas, solve your own problems, help other people, and get paid all the while.
+- Always starting experiments to find solutions and always asking for the sale. That means starting small, starting fast, and not worrying about what you don't know.
+- Defining yourself by the things you do each day (the process) will get you where you want to be quicker and more joyfully than measuring yourself against others.
+- Every experiment has within it the potential of unforeseen rewards that can change your life.
+- Do the things your fear, and the death of fear is certain.
+- If you commit to nothing, you'll be distracted by everything.
+- Countless rejections. Rinse and repeat. Every fucking day. But then, invariably, inevitably, a hard-won success.
+- Asking isn't so scary if it's leading you toward where you want to go.
+- No ask? No get. That applies to every part of life.
+- You could be eleven noes away from making your first million, but if you stop at the tenth rejection, you will have failed.
+- Most noes are actually "not now".
+- If you initially get a no, your follow-up ask is twice as likely to be a yes. Follow up on the things you really want.
+- Never take conventional wisdom at face value. Test things out for yourself.
+- Practice *asking* (and getting rejected) rather than talking yourself out of it.
+- Customers don't care about your ideas; they care about whether you can solve their problems.
+- Ask yourself 3 questions: Who you are selling to, What problems you're solving, Where they are. 
+- If you are willing to pay for solution, it's likely others are, too.
+- The only opinion that matters is your customer's.
 - 

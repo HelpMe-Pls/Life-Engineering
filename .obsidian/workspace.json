@@ -55,7 +55,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           },
           {
             "id": "8cedd05142699eb5",
@@ -263,12 +263,13 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "fb467ff5f9d3f31b",
+  "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
-    "Notes/Weekly Tasks.md",
     "Notes/Daily Standup.md",
-    "Tips & Tools/English vocab.md",
     "Million Dollar Weekend.md",
+    "Notes/Weekly Tasks.md",
+    "Tips & Tools/English vocab.md",
+    "Pasted image 20260620195825.png",
     "Books/Books.md",
     "Books/Antifragile.md",
     "Notes/2026.md",
@@ -293,14 +294,12 @@
     "Tips & Tools/Technical.md",
     "Tips & Tools/Interview prep.md",
     "DevSecOps/DevOps.md",
-    "DevSecOps/DevSecOps.md",
     "Pasted image 20260414111250.png",
     "AI/Pasted image 20260401141615.png",
     "AI/Pasted image 20260404120816.png",
     "Tips & Tools/maslows.png",
     "AI/Pasted image 20260404114933.png",
     "AI/Pasted image 20260404115157.png",
-    "Pasted image 20260404120816.png",
     "AI",
     "Notes",
     "Books",

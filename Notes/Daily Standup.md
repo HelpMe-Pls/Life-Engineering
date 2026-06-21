@@ -14,6 +14,7 @@
 > Remove line clamps so that every bullet/paragraph is one logical line, and the text reflows correctly in any input box
 
 ## Next
+- Read @docs/plans/next-steps.md to follow its instructions
 - Pls go ahead and do the merge so I can start a fresh session with the instructions in @docs/plans/next-steps.md
 - Refresh `README.md` with `/understand`
 ## Later

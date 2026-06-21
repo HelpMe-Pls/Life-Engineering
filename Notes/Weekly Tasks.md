@@ -21,56 +21,54 @@
 - Connect the dots.
 - Barbell strategy.
 ---
-### 15/6
-- [x] EO: 
-	- [x] Onboard the new guy
-	- [x] Push prod, get the team QA it, remind Ha to update the manual
-	- [x] Altai sync with external repo
-- [x] EP: Pending
-- [x] Anger++
-- [x] Live up to your standards
-### 16/6
-- [x] EO weekly report & sprint goals update
-	- [x] QA the Altai sync
-	- [x]  Remind the old infant
-- [x] EP: Re-run the grading prompt
-- [x] Anger++
-- [x] Live up to your standards
-### 17/6
-- [x] EO Sprint review:
-	- [x] Record the transcript
-	- [x] Ask Minh/My about their SHUI
-- [x] EP: Pick up `next-steps.md` and proceed from there
-- [x] Anger++
-- [x] Live up to your standards
-### 18/6
-- [x] EO minimal work: 
-	- [x] Debug sync failure
-	- [x] Alex
-- [x] EP: `next-steps.md`
-- [x] Anger++
-- [x] Live up to your standards
-### 19/6
-- [x] EO minimal work:
-	- [x] `next-steps.md`++
-	- [x] Introduce the app to Melbourne
-- [x] Bragdoc
-- [x] EP: Resolve backlog
-- [x] Anger++
-- [x] Live up to your standards
-### 20/6
-- [x] Perfect dive start + 500m with paddles
-- [x] Groceries
-- [ ] Splurge if you earned it (i.e. done EP HITL & confirmed `global-hubspot` MVP)
-- [x] EP: `next-steps.md`++
-- [x] Anger++
-- [x] Live up to your standards
-### 21/6
+### 22/6
+- [ ] EO: 
+	- [ ] ETL
+	- [ ] E2E++
 - [ ] EP: `next-steps.md`++
-- [ ] Antifragile & MDW note
-- [ ] `global-hubspot`: e2e setup
-- [ ] Weekly planning
 - [ ] Anger++
+- [ ] Live up to your standards
+### 23/6
+- [ ] EO weekly report & sprint goals update
+	- [ ] Ask HR for "the follow up" progress
+	- [ ] QA & follow up with whatever remains
+	- [ ] E2E++
+- [ ] EP: `next-steps.md`++
+- [ ] Anger++
+- [ ] Live up to your standards
+### 24/6
+- [ ] EO Sprint review:
+	- [ ] Record the transcript
+	- [ ] Wrap up E2E & CI/CD for `global-hubspot` 
+- [ ] EP: Pick up `next-steps.md` and proceed from there
+- [ ] Anger++
+- [ ] Live up to your standards
+### 25/6
+- [ ] EO minimal work: 
+	- [ ] `/understand` setup for `global-hubspot` and `altai-sync`
+	- [ ] Contingencies
+- [ ] EP: `next-steps.md`++
+- [ ] Anger++
+- [ ] Live up to your standards
+### 26/6
+- [ ] EO minimal work:
+	- [ ] Write the docs for a fresh repo setup on a new device
+	- [ ] Mel & QLD++
+- [ ] Bragdoc
+- [ ] EP: `next-steps.md`++
+- [ ] Finish Anger
+- [ ] Live up to your standards
+### 27/6
+- [ ] Perfect dive start + 500m with paddles
+- [ ] Groceries
+- [ ] EP: `next-steps.md`++
+- [ ] Finish MDW notes and start categorizing the headings
+- [ ] Live up to your standards
+### 28/6
+- [ ] EP: `next-steps.md`++
+- [ ] Planning for your next most optimal move
+- [ ] Weekly planning
+- [ ] Tao Te Ching++
 - [ ] Live up to your standards
 
 ---
@@ -84,37 +82,11 @@
 	- [x] Make sure that the "definition of done" for a sprint is that a non-tech stakeholder can use it without any friction
 	- [x] Add email hook (or SMTP) to send more than 2 `resetPw` emails an hour
 	- [x] Altai ⇌ HubSpot prod: finish the mkt sync
-	- [ ] E2E for `global-hubspot` with this prompt in plan mode once the MVP is approved: *Explore the repo and utilize the appropriate skills in your repertoire to give me the OPTIMAL prompt to start implementing E2E tests and make sure that the entire testing infrastructure is enterprise-grade, no flaky/noisy tests and zero test for implementation details. Above all, the tests are there to prevent regression.*
+	- [x] E2E for `global-hubspot` with this prompt in plan mode once the MVP is approved: *Explore the repo and utilize the appropriate skills in your repertoire to give me the OPTIMAL prompt to start implementing E2E tests and make sure that the entire testing infrastructure is enterprise-grade, no flaky/noisy tests and zero test for implementation details. Above all, the tests are there to prevent regression.*
 	- [x] Resolve conflicts and merge #22
 	- [x] Install `mattpocock` skills on the repo and run `/tdd` once you're done with the issues
 	- [ ] Refresh `README.md` by using the `/understand` skill
 	- [x] Extract the general rules from `file.md` for `global-hubspot`
-	- [ ] After the new domain goes live:
-		```
-Adopt Fallow (deterministic dead-code/duplication analysis) in website/ as a one-session, one-PR tooling task. Issue #19 is closed and merged to dev; #20 has not started. This task is evidence-tooling only — it must NOT expand into a cleanup crusade, CI work, or gating.
-
-  Source of truth: next-steps.md. Honor .claude/rules/global-engineering.md and the website/CLAUDE.md engineering contract. Branch off dev; I approve pushes and the PR merge. Ask me one question at a time with a recommended default.
-
-  Steps, in order:
-  1. Create a tracking issue: "Adopt Fallow static analysis (evidence-only, no gates)" — category enhancement, state ready-for-agent. Reference it in commits.
-
-  2. From website/: npm install --save-dev --save-exact fallow (pin exact — upstream releases multiple times a day).
-
-  3. Before running ANY fallow command, read `node_modules/fallow/skills/fallow/SKILL.md` and every file in its references/ directory completely, and obey its agent rules: always `--format json --quiet 2>/dev/null` with `|| true`; never run `fallow watch`; never `fix --yes` anything whose --dry-run I have not seen.
-
-  4. Run `fallow dead-code` and `fallow dupes` (JSON) and triage every finding into exactly three buckets:
-     a. FRAMEWORK FALSE POSITIVES — Next.js server actions exported from actions.ts files (consumed via form action= props) and React Email template default exports under `lib/notifications/templates/` (consumed via @react-email/render). Fix via entryPoints in .fallowrc.json — not inline suppressions.
-     b. KNOWN-FALSE DEPENDENCY FINDINGS — @mdx-js/loader and @mdx-js/react (wired through next.config.ts) and react-dom (bundled by Next). Ignore in config with an INFO comment; never uninstall them.
-     c. GENUINELY DEAD — delete only what is trivially safe with tests green. Skip everything under app/prototype/ (removed wholesale in #20). List every remaining candidate in the PR description; do not chase them.
-
-  5. Establish the baseline per SKILL.md so future runs report new issues only, and add a package.json script "audit:dead" = the fallow audit invocation, so reviewers never invoke the binary ad hoc.
-
-  6. Add one short paragraph to website/CLAUDE.md (verification section): `npm run audit:dead -- --base dev` is review EVIDENCE on every PR — new-only findings, never a blocking gate. Record the adoption + known false-positive patterns in next-steps.md in 3-4 lines.
-
-  7. FORBIDDEN in this task: `fallow hooks install` (git or agent), any GitHub Actions/CI wiring, registering the MCP server, `fallow license` anything, `fallow security` as a substitute for #20's security verification, and any attempt to reduce the duplication percentage.
-
-  8. Verify per the contract from website/ (typecheck, lint, test, build), commit conventional+gitmoji, open the PR into dev, and report: counts per bucket, what was configured vs deleted, and the one command reviewers run from now on.
-		```
 	- [ ] Setup CI/CD workflow
 - EP: 
 	- [x] Fix the missing white background for lessons in read-only mode
@@ -124,7 +96,7 @@ Adopt Fallow (deterministic dead-code/duplication analysis) in website/ as a one
 	- [ ] Maybe set up a `k6/artillery` run against staging with the two profiles that matter — steady learning (nav + complete-lesson) and checkout burst?
 	- [x] Last vuln & high ROI perf bottlenecks scan with `gpt-5.5-xhigh`. Perform a via negativa approach if you see fit. 
 	- [ ] Run `/improve-codebase-architecture` AFTER closing #131 & #135:
-	- [ ] Re-run the grading prompt
+	- [x] Re-run the grading prompt
 	- [ ] Optimize `CLAUDE.md` & `BACKLOG.md` once again with Opus Max based on the new architecture.
 	- [ ] Update the master `README.md` (with the `/understand` skill) to give an overview of how to navigate around the codebase, which skills to use when encountering a bug and to create new features. Export an html file to visualize it
 	- [x] Setup CI/CD workflow
