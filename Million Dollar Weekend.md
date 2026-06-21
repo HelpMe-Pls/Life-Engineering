@@ -32,4 +32,15 @@
 - Ask yourself 3 questions: Who you are selling to, What problems you're solving, Where they are. 
 - If you are willing to pay for solution, it's likely others are, too.
 - The only opinion that matters is your customer's.
-- 
+- Create the simplest possible version of what you're offering and start selling it right away.
+- Focus on the conversation with the customers, a dynamic back-and-forth that will help you iterate your product in terms of what the customer wants *before* you make or spend a thing.
+- The launch is not based on perfecting a business plan, but on talking to potential customers and finding out what they're excited to give you money for.
+- The business validation process begins with potential customers in the entrepreneur's orbit.
+- Make sure you have easy access to the people you want to help.
+- Business creation should always be a conversation.
+- Your frustrations—and the frustrations of others—are your business opportunities.
+- Your job as a problem seeker is to go to a community of yours.
+- An easy way to find ideas is by studying the marketplaces where people are *trying* to spend money. Marketplaces on Craigslist, Etsy, or Facebook have millions of people each day wanting to pay to have their problem solved. 
+- The real value is learning to create, assess, and validate ideas. Find existing demands and satisfy it.
+- Search Google Trends to see if a market is growing or dying, and how many potential customers are there.
+- Pick a price point you think will be ideal for your customer, multiply that be the number of ideal customers and you'll see if it satisfy your "freedom number" or not.
