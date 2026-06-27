@@ -1,0 +1,148 @@
+- Risky is spending your life at a job you hate, with people you don't like, working on problems you don't care about.
+- Keep it simple and easy for yourself. Don't think about scaling, focus on starting.
+- If it's a priority, we can make the time.
+- You will never feel 100% ready to start. You just need to start.
+- Don't spend another dime until you make your first dollar.
+- Marketing is easy when you have a product people want.
+- Your customer don't want more software, they just want solutions.
+- Find a problem → simple market research → preselling it before you build it.
+- At some point people are told entrepreneurship is a huge risk, and you believed it.
+- Small experiments, repeated over time, are the recipe for transformation in business, and life.
+- You have to be able to ask in order to get. Once you reframe rejection as something desirable, the act of asking becomes a power all its own.
+- Experiments are supposed to fail. And should they fail, you just take what you've learned and try again a little bit differently.
+- That we eventually succeeded is a byproduct of the fact that we just try more things, period.
+- Leaping is all that matters. The most courageous creators just leap more—in spite of their fear—and successful creation eventually follows.
+- If you're afraid to start or ask, you can't experiment. And if you can't experiment, you can't do business.
+- Make it fun and you'll overcome the fear.
+- Business is an amazing opportunity to learn about yourself, play with ideas, solve your own problems, help other people, and get paid all the while.
+- Always starting experiments to find solutions and always asking for the sale. That means starting small, starting fast, and not worrying about what you don't know.
+- Defining yourself by the things you do each day (the process) will get you where you want to be quicker and more joyfully than measuring yourself against others.
+- Every experiment has within it the potential of unforeseen rewards that can change your life.
+- Do the things your fear, and the death of fear is certain.
+- If you commit to nothing, you'll be distracted by everything.
+- Countless rejections. Rinse and repeat. Every fucking day. But then, invariably, inevitably, a hard-won success.
+- Asking isn't so scary if it's leading you toward where you want to go.
+- No ask? No get. That applies to every part of life.
+- You could be eleven noes away from making your first million, but if you stop at the tenth rejection, you will have failed.
+- Most noes are actually "not now".
+- If you initially get a no, your follow-up ask is twice as likely to be a yes. Follow up on the things you really want.
+- Never take conventional wisdom at face value. Test things out for yourself.
+- Practice *asking* (and getting rejected) rather than talking yourself out of it.
+- Customers don't care about your ideas; they care about whether you can solve their problems.
+- Ask yourself 3 questions: Who you are selling to, What problems you're solving, Where they are. 
+- If you are willing to pay for solution, it's likely others are, too.
+- The only opinion that matters is your customer's.
+- Create the simplest possible version of what you're offering and start selling it right away.
+- Focus on the conversation with the customers, a dynamic back-and-forth that will help you iterate your product in terms of what the customer wants *before* you make or spend a thing.
+- The launch is not based on perfecting a business plan, but on talking to potential customers and finding out what they're excited to give you money for.
+- The business validation process begins with potential customers in the entrepreneur's orbit.
+- Make sure you have easy access to the people you want to help.
+- Business creation should always be a conversation.
+- Your frustrations—and the frustrations of others—are your business opportunities.
+- Your job as a problem seeker is to go to a community of yours.
+- An easy way to find ideas is by studying the marketplaces where people are *trying* to spend money. Marketplaces on Craigslist, Etsy, or Facebook have millions of people each day wanting to pay to have their problem solved. 
+- The real value is learning to create, assess, and validate ideas. Find existing demands and satisfy it.
+- Search Google Trends to see if a market is growing or dying, and how many potential customers are there.
+- Pick a price point you think will be ideal for your customer, multiply that be the number of ideal customers and you'll see if it satisfy your "freedom number" or not.
+- What we are looking for are rough estimates. Momentum is your friend, and we can sweat the details later.
+- It's far easier to sell to an existing customer than it is to acquire new ones.
+- Just keep your eyes open for adjacent opportunities.
+- The hard part is getting customers. Putting in the reps of checking market size before we validate later.
+- Don't get in your own way, wondering which idea is best.
+- You'll never know if they can go from idea to business until you actually test your target market's willingness to pay.
+- Find three customer in forty-eight hours who will give you money for your idea.
+- Don't worry about building a business, we are only validating your idea. And if it's this hard now, it'll only get harder.
+- You need to get real money, from real people.
+- Make real contact with real people, tell them what you're selling, ask for money, and see how they react.
+- Turn the ask into an explanatory conversation, to allow for more learning.
+- Your job is to get customers talking about their problem.
+- Finish with summarizing what the person said.
+- The bigger the pain, the bigger the opportunity.
+- You're looking for excitement and a willingness to pay. You know their problem and you know an option to fix it that they are excited about.
+- If they pay you, that's Validation success.
+- Distill your offer down to three parts: Price + Benefit + Time: *For $96, I will teach you how to write better in two hours.*
+- Presenting your offer as a comparison can make it easier for your customer to understand: *We are like your competitor but twice as cheap.*
+- Everyone's "interested" until they have to pay. You ask for money and ask people to pay immediately.
+- You have to get comfortable with potentially selling a product before you've actually made it.
+- Always follow up be sending an email to your first customers asking for feedback. Always, always, always ask for a referral.
+- Almost every business idea is guaranteed to fail on the first try.
+- Keep validating. Turn rejection into improvements. Feedback is gold.
+- Try to DM people, or whatever enables you to get the fastest response time possible.
+- The great thing about a marketplace is you have a shit-ton of people who are looking to spend money. It's a reliable way to validate different business ideas you're thinking of.
+- Post it to the marketplace, along with a price, to see if there's an audience.
+- Just focus on seeing if you can get people to buy your product. 
+- Example pitch: *Healthy, sourced by me , and if you don't like it, happy to refund you. Only taking ten orders as part of the first batch.*
+- A community who already knows you, who follows you, who is rooting for you is one of the most powerful forces in business, and it's created through generosity.
+- It takes time to build a real audience.
+- People get hooked on *characters*. People do business with *real people*. Especially those who *feel* like a friend.
+- Write out your unique angle: Who are you? Why should people listen? What are you passionate about? What will you do for people?
+- The Content Circle Framework:
+	1. **Core Circle**: start with a very narrow audience.
+	2. **Medium Circle**: as you move bigger, your content should overlap somewhat with what concerns your Core Circle, but it should appeal to a broader audience.
+	3. **Large Circle**: here you go for the largest audience possible that's still related.
+- Ask yourself a few questions:
+	- What is something everyone thinks is true—but you think is wrong?
+	- What is something nobody in your target market is talking about—but should be?
+	- What are the biggest mistakes people in your market are making—but are totally blind to?
+- Ultimately, your audience wants to learn something from you that's relevant, useful, and surprising.
+- It's fascinating that people want to see what's really going on, not the highlight reel we think they want.
+- The only way to consistently monetize whatever audience you build, wherever you build it, is with email.
+- No matter how many new social media platforms pop up, email is still the most powerful channel for deepening your relationship with your audience.
+- A healthy email list has a 20% open rate. Target that.
+- A landing page is where you can offer them the bonus content—aka Lead Magnet—to communicate a value proposition and provide a way to capture emails.
+- The easiest way to start building your list is to use your existing network.
+- Always look at what assets and networks you have available today before reaching out to randoms.
+- Put the landing page address in your:
+	- Email signature
+	- Biography on social media
+- You can measure the traffic and conversion rate you get from these mentions with bitly.com or linktree.com.
+- Your followers would love to have a resource that they can use to put your advice into practice.
+- Go to https://noahkagan.com/resources/ to get Lead Magnet templates
+- Use kit.com or sendfox.com as your email provider
+- Remember, the "welcome email" must arrive at the moment they are most willing to participate in your business. That's why every time someone joins my list, I ask one question in my Welcome Email: "What could I write to provide value to you?"
+	- In that way, you'll get tons of content ideas and know exactly what your subscribers want.
+	- Especially at the beginning, you should respond to every single new subscriber.
+- With the Connection Email, you're explicitly asking them to connect with you on social media.
+- The Content Email is where you give them a piece of great content. Always send your best Content Email (e.g. free course, best articles or videos, content most useful for your audience, etc.) in the beginning.
+- Lean in and commit to 100 reps.
+	- For the first 100, it's about your doing it, rather than anyone else's liking it.
+	- Once that's done, you can decide whether you want to give it up or not.
+- Ask yourself (with `/grill` and `/validate-biz-idea`) these questions:
+	- What is your one goal for this year?
+	- Who exactly is your customer and where can you find them?
+	- What is one marketing activity you can double down on?
+	- How can you delight your first 100 customers?
+	- If you *had* to double your business with no money in 30 days, what would you do?
+- Starting with the destination makes planning the route much easier. Work backwards from your goal.
+- Once you have a goal and a time frame, you can break down your goal into a timeline of smaller targets.
+- To find the thing that does work, what you need is a process of small experiments—based on your *best guess* of what might work.
+- Look where you found your previous ones and ask your existing customers.
+- Here's a list of generic marketing ideas to get you going:
+	- Contacting your network
+	- Paid ads
+	- Social ads
+	- Content marketing
+	- Cold outreach
+	- Target market blogs
+	- Influencer marketing
+	- PR
+	- SEO
+	- Giveaways
+	- Collaborations
+- After you figured out your marketing ideas lists, we need to estimate expected sales from these ideas
+- The most important aspect of this process is to make decent guesses so you can have a framework to prioritize and double down on your scores
+- Another option is to add a column for Time to see which activities will not take much time but still get sales.
+- Don't spend money on marketing at first. Exhaust your free options.
+- List at least five places your customers are and how many sales in 30 days you think you can get from them.
+- Find what works and double down on it; find what doesn't work and kill it.
+- You need to find the tactics that are right for your business—not just what's the "hottest" marketing strategy this month.
+- 30 days is more than enough to get results from your marketing experiments.
+- The biggest growth lever in business is customer retention and referrals. If you're just starting out, every referral can literally double your business.
+- Ask your customer this: "What is one thing we can do today that will make you twice as happy with us?"
+- I was doing what I thought I should be doing versus what I really wanted.
+- Starting a business all comes back to freedom. That does not mean everything you do is to always maximize profits.
+- My main focus has always been to increase my freedom, continue my learning journey, and make the most of the "time freedom" that entrepreneurship has granted me.
+- Entrepreneurship is your chance to build your work around your life, not be swallowed up by it.
+- When you can't focus, you lose control.
+- There's no such thing as self-made. Everyone is team-made. Connect with no expectations. Persistently reaching out, following up, and asking for referrals.
+- In moments large and small, your life is shaped by your willingness  to face your fears. Remember, just keep going no matter what.

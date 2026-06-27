@@ -34,6 +34,8 @@ conventional (adj): standard, traditional, typical
 
 ossify (v): to become hardened or conventional and opposed to change
 
+effete (adj): exhausted of energy, decadent, enervated, snobbish, soft, overly refined, pretentious
+
 substitute (v-n): replacement, exchange 
 
 bandy (v): throw around, toss about, exchange carelessly, argue, spar verbally,
@@ -90,6 +92,8 @@ adroit (adj): skillful (social)
 
 congenial (adj): amiable, pleasant and friendly (social)
 
+amicable (adj): friendly, peaceful, harmonious, cooperative
+
 crony (n): who unfairly receives special treatment, a pal, cohort 
 
 ==ineptitude== (n): skill issues
@@ -106,7 +110,7 @@ ambiguous (adj): uncertain, fishy, suspicious, nebulous, obscure, arcane
 
 obfuscate (v): to make obscure, darken, confuse
 
-obstinate (adj): unpersuadable, stubborn, willful, rigid, adamant, implacable
+obstinate (adj): unpersuadable, obdurate, stubborn, willful, rigid, adamant, implacable
 
 refractory (adj): obstinate, unresponsive, recalcitrant, intractable, defiant
 
@@ -580,6 +584,8 @@ clamor (v-n): to become loudly insistent, noisy shouting
 
 chagrin (v-n): disappoint, upset, frustration, dismay
 
+vexation (n): irritation, frustration, annoyance, exasperation
+
 despondent (adj): hopeless, dejected, disheartened, downhearted
 
 ==impugn== (v): to doubt someone's character, qualities, or reputation by criticizing them
@@ -1029,7 +1035,7 @@ sanctum (n): a sacred place where one is free from intrusion
 
 hallow (v): sanctify, consecrate, venerate, honor, thánh hoá, tôn sùng
 
-revere (v): venerate, very much respect and admire someone or something
+revere (v): venerate, exalt, very much respect and admire someone or something
 
 deign (v): disgrace, stoop, to descend to a level that is beneath one's dignity
 
@@ -1151,6 +1157,8 @@ consort (v-n): associate, harmonize, company, partner, spouse
 
 liaise {with} (v): associate, establishe and maintain communication for mutual understanding and cooperation → liaison (n)
 
+concomitant (adj): accompanying, associated, related, linked
+
 aphorism (n): an ingeniously terse and concise style of statement/expression
 
 countenance (v-n): approve, sanction, expression (facial)
@@ -1184,6 +1192,8 @@ bough (n): the main branch of a tree
 inculcate (v): to teach and impress by frequent repetitions or admonitions
 
 admonish (v): give friendly earnest advice or encouragement to
+
+auspicious (adj): promising, favorable, fortunate, encouraging, propitious
 
 fortuitously: fortunately, luckily
 
@@ -1546,3 +1556,7 @@ epidemiology (n): public health, disease pattern analysis, outbreak investigatio
 gauche (adj: shy or uncomfortable when dealing with people and often saying or doing the wrong thing
 
 hermetically (adv): airtight, vacuum-sealed, completely sealed
+
+eunuch (n): thái giám
+
+timeserver (n): yes-man, sycophant, opportunist

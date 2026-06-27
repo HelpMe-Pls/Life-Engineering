@@ -22,52 +22,56 @@
 - Barbell strategy.
 ---
 ### 22/6
-- [ ] EO: 
-	- [ ] ETL
-	- [ ] E2E++
-- [ ] EP: `next-steps.md`++
-- [ ] Anger++
-- [ ] Live up to your standards
+- [x] EO: 
+	- [x] ETL
+	- [x] E2E++
+- [x] EP: `next-steps.md`++
+- [x] Anger++
+- [x] Live up to your standards
 ### 23/6
-- [ ] EO weekly report & sprint goals update
-	- [ ] Ask HR for "the follow up" progress
-	- [ ] QA & follow up with whatever remains
-	- [ ] E2E++
-- [ ] EP: `next-steps.md`++
-- [ ] Anger++
-- [ ] Live up to your standards
+- [x] EO weekly report & sprint goals update
+	- [x] Ask ops for "the follow up" progress
+	- [x] Follow up with QLD's ETL
+	- [x] Clean up Drive's folder
+	- [x] `global-hubspot` grading
+- [x] EP: Lane 2 HITL
+- [x] Anger++
+- [x] Live up to your standards
 ### 24/6
-- [ ] EO Sprint review:
-	- [ ] Record the transcript
-	- [ ] Wrap up E2E & CI/CD for `global-hubspot` 
-- [ ] EP: Pick up `next-steps.md` and proceed from there
-- [ ] Anger++
-- [ ] Live up to your standards
+- [x] EO:
+	- [x] `global-hubspot` d31-90++ 
+	- [x] `/understand` setup for `altai-hubspot-sync`
+- [x] EP: Pick up `next-steps.md` and proceed from there
+- [x] Anger++
+- [x] Live up to your standards
 ### 25/6
-- [ ] EO minimal work: 
-	- [ ] `/understand` setup for `global-hubspot` and `altai-sync`
-	- [ ] Contingencies
-- [ ] EP: `next-steps.md`++
-- [ ] Anger++
-- [ ] Live up to your standards
+- [x] EO minimal work:
+	- [x] Arlene
+	- [x] Send the SHUI message to the old infant
+- [x] EP: quiz & domain setup guide
+- [x] Anger++
+- [x] Live up to your standards
 ### 26/6
-- [ ] EO minimal work:
-	- [ ] Write the docs for a fresh repo setup on a new device
-	- [ ] Mel & QLD++
-- [ ] Bragdoc
-- [ ] EP: `next-steps.md`++
-- [ ] Finish Anger
-- [ ] Live up to your standards
+- [x] EO Sprint review:
+	- [x] Record the transcript
+	- [x] Write the docs for a fresh repo setup on a new device
+- [x] Bragdoc
+- [x] EP: `next-steps.md`++ (quiz with `/prototype`)
+- [x] Setup Mac
+- [x] Anger++
+- [x] Live up to your standards
 ### 27/6
-- [ ] Perfect dive start + 500m with paddles
-- [ ] Groceries
-- [ ] EP: `next-steps.md`++
-- [ ] Finish MDW notes and start categorizing the headings
-- [ ] Live up to your standards
+- [x] Perfect dive start + 500m with paddles
+- [x] Groceries
+- [x] EP: `next-steps.md`++
+- [x] Finish MDW notes 
+- [x] Mã Lạng
+- [x] Live up to your standards
 ### 28/6
-- [ ] EP: `next-steps.md`++
-- [ ] Planning for your next most optimal move
+- [ ] EP: `next-steps.md`++ (finish quiz)
+- [ ] Refine the nudge
 - [ ] Weekly planning
+- [ ] Categorize entrepreneur's notes
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 
@@ -78,16 +82,17 @@
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
 - EO:
-	- [ ] Send the SHUI messages
+	- [x] Send the SHUI messages
 	- [x] Make sure that the "definition of done" for a sprint is that a non-tech stakeholder can use it without any friction
 	- [x] Add email hook (or SMTP) to send more than 2 `resetPw` emails an hour
 	- [x] Altai ⇌ HubSpot prod: finish the mkt sync
 	- [x] E2E for `global-hubspot` with this prompt in plan mode once the MVP is approved: *Explore the repo and utilize the appropriate skills in your repertoire to give me the OPTIMAL prompt to start implementing E2E tests and make sure that the entire testing infrastructure is enterprise-grade, no flaky/noisy tests and zero test for implementation details. Above all, the tests are there to prevent regression.*
 	- [x] Resolve conflicts and merge #22
 	- [x] Install `mattpocock` skills on the repo and run `/tdd` once you're done with the issues
-	- [ ] Refresh `README.md` by using the `/understand` skill
+	- [ ] For `master_admin`: Enable moving a `chapter` account to other chapters 
+	- [x] Refresh `README.md` by using the `/understand` skill
 	- [x] Extract the general rules from `file.md` for `global-hubspot`
-	- [ ] Setup CI/CD workflow
+	- [x] Setup CI/CD workflow
 - EP: 
 	- [x] Fix the missing white background for lessons in read-only mode
 	- [x] Fix the `Error: useCollaborationContext: no context provider found` on `http://localhost:5173/courses/intro-to-web-dev/html-css-fundamentals/html-structuring-your-first-web-page`

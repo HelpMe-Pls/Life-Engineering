@@ -18,6 +18,9 @@ How it works:
   }
 ```
 
+# Skills
+[[validate-biz-idea]]
+
 ---
 # The fundamentals
 ## Overview

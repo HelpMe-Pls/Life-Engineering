@@ -32,7 +32,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Million Dollar Weekend.md",
+                    "file": "Books/Million Dollar Weekend.md",
                     "mode": "source",
                     "source": false
                   },
@@ -263,19 +263,23 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "fb467ff5f9d3f31b",
+  "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
+    "Books/Million Dollar Weekend.md",
     "Notes/Weekly Tasks.md",
+    "AI/With Claude Code.md",
     "Notes/Daily Standup.md",
-    "Million Dollar Weekend.md",
+    "AI/validate-biz-idea.md",
+    "AI/validate-biz.md",
+    "AI/roast-SKILL.md",
     "Tips & Tools/English vocab.md",
+    "Notes/2025.md",
     "Pasted image 20260620195825.png",
     "Books/Books.md",
     "Books/Antifragile.md",
     "Notes/2026.md",
     "Antifragile.md",
     "Tips & Tools/English grammar.md",
-    "AI/With Claude Code.md",
     "Books/Beyond Order.md",
     "Books/Man's Search For Meaning.md",
     "Notes/HubSpot.md",
@@ -291,9 +295,6 @@
     "Tips & Tools/cron.png",
     "Pasted image 20260417091615.png",
     "Frontend/Network/Networking.md",
-    "Tips & Tools/Technical.md",
-    "Tips & Tools/Interview prep.md",
-    "DevSecOps/DevOps.md",
     "Pasted image 20260414111250.png",
     "AI/Pasted image 20260401141615.png",
     "AI/Pasted image 20260404120816.png",

@@ -1,8 +1,8 @@
 > [!important] A friendly reminder
 > If you're still getting paid each month + have access to AI, you're still winning. EVERYTHING ELSE is noise.
 
-- Yesterday I finished the setup for the new `eochapterhubspotrollout.com` domain. Now it's production-ready.
-- Today I'm gonna add the final touches to polish the UX, then introduce the app to EO Melbourne so they'll start using it to track their rollout progress. 
+- Last Friday the team aligned on the goals for this sprint.
+- Today I'm gonna work with the team to set up Adelaide in global.
 
 > [!warning] Chewsday ping
 >Just flagging again: there's a contract violation around SHUI owed ever since I came on full-time.
@@ -11,7 +11,11 @@
 ---
 # EP
 > [!important] For prompts
-> Remove line clamps so that every bullet/paragraph is one logical line, and the text reflows correctly in any input box
+> - Remove line clamps so that every bullet/paragraph is one logical line, and the text reflows correctly in any input box
+> - To update skills globally: 
+> 	- `bunx -y skills@latest add mattpocock/skills -g`
+> 	- `bunx -y skills@latest update -g -y`
+
 
 ## Next
 - Read @docs/plans/next-steps.md to follow its instructions
@@ -252,42 +256,12 @@ State what you could not determine, what commands failed, what areas need deeper
 ## For The Old Infant
 
 ### Escalate with SHUI
-
-> [!important] The play
-> ==He can refuse, but every branch must cost him more than paying — and you bank evidence either way.== The amount is never negotiable, **only the schedule**. You're not asking a favor; you're collecting already-deducted salary. Calm, warm, in control: _"I'm okay, you're okay, let's figure things out."_
-> Physics on your side: at contract end (Oct) he must pay **everything + late interest** anyway, or the sổ BHXH can't be confirmed. Ignoring you doesn't make the debt expire — it compounds.
-#### Pre-send checklist (ALL of these, before the opener)
-- **Archive everything off company systems**: contract, payslips, VssID screenshots, every SHUI ping, ==the May 19 letter, your same-evening response, and the full Dave chat threads==. If access is ever cut, the evidence survives.
-- [x] **Minh Vu**: confirm whether his SHUI is covered. Decide *now*: this script speaks **solo** ("my own payslip"). A joint front is a different, bigger move — don't drift into it mid-chat.
-- [ ] **The number**: `[N]` months × (gross × 10.5%) ≈ `[amount]` of *your* money. (His unpaid employer share is ~21.5% on top — know it, don't lecture it.)
-- [ ] **Goal card** (keep beside you): GOAL → first remittance visible in VssID by **Jun 30**; full cure with dates ≤ **Sep 30**; July eval date + criteria locked. TRIGGER → any missed verified date = file, no more reminders.
-- [ ] **Calendar the filing date now** (first business day after the first milestone can be missed). Escalation must be the *default*, not a decision you'll have to summon courage for later.
-- [ ] Calm weekday morning. Re-read once in the late-night FM DJ voice. Send.
-#### The opener — four SEPARATE messages, in order
-Wait ~30–60s between them; if he starts typing, stop and let him.
-
-```
-1) Hey [Boss]
-Before July planning kicks off, I want to properly close out the SHUI (Social, Health, Unemployment Insurance) thing.
-
-2) I know the books fell behind during the crunch, and honestly, the longer it sits, the more awkward it gets between us (which it kinda is as I'm typing this out)
-So the plan was always to quietly make it right.
-```
-```
-3) Here's where that leaves things: for the past 7 months (soon to be 8), SHUI deductions have come out of my paycheck every single month, but none of it has ever reached the fund. 
-As a result, I still have zero social insurance or unemployment insurance coverage to this day, even though I've been paying into the system the whole time.
-
-And to be clear, this isn't a raise or bonus conversation, it's already my money (as mentioned in my contract), so I'm keeping it completely separate from the comp review.
-
-I'd really like us to land on a concrete plan with actual dates, so the comp review can be a clean conversation about the future rather than getting tangled up with the past.
-```
-
- **Silence, wait for his answers**
+Follow up after a day or two:
+- Have you had a chance to think about how we get this one caught up?
+- Have you given up on solving this one between us?
  
 ```
-4) I genuinely want to renew my contract and stick around to help deliver the EO project (which I certainly have high hopes for), and I'd like to get this sorted between us before the evals so it doesn't end up coloring that conversation. 
-   
-   Would it be unreasonable to ask for my SHUI contributions to be paid in full by the end of July? I'm fine with partial payments along the way, as long as we land on a date for getting it fully squared away. And I understand that a full reconciliation of this SHUI thing might not be a viable option right now, so I do have a better alternative in mind as a way to settle this. Let me know if you're interested. 
+Would it be unreasonable to ask for my SHUI contributions to be paid in full by the end of August? I'm fine with partial payments along the way, as long as we land on an actual date for getting it fully squared away. And I understand that a full reconciliation of this SHUI situation might not be a viable option right now, so I have a better alternative in mind to settle this. Happy to jump on a quick call to discuss it if you're open to it. 
 ```
 *(No-oriented question — "no, that's not unreasonable" is him saying yes — then the calibrated handoff so **he** authors the schedule.)*
 #### Pin it (the moment he offers anything)
@@ -295,7 +269,7 @@ Restate whatever he proposes and bolt it down — then ==the trigger, stated onc
 ```
 So: [amount] showing in VssID by [Jun 30], the rest by [date]. Putting both in my calendar — I'll check VssID on each date. If it's there, we never talk about this again and the compensation eval is purely about the future. If a date passes without it showing, I'll take it that we couldn't solve this directly and I'll have to go through official channels instead, which, honestly, I'd rather avoid. Bureaucratic paperwork with the government has never exactly been something to look forward to.
 ```
-- **Acceptance floor** (pre-decided — never negotiate it live): first remittance in VssID ≤ 30 days; full cure ≤ Sep 30 (well before contract end); any miss = file.
+- Let me tell you something, tell me how it lands. What I actually care about is being made whole. If the full reconciliation of this SHUI situation might not be a viable option right now, the other clean way is forward: bring my comp up to `65M` starting next month and into the renewal. With that, I'm happy to stop chasing the back-SHUI — no paperwork, no awkwardness, we both move on.
 #### Branch playbook — if he says X, send Y
 - **Vague promise** (*"soon, don't worry, I'm on it"*) → "Love it. Which date do I put in the calendar to check VssID?"
 - **"After July / we'll sort it with the eval"** → "July is about my next year's value. This is last year's salary that never reached the fund — how do we settle the past first, so July is clean?"
@@ -329,43 +303,6 @@ So: [amount] showing in VssID by [Jun 30], the rest by [date]. Putting both in m
 - Never sign anything same-day (waiver, "voluntary resignation", cash receipt). "Let me read it properly tonight."
 - Screenshot everything, same day, off company systems.
 - Every number you send must already be verified (VssID + payslips).
-#### If the trigger fires
-1. 30-minute sanity check with a labor lawyer or the BHXH support line *(procedure check, not strategy — nothing in the script depends on legal citations)*.
-2. File the complaint with the BHXH agency where Edge8 is registered; labor inspectorate next; court last. Bring: contract, payslips, VssID history, chat recaps.
-3. Remember the physics: at contract end he owes **everything + late interest** regardless — filing just moves up the date and takes the schedule out of his hands.
-#### Vent block — things you'll want to say. ==DON'T.==
-*(Feelings honored here so they never reach the send box. Each one converts you from creditor to combatant inside an exhibit he can screenshot.)*
-- ~~The cat food / beef jerky "scam" jab + "you love to prove me wrong"~~ → an insult in evidence; instantly the villain.
-- ~~"You've been given far more grace than I ever received… the double standard is glaring"~~ → starts a character war; he wins those by rank.
-- ~~"I've been doing you favors instead of keeping this professional"~~ → self-undermining on paper.
-- ~~"8 chances to make it right" scorekeeping~~ → stale math by now, and scorekeeping invites a rebuttal, not a payment.
-- ~~"Hard to see you in the same light / assume good intention" sermon~~ → the BHXH line does this work without the sermon.
-- ~~"There's clearly budget to hire new people"~~ → true, but it reads as auditing his spending; the leverage already exists without the jab.
-### Warning-letter defense (the May 19 file)
-
-> [!warning] What it is, and what it's for
-> A first formal warning (May 19, Mai → you, CC Dave): meeting/lunch attention ×2, the magic links, "failure to return to EO" — plus a "last warning" threat in chat. Paper built ==right before an eval cycle== has one job: to be the July raise-killer and the "you're in no position to make demands" card. Assume it WILL be played.
-> Two facts defang it: ==it has zero bearing on SHUI== (deducted salary must reach the fund no matter what anyone's performance file says), and ==you already answered it well== — same-evening ownership + context + three named changes. That response is now *your* exhibit.
-> The real trap is the word **"defensive"**: it's pre-loaded so that any pushback confirms the label. So this defense is built to never look like defense: ==agree first, redirect to criteria, let receipts talk.==
-#### If he plays it (the aikido, in order)
-1. **You raise it first** (accusation audit — deny him the reveal): "Before we get into the year — you might be thinking about May. Let's start there so it's not sitting under the table."
-2. **Own → convert**: "You gave me direct feedback. I owned it in writing that same evening and changed three things: presence over context-switching, real prep for client-facing settings, and flagging overload early instead of absorbing it silently. Since May 19: no repeats — and the year shipped [EO renewal / chapters live / onboarding + auth]. To me that letter is the best evidence in this room that feedback I'm given turns into changes you can see."
-3. **Proportion** (calibrated — HE does the math): "What's the fair way to weigh three weeks in May against the full year of delivery?"
-4. **Still anchoring on it** → label + silence: "It seems like May has become the lens for the whole year."
-5. **Flat "no raise — you got a warning"** → convert the denial into a contract: "Okay. What specifically would need to be true by September for this to be a yes? Let's write it down — if I hit it, we reopen before renewal."
-6. **No criteria offered** → "How am I supposed to commit to another year without a path that exists on paper?" If still nothing, that's your answer about the whole game: the floor (47.5), and the market are the rest of the conversation. ==No deal is better than a bad deal.==
-
-**Side-branches:**
-- *"You're being defensive again"* → "You're right that I can push back fast. So here's me not doing that: what makes this a yes by September?"
-- *He quotes the chat ("you told your CEO to test it himself / who do you think you are?")* → one clause of ownership, then pivot: "Fair — I'd phrase that differently today. Same week, the QA items were green in the tracker; both things are true. What matters for this conversation is what the year produced."
-- *It surfaces in the SHUI chat instead* → the warning branches in the playbook above; the lanes never merge.
-
-#### Never do
-- ~~Relitigate items 1–4 point by point~~ → turns the eval into a trial of May; he wins those by rank, and "defensive" gets confirmed for free.
-- ~~Defend the chat tone beyond one clause~~ → lengthy justification is how the label sticks.
-- ~~Volunteer the receipts unprompted~~ → a rebuttal offered before the attack reads as guilt.
-- ~~Say "retaliation" / "hostile" / anything legal-flavored about the letter~~ → that card belongs to the inspectorate stage, not chat.
-- ~~Mock the lunch-attention item~~ → padding in a formal letter *does* signal a thin file; knowing it is leverage, saying it is war.
 ### July raise card
 
 > [!important] Sequencing
@@ -410,6 +347,7 @@ Core tenet: assume good intentions
 ## Prompts
 - General `next-steps.md`: 
 	- I need you to optimize the `next-steps.md` file so that I can start a fresh Claude Code session with this simple prompt: "Read @docs/plans/next-steps.md to follow its instructions" and it will know EXACTLY what to do, as well as keeping @docs/plans/next-steps.md up-to-date as it goes.
+- Generate a meeting summary based on `this transcript`. Refer to the `Sample` for the desired output.
 ## Key metrics
 - Chapters are able to track their two levers of growth, member retention and member acquisition with a goal of 8% NET new growth every year.
 - The leading indicators of this is <u>data cleanliness</u> and `number of leads` to `number of opportunities` from a deal funnel perspective → more deals → more potential for more money.
