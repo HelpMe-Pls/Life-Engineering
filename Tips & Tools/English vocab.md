@@ -216,7 +216,7 @@ precede (v) {caution: it's not precEEd}: to be in front of, earlier than, to sur
 
 recede (v): withdraw, diminish, decrease 
 
-assuage (v): ease, quench, appease, mollify, pacify, solace, succor
+assuage (v): ease, quench, appease, propitiate, mollify, pacify, solace, succor
 
 extenuating (adj): providing a partial justification or excuse for something
 
@@ -842,7 +842,7 @@ lamentable (adj): deplorable, mournful, wretched
 
 ==harrowing== (adj): painful to go through or witness, traumatic, agonizing, extremely distressing
 
-meticulous (adj): careful, diligent, engaged
+meticulous (adj): careful, punctilious, diligent, engaged
 
 wage (v): to carry on, in process of occurring
 
@@ -1213,7 +1213,7 @@ holistic (adj): toàn diện
 
 contort (v): to twist in a violent manner
 
-homage (n): respect, tribute
+homage (n): respect, tribute, ode
 
 bigot (n): a narrow-minded person
 
@@ -1560,3 +1560,9 @@ hermetically (adv): airtight, vacuum-sealed, completely sealed
 eunuch (n): thái giám
 
 timeserver (n): yes-man, sycophant, opportunist
+
+feudal (n): phong kiến
+
+confer (v): consult, deliberate, huddle, sync up, discuss
+
+desuetude (n): obsolescence, disuse, legal invalidity 

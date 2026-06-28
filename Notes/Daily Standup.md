@@ -261,7 +261,8 @@ Follow up after a day or two:
 - Have you given up on solving this one between us?
  
 ```
-Would it be unreasonable to ask for my SHUI contributions to be paid in full by the end of August? I'm fine with partial payments along the way, as long as we land on an actual date for getting it fully squared away. And I understand that a full reconciliation of this SHUI situation might not be a viable option right now, so I have a better alternative in mind to settle this. Happy to jump on a quick call to discuss it if you're open to it. 
+Honestly, I don't want this hanging over us or turning into a formal paperwork thing, it's no good for anyone. 
+So rather than the awkward back-payment dance, let's just put it behind us, match my salary to the market rate starting next month, and get SHUI running correctly from here on out, and I'll consider the back pay resolved. Clean slate, we both move on, EO gets my best. How's that sound?
 ```
 *(No-oriented question — "no, that's not unreasonable" is him saying yes — then the calibrated handoff so **he** authors the schedule.)*
 #### Pin it (the moment he offers anything)

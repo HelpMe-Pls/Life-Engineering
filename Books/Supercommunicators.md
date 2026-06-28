@@ -2,7 +2,7 @@
 - It's all about recognizing that we need to be engaged in the same _kind_ of conversation, at the same time, if we want to connect.
 - For the most meaningful discussions, it is crucial to have a "==learning conversation==". We all want meaningful conversations.
 - Every discussion is influenced by ==emotions==, no matter how rational the topic at hand. Emotions help us connect.
-
+---
 # The guidelines
 - **Pay attention** to what kind of conversation is occurring.
 - **Share** your goals, and **ask** what others are seeking.

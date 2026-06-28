@@ -4,7 +4,6 @@
 	- Freedom is always associated with risk taking, whether it leads to it or comes from it.
 	- Being reviewed or assessed by others matters if and only if one is subjected to the judgment of future - not just present - others. 
 - Really successful people say no to almost everything.
-
 # Society
 - Societies were run by risk takers, not risk transferers.
 	- Bureaucracy is a construction by which a person is conveniently separated from the consequences of his or her actions.
@@ -29,7 +28,6 @@
 - Individual ruin is not as big as a deal as collective ruin.
 	- The point is that my death is never the worst-case scenario unless it correlates to that of others.
 - The fragility of the system's components (provided that they are renewable and replaceable) is required to ensure the solidity of the system as a whole.
-
 # Risk
 - The same mechanism of transferring risk also impedes learning. 
 - If you do not take risks for your opinion, you are nothing.
@@ -47,13 +45,11 @@
 - Skin in the game means that you do not pay attention to what people say, only to what they do, and to how much of their necks they are putting on the line.
 - If there is a possibility of ruin, cost-benefit analyses are no longer possible.
 - Volatility is not necessarily risk, and the reverse is also true.
-
 # Efficacy
 - You want maximal free time, not maximal activity, and you can access your own "success" according to such metrics.
 - Statistics isn't about data but distillation, rigor, and avoiding being fooled by randomness.
 - Most gains in physical strength come from working the tails of the distribution, close to your limit.
 - Avoid mistaking the lurid for the empirical or confusing intensity with frequency.
-
 # Perception
 - You are rewarded for perception, not results.
 - True intellect should not appear to be intellectual.
@@ -62,7 +58,6 @@
 - Our knowledge of the world is fundamentally incomplete, so we need to avoid getting into unanticipated trouble.
 > We do not need to be overly paranoid about ourselves, we need to shift some of our worries to bigger things.
 - Establish a high filter, then pick opportunities that pass such a threshold.
-
 # Virtue
 - We know with much more clarity what is bad than what is good.
 - Conduct yourself toward your parents as you would have your children conduct themselves toward you.
@@ -79,12 +74,10 @@
 - Doing business will always help (because it brings about economic activity without large-scale risky changes in the economy)
 > Courage (risk taking) is the highest virtue. We need entrepreneurs.
 - Courage is when you sacrifice your own well-being for the sake of the survival of a layer higher than yours.
-
 # Faith
 - The human nature of Christ makes the divine possible for all of us.
 - In science, belief is literal belief; it is right or wrong, never metaphorical. In real life, belief is an instrument to do things, not the end product.
 > How much you truly "believe" in something can be manifested only through what you are willing to risk for it.
-
 # Rationale
 - By definition, what works cannot be irrational.
 - Most of what is called "irrational" comes from misunderstanding of probability.
@@ -95,7 +88,6 @@
 > Collective rationality might require some individual biases.
 - What is rational is that which allows for survival.
 - Rationality is avoidance of systemic ruin.
-
 # Misc
 - It is easier to know that something is wrong than to find the fix. Actions that remove are more robust than those that add because addition may have unseen, complicated feedback loops.
 > It is at the foundation of evolution that systems get smart by elimination.

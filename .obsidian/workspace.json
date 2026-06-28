@@ -27,17 +27,17 @@
                 }
               },
               {
-                "id": "fb467ff5f9d3f31b",
+                "id": "467665af702d7a85",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Books/Million Dollar Weekend.md",
+                    "file": "Books/Never Split The Difference.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Million Dollar Weekend"
+                  "title": "Never Split The Difference"
                 }
               },
               {
@@ -54,8 +54,7 @@
                   "title": "Daily Standup"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "8cedd05142699eb5",
@@ -263,27 +262,28 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "8e81d5625c66b75e",
+  "active": "8e701c92c4b0d885",
   "lastOpenFiles": [
-    "Books/Million Dollar Weekend.md",
     "Notes/Weekly Tasks.md",
-    "AI/With Claude Code.md",
-    "Notes/Daily Standup.md",
-    "AI/validate-biz-idea.md",
-    "AI/validate-biz.md",
-    "AI/roast-SKILL.md",
     "Tips & Tools/English vocab.md",
-    "Notes/2025.md",
-    "Pasted image 20260620195825.png",
+    "Notes/Daily Standup.md",
+    "Books/Never Split The Difference.md",
+    "Books/Million Dollar Weekend.md",
+    "Books/Man's Search For Meaning.md",
+    "Books/Extreme Ownership.md",
     "Books/Books.md",
+    "Books/Beyond Order.md",
     "Books/Antifragile.md",
+    "Books/Supercommunicators.md",
+    "Books/Skin In The Game.md",
+    "Million Dollar Weekend.md",
+    "AI/validate-biz-idea.md",
+    "Pasted image 20260620195825.png",
     "Notes/2026.md",
     "Antifragile.md",
     "Tips & Tools/English grammar.md",
-    "Books/Beyond Order.md",
-    "Books/Man's Search For Meaning.md",
+    "AI/With Claude Code.md",
     "Notes/HubSpot.md",
-    "Books/Extreme Ownership.md",
     "Notes/Notes.md",
     "Notes/E-learning MVP.md",
     "Notes/Edge8.md",
@@ -294,7 +294,6 @@
     "Tips & Tools/code-review.png",
     "Tips & Tools/cron.png",
     "Pasted image 20260417091615.png",
-    "Frontend/Network/Networking.md",
     "Pasted image 20260414111250.png",
     "AI/Pasted image 20260401141615.png",
     "AI/Pasted image 20260404120816.png",

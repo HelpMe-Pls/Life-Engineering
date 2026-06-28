@@ -5,13 +5,11 @@
 # Love
 - Love is the only way to grasp another human being in the innermost core of his personality.
 - The salvation of man is through love and in love.
-
 # Sufferings
 - Suffering ceases to be suffering at the moment it finds a meaning, such as a meaning of sacrifice.
 - To suffer unnecessarily is masochistic rather than heroic.
 - There is only one thing that I dread: not to be worthy of my sufferings.
 - There was no need to be ashamed of tears, for tears bore witness that a man had the greatest of courage, the courage to suffer.
-
 # Hope
 - Humor was another of the soul's weapons in the fight of self-preservation.
 - The attempt to develop a sense of humor and to see things in a humorous light is some kind of a trick learned while mastering the art of living.
@@ -19,7 +17,6 @@
 - What matters is to make the best of any given situation.
 - Live as if you were living already for the second time and as if you had acted the first time as wrongly as you are about to act now!
 - Happiness cannot be pursued; it must ensue.
-
 # Mindfulness
 - Human being is completely and unavoidably influenced by his surroundings.
 - Every situation is distinguished by its uniqueness, and there is always only one right answer to the problem posed by the situation at hand.
