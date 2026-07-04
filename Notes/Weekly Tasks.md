@@ -59,13 +59,13 @@
 - [x] Groceries
 - [x] EP: `next-steps.md`++
 - [x] `/validate-biz-idea`
-- [ ] Tao Te Ching++
+- [x] Anger++
 - [ ] Live up to your standards
 ### 5/7
-- [ ] EP: HITL planning
+- [ ] EP: `next-steps.md`++
 - [ ] Weekly planning
-- [ ] `/validate-biz-idea`
-- [ ] Tao Te Ching++
+- [ ] Review runbooks
+- [ ] Finish Anger
 - [ ] Live up to your standards
 
 ---
