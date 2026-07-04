@@ -21,52 +21,50 @@
 - Connect the dots.
 - Barbell strategy.
 ---
-### 29/6
-- [ ] EO: 
-	- [ ] Remind Arlene to keep the new leads/deals in global
-	- [ ] Remind the old infant
-	- [ ] `global-hubspot` backlog++
+### 6/7
+- [ ] EO: 	
+	- [ ] Verify `Admin` flow + set `EOAdm1n$` pw for `Pending` accounts
+	- [ ] QLD setup?
 - [ ] EP: `next-steps.md`++
-- [ ] Anger++
+- [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 30/6
+### 7/7
 - [ ] EO weekly report & sprint goals update
-	- [ ] Follow up with QLD's ETL
 	- [ ] Contingencies
-- [ ] EP:  `next-steps.md`++ (implement `Contact Us`)
-- [ ] Anger++
+- [ ] EP:  `next-steps.md`++ (start the runbook)
+- [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 1/7
+### 8/7
 - [ ] EO sprint review:
 	- [ ] Record the transcript
-	- [ ] Contingencies
-- [ ] EP: `next-steps.md`++
-- [ ] Anger++
+- [ ] Runbook++
+- [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 2/7
 - [ ] EO minimal work:
-	- [ ] ETL?
+	- [ ] Wave1++
 	- [ ] Contingencies
-- [ ] EP: `next-steps.md`++
-- [ ] Anger++
+- [ ] Runbook++
+- [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 3/7
 - [ ] EO minimal work:
 	- [ ] Contingencies
 - [ ] Bragdoc
-- [ ] EP: `next-steps.md`++ 
-- [ ] Finish Anger
+- [ ] Runbook++
+- [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 4/7
-- [ ] Perfect dive start + 500m with paddles
-- [ ] Groceries
-- [ ] EP: `next-steps.md`++
+- [x] Perfect dive start + 500m with paddles
+- [x] Groceries
+- [x] EP: `next-steps.md`++
+- [x] `/validate-biz-idea`
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 5/7
-- [ ] EP: `next-steps.md`++ 
+- [ ] EP: HITL planning
 - [ ] Weekly planning
-- [ ] Plan for the next SaaS
+- [ ] `/validate-biz-idea`
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 
@@ -97,7 +95,7 @@
 	- [x] Last vuln & high ROI perf bottlenecks scan with `gpt-5.5-xhigh`. Perform a via negativa approach if you see fit. 
 	- [ ] Run `/improve-codebase-architecture` AFTER closing #131 & #135
 	- [x] Re-run the grading prompt
-	- [ ] Optimize `CLAUDE.md` & `BACKLOG.md` once again with Opus Max based on the new architecture.
+	
 	- [x] Update the master `README.md` (with the `/understand` skill) to give an overview of how to navigate around the codebase, which skills to use when encountering a bug and to create new features. Export an html file to visualize it
 	- [x] Setup CI/CD workflow
 	- [ ] Set up YOUR bank account (MBBank or BIDV) for PayOS Prod

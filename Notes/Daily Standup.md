@@ -1,8 +1,8 @@
 > [!important] A friendly reminder
 > If you're still getting paid each month + have access to AI, you're still winning. EVERYTHING ELSE is noise.
 
-- Last Friday the team aligned on the goals for this sprint.
-- Today I'm gonna work with the team to set up Adelaide in global.
+- Last Friday I fixed up the auth flow to make sure the right account statuses are showing
+- Today I'm gonna work with the team to get HubSpot set up for Wave 1 chapters, and improve the app's performance to reduce load time between `/admin` routes.
 
 > [!warning] Chewsday ping
 >Just flagging again: there's a contract violation around SHUI owed ever since I came on full-time.
@@ -16,11 +16,9 @@
 > 	- `bunx -y skills@latest add mattpocock/skills -g`
 > 	- `bunx -y skills@latest update -g -y`
 
-
 ## Next
-- Read @docs/plans/next-steps.md to follow its instructions
+- /goal Read @docs/plans/next-steps.md to follow its instructions and close-out the `Agent-ready queue`
 - Pls go ahead and do the merge so I can start a fresh session with the instructions in @docs/plans/next-steps.md
-- Refresh `README.md` with `/understand`
 ## Later
 - Explore the relevant skills in your repertoire to give me an OPTIMIZED prompt for an agent to grade the overall quality of the codebase. I want the prompt's output to give me an HONEST assessment. The main criteria it should grade against are enterprise readiness and antifragility.
 - Using GPT5.5-xhigh: Perform an exhaustive scan on the codebase and run the /improve-codebase-architecture with its relevant skills to see how you can optimize the codebase for maximum antifragility.

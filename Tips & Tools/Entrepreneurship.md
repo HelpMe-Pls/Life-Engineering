@@ -1,4 +1,4 @@
-> [!abstract] How to read this note
+> [!info] How to read this note
 > This note is organized as a **micro-SaaS journey** — the path a solo builder walks from a raw idea to a sustainable **$2k+ MRR** software product. Read it top-to-bottom the first time; after that, jump to whatever phase you're in via the [[#The $0 → $2k MRR roadmap |roadmap]] below.
 > The spine: **Mindset → Validate → Build → Acquire users → Sharpen your craft → Price & retain (the MRR engine) → Scale.** Most of the timeless wisdom here applies to *any* one-person business; the SaaS-specific scaffolding (MRR math, churn, tiers, activation, launch) sits alongside it.
 
@@ -538,7 +538,8 @@ TL;DR: For a [[OnePersonBusiness.png |one-person]] online business, the principl
 - You can join existing groups as well. The member limit should be less than 20 for focused effort.
 
 # Pricing, marketing & retention
-> The **MRR engine**. Everything here moves the two numbers in *MRR = customers × price*: marketing and promotions bring customers in, pricing sets the multiplier, and **retention** stops them leaking back out. For a subscription business, the section that matters most over time is the one your old info-product note barely had — [[#Churn & retention |churn]].
+> [!info] The MRR engine
+> Everything here moves the two numbers in *MRR = customers × price*: marketing and promotions bring customers in, pricing sets the multiplier, and **retention** stops them leaking back out. For a subscription business, the section that matters most over time is the one your old info-product note barely had — [[#Churn & retention |churn]].
 
 ## MRR math
 > [!important] The only arithmetic that matters — know your targets cold

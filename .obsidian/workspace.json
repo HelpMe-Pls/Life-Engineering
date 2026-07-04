@@ -10,7 +10,7 @@
           {
             "id": "2ed2b87e25932f50",
             "type": "tabs",
-            "dimension": 52.25806451612903,
+            "dimension": 52.31164383561643,
             "children": [
               {
                 "id": "8e701c92c4b0d885",
@@ -32,12 +32,13 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Books/Never Split The Difference.md",
+                    "file": "Tips & Tools/Entrepreneurship.md",
                     "mode": "source",
-                    "source": false
+                    "source": false,
+                    "backlinks": false
                   },
                   "icon": "lucide-file",
-                  "title": "Never Split The Difference"
+                  "title": "Entrepreneurship"
                 }
               },
               {
@@ -46,20 +47,35 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/Daily Standup.md",
+                    "file": "Notes/Runbook 1 - Printing Money (E-learning).md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Daily Standup"
+                  "title": "Runbook 1 - Printing Money (E-learning)"
+                }
+              },
+              {
+                "id": "7b362af3234eab9a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Notes/Runbook 2 - Antifragile SaaS (Renewal-Clock).md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Runbook 2 - Antifragile SaaS (Renewal-Clock)"
                 }
               }
-            ]
+            ],
+            "currentTab": 3
           },
           {
             "id": "8cedd05142699eb5",
             "type": "split",
-            "dimension": 47.74193548387097,
+            "dimension": 47.68835616438357,
             "children": [
               {
                 "id": "c3184acf40a6477e",
@@ -262,35 +278,44 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "8e701c92c4b0d885",
+  "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
+    "Notes/Runbook 2 - Antifragile SaaS (Renewal-Clock).md",
+    "Notes/Runbook 1 - Printing Money (E-learning).md",
+    "Notes/Runbook 1 - Printing Money (E-learning).md.tmp.20308.56862f0ee9ce",
+    "Notes/Runbook 2 - Antifragile SaaS (Renewal-Clock).md.tmp.20308.43e70b4024f7",
+    "Notes/Runbook 1 - Printing Money (E-learning).md.tmp.20308.9f8dc2d7ff57",
     "Notes/Weekly Tasks.md",
-    "Tips & Tools/English vocab.md",
-    "Notes/Daily Standup.md",
-    "Books/Never Split The Difference.md",
-    "Books/Million Dollar Weekend.md",
-    "Books/Man's Search For Meaning.md",
-    "Books/Extreme Ownership.md",
-    "Books/Books.md",
-    "Books/Beyond Order.md",
-    "Books/Antifragile.md",
-    "Books/Supercommunicators.md",
-    "Books/Skin In The Game.md",
-    "Million Dollar Weekend.md",
+    "Notes/Runbook 1 - Printing Money (E-learning).md.tmp.20308.7aee76e4ae82",
+    "Notes/Runbook 1 - Printing Money (E-learning).md.tmp.20308.6e15f48f24bb",
+    "Notes/Runbook 2 - Antifragile SaaS (Renewal-Clock).md.tmp.20308.97c09cacab62",
+    "Notes/Runbook 2 - Antifragile SaaS (Renewal-Clock).md.tmp.20308.cd09b329714f",
+    "Notes/Runbook 2 - Antifragile SaaS (Renewal-Clock).md.tmp.20308.5b062f97625c",
+    "Notes/Runbook 2 - Antifragile SaaS (Renewal-Clock).md.tmp.20308.ae929a3ea95b",
+    "Notes/Runbook 2 - Antifragile SaaS (Renewal-Clock).md.tmp.20308.1a49ea3e7161",
     "AI/validate-biz-idea.md",
-    "Pasted image 20260620195825.png",
-    "Notes/2026.md",
-    "Antifragile.md",
-    "Tips & Tools/English grammar.md",
-    "AI/With Claude Code.md",
-    "Notes/HubSpot.md",
+    "Notes/Biz.md",
     "Notes/Notes.md",
-    "Notes/E-learning MVP.md",
+    "Tips & Tools/Entrepreneurship.md",
     "Notes/Edge8.md",
-    "[EOVN_Production_Deployment_Checklist.md",
-    "Frontend/CSS/CSS.md",
-    "Frontend/CSS/Animations.md",
-    "Tips & Tools/System Design.md",
+    "Notes/EO.md",
+    "Notes/Misc.md",
+    "Notes/Hackathon.md",
+    "Notes/Scripts.md",
+    "Notes/HubSpot.md",
+    "Notes/Brag Doc.md",
+    "Notes/Automation.md",
+    "Notes/E-learning MVP.md",
+    "Notes/Daily Standup.md",
+    "Tips & Tools/English vocab.md",
+    "Notes/2026.md",
+    "AI/With Claude Code.md",
+    "docs/superpowers/specs/2026-06-29-entrepreneurship-saas-reorg-design.md",
+    "Tips & Tools/Financial.md",
+    "Tips & Tools/Crypto.md",
+    "Books/Beyond Order.md",
+    "Books/Never Split The Difference.md",
+    "Pasted image 20260620195825.png",
     "Tips & Tools/code-review.png",
     "Tips & Tools/cron.png",
     "Pasted image 20260417091615.png",
@@ -300,16 +325,6 @@
     "Tips & Tools/maslows.png",
     "AI/Pasted image 20260404114933.png",
     "AI/Pasted image 20260404115157.png",
-    "AI",
-    "Notes",
-    "Books",
-    "Untitled.canvas",
-    "Frontend/Libraries/HTMX",
-    "Frontend/Frameworks/Remix",
-    "Backend/Golang",
-    "Frontend/HTML/url-breakdown.png.crdownload",
-    "Frontend/Libraries",
-    "NodeJS",
-    "Backend/NodeJS"
+    "Untitled.canvas"
   ]
 }
