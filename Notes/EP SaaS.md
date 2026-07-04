@@ -1,4 +1,3 @@
-# Runbook: Printing Money — Venture #1 (The Engineering Platform)
 
 > **North star:** contribute the largest possible share of the household goal — **$2,000/month net income, sustained ≥3 consecutive months, before 2026-12-31** — via paid courses for Vietnamese civil engineers targeting Japan engineer-visa jobs (and adjacent destinations).
 >

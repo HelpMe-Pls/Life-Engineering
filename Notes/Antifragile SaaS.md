@@ -5,7 +5,7 @@
 >
 > **The one-sentence pivot:** Kill the white-label-LMS framing and the course-seller buyer entirely; sell *"we deliver your mandated refresher training AND track who's certified, what expires when, auto-remind — audit-ready"* to **ONE named regulated trade** at **$149–249/month**, founder-onboarded, deployed **per-tenant** (no multi-tenancy build), **pre-validated before the full build (≥2 paid deposits + 1 signed order form — and the FIRST deposit triggers concierge service + build for that customer immediately)** — and let the portfolio, not this SaaS alone, carry the Dec-31 goal.
 >
-> Sibling doc: [[Runbook 1 - Printing Money (E-learning)]]. Same barbell: Venture #1 gets the build hours; this gets ≤2h/week of pure validation until money moves.
+> Sibling doc: [[EP SaaS]]. Same barbell: Venture #1 gets the build hours; this gets ≤2h/week of pure validation until money moves.
 
 ---
 ## 0. What the council actually settled (so you don't relitigate it at 2am)
@@ -352,4 +352,4 @@ If the Nov-30 gate fails twice (two trades × 200 verified asks, zero deposits):
 - You are not "a year behind because you built before selling." You are **one papered agreement, three config toggles, and one hundred asks away** from your first revenue — with a production platform, a recorded course, a real market gap, and a second engine already validated on paper by five adversaries who tried to kill it and couldn't. Most people never get this far.
 - Your own notes, back at you: *"If you're actively working toward your dream, you're already living the dream."* · *"You could be eleven noes away — but if you stop at the tenth rejection, you will have failed."* · *"If you take risks and face your fate with dignity, there is nothing you can do that makes you small."*
 - The barbell exists precisely so that no single bad month can ruin you: salary floor intact, downside capped at <$50/mo, two uncorrelated engines, kill-gates pre-agreed. **You cannot be blown up; you can only be delayed.** That is what antifragile means — and it's already true of you today. Now go make the asks.
-- This venture is one engine of a livelihood transition, not a lottery ticket — the full quit-gate (cash floor, income test, diversification, churn, clean exit) lives in [[Runbook 1 - Printing Money (E-learning)]] §11. Nothing in this runbook is allowed to rush that gate.
+- This venture is one engine of a livelihood transition, not a lottery ticket — the full quit-gate (cash floor, income test, diversification, churn, clean exit) lives in [[EP SaaS]] §11. Nothing in this runbook is allowed to rush that gate.
