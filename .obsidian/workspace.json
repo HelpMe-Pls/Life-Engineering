@@ -10,7 +10,7 @@
           {
             "id": "2ed2b87e25932f50",
             "type": "tabs",
-            "dimension": 52.31164383561643,
+            "dimension": 51.37096774193548,
             "children": [
               {
                 "id": "8e701c92c4b0d885",
@@ -32,13 +32,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/Entrepreneurship.md",
+                    "file": "Notes/EP SaaS.md",
                     "mode": "source",
-                    "source": false,
-                    "backlinks": false
+                    "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Entrepreneurship"
+                  "title": "EP SaaS"
                 }
               },
               {
@@ -47,21 +46,21 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/EP SaaS.md",
+                    "file": "Notes/Daily Standup.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "EP SaaS"
+                  "title": "Daily Standup"
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
             "type": "split",
-            "dimension": 47.68835616438357,
+            "dimension": 48.62903225806451,
             "children": [
               {
                 "id": "c3184acf40a6477e",
@@ -267,50 +266,50 @@
   "active": "8e81d5625c66b75e",
   "lastOpenFiles": [
     "Notes/EP SaaS.md",
-    "Notes/Biz.md",
-    "Notes/Notes.md",
-    "Notes/Antifragile SaaS.md",
-    "Notes/Weekly Tasks.md",
-    "Notes/Runbook 1 - Printing Money (E-learning).md.tmp.20308.56862f0ee9ce",
-    "Notes/Runbook 2 - Antifragile SaaS (Renewal-Clock).md.tmp.20308.43e70b4024f7",
-    "Notes/Runbook 1 - Printing Money (E-learning).md.tmp.20308.9f8dc2d7ff57",
-    "Notes/Runbook 1 - Printing Money (E-learning).md.tmp.20308.7aee76e4ae82",
-    "Notes/Runbook 1 - Printing Money (E-learning).md.tmp.20308.6e15f48f24bb",
-    "Notes/Runbook 2 - Antifragile SaaS (Renewal-Clock).md.tmp.20308.97c09cacab62",
-    "Notes/Runbook 2 - Antifragile SaaS (Renewal-Clock).md.tmp.20308.cd09b329714f",
-    "Notes/Runbook 2 - Antifragile SaaS (Renewal-Clock).md.tmp.20308.5b062f97625c",
-    "Notes/Runbook 2 - Antifragile SaaS (Renewal-Clock).md.tmp.20308.ae929a3ea95b",
-    "Notes/Runbook 2 - Antifragile SaaS (Renewal-Clock).md.tmp.20308.1a49ea3e7161",
-    "AI/validate-biz-idea.md",
-    "Tips & Tools/Entrepreneurship.md",
-    "Notes/Edge8.md",
-    "Notes/EO.md",
-    "Notes/Misc.md",
-    "Notes/Hackathon.md",
-    "Notes/Scripts.md",
-    "Notes/HubSpot.md",
-    "Notes/Brag Doc.md",
-    "Notes/Automation.md",
-    "Notes/E-learning MVP.md",
-    "Notes/Daily Standup.md",
     "Tips & Tools/English vocab.md",
-    "Notes/2026.md",
-    "AI/With Claude Code.md",
-    "docs/superpowers/specs/2026-06-29-entrepreneurship-saas-reorg-design.md",
-    "Tips & Tools/Financial.md",
-    "Tips & Tools/Crypto.md",
-    "Books/Beyond Order.md",
+    "Notes/Weekly Tasks.md",
+    "Notes/Biz.md",
     "Books/Never Split The Difference.md",
+    "Notes/Daily Standup.md",
+    "AI/Pasted image 20260404115157.png",
+    "AI/AI Engineer Roadmap.md",
+    "AI/With Claude Code.md",
+    "AI/Pasted image 20260401141615.png",
+    "AI/Pasted image 20260404120816.png",
+    "AI/Pasted image 20260404114933.png",
+    "Notes/M4 Key-1.png",
+    "Notes/M4 Key-2.png",
+    "Notes/Edge8.md",
+    "Notes/Antifragile SaaS.md",
+    "Books/Million Dollar Weekend.md",
+    "Books/Man's Search For Meaning.md",
+    "Books/Extreme Ownership.md",
+    "Books/Books.md",
+    "Books/Beyond Order.md",
+    "Books/Antifragile.md",
+    "Books/Supercommunicators.md",
+    "Books/Skin In The Game.md",
+    "Million Dollar Weekend.md",
+    "AI/validate-biz-idea.md",
     "Pasted image 20260620195825.png",
+    "Notes/2026.md",
+    "Antifragile.md",
+    "Tips & Tools/English grammar.md",
+    "Notes/HubSpot.md",
+    "Notes/Notes.md",
     "Tips & Tools/code-review.png",
     "Tips & Tools/cron.png",
     "Pasted image 20260417091615.png",
-    "Pasted image 20260414111250.png",
-    "AI/Pasted image 20260401141615.png",
-    "AI/Pasted image 20260404120816.png",
-    "Tips & Tools/maslows.png",
-    "AI/Pasted image 20260404114933.png",
-    "AI/Pasted image 20260404115157.png",
-    "Untitled.canvas"
+    "AI",
+    "Notes",
+    "Books",
+    "Untitled.canvas",
+    "Frontend/Libraries/HTMX",
+    "Frontend/Frameworks/Remix",
+    "Backend/Golang",
+    "Frontend/HTML/url-breakdown.png.crdownload",
+    "Frontend/Libraries",
+    "NodeJS",
+    "Backend/NodeJS"
   ]
 }

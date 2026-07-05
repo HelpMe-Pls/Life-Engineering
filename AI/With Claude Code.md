@@ -43,7 +43,7 @@ How it works:
 - **Steering with CLAUDE.md**: notice a pattern the agent is using that you don't like. Write a rule in `CLAUDE.md` to steer it toward better behavior with a prompt like `Review your work with the updated @CLAUDE.md in mind`. Verify it worked. Repeat.
 - **Progressive disclosure**: structuring instructions so only relevant context loads for each task, keeping the context window lean by having a set of (nested) markdown links inside the `CLAUDE.md` file which linked you to the correct grouping when needed.
 - **Agent skills**: are discoverable, [scoped instruction sets](https://skills.sh/vercel-labs/claude-skills) (in markdown format) that extend Claude Code capabilities without polluting global context. Skills are stored in the `./claude/skills/`. 
-	- Skills setup: ![[Pasted image 20260404114933.png]]
+	- Skills setup: ![[Pasted image 20260404115157.png]]
 	-  To manually invoke a skill, just type `/<skill-name>`. Set the `user-invocable` config to `false` in the frontmatter section of a skill to make it only available for the LLM to invoke (i.e. it won't be listed under the `/` command): ![[Pasted image 20260404120816.png]]
 - **Writing skills with skills**: using a meta-skill to generate reusable migration skills you can share across your organization. Install that "meta-skill" with this command: `bunx skills add mattpocock/skills/write-a-skill`
 	- Example: `Write a "do-work" skill to execute a unit of work end-to-end: plan, implement, validate with typecheck and tests, then commit. Use when user wants to do work, build a feature, fix a bug, or implement a phase from a plan.`

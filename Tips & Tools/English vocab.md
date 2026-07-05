@@ -1566,3 +1566,5 @@ feudal (n): phong kiến
 confer (v): consult, deliberate, huddle, sync up, discuss
 
 desuetude (n): obsolescence, disuse, legal invalidity 
+
+embargo (n): cấm vận, trade ban, boycott, non-disclosure period
