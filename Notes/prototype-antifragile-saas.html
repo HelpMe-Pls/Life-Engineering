@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PROTOTYPE — Renewal Clock (Antifragile SaaS #2)</title>
+<!--
+  ============================================================================
+  THROWAWAY PROTOTYPE — delete or absorb when it has answered its question.
+  Question it answers: "How does the Renewal Clock SaaS work, and what does it offer?"
+  Source: Life-Engineering/Notes/Antifragile SaaS.md
+  No build, no server, no persistence. Double-click to open. State lives in memory.
+
+  Three tabs (top bar):   Sales page  ·  Dashboard  ·  The Loop
+  Dashboard tab has 3 structural VARIANTS, switch with the floating bottom bar
+  or ?variant=A|B|C  (skill: prototype / UI.md).
+  ============================================================================
+-->
+<style>
+  :root{
+    --bg:#0b1020; --panel:#121a2e; --panel-2:#0f1728; --ink:#e8edf7; --muted:#9aa7c2;
+    --line:#22304f; --brand:#3b82f6; --brand-ink:#fff;
+    --green:#22c55e; --green-bg:#0f2e1c; --amber:#f59e0b; --amber-bg:#3a2a08; --red:#ef4444; --red-bg:#3a1414;
+    --shadow:0 10px 30px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--ink); font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased; padding-bottom:90px;
+  }
+  a{color:var(--brand);text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  .tabs{position:sticky;top:0;z-index:40;background:rgba(11,16,32,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .tabs .wrap{display:flex;align-items:center;gap:6px;height:56px}
+  .brandmark{font-weight:800;letter-spacing:.3px;margin-right:14px;display:flex;align-items:center;gap:8px}
+  .brandmark .dot{width:10px;height:10px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}
+  .tab{appearance:none;border:0;background:transparent;color:var(--muted);font-weight:600;font-size:14px;padding:8px 14px;border-radius:9px;cursor:pointer}
+  .tab:hover{color:var(--ink);background:#ffffff0d}
+  .tab.active{color:var(--ink);background:#ffffff14}
+  .tab .k{opacity:.5;font-weight:700;margin-right:6px}
+  .page{display:none;padding:34px 0 60px}
+  .page.active{display:block}
+  h1{font-size:30px;line-height:1.15;margin:0 0 8px}
+  h2{font-size:20px;margin:34px 0 12px}
+  h3{font-size:15px;margin:0 0 6px}
+  .lede{color:var(--muted);font-size:16px;max-width:70ch}
+  .pill{display:inline-block;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+  .btn{display:inline-block;background:var(--brand);color:var(--brand-ink);font-weight:700;padding:11px 18px;border-radius:11px;border:0;cursor:pointer;font-size:14px}
+  .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--ink)}
+  .btn:active{transform:translateY(1px)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}
+  .grid{display:grid;gap:14px}
+  .muted{color:var(--muted)}
+  .kicker{text-transform:uppercase;letter-spacing:.14em;font-size:11px;font-weight:800;color:var(--brand)}
+  .hr{height:1px;background:var(--line);border:0;margin:26px 0}
+
+  /* status chips */
+  .chip{display:inline-flex;align-items:center;gap:7px;font-weight:700;font-size:12.5px;padding:4px 10px;border-radius:999px;border:1px solid transparent}
+  .chip .d{width:9px;height:9px;border-radius:50%}
+  .chip.green{background:var(--green-bg);color:#86efac;border-color:#14532d}
+  .chip.green .d{background:var(--green)}
+  .chip.amber{background:var(--amber-bg);color:#fcd34d;border-color:#78500a}
+  .chip.amber .d{background:var(--amber)}
+  .chip.red{background:var(--red-bg);color:#fca5a5;border-color:#7f1d1d}
+  .chip.red .d{background:var(--red)}
+
+  /* tables */
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:middle}
+  th{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em;font-weight:700}
+  tbody tr:hover{background:#ffffff08}
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px}
+
+  /* stat tiles */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .stat{background:var(--panel-2);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+  .stat .n{font-size:26px;font-weight:800}
+  .stat .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  .stat.red .n{color:#fca5a5}.stat.amber .n{color:#fcd34d}.stat.green .n{color:#86efac}
+
+  /* switcher */
+  .switcher{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:2px;
+    background:#f8fafc;color:#0b1020;border-radius:999px;padding:6px;box-shadow:var(--shadow);border:2px solid #0b1020}
+  .switcher button{appearance:none;border:0;background:transparent;font-size:18px;line-height:1;padding:6px 12px;border-radius:999px;cursor:pointer;color:#0b1020}
+  .switcher button:hover{background:#0b10201a}
+  .switcher .label{font-weight:800;font-size:13px;padding:0 8px;white-space:nowrap;min-width:190px;text-align:center}
+  .switcher .hint{font-size:11px;color:#0b102099;padding-left:2px}
+  .prototype-flag{position:fixed;right:14px;bottom:20px;z-index:55;background:#f59e0b;color:#1a1200;font-weight:800;font-size:11px;letter-spacing:.06em;padding:6px 11px;border-radius:8px;box-shadow:var(--shadow)}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:820px){.two{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+  ul.clean{list-style:none;padding:0;margin:0}
+  ul.clean li{padding:8px 0;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:flex-start}
+  ul.clean li:last-child{border-bottom:0}
+  .tick{color:var(--green);font-weight:900}
+  .cross{color:var(--red);font-weight:900}
+  code.k{background:#ffffff12;padding:1px 6px;border-radius:6px;font-size:12.5px}
+
+  /* loop */
+  .steps{display:flex;gap:8px;margin:18px 0 22px;flex-wrap:wrap}
+  .step-dot{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+  .step-dot.on{color:var(--ink);border-color:var(--brand);background:#3b82f61a}
+  .step-dot .num{width:20px;height:20px;border-radius:50%;background:var(--line);color:var(--ink);display:grid;place-items:center;font-size:11px;font-weight:800}
+  .step-dot.on .num{background:var(--brand)}
+  .phone{max-width:360px;margin:0 auto;background:#0a0f1e;border:10px solid #1c2740;border-radius:34px;padding:16px;box-shadow:var(--shadow)}
+  .email{background:#fff;color:#0b1020;border-radius:12px;overflow:hidden;border:1px solid #d7deea}
+  .email .hd{padding:12px 14px;border-bottom:1px solid #e6ebf3;font-size:13px}
+  .email .bd{padding:16px 14px}
+  .quiz label{display:block;background:#0f1728;border:1px solid var(--line);border-radius:10px;padding:11px 13px;margin:8px 0;cursor:pointer}
+  .quiz label:hover{border-color:var(--brand)}
+  .quiz input{margin-right:9px}
+  .center{text-align:center}
+  .big-emoji{font-size:44px}
+  .fade{animation:f .35s ease}
+  @keyframes f{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .callout{border-left:3px solid var(--brand);background:#3b82f612;padding:12px 14px;border-radius:0 12px 12px 0;color:var(--ink)}
+  .price{font-size:40px;font-weight:800}
+  .strike{color:var(--muted);text-decoration:line-through}
+</style>
+</head>
+<body>
+
+<!-- ======================= TOP TABS ======================= -->
+<nav class="tabs">
+  <div class="wrap">
+    <div class="brandmark"><span class="dot"></span> Renewal&nbsp;Clock</div>
+    <button class="tab" data-tab="sales"><span class="k">1</span>Sales page</button>
+    <button class="tab" data-tab="dash"><span class="k">2</span>Dashboard</button>
+    <button class="tab" data-tab="loop"><span class="k">3</span>The Loop</button>
+    <span style="flex:1"></span>
+    <span class="pill">What Sarah buys for $199/mo</span>
+  </div>
+</nav>
+
+<!-- ======================= TAB 1 · SALES ======================= -->
+<section class="page" id="page-sales">
+  <div class="wrap">
+    <div class="kicker">For electrical &amp; HVAC contractors</div>
+    <h1>Every cert, current. Every renewal, automatic. Every audit, ready.</h1>
+    <p class="lede">We deliver the mandated refresher training your people need, issue the certificate, track every expiry date, auto-remind the worker <b>and</b> the supervisor at 90/60/30/7 days, and hand you an inspector-ready report in one click.</p>
+    <div style="display:flex;gap:12px;margin-top:18px;flex-wrap:wrap;align-items:center">
+      <button class="btn" onclick="go('loop')">▶ See the 90-second loop</button>
+      <button class="btn ghost" onclick="go('dash')">Look at a live dashboard</button>
+      <span class="muted">“More than a spreadsheet. Simpler and cheaper than an LMS.”</span>
+    </div>
+
+    <div class="two" style="margin-top:26px">
+      <div class="card">
+        <div class="kicker">The offer</div>
+        <div style="display:flex;align-items:baseline;gap:10px;margin:6px 0">
+          <span class="price">$199</span><span class="muted">/mo flat, per company. Cancel anytime.</span>
+        </div>
+        <ul class="clean">
+          <li><span class="tick">✓</span><span>Flat price — <b>not</b> per seat. 15 or 80 workers, same bill.</span></li>
+          <li><span class="tick">✓</span><span><b>We</b> import your spreadsheet on the first call. Live in an afternoon.</span></li>
+          <li><span class="tick">✓</span><span>Design partners: <b>$99/mo for 3 months</b>, then standard. No strings.</span></li>
+          <li><span class="tick">✓</span><span>Annual = 2 months free.</span></li>
+        </ul>
+      </div>
+      <div class="card" style="border-color:#14532d;background:linear-gradient(180deg,#0f2e1c33,transparent)">
+        <div class="kicker" style="color:#86efac">The escrow guarantee — your trust weapon</div>
+        <h3 style="margin-top:8px">“If we ever disappear, you lose nothing.”</h3>
+        <p class="muted" style="margin:6px 0 10px">Every week we auto-export <b>the actual certificate PDFs</b> plus a plain CSV index — straight to <b>your own Google Drive</b>. It opens in the Excel you use today. Never a manifest of links pointing back at our servers.</p>
+        <span class="chip green"><span class="d"></span> Last escrow sync: Sun, delivered to your Drive</span>
+      </div>
+    </div>
+
+    <h2>Why us, in one breath</h2>
+    <div class="callout">
+      Trackers remind you but can’t run the training. Training platforms train but don’t watch the calendar. The big EHS suites do both for $10K/yr and a 3-month rollout. <b>We do the whole loop</b> — train, certify, track, remind, audit-report — pre-loaded for your trade, flat $199/mo, set up in one afternoon by us, and your records auto-export to your own Drive forever.
+    </div>
+
+    <h2>How we compare</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>&nbsp;</th><th>The spreadsheet</th><th>Expiration&nbsp;Reminder</th><th>An LMS (TalentLMS)</th><th>EHS suite (Certemy)</th><th style="color:#86efac">Renewal&nbsp;Clock</th></tr></thead>
+        <tbody>
+          <tr><td>Sends reminders itself</td><td><span class="cross">✗</span></td><td><span class="tick">✓</span></td><td>—</td><td><span class="tick">✓</span></td><td><span class="tick">✓</span></td></tr>
+          <tr><td>Delivers the refresher training</td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="tick">✓</span></td><td><span class="tick">✓</span></td><td><span class="tick">✓</span></td></tr>
+          <tr><td>Closes the loop (quiz → cert → registry)</td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td>partial</td><td><span class="tick">✓</span></td></tr>
+          <tr><td>One-click inspector-ready audit report</td><td><span class="cross">✗</span></td><td>data only</td><td><span class="cross">✗</span></td><td><span class="tick">✓</span></td><td><span class="tick">✓</span></td></tr>
+          <tr><td>We do the onboarding for you</td><td>—</td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td>sales cycle</td><td><span class="tick">✓</span></td></tr>
+          <tr><td>Survives you being hit by a bus (escrow)</td><td>n/a</td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="tick">✓</span></td></tr>
+          <tr><td>Price</td><td>free</td><td>$49–499/mo</td><td>$119–449/mo</td><td>$10K+/yr</td><td style="color:#86efac"><b>$199/mo flat</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted" style="margin-top:10px">Honest disqualifier: if all you need is a reminder and you have someone happy to operate it, <b>use Expiration Reminder — genuinely</b>. We’re the cheapest way to never think about renewals at all.</p>
+  </div>
+</section>
+
+<!-- ======================= TAB 2 · DASHBOARD ======================= -->
+<section class="page" id="page-dash">
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:10px">
+      <div>
+        <div class="kicker">Sarah’s dashboard · Mike’s Electrical (35 field staff)</div>
+        <h1 style="margin-bottom:2px">Compliance registry</h1>
+        <p class="muted" id="dash-sub" style="margin:0">Every employee × every cert × expiry date. Nothing lapses silently.</p>
+      </div>
+      <div style="display:flex;gap:10px">
+        <button class="btn ghost" onclick="alert('PROTOTYPE: generates a PDF of who is current, with evidence attached — shaped like what an OSHA reviewer accepts.')">🧾 One-click audit report</button>
+        <button class="btn" onclick="alert('PROTOTYPE: opens the add-employee / import-spreadsheet flow. Onboarding IS the import.')">+ Import roster</button>
+      </div>
+    </div>
+
+    <div id="dash-mount" style="margin-top:22px"></div>
+  </div>
+</section>
+
+<!-- ======================= TAB 3 · THE LOOP ======================= -->
+<section class="page" id="page-loop">
+  <div class="wrap">
+    <div class="kicker">The closed loop — the thing trackers and LMSs each only do half of</div>
+    <h1>Watch one cert renew itself</h1>
+    <p class="lede">Joel Nguyen’s OSHA-10 expires in 12 days. Follow it from the amber row on Sarah’s dashboard all the way back to green — without Sarah lifting a finger.</p>
+
+    <div class="steps" id="loop-steps"></div>
+    <div id="loop-mount" class="card" style="min-height:360px;display:grid;place-items:center"></div>
+
+    <div style="display:flex;justify-content:space-between;margin-top:16px">
+      <button class="btn ghost" id="loop-back">← Back</button>
+      <button class="btn" id="loop-next">Next →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FLOATING SWITCHER (dashboard variants) ======================= -->
+<div class="switcher" id="switcher" style="display:none">
+  <button id="sw-prev" title="Previous layout (←)">◀</button>
+  <div class="label" id="sw-label">A — layout</div>
+  <button id="sw-next" title="Next layout (→)">▶</button>
+  <span class="hint">dashboard layout</span>
+</div>
+<div class="prototype-flag">PROTOTYPE · throwaway</div>
+
+<script>
+/* ============================================================================
+   MOCK DATA — faithful to the note. No backend. In-memory only.
+   ============================================================================ */
+const COMPANY = { name:"Mike's Electrical", trade:"Electrical contractor", staff:35 };
+
+// status is derived from daysLeft: <0 red(lapsed), <=30 amber, else green
+let ROSTER = [
+  { who:"Joel Nguyen",   role:"Journeyman",  cert:"OSHA-10",            daysLeft:12,  kind:"train"  },
+  { who:"Maria Tran",    role:"Apprentice",  cert:"CPR / First-Aid",    daysLeft:-6,  kind:"upload" },
+  { who:"Kevin Lopez",   role:"Journeyman",  cert:"EPA-608 (refrig.)",  daysLeft:88,  kind:"upload" },
+  { who:"Danielle Ruiz", role:"Foreman",     cert:"State Electrical Lic.",daysLeft:27, kind:"upload" },
+  { who:"Sam O'Neil",    role:"Journeyman",  cert:"OSHA-30",            daysLeft:210, kind:"train"  },
+  { who:"Tovi Cohen",    role:"Apprentice",  cert:"Arc-Flash / NFPA-70E",daysLeft:5,  kind:"train"  },
+  { who:"Ben Carter",    role:"Master",      cert:"State Electrical Lic.",daysLeft:365,kind:"upload" },
+  { who:"Lena Pham",     role:"Journeyman",  cert:"CPR / First-Aid",    daysLeft:54,  kind:"upload" },
+  { who:"Arturo Diaz",   role:"Apprentice",  cert:"OSHA-10",            daysLeft:-21, kind:"train"  },
+  { who:"Grace Kim",     role:"Foreman",     cert:"Arc-Flash / NFPA-70E",daysLeft:140,kind:"train" },
+];
+
+function statusOf(d){ if(d<0) return "red"; if(d<=30) return "amber"; return "green"; }
+function statusText(d){
+  if(d<0) return "LAPSED " + Math.abs(d) + "d ago";
+  if(d===0) return "expires today";
+  return "in " + d + " days";
+}
+function counts(){
+  let red=0,amber=0,green=0;
+  ROSTER.forEach(r=>{const s=statusOf(r.daysLeft); if(s==="red")red++;else if(s==="amber")amber++;else green++;});
+  return {red,amber,green,total:ROSTER.length};
+}
+function nextReminder(d){ // which cadence email fires next
+  const gates=[90,60,30,7];
+  for(const g of gates){ if(d>=g) return g; }
+  if(d>=0) return "7-day (final) sent";
+  return "escalated to supervisor";
+}
+
+/* ============================================================================
+   TAB ROUTING
+   ============================================================================ */
+function currentTab(){ return new URLSearchParams(location.search).get('tab') || 'sales'; }
+function currentVariant(){ const v=(new URLSearchParams(location.search).get('variant')||'A').toUpperCase(); return ['A','B','C'].includes(v)?v:'A'; }
+
+function go(tab){
+  const p=new URLSearchParams(location.search); p.set('tab',tab);
+  history.replaceState(null,'', location.pathname+'?'+p.toString());
+  render();
+}
+function setVariant(v){
+  const p=new URLSearchParams(location.search); p.set('variant',v); p.set('tab','dash');
+  history.replaceState(null,'', location.pathname+'?'+p.toString());
+  render();
+}
+
+function render(){
+  const tab=currentTab();
+  document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active', b.dataset.tab===tab));
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+tab).classList.add('active');
+
+  // switcher only relevant on dashboard
+  document.getElementById('switcher').style.display = (tab==='dash') ? 'flex' : 'none';
+
+  if(tab==='dash') renderDashboard();
+  if(tab==='loop') renderLoop();
+  window.scrollTo({top:0,behavior:'instant'});
+}
+
+/* ============================================================================
+   DASHBOARD — 3 STRUCTURALLY DIFFERENT VARIANTS
+   ============================================================================ */
+const VARIANT_NAMES = { A:"Status table + top KPIs", B:"Triage queue (action-first)", C:"Calendar timeline" };
+
+function statTiles(){
+  const c=counts();
+  return `<div class="stats" style="margin-bottom:18px">
+    <div class="stat red"><div class="n">${c.red}</div><div class="l">Lapsed — act now</div></div>
+    <div class="stat amber"><div class="n">${c.amber}</div><div class="l">Expiring ≤30 days</div></div>
+    <div class="stat green"><div class="n">${c.green}</div><div class="l">Current</div></div>
+    <div class="stat"><div class="n">${c.total}</div><div class="l">Certs tracked</div></div>
+  </div>`;
+}
+
+function actionBtn(r){
+  if(r.kind==='train') return `<button class="btn" style="padding:6px 12px;font-size:13px" onclick="fixCert('${r.who}','${r.cert}')">Send training link</button>`;
+  return `<button class="btn ghost" style="padding:6px 12px;font-size:13px" onclick="fixCert('${r.who}','${r.cert}')">Request upload</button>`;
+}
+
+// VARIANT A — the "spreadsheet done right": KPI tiles on top, one big sortable-looking status table.
+function variantA(){
+  const rows = [...ROSTER].sort((a,b)=>a.daysLeft-b.daysLeft).map(r=>{
+    const s=statusOf(r.daysLeft);
+    return `<tr>
+      <td><b>${r.who}</b><div class="muted" style="font-size:12px">${r.role}</div></td>
+      <td>${r.cert}</td>
+      <td>${statusText(r.daysLeft)}</td>
+      <td><span class="chip ${s}"><span class="d"></span>${s.toUpperCase()}</span></td>
+      <td class="muted" style="font-size:12.5px">${nextReminder(r.daysLeft)}</td>
+      <td style="text-align:right">${s==='green'?'<span class="muted">—</span>':actionBtn(r)}</td>
+    </tr>`;
+  }).join('');
+  return statTiles() + `
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Worker</th><th>Certification</th><th>Expires</th><th>Status</th><th>Next auto-reminder</th><th></th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+    <p class="muted" style="margin-top:12px">Everything the spreadsheet showed — plus the four things it can’t do: it reminds by itself, delivers the training, produces the audit report, and survives you quitting.</p>`;
+}
+
+// VARIANT B — triage queue: the opposite of a table. Only what needs a human, biggest fire first, as cards.
+function variantB(){
+  const needs=[...ROSTER].filter(r=>statusOf(r.daysLeft)!=='green').sort((a,b)=>a.daysLeft-b.daysLeft);
+  const ok=counts().green;
+  const cards=needs.map(r=>{
+    const s=statusOf(r.daysLeft);
+    const border = s==='red' ? 'var(--red)' : 'var(--amber)';
+    return `<div class="card" style="border-left:4px solid ${border}">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+        <div>
+          <div style="font-weight:800;font-size:16px">${r.who} <span class="muted" style="font-weight:500">· ${r.role}</span></div>
+          <div style="margin:4px 0 2px">${r.cert}</div>
+          <span class="chip ${s}"><span class="d"></span>${statusText(r.daysLeft)}</span>
+        </div>
+        <div style="text-align:right">
+          ${actionBtn(r)}
+          <div class="muted" style="font-size:12px;margin-top:6px">next: ${nextReminder(r.daysLeft)}</div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  return `
+    <div class="callout" style="margin-bottom:16px">👋 Morning, Sarah. <b>${needs.length} certs need attention today.</b> The clock already emailed each worker + you. Clear the queue, or just let the reminders do their job.</div>
+    <div class="grid" style="grid-template-columns:1fr">${cards || '<div class="card center muted">Nothing needs you today. 🎉</div>'}</div>
+    <div class="card center" style="margin-top:14px;background:var(--panel-2)">
+      <span class="chip green"><span class="d"></span>${ok} other certs are current</span>
+      <span class="muted" style="margin-left:10px">— hidden on purpose. This screen only shows what needs a human.</span>
+    </div>`;
+}
+
+// VARIANT C — calendar timeline: certs plotted on a horizontal runway of the next 12 months.
+function variantC(){
+  const MONTHS=["Now","+1","+2","+3","+4","+5","+6","+7","+8","+9","+10","+11","+12"];
+  // bucket each cert by month index (0..12); lapsed => bucket 0 flagged red
+  const lanes = ROSTER.map(r=>{
+    const s=statusOf(r.daysLeft);
+    let idx = r.daysLeft<0 ? 0 : Math.min(12, Math.round(r.daysLeft/30));
+    const leftPct = (idx/12)*100;
+    return {r,s,leftPct,idx};
+  }).sort((a,b)=>a.idx-b.idx);
+
+  const axis = MONTHS.map((m,i)=>`<div style="flex:1;text-align:center;font-size:11px;color:var(--muted);border-left:1px solid var(--line);padding:4px 0">${m}</div>`).join('');
+  const rows = lanes.map(l=>{
+    const dotColor = l.s==='red'?'var(--red)':l.s==='amber'?'var(--amber)':'var(--green)';
+    return `<div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--line)">
+      <div style="width:190px;flex:none"><b style="font-size:13px">${l.r.who}</b> <span class="muted" style="font-size:12px">· ${l.r.cert}</span></div>
+      <div style="position:relative;flex:1;height:22px">
+        <div style="position:absolute;left:0;right:0;top:10px;height:2px;background:var(--line)"></div>
+        <div title="${statusText(l.r.daysLeft)}" style="position:absolute;left:calc(${l.leftPct}% - 7px);top:3px;width:16px;height:16px;border-radius:50%;background:${dotColor};box-shadow:0 0 10px ${dotColor}"></div>
+      </div>
+      <div style="width:120px;flex:none;text-align:right"><span class="chip ${l.s}" style="padding:2px 8px"><span class="d"></span>${l.s.toUpperCase()}</span></div>
+    </div>`;
+  }).join('');
+
+  return statTiles() + `
+    <div class="card">
+      <div style="display:flex;margin-left:200px;margin-bottom:6px;border-bottom:1px solid var(--line)">${axis}</div>
+      ${rows}
+    </div>
+    <p class="muted" style="margin-top:12px">Every certification on one runway. The wall of red dots on the left is your “deal with this now”; the clock is already emailing everyone to the right of it.</p>`;
+}
+
+function renderDashboard(){
+  const v=currentVariant();
+  document.getElementById('sw-label').textContent = v + " — " + VARIANT_NAMES[v];
+  const mount=document.getElementById('dash-mount');
+  mount.classList.remove('fade'); void mount.offsetWidth; mount.classList.add('fade');
+  mount.innerHTML = v==='A'?variantA() : v==='B'?variantB() : variantC();
+}
+
+// clicking an action "fixes" the cert in memory so you can see the board change (surface the state)
+function fixCert(who,cert){
+  const r=ROSTER.find(x=>x.who===who && x.cert===cert);
+  if(!r) return;
+  r.daysLeft = 730; // renewed for 2 years
+  renderDashboard();
+}
+
+/* ============================================================================
+   THE LOOP — 5 linked screens
+   ============================================================================ */
+const LOOP=[
+  {t:"Dashboard: amber", render:()=>`
+    <div class="center fade">
+      <div class="kicker">Step 1 — the clock notices</div>
+      <h2 style="margin:8px 0 4px">Joel’s OSHA-10 turns amber at 90 days</h2>
+      <p class="muted">On Sarah’s registry the row flips from green to amber. She does nothing — the system takes it from here.</p>
+      <div class="card" style="max-width:520px;margin:16px auto 0;text-align:left">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div><b>Joel Nguyen</b> <span class="muted">· Journeyman</span><div style="margin-top:4px">OSHA-10</div></div>
+          <span class="chip amber"><span class="d"></span>in 12 days</span>
+        </div>
+      </div>
+    </div>`},
+  {t:"Reminder fires", render:()=>`
+    <div class="center fade" style="width:100%">
+      <div class="kicker">Step 2 — the reminder fires (90 / 60 / 30 / 7 days)</div>
+      <h2 style="margin:8px 0 12px">One email to Joel, one to Sarah</h2>
+      <div class="email" style="max-width:520px;margin:0 auto;text-align:left">
+        <div class="hd"><b>Renewal Clock</b> &lt;alerts@renewalclock.app&gt;<br><span class="muted">To: joel@mikeselectrical.com · cc: sarah (supervisor)</span></div>
+        <div class="bd">
+          <p style="margin:0 0 8px">Hi Joel — your <b>OSHA-10</b> expires in <b>12 days</b>. Renew it right now in about 20 minutes:</p>
+          <p style="margin:0 0 12px"><span class="btn" style="pointer-events:none">▶ Start my refresher</span></p>
+          <p class="muted" style="margin:0;font-size:13px">No login to remember. The link opens on your phone. — Mike’s Electrical</p>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:12px">This is the wedge: the reminder <b>carries the training link that closes it</b>. A tracker’s reminder just says “you’re late.”</p>
+    </div>`},
+  {t:"Worker: lesson + quiz", render:()=>`
+    <div class="fade" style="width:100%">
+      <div class="center"><div class="kicker">Step 3 — Joel taps the link on his phone</div>
+      <h2 style="margin:8px 0 14px">Watch the refresher → pass the quiz</h2></div>
+      <div class="phone">
+        <div class="muted" style="font-size:12px;margin-bottom:6px">OSHA-10 Refresher · 3 of 3</div>
+        <div style="background:#1c2740;border-radius:10px;height:120px;display:grid;place-items:center;color:#9aa7c2;margin-bottom:12px">▶ lesson slide / short video</div>
+        <div class="quiz">
+          <div style="font-weight:700;margin-bottom:6px">When must a damaged extension cord be removed from service?</div>
+          <label><input type="radio" name="q">At the end of the shift</label>
+          <label onclick="loopPass()"><input type="radio" name="q">Immediately</label>
+          <label><input type="radio" name="q">After a supervisor signs off next week</label>
+        </div>
+        <div id="quiz-feedback" class="muted center" style="font-size:12px;margin-top:6px">Pick the correct answer to continue…</div>
+      </div>
+    </div>`},
+  {t:"Cert auto-issues", render:()=>`
+    <div class="center fade">
+      <div class="big-emoji">📜</div>
+      <div class="kicker">Step 4 — the certificate issues itself</div>
+      <h2 style="margin:8px 0 4px">Passed. Certificate generated automatically.</h2>
+      <p class="muted">No PDF to chase, no email to file. The cert is minted, dated, and attached to Joel’s record — as evidence for the next audit.</p>
+      <div class="card" style="max-width:460px;margin:16px auto 0;text-align:left;border-color:#14532d">
+        <div class="muted" style="font-size:12px">CERTIFICATE OF COMPLETION</div>
+        <div style="font-weight:800;font-size:18px;margin:4px 0">OSHA-10 Refresher</div>
+        <div>Joel Nguyen · Mike’s Electrical</div>
+        <div class="muted" style="font-size:13px;margin-top:6px">Issued today · valid 24 months · auto-filed</div>
+      </div>
+    </div>`},
+  {t:"Registry flips green", render:()=>`
+    <div class="center fade">
+      <div class="kicker">Step 5 — the loop closes</div>
+      <h2 style="margin:8px 0 4px">Joel’s row flips back to green — on its own</h2>
+      <p class="muted">Sarah never touched it. The registry updated itself, and next year the clock starts ticking again. <b>That</b> is why they keep paying.</p>
+      <div class="card" style="max-width:520px;margin:16px auto 0;text-align:left">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div><b>Joel Nguyen</b> <span class="muted">· Journeyman</span><div style="margin-top:4px">OSHA-10</div></div>
+          <span class="chip green"><span class="d"></span>in 730 days</span>
+        </div>
+      </div>
+      <div style="margin-top:18px"><button class="btn" onclick="loopReset();go('dash')">See it on the full dashboard →</button></div>
+    </div>`},
+];
+let loopStep=0;
+function renderLoop(){
+  const stepsEl=document.getElementById('loop-steps');
+  stepsEl.innerHTML=LOOP.map((s,i)=>`<div class="step-dot ${i===loopStep?'on':''}"><span class="num">${i+1}</span>${s.t}</div>`).join('');
+  document.getElementById('loop-mount').innerHTML=LOOP[loopStep].render();
+  document.getElementById('loop-back').style.visibility = loopStep===0?'hidden':'visible';
+  const nextBtn=document.getElementById('loop-next');
+  nextBtn.style.visibility = loopStep>=LOOP.length-1?'hidden':'visible';
+  // gate: on the quiz step you must answer before Next
+  nextBtn.disabled = (loopStep===2 && !loopPassed);
+  nextBtn.style.opacity = nextBtn.disabled? .4:1;
+}
+let loopPassed=false;
+function loopPass(){
+  loopPassed=true;
+  document.getElementById('quiz-feedback').innerHTML='<span style="color:#86efac;font-weight:700">✓ Correct — tap Next to issue the certificate</span>';
+  renderLoop();
+}
+function loopReset(){ loopStep=0; loopPassed=false; }
+
+document.getElementById('loop-next').onclick=()=>{ if(loopStep<LOOP.length-1){loopStep++; renderLoop();} };
+document.getElementById('loop-back').onclick=()=>{ if(loopStep>0){loopStep--; renderLoop();} };
+
+/* ============================================================================
+   WIRING
+   ============================================================================ */
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>go(b.dataset.tab));
+document.getElementById('sw-prev').onclick=()=>{ const o=['A','B','C']; const i=o.indexOf(currentVariant()); setVariant(o[(i+2)%3]); };
+document.getElementById('sw-next').onclick=()=>{ const o=['A','B','C']; const i=o.indexOf(currentVariant()); setVariant(o[(i+1)%3]); };
+document.addEventListener('keydown',e=>{
+  const tag=(document.activeElement.tagName||'').toLowerCase();
+  if(['input','textarea'].includes(tag)) return;
+  if(currentTab()!=='dash') return;
+  if(e.key==='ArrowRight'){ const o=['A','B','C']; const i=o.indexOf(currentVariant()); setVariant(o[(i+1)%3]); }
+  if(e.key==='ArrowLeft'){ const o=['A','B','C']; const i=o.indexOf(currentVariant()); setVariant(o[(i+2)%3]); }
+});
+
+render();
+</script>
+</body>
+</html>

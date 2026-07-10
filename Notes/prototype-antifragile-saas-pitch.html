@@ -1,0 +1,1297 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<!--
+  ============================================================================
+  RENEWAL CLOCK — stakeholder pitch + interactive product walkthrough
+  Source of every claim: Life-Engineering/Notes/Antifragile SaaS.md
+  Self-contained. No external assets. Renders light + dark.
+  Sections: Hero clock · The problem · What Sarah buys · Live dashboard (3 views)
+            · The closed loop · The audit artifact · Why antifragile · The math
+            · Competitors · The ask
+  ============================================================================
+-->
+<style>
+  /* ---------- design tokens ---------- */
+  :root{
+    color-scheme: light dark;
+    --ink:#14181f; --ink-soft:#3a434f; --ink-faint:#6b7684;
+    --paper:#f5f2ea; --paper-2:#ece7db; --card:#fffdf7; --line:#ddd6c6;
+    --hazard:#ff6a1a; --hazard-deep:#d8500c; --steel:#3f5f70; --steel-soft:#6d8797;
+    --ok:#1f8a52; --ok-bg:#e5f2e9; --warn:#c67d0a; --warn-bg:#fbf0d8; --crit:#c62f29; --crit-bg:#fbe4e2;
+    --ok-ink:#166b3f; --warn-ink:#8a5606; --crit-ink:#9c221d;
+    --shadow: 0 1px 2px rgba(20,24,31,.06), 0 8px 30px -12px rgba(20,24,31,.28);
+    --shadow-lift: 0 2px 4px rgba(20,24,31,.08), 0 20px 50px -20px rgba(20,24,31,.4);
+    --maxw: 1120px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:#eef2f6; --ink-soft:#b7c1cc; --ink-faint:#7d8896;
+      --paper:#0e1319; --paper-2:#131a22; --card:#161e28; --line:#26303c;
+      --hazard:#ff7a2e; --hazard-deep:#ff934f; --steel:#7fa6bb; --steel-soft:#5b7688;
+      --ok:#3bbd77; --ok-bg:#10241a; --warn:#e8a836; --warn-bg:#2a1f0a; --crit:#e8564e; --crit-bg:#2a1210;
+      --ok-ink:#7fe0a8; --warn-ink:#f5c877; --crit-ink:#f2938c;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 34px -14px rgba(0,0,0,.7);
+      --shadow-lift: 0 2px 6px rgba(0,0,0,.5), 0 26px 60px -22px rgba(0,0,0,.85);
+    }
+  }
+  :root[data-theme="light"]{
+    color-scheme: light;
+    --ink:#14181f; --ink-soft:#3a434f; --ink-faint:#6b7684;
+    --paper:#f5f2ea; --paper-2:#ece7db; --card:#fffdf7; --line:#ddd6c6;
+    --hazard:#ff6a1a; --hazard-deep:#d8500c; --steel:#3f5f70; --steel-soft:#6d8797;
+    --ok:#1f8a52; --ok-bg:#e5f2e9; --warn:#c67d0a; --warn-bg:#fbf0d8; --crit:#c62f29; --crit-bg:#fbe4e2;
+    --ok-ink:#166b3f; --warn-ink:#8a5606; --crit-ink:#9c221d;
+    --shadow: 0 1px 2px rgba(20,24,31,.06), 0 8px 30px -12px rgba(20,24,31,.28);
+    --shadow-lift: 0 2px 4px rgba(20,24,31,.08), 0 20px 50px -20px rgba(20,24,31,.4);
+  }
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --ink:#eef2f6; --ink-soft:#b7c1cc; --ink-faint:#7d8896;
+    --paper:#0e1319; --paper-2:#131a22; --card:#161e28; --line:#26303c;
+    --hazard:#ff7a2e; --hazard-deep:#ff934f; --steel:#7fa6bb; --steel-soft:#5b7688;
+    --ok:#3bbd77; --ok-bg:#10241a; --warn:#e8a836; --warn-bg:#2a1f0a; --crit:#e8564e; --crit-bg:#2a1210;
+    --ok-ink:#7fe0a8; --warn-ink:#f5c877; --crit-ink:#f2938c;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 34px -14px rgba(0,0,0,.7);
+    --shadow-lift: 0 2px 6px rgba(0,0,0,.5), 0 26px 60px -22px rgba(0,0,0,.85);
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{animation-duration:.001ms !important;transition-duration:.001ms !important} }
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family: "Barlow", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  }
+  .display{ font-family:"Oswald", ui-sans-serif, system-ui, sans-serif; font-weight:600; letter-spacing:.005em; }
+  .mono{ font-family:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-variant-numeric: tabular-nums; }
+
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 clamp(18px,4vw,40px)}
+  section{padding:clamp(56px,8vw,104px) 0}
+  h1,h2,h3{text-wrap:balance; margin:0}
+  p{margin:0}
+  a{color:inherit}
+  .stack{display:flex; flex-direction:column}
+  .gap-8{gap:8px}.gap-12{gap:12px}.gap-16{gap:16px}.gap-20{gap:20px}.gap-24{gap:24px}.gap-32{gap:32px}
+  .eyebrow{ font:600 12.5px/1.4 "Barlow",sans-serif; letter-spacing:.22em; text-transform:uppercase; color:var(--hazard); display:flex; align-items:center; gap:10px}
+  .eyebrow::before{content:""; width:26px; height:2px; background:var(--hazard); display:inline-block}
+  .eyebrow.steel{color:var(--steel)} .eyebrow.steel::before{background:var(--steel)}
+  .lede{font-size:clamp(18px,2.1vw,21px); color:var(--ink-soft); max-width:60ch; line-height:1.55}
+  .muted{color:var(--ink-faint)}
+  .h-sec{font-family:"Oswald",sans-serif; font-weight:600; font-size:clamp(30px,4.6vw,52px); line-height:1.04; letter-spacing:.004em}
+  .h-sub{font-family:"Oswald",sans-serif; font-weight:500; font-size:clamp(20px,2.6vw,26px); line-height:1.1}
+
+  /* chips / status */
+  .chip{display:inline-flex; align-items:center; gap:7px; font:700 12.5px/1 "Barlow",sans-serif; letter-spacing:.03em; padding:5px 11px; border-radius:999px; border:1px solid transparent; white-space:nowrap}
+  .chip .dot{width:8px; height:8px; border-radius:50%}
+  .chip.ok{background:var(--ok-bg); color:var(--ok-ink); border-color:color-mix(in srgb, var(--ok) 30%, transparent)} .chip.ok .dot{background:var(--ok)}
+  .chip.warn{background:var(--warn-bg); color:var(--warn-ink); border-color:color-mix(in srgb, var(--warn) 35%, transparent)} .chip.warn .dot{background:var(--warn)}
+  .chip.crit{background:var(--crit-bg); color:var(--crit-ink); border-color:color-mix(in srgb, var(--crit) 35%, transparent)} .chip.crit .dot{background:var(--crit)}
+
+  .btn{ display:inline-flex; align-items:center; gap:9px; font:700 15px/1 "Barlow",sans-serif; padding:14px 22px; border-radius:10px; border:1.5px solid transparent; cursor:pointer; text-decoration:none; transition:transform .12s ease, box-shadow .12s ease, background .12s ease}
+  .btn:active{transform:translateY(1px)}
+  .btn-primary{background:var(--hazard); color:#fff; box-shadow:0 6px 18px -6px color-mix(in srgb,var(--hazard) 70%, transparent)}
+  .btn-primary:hover{background:var(--hazard-deep)}
+  .btn-ghost{background:transparent; border-color:var(--line); color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--ink-faint)}
+
+  .card{background:var(--card); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow)}
+  .pad{padding:clamp(20px,3vw,30px)}
+
+  .rule{height:1px; background:var(--line); border:0; margin:0}
+  .kbd{font:600 12px/1 "IBM Plex Mono",monospace; padding:3px 7px; border:1px solid var(--line); border-bottom-width:2px; border-radius:6px; color:var(--ink-soft)}
+
+  /* focus */
+  :where(a,button,input,label,[tabindex]):focus-visible{ outline:3px solid var(--hazard); outline-offset:2px; border-radius:6px}
+
+  /* ===== top nav ===== */
+  header.nav{position:sticky; top:0; z-index:50; backdrop-filter:blur(10px); background:color-mix(in srgb, var(--paper) 82%, transparent); border-bottom:1px solid var(--line)}
+  .nav-in{max-width:var(--maxw); margin:0 auto; padding:12px clamp(18px,4vw,40px); display:flex; align-items:center; gap:18px}
+  .logo{display:flex; align-items:center; gap:11px; font-family:"Oswald",sans-serif; font-weight:700; font-size:19px; letter-spacing:.02em}
+  .logo .gauge{width:26px; height:26px; flex:none}
+  .nav-links{display:none; gap:22px; margin-left:8px}
+  .nav-links a{font:600 14px/1 "Barlow",sans-serif; color:var(--ink-soft); text-decoration:none; letter-spacing:.01em}
+  .nav-links a:hover{color:var(--hazard)}
+  .nav-cta{margin-left:auto; display:flex; align-items:center; gap:10px}
+  .theme-btn{appearance:none; border:1px solid var(--line); background:var(--card); color:var(--ink); width:38px; height:38px; border-radius:9px; cursor:pointer; display:grid; place-items:center}
+  @media(min-width:940px){ .nav-links{display:flex} }
+
+  /* ===== HERO ===== */
+  .hero{position:relative; overflow:hidden; padding-top:clamp(40px,6vw,72px)}
+  .hero-grid{display:grid; grid-template-columns:1fr; gap:clamp(32px,5vw,56px); align-items:center}
+  @media(min-width:960px){ .hero-grid{grid-template-columns:1.05fr .95fr} }
+  .hero h1{font-family:"Oswald",sans-serif; font-weight:700; font-size:clamp(38px,6.4vw,74px); line-height:.98; letter-spacing:.002em}
+  .hero h1 .hz{color:var(--hazard)}
+  .hero .kicker{font:600 13px/1.4 "Barlow",sans-serif; letter-spacing:.24em; text-transform:uppercase; color:var(--steel); margin-bottom:20px; display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+  .hero .kicker .tag{border:1px solid var(--line); border-radius:999px; padding:4px 10px; letter-spacing:.16em}
+
+  /* the clock instrument */
+  .clockcard{position:relative; background:linear-gradient(160deg, var(--card), color-mix(in srgb,var(--card) 88%, var(--steel))); border:1px solid var(--line); border-radius:22px; padding:clamp(22px,3vw,32px); box-shadow:var(--shadow-lift); overflow:hidden}
+  .clockcard::before{content:""; position:absolute; inset:0; background:
+     repeating-linear-gradient(45deg, transparent 0 16px, color-mix(in srgb,var(--hazard) 7%, transparent) 16px 20px);
+     opacity:.5; pointer-events:none; mask:linear-gradient(180deg, transparent, #000 40%)}
+  .clockcard .hdr{display:flex; align-items:center; justify-content:space-between; gap:12px; position:relative}
+  .worker-row{display:flex; align-items:center; gap:13px}
+  .avatar{width:44px; height:44px; border-radius:11px; background:var(--paper-2); display:grid; place-items:center; font-family:"Oswald",sans-serif; font-weight:700; color:var(--steel); border:1px solid var(--line)}
+  .countdown{position:relative; margin:22px 0 8px; display:flex; align-items:flex-end; gap:clamp(6px,1.4vw,14px); justify-content:center}
+  .cd-unit{display:flex; flex-direction:column; align-items:center; gap:6px}
+  .cd-num{font-family:"Oswald",sans-serif; font-weight:700; font-size:clamp(44px,9vw,78px); line-height:.85; letter-spacing:.01em; color:var(--ink); font-variant-numeric:tabular-nums}
+  .cd-lbl{font:700 10.5px/1 "Barlow",sans-serif; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-faint)}
+  .cd-sep{font-family:"Oswald",sans-serif; font-weight:700; font-size:clamp(30px,6vw,54px); color:var(--hazard); line-height:1; padding-bottom:14px; animation:blink 1s steps(2,start) infinite}
+  @keyframes blink{50%{opacity:.25}}
+  .cd-cap{text-align:center; margin-top:6px; font:600 13px/1.4 "Barlow",sans-serif; color:var(--ink-soft)}
+  .cd-cap b{color:var(--hazard)}
+
+  /* metrics strip under hero */
+  .metrics{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:14px; overflow:hidden; margin-top:clamp(30px,5vw,48px)}
+  @media(min-width:760px){ .metrics{grid-template-columns:repeat(4,1fr)} }
+  .metric{background:var(--card); padding:20px 22px}
+  .metric .n{font-family:"Oswald",sans-serif; font-weight:700; font-size:clamp(26px,3.4vw,34px); line-height:1; letter-spacing:.01em}
+  .metric .n .u{font-size:.55em; color:var(--ink-faint); font-weight:600}
+  .metric .l{font:600 12.5px/1.35 "Barlow",sans-serif; color:var(--ink-faint); margin-top:8px; letter-spacing:.02em}
+  .metric.hz .n{color:var(--hazard)}
+
+  /* ===== COVER (screen) ===== */
+  .cover{position:relative; min-height:100vh; display:flex; flex-direction:column; overflow:hidden;
+    background:
+      radial-gradient(120% 90% at 85% 0%, color-mix(in srgb,var(--hazard) 16%, transparent), transparent 55%),
+      linear-gradient(180deg, var(--paper-2), var(--paper));
+    border-bottom:1px solid var(--line)}
+  .cover::before{content:""; position:absolute; inset:0; pointer-events:none;
+    background:repeating-linear-gradient(45deg, transparent 0 22px, color-mix(in srgb,var(--hazard) 5%, transparent) 22px 26px);
+    mask:linear-gradient(115deg, #000 0%, transparent 60%); opacity:.6}
+  .cover-in{position:relative; max-width:var(--maxw); width:100%; margin:0 auto; padding:clamp(24px,5vw,44px) clamp(18px,4vw,40px);
+    flex:1; display:flex; flex-direction:column}
+  .cover-top{display:flex; align-items:center; justify-content:space-between; gap:16px}
+  .cover-brand{display:flex; align-items:center; gap:12px; font-family:"Oswald",sans-serif; font-weight:700; font-size:20px; letter-spacing:.02em}
+  .cover-brand .gauge{width:30px; height:30px}
+  .cover-doc-tag{display:inline-flex; align-items:center; gap:9px; font:700 11.5px/1 "Barlow",sans-serif; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft); background:color-mix(in srgb,var(--hazard) 12%, var(--card)); border:1px solid color-mix(in srgb,var(--hazard) 45%, transparent); border-radius:999px; padding:9px 15px 9px 13px; box-shadow:0 1px 2px rgba(0,0,0,.06)}
+  .cover-doc-tag::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--hazard); box-shadow:0 0 0 3px color-mix(in srgb,var(--hazard) 22%, transparent); flex:none}
+  .cover-mid{flex:1; display:flex; flex-direction:column; justify-content:center; padding:clamp(28px,7vw,72px) 0; max-width:20ch}
+  .cover-mid{max-width:none}
+  .cover-eyebrow{font:600 13px/1.4 "Barlow",sans-serif; letter-spacing:.24em; text-transform:uppercase; color:var(--hazard); display:flex; align-items:center; gap:12px; margin-bottom:26px}
+  .cover-eyebrow::before{content:""; width:34px; height:2px; background:var(--hazard)}
+  .cover h1{font-family:"Oswald",sans-serif; font-weight:700; font-size:clamp(44px,8.5vw,104px); line-height:.92; letter-spacing:.004em; max-width:16ch; margin:0}
+  .cover h1 .hz{color:var(--hazard)}
+  .cover .cover-sub{font-size:clamp(18px,2.4vw,23px); color:var(--ink-soft); max-width:56ch; line-height:1.5; margin-top:26px}
+  .cover-clockline{display:inline-flex; align-items:baseline; gap:12px; margin-top:30px; padding:14px 20px; border:1px solid var(--line); border-radius:12px; background:color-mix(in srgb,var(--card) 70%, transparent); backdrop-filter:blur(4px); align-self:flex-start}
+  .cover-clockline .lbl{font:600 12px/1 "Barlow",sans-serif; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-faint)}
+  .cover-clockline .val{font-family:"Oswald",sans-serif; font-weight:700; font-size:26px; color:var(--hazard); font-variant-numeric:tabular-nums}
+  .cover-bottom{display:grid; grid-template-columns:1fr; gap:20px; padding-top:28px; border-top:1px solid var(--line)}
+  @media(min-width:720px){ .cover-bottom{grid-template-columns:repeat(3,1fr); align-items:end} }
+  .cover-meta .k{font:700 11px/1 "Barlow",sans-serif; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-faint); margin-bottom:7px}
+  .cover-meta .v{font-family:"Oswald",sans-serif; font-weight:600; font-size:18px}
+  .cover-meta .v.sm{font-size:15px; font-weight:500; color:var(--ink-soft)}
+  .cover-scroll{display:flex; align-items:center; gap:10px; justify-self:start; font:600 13px/1 "Barlow",sans-serif; color:var(--ink-faint); text-decoration:none}
+  @media(min-width:720px){ .cover-scroll{justify-self:end} }
+  .cover-scroll:hover{color:var(--hazard)}
+  .cover-scroll .arr{width:30px; height:30px; border-radius:50%; border:1.5px solid currentColor; display:grid; place-items:center; animation:bob 1.8s ease-in-out infinite}
+  @keyframes bob{50%{transform:translateY(4px)}}
+
+  /* screen-only / print-only toggles */
+  .print-only{display:none}
+
+  /* ============================================================
+     PRINT — turn the interactive pitch into a clean PDF leave-behind
+     ============================================================ */
+  @media print{
+    /* force the light, ink-on-paper identity regardless of viewer theme */
+    :root, :root[data-theme="dark"], :root[data-theme="light"]{
+      color-scheme: light;
+      --ink:#14181f; --ink-soft:#33404b; --ink-faint:#5c6773;
+      --paper:#ffffff; --paper-2:#f4f1ea; --card:#ffffff; --line:#c9c2b2;
+      --hazard:#d8500c; --hazard-deep:#b8430a; --steel:#2f5061; --steel-soft:#5c7686;
+      --ok:#177a45; --ok-bg:#e9f4ec; --warn:#a5680a; --warn-bg:#f8efd8; --crit:#b32721; --crit-bg:#f9e4e2;
+      --ok-ink:#12683a; --warn-ink:#7a4d07; --crit-ink:#8f1f1a;
+      --shadow:none; --shadow-lift:none;
+    }
+    @page{ size:A4; margin:14mm 15mm; }
+    @page:first{ margin:0; }
+    html{font-size:11.2pt}
+    body{background:#fff; color:var(--ink); -webkit-print-color-adjust:exact; print-color-adjust:exact}
+    *{ -webkit-print-color-adjust:exact !important; print-color-adjust:exact !important; box-shadow:none !important }
+
+    /* chrome that shouldn't print */
+    header.nav, .theme-btn, .cover-scroll, .demo-chrome, .dash-actions,
+    .loop-nav, #btn-audit, #btn-reset { display:none !important }
+
+    a{color:inherit; text-decoration:none}
+
+    /* each major band starts on a fresh page; keep headings with their content */
+    section{ padding:0 !important; break-before:page; page-break-before:always; break-inside:avoid-page }
+    .cover{ break-before:auto; page-break-before:auto; min-height:auto }
+    section:first-of-type{ break-before:auto; page-break-before:always }
+    h1,h2,h3,h4,.h-sec,.h-sub{ break-after:avoid; page-break-after:avoid }
+    .card,.buy,.moat,.triage-card,.report,.ask-card,.metric,.kpi,.audit-point,.ladder-row,.story-step{ break-inside:avoid; page-break-inside:avoid }
+    table, tr, .tbl-wrap, .cmp-wrap{ break-inside:auto }
+    tr{ break-inside:avoid; page-break-inside:avoid }
+    thead{ display:table-header-group }
+
+    /* ----- COVER as full first page ----- */
+    .cover{ min-height:auto; height:calc(297mm - 2px); border:0; page-break-after:always; break-after:page;
+      background:linear-gradient(180deg,#f7f4ec,#fff) !important; }
+    .cover::before{ background:repeating-linear-gradient(45deg, transparent 0 22px, rgba(216,80,12,.06) 22px 26px) !important; opacity:1 }
+    .cover-in{ padding:20mm 20mm !important }
+    .cover h1{ font-size:52pt }
+    .cover-clockline{ backdrop-filter:none }
+
+    /* ----- HERO: show a static countdown, drop live-only affordances ----- */
+    .hero{ padding-top:0 !important }
+    .hero-grid{ display:block !important }
+    .clockcard{ border:1px solid var(--line); page-break-inside:avoid; margin-top:16pt }
+    .clockcard::before{ display:none }
+    .cd-sep{ animation:none !important }
+    .metrics{ margin-top:18pt }
+
+    /* dashboard: print the status board only (the other two views are interactive) */
+    .demo-frame{ border:1px solid var(--line) }
+    .demo-tabs{ border-bottom:1px solid var(--line); padding-bottom:0 }
+    .demo-tab[aria-selected="false"]{ display:none }
+    .demo-body{ padding:14pt !important }
+
+    /* loop: show the whole sequence stacked, not one interactive stage */
+    .loop-rail{ position:static }
+    .loop-wrap{ display:block !important }
+    .loop-stage{ min-height:auto; border:1px solid var(--line); page-break-inside:avoid }
+
+    /* tighten type for paper */
+    .lede{ font-size:12pt }
+    .h-sec{ font-size:24pt }
+    .h-sub{ font-size:16pt }
+    section > .wrap{ gap:14pt !important }
+
+    /* running footer via a printed strip on each section */
+    .print-only{ display:block }
+    .print-foot{ position:fixed; bottom:6mm; left:15mm; right:15mm; display:flex; justify-content:space-between;
+      font:600 8pt/1 "IBM Plex Mono",monospace; color:var(--ink-faint); border-top:1px solid var(--line); padding-top:3mm }
+  }
+</style>
+
+<!-- ================= NAV ================= -->
+<header class="nav">
+  <div class="nav-in">
+    <a class="logo" href="#top" aria-label="Renewal Clock home">
+      <svg class="gauge" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="2.5"/>
+        <path d="M20 20 L20 9" stroke="var(--hazard,#ff6a1a)" stroke-width="3" stroke-linecap="round"/>
+        <path d="M20 20 L28 24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="20" cy="20" r="2.4" fill="currentColor"/>
+      </svg>
+      Renewal&nbsp;Clock
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#problem">The problem</a>
+      <a href="#product">The product</a>
+      <a href="#loop">The loop</a>
+      <a href="#audit">Audit report</a>
+      <a href="#moat">Why it holds</a>
+      <a href="#math">The math</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19" stroke-linecap="round"/></svg>
+      </button>
+      <a class="btn btn-primary" href="#ask" style="padding:11px 18px">The ask</a>
+    </div>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<!-- ================= COVER ================= -->
+<section class="cover" aria-labelledby="cover-h">
+  <div class="cover-in">
+    <div class="cover-top">
+      <div class="cover-brand">
+        <svg class="gauge" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M20 20 L20 9" stroke="var(--hazard,#ff6a1a)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M20 20 L28 24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="20" cy="20" r="2.4" fill="currentColor"/>
+        </svg>
+        Renewal&nbsp;Clock
+      </div>
+      <span class="cover-doc-tag">Founding-partner briefing</span>
+    </div>
+
+    <div class="cover-mid">
+      <div class="cover-eyebrow">Compliance software for the trades · SaaS #2</div>
+      <h1 id="cover-h">The clock that<br><span class="hz">never stops</span><br>ticking.</h1>
+      <p class="cover-sub">How we stop electrical &amp; HVAC contractors from getting hit with a $16,000 fine when a worker's safety certification quietly expires — by owning the whole loop: train, certify, track, remind, audit.</p>
+      <div class="cover-clockline" role="group" aria-label="Live example">
+        <span class="lbl">Next cert expires in</span>
+        <span class="val" id="cover-countdown">11d 04:22:07</span>
+      </div>
+    </div>
+
+    <div class="cover-bottom">
+      <div class="cover-meta">
+        <div class="k">Prepared by</div>
+        <div class="v">Khoi Le</div>
+        <div class="v sm">edge8.ai</div>
+      </div>
+      <div class="cover-meta">
+        <div class="k">The ask</div>
+        <div class="v">3 founding partners</div>
+        <div class="v sm">$99/mo × 3 months, cancel anytime</div>
+      </div>
+      <a class="cover-scroll" href="#problem">
+        Read the briefing
+        <span class="arr" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HERO ================= -->
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kicker">
+        <span>SaaS&nbsp;#2 · Compliance for the trades</span>
+        <span class="tag">Electrical · HVAC</span>
+      </div>
+      <h1 id="hero-h">The certificate is<br><span class="hz">still expiring</span><br>while you read this.</h1>
+      <p class="lede" style="margin-top:24px">
+        Every electrician's safety cert lapses on a legal calendar — and when an inspector finds the gap, it's a <b>$16,000 fine</b>, a failed audit, a worker pulled off the job. We train, certify, track, remind, and hand you an inspector-ready report in one click. The clock never stops. Neither do we.
+      </p>
+      <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:30px">
+        <a class="btn btn-primary" href="#product">See it work &nbsp;→</a>
+        <a class="btn btn-ghost" href="#problem">Why this exists</a>
+      </div>
+    </div>
+
+    <!-- live ticking instrument: the thesis of the whole business -->
+    <div class="clockcard" role="group" aria-label="Live certification countdown demo">
+      <div class="hdr">
+        <div class="worker-row">
+          <div class="avatar">JN</div>
+          <div>
+            <div class="display" style="font-size:19px; line-height:1.1">Joel Nguyen</div>
+            <div class="muted mono" style="font-size:13px">OSHA-10 · Mike's Electrical</div>
+          </div>
+        </div>
+        <span class="chip warn"><span class="dot"></span>EXPIRING</span>
+      </div>
+
+      <div class="countdown" id="countdown" aria-hidden="true">
+        <div class="cd-unit"><div class="cd-num" id="cd-d">11</div><div class="cd-lbl">Days</div></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><div class="cd-num" id="cd-h">04</div><div class="cd-lbl">Hrs</div></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><div class="cd-num" id="cd-m">22</div><div class="cd-lbl">Min</div></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><div class="cd-num" id="cd-s">07</div><div class="cd-lbl">Sec</div></div>
+      </div>
+      <p class="cd-cap mono" id="cd-caption">until this worker is <b>non-compliant</b> on the job site</p>
+      <div class="rule" style="margin:18px 0"></div>
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap">
+        <div class="muted" style="font:600 13px/1.4 'Barlow',sans-serif">Reminder schedule</div>
+        <div style="display:flex; gap:6px; flex-wrap:wrap" id="cadence" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="metrics" role="list">
+      <div class="metric hz" role="listitem"><div class="n">$16k</div><div class="l">Typical OSHA fine for one lapsed cert</div></div>
+      <div class="metric" role="listitem"><div class="n">$199<span class="u">/mo</span></div><div class="l">Flat price — not per seat, cancel anytime</div></div>
+      <div class="metric" role="listitem"><div class="n">1<span class="u"> afternoon</span></div><div class="l">From spreadsheet to live — we do the import</div></div>
+      <div class="metric" role="listitem"><div class="n">&lt;$50<span class="u">/mo</span></div><div class="l">All-in cost to run — no burn clock</div></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ===== THE PROBLEM ===== */
+  .band-steel{background:var(--paper-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+  .story-grid{display:grid; grid-template-columns:1fr; gap:clamp(24px,4vw,44px); align-items:start}
+  @media(min-width:900px){ .story-grid{grid-template-columns:.85fr 1.15fr} }
+  .story-steps{display:flex; flex-direction:column; gap:0}
+  .story-step{display:grid; grid-template-columns:auto 1fr; gap:18px; padding:20px 0}
+  .story-step + .story-step{border-top:1px dashed var(--line)}
+  .story-num{width:40px; height:40px; border-radius:50%; border:2px solid var(--line); display:grid; place-items:center; font-family:"Oswald",sans-serif; font-weight:700; color:var(--ink-faint)}
+  .story-step.bad .story-num{border-color:var(--crit); color:var(--crit-ink); background:var(--crit-bg)}
+  .story-step h4{font-family:"Oswald",sans-serif; font-weight:600; font-size:19px; margin:0 0 4px}
+  .whopays{background:var(--card); border:1px solid var(--line); border-left:4px solid var(--hazard); border-radius:0 14px 14px 0; padding:22px 24px}
+</style>
+<section id="problem" class="band-steel" aria-labelledby="problem-h">
+  <div class="wrap stack gap-32">
+    <div class="stack gap-16" style="max-width:64ch">
+      <div class="eyebrow steel">The job Sarah can't win with a spreadsheet</div>
+      <h2 id="problem-h" class="h-sec">A cert lapses quietly.<br>Then the inspector shows up.</h2>
+      <p class="lede">"Mike's Electrical" is a 35-person contractor. By law, insurance, and client contracts, every electrician must hold valid certs. Sarah, the office manager, tracks all of it in a spreadsheet — until one date slips past her.</p>
+    </div>
+
+    <div class="story-grid">
+      <div class="whopays stack gap-16">
+        <div class="eyebrow">The chain reaction</div>
+        <p style="font-size:18px; line-height:1.5">One expired card, discovered at the wrong moment, doesn't cost you a reminder. It costs you the fine, the failed audit, the worker sent home, and sometimes the contract.</p>
+        <div class="stack gap-8" style="margin-top:4px">
+          <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px"><span class="muted">Regulatory fine</span><span class="display" style="font-size:22px; color:var(--crit-ink)">$16,000</span></div>
+          <div class="rule"></div>
+          <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px"><span class="muted">Sarah's hours/week chasing renewals</span><span class="display" style="font-size:22px">~5 hrs</span></div>
+          <div class="rule"></div>
+          <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px"><span class="muted">Worker pulled off the job site</span><span class="display" style="font-size:22px">1 lost day+</span></div>
+        </div>
+      </div>
+
+      <div class="story-steps card pad">
+        <div class="story-step">
+          <div class="story-num">1</div>
+          <div><h4>She tracks it by hand</h4><p class="muted">Every employee × every cert × every expiry date — first-aid every 2 years, OSHA, state license, equipment cards — in one increasingly fragile spreadsheet.</p></div>
+        </div>
+        <div class="story-step">
+          <div class="story-num">2</div>
+          <div><h4>A date slips past</h4><p class="muted">No alarm goes off. A row that should be red just looks like every other row. The spreadsheet can't raise its hand.</p></div>
+        </div>
+        <div class="story-step bad">
+          <div class="story-num">3</div>
+          <div><h4>The audit finds the gap</h4><p class="muted">An inspector or a client audit lands before the renewal does → fine, failed audit, worker pulled, contract at risk.</p></div>
+        </div>
+        <div class="story-step bad">
+          <div class="story-num">4</div>
+          <div><h4>Renewals are worse than reminders</h4><p class="muted">Even when she catches it, she must <em>find</em> the training, <em>chase</em> the worker, <em>collect</em> the new PDF, and <em>file</em> the proof. A reminder alone leaves all four on her desk.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="lede" style="max-width:70ch"><b>The real competitor isn't software — it's the spreadsheet.</b> Free, trusted, already installed, and it never shuts down. Most of these are spreadsheet-replacement conversations, not software-comparison ones.</p>
+  </div>
+</section>
+
+<style>
+  /* ===== WHAT SARAH BUYS (5 pillars) ===== */
+  .buys-grid{display:grid; grid-template-columns:1fr; gap:16px}
+  @media(min-width:680px){ .buys-grid{grid-template-columns:repeat(2,1fr)} }
+  @media(min-width:1000px){ .buys-grid{grid-template-columns:repeat(3,1fr)} }
+  .buy{position:relative; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:24px; overflow:hidden}
+  .buy .ic{width:44px; height:44px; border-radius:11px; display:grid; place-items:center; background:color-mix(in srgb,var(--hazard) 12%, transparent); color:var(--hazard); margin-bottom:16px}
+  .buy h4{font-family:"Oswald",sans-serif; font-weight:600; font-size:20px; margin:0 0 7px}
+  .buy p{color:var(--ink-soft); font-size:15.5px; line-height:1.55}
+  .buy .escrow-tag{position:absolute; top:16px; right:16px; font:700 10px/1 "Barlow",sans-serif; letter-spacing:.14em; color:var(--ok-ink); background:var(--ok-bg); padding:5px 9px; border-radius:999px; border:1px solid color-mix(in srgb,var(--ok) 30%, transparent)}
+
+  /* ===== INTERACTIVE DASHBOARD ===== */
+  .demo-frame{background:var(--card); border:1px solid var(--line); border-radius:18px; box-shadow:var(--shadow-lift); overflow:hidden}
+  .demo-chrome{display:flex; align-items:center; gap:14px; padding:13px 18px; border-bottom:1px solid var(--line); background:var(--paper-2)}
+  .dots{display:flex; gap:7px} .dots span{width:11px; height:11px; border-radius:50%; background:var(--line)}
+  .demo-url{flex:1; font:600 13px/1 "IBM Plex Mono",monospace; color:var(--ink-faint); background:var(--card); border:1px solid var(--line); border-radius:7px; padding:8px 12px; text-align:center; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .demo-tabs{display:flex; gap:4px; padding:12px 18px 0; flex-wrap:wrap}
+  .demo-tab{appearance:none; border:1px solid transparent; background:transparent; color:var(--ink-faint); font:600 13.5px/1 "Barlow",sans-serif; padding:10px 15px; border-radius:9px 9px 0 0; cursor:pointer; display:flex; align-items:center; gap:8px}
+  .demo-tab:hover{color:var(--ink); background:color-mix(in srgb,var(--ink) 5%, transparent)}
+  .demo-tab[aria-selected="true"]{color:var(--hazard); background:var(--card); border-color:var(--line); border-bottom-color:var(--card); position:relative; top:1px}
+  .demo-tab .vk{font:700 10px/1 "IBM Plex Mono",monospace; opacity:.6}
+  .demo-body{padding:clamp(16px,2.4vw,26px); border-top:1px solid var(--line)}
+
+  /* dashboard shared bits */
+  .dash-head{display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:20px}
+  .dash-head .co{font-family:"Oswald",sans-serif; font-weight:600; font-size:23px}
+  .dash-head .sub{color:var(--ink-faint); font-size:14px}
+  .dash-actions{display:flex; gap:10px; flex-wrap:wrap}
+  .mini-btn{appearance:none; font:700 13px/1 "Barlow",sans-serif; padding:10px 14px; border-radius:9px; border:1.5px solid var(--line); background:var(--card); color:var(--ink); cursor:pointer; display:inline-flex; gap:8px; align-items:center}
+  .mini-btn.primary{background:var(--hazard); color:#fff; border-color:transparent}
+  .mini-btn:hover{border-color:var(--ink-faint)}
+  .mini-btn.primary:hover{background:var(--hazard-deep)}
+
+  .kpis{display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin-bottom:22px}
+  @media(min-width:720px){ .kpis{grid-template-columns:repeat(4,1fr)} }
+  .kpi{border:1px solid var(--line); border-radius:12px; padding:15px 17px; background:var(--paper-2); position:relative; overflow:hidden}
+  .kpi::before{content:""; position:absolute; left:0; top:0; bottom:0; width:4px}
+  .kpi.crit::before{background:var(--crit)} .kpi.warn::before{background:var(--warn)} .kpi.ok::before{background:var(--ok)} .kpi.neutral::before{background:var(--steel)}
+  .kpi .n{font-family:"Oswald",sans-serif; font-weight:700; font-size:30px; line-height:1}
+  .kpi.crit .n{color:var(--crit-ink)} .kpi.warn .n{color:var(--warn-ink)} .kpi.ok .n{color:var(--ok-ink)}
+  .kpi .l{font:600 11.5px/1.3 "Barlow",sans-serif; letter-spacing:.04em; text-transform:uppercase; color:var(--ink-faint); margin-top:7px}
+
+  /* table view */
+  .tbl-wrap{overflow-x:auto; border:1px solid var(--line); border-radius:12px}
+  table.reg{width:100%; border-collapse:collapse; font-size:14.5px; min-width:640px}
+  table.reg th,table.reg td{text-align:left; padding:13px 15px; border-bottom:1px solid var(--line); vertical-align:middle}
+  table.reg th{font:700 11px/1 "Barlow",sans-serif; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-faint); background:var(--paper-2)}
+  table.reg tbody tr:last-child td{border-bottom:0}
+  table.reg tbody tr:hover{background:color-mix(in srgb,var(--hazard) 4%, transparent)}
+  .who{display:flex; align-items:center; gap:11px}
+  .who .av{width:34px; height:34px; border-radius:8px; background:var(--paper-2); border:1px solid var(--line); display:grid; place-items:center; font:700 12px/1 "Oswald",sans-serif; color:var(--steel)}
+  .who .role{font-size:12px; color:var(--ink-faint)}
+  .cert-name{font-weight:600}
+  .days{font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; font-weight:600}
+  .days.crit{color:var(--crit-ink)} .days.warn{color:var(--warn-ink)} .days.ok{color:var(--ok-ink)}
+  .next-rem{font-size:12.5px; color:var(--ink-faint); font-family:"IBM Plex Mono",monospace}
+
+  /* triage view */
+  .triage-banner{background:color-mix(in srgb,var(--hazard) 8%, var(--card)); border:1px solid color-mix(in srgb,var(--hazard) 30%, transparent); border-radius:12px; padding:16px 18px; margin-bottom:16px; display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+  .triage-list{display:flex; flex-direction:column; gap:12px}
+  .triage-card{display:grid; grid-template-columns:1fr auto; gap:14px; align-items:center; border:1px solid var(--line); border-left-width:4px; border-radius:12px; padding:16px 18px; background:var(--card)}
+  .triage-card.crit{border-left-color:var(--crit)} .triage-card.warn{border-left-color:var(--warn)}
+  .triage-card .nm{font-family:"Oswald",sans-serif; font-weight:600; font-size:17px}
+  .triage-card .meta{color:var(--ink-faint); font-size:13.5px; margin-top:2px}
+  .triage-right{text-align:right; display:flex; flex-direction:column; align-items:flex-end; gap:8px}
+  .done-note{text-align:center; padding:12px; border:1px dashed var(--line); border-radius:12px; color:var(--ink-faint); font-size:14px; margin-top:14px}
+
+  /* timeline view */
+  .tl-legend{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:16px; font:600 13px/1 "Barlow",sans-serif; color:var(--ink-soft)}
+  .tl-legend span{display:inline-flex; align-items:center; gap:7px}
+  .tl-legend i{width:11px; height:11px; border-radius:50%; display:inline-block}
+  .tl{border:1px solid var(--line); border-radius:12px; overflow:hidden}
+  .tl-axis{display:flex; padding-left:clamp(120px,20vw,190px); background:var(--paper-2); border-bottom:1px solid var(--line)}
+  .tl-axis .tick{flex:1; text-align:center; font:600 10.5px/1 "IBM Plex Mono",monospace; color:var(--ink-faint); padding:9px 0; border-left:1px solid var(--line)}
+  .tl-row{display:flex; align-items:center; border-bottom:1px solid var(--line)}
+  .tl-row:last-child{border-bottom:0}
+  .tl-row:hover{background:color-mix(in srgb,var(--hazard) 4%, transparent)}
+  .tl-label{width:clamp(120px,20vw,190px); flex:none; padding:11px 15px; font-size:13.5px}
+  .tl-label b{font-weight:600} .tl-label .c{color:var(--ink-faint); font-size:12px}
+  .tl-track{position:relative; flex:1; height:46px; margin-right:14px}
+  .tl-track .base{position:absolute; left:0; right:0; top:50%; height:2px; background:var(--line)}
+  .tl-track .gridline{position:absolute; top:0; bottom:0; border-left:1px dashed color-mix(in srgb,var(--line) 70%, transparent)}
+  .tl-marker{position:absolute; top:50%; transform:translate(-50%,-50%); width:18px; height:18px; border-radius:50%; border:2px solid var(--card); box-shadow:var(--shadow); cursor:default}
+  .tl-marker.ok{background:var(--ok)} .tl-marker.warn{background:var(--warn)} .tl-marker.crit{background:var(--crit)}
+  .demo-caption{margin-top:16px; font-size:14px; color:var(--ink-faint); line-height:1.55; max-width:72ch}
+  .demo-caption b{color:var(--ink-soft)}
+</style>
+
+<section id="product" aria-labelledby="product-h">
+  <div class="wrap stack gap-32">
+    <div class="stack gap-16" style="max-width:66ch">
+      <div class="eyebrow">What Sarah's company buys for $199/mo</div>
+      <h2 id="product-h" class="h-sec">One dashboard that closes the whole loop.</h2>
+      <p class="lede">Trackers remind you but can't run the training. Training platforms train but don't watch the calendar. We do the whole loop — <b>train, certify, track, remind, audit-report</b> — pre-loaded for the trade.</p>
+    </div>
+
+    <div class="buys-grid">
+      <div class="buy">
+        <div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v16" stroke-linecap="round"/></svg></div>
+        <h4>The registry</h4>
+        <p>Every employee &times; every cert &times; expiry date, in red / amber / green. The single source of truth the spreadsheet pretended to be.</p>
+      </div>
+      <div class="buy">
+        <div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h4>The clock</h4>
+        <p>Automatic emails at 90 / 60 / 30 / 7 days to the worker <em>and</em> to Sarah. Nothing lapses silently, ever again.</p>
+      </div>
+      <div class="buy">
+        <div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h4>The renewal, closed</h4>
+        <p>Track-only for external renewals (upload the new card), or <em>train-in-app</em>: reminder &rarr; lesson &rarr; quiz &rarr; certificate auto-issues &rarr; registry flips itself green.</p>
+      </div>
+      <div class="buy">
+        <div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h6M9 17h6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h4>The audit button</h4>
+        <p>One click &rarr; an inspector-ready report of who's current, with the evidence attached. Shaped like what an OSHA reviewer actually accepts.</p>
+      </div>
+      <div class="buy">
+        <span class="escrow-tag">TRUST WEAPON</span>
+        <div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h4>The escrow</h4>
+        <p>Every week we auto-export the real certificate PDFs + a plain CSV index to <em>their</em> Google Drive. "If we ever disappear, you lose nothing." It costs us one export job.</p>
+      </div>
+      <div class="buy" style="display:flex; flex-direction:column; justify-content:center; background:linear-gradient(155deg, color-mix(in srgb,var(--steel) 14%, var(--card)), var(--card))">
+        <div class="eyebrow steel" style="margin-bottom:10px">Why they keep paying</div>
+        <p style="font-size:16.5px; color:var(--ink); line-height:1.5">The clock never stops — certs expire again next year, forever. Leaving means rebuilding the spreadsheet and losing the audit trail. <b>You're not selling software; you're selling the absence of a $16,000 fine.</b></p>
+      </div>
+    </div>
+
+    <!-- ===== interactive dashboard demo ===== -->
+    <div class="stack gap-16" style="max-width:66ch; margin-top:16px">
+      <div class="eyebrow steel">Sarah's screen — try all three views</div>
+      <h3 class="h-sub">The same 10 workers, seen three ways. Flip between them.</h3>
+      <p class="muted" style="font-size:16px">Different office managers want different first-glances. Click a tab — or press <span class="kbd">1</span> <span class="kbd">2</span> <span class="kbd">3</span>. The action buttons actually renew a cert, so you can watch the board change.</p>
+    </div>
+
+    <div class="demo-frame" aria-label="Interactive dashboard demo">
+      <div class="demo-chrome" aria-hidden="true">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <div class="demo-url">app.renewalclock.com/registry?company=mikes-electrical</div>
+      </div>
+      <div class="demo-tabs" role="tablist" aria-label="Dashboard views">
+        <button class="demo-tab" role="tab" id="tab-table" aria-controls="dash-mount" aria-selected="true"><span class="vk">1</span> Status board</button>
+        <button class="demo-tab" role="tab" id="tab-triage" aria-controls="dash-mount" aria-selected="false"><span class="vk">2</span> Today's triage</button>
+        <button class="demo-tab" role="tab" id="tab-timeline" aria-controls="dash-mount" aria-selected="false"><span class="vk">3</span> 12-month timeline</button>
+      </div>
+      <div class="demo-body">
+        <div class="dash-head">
+          <div>
+            <div class="co">Mike's Electrical</div>
+            <div class="sub mono">35 field staff · 10 certifications tracked · Dallas, TX</div>
+          </div>
+          <div class="dash-actions">
+            <button class="mini-btn" id="btn-audit" type="button">🧾 Audit report</button>
+            <button class="mini-btn primary" id="btn-reset" type="button">↺ Reset demo</button>
+          </div>
+        </div>
+        <div id="dash-mount" role="tabpanel"></div>
+      </div>
+    </div>
+    <p class="demo-caption" id="global-caption"></p>
+  </div>
+</section>
+
+<style>
+  /* ===== THE CLOSED LOOP ===== */
+  .loop-wrap{display:grid; grid-template-columns:1fr; gap:clamp(24px,4vw,40px); align-items:start}
+  @media(min-width:960px){ .loop-wrap{grid-template-columns:.9fr 1.1fr} }
+  .loop-rail{display:flex; flex-direction:column; gap:6px; position:sticky; top:84px}
+  .loop-step-btn{appearance:none; text-align:left; background:transparent; border:1px solid transparent; border-radius:12px; padding:15px 16px; cursor:pointer; display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:center; transition:background .15s ease, border-color .15s ease}
+  .loop-step-btn:hover{background:color-mix(in srgb,var(--ink) 4%, transparent)}
+  .loop-step-btn[aria-current="true"]{background:var(--card); border-color:var(--line); box-shadow:var(--shadow)}
+  .loop-step-btn .sn{width:34px; height:34px; border-radius:50%; border:2px solid var(--line); display:grid; place-items:center; font:700 14px/1 "Oswald",sans-serif; color:var(--ink-faint); flex:none}
+  .loop-step-btn[aria-current="true"] .sn{background:var(--hazard); border-color:var(--hazard); color:#fff}
+  .loop-step-btn .stxt{display:flex; flex-direction:column; gap:3px; min-width:0}
+  .loop-step-btn .st{display:block; font-family:"Oswald",sans-serif; font-weight:600; font-size:16px; line-height:1.15; color:var(--ink)}
+  .loop-step-btn .sd{display:block; font-size:13px; line-height:1.3; color:var(--ink-faint)}
+  .loop-step-btn[aria-current="true"] .st{color:var(--hazard)}
+  .loop-stage{background:var(--card); border:1px solid var(--line); border-radius:18px; box-shadow:var(--shadow-lift); min-height:440px; padding:clamp(22px,3.4vw,36px); display:flex; flex-direction:column; justify-content:center}
+  .loop-nav{display:flex; justify-content:space-between; gap:12px; margin-top:20px}
+  .stage-eyebrow{font:700 12px/1 "Barlow",sans-serif; letter-spacing:.2em; text-transform:uppercase; color:var(--hazard); margin-bottom:14px}
+
+  .mock-email{background:var(--paper); border:1px solid var(--line); border-radius:14px; overflow:hidden; max-width:520px; margin:0 auto; width:100%}
+  .mock-email .eh{padding:14px 16px; border-bottom:1px solid var(--line); font-size:13px; background:var(--paper-2)}
+  .mock-email .eh .from{font-weight:700; font-family:"Oswald",sans-serif; font-size:15px}
+  .mock-email .eb{padding:18px 16px}
+  .fake-btn{display:inline-block; background:var(--hazard); color:#fff; font:700 14px/1 "Barlow",sans-serif; padding:12px 18px; border-radius:9px}
+
+  .phone{max-width:320px; margin:0 auto; width:100%; background:var(--paper-2); border:10px solid color-mix(in srgb,var(--ink) 82%, #000); border-radius:34px; padding:16px; box-shadow:var(--shadow-lift)}
+  .phone .lesson-frame{background:linear-gradient(135deg,var(--steel),color-mix(in srgb,var(--steel) 60%, #000)); border-radius:12px; height:118px; display:grid; place-items:center; color:#fff; margin-bottom:14px; position:relative; overflow:hidden}
+  .phone .lesson-frame .play{width:44px; height:44px; border-radius:50%; background:rgba(255,255,255,.9); display:grid; place-items:center}
+  .phone .lesson-frame .play::after{content:""; border-left:14px solid var(--steel); border-top:9px solid transparent; border-bottom:9px solid transparent; margin-left:4px}
+  .quiz-q{font-family:"Oswald",sans-serif; font-weight:600; font-size:16px; margin-bottom:10px}
+  .quiz-opt{display:flex; align-items:center; gap:10px; background:var(--card); border:1.5px solid var(--line); border-radius:10px; padding:11px 13px; margin-bottom:8px; cursor:pointer; font-size:14px; transition:border-color .12s ease}
+  .quiz-opt:hover{border-color:var(--steel)}
+  .quiz-opt.right{border-color:var(--ok); background:var(--ok-bg); color:var(--ok-ink); font-weight:600}
+  .quiz-opt.wrong{border-color:var(--crit); background:var(--crit-bg); color:var(--crit-ink)}
+  .quiz-fb{text-align:center; font:600 13px/1.4 "Barlow",sans-serif; color:var(--ink-faint); margin-top:8px; min-height:20px}
+
+  .cert-doc{max-width:440px; margin:0 auto; width:100%; background:var(--card); border:1px solid var(--ok); border-radius:14px; padding:26px; text-align:center; box-shadow:0 0 0 6px var(--ok-bg)}
+  .cert-doc .seal{width:54px; height:54px; margin:0 auto 12px; border-radius:50%; background:var(--ok-bg); display:grid; place-items:center; color:var(--ok-ink)}
+  .cert-doc .ct{font:700 11px/1 "Barlow",sans-serif; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-faint)}
+  .cert-doc .cn{font-family:"Oswald",sans-serif; font-weight:700; font-size:24px; margin:6px 0}
+
+  .flip-row{display:flex; align-items:center; justify-content:space-between; gap:14px; background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:16px 18px; max-width:520px; margin:0 auto; width:100%}
+  .flip-anim{animation:flipGreen 1.1s ease}
+  @keyframes flipGreen{0%{background:var(--warn-bg)}100%{background:var(--paper)}}
+</style>
+
+<section id="loop" class="band-steel" aria-labelledby="loop-h">
+  <div class="wrap stack gap-32">
+    <div class="stack gap-16" style="max-width:66ch">
+      <div class="eyebrow">The closed loop — nobody else does all five steps</div>
+      <h2 id="loop-h" class="h-sec">Watch one cert renew itself.</h2>
+      <p class="lede">Joel's OSHA-10 expires in 12 days. Follow it from the amber row on Sarah's board all the way back to green — <b>without Sarah lifting a finger</b>. This is the differentiator trackers and LMSs each only do half of.</p>
+    </div>
+
+    <div class="loop-wrap">
+      <div class="loop-rail" role="tablist" aria-label="Loop steps" id="loop-rail"></div>
+      <div>
+        <div class="loop-stage" id="loop-stage" role="tabpanel" aria-live="polite"></div>
+        <div class="loop-nav">
+          <button class="mini-btn" id="loop-back" type="button">← Back</button>
+          <button class="mini-btn primary" id="loop-next" type="button">Next step →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ===== AUDIT ARTIFACT ===== */
+  .audit-grid{display:grid; grid-template-columns:1fr; gap:clamp(24px,4vw,40px); align-items:center}
+  @media(min-width:980px){ .audit-grid{grid-template-columns:1.05fr .95fr} }
+  /* The report is a printed white document — it must look identical in light AND dark mode.
+     color-scheme:light pins it out of the viewer's dark UA remapping; every text element gets an
+     explicit fixed color so nothing relies on inherited theme tokens. */
+  .report{color-scheme:light; background:#ffffff; color:#1a1a1a; border-radius:10px; box-shadow:var(--shadow-lift); overflow:hidden; border:1px solid #d8d2c4; font-family:"Barlow",sans-serif}
+  .report *{border-color:#e6e6e6}
+  .report .rhead{background:#12303f; color:#ffffff; padding:20px 24px; display:flex; justify-content:space-between; align-items:flex-start; gap:16px}
+  .report .rhead .rt{color:#ffffff; font-family:"Oswald",sans-serif; font-weight:700; font-size:20px; letter-spacing:.01em}
+  .report .rhead .rmeta{color:#c9d6de; font-size:11.5px; margin-top:4px; font-family:"IBM Plex Mono",monospace}
+  .report .rhead .badge{background:#2f9e5f; color:#ffffff; font:700 11px/1.3 "Barlow",sans-serif; padding:7px 11px; border-radius:6px; text-align:center; letter-spacing:.04em}
+  .report .rbody{padding:20px 24px; background:#ffffff}
+  .report .summary{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:18px}
+  .report .sbox{border:1px solid #e4e4e4; border-radius:8px; padding:12px; text-align:center; background:#ffffff}
+  .report .sbox .sn{font-family:"Oswald",sans-serif; font-weight:700; font-size:26px; line-height:1; color:#1a1a1a}
+  .report .sbox .sl{font-size:10.5px; text-transform:uppercase; letter-spacing:.06em; color:#5a5a5a; margin-top:5px; font-weight:600}
+  .report .sbox.g .sn{color:#177a45}.report .sbox.a .sn{color:#a5680a}.report .sbox.r .sn{color:#b32721}
+  .report table{width:100%; border-collapse:collapse; font-size:12.5px}
+  .report th,.report td{text-align:left; padding:9px 10px; border-bottom:1px solid #ededed; color:#2a2a2a}
+  .report th{font-size:9.5px; text-transform:uppercase; letter-spacing:.06em; color:#6a6a6a; font-weight:700; background:#f7f5f0}
+  .report td{color:#333333}
+  .report .st-cell{font-weight:700; font-size:11px}
+  .report .st-cell.g{color:#177a45}.report .st-cell.a{color:#a5680a}
+  .report .rfoot{border-top:2px solid #12303f; padding:12px 24px; font-size:10.5px; color:#5a5a5a; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; background:#f7f5f0}
+  .report .rfoot .gen{color:#5a5a5a; font-family:"IBM Plex Mono",monospace}
+  .report .rfoot .gen b{color:#d8500c}
+  .audit-points{display:flex; flex-direction:column; gap:18px}
+  .audit-point{display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:start}
+  .audit-point .ck{width:28px; height:28px; border-radius:8px; background:var(--ok-bg); color:var(--ok-ink); display:grid; place-items:center; flex:none}
+  .audit-point h4{font-family:"Oswald",sans-serif; font-weight:600; font-size:18px; margin:0 0 3px}
+  .audit-point p{color:var(--ink-soft); font-size:15px; line-height:1.5}
+</style>
+
+<section id="audit" aria-labelledby="audit-h">
+  <div class="wrap stack gap-32">
+    <div class="stack gap-16" style="max-width:66ch">
+      <div class="eyebrow">The artifact that closes the sale</div>
+      <h2 id="audit-h" class="h-sec">The one-click report an inspector accepts.</h2>
+      <p class="lede">Silent doubt about <em>this</em> document is the #1 reason a prospect ghosts. So here it is — the actual shape of what Sarah hands the inspector or the GC. Generated in one click, evidence attached.</p>
+    </div>
+
+    <div class="audit-grid">
+      <div class="report" role="img" aria-label="Sample compliance audit report for Mike's Electrical: 28 current, 2 expiring, 1 lapsed">
+        <div class="rhead">
+          <div>
+            <div class="rt">Compliance Status Report</div>
+            <div class="rmeta">MIKE'S ELECTRICAL LLC · TX-ELEC-44120 · Generated Jul 7 2026, 14:22 CST</div>
+          </div>
+          <div class="badge">31 / 31<br>ACCOUNTED FOR</div>
+        </div>
+        <div class="rbody">
+          <div class="summary">
+            <div class="sbox g"><div class="sn">28</div><div class="sl">Current</div></div>
+            <div class="sbox a"><div class="sn">2</div><div class="sl">Expiring ≤30d</div></div>
+            <div class="sbox r"><div class="sn">1</div><div class="sl">Renewal in progress</div></div>
+          </div>
+          <table>
+            <thead><tr><th>Employee</th><th>Certification</th><th>Issued</th><th>Expires</th><th>Status</th><th>Evidence</th></tr></thead>
+            <tbody>
+              <tr><td>Ben Carter</td><td>State Electrical License</td><td>2025-02-14</td><td>2027-02-14</td><td class="st-cell g">CURRENT</td><td>📎 PDF</td></tr>
+              <tr><td>Sam O'Neil</td><td>OSHA-30</td><td>2025-01-30</td><td>2027-02-02</td><td class="st-cell g">CURRENT</td><td>📎 PDF</td></tr>
+              <tr><td>Grace Kim</td><td>Arc-Flash / NFPA-70E</td><td>2025-11-24</td><td>2026-11-24</td><td class="st-cell g">CURRENT</td><td>📎 PDF</td></tr>
+              <tr><td>Kevin Lopez</td><td>EPA-608 (Refrigerant)</td><td>2023-10-03</td><td>2026-10-03</td><td class="st-cell g">CURRENT</td><td>📎 PDF</td></tr>
+              <tr><td>Danielle Ruiz</td><td>State Electrical License</td><td>2024-08-03</td><td>2026-08-03</td><td class="st-cell a">EXPIRING</td><td>📎 PDF</td></tr>
+              <tr><td>Joel Nguyen</td><td>OSHA-10</td><td>2024-07-19</td><td>2026-07-19</td><td class="st-cell a">RENEWAL SENT</td><td>📎 PDF</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rfoot">
+          <span>Page 1 of 3 · Full roster + certificate images attached to this export.</span>
+          <span class="gen">Generated by <b>The Renewal Clock</b></span>
+        </div>
+      </div>
+
+      <div class="audit-points">
+        <div class="audit-point">
+          <div class="ck" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><h4>Every worker, every cert, one page</h4><p>Red / amber / green summary up top, the full roster below, and the actual certificate images attached to the export — not a link back to our servers.</p></div>
+        </div>
+        <div class="audit-point">
+          <div class="ck" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><h4>Compliance vocabulary, borrowed from the incumbents</h4><p>We copy the <em>language</em> auditors expect from the $10K/yr EHS suites — so the report reads as familiar and credible on first glance.</p></div>
+        </div>
+        <div class="audit-point">
+          <div class="ck" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><h4>The footer is a growth channel</h4><p>"Generated by The Renewal Clock" rides on a document handed to exactly the inspector or GC who influences a dozen more companies. The artifact <em>is</em> the marketing.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ===== WHY IT HOLDS (antifragile) ===== */
+  .moat-grid{display:grid; grid-template-columns:1fr; gap:14px}
+  @media(min-width:700px){ .moat-grid{grid-template-columns:repeat(2,1fr)} }
+  .moat{display:grid; grid-template-columns:auto 1fr; gap:14px; background:var(--card); border:1px solid var(--line); border-radius:13px; padding:20px 22px; align-items:start}
+  .moat .mi{width:38px; height:38px; border-radius:9px; background:color-mix(in srgb,var(--steel) 15%, transparent); color:var(--steel); display:grid; place-items:center; flex:none}
+  .moat h4{font-family:"Oswald",sans-serif; font-weight:600; font-size:17px; margin:0 0 4px}
+  .moat p{font-size:14.5px; color:var(--ink-soft); line-height:1.5}
+  .vocab{background:var(--paper-2); border:1px solid var(--line); border-radius:14px; padding:24px; margin-top:8px}
+  .vocab .tri{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+  .vocab .tri .t{flex:1; min-width:150px; background:var(--card); border:1px solid var(--line); border-radius:11px; padding:16px}
+  .vocab .tri .t .k{font:700 11px/1 "Barlow",sans-serif; letter-spacing:.12em; text-transform:uppercase; color:var(--hazard); margin-bottom:6px}
+  .vocab .tri .t .v{font-family:"Oswald",sans-serif; font-weight:600; font-size:18px}
+  .vocab .tri .t p{font-size:13.5px; color:var(--ink-soft); margin-top:4px; line-height:1.45}
+</style>
+<section id="moat" class="band-steel" aria-labelledby="moat-h">
+  <div class="wrap stack gap-32">
+    <div class="stack gap-16" style="max-width:66ch">
+      <div class="eyebrow steel">Why this survives when times get tough</div>
+      <h2 id="moat-h" class="h-sec">A durable business. An antifragile system.</h2>
+      <p class="lede">The demand is legally mandated and recession-proof — inspection cycles don't care about GDP. And every force that would kill a normal SaaS is turned into a design choice here.</p>
+    </div>
+
+    <div class="moat-grid">
+      <div class="moat"><div class="mi" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20" stroke-linecap="round"/></svg></div><div><h4>Evergreen, mandated demand</h4><p>OSHA / trade licenses / first-aid expire on a legal calendar. The buyer cannot opt out. Each regulatory scare is a sales event.</p></div></div>
+      <div class="moat"><div class="mi" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0zM12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><h4>Recurring pain → recurring price</h4><p>The clock never stops ticking. Certs expire again next year, and the year after. No launch spike required, no single whale.</p></div></div>
+      <div class="moat"><div class="mi" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v6H4zM4 14h10v6H4z"/></svg></div><div><h4>No platform can flip a switch on you</h4><p>Direct sales, own billing, own domain. No marketplace or app-store dependency to change the terms overnight.</p></div></div>
+      <div class="moat"><div class="mi" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z" stroke-linejoin="round"/></svg></div><div><h4>Switching costs work for you</h4><p>You become the system of record for audits. Ripping it out means re-proving compliance from scratch — so embedded customers stay.</p></div></div>
+      <div class="moat"><div class="mi" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15H6z" stroke-linejoin="round"/></svg></div><div><h4>Cost survives at 3 customers</h4><p>Per-tenant infra ≈ single-digit dollars. All-in under $50/mo. There is no burn clock — you can wait out any slow quarter.</p></div></div>
+      <div class="moat"><div class="mi" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><h4>Uncorrelated with Venture #1</h4><p>Global-English SMBs; zero exposure to the yen, MOLISA, or the VN–JP corridor. If one leg of the barbell breaks, the other still stands.</p></div></div>
+    </div>
+
+    <div class="vocab">
+      <div class="eyebrow steel">Honest vocabulary</div>
+      <p style="font-size:16px; color:var(--ink); margin-top:10px; max-width:74ch">Strictly, the SaaS itself is <b>robust</b> — it resists shocks; it doesn't automatically gain from them. The <b>antifragility lives one level up</b>: in the portfolio and in the founder. That's the accurate claim — and it's the one that matters for "rely on it when times get tough."</p>
+      <div class="tri">
+        <div class="t"><div class="k">The business</div><div class="v">Durable</div><p>Resists shocks; recurring, mandated revenue.</p></div>
+        <div class="t"><div class="k">The system</div><div class="v">Antifragile</div><p>Two uncorrelated engines + salary + capped downside + kill-gates.</p></div>
+        <div class="t"><div class="k">The founder</div><div class="v">Antifragile</div><p>Every failed ask teaches the next; every scare is a sale.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ===== THE MATH ===== */
+  .math-grid{display:grid; grid-template-columns:1fr; gap:clamp(24px,4vw,40px); align-items:start}
+  @media(min-width:900px){ .math-grid{grid-template-columns:1.15fr .85fr} }
+  .ladder{border:1px solid var(--line); border-radius:14px; overflow:hidden; background:var(--card)}
+  .ladder-row{display:grid; grid-template-columns:1fr auto; gap:12px; padding:17px 20px; border-bottom:1px solid var(--line); align-items:center}
+  .ladder-row:last-child{border-bottom:0}
+  .ladder-row.peak{background:color-mix(in srgb,var(--hazard) 8%, var(--card))}
+  .ladder-row .when{font:600 12px/1.3 "IBM Plex Mono",monospace; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.04em}
+  .ladder-row .what{font-family:"Oswald",sans-serif; font-weight:600; font-size:16.5px; margin-top:2px}
+  .ladder-row .amt{font-family:"Oswald",sans-serif; font-weight:700; font-size:20px; text-align:right; white-space:nowrap}
+  .ladder-row.peak .amt{color:var(--hazard)}
+  .gate-card{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:24px}
+  .gate-card .gate-eyebrow{font:700 12px/1 "Barlow",sans-serif; letter-spacing:.18em; text-transform:uppercase; color:var(--hazard); margin-bottom:12px}
+  .gate-item{display:grid; grid-template-columns:auto 1fr; gap:12px; padding:12px 0; border-bottom:1px dashed var(--line); align-items:start}
+  .gate-item:last-child{border-bottom:0}
+  .gate-item .g{font-family:"Oswald",sans-serif; font-weight:700; font-size:15px; color:var(--ink); background:var(--paper-2); border:1px solid var(--line); border-radius:7px; padding:4px 9px; white-space:nowrap}
+  .gate-item p{font-size:14px; color:var(--ink-soft); line-height:1.45}
+  .barbell-note{margin-top:18px; padding:16px 18px; border-left:3px solid var(--steel); background:color-mix(in srgb,var(--steel) 8%, transparent); border-radius:0 12px 12px 0; font-size:14.5px; color:var(--ink-soft); line-height:1.5}
+
+  /* competitors */
+  .cmp-wrap{overflow-x:auto; border:1px solid var(--line); border-radius:14px}
+  table.cmp{width:100%; border-collapse:collapse; font-size:14px; min-width:760px}
+  table.cmp th,table.cmp td{padding:14px 15px; border-bottom:1px solid var(--line); text-align:center}
+  table.cmp th:first-child,table.cmp td:first-child{text-align:left; font-weight:600}
+  table.cmp thead th{font-family:"Oswald",sans-serif; font-weight:600; font-size:14.5px; background:var(--paper-2); letter-spacing:.01em}
+  table.cmp thead th.us{background:var(--hazard); color:#fff; border-radius:0}
+  table.cmp tbody tr:last-child td{border-bottom:0}
+  table.cmp td.us{background:color-mix(in srgb,var(--hazard) 8%, var(--card)); font-weight:700; color:var(--hazard)}
+  table.cmp .yes{color:var(--ok-ink); font-weight:800}
+  table.cmp .no{color:var(--ink-faint)}
+  .price-row td{font-family:"Oswald",sans-serif; font-weight:700; font-size:15px}
+</style>
+<section id="math" aria-labelledby="math-h">
+  <div class="wrap stack gap-32">
+    <div class="stack gap-16" style="max-width:66ch">
+      <div class="eyebrow">The honest math — no hero required</div>
+      <h2 id="math-h" class="h-sec">Validated on paper. Priced to fail cheap.</h2>
+      <p class="lede">This isn't a revenue promise — it's a validation threshold. The edge is that it <b>fails cheap</b> (the whole test costs ~$0 and ~30 hours), not that it wins fast.</p>
+    </div>
+
+    <div class="math-grid">
+      <div class="ladder" role="table" aria-label="Revenue trajectory by milestone">
+        <div class="ladder-row"><div><div class="when">Sept–Oct 2026</div><div class="what">1st design-partner deposit</div></div><div class="amt">~$99</div></div>
+        <div class="ladder-row peak"><div><div class="when">Dec 31 2026 · base case</div><div class="what">1–3 concierge tenants billing</div></div><div class="amt">$100–500<span style="font-size:.6em; color:var(--ink-faint)">/mo</span></div></div>
+        <div class="ladder-row"><div><div class="when">Q1 2027</div><div class="what">3–6 tenants · first case study live</div></div><div class="amt">$500–1K<span style="font-size:.6em; color:var(--ink-faint)">/mo</span></div></div>
+        <div class="ladder-row"><div><div class="when">H2 2027</div><div class="what">10–15 logos, mixed pricing</div></div><div class="amt">$2K+<span style="font-size:.6em; color:var(--ink-faint)">/mo</span></div></div>
+      </div>
+
+      <div class="gate-card">
+        <div class="gate-eyebrow">The Nov-30 decision gate</div>
+        <p style="font-size:14.5px; color:var(--ink-soft); margin-bottom:8px">A verdict is a decision, not a coin-flip. After ~200 verified asks:</p>
+        <div class="gate-item"><span class="g">≥ 2 + 1</span><p>Two paid deposits + one signed order form → <b>full build ahead</b>.</p></div>
+        <div class="gate-item"><span class="g">= 1</span><p>Exactly one deposit → extend by 50 more asks.</p></div>
+        <div class="gate-item"><span class="g">= 0</span><p>Zero → trade #2, or park the venture. Parking ≠ death.</p></div>
+        <div class="barbell-note">The barbell wins as a <b>portfolio</b>. If the trust wall holds this to $0, Venture #1 alone can still carry ~$2K/mo in its strong case. Correlated ruin was designed out.</div>
+      </div>
+    </div>
+
+    <!-- competitors -->
+    <div class="stack gap-16" style="max-width:66ch; margin-top:12px">
+      <div class="eyebrow steel">Learn from them, then out-position them</div>
+      <h3 class="h-sub">Same money — software you operate, vs. a service that operates for you.</h3>
+    </div>
+    <div class="cmp-wrap">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th>The spreadsheet</th>
+            <th>Expiration Reminder</th>
+            <th>An LMS</th>
+            <th>EHS suite</th>
+            <th class="us">Renewal Clock</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Reminds by itself</td><td class="no">—</td><td class="yes">✓</td><td class="no">—</td><td class="yes">✓</td><td class="us">✓</td></tr>
+          <tr><td>Delivers the training</td><td class="no">—</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td><td class="us">✓</td></tr>
+          <tr><td>Closes the loop (quiz→cert→registry)</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="no">partial</td><td class="us">✓</td></tr>
+          <tr><td>One-click audit report</td><td class="no">—</td><td class="no">data only</td><td class="no">—</td><td class="yes">✓</td><td class="us">✓</td></tr>
+          <tr><td>We do the onboarding</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="no">sales cycle</td><td class="us">✓</td></tr>
+          <tr><td>Survives the vendor vanishing (escrow)</td><td class="no">n/a</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="us">✓</td></tr>
+          <tr class="price-row"><td>Price</td><td>free</td><td>$49–499/mo</td><td>$119–449/mo</td><td>$10K+/yr</td><td class="us">$199/mo flat</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted" style="font-size:15px; max-width:74ch">Honest disqualifier, scripted for every call: <em>"If you have someone who'll happily operate a $149 tracker, buy the tracker — genuinely."</em> Concierge + the training loop + escrow are the three things a product company structurally won't do for an 80-person shop.</p>
+  </div>
+</section>
+
+<style>
+  /* ===== THE ASK ===== */
+  #ask{background:linear-gradient(165deg, color-mix(in srgb,var(--steel) 20%, var(--paper)), var(--paper))}
+  :root[data-theme="dark"] #ask, [data-theme="dark"] #ask{background:linear-gradient(165deg, color-mix(in srgb,var(--steel) 18%, var(--paper)), var(--paper))}
+  .ask-card{background:var(--card); border:1px solid var(--line); border-radius:22px; box-shadow:var(--shadow-lift); padding:clamp(28px,5vw,52px); text-align:center; max-width:760px; margin:0 auto}
+  .ask-card h2{font-family:"Oswald",sans-serif; font-weight:700; font-size:clamp(28px,4.4vw,44px); line-height:1.05; margin-bottom:16px}
+  .ask-card .offer-line{font-family:"Oswald",sans-serif; font-weight:500; font-size:clamp(19px,2.6vw,24px); color:var(--hazard); margin-bottom:20px}
+  .ask-grid{display:grid; grid-template-columns:1fr; gap:12px; margin:28px 0; text-align:left}
+  @media(min-width:640px){ .ask-grid{grid-template-columns:repeat(3,1fr)} }
+  .ask-item{background:var(--paper-2); border:1px solid var(--line); border-radius:12px; padding:16px}
+  .ask-item .ai{font-family:"Oswald",sans-serif; font-weight:700; font-size:15px; color:var(--ink); margin-bottom:5px}
+  .ask-item p{font-size:13.5px; color:var(--ink-soft); line-height:1.45}
+  .quote{font-family:"Oswald",sans-serif; font-weight:500; font-size:clamp(18px,2.6vw,23px); line-height:1.3; max-width:60ch; margin:0 auto; color:var(--ink)}
+  .quote .hz{color:var(--hazard)}
+
+  footer{border-top:1px solid var(--line); padding:40px 0 60px; background:var(--paper)}
+  .foot-in{max-width:var(--maxw); margin:0 auto; padding:0 clamp(18px,4vw,40px); display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap}
+  .foot-in .fl{display:flex; align-items:center; gap:11px; font-family:"Oswald",sans-serif; font-weight:700; font-size:17px}
+  .foot-note{font-size:13px; color:var(--ink-faint); max-width:52ch; line-height:1.5}
+</style>
+
+<section id="ask" aria-labelledby="ask-h">
+  <div class="wrap">
+    <div class="ask-card">
+      <div class="eyebrow" style="justify-content:center">Recruiting 3 founding companies in ONE trade</div>
+      <h2 id="ask-h">Every cert, current.<br>Every renewal, automatic.<br>Every audit, ready.</h2>
+      <p class="offer-line">$199/mo flat · founder-onboarded · cancel anytime</p>
+      <p class="lede" style="margin:0 auto; text-align:center">We're not selling software — we're recruiting three founding companies who shape the product and get founder-direct service at an intro rate. Solo, reframed as white-glove.</p>
+
+      <div class="ask-grid">
+        <div class="ask-item"><div class="ai">$99 × 3 months</div><p>Design-partner intro rate, then standard. No lock-in, no strings.</p></div>
+        <div class="ask-item"><div class="ai">We import for you</div><p>Your spreadsheet becomes a live registry on the first call. Live in an afternoon.</p></div>
+        <div class="ask-item"><div class="ai">Escrow from day one</div><p>Weekly export to your own Drive. If we vanish, you lose nothing.</p></div>
+      </div>
+
+      <div class="rule" style="margin:8px 0 28px"></div>
+      <p class="quote">"You are one papered agreement, three config toggles, and one hundred asks away from your first revenue. <span class="hz">You cannot be blown up; you can only be delayed.</span>"</p>
+    </div>
+  </div>
+</section>
+
+<!-- printed running footer: fixed elements repeat on every printed page -->
+<div class="print-only print-foot" aria-hidden="true">
+  <span>Renewal Clock · Founding-partner briefing</span>
+  <span>Confidential · edge8.ai</span>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <div class="fl">
+      <svg width="24" height="24" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="2.5"/><path d="M20 20 L20 9" stroke="var(--hazard,#ff6a1a)" stroke-width="3" stroke-linecap="round"/><path d="M20 20 L28 24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="20" cy="20" r="2.4" fill="currentColor"/></svg>
+      Renewal Clock
+    </div>
+    <p class="foot-note">Interactive prototype for stakeholder review — every figure traces to the "Antifragile SaaS" plan. All data shown is illustrative (Mike's Electrical is a composite). Not a live product yet: Phase 1 is validation.</p>
+  </div>
+</footer>
+
+<script>
+"use strict";
+/* ============================================================================
+   DATA — faithful to the plan. In-memory only, no persistence.
+   ============================================================================ */
+const ROSTER_SEED = [
+  { who:"Joel Nguyen",   role:"Journeyman",  cert:"OSHA-10",             days:12,  kind:"train"  },
+  { who:"Maria Tran",    role:"Apprentice",  cert:"CPR / First-Aid",     days:-6,  kind:"upload" },
+  { who:"Kevin Lopez",   role:"Journeyman",  cert:"EPA-608 Refrigerant", days:88,  kind:"upload" },
+  { who:"Danielle Ruiz", role:"Foreman",     cert:"State Electrical Lic.", days:27, kind:"upload" },
+  { who:"Sam O'Neil",    role:"Journeyman",  cert:"OSHA-30",             days:210, kind:"train"  },
+  { who:"Tovi Cohen",    role:"Apprentice",  cert:"Arc-Flash / NFPA-70E", days:5,  kind:"train"  },
+  { who:"Ben Carter",    role:"Master",      cert:"State Electrical Lic.", days:365, kind:"upload"},
+  { who:"Lena Pham",     role:"Journeyman",  cert:"CPR / First-Aid",     days:54,  kind:"upload" },
+  { who:"Arturo Diaz",   role:"Apprentice",  cert:"OSHA-10",             days:-21, kind:"train"  },
+  { who:"Grace Kim",     role:"Foreman",     cert:"Arc-Flash / NFPA-70E", days:140, kind:"train" },
+];
+let roster = ROSTER_SEED.map(r => ({...r}));
+
+const initials = n => n.split(" ").map(w=>w[0]).join("").slice(0,2).toUpperCase();
+const statusOf = d => d < 0 ? "crit" : d <= 30 ? "warn" : "ok";
+const statusWord = s => s==="crit" ? "LAPSED" : s==="warn" ? "EXPIRING" : "CURRENT";
+const expiryText = d => d < 0 ? ("lapsed " + Math.abs(d) + "d ago") : d === 0 ? "expires today" : ("in " + d + " days");
+function nextReminder(d){
+  if (d < 0) return "escalated to supervisor";
+  for (const g of [90,60,30,7]) if (d >= g) return g + "-day email";
+  return "7-day (final) sent";
+}
+function tally(){
+  let crit=0,warn=0,ok=0;
+  roster.forEach(r=>{ const s=statusOf(r.days); if(s==="crit")crit++; else if(s==="warn")warn++; else ok++; });
+  return {crit,warn,ok,total:roster.length};
+}
+
+/* ============================================================================
+   HERO — live countdown (thesis: the clock never stops)
+   ============================================================================ */
+(function heroClock(){
+  // cadence pips
+  const cad = document.getElementById("cadence");
+  if (cad){
+    [["90d","done"],["60d","done"],["30d","now"],["7d",""]].forEach(([lab,state])=>{
+      const el = document.createElement("span");
+      el.textContent = lab;
+      el.style.cssText = "font:700 11px/1 'IBM Plex Mono',monospace; padding:5px 9px; border-radius:7px; border:1px solid var(--line);";
+      if (state==="done"){ el.style.background="var(--ok-bg)"; el.style.color="var(--ok-ink)"; el.style.borderColor="color-mix(in srgb,var(--ok) 30%, transparent)"; }
+      if (state==="now"){ el.style.background="var(--warn-bg)"; el.style.color="var(--warn-ink)"; el.style.borderColor="color-mix(in srgb,var(--warn) 40%, transparent)"; }
+      cad.appendChild(el);
+    });
+  }
+  const dEl=document.getElementById("cd-d"), hEl=document.getElementById("cd-h"), mEl=document.getElementById("cd-m"), sEl=document.getElementById("cd-s");
+  const coverEl=document.getElementById("cover-countdown");
+  if(!dEl && !coverEl) return;
+  // target ~11d 4h 22m 7s from load; count down live
+  let total = 11*86400 + 4*3600 + 22*60 + 7;
+  const pad = n => String(n).padStart(2,"0");
+  function tick(){
+    if (total <= 0) total = 11*86400 + 4*3600 + 22*60 + 7; // loop for demo
+    const d = Math.floor(total/86400), h = Math.floor((total%86400)/3600), m = Math.floor((total%3600)/60), s = total%60;
+    if(dEl){ dEl.textContent = pad(d); hEl.textContent = pad(h); mEl.textContent = pad(m); sEl.textContent = pad(s); }
+    if(coverEl){ coverEl.textContent = pad(d) + "d " + pad(h) + ":" + pad(m) + ":" + pad(s); }
+    total--;
+  }
+  tick();
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(!reduce) setInterval(tick, 1000);
+})();
+
+/* ============================================================================
+   DASHBOARD — 3 structurally different views
+   ============================================================================ */
+const VIEW_CAPTION = {
+  table: "View 1 · The spreadsheet, done right — KPI tiles on top, one sortable board below. Everything Excel showed, plus the four things it can't do.",
+  triage:"View 2 · Action-first — hides everything that's fine and shows only what needs a human today, biggest fire first. The reminders already fired server-side.",
+  timeline:"View 3 · The runway — every cert as a dot across the next 12 months. The cluster of red on the left is your “deal with this now.”"
+};
+let currentView = "table";
+
+function kpiStrip(){
+  const t = tally();
+  return `<div class="kpis">
+    <div class="kpi crit"><div class="n">${t.crit}</div><div class="l">Lapsed — act now</div></div>
+    <div class="kpi warn"><div class="n">${t.warn}</div><div class="l">Expiring ≤ 30 days</div></div>
+    <div class="kpi ok"><div class="n">${t.ok}</div><div class="l">Current</div></div>
+    <div class="kpi neutral"><div class="n">${t.total}</div><div class="l">Certs tracked</div></div>
+  </div>`;
+}
+function actionButton(r, idx){
+  const label = r.kind === "train" ? "Send training link" : "Request upload";
+  return `<button class="mini-btn primary" type="button" data-fix="${idx}">${label}</button>`;
+}
+
+function renderTable(){
+  const rows = roster
+    .map((r,idx)=>({r,idx}))
+    .sort((a,b)=>a.r.days-b.r.days)
+    .map(({r,idx})=>{
+      const s = statusOf(r.days);
+      return `<tr>
+        <td><div class="who"><div class="av">${initials(r.who)}</div><div><div>${r.who}</div><div class="role">${r.role}</div></div></div></td>
+        <td class="cert-name">${r.cert}</td>
+        <td class="days ${s}">${expiryText(r.days)}</td>
+        <td><span class="chip ${s}"><span class="dot"></span>${statusWord(s)}</span></td>
+        <td class="next-rem">${nextReminder(r.days)}</td>
+        <td style="text-align:right">${ s==="ok" ? '<span class="muted">—</span>' : actionButton(r,idx) }</td>
+      </tr>`;
+    }).join("");
+  return kpiStrip() + `<div class="tbl-wrap"><table class="reg">
+    <thead><tr><th>Worker</th><th>Certification</th><th>Expires</th><th>Status</th><th>Next auto-reminder</th><th></th></tr></thead>
+    <tbody>${rows}</tbody></table></div>`;
+}
+
+function renderTriage(){
+  const need = roster.map((r,idx)=>({r,idx})).filter(x=>statusOf(x.r.days)!=="ok").sort((a,b)=>a.r.days-b.r.days);
+  const t = tally();
+  const banner = `<div class="triage-banner">
+    <span style="font-size:22px" aria-hidden="true">👋</span>
+    <div style="flex:1; min-width:200px"><b style="font-family:'Oswald',sans-serif; font-size:17px">Morning, Sarah.</b> <span class="muted">${need.length} certs need attention. The clock already emailed each worker + you — clear the queue, or let the reminders work.</span></div>
+  </div>`;
+  const cards = need.map(({r,idx})=>{
+    const s = statusOf(r.days);
+    return `<div class="triage-card ${s}">
+      <div>
+        <div class="nm">${r.who} <span class="muted" style="font-weight:400; font-size:14px">· ${r.role}</span></div>
+        <div class="meta">${r.cert} — <span class="chip ${s}" style="padding:3px 8px"><span class="dot"></span>${expiryText(r.days)}</span></div>
+      </div>
+      <div class="triage-right">
+        ${actionButton(r,idx)}
+        <span class="next-rem">next: ${nextReminder(r.days)}</span>
+      </div>
+    </div>`;
+  }).join("");
+  const done = need.length === 0
+    ? `<div class="done-note">🎉 Nothing needs you today. Every cert is current.</div>`
+    : `<div class="done-note"><span class="chip ok" style="padding:3px 9px"><span class="dot"></span>${t.ok} more certs are current</span> &nbsp;— hidden on purpose. This view only shows what needs a human.</div>`;
+  return banner + `<div class="triage-list">${cards}</div>` + done;
+}
+
+function renderTimeline(){
+  const MONTHS = ["Now","+1","+2","+3","+4","+5","+6","+7","+8","+9","+10","+11","+12"];
+  const axis = MONTHS.map(m=>`<div class="tick">${m}</div>`).join("");
+  const gridlines = MONTHS.map((_,i)=>`<div class="gridline" style="left:${(i/12)*100}%"></div>`).join("");
+  const rows = roster.map((r,idx)=>({r,idx}))
+    .map(x=>{ const idxMonth = x.r.days<0 ? 0 : Math.min(12, Math.round(x.r.days/30)); return {...x, idxMonth}; })
+    .sort((a,b)=>a.idxMonth-b.idxMonth)
+    .map(({r,idxMonth})=>{
+      const s = statusOf(r.days);
+      const leftPct = (idxMonth/12)*100;
+      return `<div class="tl-row">
+        <div class="tl-label"><b>${r.who}</b><div class="c">${r.cert}</div></div>
+        <div class="tl-track">
+          <div class="base"></div>${gridlines}
+          <div class="tl-marker ${s}" title="${r.who} · ${r.cert} · ${expiryText(r.days)}" style="left:${leftPct}%"></div>
+        </div>
+      </div>`;
+    }).join("");
+  const legend = `<div class="tl-legend">
+    <span><i style="background:var(--crit)"></i>Lapsed</span>
+    <span><i style="background:var(--warn)"></i>Expiring ≤30d</span>
+    <span><i style="background:var(--ok)"></i>Current</span>
+  </div>`;
+  return kpiStrip() + legend + `<div class="tl"><div class="tl-axis">${axis}</div>${rows}</div>`;
+}
+
+function renderDash(){
+  const mount = document.getElementById("dash-mount");
+  if(!mount) return;
+  const html = currentView === "table" ? renderTable() : currentView === "triage" ? renderTriage() : renderTimeline();
+  mount.innerHTML = html;
+  const cap = document.getElementById("global-caption");
+  if(cap) cap.innerHTML = VIEW_CAPTION[currentView];
+  // wire the fix buttons
+  mount.querySelectorAll("[data-fix]").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      const i = Number(btn.getAttribute("data-fix"));
+      roster[i].days = 730; // renewed 2 years
+      renderDash();
+    });
+  });
+}
+function selectView(v){
+  currentView = v;
+  document.getElementById("tab-table").setAttribute("aria-selected", String(v==="table"));
+  document.getElementById("tab-triage").setAttribute("aria-selected", String(v==="triage"));
+  document.getElementById("tab-timeline").setAttribute("aria-selected", String(v==="timeline"));
+  renderDash();
+}
+document.getElementById("tab-table").addEventListener("click", ()=>selectView("table"));
+document.getElementById("tab-triage").addEventListener("click", ()=>selectView("triage"));
+document.getElementById("tab-timeline").addEventListener("click", ()=>selectView("timeline"));
+document.getElementById("btn-reset").addEventListener("click", ()=>{ roster = ROSTER_SEED.map(r=>({...r})); renderDash(); });
+document.getElementById("btn-audit").addEventListener("click", ()=>{
+  document.getElementById("audit").scrollIntoView({behavior:"smooth", block:"start"});
+});
+document.addEventListener("keydown",(e)=>{
+  const tag = (document.activeElement.tagName||"").toLowerCase();
+  if(["input","textarea"].includes(tag)) return;
+  if(e.key==="1") selectView("table");
+  if(e.key==="2") selectView("triage");
+  if(e.key==="3") selectView("timeline");
+});
+renderDash();
+
+/* ============================================================================
+   THE LOOP — 5 linked stages
+   ============================================================================ */
+const LOOP = [
+  { t:"The clock notices", d:"Amber at 90 days", html:()=>`
+    <div class="stage-eyebrow">Step 1 — the clock notices</div>
+    <h3 class="h-sub" style="margin-bottom:8px">Joel's OSHA-10 turns amber</h3>
+    <p class="muted" style="margin-bottom:22px; max-width:52ch">On Sarah's registry the row flips green → amber. She does nothing. The system takes it from here.</p>
+    <div class="flip-row">
+      <div class="who"><div class="av">JN</div><div><div style="font-family:'Oswald',sans-serif; font-weight:600">Joel Nguyen</div><div class="role muted">OSHA-10 · Journeyman</div></div></div>
+      <span class="chip warn"><span class="dot"></span>in 12 days</span>
+    </div>` },
+  { t:"The reminder fires", d:"To worker + supervisor", html:()=>`
+    <div class="stage-eyebrow">Step 2 — the reminder fires (90 / 60 / 30 / 7 days)</div>
+    <h3 class="h-sub" style="margin-bottom:8px">One email to Joel, one to Sarah</h3>
+    <p class="muted" style="margin-bottom:22px; max-width:52ch">The wedge: the reminder <b>carries the training link that closes it</b>. A tracker just says "you're late."</p>
+    <div class="mock-email">
+      <div class="eh"><div class="from">Renewal Clock</div><div class="muted mono" style="font-size:12px">To: joel@mikeselectrical.com · cc: sarah (supervisor)</div></div>
+      <div class="eb">
+        <p style="margin-bottom:10px">Hi Joel — your <b>OSHA-10</b> expires in <b>12 days</b>. Renew it now, about 20 minutes:</p>
+        <p style="margin-bottom:12px"><span class="fake-btn">▶ Start my refresher</span></p>
+        <p class="muted" style="font-size:13px">No login to remember. Opens on your phone. — Mike's Electrical</p>
+      </div>
+    </div>` },
+  { t:"Lesson + quiz", d:"On the worker's phone", html:()=>`
+    <div class="stage-eyebrow">Step 3 — Joel taps the link on his phone</div>
+    <h3 class="h-sub" style="margin-bottom:8px">Watch the refresher → pass the quiz</h3>
+    <p class="muted" style="margin-bottom:22px; max-width:52ch">Lessons start as slides + a quiz (video optional later) — keeping per-tenant cost near zero. Pick the correct answer:</p>
+    <div class="phone">
+      <div class="muted mono" style="font-size:12px; margin-bottom:6px">OSHA-10 Refresher · 3 of 3</div>
+      <div class="lesson-frame"><div class="play" aria-hidden="true"></div></div>
+      <div class="quiz-q">A damaged extension cord must be…</div>
+      <div class="quiz-opt" data-correct="false">Used until end of shift</div>
+      <div class="quiz-opt" data-correct="true">Removed from service immediately</div>
+      <div class="quiz-opt" data-correct="false">Taped and kept in the van</div>
+      <div class="quiz-fb" id="quiz-fb">Choose an answer to continue…</div>
+    </div>` },
+  { t:"Cert auto-issues", d:"No PDF to chase", html:()=>`
+    <div class="stage-eyebrow">Step 4 — the certificate issues itself</div>
+    <h3 class="h-sub" style="margin-bottom:8px">Passed. Certificate generated automatically.</h3>
+    <p class="muted" style="margin-bottom:22px; max-width:52ch">No PDF to chase, no email to file. Minted, dated, and attached to Joel's record as evidence for the next audit.</p>
+    <div class="cert-doc">
+      <div class="seal" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="ct">Certificate of Completion</div>
+      <div class="cn">OSHA-10 Refresher</div>
+      <div>Joel Nguyen · Mike's Electrical</div>
+      <div class="muted mono" style="font-size:12px; margin-top:8px">Issued today · valid 24 months · auto-filed</div>
+    </div>` },
+  { t:"Registry flips green", d:"The loop closes", html:()=>`
+    <div class="stage-eyebrow">Step 5 — the loop closes</div>
+    <h3 class="h-sub" style="margin-bottom:8px">Joel's row flips back to green — on its own</h3>
+    <p class="muted" style="margin-bottom:22px; max-width:52ch">Sarah never touched it. Next year the clock starts ticking again. <b>That</b> is why they keep paying.</p>
+    <div class="flip-row flip-anim">
+      <div class="who"><div class="av">JN</div><div><div style="font-family:'Oswald',sans-serif; font-weight:600">Joel Nguyen</div><div class="role muted">OSHA-10 · Journeyman</div></div></div>
+      <span class="chip ok"><span class="dot"></span>in 730 days</span>
+    </div>` },
+];
+let loopStep = 0;
+let quizPassed = false;
+
+function renderLoopRail(){
+  const rail = document.getElementById("loop-rail");
+  if(!rail) return;
+  rail.innerHTML = LOOP.map((s,i)=>`
+    <button class="loop-step-btn" role="tab" aria-current="${i===loopStep}" data-step="${i}" type="button">
+      <span class="sn">${i+1}</span>
+      <span class="stxt"><span class="st">${s.t}</span><span class="sd">${s.d}</span></span>
+    </button>`).join("");
+  rail.querySelectorAll("[data-step]").forEach(btn=>{
+    btn.addEventListener("click", ()=>{ loopStep = Number(btn.getAttribute("data-step")); renderLoop(); });
+  });
+}
+function renderLoop(){
+  const stage = document.getElementById("loop-stage");
+  if(!stage) return;
+  stage.innerHTML = LOOP[loopStep].html();
+  renderLoopRail();
+  // quiz wiring on step 3
+  if(loopStep === 2){
+    quizPassed = false;
+    stage.querySelectorAll(".quiz-opt").forEach(opt=>{
+      opt.addEventListener("click", ()=>{
+        const correct = opt.getAttribute("data-correct") === "true";
+        const fb = document.getElementById("quiz-fb");
+        stage.querySelectorAll(".quiz-opt").forEach(o=>o.classList.remove("right","wrong"));
+        if(correct){ opt.classList.add("right"); quizPassed = true; if(fb){ fb.style.color="var(--ok-ink)"; fb.textContent="✓ Correct — press Next to issue the certificate"; } }
+        else { opt.classList.add("wrong"); if(fb){ fb.style.color="var(--crit-ink)"; fb.textContent="Not quite — a damaged cord is a live hazard. Try again."; } }
+      });
+    });
+  }
+  const back = document.getElementById("loop-back"), next = document.getElementById("loop-next");
+  back.style.visibility = loopStep === 0 ? "hidden" : "visible";
+  next.textContent = loopStep >= LOOP.length-1 ? "Start over ↺" : "Next step →";
+}
+document.getElementById("loop-next").addEventListener("click", ()=>{
+  if(loopStep >= LOOP.length-1){ loopStep = 0; renderLoop(); return; }
+  loopStep++; renderLoop();
+});
+document.getElementById("loop-back").addEventListener("click", ()=>{ if(loopStep>0){ loopStep--; renderLoop(); } });
+renderLoop();
+
+/* ============================================================================
+   THEME TOGGLE
+   ============================================================================ */
+(function theme(){
+  const btn = document.getElementById("themeToggle");
+  if(!btn) return;
+  btn.addEventListener("click", ()=>{
+    const cur = document.documentElement.getAttribute("data-theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const isDark = cur ? cur === "dark" : prefersDark;
+    document.documentElement.setAttribute("data-theme", isDark ? "light" : "dark");
+  });
+})();
+</script>

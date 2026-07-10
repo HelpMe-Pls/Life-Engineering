@@ -2,6 +2,13 @@
 > This note is organized as a **micro-SaaS journey** — the path a solo builder walks from a raw idea to a sustainable **$2k+ MRR** software product. Read it top-to-bottom the first time; after that, jump to whatever phase you're in via the [[#The $0 → $2k MRR roadmap |roadmap]] below.
 > The spine: **Mindset → Validate → Build → Acquire users → Sharpen your craft → Price & retain (the MRR engine) → Scale.** Most of the timeless wisdom here applies to *any* one-person business; the SaaS-specific scaffolding (MRR math, churn, tiers, activation, launch) sits alongside it.
 
+> [!tip]- Operator's router (added R4, 2026-07-10) — which sections power which venture
+> This file is the **library**; the runbooks are the **law**. When they disagree, the runbook wins: [[EP SaaS]] (Venture #1 — cohort/info-product motion), [[Antifragile SaaS]] (Venture #2 — operated B2B SaaS motion).
+> - **Both ventures, always:** The entrepreneur's mindset, [[#Is it worth building?]], [[#Validate before you build]], [[#The offer]] / [[#The values]], [[#Persuasion]], [[#Feedback]] (the 4 questions), [[#MRR math]].
+> - **V1 (cohort) only:** [[#Build awareness]], [[#Content creation]], [[#Promotions]] (the 3-week arc), [[#Scarcity]], [[#Lead magnet]], [[#Out |Paid shares]], [[#Social leverage]] replies/quotes/reposts. ==These are audience/info-product tactics — do NOT port them to V2's compliance buyers; V2's channels are warm intros, registries, and referrals (Runbook 2 §4).==
+> - **V2 (SaaS) only:** the micro-SaaS filter, [[#MVP & activation]], free trial vs tier, [[#Cold outreach + product-led]], [[#Churn & retention]], [[#Billing & the recurring-money plumbing]], recurring [[#In |pricing tiers]].
+> - **Nobody in 2026:** [[#Scaling your business]], [[#Partnership]], buying shares, 100K-follower plays — post-revenue conversations. When in doubt, open the runbook's current phase, not this file.
+
 # The entrepreneur's mindset
 - Freedom is your _final_ goal. To be able to do whatever you want, when you want, for as long as you want. As an entrepreneur, you get to design your own system. 
 - Entrepreneurship is your chance to build your work around your life, not be swallowed up by it. Entrepreneurship is _a mindset_, not a title.

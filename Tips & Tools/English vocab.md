@@ -486,6 +486,8 @@ edifice <eh-dah-fits> (n): a building, a large abstract structure
 
 exodus (n): emigration (!immigration)
 
+diaspora (n): expatriate community, scattered population, immigrant community
+
 defector (n): traitor, escapee, turncoat, apostate, jumping ship
 
 emancipate (v): unfettered, to free from restraint, control, or the power of another
@@ -1224,6 +1226,8 @@ clandestine (adj): furtive, sneaky, stealthy, surreptitious
 militate {against} (v): to have weight → procrastination militates against progression
 
 gradation (n): gradient, progression, transition, continuum, spectrum, incremental change
+
+interstitial (adj-n): intermediate space, liminal, gap, transitional, in-between, pop-up/full-screen overlay
 
 excursion (n): expedition, amplitude
 

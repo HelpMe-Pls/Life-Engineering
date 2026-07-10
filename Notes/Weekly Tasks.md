@@ -22,44 +22,51 @@
 - Barbell strategy.
 ---
 ### 6/7
-- [ ] EO: 	
-	- [ ] Set `EOAdm1n$` pw for `Pending` accounts
-	- [ ] `next-steps.md`++
-- [ ] EP: `next-steps.md`++ 
-	- [ ] Review the `instructor` handover
-	- [ ] Finalize the bank account for SaaS
-- [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] EO: 
+	- [x] Set `EOAdm1n$` pw for `Pending` accounts
+	- [x] `next-steps.md`++
+- [x] EP: `next-steps.md`++ 
+	- [x] Review the `instructor` handover
+	- [x] Finalize the bank account for SaaS
+- [x] Finish Anger
+- [x] Live up to your standards
 ### 7/7
-- [ ] EO weekly report & sprint goals update
-	- [ ] Contingencies
-- [ ] EP:  `next-steps.md`++ (start the runbook)
+- [x] EO weekly report & sprint goals update
+	- [x] Promote prod, then `next-steps.md`++
+	- [x] Set a default `EOHub$p0t` pw for invited accounts
+	- [x] Figure out WHEN `welcome_email_sent_at` makes the most sense, and if it really earns its keep at all
+	- [x] Confirm if it's actually slower (`PERF-ADMIN-NAV`) for users in EU/US
+- [x] EP: `next-steps.md`++ 
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 8/7
-- [ ] EO sprint review:
-	- [ ] Record the transcript
-- [ ] Runbook++
+- [x] EO sprint review:
+	- [x] Record the transcript 
+	- [x] Confirm admins login with `EOAdm1n$`
+	- [x] `next-steps.md`++
+- [ ] Review Bank & Antifragile SaaS prototype 
+	- [x] Create a stakeholder-perspective version of the prototype
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 9/7
-- [ ] EO minimal work:
-	- [ ] Wave1++
-	- [ ] Contingencies
-- [ ] Runbook++
+- [x] EO minimal work:
+	- [x] `next-steps.md` planning
+- [x] Runbook++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 10/7
-- [ ] EO minimal work:
-	- [ ] Contingencies
+- [x] EO minimal work:
+	- [x] `next-steps.md`++
 - [ ] Bragdoc
-- [ ] Runbook++
+- [x] EP:  `next-steps.md`++
+- [ ] Open bank account
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 11/7
 - [ ] Perfect dive start + 500m with paddles
 - [ ] Groceries
 - [ ] Runbooks++
+	- [ ] Set up Paddle
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 12/7
@@ -81,12 +88,7 @@
 	- [ ] Set up YOUR bank account (MBBank or BIDV) for PayOS Prod
 	- [ ] HITL
 	- [ ] Run `/improve-codebase-architecture` AFTER closing #131 & #135
-	- [x] Fix the missing white background for lessons in read-only mode
-	- [x] Fix the `Error: useCollaborationContext: no context provider found` on `http://localhost:5173/courses/intro-to-web-dev/html-css-fundamentals/html-structuring-your-first-web-page`
-	- [x] For the learner's view: automatically open the associated module in the sidebar as the learner crosses the module boundary (e.g. finishing the last lesson on a module should open up the next module in the sidebar and close the previous one accordingly. This belongs to the Accordion state management)
-	- [x] Bump deps
-	- [x] Last vuln & high ROI perf bottlenecks scan with `gpt-5.5-xhigh`. Perform a via negativa approach if you see fit. 
-	- [x] Re-run the grading prompt
-	- [x] Update the master `README.md` (with the `/understand` skill) to give an overview of how to navigate around the codebase, which skills to use when encountering a bug and to create new features. Export an html file to visualize it
-	- [x] Setup CI/CD workflow
+	- [ ] Send [this](https://docs.google.com/document/d/1LvVIhYUDCUp31eHkTD4SWjqxVi99vzmU4fbpKoBajZU/edit?usp=sharing) to the stakeholder
 	- [ ] Maybe set up a `k6/artillery` run against staging with the two profiles that matter — steady learning (nav + complete-lesson) and checkout burst?
+- Runbooks:
+	- [ ] 

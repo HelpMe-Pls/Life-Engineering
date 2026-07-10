@@ -10,7 +10,7 @@
           {
             "id": "2ed2b87e25932f50",
             "type": "tabs",
-            "dimension": 51.37096774193548,
+            "dimension": 47.470489038785836,
             "children": [
               {
                 "id": "8e701c92c4b0d885",
@@ -32,12 +32,13 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/EP SaaS.md",
+                    "file": "Notes/Daily Standup.md",
                     "mode": "source",
-                    "source": false
+                    "source": false,
+                    "backlinks": false
                   },
                   "icon": "lucide-file",
-                  "title": "EP SaaS"
+                  "title": "Daily Standup"
                 }
               },
               {
@@ -46,26 +47,41 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/Daily Standup.md",
+                    "file": "Notes/Antifragile SaaS.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Daily Standup"
+                  "title": "Antifragile SaaS"
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           },
           {
             "id": "8cedd05142699eb5",
             "type": "split",
-            "dimension": 48.62903225806451,
+            "dimension": 52.529510961214164,
             "children": [
               {
                 "id": "c3184acf40a6477e",
                 "type": "tabs",
+                "dimension": 55.06117908787542,
                 "children": [
+                  {
+                    "id": "f5c2905f7a85432e",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Notes/EP SaaS.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "EP SaaS"
+                    }
+                  },
                   {
                     "id": "aef28ecae7a82a78",
                     "type": "leaf",
@@ -76,11 +92,13 @@
                       "title": "Graph view"
                     }
                   }
-                ]
+                ],
+                "currentTab": 1
               },
               {
                 "id": "6daf623ea71b0a7d",
                 "type": "tabs",
+                "dimension": 44.938820912124584,
                 "children": [
                   {
                     "id": "3a79f449488355fd",
@@ -97,7 +115,21 @@
                     }
                   },
                   {
-                    "id": "8e81d5625c66b75e",
+                    "id": "03418aa526fdbc06",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Notes/Business Bank.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "Business Bank"
+                    }
+                  },
+                  {
+                    "id": "9b9ab17c16c89870",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
@@ -111,7 +143,7 @@
                     }
                   }
                 ],
-                "currentTab": 1
+                "currentTab": 2
               }
             ],
             "direction": "horizontal"
@@ -174,7 +206,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227.5
+    "width": 209.5
   },
   "right": {
     "id": "82a9e7d6600420b4",
@@ -263,53 +295,54 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "8e81d5625c66b75e",
+  "active": "3669b2aaab402d75",
   "lastOpenFiles": [
+    "Notes/EP SaaS.md.tmp.3624.60ce3624d527",
+    "Notes/EP SaaS.md.tmp.3624.8b55bc5facb6",
+    "Notes/EP SaaS.md.tmp.3624.e73077288aaa",
+    "Notes/Antifragile SaaS.md.tmp.3624.769a3feeb388",
+    "Notes/Antifragile SaaS.md.tmp.3624.563e65cffe82",
+    "Notes/Antifragile SaaS.md.tmp.3624.fa09653aac69",
+    "Notes/Antifragile SaaS.md.tmp.3624.fca60c24a5c0",
+    "Notes/Antifragile SaaS.md.tmp.3624.7decec4f78f6",
+    "Notes/Antifragile SaaS.md.tmp.3624.42f78a530775",
+    "Notes/Antifragile SaaS.md.tmp.3624.888c6ce707ce",
+    "Notes/EP SaaS.md.tmp.3624.98f5bf64bb50",
+    "Notes/Weekly Tasks.md",
+    "Notes/Antifragile SaaS.md",
+    "Notes/Business Bank.md",
+    "Notes/Daily Standup.md",
     "Notes/EP SaaS.md",
     "Tips & Tools/English vocab.md",
-    "Notes/Weekly Tasks.md",
-    "Notes/Biz.md",
-    "Books/Never Split The Difference.md",
-    "Notes/Daily Standup.md",
-    "AI/Pasted image 20260404115157.png",
-    "AI/AI Engineer Roadmap.md",
-    "AI/With Claude Code.md",
-    "AI/Pasted image 20260401141615.png",
-    "AI/Pasted image 20260404120816.png",
-    "AI/Pasted image 20260404114933.png",
-    "Notes/M4 Key-1.png",
-    "Notes/M4 Key-2.png",
-    "Notes/Edge8.md",
-    "Notes/Antifragile SaaS.md",
-    "Books/Million Dollar Weekend.md",
-    "Books/Man's Search For Meaning.md",
-    "Books/Extreme Ownership.md",
-    "Books/Books.md",
-    "Books/Beyond Order.md",
-    "Books/Antifragile.md",
-    "Books/Supercommunicators.md",
-    "Books/Skin In The Game.md",
-    "Million Dollar Weekend.md",
-    "AI/validate-biz-idea.md",
-    "Pasted image 20260620195825.png",
-    "Notes/2026.md",
-    "Antifragile.md",
-    "Tips & Tools/English grammar.md",
-    "Notes/HubSpot.md",
+    "Notes/prototype-antifragile-saas.NOTES.md",
+    "Notes/stakeholder-mobile-top.png",
+    "Notes/stakeholder-full-dark.png",
+    "Notes/stakeholder-full-default.png",
     "Notes/Notes.md",
+    "Notes/Edge8.md",
+    "Notes/Contingencies.md",
+    "Notes/Pasted image 20260706104557.png",
+    "Notes/Pasted image 20260706172618.png",
+    "Notes/2026.md",
+    "Tips & Tools/Entrepreneurship.md",
+    "Notes/M4 Key-2.png",
+    "Notes/M4 Key-1.png",
+    "Notes/Biz.md",
+    "AI/validate-biz-idea.md",
+    "Notes/EO.md",
+    "Notes/Misc.md",
+    "Notes/Hackathon.md",
+    "Notes/Scripts.md",
+    "Notes/HubSpot.md",
+    "Notes/Brag Doc.md",
+    "Notes/Automation.md",
+    "Notes/E-learning MVP.md",
+    "AI/With Claude Code.md",
+    "docs/superpowers/specs/2026-06-29-entrepreneurship-saas-reorg-design.md",
+    "Tips & Tools/Financial.md",
+    "Pasted image 20260620195825.png",
     "Tips & Tools/code-review.png",
     "Tips & Tools/cron.png",
-    "Pasted image 20260417091615.png",
-    "AI",
-    "Notes",
-    "Books",
-    "Untitled.canvas",
-    "Frontend/Libraries/HTMX",
-    "Frontend/Frameworks/Remix",
-    "Backend/Golang",
-    "Frontend/HTML/url-breakdown.png.crdownload",
-    "Frontend/Libraries",
-    "NodeJS",
-    "Backend/NodeJS"
+    "Untitled.canvas"
   ]
 }
