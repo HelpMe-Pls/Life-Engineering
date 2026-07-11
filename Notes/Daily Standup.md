@@ -2,6 +2,27 @@
 > If you're still getting paid each month + have access to AI & your business is still being built, you're still winning. EVERYTHING ELSE is noise.
 
 - /goal Read @docs/plans/next-steps.md to follow its instructions and close-out the `Agent-ready queue`
+# Prompt
+> [!tip] How to use (~15 min of your attention total; Claude does the rest)
+> 1. `mkdir duty-ledger && cd duty-ledger && claude`
+> 2. Paste the prompt below.
+> 3. You'll be touched exactly three times: run `! npx wrangler login` when asked, paste your Resend API key when asked (Resend dashboard → API Keys), and optionally buy the domain it shortlists at the end.
+
+```text
+Read "C:\Users\leekh\Documents\Repos\Personal\Life-Engineering\Notes\Duty SaaS.md" (sections 0, 9, 10) for context, then close out "Duty Ledger seed block 1" end-to-end in THIS empty repo. You are building exactly three things, nothing else: (1) a Cloudflare Worker ("the collector") on a daily cron that pulls every new US-tariff-relevant document from the Federal Register's free JSON API and stores it durably, (2) a daily one-line health email to me, (3) a clean first commit. Hard scope guards: NO landing page, NO digest, NO Paddle/checkout, NO UI, NO USITC or CBP-CSMS parsing yet (stub interfaces with TODOs only) — those belong to next weekend's block. Target: done in one sitting.
+
+Stack (decided — don't re-shop): TypeScript, one Cloudflare Worker, D1 for document metadata + run logs, R2 for raw JSON payloads, cron trigger "0 15 * * *" UTC, Resend for the health email using the onboarding@resend.dev test sender (works without a verified domain, so the domain purchase blocks nothing today).
+
+Collector spec: query https://www.federalregister.gov/api/v1/documents.json — the keyless JSON API; NEVER scrape the HTML pages (they are CAPTCHA-walled); set User-Agent "duty-ledger-collector/0.1 (contact: <my email>)" and page politely. Use a configurable search list covering terms ["tariff", "tariffs", "duty rate", "HTS", "harmonized tariff", "Section 301", "Section 232", "antidumping", "countervailing", "de minimis"] plus type=PRESDOCU presidential documents matching those terms. For each document, upsert into D1: document_number (UNIQUE dedupe key), publication_date, type, title, agencies (JSON), abstract, html_url, pdf_url, first_seen_at, source_query; store the full raw JSON in R2 at raw/{publication_date}/{document_number}.json. Every run writes a runs row (started_at, finished_at, docs_seen, docs_new, status, error). Idempotent by design — re-running any day is always safe.
+
+Backfill: on first deploy, run a one-off backfill from 2025-01-01 to today (the API supports date-range conditions). The daily cron then fetches only the last 3 days — the overlap self-heals missed days.
+
+Health email: after each scheduled run, send ONE line via Resend — "duty-ledger OK 2026-07-12: 14 new / 3,201 total" or "duty-ledger FAILED: <error>" — from onboarding@resend.dev to my email. Also expose GET /health returning the latest runs row as JSON.
+
+Process: (1) Ask me ONE batch of questions up front — my email for the health report + my Resend API key — then plan briefly and build without further questions. (2) When you need Cloudflare auth, tell me to run `! npx wrangler login` and wait. (3) Create the D1 database and R2 bucket via wrangler, store the Resend key with `wrangler secret put RESEND_API_KEY`, write the schema migration, deploy, then VERIFY end-to-end for real: trigger the scheduled handler (wrangler dev --test-scheduled + curl the /__scheduled endpoint, or a guarded manual-run route), show me the D1 row count and one R2 object key, and confirm the email actually landed in my inbox before calling anything done. (4) Run the backfill and report totals. (5) git init + .gitignore + README.md (what this is, a pointer to the runbook, how to redeploy) + NOTES.md (current state + exact next steps for seed block 2) + first commit. (6) Finish by printing: what is deployed, the cron schedule, backfill totals, and the ONLY manual item left — me buying one of the 5 available domain names you shortlist (prefer a short .com; the Worker stays on workers.dev until then).
+
+Definition of done — all four, verified, matching the runbook's §4 weekend-1 bar: collector deployed on cron ✚ backfill stored with real rows in D1/R2 ✚ health email received in my inbox ✚ repo committed with README + NOTES. If any step fails after 2 honest attempts, stop and print exactly what I must do manually — never fake a green.
+```
 
 > [!warning] Chewsday ping
 >Just flagging again: there's a contract violation around SHUI owed ever since I came on full-time.
@@ -235,11 +256,7 @@ State what you could not determine, what commands failed, what areas need deeper
 ```
 ---
 # Next big thing
-- [ ] Pivot `coffee-finder`
-- [ ] Brainstorm with AI for a true `antifragile` & `Fat Tony` (or at least robust) business model. Don't fall into the `green lumber fallacy`. Aim for something with limited losses and unlimited potential.
-	- Make sure that you're barbelled, whatever that means in your business.
-	- Identify & leverage positive Black Swans in this economy.
-	- Exploit the convexity effect
+- [ ] Execute the runbooks
 ---
 # 1-1
 

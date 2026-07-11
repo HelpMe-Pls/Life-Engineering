@@ -42,17 +42,17 @@
                 }
               },
               {
-                "id": "3669b2aaab402d75",
+                "id": "5646d77dc32192cf",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/Antifragile SaaS.md",
+                    "file": "Notes/Duty SaaS.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Antifragile SaaS"
+                  "title": "Duty SaaS"
                 }
               }
             ],
@@ -92,8 +92,7 @@
                       "title": "Graph view"
                     }
                   }
-                ],
-                "currentTab": 1
+                ]
               },
               {
                 "id": "6daf623ea71b0a7d",
@@ -181,7 +180,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gdpr",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -295,23 +294,24 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "3669b2aaab402d75",
+  "active": "9b9ab17c16c89870",
   "lastOpenFiles": [
-    "Notes/EP SaaS.md.tmp.3624.60ce3624d527",
-    "Notes/EP SaaS.md.tmp.3624.8b55bc5facb6",
-    "Notes/EP SaaS.md.tmp.3624.e73077288aaa",
-    "Notes/Antifragile SaaS.md.tmp.3624.769a3feeb388",
-    "Notes/Antifragile SaaS.md.tmp.3624.563e65cffe82",
-    "Notes/Antifragile SaaS.md.tmp.3624.fa09653aac69",
-    "Notes/Antifragile SaaS.md.tmp.3624.fca60c24a5c0",
-    "Notes/Antifragile SaaS.md.tmp.3624.7decec4f78f6",
-    "Notes/Antifragile SaaS.md.tmp.3624.42f78a530775",
-    "Notes/Antifragile SaaS.md.tmp.3624.888c6ce707ce",
-    "Notes/EP SaaS.md.tmp.3624.98f5bf64bb50",
+    "Notes/Duty SaaS.md",
     "Notes/Weekly Tasks.md",
-    "Notes/Antifragile SaaS.md",
+    "Notes/Weekly Tasks.md.tmp.37776.7441f0a3819d",
+    "Notes/Weekly Tasks.md.tmp.37776.3b024e0da6af",
+    "Notes/Weekly Tasks.md.tmp.37776.3ed985e0939c",
     "Notes/Business Bank.md",
+    "Notes/Daily Standup.md.tmp.37776.3fb23972d457",
     "Notes/Daily Standup.md",
+    "Notes/Antifragile SaaS.md",
+    "AI/validate-biz-idea.md",
+    "Notes/EP SaaS.md.tmp.37776.822f67caa689",
+    "Notes/Duty SaaS.md.tmp.37776.663df2c14036",
+    "Notes/Duty SaaS.md.tmp.37776.1ddd77102427",
+    "Notes/Duty SaaS.md.tmp.37776.27681e570446",
+    "Notes/Duty SaaS.md.tmp.37776.4f7699921175",
+    "Notes/Weekly Tasks.md.tmp.37776.66439541844c",
     "Notes/EP SaaS.md",
     "Tips & Tools/English vocab.md",
     "Notes/prototype-antifragile-saas.NOTES.md",
@@ -328,7 +328,6 @@
     "Notes/M4 Key-2.png",
     "Notes/M4 Key-1.png",
     "Notes/Biz.md",
-    "AI/validate-biz-idea.md",
     "Notes/EO.md",
     "Notes/Misc.md",
     "Notes/Hackathon.md",
@@ -339,7 +338,6 @@
     "Notes/E-learning MVP.md",
     "AI/With Claude Code.md",
     "docs/superpowers/specs/2026-06-29-entrepreneurship-saas-reorg-design.md",
-    "Tips & Tools/Financial.md",
     "Pasted image 20260620195825.png",
     "Tips & Tools/code-review.png",
     "Tips & Tools/cron.png",

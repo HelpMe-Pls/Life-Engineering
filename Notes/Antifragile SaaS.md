@@ -15,7 +15,7 @@
 ---
 ## 0. NOW — the state line (update every Sunday, 30 min; metrics read weekly ONLY)
 - **Phase: 1 — VALIDATE. Zero product code. Gate: Nov 30 2026 (fixed). Backstop: Mar 31 2027 (absolute).**
-- **This week's ONE move:** lock the trade (1.1) → warm-20 list (1.2W) → demo weekend (1.3) → ==Paddle submitted the same day the pages go live (1.3a — July's longest lead time)==. ACB bank errand runs in parallel at lunch ([[Business Bank]] §7), never in series.
+- **July, rebalanced 2026-07-12 (three runbooks share ≤12h/wk — this one goes desk-only for July):** lock the trade (1.1, one evening) → warm-20 list (1.2W, one evening). ==Demo weekend (1.3) + Paddle submission (1.3a) + first asks move to the first half of August (one Saturday, Aug 8 or 15)==; warm falsification call (1.4) mid-Aug; asks reach ~25–40 by early Sep. ==The cold lane (Sep 1) and the Nov-30 gate are UNTOUCHED.== ACB bank errand still runs at a weekday lunch ([[Business Bank]] §7), never in series.
 - Scoreboard: asks sent (warm/cold), replies, calls, deposits, rosters served. Two all-zero weeks = reread §12, then do reps ==(reps = send the next 8–10 personalized asks per §1.5 — volume before analysis; tweaking the Loom doesn't count)==.
 
 ## 0.5 What you sell, in one story
@@ -267,8 +267,8 @@ No single entry is fatal: salary floor + <$50 burn, per-tenant isolation + escro
 
 | When | This lane | Honest exit bar |
 |---|---|---|
-| **Jul 2026** | trade lock (f)+(g); warm-20; demo weekend; ==Paddle submitted same day as the pages (1.3a)==; ACB errand in parallel ([[Business Bank]] §7); warm falsification call ($149 deposit asked, order form pre-approval); first ~15 asks | Step 1.4 run — any outcome is information |
-| **Aug** | asks → ~40; calls as booked | early signal; no verdict pretended |
+| **Jul 2026** *(rebalanced 07-12)* | desk-only: trade lock (f)+(g) + warm-20 list, one evening each; ACB errand at lunch ([[Business Bank]] §7) | the two briefs exist |
+| **Aug** | demo Saturday (Aug 8 or 15) + ==Paddle submitted same day as the pages (1.3a)==; warm falsification call ($149 deposit asked, order form pre-approval); asks → ~25–40 | Step 1.4 run — any outcome is information |
 | **Sep–Oct** | V1 launches → 4–6h here; ==cold lane starts Sept 1, protected==; asks → ~150; any deposit → concierge same week | ≥1 design partner served, manually where code lags |
 | **Nov 30** | **THE GATE** (§4.6 — fixed date, cold-evidence bar, noise guard) | an instrument that always fires |
 | **Dec** | if BUILD: Step 2.1 (~30–40h); 1–2 concierge tenants billing | **realistic Dec-31: $149–500 collected, ≤$400 MRR** — a validated wedge, not rent |
