@@ -56,7 +56,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -92,7 +92,8 @@
                       "title": "Graph view"
                     }
                   }
-                ]
+                ],
+                "currentTab": 1
               },
               {
                 "id": "6daf623ea71b0a7d",
@@ -294,25 +295,26 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "9b9ab17c16c89870",
+  "active": "467665af702d7a85",
   "lastOpenFiles": [
-    "Notes/Duty SaaS.md",
     "Notes/Weekly Tasks.md",
-    "Notes/Weekly Tasks.md.tmp.37776.7441f0a3819d",
-    "Notes/Weekly Tasks.md.tmp.37776.3b024e0da6af",
-    "Notes/Weekly Tasks.md.tmp.37776.3ed985e0939c",
-    "Notes/Business Bank.md",
-    "Notes/Daily Standup.md.tmp.37776.3fb23972d457",
     "Notes/Daily Standup.md",
+    "AI/long-vol-consultant.md.tmp.30052.3768dca793f7",
+    "AI/long-vol-consultant.md.tmp.30052.541b6618dad9",
+    "AI/long-vol-consultant.md.tmp.30052.d1ee07be1e96",
+    "Notes/Duty SaaS.md",
+    "AI/long-vol-consultant.md",
+    "AI/long-vol-consultant.md.tmp.30052.b9c9752d63c7",
+    "AI/long-vol-consultant.md.tmp.30052.99aac4ae24f6",
+    "AI/long-vol-consultant.md.tmp.30052.ae2e7922bbff",
+    "AI/long-vol-consultant.md.tmp.30052.ebb688d4b11e",
+    "Notes/EP SaaS.md",
+    "AI/validate-biz-idea.md.tmp.42264.b0157e3abbe3",
+    "AI/validate-biz-idea.md.tmp.42264.91936de25561",
+    "Notes/Business Bank.md.tmp.42264.96871725f9f0",
+    "Notes/Business Bank.md",
     "Notes/Antifragile SaaS.md",
     "AI/validate-biz-idea.md",
-    "Notes/EP SaaS.md.tmp.37776.822f67caa689",
-    "Notes/Duty SaaS.md.tmp.37776.663df2c14036",
-    "Notes/Duty SaaS.md.tmp.37776.1ddd77102427",
-    "Notes/Duty SaaS.md.tmp.37776.27681e570446",
-    "Notes/Duty SaaS.md.tmp.37776.4f7699921175",
-    "Notes/Weekly Tasks.md.tmp.37776.66439541844c",
-    "Notes/EP SaaS.md",
     "Tips & Tools/English vocab.md",
     "Notes/prototype-antifragile-saas.NOTES.md",
     "Notes/stakeholder-mobile-top.png",
@@ -337,7 +339,6 @@
     "Notes/Automation.md",
     "Notes/E-learning MVP.md",
     "AI/With Claude Code.md",
-    "docs/superpowers/specs/2026-06-29-entrepreneurship-saas-reorg-design.md",
     "Pasted image 20260620195825.png",
     "Tips & Tools/code-review.png",
     "Tips & Tools/cron.png",

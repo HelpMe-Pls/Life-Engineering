@@ -82,8 +82,8 @@ Confidence: [low / medium / high]
 **Biggest risk:** [the single thing most likely to kill it]
 **Biggest upside:** [the strongest reason to do it]
 
-**Money read:** [rough price · time-to-first-dollar · how the first 10
-customers hear about it · can this founder ship it with their edge]
+**Money read:** [rough price, time-to-first-dollar, how the first 10
+customers hear about it, can this founder ship it with their edge]
 
 **The 48-hour test:** [smallest, fastest test of the riskiest assumption,
 runnable before building anything — name the assumption and a pass/fail
@@ -93,7 +93,7 @@ link". On a KILL: the test that would prove the council wrong]
 
 **If RESHAPE (omit otherwise):** [the one-sentence pivot]
 
-Contrarian X/10 · Expansionist X/10 · Logician X/10 · Researcher X/10 · Buyer X/10
+Contrarian X/10 | Expansionist X/10 | Logician X/10 | Researcher X/10 | Buyer X/10
 ```
 
 **Done when:** every field is filled, all five MUST-HEAR lines sit above the verdict, the score line carries all five scores, and the 48-hour test is concrete enough to start today.

@@ -1,9 +1,63 @@
+# The TODOs
+### 13/7
+- [ ] EO: 
+	- [ ] Promote prod
+	- [ ] Fix `Chapter Staff` brand issue
+	- [ ] Israel meeting
+- [ ] EP: `next-steps.md`++ 
+	- [ ] Release the `instructor` handover
+	- [ ] Buy `dutyarchive.com`
+	- [ ] Finalize the bank account for SaaS
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 14/7
+- [ ] EO weekly report & sprint goals update
+	- [ ] Prepare & practice demo script
+	- [ ] Resolve Israel feedback?
+- [ ] Venture++ 
+	- [ ] Paddle/Payoneer
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 15/7
+- [ ] EO sprint review:
+	- [ ] Record the transcript 
+	- [ ] Contingencies
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 16/7
+- [ ] EO minimal work:
+	- [ ] Resolve feedback from the sprint review
+- [ ] Remind SHUI
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 17/7
+- [ ] EO minimal work:
+	- [ ] Contingencies
+- [ ] Bragdoc
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 18/7
+- [ ] Perfect dive start + 500m with paddles
+- [ ] Groceries
+- [ ] Venture++
+	- [ ] Set up Paddle
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 19/7
+- [ ] Splurge (if you're done with EP HITL)
+- [ ] Weekly planning
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
 # What a good day looks like
 - Wake up at 5AM
 - Finish workout before 6:30AM
 - Finish breakfast before 9AM
 - Work on your money tasks from 10AM to 12PM → This is what sustaining your income
-- Spiritual tasks from 3:30PM to 5PM → This is what keeping you from burning out
+- Venture tasks from 3:30PM to 5PM → This is what keeping you from burning out
 - Shower (earned it) at around 6-6:30PM
 - Dinner @6:30-7PM
 - Read books or keep building from 8-9PM
@@ -22,32 +76,55 @@
 **The contract with yourself (reread every Sunday):** ~2h of venture deep work per day ON AVERAGE (≈12h/week ceiling; 8–10h is a normal week). One block per day, then stop — a missed day breaks nothing. When a week gets tight, cut in this order:
 1. Duty Ledger's weeknight post goes first.
 2. Renewal Clock's extra outreach goes second.
-3. NEVER cut the EP money engine, and NEVER anything a customer already paid for.
+3. ==NEVER cut the EP money engine, and NEVER anything a customer already paid for.==
 
 **Three standing rules (the long-vol posture):**
-1. **Pull beats plan.** An unsolicited buyer, referral, or "can I pay?" gets served THIS week — the schedule bends for money, never for polish.
-2. **The governor.** Every Sunday, one yes/no: "did I break 12h or borrow sleep this week?" Two consecutive YES = next week runs at HALF load, pre-committed, no negotiation. Overload self-corrects instead of compounding — that's what keeps the barbell long-vol.
+1. **Pull beats plan.** An unsolicited buyer, referral, or "can I pay?" gets served ASAP — the schedule bends for money, never for polish.
+2. **The governor.** Every Sunday, one yes/no: "did I break the 12h cap OR borrow sleep this week?" Two consecutive YES = next week runs at HALF load, pre-committed, no negotiation. Overload self-corrects instead of compounding — that's what keeps the barbell long-vol.
 3. **One venture-free evening per week + sleep beats streaks** ([[EP SaaS]] §8.5) — non-negotiable; they ARE the slack the whole system buys its convexity with.
 
 **Priority legend:**
 - 🥇 **EP** (e-learning) — the one that actually pays you by December.
 - 🥈 **Renewal Clock** (US trades compliance) — owes you only a VERDICT on Mon Nov 30.
-- 🥉 **Duty Ledger** (tariff ledger) — owes you only a VERDICT on Sun Dec 13.
-*Rebalanced 2026-07-12: the three runbooks together over-booked July, so EP's setup window stretched one week (gate unchanged) and Renewal Clock's demo weekend + first asks moved to early August (Sep-1 cold outreach and Nov-30 verdict unchanged). Both runbooks carry the dated amendment.*
+- 🥉 **Duty Ledger** (tariff ledger) — owes you only a VERDICT on Sun Dec 13. *Rebalanced 2026-07-12: Renewal Clock's demo weekend + first asks moved to early August (Sep-1 cold outreach and Nov-30 verdict unchanged)
 
 ## The Sunday 30 minutes (the only meeting this portfolio has)
-1. Fill the three scoreboard lines, numbers only (~5m): EP (leads / consults / deposits / revenue) · Clock (asks / replies / calls / deposits) · Ledger (paying subs / free signups / visits).
-2. Answer the governor question (standing rule 2). Two consecutive YES = half-load next week, already decided.
-3. Did any firewall SIGNAL fire this week? (the same objection ×5 · an unsolicited "can I pay?" · a gate date · a venture blocked >2 weeks on one human — instructor, bank, Paddle) → open THAT runbook's firewall table and do what the row says. Nothing else changes.
+1. Add one row to the Sunday Scoreboard below — numbers only, dashboards open (~5m).
+2. The row's **Gov?** cell IS the governor question (standing rule 2). Two consecutive YES = half-load next week, already decided.
+3. The row's **Signal** cell: anything fired (the same objection ×5/an unsolicited "can I pay?"/a gate date/a venture blocked >2 weeks on one human — instructor, bank, Paddle) → open THAT runbook's firewall table and do what the row says. Nothing else changes.
 4. Pick ONE priority per venture for the coming week; copy them into the daily log.
 5. Tick and adjust next week's boxes above — dates may slip, gates never do.
 6. Anything worth adapting → write it under "Notes to the consultant" (bottom of this section), and open a Claude session on this file when you want help.
 
+## Sunday Scoreboard
+One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and dashes only — anything made of words goes to "Notes to the consultant" instead. ==An honest `0` is data, not failure==: the November/December verdicts are counted off these rows. The long-vol mechanics, stated plainly: **Gov?** is the circuit-breaker that stops one heavy week compounding into a burnt-out month (downside capped); **Signal** is where pull and trouble surface early so the runbook — not mood — answers them (upside kept open).
+
+**Column key.** Σ = running total, read the dashboard's total; everything else counts this week only. `-` = not live yet; `0` = live and nothing happened.
+- **hrs** = venture deep-work hours this week (12 = ceiling, 8–10 = normal)
+- **Gov?** = YES/NO — broke the 12h cap OR borrowed sleep this week? A skipped Sunday counts as YES.
+- **EP** = leads / consults / Σ seat deposits / Σ revenue (k₫)
+- **Clock** = asks sent / replies / Σ real calls / Σ $149 deposits
+- **Ledger** = Σ paying subs / Σ free signups / visits this week
+- **Signal** = firewall signal that fired (same objection ×5 / unsolicited "can I pay?" / gate date / blocked >2wk on one human) — name it, else `-`
+
+| Sunday     | hrs | Gov? | EP l/c/Σd/Σrev | Clock a/r/Σc/Σd | Ledger Σs/Σf/v | Signal |
+| ---------- | --- | ---- | -------------- | --------------- | -------------- | ------ |
+| 2026-07-12 | 2   | NO   | 0/0/0/0        | 0/0/0/0         | 0/0/0          | -      |
+
+*(Row 1 seeded on creation: every venture is pre-launch, hence the dashes. Fill `hrs` and `Gov?` today.)*
+
+**For Claude / any agentic harness asked to adapt this plan.** This protocol plus the "Feedback loop" section at the bottom of `# Venture` is the whole contract. The runbooks are LAW and live beside this file in `Life-Engineering/Notes/`: [[EP SaaS]] (EP), [[Antifragile SaaS]] (Renewal Clock), [[Duty SaaS]] (Duty Ledger). Run in this order:
+1. **Parse the last two rows.** Gov? = YES twice in a row → rewrite the coming week at HALF load *before discussing anything else*, cutting in the standing order (Ledger weeknight post → Clock extra outreach → never the EP money engine, never anything a customer paid for). Pre-committed — not renegotiable by Khoi, not by you.
+2. **Signal named → open that runbook's firewall table and do what the row says.** Never improvise a response to a signal; gates move only via their own firewall rows.
+3. Only then the consultant question: ==did money or evidence move this week?== Any Σ up, any reply or call → serve that pull first (standing rule 1). Three straight `0` weeks on a LIVE venture's activity numbers → say it plainly and read that runbook's park/kill criteria; do not pad the schedule to make the week feel productive.
+4. **Verdicts are read off this table, not off vibes**: Mon Nov 30 = latest Clock cell vs [[Antifragile SaaS]] §4; Sun Dec 13 = latest Ledger cell vs [[Duty SaaS]] §5 — exactly as written, no renegotiating.
+5. Invariants no proposal may touch: ≤12h/wk average + the venture-free evening + sleep beats streaks + the cut order + gate dates. If the notes below read like analysis instead of reps, ==call out the green-lumber trap== — that is part of the job, not rudeness.
+
 ## Tomorrow — Sunday, Jul 12 (~3.5–4h total)
-- [ ] 🥇 45m — Review & send the instructor the partnership letter (already written for you: the bottom half of [[EP SaaS]], "Gửi anh…"). Ask for a 60-min sit-down THIS week to sign.
+- [x] 🥇 45m — Review & send the instructor the partnership letter (already written for you: the bottom half of [[EP SaaS]], "Gửi anh…"). Ask for a 60-min sit-down THIS week to sign.
 - [ ] 🥇 10m — Plan the ACB bank errand into one weekday lunch this week (VND account for the payment gateway; ask about USD in the same visit — steps in [[Business Bank]] §7).
-- [ ] 🥉 2.5–3h — Duty Ledger seed block 1 ([[Duty SaaS]] §0, "Weekend 1"): buy the domain → deploy the small daily collector that saves every new US tariff document from the government's Federal Register API → add the daily "ran/failed" email to yourself.
-- [ ] 5m — Put the 9 dates (bottom of this section) into your calendar.
+- [x] 🥉 2.5–3h — Duty Ledger seed block 1 ([[Duty SaaS]] §0, "Weekend 1"): buy the domain → deploy the small daily collector that saves every new US tariff document from the government's Federal Register API → add the daily "ran/failed" email to yourself.
+- [x] 5m — Put the 9 dates (bottom of this section) into your calendar.
 
 ## Week Mon Jul 13 → Sun Jul 19 (~9h)
 - [ ] 🥇 Weekday lunch: ACB branch — open the VND account (app check-in, minutes); ask about USD too.
@@ -79,7 +156,7 @@
 - [ ] 🥇 4–5h/wk: cohort 1 runs Sep 21 → Nov 16. Your side: payments/access/receipts in ONE fixed 30-min daily window; batch content on the weekend block; capture every student win.
 - [ ] 🥈 4h/wk PROTECTED (from Tue Sep 1): 8–10 cold emails/week to the Texas list. The Nov-30 verdict needs ~8–12 real conversations with strangers — volume is the whole game; never skip two weeks in a row.
 - [ ] 🥉 1–1.5h/wk: Sun digest + promised statements as they come due (30–60m each, spread out). The weeknight post is the first thing to drop.
-- [ ] Every Sunday 30m: three scoreboards; ONE priority per venture for next week.
+- [ ] Every Sunday 30m: scoreboard row (numbers + Gov? + Signal); ONE priority per venture for next week.
 
 ## December — the verdict month
 - [ ] 🥇 Cohort 2 opens Mon Dec 7 at the raised price — cohort-1 results do the selling.
@@ -88,7 +165,7 @@
 - [ ] If Renewal Clock says BUILD: its build takes the freed weekend blocks Dec–Feb; Duty Ledger's app queues behind it (mid-Jan earliest — its runbook already says so).
 
 ## The belief math (what "success by Dec 31" actually is)
-- EP pays you **real money from ~mid-August** (deposits), and December looks like ~8M₫/mo (weak) to ~18–21M₫/mo (base) your-side — **that alone is the "at least one extra income source," and it is the BASE case** of a council-stress-tested plan, not a stretch goal.
+- EP pays you **real money from around mid-August** (deposits), and December looks like ~8M₫/mo (weak) to ~18–21M₫/mo (base) your-side — **that alone is the "at least one extra income source," and it is the BASE case** of a council-stress-tested plan, not a stretch goal.
 - Renewal Clock and Duty Ledger owe you only honest VERDICTS this year, not money. A ***park*** is a cheap, correct outcome — not a failure.
 - One screenshot of stranger-money in August = the belief unlocked. Everything after compounds.
 
@@ -110,63 +187,17 @@
 - The consultant's standing brief: keep me LONG-VOL (slack intact, governor enforced, spike weeks refused, pull served) and Fat-Tony-honest (reps and money over theory and polish). When in doubt the question is never "is the plan elegant?" — it is =="did money or evidence move this week?"==
 
 ### Notes to the consultant (dated, raw — write below)
-- 
----
-### 6/7
-- [x] EO: 
-	- [x] Set `EOAdm1n$` pw for `Pending` accounts
-	- [x] `next-steps.md`++
-- [x] EP: `next-steps.md`++ 
-	- [x] Review the `instructor` handover
-	- [x] Finalize the bank account for SaaS
-- [x] Finish Anger
-- [x] Live up to your standards
-### 7/7
-- [x] EO weekly report & sprint goals update
-	- [x] Promote prod, then `next-steps.md`++
-	- [x] Set a default `EOHub$p0t` pw for invited accounts
-	- [x] Figure out WHEN `welcome_email_sent_at` makes the most sense, and if it really earns its keep at all
-	- [x] Confirm if it's actually slower (`PERF-ADMIN-NAV`) for users in EU/US
-- [x] EP: `next-steps.md`++ 
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 8/7
-- [x] EO sprint review:
-	- [x] Record the transcript 
-	- [x] Confirm admins login with `EOAdm1n$`
-	- [x] `next-steps.md`++
-- [x] Review Bank & Antifragile SaaS prototype 
-	- [x] Create a stakeholder-perspective version of the prototype
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 9/7
-- [x] EO minimal work:
-	- [x] `next-steps.md` planning
-- [x] Runbook++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 10/7
-- [x] EO minimal work:
-	- [x] `next-steps.md`++
-- [ ] Bragdoc
-- [x] EP:  `next-steps.md`++
-- [ ] Open bank account
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 11/7
-- [x] Perfect dive start + 500m with paddles
-- [x] Groceries
-- [ ] Runbooks++
-	- [ ] Set up Paddle
-	- [x] Optimize `EP SaaS` with self-iterate `/validate-biz-idea` to achieve maximum confidence in its viability
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 12/7
-- [ ] Splurge (if you're done with EP HITL)
-- [ ] Weekly planning
-- [ ] Runbooks++
-- [ ] Tao Te Ching++
-- [ ] Live up to your standards
+#### Sample
+##### 2026-08-23 
+- 🥇 EP: 2 seat deposits landed this week (500k₫ each) — FIRST stranger-money. Screenshotted. Both came off the instructor's list, not the web.
+- 🥇 Buyer quote, verbatim (Zalo): "em chốt luôn, nhưng cho em hỏi có bằng/chứng chỉ cuối khoá không?" — third time someone's asked about a completion cert.
+- 🥇 That cert question is now 3 consults running. NOT yet the ×5 pattern — logging it, not acting. If it hits 5 → EP firewall "same objection ×5" row → §9 offer gauge, not a scramble.
+- 🥇 Broke: the enrollment email fired but the receipt email didn't — one buyer paid and got silence for ~4h until I checked manually. Fixed the Resend template; re-tested, both fire now. (This is the EP §0 "silence after paying" risk — caught before it churned anyone.)
+- 🥇 Unprompted DM from someone OUTSIDE the warm-50: "anh ơi khoá này còn nhận không em đăng ký với" — pure pull. Sent to instructor to consult same day.
+- 🥈 Clock: desk-only still. Warm-20 list now at 14 names. No asks sent yet — correct, asks start the Aug 8/15 Saturday block which slipped to this coming Sat. Not a stall, it's scheduled.
+- 🥉 Ledger: digest #3 shipped to 6 signups. 1 reply asking "do you cover Section 301 too?" — logged, no action (one wallet's question, not a pattern).
+- Hours this week: ~11. Governor is fine (no borrowed sleep). Took Thursday as the venture-free evening.
+- Started writing three paragraphs here theorizing whether the cert demand means I should pivot the whole offer toward certification — stop. That's analysis, not a rep. Closing the file; the ×5 rule already decides this. Next ask goes out instead.
 
 ---
 # Backlog
@@ -177,7 +208,7 @@
 - EO:
 	- [ ] `next-steps.md`++
 - EP: 
-	- [ ] Set up YOUR bank account (MBBank or BIDV) for PayOS Prod
+	- [ ] Set up YOUR bank account (ACB) for PayOS Prod
 	- [ ] HITL
 	- [ ] Run `/improve-codebase-architecture` AFTER closing #131 & #135
 	- [ ] Send [this](https://docs.google.com/document/d/1LvVIhYUDCUp31eHkTD4SWjqxVi99vzmU4fbpKoBajZU/edit?usp=sharing) to the stakeholder
