@@ -248,9 +248,6 @@ State what you could not determine, what commands failed, what areas need deeper
 - If the codebase is good, say why. If it is fragile, say exactly where.
 ```
 ---
-# Next big thing
-- [ ] Execute the runbooks
----
 # 1-1
 
 > [!important] For pay raise
