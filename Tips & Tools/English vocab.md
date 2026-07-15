@@ -622,6 +622,8 @@ feasible (adj): suitable, reasonable, likely
 
 veritable (adj): real, genuine, definite
 
+corroborate (v): confirm, verify, authenticate
+
 subjugation {to} (n): domination, takeover, defeat, take control
 
 preponderate (adj): outweigh, predominate, prevail, more likely than not

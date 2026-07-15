@@ -22,23 +22,25 @@
 	- [x] Record the transcript 
 	- [x] Contingencies
 - [x] Venture++
-	- [ ] Link ACB to PayOS, connect it to EP
-	- [ ] Get suggested domain
-	- [ ] Run the AFKs
+	- [x] Link ACB to PayOS
+	- [x] Get suggested domain
+	- [x] Optimistic UI for the tracker board
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 16/7
 - [ ] EO minimal work:
-	- [ ] Resolve feedback from the sprint review
+	- [ ] /goal help me get rid of these em dashes for empty values in the tracker board:. This is how I want you to get this done: make it inline-editable (just like how it is in the chapter's detail view) and generate a /prototype to get my approval before you /implement it; then
+  close out and deploy it to prod. I give you the green light to do so.
 - [ ] Remind SHUI
 - [ ] Venture++
 	- [ ] Remind the contract + propose domain
+	- [ ] Run the AFKs
 	- [ ] Outreach for the Clock & Ledger
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 17/7
 - [ ] EO minimal work:
-	- [ ] Contingencies
+	- [ ] Get rid of the em dash for empty values in `Owner` & `Blocker/Readiness` columns 
 - [ ] Bragdoc
 - [ ] Venture++
 	- [ ] Nudge the EP Contract

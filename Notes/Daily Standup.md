@@ -30,7 +30,9 @@ When shit hits the fan:
 > 	- `bunx -y skills@latest update -g -y`
 
 ## Next
-- Pls go ahead and do the merge and close-out so I can start a fresh session with the instructions in @docs/plans/next-steps.md
+- /goal Help me complete these 2 tasks:
+  1. Walk me through the HITL #1 (PayOS setup) and #3 (Email, I already set up my Resend account). I haven't bought the domain yet, so pls assume the Cloudflare-generated one for prod.
+  2. Minimize the @docs/plans/next-steps.md file to de-noise it and only keep the essentials.
 ## Later
 - Explore the relevant skills in your repertoire to give me an OPTIMIZED prompt for an agent to grade the overall quality of the codebase. I want the prompt's output to give me an HONEST assessment. The main criteria it should grade against are enterprise readiness and antifragility.
 - Using GPT5.5-xhigh: Perform an exhaustive scan on the codebase and run the /improve-codebase-architecture with its relevant skills to see how you can optimize the codebase for maximum antifragility.
