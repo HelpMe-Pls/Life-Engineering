@@ -1,28 +1,30 @@
 # The TODOs
 ### 13/7
-- [ ] EO: 
-	- [ ] Promote prod
-	- [ ] Fix `Chapter Staff` brand issue
+- [x] EO: 
+	- [x] Promote prod
+	- [x] Fix `Chapter Staff` brand issue
 	- [ ] Israel meeting
-- [ ] EP: `next-steps.md`++ 
-	- [ ] Release the `instructor` handover
-	- [ ] Buy `dutyarchive.com`
-	- [ ] Finalize the bank account for SaaS
+- [x] Runbook++ 
+	- [x] Release the `instructor` handover
+	- [x] Register the ACB checking account
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 14/7
-- [ ] EO weekly report & sprint goals update
-	- [ ] Prepare & practice demo script
-	- [ ] Resolve Israel feedback?
-- [ ] Venture++ 
-	- [ ] Paddle/Payoneer
+- [x] EO weekly report & sprint goals update
+	- [x] GitHub Actions quota
+	- [x] Bulk "Add to subwave" action on the tracker board
+	- [x] Disable the `Exception` option when both trainings are `Completed`
+- [x] Venture++: Keep grilling the Ledger
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 15/7
-- [ ] EO sprint review:
-	- [ ] Record the transcript 
-	- [ ] Contingencies
-- [ ] Venture++
+- [x] EO sprint review:
+	- [x] Record the transcript 
+	- [x] Contingencies
+- [x] Venture++
+	- [ ] Link ACB to PayOS, connect it to EP
+	- [ ] Get suggested domain
+	- [ ] Run the AFKs
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 16/7
@@ -30,6 +32,8 @@
 	- [ ] Resolve feedback from the sprint review
 - [ ] Remind SHUI
 - [ ] Venture++
+	- [ ] Remind the contract + propose domain
+	- [ ] Outreach for the Clock & Ledger
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 17/7
@@ -37,13 +41,13 @@
 	- [ ] Contingencies
 - [ ] Bragdoc
 - [ ] Venture++
+	- [ ] Nudge the EP Contract
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 18/7
 - [ ] Perfect dive start + 500m with paddles
 - [ ] Groceries
 - [ ] Venture++
-	- [ ] Set up Paddle
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 19/7
@@ -187,18 +191,10 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - The consultant's standing brief: keep me LONG-VOL (slack intact, governor enforced, spike weeks refused, pull served) and Fat-Tony-honest (reps and money over theory and polish). When in doubt the question is never "is the plan elegant?" — it is =="did money or evidence move this week?"==
 
 ### Notes to the consultant (dated, raw — write below)
-#### Sample
-##### 2026-08-23 
-- 🥇 EP: 2 seat deposits landed this week (500k₫ each) — FIRST stranger-money. Screenshotted. Both came off the instructor's list, not the web.
-- 🥇 Buyer quote, verbatim (Zalo): "em chốt luôn, nhưng cho em hỏi có bằng/chứng chỉ cuối khoá không?" — third time someone's asked about a completion cert.
-- 🥇 That cert question is now 3 consults running. NOT yet the ×5 pattern — logging it, not acting. If it hits 5 → EP firewall "same objection ×5" row → §9 offer gauge, not a scramble.
-- 🥇 Broke: the enrollment email fired but the receipt email didn't — one buyer paid and got silence for ~4h until I checked manually. Fixed the Resend template; re-tested, both fire now. (This is the EP §0 "silence after paying" risk — caught before it churned anyone.)
-- 🥇 Unprompted DM from someone OUTSIDE the warm-50: "anh ơi khoá này còn nhận không em đăng ký với" — pure pull. Sent to instructor to consult same day.
-- 🥈 Clock: desk-only still. Warm-20 list now at 14 names. No asks sent yet — correct, asks start the Aug 8/15 Saturday block which slipped to this coming Sat. Not a stall, it's scheduled.
+#### July 18th, 2026
+- 🥇 EP: Done with the bank accounts, the instructor still sitting on the partnership letter.
+- 🥈 Clock: I don't know where/how to kick off this thing
 - 🥉 Ledger: digest #3 shipped to 6 signups. 1 reply asking "do you cover Section 301 too?" — logged, no action (one wallet's question, not a pattern).
-- Hours this week: ~11. Governor is fine (no borrowed sleep). Took Thursday as the venture-free evening.
-- Started writing three paragraphs here theorizing whether the cert demand means I should pivot the whole offer toward certification — stop. That's analysis, not a rep. Closing the file; the ×5 rule already decides this. Next ask goes out instead.
-
 ---
 # Backlog
 - [Learn about animations](https://animations.dev/learn/animation-theory/intro)

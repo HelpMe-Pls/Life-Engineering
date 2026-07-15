@@ -47,12 +47,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/Duty SaaS.md",
+                    "file": "Notes/Antifragile SaaS.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Duty SaaS"
+                  "title": "Antifragile SaaS"
                 }
               }
             ],
@@ -66,7 +66,7 @@
               {
                 "id": "c3184acf40a6477e",
                 "type": "tabs",
-                "dimension": 55.06117908787542,
+                "dimension": 32.146829810901004,
                 "children": [
                   {
                     "id": "f5c2905f7a85432e",
@@ -92,13 +92,12 @@
                       "title": "Graph view"
                     }
                   }
-                ],
-                "currentTab": 1
+                ]
               },
               {
                 "id": "6daf623ea71b0a7d",
                 "type": "tabs",
-                "dimension": 44.938820912124584,
+                "dimension": 67.853170189099,
                 "children": [
                   {
                     "id": "3a79f449488355fd",
@@ -120,12 +119,12 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/Business Bank.md",
+                        "file": "Notes/Weekly Tasks.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "Business Bank"
+                      "title": "Weekly Tasks"
                     }
                   },
                   {
@@ -134,16 +133,16 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/Weekly Tasks.md",
+                        "file": "Notes/Venture Tasks.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "Weekly Tasks"
+                      "title": "Venture Tasks"
                     }
                   }
                 ],
-                "currentTab": 2
+                "currentTab": 1
               }
             ],
             "direction": "horizontal"
@@ -295,27 +294,29 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "9b9ab17c16c89870",
+  "active": "03418aa526fdbc06",
   "lastOpenFiles": [
     "Notes/Daily Standup.md",
     "Notes/Weekly Tasks.md",
-    "AI/long-vol-consultant.md.tmp.30052.3768dca793f7",
-    "AI/long-vol-consultant.md.tmp.30052.541b6618dad9",
-    "AI/long-vol-consultant.md.tmp.30052.d1ee07be1e96",
-    "Notes/Duty SaaS.md",
-    "AI/long-vol-consultant.md",
-    "AI/long-vol-consultant.md.tmp.30052.b9c9752d63c7",
-    "AI/long-vol-consultant.md.tmp.30052.99aac4ae24f6",
-    "AI/long-vol-consultant.md.tmp.30052.ae2e7922bbff",
-    "AI/long-vol-consultant.md.tmp.30052.ebb688d4b11e",
-    "Notes/EP SaaS.md",
-    "AI/validate-biz-idea.md.tmp.42264.b0157e3abbe3",
-    "AI/validate-biz-idea.md.tmp.42264.91936de25561",
-    "Notes/Business Bank.md.tmp.42264.96871725f9f0",
-    "Notes/Business Bank.md",
+    "Notes/Venture Tasks.md",
     "Notes/Antifragile SaaS.md",
-    "AI/validate-biz-idea.md",
+    "Notes/Venture Tasks.md.tmp.65268.5a7725e3ece6",
+    "Notes/Venture Tasks.md.tmp.65268.f2d5dcd0d318",
+    "Notes/Venture Tasks.md.tmp.65268.3af401060c10",
+    "Notes/Venture Tasks.md.tmp.65268.9adcde7e8e0a",
+    "Notes/Venture Tasks.md.tmp.65268.168c450391a8",
+    "Notes/Duty SaaS.md",
     "Tips & Tools/English vocab.md",
+    "Notes/Venture Tasks.md.tmp.65268.2392fe9b7056",
+    "Notes/Duty SaaS.md.tmp.65268.4e204dfec7dc",
+    "Notes/Venture Tasks.md.tmp.65268.62217d1aaaa1",
+    "Notes/Venture Tasks.md.tmp.65268.3e3ffc9aa8e0",
+    "Notes/Business Bank.md",
+    "Notes/2026.md",
+    "Notes/EP SaaS.md",
+    "AI/long-vol-consultant.md.tmp.30052.3768dca793f7",
+    "AI/long-vol-consultant.md",
+    "AI/validate-biz-idea.md",
     "Notes/prototype-antifragile-saas.NOTES.md",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
@@ -325,7 +326,6 @@
     "Notes/Contingencies.md",
     "Notes/Pasted image 20260706104557.png",
     "Notes/Pasted image 20260706172618.png",
-    "Notes/2026.md",
     "Tips & Tools/Entrepreneurship.md",
     "Notes/M4 Key-2.png",
     "Notes/M4 Key-1.png",
@@ -338,7 +338,6 @@
     "Notes/Brag Doc.md",
     "Notes/Automation.md",
     "Notes/E-learning MVP.md",
-    "AI/With Claude Code.md",
     "Pasted image 20260620195825.png",
     "Tips & Tools/code-review.png",
     "Tips & Tools/cron.png",

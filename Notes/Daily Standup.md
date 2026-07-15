@@ -8,7 +8,7 @@ On a normal Sunday:
 ```
 /long-vol-consultant
 
-Run this Sunday's read and keep the file current as we go. Walk the steps with me — load the contract, check the governor off the last two rows, resolve every signal against the runbook firewall tables, tell me whether money or evidence moved, hold me inside the invariants, and call the green-lumber trap if my notes drift into analysis. As I give you each step's input, write it straight into Weekly Tasks.md — tick the boxes, append this week's scoreboard row, adjust next week's blocks, add my notes verbatim. Write what I dictate; ask only if a target's ambiguous. Leave the three runbooks untouched. End with the paste-back block.
+Run this Sunday's read and keep the file current as we go. Walk the steps with me — load the contract, check the governor, resolve every signal against the runbook firewall tables, tell me whether money or evidence moved, hold me inside the invariants, and call out the green-lumber trap if my notes drift into analysis. As I give you each step's input, write it straight into Weekly Tasks.md — tick the boxes, append this week's scoreboard row, adjust next week's blocks, update my notes accordingly. Write what I dictate; ask only if a target's ambiguous. Leave the three runbooks untouched. End with the paste-back block.
 ```
 
 When shit hits the fan:
