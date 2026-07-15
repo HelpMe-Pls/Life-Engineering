@@ -351,8 +351,7 @@ Core tenet: assume good intentions
 > - I figure it's a good idea to join the meeting, see what you guys are talking about so I get what I'm about to do for the next couple of months.
 
 ## Prompts
-- General `next-steps.md`: 
-	- I need you to optimize the `next-steps.md` file so that I can start a fresh Claude Code session with this simple prompt: "Read @docs/plans/next-steps.md to follow its instructions" and it will know EXACTLY what to do, as well as keeping @docs/plans/next-steps.md up-to-date as it goes.
+- Pls make sure to utilize the /code-review skill to help you with the DEEP adversarial review loop once you're done with the implementation and self-iterate to /diagnosing-bugs and fix ALL gaps/regressions/issues that the loop exposes before promoting to prod.
 - Generate a meeting summary based on `this transcript`. Refer to the `Sample` for the desired output.
 ## Key metrics
 - Chapters are able to track their two levers of growth, member retention and member acquisition with a goal of 8% NET new growth every year.

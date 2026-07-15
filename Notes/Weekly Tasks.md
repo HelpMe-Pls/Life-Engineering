@@ -28,12 +28,11 @@
 - [ ] Tao Te Ching++
 - [x] Live up to your standards
 ### 16/7
-- [ ] EO minimal work:
-	- [ ] /goal help me get rid of these em dashes for empty values in the tracker board:. This is how I want you to get this done: make it inline-editable (just like how it is in the chapter's detail view) and generate a /prototype to get my approval before you /implement it; then
-  close out and deploy it to prod. I give you the green light to do so.
+- [x] EO minimal work:
+	- [x] Inline-editable `Owner` / `Blocker` columns in the tracker board
 - [ ] Remind SHUI
 - [ ] Venture++
-	- [ ] Remind the contract + propose domain
+	- [ ] Remind the contract + propose domain: kysugenba.com, hocviengenba.com, kysumichi.com, hocvienkysu.com, kysumirai.com, genbajuku.com
 	- [ ] Run the AFKs
 	- [ ] Outreach for the Clock & Ledger
 - [ ] Tao Te Ching++
