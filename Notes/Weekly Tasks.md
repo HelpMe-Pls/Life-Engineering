@@ -70,23 +70,67 @@
 - Pass out by 9:30PM
 - Rinse & repeat
 # Tactical
-Context:
-  ```
-  I'm a software engineer in HCMC who's transitioning into entrepreneurship (for now, I still rely on a SINGLE paycheck, but ULTIMATELY, I want to
-  be free from "the paycheck" and make a living from my products/apps/SaaS/etc.)
-  As you can see, I've already got some "plans" for that in this folder, but I still need 1 more SaaS/idea to keep at the back of my head in case
-  ALL of those existing plans go bust. The point is to turn ME into Fat Tony (antifragile and long-vol) with THIS app/SaaS/product so that I no
-  longer have to think about my financials. The "freedom number" that I'm aiming for is $3k NET profit/month on average.
-  This app/SaaS/product MUST be different from the "existing" ones that you see in this folder to keep my portfolio diversified and "barbelled",
-  and I don't care which market/niche it's aiming at, as long it's REALISTIC (verifiable) and sustainable (again, antifragile) so I can RELY on it
-  when time gets tough (i.e. Black Swan ledger covered). This business model MUST be THOROUGHLY researched and verified against the LATEST
-  Product-Market-Fit data available on the internet.
-  My strength is in planning and executing with code, as long as I'm NOT showing my face or having to 1-1 with customers. Not that I'm incapable
-  of speaking good English, it's just that I have a higher chance of digging my own grave if it comes to on-the-spot live Q&A.
-  Feel free to utilize the /validate-biz-idea skill as well as opening a /grilling session to get to the bottom of this.
-  ```
+_The Venture-4 mission prompt — the finished product of the "craft THE MOST OPTIMAL prompt" request that used to live here (crafted 2026-07-16 from a full portfolio read). Paste verbatim into a **fresh Claude Code session opened at the vault root**. Phases 0–4 run AFK; be at the keyboard for Phase 5 (checkpoint + grilling) and final-doc approval. Note: `validate-biz-idea` is NOT an installed skill — the prompt has the session execute `AI/validate-biz-idea.md` directly; `grilling` + `long-vol-consultant` ARE installed (Mac)._
 
-  Based on that context, I need you to craft THE MOST OPTIMAL prompt so that I can feed into a fresh Claude Code CLI session to get me what I want
+````text
+ultrathink
+
+# Mission: find + validate Venture 4 — my break-glass engine
+
+Work from this vault (paths below are relative to its root — `/Users/somebodhi/Documents/Personal/Life-Engineering` on the Mac, `C:\Users\leekh\Documents\Repos\Personal\Life-Engineering` on the Windows box). First command: `date` — use the real date everywhere. Every market claim carries a source URL + access date; PMF evidence older than ~12 months is stale unless structural (law, platform ToS).
+
+## Who I am, what this is
+
+I'm Khoi — solo software engineer in HCMC (TypeScript/React/Node/Go), day job pays the bills. I run a barbelled, long-vol venture portfolio sized to ≤12h/week TOTAL. Three engines are live — read all three docs end-to-end before generating anything, plus the context files:
+
+- `Notes/EP SaaS.md` — VN→Japan career accelerator for Vietnamese civil engineers (instructor is the face; I'm platform/funnel/ops; VND rails).
+- `Notes/Duty SaaS.md` — per-merchant US import-duty ledger, $19/mo (the speculative leg). Note its birth in the changelog: a 6-candidate triage against live PMF data → five-persona council rounds → unanimous GO. You will reuse that exact pipeline.
+- `Notes/Antifragile SaaS.md` — operated credential-expiry loop for US SMB trades (HVAC first, $199-visible, warm-first). Its research run `Notes/clock-research/README.md` is the house style for research artifacts.
+- Context: `Notes/Biz.md`, `Notes/Contingencies.md`, `Notes/Weekly Tasks.md` (`# Venture` section), `AI/long-vol-consultant.md`, and the council protocol `AI/validate-biz-idea.md`.
+
+**Venture 4 is the backup for the scenario where ALL THREE bust at once.** It gets validated NOW, then SHELVED at zero cost and zero hours, with named activation tripwires. When triggered, it alone must carry my freedom number: **$3,000/month NET, sustained**. Realistic and verifiable — long-vol, Fat-Tony antifragile: a plan that gets STRONGER in the storms that kill the other three.
+
+## Hard filters — auto-kill, no exceptions
+
+1. **Faceless ≠ anonymous** (house doctrine): no face-on-camera, no live calls, no demos, no 1-1 sales, no on-the-spot live Q&A, ever. Async text, docs, email, changelogs, community posts — fine. A named, findable human — fine.
+2. Solo-buildable and solo-runnable with my stack; no co-founder, no partner-as-face (EP already carries partner risk), no hiring assumed before $3k/mo.
+3. Zero standing cost and ~zero hours while shelved. Activation → first stranger dollar in ≤60 days at ≤12h/week. Steady state at $3k/mo: ≤8h/week, support async-only.
+4. <$50/month cash pre-revenue; no paid ads pre-revenue (ads are funded by revenue, never salary).
+5. Rails workable from Vietnam, netted honestly ($3k is AFTER MoR cut, fees, taxes) — and not another bet on the same rail class the siblings already lean on; name a fallback rail. Nothing grey-market, gambling, adult, or ToS-fragile that risks the account.
+6. IP hygiene: nothing my employer could claim or that competes with their space; my hardware, my time.
+7. Demand verifiable TODAY: named competitors/comparables with public pricing and revenue signals ≤12 months old — not "AI will change everything" vibes.
+
+## Anti-correlation — the actual point
+
+Before generating candidates, derive the portfolio's shared failure modes from the three docs and write the correlation map down. I count at least: founder outreach as every engine's primary channel; US-SMB buyer concentration; MoR/rail concentration; every engine needs my weekly hours to bill; the trust-tax on a VN solo vendor selling B2B to strangers. Venture 4 must survive — ideally FEED on — the storms that kill all three at once: US SMB recession, rail/account failure, my hours collapsing, outreach saturation and AI-slop distrust. So: different buyer class, different channel class (**inbound / product-led / marketplace / SEO — demand finds IT while I sleep**), different rail, and demand that is counter-cyclical or stress-benefiting. State the antifragility mechanics plainly, clock-research style: "disorder helps this plan because…".
+
+The graveyard stays dead: the five candidates Duty SaaS's triage already killed (agentic-commerce, exit-escrow, diaspora-care, stack-radar, AI-act-clock) are off-limits unless NEW primary evidence overturns the recorded kill reason.
+
+## Pipeline — the same one that produced Duty SaaS
+
+- **Phase 0 — Orient.** Read everything above; write the correlation map + the diversification gap Venture 4 must fill.
+- **Phase 1 — Diverge.** 12–15 candidates across ≥4 distinct model classes (e.g., B2B SaaS, prosumer/dev tool, marketplace/plugin-ecosystem product, data/API product, transactional tool, niche subscription). For each: one-line thesis, buyer, channel, rail, why-uncorrelated. No more than 3 candidates per primary channel class.
+- **Phase 2 — Triage against LIVE PMF data.** Real web research (deep-research skill if available, else fan out WebSearch): named comparables with pricing + revenue evidence (acquire.com listings, Indie Hackers / Starter Story revenue interviews, MicroConf talks, r/SaaS and build-in-public posts, marketplace top-seller data, keyword volume/difficulty). Kill-checks per house precedent: free incumbents, platform first-partying, prevention paradox, race-to-zero pricing. Produce the kill table with Buyer-persona scores. Top 3 advance.
+- **Phase 3 — Adversarial deep-dive on the top 3.** For each, actively hunt for evidence it FAILS: dead/zombie competitors, churn complaints, ToS/platform landmines, "why I shut down X" postmortems. Show the $3k/mo arithmetic (price × customers × realistic conversion through a faceless channel). Pick winner + runner-up.
+- **Phase 4 — The council.** Read `AI/validate-biz-idea.md` and execute its protocol exactly on the winner (it may not be installed as a skill — running the file's contents directly is correct). "Just run it" mode: fill THE BRIEF's Buyer/Edge/Constraints slots from this prompt + your dossier; don't stall to ask me. Run repeated rounds with live-web fact passes, folding every FIXABLE, until **unanimous GO / FIXABLE: NONE** — or an honest KILL (then promote the runner-up and run the council once more). Log C/E/L/R/B scores per round for the changelog.
+- **Phase 5 — CHECKPOINT (I'm needed here).** Present: winner, runner-up, kill table, correlation map, the honest median outcome. Then grill ME with the grilling skill (if you can't invoke it, ask me to type `/grilling`) on founder-fit: time, staying power, distribution honesty, the activation triggers. Fold what survives.
+- **Phase 6 — Ship the paper.** Only after Phase 5.
+
+## Deliverables — match house style exactly (callouts, ==marks==, Settled block, honest ceilings, [[wikilinks]])
+
+1. `Notes/<Name> SaaS.md`: the "What's your job?" identity callout; council changelog (provenance only); **Settled — do not relitigate at 2am** block; **§0 NOW — Phase: SHELVED** with named activation tripwires tied to the siblings' REAL gates (pull their dates and kill criteria from the docs) + a quarterly 30-minute re-validation ritual; the one-story sell; ICP; competitor/pricing table (cited + dated); faceless channel plan; unit economics to $3k/mo NET; 60-day activation runbook to first stranger dollar; Black Swan ledger + antifragility mechanics; kill criteria with dates; one plainly-stated honest-median sentence (house style: "GO means GO RUN THE GATE, not 'the business is validated'").
+2. `Notes/<codename>-research/` — run report + evidence files, clock-research style: every number traces to a live source or is marked unverifiable; $0 spent; nobody contacted; no accounts created.
+3. Update `Notes/Biz.md` and `Notes/Contingencies.md` (link + a one-screen trigger table). Do NOT touch hour allocations in `Notes/Weekly Tasks.md` — this venture costs 0h/week until a tripwire fires.
+4. Git commit in the vault's gitmoji style — only after I approve the final doc.
+
+## Ground rules
+
+- Cite or it didn't happen. Never invent a number; label every estimate with its inputs; steelman the bear case before the bull case, every time.
+- You have my explicit opt-in to orchestrate with workflows and fan out subagents for research, triage, and the council.
+- Work autonomously through Phases 0–4; batch questions. The only mandatory stops are Phase 5 and final-doc approval.
+- If nothing clears the bar, say so and deliver the graveyard with kill reasons — a true "no viable Venture 4 this round" beats a pretty lie.
+- The lock decision is mine. You recommend; I ratify.
+````
 
 # Strategic goals
 - Launch EP BEFORE the contract ends.
