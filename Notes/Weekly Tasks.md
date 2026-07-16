@@ -3,7 +3,7 @@
 - [x] EO: 
 	- [x] Promote prod
 	- [x] Fix `Chapter Staff` brand issue
-	- [ ] Israel meeting
+	- [x] Israel meeting
 - [x] Runbook++ 
 	- [x] Release the `instructor` handover
 	- [x] Register the ACB checking account
@@ -31,24 +31,25 @@
 - [x] EO minimal work:
 	- [x] Inline-editable `Owner` / `Blocker` columns in the tracker board
 - [ ] Remind SHUI
-- [ ] Venture++
-	- [ ] Remind the contract + propose domain: kysugenba.com, hocviengenba.com, kysumichi.com, hocvienkysu.com, kysumirai.com, genbajuku.com
-	- [ ] Run the AFKs
-	- [ ] Outreach for the Clock & Ledger
+- [x] Venture++
+	- [x] Run the AFKs
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 17/7
 - [ ] EO minimal work:
-	- [ ] Get rid of the em dash for empty values in `Owner` & `Blocker/Readiness` columns 
+	- [ ] `next-steps.md`++
 - [ ] Bragdoc
 - [ ] Venture++
 	- [ ] Nudge the EP Contract
+	- [ ] Propose domain: kysugenba.com, hocviengenba.com, kysumichi.com, hocvienkysu.com, kysumirai.com, genbajuku.com
+	- [ ] ACB for physical card + FX account
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 18/7
 - [ ] Perfect dive start + 500m with paddles
 - [ ] Groceries
 - [ ] Venture++
+	- [ ]  Outreach for the Clock & Ledger
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 19/7
@@ -68,6 +69,25 @@
 - Read books or keep building from 8-9PM
 - Pass out by 9:30PM
 - Rinse & repeat
+# Tactical
+Context:
+  ```
+  I'm a software engineer in HCMC who's transitioning into entrepreneurship (for now, I still rely on a SINGLE paycheck, but ULTIMATELY, I want to
+  be free from "the paycheck" and make a living from my products/apps/SaaS/etc.)
+  As you can see, I've already got some "plans" for that in this folder, but I still need 1 more SaaS/idea to keep at the back of my head in case
+  ALL of those existing plans go bust. The point is to turn ME into Fat Tony (antifragile and long-vol) with THIS app/SaaS/product so that I no
+  longer have to think about my financials. The "freedom number" that I'm aiming for is $3k NET profit/month on average.
+  This app/SaaS/product MUST be different from the "existing" ones that you see in this folder to keep my portfolio diversified and "barbelled",
+  and I don't care which market/niche it's aiming at, as long it's REALISTIC (verifiable) and sustainable (again, antifragile) so I can RELY on it
+  when time gets tough (i.e. Black Swan ledger covered). This business model MUST be THOROUGHLY researched and verified against the LATEST
+  Product-Market-Fit data available on the internet.
+  My strength is in planning and executing with code, as long as I'm NOT showing my face or having to 1-1 with customers. Not that I'm incapable
+  of speaking good English, it's just that I have a higher chance of digging my own grave if it comes to on-the-spot live Q&A.
+  Feel free to utilize the /validate-biz-idea skill as well as opening a /grilling session to get to the bottom of this.
+  ```
+
+  Based on that context, I need you to craft THE MOST OPTIMAL prompt so that I can feed into a fresh Claude Code CLI session to get me what I want
+
 # Strategic goals
 - Launch EP BEFORE the contract ends.
 - Always have a plan. When in doubts, stack reps. Exploit AI consultancy for separating signals from noise.
