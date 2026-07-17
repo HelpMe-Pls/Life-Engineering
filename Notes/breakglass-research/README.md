@@ -1,0 +1,51 @@
+# breakglass-research — the Venture-4 hunt, run report
+AFK research run, 2026-07-17; checkpoint + grilling with the founder the same day. Mission: find + validate Venture 4, the break-glass engine ($3,000/mo NET standalone, faceless, solo, shelvable at ~$0, uncorrelated with all three siblings). Pipeline: the same one that produced [[Duty SaaS]] — diverge → live-PMF triage → adversarial verification of the kills themselves. ==Zero product code; nobody contacted; no accounts created; $0 spent.== Every number traces to a live source in `evidence/` or is marked unverifiable.
+
+## THE VERDICT — ratified by Khoi 2026-07-17: no viable Venture 4 this round; the slot stays OPEN, with named re-open conditions
+17 candidates across 7 channel classes and 6 model classes were generated, triaged against live PMF data (23 research/verification agents, ~1.1M tokens, 376 web lookups), and ==all 17 died on cited evidence==. A 6-agent adversarial verification pass then attacked the kills' own load-bearing facts: ==one fact was struck (the Atlassian "−23%" claim), three kills were re-worded, zero candidates resurrected.== The council ([[validate-biz-idea]]) was not convened during the hunt itself (no winner to test); ==at the founder's direction the same day, it WAS convened verbatim on the two strongest corpses — both KILLed== (council changelog below). Per the mission's own ground rule: ==a true "no viable Venture 4 this round" beats a pretty lie.==
+
+**The honest median, house style: OPEN means THE SLOT STAYS EMPTY ON PURPOSE** — the quarterly 30-minute ritual re-reads the watchable facts against reality; it does not relitigate the kills. The kills are law under the graveyard rule: ==off-limits unless NEW primary evidence overturns the recorded kill reason.==
+
+## The artifacts
+
+| File | What it holds |
+|---|---|
+| [[breakglass-research/KILL-TABLE\|KILL-TABLE]] | all 17 kills, Buyer-scored, fatal-leg-first, with the verification column |
+| [[breakglass-research/NEAR-MISSES\|NEAR-MISSES]] | the three closest corpses — founder rulings now CLOSED where ruled; watchable facts where watchable |
+| [[breakglass-research/RAILS-INTEL\|RAILS-INTEL]] | permanent asset: every rail a VN solo seller can/cannot use, primary-sourced |
+| [[breakglass-research/CORRELATION-MAP\|CORRELATION-MAP]] | Phase-0 derivation: the five shared failure modes + the diversification spec V4 had to satisfy |
+| `evidence/*.json` | 17 triage records + 6 verification records, every URL preserved |
+| [[Contingencies]] § Venture 4 | the OPEN-SLOT law: trigger table, the two doctrine rulings, THE BREAK-GLASS CARD (6-month floor-line) |
+
+## The single most important finding
+==The storm Venture 4 was designed to feed on is the same storm that closes every channel it would need.== The spec demanded a faceless pull engine (marketplace/SEO/ASO/PLG) that thrives on disorder. The 2026 evidence, uniform across 17 candidates: AI-era clone-floods saturate every discoverable faceless niche within months (700 AI-assisted plugin submissions/week at wp.org; year-stamped app-farm clones in every exam niche; lookalike scanners within 12 months of the EAA deadline); free incumbents or the platform/state first-party every solo-sized wedge (13 of 17 kills); and the one VN-solo-at-scale counterexample found — BoltAI, Ho Chi Minh City, ~$30k/mo reported — got there through an audience, then a gatekept platform. ==Faceless + no-audience + $3k NET + 60-day activation is, on July-2026 evidence, an empty intersection. The binding wall is the constraint set — not the market, not the geography, not the stack.==
+
+And the grilling closed the loop on why that's acceptable: ==the faceless doctrine is peacetime law.== The founder's own dictated break-glass sequence suspends it under true fire (see THE BREAK-GLASS CARD in [[Contingencies]]) — so the break-glass answer was never going to be a faceless venture, and an empty slot with re-open conditions is the coherent design.
+
+## What the hunt PROVED (keep — these are assets)
+1. **Rails are solved.** Seven verified VN-workable rails incl. three non-MoR platform-payout classes; ==app-store net-keep ≈78–83%== after the Aug-2025 VN tax clarifications (0% US withholding with W-8BEN; 2% PIT + 5% FCT on Apple's commission). If any future candidate clears PMF triage, money plumbing is a non-issue → [[breakglass-research/RAILS-INTEL|RAILS-INTEL]].
+2. **Discovery is not dead — monetization against $0 is.** Faceless newcomers verifiably rank (programmatic SEO: LandlordOS, CleanTender-class, EAA scanners; store search: the clone farms live off it). The missing layer in every kill was a wedge free tools structurally can't copy.
+3. **Counter-cyclical demand pools exist and are named** (budgeting, trade-exam enrollment — ~1.9M surge 2008–10, tender volumes, immigration anxiety) — all currently captured by free tiers or accumulated-data moats.
+4. **The audience truth, named in writing (founder-accepted 2026-07-17):** ==an owned async-text audience (newsletter/corpus, ~1k engaged readers) is the single distribution asset that would reopen several kill-table shapes== — it survives platform storms, compounds across ventures, and is the only pull channel the clone-flood can't dilute. No hours are allocated to it now (the governor forbids it; the Ledger digest + EP's Q4 content engine are the seeds); it is banked as post-quit-gate material per [[EP SaaS]] §11's next-option allocation.
+5. **The graveyard grew by 17**, each with a dated kill reason — the next hunt starts from here, not from zero.
+
+## Runbook staleness flags (found vs live sources — sibling runbooks NOT edited)
+
+| Runbook says | Live reality (2026-07-17) | Severity |
+|---|---|---|
+| [[Antifragile SaaS]] §8 / [[Duty SaaS]] §9 name FastSpring/Dodo as fallback MoRs | Dodo publishes a dedicated VN-MoR landing page (verified); ==Lemon Squeezy is sunsetting into Stripe, which excludes VN== — LS must never appear in any fallback list | Good news + a standing trap confirmed |
+| "Never plan around Stripe/Lemon Squeezy" ([[Antifragile SaaS]] §8) | Re-confirmed on primary sources, now with the acquisition mechanism attached | Confirmed good |
+| [[Duty SaaS]] §11 row 4: "AI Overviews starve the no-name site" | The clone-flood finding generalizes it: ==AI now floods the SUPPLY side of every faceless niche too== — worth one line in the next quarterly competitor check | Note for the Sunday read |
+
+## Provenance (the grilling, 2026-07-17 — 8 questions, all resolved)
+Q1 verdict: ==RATIFIED==. Q2 slot job description: ==ABSOLUTIST== (feeds on the storm; a pro-cyclical fourth engine is a different slot — Atlassian shape closed for this slot, banked for post-quit). Q3 faceless edge: ==one-time non-customer-facing gatekeeper calls tolerable ONLY where OPTIONAL for survival== (accelerates, never enables — the USCIS demo is load-bearing, so that kill stands; converted to a watchable fact). Q4 audience note: ==accepted as written==. Q5 ceiling + clock: ==absolute until a pre-committed trigger re-grills them==. Q6 ritual: ==four calendar dates + the nearest Sunday read; no automation==. Q7 break-glass sequence: ==REWRITTEN by the founder== (burn-cut → face-mode Hail Mary → near-miss resurrection → re-employment LAST) ==with a 6-month floor-line==. Q8 ship list: ==approved; git commit explicitly withheld by the founder.==
+
+## Council changelog (2026-07-17, post-grilling, at the founder's direction — provenance only)
+Protocol: [[validate-biz-idea]] executed verbatim by file-run (the skill is disable-model-invocation). **Setapp utility: ==KILL, high confidence — C2 E7 L3 R4 B3== (five independent personas):** gatekept activation admits no controllable validation experiment; the usage-weighted pool structurally underpays set-and-forget utilities; the value is already delivered free by bank-linked incumbents (Rocket Money class). **USCIS tracker R1: RESHAPE — C2 E8 L4 R5 B3:** as briefed, sealed channel + paid layer ≤ free; pivot named and accepted — the EB-backlog visa-bulletin dashboard, $39/yr annual-only. **USCIS R2 on the pivot: ==KILL, HIGH confidence — final line C3 E7 L6 R3 B6 (the hunt's highest Buyer score)==:** the exact shape at the exact price is already live in-store with ~zero paid adoption ("Visa Bulletin & Case Tracker", Collweb LLC, $14.99/yr, 34 ratings; second paid comp "Priority Date Tracker", Autodecoder LLC, $24.99/yr, 6 ratings at 3.0★) while free apps and sites ship the projection layer itself (HUA SHAO's Green Card Tracker; GreenCardClock — 770+ users and 140k estimates in its first 4 months, free; am22tech scenarios) — the CleanTender precedent from the kill table, with the R2 gate's own premise ("no top app offers scenario projection") falsified outright. ==Provenance: R2's C/L/R seats were first self-played under the protocol's subagents-unavailable fallback (session limit; scored 3/5/3), then re-run with fresh independent agents after the reset — the independent seats returned 3/6/3 with the same diagnosis from all three dimensions, vindicating the fallback and upgrading confidence medium→high.== Standing reopen gauges: ==Collweb rating count >~500 within a quarter (or category charting)== — and any reopen must add the R2 council's second instrument: ==a pay-over-free smoke test (fake-door annual paywall on organic traffic) BEFORE any build — the ASO gate alone flashes false green over a niche that is discovered-and-failing, not undiscovered.==
+
+## The quarterly re-scan (what only you do — 30 min, rides the nearest Sunday read)
+Dates: ==Oct 15 2026; Jan 15 2027; Apr 15 2027; Jul 15 2027== (calendar them yourself, same as the 9-date list).
+1. Check the watchable facts in [[breakglass-research/NEAR-MISSES|NEAR-MISSES]] (USCIS self-service path; Setapp permissionless listing; the Collweb paid-adoption gauge).
+2. Scan for a live counterexample: a verifiable FACELESS indie at ≥$3k/mo NET through a pull channel, evidence ≤12 months → if found, re-run triage on that one shape (one evening, not a full hunt).
+3. Spot-check [[breakglass-research/RAILS-INTEL|RAILS-INTEL]] staleness (LS sunset date; Paddle VN line; Dodo alive).
+4. Reread the constraint levers in [[Contingencies]] ONLY if a sibling gate has parked something — constraints renegotiate on triggers, not on quarters.

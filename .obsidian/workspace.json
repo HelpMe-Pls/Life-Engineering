@@ -32,13 +32,13 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/Daily Standup.md",
+                    "file": "Notes/Duty SaaS.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": false
                   },
                   "icon": "lucide-file",
-                  "title": "Daily Standup"
+                  "title": "Duty SaaS"
                 }
               },
               {
@@ -47,12 +47,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/clock-research/README.md",
+                    "file": "Notes/breakglass-research/KILL-TABLE.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "README"
+                  "title": "KILL-TABLE"
                 }
               }
             ],
@@ -106,8 +106,7 @@
                       "title": "Antifragile SaaS"
                     }
                   }
-                ],
-                "currentTab": 2
+                ]
               },
               {
                 "id": "6daf623ea71b0a7d",
@@ -311,49 +310,48 @@
   },
   "active": "9b9ab17c16c89870",
   "lastOpenFiles": [
+    "Notes/breakglass-research/KILL-TABLE.md",
+    "Notes/breakglass-research/RAILS-INTEL.md",
+    "Notes/breakglass-research/README.md",
+    "Notes/clock-research/README.md",
+    "Notes/Duty SaaS.md",
+    "Notes/breakglass-research/NEAR-MISSES.md.tmp.13900.fa77d2d47ed9",
+    "Notes/breakglass-research/README.md.tmp.13900.ef36f3221903",
+    "Notes/Weekly Tasks.md",
+    "Notes/Contingencies.md.tmp.13900.9a238e29cb94",
+    "Notes/breakglass-research/NEAR-MISSES.md.tmp.13900.91deb349ba25",
+    "Notes/breakglass-research/NEAR-MISSES.md.tmp.13900.10632d8e0756",
+    "Notes/breakglass-research/README.md.tmp.13900.588f9a67d138",
+    "Notes/breakglass-research/README.md.tmp.13900.0704cb04410c",
+    "Notes/breakglass-research/README.md.tmp.13900.4a64e7ee8dde",
+    "Notes/prototype-antifragile-saas.NOTES.md",
+    "Notes/Contingencies.md",
+    "Notes/Biz.md",
+    "Notes/breakglass-research/CORRELATION-MAP.md",
+    "Notes/Contingencies.md.tmp.13900.c08e7c31ee94",
+    "Notes/breakglass-research/README.md.tmp.13900.0db474dd2d32",
+    "Notes/breakglass-research/NEAR-MISSES.md",
+    "Notes/Daily Standup.md",
+    "Notes/EP SaaS.md",
+    "AI/long-vol-consultant.md",
+    "AI/validate-biz-idea.md",
     "Notes/Venture Tasks.md",
     "Notes/Antifragile SaaS.md",
-    "Notes/EP SaaS.md",
-    "Notes/Weekly Tasks.md",
-    "Notes/clock-research/README.md",
-    "Notes/Daily Standup.md",
     "Notes/clock-research/COLD-MAP.md",
-    "Notes/Duty SaaS.md",
-    "Notes/clock-research/README.md.tmp.30852.c681deb66d4e",
     "Notes/clock-research/HITL-WALKTHROUGH.md",
-    "Notes/clock-research/HITL-WALKTHROUGH.md.tmp.30852.456357cd8b77",
     "Notes/clock-research/WARM20-CANDIDATES.md",
-    "Notes/clock-research/WARM20-CANDIDATES.md.tmp.30852.2b3514e4398b",
-    "Notes/clock-research/COLD-MAP.md.tmp.30852.10233bb9c856",
     "Notes/clock-research/HVAC-BRIEF.md",
-    "Notes/clock-research/HVAC-BRIEF.md.tmp.30852.458552308faf",
-    "Notes/clock-research",
     "Tips & Tools/English vocab.md",
     "Notes/Business Bank.md",
-    "AI/long-vol-consultant.md.tmp.30052.3768dca793f7",
-    "AI/long-vol-consultant.md.tmp.30052.541b6618dad9",
-    "AI/long-vol-consultant.md.tmp.30052.d1ee07be1e96",
-    "AI/long-vol-consultant.md",
-    "AI/long-vol-consultant.md.tmp.30052.b9c9752d63c7",
-    "AI/validate-biz-idea.md",
-    "Notes/prototype-antifragile-saas.NOTES.md",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",
     "Notes/Notes.md",
     "Notes/Edge8.md",
-    "Notes/Contingencies.md",
     "Notes/Pasted image 20260706104557.png",
     "Notes/Pasted image 20260706172618.png",
-    "Notes/2026.md",
-    "Tips & Tools/Entrepreneurship.md",
     "Notes/M4 Key-2.png",
     "Notes/M4 Key-1.png",
-    "Notes/Biz.md",
-    "Notes/EO.md",
-    "Notes/Misc.md",
-    "Notes/Hackathon.md",
-    "Notes/Scripts.md",
     "Pasted image 20260620195825.png",
     "Tips & Tools/code-review.png",
     "Tips & Tools/cron.png",

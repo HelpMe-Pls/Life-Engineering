@@ -1,5 +1,5 @@
 > [!important] A friendly reminder
-> If you're still getting paid each month + have access to AI & your business is still being built, you're still winning. EVERYTHING ELSE is noise.
+> As long as you're still getting paid each month + have access to AI & your business is still being built, you're still winning. EVERYTHING ELSE is noise.
 
 - /goal Read @docs/plans/next-steps.md to /implement its instructions and close-out the `Agent-ready queue`
 # Prompt

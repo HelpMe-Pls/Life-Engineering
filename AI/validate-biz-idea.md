@@ -1,6 +1,5 @@
 ---
 name: validate-biz-idea
-disable-model-invocation: true
 description: Convene a five-persona council to pressure-test a business idea and deliver one verdict — GO, RESHAPE, or KILL.
 argument-hint: "[the idea to validate]"
 ---

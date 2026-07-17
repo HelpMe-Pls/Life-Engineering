@@ -34,15 +34,16 @@
 - [x] Venture++
 	- [x] Run the AFKs
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 17/7
-- [ ] EO minimal work:
-	- [ ] `next-steps.md`++
-- [ ] Bragdoc
-- [ ] Venture++
-	- [ ] Nudge the EP Contract
-	- [ ] Propose domain: kysugenba.com, hocviengenba.com, kysumichi.com, hocvienkysu.com, kysumirai.com, genbajuku.com
-	- [ ] ACB for physical card + FX account
+- [x] EO minimal work:
+	- [x] `next-steps.md`++
+	- [x] Merge conflict synced records from Altai
+- [x] Bragdoc
+- [x] Venture++
+	- [x] Nudge the EP Contract
+	- [x] Propose domain: kysugenba.com, hocviengenba.com, kysumichi.com, hocvienkysu.com, kysumirai.com, genbajuku.com
+	- [x] Hail Mary SaaS
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 18/7
@@ -70,7 +71,7 @@
 - Pass out by 9:30PM
 - Rinse & repeat
 # Tactical
-_The Venture-4 mission prompt — the finished product of the "craft THE MOST OPTIMAL prompt" request that used to live here (crafted 2026-07-16 from a full portfolio read). Paste verbatim into a **fresh Claude Code session opened at the vault root**. Phases 0–4 run AFK; be at the keyboard for Phase 5 (checkpoint + grilling) and final-doc approval. Note: `validate-biz-idea` is NOT an installed skill — the prompt has the session execute `AI/validate-biz-idea.md` directly; `grilling` + `long-vol-consultant` ARE installed (Mac)._
+_The Venture-4 mission prompt — the finished product of the "craft THE MOST OPTIMAL prompt" request that used to live here (crafted 2026-07-16 from a full portfolio read). Paste verbatim into a **fresh Claude Code session opened at the vault root**. Phases 0–4 run AFK; be at the keyboard for Phase 5 (checkpoint + grilling) and final-doc approval. Note: `validate-biz-idea` is NOT an installed skill — the prompt has the session execute `AI/validate-biz-idea.md` directly; `grilling` + `long-vol-consultant` ARE installed._
 
 ````text
 ultrathink
