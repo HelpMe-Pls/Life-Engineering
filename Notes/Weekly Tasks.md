@@ -74,8 +74,6 @@
 _The Venture-4 mission prompt — the finished product of the "craft THE MOST OPTIMAL prompt" request that used to live here (crafted 2026-07-16 from a full portfolio read). Paste verbatim into a **fresh Claude Code session opened at the vault root**. Phases 0–4 run AFK; be at the keyboard for Phase 5 (checkpoint + grilling) and final-doc approval. Note: `validate-biz-idea` is NOT an installed skill — the prompt has the session execute `AI/validate-biz-idea.md` directly; `grilling` + `long-vol-consultant` ARE installed._
 
 ````text
-ultrathink
-
 # Mission: find + validate Venture 4 — my break-glass engine
 
 Work from this vault (paths below are relative to its root — `/Users/somebodhi/Documents/Personal/Life-Engineering` on the Mac, `C:\Users\leekh\Documents\Repos\Personal\Life-Engineering` on the Windows box). First command: `date` — use the real date everywhere. Every market claim carries a source URL + access date; PMF evidence older than ~12 months is stale unless structural (law, platform ToS).
