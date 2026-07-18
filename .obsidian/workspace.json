@@ -32,13 +32,13 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/Duty SaaS.md",
+                    "file": "Notes/Daily Standup.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": false
                   },
                   "icon": "lucide-file",
-                  "title": "Duty SaaS"
+                  "title": "Daily Standup"
                 }
               },
               {
@@ -47,12 +47,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/breakglass-research/KILL-TABLE.md",
+                    "file": "Notes/clock-research/README.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "KILL-TABLE"
+                  "title": "README"
                 }
               }
             ],
@@ -66,7 +66,7 @@
               {
                 "id": "c3184acf40a6477e",
                 "type": "tabs",
-                "dimension": 45.93993325917686,
+                "dimension": 55.06117908787542,
                 "children": [
                   {
                     "id": "f5c2905f7a85432e",
@@ -74,12 +74,12 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/EP SaaS.md",
+                        "file": "Notes/breakglass-research/README.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "EP SaaS"
+                      "title": "README"
                     }
                   },
                   {
@@ -98,21 +98,20 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/Antifragile SaaS.md",
+                        "file": "AI/validate-biz-idea.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "Antifragile SaaS"
+                      "title": "validate-biz-idea"
                     }
                   }
-                ],
-                "currentTab": 2
+                ]
               },
               {
                 "id": "6daf623ea71b0a7d",
                 "type": "tabs",
-                "dimension": 54.06006674082313,
+                "dimension": 44.938820912124584,
                 "children": [
                   {
                     "id": "3a79f449488355fd",
@@ -311,45 +310,45 @@
   },
   "active": "9b9ab17c16c89870",
   "lastOpenFiles": [
-    "Notes/breakglass-research/next-steps.md.tmp.14496.f6469d69b7e8",
-    "Notes/breakglass-research/next-steps.md",
-    "Notes/breakglass-research/next-steps.md.tmp.14496.05b023c13083",
-    "Notes/breakglass-research/FACE-MODE-DOSSIER.md.tmp.14496.86cad6833846",
-    "Notes/breakglass-research/FACE-MODE-DOSSIER.md.tmp.14496.dd41ea49ee93",
-    "Notes/breakglass-research/FACE-MODE-DOSSIER.md.tmp.14496.0ed5f7e5c813",
-    "Notes/breakglass-research/FACE-MODE-DOSSIER.md.tmp.14496.7b8717e89fbb",
-    "Notes/breakglass-research/FACE-MODE-DOSSIER.md.tmp.14496.f7bdd5607259",
-    "Notes/breakglass-research/FACE-MODE-DOSSIER.md.tmp.14496.ee57cc0336bc",
-    "Notes/breakglass-research/FACE-MODE-DOSSIER.md.tmp.14496.cdc060c57a0a",
-    "Notes/breakglass-research/FACE-MODE-DOSSIER.md.tmp.14496.a4b34549d637",
-    "Notes/breakglass-research/FACE-MODE-DOSSIER.md.tmp.14496.d19de4f4eff7",
-    "Notes/breakglass-research/FACE-MODE-DOSSIER.md",
-    "Notes/breakglass-research/KILL-TABLE.md",
-    "Notes/Venture Tasks.md",
-    "Notes/2026.md",
-    "Notes/Antifragile SaaS.md",
-    "Notes/EP SaaS.md",
     "Notes/breakglass-research/README.md",
-    "AI/validate-biz-idea.md",
-    "Notes/Weekly Tasks.md",
-    "Notes/breakglass-research/RAILS-INTEL.md",
-    "Notes/clock-research/README.md",
     "Notes/Duty SaaS.md",
-    "Notes/prototype-antifragile-saas.NOTES.md",
-    "Notes/Contingencies.md",
-    "Notes/Biz.md",
-    "Notes/breakglass-research/CORRELATION-MAP.md",
+    "Notes/Weekly Tasks.md",
+    "Notes/EP SaaS.md",
+    "AI/validate-biz-idea.md",
+    "Notes/Antifragile SaaS.md",
+    "Notes/breakglass-research/next-steps.md",
+    "Notes/breakglass-research/RAILS-INTEL.md",
     "Notes/breakglass-research/NEAR-MISSES.md",
+    "Notes/breakglass-research/KILL-TABLE.md",
+    "Notes/breakglass-research/FACE-MODE-DOSSIER.md",
+    "Notes/breakglass-research/CORRELATION-MAP.md",
+    "Notes/breakglass-research",
+    "Notes/Venture Tasks.md",
+    "Notes/clock-research/README.md",
     "Notes/Daily Standup.md",
-    "AI/long-vol-consultant.md",
     "Notes/clock-research/COLD-MAP.md",
+    "Notes/clock-research/README.md.tmp.30852.c681deb66d4e",
     "Notes/clock-research/HITL-WALKTHROUGH.md",
+    "Notes/clock-research/HITL-WALKTHROUGH.md.tmp.30852.456357cd8b77",
     "Notes/clock-research/WARM20-CANDIDATES.md",
+    "Notes/clock-research/WARM20-CANDIDATES.md.tmp.30852.2b3514e4398b",
+    "Notes/clock-research/COLD-MAP.md.tmp.30852.10233bb9c856",
     "Notes/clock-research/HVAC-BRIEF.md",
+    "Notes/clock-research/HVAC-BRIEF.md.tmp.30852.458552308faf",
+    "Notes/clock-research",
     "Tips & Tools/English vocab.md",
+    "Notes/Business Bank.md",
+    "AI/long-vol-consultant.md.tmp.30052.3768dca793f7",
+    "AI/long-vol-consultant.md.tmp.30052.541b6618dad9",
+    "AI/long-vol-consultant.md.tmp.30052.d1ee07be1e96",
+    "AI/long-vol-consultant.md",
+    "Notes/prototype-antifragile-saas.NOTES.md",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",
+    "Notes/Notes.md",
+    "Notes/Edge8.md",
+    "Notes/Contingencies.md",
     "Notes/Pasted image 20260706104557.png",
     "Notes/Pasted image 20260706172618.png",
     "Notes/M4 Key-2.png",
