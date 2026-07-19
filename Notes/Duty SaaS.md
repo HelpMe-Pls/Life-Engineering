@@ -19,6 +19,13 @@
 
 ---
 ## 0. NOW — the state line (update every Sunday, 30 min; metrics read weekly ONLY)
+
+> [!important] 2026-07-18 — PORTFOLIO REBALANCE: ratified ANTIFRAGILE PRIMARY (focus — but stay cheap)
+> The 2026-07-18 antifragile venture-hunt council ratified THIS as the antifragile engine to build independence around; the robust sibling [[Antifragile SaaS]] holds/defers to its 2027 lane.
+> ==“Primary” = the thesis engine + the moat you invest in (the digest → owned audience/corpus, because faceless SEO is decaying) — NOT more hours.== This venture is antifragile *because* it stays a cheap, cron-compounding option; flooding it with hours makes it fragile (§0.1 #4, §10). **Hold the ≤2h/wk ceiling.**
+> Immediate (this weekend, Jul 18-19): run the Weekend-2 checklist below — landing + Paddle + S122 news page — live before the Jul-24 peak-search week. ==That weekend IS the whole "double down."==
+> Freed hours from the sibling defer go to [[EP SaaS]] (cash), not here — the archive compounds on cron regardless.
+
 **Phase: S0 — SEED. Two short weekend blocks, ≤4h each (split on purpose — no spike weeks). Gate G1: 10 paying founding subscribers by Sun Dec 13 2026.**
 
 **Weekend 1 checklist (Sun Jul 12, ~3–4h) — start the clock:**

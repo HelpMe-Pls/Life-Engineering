@@ -1,59 +1,56 @@
 # The TODOs
-### 13/7
-- [x] EO: 
-	- [x] Promote prod
-	- [x] Fix `Chapter Staff` brand issue
-	- [x] Israel meeting
-- [x] Runbook++ 
-	- [x] Release the `instructor` handover
-	- [x] Register the ACB checking account
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 14/7
-- [x] EO weekly report & sprint goals update
-	- [x] GitHub Actions quota
-	- [x] Bulk "Add to subwave" action on the tracker board
-	- [x] Disable the `Exception` option when both trainings are `Completed`
-- [x] Venture++: Keep grilling the Ledger
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 15/7
-- [x] EO sprint review:
-	- [x] Record the transcript 
-	- [x] Contingencies
-- [x] Venture++
-	- [x] Link ACB to PayOS
-	- [x] Get suggested domain
-	- [x] Optimistic UI for the tracker board
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 16/7
-- [x] EO minimal work:
-	- [x] Inline-editable `Owner` / `Blocker` columns in the tracker board
-- [ ] Remind SHUI
-- [x] Venture++
-	- [x] Run the AFKs
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 17/7
-- [x] EO minimal work:
-	- [x] `next-steps.md`++
-	- [x] Merge conflict synced records from Altai
-- [x] Bragdoc
-- [x] Venture++
-	- [x] Nudge the EP Contract
-	- [x] Propose domain: kysugenba.com, hocviengenba.com, kysumichi.com, hocvienkysu.com, kysumirai.com, genbajuku.com
-	- [x] Hail Mary SaaS
+### 20/7
+- [ ] EO: 
+	- [ ] Contingencies
+- [ ] Runbook++ 
+	- [ ] Read your OWN /digest/sample + /news/section-122-sunset (~10 min) — your outreach ammo AND your digest #1 review (with Claude); cut any number that doesn't check out
+	- [ ] Join ONE seller community (Discord/FB) from the Free watering holes list + read its promo rules FIRST — this step is RECON only, the post itself is step 3. (If the room bans self-promo/links, it's the wrong room for rep #1 — pick another, or post there as a pure learner)
+	- [ ] Outreach rep #1 — in that community, post a worked landed-cost example in your own voice (numbers from step 1), product as context; log where + any reply
+	- [ ] (optional, EP-side) Buy kysugenba.com — only when you start flipping EP switches; not needed for the Jul-24 push
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 18/7
+### 21/7
+- [ ] EO weekly report & sprint goals update
+	- [ ] HR SHUI remind
+- [ ] Venture++
+	- [ ] EP Backlog: Flip EP switches (start Clerk→prod / PayOS→ACB); overflow, optional this week
+	- [ ] Outreach rep #2 — a DIFFERENT community, fresh worked example; log it 
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 22/7
+- [ ] EO sprint review:
+	- [ ] Record the transcript 
+	- [ ] Branch protection
+	- [ ] Contingencies
+- [ ] Venture++
+	- [ ] Send digest #1 (BCC the list — even if it's just you; subject "Duty Ledger Digest #1 — the surcharge sunset week")
+	- [ ] Outreach rep #3 — a third community; log it
+	- [ ] Open the USD account & get your debit card (ACB, at lunch)
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 23/7
+- [ ] EO minimal work:
+	- [ ] Contingencies
+- [ ] Venture++
+	- [ ] Draft + queue your 2 Jul-24 posts ("the surcharge dies tomorrow — what your SKU paid vs pays now")
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 24/7
+- [ ] EO minimal work:
+	- [ ] Contingencies
+- [ ] Bragdoc
+- [ ] Venture++
+	- [ ] THE SUNSET — surcharge dies today: post the Jul-24 angle in 2-3 communities + link the event page. Screenshot your first signup.
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 25/7
 - [ ] Perfect dive start + 500m with paddles
 - [ ] Groceries
 - [ ] Venture++
-	- [ ]  Outreach for the Clock & Ledger
+	- [ ]  Outreach for the Ledger (Clock HELD this week)
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 19/7
+### 26/7
 - [ ] Splurge (if you're done with EP HITL)
 - [ ] Weekly planning
 - [ ] Venture++
@@ -71,10 +68,8 @@
 - Pass out by 9:30PM
 - Rinse & repeat
 # Tactical
-/goal read and analyze the text-based files under @Notes/ and @Books/Antifragile.md + @Books/Million Dollar Weekend.md + @"Tips & Tools/Entrepreneurship.md" to perform a /deep-research on the latest PMF data available on the internet and open a /grilling session to suggest me AT LEAST 5 TRULY antifragile app/product/SaaS/business model to turn me into Fat Tony. For your context, I'm a software engineer based in HCMC, transitioning into entrepreneurship so that I won't have to "rely on a paycheck" for the next 2 years. My "freedom number" is $3k USD/month, so I expect your suggestions to be REALISTIC and PROFITABLE enough to make that happen. Invoke the /validate-biz-idea skill for each suggestion that you come up with to narrow down the final venture that will deserve my time and attention with ~12hrs/week dedicated to it. Ideally, this "final" venture should earn the "unanimous GO, FIXABLE: NONE from all five personas", and if that's not possible, pick the one with the highest possible scores from the Contrarian and the Buyer personas.
-I need sth viable. But if nothing truly clears the bar (just like the one in the `breakglass-research`), say so and deliver the graveyard with kill reasons — a true "no viable Venture 4 this round" beats a pretty lie.
-The lock decision is mine. You recommend; I ratify.
-
+- Join 3 seller communities from the Free watering holes list; skim their promo rules — no posting yet
+- Read the Ledger docs and ask questions
 # Strategic goals
 - Launch EP BEFORE the contract ends.
 - Always have a plan. When in doubts, stack reps. Exploit AI consultancy for separating signals from noise.
@@ -121,7 +116,7 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 
 | Sunday     | hrs | Gov? | EP l/c/Σd/Σrev | Clock a/r/Σc/Σd | Ledger Σs/Σf/v | Signal |
 | ---------- | --- | ---- | -------------- | --------------- | -------------- | ------ |
-| 2026-07-12 | 2   | NO   | 0/0/0/0        | 0/0/0/0         | 0/0/0          | -      |
+| 2026-07-19 | 8   | NO   | 0/0/0/0        | -/-/-/-         | 0/0/0          | -      |
 
 *(Row 1 seeded on creation: every venture is pre-launch, hence the dashes. Fill `hrs` and `Gov?` today.)*
 
@@ -139,18 +134,17 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - [x] 5m — Put the 9 dates (bottom of this section) into your calendar.
 
 ## Week Mon Jul 13 → Sun Jul 19 (~9h)
-- [ ] 🥇 Weekday lunch: ACB branch — open the VND account (app check-in, minutes); ask about USD too.
-- [ ] 🥇 Weeknight 1 (~2h): connect PayOS to the new account; confirm its test ping.
+- [x] 🥇 Weekday lunch: ACB branch — open the VND account (app check-in, minutes); ask about USD too.
+- [x] 🥇 Weeknight 1 (~2h): connect PayOS to the new account; confirm its test ping.
 - [ ] 🥇 Weeknight 2 (~2h): buy/point the real EP domain; start moving login (Clerk) to production.
 - [ ] 🥇 The sit-down happens: agreement signed. (HIS week: the 3 mystery-shopper calls + his 50-name list — you only nudge.)
 - [ ] 🥉 Sat Jul 18 or Sun Jul 19 (~4h) — seed block 2 ([[Duty SaaS]] §0, "Weekend 2"): landing page (your name + what-you-get-and-when + refund promise + one full free sample issue) → email signup with the 2 paperwork questions → $19/mo founding checkout submitted to Paddle on a NEW separate account, described as software pre-order with beta benefits → publish the news page: "the 10% import surcharge dies Fri Jul 24; replacement duties may land the same week."
 - [ ] 🥉 Sun 30m — send digest #1 (even to zero people — it becomes the public sample).
 
-## Week Jul 20 → 26 (~8h)
-- [ ] 🥇 Two weeknights (~4h): EP landing rewritten in Vietnamese with the real offer; waitlist + free-download page live.
-- [ ] 🥈 One evening (~1.5h): fill the one-page "which trade" brief (HVAC first — pass/fail list in [[Antifragile SaaS]] §1.1); confirm the Texas license list (TDLR) actually downloads.
-- [ ] 🥉 Tue/Wed 45m: one genuinely helpful post, as yourself, in one seller community's weekly promo thread, linking the Jul-24 page.
-- [ ] 🥉 Sun 30–40m: digest #2. (Fri Jul 24 the surcharge dies — you do nothing; the collector records it.)
+## Week Jul 20 → 26 (~8h) — rebalanced 2026-07-19 (Sunday read): Ledger HITL into the Jul-24 window; Clock HELD; EP switches + instructor close
+- [ ] 🥉 **Ledger — PRIORITY Jul 20→24 (serve the Jul-24 catalyst; the storefront already shipped to prod Jul 16):** (1) submit the SEPARATE Paddle account for review — the review clock is *account/website verification*, NOT the "build your product" wizard; USD payout is parallel, not a blocker ([[Antifragile SaaS]] §1.3a); (2) buy `dutyarchive.com` (~$10/yr at Cloudflare Registrar — checked 2026-07-19: `dutyledger.com` is already taken, `dutyarchive.com` is free; .us stays rejected — needs a US nexus you don't have + forces public WHOIS); (3) review + **send digest #1 by Wed Jul 23** (`duty-ledger/drafts/digest-001.md`); (4) drop the first 1–2 person-voice landed-cost posts pointing to the live `/news/section-122-sunset`. ==Read your own `/digest/sample` + event page FIRST — it's both the digest-#1 review AND your "what am I selling" prep.==
+- [ ] 🥇 **EP — close the instructor + flip ALL Khoi-side switches:** ONE live 30-min sit-down *attempt* this week (async isn't landing); tripwire ~Jul 26 = the >2-week firewall signal fires → reassess the partnership then, not on a weeknight. In parallel (no instructor needed): buy `kysugenba.com`, then flip 0.2/0.3 — PayOS webhook→ACB, Clerk prod, VI landing (0.4), waitlist (0.5).
+- [ ] 🥈 **Clock — HELD** (desk-only, per [[Antifragile SaaS]] §0 PORTFOLIO REBALANCE 2026-07-18). Zero hours this week; they route to EP + Ledger. Nov-30 date stays fixed → reads as a logged capacity-park.
 
 ## Week Jul 27 → Aug 2 (~8h)
 - [ ] 🥇 Two weeknights + Sat block (~5–6h): video hosting back on → the 3 automatic emails (receipt, enrollment, waitlist welcome) → queue the big video upload overnight → THE TEST: buy a 10.000₫ course yourself with a real bank account — done only when the video plays and the receipt arrives. (May slip into next week; the instructor's outreach does NOT wait for it.)
@@ -199,10 +193,12 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - The consultant's standing brief: keep me LONG-VOL (slack intact, governor enforced, spike weeks refused, pull served) and Fat-Tony-honest (reps and money over theory and polish). When in doubt the question is never "is the plan elegant?" — it is =="did money or evidence move this week?"==
 
 ### Notes to the consultant (dated, raw — write below)
-#### July 18th, 2026
-- 🥇 EP: Done with the bank accounts, the instructor still sitting on the partnership letter.
-- 🥈 Clock: I don't know where/how to kick off this thing
-- 🥉 Ledger: digest #3 shipped to 6 signups. 1 reply asking "do you cover Section 301 too?" — logged, no action (one wallet's question, not a pattern).
+#### July 19th, 2026
+- 🥇 EP: Done with the checking bank account (the USD account is still pending), the instructor still sitting on the partnership letter (no response from him, no domain locked/purchased). This might be a Black Swan if he decides to give it up.
+- 🥈 Clock: I don't know where/how to kick off this thing. Putting it on hold *seems* like a good idea (refer to the `PORTFOLIO REBALANCE` section under its runbook for more details)
+- 🥉 Ledger: the domain still hasn't been bought yet. Zero email signed up (I haven't done the outreach). Paddle account registered, but not wired to my USD back account, because I haven't opened it. I ran the `AFK agent prompt — "Ship seed block 2"` from the `Venture Tasks.md` file. Tell me what to do next.
+- 🥉 Ledger (plan Jul 20→24): I'm gonna prioritize and start the HITL tasks for the Ledger from Jul 20→24, while still NOT fully understand what I'm selling (i.e. if I do the outreach and someone follow-ups with questions, I'm fucked. But I'll do the outreach anyway to not fall into the green lumber fallacy.)
+	- *Consultant (Jul 19): the cure for "don't understand what I'm selling" is ~30 min reading your OWN `/digest/sample` + `/news/section-122-sunset` before posting — that read IS the digest-#1 number-review (HITL step 4), and it arms you for follow-ups. Every figure is primary-sourced; "let me check the CSMS bulletin and get back to you" is a correct, on-brand answer. Load the gun, then fire — that's aiming, not green-lumber.*
 ---
 # Backlog
 - [Learn about animations](https://animations.dev/learn/animation-theory/intro)

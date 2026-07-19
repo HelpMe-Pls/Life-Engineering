@@ -32,13 +32,13 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/Daily Standup.md",
+                    "file": "Notes/Duty SaaS.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": false
                   },
                   "icon": "lucide-file",
-                  "title": "Daily Standup"
+                  "title": "Duty SaaS"
                 }
               },
               {
@@ -47,16 +47,16 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/clock-research/README.md",
+                    "file": "Notes/breakglass-research/KILL-TABLE.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "README"
+                  "title": "KILL-TABLE"
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -66,7 +66,7 @@
               {
                 "id": "c3184acf40a6477e",
                 "type": "tabs",
-                "dimension": 55.06117908787542,
+                "dimension": 45.93993325917686,
                 "children": [
                   {
                     "id": "f5c2905f7a85432e",
@@ -74,12 +74,12 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/breakglass-research/README.md",
+                        "file": "Notes/EP SaaS.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "README"
+                      "title": "EP SaaS"
                     }
                   },
                   {
@@ -98,20 +98,21 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "AI/validate-biz-idea.md",
+                        "file": "Notes/Antifragile SaaS.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "validate-biz-idea"
+                      "title": "Antifragile SaaS"
                     }
                   }
-                ]
+                ],
+                "currentTab": 2
               },
               {
                 "id": "6daf623ea71b0a7d",
                 "type": "tabs",
-                "dimension": 44.938820912124584,
+                "dimension": 54.06006674082313,
                 "children": [
                   {
                     "id": "3a79f449488355fd",
@@ -310,45 +311,45 @@
   },
   "active": "9b9ab17c16c89870",
   "lastOpenFiles": [
-    "Notes/breakglass-research/README.md",
-    "Notes/Duty SaaS.md",
-    "Notes/Weekly Tasks.md",
-    "Notes/EP SaaS.md",
-    "AI/validate-biz-idea.md",
-    "Notes/Antifragile SaaS.md",
-    "Notes/breakglass-research/next-steps.md",
-    "Notes/breakglass-research/RAILS-INTEL.md",
-    "Notes/breakglass-research/NEAR-MISSES.md",
-    "Notes/breakglass-research/KILL-TABLE.md",
-    "Notes/breakglass-research/FACE-MODE-DOSSIER.md",
-    "Notes/breakglass-research/CORRELATION-MAP.md",
-    "Notes/breakglass-research",
+    "Notes/Weekly Tasks.md.tmp.14968.3fcafa722147",
+    "Notes/Weekly Tasks.md.tmp.14968.17d53d174b7c",
+    "Notes/Weekly Tasks.md.tmp.14968.94073b4fa499",
+    "Notes/Weekly Tasks.md.tmp.14968.1674d5d1286e",
+    "Notes/Weekly Tasks.md.tmp.14968.146b71aa8390",
+    "Notes/Weekly Tasks.md.tmp.14968.d4e3e6d2c631",
+    "Notes/Weekly Tasks.md.tmp.14968.86176c1b3abd",
+    "Notes/Weekly Tasks.md.tmp.14968.f010f0f1090a",
+    "Notes/Weekly Tasks.md.tmp.14968.90b1f992ccee",
+    "Notes/Weekly Tasks.md.tmp.14968.6c53392b0b12",
+    "Notes/Weekly Tasks.md.tmp.14968.317c460a9fe2",
     "Notes/Venture Tasks.md",
-    "Notes/clock-research/README.md",
-    "Notes/Daily Standup.md",
-    "Notes/clock-research/COLD-MAP.md",
-    "Notes/clock-research/README.md.tmp.30852.c681deb66d4e",
-    "Notes/clock-research/HITL-WALKTHROUGH.md",
-    "Notes/clock-research/HITL-WALKTHROUGH.md.tmp.30852.456357cd8b77",
-    "Notes/clock-research/WARM20-CANDIDATES.md",
-    "Notes/clock-research/WARM20-CANDIDATES.md.tmp.30852.2b3514e4398b",
-    "Notes/clock-research/COLD-MAP.md.tmp.30852.10233bb9c856",
-    "Notes/clock-research/HVAC-BRIEF.md",
-    "Notes/clock-research/HVAC-BRIEF.md.tmp.30852.458552308faf",
-    "Notes/clock-research",
+    "Notes/Weekly Tasks.md",
+    "Notes/Antifragile SaaS.md",
+    "Notes/Duty SaaS.md",
     "Tips & Tools/English vocab.md",
-    "Notes/Business Bank.md",
-    "AI/long-vol-consultant.md.tmp.30052.3768dca793f7",
-    "AI/long-vol-consultant.md.tmp.30052.541b6618dad9",
-    "AI/long-vol-consultant.md.tmp.30052.d1ee07be1e96",
-    "AI/long-vol-consultant.md",
+    "Notes/breakglass-research/next-steps.md",
+    "Notes/breakglass-research/FACE-MODE-DOSSIER.md",
+    "Notes/breakglass-research/KILL-TABLE.md",
+    "Notes/2026.md",
+    "Notes/EP SaaS.md",
+    "Notes/breakglass-research/README.md",
+    "AI/validate-biz-idea.md",
+    "Notes/breakglass-research/RAILS-INTEL.md",
+    "Notes/clock-research/README.md",
     "Notes/prototype-antifragile-saas.NOTES.md",
+    "Notes/Contingencies.md",
+    "Notes/Biz.md",
+    "Notes/breakglass-research/CORRELATION-MAP.md",
+    "Notes/breakglass-research/NEAR-MISSES.md",
+    "Notes/Daily Standup.md",
+    "AI/long-vol-consultant.md",
+    "Notes/clock-research/COLD-MAP.md",
+    "Notes/clock-research/HITL-WALKTHROUGH.md",
+    "Notes/clock-research/WARM20-CANDIDATES.md",
+    "Notes/clock-research/HVAC-BRIEF.md",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",
-    "Notes/Notes.md",
-    "Notes/Edge8.md",
-    "Notes/Contingencies.md",
     "Notes/Pasted image 20260706104557.png",
     "Notes/Pasted image 20260706172618.png",
     "Notes/M4 Key-2.png",

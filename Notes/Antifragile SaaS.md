@@ -14,6 +14,14 @@
 
 ---
 ## 0. NOW — the state line (update every Sunday, 30 min; metrics read weekly ONLY)
+
+> [!warning] 2026-07-18 — PORTFOLIO REBALANCE: this venture HOLDS (deferred toward its 2027 lane)
+> Founder-directed, dated, deliberate — ==NOT a silent stall.== The 2026-07-18 antifragile venture-hunt council ratified doubling down on the *truly*-antifragile engine [[Duty SaaS]]; this robust leg steps back. (Naming irony noted: "Antifragile SaaS" is the *robust* leg — demand is legal-calendar eternal, indifferent to disorder; [[Duty SaaS]] is the one that gains from chaos.)
+> **Holds at desk-only / minimal cadence.** The August ramp (demo weekend 1.3, Paddle 1.3a, warm call 1.4) is DEFERRED. The Sept-1 cold lane + the §4.6 capacity-park question are teed up for the late-August Sunday scoreboard — at risk under this focus, not pre-killed.
+> Freed hours route to unblocking [[EP SaaS]] (rank-1 cash engine, bottlenecked on the instructor partnership) and to [[Duty SaaS]]'s Jul-24 window.
+> ==Safe because== §11 already calls this "the 2027 leg of the barbell — never the 2026 hero"; it is zero-code/desk-only until validated. This consciously OVERRIDES the §1.5/§8 "cold-lane-protected-regardless" law as a portfolio choice.
+> ==Honest cost== likely spends the §4.6 capacity-park card (takeable once ever) and moves real validation toward the **Mar-31-2027 backstop**. The Nov-30 gate DATE stays fixed (immune to the pause rule); its reading becomes a logged capacity-park, never a market verdict. Revisit every Sunday.
+
 - **Phase: 1 — VALIDATE. Zero product code. Gate: Nov 30 2026 (fixed). Backstop: Mar 31 2027 (absolute).**
 - **July, rebalanced 2026-07-12 (three runbooks share ≤12h/wk — this one goes desk-only for July):** lock the trade (1.1, one evening) → warm-20 list (1.2W, one evening). ==Demo weekend (1.3) + Paddle submission (1.3a) + first asks move to the first half of August (one Saturday, Aug 8 or 15)==; warm falsification call (1.4) mid-Aug; asks reach ~25–40 by early Sep. ==The cold lane (Sep 1) and the Nov-30 gate are UNTOUCHED.== ACB bank errand still runs at a weekday lunch ([[Business Bank]] §7), never in series.
 - Scoreboard: asks sent (warm/cold), replies, calls, deposits, rosters served. Two all-zero weeks = reread §12, then do reps ==(reps = send the next 8–10 personalized asks per §1.5 — volume before analysis; tweaking the Loom doesn't count)==.
