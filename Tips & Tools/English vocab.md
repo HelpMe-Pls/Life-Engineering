@@ -374,7 +374,7 @@ foible (n): weakness
 
 ==tentative== (adj): uncertain, hesitant
 
-reticence (n): sự dè dặt (reluctance to speak)
+reticence (n): sự dè dặt (reluctance to speak), effacement, modest, humbleness
 
 bide (v): tarry/to wait awhile, keep up
 
@@ -520,7 +520,7 @@ interdict (v-n): interception, disruption, blocking, seizure, injunction, prohib
 
 macabre (adj): dreadful, gruesome, horrid
 
-putrefaction (n): decomposition, decay, rot
+putrefaction (n): decomposition, decay, rot, molder
 
 precipitous (adj): having a very steep ascent → precipitate (v) 
 
@@ -947,6 +947,8 @@ delinquent (n-adj): degenerate, incorrigible, delayed, overdue, belated
 promptly (adv): without delay, immediately
 
 expedite (v): speed up, execute promptly
+
+antedate (v): precede, predate, come before 
 
 ==respite== (v -n): delay, pause (before something unpleasant happens)
 

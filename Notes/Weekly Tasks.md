@@ -1,59 +1,60 @@
 # The TODOs
 ### 20/7
-- [ ] EO: 
-	- [ ] Contingencies
-- [ ] Runbook++ 
-	- [ ] Read your OWN /digest/sample + /news/section-122-sunset (~10 min) — your outreach ammo AND your digest #1 review (with Claude); cut any number that doesn't check out
-	- [ ] Join ONE seller community (Discord/FB) from the Free watering holes list + read its promo rules FIRST — this step is RECON only, the post itself is step 3. (If the room bans self-promo/links, it's the wrong room for rep #1 — pick another, or post there as a pure learner)
-	- [ ] Outreach rep #1 — in that community, post a worked landed-cost example in your own voice (numbers from step 1), product as context; log where + any reply
-	- [ ] (optional, EP-side) Buy kysugenba.com — only when you start flipping EP switches; not needed for the Jul-24 push
+- [x] EO:
+	- [x] Contingencies
+- [x] Runbook++
+	- [x] Read your OWN /digest/sample + /news/section-122-sunset (~10 min) — your outreach ammo AND your digest #1 review (with Claude); cut any number that doesn't check out
+	- [x] Join ONE seller community (Discord/FB) from the Free watering holes list + read its promo rules FIRST — this step is RECON only, the post itself is step 3. (If the room bans self-promo/links, it's the wrong room for rep #1 — pick another, or post there as a pure learner)
+	- [x] Outreach rep #1 — in that community, post a worked landed-cost example in your own voice (numbers from step 1), product as context; log where + any reply
+	- [x] (optional, EP-side) Buy kysugenba.com — only when you start flipping EP switches; not needed for the Jul-24 push
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 21/7
-- [ ] EO weekly report & sprint goals update
-	- [ ] HR SHUI remind
-- [ ] Venture++
-	- [ ] EP Backlog: Flip EP switches (start Clerk→prod / PayOS→ACB); overflow, optional this week
-	- [ ] Outreach rep #2 — a DIFFERENT community, fresh worked example; log it 
-- [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] EO weekly report & sprint goals update
+	- [x] HR SHUI remind
+- [x] Venture++
+	- [x] Outreach rep #2 — a DIFFERENT community, fresh worked example; log it
+- [x] Tao Te Ching++
+- [x] Live up to your standards
 ### 22/7
-- [ ] EO sprint review:
-	- [ ] Record the transcript 
-	- [ ] Branch protection
-	- [ ] Contingencies
-- [ ] Venture++
-	- [ ] Send digest #1 (BCC the list — even if it's just you; subject "Duty Ledger Digest #1 — the surcharge sunset week")
-	- [ ] Outreach rep #3 — a third community; log it
-	- [ ] Open the USD account & get your debit card (ACB, at lunch)
+- [x] EO sprint review:
+	- [x] Record the transcript
+	- [x] Email Terence
+	- [x] Contingencies
+- [x] Venture++
+	- [x] Send digest #1 (BCC the list — even if it's just you; subject "Duty Ledger Digest #1 — the surcharge sunset week")
+	- [x] Outreach rep #3 — a third community, log it
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 23/7
-- [ ] EO minimal work:
-	- [ ] Contingencies
-- [ ] Venture++
-	- [ ] Draft + queue your 2 Jul-24 posts ("the surcharge dies tomorrow — what your SKU paid vs pays now")
+- [x] EO minimal work:
+	- [x] Pull Altai `eo_originaljoindate` into HubSpot
+- [x] Venture++
+	- [x] Draft + queue your 2 Jul-24 posts ("the surcharge dies tomorrow — what your SKU paid vs pays now")
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 24/7
 - [ ] EO minimal work:
 	- [ ] Contingencies
+	- [ ] Craft the raise script & propose 1-1
 - [ ] Bragdoc
 - [ ] Venture++
-	- [ ] THE SUNSET — surcharge dies today: post the Jul-24 angle in 2-3 communities + link the event page. Screenshot your first signup.
+	- [ ] THE SUNSET — surcharge dies today: post the Jul-24 angle in 2-3 communities + link the event page. Screenshot your first signup (if any).
+	- [ ] EP Backlog: /goal I just bought the domain for production: [Image #1]. Now pls walk me through those pending HITL tasks to get this thing to market.
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 25/7
 - [ ] Perfect dive start + 500m with paddles
 - [ ] Groceries
 - [ ] Venture++
-	- [ ]  Outreach for the Ledger (Clock HELD this week)
+	- [ ] Summarize the Ledger activities
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 26/7
 - [ ] Splurge (if you're done with EP HITL)
 - [ ] Weekly planning
 - [ ] Venture++
+	- [ ] Sunday scoreboard read + long-vol read with Claude (log the week's numbers)
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 # What a good day looks like
@@ -69,7 +70,8 @@
 - Rinse & repeat
 # Tactical
 - Join 3 seller communities from the Free watering holes list; skim their promo rules — no posting yet
-- Read the Ledger docs and ask questions
+- The Duty Ledger Digest is a monthly ***tariff briefing*** that tells a US brand which import-tax rules changed last month, links the government proof for each one, and hands them the exact question to ask their customs broker.  The buyer is a brand that ships physical goods in from overseas and owes US tax at the border.
+- It gives the importer a cheap way to catch when their own broker (or CBP) is wrong. If the digest says the surcharge should drop off July 24 and the broker's August invoice still charges it, the importer now has a dated, sourced reason to challenge the bill. That's the value: a second set of eyes that catches overpayment.
 # Strategic goals
 - Launch EP BEFORE the contract ends.
 - Always have a plan. When in doubts, stack reps. Exploit AI consultancy for separating signals from noise.
@@ -141,7 +143,7 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - [ ] 🥉 Sat Jul 18 or Sun Jul 19 (~4h) — seed block 2 ([[Duty SaaS]] §0, "Weekend 2"): landing page (your name + what-you-get-and-when + refund promise + one full free sample issue) → email signup with the 2 paperwork questions → $19/mo founding checkout submitted to Paddle on a NEW separate account, described as software pre-order with beta benefits → publish the news page: "the 10% import surcharge dies Fri Jul 24; replacement duties may land the same week."
 - [ ] 🥉 Sun 30m — send digest #1 (even to zero people — it becomes the public sample).
 
-## Week Jul 20 → 26 (~8h) — rebalanced 2026-07-19 (Sunday read): Ledger HITL into the Jul-24 window; Clock HELD; EP switches + instructor close
+## Week Jul 20 → 26 (~8h)
 - [ ] 🥉 **Ledger — PRIORITY Jul 20→24 (serve the Jul-24 catalyst; the storefront already shipped to prod Jul 16):** (1) submit the SEPARATE Paddle account for review — the review clock is *account/website verification*, NOT the "build your product" wizard; USD payout is parallel, not a blocker ([[Antifragile SaaS]] §1.3a); (2) buy `dutyarchive.com` (~$10/yr at Cloudflare Registrar — checked 2026-07-19: `dutyledger.com` is already taken, `dutyarchive.com` is free; .us stays rejected — needs a US nexus you don't have + forces public WHOIS); (3) review + **send digest #1 by Wed Jul 23** (`duty-ledger/drafts/digest-001.md`); (4) drop the first 1–2 person-voice landed-cost posts pointing to the live `/news/section-122-sunset`. ==Read your own `/digest/sample` + event page FIRST — it's both the digest-#1 review AND your "what am I selling" prep.==
 - [ ] 🥇 **EP — close the instructor + flip ALL Khoi-side switches:** ONE live 30-min sit-down *attempt* this week (async isn't landing); tripwire ~Jul 26 = the >2-week firewall signal fires → reassess the partnership then, not on a weeknight. In parallel (no instructor needed): buy `kysugenba.com`, then flip 0.2/0.3 — PayOS webhook→ACB, Clerk prod, VI landing (0.4), waitlist (0.5).
 - [ ] 🥈 **Clock — HELD** (desk-only, per [[Antifragile SaaS]] §0 PORTFOLIO REBALANCE 2026-07-18). Zero hours this week; they route to EP + Ledger. Nov-30 date stays fixed → reads as a logged capacity-park.
@@ -194,11 +196,22 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 
 ### Notes to the consultant (dated, raw — write below)
 #### July 19th, 2026
-- 🥇 EP: Done with the checking bank account (the USD account is still pending), the instructor still sitting on the partnership letter (no response from him, no domain locked/purchased). This might be a Black Swan if he decides to give it up.
-- 🥈 Clock: I don't know where/how to kick off this thing. Putting it on hold *seems* like a good idea (refer to the `PORTFOLIO REBALANCE` section under its runbook for more details)
-- 🥉 Ledger: the domain still hasn't been bought yet. Zero email signed up (I haven't done the outreach). Paddle account registered, but not wired to my USD back account, because I haven't opened it. I ran the `AFK agent prompt — "Ship seed block 2"` from the `Venture Tasks.md` file. Tell me what to do next.
-- 🥉 Ledger (plan Jul 20→24): I'm gonna prioritize and start the HITL tasks for the Ledger from Jul 20→24, while still NOT fully understand what I'm selling (i.e. if I do the outreach and someone follow-ups with questions, I'm fucked. But I'll do the outreach anyway to not fall into the green lumber fallacy.)
-	- *Consultant (Jul 19): the cure for "don't understand what I'm selling" is ~30 min reading your OWN `/digest/sample` + `/news/section-122-sunset` before posting — that read IS the digest-#1 number-review (HITL step 4), and it arms you for follow-ups. Every figure is primary-sourced; "let me check the CSMS bulletin and get back to you" is a correct, on-brand answer. Load the gun, then fire — that's aiming, not green-lumber.*
+- 🥇 EP: instructor still sitting on the partnership letter — no response, no domain. Potential Black Swan if he walks.
+- 🥈 Clock: on hold (see its runbook's PORTFOLIO REBALANCE).
+#### July 20th, 2026
+- 🥇 EP: the instructor responded and agreed to buy the `hocvienksxd.com` domain. He said that there's not enough bandwidth to fully commit to the proposed plan, as he's also working a fulltime job and has a family. 
+- 🥉 Ledger: S0 shipped — checkout, email, and digest live; payment flow tested end-to-end (real $19 charge → refunded). Only open item: open ACB USD account → wire to Paddle (payout, not a sales blocker).
+- 🥉 Posted my outreach on 2 channels: Discord `Talk Shop` and Reddit. 
+
+#### July 22nd, 2026
+- 🥉 Ledger: outreach total = 3 (Talk Shop Discord post, 1 Reddit post, 1 Reddit reply). 0 replies, 0 signups.
+- 🥉 Ledger (his words): "ZERO INTEREST from the community… no one to send Digest #1 to." Mid-week check, 2 days before the Jul-24 catalyst.
+
+#### July 23rd, 2026
+- 🥉 Ledger: Digest #1 SENT (send day). To self, BCC'd my 2 signups (both mine). All 8 review boxes verified vs primary sources — live send-day S301 re-check count:0, and "60 economies" confirmed CORRECT via USTR notice 2026-11296 (the "~46" in my memory was a misread — Vietnam's list position). Cadence exit bar met.
+- 🥉 Ledger: BCC'd copy landed in SPAM — but that was a manual send from personal Gmail, NOT the Resend/dutyarchive.com path. DNS auth for the real path checked clean: SPF + DKIM + DMARC (p=none) all present & aligned. Real fix when subscribers exist = send digests via Resend from the authed domain, not personal inbox.
+- 🥉 Ledger: welcome-email deliverability fixed & deployed (Reply-To → contact@dutyarchive.com via Cloudflare Email Routing; List-Unsubscribe header; mail-tester 7.3→~10). Storefront + all public URLs now on dutyarchive.com.
+
 ---
 # Backlog
 - [Learn about animations](https://animations.dev/learn/animation-theory/intro)
@@ -207,11 +220,15 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
 - EO:
 	- [ ] `next-steps.md`++
+	- [ ] Enable branch protection
+	- [ ] Sync most recent members from Altai
+	- [ ] Load Altai sync status to the rollout app
+	- [ ] Enable chapter health update from `Stalled` to `Pending`
 - EP: 
 	- [ ] Set up YOUR bank account (ACB) for PayOS Prod
 	- [ ] HITL
-	- [ ] Run `/improve-codebase-architecture` AFTER closing #131 & #135
-	- [ ] Send [this](https://docs.google.com/document/d/1LvVIhYUDCUp31eHkTD4SWjqxVi99vzmU4fbpKoBajZU/edit?usp=sharing) to the stakeholder
+	- [ ] Run `/improve-codebase-architecture` BEFORE going live
+	- [x] Send [this](https://docs.google.com/document/d/1LvVIhYUDCUp31eHkTD4SWjqxVi99vzmU4fbpKoBajZU/edit?usp=sharing) to the stakeholder
 	- [ ] Maybe set up a `k6/artillery` run against staging with the two profiles that matter — steady learning (nav + complete-lesson) and checkout burst?
-- Runbooks:
-	- [ ] 
+- Runbook:
+	- [ ] Open the USD account & get your debit card (ACB, at lunch)

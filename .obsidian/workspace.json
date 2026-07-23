@@ -47,16 +47,15 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/breakglass-research/KILL-TABLE.md",
+                    "file": "Notes/Daily Standup.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "KILL-TABLE"
+                  "title": "Daily Standup"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "8cedd05142699eb5",
@@ -311,25 +310,25 @@
   },
   "active": "9b9ab17c16c89870",
   "lastOpenFiles": [
-    "Notes/Weekly Tasks.md.tmp.14968.3fcafa722147",
-    "Notes/Weekly Tasks.md.tmp.14968.17d53d174b7c",
-    "Notes/Weekly Tasks.md.tmp.14968.94073b4fa499",
-    "Notes/Weekly Tasks.md.tmp.14968.1674d5d1286e",
-    "Notes/Weekly Tasks.md.tmp.14968.146b71aa8390",
-    "Notes/Weekly Tasks.md.tmp.14968.d4e3e6d2c631",
-    "Notes/Weekly Tasks.md.tmp.14968.86176c1b3abd",
-    "Notes/Weekly Tasks.md.tmp.14968.f010f0f1090a",
-    "Notes/Weekly Tasks.md.tmp.14968.90b1f992ccee",
-    "Notes/Weekly Tasks.md.tmp.14968.6c53392b0b12",
-    "Notes/Weekly Tasks.md.tmp.14968.317c460a9fe2",
-    "Notes/Venture Tasks.md",
-    "Notes/Weekly Tasks.md",
-    "Notes/Antifragile SaaS.md",
-    "Notes/Duty SaaS.md",
     "Tips & Tools/English vocab.md",
+    "Notes/Weekly Tasks.md.tmp.30560.a877a0d49e1b",
+    "Notes/Weekly Tasks.md",
+    "Notes/Weekly Tasks.md.tmp.30560.1a4917cbeb49",
+    "Notes/Daily Standup.md",
+    "Notes/Duty SaaS.md",
+    "Notes/Venture Tasks.md",
+    "Notes/breakglass-research/KILL-TABLE.md",
+    "Notes/Weekly Tasks.md.tmp.18768.2209a4d526f7",
+    "Notes/Weekly Tasks.md.tmp.18768.7d3d63668287",
+    "Notes/Weekly Tasks.md.tmp.18768.63fd9ac6527f",
+    "Notes/Weekly Tasks.md.tmp.18768.d87c62636ea3",
+    "Notes/Weekly Tasks.md.tmp.18768.ceabc5697dbf",
+    "Notes/Duty SaaS.md.tmp.18768.039a7cef42d4",
+    "Notes/Antifragile SaaS.md",
+    "Notes/Duty SaaS.md.tmp.18768.6fa41a259a64",
+    "Notes/Weekly Tasks.md.tmp.14968.3fcafa722147",
     "Notes/breakglass-research/next-steps.md",
     "Notes/breakglass-research/FACE-MODE-DOSSIER.md",
-    "Notes/breakglass-research/KILL-TABLE.md",
     "Notes/2026.md",
     "Notes/EP SaaS.md",
     "Notes/breakglass-research/README.md",
@@ -341,7 +340,6 @@
     "Notes/Biz.md",
     "Notes/breakglass-research/CORRELATION-MAP.md",
     "Notes/breakglass-research/NEAR-MISSES.md",
-    "Notes/Daily Standup.md",
     "AI/long-vol-consultant.md",
     "Notes/clock-research/COLD-MAP.md",
     "Notes/clock-research/HITL-WALKTHROUGH.md",
