@@ -55,7 +55,8 @@
                   "title": "Daily Standup"
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           },
           {
             "id": "8cedd05142699eb5",
@@ -308,28 +309,28 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "9b9ab17c16c89870",
+  "active": "5646d77dc32192cf",
   "lastOpenFiles": [
+    "Notes/Weekly Tasks.md",
+    "Notes/Duty SaaS.md",
+    "Notes/2026.md",
+    "Notes/Daily Standup.md",
+    "Notes/Weekly Tasks.md.tmp.43920.14c6d8f9ce2b",
+    "Notes/Weekly Tasks.md.tmp.43920.baa9c944b8a2",
+    "Notes/Weekly Tasks.md.tmp.43920.31fd788923cd",
+    "Notes/Weekly Tasks.md.tmp.43920.14decb68308b",
+    "Notes/Weekly Tasks.md.tmp.43920.a8e5acadfe80",
+    "Notes/Weekly Tasks.md.tmp.30560.c34cba20b3b8",
     "Tips & Tools/English vocab.md",
     "Notes/Weekly Tasks.md.tmp.30560.a877a0d49e1b",
-    "Notes/Weekly Tasks.md",
     "Notes/Weekly Tasks.md.tmp.30560.1a4917cbeb49",
-    "Notes/Daily Standup.md",
-    "Notes/Duty SaaS.md",
     "Notes/Venture Tasks.md",
     "Notes/breakglass-research/KILL-TABLE.md",
     "Notes/Weekly Tasks.md.tmp.18768.2209a4d526f7",
     "Notes/Weekly Tasks.md.tmp.18768.7d3d63668287",
-    "Notes/Weekly Tasks.md.tmp.18768.63fd9ac6527f",
-    "Notes/Weekly Tasks.md.tmp.18768.d87c62636ea3",
-    "Notes/Weekly Tasks.md.tmp.18768.ceabc5697dbf",
-    "Notes/Duty SaaS.md.tmp.18768.039a7cef42d4",
     "Notes/Antifragile SaaS.md",
-    "Notes/Duty SaaS.md.tmp.18768.6fa41a259a64",
-    "Notes/Weekly Tasks.md.tmp.14968.3fcafa722147",
     "Notes/breakglass-research/next-steps.md",
     "Notes/breakglass-research/FACE-MODE-DOSSIER.md",
-    "Notes/2026.md",
     "Notes/EP SaaS.md",
     "Notes/breakglass-research/README.md",
     "AI/validate-biz-idea.md",

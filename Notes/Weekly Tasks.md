@@ -34,20 +34,20 @@
 - [ ] Tao Te Ching++
 - [x] Live up to your standards
 ### 24/7
-- [ ] EO minimal work:
-	- [ ] Contingencies
+- [x] EO minimal work:
+	- [x] Arlene HubSpot access
 	- [ ] Craft the raise script & propose 1-1
-- [ ] Bragdoc
-- [ ] Venture++
-	- [ ] THE SUNSET — surcharge dies today: post the Jul-24 angle in 2-3 communities + link the event page. Screenshot your first signup (if any).
+- [x] Bragdoc
+- [x] Venture++
+	- [x] THE SUNSET — surcharge dies today: post the Jul-24 angle in 2-3 communities + link the event page. Screenshot your first signup (if any).
 	- [ ] EP Backlog: /goal I just bought the domain for production: [Image #1]. Now pls walk me through those pending HITL tasks to get this thing to market.
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 25/7
-- [ ] Perfect dive start + 500m with paddles
-- [ ] Groceries
-- [ ] Venture++
-	- [ ] Summarize the Ledger activities
+- [x] Perfect dive start + 500m with paddles
+- [x] Groceries
+- [x] Venture++
+	- [x] Summarize the Ledger activities
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 26/7
@@ -119,6 +119,7 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 | Sunday     | hrs | Gov? | EP l/c/Σd/Σrev | Clock a/r/Σc/Σd | Ledger Σs/Σf/v | Signal |
 | ---------- | --- | ---- | -------------- | --------------- | -------------- | ------ |
 | 2026-07-19 | 8   | NO   | 0/0/0/0        | -/-/-/-         | 0/0/0          | -      |
+| 2026-07-26 | 10  | NO   | 0/0/0/0        | -/-/-/-         | 0/0/0          | EP: >2wk block (instructor, 0.1 unsigned) |
 
 *(Row 1 seeded on creation: every venture is pre-launch, hence the dashes. Fill `hrs` and `Gov?` today.)*
 
@@ -144,14 +145,15 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - [ ] 🥉 Sun 30m — send digest #1 (even to zero people — it becomes the public sample).
 
 ## Week Jul 20 → 26 (~8h)
-- [ ] 🥉 **Ledger — PRIORITY Jul 20→24 (serve the Jul-24 catalyst; the storefront already shipped to prod Jul 16):** (1) submit the SEPARATE Paddle account for review — the review clock is *account/website verification*, NOT the "build your product" wizard; USD payout is parallel, not a blocker ([[Antifragile SaaS]] §1.3a); (2) buy `dutyarchive.com` (~$10/yr at Cloudflare Registrar — checked 2026-07-19: `dutyledger.com` is already taken, `dutyarchive.com` is free; .us stays rejected — needs a US nexus you don't have + forces public WHOIS); (3) review + **send digest #1 by Wed Jul 23** (`duty-ledger/drafts/digest-001.md`); (4) drop the first 1–2 person-voice landed-cost posts pointing to the live `/news/section-122-sunset`. ==Read your own `/digest/sample` + event page FIRST — it's both the digest-#1 review AND your "what am I selling" prep.==
-- [ ] 🥇 **EP — close the instructor + flip ALL Khoi-side switches:** ONE live 30-min sit-down *attempt* this week (async isn't landing); tripwire ~Jul 26 = the >2-week firewall signal fires → reassess the partnership then, not on a weeknight. In parallel (no instructor needed): buy `kysugenba.com`, then flip 0.2/0.3 — PayOS webhook→ACB, Clerk prod, VI landing (0.4), waitlist (0.5).
+- [x] 🥉 **Ledger — PRIORITY Jul 20→24 (serve the Jul-24 catalyst; the storefront already shipped to prod Jul 16):** (1) submit the SEPARATE Paddle account for review — the review clock is *account/website verification*, NOT the "build your product" wizard; USD payout is parallel, not a blocker ([[Antifragile SaaS]] §1.3a); (2) buy `dutyarchive.com` (~$10/yr at Cloudflare Registrar — checked 2026-07-19: `dutyledger.com` is already taken, `dutyarchive.com` is free; .us stays rejected — needs a US nexus you don't have + forces public WHOIS); (3) review + **send digest #1 by Wed Jul 23** (`duty-ledger/drafts/digest-001.md`); (4) drop the first 1–2 person-voice landed-cost posts pointing to the live `/news/section-122-sunset`. ==Read your own `/digest/sample` + event page FIRST — it's both the digest-#1 review AND your "what am I selling" prep.==
+- [ ] 🥇 **EP — close the instructor + flip ALL Khoi-side switches:** ONE live 30-min sit-down *attempt* this week (async isn't landing); tripwire ~Jul 26 = the >2-week firewall signal fires → reassess the partnership then, not on a weeknight. In parallel (no instructor needed): point/configure `hocvienksxd.com` (already owned), then flip 0.2/0.3 — PayOS webhook→ACB, Clerk prod, VI landing (0.4), waitlist (0.5).
 - [ ] 🥈 **Clock — HELD** (desk-only, per [[Antifragile SaaS]] §0 PORTFOLIO REBALANCE 2026-07-18). Zero hours this week; they route to EP + Ledger. Nov-30 date stays fixed → reads as a logged capacity-park.
 
-## Week Jul 27 → Aug 2 (~8h)
-- [ ] 🥇 Two weeknights + Sat block (~5–6h): video hosting back on → the 3 automatic emails (receipt, enrollment, waitlist welcome) → queue the big video upload overnight → THE TEST: buy a 10.000₫ course yourself with a real bank account — done only when the video plays and the receipt arrives. (May slip into next week; the instructor's outreach does NOT wait for it.)
-- [ ] 🥈 One evening (~1.5h): write the warm-20 list — named Việt-owned HVAC/electrical shops + anyone in your network near US/AU trades.
-- [ ] 🥉 Sun digest. Skip the weeknight post if the week is heavy — log the skip, zero guilt.
+## Week Jul 27 → Aug 2 (~8h) — last full EP setup week before Aug-3 outreach
+- [ ] 🥇 **Carry-forward FIRST (this gates everything):** clear anything still open from Jul 20→26 — the 0.1 sit-down/sign + the no-instructor switches (hocvienksxd.com, 0.2 PayOS→ACB, 0.3 Clerk prod). If 0.1 is still unsigned after the Jul-26 reassessment, it's TERMS, not kill ([[EP SaaS]] §9/§12 — no kill trigger exists this early): one scoped sit-down attempt, then proceed Khoi-side regardless (Black Swan #1 — the platform powers V2 either way).
+- [ ] 🥇 Two weeknights + Sat block (~5–6h): video hosting back on → the 3 automatic emails (receipt, enrollment, waitlist welcome) → queue the big video upload overnight → THE TEST: buy a 10.000₫ course yourself with a real bank account — done only when the video plays and the receipt arrives. (May slip; the instructor's outreach does NOT wait — deposits ride bank transfer + Zalo from day 1.)
+- [ ] 🥈 One evening (~1.5h): write the warm-20 list — named Việt-owned HVAC/electrical shops + anyone in your network near US/AU trades. Prep only; Clock stays desk-only (07-12 rebalance, first asks early-Aug). Trim SECOND if EP setup runs long — after the Ledger post, never EP.
+- [ ] 🥉 Sun digest — keep shipping; a zero-signup week is NOISE ([[Duty SaaS]] §8, "G1 is the instrument, not week 4"). Optional weeknight: ONE person-voice worked-example post in a LAW-approved room (r/shopify weekly self-promo thread, r/ecommerce, r/FulfillmentByAmazon, seller Discords — value + product-as-context, no links). This post is the FIRST thing to drop if the week is heavy — log the skip, zero guilt.
 
 ## August — repeat weekly (~9–10h/wk)
 - [ ] 🥇 2–3h/wk (from Mon Aug 3): instructor messages his 50; you keep the tracking sheet + canned replies + fix anything broken between signup and payment. Finish setup leftovers by Aug 9.
@@ -211,6 +213,8 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - 🥉 Ledger: Digest #1 SENT (send day). To self, BCC'd my 2 signups (both mine). All 8 review boxes verified vs primary sources — live send-day S301 re-check count:0, and "60 economies" confirmed CORRECT via USTR notice 2026-11296 (the "~46" in my memory was a misread — Vietnam's list position). Cadence exit bar met.
 - 🥉 Ledger: BCC'd copy landed in SPAM — but that was a manual send from personal Gmail, NOT the Resend/dutyarchive.com path. DNS auth for the real path checked clean: SPF + DKIM + DMARC (p=none) all present & aligned. Real fix when subscribers exist = send digests via Resend from the authed domain, not personal inbox.
 - 🥉 Ledger: welcome-email deliverability fixed & deployed (Reply-To → contact@dutyarchive.com via Cloudflare Email Routing; List-Unsubscribe header; mail-tester 7.3→~10). Storefront + all public URLs now on dutyarchive.com.
+#### July 24th, 2026
+- 🥉 Ledger: 1 short variant post on the `Shopify Entrepreneur` Facebook group. ZERO `tariff`, `surcharge`, `section 122`, `duty` posts found (on Reddit/Facebook) to comment/reply with the "Comment Variant" that the `jul24-sunset-post.md` file suggests. The subreddits strictly forbid self-promo in any shape or form
 
 ---
 # Backlog
