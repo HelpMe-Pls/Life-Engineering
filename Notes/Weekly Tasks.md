@@ -1,56 +1,48 @@
 # The TODOs
-### 20/7
+### 3/8
 - [x] EO:
-	- [x] Contingencies
-- [x] Runbook++
-	- [x] Read your OWN /digest/sample + /news/section-122-sunset (~10 min) — your outreach ammo AND your digest #1 review (with Claude); cut any number that doesn't check out
-	- [x] Join ONE seller community (Discord/FB) from the Free watering holes list + read its promo rules FIRST — this step is RECON only, the post itself is step 3. (If the room bans self-promo/links, it's the wrong room for rep #1 — pick another, or post there as a pure learner)
-	- [x] Outreach rep #1 — in that community, post a worked landed-cost example in your own voice (numbers from step 1), product as context; log where + any reply
-	- [x] (optional, EP-side) Buy kysugenba.com — only when you start flipping EP switches; not needed for the Jul-24 push
+	- [x] Review the Altai sync for `Accelerator`, `SLP`, and `Adult Child`
+	- [x] Open promotion PR for `global-hubspot`
+	- [x] Refine & practice 1-1 script
+- [x] Venture:
+	- [x] EP: review & promote `main`
 - [ ] Tao Te Ching++
 - [x] Live up to your standards
-### 21/7
+### 4/8
 - [x] EO weekly report & sprint goals update
-	- [x] HR SHUI remind
-- [x] Venture++
-	- [x] Outreach rep #2 — a DIFFERENT community, fresh worked example; log it
-- [x] Tao Te Ching++
+	- [x] Get the team QA your work & address feedback
+	- [x] 1-1 script++
+- [x] Health check  
+- [ ] Venture++
+- [ ] Tao Te Ching++
 - [x] Live up to your standards
-### 22/7
+### 5/8
 - [x] EO sprint review:
 	- [x] Record the transcript
-	- [x] Email Terence
-	- [x] Contingencies
-- [x] Venture++
-	- [x] Send digest #1 (BCC the list — even if it's just you; subject "Duty Ledger Digest #1 — the surcharge sunset week")
-	- [x] Outreach rep #3 — a third community, log it
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 23/7
-- [x] EO minimal work:
-	- [x] Pull Altai `eo_originaljoindate` into HubSpot
-- [x] Venture++
-	- [x] Draft + queue your 2 Jul-24 posts ("the surcharge dies tomorrow — what your SKU paid vs pays now")
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 24/7
-- [x] EO minimal work:
-	- [x] Arlene HubSpot access
-	- [ ] Craft the raise script & propose 1-1
-- [x] Bragdoc
-- [x] Venture++
-	- [x] THE SUNSET — surcharge dies today: post the Jul-24 angle in 2-3 communities + link the event page. Screenshot your first signup (if any).
-	- [ ] EP Backlog: /goal I just bought the domain for production: [Image #1]. Now pls walk me through those pending HITL tasks to get this thing to market.
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 25/7
-- [x] Perfect dive start + 500m with paddles
-- [x] Groceries
-- [x] Venture++
-	- [x] Summarize the Ledger activities
+- [ ] Paperwork
+- [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 26/7
+### 6/8
+- [ ] EO minimal work:
+	- [ ] Reopen CI/CD gate?
+	- [ ] Enable branch protection?
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 7/8
+- [ ] EO minimal work
+	- [ ] 1-1 script
+- [ ] Bragdoc: you're the ONLY one who's doing the daily standup
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 8/8
+- [ ] Perfect dive start + 500m with paddles
+- [ ] Groceries
+- [ ] 🛡 **VENTURE-FREE EVENING** (standing rule 3) — nothing after dinner. The scoreboard fill moves to 9/8 with the read.
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 9/8
 - [ ] Splurge (if you're done with EP HITL)
 - [ ] Weekly planning
 - [ ] Venture++
@@ -116,10 +108,11 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - **Ledger** = Σ paying subs / Σ free signups / visits this week
 - **Signal** = firewall signal that fired (same objection ×5 / unsolicited "can I pay?" / gate date / blocked >2wk on one human) — name it, else `-`
 
-| Sunday     | hrs | Gov? | EP l/c/Σd/Σrev | Clock a/r/Σc/Σd | Ledger Σs/Σf/v | Signal |
-| ---------- | --- | ---- | -------------- | --------------- | -------------- | ------ |
-| 2026-07-19 | 8   | NO   | 0/0/0/0        | -/-/-/-         | 0/0/0          | -      |
+| Sunday     | hrs | Gov? | EP l/c/Σd/Σrev | Clock a/r/Σc/Σd | Ledger Σs/Σf/v | Signal                                    |
+| ---------- | --- | ---- | -------------- | --------------- | -------------- | ----------------------------------------- |
+| 2026-07-19 | 8   | NO   | 0/0/0/0        | -/-/-/-         | 0/0/0          | -                                         |
 | 2026-07-26 | 10  | NO   | 0/0/0/0        | -/-/-/-         | 0/0/0          | EP: >2wk block (instructor, 0.1 unsigned) |
+| 2026-08-02 | 10  | NO   | 0/0/0/0        | -/-/-/-         | 0/0/0          | EP: >2wk block (instructor) wk3 — 0.9/0.10 un-run |
 
 *(Row 1 seeded on creation: every venture is pre-launch, hence the dashes. Fill `hrs` and `Gov?` today.)*
 
@@ -139,26 +132,48 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 ## Week Mon Jul 13 → Sun Jul 19 (~9h)
 - [x] 🥇 Weekday lunch: ACB branch — open the VND account (app check-in, minutes); ask about USD too.
 - [x] 🥇 Weeknight 1 (~2h): connect PayOS to the new account; confirm its test ping.
-- [ ] 🥇 Weeknight 2 (~2h): buy/point the real EP domain; start moving login (Clerk) to production.
+- [x] 🥇 Weeknight 2 (~2h): buy/point the real EP domain; start moving login (Clerk) to production.
 - [ ] 🥇 The sit-down happens: agreement signed. (HIS week: the 3 mystery-shopper calls + his 50-name list — you only nudge.)
-- [ ] 🥉 Sat Jul 18 or Sun Jul 19 (~4h) — seed block 2 ([[Duty SaaS]] §0, "Weekend 2"): landing page (your name + what-you-get-and-when + refund promise + one full free sample issue) → email signup with the 2 paperwork questions → $19/mo founding checkout submitted to Paddle on a NEW separate account, described as software pre-order with beta benefits → publish the news page: "the 10% import surcharge dies Fri Jul 24; replacement duties may land the same week."
-- [ ] 🥉 Sun 30m — send digest #1 (even to zero people — it becomes the public sample).
+- [x] 🥉 Sat Jul 18 or Sun Jul 19 (~4h) — seed block 2 ([[Duty SaaS]] §0, "Weekend 2"): landing page (your name + what-you-get-and-when + refund promise + one full free sample issue) → email signup with the 2 paperwork questions → $19/mo founding checkout submitted to Paddle on a NEW separate account, described as software pre-order with beta benefits → publish the news page: "the 10% import surcharge dies Fri Jul 24; replacement duties may land the same week."
+- [x] 🥉 Sun 30m — send digest #1 (even to zero people — it becomes the public sample).
 
 ## Week Jul 20 → 26 (~8h)
 - [x] 🥉 **Ledger — PRIORITY Jul 20→24 (serve the Jul-24 catalyst; the storefront already shipped to prod Jul 16):** (1) submit the SEPARATE Paddle account for review — the review clock is *account/website verification*, NOT the "build your product" wizard; USD payout is parallel, not a blocker ([[Antifragile SaaS]] §1.3a); (2) buy `dutyarchive.com` (~$10/yr at Cloudflare Registrar — checked 2026-07-19: `dutyledger.com` is already taken, `dutyarchive.com` is free; .us stays rejected — needs a US nexus you don't have + forces public WHOIS); (3) review + **send digest #1 by Wed Jul 23** (`duty-ledger/drafts/digest-001.md`); (4) drop the first 1–2 person-voice landed-cost posts pointing to the live `/news/section-122-sunset`. ==Read your own `/digest/sample` + event page FIRST — it's both the digest-#1 review AND your "what am I selling" prep.==
 - [ ] 🥇 **EP — close the instructor + flip ALL Khoi-side switches:** ONE live 30-min sit-down *attempt* this week (async isn't landing); tripwire ~Jul 26 = the >2-week firewall signal fires → reassess the partnership then, not on a weeknight. In parallel (no instructor needed): point/configure `hocvienksxd.com` (already owned), then flip 0.2/0.3 — PayOS webhook→ACB, Clerk prod, VI landing (0.4), waitlist (0.5).
-- [ ] 🥈 **Clock — HELD** (desk-only, per [[Antifragile SaaS]] §0 PORTFOLIO REBALANCE 2026-07-18). Zero hours this week; they route to EP + Ledger. Nov-30 date stays fixed → reads as a logged capacity-park.
+- [x] 🥈 **Clock — HELD** (desk-only, per [[Antifragile SaaS]] §0 PORTFOLIO REBALANCE 2026-07-18). Zero hours this week; they route to EP + Ledger. Nov-30 date stays fixed → reads as a logged capacity-park.
 
-## Week Jul 27 → Aug 2 (~8h) — last full EP setup week before Aug-3 outreach
-- [ ] 🥇 **Carry-forward FIRST (this gates everything):** clear anything still open from Jul 20→26 — the 0.1 sit-down/sign + the no-instructor switches (hocvienksxd.com, 0.2 PayOS→ACB, 0.3 Clerk prod). If 0.1 is still unsigned after the Jul-26 reassessment, it's TERMS, not kill ([[EP SaaS]] §9/§12 — no kill trigger exists this early): one scoped sit-down attempt, then proceed Khoi-side regardless (Black Swan #1 — the platform powers V2 either way).
-- [ ] 🥇 Two weeknights + Sat block (~5–6h): video hosting back on → the 3 automatic emails (receipt, enrollment, waitlist welcome) → queue the big video upload overnight → THE TEST: buy a 10.000₫ course yourself with a real bank account — done only when the video plays and the receipt arrives. (May slip; the instructor's outreach does NOT wait — deposits ride bank transfer + Zalo from day 1.)
-- [ ] 🥈 One evening (~1.5h): write the warm-20 list — named Việt-owned HVAC/electrical shops + anyone in your network near US/AU trades. Prep only; Clock stays desk-only (07-12 rebalance, first asks early-Aug). Trim SECOND if EP setup runs long — after the Ledger post, never EP.
-- [ ] 🥉 Sun digest — keep shipping; a zero-signup week is NOISE ([[Duty SaaS]] §8, "G1 is the instrument, not week 4"). Optional weeknight: ONE person-voice worked-example post in a LAW-approved room (r/shopify weekly self-promo thread, r/ecommerce, r/FulfillmentByAmazon, seller Discords — value + product-as-context, no links). This post is the FIRST thing to drop if the week is heavy — log the skip, zero guilt.
+## Week Jul 27 → Aug 2 (~8h) — EP RECOVERY WEEK (rewritten 2026-07-26 at the Sunday read)
+==Why this week is shaped like this: Jul 20→26 logged 10h and spent ALL of them on 🥉 Ledger — 🥇 EP got ZERO. The cut order was inverted (Ledger is cut FIRST, EP is NEVER cut) and [[Duty SaaS]] §5's ceiling was blown (≤2h/wk averaged, ~3.5h on an event week — 10h is ~3×). Aug 3 outreach is 8 days out. Hours route to EP until the switches are flipped.==
+- [x] 🥇 **Carry-forward FIRST — the switches, ~2h (this gates everything):** point/configure `hocvienksxd.com`, 0.2 PayOS webhook→ACB, 0.3 Clerk prod. ==None of these need the instructor. They are the exact thing he said he is waiting on.==
+- [x] 🥇 **The Jul-26 reassessment, executed — send Mon Jul 27 (~30m):** ONE scoped sit-down ask, a named 60-min slot this week. It is TERMS, not kill ([[EP SaaS]] §9/§12 — no kill trigger exists this early; §12 Black Swan #1's mitigation is already installed: platform + lead/customer data are yours, the codebase powers V2 either way). ==The ask carries THREE items, not one== — [[EP SaaS]] §0's own "this week's ONE move": sign 0.1 → **he starts 0.9** (the 3 dispatch kill-test calls) **+ 0.10** (the JLPT-tagged warm-50 + warm-B2B list).
+	- ==**0.9 and 0.10 need NO WEBSITE.** The runbook says it in four words: "no web needed." His stated reason for not signing does not block the only two things that gate Aug-3 outreach — and both were due week 1–2 (mid-July), both are HIS, both are still un-run. Flipping your switches removes his excuse; it does not produce his list.==
+- [ ] 🥇 Two weeknights + Sat block (~4h): ~~the 3 automatic emails (receipt, enrollment, waitlist welcome)~~ ✅ **done** (Resend — needed no Stream). **STILL OPEN, carried to Aug 3→9:** video hosting back on (blocked on payday) → queue the big video upload overnight → THE TEST: buy a 10.000₫ course yourself with a real bank account — done only when the video plays and the receipt arrives. (May slip; the instructor's outreach does NOT wait — deposits ride bank transfer + Zalo from day 1.)
+- [ ] 🥉 **Ledger — HARD CAP 10 MINUTES, Sun Aug 2.** ==The digest is MONTHLY (confirmed 2026-07-26). Digest #1 shipped Jul 23, so #2 is not due until late August — there is no digest to review on Aug 2.== The freed ~50m goes to 🥇 EP. Exactly two things:
+	- [ ] **0:00–0:05 — Collector health check.** Open the daily ran/failed email. Did the FR harvester write every day since Jul 26? Green → done. Red → this is the ONLY engineering permitted, and it is worth it: ==the archive is the asset; a silently dead cron is the one Ledger failure that compounds.==
+	- [ ] **0:05–0:10 — Scoreboard numbers.** Σ paying subs, Σ free signups (==your own tests do not count==), visits. Then close the tab.
+	- **NOT this week, and none of these is a missed bar:** the person-voice community post (CUT — cut-order step 1) · the single-SKU delta tool (§5 tactic, ==not in §4's exit bar — nothing is overdue==; it is a BUILD, and a build is what ate last week) · Paddle · storefront · landing copy · the `/news` page · "one more improvement."
+	- **Why nothing here tries to fix the zero:** [[Duty SaaS]] §8 row 2, verbatim — *"Zero founding subs in the first 4 weeks → Noise (list too small) → Keep shipping; G1 is the instrument, not week 4."* ==Week 2 of 4. **There is NO week-4 cliff** — checked against the runbook 2026-08-02: the phrase "noise window" appears NOWHERE in [[Duty SaaS]], and the only instrument that reads the zero is G1 on Sun Dec 13 (§8 MASTER RULE). §12 grants "permission for revenue to be $0 for its first five months." Until Dec 13 there is nothing to fix and no hours to spend proving it.==
+- [x] 🥈 **Clock — CUT to 0h** (cut-order step 2). The warm-20 list slides into the Aug 8/15 Saturday block. Nov-30 gate UNMOVED.
+- [x] 🛡 **Venture-free evening: Fri Jul 31** (standing rule 3). EP work fits without it: Mon ask + 2 weeknights + Sat block.
+
+## Week Mon Aug 3 → Sun Aug 9 (~5–6h) — CLOSE THE GATE (written 2026-08-02 at the Sunday read)
+==Why this week is LIGHT, and why that is the correct answer and not underperformance: the Aug-2 read found ZERO money and ZERO evidence for the 3rd straight week, and the cause is structural, not effort. EP's Aug-3 outreach is *the instructor messaging HIS 50* (0.10) — a list that does not exist, sent by a human silent 3 weeks. **No Khoi-side lever starts it.** So the week takes only what IS yours, and the biggest of those is the Phase-0 gate itself. Governor read NO/NO → no half-load mandated; this is light by arithmetic, not by decree. ==Do not pad it== ([[Weekly Tasks]] protocol step 3: *"do not pad the schedule to make a dead week feel productive"*). Clock's 5–6h demo Saturday is locked to Aug 15, so next week carries ~10–11h — the two-week average lands ~8h, mid-band.==
+- [ ] 🥇 **10m, Mon Aug 3 — ONE message to the instructor. Two questions. NOT a sit-down ask, NOT terms.** (1) *"Anh tính làm 3 cuộc gọi thế nào?"* (2) *"Anh có danh sách 50 kèm trình JLPT chưa?"* ==Grounds: "maybe he has a different plan for 0.9" is a hypothesis; ten minutes converts it into a fact. It is the cheapest evidence available in the entire portfolio this week.== Log whatever comes back — **including silence.**
+- [ ] 🥇 **THE PAYDAY CHAIN (~3h) — this IS the Phase-0 gate, and it is 100% yours:** the day the money lands → 0.6 Cloudflare Stream back on → queue the big video upload overnight (0.7, unattended) → **THE TEST: buy a 10.000₫ course yourself with a real bank account.** ==Done only when Payment settled → Enrollment exists → video plays → receipt arrived== ([[EP SaaS]] §3 exit bar; doubles as [[Business Bank]] §7 step 5). The 3 transactional emails are already done. ==One item, and it closes the whole gate: "a stranger can pay you and watch a video."==
+- [ ] 🥇 **~1h — your side of Aug 3, whether or not he sends:** build the tracking sheet + the canned Zalo replies, then walk the signup→payment path once yourself hunting for anything broken. Deposits ride Zalo + bank transfer from day 1 ([[EP SaaS]] §0) — ==the rail must be warm BEFORE the first "cho em đăng ký," not after.==
+- [ ] 🥇 **~30m — the stranger test. The other un-run exit-bar item, and it needs NOBODY:** after the video plays, get ONE person outside the warm-50 to watch the story video + rumor-debunk, and listen for whether they say *unprompted* they'd trust it / book a consult ([[EP SaaS]] §3 exit bar). ==With 0.9 held, this is now the ONLY human verdict on the board this week.== (§2: *"a slick website makes suspicion WORSE"* — you are testing the proof kit, not the UI.)
+- **🥇 0.9 + 0.10 — STILL OPEN, owner Instructor, week 4.** ==Khoi's ruling 2026-08-02: 0.9 is treated as PROVISIONAL from here (the instructor may have a different plan).== The SCHEDULE records that ruling; ==the LAW is untouched by this file.== [[EP SaaS]] still reads 0.9 into the Phase-0 exit bar (*"the 0.9/0.10 results written down"*), §9.5's MASTER RULE names *the phase deliverable bars* as a live instrument, and line 5 still reads *"GO, medium confidence until the 0.9/0.10 calls return — the calls ARE the 48-hour test."* **So the exit bar reads UNMET until a dated founder ruling is written into [[EP SaaS]] itself.** Also on record, unmoved: 0.9's own note says *"run BEFORE any marketing effort."* ==Logged here so November cannot rewrite the story.==
+- [ ] 🥈 **Clock — 0h this week by design. Demo Saturday LOCKED: Sat Aug 15** (5–6h, once — 90-sec Loom over the mock + one-page landing + ToS/Privacy/Refund + ==submit its OWN Paddle account THE SAME DAY==, [[Antifragile SaaS]] §1.3a.2: review takes days→2wk and it gates the deposit rail). Sep-1 cold lane and Nov-30 UNMOVED. ==0h since the Jul-18 rebalance; §1.6's capacity-park card is takeable ONCE EVER and Aug 15 is the last date §0 names.== Not a firewall signal — §0: *"Founder-directed, dated, deliberate — NOT a silent stall."*
+- [ ] 🥉 **Ledger — 10 minutes, Sun Aug 9. Exactly two things.**
+	- [ ] **2 min — the collector health emails.** Did the FR harvester write every day since Jul 26? ==This was ring-fenced last week and skipped; it is the moat's only instrument.== Red → [[Duty SaaS]] §11 row 5's manual fallback (1h) is the ONLY engineering permitted. Green → close the tab.
+	- [ ] **8 min — scoreboard numbers.** Σ paying subs, Σ free signups (==your own tests do not count==), visits.
+	- **NOT this week and nothing is overdue:** digest #2 is late-August (monthly) · the single-SKU delta tool is a §5 tactic, ==absent from §4's exit bar== · no post, no Paddle, no copy, no "one more improvement." §10: *"a missed paid deliverable is the only real emergency this venture can produce"* — you have zero paid subs, so ==Ledger cannot currently produce an emergency.==
+- [ ] 🛡 **Venture-free evening: Sat Aug 8** (confirmed 2026-08-02). Standing rule 3, non-negotiable. ==Clean pick — the Clock demo Saturday went to Aug 15, so nothing competes for it.==
 
 ## August — repeat weekly (~9–10h/wk)
 - [ ] 🥇 2–3h/wk (from Mon Aug 3): instructor messages his 50; you keep the tracking sheet + canned replies + fix anything broken between signup and payment. Finish setup leftovers by Aug 9.
 - [ ] 🥇 Watch for the first 500.000₫ seat deposits from ~mid-Aug. **First stranger-money. Screenshot it.**
-- [ ] 🥈 ONE Saturday, Aug 8 or 15 (~5–6h, once): 90-sec demo video over the mock + one-page landing + terms/privacy/refund pages + submit ITS OWN Paddle account the same day (separate from Duty Ledger's).
+- [ ] 🥈 **ONE Saturday — LOCKED Sat Aug 15** (chosen at the 2026-08-02 read; Aug 8 declined) (~5–6h, once): 90-sec demo video over the mock + one-page landing + terms/privacy/refund pages + submit ITS OWN Paddle account the same day (separate from Duty Ledger's). ==Last date [[Antifragile SaaS]] §0 names. It does not slip again — §1.6's capacity-park card is takeable ONCE EVER.==
 - [ ] 🥈 Then ~1.5–2h/wk: 8–10 personalized messages to the warm-20; push for ONE real call and ask for the $149 deposit on it.
 - [ ] 🥉 1.5–2h/wk: Sun digest + one weeknight post. First $19 subscriber likely lands this month — proof #2.
 
@@ -197,25 +212,13 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - The consultant's standing brief: keep me LONG-VOL (slack intact, governor enforced, spike weeks refused, pull served) and Fat-Tony-honest (reps and money over theory and polish). When in doubt the question is never "is the plan elegant?" — it is =="did money or evidence move this week?"==
 
 ### Notes to the consultant (dated, raw — write below)
-#### July 19th, 2026
-- 🥇 EP: instructor still sitting on the partnership letter — no response, no domain. Potential Black Swan if he walks.
-- 🥈 Clock: on hold (see its runbook's PORTFOLIO REBALANCE).
-#### July 20th, 2026
-- 🥇 EP: the instructor responded and agreed to buy the `hocvienksxd.com` domain. He said that there's not enough bandwidth to fully commit to the proposed plan, as he's also working a fulltime job and has a family. 
-- 🥉 Ledger: S0 shipped — checkout, email, and digest live; payment flow tested end-to-end (real $19 charge → refunded). Only open item: open ACB USD account → wire to Paddle (payout, not a sales blocker).
-- 🥉 Posted my outreach on 2 channels: Discord `Talk Shop` and Reddit. 
-
-#### July 22nd, 2026
-- 🥉 Ledger: outreach total = 3 (Talk Shop Discord post, 1 Reddit post, 1 Reddit reply). 0 replies, 0 signups.
-- 🥉 Ledger (his words): "ZERO INTEREST from the community… no one to send Digest #1 to." Mid-week check, 2 days before the Jul-24 catalyst.
-
-#### July 23rd, 2026
-- 🥉 Ledger: Digest #1 SENT (send day). To self, BCC'd my 2 signups (both mine). All 8 review boxes verified vs primary sources — live send-day S301 re-check count:0, and "60 economies" confirmed CORRECT via USTR notice 2026-11296 (the "~46" in my memory was a misread — Vietnam's list position). Cadence exit bar met.
-- 🥉 Ledger: BCC'd copy landed in SPAM — but that was a manual send from personal Gmail, NOT the Resend/dutyarchive.com path. DNS auth for the real path checked clean: SPF + DKIM + DMARC (p=none) all present & aligned. Real fix when subscribers exist = send digests via Resend from the authed domain, not personal inbox.
-- 🥉 Ledger: welcome-email deliverability fixed & deployed (Reply-To → contact@dutyarchive.com via Cloudflare Email Routing; List-Unsubscribe header; mail-tester 7.3→~10). Storefront + all public URLs now on dutyarchive.com.
-#### July 24th, 2026
-- 🥉 Ledger: 1 short variant post on the `Shopify Entrepreneur` Facebook group. ZERO `tariff`, `surcharge`, `section 122`, `duty` posts found (on Reddit/Facebook) to comment/reply with the "Comment Variant" that the `jul24-sunset-post.md` file suggests. The subreddits strictly forbid self-promo in any shape or form
-
+#### Aug 2nd, 2026
+- 🥇Closed most of the HITL tasks, except for the Stream blocker (I'm outta money to buy the subscription, so I'll close it once I got my paycheck next week). No response from the instructor (expected)
+- 🥈ZERO effort put in
+- 🥉ZERO effort put in
+- ⏱ The 10h this week were ALL spent on EP. 
+- 🥇 Ruling: `0.9` stays **PROVISIONAL** from now on — maybe the instructor has a different plan for it.
+- 🥈 Demo Saturday chosen: **Sat Aug 15** (not Aug 8).
 ---
 # Backlog
 - [Learn about animations](https://animations.dev/learn/animation-theory/intro)

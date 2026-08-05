@@ -724,7 +724,7 @@ amorous (adj): showing sexual desire and love
 
 sentiment (n): opinion, attitude, feeling, emotion
 
-poignant (adj): deeply affecting, designed to make an impression
+poignant (adj): deeply affecting, designed to make an impression, thấm thía, sâu sắc
 
 entreaty (n): emotional request
 
@@ -1315,7 +1315,7 @@ hors d'oeuvre (n): small pieces of food eaten at a party
 
 sect (n): party, faction
 
-acquit (v): vindicate, to free from allegation or blame, làm trọn (nghĩa vụ, bổn phận)
+acquit (v): vindicate, exonerate, exculpate, to free from allegation or blame, làm trọn (nghĩa vụ, bổn phận)
 
 impute {to} (v): attribute, credit, blame
 

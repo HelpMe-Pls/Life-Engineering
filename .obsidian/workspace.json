@@ -32,13 +32,13 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/Duty SaaS.md",
+                    "file": "Notes/Daily Standup.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": false
                   },
                   "icon": "lucide-file",
-                  "title": "Duty SaaS"
+                  "title": "Daily Standup"
                 }
               },
               {
@@ -47,16 +47,30 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/Daily Standup.md",
+                    "file": "Notes/1-1 Playbook.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Daily Standup"
+                  "title": "1-1 Playbook"
+                }
+              },
+              {
+                "id": "08695eb55ecf940b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "AI/Claude Code Skill Playbook.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Claude Code Skill Playbook"
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -66,7 +80,7 @@
               {
                 "id": "c3184acf40a6477e",
                 "type": "tabs",
-                "dimension": 45.93993325917686,
+                "dimension": 36.04004449388209,
                 "children": [
                   {
                     "id": "f5c2905f7a85432e",
@@ -74,12 +88,12 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/EP SaaS.md",
+                        "file": "Notes/Business Bank.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "EP SaaS"
+                      "title": "Business Bank"
                     }
                   },
                   {
@@ -107,12 +121,12 @@
                     }
                   }
                 ],
-                "currentTab": 2
+                "currentTab": 1
               },
               {
                 "id": "6daf623ea71b0a7d",
                 "type": "tabs",
-                "dimension": 54.06006674082313,
+                "dimension": 63.9599555061179,
                 "children": [
                   {
                     "id": "3a79f449488355fd",
@@ -183,7 +197,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -309,29 +325,32 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "5646d77dc32192cf",
+  "active": "9b9ab17c16c89870",
   "lastOpenFiles": [
-    "Notes/Weekly Tasks.md",
-    "Notes/Duty SaaS.md",
-    "Notes/2026.md",
     "Notes/Daily Standup.md",
-    "Notes/Weekly Tasks.md.tmp.43920.14c6d8f9ce2b",
-    "Notes/Weekly Tasks.md.tmp.43920.baa9c944b8a2",
-    "Notes/Weekly Tasks.md.tmp.43920.31fd788923cd",
-    "Notes/Weekly Tasks.md.tmp.43920.14decb68308b",
-    "Notes/Weekly Tasks.md.tmp.43920.a8e5acadfe80",
-    "Notes/Weekly Tasks.md.tmp.30560.c34cba20b3b8",
+    "Notes/Weekly Tasks.md",
+    "AI/Claude Code Skill Playbook.md",
+    "Notes/1-1 Playbook.md",
     "Tips & Tools/English vocab.md",
-    "Notes/Weekly Tasks.md.tmp.30560.a877a0d49e1b",
-    "Notes/Weekly Tasks.md.tmp.30560.1a4917cbeb49",
+    "Notes/2026.md",
+    "Notes/EP SaaS.md.tmp.47160.9419baa0e418",
+    "Notes/EP SaaS.md.tmp.47160.99d1097f3684",
+    "Notes/EP SaaS.md.tmp.47160.a11c1d386bde",
+    "Notes/EP SaaS.md.tmp.47160.7e3cdc886105",
+    "Notes/EP SaaS.md.tmp.47160.bbe0000a5f20",
+    "Notes/EP SaaS.md.tmp.47160.987984692282",
+    "Notes/EP SaaS.md.tmp.47160.cdefdca538a8",
+    "Notes/EP SaaS.md.tmp.47160.d7e88fd1ffed",
+    "Notes/EP SaaS.md.tmp.47160.eeb8798ce3e7",
+    "Notes/EP SaaS.md.tmp.47160.af54cb686891",
     "Notes/Venture Tasks.md",
+    "Notes/Duty SaaS.md",
+    "Notes/Business Bank.md",
+    "Notes/EP SaaS.md",
     "Notes/breakglass-research/KILL-TABLE.md",
-    "Notes/Weekly Tasks.md.tmp.18768.2209a4d526f7",
-    "Notes/Weekly Tasks.md.tmp.18768.7d3d63668287",
     "Notes/Antifragile SaaS.md",
     "Notes/breakglass-research/next-steps.md",
     "Notes/breakglass-research/FACE-MODE-DOSSIER.md",
-    "Notes/EP SaaS.md",
     "Notes/breakglass-research/README.md",
     "AI/validate-biz-idea.md",
     "Notes/breakglass-research/RAILS-INTEL.md",
@@ -343,9 +362,6 @@
     "Notes/breakglass-research/NEAR-MISSES.md",
     "AI/long-vol-consultant.md",
     "Notes/clock-research/COLD-MAP.md",
-    "Notes/clock-research/HITL-WALKTHROUGH.md",
-    "Notes/clock-research/WARM20-CANDIDATES.md",
-    "Notes/clock-research/HVAC-BRIEF.md",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",
