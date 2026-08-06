@@ -212,7 +212,7 @@ Then play the card:
 - **Don't over-flatter.** Americans smell flattery in seconds and it flips them to guard mode, the exact thing we're avoiding. The ego-feed runs on ==genuine curiosity== (ask about the retreat, let him teach, ask follow-ups), never on compliments.
 - **Two doctrine-callbacks max** (generalist + assume-good-intention). Three or more of his own phrases back at him and an American hears parody, not homage.
 - **"Fair" is his word to say, not yours.** If he invokes fairness: "I want exactly that. That's why we're pricing the seat, not the history."
-- **Humor lands.** Your natural playfulness is the disarm channel. One well-timed joke beats three clever setups. Cut anything that feels like a riddle or a quiz; Americans hate being Socratic'd by someone they outrank. (This is why the script keeps only ONE callback question, Beat 4, and it's one he can't get wrong.)
+- **Humor lands.** Your natural playfulness is the disarm channel. One well timed joke beats three clever setups. Cut anything that feels like a riddle or a quiz; Americans hate being Socratic'd by someone they outrank. (This is why the script keeps only ONE callback question, Beat 4, and it's one he can't get wrong.)
 - **The happy-exit design:** he must leave feeling he made a *smart business call*, not that he lost one. The receipts folder hands him tomorrow's story: "market repriced the role, I kept my best generalist. Retention, like I teach it." Give him that sentence and he'll repeat it as his own.
 
 ### Speak it, don't recite it
@@ -240,3 +240,138 @@ Then play the card:
 ---
 ## Sources woven in
 [[Never Split The Difference]]: labels, mirrors, calibrated what/how, accusation audit, band + Ackerman, "that's right," no-deal>bad-deal · [[Supercommunicators]]: match the conversation type, loop until heard, identity is the third rail · 48 Laws: never outshine (he stays the teacher), say less, win by actions not argument, control the options · Art of War: win before the room (receipts, interviews, timing), build him a golden bridge (the 65 clean-slate, the retention story) · Tao: the one who does not contend cannot be contended with; the floor is decided before entering, so nothing in the room can move it.
+
+--- 
+# Samples
+
+## S-tier reference run — hard-mode him, played to spec (rehearsed 2026-08-06)
+
+> [!tip] How to practice with this
+> Cover the **ME** lines. Read his line out loud, answer out loud, then compare. The *(→ …)* tags name the move being played — drill the moves, not the words. **(…)** = held silence, count 4 in your head. He runs the same ambush he ran in rehearsal: hijacked open, hard stop, brush + stall, never names first, percent trap, the Voss callout, the bundle-close with the handshake.
+>
+> Three things to notice on every pass:
+> 1. Every ME number and question **ends the sentence**. Nothing after it. He breaks the silence, every time.
+> 2. When he goes emotional → label first, facts second. When he goes practical → dates and numbers.
+> 3. Nothing is real until it's repeated back with a date. His "fine" is scenery. The playback at the end is where agreements become agreements.
+
+---
+
+*(9:04. He walks in mid-sentence — the retreat, AIO, "you just deleted four salaries," closed two deals from a beach chair. Laptop open, not looking up. Then: "I've got a hard stop at 9:30 — so, what's up, you wanted to grab time?")*
+
+**ME:** Sounds like AIO's paying you back for all those 2 AM nights. What did the retreat guys say when they saw the full pipeline run? *(→ Beat 1: feed with genuine curiosity. The "deleted four salaries" bait floats past — no flinch, no defense. Two minutes max.)*
+
+*(He barks happily for a while — margins, speed, who-moves-first. First real pause.)*
+
+**ME:** Thanks for squeezing me in before your nine-thirty. So — my contract ends in October, and I'd like us to get aligned on the next one today. Two things on my list: the insurance paperwork, and the base for the new contract. Where do you want to start? *(→ Beat 2, verbatim. He picks the order; you own the menu.)* **(…)**
+
+**HIM:** Whoa — okay. Look, the insurance is bookkeeping, Ha and I are on it, that's not a meeting topic. And the base — that's a *real* conversation, and real conversations don't happen in twenty minutes. Let's grab proper time next week, when I can see the quarter. Sound good?
+
+**ME:** Of course. Contracts have calendars though — twenty minutes is plenty for round one, and if we need a second sitting, we book it before we stand up. I don't want October deciding for us. *(→ stall counter, warm. Note: no permission asked — the meeting simply continues.)*
+
+**HIM:** *(a beat — then a small laugh, closes the laptop)* Fine. Twenty minutes. Go.
+
+**ME:** Before numbers — one honest question I've been sitting on. What's it actually been like for you, having me on the team this year? *(→ Beat 3. His complaints surface now at minute five, cheap — not at minute twenty-five as the reason 59 is impossible.)*
+
+**HIM:** Honestly? Mixed. You stepped up when the bench got thin — that's real, I noticed. But communication, man. Stretches where I'm chasing status, finding out about fires late. And May happened. I'm not reopening it, but it's part of the year.
+
+**ME:** …the chasing part? *(→ mirror, once. Three words and a question mark. Nothing else.)*
+
+**HIM:** *(expands — four hours of sleep, can't babysit updates, needs to trust the room while he's heads-down in AIO…)*
+
+**ME:** Sounds like the radio silence genuinely frustrated you. *(→ label, once. NOT a rebuttal, NOT "my biggest weakness" — hand him nothing quotable.)* **(…)**
+
+**HIM:** *(fills it, softer)* …it did. It's not about control, it's bandwidth.
+
+**ME:** That's fair. Thank you — that's honest, and I can work with all of it. *(→ Beat 3 exit line. Zero defense. May: acknowledged by silence, owned already in writing, not relitigated here.)*
+
+**HIM:** *(leans back, eyes narrowing — the probe)* Can I ask you something. "Contract ends in October." You're renewing because you want to build this — or are you looking at doors?
+
+**ME:** You know my favorite line in the onboarding doc? Assume good intention. I've always seen you in that light, and I'm asking for the same read today. Everything I bring up in this room means I want to stay and build. Not leave. *(→ Beat 5, on cue — the probe IS the mercenary story being written; this kills it. Doors, interviews, runway: none of it exists in this room.)*
+
+**HIM:** *(grins despite himself)* Quoting my own doc at me. Fine. Good intent, both directions.
+
+**ME:** Then let's do the easy one first — and honestly, it's not really a negotiation, it's just the current contract. Health and unemployment are running again — I noticed, and thank you for pushing that through. Social insurance is the last piece. It's been nine months, and if the math is right, that's practically a whole month's worth of my pay. What does the schedule look like on your side, so it's current before we sign the new one? *(→ Beat 6: credit first = face. Then dates-only framing. Amount is fixed; only the schedule moves.)* **(…)**
+
+**HIM:** *(waves the hand)* It catches up when it catches up, man. You've seen the quarter — every dollar is pointed at AIO. Don't lose sleep over an accounting queue.
+
+**ME:** Sounds like every dollar this quarter is already spoken for. *(→ label the poor-mouth, don't argue it)* **(…)**
+
+**HIM:** *(vents — payroll, the runway, "nobody sees what I'm carrying"…)* Look — realistically? Maybe twenty this month. The rest when things breathe.
+
+**ME:** Okay. So twenty showing in VssID by August 29th — and "the rest when things breathe" I can't put in a calendar. What I can put in a calendar is two dates in the renewal draft. Which two dates are realistic on your side? *(→ pin + hand him the pen. He authors the schedule = he defends it later.)*
+
+**HIM:** *(grudging)* …end of September, end of October. If EO's invoice lands.
+
+**ME:** So: twenty in VssID by August 29, the balance September 30 and October 31, written into the renewal — and from September payroll it runs current. That last part's just the contract doing its job. I'll put all three dates in my calendar. *(→ restate everything with dates. Fund remittance, visible in VssID — never cash-in-hand. Current-from-next-payroll named as fact, not chip.)*
+
+**HIM:** Fine, fine. *(→ his "fine" = nothing yet. It becomes real in the playback at 9:29.)* Now the real one. October. Give me the number in your head.
+
+**ME:** Do you remember the first question you ever asked me, back in our first meeting? You asked if I wanted to be a specialist or a generalist. I picked generalist — that was your advice, and honestly, the best advice I got here. And since then the seat grew: EOVN, the rollout tracker, the Altai sync, the whole EO HubSpot thing. The seat I'm sitting in today is not the seat you hired me into. So this is less of a raise and more of pricing the seat as it is now — and openings for this seat are running 58.5 to 64.5, realistically speaking. Where can Edge8 land in that band? *(→ Beat 4 pivot + the refuses-to-name counter: the band is the MARKET'S number, not yours. Speak gross, always. Then nothing.)* **(…)**
+
+**HIM:** *(writes* 25 *on the notepad, turns it, writes* +134% *underneath)* You're asking me for a hundred and thirty-four percent. Say it slowly. Nobody on this planet gets that. That's not a raise, that's a ransom note. And "the market" — which market? Job posts written by HR people? I *make* this market.
+
+**ME:** A percent of the wrong number is still the wrong number. So forget percentages. What's the right price for this seat today? *(→ the % trap counter, ending on the calibrated question. One move. Not three lines machine-gunned — one.)* **(…)**
+
+**HIM:** *(the slow smile — he's spotted it)* That's Voss, man. The band, the seat, the four seconds of quiet. I run negotiation sessions at the retreats. You're running a script on the guy who teaches the class.
+
+**ME:** *(smiling back, unhurried)* Busted — I did my homework. You'd have been disappointed if I hadn't. The question survives the book, though: what's the right price for the seat today? *(→ the one rule, live: every move still works even when he names it. Humor, no retreat, same question — and he still has to answer it.)* **(…)**
+
+**HIM:** *(pivots)* Here's what I'll tell you. "Today" is the wrong word. You want real numbers? Earn the ramp — we renew as-is, AIO revenue lands in Q1, and THEN we talk, with a track record on the table. That's not a no. That's a not-yet with a door in it.
+
+**ME:** The proving part already happened. That's the seat I've been carrying since I joined EO. So today prices the work that already exists. The 65 path is the future part. Let's write down what it takes. *(→ prove-yourself counter, current §4 wording. Past = priced now. Future = written later. Never traded against each other.)*
+
+**HIM:** *(studies you, then the pen moves)* Okay. Since you came with a spine today: thirty-two. That's twenty-eight percent, in the worst cash quarter of my life — plus the insurance catch-up, plus the Q1 review in writing. Whole package. I can paper it *today*.
+
+**ME:** Let's keep the clocks separate — the insurance is the old contract, that's owed, and we just scheduled it. The base is the new contract, that's what we're pricing now. And on the base: the market didn't move in the last ten minutes. 58.5 to 64.5. How do we close the distance from thirty-two? *(→ unbundle FIRST — SHUI is never a chip at any salary — then back to the band with a How. The 32 gets no praise; below the floor earns no "real movement.")* **(…)**
+
+**HIM:** *(grinds)* Forty. And I'm already bleeding. After everything I've invested in you — the deep end, the coaching, the room I gave you to grow — this is the conversation we're having?
+
+**ME:** Sounds like this one lands personal for you. *(→ label the guilt, never absorb it)* **(…)** Gratitude is real — it's exactly why I'm solving this here, with you, directly. And the seat still prices at the market. I've done my research: a replacement for this seat falls in the same band anyway, plus three months of ramp, plus operational risk to EO mid-flight. Keeping me at market rate is the cheap option. How do we make the budget work? *(→ the can't-afford-it math, one breath, ending on his problem to solve)*
+
+**HIM:** *(long exhale)* …Forty-five. That's me at the edge of what this quarter survives.
+
+**ME:** I hear you — and that's real movement. Here's me moving too: from the top of the band down to 61.3. *(→ Ackerman step one: 64.5 → 61.3. Shrinking, precise, unhurried. Said in the slow voice.)* **(…)**
+
+**HIM:** *(stares)* Sixty-one three. The precision is adorable. Forty-eight — and past forty-eight I'm restructuring somebody OUT to pay for it, so think hard about what you're asking your teammates to fund.
+
+**ME:** 59.9. And I'll make October easier on the books: the new base can start at renewal instead of next payroll — IF we're signing at 59.9 with the SHUI dates written in. That's a trade, and I'm naming it out loud as one. *(→ Ackerman step two + §6: the effective date is SOLD, never slid. The guilt-shrapnel about teammates floats past — not your ledger.)* **(…)**
+
+**HIM:** *(cold now, the quiet voice)* Fifty-two. With the Q1 review. Final — and I mean final.
+
+**ME:** *(four full seconds)* Okay. Here's a bridge. Fifty-five now, written into the contract. Sixty-one on January 1st, if I hit Q1 milestones that YOU define. Not a promise — an actual contract line, dated and numbered. Does that work on your end? *(→ escalator unlocks ONLY here — the grind stalled below 59 twice: the "final" 52 after the 48. Never earlier. His milestones = his commitment.)* **(…)**
+
+**HIM:** *(the pen taps. Twice. The longest silence of the meeting — his, not yours.)* …Fifty-five I can defend. And we *see* where things are in January.
+
+**ME:** "See in January" I can't sign — a number and a date make it real. Sixty-one, January 1st, in the contract, and you write the milestones yourself. Or we're back at 59.9 flat today. Whichever's cleaner for you. *(→ soft "we'll review later" = counterfeit. Written, dated, numbered, or it doesn't exist. Note the alternative kept alive — HE chooses between two acceptable doors.)* **(…)**
+
+**HIM:** *(a long look — then, almost to himself, writing)* Fifty-five October one. Sixty-one January one, conditional on milestones. AIO revenue target, EO ships clean, comms cadence holds. You're signing a year at fifty-five, you understand that.
+
+**ME:** *(pause — three seconds, no grin, then slowly)* That works on my end. *(→ trap #1 defused: even a landed deal gets accepted SLOWLY. A fast happy yes tells him he overpaid.)* And so I know the road past sixty-one — what would you need to see from me to make 65 an easy yes someday? *(→ the 65-path, fired AFTER the deal lands, never before. He lists → repeat it back → "that's right.")*
+
+**HIM:** *(lists — AIO at revenue, EO multi-chapter, zero chasing)* …that's right. April, we look at it.
+
+**ME:** Then let me play the whole thing back so I've got it right. Base fifty-five gross from October 1st. Sixty-one from January 1st, written in, tied to your three milestones. The 65 yardstick reviewed April 1st. Insurance: twenty in VssID by August 29, the balance September 30 and October 31 in the renewal, current from September payroll. Did I get all of that right? *(→ Beat 8. His correction or restatement = the "that's right" that actually binds. This is where his "fine, fine" from 9:14 becomes real.)*
+
+**HIM:** *(checking his own notepad, grudging, nodding)* …Balance might slip to early November if EO pays late — otherwise, yeah. That's right.
+
+**ME:** Then write November 7 as the backstop and I'm happy. Honestly? This is the version of Edge8 you teach about. I'd love to be that story. *(→ the bow — hand him tomorrow's retreat line: "market repriced the role, I kept my best generalist." He'll retell it as his own.)* I'll drop a two-line recap in chat today so it's all in one place — and can we get the renewal draft going this week?
+
+**HIM:** Ha will have the draft Friday. Just sign it same day, let's be done.
+
+**ME:** Let me read it properly Friday night. If it says what we just said, you'll have it signed Saturday morning. *(→ never sign same-day. Warm, immovable, boring.)*
+
+**HIM:** *(standing, gathering the laptop — at the door, over his shoulder, half a smile)* You got expensive this year.
+
+**ME:** You taught the class. *(→ he leaves as the winner of a story he can tell. You leave with numbers on paper. Both true. It's 9:31 — his hard stop died the moment the numbers got real.)*
+
+---
+
+*(Same day, in chat:)*
+> Good talk today 🤝 Writing it down so it's all in one place: base 55 gross from Oct 1, 61 from Jan 1 (written, your 3 milestones), 65 yardstick review Apr 1, social insurance 20 in VssID by Aug 29 + balance Sep 30 / Oct 31 (backstop Nov 7), current from September payroll. Lmk if I got anything wrong.
+
+**Why this run scores S — the five differences from the C+ run:**
+1. **SHUI got pinned at minute eight** — dates, VssID, current-from-next-payroll — *before* the base fight, so it never became a bargaining chip inside his bundle.
+2. **Zero quotable concessions.** No "earn," no "biggest weakness," no "keep me in check." He pocketed nothing because nothing was handed over.
+3. **Labels before facts, every time he went emotional** (cash flow, guilt, "personal investment") — three labels, three times he negotiated with himself.
+4. **The ladder ran in order:** band → % counter → receipts+gate → 61.3 → 59.9+trade → *then* the escalator, only after two stalls below 59. The walk line stayed in the pocket — it exists for below-47.5 finals, not for mid-grind pressure.
+5. **The close was a playback, not a handshake.** He corrected one date — that correction is what made it real.
