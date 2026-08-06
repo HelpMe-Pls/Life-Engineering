@@ -90,16 +90,16 @@
 ### Beat 4: The pivot, generalist callback → seat repricing (the one "guess" you keep)
 **SAY:** "Do you remember the first question you ever asked me, back in our first meeting?"
 *(if he remembers, great, he's co-authoring; if not:)* "You asked me if I wanted to be a specialist or a generalist. I picked generalist. That was your advice. Honestly, the best advice I got here."
-**THEN:** "And since then, Tracy left, James left, Trac left. I picked up auth, onboarding, middleware, and the whole EO HubSpot implementation. So the seat I'm sitting in today is not the seat you hired me into. It grew. That's what today is really about. Not a raise. Pricing the seat as it is now."
+**THEN:** "And since then, I've taken ownership of the EOVN setup, the rollout tracker, the Altai sync, and the whole EO HubSpot thing. So the seat I'm sitting in today is not the seat you hired me into. It grew. That's what today is really about. So what I'm proposing is less of a raise and more of pricing the seat as it is now."
 **WHY:** His own doctrine (generalist) becomes the premise → the conclusion (market price for a generalist seat) inherits his authorship. He can't attack it without attacking himself.
 
 ### Beat 5: The good-intention prime (20 sec)
-**SAY:** "You know my favorite line in the onboarding doc? Assume good intention. I've always read your pushes that way. So I'm asking for the same read today. Everything I bring up in this room means I want to stay and build. Not leave."
+**SAY:** "You know my favorite line in the onboarding doc? Assume good intention. I've always seen you in that light. So I'm asking for the same read today. Everything I bring up in this room means I want to stay and build. Not leave."
 **WHY:** Kills the "ungrateful mercenary" story before his brain writes it.
 
 ### Beat 6: SHUI, logistics not negotiation (5 min, dates only)
 **SAY:** "Let's do the easy one first. And honestly, it's not really a negotiation. It's just the current contract. Health and unemployment are running again. I noticed, and thank you for pushing that through." *(credit = face)*
-**THEN:** "Social insurance is the last piece. Nine months, about 57 to the fund as of August. What does the schedule look like on your side, so it's current before we sign the new one?"
+**THEN:** "Social insurance is the last piece. It's been nine months, and if the math is right, that's practically a whole month's worth of my pay. What does the schedule look like on your side, so it's current before we sign the new one?"
 **DO:** Whatever he offers → pin it: **"So [amount] showing in VssID by [date], and the rest by [date]. I'll put both in my calendar."**
 **IF he links it to the raise:** "This one is the old contract. The new base is a separate conversation. Let's not mix the two."
 **Hard lines (unchanged June law):** amount fixed, only the schedule moves · fund remittance only, visible in VssID, never cash in hand · current-from-next-payroll is not a chip at ANY salary.
@@ -114,7 +114,7 @@ Then play the card:
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **≥ 59**                               | Pause 3 sec (no grin). "That tells me you see what I see. Let's lock it." → Beat 8. Do NOT push to 65. Bank the 65-path instead (below).                                                                     |
 | **47.5–58.9**                          | "I appreciate that. That's real movement. Here's my problem though. 🥇 *I've done my research and the market for this seat right now is 58.5 to 64.5.* How do we get to the bottom of that band?" → SILENCE. |
-| **< 47.5 / "no raise" / percent-talk** | 🥈 *"How am I supposed to sign another year at half the market while I'm carrying three people's work?"* → SILENCE. Then the band.                                                                           |
+| **< 47.5 / "no raise" / percent-talk** | 🥈 *"How am I supposed to sign another year at half the market rate while I'm capable of carrying three people's work?"* → SILENCE. Then the band.                                                           |
 | **Refuses to name first**              | Quote the band as the market's number, not yours: "Openings for this seat are running 58.5 to 64.5. Where can Edge8 land in that band?"                                                                      |
 
 **Ackerman ladder** (if bargaining down from the top; shrinking steps, never round the last one):
@@ -143,40 +143,39 @@ Then play the card:
 
 ## 4. Branch table: if he says X → you say Y
 
-| He says | You say |
-|---|---|
-| **"+136%?! Nobody gets that"** | "A percent of the wrong number is still the wrong number. So forget percentages. What's the right price for this seat today?" |
-| **"Prove yourself first / next year"** | "The proving part already happened. That's the seat I've been carrying since spring. So today prices the work that already exists. The 65 path is the future part. Let's write down what it takes." |
-| **"Company can't afford it"** | *(label first)* "Sounds like cash flow is genuinely tight right now." *(pause)* "That's exactly why keeping me is the cheap option. A replacement costs the same band, plus three months of ramp, plus EO right in mid-flight. How do we make the budget work?" |
-| **"SHUI *is* the raise"** | "Bringing it current is the floor, not the offer. That money was already mine. The eval is about what the work is worth going forward." |
-| **"Bonus instead of base"** | "A bonus is one-time. The base is the contract. The renewal signs on base, and a bonus is a nice extra on top." |
-| **"SHUI or raise, pick one"** | "Both. They're on different clocks. The insurance is the old contract, that's owed. The base is the new contract, that's negotiated. We schedule one and sign the other." |
-| **Vague "soon, don't worry"** | "Love it. Which date do I put in the calendar to check VssID?" |
-| **Cash-flow sob story (SHUI)** | "It sounds like the timing is genuinely brutal. What CAN move this month, even partial?" |
-| **"When clients pay, you'll get yours"** | "It came out of my paycheck in months the company did get paid. It isn't contingent revenue. What's realistic from this side regardless?" |
-| **Guilt trip ("after all I've done…")** | "Gratitude is why I keep solving this directly with you. It doesn't change whose money it is." |
-| **"You should be glad you have a job"** | "I am glad. And that money still came out of my paycheck every month. Gratitude and bookkeeping are two different things. Which date do I put in the calendar?" |
-| **"A warning in May, and now this?"** | "The May letter has my written response and my full ownership. Happy to continue that thread any time. But this is payroll. Warning or no warning, that money came out of my paycheck. What's realistic this month?" |
-| **Threatens a write-up for asking** | "Noted. And I'll keep this exactly this professional. The question stands. What's realistic this month?" |
-| **Flattery-then-cheap ("you're above money talk")** | "Glad you see it that way. That's exactly why market price is the easy call." |
-| **"You're threatening the EO project?"** | "EO gets my best regardless. That's not on the table. This is about the company's own books." |
-| **"You'd really go legal?"** | "I'd rather we never find out. That's why we're here talking. What's realistic this month?" |
-| **"Did Minh put you up to this?"** | "I can only speak to my own paycheck." |
-| **"New salary starts at renewal (Oct)"** | *(a trade, never a slide)* "I can live with the base starting at renewal. IF we're signing at [59+], and the fund schedule has dates on it. Deal?" |
-| **Anger / blow-up** | "Okay, hang on. I apologize. Let's go back to where this started feeling unfair, and let's fix that part first." → SILENCE. *(He who loses his temper loses the room. Your calm IS the flex.)* |
-| **Stall ("let me think about it")** | "Of course. Contracts have calendars though. Which day this week do we close it? I don't want October deciding for us." |
-| **Fake yes ("yeah for sure, sounds good, let's circle back")** | "Love it. What's the first step, and what date do I check?" *(yes without how = no)* |
-| **Turns it into your performance review** | "Happy to go deep on that right after we lock the contract. It affects October." |
-| **Anything surprising** | Mirror his last 1–3 words with a question mark. Wait. (*"Restructuring the payroll?"*) |
+| He says                                                        | You say                                                                                                                                                                                                                                                                       |
+| -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **"+136%?! Nobody gets that"**                                 | "A percent of the wrong number is still the wrong number. So forget percentages. What's the right price for this seat today?"                                                                                                                                                 |
+| **"Prove yourself first / next year"**                         | "The proving part already happened. That's the seat I've been carrying since I joined EO. So today prices the work that already exists. The 65 path is the future part. Let's write down what it takes."                                                                      |
+| **"Company can't afford it"**                                  | *(label first)* "I don't think cash flow is genuinely tight right now." *(pause)* "I think that keeping me is actually the cost efficient option. A replacement costs the same band, plus three months of ramp, plus EO right in mid-flight. How do we make the budget work?" |
+| **"SHUI *is* the raise"**                                      | "Bringing it current is the floor, not the offer. That money was already mine. The eval is about what the work is worth going forward."                                                                                                                                       |
+| **"Bonus instead of base"**                                    | "A bonus is one-time. The base is the contract. The renewal signs on base, and a bonus is a nice extra on top."                                                                                                                                                               |
+| **"SHUI or raise, pick one"**                                  | "Both. They're on different clocks. The insurance is the old contract, that's owed. The base is the new contract, that's negotiated. We schedule one and sign the other."                                                                                                     |
+| **Vague "soon, don't worry"**                                  | "Love it. Which date do I put in the calendar to check my SHUI?"                                                                                                                                                                                                              |
+| **Cash-flow sob story (SHUI)**                                 | "It sounds like the timing is genuinely brutal. What CAN move before my contract ends, even partial?"                                                                                                                                                                         |
+| **"When clients pay, you'll get yours"**                       | "It came out of my paycheck in months the company did get paid. It isn't contingent revenue. What's realistic from this side regardless?"                                                                                                                                     |
+| **Guilt trip ("after all I've done…")**                        | "Gratitude is why I keep solving this directly with you. It doesn't change whose money it is."                                                                                                                                                                                |
+| **"You should be glad you have a job"**                        | "I am glad. And that money still came out of my paycheck every month for SHUI contribution. Gratitude and bookkeeping are two different things. Which date do I put in the calendar?"                                                                                         |
+| **"A warning in May, and now this?"**                          | "The May letter has my written response and my full ownership. Happy to continue that thread any time. But this is payroll. Warning or no warning, that money came out of my paycheck. What's realistic this month?"                                                          |
+| **Threatens a write-up for asking**                            | "Noted. And I'll keep this exactly this professional. The question stands. What's realistic this month?"                                                                                                                                                                      |
+| **Flattery-then-cheap ("you're above money talk")**            | "Glad you see it that way. That's exactly why market price is the easy call."                                                                                                                                                                                                 |
+| **"You're threatening the EO project?"**                       | "EO gets my best regardless. That's not on the table. This is about the company's own books."                                                                                                                                                                                 |
+| **"You'd really go legal?"**                                   | "I'd rather we never find out. That's why we're here talking. What's realistic this month?"                                                                                                                                                                                   |
+| **"New salary starts at renewal (Oct)"**                       | *(a trade, never a slide)* "I can live with the base starting at renewal. IF we're signing at [59+], and the fund schedule has dates on it. Deal?"                                                                                                                            |
+| **Anger / blow-up**                                            | "==Okay, hang on. I apologize. Let's go back to where this started feeling unfair, and let's fix that part first.==" → SILENCE. *(He who loses his temper loses the room. Your calm IS the flex.)*                                                                            |
+| **Stall ("let me think about it")**                            | "Of course. Contracts have calendars though. Which day this week do we close it? I don't want October deciding for us."                                                                                                                                                       |
+| **Fake yes ("yeah for sure, sounds good, let's circle back")** | "Love it. What's the first step, and what date do I check?" *(yes without how = no)*                                                                                                                                                                                          |
+| **Turns it into your performance review**                      | "Happy to go deep on that right after we lock the contract. It affects October."                                                                                                                                                                                              |
+| **Anything surprising**                                        | Mirror his last 1–3 words with a question mark. Wait. (*"Restructuring the payroll?"*)                                                                                                                                                                                        |
 
 ---
 ## 5. SHUI menu (what forgiveness costs HIM, never volunteer it)
 
-| Deal lands at | Back-pay (the ~57.4M) | Notes |
-|---|---|---|
-| **≥ 65** | Clean slate. You stop chasing it; SHUI current from renewal | The ONLY door where forgiveness exists. It's his face-saving "win." |
-| **59–64.9** | Owed in full, dated schedule he authors | Amount fixed, schedule flexible. VssID dates in your calendar. |
-| **< 59** | Owed in full, tight schedule | Nothing is forgiven at a discount. |
+| Deal lands at | Back-pay (the ~57.4M)                                       | Notes                                                               |
+| ------------- | ----------------------------------------------------------- | ------------------------------------------------------------------- |
+| **≥ 65**      | Clean slate. You stop chasing it; SHUI current from renewal | The ONLY door where forgiveness exists. It's his face-saving "win." |
+| **59–64.9**   | Owed in full, dated schedule he authors                     | Amount fixed, schedule flexible. VssID dates in your calendar.      |
+| **< 59**      | Owed in full, tight schedule                                | Nothing is forgiven at a discount.                                  |
 
 **Invariant at every tier:** SHUI runs current from next payroll, visible in VssID. Contract + law. Never a chip.
 
@@ -194,16 +193,16 @@ Then play the card:
 ## 7. After the meeting
 **WIN (≥59 + SHUI dated):** 2-line chat recap same day → renewal draft this week → deliver loudly for 2 weeks → ==stop negotiating== (amateurs reopen). Tick the 2026.md July item.
 **PARTIAL (base yes, SHUI vague):** the renewal signature is your last gate. Say it warm: "Once the fund dates are written into the contract, I'll sign the same day."
-**STALL:** re-meet pinned before leaving the room. Day 3 of silence: "Have you given up on solving this between us?" Day 5: proceed as agreed with yourself. ==Never send reminder #15.==
+**STALL:** re-meet pinned before leaving the room. Day 3 of silence: "Have you given up on solving this between us?" Day 5: proceed as agreed with yourself.
 **NO / below 47.5 final:** the walk line, nothing more, perfectly warm. Work continues normally. You're paid through October. Those 2 months: interview sprint + EP launch (already your Aug plan). Official channels only AFTER exit, never brandished before. *You cannot be blown up; you can only be delayed.*
 
 **Chat recap template (same day, keep it this short):**
-> Good talk today 🤝 Writing it down so it's all in one place: base [X] gross from [date], social insurance current by [date] ([schedule]), 65-review on [date]. Yell if I got anything wrong.
+> Good talk today 🤝 Writing it down so it's all in one place: base [X] gross from [date], social insurance current by [date] ([schedule]), 65-review on [date]. Lmk if I got anything wrong.
 
 ---
 ## 8. Voice & tone (the 7-38-55 layer)
 - Numbers land in the **slow, low, downward** voice. Everything else: light and warm.
-- **4 seconds of silence** after every label, mirror, question, and number. The silence does the work. Don't rescue him from it.
+- **4 seconds of silence** after every label, mirror, question, and number. The silence does the work. Don't rescue him from it. He MUST be the one who breaks the silence, not you.
 - One label per move. Never two questions in a row. Never answer your own question.
 - If YOU get emotional: slow down, drop volume, smile. (You can't influence his emotions while yours are driving.)
 - His mood decides the channel ([[Supercommunicators]]): he goes emotional → label feelings first, park the data. He goes practical → numbers and dates. Match, then lead.
@@ -228,9 +227,9 @@ Then play the card:
 **1. What went well (last 6 months)**
 - EO renewal delivered end-to-end (the headline; revenue kept: [amount/scope])
 - HubSpot implementation for EO chapters: [n] chapters shipped
-- Auth + onboarding fixes: [what broke → what it cost before → fixed]
-- Middleware: [what it unblocked]
-- Coverage after departures: absorbed [Tracy's X, James's Y, Trac's Z] with zero handover downtime
+- Altai sync: [what it cost before → how it helps us now]
+- The Rollout Tracker app: [what it unblocked]
+- Coverage after departures: absorbed  3 pp's work with zero downtime
 
 **2. Results: value to the business**
 - Each bullet above → one money-or-risk sentence. ("Renewal kept [X] revenue." "No new hire needed for [role] = [Y]/mo saved.")

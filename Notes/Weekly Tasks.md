@@ -19,21 +19,25 @@
 ### 5/8
 - [x] EO sprint review:
 	- [x] Record the transcript
-- [ ] Paperwork
+- [x] Paperwork
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 6/8
-- [ ] EO minimal work:
-	- [ ] Reopen CI/CD gate?
-	- [ ] Enable branch protection?
+- [x] EO minimal work:
+	- [x] Practice 1-1
+	- [x] New pipeline & application journey planning
+- [ ] Shopee + soap?
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 7/8
 - [ ] EO minimal work
-	- [ ] 1-1 script
+	- [ ] Practice 1-1
+	- [ ] Research contract renewal (legal) 
 - [ ] Bragdoc: you're the ONLY one who's doing the daily standup
+- [ ] Ask for noise-free kidney test cost
+- [ ] PC03
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 8/8

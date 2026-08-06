@@ -70,7 +70,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           },
           {
             "id": "8cedd05142699eb5",
@@ -325,12 +325,12 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "9b9ab17c16c89870",
+  "active": "5646d77dc32192cf",
   "lastOpenFiles": [
-    "Notes/Daily Standup.md",
     "Notes/Weekly Tasks.md",
-    "AI/Claude Code Skill Playbook.md",
     "Notes/1-1 Playbook.md",
+    "Notes/Daily Standup.md",
+    "AI/Claude Code Skill Playbook.md",
     "Tips & Tools/English vocab.md",
     "Notes/2026.md",
     "Notes/EP SaaS.md.tmp.47160.9419baa0e418",
