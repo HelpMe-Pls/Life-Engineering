@@ -1,52 +1,49 @@
 # The TODOs
-### 3/8
-- [x] EO:
-	- [x] Review the Altai sync for `Accelerator`, `SLP`, and `Adult Child`
-	- [x] Open promotion PR for `global-hubspot`
-	- [x] Refine & practice 1-1 script
-- [x] Venture:
-	- [x] EP: review & promote `main`
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 4/8
-- [x] EO weekly report & sprint goals update
-	- [x] Get the team QA your work & address feedback
-	- [x] 1-1 script++
-- [x] Health check  
-- [ ] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 5/8
-- [x] EO sprint review:
-	- [x] Record the transcript
-- [x] Paperwork
-- [ ] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 6/8
-- [x] EO minimal work:
-	- [x] Practice 1-1
-	- [x] New pipeline & application journey planning
-- [ ] Shopee + soap?
-- [ ] Venture++
-- [ ] Tao Te Ching++
-- [ ] Live up to your standards
-### 7/8
-- [ ] EO minimal work
-	- [ ] Practice 1-1
+### 10/8
+- [ ] EO:
+	- [ ] Refine & practice 1-1 script
 	- [ ] Research contract renewal (legal) 
-- [ ] Bragdoc: you're the ONLY one who's doing the daily standup
-- [ ] Ask for noise-free kidney test cost
-- [ ] PC03
+	- [ ] ERD in HTML
+	- [ ] Prep questions for the new stories
+- [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 8/8
+### 11/8
+- [ ] EO weekly report & sprint goals update
+	- [ ] 1-1 script++
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 12/8
+- [ ] EO sprint review:
+	- [ ] Record the transcript
+	- [ ] Practice & suggest 1-1
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 13/8
+- [ ] EO minimal work:
+	- [ ] Deliverables++
+	- [ ] 1-1?
+- [ ] Blood test?
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 14/8
+- [ ] EO minimal work
+	- [ ] Deliverables++
+	- [ ] 1-1?
+- [ ] Blood test?
+- [ ] Bragdoc: you're the ONLY one who's doing the daily standup
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 15/8
 - [ ] Perfect dive start + 500m with paddles
 - [ ] Groceries
-- [ ] 🛡 **VENTURE-FREE EVENING** (standing rule 3) — nothing after dinner. The scoreboard fill moves to 9/8 with the read.
+- [ ] Practice 1-1
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 9/8
+### 16/8
 - [ ] Splurge (if you're done with EP HITL)
 - [ ] Weekly planning
 - [ ] Venture++
@@ -232,9 +229,7 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - EO:
 	- [ ] `next-steps.md`++
 	- [ ] Enable branch protection
-	- [ ] Sync most recent members from Altai
-	- [ ] Load Altai sync status to the rollout app
-	- [ ] Enable chapter health update from `Stalled` to `Pending`
+	- [ ] `global-hubspot`: Set default chapter owner as the first `Active member` 
 - EP: 
 	- [ ] Set up YOUR bank account (ACB) for PayOS Prod
 	- [ ] HITL
