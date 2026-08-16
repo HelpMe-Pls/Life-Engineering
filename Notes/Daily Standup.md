@@ -1,12 +1,15 @@
 > [!important] A friendly reminder
 > As long as you're still getting paid each month + have access to AI & your business is still being built, you're still winning. EVERYTHING ELSE is noise.
 
-- /goal /wayfinder read @docs/plans/next-steps.md to /implement its instructions with /codebase-design and /tdd to close-out the `Agent-ready queue` by opening a corresponding PR for each task and fold them all into `dev`. Don't forget to keep the @docs/plans/next-steps.md file MINIMAL, up-to-date, and feel free to surface any concerns that require HITL as you go. 
-- Keep it up, you're FAR from done. Feel free to resume/respawn your in-flight workflows/subagents/scripts as needed.
+- /goal /wayfinder read @docs/plans/next-steps.md to /implement its instructions with /codebase-design and /tdd to close-out the `Agent-ready queue` by opening a corresponding PR for each task and fold them all into `dev`
+- Keep it up, you're FAR from done. Feel free to resume/respawn/fan-out your in-flight workflows/subagents/scripts as needed.
 - /goal perform a DEEP adversarial code review loop by utilizing the /code-review skill on the open PR (#404) and self-iterate with /tdd to
-  /implement your fixes until ALL issues/gaps/regressions are FULLY resolved. You're granted FULL ACCESS to the producer's repo (`altai-hubspot-sync` under the same parent as this repo) to fact-check and verify your work as you go. It is CRITICAL to keep the ENTIRE test suite and the `next-steps.md` file of BOTH repos MINIMAL and OPTIMIZED based on the standards of /codebase-design
+  /implement your fixes until ALL issues/gaps/regressions are FULLY resolved. You're granted FULL ACCESS to the producer's repo (`altai-hubspot-sync` under the same parent as this repo) to fact-check and verify your work as you go. It is CRITICAL to keep the ENTIRE test suite in BOTH repos MINIMAL and OPTIMIZED based on the standards of /codebase-design
 # Prompt
 - You're allowed to gratuitously write/check/access...
+- /wait-what surface the HITL actions from this run so I can make the decision
+- Feel free to fan out as many workflows/subagents as needed to get to the bottom of this
+- It is CRITICAL that you keep the @docs/plans/next-steps.md file MINIMAL and up-to-date and feel free to surface any concerns that require HITL as you go.
 ### `/long-vol-consultant`
 On a normal Sunday:
 ```
@@ -256,9 +259,9 @@ State what you could not determine, what commands failed, what areas need deeper
 ```
 bun remove -g @anthropic-ai/claude-code
 
-Remove-Item -Recurse -Force C:\Users\<your-user>\.bun\install\global\node_modules\@anthropic-ai\claude-code*
+Remove-Item -Recurse -Force C:\Users\leekh\.bun\install\global\node_modules\@anthropic-ai\claude-code*
 
-Remove-Item C:\Users\<your-user>\.bun\bin\claude.exe -ErrorAction Ignore
+Remove-Item C:\Users\leekh\.bun\bin\claude.exe -ErrorAction Ignore
 
 bun add -g @anthropic-ai/claude-code
 

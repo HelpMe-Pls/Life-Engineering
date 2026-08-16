@@ -1,49 +1,45 @@
 # The TODOs
-### 10/8
+### 17/8
 - [ ] EO:
-	- [ ] Refine & practice 1-1 script
-	- [ ] Research contract renewal (legal) 
-	- [ ] ERD in HTML
-	- [ ] Prep questions for the new stories
+	- [ ] 1-1 spar
+	- [ ] Address team's feedback 
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 11/8
+### 18/8
 - [ ] EO weekly report & sprint goals update
-	- [ ] 1-1 script++
+	- [ ] 1-1 ?
+	- [ ] Review the work
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 12/8
+### 19/8
 - [ ] EO sprint review:
 	- [ ] Record the transcript
-	- [ ] Practice & suggest 1-1
+	- [ ] Enable search for accounts
+	- [ ] Hardcode booking link for `/portal` on `Review call` step
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 13/8
+### 20/8
 - [ ] EO minimal work:
-	- [ ] Deliverables++
-	- [ ] 1-1?
-- [ ] Blood test?
+	- [ ] Backlog++
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 14/8
+### 21/8
 - [ ] EO minimal work
-	- [ ] Deliverables++
-	- [ ] 1-1?
-- [ ] Blood test?
-- [ ] Bragdoc: you're the ONLY one who's doing the daily standup
+	- [ ] Contingencies
+- [ ] Bragdoc
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 15/8
-- [ ] Perfect dive start + 500m with paddles
+### 22/8
+- [ ] Walk with Trac
 - [ ] Groceries
-- [ ] Practice 1-1
+- [ ] Perfect dive start + 500m with paddles
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 16/8
+### 23/8
 - [ ] Splurge (if you're done with EP HITL)
 - [ ] Weekly planning
 - [ ] Venture++
@@ -230,6 +226,7 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 	- [ ] `next-steps.md`++
 	- [ ] Enable branch protection
 	- [ ] `global-hubspot`: Set default chapter owner as the first `Active member` 
+	- [ ] Redirect back to the previous page after signing in
 - EP: 
 	- [ ] Set up YOUR bank account (ACB) for PayOS Prod
 	- [ ] HITL
