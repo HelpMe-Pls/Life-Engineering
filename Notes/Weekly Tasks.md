@@ -22,14 +22,14 @@
 - [ ] Tao Te Ching++
 - [x] Live up to your standards
 ### 20/8
-- [ ] EO minimal work:
-	- [ ] Backlog++
+- [x] EO minimal work
+	- [x] Backlog++
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 21/8
 - [ ] EO minimal work
-	- [ ] Enable search for accounts
+	- [ ] Default account owner
 	- [ ] CI outage
 - [ ] Bragdoc
 - [ ] Tao Te Ching++
