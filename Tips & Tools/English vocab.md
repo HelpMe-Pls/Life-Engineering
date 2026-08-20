@@ -216,7 +216,7 @@ precede (v) {caution: it's not precEEd}: to be in front of, earlier than, to sur
 
 recede (v): withdraw, diminish, decrease 
 
-assuage (v): ease, quench, appease, propitiate, mollify, pacify, solace, succor
+assuage (v): ease, quench, appease, placate, propitiate, mollify, pacify, solace, succor
 
 extenuating (adj): providing a partial justification or excuse for something
 

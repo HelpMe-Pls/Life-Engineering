@@ -84,7 +84,7 @@
 	- Stuff → stuffed /stʌft/
 	- Sniff → sniffed /snɪft/
 #### As a `/d/`
-- Verbs that _**end** with_ a vowel or a voiced consonant: *b, g, v, z, j, m, n, ng, l, r*. For example:
+- Verbs that _**end** with_ a vowel or a voiced consonant: ***b**, g, v, z, j, m, n, ng, l, r*. For example:
 	- Claw → clawed /klɔːd/
 	- Slam → slammed /slæmd/
 	- Kneel → kneeled /niːld/

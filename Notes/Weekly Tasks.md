@@ -1,26 +1,26 @@
 # The TODOs
 ### 17/8
-- [ ] EO:
-	- [ ] 1-1 spar
-	- [ ] Address team's feedback 
+- [x] EO:
+	- [x] 1-1 spar
+	- [x] Address team's feedback 
+	- [x] `This file's contacts...` → `This file's data has been imported into HubSpot.`
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 18/8
-- [ ] EO weekly report & sprint goals update
-	- [ ] 1-1 ?
-	- [ ] Review the work
+- [x] EO weekly report & sprint goals update
+	- [x] Review the work
+	- [x] 1-1 prep
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 19/8
-- [ ] EO sprint review:
-	- [ ] Record the transcript
-	- [ ] Enable search for accounts
-	- [ ] Hardcode booking link for `/portal` on `Review call` step
+- [x] EO sprint review:
+	- [x] Record the transcript
+	- [x] 1-1 
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 20/8
 - [ ] EO minimal work:
 	- [ ] Backlog++
@@ -29,7 +29,8 @@
 - [ ] Live up to your standards
 ### 21/8
 - [ ] EO minimal work
-	- [ ] Contingencies
+	- [ ] Enable search for accounts
+	- [ ] CI outage
 - [ ] Bragdoc
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
