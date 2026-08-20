@@ -32,6 +32,7 @@
 	- [ ] Default account owner
 	- [ ] CI outage
 - [ ] Bragdoc
+- [ ] Trim 1-1 playbook
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 22/8
