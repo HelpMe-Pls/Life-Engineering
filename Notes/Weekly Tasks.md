@@ -5,36 +5,36 @@
 	- [x] Address team's feedback 
 	- [x] `This file's contacts...` → `This file's data has been imported into HubSpot.`
 - [ ] Venture++
-- [ ] Tao Te Ching++
+- [x] Tao Te Ching++
 - [x] Live up to your standards
 ### 18/8
 - [x] EO weekly report & sprint goals update
 	- [x] Review the work
 	- [x] 1-1 prep
 - [ ] Venture++
-- [ ] Tao Te Ching++
+- [x] Tao Te Ching++
 - [x] Live up to your standards
 ### 19/8
 - [x] EO sprint review:
 	- [x] Record the transcript
 	- [x] 1-1 
 - [ ] Venture++
-- [ ] Tao Te Ching++
+- [x] Tao Te Ching++
 - [x] Live up to your standards
 ### 20/8
 - [x] EO minimal work
 	- [x] Backlog++
 - [ ] Venture++
-- [ ] Tao Te Ching++
+- [x] Tao Te Ching++
 - [x] Live up to your standards
 ### 21/8
-- [ ] EO minimal work
-	- [ ] Default account owner
-	- [ ] CI outage
-- [ ] Bragdoc
-- [ ] Trim 1-1 playbook
-- [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] EO minimal work: `next-steps.md++`
+	- [x] Default account owner
+	- [x] CI outage
+- [x] Bragdoc
+- [x] Trim 1-1 playbook
+- [x] Tao Te Ching++
+- [x] Live up to your standards
 ### 22/8
 - [ ] Walk with Trac
 - [ ] Groceries

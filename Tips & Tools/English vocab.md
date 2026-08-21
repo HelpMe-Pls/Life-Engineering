@@ -34,6 +34,8 @@ conventional (adj): standard, traditional, typical
 
 ossify (v): to become hardened or conventional and opposed to change
 
+congeal (v): coagulate, thicken, solidify
+
 effete (adj): exhausted of energy, decadent, enervated, snobbish, soft, overly refined, pretentious
 
 substitute (v-n): replacement, exchange 
@@ -321,6 +323,8 @@ elation (n): euphoria, ecstasy, exhilaration, immense joy
 titillating (adj): pleasantly stimulating or exciting, erotic
 
 jovial (adj): jolly, festive, merry, (in) jest
+
+raillery (n): banter, teasing, jesting
 
 ==vivacious== (adj): sprightly, zesty, lively in temper
 
@@ -900,6 +904,8 @@ discretion (n): tact, behaving or speaking in a way that avoids causing offense 
 
 plausible (adj): superficially pleasing or persuasive, appearing worthy of belief
 
+facile (adj): oversimplistic, superficial, shallow, effortless, smooth, fluent, deft
+
 solitude (n): isolation, privacy, loneliness
 
 reclusive (adj): solitary, lonely
@@ -962,7 +968,7 @@ stringent (adj): strict, rigorous, rigid
 
 ==idiosyncrasy== (n): characteristic, trait, mannerism, peculiarity
 
-disposition (n): temperament, character, mood, settlement, disposal
+disposition (n): temperament, character, mood, tenor, settlement, disposal
 
 ignominy (n): disgrace, shame, humiliation, ignominious (adj)
 
@@ -1222,6 +1228,8 @@ contort (v): to twist in a violent manner
 homage (n): respect, tribute, ode
 
 bigot (n): a narrow-minded person
+
+anthropoid (adj-n): human-like, ape-like
 
 plebe (n): người ta, an ordinary person who lacks the knowledge of an insider
 
@@ -1576,3 +1584,10 @@ confer (v): consult, deliberate, huddle, sync up, discuss
 desuetude (n): obsolescence, disuse, legal invalidity 
 
 embargo (n): cấm vận, trade ban, boycott, non-disclosure period
+
+vigil (n): memorial/community mourning at night, beside care
+
+paucity (n): not enough evidence
+
+anthology (n): a curated collection of poems, short stories, songs, or essays compiled into a single book or album, often by various authors centered around a theme
+
