@@ -70,7 +70,7 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -327,9 +327,9 @@
   },
   "active": "9b9ab17c16c89870",
   "lastOpenFiles": [
-    "AI/Claude Code Skill Playbook.md",
-    "Notes/Weekly Tasks.md",
     "Notes/Daily Standup.md",
+    "Notes/Weekly Tasks.md",
+    "AI/Claude Code Skill Playbook.md",
     "Notes/1-1 Playbook.md",
     "Notes/zNOmHxwn",
     "Notes/Km0LZthl",

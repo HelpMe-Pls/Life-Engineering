@@ -1,62 +1,57 @@
 # The TODOs
-### 24/8
-- [x] EO:
-	- [x] Refine the raise script
-	- [x] Offer help on the meeting summary UI prototype
-	- [x] Address team's feedback 
-	- [x] Review the promotion PR
+### 31/8
+- [ ] EO:
+	- [ ] Practice 1-1
+	- [ ] Charge the Mac
+	- [ ] Update `Canada Bridge` note for its accounts
+	- [ ] Promote #717
+	- [ ] Write the demo script for the next sprint review
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 25/8
-- [x] EO weekly report & sprint goals update
-	- [x] Review 1-1
-	- [x] EOVN event integration planning
-	- [x] Fill out the `next-steps.md` for `global-hubspot`
+- [ ] Live up to your standards
+### 1/9
+- [ ] EO weekly report & sprint goals update
+	- [ ] Practice 1-1
+	- [ ] Ping the Old Infant
+	- [ ] Draft the sprint report
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 26/8
-- [x] EO minimal work:
-	- [x] Update `README.md` for `global-hubspot`
-	- [x] Event API estimate proposal
+- [ ] Live up to your standards
+### 2/9
+- [ ] EO minimal work:
+	- [ ] Send the sprint report
+	- [ ] Practice 1-1
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 27/8
-- [x] EO sprint review
-	- [x] Record the transcript
-	- [x] Drain the queue
-	- [x] Refine 1-1 script
+- [ ] Live up to your standards
+### 3/9
+- [ ] EO sprint review
+	- [ ] Record the transcript
+	- [ ] Practice 1-1
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 28/8
-- [x] EO minimal work: 
-	- [x] Feedback for file uploads
-	- [x] Fill in the FAST goals
-	- [x] Reply Lauren
-- [x] Bragdoc
+- [ ] Live up to your standards
+### 4/9
+- [ ] EO minimal work: 
+	- [ ] Contingencies
+- [ ] Bragdoc
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 29/8
-- [x] Perfect dive start + 500m with paddles
-- [x] Hefty breakfast
-- [x] Groceries
-- [x] HITL + review PRs:
-	- [x] /prototype clicking on a chapter's account from its details page also show the account's info and allow admins to add notes to an account.
-	- [x] Changelog for new features + start local dev server to verify them
-	- [x] Deep adversarial review loop to surface and resolve CRITICAL gaps/regressions that compromise the app's usability or increase the app's fragility in the long run
+- [ ] Live up to your standards
+### 5/9
+- [ ] Perfect dive start + 500m with paddles
+- [ ] Hefty breakfast
+- [ ] Groceries
+- [ ] Team offline?
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 30/8
+- [ ] Live up to your standards
+### 6/9
 - [ ] Splurge (if you're done with EP HITL)
-- [x] Weekly planning
+- [ ] Weekly planning
 - [ ] Venture++
 	- [ ] Sunday scoreboard read + long-vol read with Claude (log the week's numbers)
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
+- [ ] Live up to your standards
 # What a good day looks like
 - Wake up at 5AM
 - Finish workout before 6:30AM
@@ -235,9 +230,6 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
 - EO:
 	- [ ] `next-steps.md`++
-	- [x] Review ALL features/enhancements/fixes from #630 to ONLY surface only CRITICAL issues
-	- [x] List changelog from #630 for local review
-	- [ ] Update `Canada Bridge` note for its accounts
 - EP: 
 	- [ ] Set up YOUR bank account (ACB) for PayOS Prod
 	- [ ] HITL
