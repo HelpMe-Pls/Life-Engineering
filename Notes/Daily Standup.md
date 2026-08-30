@@ -2,7 +2,6 @@
 > As long as you're still getting paid each month + have access to AI & your business is still being built, you're still winning. EVERYTHING ELSE is noise.
 
 - /goal /wayfinder read @docs/plans/next-steps.md to /implement its instructions with /codebase-design and /tdd to close-out the `Agent-ready queue` by opening a corresponding PR for each task and fold them all into `dev`
-- Keep it up, you're FAR from done. Feel free to resume/respawn/fan-out your in-flight workflows/subagents/scripts as needed.
 - /goal perform a DEEP adversarial code review loop by utilizing the /code-review skill on the open PR (#404) and self-iterate with /tdd to
   /implement your fixes until ALL issues/gaps/regressions are FULLY resolved. You're granted FULL ACCESS to the producer's repo (`altai-hubspot-sync` under the same parent as this repo) to fact-check and verify your work as you go. It is CRITICAL to keep the ENTIRE test suite in BOTH repos MINIMAL and OPTIMIZED based on the standards of /codebase-design
 # Prompt
@@ -10,6 +9,8 @@
 - /wait-what surface the HITL actions from this run so I can make the decision
 - Feel free to fan out as many workflows/subagents as needed to get to the bottom of this
 - It is CRITICAL that you keep the @docs/plans/next-steps.md file MINIMAL and up-to-date and feel free to surface any concerns that require HITL as you go.
+- /compact you're closing open issues
+- Keep it up, you're FAR from done. Feel free to resume/respawn/fan out your in-flight workflows/subagents/scripts as needed. Don't forget that the ENTIRE test suite in this repo MUST stays MINIMAL and OPTIMIZED based on the standards of /codebase-design, and the @docs/plans/next-steps.md spine is CURRENT and kept to its ABSOLUTE MINIMUM.
 ### `/long-vol-consultant`
 On a normal Sunday:
 ```
@@ -22,13 +23,18 @@ When shit hits the fan:
 ```
 /long-vol-consultant I'm tempted to pour next week into the cert idea because buyers keep asking — pressure-test that against the firewall before we touch the schedule, and if it holds, write the change in.
 ```
+# Fix Claude update
+```
+bun remove -g @anthropic-ai/claude-code
 
+Remove-Item -Recurse -Force C:\Users\leekh\.bun\install\global\node_modules\@anthropic-ai\claude-code*
 
-> [!warning] Chewsday ping
->Just flagging again: there's a contract violation around SHUI owed ever since I came on full-time.
->Don't get me wrong, I'm incredibly grateful for this job, but baseline expectations need to be honored.
->I'm not gonna let this slide until we get it resolved, or at least have a date to work toward :-)
----
+Remove-Item C:\Users\leekh\.bun\bin\claude.exe -ErrorAction Ignore
+
+bun add -g @anthropic-ai/claude-code
+
+claude -v
+```
 # EP
 > [!important] For prompts
 > - Remove line clamps so that every bullet/paragraph is one logical line, and the text reflows correctly in any input box
@@ -255,18 +261,6 @@ State what you could not determine, what commands failed, what areas need deeper
 - Prefer direct, specific criticism over generic advice.
 - If the codebase is good, say why. If it is fragile, say exactly where.
 ```
-### Fix Claude update
-```
-bun remove -g @anthropic-ai/claude-code
-
-Remove-Item -Recurse -Force C:\Users\leekh\.bun\install\global\node_modules\@anthropic-ai\claude-code*
-
-Remove-Item C:\Users\leekh\.bun\bin\claude.exe -ErrorAction Ignore
-
-bun add -g @anthropic-ai/claude-code
-
-claude -v
-```
 ---
 
 # 1-1
@@ -286,7 +280,7 @@ claude -v
 
 ## Prompts
 - Pls make sure to utilize the /code-review skill to help you with the DEEP adversarial review loop once you're done with the implementation and self-iterate to /diagnosing-bugs and fix ALL gaps/regressions/issues that the loop exposes before promoting to prod.
-- Generate a meeting summary based on `this transcript`. Refer to the `Sample` for the desired output.
+- Generate a meeting summary based on `this transcript`. Refer to `Sample` for the desired output.
 ## Key metrics
 - Chapters are able to track their two levers of growth, member retention and member acquisition with a goal of 8% NET new growth every year.
 - The leading indicators of this is <u>data cleanliness</u> and `number of leads` to `number of opportunities` from a deal funnel perspective → more deals → more potential for more money.
@@ -337,7 +331,21 @@ claude -v
 ## Events syncing between services
 - Request Wix & Hivebrite APIs
 - Middleware: mainly for global approval, especially for chapters not using HubSpot directly.
+## Run the app locally
+### `global-hubspot`
+```
+cd /c/Users/leekh/Documents/Repos/Edge8/global-hubspot/website
 
+npx supabase start
+
+cd /c/Users/leekh/Documents/Repos/Edge8/global-hubspot/website
+
+eval "$(npx supabase status -o env | sed -n 's/^API_URL=/export NEXT_PUBLIC_SUPABASE_URL=/p; s/^ANON_KEY=/export NEXT_PUBLIC_SUPABASE_ANON_KEY=/p; s/^SERVICE_ROLE_KEY=/export SUPABASE_SERVICE_ROLE_KEY=/p')"
+
+echo "$NEXT_PUBLIC_SUPABASE_URL"
+
+npm run dev
+```
 # Misc
 ## Altai
 - Sync mkt lists to prod

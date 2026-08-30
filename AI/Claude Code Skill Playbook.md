@@ -144,7 +144,7 @@ The agent reads the templates it needs from the [reference blocks](#agent-refere
 **Result:** your idea is now Issues (tracked units of work on GitHub), one ⚡ line each. The spec — the written plan — lives on the tracker too. **Next →** Build (recipe 5).
 
 ### 2a. Quick change 🚶
-**When:** you can say the whole change in one or two sentences, and it does not change how the product behaves — text, a label, a color, a link, an image. In doubt? Use recipe 2 — a tiny idea just makes a short interview. If the "tweak" is bigger than it looks, the agent pauses and tells you.
+**When:** you can say the whole change in one or two sentences, and it does not change how the product behaves — text, a label, a color, a link, an image. In doubt? Use recipe 2 — a tiny idea just makes a short interview. In case the "tweak" is bigger than it looks, the agent pauses and tells you.
 
 ✏️ + 📋:
 ```
@@ -198,12 +198,12 @@ A region became clear? **Next →** take it through recipe 2 like any idea.
 **Question appeared mid-interview (recipe 2)?** Park it there with ✏️ `/mattpocock-skills:handoff design detour: <the question>` — the agent writes a handoff file and shows its path. Run this recipe in a new session. Then resume the interview: one more new session, ✏️ `Read the handoff file at <the path the old session showed> and continue the interview.`
 
 ### 5. Build 🚶
-**When:** the ⚡ queue holds Issues (after recipe 2) — or you filled it by interview (below). Tests first, then code, one branch and one PR per item; the agent reviews its own work before each item's PR. Review (6) is the deeper second pass.
+**When:** the ⚡ queue holds Issues (after recipe 2) — or you filled it by interview (below). Tests first, then code, one branch and one PR per item into dev; the agent reviews its own work before merging each item's PR and closing its Issue. Once the drain empties the queue, the session opens (or reuses) the single standing promotion PR — dev into main — that closes out this AFK run; Review (6) attacks that promotion PR next.
 
 **Fill the queue by interview** (optional, 🧑 then 🚶): the agent asks scope-scaled questions, opens the Issues, and fills the queues for you — for a batch of your own tasks that still have details worth asking about. Anything needing a real design interview goes through recipe 2 instead. Send this, then answer its questions, one round at a time, until it has none left:
 
 ```
-/mattpocock-skills:to-tickets turn the batch below into agent-sized Issues — quiz me first, scaled to each item's scope: a tweak-sized item gets no questions, an item with real choices gets numbered questions with your recommended answer, one or two rounds at most; then publish the Issues (label `ready-for-agent` OR `ready-for-human` accordingly, with blocking edges declared) and mirror each as one ⚡ line linking its Issue, in build order, in @docs/plans/next-steps.md; an item that needs a design decision from me, or that only I can do → 🧑 with the reason (say if the New feature recipe is its route), never ⚡; a DEC-worthy fork → pause: options + a recommendation, filed as a 🧑 line, wait for me. The batch:
+/mattpocock-skills:to-tickets turn the batch below into agent-sized Issues — feel free to open a /mattpocock-skills:grilling session to quiz me as needed, scaled to each item's scope: a tweak-sized item gets no questions, an item with real choices gets numbered questions with your recommended answer, one or two rounds at most; then publish the Issues (and /triage them with `ready-for-agent` OR `ready-for-human` accordingly, with blocking edges declared) and mirror each as one ⚡ line linking its Issue, in build order, in @docs/plans/next-steps.md; an item that needs a design decision from me, or that only I can do → 🧑 with the reason (say if the New feature recipe is its route), never ⚡; a DEC-worthy fork → pause: options + a recommendation, filed as a 🧑 line, wait for me. The batch:
 <your tasks, one line each, with any limits you already know>
 ```
 
@@ -212,24 +212,24 @@ A region became clear? **Next →** take it through recipe 2 like any idea.
 /goal every item in my batch is either published as an Issue — each Issue's ID or URL shown in this session — with its one-line ⚡ mirror shown in @docs/plans/next-steps.md after the last edit with those changes pushed by following the existing git hygiene (no other diffs other than the file itself), or parked under 🧑 with its reason shown; OR paused on a DEC-worthy fork — options and a recommendation shown, the fork filed as a 🧑 line and still unanswered by me.
 ```
 
-**Then drain:** fresh session, prefer Variant A below.  If it's a long list, use Variant B.
+**Then drain:** fresh session, prefer Variant A below — the AFK default. Variant B exists for a long queue you're steering item-by-item, but is rarely needed.
 
-**Variant A — drain the whole queue** (short queue, 2–3 small items). 📋 both:
+**Variant A — drain the whole queue** (the default AFK run). 📋 both:
 ```
-/mattpocock-skills:tdd /mattpocock-skills:implement drain the ⚡ queue in @docs/plans/next-steps.md following this repo's established git hygiene — do 🔧 first; one branch and one PR per item, opened without asking; a blocked item → 🧑 with the blocker named, then continue; a DEC-worthy fork (hard to reverse / product intent / new seam) → pause: options + a recommendation, filed as a 🧑 line, wait for me; keep the spine current as you go
+/mattpocock-skills:tdd /mattpocock-skills:implement drain the ⚡ queue in @docs/plans/next-steps.md following a proper batch order — do 🔧 first; one branch off `dev` and one PR per item, opened without asking, merged into `dev` (squash) once green, then its issue closed via `gh issue close` (`dev` isn't the default branch, so a bare `Closes #` won't fire) — following this repo's established git hygiene; a blocked item → 🧑 with the blocker named, then continue; once every mergeable item this run is merged into `dev` with its issue closed, open the standing promotion PR — `dev` into `main`, merge commit, reusing one already open (`gh pr list --base main --head dev`) rather than duplicating it — titled/bodied to list every issue this run closed; that PR IS the production promotion — never merge it yourself; a DEC-worthy fork (hard to reverse / product intent / new seam) → pause: options + a recommendation, filed as a 🧑 line, wait for me; keep the @docs/plans/next-steps.md spine to its ABSOLUTE MINIMAL and CURRENT as you go.
 ```
 
 ```
-/goal every ⚡ item present at session start in @docs/plans/next-steps.md is either checked off or parked under 🧑 with its blocker named — each checked-off item's tests shown green and its PR URL shown, a full-suite pass shown in this session, and the ⚡ section shown after the final edit holding no unchecked items besides those surfaced during the drain; OR paused on a DEC-worthy fork — options and a recommendation shown, the fork filed as a 🧑 line and still unanswered by me
+/goal EITHER every mergeable ⚡ item present at session start in @docs/plans/next-steps.md is merged into `dev` — tests shown green, PR URL shown, its issue closed — or parked under 🧑 with its blocker named, the full suite's passing output on `dev` shown in this session, and the standing promotion PR (`dev` into `main`) open with its URL shown, listing every issue this run closed — that URL marks this session's end; OR every item this run got parked under 🧑 — zero merges, the 🧑 section shown holding each with its blocker, no promotion PR expected; OR paused on a DEC-worthy fork — options and a recommendation shown, the fork filed as a 🧑 line and still unanswered by me. The ENTIRE test suite in this repo stays MINIMAL and OPTIMIZED based on the standards of /codebase-design; ALL stale branches are cleared, on both local and remote.
 ```
 
 **Variant B — one item per session** (the skills' native rhythm: each Issue fits one fresh session; repeat in fresh sessions, the spine hands over between them). 📋 both:
 ```
-/mattpocock-skills:tdd /mattpocock-skills:implement take the top ⚡ item in @docs/plans/next-steps.md — do 🔧 first; work on its own branch per this repo's established git hygiene — written rules (CONTRIBUTING/CLAUDE.md/DEC-* files in docs/adr/), else merged-PR practice — its PR opened without asking (integration stays with Ship, after Review); blocked → park it under 🧑 with the blocker named; a DEC-worthy fork → pause: options + a recommendation, filed as a 🧑 line, wait for me; keep the spine current as you go
+/mattpocock-skills:tdd /mattpocock-skills:implement take the top ⚡ item in @docs/plans/next-steps.md — do 🔧 first; work on its own branch off dev per this repo's established git hygiene — written rules (CONTRIBUTING/CLAUDE.md/DEC-* files in docs/adr/), else merged-PR practice — its PR opened without asking, merged into `dev` once green, then its issue closed via `gh issue close`; blocked → park it under 🧑 with the blocker named; queue now empty → also open the standing promotion PR (`dev` into `main`, reusing one already open) listing every issue closed since the last promotion — never merge it yourself; a DEC-worthy fork → pause: options + a recommendation, filed as a 🧑 line, wait for me; keep the spine CURRENT as you go
 ```
 
 ```
-/goal the item this session took is checked off in @docs/plans/next-steps.md — its tests shown green, full suite passing shown, its PR URL shown, ⚡ section shown after the check-off; OR the item parked under 🧑 with its blocker named — the 🧑 section shown; OR paused on a DEC-worthy fork — options and a recommendation shown, the fork filed as a 🧑 line and still unanswered by me
+/goal the item this session took is merged into `dev` and checked off in @docs/plans/next-steps.md — tests shown green, full suite passing shown, its PR URL shown, its issue closed, ⚡ section shown after the check-off — plus, if that emptied the queue, the standing promotion PR (`dev` into `main`) open with its URL shown; OR the item parked under 🧑 with its blocker named — the 🧑 section shown; OR paused on a DEC-worthy fork — options and a recommendation shown, the fork filed as a 🧑 line and still unanswered by me. ALL stale branches are cleared, on both local and remote.
 ```
 
 *(For one specific item, replace "the top ⚡ item" with its name.)*
@@ -241,11 +241,11 @@ A region became clear? **Next →** take it through recipe 2 like any idea.
 
 **Small or medium PR — one session.** ✏️ (replace `<N>` with the PR number) + 📋:
 ```
-/mattpocock-skills:tdd /mattpocock-skills:code-review perform a DEEP adversarial review loop on PR <N>. Every finding → unchecked ⚡ item in @docs/plans/next-steps.md (file:line, failure scenario, severity); fix each test-first and push after each green fix — #<N> must hold every fix; re-review; repeat; a product-intent finding → 🧑 with the reason, never decided solo; a DEC-worthy fork → pause: options + a recommendation, filed as a 🧑 line, wait for me
+/mattpocock-skills:tdd /mattpocock-skills:code-review perform a DEEP adversarial review loop on PR #<N>. Every finding → unchecked ⚡ item in @docs/plans/next-steps.md (file:line, failure scenario, severity); fix each test-first and push after each green fix — #<N> must hold every fix; re-review; repeat; a product-intent finding → 🧑 with the reason, never decided solo; a DEC-worthy fork → pause: options + a recommendation, filed as a 🧑 line, wait for me
 ```
 
 ```
-/goal the latest /mattpocock-skills:code-review pass in this session reported zero new findings — a clean first pass counts — every review item filed in the ⚡ queue of @docs/plans/next-steps.md checked off with its regression test shown red then green or parked under 🧑 with its reason, every fix pushed with the updated PR head shown, and the full suite's passing output shown in this session; OR paused on a DEC-worthy fork — options and a recommendation shown, the fork filed as a 🧑 line and still unanswered by me
+/goal the latest /mattpocock-skills:code-review pass in this session reported zero new findings — a clean first pass counts — every review item filed in the ⚡ queue of @docs/plans/next-steps.md checked off with its regression test shown red then green or parked under 🧑 with its reason, every fix pushed with the updated PR head shown and folded into #<N>, and the full suite's passing output shown in this session; OR paused on a DEC-worthy fork — options and a recommendation shown, the fork filed as a 🧑 line and still unanswered by me. The ENTIRE test suite in this repo stays MINIMAL and OPTIMIZED based on the standards of /codebase-design, ALL stale branches are cleared on both local and remote, the spine is both MINIMAL and CURRENT.
 ```
 
 **Big PR — three fresh sessions** (the spine carries findings between them):
@@ -277,11 +277,11 @@ Repeat B2 → B3 until B3 adds nothing new to the spine. Several PRs? One review
 ### 7. Ship 🚶→🧑 — the end of the journey
 **When:** a PR passed Review. Look first: open the PR on GitHub, read it, try the preview. Satisfied? 📋 both:
 ```
-/superpowers:finishing-a-development-branch verify green, integrate per this repo's established git hygiene, else merged-PR practice, and a flow call answered nowhere is a DEC-worthy fork — delete the merged branch, delete the shipped item's line from the spine (git log is the record); a DEC-worthy fork → pause: options + a recommendation, filed as a 🧑 line, wait for me
+/superpowers:finishing-a-development-branch verify green, integrate per this repo's established git hygiene, else merged-PR practice — a PR based into `main` (most often the standing promotion PR) IS the production promotion: never merge it yourself, hand it to me as a 🧑 line instead — and a flow call answered nowhere is a DEC-worthy fork; delete the merged branch, delete the shipped item's line from the spine (git log is the record); a DEC-worthy fork → pause: options + a recommendation, filed as a 🧑 line, wait for me
 ```
 
 ```
-/goal the branch integrated per the repo's established git hygiene — merge/PR result shown in this session — the merged branch deleted, the shipped item's line deleted with the ⚡ section of @docs/plans/next-steps.md shown after the edit, and any production promotion recorded as a 🧑 line, not performed; OR nothing integrated — verification red or the merge gated on me by the repo's flow (protected branch / required review) — the state shown (failing output or the open PR's URL) and the next step parked as a 🧑 line; OR paused on a DEC-worthy fork — options and a recommendation shown, filed as a 🧑 line and still unanswered by me
+/goal the branch integrated per the repo's established git hygiene — merge/PR result shown in this session — the merged branch deleted, the shipped item's line deleted with the ⚡ section of @docs/plans/next-steps.md shown after the edit; and — whenever the shipped PR was based into `main`, most often the standing promotion PR — that merge is the production promotion, recorded instead as a 🧑 line and not performed unless EXPLICITLY told otherwise; OR nothing integrated — verification red or the merge gated on me by the repo's flow (protected branch / required review) — the state shown (failing output or the open PR's URL) and the next step parked as a 🧑 line; OR paused on a DEC-worthy fork — options and a recommendation shown, filed as a 🧑 line and still unanswered by me
 ```
 
 *(Previews: if the maintainer set one up, send their preview command — often `/vercel:deploy` — as its own message between the two boxes.)*
@@ -404,9 +404,13 @@ Seed `docs/adr/DEC-GIT-FLOW.md` on Day 0 with the calls the repo leaves unanswer
 ```markdown
 # DEC-GIT-FLOW — branch and merge policy
 
-Fallback only: this repo's own docs and its merged-PR practice win wherever they speak. Default
-branch <main>; integration branch <main/dev>; feature branches `<type>/<slug>` off integration,
-merged by PR only; promotion policy <merge commit / squash>.
+Fallback only: this repo's own docs and its merged-PR practice win wherever they speak. Default:
+main is production — protected, advanced only by merging the standing promotion PR, and that merge
+is always a 🧑 action, never the agent's. dev is the integration branch: every feature/fix branch
+(`<type>/<slug>`) branches off dev (fetch fresh first) and merges back into dev by PR, squash commit
+— the agent merges these itself once green. Promotion: one standing PR from dev into main, merge
+commit (not squash, so main keeps each item's commit) — Build opens it, or reuses one already open,
+once a drain empties the ⚡ queue; Review attacks it next; a human merges it.
 ```
 
 CLAUDE.md standing block 1 — the work spine:
@@ -427,7 +431,7 @@ CLAUDE.md standing block 2 — git hygiene:
 - Nothing lands on the default/integration branch directly — one ⚡ item = one feature branch off the freshest integration branch (fetch first), merged back by PR.
 - Commit per green slice with an imperative message; no WIP noise — the branch history should read as the story of the item.
 - Merge conflicts (merge OR rebase) → the /mattpocock-skills:resolving-merge-conflicts skill: primary sources per hunk, both intents preserved, checks re-run — never hand-mash a hunk, never --abort and retry blind.
-- Finished branch → verify green, open/refresh its PR per the repo's flow; integration happens at Ship, after Review — delete the branch only once merged. Stale branches are debt — prune on sight.
+- Finished branch → verify green, open/refresh its PR per the repo's flow. A PR into the integration branch (dev) may merge as soon as it's green — Build's drain does this itself, issue closed on merge. A PR into main is the production promotion: it only ever merges at Ship, after Review, as a 🧑 action. Delete the branch only once merged. Stale branches are debt — prune on sight.
 - Never force-push a shared branch; never rewrite main's history.
 ```
 
