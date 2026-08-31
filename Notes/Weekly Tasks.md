@@ -1,14 +1,13 @@
 # The TODOs
 ### 31/8
-- [ ] EO:
+- [x] EO:
 	- [ ] Practice 1-1
-	- [ ] Charge the Mac
-	- [ ] Update `Canada Bridge` note for its accounts
-	- [ ] Promote #717
-	- [ ] Write the demo script for the next sprint review
+	- [x] Charge the Mac
+	- [x] Promote #717
+	- [x] Write the demo script for the next sprint review
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 1/9
 - [ ] EO weekly report & sprint goals update
 	- [ ] Practice 1-1
@@ -20,6 +19,7 @@
 ### 2/9
 - [ ] EO minimal work:
 	- [ ] Send the sprint report
+	- [ ] Update `Canada Bridge` note for its accounts
 	- [ ] Practice 1-1
 - [ ] Venture++
 - [ ] Tao Te Ching++
