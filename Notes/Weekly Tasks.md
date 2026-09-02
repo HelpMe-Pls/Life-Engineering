@@ -9,24 +9,24 @@
 - [ ] Tao Te Ching++
 - [x] Live up to your standards
 ### 1/9
-- [ ] EO weekly report & sprint goals update
+- [x] EO weekly report & sprint goals update
 	- [ ] Practice 1-1
-	- [ ] Ping the Old Infant
-	- [ ] Draft the sprint report
+	- [x] Ping the Old Infant
+	- [x] Draft the sprint report
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 2/9
-- [ ] EO minimal work:
-	- [ ] Send the sprint report
-	- [ ] Update `Canada Bridge` note for its accounts
+- [x] EO minimal work:
+	- [x] Send the sprint report
+	- [x] Update `Canada Bridge` note for its accounts
 	- [ ] Practice 1-1
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 3/9
-- [ ] EO sprint review
-	- [ ] Record the transcript
+- [ ] EO minimal work
+	- [ ] Drain Claude quota
 	- [ ] Practice 1-1
 - [ ] Venture++
 - [ ] Tao Te Ching++
@@ -230,6 +230,7 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
 - EO:
 	- [ ] `next-steps.md`++
+	- [ ] Append the `Notes for the approver` from the Request Access form to that account's note.
 - EP: 
 	- [ ] Set up YOUR bank account (ACB) for PayOS Prod
 	- [ ] HITL
