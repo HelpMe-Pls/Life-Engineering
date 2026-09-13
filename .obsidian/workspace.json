@@ -10,7 +10,7 @@
           {
             "id": "2ed2b87e25932f50",
             "type": "tabs",
-            "dimension": 47.470489038785836,
+            "dimension": 53.75805297065139,
             "children": [
               {
                 "id": "8e701c92c4b0d885",
@@ -70,12 +70,12 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 3
           },
           {
             "id": "8cedd05142699eb5",
             "type": "split",
-            "dimension": 52.529510961214164,
+            "dimension": 46.24194702934861,
             "children": [
               {
                 "id": "c3184acf40a6477e",
@@ -327,24 +327,28 @@
   },
   "active": "9b9ab17c16c89870",
   "lastOpenFiles": [
-    "Notes/Daily Standup.md",
     "AI/Claude Code Skill Playbook.md",
+    "Notes/Daily Standup.md",
     "Notes/Weekly Tasks.md",
-    "Notes/1-1 Bench.md",
-    "Tips & Tools/English vocab.md",
     "Notes/1-1 Playbook.md",
+    "Notes/1-1 Bench.md",
+    "Notes/1-1 Playbook.md.tmp.39232.1fe093d47377",
+    "Notes/1-1 Playbook.md.tmp.39232.2686d7691682",
+    "Notes/1-1 Playbook.md.tmp.39232.1f6f74c0f299",
+    "Notes/1-1 Playbook.md.tmp.39232.bdf172c621f3",
+    "Notes/1-1 Playbook.md.tmp.39232.0d6ba4874fe5",
+    "Notes/1-1 Playbook.md.tmp.39232.5df2abcf46a5",
+    "Notes/1-1 Playbook.md.tmp.39232.2e028ddd6f16",
+    "Notes/1-1 Playbook.md.tmp.39232.3ea0a77d8feb",
+    "Notes/1-1 Playbook.md.tmp.39232.3ec10ca01dc9",
+    "Notes/1-1 Playbook.md.tmp.39232.6fd2e1deda78",
+    "Tips & Tools/IELTS 7.5.md",
+    "Tips & Tools/English vocab.md",
+    "Frontend/JavaScript/Everyday methods & utils.md",
+    "Pasted image 20260828121554.png",
+    "Pasted image 20260828121530.png",
     "AI/Skill Playbook Appendix.md",
     "Notes/2026.md",
-    "Notes/EP SaaS.md.tmp.47160.9419baa0e418",
-    "Notes/EP SaaS.md.tmp.47160.99d1097f3684",
-    "Notes/EP SaaS.md.tmp.47160.a11c1d386bde",
-    "Notes/EP SaaS.md.tmp.47160.7e3cdc886105",
-    "Notes/EP SaaS.md.tmp.47160.bbe0000a5f20",
-    "Notes/EP SaaS.md.tmp.47160.987984692282",
-    "Notes/EP SaaS.md.tmp.47160.cdefdca538a8",
-    "Notes/EP SaaS.md.tmp.47160.d7e88fd1ffed",
-    "Notes/EP SaaS.md.tmp.47160.eeb8798ce3e7",
-    "Notes/EP SaaS.md.tmp.47160.af54cb686891",
     "Notes/Venture Tasks.md",
     "Notes/Duty SaaS.md",
     "Notes/Business Bank.md",
@@ -360,9 +364,6 @@
     "Notes/prototype-antifragile-saas.NOTES.md",
     "Notes/Contingencies.md",
     "Notes/Biz.md",
-    "Notes/breakglass-research/CORRELATION-MAP.md",
-    "Notes/breakglass-research/NEAR-MISSES.md",
-    "AI/long-vol-consultant.md",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",
@@ -371,8 +372,6 @@
     "Notes/M4 Key-2.png",
     "Notes/M4 Key-1.png",
     "Pasted image 20260620195825.png",
-    "Tips & Tools/code-review.png",
-    "Tips & Tools/cron.png",
     "Untitled.canvas"
   ]
 }

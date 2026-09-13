@@ -10,6 +10,7 @@
 - Feel free to fan out as many workflows/subagents as needed to get to the bottom of this
 - It is CRITICAL that you keep the @docs/plans/next-steps.md file MINIMAL and up-to-date and feel free to surface any concerns that require HITL as you go.
 - /compact you're closing open issues
+- An ABSOLUTE HARD rule for this session: deploy NO MORE THAN 5 subagents for a workflow, if you need one
 - Keep it up, you're FAR from done. Feel free to resume/respawn/fan out your in-flight workflows/subagents/scripts as needed. Don't forget that the ENTIRE test suite in this repo MUST stays MINIMAL and OPTIMIZED based on the standards of /codebase-design, and the @docs/plans/next-steps.md spine is CURRENT and kept to its ABSOLUTE MINIMUM.
 ### `/long-vol-consultant`
 On a normal Sunday:

@@ -1,51 +1,47 @@
 # The TODOs
-### 31/8
-- [x] EO:
+### 14/9
+- [ ] EO:
 	- [ ] Practice 1-1
-	- [x] Charge the Mac
-	- [x] Promote #717
-	- [x] Write the demo script for the next sprint review
-- [ ] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 1/9
-- [x] EO weekly report & sprint goals update
-	- [ ] Practice 1-1
-	- [x] Ping the Old Infant
-	- [x] Draft the sprint report
-- [ ] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 2/9
-- [x] EO minimal work:
-	- [x] Send the sprint report
-	- [x] Update `Canada Bridge` note for its accounts
-	- [ ] Practice 1-1
-- [ ] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 3/9
-- [ ] EO minimal work
-	- [ ] Drain Claude quota
-	- [ ] Practice 1-1
+	- [ ] PoC++
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 4/9
-- [ ] EO minimal work: 
+### 15/9
+- [ ] EO weekly report & sprint goals update
+	- [ ] Practice 1-1
+	- [ ] Send the sprint report
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 16/9
+- [ ] EO sprint review:
+	- [ ] Record & summarize the meeting
+	- [ ] Practice 1-1
 	- [ ] Contingencies
-- [ ] Bragdoc
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 5/9
+### 17/9
+- [ ] EO minimal work
+	- [ ] Drain the queue & review the meeting summaries
+	- [ ] 1-1 spar
+	- [ ] Bragdoc
+- [ ] Venture++ 
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 18/9
+- [ ] VT
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 19/9
 - [ ] Perfect dive start + 500m with paddles
 - [ ] Hefty breakfast
 - [ ] Groceries
-- [ ] Team offline?
+- [ ] VT
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 6/9
+### 20/9
 - [ ] Splurge (if you're done with EP HITL)
 - [ ] Weekly planning
 - [ ] Venture++
@@ -230,7 +226,8 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
 - EO:
 	- [ ] `next-steps.md`++
-	- [ ] Append the `Notes for the approver` from the Request Access form to that account's note.
+	- [ ] Realtime file list & their notes whenever a new CUD action is committed
+	- [ ] Clear Altai-sync issues
 - EP: 
 	- [ ] Set up YOUR bank account (ACB) for PayOS Prod
 	- [ ] HITL
