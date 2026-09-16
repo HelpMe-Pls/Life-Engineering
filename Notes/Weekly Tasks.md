@@ -1,23 +1,24 @@
 # The TODOs
 ### 14/9
-- [ ] EO:
+- [x] EO:
 	- [ ] Practice 1-1
-	- [ ] PoC++
+	- [x] PoC++
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 15/9
-- [ ] EO weekly report & sprint goals update
-	- [ ] Practice 1-1
-	- [ ] Send the sprint report
+- [x] EO weekly report & sprint goals update
+	- [ ] 1-1 sparring
+	- [x] Send the sprint report
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 16/9
-- [ ] EO sprint review:
-	- [ ] Record & summarize the meeting
+- [x] EO sprint review:
+	- [x] Record & summarize the meeting
 	- [ ] Practice 1-1
 	- [ ] Contingencies
+- [ ] Reply Future Me
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
