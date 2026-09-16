@@ -52,3 +52,44 @@ He needs to be the good guy in this story. He already called it on Aug 19: twent
 - **You contributed to that SOW.** Kyle is only reviewing it and walking it to the board. ==The work that unblocks the money is partly yours.== ⚠️ ==Never invoice that in chat, it reads as "so pay me." Room asset only: one modest clause in 🦴3 and the ⚡ pool row. He knows exactly how much you did, so never over-claim it.== It also buys 💬 S: a contributor asking about his own document is not a man chasing his raise.
 - **Bonus vs base (why the SWAP is cheap for you and dear to him):** the base is contractual, compounds into every later raise, carries SHUI, and outlives this paper (the next contract is indefinite by law). The bonus is discretionary, sized by the pool, paid once, and priced by his mood on the day. So he will always prefer to pay you in bonus, and "with the bonus you're past fifty" is his cheapest sentence. ==The swap hands him three things he wants: a smaller bonus line, one fewer person in the pool, and a twenty-dollar Claude plan he pays from opex, with no SHUI and nothing the team can hear about. That is what makes it an easy yes.== **The pot is at most two months of CURRENT pay (≤50 one-time, and two is generous).** Swapping it for the base repays itself in about 6 months from a base of 38, 8 from 40, 14 from 43, and 30 from 45, before SHUI and compounding, and the base outlives this paper. ⚠️ ==So when his base sits at 43 or under, the swap to 46.7 is a clear win. At 44–46.6 the bridge goes first: the review step keeps the pot, and the swap is the fallback when he won't write it. The swap never lands you under 45: below that you have given up the pot and still not reached the seat.==
 - **The Claude plan:** the $20/mo Personal plan back on the company card, next to the company-paid $125/mo Team seat on the same email. ==Room framing is productivity only: the Team plan is the workhorse, the personal one is the overflow, and it is the cheapest line on the sheet. The side gig never exists in any channel.==
+
+## 🥊 SPARRING — lessons that cost the deal (session 1, Sep 16; Claude as Dave)
+**RESUME HERE.** Scenario locked: gate quiet → *"32 base + your share of the bonus, pool came in at 70%, HR's drafting"* lands in chat as final → 💬 C2 → 💬 D (declined the right-now call) → the room, Fri 10:00. **Arc 1 (chat): clean.** **Arc 2 run 1: LOST** — signed off on 35 + a "comp review April, number TBD" + a free title with a "yes" under his four-minute clock. **Arc 2 rewind: held** — walk line → ⏱ EXIT, Monday 10:00 pinned, no rupture, HR's draft on hold. He left three doors on the table: (1) 35 now + Events-by-Apr-10 bar in the paper + *his email* naming 46.7 as the intent, (2) 35 now + **40 written in the paper for Apr 10**, (3) *"you tell me what you'd sign."* And one admission: ==*"forty I can cover even if the tranche dies."*== **Next scene: Arc 2b, Monday 10:00, you open, HR's two weeks are live.** Then Arc 3: his number lands at 44 bonus-heavy (🔁 territory). Dave as played: American expat, blunt, lets you finish then filibusters, every wall is "out of my hands" (Kyle, board, HR, pool) — ==and he took the HR costume off the moment you asked him straight. Don't hand it back.==
+
+**Locked in the pre-spar grilling (these override the HUD where they differ):**
+- The rule is quotable — he said "never a 100% raise" to your face in August. He still tried *"my rule is a fence, not a target"*; the answer is the bridge, never a defense of 87.
+- ==**Bridge floor: X ≥ 40 in the paper.** Under 40 you don't bridge and you don't walk — you EXIT and let the October math work. Defend the NOW number, not only the step: in both runs 35 sat under the floor unchallenged for the whole arc.==
+- The step self-executes: *"takes effect April tenth unless a SOW-specific shortfall is raised in writing by March thirty-first."* Silence pays you, not him.
+- Gross, always. The confirm line (*"Gross, right?"*) stays holstered unless he says "pocket" or "all-in."
+- Online mechanics: camera on, every **(…)** is a 2–3 count with a slow nod, HUD in a narrow window under the camera, nothing screen-shared (*"I'll send it after, let's not lose the thread"*).
+- ==He runs HIS three questions first.== Three results with a *business* outcome each, under 90 seconds. "Differently" is one breath: *"Two flags, two same-day fixes. Check-ins along the way was the lesson."* Never a third example, never "empathetic."
+
+**The forks you lost — one line each, must not repeat:**
+1. ==Never volunteer a discount.== *"Dropped the ball a few times… more considerate and empathetic"* → he stacked three incidents into "a pattern of judgment" in ten seconds and priced against it for the rest of the call.
+2. ==Own, don't co-sign.== *"Couldn't have said it better myself"* endorsed his verdict. The line is *"That's a pattern I'm happy to stand on. So. Back to the job."*
+3. Have *"what did the width get us?"* answered before you sit down. The week the team was out (Da Nang, Thanh, Ha) IS the answer — say "the week the team was out," never the bereavement, and end on a question, not the band.
+4. First bonus lean → the two-pots line, every time. Skipped it; the bonus stayed his free lever all call.
+5. ==A frame he says once is the room's fact by the next exchange.== "The job is 30% smaller" stood for three; "so we're agreed on the Q1 thing" stood on your silence. Answer every frame in the exchange it lands.
+6. ==Market-gated → convert FIRST.== *"How do we set things up for the tranche on good terms?"* engaged the tranche and locked Q1 as his frame. The 🧩 line came one exchange late — and then *"I'll go make the tranche happen"* re-attached what you had just detached.
+7. ==The band gets said twice per room, max.== Fourth time, he said "you haven't moved an inch" and he was right. "You haven't moved" → the bridge (🪜 first at 41+), never the band again.
+8. ==*"The second step is a small one"* is only true at 41+.== At 35 it is +33%; he laughed. Move X to the floor before the bridge, then the step is small.
+9. ==*"Compensation review in April, number to be agreed"* is the hollow step in its exact LAW-violating form, and you said "sounds good to me."== The line: *"Let's write the number in with the date. Forty-six seven on April tenth, if the SOW is delivered on our side. That part's mine to deliver, so you're grading me, not the market."*
+10. ==*"We good?"* has one legal answer: *"Almost. Let me play it back first."*== The 🦴7 Playback says "the written step to forty-six seven" out loud, and a missing number has to be denied to your face — that is your cue for the walk. You said "yes" instead, with 35 and no number in the step.
+11. SI stays in the Playback (a bolt, not a chip). The title gets its line the moment it lands: *"I'll take it. The title's yours to give. The number's still about the job underneath it."*
+12. ==Don't fire a row at the wrong cue.== The "prove yourself" line was read at an email-vs-paper binary; he heard a script and the clock ticked.
+13. ==His *"you tell me what you'd sign"* is the calibrated question handed to you — it comes BEFORE the walk line, not after.== The walk is the last card in the deck.
+14. Pauses vanished in the last six exchanges of both runs. ==The close is where he runs the clock; the close is where you go to half speed.==
+
+**Monday opener (Arc 2b) — the answer to door three, in one breath:** *"Forty now, in the paper. You said forty's coverable even if the tranche dies, so it's not the pool, it's the date. Then April tenth against the Events bar: forty-six seven. And since HR paper can't carry a future number, your email carries it."* ==Takes his door one and door two at once, moves NOW to the floor, and turns the step from +33% into +17% — an actual small step.==
+
+**Pending ruling (yours, before Monday):** does an email from Dave count as "written"? The LAW says "inside this paper"; he says HR paper never carries a future number. Recorded recommendation: **40 in the paper now + Events-by-Apr-10 bar in the paper + a review line dated Apr 10 in the paper + his email naming 46.7 = a defensible WIN.** ==Under 40 in the paper, no email is worth anything.==
+
+**HUD diff — 8 lines, waiting for your approval before [[1-1 Playbook]] is touched:**
+1. Rule-disowned fallback → *"Fair, then let's forget the rule and just price the job."* → 🥇
+2. Gross-confirm line, fired only on "pocket" / "all-in".
+3. Bridge floor X ≥ 40 + the self-executing clause, in the 🦴5 LAW.
+4. "Differently" one-breath line in 🦴1, plus the three-results block.
+5. "You haven't moved" → bridge, never the band; band capped at two.
+6. "Small step" clause gated to 41+.
+7. "Review, number TBD" hard line (lesson 9) + "the pool sizes the bonus, the base is for the job" aimed at the step when he says *"I can't write a number against a pool I can't see."*
+8. *"Almost. Let me play it back first."* as the only answer to "we good?", above the BOLTS.
