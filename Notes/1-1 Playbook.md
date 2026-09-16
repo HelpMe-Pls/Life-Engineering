@@ -11,7 +11,7 @@ share_updated: 2026-09-11T12:30:51+07:00
 ## 🧊 6 LINES COLD
 - 🪜 **Rule-room:** *"Just so we're on the same page. Forty-six seven sits inside your rule, with room to spare. It's the one number where the market and your rule agree, and that makes it an easy yes."*
 - 🎁 **Concession** (early, it's free): *"The market for this role runs forty-six seven to fifty-nine five. I'm not asking for the middle. I'm asking for the very bottom, because the bottom is what fits inside your rule. I came in there on purpose. I just want this to be an easy yes for you."***(...)** 
-- 🥇 **Band:** *"Right now the market for this role runs forty-six seven to fifty-nine five. That's the range I'm working from."*
+- 🥇 **Band:** *"Right now the market for this role runs forty-six seven to fifty-nine five. That's the range I'm working with."*
 - 🗝️ **Severance:** *"I want to stay. I like building this with you. And it's a contract, so let's price it like one."*
 - 🥉 **Walk:** *"I wish I could. I really do. But I just can't sign that one."* **(...)**  ==Refuses the paper, never the job.==
 - 🔁 **Swap** (only after he leans on the bonus twice, ==only at 45+==): *"OK then here's a thought. Take my bonus share off the table, put it in the base at forty-six seven, and put the personal Claude plan for my account back on your card. What happens to my share is your call."*
@@ -92,7 +92,7 @@ share_updated: 2026-09-11T12:30:51+07:00
 - **Keep-price** ("you stayed at 25") → *"Sure. The sticker on a new hire is only the start of that bill. Three months of ramp, EO mid-flight, the client learning a new face. ==You've done that hiring math a lot more than I have, so you know where it lands.=="* → 🗝️ No invented shared memory, no number of your own. He knows the bill, let him own it.
 - **"Prove yourself first"** → *"Fair. The year on EO is the proof I've got, and I'm happy to stand on it. And if you want proof with a date on it, that's exactly what the review step is. The SOW is the bar, I deliver it, and the number follows."* → 🦴5
 - **"Company's discretion"** → *"Right, and the timing's your call. I'd just rather we use the discretion than the deadline. The renewal signs on a number either way, and picking it early keeps October calm for both of us."* **(…)**
-- **"Your band's top is way past my rule"** → *"Exactly. That's why I'm at the bottom of it, not the middle. I just want this to be an easy yes for you."* **(...)** 
+- **"Your band's top is way past my rule"** → *"Exactly. That's why I'm at the bottom of it, not the middle. I just want this to be an easy yes for you."* **(...)**
 - **Plays the cuts** → *"Then the job just got wider again."* **(…)** *"All the more reason to get the number right once."* React fresh. You heard nothing.
 ### 🧨 HEAT
 - **Replays an incident** — one breath each, then *"So. Back to the agenda."* ==Own it. DO NOT be defensive.==

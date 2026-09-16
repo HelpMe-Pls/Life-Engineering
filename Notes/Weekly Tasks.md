@@ -16,8 +16,8 @@
 ### 16/9
 - [x] EO sprint review:
 	- [x] Record & summarize the meeting
-	- [ ] Practice 1-1
-	- [ ] Contingencies
+	- [x] Practice 1-1
+	- [x] Contingencies
 - [ ] Reply Future Me
 - [ ] Venture++
 - [ ] Tao Te Ching++
