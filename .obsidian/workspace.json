@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/English vocab.md",
+                    "file": "Notes/Q4 Sprint Prompts.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "English vocab"
+                  "title": "Q4 Sprint Prompts"
                 }
               },
               {
@@ -69,8 +69,7 @@
                   "title": "Claude Code Skill Playbook"
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           },
           {
             "id": "8cedd05142699eb5",
@@ -80,7 +79,7 @@
               {
                 "id": "c3184acf40a6477e",
                 "type": "tabs",
-                "dimension": 36.04004449388209,
+                "dimension": 50.579557428872505,
                 "children": [
                   {
                     "id": "f5c2905f7a85432e",
@@ -126,7 +125,7 @@
               {
                 "id": "6daf623ea71b0a7d",
                 "type": "tabs",
-                "dimension": 63.9599555061179,
+                "dimension": 49.4204425711275,
                 "children": [
                   {
                     "id": "3a79f449488355fd",
@@ -325,14 +324,23 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "5646d77dc32192cf",
+  "active": "9b9ab17c16c89870",
   "lastOpenFiles": [
+    "Notes/q4-research/R1-lists.md",
+    "Notes/q4-research/R6-existing-assets.md",
+    "Notes/q4-research/R2-pain-paid-map.md",
+    "Notes/q4-research/R3-service-demand.md",
+    "Notes/q4-research/R5-rails.md",
+    "Notes/q4-research/R4-marketplaces.md",
+    "Notes/Q4 Sprint.md",
+    "Notes/q4-research",
+    "Notes/Q4 Sprint Prompts.md",
+    "Tips & Tools/English vocab.md",
     "Notes/1-1 Bench.md",
+    "Notes/1-1 Playbook.md",
     "Notes/Weekly Tasks.md",
     "Notes/Daily Standup.md",
-    "Notes/1-1 Playbook.md",
     "AI/Claude Code Skill Playbook.md",
-    "Tips & Tools/English vocab.md",
     "AI/Skill Playbook Appendix.md",
     "Notes/2026.md",
     "Notes/EP SaaS.md.tmp.47160.9419baa0e418",
@@ -344,7 +352,6 @@
     "Notes/EP SaaS.md.tmp.47160.cdefdca538a8",
     "Notes/EP SaaS.md.tmp.47160.d7e88fd1ffed",
     "Notes/EP SaaS.md.tmp.47160.eeb8798ce3e7",
-    "Notes/EP SaaS.md.tmp.47160.af54cb686891",
     "Notes/Venture Tasks.md",
     "Notes/Duty SaaS.md",
     "Notes/Business Bank.md",
@@ -355,14 +362,6 @@
     "Notes/breakglass-research/FACE-MODE-DOSSIER.md",
     "Notes/breakglass-research/README.md",
     "AI/validate-biz-idea.md",
-    "Notes/breakglass-research/RAILS-INTEL.md",
-    "Notes/clock-research/README.md",
-    "Notes/prototype-antifragile-saas.NOTES.md",
-    "Notes/Contingencies.md",
-    "Notes/Biz.md",
-    "Notes/breakglass-research/CORRELATION-MAP.md",
-    "Notes/breakglass-research/NEAR-MISSES.md",
-    "AI/long-vol-consultant.md",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",

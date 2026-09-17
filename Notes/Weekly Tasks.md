@@ -1,9 +1,10 @@
 # The TODOs
-### 14/9
-- [x] EO:
+### 21/9
+- [ ] EO:
 	- [ ] Practice 1-1
-	- [x] PoC++
+	- [ ] Propose Claude 5x
 - [ ] Venture++
+- [ ] Groceries
 - [ ] Tao Te Ching++
 - [x] Live up to your standards
 ### 15/9
@@ -18,18 +19,17 @@
 	- [x] Record & summarize the meeting
 	- [x] Practice 1-1
 	- [x] Contingencies
-- [ ] Reply Future Me
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 17/9
-- [ ] EO minimal work
-	- [ ] Drain the queue & review the meeting summaries
-	- [ ] 1-1 spar
-	- [ ] Bragdoc
+- [x] EO minimal work
+	- [x] Drain Claude quota
+	- [x] 1-1 spar
+	- [x] Bragdoc
 - [ ] Venture++ 
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 18/9
 - [ ] VT
 - [ ] Venture++
@@ -38,7 +38,6 @@
 ### 19/9
 - [ ] Perfect dive start + 500m with paddles
 - [ ] Hefty breakfast
-- [ ] Groceries
 - [ ] VT
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
@@ -47,6 +46,8 @@
 - [ ] Weekly planning
 - [ ] Venture++
 	- [ ] Sunday scoreboard read + long-vol read with Claude (log the week's numbers)
+	- [ ] Reply Future Me
+	- [ ] Claude 5x swap for bonus advise
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 # What a good day looks like

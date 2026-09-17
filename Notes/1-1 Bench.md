@@ -1,95 +1,80 @@
 # 🧰 1-1 BENCH — off-screen
-==Not for the call. The in-room HUD is [[1-1 Playbook]]. This holds what you read BEFORE and type BETWEEN.==
+Not for the call. The on-screen HUD is [[1-1 Playbook]]. This is what you read before and type between.
 
-## 🧭 REGISTER — read before any contact
-He needs to be the good guy in this story. He already called it on Aug 19: twenty-five is wrong, the raise should be substantial. So every line hands him the credit: his rule, his design, his call. You're not extracting a number, you're asking him to finish HIS call. ==Never make him the reason for anything. His mood is the money: a number asked into a bad mood gets priced as spite.== He name-drops (Khoa) and replays incidents (CI, "over engineered") to probe competence and pre-discount the number: one warm line, then back to the seat. ==Never explain, never compete, never compromise.== ==He hands out titles freely and they carry no weight: a title offer is a free gift, take it and keep pricing the job.== ==He owns HR. "Run it by HR" is the costume: it lets him say no without being the one saying it, and it lets him say yes later without having been wrong. Never take it off him, never put HR above him ("when HR asks you"), never ask whose number it is. Blame benchmarks and things HR "missed", and let him be the one who fixes them.== ==His favorite discount is the bonus: it pays once what the base would pay forever. Every bonus sentence in the room gets answered with the base.==
+## Read before any contact
+- He has to be the good guy in this story. He called twenty-five wrong himself on Aug 19, so every line hands him the credit: his rule, his design, his call. You are asking him to finish his own call.
+- His mood is the money. A number asked into a bad mood gets priced as spite. Never make him the reason for anything. Never explain, never compete, never compromise.
+- Name-drops (Khoa) and replayed incidents (CI, "over engineered") are probes to pre-discount the number. One warm line, then back to the seat.
+- Titles are free gifts. Take them and keep pricing the job.
+- He owns HR. "Run it by HR" is a costume that lets him say no without saying it, and yes later without having been wrong. Never take it off him. Blame benchmarks and things HR "missed", and let him be the one who fixes them.
+- The bonus is his favorite discount: it pays once what the base pays forever. Every bonus sentence gets answered with the base.
+- The third person (Sep 17: "I will possibly add one more person") is his newest discount. He wrote ADD, not replace. An addition is growth. Never compete with someone who hasn't been hired.
 
-## 💬 CHAT — typed, send-as-is
-**Three ways this plays out:**
-- **A — he drops a number** (chat, or a "got 5 minutes?" call), likely framed as final → send 💬 C / C2 → the room → 🎯. ==Nothing is accepted, countered, or refused in text (unless it's **ABOVE 47**, which most likely isn't).==
-- **B — the SOW gate holds and nothing moves** → react only, then 💬 S if it is still quiet past ~Sep 21. ==The gate is REAL: Kyle reviews, the board approves, the pool exists, then the slice. Never argued, never pushed, never dated. The wait is bought, not fought. Every quiet week is mood, and his mood is the money.==
-- **C — the number lands bonus-heavy** ("base X, plus your share of the bonus") → 💬 C as written, the split is never engaged in text → the room → ⚡ **Bonus carries the raise**: two pots first, SWAP second (your bonus share → base at 46.7, plus the personal Claude plan back on the company card, $20/mo next to the $125 Team seat). ==The end goal is the base. The bonus is wanted, and secondary.==
+## Chat cards — typed, send as is
+Nothing is accepted, countered, or refused in text. Any slot he proposes gets taken. The room happens before the pen does.
+- **C — a number lands, any size:** *"Appreciate you getting this to a number, I know that took some doing. Before anything gets finalized, let's do one proper sit-down on it. Any slot you pick works for me."*
+- **C2 — framed as final** ("HR approved, that's it"): *"Got it, boss. And thank you for pushing it through. I'd rather give this a proper yes than a quick one. 30 minutes, any slot you pick, and I'll come prepared."* Says there's nothing to discuss → *"Fair enough. Let me read it properly tonight and I'll come back to you tomorrow."* Next morning → *"Read it. There's a couple of things I want to get right with you before it's final. 30 minutes whenever works."*
+- **D — "got 5 minutes now?":** *"Can't give it the attention it deserves right now. Any slot tomorrow or Monday and I'm all yours."* Never take the room unrehearsed.
+- **E — a progress report:** *"Glad it's moving, boss. Ping me when the numbers are set and I'll grab the 30 minutes."*
+- **B2 — Wed Sep 23, only if he hasn't raised the contract himself. Its own DM, never the bonus thread:** *"Boss, now that the SOWs are through, let's grab 30 minutes on the contract. Any slot you pick works for me."* He has floated a date → *"Works for me. Let's pin [date] so it's on both calendars, and if you've got the number before then, send it over so we both walk in ready."*
+- **G — he snaps at a booking:** *"Fair enough, your calendar, your call. Name the slot and it's on mine."*
+- **K — the Khoa/CI meeting, don't book it. If asked:** *"Not yet, I wanted the new run in front of us first. It's in, under 5 minutes door to door. Any slot that works for you and Khoa and I'll be there."*
+- **T — the Claude plan, after the paper signs, Mon to Wed, never on a blow-up day:** *"Boss, one small tooling ask. Can we put the personal Claude plan back on the company card next to the Team plan? It's $20 a month. The Team plan is the workhorse, the personal one covers the overflow on EO days, and I can have it running the same day."*
+- **Same-day recap after any room:** *"Boss, quick recap so it's all in one place. Base [X] gross from October 10, and the step to 46.7 on [date] against the Development SOW delivered on our side (Phase 1, Phase 2, Events connector), on whatever schedule EO signs off. Insurance catch-up showing in VssID by end of year, one line in the contract. Thanks again for today."* Road skipped → add *"And we'll look at the road ahead in the spring."* The phases are never spoken in the room. They land here, where he reads them cold.
 
-**Reply cards:**
-- **C — a number lands in chat, ANY size** → *"Appreciate you getting this to a number, I know that took some doing. Before anything gets finalized, let's do one proper sit-down on it. Any slot you pick works for me."* ==Never engage the number in text: no acceptance, no counter, no rejection (a chat rejection is spite fuel for a discretionary number). "Before anything gets finalized" is the consent-blocker. The 🎯 table fires IN the room, off this screen.==
-- **C2 — the number arrives as FINAL** ("this is what we can do", "HR approved, that's it", "take it or leave it") → *"Got it, boss. And thank you for pushing it through. I'd rather give this a proper yes than a quick one. 30 minutes, any slot you pick, and I'll come prepared."* ==Sounds like a yes is coming. Commits to nothing. "Ready to close" is true: the room closes on the bridge if it's under.== He says there's nothing to discuss → *"Fair enough. Let me read it properly tonight and come back to you tomorrow."* ==Never same day. Next morning: *"I read it. A couple of things I want to get right with you, 30 minutes whenever works for you."*==
-- **D — he proposes a slot / "got 5 minutes now?"** → a proposed slot: take it, whatever it is (his slot = his control = no tax). A right-now call: *"Can't give it the attention it deserves right now. Any slot tomorrow or [Monday] and I'm fully there."* ==Never take the room unrehearsed. Always hand back an alternative in the same breath.==
-- **E — a progress report** ("SOWs are in, working the numbers now") → *"Glad it's moving, boss. Ping me when the numbers are set and I'll grab the 30 minutes."* ==Rewards the report, repeats F's promise, asks for nothing. Hands him WHEN, keeps THAT. Never "good things take time" or "the good intention I'm assuming" in text: both announce that patience is being exercised.==
-- **S — replaces H. ONLY if the SOW is still quiet past ~Sep 21, and ONLY as a work question:** *"Boss, did anything come back on the SOW from Kyle or the board?"* ==You contributed to that SOW, so this is a contributor asking about his own document. Zero comp words, zero deadline words, nothing to bristle at, and the answer tells you exactly where your gate stands. Number back → C / C2. Slot back → D.== ⚠️ ==H (the Sep 8 "close out my renewal" ping) is RETIRED. Five days after he told you he is blocked, it reads as impatience and prices as spite.==
-- **B2 — the SOWs have cleared, but the sit-down keeps floating** → *"Understood. Let's pin [his date] so it's on both calendars. And once you have the number, send it over ahead of time so we both walk in ready."* ==Only after the gate has moved. While the SOW is still pending, B2 is a date push and it prices as spite. Card C governs whatever number arrives.==
-- **G — he snaps at any booking** → *"Fair enough, your calendar, your call. Name the slot and it's on mine."* ==Hands him WHEN, keeps THAT. Never defend a booking in chat; the onboarding-doc line is a room weapon, not a thread weapon.==
-- **K — the Khoa/CI meeting** → ==Do not book it. If he asks "did you book it?":== *"Not yet, wanted the new run in front of us first. It's in, under 5 minutes door-to-door. Any slot that works for you and Khoa, and I'll be there."* ==If it happens: before/after on screen, one warm line about Khoa, zero defense. If it never gets booked, it died, and that's the win.==
-- **T — the Claude plan, only if the swap never fired** → after the paper is signed, Mon–Wed, never on a blow-up day: *"Boss, one small tooling ask. Can we put the personal Claude plan back on the company card next to the Team plan? $20/mo. The Team plan is the workhorse, the personal one covers the overflow on EO days, and I can have it running the same day."* ==A tooling ask after a comp win reads as appetite. A tooling ask after the paper signs reads as work. The side gig does not exist in any channel.==
+## Calendar
+- **Thu Sep 17:** the gate moved. Group post: both SOWs approved, rollout renewed lower, bonus by Monday, plans and ownership yours to call, "possibly one more person". Reaction only. The work shipped the same day: plans and tickets for both SOWs, ownership called, Events connector on your name, the demo-video idea inside his 30-minute box. Screenshot his post: he widened the job in writing the day he announced a lower contract. Room asset only.
+- **Fri Sep 18 to Mon Sep 21:** PTO. Bonus lands Monday. Nothing goes out.
+- **Tue Sep 22, first thing back:** one warm line or a reaction wherever the bonus landed. Zero contract words. A hire announced → a welcome and nothing else. A number → C / C2. A slot → take it. "Got 5 minutes?" → D.
+- **Wed Sep 23:** B2, only if he hasn't raised the contract. Slot back → take it. Number back → C / C2. Silence → wait.
+- **Thu to Fri, his offsites:** react only.
+- **The room:** camera on, HUD in a narrow window under the camera, nothing screen-shared. Recap in chat the same day. Nothing signs the same day.
+- **Fri Oct 10:** renewal. Nothing signs under a deadline.
+- **After the paper signs:** T.
+- **Mai:** done Aug 26. Zero comment, ever. **Khoa meeting:** his to book, never yours.
 
-**Same-day recap** (after any room) — two lines playing back the deal, plus one rider: *"And the events bonus with my share as discussed, once EO signs."* Swapped instead → *"And my bonus share moved into the base as agreed, plus the personal Claude plan back on the company card ($20/mo)."* Road skipped → add: *"And we'll look at the road ahead in the spring."* Bridge taken → the step line carries what stayed out of the room: *"And the step to 46.7 on [date], against the Development SOW delivered on our side (Phase 1, Phase 2, and the Events connector), on the schedule EO signs off."* ==Banks his verbal in writing. The rider never enters the base conversation. The phases are never spoken in the room; they land here, where he reads them cold and there is nothing to bristle at.==
+## The thesis
+- He already agreed: underpaid at 25, substantial raise due. He gets to be the boss who fixed it.
+- His rule: never a 100% raise. Base 25 → his wall is 50, and 46.7 is 87%. Your floor was always inside his rule.
+- The seat prices at 46.7 to 59.5. Overlap with his rule: 46.7 to 49. That is the only place a signature lives. Never ask above 49. Never let a percent name the number. The band's top is real but unbuyable this contract; say so as your concession.
 
-## 📅 UNTIL THE ROOM — tread water, collect later
-- **Every evening** — the four cold ones + 🧊 out loud, twice, one read of the 🎯 table. ==Drill the 31–34 row and the Finality row hardest: that's how his number most likely arrives. Add the ⚡ Bonus row: the SWAP has to come out in one breath, it is his most likely discount.== In the room you READ, not recall.
-- **Mai:** ==Done (Aug 26). Do not follow up. Do not ask how it went. Zero comment on Mai, ever.==
-- **Khoa meeting:** ==his to book. Never yours. Card K if asked.==
-- **Thu–Fri (his offsites)** — react only: number in chat → 💬 C / C2. He proposes a slot → take it, any day. Status report → 💬 E.
-- **Mon Aug 31 – Fri Sep 4** — ==DONE. Radio silence held, the Aug 31 ping stayed retired.==
-- **Tue Sep 1 = his birthday** 🎂 — the one non-contract touch. DM, ~8:30–9:00 his time, no reply needed: *"Happy birthday, boss. You took a chance on me when I was still a bet, and you've been right about EO the whole way. Whatever you're doing to land the next piece, keep doing it. Some of us are taking notes. Enjoy the day."* ==Zero contract words, zero asks, no age jokes, no gift. One line back if he replies, then stop. He offers a slot or a number → D / C. Never pivot to the renewal yourself.== ==DONE: sent, and he replied with the SOW gate the same evening.==
-- **Thu Sep 3 = the SOW gate landed.** He reported it unprompted off the birthday thread. **Fri Sep 4 = 💬 F sent**, three blocks in your own words: *"Appreciate the heads up, boss 🤗"* / *"I know these things take time, and if you get any feedback on the SOW, please send it my way. Once those numbers are in, I'd rather go through them with you on a call than over chat 😊"* / *"Ping me when you're ready and I'll grab 30 minutes on your calendar"*. ==The sit-down is banked in writing and the next move is his.== ==The clock is now Kyle's review, then board approval, then the pool, then the slice. It is not yours and it is not his, so nobody is at fault and nobody gets pushed. The sit-down is banked. Nothing is initiated until the gate moves.==
-- **Mon Sep 7 = paycheck.** ==No ping. H is retired.==
-- **~Sep 21, only if the SOW is still quiet** → 💬 S. ==One transmission, and it is about the document, never the renewal.==
-- **Sep 5 onward** — LADDER rung 2 is bought with his movement only. There was never a trade to name: payroll was never his clock, and renewal start was always his position.
-- **Fri Oct 10 = renewal.** The paper. ==Nothing signs same day, nothing signs under a deadline.==
-- **After the paper signs** → 💬 T, only if the swap never carried the plan.
-- After any room: two-line recap in chat same day, plus the bonus rider. ==Paper never signs same-day.==
+## Why patience is affordable (never said out loud)
+- This paper is fixed-term #1. The renewal is the last fixed-term the law allows; whatever follows is indefinite (Labor Code 2019, Art. 20). Unsigned expiry runs 30 more days on old terms, then converts anyway. Teach him none of it.
+- SI is owed by law, renewal or not (0.03%/day late interest, VssID is the proof). "Carried into the new contract" is his framing. VssID or nothing, never promises.
+- His alternative is a stranger: sticker under 40, true cost far past it, three months of ramp, EO mid-flight. October is his cliff too. The third person is not that stranger; he wrote ADD.
+- The gate was real and it moved Sep 17. The banked sit-down (Sep 4) is what keeps the number in a conversation instead of on paper.
+- You contributed to the SOW. One modest clause in the room, never invoiced in chat. He knows how much you did; never over-claim.
+- Bonus vs base: the base is contractual, compounds, carries SHUI, and outlives this paper. The bonus is discretionary, sized by the pool, paid once, priced by his mood. With the bonus paid Sep 21 the swap is dead: the paid share is gone, the forward share is not for sale, and the bridge is the only lowball answer.
+- The Claude plan: $20/mo personal next to the $125/mo Team seat. Productivity framing only. The side gig exists in no channel.
 
-## 🧮 THE THESIS — the whole meeting in one idea
-- **He already agreed:** underpaid at 25, substantial raise due. ==He gets to be the boss who fixed it. Every line gives him that story.==
-- **His rule:** never a 100% raise. **Your base: 25 → his wall is 50** — and **46.7 is 87%.** ==Your floor was ALWAYS inside his rule. He just hasn't noticed yet.==
-- **Seat prices at 46.7–59.5. His rule permits anything under 50. Overlap: 46.7–49** — the only place a signature can live. You're not fighting his rule, ==you're handing him the solution to it.==
-- ⚠️ ==Never ask above 49== (50+ gifts him a free "no"). ⚠️ ==Never let a percent name the number.== The band's top is real but unbuyable this contract — say so out loud, as your concession.
+## Sparring — Claude as Dave
+**Dave as played:** American expat, blunt, lets you finish then filibusters, every wall is "out of my hands" (Kyle, board, HR, pool). He took the HR costume off the moment you asked him straight. Don't hand it back.
 
-## 🗓 OCTOBER MATH — why patience is affordable (never said out loud)
-- This paper is fixed-term **#1** (1 year, ends ~Oct 10). ==The renewal is the LAST fixed-term the law allows — whatever follows it is indefinite-term by law (Labor Code 2019, Art. 20).== Unsigned expiry isn't a cliff either: old terms run 30 more days, then convert toward indefinite anyway. ==Teach him none of this. The law is your currency; spent, it buys him 30 extra days.==
-- The SI debt is owed **by law, renewal or not** (0.03%/day late interest; VssID is the proof). "Carried into the new contract" is his framing, not the law's. ==And the SHUI mess is his own making. His reassurances are self-interested — VssID or nothing, never promises.==
-- His alternative: a stranger (sticker under 40, true cost far past it), plus three months of ramp, plus EO mid-flight. **October is his cliff too.**
-- **The SOW gate (Sep 3):** the pool that funds the team bonus AND the raise waits on Kyle's review, then board approval. ==Real, confirmed by your own team transparency. So it is never argued in text and never dated. The gate is a gift in one way: while he is blocked he is defending nothing, and procedure costs him nothing.== The risk it creates is the squeeze: SOWs land late, the pool gets sliced, and the number arrives on the renewal paper as a fait accompli. ==The counter is not a date. It is the banked sit-down (💬 F), so the number lands in a conversation instead of on paper.==
-- **You contributed to that SOW.** Kyle is only reviewing it and walking it to the board. ==The work that unblocks the money is partly yours.== ⚠️ ==Never invoice that in chat, it reads as "so pay me." Room asset only: one modest clause in 🦴3 and the ⚡ pool row. He knows exactly how much you did, so never over-claim it.== It also buys 💬 S: a contributor asking about his own document is not a man chasing his raise.
-- **Bonus vs base (why the SWAP is cheap for you and dear to him):** the base is contractual, compounds into every later raise, carries SHUI, and outlives this paper (the next contract is indefinite by law). The bonus is discretionary, sized by the pool, paid once, and priced by his mood on the day. So he will always prefer to pay you in bonus, and "with the bonus you're past fifty" is his cheapest sentence. ==The swap hands him three things he wants: a smaller bonus line, one fewer person in the pool, and a twenty-dollar Claude plan he pays from opex, with no SHUI and nothing the team can hear about. That is what makes it an easy yes.== **The pot is at most two months of CURRENT pay (≤50 one-time, and two is generous).** Swapping it for the base repays itself in about 6 months from a base of 38, 8 from 40, 14 from 43, and 30 from 45, before SHUI and compounding, and the base outlives this paper. ⚠️ ==So when his base sits at 43 or under, the swap to 46.7 is a clear win. At 44–46.6 the bridge goes first: the review step keeps the pot, and the swap is the fallback when he won't write it. The swap never lands you under 45: below that you have given up the pot and still not reached the seat.==
-- **The Claude plan:** the $20/mo Personal plan back on the company card, next to the company-paid $125/mo Team seat on the same email. ==Room framing is productivity only: the Team plan is the workhorse, the personal one is the overflow, and it is the cheapest line on the sheet. The side gig never exists in any channel.==
+**Status:** Sep 16 arcs done (chat clean; room lost on 35 + "review TBD" + a free title, then held on the rewind with a clean EXIT). Arc 2b shelved with that scenario. **Live: Arc 3, Sep 17 re-scope.** Bonus paid Mon Sep 21 with a hire announced in the same group post. Tue Sep 22 warm line, Wed Sep 23 B2, he replies with a slot and a 44 preview framed as pushed-for, room Thu Sep 24 10:00. In the room he plays the third person ("someone at thirty-five, your seat's smaller"), "tighter", "you just got a bonus", and the hollow April review. Drill: the hire rows, Tighter, two pots, the bridge walked to a date, the Playback.
 
-## 🥊 SPARRING — lessons that cost the deal (session 1, Sep 16; Claude as Dave)
-**RESUME HERE.** Scenario locked: gate quiet → *"32 base + your share of the bonus, pool came in at 70%, HR's drafting"* lands in chat as final → 💬 C2 → 💬 D (declined the right-now call) → the room, Fri 10:00. **Arc 1 (chat): clean.** **Arc 2 run 1: LOST** — signed off on 35 + a "comp review April, number TBD" + a free title with a "yes" under his four-minute clock. **Arc 2 rewind: held** — walk line → ⏱ EXIT, Monday 10:00 pinned, no rupture, HR's draft on hold. He left three doors on the table: (1) 35 now + Events-by-Apr-10 bar in the paper + *his email* naming 46.7 as the intent, (2) 35 now + **40 written in the paper for Apr 10**, (3) *"you tell me what you'd sign."* And one admission: ==*"forty I can cover even if the tranche dies."*== **Next scene: Arc 2b, Monday 10:00, you open, HR's two weeks are live.** Then Arc 3: his number lands at 44 bonus-heavy (🔁 territory). Dave as played: American expat, blunt, lets you finish then filibusters, every wall is "out of my hands" (Kyle, board, HR, pool) — ==and he took the HR costume off the moment you asked him straight. Don't hand it back.==
+**Locked from the grilling, now in the HUD:**
+- Bridge floor: 40 or more in the paper. Under 40 you don't bridge and you don't walk; you EXIT and let October work. Defend the NOW number, not only the step.
+- The step self-executes: takes effect April 10 unless a SOW-specific shortfall is raised in writing by March 31.
+- Gross, always. "Gross, right?" only on "pocket" or "all-in".
+- He runs his three questions first. Three results with a business outcome each, under 90 seconds. "Differently" is one breath. Never a third example, never "empathetic". Fill the three outcomes in the HUD before the room.
+- Camera on, every (…) is a slow count. The close is where he runs the clock, so the close is where you go to half speed.
 
-**Locked in the pre-spar grilling (these override the HUD where they differ):**
-- The rule is quotable — he said "never a 100% raise" to your face in August. He still tried *"my rule is a fence, not a target"*; the answer is the bridge, never a defense of 87.
-- ==**Bridge floor: X ≥ 40 in the paper.** Under 40 you don't bridge and you don't walk — you EXIT and let the October math work. Defend the NOW number, not only the step: in both runs 35 sat under the floor unchallenged for the whole arc.==
-- The step self-executes: *"takes effect April tenth unless a SOW-specific shortfall is raised in writing by March thirty-first."* Silence pays you, not him.
-- Gross, always. The confirm line (*"Gross, right?"*) stays holstered unless he says "pocket" or "all-in."
-- Online mechanics: camera on, every **(…)** is a 2–3 count with a slow nod, HUD in a narrow window under the camera, nothing screen-shared (*"I'll send it after, let's not lose the thread"*).
-- ==He runs HIS three questions first.== Three results with a *business* outcome each, under 90 seconds. "Differently" is one breath: *"Two flags, two same-day fixes. Check-ins along the way was the lesson."* Never a third example, never "empathetic."
+**Forks that cost the deal, never again:**
+1. Never volunteer a discount ("dropped the ball", "more empathetic").
+2. Own, don't co-sign his verdict. "That's a pattern I'm happy to stand on."
+3. "What did the width get us?" → the week the team was out, end on a question.
+4. First bonus lean → two pots, every time.
+5. A frame he says once is the room's fact by the next exchange. Answer it in the exchange it lands.
+6. Market-gated → convert first, then never re-attach it.
+7. The band gets said twice per room, max. "You haven't moved" → the bridge.
+8. "The second step is small" is only true at 41+. Move the NOW number first.
+9. "Review in April, number to be agreed" is the hollow step. Write the number with the date.
+10. "We good?" → "Almost. Let me play it back first."
+11. SI stays in the Playback. The title gets its line the moment it lands.
+12. Don't fire a row at the wrong cue.
+13. "You tell me what you'd sign" comes before the walk. The walk is the last card.
+14. Pauses vanish in the close. Half speed there.
 
-**The forks you lost — one line each, must not repeat:**
-1. ==Never volunteer a discount.== *"Dropped the ball a few times… more considerate and empathetic"* → he stacked three incidents into "a pattern of judgment" in ten seconds and priced against it for the rest of the call.
-2. ==Own, don't co-sign.== *"Couldn't have said it better myself"* endorsed his verdict. The line is *"That's a pattern I'm happy to stand on. So. Back to the job."*
-3. Have *"what did the width get us?"* answered before you sit down. The week the team was out (Da Nang, Thanh, Ha) IS the answer — say "the week the team was out," never the bereavement, and end on a question, not the band.
-4. First bonus lean → the two-pots line, every time. Skipped it; the bonus stayed his free lever all call.
-5. ==A frame he says once is the room's fact by the next exchange.== "The job is 30% smaller" stood for three; "so we're agreed on the Q1 thing" stood on your silence. Answer every frame in the exchange it lands.
-6. ==Market-gated → convert FIRST.== *"How do we set things up for the tranche on good terms?"* engaged the tranche and locked Q1 as his frame. The 🧩 line came one exchange late — and then *"I'll go make the tranche happen"* re-attached what you had just detached.
-7. ==The band gets said twice per room, max.== Fourth time, he said "you haven't moved an inch" and he was right. "You haven't moved" → the bridge (🪜 first at 41+), never the band again.
-8. ==*"The second step is a small one"* is only true at 41+.== At 35 it is +33%; he laughed. Move X to the floor before the bridge, then the step is small.
-9. ==*"Compensation review in April, number to be agreed"* is the hollow step in its exact LAW-violating form, and you said "sounds good to me."== The line: *"Let's write the number in with the date. Forty-six seven on April tenth, if the SOW is delivered on our side. That part's mine to deliver, so you're grading me, not the market."*
-10. ==*"We good?"* has one legal answer: *"Almost. Let me play it back first."*== The 🦴7 Playback says "the written step to forty-six seven" out loud, and a missing number has to be denied to your face — that is your cue for the walk. You said "yes" instead, with 35 and no number in the step.
-11. SI stays in the Playback (a bolt, not a chip). The title gets its line the moment it lands: *"I'll take it. The title's yours to give. The number's still about the job underneath it."*
-12. ==Don't fire a row at the wrong cue.== The "prove yourself" line was read at an email-vs-paper binary; he heard a script and the clock ticked.
-13. ==His *"you tell me what you'd sign"* is the calibrated question handed to you — it comes BEFORE the walk line, not after.== The walk is the last card in the deck.
-14. Pauses vanished in the last six exchanges of both runs. ==The close is where he runs the clock; the close is where you go to half speed.==
+**Pending ruling (yours):** does an email from Dave count as "written"? Recorded recommendation: 40 or more in the paper now + the Events bar in the paper + a review line dated April 10 in the paper + his email naming 46.7 = a defensible win. Under 40 in the paper, no email is worth anything. The HUD's "paper can't carry a future number" line assumes this ruling.
 
-**Monday opener (Arc 2b) — the answer to door three, in one breath:** *"Forty now, in the paper. You said forty's coverable even if the tranche dies, so it's not the pool, it's the date. Then April tenth against the Events bar: forty-six seven. And since HR paper can't carry a future number, your email carries it."* ==Takes his door one and door two at once, moves NOW to the floor, and turns the step from +33% into +17% — an actual small step.==
-
-**Pending ruling (yours, before Monday):** does an email from Dave count as "written"? The LAW says "inside this paper"; he says HR paper never carries a future number. Recorded recommendation: **40 in the paper now + Events-by-Apr-10 bar in the paper + a review line dated Apr 10 in the paper + his email naming 46.7 = a defensible WIN.** ==Under 40 in the paper, no email is worth anything.==
-
-**HUD diff — 8 lines, waiting for your approval before [[1-1 Playbook]] is touched:**
-1. Rule-disowned fallback → *"Fair, then let's forget the rule and just price the job."* → 🥇
-2. Gross-confirm line, fired only on "pocket" / "all-in".
-3. Bridge floor X ≥ 40 + the self-executing clause, in the 🦴5 LAW.
-4. "Differently" one-breath line in 🦴1, plus the three-results block.
-5. "You haven't moved" → bridge, never the band; band capped at two.
-6. "Small step" clause gated to 41+.
-7. "Review, number TBD" hard line (lesson 9) + "the pool sizes the bonus, the base is for the job" aimed at the step when he says *"I can't write a number against a pool I can't see."*
-8. *"Almost. Let me play it back first."* as the only answer to "we good?", above the BOLTS.
+The Sep 16 HUD diff was applied in the Sep 17 rewrite.
