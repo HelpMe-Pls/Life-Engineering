@@ -111,16 +111,16 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/Antifragile SaaS.md",
+                        "file": "Notes/Daily Standup.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "Antifragile SaaS"
+                      "title": "Daily Standup"
                     }
                   }
                 ],
-                "currentTab": 1
+                "currentTab": 2
               },
               {
                 "id": "6daf623ea71b0a7d",
@@ -326,6 +326,9 @@
   },
   "active": "9b9ab17c16c89870",
   "lastOpenFiles": [
+    "Notes/Daily Standup.md",
+    "Notes/Antifragile SaaS.md",
+    "Notes/Weekly Tasks.md",
     "Notes/q4-research/R1-lists.md",
     "Notes/q4-research/R6-existing-assets.md",
     "Notes/q4-research/R2-pain-paid-map.md",
@@ -338,8 +341,6 @@
     "Tips & Tools/English vocab.md",
     "Notes/1-1 Bench.md",
     "Notes/1-1 Playbook.md",
-    "Notes/Weekly Tasks.md",
-    "Notes/Daily Standup.md",
     "AI/Claude Code Skill Playbook.md",
     "AI/Skill Playbook Appendix.md",
     "Notes/2026.md",
@@ -357,7 +358,6 @@
     "Notes/Business Bank.md",
     "Notes/EP SaaS.md",
     "Notes/breakglass-research/KILL-TABLE.md",
-    "Notes/Antifragile SaaS.md",
     "Notes/breakglass-research/next-steps.md",
     "Notes/breakglass-research/FACE-MODE-DOSSIER.md",
     "Notes/breakglass-research/README.md",

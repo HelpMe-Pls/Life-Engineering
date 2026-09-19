@@ -2,46 +2,50 @@
 ### 21/9
 - [ ] EO:
 	- [ ] Practice 1-1
-	- [ ] Propose Claude 5x
+	- [ ] Renewal self assessment 
+	- [ ] Events API requirement list
+	- [ ] Send Kiến mkt proposal
+	- [ ] Propose Claude 5x?
 - [ ] Venture++
 - [ ] Groceries
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 15/9
-- [x] EO weekly report & sprint goals update
+- [ ] Live up to your standards
+### 22/9
+- [ ] EO weekly report & sprint goals update
 	- [ ] 1-1 sparring
-	- [x] Send the sprint report
+	- [ ] Send the sprint report
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 16/9
-- [x] EO sprint review:
-	- [x] Record & summarize the meeting
-	- [x] Practice 1-1
-	- [x] Contingencies
+- [ ] Live up to your standards
+### 23/9
+- [ ] EO sprint review:
+	- [ ] Record & summarize the meeting
+	- [ ] Practice 1-1
+	- [ ] Contingencies
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 17/9
-- [x] EO minimal work
-	- [x] Drain Claude quota
-	- [x] 1-1 spar
-	- [x] Bragdoc
+- [ ] Live up to your standards
+### 24/9
+- [ ] EO minimal work
+	- [ ] Drain Claude quota
+	- [ ] 1-1 spar
 - [ ] Venture++ 
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 18/9
-- [ ] VT
+- [ ] Live up to your standards
+### 25/9
+- [ ] EO minimal work
+	- [ ] Chapter Detail page UI update
+	- [ ] 1-1 spar
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 19/9
+### 26/9
 - [ ] Perfect dive start + 500m with paddles
 - [ ] Hefty breakfast
-- [ ] VT
+- [ ] Groceries
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 20/9
+### 27/9
 - [ ] Splurge (if you're done with EP HITL)
 - [ ] Weekly planning
 - [ ] Venture++
