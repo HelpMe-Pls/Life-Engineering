@@ -90,6 +90,7 @@
 3. **One venture-free evening per week + sleep beats streaks** ([[EP SaaS]] §8.5) — non-negotiable; they ARE the slack the whole system buys its convexity with.
 
 **Priority legend:**
+- 🏁 **Q4 sprint** ([[Q4 Sprint]] §5) — takes the FIRST 8–10h of the ≤12h (R8, ruled 2026-09-17); the three below run on their R8 rows: **EP KEEP (≤2h)** · **Clock HOLD** · **Ledger IDLE (≤1h)**. One pick, ≥30 asks/week from Mon Sep 28; the Oct 18 switch rule and the Nov 15 fold rule are read off the `Q4` column exactly as §5 writes them.
 - 🥇 **EP** (e-learning) — the one that actually pays you by December.
 - 🥈 **Renewal Clock** (US trades compliance) — owes you only a VERDICT on Mon Nov 30.
 - 🥉 **Duty Ledger** (tariff ledger) — owes you only a VERDICT on Sun Dec 13. *Rebalanced 2026-07-12: Renewal Clock's demo weekend + first asks moved to early August (Sep-1 cold outreach and Nov-30 verdict unchanged)
@@ -111,13 +112,15 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - **EP** = leads / consults / Σ seat deposits / Σ revenue (k₫)
 - **Clock** = asks sent / replies / Σ real calls / Σ $149 deposits
 - **Ledger** = Σ paying subs / Σ free signups / visits this week
+- **Q4** = asks sent this week / replies this week / Σ cash received (USD; k₫ at the day's FX). An ask = one named human received the offer AND the price and was asked for money or a call (R10); posts, visits, likes, followers ≠ asks.
 - **Signal** = firewall signal that fired (same objection ×5 / unsolicited "can I pay?" / gate date / blocked >2wk on one human) — name it, else `-`
 
-| Sunday     | hrs | Gov? | EP l/c/Σd/Σrev | Clock a/r/Σc/Σd | Ledger Σs/Σf/v | Signal                                    |
-| ---------- | --- | ---- | -------------- | --------------- | -------------- | ----------------------------------------- |
-| 2026-07-19 | 8   | NO   | 0/0/0/0        | -/-/-/-         | 0/0/0          | -                                         |
-| 2026-07-26 | 10  | NO   | 0/0/0/0        | -/-/-/-         | 0/0/0          | EP: >2wk block (instructor, 0.1 unsigned) |
-| 2026-08-02 | 10  | NO   | 0/0/0/0        | -/-/-/-         | 0/0/0          | EP: >2wk block (instructor) wk3 — 0.9/0.10 un-run |
+| Sunday     | hrs | Gov? | EP l/c/Σd/Σrev | Clock a/r/Σc/Σd | Ledger Σs/Σf/v | Q4 a/r/Σ$ | Signal                                    |
+| ---------- | --- | ---- | -------------- | --------------- | -------------- | --------- | ----------------------------------------- |
+| 2026-07-19 | 8   | NO   | 0/0/0/0        | -/-/-/-         | 0/0/0          | -/-/-     | -                                         |
+| 2026-07-26 | 10  | NO   | 0/0/0/0        | -/-/-/-         | 0/0/0          | -/-/-     | EP: >2wk block (instructor, 0.1 unsigned) |
+| 2026-08-02 | 10  | NO   | 0/0/0/0        | -/-/-/-         | 0/0/0          | -/-/-     | EP: >2wk block (instructor) wk3 — 0.9/0.10 un-run |
+| 2026-09-20 | 4   | NO   | 0/0/0/0        | -/-/-/-         | 0/0/0          | 0/0/0     | Q4 sprint opened (Sessions 0–2, Sep 17–20). Six Sundays Aug 9→Sep 13 have no row (each = Gov? YES); governor restarts from this row (R8). hrs/Gov?/Ledger visits entered from the session log — Khoi corrects |
 
 *(Row 1 seeded on creation: every venture is pre-launch, hence the dashes. Fill `hrs` and `Gov?` today.)*
 
@@ -224,6 +227,19 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - ⏱ The 10h this week were ALL spent on EP. 
 - 🥇 Ruling: `0.9` stays **PROVISIONAL** from now on — maybe the instructor has a different plan for it.
 - 🥈 Demo Saturday chosen: **Sat Aug 15** (not Aug 8).
+
+#### Sep 20th, 2026 — Q4 sprint Session 2 (scorecard · council · THE PICK)
+- 🏁 **THE PICK is written** ([[Q4 Sprint]] §5): *"Your repo, Claude-Code-ready by Monday"* — a fixed-scope Claude Code install for ONE repo, sold to USD buyers who posted a budget ($499) and to VN dev teams (10–12M₫). #2, the pre-committed switch, is the HubSpot outcome fix at $899. ==Ruled by Claude off the council record; Khoi rules #1/#2 in place, dated.==
+- 🏁 Six candidates scored, three councils run (15 personas). Both Claude-Code councils and the HubSpot council all returned **RESHAPE** — and the two buyer personas said the same thing in different words: ==they pay for files running in their repo, never for lectures.== So the live-teaching half was cut: Anthropic gives the 90-min workshop away free, and MentorCruise individuals sell it at $250–500.
+- 🏁 **Rail correction — Paddle is STRUCK for this sprint** (verified against Paddle's own AUP 2026-09-20: "IT services… pure consulting or advisory services" prohibited; "not a good fit" for human services). This **overturns R5's Top-1 recommendation**. The sprint runs on PayPal-VN invoice + PayOS→ACB + Upwork escrow, with a Dodo pre-clearance email in week 1. ==Ledger's separate Paddle account is untouched.== Knock-on: no Paddle means **no Nov-30 payout cliff**, so December sales still count.
+- 🏁 **Channel correction** — R3 found 4 Upwork "Claude Code" posts; a live check today shows a replenishing queue incl. "Claude Code Setup Expert Needed" and an ongoing-retainer post. R3's HubSpot "3 posts" was likewise a search-term artifact: Upwork lists **908 open HubSpot jobs**.
+- ⚠️ **One thing only Khoi can settle, and it is free: the employment contract.** Does it permit outside work, and may the chapter HubSpot portals be cited as proof? Candidate #2's Oct-18 gate is ~60% with that permission and ~20% without it, and the EO list and the portfolio die together. ==Do it before Sep 28.==
+- 📺 **Three videos screened at Khoi's request → NO.** All three feature "Professor Jiang" (Jiang Xueqin — Yale BA in *English literature*, schoolteacher in Beijing; **no professorship, no economics or security credential**; his credited "predictions" tracked Polymarket odds already >50%). ==Zero dated signals: not one deadline, filing or obligation anyone must pay to satisfy — the only dates in all three are the upload dates.== Same episodes carry the moon landing as a psyop and Messi as president of Argentina. Newsletter median: **66 days to a first dollar** vs a **28-day** gate, half earning <$500/yr. This is [[Q4 Sprint Prompts]] §10's forbidden second hunt, and KILL-TABLE #15 already **verified** counter-cyclicality and killed it anyway. ==Answer to "refine what works instead?" — yes, but neither refining nor researching is the bottleneck. **Asking is.** 0 asks since Jul 19.==
+- 🔁 **THE PICK was rewritten the same evening — Khoi rejected both council picks** (HubSpot: borrowed credential + employer risk; Claude Code install: "ClaudeKit already exists"). New target in his words: ==*"irrefutable proof that I can make money OUTSIDE my day job"* — realistic enough to follow through for at least a month.==
+- 🎮 **New #1: PLAYABLE ADS** — small interactive HTML5 ad units for mobile studios and brands. $200–3,000/build, 1–2 weeks, and studios buy **~10 variants a week**, so repeat variants are hours not weeks. Proof lane in parallel: ONE $50–300 gig in his real stack, days not weeks. ==Screened and killed the same night: motivational-quotes app (store fee $25–99 alone exceeds the $20 budget; median startup MRR $136 vs a leader doing ~$700K/mo on paid installs), own itch.io game (~$982 across years for a real dev; needs 6+ months of audience), browser-game commissions ($15–35/h × 20–40h builds).==
+- 🧠 **The design change that matters more than the pick.** ==The binding constraint is follow-through, not market size.== 293 commits · 73 test files · a 40KB playbook · three dossiers — against **0 asks to strangers since Jul 19**. He builds; he does not cold-outreach. So §5 is now built so that **selling = answering want-ads (marketplace proposals), never initiating cold contact**, and the weekly target is **3–5 proposals, not 30 cold asks**. ==A quotes app felt followable precisely because it is all building and no buyer — which is exactly why it earns nothing.==
+- ⚠️ **Khoi to rule: R9 × T3 conflict.** Upwork Connects run ~$1.50–3/bid, so **≤$20 buys 7–13 bids for the whole sprint** — the cash rule and ≥30 asks/week cannot both hold on a marketplace. Default until ruled: free inbound first (Fiverr gigs, PeoplePerHour, Contra = $0). Clean alternative: raise R9 to ~$50 for Connects only. ==Also pending: whether R10's 100-ask switch threshold is amended to 40 proposals, since the unit of "ask" changed.==
+- ⏱ Governor: six Sundays (Aug 9 → Sep 13) have no row — each counts Gov? YES under the column key. The governor restarts from the 2026-09-20 row (R8). ==hrs/Gov? on that row were entered from the session log — correct them.==
 ---
 # Backlog
 - [Learn about animations](https://animations.dev/learn/animation-theory/intro)

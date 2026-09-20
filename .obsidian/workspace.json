@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/Q4 Sprint Prompts.md",
+                    "file": "Notes/Q4 Sprint.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Q4 Sprint Prompts"
+                  "title": "Q4 Sprint"
                 }
               },
               {
@@ -324,11 +324,13 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "9b9ab17c16c89870",
+  "active": "8e701c92c4b0d885",
   "lastOpenFiles": [
+    "Notes/Q4 Sprint Prompts.md",
+    "Notes/q4-research/S2-scorecard-council.md",
+    "Notes/Weekly Tasks.md",
     "Notes/Daily Standup.md",
     "Notes/Antifragile SaaS.md",
-    "Notes/Weekly Tasks.md",
     "Notes/q4-research/R1-lists.md",
     "Notes/q4-research/R6-existing-assets.md",
     "Notes/q4-research/R2-pain-paid-map.md",
@@ -337,7 +339,6 @@
     "Notes/q4-research/R4-marketplaces.md",
     "Notes/Q4 Sprint.md",
     "Notes/q4-research",
-    "Notes/Q4 Sprint Prompts.md",
     "Tips & Tools/English vocab.md",
     "Notes/1-1 Bench.md",
     "Notes/1-1 Playbook.md",
@@ -361,7 +362,6 @@
     "Notes/breakglass-research/next-steps.md",
     "Notes/breakglass-research/FACE-MODE-DOSSIER.md",
     "Notes/breakglass-research/README.md",
-    "AI/validate-biz-idea.md",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",
