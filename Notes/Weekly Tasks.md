@@ -1,15 +1,14 @@
 # The TODOs
 ### 21/9
-- [ ] EO:
+- [x] EO:
 	- [ ] Practice 1-1
-	- [ ] Renewal self assessment 
+	- [x] Renewal self assessment 
 	- [ ] Events API requirement list
-	- [ ] Send Kiến mkt proposal
-	- [ ] Propose Claude 5x?
-- [ ] Venture++
-- [ ] Groceries
+	- [x] Send Kiến mkt proposal
+- [x] Venture++
+- [x] Groceries
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 22/9
 - [ ] EO weekly report & sprint goals update
 	- [ ] 1-1 sparring
@@ -90,7 +89,7 @@
 3. **One venture-free evening per week + sleep beats streaks** ([[EP SaaS]] §8.5) — non-negotiable; they ARE the slack the whole system buys its convexity with.
 
 **Priority legend:**
-- 🏁 **Q4 sprint** ([[Q4 Sprint]] §5) — takes the FIRST 8–10h of the ≤12h (R8, ruled 2026-09-17); the three below run on their R8 rows: **EP KEEP (≤2h)** · **Clock HOLD** · **Ledger IDLE (≤1h)**. One pick, ≥30 asks/week from Mon Sep 28; the Oct 18 switch rule and the Nov 15 fold rule are read off the `Q4` column exactly as §5 writes them.
+- 🏁 **Q4 sprint** ([[Q4 Sprint]] §5) — takes the FIRST 8–10h of the ≤12h (R8, ruled 2026-09-17); the three below run on their R8 rows: **EP KEEP (≤2h)** · **Clock HOLD** · **Ledger IDLE (≤1h)**. **Ruled 2026-09-21: the pick is the palm-reader / tử vi app** ([[q4-research/S3-palm-app-exact-steps]]) — submit by Sun Oct 18, first paid conversion by Sat Oct 31 (Apple fiscal October → cash Dec 3), hard max Sat Nov 28 (→ cash Dec 31); the Nov 15 fold rule stands and is read off the `Q4` column.
 - 🥇 **EP** (e-learning) — the one that actually pays you by December.
 - 🥈 **Renewal Clock** (US trades compliance) — owes you only a VERDICT on Mon Nov 30.
 - 🥉 **Duty Ledger** (tariff ledger) — owes you only a VERDICT on Sun Dec 13. *Rebalanced 2026-07-12: Renewal Clock's demo weekend + first asks moved to early August (Sep-1 cold outreach and Nov-30 verdict unchanged)
@@ -112,7 +111,7 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - **EP** = leads / consults / Σ seat deposits / Σ revenue (k₫)
 - **Clock** = asks sent / replies / Σ real calls / Σ $149 deposits
 - **Ledger** = Σ paying subs / Σ free signups / visits this week
-- **Q4** = asks sent this week / replies this week / Σ cash received (USD; k₫ at the day's FX). An ask = one named human received the offer AND the price and was asked for money or a call (R10); posts, visits, likes, followers ≠ asks.
+- **Q4** = asks sent this week / replies this week / Σ cash received (USD; k₫ at the day's FX). An ask = one named human received the offer AND the price and was asked for money or a call (R10); posts, visits, likes, followers ≠ asks. ==Amended 2026-09-21 for the app lane: `installs this week / paid conversions this week / Σ proceeds booked in App Store Connect (USD)`; cash lands on Apple's calendar (Dec 3 · Dec 31 · Feb 4) and is written in Signal when it arrives.==
 - **Signal** = firewall signal that fired (same objection ×5 / unsolicited "can I pay?" / gate date / blocked >2wk on one human) — name it, else `-`
 
 | Sunday     | hrs | Gov? | EP l/c/Σd/Σrev | Clock a/r/Σc/Σd | Ledger Σs/Σf/v | Q4 a/r/Σ$ | Signal                                    |
@@ -237,9 +236,19 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - 📺 **Three videos screened at Khoi's request → NO.** All three feature "Professor Jiang" (Jiang Xueqin — Yale BA in *English literature*, schoolteacher in Beijing; **no professorship, no economics or security credential**; his credited "predictions" tracked Polymarket odds already >50%). ==Zero dated signals: not one deadline, filing or obligation anyone must pay to satisfy — the only dates in all three are the upload dates.== Same episodes carry the moon landing as a psyop and Messi as president of Argentina. Newsletter median: **66 days to a first dollar** vs a **28-day** gate, half earning <$500/yr. This is [[Q4 Sprint Prompts]] §10's forbidden second hunt, and KILL-TABLE #15 already **verified** counter-cyclicality and killed it anyway. ==Answer to "refine what works instead?" — yes, but neither refining nor researching is the bottleneck. **Asking is.** 0 asks since Jul 19.==
 - 🔁 **THE PICK was rewritten the same evening — Khoi rejected both council picks** (HubSpot: borrowed credential + employer risk; Claude Code install: "ClaudeKit already exists"). New target in his words: ==*"irrefutable proof that I can make money OUTSIDE my day job"* — realistic enough to follow through for at least a month.==
 - 🎮 **New #1: PLAYABLE ADS** — small interactive HTML5 ad units for mobile studios and brands. $200–3,000/build, 1–2 weeks, and studios buy **~10 variants a week**, so repeat variants are hours not weeks. Proof lane in parallel: ONE $50–300 gig in his real stack, days not weeks. ==Screened and killed the same night: motivational-quotes app (store fee $25–99 alone exceeds the $20 budget; median startup MRR $136 vs a leader doing ~$700K/mo on paid installs), own itch.io game (~$982 across years for a real dev; needs 6+ months of audience), browser-game commissions ($15–35/h × 20–40h builds).==
+- 🔮 **Sep 21 — astrology / palm-reading / tử vi app screened → NO, same three walls.** This is the BEST market of the four proposed: category ≈ $4.75B (2025), ~20%/yr; Nebula ≈ $516K/mo US, CHANI ≈ $405K/mo; palm apps charge $12.99/mo auto-renew; VN has a populated tử vi/xem bói shelf and a culture that pays for readings. ==And it still fails for him identically: store fee $25–99 > $20 budget; winners grow on paid installs + ASO (both ruled out); "dozens" of palm apps and AI-astrology is among the most-cloned indie patterns of 2024–26; analysts list "credibility concerns" as a top challenge, and every winner has a brand, a named astrologer, or live human readers — none of which an anonymous solo wrapper has.== **Pattern named, 4-for-4:** games → quotes → astrology/palms all share ONE shape — build an app, list it, wait to be found — and all die on the same three walls. ==The walls belong to the shape, not the idea; no fifth category passes under $20 / no audience / no posting / no ads.== The transformation that works is the one already picked: a service for someone who owns the audience (e.g. a tử vi/phong thủy consultant with a Zalo following who wants a booking bot) — a commission, not a listing.
+- 🔮 **Follow-up hypothetical (Sep 21): "if ads and store fee were no object?"** Two walls fall, three stand. ==Unit economics run negative for a first-timer: ~$3 CPI ÷ 5–10% install-to-paid = $30–60 per paying sub, against ~$14–22 in-window revenue after the store cut; $3,000 gross ≈ $4,500–9,000 of ads.== Time: Google Play now gates new personal accounts behind a 12-tester × 14-consecutive-day closed test before production can even be requested → first paid dollar 4–6 weeks out, Oct 18 missed. The job becomes daily paid-UA optimisation — selling by another name, with the worst feedback loop. Horizon: solo median <$1K/mo; top quartile $3–15K/mo after 12–18 months. ==Realistic only for a UA operator with a four-figure ad budget and a 6–12 month horizon.== Industry's own advice to new entrants: paid consultations + premium reports first, AI/subscriptions after trust — i.e. a human reader's credibility with his code behind it. If ever tử vi: the launch window is Tết (Feb 17, 2027), outside this sprint.
+- 🇺🇸 **Sep 21 follow-up: "who in America pays, assuming a four-figure ad budget + 6–12 mo + UA-operator role?"** Pew (fall 2024): 30% of US adults consult astrology/tarot/fortune tellers yearly, but 20% "just for fun" and only 10% for insight. **Buyer = woman 18–49** (43% believe vs men 20%), under-30s 37%, **LGBTQ adults 54% (2×), LGBTQ women 63%**. Two segments: (1) women 18–34 → subscription apps (Nebula ≈ $516K/mo US on $2.99–9.99 IAP; CHANI ≈ $405K/mo); (2) women ~35–60 → per-minute live readings (Keen/Kasamba/Purple Garden; North America $2.62B) — a marketplace needing human supply. **How the winners acquire: web-to-app quiz funnels** (Meta/TikTok → web quiz → web paywall on OWN checkout → app), which dodges the 15–30% store cut and lets the pixel optimise on purchases. ==**THE GATE: Paddle Prohibited Category 14, verbatim — "Digital services associated with pseudo-science, including but not limited to clairvoyance, horoscopes, fortune-telling."** Stripe is closed to VN and separately bans psychic services in JP/MX/TH. So the only rail left is IAP via Apple/Google (both pay VN) — i.e. the profitable web-funnel model is closed to him and the unprofitable store-only model, minus 15–30%, is what remains.== Winners are companies (OBRIO = Ukrainian IT firm; Co-Star = VC; Keen/Kasamba = one corporate owner) with high-risk merchant accounts and five-figure test budgets; a four-figure budget at $30–60/paying sub ≈ 80–160 subs ≈ $1,600–3,500 pre-cut → break-even at best after months. **Only edge-holding angle (flagged, not proposed): Vietnamese-American diaspora (~2.3M) + tử vi + USD, reachable via the family channel Clock research proved** — a reader-storefront/marketplace, 6–12 months, and §10 forbids the hunt before asks go out.
 - 🧠 **The design change that matters more than the pick.** ==The binding constraint is follow-through, not market size.== 293 commits · 73 test files · a 40KB playbook · three dossiers — against **0 asks to strangers since Jul 19**. He builds; he does not cold-outreach. So §5 is now built so that **selling = answering want-ads (marketplace proposals), never initiating cold contact**, and the weekly target is **3–5 proposals, not 30 cold asks**. ==A quotes app felt followable precisely because it is all building and no buyer — which is exactly why it earns nothing.==
 - ⚠️ **Khoi to rule: R9 × T3 conflict.** Upwork Connects run ~$1.50–3/bid, so **≤$20 buys 7–13 bids for the whole sprint** — the cash rule and ≥30 asks/week cannot both hold on a marketplace. Default until ruled: free inbound first (Fiverr gigs, PeoplePerHour, Contra = $0). Clean alternative: raise R9 to ~$50 for Connects only. ==Also pending: whether R10's 100-ask switch threshold is amended to 40 proposals, since the unit of "ask" changed.==
 - ⏱ Governor: six Sundays (Aug 9 → Sep 13) have no row — each counts Gov? YES under the column key. The governor restarts from the 2026-09-20 row (R8). ==hrs/Gov? on that row were entered from the session log — correct them.==
+#### Sep 21st, 2026 — Khoi's ruling: the app (palm reader + tử vi)
+- ⚖️ **Khoi ruled, verbatim:** *"Only one way to find out: I'm willing to accept loss for this MVP as tuition fee and bring it to App Store with ads."* Reference app he named: Palm Reader & Zodiac: MagicWay (Reatility Corp. — 2021, ~50K iOS installs, 447 ratings, IAP $4.99/wk · $8.99/mo · $24.99/yr; 1M+ on Android). ==This supersedes the playable-ads pick; that plan stays in §5 as the written fallback.== Exact steps: [[q4-research/S3-palm-app-exact-steps]].
+- 📜 **Rulings amended by it (dated Sep 21):** R9 → ≈$135–155 fixed + a four-figure ad budget he names in USD; R3 → submit by Sun Oct 18, first paid conversion by Sat Oct 31 (Apple fiscal October → cash Dec 3), hard max Sat Nov 28 (→ cash Dec 31); R2 → "earned" = proceeds booked in App Store Connect. R8 untouched. The Connects conflict and the 40-proposal question are closed.
+- 🚧 **The two gates Apple controls.** Guideline 4.3(b) names *fortune telling*: "we will not accept new submissions unless they offer a meaningfully different or improved experience" — the 2021 rejection notice reads "we simply have enough of these types of apps… considered a form of spam", and 2025–26 forum threads show renames and keyword changes not working. ==So the tử vi layer (Can Chi · con giáp · ngũ hành · hợp/xung, EN/VI) is the admission ticket, not polish.== Payout: $40 minimum, ~33 days after Apple's fiscal month end.
+- 📅 **Dates that matter:** enroll in the Apple Developer Program today; Small Business Program approved by **Sat Sep 26** (15% from Oct 11, else from Nov 15); Google Play closed test with 12 testers from **Tue Oct 7** (the 4.3(b) hedge — 14 consecutive days gate production); submit **Sun Oct 18**; first paid by **Sat Oct 31**; last in-sprint sale **Sat Nov 28**.
+- 💸 **Tuition, priced in advance:** $30–75 per paying subscriber against $17–25 back → roughly half to two-thirds of ad spend is lost; $1,000 → ~14–30 paying strangers and $300–600 booked over ~6 weeks. ==The proof ("a stranger paid for my product") arrives with the first conversion, ~day 3–5 of spend — that is what the money buys.==
+- 📊 Q4 column redefined for this lane: installs / paid conversions / Σ proceeds booked (USD); cash arrival goes in Signal.
 ---
 # Backlog
 - [Learn about animations](https://animations.dev/learn/animation-theory/intro)
@@ -249,7 +258,9 @@ One new row every Sunday, straight off the dashboards, ~5 minutes, numbers and d
 - EO:
 	- [ ] `next-steps.md`++
 	- [ ] Realtime file list & their notes whenever a new CUD action is committed
-	- [ ] Clear Altai-sync issues
+	- [ ] Chapter detail page UI revamp
+	- [ ] Clear ALL open issues & PRs
+	- [ ] Propose Claude 5x?
 - EP: 
 	- [ ] Set up YOUR bank account (ACB) for PayOS Prod
 	- [ ] HITL
