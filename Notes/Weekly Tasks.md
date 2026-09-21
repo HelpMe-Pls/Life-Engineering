@@ -12,6 +12,7 @@
 ### 22/9
 - [ ] EO weekly report & sprint goals update
 	- [ ] 1-1 sparring
+	- [ ] Drain the queue for `global-hubspot`
 	- [ ] Send the sprint report
 - [ ] Venture++
 - [ ] Tao Te Ching++
