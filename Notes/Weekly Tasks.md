@@ -10,32 +10,33 @@
 - [ ] Tao Te Ching++
 - [x] Live up to your standards
 ### 22/9
-- [ ] EO weekly report & sprint goals update
+- [x] EO weekly report & sprint goals update
 	- [ ] 1-1 sparring
-	- [ ] Drain the queue for `global-hubspot`
-	- [ ] Send the sprint report
+	- [x] Drain the queue for `global-hubspot`
+	- [x] Send the sprint report
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 23/9
-- [ ] EO sprint review:
-	- [ ] Record & summarize the meeting
-	- [ ] Practice 1-1
-	- [ ] Contingencies
+- [x] EO sprint review:
+	- [x] Record & summarize the meeting
+	- [x] Practice 1-1
+	- [x] Contingencies
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 24/9
-- [ ] EO minimal work
-	- [ ] Drain Claude quota
+- [x] EO minimal work
+	- [x] Drain Claude quota
 	- [ ] 1-1 spar
 - [ ] Venture++ 
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 25/9
 - [ ] EO minimal work
 	- [ ] Chapter Detail page UI update
-	- [ ] 1-1 spar
+	- [ ] Offer 1-1
+- [ ] Health check
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
