@@ -33,26 +33,29 @@
 - [ ] Tao Te Ching++
 - [x] Live up to your standards
 ### 25/9
-- [ ] EO minimal work
+- [x] EO minimal work
 	- [ ] Chapter Detail page UI update
 	- [ ] Offer 1-1
-- [ ] Health check
-- [ ] Venture++
+- [x] Health check
+- [x] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 26/9
-- [ ] Perfect dive start + 500m with paddles
-- [ ] Hefty breakfast
-- [ ] Groceries
+- [x] Perfect dive start + 500m with paddles
+- [x] Hefty breakfast
+- [x] Groceries
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 27/9
 - [ ] Splurge (if you're done with EP HITL)
-- [ ] Weekly planning
+- [ ] Weekly planning (including EO tickets)
 - [ ] Venture++
 	- [ ] Sunday scoreboard read + long-vol read with Claude (log the week's numbers)
 	- [ ] Reply Future Me
-	- [ ] Claude 5x swap for bonus advise
+	- [ ] Fitness benchmark research
+	- [ ] Financial advice
+	- [ ] 1-1 spar
+	- [ ] Q3 wrap up & Q4 planning
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 # What a good day looks like
