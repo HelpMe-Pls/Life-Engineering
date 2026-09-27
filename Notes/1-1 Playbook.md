@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/wgvzcuz6#1GYF4VVkI28aHR05HElQ8R2dVLoalokSMkUrrf7GyT4
-share_updated: 2026-09-24T21:36:34+07:00
+share_updated: 2026-09-27T19:59:47+07:00
 ---
 
 # 🚨 HUD — THE NUMBER
@@ -28,9 +28,9 @@ never above 49 · no math out loud · he gets the credit · ==the base is the po
 His questions first. Let him brag. No number until he's laughed once.
 - **You talk first** (silence after hello, "go ahead", "it's your meeting") → *"Thanks for making the time. So let's get the renewal right today, and I'd like your read first."* **(…)** Still yours → *"Sure. Three things from the six months, then the contract."* → the results.
 - **"Walk me through the results"** → three, one outcome each, under 90 seconds: 
-	- "*So there are 3 things that I'm really proud of over the last 6 months. The first one is obviously the HubSpot build with the deal funnels and the data structure clean up in HubSpot, basically the global setup where the chapter rollout stands on.*"
+	- "*So there are 3 things that I'm really proud of over the last 6 months. The first one is obviously the HubSpot build with the deal funnels and the data structure clean up, basically the global setup where the chapter rollout stands on.*"
 	- *"And then the rollout tracker, which I gotta say that it was your brilliant idea to get **every** chapter's rollout status in one place, so nobody has to ask where a chapter stands in the process.*" 
-	- *"And last but not least, the Altai sync where we sync the Altai records to HubSpot, so the global team can run marketing campaigns on them."*
+	- *"And last but not least, the Altai sync where we pull the Altai records to HubSpot, so the global team can run marketing campaigns on them."*
 - **"What would you do differently?"** → *"Two flags, two same-day fixes. The lesson was check-ins along the way, and I took it."* Stop.
 - **"What did the width get us?"** → *"The week the team was out, nothing on EO slipped. How did that week look from your side?"*
 - **Opens with a blow-up** → [[#🧨 HEAT|🧨]] Blow-up, then back here.
@@ -47,11 +47,11 @@ His questions first. Let him brag. No number until he's laughed once.
 
 ## 🎯 HIS NUMBER
 Expect 31 to 45. ==Mirror the money, never the percent.== "Approved", "final", "budget" → [[#💰 MONEY|💰]] Final first. Reasons through the hire → [[#👥 HIRE|👥]] first. Mirror it (*"Forty-four?"*) **(…)** then the row.
-- **Under 38** → *"Okay. Sounds like there's still a lot of room in there."* **(…)** *"I just don't see [X] for a job this size. So, pls help me out here, how do I make that work?"* **(…)**
+- **Under 38** → *"Okay. I thought we had more room than that, now that business is doing well."* **(…)** *"I just don't see [X] for a job this size. So, pls help me out here, how do I make that work?"* **(…)**
     - snaps ("that's your problem") → *"Fair. Sounds like [X] is where the budget sits today."* → 🧊 Concession
-    - gets to 38 → [[#🌉 BRIDGE|🌉]] · doesn't → [[#⏱ EXIT|⏱]]. Never bridge under 38.
+    - gets to 38 → [[#🌉 BRIDGE|🌉]] · doesn't → [[#⏱ EXIT|⏱]]. ==Never bridge under 38.==
 - **38 to 40** → *"OK, so we're both inside your rule now, just at different ends of it."* **(…)**
-    - 38 or 39 → *"Call the first step forty, and the step to forty-six seven in the next review is a small one."* Holds → [[#🌉 BRIDGE|🌉]], no "small"
+    - 38 or 39 → *"Call the first step forty, and the step to forty-six seven in the next review is a small one."* Holds → [[#🌉 BRIDGE|🌉]]
     - 40 → [[#🌉 BRIDGE|🌉]]
 - **41 to 43** → *"That's a real number and I know it took some doing. Let me give you my end."* **(…)** → [[#🪜 LADDER|🪜]]
 - **44 to 46** → *"We're basically there. What if we call it forty-six seven and never touch this again for a long time?"* **(…)** Still short → [[#🌉 BRIDGE|🌉]]
@@ -66,7 +66,7 @@ Expect 31 to 45. ==Mirror the money, never the percent.== "Approved", "final", "
 
 ## 🌉 BRIDGE
 Under 46.7, or "prove it first". 38 or more in the paper, or no bridge. Step = 46.7 in this paper, Apr 10, against the SOW on our side. Later date → now-number up, July max, 41+. No step → one number. Never "to be agreed".
-- **Offer** → *"Then let's do it in two. [X] now, in the contract, and forty-six seven at the next review, against the SOW."* **(…)** *"You set that bar. Let me go clear it, and you stay inside your rule both times."* **(…)** At 40 or more, add: *"The second step's small, which makes it easy to write."*
+- **Offer** → *"Then let's do it in two. [X] now, in the contract, and forty-six seven at the next review, against the SOW."* **(…)** *"You set the bar. Let me go clear it, and you stay inside your rule both times."* **(…)** At 40 or more, add: *"The second step's small, which makes it easy to write."*
 - **Date** → *"When's the next review on your calendar?"* **(…)**
     - a date → *"Okay, [date]. Let's write that in."*
     - a month → *"Call it [month] tenth?"*
@@ -77,7 +77,7 @@ Under 46.7, or "prove it first". 38 or more in the paper, or no bridge. Step = 4
     - later, EO's thing ("after EO renews", "once the sixty chapters are in") → [[#🧩 SIDE DOORS|🧩]] Market-gated first
     - later, a date ("June", "July") → *"The date's off the SOW, not a calendar. Our side's built by April, so that's when your bar's cleared."* **(…)** Holds → *"Then the first step carries more of the weight. If it waits till [month], where does [X] go today?"* **(…)** 41+, written for his date, July max → Bar · less, or past July → **One step**
 - **Not a review** ("the renewal is the review", "no mid-term reviews", "then everyone wants one") → *"The renewal's the review?"* **(…)** *"Then let's not call it a review → **One step**
-- **One step** (no step before the next renewal, and he holds) → *"Then it's one step, not two, and one number for the whole year is forty-six seven. Still inside your rule."* **(…)** *"So which is easier to write? [X] now with the step, or forty-six seven now and we're done for the year."* **(…)** The step → Bar · forty-six seven → [[#🏁 CLOSE|🏁]] · neither, 45+ → [[#💰 MONEY|💰]] Swap once · neither, under 45 → Won't write it
+- **One step** (no step before the next renewal, and he holds) → *"How about one step, not two, and one number for the whole year is forty-six seven. Still inside your rule."* **(…)** *"So which is easier to write? [X] now with the step, or forty-six seven now and we're done for the year."* **(…)** The step → Bar · forty-six seven → [[#🏁 CLOSE|🏁]] · neither, 45+ → [[#💰 MONEY|💰]] Swap once · neither, under 45 → Won't write it
 - **Bar** → *"The bar is the SOW, HubSpot and Events delivered on our side. Anything on top of that?"* **(…)** "No" → *"So the bar is the SOW on our side, and the step follows."* Wait for "that's right".
     - a market thing → [[#🧩 SIDE DOORS|🧩]] Market-gated
     - a mood thing ("if I'm happy with it") → *"Let's pin that to the SOW too, so we both know what done looks like."*
@@ -110,7 +110,7 @@ Under 46.7, or "prove it first". 38 or more in the paper, or no bridge. Step = 4
 ## 👥 HIRE
 He wrote ADD, not replace. Never compete with someone not hired yet. Never "I'm the lead now".
 - **Smaller seat** ("the load comes down", "you won't need three hats") → *"Smaller?"* **(…)** *"The seat outgrew one pair of hands, and you saw that first. That's the seat we're pricing."* **(…)**
-- **Cheaper sticker** ("someone at thirty-five", "you were fine at twenty-five") → *"Sure. The sticker's the start of that bill, not the end of it. You've done that math."* **(…)** *"And their seat gets priced on its own, same as this one."*
+- **Cheaper sticker** ("someone at thirty-five", "you were fine at twenty-five") → *"Sure. The sticker's the start of that bill, not the end of it. You know the math."* **(…)** *"And their seat gets priced on its own, same as this one."*
 - **Line at the door** ("what do I tell the new person?", "then the others ask") → *"Sounds like the worry is the line outside your door the day after."* **(…)** *"My comp's under NDA. Nobody lines up to match a number they never hear."* **(…)** *"And if someone asks, every job here gets priced on its own."*
 - **Replace** ("There's always someone out there who'll gladly take 38") → half a smile: *"Sure. The sticker's the start of that bill, not the end of it. You know the math."* **(…)** *"So, your number still stands, and the step just gets it the rest of the way."* **(…)** Still no → [[#⏱ EXIT|⏱]]
 - **Crowded sheet** ("three salaries out of one pool", "the raise waits for the hire") → *"The hire's a new line. This one's been at twenty-five for a year, so let's get it right first."* **(…)** "can't carry both" → *"Then the bonus flexes, that's what you built it for. The base is for the job."*

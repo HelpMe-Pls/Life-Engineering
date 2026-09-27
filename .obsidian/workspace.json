@@ -88,12 +88,12 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/strength-research/README.md",
+                        "file": "Notes/Business Bank.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "README"
+                      "title": "Business Bank"
                     }
                   },
                   {
@@ -120,7 +120,8 @@
                       "title": "Daily Standup"
                     }
                   }
-                ]
+                ],
+                "currentTab": 2
               },
               {
                 "id": "6daf623ea71b0a7d",
@@ -326,23 +327,28 @@
   },
   "active": "5646d77dc32192cf",
   "lastOpenFiles": [
-    "Notes/1-1 Runbook.html",
-    "Notes/Weekly Tasks.md",
-    "Notes/2026.md",
-    "Notes/Venture Tasks.md",
+    "Notes/sed5gVohP",
+    "Notes/sedLuKthA",
+    "Notes/sedxC6VYO",
+    "Notes/1-1 Runbook.html.tmp.51464.a0016ca46f9d",
+    "Notes/1-1 Runbook.html.tmp.51464.f61f07acca1f",
+    "Notes/1-1 Runbook.html.tmp.51464.83ca310aa2c0",
+    "Notes/1-1 Bench.md",
     "Notes/1-1 Playbook.md",
-    "Notes/strength-research/README.md",
-    "Notes/Business Bank.md",
+    "Notes/sedznZstC",
+    "AI/Claude Code Skill Playbook.md",
+    "Notes/1-1 Runbook.html",
     "Notes/strength-research/SWIMMING.md",
     "Notes/strength-research/INCLINE-BENCH.md",
+    "Notes/strength-research/README.md",
     "Notes/strength-research/EXPERT-BENCHMARKS.md",
     "Notes/strength-research",
-    "Notes/Daily Standup.md",
-    "Notes/1-1 Bench.md",
-    "AI/Claude Code Skill Playbook.md",
+    "Notes/Weekly Tasks.md",
     "Notes/Sprint Tickets [Y26 Sprint 38].html",
-    "Notes/q4-research/S3-palm-app-exact-steps.md",
+    "Notes/1-1 Bench.md.tmp.41492.597d97785890",
+    "Notes/Daily Standup.md",
     "Notes/Q4 Sprint.md",
+    "Notes/q4-research/S3-palm-app-exact-steps.md",
     "Notes/Q4 Sprint Prompts.md",
     "Notes/q4-research/S2-scorecard-council.md",
     "Notes/Antifragile SaaS.md",
@@ -352,16 +358,11 @@
     "Notes/q4-research/R3-service-demand.md",
     "Notes/q4-research/R5-rails.md",
     "Notes/q4-research/R4-marketplaces.md",
-    "Notes/q4-research",
     "Tips & Tools/English vocab.md",
     "AI/Skill Playbook Appendix.md",
-    "Notes/EP SaaS.md.tmp.47160.9419baa0e418",
-    "Notes/EP SaaS.md.tmp.47160.99d1097f3684",
-    "Notes/EP SaaS.md.tmp.47160.a11c1d386bde",
-    "Notes/EP SaaS.md.tmp.47160.7e3cdc886105",
-    "Notes/EP SaaS.md.tmp.47160.bbe0000a5f20",
-    "Notes/EP SaaS.md.tmp.47160.987984692282",
-    "Notes/EP SaaS.md.tmp.47160.cdefdca538a8",
+    "Notes/2026.md",
+    "Notes/Venture Tasks.md",
+    "Notes/Duty SaaS.md",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",

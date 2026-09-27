@@ -4,18 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Renewal Runbook</title>
+<meta name="description" content="The map of the renewal meeting in ten blocks. Three minutes to skim. Open a line for its script.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,wght@1,400;1,500&display=swap">
 <style>
 :root{
   --bg:#F2F4F7; --surface:#FFFFFF; --ink:#141C26; --muted:#5C6878; --line:#D7DDE5;
-  --he:#E9EDF2; --he-ink:#3A4654;
-  --accent:#B0741A; --accent-ink:#7A4E0B; --accent-soft:#FBF3E2; --accent-line:#E5C98A;
-  --route:#0E6F68; --route-soft:#E1F2F0;
-  --win:#1E7A3C; --win-soft:#E3F3E8; --exit:#A83224; --exit-soft:#FBE8E5;
-  --shadow:0 1px 2px rgba(20,28,38,.06); --pop:0 10px 28px rgba(20,28,38,.18);
-  --barh:96px;
+  --accent:#B0741A; --accent-ink:#7A4E0B; --accent-soft:#FBF3E2;
+  --route:#0E6F68; --route-soft:#E1F2F0; --win:#1E7A3C; --exit:#A83224;
   --display:"IBM Plex Sans Condensed","Arial Narrow","Helvetica Neue",Arial,sans-serif;
   --body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
   --script:"Source Serif 4",Georgia,"Times New Roman",serif;
@@ -24,526 +21,337 @@
   :root:not([data-theme="light"]){
     color-scheme:dark;
     --bg:#0F1419; --surface:#171D24; --ink:#E6ECF2; --muted:#96A3B2; --line:#2A333D;
-    --he:#1F2730; --he-ink:#C3CCD6;
-    --accent:#E2AA3E; --accent-ink:#F0C97A; --accent-soft:#251F12; --accent-line:#6B5220;
-    --route:#3FD1C0; --route-soft:#12302E;
-    --win:#5BD584; --win-soft:#14301F; --exit:#F08A7D; --exit-soft:#3A1B18;
-    --shadow:none; --pop:0 10px 28px rgba(0,0,0,.5);
+    --accent:#E2AA3E; --accent-ink:#F0C97A; --accent-soft:#251F12;
+    --route:#3FD1C0; --route-soft:#12302E; --win:#5BD584; --exit:#F08A7D;
   }
 }
 :root[data-theme="dark"]{
   color-scheme:dark;
   --bg:#0F1419; --surface:#171D24; --ink:#E6ECF2; --muted:#96A3B2; --line:#2A333D;
-  --he:#1F2730; --he-ink:#C3CCD6;
-  --accent:#E2AA3E; --accent-ink:#F0C97A; --accent-soft:#251F12; --accent-line:#6B5220;
-  --route:#3FD1C0; --route-soft:#12302E;
-  --win:#5BD584; --win-soft:#14301F; --exit:#F08A7D; --exit-soft:#3A1B18;
-  --shadow:none; --pop:0 10px 28px rgba(0,0,0,.5);
+  --accent:#E2AA3E; --accent-ink:#F0C97A; --accent-soft:#251F12;
+  --route:#3FD1C0; --route-soft:#12302E; --win:#5BD584; --exit:#F08A7D;
 }
 *{box-sizing:border-box}
-[hidden]{display:none!important}
-html{scroll-padding-top:calc(var(--barh) + 12px)}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45;padding-inline:16px;padding-block:0 48px}
-.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);margin-inline:-16px;padding-inline:16px;padding-block:12px 8px;border-bottom:1px solid var(--line)}
-.bar .wrap{max-width:1040px;margin:0 auto}
-.bar .row{display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
-h1{font-family:var(--display);font-weight:700;font-size:22px;letter-spacing:.01em;margin:0;line-height:1.1;text-wrap:balance}
-.kicker{font-family:var(--display);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
-.navbtn{font-family:var(--display);font-weight:600;font-size:13px;letter-spacing:.02em;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer;white-space:nowrap}
-.navbtn[aria-expanded="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.tabs{display:flex;gap:6px;margin-top:10px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
-.tabs::-webkit-scrollbar{display:none}
-.tab{flex:0 0 auto;font-family:var(--display);font-weight:600;font-size:13.5px;letter-spacing:.02em;border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:999px;padding:6px 12px;cursor:pointer;white-space:nowrap}
-.tab[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.tab .odds{opacity:.75;font-weight:600;margin-left:6px}
-main{max-width:1040px;margin:0 auto;padding-top:14px;display:grid;grid-template-columns:minmax(0,1fr);gap:0 28px}
-#content{min-width:0;max-width:760px}
-.side{display:none}
-.side.open{display:block;position:fixed;left:16px;right:16px;top:calc(var(--barh) + env(safe-area-inset-top,0px) + 6px);z-index:6;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 10px 12px;max-height:60vh;overflow:auto;box-shadow:var(--pop)}
-.side .k2{padding:2px 8px 6px}
-.navlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
-.navlist a{display:grid;grid-template-columns:20px 22px minmax(0,1fr);gap:6px;align-items:baseline;padding:6px 8px;border-radius:8px;color:var(--ink);text-decoration:none;font-family:var(--display);font-weight:600;font-size:13.5px;line-height:1.25}
-.navlist a .ni{font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
-.navlist a .nj{font-size:14px}
-.navlist a:hover{background:var(--he)}
-.navlist a.active{background:var(--accent-soft);color:var(--accent-ink);box-shadow:inset 3px 0 0 var(--accent)}
-.navlist a.win{color:var(--win)} .navlist a.exit{color:var(--exit)}
-.side .toggle{margin:10px 8px 0}
-@media (min-width:900px){
-  main{grid-template-columns:236px minmax(0,1fr)}
-  .side{display:block;position:sticky;top:calc(var(--barh) + env(safe-area-inset-top,0px) + 12px);align-self:start;max-height:calc(100vh - var(--barh) - 32px);overflow:auto;padding-right:4px}
-  .navbtn{display:none}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15.5px;line-height:1.4;padding:0 16px 48px}
+.wrap{max-width:1080px;margin:0 auto}
+header{padding:14px 0 10px;border-bottom:1px solid var(--line);margin-bottom:12px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.kicker{font-family:var(--display);font-weight:600;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 3px}
+h1{font-family:var(--display);font-weight:700;font-size:22px;margin:0;line-height:1.1}
+#all{font-family:var(--display);font-weight:600;font-size:12.5px;color:var(--route);background:none;border:1px solid var(--route);border-radius:999px;padding:5px 11px;cursor:pointer;white-space:nowrap}
+.grid{display:grid;gap:10px}
+@media (min-width:820px){.grid{grid-template-columns:1fr 1fr}}
+section{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 13px 8px;break-inside:avoid}
+section.hot{border-color:var(--accent)}
+h2{font-family:var(--display);font-weight:700;font-size:16px;margin:0 0 4px;line-height:1.15;display:flex;gap:8px;align-items:baseline}
+h2 .n{color:var(--accent-ink);font-variant-numeric:tabular-nums}
+h2 small{font-family:var(--body);font-weight:500;font-size:12.5px;color:var(--muted)}
+ul,ol{margin:0;padding-left:18px;display:grid;gap:3px}
+li::marker{color:var(--muted);font-family:var(--display);font-weight:700}
+b{font-weight:600}
+q{quotes:"\201C" "\201D";font-family:var(--script);font-style:italic;font-size:16px}
+.w{color:var(--win);font-weight:600}.x{color:var(--exit);font-weight:600}
+.pct{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 6px}
+.pct span{font-family:var(--display);font-weight:600;font-size:12.5px;background:var(--accent-soft);color:var(--accent-ink);border-radius:6px;padding:1px 7px;font-variant-numeric:tabular-nums}
+/* expandable lines */
+details{border-top:1px solid var(--line)}
+details:first-of-type{border-top:0}
+summary{cursor:pointer;list-style:none;padding:5px 0 5px 20px;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"›";position:absolute;left:5px;top:3px;color:var(--muted);font-family:var(--display);font-weight:700;font-size:17px;transition:transform .15s}
+details[open]>summary::before{transform:rotate(90deg)}
+details[open]>summary{color:var(--accent-ink)}
+.s{margin:0 0 8px 8px;padding:4px 0 4px 12px;border-left:3px solid var(--accent);display:grid;gap:5px;font-size:14.5px}
+.s p{margin:0}
+.say{font-family:var(--script);font-style:italic;font-size:15.5px;color:var(--ink)}
+.p{display:inline-block;font-family:var(--display);font-style:normal;font-weight:700;font-size:10.5px;letter-spacing:.08em;color:var(--route);background:var(--route-soft);border-radius:5px;padding:0 5px;margin-left:5px;vertical-align:middle}
+.k{font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.s .go{color:var(--route);font-weight:600}
+footer{margin-top:14px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);padding-top:8px}
+@media print{
+  body{background:#fff;color:#000;font-size:11px;padding:0 5mm}
+  #all{display:none}
+  .grid{grid-template-columns:1fr 1fr;gap:6px}
+  section{padding:6px 8px;break-inside:avoid}
+  q,.say{font-size:11.5px}
 }
-.intro{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
-.intro h2{font-family:var(--display);font-weight:700;font-size:19px;margin:0;line-height:1.15;text-wrap:balance}
-.intro p{margin:0;color:var(--muted);max-width:62ch}
-.toggle{font-family:var(--body);font-size:13px;font-weight:500;color:var(--route);background:none;border:1px solid var(--route);border-radius:999px;padding:5px 11px;cursor:pointer;white-space:nowrap}
-.tab:focus-visible,.head:focus-visible,.toggle:focus-visible,.go:focus-visible,.navbtn:focus-visible,.navlist a:focus-visible{outline:2px solid var(--route);outline-offset:2px}
-.beats{display:flex;flex-direction:column;gap:0;position:relative;margin-top:6px}
-.beat{display:grid;grid-template-columns:34px 1fr;gap:0 10px;position:relative;padding-block:10px}
-.beat::before{content:"";position:absolute;left:16px;top:0;bottom:0;width:2px;background:var(--line)}
-.beat:first-child::before{top:12px}
-.beat:last-child::before{bottom:auto;height:26px}
-.n{position:relative;z-index:1;width:34px;height:34px;border-radius:50%;background:var(--surface);border:2px solid var(--line);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;margin-top:6px}
-.beat.win .n{border-color:var(--win);color:var(--win)}
-.beat.exit .n{border-color:var(--exit);color:var(--exit)}
-.col{display:flex;flex-direction:column;gap:6px;min-width:0}
-.he{background:var(--he);color:var(--he-ink);border-radius:10px;padding:8px 11px;font-size:14px;line-height:1.4}
-.he .who{font-family:var(--display);font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-right:8px}
-.you{background:var(--surface);border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:10px;padding:9px 11px 10px;cursor:pointer;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:6px}
-.you:hover{border-color:var(--accent)}
-.you[data-open="true"]{background:var(--accent-soft)}
-.head{display:grid;grid-template-columns:auto 1fr auto;gap:0 10px;align-items:center;width:100%;text-align:left;background:none;border:0;padding:0;margin:0;cursor:pointer;color:var(--ink);font-family:var(--body)}
-.head .jump{font-size:18px;line-height:1.2}
-.head .label{font-family:var(--display);font-weight:700;font-size:14.5px;letter-spacing:.01em;line-height:1.2}
-.head .label small{display:block;font-family:var(--body);font-weight:500;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:2px}
-.cta{font-family:var(--display);font-weight:600;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink);border:1px solid var(--accent-line);border-radius:999px;padding:4px 9px;white-space:nowrap}
-.you[data-open="true"] .cta{background:var(--surface)}
-.gist{margin:0;padding-left:28px;font-family:var(--script);font-style:italic;font-size:15.5px;color:var(--accent-ink);line-height:1.35}
-.you[data-open="true"] .gist{display:none}
-.body{border-top:1px dashed var(--accent-line);padding-top:8px;margin-top:2px;display:flex;flex-direction:column;gap:8px;cursor:auto}
-.say{margin:0;font-family:var(--script);font-style:italic;font-size:16px;line-height:1.45;color:var(--ink);text-indent:-.5em;padding-left:.5em}
-.pause{display:inline-block;font-family:var(--display);font-style:normal;font-weight:700;font-size:11px;letter-spacing:.08em;color:var(--route);background:var(--route-soft);border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:middle}
-.why{margin:0;font-size:13.5px;color:var(--muted)}
-.why b{color:var(--ink);font-weight:600}
-.k2{font-family:var(--display);font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0}
-.forks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px}
-.forks li{font-size:13.5px;display:grid;grid-template-columns:auto 1fr;gap:8px;align-items:baseline}
-.forks .if{font-family:var(--display);font-weight:600;font-size:12.5px;color:var(--route);background:var(--route-soft);border-radius:6px;padding:1px 7px;white-space:nowrap}
-.forks li.w .if{color:var(--win);background:var(--win-soft)}
-.forks li.x .if{color:var(--exit);background:var(--exit-soft)}
-.forks .say{font-size:15px;display:inline}
-.gos{display:flex;flex-wrap:wrap;gap:6px}
-.go{font-family:var(--display);font-weight:600;font-size:12.5px;color:var(--route);background:var(--route-soft);border:1px solid transparent;border-radius:8px;padding:4px 9px;cursor:pointer}
-.go:hover{border-color:var(--route)}
-.conv{border-collapse:collapse;font-size:13.5px;width:auto}
-.conv td,.conv th{padding:3px 12px 3px 0;border-bottom:1px solid var(--line);text-align:left}
-.conv th{font-family:var(--display);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.conv td.num{font-variant-numeric:tabular-nums;font-weight:600}
-.card{background:var(--surface);border:1px solid var(--accent-line);border-radius:10px;padding:10px 12px;font-size:14px;line-height:1.45}
-.card .t{font-family:var(--display);font-weight:700;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 4px}
-.card p{margin:0}
-.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:8px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
-.tile{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 11px}
-.tile .k{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 3px}
-.tile .v{margin:0;font-size:14px}
-.tile.w{border-color:var(--win)} .tile.x{border-color:var(--exit)}
-table.bolts{border-collapse:collapse;width:100%;font-size:14px}
-.bolts th,.bolts td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-.bolts th{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.bolts td.bn{font-family:var(--display);font-weight:700;white-space:nowrap}
-.bolts .say{font-size:14.5px;display:inline}
-@media (max-width:600px){
-  .bolts,.bolts tbody,.bolts tr,.bolts td{display:block}
-  .bolts tr:first-child{display:none}
-  .bolts tr{border-bottom:1px solid var(--line);padding-block:8px}
-  .bolts td{border:0;padding:2px 0}
-  .bolts td[data-l]::before{content:attr(data-l);font-weight:600;color:var(--muted)}
-}
-.section{margin-top:18px}
-.section h3{font-family:var(--display);font-weight:700;font-size:16px;margin:0 0 8px}
-.foot{margin-top:22px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);padding-top:10px}
-@media (max-width:420px){.gist{padding-left:0}}
 </style>
 </head>
 <body>
-<header class="bar" id="bar"><div class="wrap">
-  <div class="row">
-    <div><p class="kicker">Mon 3:00 PM · camera on · HUD in the narrow window</p><h1>Renewal Runbook</h1></div>
-    <button class="navbtn" id="navbtn" aria-expanded="false" aria-controls="side">☰ Beats</button>
-  </div>
-  <div class="tabs" role="tablist" id="tabs"></div>
-</div></header>
-<main>
-  <nav class="side" id="side" aria-label="Beats"></nav>
-  <div id="content"></div>
-</main>
+<div class="wrap">
+<header>
+  <div><p class="kicker">Mon Sep 28 · 3:00 PM · camera on · the HUD on screen · this page in your head · amber border = read twice</p><h1>Renewal Runbook</h1></div>
+  <button id="all" type="button">Expand all</button>
+</header>
 
+<div class="grid">
+
+<section class="hot">
+  <h2><span class="n">1</span>The job</h2>
+  <ul>
+    <li>Get his number first. Mirror the money, not the percent.</li>
+    <li>Answer each frame where it lands. One breath. Back to the seat.</li>
+    <li>Your number does not move. The step does the work.</li>
+    <li>Close at half speed. Sign nothing today. Card tonight.</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="n">2</span>The path <small>the likely room · open a line for the script</small></h2>
+  <details><summary><b>1 · His review.</b> Three outcomes, under 90 seconds. "Differently": two flags, two fixes. Stop.</summary><div class="s">
+    <p><span class="k">go ahead, your meeting</span><span class="say">“Thanks for making the time. So let's get the renewal right today, and I'd like your read first.”</span><i class="p">(…)</i> Still yours: <span class="say">“Sure. Three things from the six months, then the contract.”</span></p>
+    <p><span class="k">walk me through it</span><span class="say">“So there are 3 things that I'm really proud of over the last 6 months. The first one is obviously the HubSpot build with the deal funnels and the data structure clean up, basically the global setup where the chapter rollout stands on.”</span></p>
+    <p><span class="say">“And then the rollout tracker, which I gotta say that it was your brilliant idea to get every chapter's rollout status in one place, so nobody has to ask where a chapter stands in the process.”</span></p>
+    <p><span class="say">“And last but not least, the Altai sync where we pull the Altai records to HubSpot, so the global team can run marketing campaigns on them.”</span></p>
+    <p><span class="k">differently</span><span class="say">“Two flags, two same-day fixes. The lesson was check-ins along the way, and I took it.”</span> Stop.</p>
+    <p><span class="k">what did the width get us</span><span class="say">“The week the team was out, nothing on EO slipped. How did that week look from your side?”</span></p>
+    <p><span class="k">EO not mentioned</span><span class="say">“Before my stuff, where did the EO numbers land?”</span><i class="p">(…)</i> Pocket it, cite none of it.</p>
+  </div></details>
+  <details><summary><b>2 · "Forty percent, approved."</b> <q>Thirty-five?</q> Pocket "October pay".</summary><div class="s">
+    <p><span class="say">“Thirty-five?”</span><i class="p">(…)</i> He fills the silence. Five frames land in one breath, the mirror answers the only one that matters.</p>
+    <p>He dated the bonus, so the close's bonus question is retired. The card carries it.</p>
+  </div></details>
+  <details><summary><b>3 · "Approved, not a starting point."</b> Okay. Thank him. <q>If there were a way to forty-six seven, what would it look like?</q></summary><div class="s">
+    <p><span class="say">“Okay.”</span><i class="p">(…)</i> <span class="say">“Thanks for getting it to a number. I know that took some doing.”</span><i class="p">(…)</i> <span class="say">“Please walk me through how you got there.”</span> Listen.</p>
+    <p><span class="say">“But if there WERE a way to get this to forty-six seven inside the structure, what would it look like?”</span><i class="p">(…)</i> Then his number's row.</p>
+  </div></details>
+  <details><summary><b>4 · "Basically double."</b> A hundred would be fifty. <q>Help me out, how do I make thirty-five work?</q></summary><div class="s">
+    <p><span class="k">double</span><span class="say">“A hundred would be fifty. I'm at forty-six seven, so I'm still under it.”</span></p>
+    <p><span class="k">under 38</span><span class="say">“Okay. I thought we had more room than that, now that business is doing well.”</span><i class="p">(…)</i> <span class="say">“I just don't see thirty-five for a job this size. So, pls help me out here, how do I make that work?”</span><i class="p">(…)</i></p>
+    <p>Snaps: <span class="say">“Fair. Sounds like thirty-five is where the budget sits today.”</span> Then the Concession. Gets to 38: the Bridge. Does not: EXIT. <span class="x">Never bridge under 38.</span></p>
+  </div></details>
+  <details><summary><b>5 · He moves to 38.</b> Ask for forty, once. Then the Offer.</summary><div class="s">
+    <p><span class="say">“Thirty-eight?”</span><i class="p">(…)</i> <span class="say">“OK, so we're both inside your rule now, just at different ends of it.”</span><i class="p">(…)</i> <span class="say">“Call the first step forty, and the step to forty-six seven in the next review is a small one.”</span></p>
+    <p>Holds: <span class="say">“Then let's do it in two. Thirty-eight now, in the contract, and forty-six seven at the next review, against the SOW.”</span><i class="p">(…)</i> <span class="say">“You set the bar. Let me go clear it, and you stay inside your rule both times.”</span><i class="p">(…)</i></p>
+  </div></details>
+  <details><summary><b>6 · "The renewal is the review."</b> <q>Then let's not call it a review.</q> Then One step.</summary><div class="s">
+    <p><span class="k">next renewal</span><span class="say">“That's a year out, and the second step was the whole point. April tenth, same SOW?”</span></p>
+    <p><span class="k">not a review</span><span class="say">“The renewal's the review?”</span><i class="p">(…)</i> <span class="say">“Then let's not call it a review.”</span></p>
+    <p><span class="k">one step</span><span class="say">“How about one step, not two, and one number for the whole year is forty-six seven. Still inside your rule.”</span><i class="p">(…)</i> <span class="say">“So which is easier to write? Thirty-eight now with the step, or forty-six seven now and we're done for the year.”</span><i class="p">(…)</i></p>
+    <p>The step: the bar. Forty-six seven: <span class="w">WIN</span>. Neither: the email path.</p>
+  </div></details>
+  <details><summary><b>7 · "I'm not writing it."</b> Email path. Land it, once. Then the Walk.</summary><div class="s">
+    <p><span class="k">email path</span><span class="say">“Then the paper carries the date and the bar, and your email carries the number. Both, and I'm good.”</span><i class="p">(…)</i></p>
+    <p><span class="k">land it, once</span><span class="say">“So your number stands. The step just gets it the rest of the way.”</span><i class="p">(…)</i></p>
+    <p><span class="k">the walk</span><span class="say">“Look, I'm really grateful for the offer, and I wish I could give you a quick yes. But I just can't make thirty-eight work.”</span><i class="p">(…)</i> Nothing about leaving. The longest four-count of the meeting.</p>
+  </div></details>
+  <details><summary><b>8 · The seat, then the clock.</b> Replace, half a smile. EXIT. Card tonight.</summary><div class="s">
+    <p><span class="k">someone will take 38</span><span class="say">“Sure. The sticker's the start of that bill, not the end of it. You know the math.”</span><i class="p">(…)</i> <span class="say">“So, your number still stands, and the step just gets it the rest of the way.”</span><i class="p">(…)</i> "Over a barrel" gets no answer.</p>
+    <p><span class="k">by Wednesday</span><span class="say">“I'd rather give you a real yes than a quick one. I'll come back to you first thing tomorrow.”</span> A deadline is not a sit-down. Never rupture. Never sign to make the fear stop.</p>
+  </div></details>
+</section>
+
+<section class="hot">
+  <h2><span class="n">3</span>His number, your row</h2>
+  <p class="pct"><span>40% = 35</span><span>52% = 38</span><span>60% = 40</span><span>68% = 42</span><span>80% = 45</span><span>87% = 46.7</span></p>
+  <details><summary><b>Under 38.</b> <q>Help me out.</q> He gets to 38: Bridge. He does not: EXIT. <span class="x">Never bridge under 38.</span></summary><div class="s">
+    <p><span class="say">“Okay. I thought we had more room than that, now that business is doing well.”</span><i class="p">(…)</i> <span class="say">“I just don't see [X] for a job this size. So, pls help me out here, how do I make that work?”</span><i class="p">(…)</i></p>
+    <p>Snaps: <span class="say">“Fair. Sounds like [X] is where the budget sits today.”</span> Then the Concession.</p>
+  </div></details>
+  <details><summary><b>38 to 40.</b> <q>Both inside your rule.</q> Forty, once. Then the Offer.</summary><div class="s">
+    <p><span class="say">“OK, so we're both inside your rule now, just at different ends of it.”</span><i class="p">(…)</i> At 38 or 39: <span class="say">“Call the first step forty, and the step to forty-six seven in the next review is a small one.”</span> Holds: the Offer. At 40: the Offer with "small".</p>
+  </div></details>
+  <details><summary><b>41 to 43.</b> <q>Let me give you my end.</q> Ladder: 49, 47.5, 46.7. His move buys each rung.</summary><div class="s">
+    <p><span class="say">“That's a real number and I know it took some doing. Let me give you my end.”</span><i class="p">(…)</i></p>
+    <p><span class="k">open</span><span class="say">“I'll start inside your rule. Forty-nine, and that's still not a hundred percent.”</span><i class="p">(…)</i> No move: hold forty-nine in silence.</p>
+    <p><span class="k">he moves</span><span class="say">“Appreciated. Let me come closer. Forty-seven five.”</span><i class="p">(…)</i></p>
+    <p><span class="k">floor</span><span class="say">“Sounds like [X] is where it stops hurting on your side.”</span><i class="p">(…)</i> <span class="say">“Forty-six seven is where the market's bottom and your rule agree. That's the one I can say yes to.”</span><i class="p">(…)</i> Still no: the Offer.</p>
+  </div></details>
+  <details><summary><b>44 to 46.</b> <q>Basically there. Call it forty-six seven.</q> Then the Offer with "small".</summary><div class="s">
+    <p><span class="say">“We're basically there. What if we call it forty-six seven and never touch this again for a long time?”</span><i class="p">(…)</i></p>
+    <p><span class="k">fifty is my max</span><span class="say">“Then we're closer than it sounds. I'm at forty-six seven, so I'm under your max.”</span><i class="p">(…)</i></p>
+  </div></details>
+  <details><summary><b>46.7 to 49.</b> <span class="w">WIN.</span> Three seconds, no grin. Then the Close.</summary><div class="s">
+    <p><span class="say">“I like the sound of that. Thank you. Now let me go earn it.”</span> Then the Playback, at half speed.</p>
+  </div></details>
+  <details><summary><b>He wants yours first.</b> Question back once. The Band once. The Concession. The question again.</summary><div class="s">
+    <p><span class="k">question back</span><span class="say">“So, the new contract. Where did you land?”</span><i class="p">(…)</i></p>
+    <p><span class="k">band</span><span class="say">“The market for this role runs forty-six seven to fifty-nine five. That's my range.”</span> <span class="say">“Where in the bottom half of that feels doable to you?”</span><i class="p">(…)</i></p>
+    <p><span class="k">top's past my rule</span><span class="say">“Exactly. That's why I'm at the bottom of it. I want this to be an easy yes for you.”</span><i class="p">(…)</i></p>
+    <p><span class="k">one number, not a range</span><span class="say">“I picked the bottom on purpose. It fits inside your rule, and it's an easy yes for you.”</span><i class="p">(…)</i> <span class="say">“So where in the bottom half of that can Edge8 land?”</span><i class="p">(…)</i> The band is not said again.</p>
+    <p><span class="k">no number at all</span>EXIT. The card names 46.7, once, in writing.</p>
+  </div></details>
+</section>
+
+<section>
+  <h2><span class="n">4</span>The bridge <small>38 or more in the paper, or no bridge</small></h2>
+  <details><summary><b>Offer.</b> <q>[X] now, in the contract. Forty-six seven at the next review, against the SOW. You set the bar.</q></summary><div class="s">
+    <p><span class="say">“Then let's do it in two. [X] now, in the contract, and forty-six seven at the next review, against the SOW.”</span><i class="p">(…)</i> <span class="say">“You set the bar. Let me go clear it, and you stay inside your rule both times.”</span><i class="p">(…)</i></p>
+    <p>At 40 or more: <span class="say">“The second step's small, which makes it easy to write.”</span></p>
+    <p><span class="k">the bar</span><span class="say">“The bar is the SOW, HubSpot and Events delivered on our side. Anything on top of that?”</span><i class="p">(…)</i> "No": <span class="say">“So the bar is the SOW on our side, and the step follows.”</span> Wait for "that's right".</p>
+    <p>"If I'm happy with it": <span class="say">“Let's pin that to the SOW too, so we both know what done looks like.”</span> "Just your job": <span class="say">“Exactly. The SOW is just the proof with a date on it.”</span> "If EO signs late": <span class="say">“Then we go by the SOW's schedule. Our side delivered, on whatever schedule EO signs off.”</span> "The new person takes Events": <span class="say">“Good. Delivered on our side was always the bar, whoever's hands are on it.”</span></p>
+  </div></details>
+  <details><summary><b>Date.</b> April tenth, on the SOW. June or July: the now-number goes to 41 or more, July max.</summary><div class="s">
+    <p><span class="say">“When's the next review on your calendar?”</span><i class="p">(…)</i> A date: <span class="say">“Okay, [date]. Let's write that in.”</span> A month: <span class="say">“Call it [month] tenth?”</span> Vague: <span class="say">“Let's put a day on it. What's the earliest that works on your end?”</span></p>
+    <p><span class="k">next renewal</span><span class="say">“That's a year out, and the second step was the whole point. April tenth, same SOW?”</span> Holds: Not a review.</p>
+    <p><span class="k">we don't do reviews</span><span class="say">“Then let's put one in. April tenth, half an hour, and the SOW is the checklist.”</span> Holds: Not a review.</p>
+    <p><span class="k">once the new person's settled</span><span class="say">“Who you add is your call, so let's keep the date on the SOW. April tenth, our side delivered.”</span></p>
+    <p><span class="k">after EO renews, sixty chapters</span>Market-gated first: <span class="say">“I can't control the market. Let it drive the bonus, and let the base ride on what's mine to deliver.”</span><i class="p">(…)</i> <span class="say">“Take [the EO thing]. The piece that's mine is [the build], so let's write that piece.”</span></p>
+    <p><span class="k">June, July</span><span class="say">“The date's off the SOW, not a calendar. Our side's built by April, so that's when your bar's cleared.”</span><i class="p">(…)</i> Holds: <span class="say">“Then the first step carries more of the weight. If it waits till [month], where does [X] go today?”</span><i class="p">(…)</i> 41 or more, July max: the bar. Less, or past July: One step.</p>
+  </div></details>
+  <details><summary><b>"Not a review."</b> <q>Then let's not call it a review.</q> One step: <q>[X] with the step, or forty-six seven now?</q></summary><div class="s">
+    <p><span class="say">“The renewal's the review?”</span><i class="p">(…)</i> <span class="say">“Then let's not call it a review.”</span></p>
+    <p><span class="say">“How about one step, not two, and one number for the whole year is forty-six seven. Still inside your rule.”</span><i class="p">(…)</i> <span class="say">“So which is easier to write? [X] now with the step, or forty-six seven now and we're done for the year.”</span><i class="p">(…)</i></p>
+    <p>The step: the bar. Forty-six seven: <span class="w">WIN</span>. Neither, at 45 or more: the swap, once. Neither, under 45: he will not write it.</p>
+  </div></details>
+  <details><summary><b>"My word's good", "we'll look at it."</b> Write the number with the date. A look is not a step.</summary><div class="s">
+    <p><span class="say">“Let's write the number in with the date. Forty-six seven, [date], against the SOW.”</span></p>
+    <p><span class="k">a pool I can't see</span><span class="say">“The pool sizes the bonus. The base is for the job, and the job's not waiting on the pool.”</span></p>
+    <p><span class="k">we'll review soon</span><span class="say">“Great, let's write it in while we're both here. Date, number, and the SOW as the bar.”</span></p>
+  </div></details>
+  <details><summary><b>"The paper can't carry it."</b> The paper carries the date and the bar. His email carries the number.</summary><div class="s">
+    <p><span class="say">“Then the paper carries the date and the bar, and your email carries the number. Both, and I'm good.”</span><i class="p">(…)</i> His email counts. No email: the card names the step, and his reply decides.</p>
+  </div></details>
+  <details><summary><b>He will not write it.</b> Land it, once. The Walk. EXIT.</summary><div class="s">
+    <p><span class="k">land it</span><span class="say">“So your number stands. The step just gets it the rest of the way.”</span><i class="p">(…)</i></p>
+    <p><span class="k">the walk</span><span class="say">“Look, I'm really grateful for the offer, and I wish I could give you a quick yes. But I just can't make [X] work.”</span><i class="p">(…)</i> The seat: Replace. The clock: EXIT.</p>
+  </div></details>
+</section>
+
+<section class="hot">
+  <h2><span class="n">5</span>The bonus</h2>
+  <details><summary><b>He names it.</b> <q>Good to know, thank you.</q> Pocket the figure and the date.</summary><div class="s">
+    <p><span class="say">“Good to know, thank you.”</span> <span class="say">“Let's keep the bonus where you put it, and take the base on its own.”</span><i class="p">(…)</i> That is lean one.</p>
+  </div></details>
+  <details><summary><b>Lean one.</b> Two pots. <q>The bonus rides the SOWs, the base is for the job.</q></summary><div class="s">
+    <p><span class="say">“You set those up as two pots. The bonus rides the SOWs, the base is for the job.”</span><i class="p">(…)</i></p>
+    <p><span class="k">tighter, the pool came in lower</span><span class="say">“Tighter?”</span><i class="p">(…)</i> <span class="say">“Then the bonus does what you built it for, it flexes with the pool. The job didn't get smaller.”</span><i class="p">(…)</i></p>
+  </div></details>
+  <details><summary><b>Lean two, at 45 or more.</b> The swap, once. <q>Take my share off the table, put it in the base. Forty-six seven.</q></summary><div class="s">
+    <p><span class="say">“Then let's use the bonus your way. Take my share off the table, put it in the base. Forty-six seven.”</span><i class="p">(…)</i></p>
+    <p>Balks: <span class="say">“Forty-six seven was always the price of the seat. The bonus share just makes it an easy yes.”</span><i class="p">(…)</i> 45 to 46.6: the written step, then the date. Never a third mention.</p>
+  </div></details>
+  <details><summary><b>Under 45.</b> No swap. Both pots. Bridge.</summary><div class="s">
+    <p>However often he leans. Two pots once, then the Offer at his number.</p>
+  </div></details>
+  <details><summary><b>The bonus question.</b> At the close, alone. Only if he did not date it.</summary><div class="s">
+    <p><span class="say">“One quick admin thing. The bonus offers, are those coming with the October pay?”</span><i class="p">(…)</i></p>
+    <p>"Already wired": <span class="say">“Great, thanks.”</span> A figure or a date: <span class="say">“Good to know, thank you.”</span> "Still being worked out": <span class="say">“No problem, whenever it's ready.”</span> Leans on it: two pots. Never ask when. Never twice.</p>
+  </div></details>
+</section>
+
+<section>
+  <h2><span class="n">6</span>Walls <small>heat, hire, side doors · one breath each, then "So, back to the job."</small></h2>
+  <details><summary><b>CI, the estimate, "a pattern".</b> Own it. <q>You flagged it, fixed the same day.</q></summary><div class="s">
+    <p><span class="k">CI, over-engineered</span><span class="say">“Yeah, that one was over-engineered. You flagged it, it was fixed the same day, under five minutes now.”</span></p>
+    <p><span class="k">the estimate</span><span class="say">“Yeah, the first pass was scoped too wide. You flagged it, and we nailed the revised numbers that night.”</span></p>
+    <p><span class="k">all in one delivery</span><span class="say">“Agreed. The lesson was check-ins along the way, and I took it.”</span></p>
+    <p><span class="k">a pattern, your judgment</span><span class="say">“Fair. Two flags, two same-day fixes, and that's a pattern I'm happy to stand on.”</span><i class="p">(…)</i> <span class="say">“So, back to the job.”</span></p>
+  </div></details>
+  <details><summary><b>"Someone will take 38."</b> <q>The sticker's the start of that bill.</q> Then <q>your number stands.</q></summary><div class="s">
+    <p>Half a smile: <span class="say">“Sure. The sticker's the start of that bill, not the end of it. You know the math.”</span><i class="p">(…)</i> <span class="say">“So, your number still stands, and the step just gets it the rest of the way.”</span><i class="p">(…)</i> Still no: EXIT.</p>
+    <p><span class="k">cheaper sticker, you were fine at 25</span>Same first line, then <span class="say">“And their seat gets priced on its own, same as this one.”</span></p>
+  </div></details>
+  <details><summary><b>New person, smaller seat.</b> A hire is a wider seat. Never compete with someone not hired.</summary><div class="s">
+    <p><span class="k">smaller seat</span><span class="say">“Smaller?”</span><i class="p">(…)</i> <span class="say">“The seat outgrew one pair of hands, and you saw that first. That's the seat we're pricing.”</span><i class="p">(…)</i></p>
+    <p><span class="k">Khoa could do it</span><span class="say">“Khoa's solid, and I'm glad he's here. It's not either-or though. The EO stack came out of this seat.”</span><i class="p">(…)</i> Not hired yet: <span class="say">“Glad you're adding hands.”</span></p>
+    <p><span class="k">line at the door</span><span class="say">“Sounds like the worry is the line outside your door the day after.”</span><i class="p">(…)</i> <span class="say">“My comp's under NDA. Nobody lines up to match a number they never hear.”</span><i class="p">(…)</i> <span class="say">“And if someone asks, every job here gets priced on its own.”</span></p>
+    <p><span class="k">three salaries, one pool</span><span class="say">“The hire's a new line. This one's been at twenty-five for a year, so let's get it right first.”</span><i class="p">(…)</i> "Can't carry both": <span class="say">“Then the bonus flexes, that's what you built it for. The base is for the job.”</span></p>
+  </div></details>
+  <details><summary><b>A title.</b> Take it. Keep pricing the job.</summary><div class="s">
+    <p><span class="say">“I appreciate that, and I'll take it. The number's still about the job underneath it.”</span><i class="p">(…)</i></p>
+    <p><span class="k">I'll trim the role</span><span class="say">“You built it that wide for a reason, and it works. Let's price the job as it is.”</span></p>
+    <p><span class="k">priced off a title, HR's benchmark</span><span class="say">“What did that get priced against?”</span><i class="p">(…)</i> <span class="say">“Benchmarks price titles. The job you designed is three hats wide, and only you can price that one.”</span></p>
+  </div></details>
+  <details><summary><b>"Rehearsed?"</b> <q>Busted. I did my homework.</q> The question back.</summary><div class="s">
+    <p><span class="say">“Busted. I did my homework, I figured you'd want me to. So where in the bottom half can Edge8 land?”</span><i class="p">(…)</i> Nothing gets screen-shared.</p>
+  </div></details>
+  <details><summary><b>"Interviewing?"</b> Stay. Never the yes or no.</summary><div class="s">
+    <p><span class="say">“I want to stay. It's a contract though, so let's price it like one.”</span> Then back to the number.</p>
+  </div></details>
+  <details><summary><b>"Halfway."</b> The bottom of the market instead.</summary><div class="s">
+    <p><span class="say">“I get it. The job doesn't cost [mid] anywhere else, so let's meet at the bottom of the market instead.”</span></p>
+    <p><span class="k">the rule is the rule</span><span class="say">“Sure, and I'm under it. How do you usually handle a job that outgrows its number this fast?”</span><i class="p">(…)</i> "A fence, not a target": <span class="say">“Fair, then let's forget the rule and just price the job.”</span> "Even eighty-seven is unprecedented": <span class="say">“Then let's make the first step one you've done before, and keep the second one small.”</span></p>
+    <p><span class="k">replays the wall</span><span class="say">“So it's your rule, the benchmark, and the line at your door. Did I get that right?”</span><i class="p">(…)</i> Rule: <span class="say">“A hundred would be fifty. I'm at forty-six seven, so I'm still under it.”</span> Benchmark: <span class="say">“The benchmark's built for a normal year. This one's also making up for a year at twenty-five.”</span> Door: <span class="say">“My comp's under NDA like everyone's. Nobody lines up to match a number they never hear.”</span></p>
+    <p><span class="k">huge jump from 25</span><span class="say">“It is. You called twenty-five wrong yourself, and the bet paid off. Now we're pricing the job.”</span></p>
+    <p><span class="k">prove yourself first</span><span class="say">“Fair. The year on EO is my proof, and the review step is proof with a date on it.”</span></p>
+    <p><span class="k">HR, my hands are tied</span><span class="say">“Got it. You're the one who signs it though, so let me ask you straight.”</span><i class="p">(…)</i> <span class="say">“What would it take to get HR looking at the whole job, not just the title?”</span><i class="p">(…)</i></p>
+    <p><span class="k">company discretion</span><span class="say">“Right, the timing's your call. I'd just rather use your discretion now than wait for the deadline.”</span><i class="p">(…)</i></p>
+    <p><span class="k">pocket, take-home</span><span class="say">“Gross, right?”</span></p>
+  </div></details>
+  <details><summary><b>Heat.</b> Own the tone. Never match it. Never leave the call.</summary><div class="s">
+    <p><span class="k">abrasive, the calendar</span>Half a smile: <span class="say">“Ha, fair. Proactive and assertive was the brief on day one. This is just that, pointed at my own contract.”</span></p>
+    <p><span class="k">who do you think you are</span><span class="say">“That came out wrong, and that's on me.”</span><i class="p">(…)</i> <span class="say">“This is your call, it always was. I'd just like a number we both feel good about.”</span><i class="p">(…)</i> Don't answer it.</p>
+    <p><span class="k">after all I've done</span><span class="say">“I'm grateful for this job, genuinely. I still have to price it for what it is.”</span></p>
+    <p><span class="k">blow-up</span><span class="say">“Okay, hang on. That's not where I want this to go. Let's back up to where it went sideways.”</span><i class="p">(…)</i> Your calm is the flex.</p>
+    <p><span class="k">filibuster, you're lost</span>Let it run dry, count four. <span class="say">“Sounds like there's a lot riding on this for you too.”</span><i class="p">(…)</i> <span class="say">“So where do you want to land it?”</span></p>
+    <p><span class="k">two years</span><span class="say">“Number first. The term's a separate conversation, and twelve has worked fine.”</span> <span class="k">SHUI</span><span class="say">“Separate clocks. The catch-up belongs to the old contract, today's about the new one.”</span></p>
+  </div></details>
+  <details><summary><b>"We good?"</b> <q>Almost. Let me play it back first.</q></summary><div class="s">
+    <p><span class="say">“Almost. Let me play it back first.”</span> Then the Close.</p>
+  </div></details>
+</section>
+
+<section>
+  <h2><span class="n">7</span>The close <small>half speed: one line per breath, every four-count counted out</small></h2>
+  <details><summary><b>Playback.</b> Base, the step, insurance. <q>Did I get all that right?</q></summary><div class="s">
+    <p><span class="say">“Let me play it back so I get nothing wrong.”</span></p>
+    <p><span class="say">“Base [X] gross, from October tenth.”</span></p>
+    <p><span class="say">“The step to forty-six seven on [date], against the SOW, HubSpot and Events.”</span></p>
+    <p><span class="say">“Insurance, all of it in my record by end of year, one line in the contract.”</span></p>
+    <p><span class="say">“Did I get all that right?”</span><i class="p">(…)</i> "Revisit" and "look at it" come back as the number with the date, said as fact.</p>
+    <p><span class="k">the road, easy win only</span><span class="say">“What would you want to see from me by next quarter, so the next step's an easy one?”</span> His list. <span class="say">“Can we put that down as a review on [date]?”</span> <span class="say">“And once the base is right, everything after this is a normal raise cycle.”</span></p>
+  </div></details>
+  <details><summary><b>Paper.</b> <q>Recap in chat today. Send the draft, I'll be fast.</q> Never today.</summary><div class="s">
+    <p><span class="say">“I'll drop a two-line recap in chat today. When HR has the draft, send it over and I'll be fast.”</span></p>
+    <p>Handed paper: <span class="say">“Let me read it properly tonight. If it says what we said, it's signed tomorrow morning.”</span> Never the same day. Never under a deadline.</p>
+  </div></details>
+  <details><summary><b>EXIT.</b> <q>I'd rather give you a real yes than a quick one. First thing tomorrow.</q></summary><div class="s">
+    <p><span class="say">“I'd rather give you a real yes than a quick one. I'll come back to you first thing tomorrow.”</span> Then the bonus question, once, if he never dated it. Then the card tonight.</p>
+    <p>He offers a sit-down: <span class="say">“Wednesday, same time?”</span> Pin it before you hang up. A deadline is not a sit-down.</p>
+  </div></details>
+  <details><summary><b>The card.</b> Tonight, its own DM. His reply decides: anything but a no, you sign. A no, you hold.</summary><div class="s">
+    <p><span class="k">a deal</span>Boss, quick recap so it's all in one place. Base [X] gross from October 10, and the step to 46.7 on [date] against the Development SOW delivered on our side (Phase 1, Phase 2, Events connector), on whatever schedule EO signs off. Insurance catch-up showing in VssID by end of year, one line in the contract. Thanks again for today.</p>
+    <p><span class="k">sleep-on-it</span>Boss, quick recap so it's all in one place. [X] gross from October 10 in the contract, the review on [date] against the Development SOW delivered on our side, and the step to 46.7 at that review. Insurance catch-up showing in VssID by end of year, one line in the contract. Back to you first thing tomorrow. Thanks for today.</p>
+    <p><span class="k">no number</span>Boss, quick recap so it's in one place. I'm at 46.7 gross from October 10, which sits inside your rule. Back to you first thing tomorrow. Thanks for today.</p>
+    <p>Add "And the bonus, [Y], landing with the October pay." only when he named a figure or a date.</p>
+  </div></details>
+</section>
+
+<section>
+  <h2><span class="n">8</span>Doors</h2>
+  <ul>
+    <li><span class="w">46.7 or more.</span> Win, slowly.</li>
+    <li><span class="w">Under 46.7, step written.</span> Sign at his number.</li>
+    <li><b>Step after April.</b> 41 or more now, July max. Else no step.</li>
+    <li><b>45 to 46.6, no step.</b> Swap once. Walk. EXIT.</li>
+    <li><span class="x">38 to 44, no step.</span> Walk. EXIT. The card names the step.</li>
+    <li><span class="x">Under 38.</span> EXIT. No bridge, no walk.</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="n">9</span>Bolts <small>all four, or no signature · checked three times: the Playback, the card, the HR draft</small></h2>
+  <ol>
+    <li>46.7, or the written step to 46.7 by April 10.</li>
+    <li>October 10, twelve months.</li>
+    <li>The bar: the Development SOW, our side, EO's schedule.</li>
+    <li>Insurance in VssID by end of year, one line.</li>
+  </ol>
+</section>
+
+<section class="hot">
+  <h2><span class="n">10</span>Tonight's five</h2>
+  <ol>
+    <li>The row for this cue. Not the row you had ready.</li>
+    <li>Mirror first. Four-count. Then the row.</li>
+    <li>Lean one: two pots. Lean two at 45 or more: the swap, once.</li>
+    <li>"Look at it then" is not a step. Write the number with the date.</li>
+    <li>The Walk: Land it first. Then the clean line. Then the longest four-count.</li>
+  </ol>
+</section>
+
+</div>
+
+<footer>Closed, this page is the map. Open, it is the HUD's script. The Bench has the calendar and the rest.</footer>
+</div>
 <script>
-const TRACKS = [
-{
-  id:"likely", tab:"The likely room", odds:"60%",
-  title:"His review. A package under forty. One move. The date fight. Then the clock.",
-  intro:"One beat is one exchange. The grey card is his line. The amber card is your line. Tap an amber card to open the script, the why, and the branches. Your number does not move. The step does the work.",
-  beats:[
-    {he:"Hey man, good weekend? Mai's been on me to wrap this up, I read your review. Go ahead, it's your meeting.",
-     jump:"🦴", label:"You talk first", sub:"OPEN · You talk first",
-     gist:"Thanks for making the time. Let's get the renewal right today, and I'd like your read first.",
-     lines:[["Thanks for making the time. Let's get the renewal right today, and I'd like your read first.",1]],
-     why:"This gives him the first word. You say \"right\", not \"fast\". No number exists yet.",
-     forks:[["still yours","Sure. Three things from the six months, then the contract.",""," Then beat 2.",1]]},
-    {he:"Solid six months, EO's happy. Walk me through it. What went well, what did it actually get the business?",
-     jump:"🦴", label:"Three outcomes", sub:"OPEN · Walk me through the results",
-     gist:"One outcome per line. Under ninety seconds. Then stop.",
-     lines:[["The pre-membership funnel runs in HubSpot and approved members land in Altai. The sixty-chapter rollout stands on that.",0],
-            ["It was your brilliant idea to get every chapter's rollout status in one place, so nobody has to ask where a chapter stands in the process.",0],
-            ["The full member base flows into HubSpot, so marketing runs on the whole base and the record stays one record.",0]],
-     why:"Say outcomes, not names. Do not invoice the SOW. Do not mention the self-assessment."},
-    {he:"Now the other side. What would you do differently? The estimate was a big number, and Khoa had to flag the CI thing.",
-     jump:"🦴", label:"Differently", sub:"OPEN · one breath, then stop",
-     gist:"Two flags, two same-day fixes. The lesson was check-ins along the way, and I took it.",
-     lines:[["Two flags, two same-day fixes. The lesson was check-ins along the way, and I took it.",0]],
-     why:"This owns both flags and defends neither. Say nothing after \"took it\". Never say \"more proactive\" or \"learn and grow\".",
-     forks:[["he digs into one","🧨 HEAT, that row, one breath. Then: So, back to the job."]]},
-    {he:"Rollout came in lower, I'm adding a person, the bonus offers go out with the October pay. On the base, HR and I approved a forty percent bump. That's the package.",
-     jump:"🎯", label:"Mirror the money", sub:"HIS NUMBER · mirror, never the percent",
-     gist:"Thirty-five?",
-     lines:[["Thirty-five?",1]],
-     why:"Five frames land in one breath. The mirror answers the only one that matters. He fills the silence. Pocket \"October pay\": the bonus question is now answered, so you never ask it.",
-     conv:[["forty percent","35"],["fifty percent","37.5"],["fifty-two percent","38"],["sixty percent","40"],["eighty-seven percent","46.7"]]},
-    {he:"Yeah. I've never signed a hundred percent for anyone. HR benchmarked the role. Third salary in the pool. That's approved, it's not a starting point.",
-     jump:"💰", label:"Final", sub:"MONEY · \"approved\" is the Final frame",
-     gist:"If there were a way to get this to forty-six seven inside the structure, what would it look like?",
-     lines:[["Okay.",1],["Thanks for getting it to a number. I know that took some doing.",1],["If there were a way to get this to forty-six seven inside the structure, what would it look like?",1]],
-     why:"He walked you through it already, so skip that unit. The question puts the path on his side of the table, inside his rule."},
-    {he:"There isn't one. Forty-six seven is basically double. Keep doing what you're doing, next renewal I'll be generous. Thirty-five.",
-     jump:"🎯", label:"The rule, then Under 38", sub:"OPEN · the rule / HIS NUMBER · Under 38",
-     gist:"A hundred would be fifty. I'm at forty-six seven, so I'm under it.",
-     lines:[["A hundred would be fifty. I'm at forty-six seven, so I'm under it.",1],["And I just don't see thirty-five for a job this size. Help me out here, how do I make that work?",1]],
-     why:"\"Double\" is a frame. Answer it in the exchange it lands. Then the engine: he has to solve it. \"Next renewal\" is date talk under 38. Keep it in your pocket.",
-     forks:[["snaps","Fair. Sounds like thirty-five is where the budget sits today.",""," Then 🧊 Concession.",1],["gets to 38","Beat 7.","w"],["doesn't","⏱ EXIT. Never bridge under 38.","x"]]},
-    {he:"I can go to thirty-eight. Over fifty percent, the most anyone's gotten from me. That's the ceiling. We're done.",
-     jump:"🎯", label:"38 to 40", sub:"HIS NUMBER · one try at forty",
-     gist:"Call the first step forty, and the step to forty-six seven in April is a small one.",
-     lines:[["Thirty-eight?",1],["Okay, so we're both inside your rule now, just at different ends of it.",1],["Call the first step forty, and the step to forty-six seven in April is a small one.",1]],
-     why:"The one move came, as read. His wall becomes a shared fence. Ask for forty once, never twice.",
-     forks:[["goes to 40","🌉 Offer, with \"small\".","w"],["holds 38","🌉 Offer, no \"small\". Beat 8.",""]]},
-    {he:"Forty? No. And what's this step in April? I don't do mid-contract raises. The renewal is the review.",
-     jump:"🌉", label:"Offer", sub:"BRIDGE · thirty-eight stands",
-     gist:"Then let's do it in two. Thirty-eight now, in the contract, and forty-six seven at the review, against the SOW.",
-     lines:[["Then let's do it in two. Thirty-eight now, in the contract, and forty-six seven at the review, against the SOW.",1],["You set that bar. Let me go clear it, and you stay inside your rule both times.",1]],
-     why:"His number does not move, so he has nothing to defend. The step is pinned to his SOW, not to a calendar or a mood."},
-    {he:"I'm not writing a future number into a contract. If I do it for you, everyone wants one. You've got my word.",
-     jump:"🌉", label:"Date, next renewal", sub:"BRIDGE · one try at April",
-     gist:"That's a year out, and the second step was the whole point. April tenth, same SOW?",
-     lines:[["That's a year out, and the second step was the whole point. April tenth, same SOW?",1]],
-     why:"It is a question, so he says no to April out loud. Three frames landed here. The date decides the money, so the date goes first.",
-     forks:[["June or July","The date's off the SOW, not a calendar. Our side's built by April, so that's when your bar's cleared.",""," He holds: “Then the first step carries more of the weight. If it waits till July, where does thirty-eight go today?” Then the base from October must be 41 or more, and the step must land by July. Less, or later: One step.",1],["after EO renews","🧩 Market-gated first. Then back here.",""]]},
-    {he:"April, October, doesn't matter. I don't do mid-term reviews, HR would have a fit. The renewal is the review.",
-     jump:"🌉", label:"Not a review", sub:"BRIDGE · removes admin and precedent",
-     gist:"Then let's not call it a review. One line, one SOW, no meeting. It landed or it didn't.",
-     lines:[["The renewal's the review?",1],["Then let's not call it a review. One line, one SOW, no meeting. It landed or it didn't.",1]],
-     why:"He grades nothing. HR schedules nothing. The SOW is the judge. The number did not move.",
-     forks:[["lands","And it kicks in April tenth, unless something specific on the SOW is raised in writing by end of March.","w"," Then Bar, then 🏁.",1],["holds","Beat 11.",""]]},
-    {he:"It's still a number I haven't agreed to pay. Thirty-eight, October, and I'll be generous then. That's the deal.",
-     jump:"🌉", label:"One step", sub:"BRIDGE · the concession goes with the step",
-     gist:"Which is easier to write? Thirty-eight now with the step, or forty-six seven now and we're done for the year.",
-     lines:[["Then it's one step, not two, and one number for the whole year is forty-six seven. Still inside your rule.",1],["Which is easier to write? Thirty-eight now with the step, or forty-six seven now and we're done for the year.",1]],
-     why:"Two steps was your concession. He took it off the table, so the concession goes with it. Both branches are yours. The choice is his. Go slow on the second line.",
-     forks:[["the step","Bar, then Automatic, then 🏁.","w"],["forty-six seven","🏁 WIN. Three seconds, no grin.","w"],["neither","Beat 12.",""]]},
-    {he:"Neither. Thirty-eight, no step. And the tenth is two weeks out, HR needs the paper signed this week.",
-     jump:"🌉", label:"The email path", sub:"BRIDGE · HR paper can't carry a future number",
-     gist:"Then the paper carries the date and the bar, and your email carries the number. Both, and I'm good.",
-     lines:[["Then the paper carries the date and the bar, and your email carries the number. Both, and I'm good.",1]],
-     why:"His objection is the paper, so give him a way out of the paper. His email counts. It costs him no precedent. The clock gets no answer here."},
-    {he:"An email's the same thing in a different font. I'm not putting forty-six seven in writing anywhere. My word's been good for a year.",
-     jump:"🌉", label:"Land it, once", sub:"BRIDGE · the last soft push",
-     gist:"Your number stands. The step just gets it the rest of the way.",
-     lines:[["Your number stands. The step just gets it the rest of the way.",1]],
-     why:"This repeats the one thing he needs to hear: thirty-eight is not under attack. A graceful yes is on the table."},
-    {he:"No. Thirty-eight, and that's my final answer on it.",
-     jump:"🧊", label:"Walk", sub:"COLD · the last card, the paper, never the job",
-     gist:"I wish I could say yes to that. I can't sign that one.",
-     lines:[["I wish I could say yes to that. I can't sign that one.",1]],
-     why:"Say nothing about leaving. Then the longest four-count of the meeting. He goes one of two ways.",
-     go:[["the seat","likely",15],["the clock","likely",16]], cls:"exit"},
-    {he:"There's always someone out there who'll gladly take thirty-eight for this. I'm not being held over a barrel.",
-     jump:"👥", label:"Replace", sub:"HIRE · half a smile",
-     gist:"Sure. The sticker's the start of that bill, not the end of it. You've done that math.",
-     lines:[["Sure. The sticker's the start of that bill, not the end of it. You've done that math.",1],["Your number stands. The step just gets it the rest of the way.",1]],
-     why:"No flinch, no law, no counter-threat. He does the hiring math himself. \"Over a barrel\" is heat. It gets no answer."},
-    {he:"Think about it if you want. I need to know by Wednesday, HR has to get the paper out.",
-     jump:"⏱", label:"EXIT", sub:"EXIT · needs no yes from him",
-     gist:"I'd rather give you a real yes than a quick one. I'll come back to you first thing tomorrow.",
-     lines:[["I'd rather give you a real yes than a quick one. I'll come back to you first thing tomorrow.",0],["Thanks for today, boss.",0]],
-     why:"A deadline is not a sit-down, so there is no Wednesday line. Tomorrow is earlier than his Wednesday. Skip the bonus question: he put it on the October pay. Never rupture. Never sign to make the fear stop.",
-     card:["Tonight's DM, as is","Boss, quick recap so it's all in one place. Thirty-eight gross from October 10 in the contract, the review on April 10 against the Development SOW delivered on our side, and the step to 46.7 at that review. Bonus offers with the October pay. Insurance catch-up showing in VssID by end of year, one line in the contract. Back to you first thing tomorrow. Thanks for today."],
-     forks:[["anything but a no","Sign at thirty-eight with the review line in the paper.","w"],["a no","Hold. Do not sign. The October deadline hurts him, not you.","x"]], cls:"exit"}
-  ]
-},
-{
-  id:"first", tab:"You first", odds:"20%",
-  title:"He will not name a number. The question back. The band once. The question again.",
-  intro:"A short room. The goal: his number appears, and you never state yours as a demand. The band is your ask. It starts where you want to land.",
-  beats:[
-    {he:"So, the contract. Before I say anything, what are you looking for? Give me a number.",
-     jump:"🦴", label:"The question back, once", sub:"OPEN · Then",
-     gist:"So, on the new contract. Where did you land?",
-     lines:[["So, on the new contract. Where did you land?",1]],
-     why:"His number first is the whole design. The question back costs nothing. Ask it once."},
-    {he:"Nope. You asked for this meeting, you've thought about it. I'm not negotiating against myself. What's your number?",
-     jump:"🧊", label:"Band, then the question", sub:"COLD · Band / OPEN · Won't name one",
-     gist:"The market for this role runs forty-six seven to fifty-nine five. That's my range.",
-     lines:[["The market for this role runs forty-six seven to fifty-nine five. That's my range.",1],["Where in the bottom half of that feels doable to you?",1]],
-     why:"A range, not a demand. It starts at forty-six seven. The band gets said twice per room at most. This is the first."},
-    {he:"The top of that is way past my rule. That's not even a conversation.",
-     jump:"💰", label:"Band's top", sub:"MONEY · Your band's top is past my rule",
-     gist:"Exactly. That's why I'm at the bottom of it. I want this to be an easy yes for you.",
-     lines:[["Exactly. That's why I'm at the bottom of it. I want this to be an easy yes for you.",1]],
-     why:"You agree with him and land the ask in the same breath.",
-     forks:[["did you rehearse this?","Busted. I did my homework, I figured you'd want me to. So where in the bottom half can Edge8 land?","","",1],["are you interviewing?","I want to stay. It's a contract though, so let's price it like one.",""," 🧊 Stay. Never answer the yes-or-no.",1]]},
-    {he:"Give me one number then, not a range.",
-     jump:"🧊", label:"Concession, then the question again", sub:"COLD · Concession",
-     gist:"I picked the bottom on purpose. It fits inside your rule, and it's an easy yes for you.",
-     lines:[["I picked the bottom on purpose. It fits inside your rule, and it's an easy yes for you.",1],["So where in the bottom half of that can Edge8 land?",1]],
-     why:"He has now heard forty-six seven three times, and you demanded it zero times. The same question goes back. The band is not said again."},
-    {he:"He names a number.",
-     jump:"🎯", label:"Now it is his number", sub:"HIS NUMBER · mirror it, then change room",
-     gist:"Thirty-six?",
-     lines:[["Thirty-six?",1]],
-     why:"Mirror the money. Then continue in the room for that number. The rest of the meeting is the same.",
-     go:[["under 40","likely",4],["40 or more","mid",1]]},
-    {he:"I'm not going to pull a number out of the air. HR will send the paper and we'll go from there.",
-     jump:"⏱", label:"EXIT, no number", sub:"EXIT · nothing is chased in text",
-     gist:"I'd rather give you a real yes than a quick one. I'll come back to you first thing tomorrow.",
-     lines:[["I'd rather give you a real yes than a quick one. I'll come back to you first thing tomorrow.",0]],
-     why:"A paper with no number in the room is a paper you read tonight. Never sign it the same day. The card below names your number for him, once, in writing.",
-     card:["Tonight's DM, as is","Boss, quick recap so it's in one place. I'm at 46.7 gross from October 10, which sits inside your rule. Back to you first thing tomorrow. Thanks for today."], cls:"exit"}
-  ]
-},
-{
-  id:"mid", tab:"40 to 46.6", odds:"25%",
-  title:"A real number. The Ladder, the Floor, then the Bridge with the small step.",
-  intro:"His move buys each rung. You never pull one. Never score it out loud. The swap exists only at forty-five or more, on his second bonus lean, once.",
-  beats:[
-    {he:"Forty. And that's a big jump for us.",
-     jump:"🎯", label:"38 to 40, at forty", sub:"HIS NUMBER · then 🌉 Offer with \"small\"",
-     gist:"Okay, so we're both inside your rule now, just at different ends of it.",
-     lines:[["Forty?",1],["Okay, so we're both inside your rule now, just at different ends of it.",1],["Then let's do it in two. Forty now, in the contract, and forty-six seven at the review, against the SOW.",0],["The second step's small, which makes it easy to write.",0],["You set that bar. Let me go clear it, and you stay inside your rule both times.",1]],
-     why:"At forty the \"small\" clause is true, so it goes in. The date fight is the same as in the likely room.",
-     go:[["the renewal is the review","likely",9]]},
-    {he:"Forty-two. I had to fight for that.",
-     jump:"🎯", label:"41 to 43", sub:"HIS NUMBER · then the Ladder",
-     gist:"That's a real number and I know it took some doing. Let me give you my end.",
-     lines:[["Forty-two?",1],["That's a real number and I know it took some doing. Let me give you my end.",1]],
-     why:"Credit first. Then you take the pen. The Ladder starts inside his rule."},
-    {he:"Go on.",
-     jump:"🪜", label:"Ladder, open", sub:"LADDER · forty-nine",
-     gist:"I'll start inside your rule. Forty-nine, and that's still not a hundred percent.",
-     lines:[["I'll start inside your rule. Forty-nine, and that's still not a hundred percent.",1]],
-     why:"Never above forty-nine. His move buys each rung.",
-     forks:[["he moves","Beat 4.",""],["he doesn't","Hold forty-nine in silence.",""]]},
-    {he:"Forty-four, and that's a stretch already.",
-     jump:"🪜", label:"He moves", sub:"LADDER · forty-seven five",
-     gist:"Appreciated. Let me come closer. Forty-seven five.",
-     lines:[["Appreciated. Let me come closer. Forty-seven five.",1]],
-     why:"One rung. His move bought it."},
-    {he:"Forty-five. That's where it stops.",
-     jump:"🪜", label:"Floor", sub:"LADDER · forty-six seven",
-     gist:"Forty-six seven is where the market's bottom and your rule agree. That's the one I can say yes to.",
-     lines:[["Sounds like forty-five is where it stops hurting on your side.",1],["Forty-six seven is where the market's bottom and your rule agree. That's the one I can say yes to.",1]],
-     why:"Name the floor once, with his rule inside it.",
-     forks:[["still no","🌉 Offer: forty-five now, forty-six seven at the review, with \"small\".",""],["he leans on the bonus, 2nd time, 45+","Then let's use the bonus your way. Take my share off the table, put it in the base. Forty-six seven.",""," 💰 Swap, once. He balks: “Forty-six seven was always the price of the seat. The bonus share just makes it an easy yes.” Then the written step.",1]]},
-    {he:"Forty-four to forty-six, straight out.",
-     jump:"🎯", label:"44 to 46", sub:"HIS NUMBER · basically there",
-     gist:"We're basically there. What if we call it forty-six seven and never touch this again for a long time?",
-     lines:[["Forty-five?",1],["We're basically there. What if we call it forty-six seven and never touch this again for a long time?",1]],
-     why:"Close enough that the ask is a shrug.",
-     forks:[["still short","🌉 Offer with \"small\".",""]]},
-    {he:"Forty-six seven. Fine.",
-     jump:"🎯", label:"WIN", sub:"HIS NUMBER · three seconds, no grin",
-     gist:"I like the sound of that. Thank you. Now let me go earn it.",
-     lines:[["I like the sound of that. Thank you. Now let me go earn it.",0]],
-     why:"Three seconds of nothing first. Then 🏁 Close, at half speed.", cls:"win"}
-  ]
-}
-];
-
-const CLOSE = {
-  id:"close", tab:"Close & doors", odds:"",
-  title:"The last five minutes, at half speed.",
-  intro:"Every four-count here is a slow one. He runs the clock in the close. This is where you go slowest.",
-  sections:[["close-playback","🏁","Playback"],["close-bonus","💰","The bonus question"],["close-paper","📄","Paper"],["close-doors","🚪","Doors"],["close-bolts","📌","The four bolts"],["close-cards","✉️","Tonight's card"]]
-};
-
-const $ = (s,el=document)=>el.querySelector(s);
-const esc = s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
-const TRACK_NAME = {likely:"The likely room", first:"You first", mid:"40 to 46.6"};
-function sayHTML(t,pause){ return `<p class="say">“${esc(t)}”${pause?`<span class="pause">(…)</span>`:""}</p>`; }
-function forkHTML(f){
-  const said = f[4]===1;
-  const body = said ? `<span class="say">“${esc(f[1])}”</span>${f[3]?esc(f[3]):""}` : `${esc(f[1])}${f[3]?esc(f[3]):""}`;
-  return `<li class="${f[2]||""}"><span class="if">${esc(f[0])}</span><span>${body}</span></li>`;
-}
-
-function renderNav(tr){
-  const items = tr.id==="close"
-    ? tr.sections.map(s=>`<li><a href="#${s[0]}" data-nav="${s[0]}"><span class="ni"></span><span class="nj">${s[1]}</span><span>${esc(s[2])}</span></a></li>`).join("")
-    : tr.beats.map((b,i)=>`<li><a href="#${tr.id}-${i+1}" data-nav="${tr.id}-${i+1}" class="${b.cls||""}"><span class="ni">${i+1}</span><span class="nj">${b.jump}</span><span>${esc(b.label)}</span></a></li>`).join("");
-  const toggle = tr.id==="close" ? "" : `<button class="toggle" id="toggle-all" aria-pressed="false">Open all scripts</button>`;
-  return `<p class="k2">${tr.id==="close"?"Sections":"Beats, in order of play"}</p><ol class="navlist">${items}</ol>${toggle}`;
-}
-
-function renderTrack(tr){
-  const beats = tr.beats.map((b,i)=>{
-    const id = `${tr.id}-${i+1}`;
-    const forks = b.forks? `<p class="k2">Branches</p><ul class="forks">${b.forks.map(forkHTML).join("")}</ul>`:"";
-    const conv = b.conv? `<p class="k2">He says a percent. You mirror the money.</p><table class="conv"><tr><th>He says</th><th>It is</th></tr>${b.conv.map(r=>`<tr><td>${esc(r[0])}</td><td class="num">${esc(r[1])}</td></tr>`).join("")}</table>`:"";
-    const go = b.go? `<p class="k2">Continue</p><div class="gos">${b.go.map(g=>`<button class="go" data-track="${g[1]}" data-beat="${g[2]}">${esc(g[0])} → ${esc(g[1]===tr.id?"beat "+g[2]:TRACK_NAME[g[1]]+", beat "+g[2])}</button>`).join("")}</div>`:"";
-    const card = b.card? `<div class="card"><p class="t">${esc(b.card[0])}</p><p>${esc(b.card[1])}</p></div>`:"";
-    return `<section class="beat ${b.cls||""}" id="${id}">
-      <div class="n">${i+1}</div>
-      <div class="col">
-        <div class="he"><span class="who">He</span>${esc(b.he)}</div>
-        <div class="you" data-open="false">
-          <button class="head" aria-expanded="false" aria-controls="${id}-body">
-            <span class="jump">${b.jump}</span>
-            <span class="label">${esc(b.label)}<small>${esc(b.sub)}</small></span>
-            <span class="cta">Script ▾</span>
-          </button>
-          <p class="gist">“${esc(b.gist)}”</p>
-          <div class="body" id="${id}-body" hidden>
-            <div>${b.lines.map(l=>sayHTML(l[0],l[1])).join("")}</div>
-            <p class="why"><b>Why.</b> ${esc(b.why)}</p>
-            ${conv}${forks}${go}${card}
-          </div>
-        </div>
-      </div>
-    </section>`;
-  }).join("");
-  return `<div class="intro"><p class="kicker">${esc(tr.tab)} · about ${esc(tr.odds)}</p><h2>${esc(tr.title)}</h2><p>${esc(tr.intro)}</p></div>
-  <div class="beats">${beats}</div>
-  <p class="foot">The list on the side is the spine, in order of play. Tap a beat there to open it here.</p>`;
-}
-
-function renderClose(){
-  return `<div class="intro"><p class="kicker">${esc(CLOSE.tab)}</p><h2>${esc(CLOSE.title)}</h2><p>${esc(CLOSE.intro)}</p></div>
-  <div class="section" id="close-playback"><h3>🏁 Playback, one beat per line</h3><div class="panel">
-    ${sayHTML("Let me play it back so I get nothing wrong.",0)}
-    ${sayHTML("Base [X] gross, from October tenth.",0)}
-    ${sayHTML("The step to forty-six seven on [date], against the SOW, HubSpot and Events.",0)}
-    ${sayHTML("Insurance, all of it in my record by end of year, one line in the contract.",0)}
-    ${sayHTML("Did I get all that right?",1)}
-    <p class="why"><b>Why.</b> SI lives here and in the recap. It never rides on the bonus question. Never say “from December”.</p>
-  </div></div>
-  <div class="section" id="close-bonus"><h3>💰 The bonus. One question. Only if he did not date it already</h3><div class="panel">
-    ${sayHTML("One quick admin thing. The bonus offers, are those coming with the October pay?",1)}
-    <ul class="forks">
-      <li><span class="if">yes, already wired</span><span><span class="say">“Great, thanks.”</span></span></li>
-      <li><span class="if">a figure or a date</span><span><span class="say">“Good to know, thank you.”</span> Recap only.</span></li>
-      <li><span class="if">still being worked out</span><span><span class="say">“No problem, whenever it's ready.”</span></span></li>
-      <li><span class="if">he leans on it</span><span><span class="say">“You set those up as two pots. The bonus rides the SOWs, the base is for the job.”</span> 💰 Bonus.</span></li>
-    </ul>
-    <p class="why"><b>Why.</b> Never ask when. Never ask twice. If he said “October pay” earlier, the question is answered. The card carries it.</p>
-  </div></div>
-  <div class="section" id="close-paper"><h3>📄 Paper</h3><div class="panel">
-    ${sayHTML("I'll drop a two-line recap in chat today. When HR has the draft, send it over and I'll be fast.",0)}
-    <p class="why"><b>He hands you the paper.</b> <span class="say">“Let me read it properly tonight. If it says what we said, it's signed tomorrow morning.”</span> Never the same day. Never under a deadline.</p>
-  </div></div>
-  <div class="section" id="close-doors"><h3>🚪 Doors, the end states</h3><div class="grid">
-    <div class="tile w"><p class="k">46.7 or more</p><p class="v">Win. Accept slowly. Playback, then paper.</p></div>
-    <div class="tile w"><p class="k">Under 46.7, step written</p><p class="v">His number stands. Sign at it. The step is in the paper or in his email.</p></div>
-    <div class="tile"><p class="k">Step later than April</p><p class="v">Then the base from October must be 41 or more, and the step must land by July. Anything less counts as no step.</p></div>
-    <div class="tile"><p class="k">45 to 46.6, no step</p><p class="v">Swap once. Then Walk. Then EXIT.</p></div>
-    <div class="tile x"><p class="k">38 to 44, no step</p><p class="v">Walk. Then EXIT. The recap card names the step. His reply decides.</p></div>
-    <div class="tile x"><p class="k">Under 38</p><p class="v">EXIT. No bridge, no walk, no signature. Let the clock run. The October deadline hurts him, not you.</p></div>
-  </div></div>
-  <div class="section" id="close-bolts"><h3>📌 The four bolts: what must be in the paper before you sign</h3><div class="panel">
-    <p class="why">A bolt is one thing that must be true in the contract. Check all four, three times: at the Playback, in tonight's recap card, and when the HR draft arrives. One bolt missing: do not sign. Put it in the recap, or ask HR to add the line.</p>
-    <table class="bolts">
-    <tr><th>Bolt</th><th>It holds when</th><th>If it is missing</th></tr>
-    <tr><td class="bn">1 · The number</td><td>The base is 46.7 from October. Or: his lower base is in the paper, plus the written step to 46.7 dated April 10. A later step is allowed only up to July, and only with a base of 41 or more.</td><td data-l="If missing: ">The step is not written. That is “no step”. Go back to the doors above.</td></tr>
-    <tr><td class="bn">2 · The term</td><td>The contract starts October 10 and runs twelve months.</td><td data-l="If missing: ">He says two years: <span class="say">“Number first. The term's a separate conversation, and twelve has worked fine.”</span></td></tr>
-    <tr><td class="bn">3 · The bar</td><td>The step is judged against the Development SOW, delivered on our side, on EO's schedule. The phases (Phase 1, Phase 2, Events connector) are written in the recap card. Never say them in the room.</td><td data-l="If missing: ">The bar is a mood or the market. Pin it to the SOW: <span class="say">“Let's pin that to the SOW too, so we both know what done looks like.”</span></td></tr>
-    <tr><td class="bn">4 · The insurance</td><td>The SI catch-up, all of it, shows in VssID by end of year, and the contract has one line that says so.</td><td data-l="If missing: ">Say it in the Playback and in the recap card. Ask HR to add the line. Never “from December”.</td></tr>
-    </table></div></div>
-  <div class="section" id="close-cards"><h3>✉️ Tonight's card, three versions</h3>
-    <div class="panel" style="gap:10px">
-      <div class="card"><p class="t">A deal in the room</p><p>Boss, quick recap so it's all in one place. Base [X] gross from October 10, and the step to 46.7 on [date] against the Development SOW delivered on our side (Phase 1, Phase 2, Events connector), on whatever schedule EO signs off. Insurance catch-up showing in VssID by end of year, one line in the contract. Thanks again for today.</p></div>
-      <div class="card"><p class="t">Ended on sleep-on-it</p><p>Boss, quick recap so it's all in one place. Thirty-eight gross from October 10 in the contract, the review on April 10 against the Development SOW delivered on our side, and the step to 46.7 at that review. Insurance catch-up showing in VssID by end of year, one line in the contract. Back to you first thing tomorrow. Thanks for today.</p></div>
-      <div class="card"><p class="t">No number from him</p><p>Boss, quick recap so it's in one place. I'm at 46.7 gross from October 10, which sits inside your rule. Back to you first thing tomorrow. Thanks for today.</p></div>
-      <p class="why"><b>Add</b> “And the bonus, [Y], landing with the October pay.” only when he named a figure or a date. His reply to the card decides the paper. Anything but a no: you sign. A no: you hold.</p>
-    </div>
-  </div>
-  <p class="foot">Rules that never move: never above 49 · no math out loud · he gets the credit · the base is the point · the band twice, max · swap on his 2nd lean at 45+ · floor 38 with the written step · no step, one number.</p>`;
-}
-
-const TABS = [...TRACKS, CLOSE];
-let spyTargets = [];
-function select(id){
-  const tr = TABS.find(t=>t.id===id) || TRACKS[0];
-  document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-selected", b.dataset.id===tr.id ? "true":"false"));
-  $("#content").innerHTML = tr.id==="close" ? renderClose() : renderTrack(tr);
-  $("#side").innerHTML = renderNav(tr);
-  try{ localStorage.setItem("rr-tab", tr.id); }catch(e){}
-  try{ history.replaceState(null,"","#"+tr.id); }catch(e){}
-  window.scrollTo({top:0});
-  spyTargets = [...document.querySelectorAll("#content .beat, #content .section[id]")];
-  spy();
-  return tr.id;
-}
-function setOpen(you,open){
-  you.dataset.open = open ? "true":"false";
-  const head = $(".head",you); head.setAttribute("aria-expanded", open?"true":"false");
-  $(".cta",you).textContent = open ? "Hide ▴" : "Script ▾";
-  const body = document.getElementById(head.getAttribute("aria-controls"));
-  if(body) body.hidden = !open;
-}
-function scrollTo(el, block){
-  const rm = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  el.scrollIntoView({block, behavior: rm?"auto":"smooth"});
-}
-function openBeat(track, n){
-  const cur = document.querySelector(".tab[aria-selected='true']");
-  if(!cur || cur.dataset.id!==track) select(track);
-  const sec = document.getElementById(`${track}-${n}`);
-  if(!sec) return;
-  setOpen($(".you",sec), true);
-  scrollTo(sec, "center");
-}
-function closeDrawer(){
-  const side=$("#side"), btn=$("#navbtn");
-  side.classList.remove("open"); btn.setAttribute("aria-expanded","false");
-}
-function spy(){
-  const line = window.innerHeight*0.35;
-  let best=null;
-  for(const el of spyTargets){ if(el.getBoundingClientRect().top <= line) best=el; else break; }
-  if(!best && spyTargets.length) best = spyTargets[0];
-  document.querySelectorAll(".navlist a").forEach(a=>a.classList.toggle("active", !!best && a.dataset.nav===best.id));
-}
-window.addEventListener("scroll", ()=>requestAnimationFrame(spy), {passive:true});
-function measureBar(){ document.documentElement.style.setProperty("--barh", $("#bar").offsetHeight+"px"); }
-window.addEventListener("resize", measureBar);
-
-document.addEventListener("click",e=>{
-  const nav = e.target.closest("[data-nav]");
-  if(nav){
-    e.preventDefault();
-    const id = nav.dataset.nav;
-    if(id.startsWith("close-")){ const el=document.getElementById(id); if(el) scrollTo(el,"start"); }
-    else { const i=id.lastIndexOf("-"); openBeat(id.slice(0,i), Number(id.slice(i+1))); }
-    closeDrawer(); return;
-  }
-  const nb = e.target.closest("#navbtn");
-  if(nb){ const open = nb.getAttribute("aria-expanded")!=="true"; $("#side").classList.toggle("open",open); nb.setAttribute("aria-expanded",open?"true":"false"); return; }
-  if($("#side").classList.contains("open") && !e.target.closest("#side")) closeDrawer();
-  const go = e.target.closest(".go");
-  if(go){ openBeat(go.dataset.track, Number(go.dataset.beat)); return; }
-  const tg = e.target.closest("#toggle-all");
-  if(tg){
-    const open = tg.getAttribute("aria-pressed")!=="true";
-    tg.setAttribute("aria-pressed", open?"true":"false"); tg.textContent = open?"Close all scripts":"Open all scripts";
-    document.querySelectorAll(".you").forEach(y=>setOpen(y,open));
-    return;
-  }
-  const tab = e.target.closest(".tab");
-  if(tab){ select(tab.dataset.id); return; }
-  const you = e.target.closest(".you");
-  if(you){
-    if(e.target.closest(".body") && !e.target.closest(".head")) return;
-    setOpen(you, you.dataset.open!=="true");
-  }
-});
-
-(function boot(){
-  $("#tabs").innerHTML = TABS.map(t=>`<button class="tab" role="tab" data-id="${t.id}" aria-selected="false">${esc(t.tab)}${t.odds?`<span class="odds">${esc(t.odds)}</span>`:""}</button>`).join("");
-  measureBar();
-  let start = (location.hash||"").replace("#","");
-  if(!TABS.some(t=>t.id===start)){ try{ start = localStorage.getItem("rr-tab") || ""; }catch(e){ start=""; } }
-  select(start || "likely");
-  if(document.fonts && document.fonts.ready) document.fonts.ready.then(measureBar);
+(function(){
+  var b=document.getElementById("all"),open=false;
+  b.addEventListener("click",function(){
+    open=!open;
+    document.querySelectorAll("details").forEach(function(d){d.open=open;});
+    b.textContent=open?"Collapse all":"Expand all";
+  });
 })();
 </script>
 </body>
