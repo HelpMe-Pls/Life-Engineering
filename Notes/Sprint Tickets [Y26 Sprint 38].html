@@ -529,7 +529,7 @@
       <header class="page-head">
         <h1>
           Sprint 38 Tickets
-          <small>Events API cards for Khôi Lê, written 23 Sep 2026<span class="upd"> · progress updated Sun 27 Sep, 17:35</span></small>
+          <small>Events API cards for Khôi Lê, written 23 Sep 2026<span class="upd"> · progress updated Sun 27 Sep, 19:05</span></small>
         </h1>
         <div class="meta">
           <ul>
@@ -550,7 +550,7 @@
             <li>
               Common fields:
               <span
-                >Assignee Khôi Lê · Internal unticked · Total HT 1.9 days</span
+                >Assignee Khôi Lê · Internal unticked · Total HT 2.0 days</span
               >
             </li>
           </ul>
@@ -562,9 +562,9 @@
           <div class="stat">
             <b id="d-days">–</b><small id="d-days-label">days left</small>
           </div>
-          <div class="stat"><b id="d-tickets">0 / 5</b><small>cards done</small></div>
+          <div class="stat"><b id="d-tickets">0 / 6</b><small>cards done</small></div>
           <div class="stat"><b id="d-steps">0 / 0</b><small>steps ticked</small></div>
-          <div class="stat"><b id="d-ht">0 / 1.9</b><small>HT days closed</small></div>
+          <div class="stat"><b id="d-ht">0 / 2.0</b><small>HT days closed</small></div>
         </div>
         <div class="bar" role="progressbar" aria-label="Steps ticked">
           <span id="d-bar"></span>
@@ -1267,11 +1267,131 @@
         </div>
       </article>
 
+      <!-- ── Card 6 ─────────────────────────────────────────────── -->
+      <article
+        class="ticket"
+        data-id="t6"
+        data-num="6"
+        data-ht="0.1"
+        data-due="2026-09-29"
+        data-priority="P2"
+        data-pr="#1011; follow-ups #1012, #1013, #1014"
+        data-default-status="Done"
+        data-closed="2026-09-27"
+        data-file-status="Done"
+        data-ticked="a1,a2,b1,b2,b3,b4"
+        data-sync="2026-09-27T19:05"
+      >
+        <header class="t-head">
+          <div class="t-title">
+            <span class="num">6</span>
+            <h2>
+              <span class="title-text">Claude setup: leave Infinite Leverage, mattpocock skills from the plugin, agents merge promotions</span>
+              <em class="tag-note">New</em>
+            </h2>
+          </div>
+          <div class="t-fields">
+            <span class="chip chip-p2">P2</span>
+            <span class="field">Due <b>Tue 29 Sep</b><span class="due-rel"></span></span>
+            <span class="field">HT <b>0.1</b></span>
+            <span class="field">PR <b>#1011; follow-ups #1012, #1013, #1014</b></span>
+            <label class="status">Status <span class="status-print"></span></label>
+          </div>
+          <div class="t-sub">
+            <div class="t-progress"><span></span></div>
+            <span class="count"></span>
+          </div>
+          <p class="hint"></p>
+        </header>
+        <div class="t-body">
+          <div class="desc">
+            <p>
+              <strong>Done:</strong> the repo no longer runs on Infinite
+              Leverage (its specialist agents, template skills, persona stubs
+              and <code>.specify/</code> are gone, and its plugin is off for
+              this repo); the mattpocock skills come from the plugin for
+              everyone; github-flow matches the Ship rules; and agents merge
+              into <code>dev</code> and <code>main</code> on a green gate.
+              Outside the Events epic: it came out of a <code>/doctor</code>
+              run and a grilling session on 27 Sep.
+            </p>
+          </div>
+          <!-- log:t6 -->
+          <div class="log" aria-label="Progress on card 6">
+            <h3>Progress <span class="log-when">as of Sun 27 Sep, 19:05</span></h3>
+            <ul>
+              <li><b>a1</b> Done. <code>/doctor</code> turned off 35 unused skills and 23 claude.ai connectors on this machine; its CLAUDE.md trim landed in <a href="https://github.com/EO-Vietnam/global-hubspot/pull/1010">#1010</a> (<code>95caa2c</code>). Its two backups (<code>~/.claude.json</code> and <code>~/.claude/settings.json</code>) were deleted later the same day at your request, after checking both live files still parse.</li>
+              <li><b>a2</b> Done. The grilling session settled every decision listed in step a2.</li>
+              <li><b>b1</b> Done in <code>22dc786</code>. The IL agents, persona stubs, <code>.specify/</code> and 21 template skills are gone; CLAUDE.md, FOLDER-STRUCTURE.md and global-engineering.md no longer speak for the framework; the plugin is switched off in <code>.claude/settings.json</code>.</li>
+              <li><b>b2</b> Done in <code>8b2ecb7</code>. <code>.claude/settings.json</code> enables the mattpocock-skills plugin for everyone; the 25 skill links, the vendored <code>.agents/</code> copies and <code>skills-lock.json</code> are gone.</li>
+              <li><b>b3</b> Done in <code>68bdcf4</code>. pr-merge-gate allows a merge into main (its 10 tests pass by hand, and a live lookup of #1008 answers allow); github-flow is rewritten and the docs agree. The spine keeps one stop: ▶ 5.3's promotion.</li>
+              <li><b>b4</b> Done. The local gate passed on the push (format, typecheck, lint, build); <a href="https://github.com/EO-Vietnam/global-hubspot/pull/1011">#1011</a> merged into dev as <code>4707cdb</code>. Not promoted: the next promotion is ▶ 5.3's.</li>
+              <li>Follow-up done: <a href="https://github.com/EO-Vietnam/global-hubspot/pull/1012">#1012</a> merged into dev as <code>974dd4e</code> after a green local gate. README step 4 no longer lists <code>npm test</code> as a gate step, and its <code>DEC-LOCAL-GATE</code> note no longer calls the hook a Vitest superset.</li>
+              <li>Follow-up done: <a href="https://github.com/EO-Vietnam/global-hubspot/pull/1013">#1013</a> merged into dev as <code>633d3ff</code> after a green local gate. The <code>.githooks/pre-push</code> header no longer calls the hook a superset that keeps <code>npm test</code>, or says the full check runs after the merge (comments only; the two tests that read the file pass, 44/44).</li>
+              <li>Follow-up done: <a href="https://github.com/EO-Vietnam/global-hubspot/pull/1014">#1014</a> merged into dev as <code>226931c</code> after a green local gate. <code>ci.yml</code> and <code>ci-gate-triggers.test.ts</code> no longer call the hook a superset or the full check the cover (comments and one test title only). The fast suite, run by hand before and after, passed 3723/3723 tests, which also covers #1011 to #1013.</li>
+              <li class="wait">Still open: whether the project-level <code>false</code> keeps the org-synced plugin out (a fresh session here should list no <code>il-*</code> skills).</li>
+            </ul>
+          </div>
+          <!-- /log:t6 -->
+          <h3>How to close it</h3>
+          <h4>A. Decide</h4>
+          <ol class="steps">
+            <li class="step" data-step="a1">
+              <code>/doctor</code> cleanup: 35 unused skills and 23 claude.ai
+              connectors off locally; the CLAUDE.md trim landed in #1010
+              (<code>95caa2c</code>).
+            </li>
+            <li class="step" data-step="a2">
+              Grilling session. Settled: leave Infinite Leverage; mattpocock
+              skills from the plugin for everyone; github-flow rewritten to the
+              Ship rules; <code>/capture-learning</code> replaced by a pointer
+              to auto-memory; agents merge into <code>dev</code> and
+              <code>main</code> on a green gate; the IL plugin switched off for
+              this repo; one PR built in a worktree; self-merge on a green gate.
+            </li>
+          </ol>
+          <h4>B. Ship (one PR into dev)</h4>
+          <ol class="steps">
+            <li class="step" data-step="b1">
+              Remove the IL agents, template skills, persona stubs and
+              <code>.specify/</code>; strip IL from
+              <code>FOLDER-STRUCTURE.md</code>; add the "left Infinite
+              Leverage" note to <code>CLAUDE.md</code>.
+            </li>
+            <li class="step" data-step="b2">
+              mattpocock skills from the plugin: enable it in
+              <code>.claude/settings.json</code>; delete the vendored copies,
+              the broken links and <code>skills-lock.json</code>.
+            </li>
+            <li class="step" data-step="b3">
+              Unattended promotions: <code>pr-merge-gate</code> allows merges
+              into <code>main</code>; CLAUDE.md, global-engineering.md,
+              README, playbook, onboarding, standing-traps and next-steps
+              updated; github-flow rewritten.
+            </li>
+            <li class="step" data-step="b4">
+              Local gate green, PR into <code>dev</code>, merged; link the PR.
+            </li>
+          </ol>
+          <h3>Notes</h3>
+          <textarea
+            class="notes"
+            aria-label="Notes for card 6"
+            placeholder="Anything the cleanup PR left for later."
+          ></textarea>
+          <div class="t-actions">
+            <button type="button" class="copy">Copy as Markdown</button>
+            <button type="button" class="toggle">Collapse</button>
+          </div>
+        </div>
+      </article>
+
       <footer>
         Local tracker. Ticks, statuses and notes are stored in this browser only.
         Use Export to keep a copy or to move it to another browser, and Import to
         load it. Cards written 23 Sep 2026 from the Sprint 38 planning session;
-        card 2 updated the same day for the Vercel state. Card text uses the
+        card 2 updated the same day for the Vercel state. Card 6 added and closed
+        27 Sep for the Claude setup cleanup, outside the Events epic. Card text uses the
         vocabulary of the repo's CONTEXT.md: pilot wave, Events application, API
         information, access check.
       </footer>
