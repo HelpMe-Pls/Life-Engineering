@@ -529,7 +529,7 @@
       <header class="page-head">
         <h1>
           Sprint 38 Tickets
-          <small>Events API cards for Khôi Lê, written 23 Sep 2026<span class="upd"> · progress updated Sun 27 Sep, 12:30</span></small>
+          <small>Events API cards for Khôi Lê, written 23 Sep 2026<span class="upd"> · progress updated Sun 27 Sep, 17:35</span></small>
         </h1>
         <div class="meta">
           <ul>
@@ -693,11 +693,11 @@
         data-ht="0.5"
         data-due="2026-09-25"
         data-priority="P2"
-        data-pr="#1007, promoted in #1008"
+        data-pr="#1007, promoted in #1008; handoff #1010"
         data-default-status="In progress"
         data-file-status="In progress"
         data-ticked="a,b,d,j,k"
-        data-sync="2026-09-27T12:30"
+        data-sync="2026-09-27T17:35"
       >
         <header class="t-head">
           <div class="t-title">
@@ -717,7 +717,7 @@
             <span class="chip chip-p2">P2</span>
             <span class="field">Due <b>Thu 25 Sep</b><span class="due-rel"></span></span>
             <span class="field">HT <b>0.5</b></span>
-            <span class="field">PR <b>#1007, promoted in #1008</b></span>
+            <span class="field">PR <b>#1007, promoted in #1008; handoff #1010</b></span>
             <label class="status">Status <span class="status-print"></span></label>
           </div>
           <div class="t-sub">
@@ -752,18 +752,19 @@
           </div>
           <!-- log:t2 -->
           <div class="log" aria-label="Progress on card 2">
-            <h3>Progress <span class="log-when">as of Sun 27 Sep, 12:30</span></h3>
+            <h3>Progress <span class="log-when">as of Sun 27 Sep, 17:35</span></h3>
             <ul>
               <li><b>a</b> Done. Dave's encryption key from 19 Sep is untouched.</li>
               <li><b>b</b> Done. <code>EVENTS_TEAM_INVITE_EMAIL</code> = onboarding@eochapterhubspotrollout.com, one record for Production + Preview.</li>
               <li><b>c</b> Partly done. <code>EVENTS_NOTIFY_TO</code> is <b>khoi.le@edge8.ai only</b>, so it can be verified first. Widen it to the six after the dry run. Until then Dave and Ha get no new-application email.</li>
               <li><b>d</b> Done. Production redeployed by promotion <a href="https://github.com/EO-Vietnam/global-hubspot/pull/1008">#1008</a> (merge 4aa2b1a). The deployment is READY, and /events plus the KB return 200.</li>
-              <li class="wait"><b>e</b> Waiting. Needs the dry-run row at Discovery Call, and Khôi's account bound to Vietnam to open /portal/events.</li>
+              <li class="wait"><b>e</b> Waiting. Needs the dry-run row at Discovery Call and Khôi's account bound to Vietnam. Khôi runs O1 and O2 from <code>website/</code> with <code>!</code>; the exact commands are in next-steps.md ▶ (merged in <a href="https://github.com/EO-Vietnam/global-hubspot/pull/1010">#1010</a>).</li>
               <li class="wait"><b>f, g</b> On hold. A portal key submission emails <b>all 11 admins</b>, six of them at EO. Khôi to decide.</li>
               <li class="wait"><b>h</b> Waiting. The first real application now reaches Khôi only.</li>
               <li class="wait"><b>i</b> Partly done. vercel-deployment.md is updated in #1007. <code>.env.example</code> is not: auto mode blocks reading <code>.env*</code> files, so Khôi pastes those lines.</li>
               <li><b>j</b> Done. The NewEventsApplication comment is fixed in <a href="https://github.com/EO-Vietnam/global-hubspot/pull/1007">#1007</a>.</li>
               <li><b>k</b> Done. #1007 is merged to dev on a green gate and promoted in #1008. The deferred-env bullet in next-steps.md now says the address is set.</li>
+              <li><b>Handoff</b> <a href="https://github.com/EO-Vietnam/global-hubspot/pull/1010">#1010</a> is merged to dev. The dry-run helper is now in the repo as <code>website/scripts/events-dry-run.ts</code>, and next-steps.md ▶ tells a fresh session on any machine what to run next. Production is untouched: Vietnam is still Ngan Nguyen's row, Wave 1 has 0 of 5 seats, and khoi.le is not bound to a chapter.</li>
             </ul>
           </div>
           <!-- /log:t2 -->
@@ -868,8 +869,11 @@
         data-ht="0.2"
         data-due="2026-09-29"
         data-priority="P2"
-        data-pr="same PR as card 4"
-        data-default-status="To do"
+        data-pr="#1010 (folded into the spec's section c)"
+        data-default-status="In progress"
+        data-file-status="In progress"
+        data-ticked=""
+        data-sync="2026-09-27T17:35"
       >
         <header class="t-head">
           <div class="t-title">
@@ -886,7 +890,7 @@
             <span class="chip chip-p2">P2</span>
             <span class="field">Due <b>Tue 29 Sep</b><span class="due-rel"></span></span>
             <span class="field">HT <b>0.2</b></span>
-            <span class="field">PR <b>same PR as card 4</b></span>
+            <span class="field">PR <b>#1010 (folded into the spec's section c)</b></span>
             <label class="status">Status <span class="status-print"></span></label>
           </div>
           <div class="t-sub">
@@ -920,6 +924,16 @@
               source.
             </p>
           </div>
+          <!-- log:t3 -->
+          <div class="log" aria-label="Progress on card 3">
+            <h3>Progress <span class="log-when">as of Sun 27 Sep, 17:35</span></h3>
+            <ul>
+              <li>Folded into section (c) of the connector spec, merged to dev in <a href="https://github.com/EO-Vietnam/global-hubspot/pull/1010">#1010</a>. The rule is copied word for word under <b>Decided</b>.</li>
+              <li class="wait"><b>a</b> Waiting. The allowlist fields, the MyEO keyword and unmatched events are to-dos in (c). The rule's last sentence reads two ways, so both readings go to Dave.</li>
+              <li class="wait"><b>b, c, d</b> Waiting. These are side-task boxes in (c) and ship in card 4's PR. Khôi sends the checklist item to Ha.</li>
+            </ul>
+          </div>
+          <!-- /log:t3 -->
           <h3>How to close it</h3>
           <ol class="steps">
             <li class="step" data-step="a">
@@ -966,8 +980,11 @@
         data-ht="0.5"
         data-due="2026-09-29"
         data-priority="P1"
-        data-pr="docs PR to dev"
-        data-default-status="To do"
+        data-pr="#1010 (skeleton on dev)"
+        data-default-status="In progress"
+        data-file-status="In progress"
+        data-ticked=""
+        data-sync="2026-09-27T17:35"
       >
         <header class="t-head">
           <div class="t-title">
@@ -981,7 +998,7 @@
             <span class="chip chip-p1">P1</span>
             <span class="field">Due <b>Tue 29 Sep</b><span class="due-rel"></span></span>
             <span class="field">HT <b>0.5</b></span>
-            <span class="field">PR <b>docs PR to dev</b></span>
+            <span class="field">PR <b>#1010 (skeleton on dev)</b></span>
             <label class="status">Status <span class="status-print"></span></label>
           </div>
           <div class="t-sub">
@@ -1010,6 +1027,17 @@
               spec keeps that true.
             </p>
           </div>
+          <!-- log:t4 -->
+          <div class="log" aria-label="Progress on card 4">
+            <h3>Progress <span class="log-when">as of Sun 27 Sep, 17:35</span></h3>
+            <ul>
+              <li>Skeleton merged to dev in <a href="https://github.com/EO-Vietnam/global-hubspot/pull/1010">#1010</a>: <code>docs/architecture/plans/EVENTS-CONNECTOR-SPEC.md</code>. It has sections a to k plus f2, this card's decisions copied word for word, a to-do marker in each unwritten part, and a checkable <i>Finished when</i>.</li>
+              <li class="wait"><b>a to j</b> Waiting. A session fills them by next-steps.md ▶ step 4, citing the vendors' docs; anything unsettled goes to Nisha in (i) or to Dave in (k).</li>
+              <li class="wait"><b>Sources</b> Missing. The three SOW documents are not in the repo or on this Mac, and edge8.ai could not be reached for them. Passages that lean on them are marked "SOW not read" until Khôi supplies them.</li>
+              <li class="wait"><b>f2, k</b> Waiting. Kyle's confirmation and Dave's review.</li>
+            </ul>
+          </div>
+          <!-- /log:t4 -->
           <h3>How to close it (the spec's sections)</h3>
           <ol class="steps">
             <li class="step" data-step="a">
@@ -1103,11 +1131,11 @@
         data-ht="0.5"
         data-due="2026-09-28"
         data-priority="P1"
-        data-pr="#1009 (B1, B2 on dev)"
+        data-pr="#1009 (B1, B2 on dev); helper in #1010"
         data-default-status="In progress"
         data-file-status="In progress"
         data-ticked="a1,b1,b2,b4"
-        data-sync="2026-09-27T12:30"
+        data-sync="2026-09-27T17:35"
       >
         <header class="t-head">
           <div class="t-title">
@@ -1121,7 +1149,7 @@
             <span class="chip chip-p1">P1</span>
             <span class="field">Due <b>Mon 28 Sep</b><span class="due-rel"></span></span>
             <span class="field">HT <b>0.5</b></span>
-            <span class="field">PR <b>#1009 (B1, B2 on dev)</b></span>
+            <span class="field">PR <b>#1009 (B1, B2 on dev); helper in #1010</b></span>
             <label class="status">Status <span class="status-print"></span></label>
           </div>
           <div class="t-sub">
@@ -1149,11 +1177,11 @@
           </div>
           <!-- log:t5 -->
           <div class="log" aria-label="Progress on card 5">
-            <h3>Progress <span class="log-when">as of Sun 27 Sep, 12:30</span></h3>
+            <h3>Progress <span class="log-when">as of Sun 27 Sep, 17:35</span></h3>
             <ul>
               <li><b>a1</b> Done. The reset is one statement in the dry-run helper, which also deletes the history and any key and restores the originals. The row is <b>Ngan Nguyen's</b>, not Tam's: applicant_email marketing@eovietnamboard.com, event_tool other ("Website CMS"). <code>prepare</code> saves these to JSON before it changes anything.</li>
-              <li class="wait"><b>a2</b> Waiting. Auto mode blocks production writes from my shell, so Khôi runs <code>prepare</code> with <code>!</code>.</li>
-              <li class="wait"><b>a3 to a5</b> Waiting. Browser walk, findings, reset.</li>
+              <li class="wait"><b>a2</b> Waiting. Auto mode blocks production writes from my shell, so Khôi runs O1: <code>! npx tsx scripts/events-dry-run.ts prepare c400488d-9423-47d6-baba-904c8c9c77cd khoi.le@edge8.ai</code> from <code>website/</code>. The helper is in the repo since <a href="https://github.com/EO-Vietnam/global-hubspot/pull/1010">#1010</a>.</li>
+              <li class="wait"><b>a3 to a5</b> Waiting. Browser walk (O3, 7 emails), findings (O4), reset and unbind (O5). Reset now refuses unless the row still points at the tester, so a wrong chapter id changes nothing.</li>
               <li><b>b1, b2</b> Done. <a href="https://github.com/EO-Vietnam/global-hubspot/pull/1009">#1009</a> is merged to dev: the hint now says admins only, the dead /portal revalidation is gone, and both screenshot placeholders are removed. Live after the next promotion.</li>
               <li class="wait"><b>b3</b> Waiting on Dave and Kyle to sign off the copy.</li>
               <li><b>b4</b> Done. The gate passed and #1009 is merged to dev.</li>
