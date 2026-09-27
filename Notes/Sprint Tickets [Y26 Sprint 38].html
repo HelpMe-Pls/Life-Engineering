@@ -434,6 +434,32 @@
         text-decoration-color: var(--mint);
         text-decoration-thickness: 2px;
       }
+      /* progress-log */
+      .log {
+        margin: 14px 0 6px;
+        padding: 10px 14px;
+        border-left: 3px solid var(--blue);
+        background: var(--code);
+        border-radius: 6px;
+      }
+      .log h3 {
+        margin: 0 0 6px;
+      }
+      .log .log-when {
+        font-weight: 400;
+        color: var(--muted);
+        font-size: 0.85em;
+      }
+      .log ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+      .log li {
+        margin: 4px 0;
+      }
+      .log li.wait {
+        color: var(--muted);
+      }
       .notes {
         width: 100%;
         min-height: 72px;
@@ -503,7 +529,7 @@
       <header class="page-head">
         <h1>
           Sprint 38 Tickets
-          <small>Events API cards for Khôi Lê, written 23 Sep 2026</small>
+          <small>Events API cards for Khôi Lê, written 23 Sep 2026<span class="upd"> · progress updated Sun 27 Sep, 12:30</span></small>
         </h1>
         <div class="meta">
           <ul>
@@ -568,14 +594,15 @@
         data-due="2026-09-24"
         data-priority="P1"
         data-pr=""
-        data-default-status="Waiting"
+        data-default-status="Done"
+        data-closed="2026-09-27"
       >
         <header class="t-head">
           <div class="t-title">
             <span class="num">1</span>
             <h2>
               <span class="title-text">Event Connector: Eventbrite to OneEO</span>
-              <em class="tag-note">Existing card, re-scoped</em>
+              <em class="tag-note">Existing card, re-scoped · closed Sun 27 Sep</em>
             </h2>
           </div>
           <div class="t-fields">
@@ -596,8 +623,7 @@
             <p>
               <strong>Done:</strong> every Week 0 item EO owes has been asked for
               in writing with a named owner and a date; Edge8's Eventbrite
-              account exists under onboarding@eochapterhubspotrollout.com; the
-              registrants-back scope question is with Kyle through Dave; and Dave
+              account exists under onboarding@eochapterhubspotrollout.com; and Dave
               has given the green light on the approach (separate sync service,
               team invite first, registrants back as a later phase).
             </p>
@@ -606,8 +632,7 @@
               a test Eventbrite account with a few events · the five pilot-wave
               chapters with a contact each · the audience decision: members only,
               or also Spouse/Life Partner and Adult Children · the event-fields
-              document the contract refers to) · Kyle via Dave (registrants-back
-              scope) · Dave (green light).
+              document the contract refers to) · Dave (green light).
             </p>
             <p>
               <strong>Registrants back, in one line:</strong> the return flow.
@@ -615,6 +640,7 @@
               calendar. Registrants back would also copy each event's Eventbrite
               registrants into 1EL as attendees. It is phase 2, and Kyle must
               confirm in writing that the pilot go/no-go does not depend on it.
+              That ask moved to card 4 on 27 Sep.
             </p>
             <p>
               This card closes when the asks are out, the account exists and Dave
@@ -628,10 +654,6 @@
               Email Nisha, cc Dave, listing the five items with a requested date
               (the estimate's own words: "each week of waiting is a week on the
               calendar").
-            </li>
-            <li class="step" data-step="b">
-              Ask Dave to get Kyle's written confirmation that the pilot go/no-go
-              is judged on events out only, with registrants back as phase 2.
             </li>
             <li class="step" data-step="c">
               Create the Eventbrite account for
@@ -671,8 +693,11 @@
         data-ht="0.5"
         data-due="2026-09-25"
         data-priority="P2"
-        data-pr="docs/comment PR to dev"
-        data-default-status="To do"
+        data-pr="#1007, promoted in #1008"
+        data-default-status="In progress"
+        data-file-status="In progress"
+        data-ticked="a,b,d,j,k"
+        data-sync="2026-09-27T12:30"
       >
         <header class="t-head">
           <div class="t-title">
@@ -692,7 +717,7 @@
             <span class="chip chip-p2">P2</span>
             <span class="field">Due <b>Thu 25 Sep</b><span class="due-rel"></span></span>
             <span class="field">HT <b>0.5</b></span>
-            <span class="field">PR <b>docs/comment PR to dev</b></span>
+            <span class="field">PR <b>#1007, promoted in #1008</b></span>
             <label class="status">Status <span class="status-print"></span></label>
           </div>
           <div class="t-sub">
@@ -725,6 +750,23 @@
               corrected.
             </p>
           </div>
+          <!-- log:t2 -->
+          <div class="log" aria-label="Progress on card 2">
+            <h3>Progress <span class="log-when">as of Sun 27 Sep, 12:30</span></h3>
+            <ul>
+              <li><b>a</b> Done. Dave's encryption key from 19 Sep is untouched.</li>
+              <li><b>b</b> Done. <code>EVENTS_TEAM_INVITE_EMAIL</code> = onboarding@eochapterhubspotrollout.com, one record for Production + Preview.</li>
+              <li><b>c</b> Partly done. <code>EVENTS_NOTIFY_TO</code> is <b>khoi.le@edge8.ai only</b>, so it can be verified first. Widen it to the six after the dry run. Until then Dave and Ha get no new-application email.</li>
+              <li><b>d</b> Done. Production redeployed by promotion <a href="https://github.com/EO-Vietnam/global-hubspot/pull/1008">#1008</a> (merge 4aa2b1a). The deployment is READY, and /events plus the KB return 200.</li>
+              <li class="wait"><b>e</b> Waiting. Needs the dry-run row at Discovery Call, and Khôi's account bound to Vietnam to open /portal/events.</li>
+              <li class="wait"><b>f, g</b> On hold. A portal key submission emails <b>all 11 admins</b>, six of them at EO. Khôi to decide.</li>
+              <li class="wait"><b>h</b> Waiting. The first real application now reaches Khôi only.</li>
+              <li class="wait"><b>i</b> Partly done. vercel-deployment.md is updated in #1007. <code>.env.example</code> is not: auto mode blocks reading <code>.env*</code> files, so Khôi pastes those lines.</li>
+              <li><b>j</b> Done. The NewEventsApplication comment is fixed in <a href="https://github.com/EO-Vietnam/global-hubspot/pull/1007">#1007</a>.</li>
+              <li><b>k</b> Done. #1007 is merged to dev on a green gate and promoted in #1008. The deferred-env bullet in next-steps.md now says the address is set.</li>
+            </ul>
+          </div>
+          <!-- /log:t2 -->
           <div class="desc state">
             <p>
               <strong>State on 23 Sep (Vercel dashboard):</strong> the encryption
@@ -1009,7 +1051,13 @@
             <li class="step" data-step="f">
               <strong>Registrants back:</strong> phase 2. Members-only match by
               email; people OneEO does not know need a rule later. Outside the
-              pilot go/no-go pending Kyle's confirmation (card 1).
+              pilot go/no-go pending Kyle's confirmation (next step).
+            </li>
+            <li class="step" data-step="f2">
+              <strong>Kyle's confirmation</strong> (moved from card 1 on 27 Sep): ask
+              Dave to get Kyle's written confirmation that the pilot go/no-go is
+              judged on events out only, with registrants back as phase 2.
+              Record the answer, or "pending", in the Registrants-back section.
             </li>
             <li class="step" data-step="g">
               <strong>Logging and alerts:</strong> a broken connection flagged
@@ -1055,8 +1103,11 @@
         data-ht="0.5"
         data-due="2026-09-28"
         data-priority="P1"
-        data-pr="fixes PR to dev"
-        data-default-status="To do"
+        data-pr="#1009 (B1, B2 on dev)"
+        data-default-status="In progress"
+        data-file-status="In progress"
+        data-ticked="a1,b1,b2,b4"
+        data-sync="2026-09-27T12:30"
       >
         <header class="t-head">
           <div class="t-title">
@@ -1070,7 +1121,7 @@
             <span class="chip chip-p1">P1</span>
             <span class="field">Due <b>Mon 28 Sep</b><span class="due-rel"></span></span>
             <span class="field">HT <b>0.5</b></span>
-            <span class="field">PR <b>fixes PR to dev</b></span>
+            <span class="field">PR <b>#1009 (B1, B2 on dev)</b></span>
             <label class="status">Status <span class="status-print"></span></label>
           </div>
           <div class="t-sub">
@@ -1096,6 +1147,19 @@
               (<code>next-steps.md:115</code>).
             </p>
           </div>
+          <!-- log:t5 -->
+          <div class="log" aria-label="Progress on card 5">
+            <h3>Progress <span class="log-when">as of Sun 27 Sep, 12:30</span></h3>
+            <ul>
+              <li><b>a1</b> Done. The reset is one statement in the dry-run helper, which also deletes the history and any key and restores the originals. The row is <b>Ngan Nguyen's</b>, not Tam's: applicant_email marketing@eovietnamboard.com, event_tool other ("Website CMS"). <code>prepare</code> saves these to JSON before it changes anything.</li>
+              <li class="wait"><b>a2</b> Waiting. Auto mode blocks production writes from my shell, so Khôi runs <code>prepare</code> with <code>!</code>.</li>
+              <li class="wait"><b>a3 to a5</b> Waiting. Browser walk, findings, reset.</li>
+              <li><b>b1, b2</b> Done. <a href="https://github.com/EO-Vietnam/global-hubspot/pull/1009">#1009</a> is merged to dev: the hint now says admins only, the dead /portal revalidation is gone, and both screenshot placeholders are removed. Live after the next promotion.</li>
+              <li class="wait"><b>b3</b> Waiting on Dave and Kyle to sign off the copy.</li>
+              <li><b>b4</b> Done. The gate passed and #1009 is merged to dev.</li>
+            </ul>
+          </div>
+          <!-- /log:t5 -->
           <h3>How to close it</h3>
           <h4>A. Dry run (after card 2 is deployed)</h4>
           <ol class="steps">
@@ -1289,6 +1353,30 @@
           if (!t.checked || typeof t.checked !== 'object') t.checked = {};
           if (typeof t.notes !== 'string') t.notes = '';
           if (typeof t.collapsed !== 'boolean') t.collapsed = false;
+          // File sync: data-sync is a revision stamp. When it changes, the
+          // file's data-file-status replaces the saved status and every step in
+          // data-ticked is ticked (ticks are only ever added). Applied once per
+          // revision, so the dropdown and checkboxes still work afterwards.
+          var sync = art.dataset.sync || '';
+          if (sync && t.syncApplied !== sync) {
+            if (STATUSES.indexOf(art.dataset.fileStatus) >= 0) t.status = art.dataset.fileStatus;
+            (art.dataset.ticked || '').split(',').forEach(function (sid) {
+              sid = sid.trim();
+              if (sid) t.checked[sid] = true;
+            });
+            t.syncApplied = sync;
+          }
+          // A card closed in this file (data-closed="YYYY-MM-DD") overrides an
+          // older status saved in this browser, once per closing date. After
+          // that the dropdown can still reopen it.
+          var closed = art.dataset.closed || '';
+          if (closed && t.closedApplied !== closed) {
+            t.status = 'Done';
+            Array.prototype.forEach.call(art.querySelectorAll('.step'), function (li) {
+              t.checked[li.dataset.step] = true;
+            });
+            t.closedApplied = closed;
+          }
           return t;
         }
 
@@ -1498,6 +1586,14 @@
               });
             }
           });
+          var logItems = art.querySelectorAll('.log li');
+          if (logItems.length) {
+            lines.push('');
+            lines.push('**Progress**');
+            Array.prototype.forEach.call(logItems, function (li) {
+              lines.push('- ' + squash(mdText(li)));
+            });
+          }
           if (t.notes.trim()) {
             lines.push('');
             lines.push('**Notes**');

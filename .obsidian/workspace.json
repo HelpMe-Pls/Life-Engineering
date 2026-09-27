@@ -88,12 +88,12 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/Business Bank.md",
+                        "file": "Notes/strength-research/README.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "Business Bank"
+                      "title": "README"
                     }
                   },
                   {
@@ -120,8 +120,7 @@
                       "title": "Daily Standup"
                     }
                   }
-                ],
-                "currentTab": 1
+                ]
               },
               {
                 "id": "6daf623ea71b0a7d",
@@ -325,10 +324,19 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "5646d77dc32192cf",
+  "active": "9b9ab17c16c89870",
   "lastOpenFiles": [
+    "Notes/2026.md",
+    "Notes/Venture Tasks.md",
     "Notes/Weekly Tasks.md",
     "Notes/1-1 Playbook.md",
+    "Notes/strength-research/README.md",
+    "Notes/Business Bank.md",
+    "Notes/strength-research/SWIMMING.md",
+    "Notes/strength-research/INCLINE-BENCH.md",
+    "Notes/strength-research/EXPERT-BENCHMARKS.md",
+    "Notes/strength-research",
+    "Notes/Daily Standup.md",
     "Notes/1-1 Bench.md",
     "AI/Claude Code Skill Playbook.md",
     "Notes/Sprint Tickets [Y26 Sprint 38].html",
@@ -336,7 +344,6 @@
     "Notes/Q4 Sprint.md",
     "Notes/Q4 Sprint Prompts.md",
     "Notes/q4-research/S2-scorecard-council.md",
-    "Notes/Daily Standup.md",
     "Notes/Antifragile SaaS.md",
     "Notes/q4-research/R1-lists.md",
     "Notes/q4-research/R6-existing-assets.md",
@@ -347,7 +354,6 @@
     "Notes/q4-research",
     "Tips & Tools/English vocab.md",
     "AI/Skill Playbook Appendix.md",
-    "Notes/2026.md",
     "Notes/EP SaaS.md.tmp.47160.9419baa0e418",
     "Notes/EP SaaS.md.tmp.47160.99d1097f3684",
     "Notes/EP SaaS.md.tmp.47160.a11c1d386bde",
@@ -355,13 +361,7 @@
     "Notes/EP SaaS.md.tmp.47160.bbe0000a5f20",
     "Notes/EP SaaS.md.tmp.47160.987984692282",
     "Notes/EP SaaS.md.tmp.47160.cdefdca538a8",
-    "Notes/EP SaaS.md.tmp.47160.d7e88fd1ffed",
-    "Notes/Venture Tasks.md",
     "Notes/Duty SaaS.md",
-    "Notes/Business Bank.md",
-    "Notes/EP SaaS.md",
-    "Notes/breakglass-research/KILL-TABLE.md",
-    "Notes/breakglass-research/next-steps.md",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",

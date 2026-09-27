@@ -1,60 +1,53 @@
 # The TODOs
-### 21/9
-- [x] EO:
-	- [ ] Practice 1-1
-	- [x] Renewal self assessment 
-	- [ ] Events API requirement list
-	- [x] Send Kiến mkt proposal
-- [x] Venture++
-- [x] Groceries
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 22/9
-- [x] EO weekly report & sprint goals update
-	- [ ] 1-1 sparring
-	- [x] Drain the queue for `global-hubspot`
-	- [x] Send the sprint report
+### 28/9
+- [ ] EO:
+	- [ ] 1-1 (this is it)
+	- [ ] Drain the queue for `global-hubspot`
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 23/9
-- [x] EO sprint review:
-	- [x] Record & summarize the meeting
-	- [x] Practice 1-1
-	- [x] Contingencies
+- [ ] Live up to your standards
+### 29/9
+- [ ] EO weekly report & sprint goals update
+	- [ ] Prepare for the demo
+	- [ ] Send the sprint report
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 24/9
-- [x] EO minimal work
-	- [x] Drain Claude quota
-	- [ ] 1-1 spar
+- [ ] Live up to your standards
+### 30/9
+- [ ] EO sprint review:
+	- [ ] Record & summarize the meeting
+	- [ ] Contingencies
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 1/10
+- [ ] EO minimal work
+	- [ ] Backlog++ 
+- [ ] Drain Claude quota with the fitness benchmark research
 - [ ] Venture++ 
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 25/9
-- [x] EO minimal work
+- [ ] Live up to your standards
+### 2/10
+- [ ] EO minimal work
 	- [ ] Chapter Detail page UI update
-	- [ ] Offer 1-1
-- [x] Health check
-- [x] Venture++
+	- [ ] Contingencies
+- [ ] Draft round 1
+- [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 26/9
-- [x] Perfect dive start + 500m with paddles
-- [x] Hefty breakfast
-- [x] Groceries
+- [ ] Live up to your standards
+### 3/10
+- [ ] Perfect dive start + 500m with paddles
+- [ ] Hefty breakfast
+- [ ] Groceries
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 27/9
+- [ ] Live up to your standards
+### 4/10
 - [ ] Splurge (if you're done with EP HITL)
 - [ ] Weekly planning (including EO tickets)
 - [ ] Venture++
 	- [ ] Sunday scoreboard read + long-vol read with Claude (log the week's numbers)
 	- [ ] Reply Future Me
-	- [ ] Fitness benchmark research
 	- [ ] Financial advice
-	- [ ] 1-1 spar
 	- [ ] Q3 wrap up & Q4 planning
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
