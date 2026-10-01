@@ -27,32 +27,31 @@
                 }
               },
               {
-                "id": "467665af702d7a85",
+                "id": "3a79f449488355fd",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/1-1 Bench.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "1-1 Bench"
-                }
-              },
-              {
-                "id": "5646d77dc32192cf",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Notes/1-1 Playbook.md",
+                    "file": "Notes/2026.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "1-1 Playbook"
+                  "title": "2026"
+                }
+              },
+              {
+                "id": "8dcb9b78e299487e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Notes/Daily Standup.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Daily Standup"
                 }
               },
               {
@@ -70,7 +69,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -107,41 +106,27 @@
                     }
                   },
                   {
-                    "id": "8dcb9b78e299487e",
+                    "id": "b10620df2632323d",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/Daily Standup.md",
+                        "file": "Tips & Tools/English vocab.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "Daily Standup"
+                      "title": "English vocab"
                     }
                   }
                 ],
-                "currentTab": 2
+                "currentTab": 1
               },
               {
                 "id": "6daf623ea71b0a7d",
                 "type": "tabs",
                 "dimension": 49.4204425711275,
                 "children": [
-                  {
-                    "id": "3a79f449488355fd",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "Notes/2026.md",
-                        "mode": "source",
-                        "source": false
-                      },
-                      "icon": "lucide-file",
-                      "title": "2026"
-                    }
-                  },
                   {
                     "id": "03418aa526fdbc06",
                     "type": "leaf",
@@ -171,7 +156,7 @@
                     }
                   }
                 ],
-                "currentTab": 2
+                "currentTab": 1
               }
             ],
             "direction": "horizontal"
@@ -325,29 +310,33 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "5646d77dc32192cf",
+  "active": "3a79f449488355fd",
   "lastOpenFiles": [
-    "Notes/sed5gVohP",
-    "Notes/sedLuKthA",
-    "Notes/sedxC6VYO",
-    "Notes/1-1 Runbook.html.tmp.51464.a0016ca46f9d",
-    "Notes/1-1 Runbook.html.tmp.51464.f61f07acca1f",
-    "Notes/1-1 Runbook.html.tmp.51464.83ca310aa2c0",
-    "Notes/1-1 Bench.md",
+    "Notes/Weekly Tasks.md",
+    "Notes/2026.md",
+    "Notes/Q4 Sprint.md",
+    "Tips & Tools/English vocab.md",
+    "Tips & Tools/English grammar.md",
     "Notes/1-1 Playbook.md",
-    "Notes/sedznZstC",
+    "Notes/Daily Standup.md",
+    "Sprint Tickets [Y26 Sprint 39].html",
+    "Meeting Summary [2026-09-30].html",
+    "transcription-probe.vtt",
     "AI/Claude Code Skill Playbook.md",
-    "Notes/1-1 Runbook.html",
+    "Notes/sedzfJzHd",
+    "Notes/sed6Os6tB",
+    "Notes/sedrnJyJl",
+    "Notes/sedePLHG4",
+    "Notes/Sprint Tickets [Y26 Sprint 38].html.tmp.27644.a54d9e2a4c2c",
+    "Notes/1-1 Bench.md",
+    "Notes/Business Bank.md",
+    "Notes/Venture Tasks.md",
+    "Notes/1-1 Bench.md.tmp.32584.1dcdb499475b",
+    "Notes/1-1 Playbook.md.tmp.32584.f44ab1cd9236",
     "Notes/strength-research/SWIMMING.md",
     "Notes/strength-research/INCLINE-BENCH.md",
     "Notes/strength-research/README.md",
     "Notes/strength-research/EXPERT-BENCHMARKS.md",
-    "Notes/strength-research",
-    "Notes/Weekly Tasks.md",
-    "Notes/Sprint Tickets [Y26 Sprint 38].html",
-    "Notes/1-1 Bench.md.tmp.41492.597d97785890",
-    "Notes/Daily Standup.md",
-    "Notes/Q4 Sprint.md",
     "Notes/q4-research/S3-palm-app-exact-steps.md",
     "Notes/Q4 Sprint Prompts.md",
     "Notes/q4-research/S2-scorecard-council.md",
@@ -358,11 +347,7 @@
     "Notes/q4-research/R3-service-demand.md",
     "Notes/q4-research/R5-rails.md",
     "Notes/q4-research/R4-marketplaces.md",
-    "Tips & Tools/English vocab.md",
     "AI/Skill Playbook Appendix.md",
-    "Notes/2026.md",
-    "Notes/Venture Tasks.md",
-    "Notes/Duty SaaS.md",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",

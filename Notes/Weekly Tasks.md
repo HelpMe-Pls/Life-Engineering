@@ -1,44 +1,49 @@
 # The TODOs
 ### 28/9
-- [ ] EO:
-	- [ ] 1-1 (this is it)
-	- [ ] Drain the queue for `global-hubspot`
+- [x] EO:
+	- [x] 1-1 (this is it)
+	- [x] Drain the queue for `global-hubspot`
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 29/9
-- [ ] EO weekly report & sprint goals update
-	- [ ] Prepare for the demo
+- [x] EO weekly report & sprint goals update
+	- [x] Prepare for the demo
 	- [ ] Send the sprint report
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 30/9
-- [ ] EO sprint review:
-	- [ ] Record & summarize the meeting
-	- [ ] Contingencies
+- [x] EO sprint review:
+	- [x] Record & summarize the meeting
+	- [x] Contingencies
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 1/10
-- [ ] EO minimal work
-	- [ ] Backlog++ 
-- [ ] Drain Claude quota with the fitness benchmark research
+- [x] EO minimal work
+	- [x] Backlog++ 
+	- [x] Planning
+- [x] Reply FutureMe + Q3 wrap up & Q4 planning
+- [x] Derma research
 - [ ] Venture++ 
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 2/10
 - [ ] EO minimal work
 	- [ ] Chapter Detail page UI update
-	- [ ] Contingencies
+	- [ ] AIO certs++
 - [ ] Draft round 1
+- [ ] Warts & cysts removal
+- [ ] Strength-hypertrophy research & 3 months training plan 
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 3/10
-- [ ] Perfect dive start + 500m with paddles
+- [ ] Perfect dive start + 500m
 - [ ] Hefty breakfast
 - [ ] Groceries
+- [ ] Financial advice
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 4/10
@@ -46,9 +51,7 @@
 - [ ] Weekly planning (including EO tickets)
 - [ ] Venture++
 	- [ ] Sunday scoreboard read + long-vol read with Claude (log the week's numbers)
-	- [ ] Reply Future Me
 	- [ ] Financial advice
-	- [ ] Q3 wrap up & Q4 planning
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 # What a good day looks like
