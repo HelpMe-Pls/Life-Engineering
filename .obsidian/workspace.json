@@ -18,24 +18,23 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/Q4 Sprint.md",
+                    "file": "Notes/strength-research/protocol.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Q4 Sprint"
+                  "title": "protocol"
                 }
               },
               {
-                "id": "467665af702d7a85",
+                "id": "8dcb9b78e299487e",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
                     "file": "Notes/Daily Standup.md",
                     "mode": "source",
-                    "source": false,
-                    "backlinks": false
+                    "source": false
                   },
                   "icon": "lucide-file",
                   "title": "Daily Standup"
@@ -55,8 +54,7 @@
                   "title": "Claude Code Skill Playbook"
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           },
           {
             "id": "8cedd05142699eb5",
@@ -74,12 +72,12 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/strength-research/README.md",
+                        "file": "Notes/Business Bank.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "README"
+                      "title": "Business Bank"
                     }
                   },
                   {
@@ -93,40 +91,27 @@
                     }
                   },
                   {
-                    "id": "8dcb9b78e299487e",
+                    "id": "b10620df2632323d",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "Notes/Daily Standup.md",
+                        "file": "Tips & Tools/English vocab.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "Daily Standup"
+                      "title": "English vocab"
                     }
                   }
-                ]
+                ],
+                "currentTab": 1
               },
               {
                 "id": "6daf623ea71b0a7d",
                 "type": "tabs",
                 "dimension": 49.4204425711275,
                 "children": [
-                  {
-                    "id": "3a79f449488355fd",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "Notes/2026.md",
-                        "mode": "source",
-                        "source": false
-                      },
-                      "icon": "lucide-file",
-                      "title": "2026"
-                    }
-                  },
                   {
                     "id": "03418aa526fdbc06",
                     "type": "leaf",
@@ -154,9 +139,23 @@
                       "icon": "lucide-file",
                       "title": "Weekly Tasks"
                     }
+                  },
+                  {
+                    "id": "b0374cd0b34632af",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Notes/strength-research/README.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "README"
+                    }
                   }
                 ],
-                "currentTab": 2
+                "currentTab": 1
               }
             ],
             "direction": "horizontal"
@@ -310,44 +309,44 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "9b9ab17c16c89870",
+  "active": "8e701c92c4b0d885",
   "lastOpenFiles": [
-    "Notes/2026.md",
+    "Notes/strength-research/protocol.md.tmp.5052.d43a3875fab9",
+    "Notes/strength-research/protocol.md.tmp.5052.99dade58e941",
+    "Notes/strength-research/protocol.md.tmp.5052.f86826f6aa63",
+    "Notes/strength-research/protocol.md.tmp.5052.fea19b3e198b",
+    "Notes/strength-research/protocol.md.tmp.5052.60ef613ca777",
+    "Notes/strength-research/protocol.md.tmp.5052.909b3679cc98",
+    "Notes/strength-research/protocol.md.tmp.5052.e0f44a7e291f",
+    "Notes/strength-research/protocol.md.tmp.5052.1deb0670ef2f",
+    "Notes/strength-research/protocol.md.tmp.5052.30f9c474d21b",
+    "Notes/strength-research/protocol.md.tmp.5052.0f9cae83f749",
+    "Notes/strength-research/sedVEeQHd",
+    "Notes/Q4 Sprint.md",
     "Notes/Weekly Tasks.md",
-    "Notes/Venture Tasks.md",
-    "AI/Claude Code Skill Playbook.md",
+    "Notes/strength-research/README.md",
+    "Notes/strength-research/protocol.md",
+    "Notes/2026.md",
     "Notes/strength-research/STROKES-IM.md",
     "Notes/strength-research/HUBERMAN-SWEEP.md",
-    "Notes/strength-research/BARBELL.md",
     "Notes/strength-research/CALISTHENICS.md",
-    "Notes/Daily Standup.md",
-    "Notes/1-1 Bench.md",
+    "Notes/strength-research/BARBELL.md",
+    "Tips & Tools/English vocab.md",
+    "Tips & Tools/English grammar.md",
     "Notes/1-1 Playbook.md",
-    "Notes/1-1 Runbook.html",
-    "Notes/strength-research/README.md",
+    "Notes/Daily Standup.md",
+    "AI/Claude Code Skill Playbook.md",
+    "Notes/1-1 Bench.md",
     "Notes/Business Bank.md",
+    "Notes/Venture Tasks.md",
     "Notes/strength-research/SWIMMING.md",
     "Notes/strength-research/INCLINE-BENCH.md",
     "Notes/strength-research/EXPERT-BENCHMARKS.md",
-    "Notes/strength-research",
-    "Notes/Sprint Tickets [Y26 Sprint 38].html",
     "Notes/q4-research/S3-palm-app-exact-steps.md",
-    "Notes/Q4 Sprint.md",
     "Notes/Q4 Sprint Prompts.md",
     "Notes/q4-research/S2-scorecard-council.md",
     "Notes/Antifragile SaaS.md",
     "Notes/q4-research/R1-lists.md",
-    "Notes/q4-research/R6-existing-assets.md",
-    "Notes/q4-research/R2-pain-paid-map.md",
-    "Notes/q4-research/R3-service-demand.md",
-    "Notes/q4-research/R5-rails.md",
-    "Notes/q4-research",
-    "Notes/EP SaaS.md.tmp.47160.9419baa0e418",
-    "Notes/EP SaaS.md.tmp.47160.99d1097f3684",
-    "Notes/EP SaaS.md.tmp.47160.a11c1d386bde",
-    "Notes/EP SaaS.md.tmp.47160.7e3cdc886105",
-    "Notes/EP SaaS.md.tmp.47160.bbe0000a5f20",
-    "Notes/EP SaaS.md.tmp.47160.987984692282",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",

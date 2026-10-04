@@ -2,7 +2,8 @@
 ### 5/10
 - [ ] EO:
 	- [ ] Q4 FAST goals
-	- [ ] Drain the queue for `global-hubspot` (Events API code complete)
+	- [ ] Planning for Events API code complete
+	- [ ] Drain the queue for `global-hubspot` 
 	- [ ] v1.1++ 
 - [ ] Venture++
 - [ ] Tao Te Ching++
