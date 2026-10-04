@@ -1,52 +1,49 @@
 # The TODOs
-### 28/9
-- [x] EO:
-	- [x] 1-1 (this is it)
-	- [x] Drain the queue for `global-hubspot`
+### 5/10
+- [ ] EO:
+	- [ ] Q4 FAST goals
+	- [ ] Drain the queue for `global-hubspot` (Events API code complete)
+	- [ ] v1.1++ 
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 29/9
-- [x] EO weekly report & sprint goals update
-	- [x] Prepare for the demo
+- [ ] Live up to your standards
+### 6/10
+- [ ] EO weekly report & sprint goals update
+	- [ ] v1.1++ 
+	- [ ] Prepare for the demo
 	- [ ] Send the sprint report
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 30/9
-- [x] EO sprint review:
-	- [x] Record & summarize the meeting
-	- [x] Contingencies
-- [ ] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 1/10
-- [x] EO minimal work
-	- [x] Backlog++ 
-	- [x] Planning
-- [x] Reply FutureMe + Q3 wrap up & Q4 planning
-- [x] Derma research
-- [ ] Venture++ 
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 2/10
-- [ ] EO minimal work
-	- [ ] Chapter Detail page UI update
+- [ ] Live up to your standards
+### 7/10
+- [ ] EO sprint review:
+	- [ ] Record & summarize the meeting
+	- [ ] v1.1++ 
 	- [ ] AIO certs++
-- [ ] Draft round 1
-- [ ] Warts & cysts removal
-- [ ] Strength-hypertrophy research & 3 months training plan 
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 3/10
+### 8/10
+- [ ] EO minimal work
+	- [ ] v1.1++ 
+	- [ ] AIO certs++
+- [ ] Venture++ 
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 9/10
+- [ ] EO minimal work
+	- [ ] v1.1++
+	- [ ] AIO certs++
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 10/10
 - [ ] Perfect dive start + 500m
 - [ ] Hefty breakfast
 - [ ] Groceries
-- [ ] Financial advice
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 4/10
+### 11/10
 - [ ] Splurge (if you're done with EP HITL)
 - [ ] Weekly planning (including EO tickets)
 - [ ] Venture++

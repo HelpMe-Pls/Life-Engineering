@@ -197,3 +197,14 @@ Direct answers for the five requested tests, from this domain only:
 - Attia's "by age, by sex" VO2max percentile charts, which he says are posted "somewhere in my podcast realm" (S8 ≈00:44:43) — outside this domain; must be pulled from the Cleveland Clinic/JAMA data or ACSM tables by the relevant agent.
 - The USMC pull-up scoring table implied by Pavel's "20 pull-ups... aced the US Marine Corps pull-up PT test" — to be verified from the .mil source by the military-standards agent.
 - Mike Israetel and Cameron Hanes: no Huberman Lab episodes exist (confirmed against the 433-episode sitemap), so nothing could be extracted.
+
+## Verification (independent, adversarial)
+
+Verifier pass 2026-10-02 (limited to what overlaps the other six notes).
+
+| id | claim | verdict | note | evidence |
+|---|---|---|---|---|
+| galpin-2023-numbers | Galpin 2023 series Ep. 1 figures (grip 40 / 60 kg, dead hang, goblet hold, push-ups 10 / 25, VO2 35 / 50 / 55, 2×BW bench) | **unverifiable** | A fetch of the 2023 transcript page returned none of these numbers (page may be truncated for the fetcher). The 2024 Perform Ep. 2 restatement (grip >45 kg men / >28 kg women; bench 1.0×BW men, 0.6 women; leg press 2×BW) is confirmed verbatim — see HUBERMAN-SWEEP | https://www.hubermanlab.com/episode/dr-andy-galpin-how-to-assess-improve-all-aspects-of-your-fitness |
+| mandsager-bands | Mandsager 2018 percentile bands | **confirmed** | See SWIMMING verification | Europe PMC |
+| galpin-vo2-perform | VO2 35–45 / <18 / 50 / 55–60 / MMA 55 | **confirmed** | Perform Ep. 1 transcript | performpodcast.com |
+| other expert rows (Attia, Tsatsouline, Starrett, Lyon, McGill numbers) | | **not_checked** | Only McGill was opened (no numeric targets — confirmed); others not re-opened in this pass | — |

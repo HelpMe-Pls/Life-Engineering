@@ -126,3 +126,14 @@ Reading the table: for this subject, an honest **"strong & athletic" incline pre
 - ACSM GETP bench-press ratio table (exact edition/table number, 90th percentile) and the MSSE 2018 free-weight normative abstract [#29] (HTTP 402): not opened.
 - No study found that reports an incline ÷ flat ratio in men near 57 kg, nor any paused-incline data; the paused-vs-touch-and-go penalty for the incline is unquantified.
 - Web-search budget for the session was exhausted before a final sweep for other Huberman Lab strength-expert episodes (e.g., other coaches); the three expert episodes above were located and read, but the sweep is incomplete.
+
+## Verification (independent, adversarial)
+
+Verifier pass 2026-10-02 (numbers that set the tiers only).
+
+| id | claim | verdict | note | evidence |
+|---|---|---|---|---|
+| SL-incline-57 | SL incline rows 55 kg 56/74/94, 60 kg 62/82/103 → 57 kg 58.4 / 77.2 / 97.6 | **confirmed** | Rows verbatim ("27 40 56 74 94", "32 45 62 82 103"; 2,165,292 lifts); interpolation recomputed 58.4 / 77.2 / 97.6 ✔. Level definitions 50 / 80 / 95 % confirmed on the squat page | https://strengthlevel.com/strength-standards/incline-bench-press/kg |
+| SL-flat-57 | Flat SL 57 kg = 67.8 / 90.2 / 113.6 | **confirmed** | 55 kg 32/47/65/87/110, 60 kg 37/53/72/95/119 → 67.8 / 90.2 / 113.6 ✔ | https://strengthlevel.com/strength-standards/bench-press/kg |
+| cooper-rows | Cooper men 20–29 1.63 / 1.32 / 1.14 / 0.99 / 0.88 / 0.72 | **confirmed** | Verbatim from the ACE PDF text; Cooper Institute attribution, no ACSM edition | ACE 38_Bench-Press_Assessment_Protocol.pdf |
+| nsca-rm, ss-formula, lab ratios 0.778 / 0.823 | | **not_checked** | Outside this pass's budget | — |

@@ -198,3 +198,15 @@ Mapping notes. Cooper's five labels (Very poor/Poor/Fair/Good/Excellent) are gen
 7. Garmin/Strava published aggregate swim-pace statistics — none found; USMS "normal times for my age" article — 403.
 8. Rulebook confirmation of SCY/SCM/LCM conversion factors and of the freestyle turn/15 m rule (World Aquatics SW 5) — not opened (search budget exhausted).
 9. No source anywhere gives percentile distributions of pool freestyle times for non-competing trained adult men; the Above-average and Strong tiers are therefore anchored on coach/industry bands and derived from the Elite anchors, as labelled.
+
+## Verification (independent, adversarial)
+
+Verifier pass 2026-10-02 (anchors that set the Elite column and the clinic VO2 bands).
+
+| id | claim | verdict | note | evidence |
+|---|---|---|---|---|
+| usms-nqt-free | USMS 2026 NQT men SCY 50 22.29, 100 49.19, 200 1:49.79, 500 4:59.99, 1000 10:29.99 | **confirmed** | One-page PDF, verbatim; no age-group label on the page | 2026 nqts.pdf (text-extracted) |
+| mandsager-bands | Mandsager 2018 groups: low <25th, below avg 25–49, above avg 50–74, high 75–97.6, elite ≥ 97.7th pct | **confirmed** | PMID 30646252, JAMA Netw Open; definitions verbatim | Europe PMC |
+| masters-wr-25-29 | WR men 25–29 SCM 100 free 47.43, 50 free 21.28 | **confirmed** | From the WA SCM masters PDF (02 Sep 2025); LCM 48.72 / 1:50.76 / 4:00.96 / 8:24.46 / 15:49.04 **unverifiable** (LCM PDF time cells not in text layer) | CurrentWorldRecordsIndividualSCM.pdf |
+| cooper-12min-swim | Cooper 1982 men 20–29 Excellent >700 yd etc. | **unverifiable** | topendsports 12minswim page 404; primary not opened; rests on the two reproductions already cited | — |
+| derived pool tiers, CSS/Polar/Swim Smooth bands, military swims | | **not_checked** | Labelled "derived"/UNVERIFIED in the note; not re-opened | — |
