@@ -5,10 +5,12 @@
 - /goal perform a DEEP adversarial code review loop by utilizing the /code-review skill on the open PR (#404) and self-iterate with /tdd to
   /implement your fixes until ALL issues/gaps/regressions are FULLY resolved. You're granted FULL ACCESS to the producer's repo (`altai-hubspot-sync` under the same parent as this repo) to fact-check and verify your work as you go. It is CRITICAL to keep the ENTIRE test suite in BOTH repos MINIMAL and OPTIMIZED based on the standards of /codebase-design
 # Prompt
+- Read @A03.pdf and watch this video:https://www.youtube.com/watch?v=VmaA2p1Mg9E for your context before we start the next challenge. Tell me when you're ready.
+- Transcribe the LATEST video then add its summary and tickets accordingly.
 - You're allowed to gratuitously write/check/access...
 - /wait-what surface the HITL actions from this run so I can make the decision
 - Feel free to fan out as many workflows/subagents as needed to get to the bottom of this
-- It is CRITICAL that you keep the @docs/plans/next-steps.md file MINIMAL and up-to-date and feel free to surface any concerns that require HITL as you go.
+- It is CRITICAL that you keep the @docs/plans/next-steps.md file MINIMAL and up-to-date and feel free to surface any concerns that require HITL as you go
 - /compact you're closing open issues
 - An ABSOLUTE HARD rule for this session: deploy NO MORE THAN 5 subagents for a workflow, if you need one
 - Keep it up, you're FAR from done. Feel free to resume/respawn/fan out your in-flight workflows/subagents/scripts as needed. Don't forget that the ENTIRE test suite in this repo MUST stays MINIMAL and OPTIMIZED based on the standards of /codebase-design, and the @docs/plans/next-steps.md spine is CURRENT and kept to its ABSOLUTE MINIMUM.

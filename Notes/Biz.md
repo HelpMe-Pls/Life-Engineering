@@ -1,3 +1,5 @@
+**THE ROUTE (ruled 2026-10-09):** [[This is it]] — bid, then productize. The three ventures below and Palmara are DEAD; parts reusable; the open slot stays closed until Jul 10 2027.
+
 [[EP SaaS]]
 [[Antifragile SaaS]]
 [[Duty SaaS]]

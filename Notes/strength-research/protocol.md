@@ -1,120 +1,124 @@
-# Protocol: strong & athletic, the runbook
+---
+share_link: https://share.note.sx/d05ub14w#OvlbcucIgeHlNr6g24mmAnTMNXGh098earwpYCn7vJg
+share_updated: 2026-10-09T11:29:49+07:00
+---
+# Protocol: strong & athletic
 
-*Written 2026-10-04 from [[README]], grill answered the same day. Status: ==v3==. Honest gap first: ==three months buys the Above-average row== plus a 130 kg deadlift and 110 unbroken squats; ==the Strong & athletic row needs twelve months on the bar==. The pool is parked: ==Q4 2026 has one swimming goal, the dive start==; the endurance tiers need 24–36 months once they start, block 2 at the earliest, on your call. Block 1 below is the three months asked for, and nothing in it is wasted if the plan stops there.*
+**Today:** the 30s tendon check on waking (stop rule 8), then find the day below, do it in order, 60 minutes in the gym or 45 outside it (rule 7), then stop. **The rule:** the bar goes up, nothing hurts.
 
-> [!note] Settled 2026-10-04
-> 12 months in four 12-week blocks. Lean gain to ~62 kg at 0.25 kg a week. Same days, same places; gym content is a movement split with a strength and hypertrophy focus. The park has a pull-up bar and dip bars; calisthenics stay bodyweight-only, no added load. Every session, gym, park or pool, ends at 60 minutes. Known at the start: 5 consecutive knee-kipping muscle-ups, strict reps only count. No 1RM attempt before week 24; tiers are read from 5RM and 3RM sets on video. No medical restrictions. Pool: a 50 m pool only, so every pool number is long-course. Dive start only this quarter, no Wednesday swim, no coaching, no swim baseline; the endurance plan is parked in §3.2, aimed at long open-water swims.
+**Eat and weigh:** maintenance +300kcal a day, 110–130g protein (gelatin and collagen don't count), creatine 3–5g, sleep 7h minimum, 8h the target. Weigh on waking; each Sunday log the 7-day average: +0.25kg a week to 60kg at week 12 and 62kg at week 24, then hold. Two Sundays running under +0.1kg → +200kcal; waist +1 cm in a month → −150kcal. Strict pull-up max down at a test while bodyweight rose → half the rate next block.
 
-## 0. Numbers to beat
-The 57 kg row of [[README#1. Master table|README §1]]. At 62 kg the barbell rows rise 8–10 % (incline ~85, squat ~133, deadlift ~157): read the row for test-day bodyweight. 5RM = 87 % and 3RM = 93 % of 1RM. The pool rows stand as the long-term targets; nothing is trained toward them until the endurance plan starts (§3.2).
+**Block 1 (Oct 5–Dec 27):** week 1 baseline (max unbroken squats wait for test 1), week 2 re-entry for everything (rule 2) plus the missing baselines (appendix), weeks 3–10 add weight or reps every week, week 11 deload, week 12 test. The rest of the year is in the appendix.
 
-| Test | Above average | Strong & athletic | Strong as 5RM / 3RM |
+**Kit:** loaded work happens only at the gym; the park and pool are bodyweight and bands.
+
+## The week
+
+| Day | Where | Session, in this order                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| --- | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Mon | gym   | **Upper heavy.** Ramp. Incline 30°, paused: top set × 5 at RPE 8, then 2 × 5 at −10 %. Pull-ups 4 × half your max, 90s rest, +1 rep a set a week; at 4 × 12, that Monday is one max set, then 3 × half the new max. Overhead press 3 × 6–10. Dips 3 × 8–12 (rule 6), 2s down, upper arm to parallel until week 6, face pulls 2 × 15–20 between the sets. Last, as a circuit, 30 s between: overhead triceps extension 2 × 10–15, incline dumbbell curl 2 × 10–15, lateral raise 3 × 12–20, all RPE 9. Elbow 3+ (stop rule 8): the overhead extension becomes pushdowns.                                                                                                                                                                                   |
+| Tue | gym   | **Lower heavy.** Ramp. Back squat: top set × 5 at RPE 8, then 3 × 5 at −10 %. Deadlift: top set × 5 at RPE 8, dead stop every rep, then 1 × 5 at −10 % in straps. Romanian deadlift (RDL) in straps at ≤ 60 % of the deadlift top set, or hip thrust, 3 × 8–12. Seated leg curl (lying if none) 3 × 8–12, RPE 9, 60–90s rest. Calves (rule 11). Abs optional.                                                                                                                                                                                                                                                                                                                                                                                             |
+| Wed | home  | **Rest.**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Thu | gym   | **Full body, volume.** Ramp. Paused squat, 2s at depth, 3 × 5 from 85 % of the last × 5 top set, ±5kg between sets, last set RPE 7–8. Incline 30°, paused, 3 sets of 6–10 reps at 85 % of Monday's top set, last set RPE 8–9. The weight stays the same week to week; you add reps. The week all three sets reach 10 reps, add 5kg the next week and start that weight at 3 × 6 reps, then climb the reps again. Chest-supported or dumbbell rows 3 × 8–12 between the incline sets. Pull-ups 3 sets at 60 % of max, chest-to-bar when you can, lying leg raises 3 × 10–15 at RPE 8 in their rests. Face pulls 2 × 15–20 at RPE 8–9, alternated with the rotator cuff (rule 11). Finisher: one unbroken bodyweight squat set, stopped 5 short of failure. |
+| Fri | park  | **Skills.** Rope 5 min in week 2, +1 min a week to 8. Neck as now. Broad jumps 3 × 3, full rest. Shoulder prep: scap pull-ups 2 × 5, 20s dead hang, 10 band pull-aparts, band Y-raises 2 × 10. Bar block (rule 5).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Sat | pool  | **Dives**, then swim as you like. 45 min total.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Sun | gym   | **Pistols, tendons, pump.** 5 min bike or rower. Pistols 3 × 5 a leg (rule 6; a bench = the box, a rack upright = the pole). Calves (rule 11). Seated leg curl 3 × 8–12 and lateral raises 3 × 12–20, alternated, RPE 9. Rotator cuff (rule 11). Light stretch with open-book rotations, 10 a side.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+
+- *Top set × 5 at RPE 8*: five reps with two clean ones left in the tank. *2 × 5 at −10 %*: two more fives, 10 % lighter (60 → 55).
+- *Ramp*: 5 min bike or rower, empty bar × 10, 50 % × 5, 70 % × 3, 85 % × 1–2, then the top set. Full ramp for the first barbell lift only; the second gets two or three climbing sets. Every percentage rounds to the nearest 5kg; the smallest plate is 2.5, so the smallest jump is 5.
+- *Paused*: 1s dead stop on the chest, no bounce; 2s at depth in the paused squat.
+- *Rest*: 2–3min after heavy sets, 2 min between pull-up sets (90s on Monday), 60–90 s for accessories.
+- *Dives*: deep end only, never from the shallow end. Water ≥ 1.8m under the start and 7.6m clear ahead, checked every time, until 8 clean of 10 two Saturdays running; then ≥ 1.5m; 1.35m only in a coached club session. Starting blocks only in a club or coached session; in a public session, dive from the side where the deck is ≤ 0.38m above the water. Ten dives, 1–2min apart. Score each out of 3 by feel and the lane marks: no slap on the chest or thighs, hands stacked and head between the arms until the breakout, breakout past the 5m flags and before the 15m mark. One cue a week. Goal: 8 clean of 10 by week 12.
+
+## Loading rules
+1. **Top set = RPE 8.** RPE 9 only in week C (rule 8), test weeks and a held block-1 load. A missed rep ends that exercise for the day.
+2. **Block 1, every week:**
+	- Top set RPE 8 or easier → one step up: +5kg on the squat and deadlift; on the incline, one rung of its ladder, top set × 5 → × 6 → × 7, then +5kg and back to × 5. Stop rule 8 can hold any lift.
+	- RPE 8.5–9 → same load, back-off sets +1 rep a week up to × 8, then the step, back-offs back to × 5.
+	- A miss or RPE 9.5+ → one step back down next week.
+	- Week 2 is re-entry for everything: the barbell at 85 % of the baseline 5RM (incline 50, squat 50, deadlift 70); pull-ups 3 × 60 % of max; dips 3 × 8 to upper arm parallel; bar block halved; rope 5 min; pistols 2 × 5 at the current step; finisher stopped 10 short; every new exercise 2 sets at RPE 7.
+	- The climb starts week 3 at baseline − 5 (55, 55, 75).
+3. **Stall:** two weeks running with nothing added, neither weight nor a rep → −10 %, rounded down, rebuild. Weeks held by stop rule 8 don't count.
+4. **Form is the load.** Film every top set. Hip crease below the knee, 1 s pause on the chest, locked knees and shoulders back on the pull. If you are not sure a rep met the standard, it did not. A fault repeats the load.
+5. **Bar block, Friday, strict first** (only strict reps count): ramp with chest-to-bar 1 × 3 easy and one negative; strict attempts 3 × 1–2 from a dead hang with a rolled towel between the feet, towel drops = kip, 2–3min rest; strict chest-to-bar pull-ups 4 × 3; muscle-up negatives 3 × 2, 5 s down through the transition. Kipping muscle-ups on test days only, logged, never counted. Path: singles → 1-2-3 ladders → sets of 2–3 → 6.
+6. **Bodyweight work:** dips +1 rep a set a week, then a 3 s lowering, then straight-bar dips. Pull-ups: Monday sets the max; the 60 % sets follow it. Pistols box → pole-assisted → free, +1 rep a set a week to 3 × 8, then the next step at 3 × 5; free: +1 rep a set a week toward 24. The Thursday finisher +5 a week to 110, then every second week.
+7. **The clock:** gym 60 minutes, park and pool 45. Main work first; what's left is dropped, never squeezed in. Gym near 60: bike or rower to 2min, then lateral raises, then arms; press, dips, rows, RDL and leg curl last; calves and rotator cuff are never cut. Park near 45: rope back to 5min, then the neck work. Pool: dives first, the swim fills the rest.
+8. **Blocks 2–4, three-week waves, RPE sets the load.**
+	- Week A: top set × 5 at RPE 8, then 2 × 5 at −10 %.
+	- Week B: top set × 3 at RPE 8, then 2 × 5 at −10 %.
+	- Week C: top set × 3 at RPE 9, then 1 × 5 at −10 %.
+	- The squat gets one back-off more; the deadlift keeps one back-off every week.
+	- Incline: when the next 5 kg would overshoot the RPE, keep the load and add a rep to the top set.
+	- The first week A of a block = 87 % of the test e1RM − 5.
+	- Block 2: A-B-C three times, then A. Block 3: A, then A-B-C three times. Block 4: A, B, then A-B-C four times.
+9. **Deload** in weeks 11, 23, 35, 51, or when two lifts miss in one week: loads −10 %, sets halved. Blocks 2–4 restart at week A; block 1 restarts at the pre-deload load.
+10. **Accessories = the muscle,** each at its written range: press 3 × 6–10; rows, RDL or hip thrust, leg curl 3 × 8–12; arms and raises 10–20. RPE 8–9 (the RDL stays under its 60 % cap), +1 rep a week; every set at the top → the next load (+5 kg on a bar, the next dumbbell or pin) and back to the bottom. Dips: rule 6, bodyweight only. Never a grind.
+11. **Tendons, all year.** Muscle adapts in weeks, tendons in months, and only heavy loading reliably builds them: rope, jumps and kipping never go above their written dose.
+	- Calves, Tue and Sun: single-leg calf raises off a step, a dumbbell in hand, 4 × 6–8 a leg, 3s up, 3s down, 8 reps = RPE 8, the next dumbbell when every set makes 8, the last set knee bent.
+	- Rotator cuff, Thu and Sun: cable or band external and internal rotation at 90° abduction, 2 × 12–15 each, 3s back, RPE 7–8. Wrist curls only on an elbow 3+ (stop rule 8).
+	- Pain ≤ 3/10. Runs unchanged through deloads.
+	- Knees: Tuesday's squat and Thursday's 2 s pause are their tendon work. Never shorten the pause.
+	- Deadlift grip: double overhand or hook. Mixed only with both elbows locked and the under hand swapped each set; a bent under-arm is how biceps tendons tear.
+	- Optional: 15g gelatin or collagen with 50mg vitamin C, 30–60 min before Tuesday's and Sunday's sessions.
+
+## Stop rules
+1. Muscles and joints (tendons: stop rule 8): pain ≤ 3/10 gone by tomorrow: train. Above 3, or still there at 48 h: that lift −20 % for a week; if it returns, physio before loading it again.
+2. Sharp joint pain, numbness, a changed walk: stop, 72h off that pattern.
+3. Shoulder 3+ (stop rule 8): swim ≤ 20min easy, muscle-up negatives off; still 3+ the next week: dips off, then the incline as neutral-grip dumbbells for a week. Face pulls and rotator-cuff work never skipped.
+4. Lower back ache: RDL becomes hip thrust and the deadlift back-off goes, two weeks. Deadlift once a week, dead stop every rep, no hitching ever.
+5. Rope Friday only, ≤ 10min. Dives: depth first; sore neck → a week off. Open water: never alone, tow float, known exit.
+6. Under 6h sleep: −10 % on every load, no top-set attempts.
+7. Two missed sessions in a week: repeat the week. No 1RM before week 24.
+8. Tendons, every morning, 30 s: first steps (Achilles); a slow single-leg squat (knee); a hard grip with the arm straight, then a palm-up press and a wrist curl against the other hand, elbow at 90° (elbow); both arms slowly overhead (shoulder). Log the worst score and site, 0–10.
+	- 0–2: train.
+	- 3–4, or 2 more than last week: no rope, jumps or negatives that week; the lifts that load the site hold their weight.
+	- 5+, or 3+ two weeks running: those lifts −20 % for a week; physio if it returns.
+	- Elbow 3+: wrist curls and reverse wrist curls 3 × 15 → 3 × 8, 3s down, Tue and Sun, until two weeks at 0–2.
+	- Pain above 3/10 in a set ends that exercise; the verdict is the next morning, not mid-session.
+
+## Weekly log
+One line each Sunday: the three top sets as load × reps @ RPE, best pull-up and strict muscle-up set, finisher reps, dives clean of 10, sessions done of 6, bodyweight 7-day average, worst tendon score and site, any stop rule that fired. Copy twelve rows at each new block, sixteen for block 4.
+
+| Wk | Incline | Squat | Deadlift | Pull-ups | Strict MU | BW squats | Dives /10 | Sessions /6 | BW kg | Tendon worst | Note |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | 60 × 5 | 60 × 5 | 80 × 5 | 15 | 1 | | 4 | | | | baseline |
+| 2 | | | | | | | | | | | re-entry |
+| 3 | | | | | | | | | | | climb starts |
+| 4 | | | | | | | | | | | |
+| 5 | | | | | | | | | | | |
+| 6 | | | | | | | | | | | |
+| 7 | | | | | | | | | | | |
+| 8 | | | | | | | | | | | |
+| 9 | | | | | | | | | | | |
+| 10 | | | | | | | | | | | |
+| 11 | | | | | | | | | | | deload |
+| 12 | | | | | | | | | | | test 1 |
+
+## Appendix: test weeks only
+
+**Calendar.** Test 1 = week 12 (Dec 21–27, 2026; Cà Mau week → 13, and block 2 becomes weeks 14–22, A-B-C three times). Block 2 = weeks 13–22, deload 23, test 2 = 24 (Mar 15–21, 2027). Block 3 = 25–34, deload 35, test 3 = 36 (Jun 7–13; singles only where the 3RM already projects past the tier). Block 4 = 37–50, deload 51, test 4 = 52 (Sep 27–Oct 3; a single at the goal when the week-50 triple ÷ 0.93 ≥ goal + 2, otherwise the 3RM).
+
+**Battery.** Mon: incline 5RM (3RM at tests 3 and 4), max strict pull-ups. Tue: squat, then dead hang. Thu: deadlift, max pistols, 10min, max unbroken squats. Fri: best of three broad jumps, max strict muscle-ups (kipping logged, never counted), 10min, max dips. Sat: scored dives. Sun: single-leg heel raises each side in place of the calves, 10° wedge or flat floor (log which), metronome 60 bpm, up on one beat and down on the next, knee straight, fingertips on a wall, stop at two missed beats or a lower heel. Film every test set. 1RM = 5RM ÷ 0.87 or 3RM ÷ 0.93. Week 2 logs the missing baselines: dead hang, broad jumps and max dips to parallel on Friday; the pistol step and heel raises on Sunday.
+
+**Numbers to beat**, the 57 kg row of [[README#1. Master table|README §1]].
+
+| Test | Above average | Strong | Strong as 5RM / 3RM |
 |---|---|---|---|
-| Incline bench 1RM, 30°, paused | 58 kg | ==77 kg== | 67 × 5 / 72 × 3 |
-| Back squat 1RM, hip crease below knee | 90 kg | ==120 kg== | 104 × 5 / 112 × 3 |
-| Deadlift 1RM, locked out, no hitch | 105–110 kg | ==130–145 kg== | 113–126 × 5 / 121–135 × 3 |
-| Strict pull-ups | 14 | ==24== | |
-| Dips | 20 | 33 | |
+| Incline bench 1RM, 30°, paused | 58 | ==77== | 70 × 5 / 72.5 × 3 |
+| Back squat 1RM, hip crease below knee | 90 | ==120== | 105 × 5 / 115 × 3 |
+| Deadlift 1RM, locked out, no hitch | 105–110 | ==130–145== | 115–130 × 5 / 125–135 × 3 |
+| Strict pull-ups / dips | 14 / 20 | ==24== / 33 | |
 | Strict bar muscle-ups | 3 | ==6== | |
-| Bodyweight squats, unbroken, 1 s down 1 s up | 64 | ==110== | |
-| Pistols, per leg | 12 | 24 | |
-| 400 m free, 50 m pool, push start | 6:50–7:35 | ==5:45–6:10== | |
-| 1500 m free, 50 m pool | 26:00–28:35 | ==22:20–24:25== | |
-| 12-minute swim, 50 m pool | 620–695 m | ==725–800 m== | |
-| 30-minute continuous swim, 50 m pool | 1600–1740 m | ==1930 m== | |
-| 1.5 km open water | 27–31 min | ==22–26 min== | |
-| 3.8 km open water | 1:08–1:16 | ==1:00–1:06== | |
-| 5 km open water | 1:30–1:40 | ==1:18–1:26== | |
+| Bodyweight squats, unbroken / pistols a leg | 64 / 12 | ==110== / 24 | |
 
-Pool rows are for your 50 m pool with a push start: the README's 25 m rows plus 3 % at 400 m and 4 % at 1500 m and in the timed swims; read README §1 directly if you ever test in a 25 m pool. Open-water rows are pool pace plus a 5–10 % fade for distance, drafting allowed, wetsuit legal, and they swing ±5–15 % with conditions; the 3.8 and 5 km rows are derived from Ironman age-group medians (2:00 per 100) and top-10 % swims (1:35), not measured percentiles. Today: 5 km in 3:00 is 3:36 per 100, and Above average needs 1:48–2:00 per 100, so the stroke has to change before any distance time can. Sprint and stroke rows stay in README §1 and are not targets here.
+**Tracker.** Load × reps → projected 1RM. ==Highlight== a cell when it meets its header; heel raises also need the two sides within 10 %.
 
-## 1. The week
+| Test | Date | Incline ==77== | Squat ==120== | Deadlift ==130–145== | Pull-ups ==24== | Dips 33 | Strict MU ==6== | BW squats ==110== | Pistols 24 | Dead hang s | Heel raises L/R 30 | Broad jump m | Dives clean /10 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Baseline | Oct 5–11, 2026 | 60 × 5 → 69 | 60 × 5 → 69 | 80 × 5 → 92 | 15 | | 1 (5 kip) | | | | | | 4 |
+| Test 1 | Dec 21–27 | × 5 → | × 5 → | × 5 → | | | | | | | | | /10 |
+| Test 2 | Mar 15–21, 2027 | × 5 → | × 5 → | × 5 → | | | | | | | | | |
+| Test 3 | Jun 7–13 | × 3 → | × 3 → | × 3 → | | | | | | | | | |
+| Test 4 | Sep 27–Oct 3 | × 3 → | × 3 → | × 3 → | | | | | | | | | |
 
-| Day | Where | Session, in this order                                                                                                                                                                                                                                                                                                                              |
-| --- | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Mon | gym   | **Upper heavy.** Ramp. Incline 30°, paused: top set × 5 at RPE 8, then 2 × 5 at −10 %. Pull-ups 3 × (max − 2), 2 min rest. Overhead press 3 × 6-8. Dips 3 × 8-12. Arms 2-4 sets. Face pulls or band external rotation 2 × 15, between the dip sets.                                                                                                 |
-| Tue | gym   | **Lower heavy.** Ramp. Back squat: top set × 5 at RPE 8, then 2 × 5 at −10 %. Deadlift: top set × 5 at RPE 8, dead stop every rep, then 1 × 5 at −10 %. RDL at ≤ 60 % of the deadlift top set, or hip thrust, 3 × 8–10. Calves optional. Plank 60 s + side plank 45 s a side, twice.                                                                |
-| Wed | home  | Light stretch. Recovery.                                                                                                                                                                                                                                                                                                                            |
-| Thu | gym   | **Full body, volume.** Ramp. Paused squat, 2s at depth, 3 × 5 at 80 % of Tuesday's top set. Incline 30°, paused, 3 × 6–8 at 80 % of Monday's top set. Rows 3 × 8–10. Pull-ups 3 sets at 60 % of max reps, chest-to-bar when you can. Hanging knee raises 3 × 10. Face pulls 2 × 15. Finisher: ONE unbroken bodyweight squat set, 1s down 1s up, stopped 5 reps short of failure. |
-| Fri | park  | **Skills.** Rope 8–10 min as the warm-up, clean stepping. Neck as now. Broad jumps 3 × 3, full rest, target ≥ 1.70 m. Bar block (§2.5). Pistols 3 × 5 a leg at the current step (§2.6).                                                                                                                                                             |
-| Sat | pool  | **Dive start session** (§3.1), then swim as you like; 60 min in total.                                                                                                                                                                                                                                                                              |
-| Sun | home  | Light stretch. Recovery.                                                                                                                                                                                                                                                                                                                            |
-
-**Every session ends at 60 minutes**, gym, park or pool. Main lift first. What is left undone is dropped, not squeezed in.
-
-**How to read a line.** *Top set × 5 at RPE 8* is one work set of five reps with two clean reps still in the tank. *Then 2 × 5 at −10 %* is two more sets of five with 10 % less weight than the top set: a 100 kg top set gives 2 × 5 at 90 kg. *Ramp* is the warm-up that climbs to the top set: 5 min rope or bike, then empty bar × 10, 50 % × 5, 70 % × 3, 85 % × 1-2, each a percentage of the day's top set, 1-2 min apart. For a 100 kg top set that is 20 × 10, 50 × 5, 70 × 3, 85 × 1-2, then the top set 100 × 5, then 90 × 5 twice. Round to the plates you have. Only the first barbell lift of a session gets the full ramp; the second gets two or three climbing sets. *Paused* means the bar stops dead at the bottom: hold it motionless on the chest for 1 s, no sinking, no bounce, then press; in the paused squat, hold 2 s at depth, stay tight, then drive up. *Best of three* means three attempts with full rest; the longest one counts.
-
-## 2. Loading rules
-1. **Top set = RPE 8**, two clean reps left in the tank. RPE 9 only in test weeks. A missed rep ends that exercise for the day.
-2. **Weekly jumps, fixed:** squat and deadlift +2.5 kg; incline and press +1.25 kg (buy microplates). Pull-ups and dips stay bodyweight: progress by one rep a set, then by a 3 s lowering, then by chest-to-bar pull-ups and straight-bar dips.
-3. **Stall rule:** the same load misses RPE 8 two weeks running → −10 % next week, rebuild with the same jumps.
-4. **Form is the load.** Film every top set. Hip crease below the knee, a visible 1 s pause on the chest, knees locked and shoulders back on the pull. A form fault repeats the load next week.
-5. **Bar block, Friday: kip to strict.** You start with 5 consecutive knee-kipping muscle-ups, so the transition is learned and the gate is open; only strict reps count toward the tier. Strict chest-to-bar pull-ups 4 × 3, legs still, 1 s pause at the sternum. Muscle-up negatives 3 × 2: from support, 5 s down through the transition to a dead hang. Strict attempts 3 × 1–2 from a motionless dead hang with a rolled towel squeezed between the feet; if the towel drops, the rep was a kip. Kipping muscle-ups 2 × 3 as the last thing, to keep the pattern. First strict rep → singles → 1-2-3 ladders → sets of 2–3 → 6.
-6. **Pistols:** box pistol → pole-assisted → free. +1 rep a set each week up to 3 × 8, then the next step; at free 3 × 8, add reps toward 24.
-7. **Bodyweight squats:** the Thursday finisher grows +5 reps a week to 110, then runs every second week to hold.
-8. **Grease the groove, optional from block 2:** Wed and Sun, 3–5 mini-sets of half your pull-up max, 10 min apart. The first thing to drop on any elbow ache.
-9. **Blocks 2–4, four-week waves.** A wave is four weeks in which the weight climbs for three weeks while the reps fall, then a deload week; the next wave starts a little heavier than the last. Week A: top set × 5 at RPE 8, then 2 × 5 at −10 %. Week B: top set × 3 at week A + 2.5 kg, then 2 × 3 at −10 %. Week C: top set × 3 at week B + 2.5 kg, RPE 9 allowed, then 1 × 3 at −10 %. Week D: deload. The next wave's week A = last week A + 2.5 kg (incline +1.25). The first week A of a block = the test 5RM −5 kg (incline −2.5). If week C felt like RPE 8 or less, the next wave jumps double. The last wave of a block is short: A, B, then the block's deload week, then the test week.
-10. **Deload** (weeks 11, 23, 35, 51 and every week D): loads −10 %, sets halved, no grease the groove.
-11. **Accessories are the hypertrophy work:** press, rows, dips, RDL or hip thrust and arms run at 8–12 reps and RPE 8–9, adding a rep, or 1.25 kg on a barbell, a week. Never a grind, and the first thing cut when the clock nears 60.
-
-## 3. Pool rules
-### 3.1 Block 1: the dive start, nothing else
-1. Only where the water under the start is at least 1.35 m deep, the World Aquatics minimum for blocks; deeper is better; never into unknown depth.
-2. Ten dives a Saturday, 1–2 min between them, fresh every time; stop at the first sloppy pair. Phone at water level on the side.
-3. Score each dive out of 3: one-hole entry (hands, head, hips, feet through the same spot), streamline held to the breakout, breakout at 8–12 m after 2–4 dolphin kicks. Clean = 3.
-4. One cue a week, not five: hips over hands, head between the arms, squeeze the streamline, kick before you pull.
-5. Goal: ==8 clean of 10 on video by week 12==, up from the 3 of 10 the journal logged in Q3. Block 2 adds the 15 m time from the signal.
-6. After the dives, swim whatever you like until the session clock reads 60 min. Continuous open-water style is fine; it is not training toward a tier.
-
-### 3.2 Parked: the endurance plan
-Starts when you say so, block 2 at the earliest, and pushes the pool checkpoints back by the weeks it waited. Coaching first: two or three freestyle sessions on body position, catch, breathing and stroke rate; the stroke is the whole limiter, the engine is already there. CSS every 6 weeks from a 400 and a 200 time trial, CSS per 100 m = (T400 − T200) ÷ 2. Saturday becomes, inside 60 min: 300 easy, 6 × 50 drill, a main set alternating 8 × 100 at CSS on 15–20 s with 2 × 400 or 1 × 800 at CSS + 3–5 s, every fourth week the 30-minute continuous swim or a 1500 m time trial, 5–10 min of open-water skills (sighting every 6–8 strokes, bilateral breathing, head-up 4 × 50 as 25 up and 25 easy, drafting when there is a partner), 100 easy. Wednesday becomes a 30–40 min technique swim. Progress: hold set A within 1 s of CSS, take 1 s/100 off. Long swim every second week, as far as 60 min allows at CSS + 10–15 s/100: about 1.7 km at today's pace, about 3 km at the Above-average pace; open water counts and is preferred when safe. The 3.8 and 5 km rows are therefore event days outside the cap, two or three a year, or they go. Fly, back, breast and IM are optional, 10 min when you feel like it; their rows live in README §1.
-
-## 4. Calendar
-
-Four blocks: three of 12 weeks, the last of 16. Block 1 = weeks 1–12 (Oct 5–Dec 27, 2026). Block 2 = weeks 13–24 (Dec 28–Mar 21, 2027). Block 3 = weeks 25–36 (Mar 22–Jun 13). Block 4 = weeks 37–52 (Jun 14–Oct 3). A test week closes each block.
-
-| Weeks | Dates              | What                                                                                      |
-| ----- | ------------------ | ----------------------------------------------------------------------------------------- |
-| 1     | Oct 5–11           | **Baseline battery** (§6). First scored dive set.                                         |
-| 2–3   | Oct 12–25          | Re-entry: every lift 3 × 5 at 85 % of its baseline 5RM.                                   |
-| 4–10  | Oct 26–Dec 13      | Linear: top set starts at baseline 5RM −5 kg (incline −2.5), then the fixed weekly jumps. |
-| 11    | Dec 14–20          | Deload.                                                                                   |
-| 12    | Dec 21–27          | **Test 1**, and the dive-start verdict. If the Cà Mau trip lands here, test in week 13.   |
-| 13–23 | Dec 28–Mar 14      | Block 2, waves (§2.9). Earliest start for the endurance plan (§3.2).                      |
-| 24    | Mar 15–21          | **Test 2.**                                                                               |
-| 25–35 | Mar 22–Jun 6       | Block 3, waves; the week C triples carry the tier check.                                  |
-| 36    | Jun 7–13           | **Test 3.** Singles allowed only where the 3RM already projects past the tier.            |
-| 37–51 | Jun 14–Sep 26      | Block 4, waves.                                                                           |
-| 52    | Sep 27–Oct 3, 2027 | **Test 4.**                                                                               |
-
-## 5. Checkpoints
-Expectations if the defaults hold and nothing breaks. "Baseline" = the week-1 number.
-
-| Week | Bar | Bodyweight work | Pool | Body |
-|---|---|---|---|---|
-| 12 | Deadlift 5RM ≥ 112 (1RM ~130). Incline 5RM 60, the journal goal. Squat 5RM baseline +12.5–15. | 110 unbroken squats. Pull-ups +40–50 %. First strict muscle-up, from the 5 kipping you start with. | Dive start 8 clean of 10 on video. | ~60 kg, waist unchanged. |
-| 24 | Deadlift 5RM 117.5–125 (1RM 135–144, inside the Strong band). Incline 5RM 64–66 (1RM 74–76). Squat 5RM baseline +22–27 (1RM ~120 only if the baseline was 80 × 5). | Pull-ups 18–20. Strict muscle-ups 3–4. Pistols 10–12 a leg. | Parked. | ~62 kg, then hold. |
-| 36 | Incline 3RM 72 = ==77==. Deadlift 3RM ≥ 130 = ==140==. Squat 3RM 112 = ==120== on the 80 × 5 baseline, otherwise 1RM ~105–110. | Pull-ups 22–24. Strict muscle-ups 5–6. Pistols 15–20. | Parked. | Hold. |
-| 52 | Every barbell row at the Strong tier for test-day bodyweight; the incline is the one likely to run a few weeks late. | Pull-ups ==24==, muscle-ups ==6==, pistols ==24==. | Parked. Once the endurance plan runs, expect the 30-minute and 1500 m rows about 12 months after its start, the Strong tier 24–36 months after it, and the 5 km row last, at two swims a week. | Hold. |
-
-## 6. Test-week battery
-- Mon: incline 5RM at tests 1 and 2, 3RM at tests 3 and 4, then max strict pull-ups, max dips, dead hang. 
-- Tue: squat 5RM or 3RM. 
-- Thu: deadlift 5RM or 3RM, then max unbroken squats and max pistols. 
-- Fri: max strict muscle-ups, kipping reps logged separately and never counted, then best of three broad jumps. 
-- Sat: the scored dive set, nothing timed. Everything on video. 1RM estimate = 5RM ÷ 0.87 or 3RM ÷ 0.93. Log one line per top set: date, load × reps, RPE, bodyweight, video.
-
-## 7. Eat, sleep, weigh
-Maintenance +300 kcal a day. Protein 1.8–2.2 g/kg, so 105–125 g. Creatine 3–5 g daily, already in the stack. Sleep 7 h minimum, 8 the target. Weigh every Monday morning: +0.25 kg a week to 60 kg at week 12 and 62 kg at week 24, then hold. Waist up more than 1 cm in a month → −150 kcal.
-
-## 8. Stop rules
-1. Pain ≤ 3/10 that settles within 24 h: train. Above 3, or still there at 48 h: that lift −20 % for a week. If it comes back: physio before it is loaded again.
-2. Sharp joint pain, numbness, anything that changes how you walk: stop, 72 h off that movement pattern.
-3. Shoulder ache under press + pull-ups + swim: drop grease the groove first, then dips, then swap the incline for neutral-grip dumbbells for a week. Face pulls are never skipped.
-4. Elbow ache: grease the groove off, pull-ups at 60% volume for two weeks.
-5. Lower back: deadlift once a week only, dead stop every rep, RDL ≤ 60% of the deadlift top set, no hitching ever.
-6. Rope ≤ 10–15 min and ≤ +10 % a week; stiff calves or Achilles in the morning → no rope that week.
-7. Under 6 h sleep or resting heart rate up 10%: −10% on every load, no top-set attempts.
-8. No 1RM before week 24. Tiers are read from 3–5RM sets.
-9. Dives: depth checked before the first one, every session. A sore neck after dives means no dives for a week. Open water: never alone, tow float, known exit, out at the first shiver.
-10. Two missed sessions in a week: repeat the week, never skip ahead.
+**Swimming.** The dive start is the only swim goal. Pace and distance targets are deferred; they live in README §1 for the day a stopwatch and the appetite arrive.
