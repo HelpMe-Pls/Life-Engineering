@@ -1,3 +1,6 @@
+> [!abstract] For the agent (added 2026-10-11)
+> RECORD, not law. EP is in the graveyard (R-07) on probation until Sun Nov 15 2026 (R-20, F-03 in [[This is it]]). Still live from this file: "Gửi anh" §5 (the 8-clause page, clause 8 first) and §4 (who does what: he sells, Khoi runs the platform), plus the rails in the Settled block (PayOS → ACB, hocvienksxd.com, Clerk on prod, Resend; Stream off). The phases, dates, cohort plan, kill criteria (§9, §9.5) and the Black Swan ledger are history: never plan from them. The "NOW" line in §0 is frozen at 2026-08-02. Words: [[CONTEXT]].
+
 > [!info]- An answer to the "What's your job?" question
 > I run the machine behind a Japanese-language + interview accelerator that gets Vietnamese civil engineers signed job offers in Japan — the instructor is the face; I am the platform, the funnel, and the ops.
 

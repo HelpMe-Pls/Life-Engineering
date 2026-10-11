@@ -1,5 +1,8 @@
 # Q4 Sprint — $3,000 cash by Dec 31 (Session 0 re-grill · 2026-09-17)
 
+> [!abstract] For the agent (added 2026-10-11)
+> RECORD. The Sep 2026 sprint that led to the route; superseded by [[This is it]] (R-07, R-12). Still useful: §2 (the asset inventory: what Khoi can truthfully sell) and §4 (the research briefs, as provenance). Its pick (§5) was replaced by the route on 2026-10-08. Never plan from it.
+
 > [!info] What this file is
 > The one runbook the 15-week sprint produces. [[Q4 Sprint Prompts]] is the SCHEDULE; the three runbooks stay LAW; §1 below is law for this sprint. R1–R10 were put to Khoi at the Session-0 read and **ruled 2026-09-17** (R9 overrides the runbook's ≤$50 default); §2 stays his to correct in place, dated. §5 THE PICK is written Sun Sep 20 (Session 2).
 

@@ -1,5 +1,8 @@
 # Venture 4 — the OPEN SLOT (verdict + grilling 2026-07-17)
 
+> [!abstract] For the agent (added 2026-10-11)
+> RECORD. Written 2026-07-17 for the old three-engine portfolio; superseded by [[This is it]] (ruled 2026-10-08/09, R-07). Read only for the history of the open-slot rulings and the break-glass card. Nothing here fires any more; the only firewall is [[This is it]] §4.
+
 **State: OPEN, deliberately.** The 2026-07-17 hunt (17 candidates, 2 triage rounds, 6-agent adversarial verification of the kills themselves, ~1.1M research tokens, $0 spent, nobody contacted) returned ==no candidate that satisfies the break-glass constraint set on live evidence — verdict RATIFIED by Khoi the same day.== Full record: [[breakglass-research/README]]. ==An empty slot with named re-open conditions beats a validated-looking runbook that dies on contact with its first quarter.== The kills are law under the graveyard rule: off-limits unless NEW primary evidence overturns the recorded kill reason.
 
 ## Settled — the two rulings (grilled + ruled 2026-07-17; do not relitigate at 2am)
