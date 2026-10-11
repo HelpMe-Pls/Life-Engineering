@@ -1,61 +1,54 @@
 # The TODOs
-### 5/10
-- [x] EO:
-	- [x] Q4 FAST goals
-	- [x] Planning for Events API code complete
-	- [ ] Drain the queue for `global-hubspot` 
+### 12/10
+- [ ] EO:
+	- [ ] Update sprint report & demo script
+	- [ ] Propose the renewal flow for review
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 13/10
+- [ ] EO weekly report & sprint goals update
 	- [ ] v1.1++ 
+	- [ ] Review the demo script
+	- [ ] Send the sprint report
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 6/10
-- [x] EO weekly report & sprint goals update
+- [ ] Live up to your standards
+### 14/10
+- [ ] EO sprint review:
+	- [ ] Record & summarize the meeting
+	- [ ] Sprint planning
 	- [ ] v1.1++ 
-	- [x] Review the demo script
-	- [x] Send the sprint report
-- [ ] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 7/10
-- [x] EO sprint review:
-	- [x] Record & summarize the meeting
-	- [x] v1.1++ 
-	- [x] Sprint planning
-	- [x] AIO certs++
-- [ ] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 8/10
-- [x] EO minimal work
-	- [x] v1.1++ 
-	- [x] Drain Claude quota: Psyllium Husk & upper right abs tightness research
-	- [x] Update the Claude skill playbook with new Pocock's skills
-	- [x] AIO certs++
-- [x] Venture++: research [this profile](https://www.upwork.com/freelancers/timn10) and ALL of his [related links](https://start.itstamhn.com/) 
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 9/10
-- [x] EO minimal work
-	- [x] v1.1++
-	- [x] AIO certs++
 - [ ] Venture++: ACB account?
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 10/10
+- [ ] Live up to your standards
+### 15/10
+- [ ] EO minimal work
+	- [ ] v1.1++ 
+	- [ ] Drain Claude quota: Financial research
+	- [ ] AIO certs++
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 16/10
+- [ ] EO minimal work
+	- [ ] v1.1++
+	- [ ] AIO certs++
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 17/10
 - [ ] Perfect dive start + 500m
 - [ ] Hefty breakfast
 - [ ] Groceries
-- [ ] Workshop
+- [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 11/10
+### 18/10
 - [ ] Splurge (if you're done with EP HITL)
-- [ ] Get the measurements
 - [ ] Weekly planning (including EO tickets)
 - [ ] Venture++
 	- [ ] Sunday scoreboard read + long-vol read with Claude (log the week's numbers)
-	- [ ] Financial advice
-	- [ ] Review the new runbook
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 # What a good day looks like
@@ -113,26 +106,50 @@ One row every Sunday, straight off the dashboards, ~5 minutes, numbers and dashe
 
 | Sunday     | hrs | Gov? | Upwork p/r/h/Σ$ | Asset s/MRR/u | Post | Signal |
 | ---------- | --- | ---- | --------------- | ------------- | ---- | ------ |
-| 2026-10-11 | _   | _    | _/0/0/0         | -/-/-         | _    | -      |
+| 2026-10-11 | _   | _    | 0/0/0/0         | -/-/-         | 0    | Pull (EP instructor) |
+| 2026-10-18 | _   | _    | _/0/0/0         | -/-/-         | _    | -      |
 
-*(Row 1 seeded 2026-10-09: the Upwork profile and the first 3 proposals are due this week. Fill `hrs`, `Gov?`, `p` and `Post` on Sunday.)*
+*(Row 2 seeded 2026-10-11: week 1 was a zero week — 0 proposals, 0 post; the Signal is the EP pull, ruled in [[This is it]] §1 "EP probation". Profile live by Thu Oct 15; the first 3 proposals Sun Oct 18, 20:00–22:00. Fill `hrs`, `Gov?`, `p` and `Post` on Sunday.)*
 
 **For Claude / any agentic harness asked to adapt this plan:** read [[This is it]] §10 and run it in that order — governor first, then the Signal, then the only question: ==did money or evidence move this week?== Invariants no proposal may touch: 20 h/wk · $300 Connects-only · the venture-free evening · sleep beats streaks · the gate dates · the one-switch rules. If the notes below read like analysis instead of reps, ==call out the green-lumber trap== — that is part of the job, not rudeness.
 
-## Calendar these 6 dates now
-1. Sun Oct 25 2026 — demo repo shipped; its link goes into every proposal from then on
-2. Mon Dec 7 2026 — ≥1 reply from ≤35 proposals, else the one profile rewrite
-3. Wed Jan 6 2027 — a stranger's money in ACB, else Upwork demoted to ≤2/wk and an Oct-2027 quit is off the table
-4. Thu Apr 8 2027 — the $3k check + ≥1 paying stranger on Paddle
-5. Sat Jul 10 2027 — MRR vs the floor → the owned test, or renew
-6. Sun Oct 10 2027 — the contract: quit only if the test held
+## Demand log (the instrument that picks the product — [[This is it]] §6)
+One row per post read or bid on, from Oct 9 — ==log every post you read, not only the ones you bid on==; the first 20 rows teach you the Connects price on YOUR posts before you spend a cent. Tags: `agent-build` · `claude-code-setup` · `mcp-server` · `crm→ads sync` · `tracking` · `other`. `bid?` / `reply?` / `hire?` = Y or N. Follow up every unanswered proposal once at day 5 and write `f/u <date>` in its notes.
+- **Dec 7 read:** the tag with the most `reply? = Y` becomes the profile title.
+- **Jan 6 read:** a job "repeats" when ≥5 rows in 60 days ask for the same deliverable (the notes column, in the client's words); the top repeat is the product, else §3's default (CRM → ad-platform conversion sync) stands.
+
+**Tally — one row every Sunday, numbers only (the six tag columns = rows per tag, Σ):**
+
+| Sunday     | rows Σ | bids Σ | replies Σ | hires Σ | agent-build | claude-code-setup | mcp-server | crm→ads sync | tracking | other |
+| ---------- | ------ | ------ | --------- | ------- | ----------- | ----------------- | ---------- | ------------ | -------- | ----- |
+| 2026-10-11 | 0      | 0      | 0         | 0       | 0           | 0                 | 0          | 0            | 0        | 0     |
+
+**The log — newest row at the bottom:**
+
+| date | post URL | title | tag | budget or rate | Connects asked | bid? | reply? | hire? | amount | notes (the exact deliverable in the client's words) |
+| ---- | -------- | ----- | --- | -------------- | -------------- | ---- | ------ | ----- | ------ | --------------------------------------------------- |
+|      |          |       |     |                |                |      |        |       |        |                                                     |
+
+## Calendar these 7 dates now
+1. Sun Nov 1 2026 — demo repo shipped (slipped from Oct 25 on 2026-10-11); its link goes into every proposal from then on
+2. Sun Nov 15 2026 — EP probation: ≥1 paid enrollment (not you, not him, not a test), else EP returns to the graveyard and Stream storage is cancelled
+3. Mon Dec 7 2026 — ≥1 reply from ≤35 proposals, else the one profile rewrite
+4. Wed Jan 6 2027 — a stranger's money in ACB, else Upwork demoted to ≤2/wk and an Oct-2027 quit is off the table
+5. Thu Apr 8 2027 — the $3k check + ≥1 paying stranger on Paddle
+6. Sat Jul 10 2027 — MRR vs the floor → the owned test, or renew
+7. Sun Oct 10 2027 — the contract: quit only if the test held
 
 ## Graveyard
-EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08. Parts reusable (EP codebase + PayOS→ACB, the Paddle seller account, the TDLR list, the Ledger collector). The record: [[Contingencies]] · [[Q4 Sprint]] · [[breakglass-research/README]]. The research behind the route: `C:\tmp\upwork-research\reports\Upwork freelancing vs owning an asset.md`.
+EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08. ==EP on probation 2026-10-11 → Nov 15 as a pull ([[This is it]] §1 "EP probation", §4); the other three stay dead.== Parts reusable (EP codebase + PayOS→ACB, the Paddle seller account, the TDLR list, the Ledger collector). The record: [[Contingencies]] · [[Q4 Sprint]] · [[breakglass-research/README]]. The research behind the route: `C:\tmp\upwork-research\reports\Upwork freelancing vs owning an asset.md`.
 
 ### Notes to the consultant (dated, raw — write below)
 #### Oct 9th, 2026
 - Route ruled and written ([[This is it]]). Scoreboard reset to the new columns. First 3 proposals due Sun Oct 11.
+#### Oct 11th, 2026
+- **Zero week:** 0 proposals, 0 post, profile not live (unexpected things ate the week). Firewall row: "<3 proposals → the week did not count; stack the reps." Phase 1 dates unchanged; the first 3 proposals go out Sun Oct 18, 20:00–22:00; the demo repo slips Oct 25 → Nov 1 (build hours go first in the cut order).
+- **Signal — Pull:** the EP instructor is back, wants to upload videos from Fri Oct 16 and sell, video-only to start. Ruled ([[This is it]] §1 "EP probation", §4 Nov 15): served inside the delivery cap (≤10 h this week, then ≤2 h/wk), ≤$15/mo of Stream storage recouped before the 50/50 split, no features, he sells. His gates: signed up on prod by Thu Oct 15 or no storage is bought; the 8-clause page ([[EP SaaS]] §5) signed before anything goes on sale. Kill Sun Nov 15 with 0 paid enrollments. Odds unsourced; his record is 0 asks in 3 months.
+- **Bank:** ACB VND + PayOS → ACB live since Jul 16, nothing to open; the USD account waits for a USD inflow (Phase 2). This week: the ledger, ACB ONE notifications, a statement export for Upwork's location check, the tax adviser booked with the Form 01/BK-STK and instructor-split questions.
+- EP revenue, if any, is written here until Nov 15; a scoreboard column is added only if EP survives probation.
 ---
 # Backlog
 - [Learn about animations](https://animations.dev/learn/animation-theory/intro)
@@ -144,6 +161,5 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08. Parts 
 	- [ ] Realtime file list & their notes whenever a new CUD action is committed
 	- [ ] Chapter detail page UI revamp
 	- [ ] Clear ALL open issues & PRs
-	- [ ] Propose Claude 5x?
 - Runbook:
 	- [ ] Open the USD account & get your debit card (ACB, at lunch)

@@ -5,33 +5,34 @@
 
 ## §0 The verdict (read once; do not relitigate at 2am)
 - **Question asked 2026-10-08:** copy the Upwork path of timn10 / Tam HN for ≥$3,000 cumulative NET (after VN tax) by Apr 8 2027? Own something paying $3,000/mo on ≤4 h/wk by Q3 2027?
-- **Answer, adversarial, six notes, every figure sourced:** ==NO to both as a plan.== (a) $3k net by Apr 8 needs 129–229 billable hours (hours exist: ~520) but ~10 fixed $500 wins ≈ 400 proposals against the 78–130 the committed motion sends; 10–13% of newcomers ever bill anything. (b) No verified case of $3k/mo at ≤4 h/wk exists in any shape; at 4 h/wk Upwork nets $262–682/mo; the verified owned winners decayed (ShipFast −91% in 9 months, ClaudeKit −89% to $1.8k/mo).
+- **Answer, adversarial, six notes, every figure sourced:** ==NO to both as a plan.== (a) $3k net by Apr 8 needs 129–229 billable hours (hours exist: ~520) but ~10 fixed $500 wins ≈ 400 proposals against the 78–130 the committed motion sends; 10–13% of newcomers ever bill anything. (b) No verified case of $3k/mo at ≤4 h/wk exists in any shape; at 4h/wk Upwork nets $262–682/mo; the verified owned winners decayed (ShipFast −91% in 9 months, ClaudeKit −89% to $1.8k/mo).
 - **Tam HN, what the profile proves vs what he sells:** Top Rated Plus, 100% JSS, 55 jobs = real. $65–70K "earned" = unverifiable; profile proves $15.6K gross, floor ≈$20.6K, ≈$1.0–1.7k/mo net-equivalent after Vietnam's levies, on 8–13 contracts open at once, relaunched Dec 2025 after 5 dormant years, Vancouver analytics career + 200K audience as proof. ==The one copyable part is his niche, and it is your stack.== No paid product behind his funnel yet; free masterclass Oct 14.
 - **Honest number this route can reach by Oct 10 2027:** $0–1,000/mo owned (most likely <$100) + $390–600/mo Upwork while still billing ~6 h/wk. ==Ruled 2026-10-09 (Q13): the Oct 10 2027 renewal is the PLANNED DEFAULT; quitting is a TEST OUTCOME (MRR ≥ floor AND ≤4 h/wk for 3 months), not a date.== Freedom is a gate, not a calendar entry.
 - **Why this route anyway:** it is the only shape that (1) uses the one selling motion your record supports (replying to posted jobs, never cold contact), (2) pays a Vietnam-only resident remotely on rails you already hold, (3) picks the product from paid demand you observed yourself instead of a guess, and (4) measures ownership (the 3-month freeze) instead of asserting it.
 
 ## §1 Settled rulings (the constraint set — move ONE consciously, never at 2am)
-| # | Ruling | Dated |
-|---|---|---|
-| Floor / target | Quit floor = today's burn **30–40M VND/mo (≈$1,150–1,540)**. $3k/mo = the life wanted, not the kill-line | 2026-10-08 |
-| Hours | **~20 h/wk while employed** (2 h weeknights + ~5 h weekend days). Venture-free evening + sleep beats streaks stand | 2026-10-08 |
-| Cash | **$300 hard cap for 6 months, no ads** | 2026-10-08 |
-| Face | Text + recorded video + live calls, under your real name | 2026-10-08 |
-| Owned = | Income still arriving **≥3 months after you stop** selling and shipping. Upwork contracts fund the build; they are not the end state | 2026-10-08 |
-| Audience lever | **UNPARKED**: text under your name (newsletter / GitHub / X / LinkedIn). No video | 2026-10-08 |
-| Graveyard | EP, Clock, Ledger, **Palmara**: dead. Parts reusable (EP codebase + PayOS→ACB VND rail · VN-verified Paddle seller account, software only · PayPal VN · TDLR list · Ledger collector). Record: [[Contingencies]], [[Q4 Sprint]] | 2026-10-08 |
-| 6-month number | **$3,000 cumulative, after fees AND after Vietnamese tax**, by Apr 8 2027 | 2026-10-08 |
-| Weekly motion | **3–5 marketplace proposals + 1 text post.** ==The week counts only if both went out== | 2026-10-08 |
-| Runway | 6–12 months at today's burn → a stranger's dollar inside 90 days is insurance, not optional | 2026-10-08 |
-| Citizenship | Vietnamese passport/CCCD only, never abroad, no foreign residency/bank/company. ==Every step below is remote-from-HCMC or it is not in this file== | 2026-10-08 |
-| Verdict | Accepted as §0 writes it | 2026-10-09 |
-| Niche | **Any job that uses AI, chosen by DEMAND, not taste** (his words: "as long as the job uses AI… the ONLY thing I care about is if it's ACTUALLY in demand"). Contract clauses: "don't worry about my contract" → struck as a blocker | 2026-10-09 |
-| Product rule | The demand log (§6) decides; default if nothing repeats by Jan 6 = §3's conversion sync. "I don't have a product in mind… I don't mind grinding" | 2026-10-09 |
-| Gates | §4 as written, "as long as it's REALISTIC" → every gate below carries the base-rate odds beside it | 2026-10-09 |
-| Connects | **$300 = singles only. No Freelancer Plus, no Boost, no ads.** His words: "the CHEAPEST proof that it WORKS for me" | 2026-10-09 |
-| Tax number | **Plan on 21–27%** (unregistered, taxed as wages) until irrefutable proof the route holds; **then register as a business individual (~8%) for the long run.** Tax adviser before the first payout either way | 2026-10-09 |
-| Oct 14 masterclass | Attend free, buy nothing, notes on his post-picking and proposal openings — **or skip it if sleep needs the hour** (sleep beats streaks) | 2026-10-09 |
-| Files | [[Weekly Tasks]] `# Venture` and [[Venture Tasks]] rebuilt minimal around this file (2026-10-09); EP/Clock/Ledger/Palmara history lives in git; the daily `# The TODOs` log untouched | 2026-10-09 |
+| #                  | Ruling                                                                                                                                                                                                                              | Dated      |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| Floor / target     | Quit floor = today's burn **30–40M VND/mo (≈$1,150–1,540)**. $3k/mo = the life wanted, not the kill-line                                                                                                                            | 2026-10-08 |
+| Hours              | **~20 h/wk while employed** (2 h weeknights + ~5 h weekend days). Venture-free evening + sleep beats streaks stand                                                                                                                  | 2026-10-08 |
+| Cash               | **$300 hard cap for 6 months, no ads**                                                                                                                                                                                              | 2026-10-08 |
+| Face               | Text + recorded video + live calls, under your real name                                                                                                                                                                            | 2026-10-08 |
+| Owned =            | Income still arriving **≥3 months after you stop** selling and shipping. Upwork contracts fund the build; they are not the end state                                                                                                | 2026-10-08 |
+| Audience lever     | **UNPARKED**: text under your name (newsletter / GitHub / X / LinkedIn). No video                                                                                                                                                   | 2026-10-08 |
+| Graveyard          | EP, Clock, Ledger, Palmara: dead. Parts reusable (EP codebase + PayOS→ACB VND rail · VN-verified Paddle seller account, software only · PayPal VN · TDLR list · Ledger collector). Record: [[Contingencies]], [[Q4 Sprint]]         | 2026-10-08 |
+| 6-month number     | **$3,000 cumulative, after fees AND after Vietnamese tax**, by Apr 8 2027                                                                                                                                                           | 2026-10-08 |
+| Weekly motion      | **3–5 marketplace proposals + 1 text post.** ==The week counts only if both went out==                                                                                                                                              | 2026-10-08 |
+| Runway             | 6–12 months at today's burn → a stranger's dollar inside 90 days is insurance, not optional                                                                                                                                         | 2026-10-08 |
+| Citizenship        | Vietnamese passport/CCCD only, never abroad, no foreign residency/bank/company. ==Every step below is remote-from-HCMC or it is not in this file==                                                                                  | 2026-10-08 |
+| Verdict            | Accepted as §0 writes it                                                                                                                                                                                                            | 2026-10-09 |
+| Niche              | **Any job that uses AI, chosen by DEMAND, not taste** (his words: "as long as the job uses AI… the ONLY thing I care about is if it's ACTUALLY in demand"). Contract clauses: "don't worry about my contract" → struck as a blocker | 2026-10-09 |
+| Product rule       | The demand log (§6) decides; default if nothing repeats by Jan 6 = §3's conversion sync. "I don't have a product in mind… I don't mind grinding"                                                                                    | 2026-10-09 |
+| Gates              | §4 as written, "as long as it's REALISTIC" → every gate below carries the base-rate odds beside it                                                                                                                                  | 2026-10-09 |
+| Connects           | **$300 = singles only. No Freelancer Plus, no Boost, no ads.** His words: "the CHEAPEST proof that it WORKS for me"                                                                                                                 | 2026-10-09 |
+| Tax number         | **Plan on 21–27%** (unregistered, taxed as wages) until irrefutable proof the route holds; **then register as a business individual (~8%) for the long run.** Tax adviser before the first payout either way                        | 2026-10-09 |
+| Oct 14 masterclass | Attend free, buy nothing, notes on his post-picking and proposal openings — **or skip it if sleep needs the hour** (sleep beats streaks)                                                                                            | 2026-10-09 |
+| Files              | [[Weekly Tasks]] `# Venture` and [[Venture Tasks]] rebuilt minimal around this file (2026-10-09); EP/Clock/Ledger/Palmara history lives in git; the daily `# The TODOs` log untouched                                               | 2026-10-09 |
+| EP probation | **Graveyard row amended for EP only.** The instructor returned 2026-10-11, wants to upload videos from Fri Oct 16 and sell, video-only to start. Served as §4's pull, NOT a revival: delivery ≤10 h the week of Oct 12, then ops ≤2 h/wk; cash ≤$15/mo of Stream storage ($5 per 1,000 min stored, $1 per 1,000 min watched), recouped before the 50/50 split; no new features; he sells, you never do. His gates: signed up on prod by Thu Oct 15 or no storage is bought; the 8-clause page ([[EP SaaS]] §5, clause 8 first: whose account, who declares tax) signed before anything goes on sale. Kill: §4's Nov 15 row. Phase dates untouched; the Oct 9–11 week is a zero week | 2026-10-11 |
 
 ==Every ruling above is settled. The frontier is empty. Nothing below is an assumption.==
 
@@ -56,6 +57,7 @@
 |---|---|---|
 | Every Sunday | Gov? YES twice in a row (broke 20 h OR borrowed sleep OR skipped the row) | Next week at HALF load, no negotiation |
 | Every Sunday | Proposals sent <3 OR post not sent | The week did not count; nothing else changes; stack the reps |
+| Nov 15 2026 | EP probation: 0 paid enrollments from anyone who is not you, him, or a test | EP back in the graveyard; Stream storage cancelled at month-end; no second probation; nothing else changes |
 | Dec 7 2026 | 0 replies from ~35 proposals | Switch ONCE: rewrite profile title + proposal opening to the tag with most views; bid only on posts <24 h old; price the next 2 bids at or below budget |
 | Jan 6 2027 | No stranger's money in the bank after ~50 proposals | Upwork demoted to ≤2 proposals/wk; ==quit-insurance NOT obtained → an Oct 2027 quit is off the table==; the build continues on the default product |
 | From Jan 7 | Delivery >8 h/wk for 4 straight weeks | Decline new contracts; serve what was paid for |
@@ -79,7 +81,7 @@
 - **What the salary is:** the cheapest funding the evidence supports (Antifragile barbell: safe leg = 43M gross at Edge8; convex leg = this route). The post-quit line, if Oct 10 2027 passes: Upwork stays at ≤2 proposals/wk as the insurance leg for 6 months; the audience channel (text) keeps compounding; the next asset is picked from the same demand log, never from a hunt.
 
 ## §6 The demand log (the instrument that picks the product — no log, no product)
-One sheet, one row per post read or bid on, from Oct 9. Columns: `date · post URL · title · tag (agent-build / claude-code-setup / mcp-server / crm→ads sync / tracking / other) · budget or rate · Connects asked · bid? · reply? · hire? · amount · notes (the exact deliverable in the client's words)`.
+One table ([[Weekly Tasks]] `## Demand log`), one row per post read or bid on, from Oct 9. Columns: `date · post URL · title · tag (agent-build / claude-code-setup / mcp-server / crm→ads sync / tracking / other) · budget or rate · Connects asked · bid? · reply? · hire? · amount · notes (the exact deliverable in the client's words)`.
 - **A job "repeats"** when ≥5 posts in 60 days ask for the same deliverable. The top repeat on **Jan 6** is the product; the default in §3 stands only if nothing repeats.
 - **The log also answers §2's sub-niche on Dec 7** (which tag drew replies) and the report's unknown #13 (Upwork's job counts, which its 403 pages hid from the researchers — your own count beats any vendor's).
 - **100 reps before judging** (Million Dollar Weekend's Law of 100): the first 100 proposals are about sending them, not about anyone liking them. At 3–5/wk that is the whole six months. Follow up every unanswered proposal once at day 5: a follow-up ask is twice as likely to land.
