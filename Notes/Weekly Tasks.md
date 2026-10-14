@@ -1,27 +1,27 @@
 # The TODOs
 ### 12/10
-- [ ] EO:
-	- [ ] Update sprint report & demo script
-	- [ ] Propose the renewal flow for review
-- [ ] Venture++
+- [x] EO:
+	- [x] Update sprint report & demo script
+	- [x] Propose the renewal flow for review
+- [x] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 13/10
-- [ ] EO weekly report & sprint goals update
-	- [ ] v1.1++ 
-	- [ ] Review the demo script
-	- [ ] Send the sprint report
-- [ ] Venture++
+- [x] EO weekly report & sprint goals update
+	- [x] v1.1++ 
+	- [x] Review the demo script
+	- [x] Send the sprint report
+- [x] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 14/10
-- [ ] EO sprint review:
-	- [ ] Record & summarize the meeting
-	- [ ] Sprint planning
+- [x] EO sprint review:
+	- [x] Record & summarize the meeting
+	- [x] Sprint planning
 	- [ ] v1.1++ 
-- [ ] Venture++: ACB account?
+- [x] Venture++: ACB account?
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 15/10
 - [ ] EO minimal work
 	- [ ] v1.1++ 
@@ -164,6 +164,7 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07).
 - EO:
 	- [ ] `next-steps.md`++
 	- [ ] Realtime file list & their notes whenever a new CUD action is committed
+	- [ ] Enable edit ( for `admin`) & delete for (for `master_admin`) in `/admin/reviews` & `/admin/meetings`
 	- [ ] Chapter detail page UI revamp
 	- [ ] Clear ALL open issues & PRs
 - Runbook:

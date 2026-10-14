@@ -317,6 +317,8 @@ def find_vault(arg):
 
 
 def main():
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")  # a Windows pipe defaults to cp1252, which cannot print the Sigma or the arrows; -I ignores PYTHONUTF8
     ap = argparse.ArgumentParser()
     ap.add_argument("--vault", default=None)
     ap.add_argument("--today", default=None)

@@ -4,10 +4,10 @@
 #
 #   bash setup.sh              check only; print the exact fix under every FAIL
 #   bash setup.sh --fix        create the links and set the two settings keys
-#   bash setup.sh --copy       no symlinks (Windows Git Bash): copy the two files into ~/.claude/skills; re-run after every edit
-#   bash setup.sh --claude-md  install AI/Global CLAUDE.md as ~/.claude/CLAUDE.md (the answer-style rules)
+#   bash setup.sh --copy       no symlinks (Windows Git Bash): copy the two files into ~/.claude/skills and link ~/.agents/skills/long-vol-consultant to the copy (a junction on Windows); re-run after every edit
+#   bash setup.sh --claude-md  put the Answer style rule (AI/Global CLAUDE.md) into ~/.claude/CLAUDE.md: creates a missing file, else adds or refreshes a marked block; never replaces an existing file
 #
-# It never touches the vault's Notes. It edits ~/.claude/settings.json only with --fix, and only two keys.
+# It never touches the vault's Notes. It edits ~/.claude/settings.json only with --fix, and only two keys; --copy also links ~/.agents/skills/long-vol-consultant to the copy.
 set -u
 FIX=0; COPY=0; CLAUDEMD=0
 for a in "$@"; do
@@ -29,6 +29,25 @@ ok()   { printf 'OK    %s\n' "$1"; }
 fail() { printf 'FAIL  %s\n      fix: %s\n' "$1" "$2"; fails=$((fails+1)); }
 note() { printf 'NOTE  %s\n' "$1"; }
 ver_ge() { [ "$(printf '%s\n%s\n' "$2" "$1" | sort -V | head -1)" = "$2" ]; }   # ver_ge <have> <min>
+# copy mode: the skill's Page 1 runs $HOME/.agents/skills/long-vol-consultant/scripts/position.py, so $AGENTS must lead to the copy:
+# a directory junction on Windows (Git Bash cannot create symlinks there; a junction needs no admin rights), a symlink elsewhere. Returns 0 when it does.
+physical_dir() {   # one spelling of a folder's physical path; on Git Bash the Windows form, because two mounts (/c/Users/... and /tmp) can spell the same folder
+  local p; p="$(cd "$1" 2>/dev/null && pwd -P)" || return 1
+  if command -v cygpath >/dev/null 2>&1; then cygpath -w "$p"; else printf '%s\n' "$p"; fi
+}
+agents_leads_to_copy() { [ -e "$AGENTS/scripts/position.py" ] && [ "$(physical_dir "$AGENTS")" = "$(physical_dir "$SKILL")" ]; }
+link_agents() {
+  agents_leads_to_copy && return 0
+  mkdir -p "$(dirname "$AGENTS")"
+  case "$(uname -s)" in
+    MINGW*|MSYS*|CYGWIN*)
+      if [ -L "$AGENTS" ]; then cmd //c rmdir "$(cygpath -w "$AGENTS")" >/dev/null 2>&1    # an old junction, even a dangling one: rmdir removes the link only, never the folder it points at
+      elif [ -e "$AGENTS" ]; then rm -rf "$AGENTS"; fi                                     # a stale real folder
+      cmd //c mklink //J "$(cygpath -w "$AGENTS")" "$(cygpath -w "$SKILL")" >/dev/null ;;
+    *) rm -rf "$AGENTS"; ln -sfn "$SKILL" "$AGENTS" ;;
+  esac
+  agents_leads_to_copy
+}
 
 echo "== /long-vol-consultant setup check · vault: $VAULT · home: $HOME"
 case "$(uname -s)" in MINGW*|MSYS*|CYGWIN*) note "Windows Git Bash detected: use --copy (symlinks there are not verified)";; esac
@@ -72,9 +91,15 @@ assert n == 1, "DEFAULT_VAULT line not found"
 open(dst, "w", encoding="utf-8").write(t)
 PY
   ok "copied SKILL.md and scripts/position.py into $SKILL (DEFAULT_VAULT = $VAULT); re-run --copy after every edit"
+  if link_agents; then ok "$AGENTS leads to the copy (the path the skill's Page 1 runs)"
+  else fail "$AGENTS does not lead to $SKILL/scripts/position.py (the path the skill's Page 1 runs)" "link $AGENTS to $SKILL by hand (Windows: cmd /c mklink /J <that path> <the copy's path>)"; fi
 elif [ -d "$SKILL" ] && [ ! -L "$SKILL" ]; then
   if cmp -s "$VAULT/AI/long-vol-consultant.md" "$SKILL/SKILL.md"; then ok "copy install: $SKILL/SKILL.md is up to date"
   else fail "copy install: $SKILL/SKILL.md differs from the vault file" "bash \"$HERE/setup.sh\" --copy"; fi
+  if cmp -s <(tr -d '\r' < "$VAULT/AI/long-vol-consultant/position.py" | sed '/^DEFAULT_VAULT = /d') <(tr -d '\r' < "$SKILL/scripts/position.py" | sed '/^DEFAULT_VAULT = /d'); then ok "copy install: $SKILL/scripts/position.py is up to date"
+  else fail "copy install: $SKILL/scripts/position.py differs from the vault script" "bash \"$HERE/setup.sh\" --copy"; fi
+  if agents_leads_to_copy; then ok "copy install: $AGENTS leads to the copy (the path the skill's Page 1 runs)"
+  else fail "copy install: $AGENTS/scripts/position.py is missing (the path the skill's Page 1 runs)" "bash \"$HERE/setup.sh\" --copy"; fi
 else
   # symlink mode, the Mac layout: ~/.claude/skills/<name> -> ../../.agents/skills/<name>, whose two files link into the vault
   if [ "$FIX" = 1 ]; then
@@ -126,15 +151,69 @@ sys.exit(fails)
 PY
 fails=$((fails + $?))
 
-# 6 · ~/.claude/CLAUDE.md = AI/Global CLAUDE.md (the answer-style rules the skill's wording follows)
-if [ "$CLAUDEMD" = 1 ]; then cp "$VAULT/AI/Global CLAUDE.md" "$HOME/.claude/CLAUDE.md"; ok "~/.claude/CLAUDE.md installed from AI/Global CLAUDE.md"
-elif cmp -s "$VAULT/AI/Global CLAUDE.md" "$HOME/.claude/CLAUDE.md" 2>/dev/null; then ok "~/.claude/CLAUDE.md is identical to AI/Global CLAUDE.md"
-else fail "~/.claude/CLAUDE.md differs from AI/Global CLAUDE.md (or is missing)" "bash \"$HERE/setup.sh\" --claude-md   (this replaces ~/.claude/CLAUDE.md)"; fi
+# 6 · ~/.claude/CLAUDE.md holds the Answer style rule (AI/Global CLAUDE.md, the rule the skill's wording follows): as the whole file (the Mac),
+#     or as a marked block inside a file that has the machine's own rules. --claude-md creates a missing file; an existing file is never
+#     replaced: the block is added or refreshed, nothing else changes (a file that is a vault copy, current or older, is brought to the current text).
+python3 - "$VAULT" "$HOME/.claude/CLAUDE.md" "$CLAUDEMD" <<'PY'
+import os, subprocess, sys
+if hasattr(sys.stdout, "reconfigure"): sys.stdout.reconfigure(encoding="utf-8")
+vault, target, fix = sys.argv[1], sys.argv[2], sys.argv[3] == "1"
+REL = "AI/Global CLAUDE.md"
+BEGIN = "<!-- answer-style: begin (the rule from AI/Global CLAUDE.md in the vault; setup.sh --claude-md keeps it current; edit it in the vault, never here) -->"
+END = "<!-- answer-style: end -->"
+FIX = "bash setup.sh --claude-md"
+def norm(s): return s.replace("\r\n", "\n").strip("\n")
+def read(p): return open(p, encoding="utf-8", newline="").read()   # newline="": keep \r\n so a CRLF file is written back as CRLF
+def git(*a):
+    try:
+        r = subprocess.run(["git", "-C", vault] + list(a), capture_output=True, text=True, encoding="utf-8")
+        return r.stdout if r.returncode == 0 else ""
+    except OSError:
+        return ""
+current = norm(read(os.path.join(vault, REL)))
+versions = [current]                                   # the current text first, then every committed version (a file equal to one of them is a vault copy)
+for h in git("log", "--format=%H", "--", REL).split():
+    t = norm(git("show", h + ":" + REL))
+    if t and t not in versions: versions.append(t)
+def write(text, crlf):
+    with open(target, "w", encoding="utf-8", newline="") as f: f.write(text.replace("\n", "\r\n") if crlf else text)
+def ok(m): print("OK    " + m)
+def fail(m, f): print("FAIL  " + m + "\n      fix: " + f); return 1
+fails = 0
+if not os.path.exists(target):
+    if fix: write(current + "\n", False); ok("~/.claude/CLAUDE.md created from AI/Global CLAUDE.md (there was none)")
+    else: fails += fail("~/.claude/CLAUDE.md is missing", FIX + "   (creates it from AI/Global CLAUDE.md)")
+else:
+    raw = read(target); crlf = "\r\n" in raw; text = raw.replace("\r\n", "\n"); lines = text.split("\n")
+    b = [i for i, l in enumerate(lines) if l.startswith("<!-- answer-style: begin")]
+    e = [i for i, l in enumerate(lines) if l.strip() == END and b and i > b[0]]
+    if norm(text) == current:
+        ok("~/.claude/CLAUDE.md is the vault's Answer style file, current")
+    elif norm(text) in versions:
+        if fix: write(current + "\n", crlf); ok("~/.claude/CLAUDE.md was an older copy of AI/Global CLAUDE.md (nothing of yours in it): brought to the current text")
+        else: fails += fail("~/.claude/CLAUDE.md is an older copy of AI/Global CLAUDE.md", FIX + "   (brings it to the current text; nothing of yours is in it)")
+    elif b and e:
+        body = norm("\n".join(lines[b[0] + 1:e[0]]))
+        if body == current: ok("~/.claude/CLAUDE.md keeps its own rules; its Answer style block is current")
+        elif fix: write("\n".join(lines[:b[0] + 1] + [current] + lines[e[0]:]), crlf); ok("~/.claude/CLAUDE.md: the Answer style block refreshed from AI/Global CLAUDE.md (nothing else changed)")
+        else: fails += fail("~/.claude/CLAUDE.md: its Answer style block is older than AI/Global CLAUDE.md", FIX + "   (refreshes the block only; nothing else changes)")
+    else:
+        found = next((v for v in versions if v in text), None)   # the rule pasted in by hand, without markers
+        if found is not None:
+            if fix: write(text.replace(found, BEGIN + "\n" + current + "\n" + END, 1), crlf); ok("~/.claude/CLAUDE.md: the Answer style text it carried is now a marked block, " + ("current" if found == current else "refreshed from AI/Global CLAUDE.md") + " (nothing else changed)")
+            elif found == current: ok("~/.claude/CLAUDE.md carries the current Answer style text, unmarked (" + FIX + " would mark it so later vault edits can be applied)")
+            else: fails += fail("~/.claude/CLAUDE.md carries an older Answer style text", FIX + "   (marks it as a block and refreshes it; nothing else changes)")
+        elif fix: write(text.rstrip("\n") + "\n\n" + BEGIN + "\n" + current + "\n" + END + "\n", crlf); ok("~/.claude/CLAUDE.md: the Answer style block appended (every line the file had is kept)")
+        else: fails += fail("~/.claude/CLAUDE.md has no Answer style rule", FIX + "   (appends it as a marked block; every line the file has is kept)")
+sys.exit(fails)
+PY
+fails=$((fails + $?))
 
 # 7 · smoke test: the installed script must find the vault and print the position
 if command -v python3 >/dev/null 2>&1 && [ -e "$SKILL/scripts/position.py" ]; then
   FIRST="$(python3 -I "$SKILL/scripts/position.py" 2>&1 | head -1)"
-  case "$FIRST" in "Vault: $VAULT") ok "position.py runs from $SKILL and prints '$FIRST'";; *) fail "position.py did not find the vault: '$FIRST'" "bash \"$HERE/setup.sh\" --fix   (or --copy)";; esac
+  GOT="${FIRST#Vault: }"; command -v cygpath >/dev/null 2>&1 && GOT="$(cygpath -u "$GOT" 2>/dev/null || echo "$GOT")"   # Git Bash: the script prints the Windows form of the vault path
+  case "$GOT" in "$VAULT") ok "position.py runs from $SKILL and prints '$FIRST'";; *) fail "position.py did not find the vault: '$FIRST'" "bash \"$HERE/setup.sh\" --fix   (or --copy)";; esac
 fi
 
 echo "== $fails FAIL"

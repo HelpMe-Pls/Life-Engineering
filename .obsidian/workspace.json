@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "AI/Global CLAUDE.md",
+                    "file": "AI/Claude Code Skill Playbook.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Global CLAUDE"
+                  "title": "Claude Code Skill Playbook"
                 }
               },
               {
@@ -32,13 +32,13 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/This is it.md",
+                    "file": "Notes/Daily Standup.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": false
                   },
                   "icon": "lucide-file",
-                  "title": "This is it"
+                  "title": "Daily Standup"
                 }
               },
               {
@@ -56,7 +56,7 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -207,7 +207,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 209.5
+    "width": 210.5
   },
   "right": {
     "id": "82a9e7d6600420b4",
@@ -296,25 +296,34 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "9b9ab17c16c89870",
+  "active": "467665af702d7a85",
   "lastOpenFiles": [
-    "Notes/Venture Tasks.md",
-    "Notes/strength-research/protocol.md",
+    "AI/Sprint AFK Setup Prompt.md",
+    "Notes/Daily Standup.md",
+    "AI/Global CLAUDE.md",
+    "AI/Claude Code Skill Playbook.md",
     "Notes/Weekly Tasks.md",
+    "Notes/Venture Tasks.md.tmp.8712.f83f431321be",
+    "Notes/strength-research/protocol.md",
     "Notes/This is it.md",
+    "AI/Global CLAUDE.md.tmp.16432.d45a50d3d8b6",
+    "AI/Global CLAUDE.md.tmp.16432.b20b28a495b8",
+    "AI/Global CLAUDE.md.tmp.16432.72c340145232",
+    "AI/Global CLAUDE.md.tmp.16432.2b9ad6db56ac",
+    "AI/Global CLAUDE.md.tmp.16432.f295d14c74c4",
+    "AI/Global CLAUDE.md.tmp.16432.3f2cf6668838",
+    "AI/Global CLAUDE.md.tmp.16432.5d8c67e26129",
+    "Notes/Business Bank.md",
+    "AI/long-vol-consultant/sed1duiJr",
+    "AI/Pasted image 20260401141615.png",
+    "Notes/Venture Tasks.md",
     "AI/long-vol-consultant Setup.md",
     "AI/long-vol-consultant/setup.sh",
     "CONTEXT.md",
-    "AI/long-vol-consultant/position.py",
-    "AI/long-vol-consultant",
     "AI/long-vol-consultant.md",
-    "AI/Global CLAUDE.md",
     "Notes/Q4 Sprint.md",
     "Tips & Tools/Entrepreneurship.md",
-    "Notes/Business Bank.md",
     "Notes/EP SaaS.md",
-    "AI/Claude Code Skill Playbook.md",
-    "Notes/Daily Standup.md",
     "Notes/2026.md",
     "Notes/strength-research/STROKES-IM.md",
     "Notes/strength-research/HUBERMAN-SWEEP.md",
@@ -322,18 +331,9 @@
     "Notes/strength-research/CALISTHENICS.md",
     "Notes/1-1 Bench.md",
     "Notes/1-1 Playbook.md",
-    "Notes/1-1 Runbook.html",
     "Notes/strength-research/README.md",
     "Notes/strength-research/SWIMMING.md",
     "Notes/strength-research/INCLINE-BENCH.md",
-    "Notes/strength-research/EXPERT-BENCHMARKS.md",
-    "Notes/strength-research",
-    "Notes/Sprint Tickets [Y26 Sprint 38].html",
-    "Notes/q4-research/S3-palm-app-exact-steps.md",
-    "Notes/q4-research",
-    "Notes/EP SaaS.md.tmp.47160.9419baa0e418",
-    "Notes/EP SaaS.md.tmp.47160.99d1097f3684",
-    "Notes/EP SaaS.md.tmp.47160.a11c1d386bde",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",
@@ -343,7 +343,6 @@
     "Notes/M4 Key-1.png",
     "Pasted image 20260620195825.png",
     "Tips & Tools/code-review.png",
-    "Tips & Tools/cron.png",
     "Untitled.canvas"
   ]
 }
