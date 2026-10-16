@@ -12,7 +12,7 @@ script: "AI/long-vol-consultant/setup.sh"
 ## The short way (hand it to Claude Code on that machine)
 1. You: clone the vault and install Claude Code, then sign in (steps 1–2 below); without both there is nothing to tell and nothing to read.
 2. You: start Claude Code in the vault (`cd <vault>/Notes && claude`) and type: `Read AI/long-vol-consultant Setup.md and do its steps 3 to 7.`
-3. Claude Code: checks Python, runs `setup.sh`, applies `--fix` and `--claude-md` (which never replaces an existing `~/.claude/CLAUDE.md`), and runs the check again until it prints `0 FAIL`.
+3. Claude Code: checks Python, runs `setup.sh`, applies `--fix` and `--claude-md` (which never replaces an existing `~/.claude/CLAUDE.md`, and also installs `~/.claude/reader-facing-docs.md`), and runs the check again until it prints `0 FAIL`.
 4. You, only if Claude Code is denied the edit of `~/.claude/settings.json` (the auto-mode classifier can block it): type `! bash AI/long-vol-consultant/setup.sh --fix` yourself; the `!` prefix runs the command in the session.
 5. You: quit Claude Code and start it again (a new skill loads at the next session), then type `/long` and press Tab.
 
@@ -25,7 +25,7 @@ script: "AI/long-vol-consultant/setup.sh"
 6. **The vault path is found, not typed**: `position.py` takes `--vault`, else `$LONG_VOL_VAULT`, else its own real path (the symlink points into the vault), else the path written in its `DEFAULT_VAULT` line; it prints `Vault: <path>` first.
 7. **`~/.claude/settings.json` has no `skillOverrides.long-vol-consultant`**: the value `off` hides the skill from the `/` menu and from `/long` + Tab (this is what broke it on the Mac on 2026-10-11).
 8. **`~/.claude/settings.json` has `"askUserQuestionTimeout": "10m"`**: a page idle for 10 minutes then auto-continues with the answers picked so far; unset means never (the dialog waits forever).
-9. **`~/.claude/CLAUDE.md` holds the Answer style rule from `AI/Global CLAUDE.md`** (the EXACT rule the skill's wording follows): as the whole file (the Mac), or as a marked block inside a file that has the machine's own rules (the Windows PC). `setup.sh --claude-md` creates the file when there is none; an existing file is never replaced, it gets the block added or refreshed (a file that is a vault copy, current or older, is brought to the current text).
+9. **`~/.claude/CLAUDE.md` holds the Answer style rule from `AI/Global CLAUDE.md`** (the EXACT rule the skill's wording follows): as the whole file (the Mac), or as a marked block inside a file that has the machine's own rules (the Windows PC). `setup.sh --claude-md` creates the file when there is none; an existing file is never replaced, it gets the block added or refreshed (a file that is a vault copy, current or older, is brought to the current text). It also copies `AI/Reader-facing docs.md` to `~/.claude/reader-facing-docs.md`, the note the rule points at (a plain copy, never hand-edited).
 10. **The same model settings as the Mac, if you want the same answers**: `model: opus`, `effortLevel: high`, `permissions.defaultMode: auto`, `tui: fullscreen`; the script reports these as NOTE, never changes them.
 
 ## The steps
@@ -34,7 +34,7 @@ script: "AI/long-vol-consultant/setup.sh"
 3. Check Python: `python3 --version` prints 3.9 or newer; if not, install Python 3 so that `python3` is on PATH.
 4. Run the check: `bash ~/Documents/Personal/Life-Engineering/AI/long-vol-consultant/setup.sh`.
 5. Apply the fixes: `bash ~/Documents/Personal/Life-Engineering/AI/long-vol-consultant/setup.sh --fix` (creates the symlinks, removes the hiding override, sets the timeout).
-6. Install the answer-style rule: `bash ~/Documents/Personal/Life-Engineering/AI/long-vol-consultant/setup.sh --claude-md` (creates `~/.claude/CLAUDE.md` from `AI/Global CLAUDE.md` when there is none; a file that exists keeps every line it has and gets the rule as a marked block, added or refreshed).
+6. Install the answer-style rule: `bash ~/Documents/Personal/Life-Engineering/AI/long-vol-consultant/setup.sh --claude-md` (creates `~/.claude/CLAUDE.md` from `AI/Global CLAUDE.md` when there is none; a file that exists keeps every line it has and gets the rule as a marked block, added or refreshed). It also installs `~/.claude/reader-facing-docs.md` from `AI/Reader-facing docs.md`.
 7. Run the check again: every line prints `OK` and the last line says `0 FAIL`.
 8. Restart Claude Code in the vault: `cd ~/Documents/Personal/Life-Engineering/Notes && claude`.
 9. Type `/long` and press Tab: it completes to `/long-vol-consultant`.
@@ -52,4 +52,4 @@ script: "AI/long-vol-consultant/setup.sh"
 3. The gate dates live twice, in `position.py` and in the LAW §C; change both in one edit (the script's header says so).
 4. Never set `skillOverrides.long-vol-consultant` on any machine; a `/doctor` cleanup did that once (2026-10-10) and the skill vanished from the `/` menu.
 5. If a Claude Code update changes the dialog's keys, the hint line at the bottom of the dialog is the truth; update the key legend in the skill from it.
-6. The Answer style rule lives in `AI/Global CLAUDE.md`: edit it there, commit, and run `setup.sh --claude-md` on each machine; a machine whose `~/.claude/CLAUDE.md` is the vault file gets the new text, a machine with its own rules gets its marked block refreshed, and nothing else in that file changes.
+6. The Answer style rule lives in `AI/Global CLAUDE.md`: edit it there, commit, and run `setup.sh --claude-md` on each machine; a machine whose `~/.claude/CLAUDE.md` is the vault file gets the new text, a machine with its own rules gets its marked block refreshed, and nothing else in that file changes. The Reader-facing docs note lives in `AI/Reader-facing docs.md` and reaches each machine the same way, as `~/.claude/reader-facing-docs.md`.

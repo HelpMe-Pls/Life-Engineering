@@ -18,25 +18,25 @@
 - [x] EO sprint review:
 	- [x] Record & summarize the meeting
 	- [x] Sprint planning
-	- [ ] v1.1++ 
+	- [x] v1.1++ 
 - [x] Venture++: ACB account?
 - [ ] Tao Te Ching++
 - [x] Live up to your standards
 ### 15/10
-- [ ] EO minimal work
-	- [ ] v1.1++ 
+- [x] EO minimal work
+	- [x] v1.1++ 
 	- [ ] Drain Claude quota: Financial research
-	- [ ] AIO certs++
+	- [x] AIO certs++
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 16/10
-- [ ] EO minimal work
-	- [ ] v1.1++
+- [x] EO minimal work
+	- [x] v1.1++
 	- [ ] AIO certs++
-- [ ] Venture++
+- [x] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 17/10
 - [ ] Perfect dive start + 500m
 - [ ] Hefty breakfast
@@ -105,11 +105,27 @@ One row per post read or bid on, from Oct 9 — ==log every post you read, not o
 | Sunday     | rows Σ | bids Σ | replies Σ | hires Σ | agent-build | claude-code-setup | mcp-server | crm→ads sync | tracking | other |
 | ---------- | ------ | ------ | --------- | ------- | ----------- | ----------------- | ---------- | ------------ | -------- | ----- |
 | 2026-10-11 | 0      | 0      | 0         | 0       | 0           | 0                 | 0          | 0            | 0        | 0     |
+|            |        |        |           |         |             |                   |            |              |          |       |
 
 **The log — newest row at the bottom:**
 
 | date | post URL | title | tag | budget or rate | Connects asked | bid? | reply? | hire? | amount | notes (the exact deliverable in the client's words) |
 | ---- | -------- | ----- | --- | -------------- | -------------- | ---- | ------ | ----- | ------ | --------------------------------------------------- |
+|      |          |       |     |                |                |      |        |       |        |                                                     |
+|      |          |       |     |                |                |      |        |       |        |                                                     |
+|      |          |       |     |                |                |      |        |       |        |                                                     |
+|      |          |       |     |                |                |      |        |       |        |                                                     |
+|      |          |       |     |                |                |      |        |       |        |                                                     |
+|      |          |       |     |                |                |      |        |       |        |                                                     |
+|      |          |       |     |                |                |      |        |       |        |                                                     |
+|      |          |       |     |                |                |      |        |       |        |                                                     |
+|      |          |       |     |                |                |      |        |       |        |                                                     |
+|      |          |       |     |                |                |      |        |       |        |                                                     |
+|      |          |       |     |                |                |      |        |       |        |                                                     |
+|      |          |       |     |                |                |      |        |       |        |                                                     |
+|      |          |       |     |                |                |      |        |       |        |                                                     |
+|      |          |       |     |                |                |      |        |       |        |                                                     |
+|      |          |       |     |                |                |      |        |       |        |                                                     |
 |      |          |       |     |                |                |      |        |       |        |                                                     |
 
 ## Calendar — the 8 dates (put each in your calendar app with the Sunday it is read on)

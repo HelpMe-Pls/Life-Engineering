@@ -5,7 +5,7 @@
 #   bash setup.sh              check only; print the exact fix under every FAIL
 #   bash setup.sh --fix        create the links and set the two settings keys
 #   bash setup.sh --copy       no symlinks (Windows Git Bash): copy the two files into ~/.claude/skills and link ~/.agents/skills/long-vol-consultant to the copy (a junction on Windows); re-run after every edit
-#   bash setup.sh --claude-md  put the Answer style rule (AI/Global CLAUDE.md) into ~/.claude/CLAUDE.md: creates a missing file, else adds or refreshes a marked block; never replaces an existing file
+#   bash setup.sh --claude-md  put the Global CLAUDE.md spine (AI/Global CLAUDE.md) into ~/.claude/CLAUDE.md (creates a missing file, else adds or refreshes a marked block; never replaces an existing file) and copy AI/Reader-facing docs.md to ~/.claude/reader-facing-docs.md
 #
 # It never touches the vault's Notes. It edits ~/.claude/settings.json only with --fix, and only two keys; --copy also links ~/.agents/skills/long-vol-consultant to the copy.
 set -u
@@ -53,7 +53,7 @@ echo "== /long-vol-consultant setup check · vault: $VAULT · home: $HOME"
 case "$(uname -s)" in MINGW*|MSYS*|CYGWIN*) note "Windows Git Bash detected: use --copy (symlinks there are not verified)";; esac
 
 # 1 · the vault files the skill reads and writes
-for f in "Notes/This is it.md" "Notes/Weekly Tasks.md" "Notes/Venture Tasks.md" "CONTEXT.md" "AI/long-vol-consultant.md" "AI/long-vol-consultant/position.py" "AI/Global CLAUDE.md"; do
+for f in "Notes/This is it.md" "Notes/Weekly Tasks.md" "Notes/Venture Tasks.md" "CONTEXT.md" "AI/long-vol-consultant.md" "AI/long-vol-consultant/position.py" "AI/Global CLAUDE.md" "AI/Reader-facing docs.md"; do
   if [ -f "$VAULT/$f" ]; then ok "vault file: $f"
   else fail "vault file missing: $f" "git -C \"$VAULT\" pull   (the vault is https://github.com/HelpMe-Pls/Life-Engineering.git)"; fi
 done
@@ -208,6 +208,15 @@ else:
 sys.exit(fails)
 PY
 fails=$((fails + $?))
+
+# 6b · ~/.claude/reader-facing-docs.md is a plain copy of AI/Reader-facing docs.md, the note ~/.claude/CLAUDE.md points at.
+#      --claude-md installs or refreshes it. The copy is never hand-edited, so a copy that differs is simply brought to the vault text.
+NOTE_SRC="$VAULT/AI/Reader-facing docs.md"; NOTE_DST="$HOME/.claude/reader-facing-docs.md"
+if [ -f "$NOTE_SRC" ]; then
+  if [ -f "$NOTE_DST" ] && cmp -s "$NOTE_SRC" "$NOTE_DST"; then ok "~/.claude/reader-facing-docs.md is current (a copy of AI/Reader-facing docs.md)"
+  elif [ "$CLAUDEMD" = 1 ]; then mkdir -p "$HOME/.claude" && cp "$NOTE_SRC" "$NOTE_DST" && ok "~/.claude/reader-facing-docs.md brought to the text of AI/Reader-facing docs.md"
+  else fail "~/.claude/reader-facing-docs.md is missing or differs from AI/Reader-facing docs.md" "bash setup.sh --claude-md   (copies the note; it is never hand-edited)"; fi
+fi
 
 # 7 · smoke test: the installed script must find the vault and print the position
 if command -v python3 >/dev/null 2>&1 && [ -e "$SKILL/scripts/position.py" ]; then
