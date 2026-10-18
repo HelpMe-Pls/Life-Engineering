@@ -1,52 +1,53 @@
 # The TODOs
-### 12/10
+### 19/10
 - [x] EO:
-	- [x] Update sprint report & demo script
-	- [x] Propose the renewal flow for review
-- [x] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 13/10
-- [x] EO weekly report & sprint goals update
-	- [x] v1.1++ 
-	- [x] Review the demo script
-	- [x] Send the sprint report
-- [x] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 14/10
-- [x] EO sprint review:
-	- [x] Record & summarize the meeting
-	- [x] Sprint planning
-	- [x] v1.1++ 
-- [x] Venture++: ACB account?
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 15/10
-- [x] EO minimal work
-	- [x] v1.1++ 
-	- [ ] Drain Claude quota: Financial research
-	- [x] AIO certs++
+	- [ ] Review sprint report & demo script
+	- [x] Fable Max: Create "before sprint review prompt(s)" to surface high-impact demo items and prepare sprint review report + demo script
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 16/10
-- [x] EO minimal work
-	- [x] v1.1++
-	- [ ] AIO certs++
-- [x] Venture++
+- [ ] Live up to your standards
+### 20/10
+- [ ] EO weekly report & sprint goals update
+	- [ ] v1.1++ 
+	- [ ] Resolve Altai sync issues
+	- [ ] Send the sprint report
+- [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 17/10
+- [ ] Live up to your standards
+### 21/10
+- [ ] EO sprint review:
+	- [ ] Record & summarize the meeting
+	- [ ] Sprint planning
+	- [ ] v1.1++ 
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 22/10
+- [ ] EO minimal work
+	- [ ] Events D1 & E4 wrap up
+	- [ ] Drain Claude quota: Financial research + grip strength training
+	- [ ] AIO certs++
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 23/10
+- [ ] EO minimal work
+	- [ ] v1.1++
+	- [ ] AIO certs++
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 24/10
 - [ ] Perfect dive start + 500m
 - [ ] Hefty breakfast
 - [ ] Groceries
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 18/10
+### 25/10
 - [ ] Splurge (if you're done with EP HITL)
 - [ ] Weekly planning (including EO tickets)
+	- [ ] Wrap up all HITL tasks
 - [ ] Venture++
 	- [ ] Sunday scoreboard read + long-vol read with Claude (log the week's numbers)
 - [ ] Tao Te Ching++
@@ -81,7 +82,8 @@ One row every Sunday, numbers and dashes only — words go under "Notes to the c
 | Sunday     | hrs | Gov? | Upwork p/r/h/Σ$ | Asset s/MRR/u | Post | Signal |
 | ---------- | --- | ---- | --------------- | ------------- | ---- | ------ |
 | 2026-10-11 | 0   | NO   | 0/0/0/0         | -/-/-         | 0    | F-02 · F-15 Pull (EP instructor) |
-| 2026-10-18 | _   | _    | _/0/0/0         | -/-/-         | _    | -      |
+| 2026-10-18 | ~10 | NO   | 3/0/0/0         | -/-/-         | 0    | F-02   |
+| 2026-10-25 | _   | _    | _/0/0/0         | -/-/-         | _    | -      |
 
 > [!abstract]- Column key (Σ = running total · `-` not live · `0` live, nothing happened · `_` fill on Sunday)
 > - **hrs** = all venture hours this week (20 = the ceiling)
@@ -105,28 +107,33 @@ One row per post read or bid on, from Oct 9 — ==log every post you read, not o
 | Sunday     | rows Σ | bids Σ | replies Σ | hires Σ | agent-build | claude-code-setup | mcp-server | crm→ads sync | tracking | other |
 | ---------- | ------ | ------ | --------- | ------- | ----------- | ----------------- | ---------- | ------------ | -------- | ----- |
 | 2026-10-11 | 0      | 0      | 0         | 0       | 0           | 0                 | 0          | 0            | 0        | 0     |
-|            |        |        |           |         |             |                   |            |              |          |       |
+| 2026-10-18 | 21     | 3      | 0         | 0       | 7           | 0                 | 4          | 3            | 6        | 1     |
 
 **The log — newest row at the bottom:**
 
-| date | post URL | title | tag | budget or rate | Connects asked | bid? | reply? | hire? | amount | notes (the exact deliverable in the client's words) |
-| ---- | -------- | ----- | --- | -------------- | -------------- | ---- | ------ | ----- | ------ | --------------------------------------------------- |
-|      |          |       |     |                |                |      |        |       |        |                                                     |
-|      |          |       |     |                |                |      |        |       |        |                                                     |
-|      |          |       |     |                |                |      |        |       |        |                                                     |
-|      |          |       |     |                |                |      |        |       |        |                                                     |
-|      |          |       |     |                |                |      |        |       |        |                                                     |
-|      |          |       |     |                |                |      |        |       |        |                                                     |
-|      |          |       |     |                |                |      |        |       |        |                                                     |
-|      |          |       |     |                |                |      |        |       |        |                                                     |
-|      |          |       |     |                |                |      |        |       |        |                                                     |
-|      |          |       |     |                |                |      |        |       |        |                                                     |
-|      |          |       |     |                |                |      |        |       |        |                                                     |
-|      |          |       |     |                |                |      |        |       |        |                                                     |
-|      |          |       |     |                |                |      |        |       |        |                                                     |
-|      |          |       |     |                |                |      |        |       |        |                                                     |
-|      |          |       |     |                |                |      |        |       |        |                                                     |
-|      |          |       |     |                |                |      |        |       |        |                                                     |
+| date       | post URL                                           | title                                                                                              | tag          | budget or rate                                  | Connects asked | bid? | reply? | hire? | amount | notes (the exact deliverable in the client's words)                                                                                                                                                                                                                                                                                                                                                                            |
+| ---------- | -------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------ | ----------------------------------------------- | -------------- | ---- | ------ | ----- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 2026-10-18 | https://www.upwork.com/jobs/~022111558809388363657 | AI Agent Developer Needed to Enhance Existing Travel AI Agent                                      | agent-build  | $100 fixed                                      | 18             | N    | N      | N     |        | "I'm looking for an experienced AI developer to enhance an existing AI agent on my travel-tech website. The agent currently supports ride bookings and experiences bookings. I want to extend its capabilities to handle travel package bookings and itinerary customisation, allowing users to modify and upgrade their itineraries through the agent."                                                                       |
+| 2026-10-18 | https://www.upwork.com/jobs/~022111273275174088021 | Build AI Agent                                                                                     | agent-build  | $10–$40/hr                                      | 19             | N    | N      | N     |        | "I need help building an AI Agent that can perform tasks like summarizing articles, answering questions, and generating content. The ideal freelancer should be able to set up the agent, train it on relevant data, and ensure it works reliably for everyday use."                                                                                                                                                           |
+| 2026-10-18 | https://www.upwork.com/jobs/~022111232010359406009 | AI agent build to pull data                                                                        | agent-build  | $1,000 fixed                                    | 23             | N    | N      | N     |        | "Looking to get a AI agent build using Claude AI and N8N , to pull local data foreclosure, probate, delinquent tax, divorces, Eviction, surplus, and a way to schedule emails to be sent for code violations, and to pull tax sale property"                                                                                                                                                                                   |
+| 2026-10-18 | https://www.upwork.com/jobs/~022111410410040744726 | Agentic AI Engineer for Intelligent Agents, RAG & Workflow Automation                              | agent-build  | $100 fixed                                      | 18             | N    | N      | N     |        | "build intelligent AI systems using Agentic AI, Retrieval-Augmented Generation (RAG), and Large Language Models (LLMs) … Build a functional AI agent using OpenAI, Anthropic, or an equivalent LLM API. Implement a RAG pipeline that retrieves relevant information"                                                                                                                                                          |
+| 2026-10-18 | https://www.upwork.com/jobs/~022111534538471854827 | AI Solution Architect: Claude AI & Agentic AI – 1-Hour RAG Pipeline Review                         | agent-build  | $65 fixed                                       | 10             | N    | N      | N     |        | "we launched an internal generative AI assistant that answers questions over our product documentation and client reports. It is a retrieval augmented generation setup … LangChain chunks and embeds the documents into a vector database that works as our knowledge base, semantic search finds the relevant passages, and Claude AI on AWS Bedrock writes the answer. Most answers are good."                              |
+| 2026-10-18 | https://www.upwork.com/jobs/~022111468937044856417 | Python FastAPI Backend: AI Document Extraction API (Claude Code, MVP)                              | agent-build  | $20 fixed                                       | 14             | N    | N      | N     |        | "I need a Python backend developer who actively uses Claude Code to build an MVP of an API that turns uploaded documents (invoices, receipts, contracts) into structured JSON using the Claude API. There is no frontend in this project, only a clean, well-documented backend."                                                                                                                                              |
+| 2026-10-18 | https://www.upwork.com/jobs/~022111557081779142073 | AI Agent Developer: Claude, Node/Python, GoHighLevel (Full-Time)                                   | agent-build  | $6–$7/hr, 30+ h/wk, 3–6 months                  | 20             | N    | N      | N     |        | "We're a US marketing agency rebuilding our whole delivery around AI agents. We need one strong developer to build them with our Head of AI, full-time, for at least 3 months. … Client onboarding agent (partly built): when a client signs, it creates their Slack channel, ClickUp task and welcome email, builds GoHighLevel workflows and automations, builds a landing page from their intake form, drafts ad campaigns" |
+| 2026-10-18 | https://www.upwork.com/jobs/~022108317203668568315 | MCP Server Setup for Claude Enterprise                                                             | mcp-server   | $15–$25/hr                                      | 22             | N    | N      | N     |        | "Seeking an expert to help stand up an MCP server into Claude Enterprise. The work involves integrating with key platforms such as Connectwise PSA, RMM, ITGlue, Sage, Auvik, Client Success, Pia, CloudRadial, Dynamics, and other MSP IT tools."                                                                                                                                                                             |
+| 2026-10-18 | https://www.upwork.com/jobs/~022109827630314594837 | Developer Needed — Secure MCP Server & ChatGPT Plugin Integration                                  | mcp-server   | $30–$50/hr (fixed-price proof of concept first) | 19             | Y | N      | N     |        | "design and deploy a secure, authenticated MCP server that integrates with ChatGPT. The goal is to provide authorized, paying users with access to a proprietary AI-guided interactive workflow through their own personal ChatGPT accounts." · bid Sun Oct 18 at $35/hr, fixed-price proof of concept offered (proposal 2111810712130793473); day 5 Thu Oct 22: no Upwork message possible until the client replies (R-21) |
+| 2026-10-18 | https://www.upwork.com/jobs/~022109605374012976984 | MCP Server Developer - Bug Fix                                                                     | mcp-server   | $25 fixed                                       | 11             | N    | N      | N     |        | "help fix a small bug in our existing setup. The task involves identifying the issue, fixing it, and making sure everything works properly. Please share a short Loom video walking us through an MCP server you've built or worked on"                                                                                                                                                                                        |
+| 2026-10-18 | https://www.upwork.com/jobs/~022109981777347850734 | MCP Server Setup for AI Health Agent                                                               | mcp-server   | $500 fixed                                      | 7              | N    | N      | N     |        | "We need help building and configuring an MCP server to support an AI health agent project. The work includes setting up the server environment, installing required dependencies, and ensuring the system is ready for AI-related workflows."                                                                                                                                                                                 |
+| 2026-10-18 | https://www.upwork.com/jobs/~022111169098684386854 | Meta Pixel & Conversions API Setup for 3 Funnels — $20                                             | tracking     | $20 fixed                                       | 8              | N    | N      | N     |        | "We need one person to configure Meta tracking across three campaigns inside our existing stack. The pixels are already created. Your job is configuration, event wiring, and verification, not strategy."                                                                                                                                                                                                                     |
+| 2026-10-18 | https://www.upwork.com/jobs/~022111538293266378069 | Meta Pixel and Conversions API Expert Needed to Audit and Fix Tracking for GoHighLevel to Meta Ads | crm→ads sync | $40–$125/hr                                     | 22             | N    | N      | N     |        | "An audit of our current Meta Pixel and Conversions API (CAPI) setup across all agent accounts and funnels - Correct pixel and server-side tracking between GoHighLevel and Meta - The right conversion events set up and prioritized so our campaigns optimize for real leads and appointments, not junk"                                                                                                                     |
+| 2026-10-18 | https://www.upwork.com/jobs/~022108254309861419673 | Marketing Attribution Audit: gclid, HubSpot Source Data, Offline Conversions                       | crm→ads sync | $25–$65/hr (fixed-price audit first, then hourly) | 22             | Y | N      | N     |        | "Activation happens in the product, often days after the ad click and often through our API, so conversions have to be sent server-side. Our paid-search attribution in HubSpot is broken. Contacts who carry a Google Ads click ID end up labeled Direct or Organic Search, so HubSpot's channel reports disagree with click-ID counts by a wide margin." · bid Sun Oct 18 at $35/hr, audit offered at $280 fixed (proposal 2111801032606494721); day 5 Thu Oct 22: no Upwork message possible until the client replies (R-21) |
+| 2026-10-18 | https://www.upwork.com/jobs/~022110810300343089895 | TripleSeat API to Meta Ads Integration                                                             | crm→ads sync | $20–$40/hr                                      | 16             | Y | N      | N     |        | "Need a developer to connect TripleSeat API/webhooks to Meta Ads campaigns. When a sales manager updates a lead status and adds a final revenue amount, the system should automatically send that information back to Meta Ads so revenue can be tracked." · bid Sun Oct 18 at $30/hr (proposal 2111809667722936321); day 5 Thu Oct 22: no Upwork message possible until the client replies (R-21) |
+| 2026-10-18 | https://www.upwork.com/jobs/~022111401633284182763 | Google Ads conversion                                                                              | tracking     | hourly, no rate shown                           | 10             | N    | N      | N     |        | "We are looking for someone to add a conversion goal in Google ads"                                                                                                                                                                                                                                                                                                                                                            |
+| 2026-10-18 | https://www.upwork.com/jobs/~022111517375434948249 | Senior Google Ads and Meta Ads Strategist with Conversion Tracking Expertise (Contract-to-Hire)    | other        | $14–$20/hr                                      | 17             | N    | N      | N     |        | "Senior Google Ads and Meta Ads Strategist with Conversion Tracking Expertise (Contract-to-Hire) … Please use the word SPACE in your proposal so we know you are paying attention, and include a short intro video if you are serious about the role."                                                                                                                                                                         |
+| 2026-10-18 | https://www.upwork.com/jobs/~022111672114554279004 | Google Ads & GA4 Tracking Expert Needed for Shopify Store                                          | tracking     | $50 fixed                                       | 10             | N    | N      | N     |        | "Audit our Google Ads and GA4 tracking setup in Shopify, including the Google & YouTube app and any custom pixels or Google Tag Manager integrations. Test the full customer journey, from landing page to checkout and completed purchase. Verify that product views, add-to-cart actions, checkout events, and purchases are tracked correctly."                                                                             |
+| 2026-10-18 | https://www.upwork.com/jobs/~022111443769307360597 | Google ads GA4 & GTM tracking specialist (Shopify)                                                 | tracking     | $10/hr                                          | 10             | N    | N      | N     |        | "We recently installed GA4 & connected it to Google ad account. But it's not passing over ecommerce related events - we want someone to help create the ecommerce events like add to cart, purchase etc - and also import in Google ad account."                                                                                                                                                                               |
+| 2026-10-18 | https://www.upwork.com/jobs/~022111109133624239388 | Google Analytics Certified Expert With Cloudflare Experience Needed                                | tracking     | hourly, no rate shown                           | 14             | N    | N      | N     |        | "I am seeking a Google Analytics certified expert with proven Cloudflare knowledge and hands-on experience to troubleshoot my website's analytics and tracking setup. … I need an expert to investigate a Google Tag Gateway connection issue and determine whether it is affecting Google Analytics tracking"                                                                                                                 |
+| 2026-10-18 | https://www.upwork.com/jobs/~022110402612742082035 | GA4, GTM, Google Ads + Meta Pixel/CAPI Setup (Framer + GoHighLevel)                                | tracking     | $300 fixed                                      | 18             | N    | N      | N     |        | "Need tracking rebuilt across Google and Meta. … Google Tag Manager: Install on a Framer site and GHL funnel pages GA4: Set up with conversions for booked calls and purchases Google Ads: Conversion tracking for booked calls and purchases, with enhanced conversions Meta: Consolidate 5 pixels into one existing dataset that's already running CAPI"                                                                     |
 
 ## Calendar — the 8 dates (put each in your calendar app with the Sunday it is read on)
 1. Sun Nov 1 2026 — demo repo shipped (a target; slipped from Oct 25 on 2026-10-11); its link goes into every proposal from then on
@@ -171,6 +178,13 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07).
 - EP revenue, if any, is written here until Nov 15; a scoreboard column is added only if EP survives probation.
 - Files re-laid out for skimming and for the skill (R-19 note): `## NOW` lives in [[Venture Tasks]] and is embedded above; IDs (R-/F-/U-) added to the LAW; [[CONTEXT]] holds the words; `/long-vol-consultant` rewritten as the Sunday wizard.
 - **Sunday read 16:59, ≈30 min:** hrs 0, Gov? NO, p/r/h/Σ$ 0/0/0/0, post 0 → F-02 ("the week did not count; nothing else changes; stack the reps"). Signal F-15 kept (R-20). Demand log: 0 rows. Block: Me — doubt, the urge to re-plan (§10.5, named); the next ask is box 1. Waiting on his signup, due Thu Oct 15. Box 1 ticked: the message with the three asks was sent today.
+#### Oct 18th, 2026
+- **Sunday read 20:28, ≈16 min:** hrs ~10, Gov? NO, p/r/h/Σ$ 3/0/0/0, post 0 → F-02 ("the week did not count; nothing else changes; stack the reps"). Other signals: none. Block: Me — the day job ate the week (the post did not go out). Unblock: F-02 · the cut order · §C · the post on Monday night.
+- **Profile live Thu Oct 15:** title "AI Agent Builds | Claude Code Setup | CRM and Ads Sync", rate $34.56/h, ID verified, W-8BEN done, DLB VND weekly at $100, GitHub linked. $0 spent.
+- **Demand log:** 21 rows read in Khoi's logged-in Chrome by Claude (notes = the client's words verbatim). Connects asked 7–23, median 17 (the LAW assumed ≈14). The "Claude Code" search returns clients who want a developer who uses Claude Code (tagged agent-build); 0 claude-code-setup posts. Phrases for week 3: AI agent · Claude Code · Claude API · MCP Claude · HubSpot integration · GA4 tracking (tags unchanged, §6).
+- **First 3 proposals, 19:00–20:00:** Marketing Attribution Audit (crm→ads sync, $35/h, 22 Connects, 15% fee) · TripleSeat → Meta Ads (crm→ads sync, $30/h, 16, 10% fee) · Secure MCP Server + ChatGPT (mcp-server, $35/h, 19, 10% fee). 57 of the 75 free Connects used, 18 left, $0 cash; buy singly before Sun Oct 25 (R-16).
+- **R-21 added:** Upwork opens no message thread before the client replies, so the day-5 follow-up applies only to answered proposals; never withdraw-and-resubmit.
+- Not answered at the read: box 7 (masterclass Oct 14, attended or skipped) and the instructor's signup status (R-20); box 4 stays open.
 ---
 # Backlog
 - [Learn about animations](https://animations.dev/learn/animation-theory/intro)

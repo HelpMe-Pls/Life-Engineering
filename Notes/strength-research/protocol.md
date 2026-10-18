@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/d05ub14w#OvlbcucIgeHlNr6g24mmAnTMNXGh098earwpYCn7vJg
-share_updated: 2026-10-16T12:31:20+07:00
+share_updated: 2026-10-16T21:46:12+07:00
 ---
 # Protocol: strong & athletic
 
