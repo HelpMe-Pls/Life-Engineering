@@ -1,38 +1,36 @@
 # The TODOs
 ### 19/10
 - [x] EO:
-	- [ ] Review sprint report & demo script
+	- [x] Review sprint report & demo script
 	- [x] Fable Max: Create "before sprint review prompt(s)" to surface high-impact demo items and prepare sprint review report + demo script
-- [ ] Venture++
+- [x] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 20/10
-- [ ] EO weekly report & sprint goals update
-	- [ ] v1.1++ 
-	- [ ] Resolve Altai sync issues
-	- [ ] Send the sprint report
-- [ ] Venture++
+- [x] EO weekly report & sprint goals update
+	- [x] Resolve Altai sync issues 
+	- [x] Update & send the sprint report
+- [x] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 21/10
-- [ ] EO sprint review:
-	- [ ] Record & summarize the meeting
-	- [ ] Sprint planning
-	- [ ] v1.1++ 
-- [ ] Venture++
+- [x] EO sprint review:
+	- [x] Record & summarize the meeting
+	- [x] Sprint planning
+- [x] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 22/10
-- [ ] EO minimal work
+- [x] EO minimal work
 	- [ ] Events D1 & E4 wrap up
-	- [ ] Drain Claude quota: Financial research + grip strength training
+	- [x] Drain Claude quota: Financial research + grip strength training
 	- [ ] AIO certs++
-- [ ] Venture++
+- [x] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 23/10
 - [ ] EO minimal work
-	- [ ] v1.1++
+	- [ ] Emily demo
 	- [ ] AIO certs++
 - [ ] Venture++
 - [ ] Tao Te Ching++
@@ -134,6 +132,13 @@ One row per post read or bid on, from Oct 9 — ==log every post you read, not o
 | 2026-10-18 | https://www.upwork.com/jobs/~022111443769307360597 | Google ads GA4 & GTM tracking specialist (Shopify)                                                 | tracking     | $10/hr                                          | 10             | N    | N      | N     |        | "We recently installed GA4 & connected it to Google ad account. But it's not passing over ecommerce related events - we want someone to help create the ecommerce events like add to cart, purchase etc - and also import in Google ad account."                                                                                                                                                                               |
 | 2026-10-18 | https://www.upwork.com/jobs/~022111109133624239388 | Google Analytics Certified Expert With Cloudflare Experience Needed                                | tracking     | hourly, no rate shown                           | 14             | N    | N      | N     |        | "I am seeking a Google Analytics certified expert with proven Cloudflare knowledge and hands-on experience to troubleshoot my website's analytics and tracking setup. … I need an expert to investigate a Google Tag Gateway connection issue and determine whether it is affecting Google Analytics tracking"                                                                                                                 |
 | 2026-10-18 | https://www.upwork.com/jobs/~022110402612742082035 | GA4, GTM, Google Ads + Meta Pixel/CAPI Setup (Framer + GoHighLevel)                                | tracking     | $300 fixed                                      | 18             | N    | N      | N     |        | "Need tracking rebuilt across Google and Meta. … Google Tag Manager: Install on a Framer site and GHL funnel pages GA4: Set up with conversions for booked calls and purchases Google Ads: Conversion tracking for booked calls and purchases, with enhanced conversions Meta: Consolidate 5 pixels into one existing dataset that's already running CAPI"                                                                     |
+| 2026-10-19 | https://www.upwork.com/jobs/~022112126476402864009 | HubSpot CRM Automation & Integration with Make.com or Zapier | other | $50 fixed | 10 | N | N | N |  | "The main task is to connect HubSpot with Google Sheets using Make.com or Zapier, so contact information can be updated automatically without having to enter everything manually." |
+| 2026-10-19 | https://www.upwork.com/jobs/~022112117224358220892 | HubSpot CRM Automation Expert Needed for Marketing Automation Optimization | other | hourly, no rate | 10 | N | N | N |  | "optimize our existing marketing automation setup. The ideal candidate should be experienced with HubSpot workflows, lead nurturing, contact segmentation, lifecycle stages, and automation troubleshooting." |
+| 2026-10-19 | https://www.upwork.com/jobs/~022112054380331052937 | HubSpot and NetSuite Integration Setup | other | $20–$40/hr | 26 | N | N | N |  | "configure HubSpot and connect it with NetSuite. The work includes setting up the initial HubSpot environment, mapping data fields, and ensuring the integration works smoothly between the two systems." · 50+ proposals |
+| 2026-10-19 | https://www.upwork.com/jobs/~022112102324309292622 | Shopify Revenue Attribution Analysis | tracking | hourly, no rate | 14 | N | N | N |  | "I need help verifying and explaining how revenue from Shopify is attributed to specific channels, including organic, social, and direct." |
+| 2026-10-19 | https://www.upwork.com/jobs/~022111964806542349035 | Google Tag Manager and Ads Specialist | tracking | $10–$60/hr | 10 | N | N | N |  | "set up and optimize tracking for our website using Google Tag Manager and Google Ads. The work includes implementing conversion tracking, fixing tag issues, improving data accuracy" |
+| 2026-10-19 | https://www.upwork.com/jobs/~022111802698726042965 | Integrate Claude and Supabase | claude-code-setup | hourly, no rate | 18 | N | N | N |  | "improve an existing integration between our Calude code skill and Supabase. ... as we work as a team, we need to find a way to work all of us in 1 place with claude, we need to know what each other did and do not work twice on anything." · 50+ proposals · first claude-code-setup row |
+| 2026-10-19 | https://www.upwork.com/jobs/~022111763309717355961 | Build AI lead follow-up & CRM automation (n8n + GoHighLevel) | agent-build | $10 fixed | 7 | N | N | N |  | "Capture leads from our web form into a CRM (GoHighLevel preferred) Auto-send a personalised email/SMS follow-up within minutes Use AI to qualify leads and tag them (hot / warm / cold)" |
 
 ## Calendar — the 8 dates (put each in your calendar app with the Sunday it is read on)
 1. Sun Nov 1 2026 — demo repo shipped (a target; slipped from Oct 25 on 2026-10-11); its link goes into every proposal from then on
@@ -185,6 +190,10 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07).
 - **First 3 proposals, 19:00–20:00:** Marketing Attribution Audit (crm→ads sync, $35/h, 22 Connects, 15% fee) · TripleSeat → Meta Ads (crm→ads sync, $30/h, 16, 10% fee) · Secure MCP Server + ChatGPT (mcp-server, $35/h, 19, 10% fee). 57 of the 75 free Connects used, 18 left, $0 cash; buy singly before Sun Oct 25 (R-16).
 - **R-21 added:** Upwork opens no message thread before the client replies, so the day-5 follow-up applies only to answered proposals; never withdraw-and-resubmit.
 - Not answered at the read: box 7 (masterclass Oct 14, attended or skipped) and the instructor's signup status (R-20); box 4 stays open.
+#### Oct 19th, 2026
+- **Text post 1 went out Mon Oct 19:** https://x.com/curiousKhoi/status/2112133114885800439 (the conversion-sync worker, ships Nov 1).
+- **Demand log:** 7 rows read Mon Oct 19 in Khoi's logged-in Chrome by Claude, from the six week-3 phrases (the 60 search results scanned, 7 opened). Connects asked 7–26. First claude-code-setup post: Integrate Claude and Supabase. No bids, $0, 18 Connects left.
+- **EP:** the instructor has still not signed up (due Thu Oct 15): no Stream storage bought (R-20). Upwork: 0 notifications on the 3 bids.
 ---
 # Backlog
 - [Learn about animations](https://animations.dev/learn/animation-theory/intro)
