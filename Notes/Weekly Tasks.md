@@ -22,30 +22,32 @@
 - [x] Live up to your standards
 ### 22/10
 - [x] EO minimal work
-	- [ ] Events D1 & E4 wrap up
+	- [x] Events D1 & E4 wrap up
 	- [x] Drain Claude quota: Financial research + grip strength training
-	- [ ] AIO certs++
+	- [x] AIO certs++
 - [x] Venture++
 - [ ] Tao Te Ching++
 - [x] Live up to your standards
 ### 23/10
-- [ ] EO minimal work
-	- [ ] Emily demo
-	- [ ] AIO certs++
-- [ ] Venture++
+- [x] EO minimal work
+	- [x] Emily demo
+	- [x] AFK runs & SOW review
+- [x] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 24/10
-- [ ] Perfect dive start + 500m
-- [ ] Hefty breakfast
-- [ ] Groceries
+- [x] Perfect dive start + 500m
+- [x] Hefty breakfast
+- [x] Groceries
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 25/10
 - [ ] Splurge (if you're done with EP HITL)
-- [ ] Weekly planning (including EO tickets)
-	- [ ] Wrap up all HITL tasks
+- [x] Weekly planning (including EO tickets)
+	- [x] Wrap up all HITL tasks
+	- [x] Renewal AFK based on defined priorities
+	- [x] Emily's demo script
 - [ ] Venture++
 	- [ ] Sunday scoreboard read + long-vol read with Claude (log the week's numbers)
 - [ ] Tao Te Ching++
