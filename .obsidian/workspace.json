@@ -54,9 +54,21 @@
                   "icon": "lucide-file",
                   "title": "protocol"
                 }
+              },
+              {
+                "id": "393e9287abedb63b",
+                "type": "leaf",
+                "state": {
+                  "type": "release-notes",
+                  "state": {
+                    "currentVersion": "1.14.5"
+                  },
+                  "icon": "lucide-book-up",
+                  "title": "Release Notes 1.14.5"
+                }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           },
           {
             "id": "8cedd05142699eb5",
@@ -296,11 +308,11 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "71262b55b0f9f46c",
+  "active": "08695eb55ecf940b",
   "lastOpenFiles": [
+    "Notes/Weekly Tasks.md",
     "Notes/strength-research/protocol.md",
     "Notes/This is it.md",
-    "Notes/Weekly Tasks.md",
     "Notes/Daily Standup.md",
     "AI/With Claude Code.md",
     "AI/Claude Code Skill Playbook.md",

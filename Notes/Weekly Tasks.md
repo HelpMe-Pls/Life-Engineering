@@ -1,28 +1,29 @@
 # The TODOs
 ### 26/10
-- [ ] EO:
+- [ ] EO with Opus Max:
 	- [ ] AFK sprint prep
-	- [ ] `altai-hubspot-sync` issues
-	- [ ] Review sprint review demo script (Emily?)
+	- [ ] `altai-hubspot-sync` issues 
+	- [ ] Events step-by-step e2e local run
+	- [ ] Review sprint review & Emily (mkt) demo script
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 27/10
-- [ ] EO weekly report & sprint goals update 
+- [ ] EO weekly report & sprint goals update (with Opus medium/xhigh)
 	- [ ] Rehearse
 	- [ ] Update & send the sprint report
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 28/10
-- [ ] EO sprint review:
+- [ ] EO sprint review with Opus Max:
 	- [ ] Record & summarize the meeting
 	- [ ] AFK `After sprint review`
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 29/10
-- [ ] EO minimal work
+- [ ] EO minimal work with Opus Low
 	- [ ] AFK++
 	- [ ] Drain Claude quota: Financial research + grip strength training
 	- [ ] AIO certs++
@@ -30,7 +31,7 @@
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 30/10
-- [ ] EO minimal work
+- [ ] EO minimal work Opus Low
 	- [ ] AFK++
 	- [ ] SOW review
 - [ ] Venture++
@@ -45,7 +46,7 @@
 - [ ] Live up to your standards
 ### 1/11
 - [ ] Splurge (if you're done with EP HITL)
-- [ ] Weekly planning (including EO tickets)
+- [ ] Weekly planning (including EO tickets with Opus Low)
 	- [ ] Wrap up all HITL tasks
 - [ ] Venture++
 	- [ ] Sunday scoreboard read + long-vol read with Claude (log the week's numbers)
