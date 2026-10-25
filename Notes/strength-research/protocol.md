@@ -82,8 +82,8 @@ One line each Sunday: the three top sets as load × reps @ RPE, best pull-up and
 | Wk  | Incline | Squat  | Deadlift | Pull-ups | Strict MU | BW squats | Dives /10 | Sessions /6 | BW kg | Tendon worst | Note         |
 | --- | ------- | ------ | -------- | -------- | --------- | --------- | --------- | ----------- | ----- | ------------ | ------------ |
 | 1   | 60 × 5  | 60 × 5 | 80 × 5   | 15       | 1         | 69        | 4         | 6           | 58    | 0            | baseline     |
-| 2   | 60 × 5  | 70 × 5 | 90 × 5   | 15       | 1         |           | 4         |             |       |              | re-entry     |
-| 3   |         |        |          |          |           |           |           |             |       |              | climb starts |
+| 2   | 60 × 5  | 70 × 5 | 90 × 5   | 15       | 1         | 100       | 4         | 6           | 58    | 0            | re-entry     |
+| 3   | 70 × 5  | 70 × 5 | 90 × 5   | 15       | 3         | 120       | 5         | 6           | 58    | 1            | climb starts |
 | 4   |         |        |          |          |           |           |           |             |       |              |              |
 | 5   |         |        |          |          |           |           |           |             |       |              |              |
 | 6   |         |        |          |          |           |           |           |             |       |              |              |

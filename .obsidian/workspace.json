@@ -10,38 +10,10 @@
           {
             "id": "2ed2b87e25932f50",
             "type": "tabs",
-            "dimension": 42.553191489361694,
+            "dimension": 47.470489038785836,
             "children": [
               {
                 "id": "8e701c92c4b0d885",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Notes/strength-research/protocol.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "protocol"
-                }
-              },
-              {
-                "id": "08695eb55ecf940b",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "AI/Global CLAUDE.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Global CLAUDE"
-                }
-              },
-              {
-                "id": "02f69ac79e963bc8",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -53,14 +25,43 @@
                   "icon": "lucide-file",
                   "title": "Daily Standup"
                 }
+              },
+              {
+                "id": "467665af702d7a85",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "AI/Claude Code Skill Playbook.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Claude Code Skill Playbook"
+                }
+              },
+              {
+                "id": "08695eb55ecf940b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Notes/strength-research/protocol.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "protocol"
+                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
             "type": "split",
-            "dimension": 57.446808510638306,
+            "dimension": 52.529510961214164,
             "children": [
               {
                 "id": "c3184acf40a6477e",
@@ -181,7 +182,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ACB",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -206,7 +207,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 222.5
+    "width": 209.5
   },
   "right": {
     "id": "82a9e7d6600420b4",
@@ -295,34 +296,26 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "02f69ac79e963bc8",
+  "active": "71262b55b0f9f46c",
   "lastOpenFiles": [
+    "Notes/strength-research/protocol.md",
+    "Notes/This is it.md",
     "Notes/Weekly Tasks.md",
     "Notes/Daily Standup.md",
-    "Notes/Daily Standup.md.tmp.9164.e64661553f16",
-    "Notes/Daily Standup.md.tmp.27100.81b28c6d22db",
-    "Notes/Daily Standup.md.tmp.27100.582d49367ba7",
-    "Notes/Daily Standup.md.tmp.27100.4bb248095c6b",
-    "Notes/Daily Standup.md.tmp.27100.d162b563ca32",
-    "Notes/Daily Standup.md.tmp.27100.fec12efdec15",
-    "Notes/Daily Standup.md.tmp.27100.1f1294352388",
-    "Notes/Daily Standup.md.tmp.27100.14816ecc11f4",
-    "Notes/This is it.md.tmp.38552.d30d70fd5483",
-    "Notes/Venture Tasks.md.tmp.38552.f72df6da2438",
-    "Notes/strength-research/protocol.md",
-    "Notes/Venture Tasks.md",
+    "AI/With Claude Code.md",
     "AI/Claude Code Skill Playbook.md",
     "AI/Global CLAUDE.md",
-    "AI/long-vol-consultant.md",
-    "AI/long-vol-consultant Setup.md",
     "AI/Reader-facing docs.md",
-    "Notes/This is it.md",
-    "Notes/Business Bank.md",
-    "AI/Sprint AFK Setup Prompt.md",
-    "AI/Pasted image 20260401141615.png",
+    "Notes/Venture Tasks.md",
+    "AI/long-vol-consultant Setup.md",
+    "AI/long-vol-consultant/setup.sh",
     "CONTEXT.md",
+    "AI/long-vol-consultant/position.py",
+    "AI/long-vol-consultant",
+    "AI/long-vol-consultant.md",
     "Notes/Q4 Sprint.md",
     "Tips & Tools/Entrepreneurship.md",
+    "Notes/Business Bank.md",
     "Notes/EP SaaS.md",
     "Notes/2026.md",
     "Notes/strength-research/STROKES-IM.md",
@@ -331,8 +324,16 @@
     "Notes/strength-research/CALISTHENICS.md",
     "Notes/1-1 Bench.md",
     "Notes/1-1 Playbook.md",
+    "Notes/1-1 Runbook.html",
     "Notes/strength-research/README.md",
     "Notes/strength-research/SWIMMING.md",
+    "Notes/strength-research/INCLINE-BENCH.md",
+    "Notes/strength-research",
+    "Notes/Sprint Tickets [Y26 Sprint 38].html",
+    "Notes/q4-research",
+    "Notes/EP SaaS.md.tmp.47160.9419baa0e418",
+    "Notes/EP SaaS.md.tmp.47160.99d1097f3684",
+    "Notes/EP SaaS.md.tmp.47160.a11c1d386bde",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",
@@ -342,6 +343,7 @@
     "Notes/M4 Key-1.png",
     "Pasted image 20260620195825.png",
     "Tips & Tools/code-review.png",
+    "Tips & Tools/cron.png",
     "Untitled.canvas"
   ]
 }

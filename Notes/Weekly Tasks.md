@@ -1,53 +1,52 @@
 # The TODOs
-### 19/10
-- [x] EO:
-	- [x] Review sprint report & demo script
-	- [x] Fable Max: Create "before sprint review prompt(s)" to surface high-impact demo items and prepare sprint review report + demo script
-- [x] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 20/10
-- [x] EO weekly report & sprint goals update
-	- [x] Resolve Altai sync issues 
-	- [x] Update & send the sprint report
-- [x] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 21/10
-- [x] EO sprint review:
-	- [x] Record & summarize the meeting
-	- [x] Sprint planning
-- [x] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 22/10
-- [x] EO minimal work
-	- [x] Events D1 & E4 wrap up
-	- [x] Drain Claude quota: Financial research + grip strength training
-	- [x] AIO certs++
-- [x] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 23/10
-- [x] EO minimal work
-	- [x] Emily demo
-	- [x] AFK runs & SOW review
-- [x] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 24/10
-- [x] Perfect dive start + 500m
-- [x] Hefty breakfast
-- [x] Groceries
+### 26/10
+- [ ] EO:
+	- [ ] AFK sprint prep
+	- [ ] `altai-hubspot-sync` issues
+	- [ ] Review sprint review demo script (Emily?)
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 25/10
+- [ ] Live up to your standards
+### 27/10
+- [ ] EO weekly report & sprint goals update 
+	- [ ] Rehearse
+	- [ ] Update & send the sprint report
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 28/10
+- [ ] EO sprint review:
+	- [ ] Record & summarize the meeting
+	- [ ] AFK `After sprint review`
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 29/10
+- [ ] EO minimal work
+	- [ ] AFK++
+	- [ ] Drain Claude quota: Financial research + grip strength training
+	- [ ] AIO certs++
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 30/10
+- [ ] EO minimal work
+	- [ ] AFK++
+	- [ ] SOW review
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 31/10
+- [ ] Perfect dive start + 500m
+- [ ] Hefty breakfast
+- [ ] Groceries
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 1/11
 - [ ] Splurge (if you're done with EP HITL)
-- [x] Weekly planning (including EO tickets)
-	- [x] Wrap up all HITL tasks
-	- [x] Renewal AFK based on defined priorities
-	- [x] Emily's demo script
+- [ ] Weekly planning (including EO tickets)
+	- [ ] Wrap up all HITL tasks
 - [ ] Venture++
 	- [ ] Sunday scoreboard read + long-vol read with Claude (log the week's numbers)
 - [ ] Tao Te Ching++
@@ -83,7 +82,7 @@ One row every Sunday, numbers and dashes only — words go under "Notes to the c
 | ---------- | --- | ---- | --------------- | ------------- | ---- | ------ |
 | 2026-10-11 | 0   | NO   | 0/0/0/0         | -/-/-         | 0    | F-02 · F-15 Pull (EP instructor) |
 | 2026-10-18 | ~10 | NO   | 3/0/0/0         | -/-/-         | 0    | F-02   |
-| 2026-10-25 | _   | _    | _/0/0/0         | -/-/-         | _    | -      |
+| 2026-10-25 | ~10 | NO   | 3/0/0/0         | -/-/-         | 1    | -      |
 
 > [!abstract]- Column key (Σ = running total · `-` not live · `0` live, nothing happened · `_` fill on Sunday)
 > - **hrs** = all venture hours this week (20 = the ceiling)
@@ -95,7 +94,7 @@ One row every Sunday, numbers and dashes only — words go under "Notes to the c
 > - Row 2 seeded 2026-10-11: week 1 was a zero week (0 proposals, 0 post); the first 3 proposals go out Sun Oct 18, 20:00–22:00.
 
 ## Demand log
-One row per post read or bid on, from Oct 9 — ==log every post you read, not only the ones you bid on==. The first 20 rows teach you the Connects price on YOUR posts before you spend a cent. Follow up every unanswered proposal once on day 5 (4 days after sending) and write `f/u <date>` in its notes.
+One row per post read or bid on, from Oct 9 — ==log every post you read, not only the ones you bid on==. The first 20 rows teach you the Connects price on YOUR posts before you spend a cent. Follow up once on day 5 (4 days after sending) only on a proposal the client has answered, and write `f/u <date>` in its notes; leave unanswered ones alone, never withdraw and resubmit (R-21).
 
 > [!abstract]- Rules of the log
 > - Tags: `agent-build` · `claude-code-setup` · `mcp-server` · `crm→ads sync` · `tracking` · `other`. `bid?` / `reply?` / `hire?` = Y or N.
@@ -108,6 +107,7 @@ One row per post read or bid on, from Oct 9 — ==log every post you read, not o
 | ---------- | ------ | ------ | --------- | ------- | ----------- | ----------------- | ---------- | ------------ | -------- | ----- |
 | 2026-10-11 | 0      | 0      | 0         | 0       | 0           | 0                 | 0          | 0            | 0        | 0     |
 | 2026-10-18 | 21     | 3      | 0         | 0       | 7           | 0                 | 4          | 3            | 6        | 1     |
+| 2026-10-25 | 31     | 6      | 0         | 0       | 8           | 1                 | 5          | 3            | 9        | 5     |
 
 **The log — newest row at the bottom:**
 
@@ -141,6 +141,9 @@ One row per post read or bid on, from Oct 9 — ==log every post you read, not o
 | 2026-10-19 | https://www.upwork.com/jobs/~022111964806542349035 | Google Tag Manager and Ads Specialist | tracking | $10–$60/hr | 10 | N | N | N |  | "set up and optimize tracking for our website using Google Tag Manager and Google Ads. The work includes implementing conversion tracking, fixing tag issues, improving data accuracy" |
 | 2026-10-19 | https://www.upwork.com/jobs/~022111802698726042965 | Integrate Claude and Supabase | claude-code-setup | hourly, no rate | 18 | N | N | N |  | "improve an existing integration between our Calude code skill and Supabase. ... as we work as a team, we need to find a way to work all of us in 1 place with claude, we need to know what each other did and do not work twice on anything." · 50+ proposals · first claude-code-setup row |
 | 2026-10-19 | https://www.upwork.com/jobs/~022111763309717355961 | Build AI lead follow-up & CRM automation (n8n + GoHighLevel) | agent-build | $10 fixed | 7 | N | N | N |  | "Capture leads from our web form into a CRM (GoHighLevel preferred) Auto-send a personalised email/SMS follow-up within minutes Use AI to qualify leads and tag them (hot / warm / cold)" |
+| 2026-10-25 | https://www.upwork.com/jobs/~022114016114333995922 | Meta / Hyros / CAPI? / Deduplication / Tracking | tracking | hourly, no rate shown | 6 | Y | N | N |  | "I am not getting accurate sales data. I'm using Meta ads mostly; with meta pixel and hyros reporting. The meta ad account is over and under reporting. Sometimes the meta and hyros accounts are on different time zones. I just need the data to be as accurate as possible and make sure meta is learning from good data." · bid Sun Oct 25 at $34.56/hr (proposal 2114212959115935745) · 20 to 50 proposals, 2 interviewing |
+| 2026-10-25 | https://www.upwork.com/jobs/~022113553721803345531 | Manage Meta Ad Account using Claude Code/Codex via Meta Developer App | mcp-server | $300 fixed | 7 | Y | N | N |  | "integrate Meta's Marketing API into our backend and expose it through an authenticated MCP server so an AI agent, such as ChatGPT/Codex, can manage authorized advertising accounts. … First milestone: connect my account and demonstrate the agent listing live ads through the integration, without browser automation." · bid Sun Oct 25 at $300 fixed (proposal 2114213511663751169) · the job page says "the client is suspended" at 16:41 |
+| 2026-10-25 | https://www.upwork.com/jobs/~022113750975315727250 | HubSpot and Stripe Integration Specialist | other | $150 fixed | 18 | Y | N | N |  | "Need a HubSpot expert to build a complete customer journey for recurring events purchased as one-off bookings. The work includes creating a registration form, setting up Stripe payments, creating lists, building workflows for purchase confirmation and follow-up, and designing reminder emails that automatically show event date and time for attendees." · bid Sun Oct 25 at $150 fixed (proposal 2114213718710972417) · 20 to 50 proposals, 1 interviewing |
 
 ## Calendar — the 8 dates (put each in your calendar app with the Sunday it is read on)
 1. Sun Nov 1 2026 — demo repo shipped (a target; slipped from Oct 25 on 2026-10-11); its link goes into every proposal from then on
@@ -196,6 +199,16 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07).
 - **Text post 1 went out Mon Oct 19:** https://x.com/curiousKhoi/status/2112133114885800439 (the conversion-sync worker, ships Nov 1).
 - **Demand log:** 7 rows read Mon Oct 19 in Khoi's logged-in Chrome by Claude, from the six week-3 phrases (the 60 search results scanned, 7 opened). Connects asked 7–26. First claude-code-setup post: Integrate Claude and Supabase. No bids, $0, 18 Connects left.
 - **EP:** the instructor has still not signed up (due Thu Oct 15): no Stream storage bought (R-20). Upwork: 0 notifications on the 3 bids.
+#### Oct 25th, 2026
+- **Upwork, read 16:41 in Khoi's logged-in Chrome by Claude:** 3 proposals sent today: Meta / Hyros tracking ($34.56/h, 6 Connects), Meta Ad Account via MCP ($300 fixed, 7), HubSpot + Stripe ($150 fixed, 18). 40 Connects bought today in one purchase for $6.60; 27 left. 0 messages, 0 offers, 0 replies on all 6 bids; no follow-up possible on the Oct 18 three (R-21). The Meta Ad Account job page now says "the client is suspended".
+- **Demo repo set up Sun Oct 25 (Next box 2, read on GitHub by Claude):** github.com/HelpMe-Pls/conversion-sync, created 11:51, last push 12:25. Shipped in it: v0, HubSpot won deals → Meta Conversions API (PR #2), and spec #4, Google Ads offline conversions (PR #8), plus the skills, the spine and the coding standards (PR #1). Workers config (wrangler.toml) and D1 migrations are in. Made **public** the same day after Claude scanned its full history: no keys, tokens or client data.
+- **Sunday read 14:15–14:40 (resumed run):** hrs ~10, Gov? NO, p/r/h/Σ$ 3/0/0/0 (r/h/$ from today's Upwork note), post 1 (Oct 19) → the week counts, no F-02; governor clear. Block: none.
+- **Hormozi video "How I Would Build a Personal Brand in 2027", read from its transcript by Claude:** not adopted; Khoi was just curious. Its stage 1 ("do epic": a result or shown work) is the reps; its ~5-year horizon misses F-05 (Wed Jan 6); §0 already ruled the audience is not the copyable part. What fits is already in: the weekly text post, and the Oct 19 post made Nov 1 a public date.
+- **Cut run 2026-10-25:** skipped pages 5 → filled 2026-10-25
+- **X replies posted by Claude in Khoi's Chrome, on his word:** under the Oct 19 post, to Mathias B (@mathiasvrb, open source = trust) and NextGen Fusion (@nextgenfusion, the 90-day click window; the reply asks how long their deals take to close). Khoi thinks both accounts are bots. Post at 40 views, 3 replies (1 hidden).
+- **R-21 checked in Khoi's Upwork by Claude:** a submitted proposal shows only Edit and Withdraw, no message button; the inbox is empty. Forum staff posts (2019–2022) say the same: no message before the client replies.
+- **Open for work left Off:** the badge costs 14 Connects a week (27 left), paid visibility under R-16; not turned on, nothing charged.
+- **Follow-up rule aligned with R-21:** position.py, the skill, the demand-log intro and the Standing line now say follow up only where the client answered.
 ---
 # Backlog
 - [Learn about animations](https://animations.dev/learn/animation-theory/intro)

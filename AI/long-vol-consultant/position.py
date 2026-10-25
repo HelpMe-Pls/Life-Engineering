@@ -201,7 +201,8 @@ def analyse(vault, today):
             sent = d(r[0])
         except ValueError:
             continue
-        if bid and not rep and "f/u" not in r[10].lower() and (today - sent).days >= FOLLOW_UP_AFTER_DAYS:
+        # R-21: Upwork opens no thread before the client replies, so only answered bids get the follow-up
+        if bid and rep and "f/u" not in r[10].lower() and (today - sent).days >= FOLLOW_UP_AFTER_DAYS:
             due.append(f"{r[0]} {r[2][:50]} (bid day {(today - sent).days + 1})")
     pos["demand_log"] = {"rows": len(log), "bids": bids, "replies": replies, "hires": hires, "connects_on_bids": connects, "per_tag": tags, "follow_ups_due": due}
 
@@ -273,7 +274,7 @@ def render(pos):
     L.append(f"Tally, last row: {pos['tally_last']}")
     dl = pos["demand_log"]
     L.append(f"Demand log: {dl['rows']} rows, {dl['bids']} bids, {dl['replies']} replies, {dl['hires']} hires, {dl['connects_on_bids']} Connects on bids; per tag: {dl['per_tag'] or '{}'}")
-    L.append("Follow-ups due (bid, no reply, day >= 5, no f/u yet): " + ("; ".join(dl["follow_ups_due"]) if dl["follow_ups_due"] else "none"))
+    L.append("Follow-ups due (bid, client replied, day >= 5, no f/u yet; R-21): " + ("; ".join(dl["follow_ups_due"]) if dl["follow_ups_due"] else "none"))
     bl = pos.get("blanks_from_a_cut_run", [])
     L.append("Blanks from a cut run (`_` in a past Sunday row or in ## NOW): " + ("; ".join(bl) if bl else "none"))
     L.append(f"Next moves open (Venture Tasks ## NOW): {len(pos['next_moves_open'])}")
