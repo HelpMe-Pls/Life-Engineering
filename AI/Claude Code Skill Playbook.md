@@ -36,7 +36,7 @@ Every recipe starts in a terminal **in the repo folder**: open Terminal, type `c
 |---|---|---|
 | Getting Started | Set up a machine or a repo | 1 · Setup 🧑→🚶 |
 | Main Flow | Add a feature, or plan a batch of tasks | 2 · Plan 🧑→🚶 |
-| Main Flow | Tweak something tiny — text, a label, a color | 2a · Quick change 🚶 |
+| Main Flow | Tweak one to three tiny things — text, a label, a color | 2a · Quick change 🚶 |
 | Main Flow | Build, review and ship the queue to production in one send | 3 · Run 🚶 |
 | Main Flow | Build one item, review a PR, or ship a PR by hand | 3a Build 🚶 · 3b Review 🚶 · 3c Ship 🚶 |
 | Shaping | Chart a feature too foggy to describe | 4 · Map the fog 🧑→🚶 |
@@ -47,7 +47,7 @@ Every recipe starts in a terminal **in the repo folder**: open Terminal, type `c
 | Engineering | Get clean-up ideas | 9 · Survey 🚶 |
 | Engineering | Smooth the next run after a hard one | 10 · Retro 🚶→🧑 |
 
-Feature: **2 → 3**, release included. Tiny tweak: **2a → 3c**. No row fits? Send `/ask-matt` and describe your situation — it routes you to the right skills. The Productivity helpers — `/handoff`, `/wait-what`, `/to-questionnaire` — appear where they are needed.
+Feature: **2 → 3**, release included. One to three tiny tweaks: **2a**, release included. No row fits? Send `/ask-matt` and describe your situation — it routes you to the right skills. The Productivity helpers — `/handoff`, `/wait-what`, `/to-questionnaire` — appear where they are needed.
 
 ## How to send a recipe
 1. New session in the repo folder. One recipe per session.
@@ -137,19 +137,24 @@ The agent reads the templates it needs from the [reference blocks](#agent-refere
 **Result:** Issues on GitHub, one ⚡ line each; the spec — the written plan — lives on the tracker. **Next →** Run (3).
 
 ### 2a. Quick change 🚶
-**When:** the whole change fits in one or two sentences and does not change how the product behaves — text, a label, a color, a link, an image. In doubt, use 2 — a tiny idea just makes a short interview. If the "tweak" is bigger than it looks, the agent stops and says so.
+**When:** one to three small changes, each one or two sentences — text, a label, a color, a link, an image — that do not change how the product behaves. One send builds, reviews and ships them to production. In doubt, use 2 — a tiny idea just makes a short interview.
+
+**Size guard:** each change must do only what you asked, in the place you named. It must add nothing to install or set up, change no stored data, and touch at most 3 files and 50 lines (tests not counted). The agent checks this before it edits anything, while it builds, and again before it merges. Past a limit, it stops, shows what grew, recommends a way forward and waits for you. Expect a change to be bigger? Say so in its line — that counts as your approval.
 
 ✏️ + 📋:
 ```
-/implement the small change below — on its own branch per the git-flow ADR; a regression test only where CODING_STANDARDS.md warrants one; code-review fixed point: the branch's base, no spec; open its PR without asking (body per the pr skill) and log one checked-off ⚡ line linking the PR in @docs/plans/next-steps.md; a new seam, or more than one small slice → stop and say if recipe 2 (Plan) is the route. The change:
-<what to change, where exactly, and the exact text or value to use>
+/implement the small changes below — three at most — then ship them. LIMITS per change, unless I approve more: only what I asked, in the place I named (a shared text, style or component that would also change other places is past it); one small slice; no new seam, dependency or environment variable; no data or schema change; at most 3 files and 50 changed lines, tests aside. Past a LIMIT at any point → stop for me: what grew; your options — go ahead as found, cut it back to what I named, drop it and ship the rest, or move it to recipe 2 (Plan) — and your recommendation; a 🧑 line filed; build and merge nothing more until I answer.
+SIZE CHECK before any edit: show each change with the files it will touch, about how many changed lines, and what a user will see change; all within the LIMITS → go straight on; more than three changes → the same stop.
+BUILD: all of them on one branch per the git-flow ADR; a regression test only where CODING_STANDARDS.md warrants one; code-review fixed point: the branch's base; spec: my change list below; open one PR without asking (body per the pr skill) and log one checked-off ⚡ line linking it in @docs/plans/next-steps.md.
+SHIP: first show the PR's changed files and line counts against the size check — a file it did not list (tests aside), or a change past a LIMIT → the same stop, the PR left unmerged; then verify green and integrate per the git-flow ADR — merge the PR into its base once green; if that base is not production, open or refresh the standing promotion PR into production (reuse one already open) listing every Issue it carries and the worst Merge Danger among them, and merge it once its checks are green — a one-way door no spec or ADR settled → stop for me; delete the PR's spine line and its merged branch, never the promotion PR's head; then watch the checks and deploys GitHub reports on production's new head until they finish — a red one → stop for me, the failure shown. The changes:
+<one to three changes, numbered, one per line: what to change, where exactly, and the exact text or value to use>
 ```
 
 ```
-/goal the PR URL and the full suite's passing output shown, and the checked-off ⚡ line linking the PR shown in the spine (docs/plans/next-steps.md) after the edit; OR parked under 🧑 with its blocker named, the 🧑 section shown; OR stopped on a fork for me — options + a recommendation shown, its 🧑 line filed; or stop after 10 turns and show where it stands
+/goal EITHER released: the size check shown before the first edit, and the PR's changed files and line counts shown against it before the merge; the PR URL and the full suite's passing output shown; the PR's merge output shown and its branch deleted; the promotion PR into production merged — its URL and merge output shown (none needed when the PR's base is production); production's new head shown with its checks and deploys green, or none reported; the PR's line gone with the ⚡ section of the spine (docs/plans/next-steps.md) shown after the edit; OR stopped at a LIMIT I have not answered yet — what grew, options + a recommendation shown, its 🧑 line filed, nothing merged; OR stopped before production — red checks, a protection gate, or a one-way door no spec or ADR settled — the open PR's URL and what merged shown, the reason parked as a 🧑 line; OR released with a red production check or deploy — the failure shown, its 🧑 line filed; OR parked under 🧑 with its blocker named, the 🧑 section shown; OR stopped on a fork for me — options + a recommendation shown, its 🧑 line filed; or stop after 30 turns and show where it stands
 ```
 
-**Next →** Ship (3c). Unsure about the result, or the diff grew? Review (3b) first.
+**When you return:** the changes are live, or the run waits for you on a 🧑 line — a change past its limits, or a stop under the Run's rules (3). Answer it as "If the agent pauses" shows. In a new session, a PR that only waits for release goes through Ship (3c).
 
 ### 3. Run — Build → Review → Ship to production in one send 🚶
 **When:** the ⚡ queue holds Issues (after 2). One session builds the whole spec on its integration branch, reviews the PR with fresh sub-agents and fixes what they find, merges it once green, then releases: it merges the promotion PR into production and watches the deploy. Nothing waits for you.
@@ -197,7 +202,7 @@ Two honest limits. The review runs inside the build's session: its two reviewers
 A big PR, or a pass that found a lot? Send it again in a fresh session until a pass files nothing new. Several PRs? One review each. **Next →** Ship (3c). Found a lot? Also Retro (10).
 
 ### 3c. Ship alone 🚶
-**When:** a PR passed review (3b), a quick change (2a) is ready, or a one-item build (3a) waits for release. It merges the PR, then releases to production under the Run's rules (3). ✏️ (replace `<N>`) + 📋:
+**When:** a PR passed review (3b), a quick change (2a) stopped short of release, or a one-item build (3a) waits for release. It merges the PR, then releases to production under the Run's rules (3). ✏️ (replace `<N>`) + 📋:
 ```
 Ship PR #<N>: gh pr checkout <N>; verify green; integrate per the git-flow ADR — merge it into its base once green; if that base is not production, open or refresh the standing promotion PR into production (reuse one already open) listing every Issue it carries and the worst Merge Danger among them, and merge it once its checks are green — a one-way door no spec or ADR settled → stop for me; delete the shipped item's spine line and its merged branch, never the promotion PR's head; then watch the checks and deploys GitHub reports on production's new head until they finish — a red one → stop for me, the failure shown
 ```

@@ -186,6 +186,8 @@ presumptuous (adj): taking liberties, presuming, bold, forward
 
 exemption (n): immunity, ==impunity==
 
+amnesty (n): general pardon, reprieve, absolution, immunity
+
 curt (adj): terse, brusque, rude or peremptory shortness
 
 peremptory (adj): imperious or arrogant self-assurance

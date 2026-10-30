@@ -54,18 +54,6 @@
                   "icon": "lucide-file",
                   "title": "protocol"
                 }
-              },
-              {
-                "id": "393e9287abedb63b",
-                "type": "leaf",
-                "state": {
-                  "type": "release-notes",
-                  "state": {
-                    "currentVersion": "1.14.5"
-                  },
-                  "icon": "lucide-book-up",
-                  "title": "Release Notes 1.14.5"
-                }
               }
             ],
             "currentTab": 2
@@ -311,17 +299,19 @@
   "active": "08695eb55ecf940b",
   "lastOpenFiles": [
     "Notes/Weekly Tasks.md",
-    "Notes/strength-research/protocol.md",
-    "Notes/This is it.md",
+    "Notes/Weekly Tasks.md.tmp.41296.815ad89445f5",
     "Notes/Daily Standup.md",
-    "AI/With Claude Code.md",
     "AI/Claude Code Skill Playbook.md",
+    "Notes/strength-research/protocol.md",
+    "Tips & Tools/English vocab.md",
+    "AI/CONTEXT.md",
+    "Notes/This is it.md",
+    "AI/With Claude Code.md",
     "AI/Global CLAUDE.md",
     "AI/Reader-facing docs.md",
     "Notes/Venture Tasks.md",
     "AI/long-vol-consultant Setup.md",
     "AI/long-vol-consultant/setup.sh",
-    "CONTEXT.md",
     "AI/long-vol-consultant/position.py",
     "AI/long-vol-consultant",
     "AI/long-vol-consultant.md",
@@ -338,14 +328,11 @@
     "Notes/1-1 Playbook.md",
     "Notes/1-1 Runbook.html",
     "Notes/strength-research/README.md",
-    "Notes/strength-research/SWIMMING.md",
-    "Notes/strength-research/INCLINE-BENCH.md",
     "Notes/strength-research",
     "Notes/Sprint Tickets [Y26 Sprint 38].html",
     "Notes/q4-research",
     "Notes/EP SaaS.md.tmp.47160.9419baa0e418",
     "Notes/EP SaaS.md.tmp.47160.99d1097f3684",
-    "Notes/EP SaaS.md.tmp.47160.a11c1d386bde",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",

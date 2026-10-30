@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/d05ub14w#OvlbcucIgeHlNr6g24mmAnTMNXGh098earwpYCn7vJg
-share_updated: 2026-10-25T21:09:11+07:00
+share_updated: 2026-10-25T21:12:18+07:00
 ---
 # Protocol: strong & athletic
 
@@ -83,8 +83,8 @@ One line each Sunday: the three top sets as load × reps @ RPE, best pull-up and
 | --- | ------- | ------ | -------- | -------- | --------- | --------- | --------- | ----------- | ----- | ------------ | ------------ |
 | 1   | 60 × 5  | 60 × 5 | 80 × 5   | 15       | 1         | 69        | 4         | 6           | 58    | 0            | baseline     |
 | 2   | 60 × 5  | 70 × 5 | 90 × 5   | 15       | 1         | 100       | 4         | 6           | 58    | 0            | re-entry     |
-| 3   | 70 × 5  | 70 × 5 | 90 × 5   | 15       | 3         | 120       | 5         | 6           | 58    | 1            | climb starts |
-| 4   |         |        |          |          |           |           |           |             |       |              |              |
+| 3   | 65 × 5  | 70 × 5 | 90 × 5   | 15       | 3         | 120       | 5         | 6           | 58    | 1            | climb starts |
+| 4   | 70 × 5  | 75 × 5 | 90 × 5   | 15       | 4         | 130       | 4         | 6           | 58    | 1            |              |
 | 5   |         |        |          |          |           |           |           |             |       |              |              |
 | 6   |         |        |          |          |           |           |           |             |       |              |              |
 | 7   |         |        |          |          |           |           |           |             |       |              |              |

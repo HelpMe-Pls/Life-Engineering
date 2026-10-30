@@ -1,42 +1,44 @@
 # The TODOs
 ### 26/10
-- [ ] EO with Opus Max:
-	- [ ] AFK sprint prep
-	- [ ] `altai-hubspot-sync` issues 
-	- [ ] Events step-by-step e2e local run
-	- [ ] Review sprint review & Emily (mkt) demo script
+- [x] EO with Opus Max:
+	- [x] AFK sprint prep
+	- [x] `altai-hubspot-sync` issues 
+	- [x] Events step-by-step e2e local run
+	- [x] Review sprint review & Emily (mkt) demo script
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 27/10
-- [ ] EO weekly report & sprint goals update (with Opus medium/xhigh)
-	- [ ] Rehearse
+- [x] EO weekly report & sprint goals update (with Opus medium/xhigh)
+	- [x] Rehearse (run the event setup prompt)
 	- [ ] Update & send the sprint report
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 28/10
-- [ ] EO sprint review with Opus Max:
-	- [ ] Record & summarize the meeting
-	- [ ] AFK `After sprint review`
+- [x] EO sprint review with Opus Max:
+	- [x] Record & summarize the meeting
+	- [x] AFK `After sprint review`
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 29/10
-- [ ] EO minimal work with Opus Low
-	- [ ] AFK++
-	- [ ] Drain Claude quota: Financial research + grip strength training
-	- [ ] AIO certs++
+- [x] EO minimal work with Opus xhigh
+	- [x] AFK++
+	- [x] Drain Claude quota
+	- [x] Send the Event sync prod request
+	- [x] AIO certs++
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 30/10
-- [ ] EO minimal work Opus Low
-	- [ ] AFK++
-	- [ ] SOW review
-- [ ] Venture++
-- [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] EO minimal work Opus Low
+	- [x] AFK++ (`global-hubspot` self-training prompts)
+	- [x] Draft Emily's response
+	- [x] Update the SOW LN review: `C:/Users/leekh/Documents/Edge8/Scopes/Scope [SOW user stories for review].html`
+- [x] Venture++
+- [x] Tao Te Ching++
+- [x] Live up to your standards
 ### 31/10
 - [ ] Perfect dive start + 500m
 - [ ] Hefty breakfast
@@ -145,6 +147,7 @@ One row per post read or bid on, from Oct 9 — ==log every post you read, not o
 | 2026-10-25 | https://www.upwork.com/jobs/~022114016114333995922 | Meta / Hyros / CAPI? / Deduplication / Tracking | tracking | hourly, no rate shown | 6 | Y | N | N |  | "I am not getting accurate sales data. I'm using Meta ads mostly; with meta pixel and hyros reporting. The meta ad account is over and under reporting. Sometimes the meta and hyros accounts are on different time zones. I just need the data to be as accurate as possible and make sure meta is learning from good data." · bid Sun Oct 25 at $34.56/hr (proposal 2114212959115935745) · 20 to 50 proposals, 2 interviewing |
 | 2026-10-25 | https://www.upwork.com/jobs/~022113553721803345531 | Manage Meta Ad Account using Claude Code/Codex via Meta Developer App | mcp-server | $300 fixed | 7 | Y | N | N |  | "integrate Meta's Marketing API into our backend and expose it through an authenticated MCP server so an AI agent, such as ChatGPT/Codex, can manage authorized advertising accounts. … First milestone: connect my account and demonstrate the agent listing live ads through the integration, without browser automation." · bid Sun Oct 25 at $300 fixed (proposal 2114213511663751169) · the job page says "the client is suspended" at 16:41 |
 | 2026-10-25 | https://www.upwork.com/jobs/~022113750975315727250 | HubSpot and Stripe Integration Specialist | other | $150 fixed | 18 | Y | N | N |  | "Need a HubSpot expert to build a complete customer journey for recurring events purchased as one-off bookings. The work includes creating a registration form, setting up Stripe payments, creating lists, building workflows for purchase confirmation and follow-up, and designing reminder emails that automatically show event date and time for attendees." · bid Sun Oct 25 at $150 fixed (proposal 2114213718710972417) · 20 to 50 proposals, 1 interviewing |
+| 2026-10-30 | https://www.upwork.com/jobs/~022116002489016403699 | HubSpot CRM & Recruitment Workflow Specialist — Complete Existing Setup, Automations & Testing | other | $400 fixed | 9 | Y | N | N |  | "take over the existing work, identify what remains unfinished, and bring the system to a functional, tested, and documented state. This is not a project to rebuild our CRM from scratch." · Rainy Day Pets, US, payment verified · bid Fri Oct 30 at $400 fixed, less than 1 month (proposal 2116102738491707393) · 20 to 50 proposals |
 
 ## Calendar — the 8 dates (put each in your calendar app with the Sunday it is read on)
 1. Sun Nov 1 2026 — demo repo shipped (a target; slipped from Oct 25 on 2026-10-11); its link goes into every proposal from then on
@@ -210,12 +213,15 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07).
 - **R-21 checked in Khoi's Upwork by Claude:** a submitted proposal shows only Edit and Withdraw, no message button; the inbox is empty. Forum staff posts (2019–2022) say the same: no message before the client replies.
 - **Open for work left Off:** the badge costs 14 Connects a week (27 left), paid visibility under R-16; not turned on, nothing charged.
 - **Follow-up rule aligned with R-21:** position.py, the skill, the demand-log intro and the Standing line now say follow up only where the client answered.
+#### Oct 30th, 2026
+- **Proposal 1 of 3 for week 4, sent Fri Oct 30 ~14:40 by Claude in Khoi's Chrome, on his word:** Rainy Day Pets, HubSpot CRM & Recruitment Workflow ($400 fixed, 9 Connects, no boost, 15% fee → $340). 18 Connects left. Two more proposals still due by Sun Nov 1 for the week to count (F-02); "We'll take care of the other 2 later." Skipped: HubSpot Starter Tier Setup (US only), Senior Marketing Analytics & CRM (HIPAA required, 22 Connects), Claude / MCP Go-to-Market Consultant (GTM launch record required, 22 Connects).
 ---
 # Backlog
 - [Learn about animations](https://animations.dev/learn/animation-theory/intro)
 - [Learn to be an AI Engineer](https://www.aihero.dev/ai-engineer-roadmap)
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
+- Financial + grip strength training research
 - EO:
 	- [ ] `next-steps.md`++
 	- [ ] Realtime file list & their notes whenever a new CUD action is committed
