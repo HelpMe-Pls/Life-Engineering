@@ -15,4 +15,4 @@ Dave wrote the training module's whole 5D plan himself on 28 Oct 2026 (v1.1, dec
 - **Migration number:** the plan's `0043_training_people.sql` collides with `0043_golive_exception_byline.sql` on dev; use the next free number (0064 on 28 Oct). Fix it in PR 1, never in chat.
 - Sprint 43 Cards 8 (5D plan) and 9 (design and wireframes) predate Dave's plan; Khôi decides what they become.
 
-Related: [[eo-call-2026-10-28]], [[old-infant-handling]] (Life-Engineering memory), [[khoi-calls-the-shots]].
+Related: [[eo-call-2026-10-28]], old-infant-handling (Life-Engineering memory), [[khoi-calls-the-shots]].

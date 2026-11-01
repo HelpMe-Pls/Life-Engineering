@@ -59,4 +59,4 @@ cd website && BASE_URL=https://eochapterhubspotrollout.com npm run test:e2e:depl
 ```
 The 4 smoke tests are read-only public/protection checks (request-access renders, anon /admin+/portal gated to /login, /signup→/request-access) — no local Supabase needed.
 
-Related: [[canonical-domain-eochapterhubspotrollout.com]], [[e2e-cicd-local-supabase-prod-safety]], [[local-browser-verify-recipe]].
+Related: canonical-domain-eochapterhubspotrollout.com, [[e2e-cicd-local-supabase-prod-safety]], [[local-browser-verify-recipe]].

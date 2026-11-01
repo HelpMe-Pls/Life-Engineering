@@ -1,59 +1,57 @@
 # The TODOs
 ### 2/11
-- [x] EO with Opus Max:
-	- [x] AFK sprint prep
-	- [x] `altai-hubspot-sync` issues 
-	- [x] Events step-by-step e2e local run
-	- [x] Review sprint review & Emily (mkt) demo script
-- [ ] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 3/11
-- [x] EO weekly report & sprint goals update (with Opus medium/xhigh)
-	- [x] Rehearse (run the event setup prompt)
-	- [ ] Update & send the sprint report
-- [ ] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 4/11
-- [x] EO sprint review with Opus Max:
-	- [x] Record & summarize the meeting
-	- [x] AFK `After sprint review`
-- [ ] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 5/11
-- [x] EO minimal work with Opus xhigh
-	- [x] AFK++
-	- [x] Drain Claude quota
-	- [x] Send the Event sync prod request
-	- [x] AIO certs++
-- [ ] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 6/11
-- [x] EO minimal work Opus Low
-	- [x] AFK++ (`global-hubspot` self-training prompts)
-	- [x] Draft Emily's response
-	- [x] Update the SOW LN review: `C:/Users/leekh/Documents/Edge8/Scopes/Scope [SOW user stories for review].html`
-- [x] Venture++
-- [x] Tao Te Ching++
-- [x] Live up to your standards
-### 7/11
-- [x] Perfect dive start + 500m
-- [x] Hefty breakfast
-- [x] Groceries
-- [x] Venture++
-- [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 8/11
-- [x] Splurge (if you're done with EP HITL)
-- [x] Weekly planning (including EO tickets with Opus Low)
+- [ ] EO with Opus ultra low:
+	- [ ] Send the `C:/Users/leekh/Documents/Edge8/Scopes/Scope [SOW user stories for review].html`
 	- [ ] Wrap up all HITL tasks
-- [x] Venture++
-	- [x] Sunday scoreboard read + long-vol read with Claude (log the week's numbers)
+	- [ ] AFK++ (`global-hubspot` self-training UI decision)
+- [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
+- [ ] Live up to your standards
+### 3/11
+- [ ] EO weekly report & sprint goals update (with Opus medium/xhigh)
+	- [ ] AFK sprint prep & Rehearse 
+	- [ ] Update & send the sprint report (with `event-sync` schedule cadence blocker)
+	- [ ] `global-hubspot` self-training implementation
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 4/11
+- [ ] EO sprint review with Opus Max:
+	- [ ] Record & summarize the meeting
+	- [ ] AFK `After sprint review`
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 5/11
+- [ ] EO minimal work with Opus xhigh/Max:
+	- [ ] AFK++
+	- [ ] Drain Claude quota (with research)
+	- [ ] AIO coaching session
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 6/11
+- [ ] EO minimal work Opus Low
+	- [ ] AFK++ 
+	- [ ] Contingencies
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 7/11
+- [ ] Perfect dive start + 500m
+- [ ] Hefty breakfast
+- [ ] Groceries
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 8/11
+- [ ] Splurge (if you're done with EP HITL)
+- [ ] Weekly planning (including EO tickets with Opus Low)
+	- [ ] Wrap up all HITL tasks
+- [ ] Venture++
+	- [ ] Long vol
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
 # What a good day looks like
 - Wake up at 5AM
 - Finish workout before 6:30AM
