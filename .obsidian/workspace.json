@@ -55,8 +55,7 @@
                   "title": "protocol"
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           },
           {
             "id": "8cedd05142699eb5",
@@ -76,20 +75,6 @@
                       "state": {},
                       "icon": "lucide-git-fork",
                       "title": "Graph view"
-                    }
-                  },
-                  {
-                    "id": "e232dbe8dc89d9cb",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "Notes/Business Bank.md",
-                        "mode": "source",
-                        "source": false
-                      },
-                      "icon": "lucide-file",
-                      "title": "Business Bank"
                     }
                   }
                 ]
@@ -114,7 +99,7 @@
                     }
                   },
                   {
-                    "id": "03418aa526fdbc06",
+                    "id": "19b3490e297a9cfa",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
@@ -128,7 +113,7 @@
                     }
                   },
                   {
-                    "id": "9b9ab17c16c89870",
+                    "id": "03418aa526fdbc06",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
@@ -296,24 +281,24 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "08695eb55ecf940b",
+  "active": "03418aa526fdbc06",
   "lastOpenFiles": [
-    "README.md",
-    "Notes/strength-research/protocol.md",
-    "Notes/Weekly Tasks.md",
     "Notes/Venture Tasks.md",
-    "settled-decision-must-be-un-said-in-both-places.md",
-    "e2e-ci-single-worker-constraint.md",
-    "Notes/day job/claude/memory-global-hubspot/MEMORY.md",
-    "Books/Books.md",
+    "Notes/Weekly Tasks.md",
+    "Notes/day job/claude/memory-global-hubspot/batch-2026-07-02-merged-promotion-200-pending.md",
+    "promotion-192-admin-uxperf-batch.md",
+    "Notes/day job/claude/memory-global-hubspot/batch-2026-07-05-5tasks-dev-promotion-214-pending.md",
+    "Notes/day job/claude/memory-global-hubspot/deployed-smoke-baseurl-and-prod-marker.md",
+    "Tips & Tools/You as an interviewer.md",
+    "canonical-domain-eochapterhubspotrollout.com.md",
+    "Notes/day job/claude/memory-global-hubspot/canonical-domain-eochapterhubspotrollout.md",
     "Notes/2026.md",
+    "settled-decision-must-be-un-said-in-both-places.md",
+    "Notes/day job/claude/memory-global-hubspot/MEMORY.md",
     "Notes/Daily Standup.md",
-    "AI/Claude Code Skill Playbook.md",
-    "Notes/day job/Edge8/AFK/Start/Sprint Tickets [Y26 Sprint 43] AFK prompt.md",
-    "Notes/day job/Edge8/AFK/End/AFK Session Report [2026-10-28] Sprint 43.html",
-    "Notes/day job/Edge8/AFK/End/AFK Session Report [2026-10-17].html",
-    "Notes/day job/Edge8/HITL/End/HITL Session Report [2026-10-28] Sprint 43.html",
-    "Notes/day job/Edge8/HITL/Start/HITL Pre-flight [2026-10-21] Sprint 42.html",
+    "Notes/day job/README.md",
+    "Notes/day job/README.md.tmp.12272.5df75aaa8321",
+    "Notes/day job/claude/reader-facing-docs.md",
     "Notes/day job/claude/memory-global-hubspot/write-edit-normalise-unicode-escapes.md",
     "Notes/day job/claude/memory-global-hubspot/worktree-junction-breaks-turbopack-build.md",
     "Notes/day job/claude/memory-global-hubspot/workflow-token-cannot-read-administration.md",
@@ -325,14 +310,14 @@
     "Notes/day job/claude/memory-global-hubspot/wave-board-enhancements-6item.md",
     "Notes/day job/claude/memory-global-hubspot/vitest-live-suites-run-in-ci-loadenv.md",
     "Notes/day job/claude/memory-global-hubspot/verify-running-branch-before-diagnosing.md",
-    "Notes/day job/claude/memory-global-hubspot/verifier-fleet-leaves-source-mutations.md",
-    "Notes/day job/claude/memory-global-hubspot/verified-token-proves-who-not-what-they-may-do.md",
-    "Notes/day job/claude/memory-global-hubspot/vercel-env-write-by-agent-recipe.md",
-    "Notes/day job/Edge8/Scopes/Scope [Member renewal].html",
     "Notes/day job/Edge8/Tickets/Sprint Tickets [Y26 Sprint 43].html",
-    "Notes/day job/Edge8/AFK/Start",
-    "Notes/day job/Edge8/AFK/End",
+    "Notes/day job/Edge8/Scopes/Scope [Member renewal].html",
+    "Notes/day job/Edge8/HITL/End/HITL Session Report [2026-10-28] Sprint 43.html",
+    "Notes/day job/Edge8/HITL/Start/HITL Pre-flight [2026-10-21] Sprint 42.html",
+    "Notes/day job/Edge8/AFK/End/AFK Session Report [2026-10-17].html",
+    "Notes/day job/Edge8/AFK/End/AFK Session Report [2026-10-28] Sprint 43.html",
     "Notes/day job/Edge8/Sprint review/sprint-42-review.html",
+    "Notes/day job/Edge8/HITL/End",
     "Notes/day job/Edge8/HITL/Start",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
