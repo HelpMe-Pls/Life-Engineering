@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Scope — Member Renewal</title>
+    <style>
+      :root {
+        --navy: #04102d;
+        --blue: #287be8;
+        --mint: #6ff2c1;
+        --pink: #d1458b;
+        --light: #eaeef2;
+        --muted: #66708a;
+        --highlight: #67e8f9;
+        /* The page's pink, darkened to 5.6:1 on white so small text stays readable. */
+        --error: #b8336f;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #fff;
+        color: var(--navy);
+        font:
+          16px/1.6 -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px 56px;
+      }
+      header {
+        border-bottom: 4px solid var(--mint);
+        padding-bottom: 18px;
+        margin-bottom: 24px;
+      }
+      h1 {
+        font-size: 2rem;
+        margin: 0 0 6px;
+        line-height: 1.2;
+      }
+      .meta {
+        color: var(--blue);
+        font-size: 0.92rem;
+        font-weight: 600;
+        margin: 0;
+      }
+      .meta span {
+        color: var(--navy);
+        font-weight: 400;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      h2 {
+        font-size: 1.25rem;
+        margin: 0;
+        padding-left: 12px;
+        border-left: 4px solid var(--blue);
+      }
+      p {
+        margin: 0;
+      }
+      ul,
+      ol {
+        margin: 0;
+        padding-left: 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .lede {
+        font-size: 1.05rem;
+      }
+      .status {
+        background: var(--light);
+        border-radius: 10px;
+        padding: 14px 18px;
+      }
+      .warn {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        background: #fdf1f6;
+        border-left: 4px solid var(--pink);
+        border-radius: 0 10px 10px 0;
+        padding: 14px 18px;
+      }
+      .warn h2 {
+        padding-left: 0;
+        border-left: 0;
+        color: var(--error);
+      }
+      .ask {
+        list-style: none;
+        padding-left: 0;
+        gap: 8px;
+      }
+      .ask li {
+        display: flex;
+        gap: 12px;
+        align-items: baseline;
+        padding: 10px 14px;
+        border: 1px solid var(--light);
+        border-left: 3px solid var(--pink);
+        border-radius: 0 8px 8px 0;
+      }
+      .ask .n {
+        flex: none;
+        font-weight: 700;
+        color: var(--pink);
+      }
+      .ask .q {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .answer summary {
+        width: fit-content;
+        cursor: pointer;
+        color: var(--blue);
+        font-size: 0.92rem;
+        font-weight: 600;
+      }
+      .answer textarea {
+        display: block;
+        width: 100%;
+        min-height: 5.6em;
+        margin-top: 8px;
+        padding: 8px 10px;
+        border: 1px solid #c9d1dc;
+        border-radius: 6px;
+        color: inherit;
+        font: inherit;
+        line-height: 1.5;
+        resize: vertical;
+      }
+      .answer textarea:focus-visible {
+        outline: 2px solid var(--blue);
+        outline-offset: 1px;
+      }
+      .answer textarea:disabled {
+        background: var(--light);
+      }
+      .answer textarea[aria-invalid='true'] {
+        border-color: var(--error);
+      }
+      /* "Saved…" at the left end of the line under the box, the limit note at the right. */
+      .save-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0 16px;
+        min-height: 1.3em;
+        margin-top: 4px;
+        font-size: 0.82rem;
+      }
+      .save-state {
+        color: var(--muted);
+      }
+      .limit-note {
+        margin-left: auto;
+        text-align: right;
+        color: var(--error);
+        font-weight: 600;
+      }
+      @keyframes saving-pulse {
+        50% {
+          opacity: 0.35;
+        }
+      }
+      code {
+        font-family: Consolas, 'Courier New', monospace;
+        font-size: 0.86em;
+        background: var(--light);
+        padding: 1px 5px;
+        border-radius: 4px;
+        overflow-wrap: anywhere;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 7px 12px;
+        border-bottom: 1px solid var(--light);
+        vertical-align: top;
+      }
+      td:last-child {
+        width: 4.5em;
+        text-align: right;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+      footer {
+        margin-top: 36px;
+        padding-top: 14px;
+        border-top: 1px solid var(--light);
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+      li[id] {
+        scroll-margin-top: 24px;
+        border-radius: 4px;
+      }
+      li:target {
+        animation: target-highlight 2s ease-in backwards;
+      }
+      @keyframes target-highlight {
+        from {
+          background-color: var(--highlight);
+          box-shadow: 0 0 0 6px var(--highlight);
+        }
+        to {
+          background-color: transparent;
+          box-shadow: 0 0 0 6px transparent;
+        }
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        html {
+          scroll-behavior: smooth;
+        }
+        /* The smooth scroll takes up to 0.9 s, so the 2 s fade starts after it. */
+        li:target {
+          animation-delay: 0.9s;
+        }
+        /* "Saving…" pulses until the save lands; with reduced motion it holds still. */
+        .save-state.saving {
+          animation: saving-pulse 1.2s ease-in-out infinite;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>EO HubSpot &mdash; Member Renewal plan</h1>
+        <p class="meta">
+          Built for: <span>the Membership Chair and the Finance Chair</span>
+        </p>
+        <p class="meta">
+          By:
+          <span
+            >Kh&ocirc;i, Edge8 &middot; written 9 Oct 2026 &middot; updated 17 Oct
+            2026</span
+          >
+        </p>
+      </header>
+
+      <main>
+        <section aria-label="What this page is">
+          <p class="lede">
+            Edge8&rsquo;s draft statement of work asks for a renewal board of HubSpot
+            deals, records that move through stages.
+          </p>
+          <p class="status">
+            <strong>Status:</strong> built, all off. On 17 Oct 2026 Kh&ocirc;i built the
+            board, three fields, five workflows and the report. They send members nothing.
+            Only super admins (full-access HubSpot users) can use the board until
+            EO&rsquo;s membership team releases it.
+          </p>
+          <p>
+            <strong>User stories:</strong> none of EO&rsquo;s 9 picked renewal stories is
+            covered in full; the first changes are <a href="#next-changes">below</a>, the
+            rest in the
+            <a href="Scope%20%5BMember%20renewal%20user%20stories%5D.html">gap list</a>.
+          </p>
+        </section>
+
+        <section class="warn" aria-label="Warning">
+          <h2>
+            Renewal deals would change 19,948 members&rsquo; lifecycle stage to
+            Opportunity
+          </h2>
+          <p>
+            Two HubSpot settings, on for every board, set lifecycle stage, which
+            EO&rsquo;s reports count: a new deal sets Opportunity, a won deal Customer. By
+            HubSpot&rsquo;s count on 17 Oct, that moves 19,948 members to Opportunity,
+            then up to 19,982 to Customer. Four of EO&rsquo;s deal workflows, now off,
+            need the filter &ldquo;Pipeline is none of Member Renewal&rdquo; before they
+            go on, and a fifth must stay off. Renewals stay off until the fix is in place.
+          </p>
+          <p>
+            <strong>To stop this:</strong> by mid-March 2027 Kh&ocirc;i turns on the
+            Lifecycle workflow, which sets Opportunity on new member deals only, then EO
+            switches the created setting off, in that order. The won setting is EO&rsquo;s
+            choice before renewals start.
+          </p>
+        </section>
+
+        <section aria-label="Questions for EO">
+          <h2>
+            EO&rsquo;s answers of 16 Oct: the dates hold, and its membership team decides
+            the emails
+          </h2>
+          <ul class="ask">
+            <li data-question="term-end">
+              <span class="n">1</span>
+              <div class="q">
+                <span
+                  >Does every member&rsquo;s term end on 30 June? Yes. Renewal deals open
+                  on 1 April, 90 days before.</span
+                >
+                <details class="answer">
+                  <summary>Answer</summary>
+                  <textarea aria-label="Answer to question 1" disabled></textarea>
+                  <div class="save-row">
+                    <p class="save-state" aria-live="polite"></p>
+                    <p class="limit-note"></p>
+                  </div>
+                </details>
+              </div>
+            </li>
+            <li data-question="survey-questions">
+              <span class="n">2</span>
+              <div class="q">
+                <span
+                  >Are the 3 survey questions under
+                  <a href="#survey-questions">&ldquo;What we build&rdquo;</a>
+                  right? EO will discuss them on the next call. Until then, no survey is
+                  built.</span
+                >
+                <details class="answer">
+                  <summary>Answer</summary>
+                  <textarea aria-label="Answer to question 2" disabled></textarea>
+                  <div class="save-row">
+                    <p class="save-state" aria-live="polite"></p>
+                    <p class="limit-note"></p>
+                  </div>
+                </details>
+              </div>
+            </li>
+            <li data-question="sender">
+              <span class="n">3</span>
+              <div class="q">
+                <span
+                  >Who signs the survey and the reminders? The membership team sends
+                  them.</span
+                >
+                <details class="answer">
+                  <summary>Answer</summary>
+                  <textarea aria-label="Answer to question 3" disabled></textarea>
+                  <div class="save-row">
+                    <p class="save-state" aria-live="polite"></p>
+                    <p class="limit-note"></p>
+                  </div>
+                </details>
+              </div>
+            </li>
+            <li data-question="reminder-days">
+              <span class="n">4</span>
+              <div class="q">
+                <span
+                  >Do the reminders go 60, 30 and 7 days before 30 June, as EO
+                  Vietnam&rsquo;s renewal plan proposes? The membership team will say.
+                  Until then, this plan uses them.</span
+                >
+                <details class="answer">
+                  <summary>Answer</summary>
+                  <textarea aria-label="Answer to question 4" disabled></textarea>
+                  <div class="save-row">
+                    <p class="save-state" aria-live="polite"></p>
+                    <p class="limit-note"></p>
+                  </div>
+                </details>
+              </div>
+            </li>
+            <li data-question="chapter-dues">
+              <span class="n">5</span>
+              <div class="q">
+                <span
+                  >Where does each member&rsquo;s chapter dues amount come from? Each
+                  chapter keeps it in the Dues Configurator. Will EO export it each March?
+                  If not, Edge8 scopes a sync from Chargebee, EO&rsquo;s billing system.
+                  Until then, deals show no dues.</span
+                >
+                <details class="answer">
+                  <summary>Answer</summary>
+                  <textarea aria-label="Answer to question 5" disabled></textarea>
+                  <div class="save-row">
+                    <p class="save-state" aria-live="polite"></p>
+                    <p class="limit-note"></p>
+                  </div>
+                </details>
+              </div>
+            </li>
+            <li data-question="altai-active">
+              <span class="n">6</span>
+              <div class="q">
+                <span
+                  >Does Altai start a member&rsquo;s next year when their chapter&rsquo;s
+                  bulk wire or their first instalment arrives? Yes, so they go to
+                  Renewed.</span
+                >
+                <details class="answer">
+                  <summary>Answer</summary>
+                  <textarea aria-label="Answer to question 6" disabled></textarea>
+                  <div class="save-row">
+                    <p class="save-state" aria-live="polite"></p>
+                    <p class="limit-note"></p>
+                  </div>
+                </details>
+              </div>
+            </li>
+            <li data-question="finance-chair-login">
+              <span class="n">7</span>
+              <div class="q">
+                <span
+                  >Will the finance chair log in to HubSpot? EO planned no seat for them,
+                  and HubSpot emails weekly reports only to users. Will EO give each a
+                  free view-only login? If not, the chapter manager forwards it.</span
+                >
+                <details class="answer">
+                  <summary>Answer</summary>
+                  <textarea aria-label="Answer to question 7" disabled></textarea>
+                  <div class="save-row">
+                    <p class="save-state" aria-live="polite"></p>
+                    <p class="limit-note"></p>
+                  </div>
+                </details>
+              </div>
+            </li>
+            <li data-question="anything-else">
+              <span class="n">8</span>
+              <div class="q">
+                <span
+                  >Anything else? The membership team decides this plan. The board sends
+                  members nothing, so the team&rsquo;s renewal emails stay as they
+                  are.</span
+                >
+                <details class="answer">
+                  <summary>Answer</summary>
+                  <textarea aria-label="Answer to question 8" disabled></textarea>
+                  <div class="save-row">
+                    <p class="save-state" aria-live="polite"></p>
+                    <p class="limit-note"></p>
+                  </div>
+                </details>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section aria-label="How a renewal runs">
+          <h2>Renewals run from 1 April</h2>
+          <ol>
+            <li>
+              <strong>1 April:</strong> deals open, and the Membership chair marks likely
+              renewals.
+            </li>
+            <li><strong>1 May:</strong> deals go to Renewed or Dues due.</li>
+            <li>
+              <strong>1 July:</strong> the rest go to Grace, then Renewed or Churned a
+              year later.
+            </li>
+          </ol>
+        </section>
+
+        <section aria-label="What we build in HubSpot">
+          <h2>
+            What we build: the board, 4 fields, 5 workflows and the report, all built
+          </h2>
+          <ul>
+            <li>
+              <strong>The renewal board, built:</strong> the Member Renewal pipeline, with
+              Check-in, Dues due, Grace, then Renewed or Churned.
+            </li>
+            <li>
+              <strong>Four fields, built:</strong> on each deal, Renewal due date, which
+              carries the fiscal year, Likely to renew and Primary chapter. On each
+              member, Latest membership end date.
+            </li>
+            <li>
+              <strong>Five workflows, built:</strong> Open, Dues due, Close, Grace end and
+              Lifecycle.
+            </li>
+            <li id="survey-questions">
+              <strong>No survey or email:</strong> EO&rsquo;s membership team sends its
+              own. The 3 survey questions wait for EO&rsquo;s call: how the year went,
+              whether they will renew, and what would make next year worth it.
+            </li>
+            <li>
+              <strong>One report, built:</strong> &ldquo;Chapter: Renewal dues by
+              stage&rdquo;, the finance chair&rsquo;s Monday view, private until release.
+            </li>
+          </ul>
+        </section>
+
+        <section id="next-changes" aria-label="Changes for the picked stories">
+          <h2>Three changes for EO&rsquo;s picked stories, built 23 Oct, off</h2>
+          <ol>
+            <li>
+              <strong>One deal per chapter (LN29, LN30, LN32):</strong> a deal per
+              chapter, marked primary or not.
+            </li>
+            <li>
+              <strong>No double count (LN34):</strong> the dues report counts primary
+              chapters only.
+            </li>
+            <li>
+              <strong>Leave (LN38, LN39):</strong> Open skips On Leave. Returns wait for
+              the membership team&rsquo;s rules.
+            </li>
+          </ol>
+        </section>
+
+        <section aria-label="Estimate">
+          <h2>Estimate: about 18 working hours (2 days)</h2>
+          <table>
+            <tr>
+              <td>The board and the three new fields, built</td>
+              <td>1 h</td>
+            </tr>
+            <tr>
+              <td>The Open workflow, built</td>
+              <td>3 h</td>
+            </tr>
+            <tr>
+              <td>The Dues due workflow, built</td>
+              <td>3 h</td>
+            </tr>
+            <tr>
+              <td>The Close, Grace end and Lifecycle workflows, built</td>
+              <td>5 h</td>
+            </tr>
+            <tr>
+              <td>The finance chair&rsquo;s report, built</td>
+              <td>2 h</td>
+            </tr>
+            <tr>
+              <td>
+                The tests: all five workflows passed HubSpot&rsquo;s simulation. Renewal
+                deal tests wait for April to July 2027.
+              </td>
+              <td>4 h</td>
+            </tr>
+          </table>
+          <p>One builder, testing included.</p>
+        </section>
+      </main>
+
+      <footer>
+        Sources: the statement of work read on 7 Oct 2026, EO&rsquo;s answers here of 16
+        Oct, EO&rsquo;s HubSpot read on 9 and 17 Oct 2026, HubSpot&rsquo;s help pages on
+        17 Oct, EO APAC&rsquo;s build documents, EO Vietnam&rsquo;s renewal plans, and the
+        global calls of 9, 16 and 23 Sep and 7 Oct.
+      </footer>
+    </div>
+    <script>
+      // A second click on the same link leaves :target unchanged, so the highlight would not
+      // play again. Restart it: remove the animation, force a style flush, then restore it.
+      document.addEventListener('click', (event) => {
+        const link = event.target.closest('a[href^="#"]')
+        if (!link || link.hash !== location.hash) return
+        const target = document.getElementById(link.hash.slice(1))
+        if (!target) return
+        target.style.animation = 'none'
+        void target.offsetWidth
+        target.style.animation = ''
+      })
+    </script>
+    <script>
+      // The answer boxes. Each answer saves 1.5 s after the reader's last keystroke, to
+      // the site's database (DEC-PLAN-ANSWERS in the repo), and "Saving…" pulses from
+      // the first keystroke until the save lands. Every reader with this page's link
+      // sees and edits the same answers. The boxes stay shut until the saved answers
+      // load, so nobody types over an answer they cannot see.
+      ;(() => {
+        const API = '/api/plans/member-renewal/answers'
+        const QUIET_MS = 1500
+        // The server takes answers of up to 5,000 characters (MAX_ANSWER_LENGTH in the
+        // repo). A longer answer stays in its box, unsent, with a note at the right end
+        // of the save line that says by how much, so nothing pasted is cut off unseen.
+        const LIMIT = 5000
+        // One id per page load: the server keeps each visit's answer as its own version.
+        const visit = crypto.randomUUID()
+        const boxes = [...document.querySelectorAll('li[data-question]')].map((item) => ({
+          question: item.dataset.question,
+          details: item.querySelector('details'),
+          textarea: item.querySelector('textarea'),
+          state: item.querySelector('.save-state'),
+          note: item.querySelector('.limit-note'),
+          flush: () => {},
+          isTooLong: () => false,
+        }))
+        const when = (iso) =>
+          new Date(iso).toLocaleString('en-GB', {
+            day: 'numeric',
+            month: 'short',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+          })
+
+        function start(box, saved) {
+          const { question, details, textarea, state, note } = box
+          let lastSaved = saved ? saved.answer : ''
+          let savedLine = saved ? `Saved ${when(saved.updatedAt)}.` : ''
+          // Set while a keystroke waits for its save: the box holds unsaved words.
+          let timer
+          let queue = Promise.resolve()
+
+          // Only a changed line is written, so a screen reader does not hear
+          // "Saving…" again on every keystroke.
+          const show = (line, saving = false) => {
+            if (state.textContent !== line) state.textContent = line
+            state.classList.toggle('saving', saving)
+          }
+
+          textarea.value = lastSaved
+          textarea.placeholder =
+            'Type your answer. It saves as you type, and anyone with this page’s link can read it.'
+          textarea.disabled = false
+          // The note describes the box, so a screen reader reads it with the box.
+          note.id = `limit-${question}`
+          textarea.setAttribute('aria-describedby', note.id)
+          details.open = lastSaved !== ''
+          show(savedLine)
+          // How many characters the box holds past the limit: 0 or less when it fits.
+          const overBy = () => textarea.value.length - LIMIT
+          const isTooLong = () => overBy() > 0
+
+          // Saves run one after another, so an older answer never lands after a newer one.
+          const save = () => {
+            clearTimeout(timer)
+            timer = undefined
+            queue = queue.then(async () => {
+              // The server refuses an answer over the limit, so it is never sent.
+              if (isTooLong()) return
+              const answer = textarea.value
+              let line = savedLine
+              if (answer !== lastSaved) {
+                try {
+                  const response = await fetch(API, {
+                    method: 'POST',
+                    headers: { 'content-type': 'application/json' },
+                    body: JSON.stringify({ question, answer, visit }),
+                    keepalive: true,
+                  })
+                  if (!response.ok) throw new Error(`HTTP ${response.status}`)
+                  const { updatedAt } = await response.json()
+                  lastSaved = answer
+                  savedLine = `Saved ${when(updatedAt)}.`
+                  line = savedLine
+                } catch {
+                  line = 'Not saved. It tries again when you type.'
+                }
+              }
+              // Typing since this save began keeps "Saving…" up until its own save lands,
+              // and typing past the limit keeps "Not saved" up until the answer fits.
+              if (timer === undefined && !isTooLong()) show(line)
+            })
+          }
+          textarea.addEventListener('input', () => {
+            clearTimeout(timer)
+            const over = overBy()
+            if (over > 0) {
+              timer = undefined
+              textarea.setAttribute('aria-invalid', 'true')
+              note.textContent = `${over.toLocaleString('en-GB')} ${over === 1 ? 'character' : 'characters'} over the ${LIMIT.toLocaleString('en-GB')} limit. Shorten it to save.`
+              show('Not saved: too long.')
+              return
+            }
+            textarea.removeAttribute('aria-invalid')
+            note.textContent = ''
+            show('Saving…', true)
+            timer = setTimeout(save, QUIET_MS)
+          })
+          box.flush = save
+          box.isTooLong = isTooLong
+        }
+
+        fetch(API)
+          .then((response) => {
+            if (!response.ok) throw new Error(`HTTP ${response.status}`)
+            return response.json()
+          })
+          .then(({ answers }) => {
+            for (const box of boxes) start(box, answers[box.question])
+          })
+          .catch(() => {
+            for (const box of boxes) {
+              box.state.textContent =
+                'Answers could not load. Reload the page to try again.'
+            }
+          })
+
+        // Leaving the page, or switching away on a phone, saves what is still waiting
+        // rather than lose it with the 1.5 s timer.
+        document.addEventListener('visibilitychange', () => {
+          if (document.visibilityState === 'hidden') for (const box of boxes) box.flush()
+        })
+        // An answer over the limit cannot save, so closing the page asks first rather
+        // than lose it.
+        window.addEventListener('beforeunload', (event) => {
+          if (boxes.some((box) => box.isTooLong())) event.preventDefault()
+        })
+      })()
+    </script>
+  </body>
+</html>

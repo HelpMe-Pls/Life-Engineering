@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFK Session Report — October 28 to 29, 2026, Sprint 43</title>
+    <style>
+      :root {
+        --navy: #04102d;
+        --blue: #287be8;
+        --mint: #6ff2c1;
+        --pink: #d1458b;
+        --light: #eaeef2;
+        --white: #fff;
+        --muted: #66708a;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        color: var(--navy);
+        background: var(--white);
+        font:
+          16px/1.6 -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 48px 28px 72px;
+      }
+      header {
+        border-bottom: 4px solid var(--mint);
+        padding-bottom: 20px;
+        margin-bottom: 32px;
+      }
+      h1 {
+        font-size: 2rem;
+        margin: 0 0 6px;
+      }
+      .meta {
+        color: var(--blue);
+        font-size: 0.92rem;
+        font-weight: 600;
+        margin: 0 0 2px;
+      }
+      .meta span {
+        color: var(--navy);
+        font-weight: 400;
+      }
+      h2 {
+        font-size: 1.25rem;
+        margin: 36px 0 12px;
+        padding-left: 12px;
+        border-left: 4px solid var(--blue);
+      }
+      p {
+        margin: 0 0 14px;
+      }
+      ul {
+        margin: 0 0 14px;
+        padding-left: 22px;
+      }
+      li {
+        margin-bottom: 7px;
+      }
+      .callout {
+        background: var(--light);
+        border-radius: 10px;
+        padding: 18px 22px;
+        margin: 24px 0;
+      }
+      .callout h2 {
+        margin-top: 0;
+        border: 0;
+        padding: 0;
+        color: var(--navy);
+      }
+      .callout.alert {
+        background: #fbeaf3;
+        border-left: 5px solid var(--pink);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 14px 0;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--light);
+        vertical-align: top;
+      }
+      th {
+        background: var(--navy);
+        color: var(--white);
+        font-size: 0.85rem;
+      }
+      footer {
+        margin-top: 48px;
+        padding-top: 18px;
+        border-top: 1px solid var(--light);
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+      @media (max-width: 600px) {
+        .wrap {
+          padding: 32px 16px 56px;
+        }
+        h1 {
+          font-size: 1.6rem;
+        }
+        th,
+        td {
+          padding: 8px 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>Sprint 43: Cards 5 and 9 Are Done, Seven Cards Wait on You, the SAP Deals Wait for Tam</h1>
+        <p class="meta">Date: <span>29 October 2026</span></p>
+        <p class="meta">
+          Author: <span>Kh&ocirc;i L&ecirc;, written by Claude Code</span>
+        </p>
+        <p class="meta">
+          Sessions:
+          <span
+            >three, Vietnam time: unattended on 28 Oct in the evening (stopped at its 150-turn
+            cap), with you on 29 Oct, and a sweep on 29 Oct in the afternoon</span
+          >
+        </p>
+      </header>
+
+      <div class="callout">
+        <h2>Context</h2>
+        <p>
+          You asked for Sprint 43&rsquo;s cards in scope, in this order: Cards 3, 6, 4 and 5,
+          the SAP deals from Lark, then Cards 1, 2, 8, 9 and 11. You added a wave editor, which
+          Lauren King asked for in the rollout&rsquo;s WhatsApp group, and four smaller asks.
+          Cards 5 and 9 and the wave editor are finished. Cards 1, 2, 3, 4, 6, 8 and 11 each
+          wait on one step of yours. The SAP deals wait for Tam Nguyen.
+        </p>
+      </div>
+
+      <div class="callout alert">
+        <h2>Chapters are told a withdrawal takes their events off the 1EL calendar, and that is untested</h2>
+        <p>
+          Since 29 Oct, the chapters&rsquo; help page says the next connector run takes a
+          withdrawn chapter&rsquo;s upcoming events off EO&rsquo;s global calendar (1EL), and
+          the portal says &ldquo;shortly&rdquo;. The code does this and its unit tests pass,
+          but its end-to-end sandbox test has not run, and a run happens only when you start
+          one. No chapter is harmed today: every copy is still on the sandbox.
+        </p>
+        <p>
+          <strong>To stop this:</strong> you run the sandbox test before the switch to
+          production (HITL step 7). Until then, after each withdrawal, start a run that day and
+          check the copies. Both handoffs now say so to every later run.
+        </p>
+      </div>
+
+      <h2>What to do: your 11 steps are in the HITL report, Arlene&rsquo;s team first</h2>
+      <p>
+        Open the
+        <a href="../../HITL/End/HITL%20Session%20Report%20%5B2026-10-28%5D%20Sprint%2043.html"
+          >HITL report</a
+        >. It lists only what a person must do, and step 1 is due today.
+      </p>
+
+      <h2>Nine pieces of work are finished, four of them live on the tracker</h2>
+      <p>
+        The tracker is the rollout app at eochapterhubspotrollout.com. The connector copies
+        chapters&rsquo; Eventbrite events into OneEO, EO&rsquo;s member site, which feeds the
+        1EL calendar.
+      </p>
+      <table>
+        <tr>
+          <th>What</th>
+          <th>Where</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td>Card 3: the demo&rsquo;s test chapter and its account</td>
+          <td>Live tracker, 28 Oct</td>
+          <td><strong>Deleted</strong></td>
+        </tr>
+        <tr>
+          <td>The connector handoff after the demo, and Card 6&rsquo;s switch-to-production steps</td>
+          <td>event-sync PRs 17 and 18</td>
+          <td><strong>Merged</strong></td>
+        </tr>
+        <tr>
+          <td>Card 4: a park has a reason, Paused or Withdrawn</td>
+          <td>Tracker PRs 1174 and 1175, database change 0064</td>
+          <td><strong>Live</strong></td>
+        </tr>
+        <tr>
+          <td>Card 4: a withdrawn chapter&rsquo;s upcoming copies come down at the next run</td>
+          <td>event-sync PR 19</td>
+          <td><strong>Merged, sandbox test waits</strong></td>
+        </tr>
+        <tr>
+          <td>Card 5: a read-only run says Would copy, Would update and Would remove</td>
+          <td>Tracker PRs 1176 and 1177, event-sync PR 20</td>
+          <td><strong>Live</strong></td>
+        </tr>
+        <tr>
+          <td>Lauren King&rsquo;s wave editor</td>
+          <td>Tracker PRs 1178 and 1179, database change 0065</td>
+          <td><strong>Live</strong></td>
+        </tr>
+        <tr>
+          <td>event-sync&rsquo;s main branch: no deletion, no force push, changes by PR</td>
+          <td>GitHub rule &ldquo;Protect main&rdquo;</td>
+          <td><strong>Active</strong></td>
+        </tr>
+        <tr>
+          <td>The full test run&rsquo;s checker now fails a run with a failed test</td>
+          <td>Tracker PRs 1180 and 1182</td>
+          <td><strong>Live</strong></td>
+        </tr>
+        <tr>
+          <td>The untested withdrawal promise, written down for later runs</td>
+          <td>event-sync PR 21, tracker PR 1181</td>
+          <td><strong>Merged</strong></td>
+        </tr>
+      </table>
+
+      <h2>Card 4 and the wave editor: what changed for admins</h2>
+      <p>
+        An admin now parks an Events chapter as Paused or Withdrawn, and a withdrawn chapter
+        refuses stage moves (your 29 Oct decision). The sandbox test did not run, because the
+        Eventbrite account in Chrome may not create events in the Test Events organisation.
+        On the Wave board, an admin adds, renames, dates and deletes waves, the Unscheduled
+        group included, and a move that empties a wave asks first. Three small review
+        findings stay open.
+      </p>
+
+      <h2>The sweep wrote five pages, and each waits on your send</h2>
+      <ul>
+        <li>
+          <strong>SOW user stories (Cards 1 and 2):</strong> of the 33 stories EO picked,
+          none is finished end to end, 20 are in progress and 13 are not started. The review
+          steps cover the 12 that EO can already try. The renewal workflow Open has an
+          unfinished task step, and the form&rsquo;s chapter list holds 5 test values.
+        </li>
+        <li>
+          <strong>Training course (Cards 8 and 9):</strong> the page now follows Dave&rsquo;s
+          plan, with a design section. Hosting the videos adds no cost on the current
+          Supabase plan.
+        </li>
+        <li>
+          <strong>Payment hand-off (Card 11):</strong> the sandbox&rsquo;s test data cannot
+          raise a charge yet. Two cases have no test deal, and only 1 of 8 deals has an
+          applicant.
+        </li>
+      </ul>
+
+      <h2>The SAP deals are read from Lark, not created</h2>
+      <p>
+        All four Lark tables read cleanly on 29 Oct: 24 partners, 12 contacts, 6 meetings and
+        19 open actions. Creating them would send Tam Nguyen about 43 assignment emails, so
+        they wait for HITL step 8. You were asked, and no answer came within 10 minutes.
+      </p>
+
+      <footer>
+        <p>
+          Sources, read on 28 or 29 Oct 2026: GitHub for both repositories, the production
+          database&rsquo;s receipts for changes 0064 and 0065, the production deployment
+          record, EO&rsquo;s live HubSpot and its Global sandbox, the Lark SAP Base, and the
+          Sprint 43 page.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

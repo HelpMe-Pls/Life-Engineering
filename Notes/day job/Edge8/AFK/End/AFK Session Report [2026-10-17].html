@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFK Session Report — October 17, 2026</title>
+    <style>
+      :root {
+        --navy: #04102d;
+        --blue: #287be8;
+        --mint: #6ff2c1;
+        --pink: #d1458b;
+        --light: #eaeef2;
+        --white: #fff;
+        --muted: #66708a;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        color: var(--navy);
+        background: var(--white);
+        font:
+          16px/1.6 -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 48px 28px 72px;
+      }
+      header {
+        border-bottom: 4px solid var(--mint);
+        padding-bottom: 20px;
+        margin-bottom: 32px;
+      }
+      h1 {
+        font-size: 2rem;
+        margin: 0 0 6px;
+      }
+      .meta {
+        color: var(--blue);
+        font-size: 0.92rem;
+        font-weight: 600;
+        margin: 0 0 2px;
+      }
+      .meta span {
+        color: var(--navy);
+        font-weight: 400;
+      }
+      h2 {
+        font-size: 1.25rem;
+        margin: 36px 0 12px;
+        padding-left: 12px;
+        border-left: 4px solid var(--blue);
+      }
+      p {
+        margin: 0 0 14px;
+      }
+      ul,
+      ol {
+        margin: 0 0 14px;
+        padding-left: 22px;
+      }
+      li {
+        margin-bottom: 7px;
+      }
+      td ol,
+      td ul {
+        margin: 6px 0 0;
+      }
+      .callout {
+        background: var(--light);
+        border-radius: 10px;
+        padding: 18px 22px;
+        margin: 24px 0;
+      }
+      .callout h2 {
+        margin-top: 0;
+        border: 0;
+        padding: 0;
+        color: var(--navy);
+      }
+      .callout.alert {
+        background: #fbeaf3;
+        border-left: 5px solid var(--pink);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 14px 0;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--light);
+        vertical-align: top;
+      }
+      th {
+        background: var(--navy);
+        color: var(--white);
+        font-size: 0.85rem;
+      }
+      .chip {
+        display: inline-block;
+        font-size: 0.74rem;
+        font-weight: 700;
+        padding: 2px 9px;
+        border-radius: 20px;
+        white-space: nowrap;
+        letter-spacing: 0.02em;
+      }
+      .chip-immediate {
+        background: var(--pink);
+        color: var(--white);
+      }
+      .chip-week {
+        background: var(--blue);
+        color: var(--white);
+      }
+      .chip-after {
+        background: var(--light);
+        color: var(--navy);
+        border: 1px solid #c0c8d4;
+      }
+      footer {
+        margin-top: 48px;
+        padding-top: 18px;
+        border-top: 1px solid var(--light);
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+      @media (max-width: 600px) {
+        .wrap {
+          padding: 32px 16px 56px;
+        }
+        h1 {
+          font-size: 1.6rem;
+        }
+        th,
+        td {
+          padding: 8px 6px;
+        }
+        .chip {
+          white-space: normal;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>
+          Altai Sync: Tiers, Regions and Membership History Are Live, and Their
+          Cards Close 19 to 21 Oct
+        </h1>
+        <p class="meta">Date: <span>October 17th, 2026</span></p>
+        <p class="meta">
+          Author: <span>Kh&ocirc;i L&ecirc;, written by Claude Code</span>
+        </p>
+        <p class="meta">
+          Session:
+          <span
+            >unattended, 16 to 17 Oct, updated at 10:25 on 20 Oct (Vietnam
+            time)</span
+          >
+        </p>
+      </header>
+
+      <div class="callout">
+        <h2>Context</h2>
+        <p>
+          On 16 Oct you started an unattended session for Sprint 41 cards 13, 14
+          and 17 in the Altai sync, which copies member data from Altai, EO's
+          membership database, into HubSpot each night. Their pull requests
+          (PRs) merged on 17 Oct, and all three ran for real early on Sun 18
+          Oct. Every check on their runs passed by 20 Oct, you sent Israel his
+          message that day, and all three cards are DONE.
+        </p>
+      </div>
+
+      <h2>What to do: all 8 steps done by 20 Oct</h2>
+      <table>
+        <tr>
+          <th>Owner</th>
+          <th>Step</th>
+          <th>Due</th>
+        </tr>
+        <tr>
+          <td>Kh&ocirc;i</td>
+          <td>
+            <strong>1. Tell Th&agrave;nh</strong> the membership history is in
+            HubSpot since Sun 18 Oct.
+          </td>
+          <td><span class="chip chip-after">Done by 19 Oct</span></td>
+        </tr>
+        <tr>
+          <td>Kh&ocirc;i</td>
+          <td>
+            <strong>2. Segment edit 2</strong> in three HubSpot segments, and
+            the re-export.
+          </td>
+          <td><span class="chip chip-after">Done 18 Oct</span></td>
+        </tr>
+        <tr>
+          <td>Kh&ocirc;i</td>
+          <td>
+            <strong>3. Merge global-hubspot PR 1121</strong> and promote it.
+          </td>
+          <td><span class="chip chip-after">Done 18 Oct</span></td>
+        </tr>
+        <tr>
+          <td>Kh&ocirc;i</td>
+          <td>
+            <strong>4. Morning checks.</strong> Three passed on 19 Oct, and the
+            fourth on two reruns of Monday night on 20 Oct.
+          </td>
+          <td><span class="chip chip-after">Done Tue 20 Oct</span></td>
+        </tr>
+        <tr>
+          <td>Kh&ocirc;i</td>
+          <td>
+            <strong>5. Tell Israel</strong> (EO Global) that each Region shows
+            its contacts, and that a tier list filters on Tier and Position Time
+            Period is Current, and ask his rule for leaders who are not
+            marketing contacts. His answer is still to come.
+          </td>
+          <td><span class="chip chip-after">Done Tue 20 Oct</span></td>
+        </tr>
+        <tr>
+          <td>Kh&ocirc;i</td>
+          <td>
+            <strong>6. Demo pre-check.</strong> US Central's contacts, a tier
+            list and the chapter memberships match. The admin Altai sync page
+            (each night's sync health) shows 7 of 8 segments OK on 20 Oct: only
+            Spouses &amp; Life Partners is off, with 13 extra (8 allowed). Its
+            fix merged on 20 Oct and shows on the full run of Sun 25 Oct.
+          </td>
+          <td><span class="chip chip-after">Done Mon 19 Oct</span></td>
+        </tr>
+        <tr>
+          <td>Kh&ocirc;i</td>
+          <td>
+            <strong>7. Cards to DONE</strong> on the sprint page.
+            <a
+              href="../../Tickets/Sprint%20Tickets%20%5BY26%20Sprint%2041%5D.html#card-17"
+              >Card 17</a
+            >
+            moved on 19 Oct, cards 13 and 14 on 20 Oct.
+          </td>
+          <td><span class="chip chip-after">Done Tue 20 Oct</span></td>
+        </tr>
+        <tr>
+          <td>Kh&ocirc;i</td>
+          <td>
+            <strong>8. Start the Contact region from Altai AFK prompt.</strong>
+          </td>
+          <td><span class="chip chip-after">Done 18 Oct</span></td>
+        </tr>
+      </table>
+
+      <h2>
+        Sunday's full run passed, and the 20 memberships with no name are in
+        HubSpot
+      </h2>
+      <p>
+        The admin Altai sync page shows Sunday's full run, which ended at 01:34
+        on Mon 19 Oct. It took 33 minutes, against 39 the night before. The same
+        6 of 8 segments passed (Spouses &amp; Life Partners has 12 extra,
+        Accelerator Participants 4 missing). All 59 new contacts that HubSpot
+        refused for a bad or duplicate email are on the page's fix list.
+      </p>
+      <p>
+        The 20 memberships that Altai left with no name are now in HubSpot, each
+        with its programme's name. The tier counts match Altai: 331 Tier 1,
+        1,620 Tier 2 and 772 Tier 3 positions. The new Altai region field is
+        filled on 52,048 contacts, and a run on 19 Oct moved 112 Region links to
+        it. Each Region now links every contact it should.
+      </p>
+
+      <h2>
+        Monday night failed on one dropped connection, and the sync now retries
+        it
+      </h2>
+      <p>
+        The run of 04:31 Tue 20 Oct lost its connection to HubSpot after 34
+        seconds, and changed nothing. Your rerun at 06:07 was green. The fix
+        retries a dropped connection but never sends a create twice, and its
+        first run, at 06:25, was green too. Every Region links exactly the
+        contacts it names.
+      </p>
+
+      <h2>Three PRs carry the cards, merged 17 Oct and live since 18 Oct</h2>
+      <table>
+        <tr>
+          <th>PR</th>
+          <th>What it does</th>
+          <th>State</th>
+        </tr>
+        <tr>
+          <td>PR 216, card 14</td>
+          <td>Each global leadership position carries its Tier 1, 2 or 3.</td>
+          <td><strong>Merged, ran 18 Oct</strong></td>
+        </tr>
+        <tr>
+          <td>PR 218, card 13</td>
+          <td>
+            Links each contact to the Region its region text names: 78,716 links
+            on its first run.
+          </td>
+          <td><strong>Merged, ran 18 Oct</strong></td>
+        </tr>
+        <tr>
+          <td>PR 222, card 17</td>
+          <td>
+            Every membership term, with its status and chapter: 172,330 sent on
+            its first run.
+          </td>
+          <td><strong>Merged, ran 18 Oct</strong></td>
+        </tr>
+      </table>
+
+      <h2>
+        One workflow, off today, must read the new membership fields before it
+        goes on
+      </h2>
+      <p>
+        Later: before anyone turns on the workflow [Deal] [Member Acquisition] →
+        Create Chapter Membership, you make it and its form use Current Status
+        and Membership Category.
+      </p>
+
+      <h2>PR 212 waits on your choice of contact owner, after the review</h2>
+      <p>
+        PR 212 moves the sync to HubSpot's new API version, which refuses a
+        contact without an owner. Later: you choose the owner and set it, in the
+        <a
+          href="../../HITL/End/HITL%20Session%20Report%20%5B2026-10-17%5D%20HubSpot%20API%20version.html"
+          >HITL Session Report on the HubSpot API version</a
+        >, dated 17 Oct.
+      </p>
+
+      <footer>
+        Sources: my local dry runs, read on 17 Oct 2026, and GitHub, the
+        repository, the Sprint 41 page, Altai, HubSpot and the admin Altai sync
+        page, read on 19 Oct 2026, and the three run logs of 20 Oct and the
+        admin Altai sync page, read on 20 Oct 2026. Times are Vietnam time
+        (UTC+7).
+      </footer>
+    </div>
+  </body>
+</html>

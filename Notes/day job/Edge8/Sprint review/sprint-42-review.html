@@ -1,0 +1,2159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprint 42 Review</title>
+    <style>
+      /* House style of sprint-40-review.html in this folder. */
+      :root {
+        --ink: #0f1626;
+        --sub: #5b6478;
+        --line: #e4e7ef;
+        --al: #2454c7;
+        --soft: #f4f6fb;
+        --now: #eef3ff;
+        --flag-bg: #fff6e5;
+        --flag-line: #f0d38a;
+        --mono: "Cascadia Mono", Consolas, ui-monospace, Menlo, monospace;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #fff;
+        color: var(--ink);
+        font-family:
+          "Inter",
+          "Segoe UI",
+          -apple-system,
+          sans-serif;
+        line-height: 1.5;
+        font-size: 13.5px;
+      }
+      .wrap {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 44px 32px 60px;
+      }
+      h1 {
+        font-size: 23px;
+        font-weight: 800;
+        margin: 0 0 4px;
+      }
+      .meta {
+        color: var(--sub);
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+      .jump {
+        font-size: 12px;
+        font-weight: 600;
+        display: flex;
+        gap: 14px;
+        margin-bottom: 6px;
+      }
+      .jump a {
+        color: var(--al);
+        text-decoration: none;
+      }
+      .jump a:hover {
+        text-decoration: underline;
+      }
+      h2 {
+        font-size: 13px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        color: var(--al);
+        margin: 26px 0 8px;
+      }
+      h2 .aside {
+        font-weight: 600;
+        text-transform: none;
+        letter-spacing: 0;
+        color: var(--sub);
+      }
+      p {
+        margin: 0 0 10px;
+      }
+      ul {
+        margin: 0 0 10px;
+        padding-left: 18px;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+      a {
+        color: var(--al);
+      }
+      button:focus-visible,
+      a:focus-visible,
+      summary:focus-visible {
+        outline: 2px solid var(--al);
+        outline-offset: 2px;
+      }
+      code {
+        font: 12px/1.5 var(--mono);
+      }
+      .part {
+        margin-top: 34px;
+      }
+      .part-title {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 8px 16px;
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: 6px;
+      }
+      .part-title h1 {
+        font-size: 19px;
+        margin: 0;
+      }
+      .btn {
+        background: var(--soft);
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 6px 11px;
+        font:
+          600 12px/1.2 "Inter",
+          "Segoe UI",
+          -apple-system,
+          sans-serif;
+        color: var(--ink);
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      .btn:hover {
+        border-color: #c9cfdc;
+      }
+      .bar {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px 16px;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .clock {
+        font-size: 22px;
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+        line-height: 1;
+      }
+      .clock .aim {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--sub);
+      }
+      .clock.late .elapsed {
+        color: #b45309;
+      }
+      .clock.over .elapsed {
+        color: #b42318;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      .box {
+        background: var(--soft);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 12px 14px;
+      }
+      .box p:last-child,
+      .box ul:last-child {
+        margin-bottom: 0;
+      }
+      .dec {
+        background: var(--flag-bg);
+        border: 1px solid var(--flag-line);
+        border-radius: 8px;
+        padding: 10px 14px;
+        font-size: 12.8px;
+        color: #7a4405;
+      }
+      .dec ul {
+        margin: 0;
+      }
+      .dec li:last-child {
+        margin-bottom: 0;
+      }
+      .dec b {
+        color: #5f3403;
+      }
+      .small {
+        font-size: 12.5px;
+        color: var(--sub);
+      }
+      .grp {
+        border-top: 1px solid var(--line);
+        margin: 0 -10px;
+        padding: 14px 10px;
+        border-radius: 6px;
+      }
+      /* The first Extra after the last timed group: a dark rule marks where the script ends. */
+      .script-body > .grp[data-t] + .grp:not([data-t]) {
+        border-top: 3px solid var(--ink);
+        border-radius: 0;
+        margin-top: 10px;
+      }
+      .grp:first-child {
+        border-top: 0;
+      }
+      .grp.now {
+        background: var(--now);
+      }
+      .blk + .blk {
+        margin-top: 14px;
+      }
+      .head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px 10px;
+        margin-bottom: 6px;
+      }
+      .tc {
+        font-size: 12px;
+        font-weight: 800;
+        color: var(--sub);
+        font-variant-numeric: tabular-nums;
+        min-width: 32px;
+      }
+      .cue {
+        font: 600 12.5px/1.4 var(--mono);
+        color: var(--al);
+        background: var(--soft);
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 4px 9px;
+      }
+      .line {
+        font-size: 16.5px;
+        line-height: 1.6;
+        margin: 0 0 6px;
+        max-width: 66ch;
+      }
+      .line:last-child {
+        margin-bottom: 0;
+      }
+      table.win {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 6px 0 2px;
+        font-size: 12.8px;
+      }
+      table.win th,
+      table.win td {
+        text-align: left;
+        vertical-align: top;
+        padding: 6px 8px;
+        border-bottom: 1px solid var(--line);
+      }
+      table.win th {
+        font-size: 11.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        color: var(--sub);
+      }
+      .report .sec {
+        margin-top: 18px;
+      }
+      .report h3 {
+        font-size: 14px;
+        font-weight: 800;
+        margin: 0 0 4px;
+      }
+      .report h4 {
+        font-size: 11.5px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        color: var(--sub);
+        margin: 8px 0 3px;
+      }
+      .report ul {
+        margin-bottom: 4px;
+      }
+      details {
+        margin-top: 18px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--soft);
+      }
+      summary {
+        cursor: pointer;
+        padding: 10px 14px;
+        font-weight: 700;
+        font-size: 12.5px;
+      }
+      summary .small {
+        font-weight: 400;
+      }
+      .raw {
+        margin: 0;
+        padding: 12px 14px;
+        border-top: 1px solid var(--line);
+        background: #fff;
+        border-radius: 0 0 8px 8px;
+        overflow-wrap: anywhere;
+      }
+      pre.raw {
+        font: 12px/1.55 var(--mono);
+        white-space: pre-wrap;
+      }
+      .prompt-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px 14px;
+        margin-top: 14px;
+      }
+      .prompt-head p {
+        flex: 1 1 320px;
+        margin: 0;
+      }
+      #draft-prompt {
+        overflow-wrap: anywhere;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 10px 12px;
+        margin: 8px 0 0;
+      }
+      .preview ol,
+      .preview ul {
+        margin: 0;
+        padding-left: 22px;
+      }
+      .preview > ol > li {
+        margin: 10px 0 0;
+      }
+      .preview li {
+        margin-bottom: 2px;
+      }
+      .offscreen {
+        position: fixed;
+        left: -10000px;
+        top: 0;
+        width: 800px;
+      }
+      footer {
+        margin-top: 30px;
+        font-size: 10.5px;
+        color: var(--sub);
+      }
+      @media (max-width: 600px) {
+        .wrap {
+          padding: 28px 16px 48px;
+        }
+        .line {
+          font-size: 15.5px;
+        }
+      }
+      @media print {
+        .bar,
+        .btn {
+          display: none;
+        }
+        .grp.now {
+          background: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>
+        Sprint 42 Review: one Regional dashboard, and a chapter&rsquo;s events
+        on the OneEO sandbox, live
+      </h1>
+      <div class="meta">
+        One demo (aim 8:55, limit 10:00) and the sprint report · Edge8 · for the
+        Wed 28 Oct call, updated Tue 27 Oct 2026
+      </div>
+      <div class="jump">
+        <a href="#demo">Demo</a><a href="#report">Sprint report</a>
+      </div>
+
+      <section class="part demo" id="demo" data-aim="535" data-limit="600">
+        <div class="part-title">
+          <h1>
+            Demo: one Regional dashboard, then the Events smoke test, live
+          </h1>
+          <span class="small"
+            ><a
+              href="../Tickets/Sprint%20Tickets%20%5BY26%20Sprint%2042%5D.html#card-3"
+              >Card 3</a
+            >&rsquo;s Regional dashboard as a super admin, then
+            <a
+              href="../Tickets/Sprint%20Tickets%20%5BY26%20Sprint%2042%5D.html#card-5"
+              >Cards 5</a
+            >
+            and 6: a chapter applies, connects, and its new Eventbrite event
+            lands on the OneEO sandbox and comes down again, from
+            <a
+              href="../Tickets/%5BPROOF%5D%20Sprint%20Tickets%20%5BY26%20Sprint%2042%5D%20Card%205/Events%20live%20demo%20runbook.html"
+              >the Events live demo runbook</a
+            >. The Events part opens on
+            <a href="../Deliverables/Events%20flow%20chart.html"
+              >the Events flow chart</a
+            >, and comes back to it in each run&rsquo;s wait.
+            <a
+              href="../Tickets/Sprint%20Tickets%20%5BY26%20Sprint%2042%5D.html#card-2"
+              >Card 2</a
+            >&rsquo;s renewal story changes are an Extra, shown only if
+            asked.</span
+          >
+        </div>
+
+        <div class="bar">
+          <div class="clock" role="timer" aria-live="off">
+            <span class="elapsed">0:00</span>
+            <span class="aim">aim 8:55 · limit 10:00</span>
+          </div>
+          <div class="actions">
+            <button type="button" class="btn timer-toggle">Start</button>
+            <button type="button" class="btn timer-reset">Reset</button>
+            <button type="button" class="btn" data-copy="script">
+              Copy script
+            </button>
+          </div>
+        </div>
+
+        <h2>
+          Before the call <span class="aside">· Tue 27 and Wed 28 Oct</span>
+        </h2>
+        <div class="box">
+          <ul>
+            <li>
+              Leave Arlene&rsquo;s account on Main Team APAC Region until after
+              the call: the demo shows the dashboard through it.
+            </li>
+            <li>
+              Done Tue 27 Oct: event-sync&rsquo;s pull request 16 is merged, so
+              the Run the sync step you open at 4:20, 6:50 and 8:40 now starts
+              with &ldquo;the website reader is off: its four settings are not
+              set&rdquo;, which names no chapter. The four EOVN_ settings stay
+              unset on GitHub.
+            </li>
+            <li>
+              Done Tue 27 Oct: the draft event prompt made Members Networking
+              Evening, draft 2003944302353 in Test Events, with its cover and
+              one free Registration ticket for 50, checked through the API.
+            </li>
+            <li>
+              Leave Chapter Dinner (rehearsal), 2003951898072, cancelled in Test
+              Events until after the call. The Tue 27 Oct local rehearsal
+              published it, copied it to the sandbox (297026) and cancelled it,
+              and its copy is down. The counts in Watch out include it.
+            </li>
+            <li>
+              Wed 28 Oct, before 09:00: start the Sprint review prep prompt (the
+              vault&rsquo;s Daily Standup note) again for the live re-check:
+              Wave 1 still has a free seat (5 of 5 open on Mon 26 Oct), the
+              Regional dashboard and the timing. The run counts come from the
+              draft event prompt, right before the call.
+            </li>
+            <li>
+              Wed 28 Oct: rehearse out loud with Start, the dashboard part and
+              the Events cues: the script should end by 8:55, and never past
+              10:00.
+            </li>
+            <li>
+              Wed 28 Oct, about 30 minutes before the call: close any Edge
+              private window (on a second paste, keep it and answer Already
+              open), then paste the draft event prompt (Before the demo, below
+              the table) into a Claude Code session started in
+              C:\Users\leekh\Videos\Captures, and do the steps it ends with:
+              sign in to Eventbrite in its private window as khoi.le@edge8.ai
+              (the Test Events owner, never onboarding@), and fill in the apply
+              form for the test chapter with a new plus address of your Gmail,
+              unsent, so at 1:45 you only click Send application.
+            </li>
+            <li>
+              Wed 28 Oct, within 25 minutes of the demo: check Chrome is still
+              signed in to HubSpot (it was on Mon 26 Oct), then Log in as Arlene
+              (HubSpot emails her) and open Regional dashboard. Expect EO
+              Bangkok Metropolitan too: its 89 deals came in on Sun 25 Oct,
+              under a team inside APAC Region. If the demo comes later than
+              planned, log in as her again just before it.
+            </li>
+            <li>
+              Leave sandbox event 295909 published as it is: it is the fallback
+              tab, and Emily&rsquo;s demo shows it.
+            </li>
+            <li>
+              Leave the test renewal deal (66214847534) and the dashboard Monday
+              view for every chapter (23519639) where they are until
+              Emily&rsquo;s demo.
+            </li>
+          </ul>
+        </div>
+
+        <h2>Before the demo <span class="aside">· not timed</span></h2>
+        <div class="box">
+          <table class="win">
+            <tr>
+              <th>Where</th>
+              <th>What it shows</th>
+            </tr>
+            <tr>
+              <td>Your own account, Edge</td>
+              <td>
+                <a
+                  href="https://app.hubspot.com/reports-dashboard/47691066/view/23719751"
+                  >Regional dashboard</a
+                >
+                as a super admin: the seven Regions reports, no region filter,
+                shared with specific users and teams (read Mon 26 Oct). Regions:
+                Pipeline by stage holds 1,870 deals, EO Bangkok
+                Metropolitan&rsquo;s 89 (in since Sun 25 Oct) included, and eo
+                vietnam is dark green on the four by-chapter charts (white until
+                26 Oct). The APAC Region and Canada Region dashboards are gone
+                from the list since 24 Oct. The top right reads
+                Entrepreneurs&rsquo; Organization; if it names a chapter, switch
+                it in the account menu.
+              </td>
+            </tr>
+            <tr>
+              <td>Arlene&rsquo;s account, Chrome</td>
+              <td>
+                The same Regional dashboard through Log in as user, her Main
+                Team APAC Region since Sat 24 Oct. Read that day: Regions:
+                Pipeline by stage shows only Adelaide, Melbourne, Perth, Sydney
+                and Vietnam, 834 deals, against the super admin&rsquo;s 1,454
+                that day (1,870 on Mon 26 Oct). Since Sun 25 Oct expect EO
+                Bangkok Metropolitan too: its team sits inside APAC Region (not
+                yet seen as her). Fallback: screenshot 01 in Tickets\[PROOF]
+                Sprint Tickets [Y26 Sprint 42] Demo.
+              </td>
+            </tr>
+            <tr>
+              <td>Chrome, the live tracker as yourself (admin)</td>
+              <td>
+                <a href="https://eochapterhubspotrollout.com/admin/events"
+                  >The Events page</a
+                >: on Mon 26 Oct no chapter in a wave, 5 Wave 1 places open, and
+                the last sync on 15 Oct (its &ldquo;No sync for over an
+                hour&rdquo; warning is expected). At 3:55, the chapter&rsquo;s
+                page takes, in the Access check: Verified by Khôi, Verified on
+                today, Eventbrite organisation name Test Events, Events visible
+                12 (Test Events&rsquo; current and future events, both drafts
+                included, read Tue 27 Oct), then Record access check. In
+                Connector settings: Eventbrite organisation ID 3016566608989,
+                Hivebrite group ID 18707 (the sandbox&rsquo;s CHAPTER TEST FOR
+                ROB group), Hivebrite category ID left empty, then Save
+                connector settings. Advance to API Access Configured is greyed
+                out until the access check is recorded.
+              </td>
+            </tr>
+            <tr>
+              <td>Edge, your own window</td>
+              <td>
+                <a href="../Deliverables/Events%20flow%20chart.html"
+                  >The Events flow chart</a
+                >, in Edge8&rsquo;s Deliverables folder, so the address bar
+                names no sprint or card. One screen at 1920 by 1080 with no
+                scrolling: the top row is what a chapter does once, with the
+                tracker&rsquo;s stage names, and the bottom row is what each run
+                does with an event. You show it at 1:15, 4:30, 6:15 and 7:25. It
+                leaves out the EO Vietnam website, and the sandbox, which you
+                name at 7:00.
+              </td>
+            </tr>
+            <tr>
+              <td>Edge, a private window, signed out</td>
+              <td>
+                <a href="https://eochapterhubspotrollout.com/events/apply"
+                  >The Events apply page</a
+                >. This is &ldquo;the chapter&rdquo;. Apply with an address of
+                yours that never applied for the test chapter, such as a new
+                plus address of your Gmail. Fill the form in before the call and
+                leave it unsent.
+              </td>
+            </tr>
+            <tr>
+              <td>Your Gmail inbox, Edge, your own window</td>
+              <td>
+                The set-password email arrives right after you apply. At 2:55
+                copy its link into the Edge private window, so the
+                chapter&rsquo;s session stays apart from your admin session in
+                Chrome.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Eventbrite as the chapter: khoi.le@edge8.ai, the Test Events
+                owner, in the Edge private window
+              </td>
+              <td>
+                The draft event&rsquo;s Publish page (&ldquo;Your event is
+                almost ready to publish&rdquo;), which the draft event prompt
+                below opens in an Edge private window.
+                <b>Sign in there as khoi.le@edge8.ai, never as onboarding@.</b>
+                Your own Edge window is signed in as onboarding@, which has role
+                R1 in Test Events (Edit event details only, the role every real
+                chapter gives us). It cannot publish or cancel: Publish now
+                answered &ldquo;You do not have permission to complete this
+                action&rdquo; on Mon 26 Oct. The same role lets the GitHub run
+                read the events. The prompt makes the draft through
+                Eventbrite&rsquo;s API with a key that sees only Test Events
+                (3016566608989), so the draft can never land in Edge8 Events.
+                Never make it by hand: the top-right corner names your login,
+                not the organisation you are in. <b>At 5:35:</b> check that
+                Public and Publish now are picked, then click the orange Publish
+                now at the bottom right. <b>At 7:25:</b> in the Event dashboard
+                tab, reload, then click the green On Sale button under the
+                event&rsquo;s title, then Change status. In the Change Status
+                box, pick Cancelled in the Status list, then click the orange
+                Take off sale. The white Cancel beside it only closes the box,
+                and the menu&rsquo;s Unpublish event is never used. Seen on Mon
+                26 Oct: the rehearsal event then read Cancelled, and the next
+                run took its copy down (removed 1). Do not delete the event: a
+                deleted event can leave its copy up on OneEO.
+                <b>Why a new title:</b> the connector skips an event whose title
+                and day match an event already on OneEO, even a rehearsal copy
+                that was taken down, and the run then reads created 0. Members
+                Networking Evening was never used. On Tue 27 Oct the
+                organisation&rsquo;s other events read 6 already on OneEO and 5
+                left out, so only the new event is created.
+              </td>
+            </tr>
+            <tr>
+              <td>GitHub</td>
+              <td>
+                <a
+                  href="https://github.com/EO-Vietnam/event-sync/actions/workflows/sync.yml"
+                  >event-sync&rsquo;s Event sync workflow</a
+                >
+                with Run workflow showing. On Tue 27 Oct its only run is still
+                the dry run of 15 Oct (green, 23 s).
+              </td>
+            </tr>
+            <tr>
+              <td>Your OneEO sandbox login</td>
+              <td>
+                <a href="https://eo.sandbox.us.hivebrite.com/events"
+                  >The sandbox events list</a
+                >, and a second tab on
+                <a href="https://eo.sandbox.us.hivebrite.com/events/295909"
+                  >event 295909</a
+                >
+                as the fallback: still published (read Mon 26 Oct in Edge),
+                copied on 18 Oct.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Only for the renewal Extra: your files, then your own account
+              </td>
+              <td>
+                EO&rsquo;s story spreadsheet, Scopes\<wbr />Sources\<wbr />Application_<wbr />To_<wbr />Conversion_<wbr />Lead_<wbr />Nurture_<wbr />Stories_<wbr />0818.xlsx,
+                Sheet1, rows 30, 31, 33, 35, 39 and 40: LN29, LN30, LN32, LN34,
+                LN38 and LN39, each Phase 2. Then Open&rsquo;s Test on
+                <a
+                  href="https://app.hubspot.com/workflows/47691066/platform/flow/1903838756/view/test-flow?recordId=64041882688"
+                  >a Primary chapter</a
+                >,
+                <a
+                  href="https://app.hubspot.com/workflows/47691066/platform/flow/1903838756/view/test-flow?recordId=64041573376"
+                  >a Secondary chapter</a
+                >
+                and
+                <a
+                  href="https://app.hubspot.com/workflows/47691066/platform/flow/1903838756/view/test-flow?recordId=64040327538"
+                  >an On Leave membership</a
+                >
+                (re-read Mon 26 Oct: isn&rsquo;t expected to start, Current
+                Status On Leave), and the report Chapter: Renewal dues by stage
+                in the report builder (filter Primary chapter is any of Yes, no
+                data, read Mon 26 Oct).
+              </td>
+            </tr>
+          </table>
+          <div class="prompt-head">
+            <p>
+              <b>The draft event prompt.</b> It sets up the whole demo. Paste it
+              into a Claude Code session started in
+              C:\Users\leekh\Videos\Captures on Wed 28 Oct, about 30 minutes
+              before the call, after you close any Edge private window. It is
+              safe to paste again: it changes only what is missing, and asks
+              before it opens any screen, so a second paste can keep your
+              private window and its filled-in form. It checks Members
+              Networking Evening (made Tue 27 Oct), reads Events visible for
+              3:55 and the counts the runs will show, checks GitHub&rsquo;s side
+              without starting a run, and opens every screen: the apply page,
+              the Publish page and the Event dashboard in one Edge private
+              window, your own Edge tabs, and Chrome&rsquo;s Events page. It
+              ends with your steps, such as the Eventbrite sign-in and the apply
+              form, so at 1:45 you only click Send application, at 5:35 Publish
+              now, and at 7:25 the cancel starts from the dashboard tab.
+            </p>
+            <button type="button" class="btn" data-copy-prompt="draft-prompt">
+              Copy prompt
+            </button>
+          </div>
+          <pre class="raw" id="draft-prompt">
+Set up everything for today's live Events demo, and nothing else: check the draft Eventbrite event (or make it if it is missing), read the numbers the demo will type and see, check GitHub's side without starting a run, and open every screen the demo uses. Make and check the event only through Eventbrite's API. The only browser steps are steps 11 and 12, which only open pages. The Eventbrite token in C:/Users/leekh/Documents/Repos/Edge8/event-sync/.env.sandbox sees only the Test Events organisation, id 3016566608989, so the event cannot land in Edge8 Events. Load that file only with node --env-file, directly or through the two Card 5 scripts in step 9, which do the same. The prompt is safe to run again: each step reads what is there first and changes only what is missing, and nothing opens on screen until I say so in step 11. Never open, cat, grep or print it, never print the token, and never read any other .env file.
+
+First delete C:/tmp/demo-event if it exists, left over from an earlier run. Write each Node script with the Write tool inside C:/tmp/demo-event, and run it with Bash as: node --env-file=C:/Users/leekh/Documents/Repos/Edge8/event-sync/.env.sandbox followed by the script's path. Write files only inside C:/tmp/demo-event. A script calls https://www.eventbriteapi.com/v3 with the header Authorization: Bearer followed by the EVENTBRITE_TOKEN value. Every POST to that API sends JSON with Content-Type: application/json. An event create or update body is wrapped as {"event": {...}}, where name and description are each {"html": ...} and start and end are each {"timezone": ..., "utc": ...}. A ticket body is wrapped as {"ticket_class": {...}}. Run the steps below in order. Steps 1 to 7 stop at the first error a step does not handle, printing the step and Eventbrite's error text. From step 8 on, a check that fails or cannot run goes in the report as such, and the next step still runs.
+
+Step 1: GET /users/me/organizations/ and stop unless the list holds 3016566608989.
+
+Step 2: GET /organizations/3016566608989/events/?status=all&amp;page_size=100 and look for an event named Members Networking Evening. If exactly one exists, as a draft, make no new event: with that event, run step 4 only if it has no ticket class and step 5 only if it has no cover or has the grey fallback cover (logo_id 1196029435), then go to step 6. If one exists in any other state, or more than one exists, stop and tell me each id and state. If none exists and today is after Wed 28 Oct 2026, stop before step 3 and tell me the title is used up: its copy is on OneEO, so a new event under it would read created 0.
+
+Step 3: POST /organizations/3016566608989/events/ with: name Members Networking Evening; description, as plain text with no HTML tags, exactly "An evening for chapter members to meet and share what they are working on."; start 2026-11-18T11:00:00Z and end 2026-11-18T13:00:00Z, both with timezone Asia/Ho_Chi_Minh (Wed 18 Nov 2026, 18:00 to 20:00 Vietnam time); currency USD; listed true; online_event false and no venue_id, so the location reads To be announced; no logo_id. Send this POST once. If it errors or times out, run step 2's lookup again before anything else, and make the event only if the lookup still finds none.
+
+Step 4: POST /events/ plus the event's id plus /ticket_classes/ with one ticket class: name Registration, free true, quantity_total 50. Send it once. If it errors or times out, read the event's ticket classes again, and send it only if there is still none.
+
+Step 5: Give the event its cover, the picture C:/Users/leekh/Documents/Edge8/Tickets/[PROOF] Sprint Tickets [Y26 Sprint 42] Card 5/demo-event-cover.png (2160 by 1080, the title on navy). Read it into memory and upload it the documented way. First GET /media/upload/?type=image-event-logo. Then send a multipart POST to the upload_url it returns: every upload_data field first, the file last in the field that file_parameter_name names, no Content-Type of your own (fetch sets the multipart one) and no Authorization header. A network error such as "fetch failed" counts as a refusal: send it once more. Then POST /media/upload/ with the upload_token and the crop_mask {"top_left": {"x": 0, "y": 0}, "width": 2160, "height": 1080}; if Eventbrite refuses x and y of 0, use 1 and 1 with width 2158 and height 1079. Then POST /events/ plus the event's id plus / with the returned image id as event.logo_id. If the multipart POST is refused and upload_url is on www.eventbrite.com, send it once more with the Authorization header, and never send that header to any other host. If the upload still fails, set logo_id 1196029435 instead, the grey test picture of Connector D1 Test, and tell me so.
+
+Step 6: GET /events/ plus the event's id plus /?expand=logo,ticket_classes, and GET its /description/. Print: id, name, status, listed, start.local, start.timezone, online_event, whether logo.original.url is set, each ticket class with its free flag and quantity, and the description text. It must read: status draft, listed true, start 2026-11-18T18:00:00 in Asia/Ho_Chi_Minh, online_event false, a cover set, one free Registration ticket for 50, and the description sentence above (Eventbrite wraps it in div tags, which is fine). If a field other than status differs, fix it once (step 4 only for a missing ticket class, step 5 for a missing or grey fallback cover, an update of that one field otherwise) and read it back once. A ticket class that exists but differs, or a second ticket class, is never added to or changed: report it. If it still differs, or the status is not draft, stop and tell me what differs. Never change the status.
+
+Step 7: Make the two links. The Publish page: https://www.eventbrite.com/manage/events/ followed by the event's id and /preview_publish. The Event dashboard: https://www.eventbrite.com/myevent?eid= followed by the event's id.
+
+Step 8: Read what the demo types and sees at 3:55. Events visible: GET /organizations/3016566608989/events/?status=all&amp;time_filter=current_future and take pagination.object_count. The team: GET /organizations/3016566608989/members/ should hold two members, the owner and one with role_summary R1, which is onboarding@ (Eventbrite hides members' emails, so report the role, not an address). The events: GET /organizations/3016566608989/events/?status=all&amp;expand=event_sales_status&amp;page_size=100, and count drafts, cancelled events (event_sales_status.message_code event_cancelled, whatever the status says) and the rest. On Tue 27 Oct there were 12 events: 2 drafts (Members Networking Evening, and Online Testing Event, an older test), 3 cancelled (Founders Coffee (rehearsal), Chapter Dinner (rehearsal) and Connector Check 2 Online Test) and 7 others. Report each draft and each cancelled event by name, and anything that differs from that list.
+
+Step 9: Read the counts the demo's runs will show, with the local connector. Run docker ps. If no container named supabase_db_website is running, report that this check did not run and go to step 10. Otherwise run, with Bash, bash "C:/Users/leekh/Documents/Edge8/Tickets/[PROOF] Sprint Tickets [Y26 Sprint 42] Card 5/reset-demo.sh" and then bash "C:/Users/leekh/Documents/Edge8/Tickets/[PROOF] Sprint Tickets [Y26 Sprint 42] Card 5/rebuild-demo-chapter.sh". They touch only the local Supabase, and the second ends with a dry run of the local test chapter against Test Events and the OneEO sandbox, which writes nothing to OneEO. Report its chapter line's created, excluded and duplicates. It reads ok (write) because the local chapter sits at Testing. The demo's 5:15 dry run reads ok (read only) with the same created 0, excluded and duplicates. Its 6:50 run reads created 1 with one fewer excluded, and its 8:40 run reads removed 1 with the 6:50 excluded. On Tue 27 Oct the line read created 0, excluded 6 and duplicates 6.
+
+Step 10: Check GitHub's side, read only, with env -u GH_TOKEN gh, and start no run. (a) Read src/cli.ts on main of EO-Vietnam/event-sync through gh api and check it holds "the website reader is off: its four settings are not set". (b) gh run list --repo EO-Vietnam/event-sync --limit 5: report each run, and any run that is queued or in progress, because the demo's runs would wait behind it. (c) gh secret list --repo EO-Vietnam/event-sync should name six secrets: EVENTBRITE_TOKEN, EVENTS_API_KEY_ENCRYPTION_KEY, HIVEBRITE_CLIENT_ID, HIVEBRITE_CLIENT_SECRET, SUPABASE_SERVICE_ROLE_KEY and SUPABASE_URL. (d) gh variable list --repo EO-Vietnam/event-sync should read HIVEBRITE_API_URL https://api.sandbox.us.hivebrite.com, HIVEBRITE_AUTH_URL https://auth.sandbox.us.hivebrite.com, HIVEBRITE_CHAPTER_CATEGORY_ID 25162 and HIVEBRITE_VIRTUAL_CATEGORY_ID 24860. Report any difference.
+
+Step 11: Ask me once, with the AskUserQuestion tool, which screens to open, because an earlier run of this prompt may have opened them already and I may have filled in the apply form. The choices: Open all (the first run today), Already open (open nothing), Only the InPrivate window, Only my own Edge and Chrome. Open only what I pick, in steps 11 and 12. Then, for the InPrivate window, with the PowerShell tool, open one Edge InPrivate window with three tabs, in this order: the live Events apply page https://eochapterhubspotrollout.com/events/apply, the Publish page link, then the Event dashboard link. Use Start-Process msedge -ArgumentList '--inprivate', followed by each link in double quotes inside single quotes. Click nothing. My own Edge window is signed in to Eventbrite as onboarding@, whose role may not publish or cancel, so these three open only in the InPrivate window.
+
+Step 12: For my own Edge and Chrome, with the PowerShell tool, open the other screens, clicking nothing. In my own Edge window, with Start-Process msedge and no --inprivate, each link in double quotes inside single quotes: the review page file:///C:/Users/leekh/Documents/Edge8/Sprint%20review/sprint-42-review.html#demo, the Regional dashboard https://app.hubspot.com/reports-dashboard/47691066/view/23719751, the Events flow chart file:///C:/Users/leekh/Documents/Edge8/Deliverables/Events%20flow%20chart.html, GitHub's Event sync workflow https://github.com/EO-Vietnam/event-sync/actions/workflows/sync.yml, the OneEO sandbox events list https://eo.sandbox.us.hivebrite.com/events, the fallback event https://eo.sandbox.us.hivebrite.com/events/295909, and my Gmail inbox https://mail.google.com/. In Chrome, with Start-Process chrome: the live tracker's Events page https://eochapterhubspotrollout.com/admin/events.
+
+Leave the event a draft. Never publish, cancel, unpublish, delete or copy any event, never schedule a publish, and never change any other event in Test Events. Never start a GitHub run. Never write to OneEO, HubSpot, GitHub, the live tracker or any git repository: the local Supabase in step 9 is the one database this prompt writes to.
+
+When it is done, delete the folder C:/tmp/demo-event and tell me in plain words, one line each: the event's id and name, its date and time in Vietnam time, and that it is a draft in Test Events with its cover and one free ticket; Events visible for 3:55; the R1 team member; the drafts and cancelled events; the counts for 5:15, 6:50 and 8:40, or that the check did not run; GitHub's skip line, its runs, secrets and variables, and any difference; and which screens opened where, or that I chose to open none. Then give me my steps, one line each. In the InPrivate window, I sign in to Eventbrite as khoi.le@edge8.ai, the Test Events owner, never as onboarding@, then reload the Publish and Event dashboard tabs. The Publish tab names Members Networking Evening, reads Your event is almost ready to publish, shows Public and Publish now picked and lists no message to fix, so at 5:35 I only click Publish now. The Event dashboard tab shows the event's status button, which I use at 7:25. In the apply tab, I fill in the form for the test chapter with a new plus address of my own Gmail, one that never applied for the test chapter, and leave it unsent, so at 1:45 I only click Send application. In Chrome, I sign in to the live tracker if asked and check the Events page shows a free Wave 1 place and no application from the test chapter. In my own Edge, I sign in to GitHub and the OneEO sandbox if asked, and check event 295909 still shows. My Gmail inbox stays open in my own Edge: at 2:55 the set-password email arrives there, and I copy its link into the InPrivate window. Within 25 minutes of the demo, I Log in as Arlene in Chrome and open the Regional dashboard. If Eventbrite shows Select organization or an error instead, I open https://www.eventbrite.com/organizations/ in the same InPrivate window, click Test Events, then open both Eventbrite links again.</pre
+          >
+        </div>
+
+        <h2>Watch out</h2>
+        <div class="dec">
+          <ul>
+            <li>
+              <b>The live smoke test runs once.</b> A chapter has one Events
+              application, and the tracker cannot delete one. Rehearse only on
+              the local app.
+            </li>
+            <li>
+              <b>Your Gmail fills with the test chapter&rsquo;s name.</b> As the
+              applicant you get &ldquo;We received your Events application
+              for&rdquo; it, &ldquo;Set your password for the EO chapter
+              portal&rdquo;, &ldquo;is in the Events API pilot&rdquo;, then one
+              &ldquo;Events API update&rdquo; per stage move. At 2:55 open only
+              Set your password. If it is not in the Inbox within a minute, look
+              in Spam, then use the Extra for a slow email. The tracker&rsquo;s
+              email to a Gmail address was not tried before the call.
+            </li>
+            <li>
+              <b>Real emails go out.</b> Applying emails every tracker admin and
+              Events manager, EO Global&rsquo;s five admins included, and each
+              stage move emails the applicant, so the applicant is you. No
+              heads-up goes out before the call (your call, Mon 26 Oct): as you
+              send the application, tell them its email is the test.
+            </li>
+            <li>
+              <b>Never say the test chapter&rsquo;s name,</b> and say
+              &ldquo;sandbox&rdquo; once, at 7:00.
+            </li>
+            <li>
+              <b>Register can open with OneEO&rsquo;s link warning.</b> OneEO
+              warns before a link to a site it does not trust, and the sandbox
+              trusted no Eventbrite address when the connector spec read it on 5
+              Oct. At 7:00, if the warning shows, go on past it to Eventbrite.
+              If asked: EO can add eventbrite.com to OneEO&rsquo;s trusted
+              sites.
+            </li>
+            <li>
+              <b>The sandbox shows times in UTC.</b> 6 PM in Vietnam on
+              Eventbrite reads 11:00 AM UTC on the copy (295909 and the Mon 26
+              Oct rehearsal copy both do). If asked: the same moment, shown in
+              UTC.
+            </li>
+            <li>
+              <b>Read the chapter line, never only the green tick.</b> If it
+              says EventbriteUnavailable, run it once more: it happened once in
+              the 23 Oct rehearsal, and the retry worked.
+            </li>
+            <li>
+              <b>A region sees owned deals only.</b> On Sat 24 Oct
+              Arlene&rsquo;s view showed the deals APAC chapter teams own, and
+              none that are only shared with a chapter team: Queensland&rsquo;s
+              and Sydney&rsquo;s no-owner deals are missing. If asked: those
+              deals need an owner on the chapter&rsquo;s team.
+            </li>
+            <li>
+              <b>Change nothing in Arlene&rsquo;s account,</b> and call her a
+              chapter user moved to APAC Region for this check, never a regional
+              leader. Her login can expire after about 30 minutes.
+            </li>
+            <li>
+              <b
+                >The demo&rsquo;s runs are GitHub&rsquo;s first with a
+                chapter.</b
+              >
+              The 15 Oct run read no chapter. On Tue 27 Oct onboarding@&rsquo;s
+              Eventbrite token, read from its Eventbrite account, listed Test
+              Events&rsquo; 12 events, so Eventbrite should answer, if GitHub
+              still holds that token (set 14 Oct). GitHub&rsquo;s OneEO sandbox
+              keys meet a real read for the first time at 4:20. If it goes red,
+              the first Extra below is the way out.
+            </li>
+            <li>
+              <b>EO Bangkok Metropolitan is new on the dashboard.</b> Its 89
+              deals came in on Sun 25 Oct. If asked: the latest chapter
+              imported.
+            </li>
+            <li>
+              <b>A run can take longer than its slot.</b> If created 1 is not
+              there by 7:00, go to the 295909 tab, say the first Extra&rsquo;s
+              second sentence, skip 7:25, and end with the second sentence at
+              8:40.
+            </li>
+            <li>
+              <b>Dry run is ticked again on every dispatch:</b> untick it at
+              5:50 and at 7:25. The chapter line&rsquo;s duplicates are the
+              Event sync box&rsquo;s &ldquo;already on OneEO&rdquo;. At 5:15 the
+              dry run reads created 0, excluded 6 and duplicates 6: the 6 left
+              out are 3 older events, the two cancelled rehearsals (Founders
+              Coffee and Chapter Dinner) and the draft. At 6:50 it reads created
+              1 and excluded 5. At 8:40 it reads removed 1 and excluded 5. The
+              Tue 27 Oct local rehearsal, with the same Test Events and the same
+              OneEO sandbox, read exactly these. Only created and removed
+              matter.
+            </li>
+            <li>
+              <b
+                >The flow chart fills each run&rsquo;s wait, so read the run
+                before you talk about it.</b
+              >
+              A run takes about a minute from Run workflow, most of it GitHub
+              starting up. Back on GitHub at 5:15, 6:50 or 8:40: if the run is
+              still going, stay on it until it turns green, then read the
+              chapter line. Red, or a chapter line that names a problem: the
+              Extras below.
+            </li>
+            <li>
+              <b>Publish and cancel as the chapter, never as us.</b> Eventbrite
+              in the Edge private window, signed in as khoi.le@edge8.ai, the
+              Test Events owner. Your own Edge window is onboarding@, with role
+              R1: on Mon 26 Oct its Publish now answered &ldquo;You do not have
+              permission to complete this action&rdquo;, and its cancel would
+              too.
+            </li>
+            <li>
+              <b
+                >&ldquo;Already on OneEO from the legacy feed: 6&rdquo; are our
+                own test copies.</b
+              >
+              The chapter&rsquo;s Event sync box labels every duplicate that
+              way, because in real use they come from the feed that already
+              copies chapter events from EO&rsquo;s CRM. Here they are the
+              copies of the test organisation&rsquo;s 6 older events that the
+              connector made in its 18 and 23 Oct tests. If asked, use the Extra
+              about events already on OneEO.
+            </li>
+            <li>
+              <b>Publish now opens a sales offer.</b> Eventbrite shows
+              &ldquo;Your event is live&rdquo; over a Premium offer (&ldquo;Get
+              this event in front of more buyers&rdquo;, Try for free). Close it
+              with the X at its top right, and never click Try for free: it
+              starts a paid plan after 7 days. Seen Mon 26 Oct.
+            </li>
+            <li>
+              <b>The cancel box has a Cancel button that cancels nothing.</b>
+              At 7:25, after you pick Cancelled, click the orange Take off sale.
+              The white Cancel beside it only closes the box, and the event
+              stays on sale. Never pick Unpublish event in the On Sale menu, and
+              never delete: a deleted event can leave its copy up on OneEO. Seen
+              Mon 26 Oct.
+            </li>
+            <li>
+              <b
+                >Open the Run the sync step by its name, and leave its first
+                line folded.</b
+              >
+              That first line, &ldquo;Run npx tsx src/cli.ts sync&rdquo;,
+              unfolds into the run&rsquo;s settings, with the sandbox addresses
+              and the website reader&rsquo;s EOVN_ names (read on the 15 Oct
+              run). Under it come &ldquo;the website reader is off: its four
+              settings are not set&rdquo; (since Tue 27 Oct), the event-sync
+              version line with 1 connected chapter, then the chapter line,
+              which starts with chapter and an id, never the chapter&rsquo;s
+              name. Point only at the chapter line. At 8:40 a line above it says
+              the event &ldquo;is not_published; its copy was
+              unpublished&rdquo;: that is the removal, as it should be.
+            </li>
+            <li>
+              <b>No chart shows (No value) now.</b> Filters hide the records
+              with no chapter or no end date (see After the demo). If asked:
+              records being cleaned up.
+            </li>
+            <li>
+              <b>Keep EO Vietnam&rsquo;s events off the call,</b> even if asked,
+              as Dave asked on 13 Oct: the EO Vietnam website-events test to
+              OneEO, the EO Vietnam deals push, and anything that suggests we
+              support chapters that do not use Eventbrite.
+            </li>
+            <li>
+              <b>Give no dates</b> for the pilot, the connector&rsquo;s schedule
+              or the renewal switch-on. None is set.
+            </li>
+          </ul>
+        </div>
+
+        <h2>Script <span class="aside">· 19 timed groups, aim 8:55</span></h2>
+        <div class="script-body">
+          <section class="grp" data-t="0">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">0:00</span
+                ><span class="cue"
+                  >&lt;Your own account in Edge: the Regional
+                  dashboard&gt;</span
+                >
+              </div>
+              <p class="line">
+                First, a quick follow-up on dah dashboards. Last week I
+                suggested one dashboard for all regions, instead of one per
+                region. So here it is, one Regional dashboard with seven
+                reports.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="22">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">0:22</span
+                ><span class="cue">&lt;Pipeline by stage, by chapter&gt;</span>
+              </div>
+              <p class="line">
+                As a super admin, I see the chapters from every region here. Now
+                let's see dah same dashboard from a regional staff perspective.
+                team.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="40">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">0:40</span
+                ><span class="cue"
+                  >&lt;Switch to Arlene&rsquo;s account in Chrome. Show her
+                  banner, then Regions: Pipeline by stage&gt;</span
+                >
+              </div>
+              <p class="line">
+                So this is what a regional leader would see in the same
+                dashboard, I'm borrowing Arlene's account and assinged her to
+                dah APAC Region team for dis demo. A few columns less, and
+                there's no Canada chapters here because she only sees deals
+                owned by dah Asia Pacific chapter teams.
+              </p>
+              <p class="line">
+                So the whole point of this is that it's a scalable solution and
+                there's no need for a separate copy per region.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="75">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">1:15</span
+                ><span class="cue"
+                  >&lt;Edge, your own window: the Events flow chart&gt;</span
+                >
+              </div>
+              <p class="line">
+                And the next thing is the event sync. It's basically code
+                complete by now, so let's take a look at dah big picture on one
+                page, before we do it live.
+              </p>
+              <p class="line">
+                Dah top row is once per chapter. So once we have dah pilot
+                chapters, they'll apply and invite us to their Eventbrite team.
+                We'll create their accounts in the tracker in case they don't
+                have one. Dah bottom row is every run after dat. Dat's where our
+                sync does dah work.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="105">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">1:45</span
+                ><span class="cue"
+                  >&lt;Edge, signed out: the Events apply page, filled in before
+                  the call for the test chapter. Send application&gt;</span
+                >
+              </div>
+              <p class="line">
+                So let's start from dah chapter's side. The entry point is this
+                application form. I'm gonna fill it in, and the tracker will
+                create the chapter's account and its application accordingly.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="150">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">2:30</span
+                ><span class="cue"
+                  >&lt;Chrome, the tracker&rsquo;s Events page: the new
+                  application, Add to Wave 1, then its page&gt;</span
+                >
+              </div>
+              <p class="line">
+                Once the form is submitted, dee application lands here in the
+                tracker. Dah pilot chapters you choose go into Wave 1 by hand.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="175">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">2:55</span
+                ><span class="cue"
+                  >&lt;Your Gmail inbox: the email Set your password for the EO
+                  chapter portal. Its Set your password link opened in the Edge
+                  private window: Confirm your account, Continue, then a
+                  password typed twice and Set password. The portal opens on the
+                  Events application by itself&gt;</span
+                >
+              </div>
+              <p class="line">
+                Dah chapter gets an email and sets a password. Den dere's just
+                one thing to do, invite our address to their Eventbrite team.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="210">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">3:30</span
+                ><span class="cue"
+                  >&lt;Edge: I have sent the invite, confirmed&gt;</span
+                >
+              </div>
+              <p class="line">
+                So this is where we reach out to dah chapter, and show them how
+                to create an invitation with the permissions we need. But at
+                this point to be honest, it might be more efficient to share the
+                demo video, like we did for Emily, instead of going through the
+                hassle of setting up meetings.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="235">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">3:55</span
+                ><span class="cue"
+                  >&lt;Chrome, the chapter&rsquo;s Events page. Access check:
+                  Verified by Khôi, Verified on today (Wed 28 Oct 2026),
+                  Eventbrite organisation name Test Events, Events visible 12,
+                  then Record access check. Connector settings: Eventbrite
+                  organisation ID 3016566608989, Hivebrite group ID 18707,
+                  Hivebrite category ID left empty, then Save connector
+                  settings. Then Advance to API Access Configured&gt;</span
+                >
+              </div>
+              <p class="line">
+                On our side, once they invited us to their Eventbrite
+                organization, we can read dah chapter's events, and pick its
+                OneEO group.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="260">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">4:20</span
+                ><span class="cue"
+                  >&lt;GitHub: a dry run, Dry run left ticked&gt;</span
+                >
+              </div>
+              <p class="line">
+                Dah sync runs on GitHub. For a new chapter, we do a dry run
+                first.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="270">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">4:30</span
+                ><span class="cue"
+                  >&lt;The flow chart, while the run works: Checks we can read
+                  its events, then Moves it to Testing&gt;</span
+                >
+              </div>
+              <p class="line">
+                It shows us what it would copy, but it doesn't actually copy
+                anything yet. And once we move dah chapter to Testing, that's
+                where each run copies every published public event for real.
+              </p>
+              <p class="line">
+                For now, we start each run by hand. Once dah first real chapters
+                connect, we switch on dah schedule, and it runs by itself every
+                half hour.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="315">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">5:15</span
+                ><span class="cue"
+                  >&lt;GitHub: the dry run, green, its Run the sync step: the
+                  chapter line reads ok (read only), created 0. Then Chrome:
+                  Testing&gt;</span
+                >
+              </div>
+              <p class="line">
+                Dah dry run's green, and it finished the check.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="335">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">5:35</span
+                ><span class="cue"
+                  >&lt;Eventbrite in the Edge private window, as the chapter:
+                  the draft&rsquo;s Publish page, then Publish now. Close the
+                  Premium offer with its X&gt;</span
+                >
+              </div>
+              <p class="line">
+                I've set up a public test event from dah chapter's side. Now I'm
+                publishing it, just like how a chapter normally would.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="350">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">5:50</span
+                ><span class="cue"
+                  >&lt;GitHub: a real run, Dry run unticked&gt;</span
+                >
+              </div>
+              <p class="line">
+                And once everything is production-ready, dah sync will pull the
+                new event that I just published into OneEO automatically. This
+                created number here would be 1 because we just published a new
+                one, and the status here will be updated accordingly. But for
+                dis demo, I'll run it manually, so you can see how it works. It
+                takes about a minute, mostly GitHub starting up.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="375">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">6:15</span
+                ><span class="cue"
+                  >&lt;The flow chart, while the run works: the bottom row, New
+                  and public, then Changed, then A draft&gt;</span
+                >
+              </div>
+              <p class="line">
+                While it runs, here's what it does. It finds dis new public
+                event, and copies it onto OneEO. If dah chapter edits it later,
+                dah next run updates dah copy. And drafts or private events are
+                left out.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="410">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">6:50</span
+                ><span class="cue"
+                  >&lt;GitHub: the green run, the line with created 1&gt;</span
+                >
+              </div>
+              <p class="line">One event created.</p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="420">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">7:00</span
+                ><span class="cue"
+                  >&lt;OneEO sandbox: the new event, then Register&gt;</span
+                >
+              </div>
+              <p class="line">
+                And here it is on dah OneEO sandbox. Same title, same date, same
+                cover. Dah time just shows in UTC. Nobody typed any of dis, and
+                Register takes members straight to Eventbrite.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="445">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">7:25</span
+                ><span class="cue"
+                  >&lt;Eventbrite in the private window, the Event dashboard
+                  tab, reloaded: On Sale, then Change status, Cancelled, the
+                  orange Take off sale (never the white Cancel, never delete).
+                  GitHub: another real run, Dry run unticked. Then the flow
+                  chart for the second line, while the run works&gt;</span
+                >
+              </div>
+              <p class="line">
+                Now let's see what happens when dah chapter cancels an event on
+                Eventbrite. Again, I'm simulating sync by running it manually,
+                but in production it would run automatically every half hour and
+                acknowledge dah change. Then it will take dee event down from
+                OneEO, and you will see that dee event is no longer available.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="520">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">8:40</span
+                ><span class="cue"
+                  >&lt;GitHub: the line with removed 1, under the line that says
+                  its copy was unpublished. OneEO sandbox: reload the
+                  event&rsquo;s tab, which now says the event does not exist or
+                  is not available&gt;</span
+                >
+              </div>
+              <p class="line">
+                So, to wrap it up, a chapter applies, their account is created
+                if's not there yet, and invites us to their Eventbrite
+                organization. After dat, they just use Eventbrite like they
+                always do. Once dah schedule's on, dah sync runs by itself every
+                half hour. It copies new events, updates changed ones, and takes
+                down cancelled ones.
+              </p>
+              <p class="line">
+                And to get it production-ready, all we need is to swap out the
+                Hivebrite sandbox keys for the production ones, and get the
+                pilot chapters onboarded.
+              </p>
+              <p class="line">
+                That brings us to the end of the demo. I’m happy to answer any
+                questions or discuss next steps.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If a GitHub run (4:20 or 5:50) is red, or says NotAMember or
+                  TokenRejected, not timed. Go to the 295909 tab, skip every
+                  timed group up to 8:40, and end with the second sentence at
+                  8:40</span
+                >
+              </div>
+              <div class="head">
+                <span class="cue">&lt;The tab on event 295909&gt;</span>
+              </div>
+              <p class="line">
+                Dah run stopped, and it names dah problem. Dis one was copied by
+                dah same connector on 18 October.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If the 5:50 run says EventbriteUnavailable and the clock is
+                  under 7:25, not timed. Run it once more, Dry run
+                  unticked</span
+                >
+              </div>
+              <p class="line">
+                Eventbrite didn't answer in time, so I'm running it once more.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If the 5:50 run says created 0, or the clock is past 7:25,
+                  not timed. Go to the 295909 tab and follow the first
+                  Extra</span
+                >
+              </div>
+            </div>
+          </section>
+
+          <section class="grp">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If removed 1 is not there at 8:40, not timed. Say the 8:40
+                  line over the running job, and stop</span
+                >
+              </div>
+            </div>
+          </section>
+
+          <section class="grp">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If Add to Wave 1 refuses (Wave 1 full) or the email is slow,
+                  not timed. Go to the 295909 tab, say the line below, then the
+                  7:00 line&rsquo;s second sentence, and end with the second
+                  sentence at 8:40. Or, for a slow email, come back to the
+                  portal after the access check</span
+                >
+              </div>
+              <p class="line">
+                Dis one was copied by dah same connector on 18 October.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If Arlene&rsquo;s login fails or shows nothing at 0:40, not
+                  timed. Show screenshot 01 and say the 0:40 lines over it</span
+                >
+              </div>
+            </div>
+          </section>
+
+          <section class="grp">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >Only if asked whether this is live OneEO, not timed</span
+                >
+              </div>
+              <p class="line">
+                No, dis is dah OneEO sandbox. Dah tracker is dah real one, and
+                real OneEO starts with dah pilot.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >Only if asked what a chapter has to do, not timed</span
+                >
+              </div>
+              <p class="line">
+                Apply, set a password, and invite our Eventbrite address once.
+                After dat, it just publishes on Eventbrite.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >Only if asked where the organisation ID and the OneEO group
+                  come from, not timed</span
+                >
+              </div>
+              <p class="line">
+                Dah organisation ID comes from Eventbrite. Once we accept dah
+                chapter's invite, dat chapter shows up in our account, with its
+                name and its ID.
+              </p>
+              <p class="line">
+                Dah OneEO group and category are on each chapter's record in
+                your CRM, so we'll get dose from you. And before we connect a
+                chapter, we check we can actually see its events.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >Only if asked how long a run takes, not timed</span
+                >
+              </div>
+              <p class="line">
+                Under a minute on GitHub, about twenty seconds of real work for
+                one chapter.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >Only if asked about events already on OneEO, not timed</span
+                >
+              </div>
+              <p class="line">
+                It looks for one with dah same title on dah same day, and leaves
+                dat one alone.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >Only if asked about the sync warning on the tracker, not
+                  timed</span
+                >
+              </div>
+              <p class="line">
+                Nothing was connected, so nothing has run since a check on 15
+                October. Today's runs clear it.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >Only if asked about the renewal user stories, not timed,
+                  about two minutes. Start on the spreadsheet, then your own
+                  account in Edge, all in HubSpot&rsquo;s Test, which creates
+                  nothing</span
+                >
+              </div>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;EO&rsquo;s story spreadsheet, Sheet1: rows 30, 31, 33,
+                  35, 39 and 40, Phase 2 in column A, the IDs in column
+                  B&gt;</span
+                >
+              </div>
+              <p class="line">
+                We made three changes to Member Renewal. Dey cover dah renewal
+                part of six of your Phase 2 stories. Dat's LN29, LN30 and LN32,
+                LN34, and LN38 and LN39. Dah rest of dose stories, like dah
+                second-chapter form, isn't built yet. Everything's still
+                switched off. What I'm showing you is HubSpot's test, which is
+                just a simulation.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Open&rsquo;s Test on a Primary chapter, Manual mode: step
+                  3, Primary chapter set to Yes&gt;</span
+                >
+              </div>
+              <p class="line">
+                LN29, LN30 and LN32 are about members who join a second or third
+                chapter. For renewals, each chapter gets its own renewal deal,
+                and dah primary chapter's deal has Primary chapter set to Yes.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Open&rsquo;s Test on a Secondary chapter: step 4, set to
+                  No&gt;</span
+                >
+              </div>
+              <p class="line">
+                A second chapter gets its own deal, with Primary chapter set to
+                No.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;The report Chapter: Renewal dues by stage, its filter
+                  Primary chapter is any of Yes&gt;</span
+                >
+              </div>
+              <p class="line">
+                LN34 asks for no duplicate counts, and for dah renewal report to
+                count a member in their primary chapter. So dah dues report
+                counts each member once, in their primary chapter.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Open&rsquo;s Test on an On Leave membership, Automatic
+                  mode: Current Status, Didn&rsquo;t meet criteria, On
+                  Leave&gt;</span
+                >
+              </div>
+              <p class="line">
+                LN38 and LN39 are about members on leave. For renewals, a member
+                on leave gets no renewal deal. Both rules run on Altai data.
+                Dat's one membership record per chapter, plus each member's On
+                Leave status.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >Only if asked why the renewal report shows no data, not
+                  timed</span
+                >
+              </div>
+              <p class="line">
+                No real renewal deal exists yet. Dah report fills once renewals
+                are switched on.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >Only if asked about the rest of the renewal stories, or where
+                  the second-chapter form is, not timed</span
+                >
+              </div>
+              <p class="line">
+                Two parts of LN38 and LN39 are still open, coming back from
+                leave, and moving to alumni. LN47 and LN49 are about moving to
+                another chapter. All three are waiting on dah membership team to
+                write down deir process. And dah second-chapter form in LN29,
+                LN30 and LN32 isn't built yet either.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <h2>After the demo <span class="aside">· Wed 28 Oct</span></h2>
+        <div class="box">
+          <ul>
+            <li>
+              Wed 28 Oct: sign out of Arlene&rsquo;s account, then put her back
+              (Card 4, step 1): Main Team EO Vietnam, and Reporting back to the
+              values in your 16 Oct note, or Tam Nguyen&rsquo;s if it is lost.
+            </li>
+            <li>
+              Wed 28 Oct, before the clean-up: if removed 1 did not show in the
+              demo, run sync.yml once more with Dry run unticked and see removed
+              1, or unpublish the copy by hand on the sandbox.
+            </li>
+            <li>
+              Wed 28 Oct, the same day: delete the three cancelled test events
+              in Eventbrite (Members Networking Evening, Chapter Dinner
+              (rehearsal) and Founders Coffee (rehearsal)). Do not Park the test
+              chapter: the tracker refuses to park a chapter at Live.
+            </li>
+            <li>
+              Wed 28 Oct, the same day: remove the test chapter&rsquo;s
+              applicant account first (/admin/accounts, Remove), because bulk
+              Delete is refused while its approved signup request names the
+              chapter. Then bulk Delete the chapter on the /admin Chapter
+              tracker, which gives the Wave 1 seat back. If SQL is needed
+              instead, select the chapter by its id, never its name (the demo
+              renamed it): delete from events_rollout where chapter_id =
+              &#39;9d57b3ca-afc0-4877-af55-0748e1f562a2&#39;;
+            </li>
+            <li>
+              Done 28 Oct: account removed, chapter deleted, and the read-back
+              shows no chapter and Wave 1: 0 of 5 seats taken.
+            </li>
+            <li>
+              Wed 28 Oct: record the run&rsquo;s time in event-sync&rsquo;s
+              docs/plans/next-steps.md as the second timed run (each job&rsquo;s
+              startedAt and completedAt from env -u GH_TOKEN gh run view &lt;run
+              id&gt; --repo EO-Vietnam/event-sync --json jobs), through a
+              session&rsquo;s PR.
+            </li>
+            <li>
+              Wed 28 Oct, after the call: rotate the OneEO sandbox Hivebrite
+              secret (sandbox back office: Integrations, the Service App, new
+              secret), then in the same sitting put it in event-sync&rsquo;s
+              .env.sandbox and in GitHub&rsquo;s HIVEBRITE_CLIENT_SECRET. A dry
+              run with no connected chapter never signs in to OneEO, so the next
+              run with a connected chapter is the one that proves the new
+              secret.
+            </li>
+            <li>
+              After Emily&rsquo;s demo:
+              <b>delete the test deal</b> (66214847534) from the Member Renewal
+              board, and the dashboard Monday view for every chapter (23519639)
+              with &ldquo;Also delete all reports in this dashboard&rdquo;
+              ticked. Restore deleted dashboards keeps it 14 days.
+            </li>
+            <li>
+              After the demo:
+              <b>the Regional dashboard hides its (No value) rows</b> since Mon
+              26 Oct, so its totals leave these records out. The 4 deal reports
+              filter Assigned Chapter is known: that hides 258 Adelaide deal
+              copies with no owner (the 30 Jun import Deals and Contacts
+              (Paste)-2) and Israel Canamar&rsquo;s 2 test deals. Members by
+              chapter and Renewals by chapter filter Primary Chapter - Name is
+              known: that hides 604 and 627 members with no chapter name.
+              Renewals by chapter also filters Latest membership end date is
+              known: that hides 82 more members with no end date. Both
+              descriptions say who is left out. The records still exist, so the
+              fix is in the data: delete the copies (Dave&rsquo;s call), and
+              fill the chapter names and end dates from Altai.
+            </li>
+            <li>
+              Before the first real chapter connects, no date:
+              <b>where each value on its Events page comes from.</b> First sign
+              in to Eventbrite as onboarding@ and accept the chapter&rsquo;s
+              invite; until then its organisation is not in our list. Then, with
+              onboarding@&rsquo;s private token, make two reads, by hand (no
+              tool prints them yet). GET https://www.eventbriteapi.com/<wbr />v3/<wbr />users/<wbr />me/<wbr />organizations/
+              gives the chapter&rsquo;s entry: its name goes in Eventbrite
+              organisation name and its id in Eventbrite organisation ID (never
+              the number on an organizer profile page). Confirm with the chapter
+              which entry is theirs. GET /v3/<wbr />organizations/<wbr />&lt;that
+              id&gt;/<wbr />events/<wbr />?status=all<wbr />&amp;time_filter=current_future
+              gives pagination.object_count for Events visible, the
+              connector&rsquo;s own list, so it matches the first dry run.
+              Verified by is your name, and Verified on the day of the reads.
+              The Hivebrite group ID and category ID are eo_hbgroupid and
+              eo_hbcategoryid on the chapter&rsquo;s record in EO&rsquo;s CRM:
+              ask Nisha. <b>Blocked today:</b> the connector&rsquo;s GitHub
+              settings still point at the OneEO sandbox, and the production
+              Service App is still a request with Nisha, so a production group
+              ID would land on the sandbox. At the switch, retype every
+              chapter&rsquo;s group and category. A chapter that shares its own
+              API key instead: Reveal key on its Events page, then the same two
+              reads with that key. Only the move to API Access Configured needs
+              the access check; no move needs the connector settings, but a
+              connected chapter without the organisation ID or the group fails
+              every run with Connector settings missing.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="part" id="report" data-span="21 to 27 Oct">
+        <div class="part-title">
+          <h1>Sprint report</h1>
+          <div class="actions">
+            <button type="button" class="btn" data-copy="lark">
+              Copy for Lark
+            </button>
+            <button type="button" class="btn" data-copy="wa">
+              Copy for WhatsApp
+            </button>
+          </div>
+        </div>
+        <p class="small" style="margin-top: 8px">
+          Lark gets formatted text (numbered sections, bold titles, italic
+          headings, nested bullets). WhatsApp gets plain text with one emoji per
+          item. Both come from the list in this file's source, under
+          "report-body".
+        </p>
+
+        <!-- The report list and the two previews stay off screen: they are the source the
+             buttons copy from, and the Lark fallback selects the preview to copy it. -->
+        <div class="offscreen" aria-hidden="true">
+          <div
+            class="report"
+            id="report-body"
+            data-refreshed="2026-10-26T21:51:00+07:00"
+          >
+            <div class="sec">
+              <h3>1. HubSpot Chapter Rollout</h3>
+              <h4>Last week</h4>
+              <ul>
+                <li
+                  data-card="parked"
+                  data-parked="File requests and their reminder, the review-call booking and the import sheets (#1031 to #1034) (Khôi)."
+                >
+                  Tracker app: file requests and reminders, the review-call
+                  booking and import sheets ✅
+                </li>
+              </ul>
+            </div>
+
+            <div class="sec">
+              <h3>2. V1.1 Improvements</h3>
+              <h4>Last week</h4>
+              <ul>
+                <li data-card="2">
+                  Member Renewal checked against EO's user stories, 3 changes
+                  built, off ✅
+                </li>
+                <li data-card="3">
+                  One Regional dashboard for every region, in place of two ✅
+                </li>
+                <li data-card="8">
+                  Altai sync: nights stay green, all 8 segment checks pass ✅
+                </li>
+              </ul>
+              <h4>Demo</h4>
+              <ul>
+                <li data-card="demo">
+                  Khoi: the Regional dashboard, as a super admin and as an APAC
+                  Region team user
+                </li>
+              </ul>
+            </div>
+
+            <div class="sec">
+              <h3>3. Application to Conversion</h3>
+              <h4>This week</h4>
+              <ul>
+                <li data-card="9">
+                  The form's no-deal responses, every status tested
+                </li>
+                <li data-card="10">
+                  Payment hand-off: Altai data per case and the test plan
+                </li>
+              </ul>
+              <h4>Needs</h4>
+              <ul>
+                <li data-card="10">
+                  Kyle: the payment trigger document cleared for Cloud Converge
+                </li>
+                <li data-card="10">
+                  Nisha: the payment trigger document cleared for Cloud Converge
+                </li>
+              </ul>
+            </div>
+
+            <div class="sec">
+              <h3>4. Events API</h3>
+              <h4>Last week</h4>
+              <ul>
+                <li data-card="5">
+                  Connector sandbox tests passed: time zones, online, cancels ✅
+                </li>
+                <li data-card="6">Connector runbook written ✅</li>
+              </ul>
+              <h4>Demo</h4>
+              <ul>
+                <li data-card="demo">
+                  Khoi: a chapter applies and connects, its event lands on the
+                  OneEO sandbox, then comes down when cancelled, live
+                </li>
+              </ul>
+              <h4>This week</h4>
+              <ul>
+                <li data-card="6">
+                  Connector's last code step: a withdrawn chapter's events come
+                  off OneEO
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <details id="lark" open>
+            <summary>
+              Lark
+              <span class="small"
+                >· what "Copy for Lark" pastes: formatted text, not marks</span
+              >
+            </summary>
+            <div class="raw preview" id="lark-preview"></div>
+          </details>
+
+          <details id="wa">
+            <summary>
+              WhatsApp
+              <span class="small"
+                >· plain text for a phone: short lines, one emoji per item</span
+              >
+            </summary>
+            <pre class="raw" id="wa-raw"></pre>
+          </details>
+        </div>
+      </section>
+
+      <footer>
+        Checked on Mon 26 Oct 2026, 13:40 to 14:20 Vietnam time, against
+        <a href="../Tickets/Sprint%20Tickets%20%5BY26%20Sprint%2042%5D.html"
+          >Sprint Tickets [Y26 Sprint 42]</a
+        >, the Events live demo runbook and the renewal story changes demo page
+        in the Card 5 and Card 2 proof folders, the Member renewal user stories
+        scope and EO&rsquo;s story spreadsheet (Sheet1, read by script), the 21
+        Oct meeting summary, the AFK and HITL session reports, EO Global&rsquo;s
+        HubSpot as a super admin (the Regional dashboard, the dashboard list,
+        the Regions and Chapter reports in the report builder, Open&rsquo;s
+        Tests, the users and teams, EO Bangkok Metropolitan&rsquo;s deals, test
+        deal 66214847534, the credits page), the rollout tracker&rsquo;s Chapter
+        tracker, Events and admin pages (read-only: Data Collection 218, Review
+        Call 4, HubSpot Import 9, Go Live 1; no stage move inside 21 to 27 Oct),
+        Eventbrite&rsquo;s Team Management, and global-hubspot, event-sync and
+        altai-hubspot-sync on GitHub (the Altai sync&rsquo;s run of Sun 25 Oct).
+        From 16:30 to 17:40: the Events flow rehearsed end to end on the local
+        app, with the Eventbrite test organisation and the OneEO sandbox (event
+        295909 still published), deal 63683344258&rsquo;s property history, and
+        the event-sync and global-hubspot code for each spoken line. From 17:40
+        to 21:30: the full walk-through again on the local app, the chapter side
+        in the Edge private window: apply, Wave 1, the portal invite, access
+        check and settings, a dry run, Testing, Founders Coffee (rehearsal)
+        published, copied (created 1) and seen on the sandbox, then cancelled in
+        Eventbrite&rsquo;s own screen and taken down (removed 1). From 21:30 to
+        21:50: the sprint report re-checked against the tracker, the AFK and
+        HITL reports, the 21 Oct summary and the three repositories on GitHub,
+        and the Events page&rsquo;s values against global-hubspot and event-sync
+        code. Tue 27 Oct: the Events flow chart added at 1:15, 4:30, 6:15 and
+        7:25, checked against global-hubspot&rsquo;s CONTEXT.md and connector
+        spec and event-sync&rsquo;s commands page, every later timecode moved 25
+        seconds on, and the run counts read again by a local dry run. From 11:40
+        to 13:30: the Events part rehearsed on the local app with the same Test
+        Events and OneEO sandbox, from the apply to removed 1, under the aim of
+        8:55, and GitHub&rsquo;s workflow, settings and stored key names read
+        (no run started). · Edge8
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        var NL = String.fromCharCode(10);
+        var $ = function (s, r) {
+          return (r || document).querySelector(s);
+        };
+        var $$ = function (s, r) {
+          return Array.prototype.slice.call(
+            (r || document).querySelectorAll(s),
+          );
+        };
+        function clean(el) {
+          return el.textContent.replace(/\s+/g, " ").trim();
+        }
+
+        // Plain-text copies are built from the page, so the page is the one source.
+        // Each demo section copies its own script.
+        function scriptText(demo) {
+          var groups = [];
+          $$(".script-body > .grp", demo).forEach(function (grp) {
+            var blocks = [];
+            $$(".blk", grp).forEach(function (blk) {
+              var tc = $(".tc", blk);
+              var cue = $(".cue", blk);
+              var head = [
+                tc ? "[" + clean(tc) + "]" : "",
+                cue ? clean(cue) : "",
+              ]
+                .filter(Boolean)
+                .join(" ");
+              var lines = $$(".line", blk).map(clean);
+              blocks.push([head, lines.join(NL)].filter(Boolean).join(NL + NL));
+            });
+            groups.push(blocks.join(NL + NL));
+          });
+          return groups.join(
+            NL + NL + "----------------------------------------" + NL,
+          );
+        }
+
+        // Lark's chat box pastes rich text, not Markdown: a bold numbered title per section
+        // (the number is text, so a blank line can never restart the count), an italic
+        // bullet per group, the items as nested bullets, and a blank line between sections.
+        // Lark drops a line break inside a list item and merges a paragraph with nothing
+        // visible in it into the line before, so the blank line is a paragraph outside the
+        // lists that holds one blank Braille cell (U+2800): a real character that draws nothing.
+        function esc(s) {
+          return s
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;");
+        }
+        function larkHtml() {
+          var out = ["<p><b>Sprint report:</b></p>"];
+          $$("#report-body > .sec").forEach(function (sec, i) {
+            var open = false;
+            if (i > 0) out.push("<p>&#10240;</p>");
+            Array.prototype.slice.call(sec.children).forEach(function (el) {
+              if (el.tagName === "H3") {
+                var m = clean(el).match(/^(\d+)\.\s*(.*)$/);
+                out.push(
+                  "<p><b>" + m[1] + ". <u>" + esc(m[2]) + "</u></b>:</p><ul>",
+                );
+              } else if (el.tagName === "H4") {
+                if (open) out.push("</ul></li>");
+                out.push("<li><i>" + esc(clean(el)) + "</i><ul>");
+                open = true;
+              } else if (el.tagName === "UL")
+                $$("li", el).forEach(function (li) {
+                  out.push("<li>" + esc(clean(li)) + "</li>");
+                });
+            });
+            if (open) out.push("</ul></li>");
+            out.push("</ul>");
+          });
+          return out.join("");
+        }
+        // WhatsApp, as plain text, built for a phone screen: a bold title per section, an
+        // italic heading per group, and each item at the left edge with no indent, so a
+        // wrapped line still reads as one item. A Last week item with its own ✅ or ⏳
+        // starts with it (moved from the end); every other item starts with a bullet. A rule separates
+        // sections, with none after the last.
+        var RULE = new Array(25).join("─");
+        function waText() {
+          var secs = $$("#report-body > .sec");
+          var span = $("#report").getAttribute("data-span");
+          var out = ["*Sprint report" + (span ? ", " + span : "") + "*"];
+          secs.forEach(function (sec, i) {
+            out.push("");
+            var status = false;
+            var firstGroup = true;
+            Array.prototype.slice.call(sec.children).forEach(function (el) {
+              if (el.tagName === "H3") out.push("*" + clean(el) + "*");
+              else if (el.tagName === "H4") {
+                // A blank line between the italic groups of a section.
+                if (!firstGroup) out.push("");
+                firstGroup = false;
+                status = clean(el) === "Last week";
+                out.push("_" + clean(el) + "_");
+              } else if (el.tagName === "UL")
+                $$("li", el).forEach(function (li) {
+                  var text = clean(li);
+                  var mark = "•";
+                  var own = text.match(/✅|⏳/);
+                  if (status && own) {
+                    // The item's own mark moves to the front; a note after it stays.
+                    mark = own[0];
+                    text = text
+                      .replace(/\s*(✅|⏳)/, "")
+                      .replace(/\s{2,}/g, " ")
+                      .trim();
+                  }
+                  out.push(mark + " " + text);
+                });
+            });
+            if (i < secs.length - 1) out.push(RULE);
+          });
+          return out.join(NL).trim();
+        }
+        $("#lark-preview").innerHTML = larkHtml();
+        $("#wa-raw").textContent = waText();
+
+        function legacyCopy(text) {
+          var ta = document.createElement("textarea");
+          ta.value = text;
+          ta.setAttribute("readonly", "");
+          ta.style.position = "fixed";
+          ta.style.top = "-1000px";
+          document.body.appendChild(ta);
+          ta.select();
+          var ok = false;
+          try {
+            ok = document.execCommand("copy");
+          } catch (e) {
+            ok = false;
+          }
+          document.body.removeChild(ta);
+          return ok;
+        }
+        function copy(text, btn) {
+          var label = btn.textContent;
+          function done(msg) {
+            btn.textContent = msg;
+            setTimeout(function () {
+              btn.textContent = label;
+            }, 1600);
+          }
+          function fallback() {
+            done(legacyCopy(text) ? "Copied" : "Copy failed");
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(function () {
+              done("Copied");
+            }, fallback);
+          } else {
+            fallback();
+          }
+        }
+        // Rich text for Lark: text/html plus a plain-text twin. The fallback selects the
+        // preview itself and copies it, which carries the formatting the same way.
+        function copyHtml(html, plain, btn) {
+          var label = btn.textContent;
+          function done(msg) {
+            btn.textContent = msg;
+            setTimeout(function () {
+              btn.textContent = label;
+            }, 1600);
+          }
+          function fallback() {
+            var box = $("#lark-preview");
+            var range = document.createRange();
+            range.selectNodeContents(box);
+            var sel = window.getSelection();
+            sel.removeAllRanges();
+            sel.addRange(range);
+            var ok = false;
+            try {
+              ok = document.execCommand("copy");
+            } catch (e) {
+              ok = false;
+            }
+            sel.removeAllRanges();
+            done(ok ? "Copied" : "Copy failed");
+          }
+          if (navigator.clipboard && window.ClipboardItem) {
+            var item = new ClipboardItem({
+              "text/html": new Blob([html], { type: "text/html" }),
+              "text/plain": new Blob([plain], { type: "text/plain" }),
+            });
+            navigator.clipboard.write([item]).then(function () {
+              done("Copied");
+            }, fallback);
+          } else {
+            fallback();
+          }
+        }
+        document.addEventListener("click", function (e) {
+          var btn = e.target.closest("button[data-copy]");
+          if (!btn) return;
+          var kind = btn.getAttribute("data-copy");
+          if (kind === "script") copy(scriptText(btn.closest(".demo")), btn);
+          else if (kind === "lark")
+            copyHtml(larkHtml(), $("#lark-preview").innerText, btn);
+          else if (kind === "wa") copy(waText(), btn);
+        });
+
+        // One presenter clock per demo section: amber past its aim (data-aim, in seconds),
+        // red past its limit (data-limit). Only timed groups (with data-t) are shaded.
+        function fmt(s) {
+          return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
+        }
+        $$(".demo").forEach(function (demo) {
+          var aim = Number(demo.getAttribute("data-aim"));
+          var limit = Number(demo.getAttribute("data-limit"));
+          var elapsedEl = $(".elapsed", demo);
+          var clock = $(".clock", demo);
+          var toggle = $(".timer-toggle", demo);
+          var resetBtn = $(".timer-reset", demo);
+          var groups = $$(".script-body > .grp[data-t]", demo);
+          var banked = 0;
+          var startedAt = null;
+          var tick = null;
+          function seconds() {
+            return Math.floor(
+              (banked +
+                (startedAt === null ? 0 : performance.now() - startedAt)) /
+                1000,
+            );
+          }
+          function paint() {
+            var s = seconds();
+            elapsedEl.textContent = fmt(s);
+            clock.classList.toggle("late", s >= aim && s < limit);
+            clock.classList.toggle("over", s >= limit);
+            var current = null;
+            if (s > 0 || startedAt !== null) {
+              groups.forEach(function (g) {
+                if (Number(g.getAttribute("data-t")) <= s) current = g;
+              });
+            }
+            groups.forEach(function (g) {
+              g.classList.toggle("now", g === current);
+            });
+          }
+          toggle.addEventListener("click", function () {
+            if (startedAt === null) {
+              startedAt = performance.now();
+              tick = setInterval(paint, 250);
+              toggle.textContent = "Pause";
+            } else {
+              banked += performance.now() - startedAt;
+              startedAt = null;
+              clearInterval(tick);
+              toggle.textContent = "Resume";
+            }
+            paint();
+          });
+          resetBtn.addEventListener("click", function () {
+            clearInterval(tick);
+            banked = 0;
+            startedAt = null;
+            toggle.textContent = "Start";
+            paint();
+          });
+          paint();
+        });
+      })();
+    </script>
+    <script>
+      // Copy prompt: copies a prompt block's text as plain text, apart from the
+      // page's own Copy script, Lark and WhatsApp buttons.
+      document.addEventListener("click", function (e) {
+        var btn = e.target.closest("button[data-copy-prompt]");
+        if (!btn) return;
+        var box = document.getElementById(btn.getAttribute("data-copy-prompt"));
+        var label = btn.textContent;
+        function done(msg) {
+          btn.textContent = msg;
+          setTimeout(function () {
+            btn.textContent = label;
+          }, 1600);
+        }
+        navigator.clipboard.writeText(box.textContent.trim()).then(
+          function () {
+            done("Copied");
+          },
+          function () {
+            done("Copy failed");
+          },
+        );
+      });
+    </script>
+  </body>
+</html>

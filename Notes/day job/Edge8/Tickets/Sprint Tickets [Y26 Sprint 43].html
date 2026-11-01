@@ -1,0 +1,1009 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sprint 43 Tickets</title><style>
+:root{--bg:#fff;--fg:#04102d;--muted:#66708a;--light:#eaeef2;--card:#fff;--border:#d5dbe5;--blue:#287be8;--pink:#d1458b;--mint:#6ff2c1;--head:#04102d}.wrap{max-width:900px;margin:auto;padding:40px 16px 72px}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}.page-head{border-bottom:4px solid var(--mint);padding-bottom:20px;margin-bottom:24px}h1{font-size:2rem;margin:0 0 6px;line-height:1.2}h1 small{display:block;font-size:1rem;font-weight:500;color:var(--muted);margin-top:4px}.meta{color:var(--blue);font-size:.92rem;font-weight:600}.meta span{color:var(--fg);font-weight:400}.meta ul{margin:4px 0 0;padding-left:22px}.ticket{border:1px solid var(--border);border-left:5px solid var(--blue);border-radius:10px;margin:22px 0;background:var(--card);overflow:hidden}.ticket.waiting{border-left-color:#d97a0c}.t-head{padding:16px 20px 14px}.t-title{display:flex;gap:12px;align-items:flex-start}.num{width:30px;height:30px;border-radius:50%;background:var(--head);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:700;flex:none;margin-top:2px}.t-title h2{font-size:1.15rem;margin:0;line-height:1.35}.t-fields{display:flex;flex-wrap:wrap;gap:8px 16px;margin:12px 0 0 42px;font-size:.9rem;color:var(--muted)}.field b{color:var(--fg)}.chip,.status{display:inline-block;font-size:.74rem;font-weight:700;padding:2px 9px;border-radius:20px;white-space:nowrap}.p1{background:var(--pink);color:#fff}.p2{background:var(--blue);color:#fff}.status.doing{background:#2f7de1;color:#fff}.status.waiting{background:#d97a0c;color:#fff}.status.todo{background:#5b6474;color:#fff}.t-body{padding:0 20px 18px;border-top:1px solid var(--light)}.desc{background:var(--light);border-radius:8px;padding:12px 16px;margin:16px 0 8px;font-size:.94rem}.desc p{margin:0}h3{font-size:.95rem;color:var(--blue);margin:18px 0 6px}ol{margin:0;padding-left:24px}li{margin:6px 0}.who{font-size:.78rem;font-weight:700;color:var(--muted);text-transform:uppercase}.parked{border:1px dashed var(--border);border-radius:10px;padding:16px 20px;margin:36px 0 0}.parked h2{font-size:1.1rem;margin:0 0 4px}.parked p{margin:0 0 8px;color:var(--muted);font-size:.9rem}.parked ul{margin:0;padding-left:22px}.parked li{font-size:.94rem}footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--light);font-size:.82rem;color:var(--muted)}@media(max-width:640px){.t-fields{margin-left:0}h1{font-size:1.6rem}}.assignee{margin-left:auto;display:inline-flex;align-items:center;flex-wrap:wrap;gap:6px 8px}.a-chips{display:inline-flex;align-items:center;gap:6px}.a-chip{font:inherit;font-size:.8rem;font-weight:600;line-height:1.5;padding:0 10px;border:1px solid var(--border);border-radius:20px;background:var(--card);color:var(--muted);cursor:pointer}.a-chip:hover{border-color:var(--blue);color:var(--fg)}.a-chip[aria-pressed="true"],.a-chip[aria-pressed="true"]:hover{background:var(--blue);border-color:var(--blue);color:#fff}.a-chip[aria-pressed="true"]::before{content:"\2713\00a0"}.a-chip:focus-visible{outline:2px solid var(--blue);outline-offset:2px}.a-chip:disabled{cursor:not-allowed;opacity:.55}.a-chip[aria-pressed="false"]:disabled:hover{border-color:var(--border);color:var(--muted)}.a-chips.a-unsaved::after{content:"";width:7px;height:7px;border-radius:50%;background:#d97a0c;flex:none}.a-toast{position:fixed;right:16px;bottom:16px;z-index:10;display:flex;align-items:center;gap:10px;max-width:calc(100% - 32px);padding:8px 10px 8px 14px;border-radius:8px;background:var(--fg);color:var(--bg);font-size:.85rem;box-shadow:0 8px 24px rgba(4,16,45,.25)}.a-toast[hidden]{display:none}.a-toast.a-err{background:#b4235f;color:#fff}.a-toast button{font:inherit;font-size:.8rem;font-weight:700;padding:4px 10px;border:1px solid var(--border);border-radius:6px;background:var(--card);color:var(--fg);cursor:pointer}@media print{.a-chip{border:0;padding:0;background:none;color:var(--fg)}.a-chip[aria-pressed="true"]{background:none;color:var(--fg)}.a-chip[aria-pressed="false"],.a-toast{display:none}}.status.done{background:#14a06f;color:#fff}.ticket.done{border-left-color:#14a06f}.ticket:has(.status.todo){border-left-color:#5b6474}.ticket:has(.status.doing){border-left-color:#2f7de1}.ticket:has(.status.waiting){border-left-color:#d97a0c}.ticket:has(.status.done){border-left-color:#14a06f}.status.s-live{position:relative;padding:0}.s-pick{font:inherit;line-height:inherit;color:inherit;background:none;border:0;border-radius:20px;margin:0;padding:2px 9px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}.s-pick::after{content:"";border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;opacity:.85}.s-pick:focus-visible{outline:2px solid var(--fg);outline-offset:2px}.s-pick:disabled{cursor:not-allowed}.s-pick:disabled::after{display:none}.status.s-unsaved::after{content:"";position:absolute;top:-3px;right:-3px;width:9px;height:9px;box-sizing:border-box;border-radius:50%;background:#d97a0c;border:2px solid var(--card)}.s-menu{position:absolute;z-index:20;display:flex;flex-direction:column;gap:2px;min-width:130px;padding:6px;background:var(--card);border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 24px rgba(4,16,45,.18)}.s-opt{font:inherit;display:flex;align-items:center;gap:10px;width:100%;margin:0;padding:6px 8px;border:0;border-radius:6px;background:none;color:var(--fg);cursor:pointer;text-align:left}.s-opt:hover{background:var(--light)}.s-opt:focus-visible{background:var(--light);outline:2px solid var(--blue);outline-offset:-2px}.s-opt[aria-checked="true"]::after{content:"\2713";margin-left:auto;font-size:.85rem;color:var(--muted)}@media print{.s-pick::after,.status.s-unsaved::after,.s-menu{display:none}}
+</style></head><body><div class="wrap"><header class="page-head"><h1>Sprint 43 Tickets<small>EO HubSpot &mdash; Kh&ocirc;i&rsquo;s plan from the 28 Oct development call and Dave&rsquo;s training ask, with Sprint 42&rsquo;s open cards carried</small></h1><div class="meta"><ul><li>Sprint: <span>Y26 Sprint 43 &middot; Wed 28 Oct to Tue 3 Nov 2026</span></li><li>Source: <span>The 28 Oct development call (Meeting Summary [2026-10-28]) gives Cards 1 to 7. Cards 8 and 9 come from Dave&rsquo;s talk with Kh&ocirc;i right after the call, written up in <a href="../Scopes/Scope%20%5BTraining%20course%5D.html">Scopes\Scope [Training course].html</a>. <a href="#card-3">Card 3</a> also carries the open step of <a href="Sprint%20Tickets%20%5BY26%20Sprint%2042%5D.html#card-4">Sprint 42&rsquo;s Card 4</a> (Arlene&rsquo;s account) and the 23 Oct HITL report&rsquo;s open sandbox secret. Cards 10 and 11 carry Sprint 42&rsquo;s Cards 9 and 10 for Th&agrave;nh. Sprint 42&rsquo;s Card 7, the EO Vietnam website test, moves to the waiting list below.</span></li><li>Scope: <span>Ten cards for Kh&ocirc;i, two for Th&agrave;nh, each one block of work or less. <a href="#card-3">Card 3</a> goes first: the live tracker still holds the demo&rsquo;s test chapter, connected and writing, and it must be gone before any production OneEO key goes in. Then the call&rsquo;s two threads. For EO&rsquo;s user acceptance testing (UAT), the checklist of the SOW&rsquo;s committed user stories (<a href="#card-1">Card 1</a>) and the review steps for what is ready (<a href="#card-2">Card 2</a>), both before the 4 Nov call. For the Events connector, its last code step (<a href="#card-4">Card 4</a>), an honest read-only run (<a href="#card-5">Card 5</a>), the ask to EO for production OneEO and the switch steps (<a href="#card-6">Card 6</a>) and a how-to video for the first pilot chapters (<a href="#card-7">Card 7</a>). Cards 8 and 9 plan the training course Dave wants inside the tracker. The key swap itself waits below for EO&rsquo;s production keys, and the first pilot chapters for Kyle&rsquo;s names.</span></li></ul></div></header>
+<article id="card-1" class="ticket waiting"><header class="t-head"><div class="t-title"><span class="num">1</span><h2>Write the checklist of the SOW&rsquo;s committed user stories, with what is done, for the next call</h2></div><div class="t-fields"><span class="chip p1">P1</span><span class="field">Due <b>Mon 2 Nov</b></span><span class="field">HT <b>0.5</b></span><span class="status waiting" data-card="1">WAITING</span><span class="field updated" data-card="1" data-updated="2026-10-29T14:02:44+07:00">Last updated <b>Thu 29 Oct, 14:02</b></span><span class="assignee" data-card="1" data-assignees="Khoi"></span></div></header><div class="t-body"><div class="desc"><p><strong>Done:</strong> one page lists every user story EO picked in the SOW, 19 in phase one (application to conversion) and 14 in phase two (several chapters, leave, referrals and chapter transfers), plus the V1.1 improvements Edge8 committed to. Each row says done, in progress or not started, who builds it, and where EO can see it. Kyle, Lauren and Nisha have the link before the next call on Wed 4 Nov (Vietnam time). On the 28 Oct call Kyle asked how EO can track what Edge8 has finished out of the user-story list, so that EO can start user acceptance testing. Dave answered that the committed items are the main priority of these calls: "here&rsquo;s all the items we&rsquo;ve committed to, here&rsquo;s what we&rsquo;ve done so that they know what to review". The Events connector and the rollout tracker come second. Kh&ocirc;i told EO that Th&agrave;nh leads the application flow and the lead nurture stories, which are almost there, and that EO gets a detailed update. The picks are the Phase column of the 18 Aug spreadsheet in Scopes\Sources; its 19 NA stories were not picked and stay off the list. The 23 Oct gap list, <a href="../Scopes/Scope%20%5BMember%20renewal%20user%20stories%5D.html">Scopes\Scope [Member renewal user stories].html</a>, already gives the state of 11 picked stories (LN22, LN23 and 9 of phase two); phase two&rsquo;s LN36 and LN43 to LN46 have none yet.</p></div><h3>Acceptance steps</h3><ol><li><span class="who">Kh&ocirc;i</span> Read the 33 picked stories in Application_To_Conversion_Lead_Nurture_Stories_0818.xlsx (Scopes\Sources) and mark each done, in progress or not started from what is built, with the screen or record where EO can see it. Take the 11 rows the 23 Oct gap list already has, and mark LN36 and LN43 to LN46 from what is built.</li><li><span class="who">Th&agrave;nh</span> Send Kh&ocirc;i the state of each of the 19 phase-one stories (LN01 to LN04, LN06, LN07, LN09, LN10, LN12, LN14, LN15, LN17, LN22 to LN24, LN27, LN28, LN51 and LN52), with the test environment where EO can try each one.</li><li><span class="who">Kh&ocirc;i</span> Add the V1.1 improvements Edge8 committed to, each with the document or call where EO agreed it, so the page holds only committed work.</li><li><span class="who">Kh&ocirc;i</span> Write the page as Scopes\Scope [SOW user stories].html, one short row per story, in the member renewal page&rsquo;s layout. Publish a live copy under website/public/plans in global-hubspot so EO opens it without signing in, as the member renewal plan went (PR 1083; PR 1138 updated it), and send Kyle, Lauren and Nisha the link with the detailed update on the application flow. No card or sprint number in anything EO sees.</li></ol></div></article>
+<article id="card-2" class="ticket waiting"><header class="t-head"><div class="t-title"><span class="num">2</span><h2>Send EO the review steps for the stories that are ready now</h2></div><div class="t-fields"><span class="chip p1">P1</span><span class="field">Due <b>Tue 3 Nov</b></span><span class="field">HT <b>0.25</b></span><span class="status waiting" data-card="2">WAITING</span><span class="field updated" data-card="2" data-updated="2026-10-29T14:02:44+07:00">Last updated <b>Thu 29 Oct, 14:02</b></span><span class="assignee" data-card="2" data-assignees="Khoi"></span></div></header><div class="t-body"><div class="desc"><p><strong>Done:</strong> for each story that Card 1 marks done, Kyle, Lauren and Nisha have the steps to try it themselves: where to go, which test record or form to use, and what they should see. So EO&rsquo;s UAT starts before the next call. Dave on 28 Oct: "if stuff&rsquo;s ready now, we can just send it to them and say, hey, go review these things". For renewal, the steps use the test renewal deal TEST renewal smoke - delete after demo (66214847534); the story changes show through Open&rsquo;s Test, a simulation that changes nothing, and the steps name no member&rsquo;s record. For the application form, they use Th&agrave;nh&rsquo;s test environment.</p></div><h3>Acceptance steps</h3><ol><li><span class="who">Kh&ocirc;i</span> From Card 1&rsquo;s done rows, write each story&rsquo;s review steps in plain words, with the record or form to open and the expected result.</li><li><span class="who">Th&agrave;nh</span> Write the steps for the application form stories that are done, on the test environment.</li><li><span class="who">Kh&ocirc;i</span> Send the steps to Kyle, Lauren and Nisha with the checklist&rsquo;s link, and mark on the checklist page which stories EO is reviewing. No card or sprint number, and no proof-folder name, in anything EO sees.</li></ol></div></article>
+<article id="card-3" class="ticket waiting"><header class="t-head"><div class="t-title"><span class="num">3</span><h2>Take the 28 Oct demo down: remove the test chapter and everything made for it, and put Arlene&rsquo;s account back</h2></div><div class="t-fields"><span class="chip p1">P1</span><span class="field">Due <b>Thu 29 Oct</b></span><span class="field">HT <b>0.5</b></span><span class="status waiting" data-card="3">WAITING</span><span class="field updated" data-card="3" data-updated="2026-10-28T23:14:52+07:00">Last updated <b>Wed 28 Oct, 23:14</b></span><span class="assignee" data-card="3" data-assignees="Khoi"></span></div></header><div class="t-body"><div class="desc"><p><strong>Done:</strong> the live tracker no longer holds the demo&rsquo;s test chapter or its applicant account, Wave 1 has all 5 seats open again, Arlene Sambu is back on Main Team EO Vietnam with her old Reporting permissions, the sandbox Hivebrite secret is rotated and proven, and the 28 Oct summary is merged with the note that asks for this removal. The demo left ZZ TEST ONLY - Event sync test, Pls IGNORE (9d57b3ca-afc0-4877-af55-0748e1f562a2) at stage Live, moved there at 09:22 after the four runs: in Wave 1, not parked, shared by team invite, Eventbrite organisation 3016566608989 (Test Events) and the sandbox group 18707. Once production keys go in, its first real run would copy Test Events&rsquo; events onto the production OneEO, or fail without a flag if 18707 is not a production group. Park is refused at Live, and the after-call SQL in the demo runbook and on the Sprint 42 review page selects the chapter by its old name, so it deletes nothing. Steps 2 and 3 below send no email. EO&rsquo;s admins got one signup request received email about the test account on 28 Oct, and the applicant&rsquo;s Gmail got the stage emails; nothing more goes out. Kh&ocirc;i&rsquo;s decision on 28 Oct: remove the chapter and everything made for it before production, written into global-hubspot&rsquo;s next-steps. Arlene has sat on APAC Region since 24 Oct for the 28 Oct demo (the open step of Sprint 42&rsquo;s Card 4). The secret is the 23 Oct HITL report&rsquo;s step 1: a local run printed GitHub&rsquo;s mask lines with the sandbox Service App&rsquo;s secret.</p></div><h3>Acceptance steps</h3><ol><li><span class="who">Kh&ocirc;i</span> First, while the test chapter is still connected: rotate the sandbox Hivebrite secret (the sandbox back office, Integrations, the Service App, new secret), update event-sync&rsquo;s .env.sandbox on this machine and GitHub&rsquo;s HIVEBRITE_CLIENT_SECRET, and dispatch one run with Dry run ticked, which writes nothing. Its test chapter line must show hivebrite calls above 0 and no HivebriteAuthFailed. A run with no connected chapter never logs in to OneEO, so this proof only works before step 2.</li><li><span class="who">Kh&ocirc;i</span> Read what goes, with npx tsx scripts/events-dry-run.ts show "ZZ TEST ONLY" from global-hubspot&rsquo;s website folder (read-only), and note its applicant_email. Then, on /admin&rsquo;s Chapter tracker, tick the test chapter and bulk Delete it: the delete takes its Events application, stage history and Wave 1 seat with it. Read show again: no chapter matches, and Wave 1 has every seat open.</li><li><span class="who">Kh&ocirc;i</span> As a master admin, on /admin/accounts (Manage roles &amp; accounts), search that applicant_email (the table shows emails only, never the name Event Demo) and Remove the account: it deletes the auth user and its profile, and the reap deletes its signup requests.</li><li><span class="who">Kh&ocirc;i</span> If you want them gone too, by SQL in the dashboard: the admins&rsquo; signup_request_received bell rows that name ZZ TEST ONLY, and the sandbox link for Eventbrite event 2003944302353. Keep the events_sync_health and audit_log rows. The sandbox copies, Test Events&rsquo; events and onboarding@&rsquo;s role there are harmless.</li><li><span class="who">Kh&ocirc;i</span> Set Arlene Sambu back on Main Team EO Vietnam (Settings, Users &amp; Teams, her Setup tab, Teams), and her Reporting permissions to the values in your own 16 Oct note, or to Tam Nguyen&rsquo;s if the note is lost; write down what you set. Take the Arlene warning off Scopes\Scope [Chapter dashboard plan].html, and write into its question 5 that a parent team sees its chapter teams&rsquo; owned deals but not deals only shared with them, so Queensland&rsquo;s 537 and Sydney&rsquo;s 52 unowned deals stay off a regional leader&rsquo;s view (24 Oct test).</li><li><span class="who">Kh&ocirc;i</span> <strong>Done 28 Oct:</strong> the summary and the next-steps note shipped together, PR 1169 into dev and PR 1170 promoted to main, and the worktree is removed. The test chapter was still on the live tracker, so the note went out as written. Delete it in the next edit of next-steps once steps 2 and 3 are done.</li><li><span class="who">Kh&ocirc;i</span> In event-sync, one PR into main: record the four 28 Oct runs in the handoff (the dry run 40619298100 read 1 connected chapter in 26 s, so it is the second timed run; the runs proved every GitHub setting except EVENTS_API_KEY_ENCRYPTION_KEY (only a chapter that shares its own API key reads it) and HIVEBRITE_VIRTUAL_CATEGORY_ID (no online event was copied); step 1&rsquo;s run proved the rotated secret), and re-read and re-date its line No chapter is connected on production after step 2. Outside the PR, change the after-call steps in the Card 5 demo runbook ([PROOF] Sprint Tickets [Y26 Sprint 42] Card 5) and on the Sprint 42 review page: park is refused at Live, and the SQL must use the chapter id.</li></ol></div></article>
+<article id="card-4" class="ticket waiting"><header class="t-head"><div class="t-title"><span class="num">4</span><h2>Unpublish a withdrawn chapter&rsquo;s upcoming OneEO copies, the connector&rsquo;s last code step</h2></div><div class="t-fields"><span class="chip p1">P1</span><span class="field">Due <b>Fri 30 Oct</b></span><span class="field">HT <b>0.5</b></span><span class="status waiting" data-card="4">WAITING</span><span class="field updated" data-card="4" data-updated="2026-10-31T13:00:32+07:00">Last updated <b>Sat 31 Oct, 13:00</b></span><span class="assignee" data-card="4" data-assignees="Khoi"></span></div></header><div class="t-body"><div class="desc"><p><strong>Done:</strong> when a chapter&rsquo;s access is withdrawn, the next run unpublishes the OneEO copy of each of its upcoming events, and a paused chapter&rsquo;s copies stay up. It is tested on the OneEO sandbox like E4, and event-sync&rsquo;s runbook step 7 loses its warning. It is item 1 of event-sync&rsquo;s agent queue (spec (k), question 18, whose default is to unpublish, never delete or cancel). Today a parked chapter drops out of the connected chapters (store.ts, readConnectedChapters), so no run touches its copies again and they stay published. Two gaps: a link stores no start date, and the Hivebrite client has no call that reads one event, so the new path must read each event&rsquo;s start to keep past events up. And events_rollout has only parked_at and the access check, with no reason, so a withdrawal and a pause look the same. The handoff sets code complete for Fri 30 Oct (DEC-CONNECTOR-CODE-COMPLETE), and the 28 Oct demo did not touch this path.</p><p><strong>Left for production (31 Oct):</strong> the code and its unit tests are merged; only the end-to-end sandbox test is left. On 29 Oct the Eventbrite account signed in to the browser was refused on Test Events’ Create Event page, so Khôi signs in as the account that owns Test Events, makes the two test events and runs the test from his own terminal. Chapters are already promised that a withdrawal takes their upcoming copies down, so this must pass before the switch to production. Until it does, after every park as withdrawn: dispatch one run that day and check each upcoming copy in Hivebrite’s back office.</p></div><h3>Acceptance steps</h3><ol><li><span class="who">Kh&ocirc;i</span> Decide how a withdrawal is recorded apart from a pause, for example a reason saved when the chapter is parked. Runbook step 7&rsquo;s "clear its access check" is refused for every connected chapter (canClearAccessCheck in global-hubspot&rsquo;s website/lib/events/chapter-inputs.ts), and only Move backs, each of which emails the applicant, get there; correct step 7 in the same PR. Decide in the same sitting whether a postponed Eventbrite event comes down too (one line in fromEventbrite, src/eventbrite.ts, the 23 Oct HITL report&rsquo;s step 8).</li><li><span class="who">Kh&ocirc;i</span> In event-sync, one PR into main: for a withdrawn chapter, read its live links (readLiveLinksOfChapter), keep the events that start in the future, and unpublish each copy with removeCopy. Add its tests and merge on a green typecheck and test.</li><li><span class="who">Kh&ocirc;i</span> Test it on the sandbox like E4: a local chapter on the local Supabase with the sandbox keys, one upcoming event and one that has started but not ended, both copied by sync for the chapter (copy-one links carry no chapter, and an ended event is never copied), the chapter withdrawn, then sync with --dry-run true and with --dry-run false. The upcoming copy reads back with no published_at, and the started one stays.</li><li><span class="who">Kh&ocirc;i</span> Delete the warning in runbook step 7, record the test in the handoff&rsquo;s Status, and change the line "The integration team will confirm" in global-hubspot&rsquo;s content/events-kb/withdraw-access.mdx to say the copies come down at the next run, in a global-hubspot PR into dev and its promotion to main.</li></ol></div></article>
+<article id="card-5" class="ticket done"><header class="t-head"><div class="t-title"><span class="num">5</span><h2>Make a read-only chapter&rsquo;s run say what it would copy, never "created"</h2></div><div class="t-fields"><span class="chip p1">P1</span><span class="field">Due <b>Fri 30 Oct</b></span><span class="field">HT <b>0.25</b></span><span class="status done" data-card="5">DONE</span><span class="field updated" data-card="5" data-updated="2026-10-29T09:30:09+07:00">Last updated <b>Thu 29 Oct, 09:30</b></span><span class="assignee" data-card="5" data-assignees="Khoi"></span></div></header><div class="t-body"><div class="desc"><p><strong>Done:</strong> a run that reads a chapter in read-only mode, stage API Access Configured, reports what it would create, update and remove, in its log line, in its events_sync_health row and on the tracker, so nobody reads "created 1" when nothing reached OneEO. On the 28 Oct demo, run 40619596943 (Dry run unticked, the test chapter still at API Access Configured) logged "ok (read only) &middot; listed 12 &middot; inWindow 7 &middot; created 1" and wrote nothing. Kh&ocirc;i looked for the event on OneEO in front of EO, then moved the chapter to Testing, and the next run (40619994761) made the copy, 297065. Dave asked to "clean it up a little bit more" before the real chapter. The cause: when writes are off, copyEvent returns created before any write (src/copy-event.ts), and syncEntry adds it to created (src/sync.ts).</p></div><h3>Acceptance steps</h3><ol><li><span class="who">Kh&ocirc;i</span> In event-sync, one PR into main: count a read-only chapter&rsquo;s events as would-create, would-update and would-remove, in its chapter line and its health row, and say in the run&rsquo;s header line how many chapters were read only. Keep the counting rule&rsquo;s tests green; merge on a green typecheck and test.</li><li><span class="who">Kh&ocirc;i</span> Check what the tracker shows from the health row for a read-only chapter on /admin/events. If it shows created, label it as what the run would copy, in the same sitting, through a global-hubspot PR into dev, then its promotion PR to main once the CI gate is green.</li></ol></div></article>
+<article id="card-6" class="ticket done"><header class="t-head"><div class="t-title"><span class="num">6</span><h2>Ask EO for what the production OneEO needs, and write the connector&rsquo;s switch steps</h2></div><div class="t-fields"><span class="chip p1">P1</span><span class="field">Due <b>Thu 29 Oct</b></span><span class="field">HT <b>0.25</b></span><span class="status done" data-card="6">DONE</span><span class="field updated" data-card="6" data-updated="2026-10-31T13:45:00+07:00">Last updated <b>Sat 31 Oct, 13:45</b></span><span class="assignee" data-card="6" data-assignees="Khoi"></span></div></header><div class="t-body"><div class="desc"><p><strong>Done:</strong> Nisha and Kyle have the asks for the production OneEO, and event-sync&rsquo;s runbook has a Switch to production section, so the key swap is one sitting once EO answers. On the 28 Oct call Kh&ocirc;i told EO that the plan is to swap the sandbox keys for production ones, and the call agreed. Nobody asked EO for the keys, and Nisha did not attend, so Kh&ocirc;i&rsquo;s decision after the call puts the ask in the summary as his action item, this week. Spec (i) planned it as one message to Nisha in the week of 12 Oct, never sent. The 7 Oct summary said Edge8 sets up the Service App and the trusted domain itself once it has access, so the ask offers both ways. Six repository settings change: the variables HIVEBRITE_API_URL (to https://api.us.hivebrite.com), HIVEBRITE_AUTH_URL (to https://auth.us.hivebrite.com), HIVEBRITE_CHAPTER_CATEGORY_ID (25162 to 85609) and HIVEBRITE_VIRTUAL_CATEGORY_ID (24860 today; production&rsquo;s id is not recorded), and the secrets HIVEBRITE_CLIENT_ID and HIVEBRITE_CLIENT_SECRET. EVENTBRITE_TOKEN, the two Supabase settings and EVENTS_API_KEY_ENCRYPTION_KEY stay. The code stops with HivebriteForbidden unless the Service App&rsquo;s owner is a global admin (src/hivebrite.ts). The links table is keyed by host, so the sandbox copies stay untouched. But each chapter&rsquo;s OneEO group and category are typed on the tracker and are not keyed by host, so a sandbox id such as 18707 must never meet the production keys: production ids come from each chapter&rsquo;s EO CRM record (eo_hbgroupid, eo_hbcategoryid). Hivebrite answered the 28 Oct runs&rsquo; v3.1 event calls with a sunset on 21 Oct 2027.</p><p><strong>Left for production (31 Oct), besides EO’s keys:</strong> EO also sends the Virtual category’s ID (not recorded yet; the run refuses to start without it), makes the Service App with a global admin as its owner, and adds eventbrite.com to the trusted link domains. Then Khôi’s one sitting, per runbook section 9: each connected chapter’s production group and category IDs on its Events page, the six GitHub settings, a new sandbox secret, and one dry run. <strong>The schedule is off on purpose:</strong> the workflow runs only when Khôi dispatches it. On 28 Oct he decided it stays off until the first real chapter has run on production keys, so that run can be timed (GitHub bills each job by the whole minute, so a run over 60 seconds doubles the cost). <strong>Once on, it runs every 2 hours, not every 30 minutes</strong> (Khôi, 31 Oct): about 360 billed minutes a month instead of about 1,440, of EO Vietnam’s 3,000 shared, and a new or withdrawn event waits up to about 2 hours; shipped in event-sync PR 22 and global-hubspot PR 1194, where /admin/events now flags the connector after 3 hours without a run. Tell Dave the new pace, since the connector spec had every 30 minutes as decided. The two timed runs of the old condition are done (16 s and 26 s). The PR that switches it on must also fix the dry-run line, because a scheduled run passes an empty value and the command exits with an error, and bring CLAUDE.md, the workflow header, the README, the schedule test’s name and global-hubspot’s spec in line with the new condition.</p></div><h3>Acceptance steps</h3><ol><li><span class="who">Kh&ocirc;i</span> By Thu 29 Oct, send Kyle and Nisha the message below, with Dave in copy. It asks for a global admin login so that Edge8 makes the production Service App and adds the trusted domain itself, as on the sandbox and as the 7 Oct call planned, or for EO to make the app under a global admin account and hand over its keys through a password vault; and for EO&rsquo;s choice on signed-out visitors. With the login, read the Virtual category&rsquo;s id and check that USD is on for tickets yourself; if EO makes the app instead, ask for both in the reply.</li><li><span class="who">Kh&ocirc;i</span> In event-sync, one PR into main: a Switch to production section in docs/runbook.md with the six settings and their values, the order (the test chapter gone first, Card 3; then production group and category ids on every connected chapter; then the keys), the global-admin rule, that a run with no connected chapter proves start-up only, and the v3.1 sunset. If EO gives access rather than keys: make the production Service App in the back office (Integrations), owned by a global admin, with Events at manage level and can_manage_events_to_topic for the whole community; add eventbrite.com to the trusted link domains; and read the Virtual category&rsquo;s id. Merge on a green typecheck and test.</li></ol><h3>The message to Kyle and Nisha, ready to paste</h3><div class="desc"><p style="margin:0 0 8px">Hi Kyle and Nisha, the next step for the Events connector is to move it from the OneEO sandbox to the live OneEO. For that I need the same set-up there that I have on the sandbox.</p><p style="margin:0 0 8px">On the sandbox, I am a global admin, so I created the connector&rsquo;s Service App myself in the back office (Integrations, then Service apps). The connector logs in with that app&rsquo;s client ID and secret, and gets the rights of the admin who owns it.</p><p style="margin:0 0 8px">That owner must be a global admin. EO&rsquo;s CRM feed already puts some events on OneEO. Before the connector copies an event, it searches OneEO for an event with the same title on the same day. If it finds one, it does not copy, so members never see an event twice. But when the owner has rights to only some groups, OneEO&rsquo;s search shows only those groups&rsquo; events, with no warning that it left the rest out. The connector would then miss the CRM feed&rsquo;s copy and add a second one. So at the start of every run, the connector checks that its owner is a global admin. If not, it stops and copies nothing.</p><p style="margin:0 0 8px">3 things I need, before our next call if you can:</p><p style="margin:0 0 8px">1. Nisha: can you give me a global admin login on the live OneEO back office (one.eonetwork.org), for khoi.le@edge8.ai? Then I create the Service App as I did on the sandbox, as planned on 7 October. If you&rsquo;d rather keep that with EO, please create it under a global admin account and send me its client ID and secret through a password vault.</p><p style="margin:0 0 8px">2. Nisha: can you add eventbrite.com to OneEO&rsquo;s trusted link domains, or let me do it with that login? Without it, members see a warning each time they click Register on a chapter event.</p><p style="margin:0 0 8px">3. Kyle or Nisha: should the chapter events the connector copies show to everyone, or only to signed-in members? Until you decide, OneEO&rsquo;s default applies.</p><p style="margin:0 0 8px">Once I have access, I switch the connector over and start with Kyle&rsquo;s first pilot chapter. Thanks.</p></div></div></article>
+<article id="card-7" class="ticket"><header class="t-head"><div class="t-title"><span class="num">7</span><h2>Record the how-to video for a pilot chapter: the Events application and the Eventbrite invite</h2></div><div class="t-fields"><span class="chip p2">P2</span><span class="field">Due <b>Fri 30 Oct</b></span><span class="field">HT <b>0.25</b></span><span class="status todo" data-card="7">TO DO</span><span class="field updated" data-card="7" data-updated="2026-10-31T13:00:32+07:00">Last updated <b>Sat 31 Oct, 13:00</b></span><span class="assignee" data-card="7" data-assignees="Khoi"></span></div></header><div class="t-body"><div class="desc"><p><strong>Done:</strong> a short video, under three minutes, shows a chapter how to apply for Events on the tracker and how to invite onboarding@eochapterhubspotrollout.com to its Eventbrite organisation under a role named 1EL calendar with one permission, Edit event details, as the knowledge base page says. Ha has the link for the first pilot chapter, so the invite needs no set-up meeting. Kh&ocirc;i suggested it on the 28 Oct call, "just like how we did it for Emily", and Kyle sends the first pilot chapter&rsquo;s name the day after the call (Wed 28 Oct, US time). It fits Dave&rsquo;s self-training ask. Record it on the local app and the Test Events organisation, with no real chapter&rsquo;s data on screen: on the live tracker an application makes an account and emails every admin.</p><p><strong>Left for production (31 Oct):</strong> there are no real chapters to connect yet. At the last count (6 Oct) there was one Events application, EO Vietnam’s, and no Eventbrite one. Dave’s message asking EO Global to get five chapters to apply has been overdue since 8 Oct, and his one-line OK on the defaults also finishes the connector spec. This video is for those first pilot chapters.</p></div><h3>Acceptance steps</h3><ol><li><span class="who">Kh&ocirc;i</span> Record the two parts on the local app (start-local-app.sh, email off), never on the live tracker: the Events application form, then Eventbrite&rsquo;s team management. onboarding@ is already in Test Events under the role R1, so remove it first. Then, on camera, make the role 1EL calendar with only Edit event details, as the knowledge base page says, invite onboarding@ under it, and accept as onboarding@, which also keeps the sandbox tests&rsquo; access. Say what the chapter sees next: the access check, then its events on OneEO.</li><li><span class="who">Kh&ocirc;i</span> Put it where the Events knowledge base page on the invite can link it, and give Ha the link for the first pilot chapter.</li></ol></div></article>
+<article id="card-8" class="ticket waiting"><header class="t-head"><div class="t-title"><span class="num">8</span><h2>Plan the tracker&rsquo;s training course with the 5D framework: the data it needs and what changes</h2></div><div class="t-fields"><span class="chip p1">P1</span><span class="field">Due <b>Mon 2 Nov</b></span><span class="field">HT <b>0.5</b></span><span class="status waiting" data-card="8">WAITING</span><span class="field updated" data-card="8" data-updated="2026-10-29T13:45:30+07:00">Last updated <b>Thu 29 Oct, 13:45</b></span><span class="assignee" data-card="8" data-assignees="Khoi"></span></div></header><div class="t-body"><div class="desc"><p><strong>Done:</strong> a 5D plan, built from Dave&rsquo;s first draft, says what data the training course needs, what changes in the tracker, where the videos live and what they cost, and answers the open decisions on <a href="../Scopes/Scope%20%5BTraining%20course%5D.html">Scopes\Scope [Training course].html</a>. Dave raised it at the start of the 28 Oct call and walked Kh&ocirc;i through it right after: chapter users train themselves inside the tracker, and the tracker shows whether each account is set up, who logged in, the minutes watched of each video, and later how they use HubSpot. The course follows the three parts of the 27 Oct chapter video: marketing, prospects and processes. Each part has a video, text with screenshots and an exercise. EO&rsquo;s own training is a guide only: Dave has not read it yet, but expects it is too detailed. On the call, Lauren said each licence holder gets training once their HubSpot invite arrives, and EO is reworking that training.</p></div><h3>Acceptance steps</h3><ol><li><span class="who">Kh&ocirc;i</span> Get Dave&rsquo;s draft from his Claude session, with the two documents EO sent (its HubSpot training deliverable and its training plan) and the rollout meeting&rsquo;s transcript he used.</li><li><span class="who">Kh&ocirc;i</span> Write the plan&rsquo;s data and changes: who trains (the licence holders EO confirms at the end of the data set-up call), what the tracker records per user, the tables, the sign-in change for licence holders, and whether finishing the course moves the rollout stage.</li><li><span class="who">Kh&ocirc;i</span> Add the videos&rsquo; hosting and cost: a Supabase storage bucket and the browser&rsquo;s own player, with minutes watched logged, and a monthly cost estimate. Ask Ethan how he makes motion graphics videos (his session with Opus and his template), and write down the recipe the course will use.</li></ol></div></article>
+<article id="card-9" class="ticket done"><header class="t-head"><div class="t-title"><span class="num">9</span><h2>Design the training pages: the workflows and wireframe sketches</h2></div><div class="t-fields"><span class="chip p1">P1</span><span class="field">Due <b>Tue 3 Nov</b></span><span class="field">HT <b>0.25</b></span><span class="status done" data-card="9">DONE</span><span class="field updated" data-card="9" data-updated="2026-10-29T13:45:30+07:00">Last updated <b>Thu 29 Oct, 13:45</b></span><span class="assignee" data-card="9" data-assignees="Khoi"></span></div></header><div class="t-body"><div class="desc"><p><strong>Done:</strong> the plan&rsquo;s design phase shows the path from the HubSpot invite to the certificate, and a wireframe sketch of each screen, including the tracker&rsquo;s admin view of who trained. Dave asked for the design of "not only the workflows, but also what the user interface might look like", as a sketch, and for it to be delightful, as AIO Labs is. A finished course earns a certificate to share on LinkedIn, EO Global HubSpot certified. A user without HubSpot access yet watches first, gets access, then does the exercises.</p></div><h3>Acceptance steps</h3><ol><li><span class="who">Kh&ocirc;i</span> Draw the workflow: invite, sign in, training 1 (marketing), training 2 (prospects: members, Accelerator and SAPs), training 3 (a process, such as onboarding a new member with its own pipeline), certificate; with the path for a user who has no access yet.</li><li><span class="who">Kh&ocirc;i</span> Sketch the screens: the training home, one training page (video, text and screenshots, exercise), the certificate, and the admin view per chapter (set up, trained, minutes watched). Add the sketches to the plan.</li></ol></div></article>
+<article id="card-10" class="ticket"><header class="t-head"><div class="t-title"><span class="num">10</span><h2>Finish the application form&rsquo;s no-deal responses and test every status (Sprint 42&rsquo;s Card 9)</h2></div><div class="t-fields"><span class="chip p1">P1</span><span class="field">Due <b>Fri 30 Oct</b></span><span class="field">HT <b>0.5</b></span><span class="status todo" data-card="10">TO DO</span><span class="field updated" data-card="10" data-updated="2026-10-28T10:49:50+07:00">Last updated <b>Wed 28 Oct, 10:49</b></span><span class="assignee" data-card="10" data-assignees="Thanh"></span></div></header><div class="t-body"><div class="desc"><p><strong>Done:</strong> every status and grace combination behaves as Nisha set out on 7 Oct, for Membership and Accelerator, and a returning applicant updates the existing contact. On the 28 Oct call Kh&ocirc;i told EO that the application flow and the lead nurture stories are almost there and that Th&agrave;nh leads them; Card 1 needs each story&rsquo;s state from him. On 28 Oct Kyle also said that anyone from the chapter, staff or member, can hold one of its three HubSpot licences, and that Altai gets three name fields on the chapter profile in the next few weeks. Which holder owns new applications by default is still open, so the default owner and the alert for deals with no owner still wait below. Dave made Emily a demo video, so Sprint 42&rsquo;s step for Th&agrave;nh&rsquo;s part of her live demo is dropped.</p></div><h3>Acceptance steps</h3><ol><li><span class="who">Th&agrave;nh</span> Add the branch for the ex-member, suspended, ended and inactive statuses that stops before a deal and sends the placeholder eligibility message.</li><li><span class="who">Th&agrave;nh</span> Send the grace check&rsquo;s ERROR branch to a person, such as a task or an internal email. Today an error ends the workflow with no deal, no email and no alert to anyone.</li><li><span class="who">Th&agrave;nh</span> Run Alumni with Is in grace set to Yes and to No, plus the ex-member, suspended, ended and inactive statuses, through the form for Membership and for Accelerator, and fix any failure.</li><li><span class="who">Th&agrave;nh</span> Check that a returning applicant updates the existing contact instead of creating a duplicate.</li><li><span class="who">Th&agrave;nh</span> Export every email the application flow sends, with when it goes and its placeholder text, and send the list to Dave for the first draft.</li></ol></div></article>
+<article id="card-11" class="ticket waiting"><header class="t-head"><div class="t-title"><span class="num">11</span><h2>Prepare the payment hand-off: Altai data per case and the test plan (Sprint 42&rsquo;s Card 10)</h2></div><div class="t-fields"><span class="chip p1">P1</span><span class="field">Due <b>Tue 3 Nov</b></span><span class="field">HT <b>0.5</b></span><span class="status waiting" data-card="11">WAITING</span><span class="field updated" data-card="11" data-updated="2026-10-29T13:54:55+07:00">Last updated <b>Thu 29 Oct, 13:54</b></span><span class="assignee" data-card="11" data-assignees="Thanh, Khoi"></span></div></header><div class="t-body"><div class="desc"><p><strong>Done:</strong> each case&rsquo;s deal holds the data Altai needs to charge the right amount, or the gaps are listed for Th&agrave;nh, and a one-page plan lists each case&rsquo;s steps from global approval to Closed Won, ready to run once Cloud Converge&rsquo;s trigger is in. Nisha and Kyle were to talk on Wed 21 Oct (US time) about clearing Th&agrave;nh&rsquo;s document of the deal properties for the Altai payment trigger for Cloud Converge, who work only in the sandbox. The 28 Oct call did not raise the outcome, nor Kyle&rsquo;s question on the Chargebee API. The Closed Won workflow waits below for Cloud Converge&rsquo;s signal. Steps 1 and 2 are Kh&ocirc;i&rsquo;s.</p></div><h3>Acceptance steps</h3><ol><li><span class="who">Kh&ocirc;i</span> List the fields Altai needs to raise the right charge for each case, and compare them with the properties on each test deal.</li><li><span class="who">Kh&ocirc;i</span> Send any gap to Th&agrave;nh.</li><li><span class="who">Th&agrave;nh</span> Write one row per case: starting state, action, expected Altai and Chargebee result, and expected deal stage, plus the application form&rsquo;s no-deal cases, each named by its status (in grace, ex-member, suspended, ended, inactive), never by card.</li><li><span class="who">Th&agrave;nh</span> State in the plan that the Altai trigger fires only when a deal moves into Global Approval, because Melbourne&rsquo;s June import put about 104 deals there that EO Global never approved (re-read the count before the plan is written).</li><li><span class="who">Th&agrave;nh</span> Share the plan with Kh&ocirc;i, and with Cloud Converge once Kyle and Nisha have cleared the document for them.</li></ol></div></article>
+<article id="card-12" class="ticket done"><header class="t-head"><div class="t-title"><span class="num">12</span><h2>Answer Emily&rsquo;s demo questions and publish them for the team</h2></div><div class="t-fields"><span class="chip p1">P1</span><span class="field">Due <b>Tue 3 Nov</b></span><span class="field">HT <b>0.25</b></span><span class="status done" data-card="12">DONE</span><span class="field updated" data-card="12" data-updated="2026-10-30T17:15:00+07:00">Last updated <b>Fri 30 Oct, 17:15</b></span><span class="assignee" data-card="12" data-assignees="Khoi"></span></div></header><div class="t-body"><div class="desc"><p><strong>Done:</strong> Emily has an answer to each of her questions on a plan page of the global-hubspot site, so the team reads the same words. Emily (EO Global, brand side) watched the recorded 27 Oct rollout demo and sent a video of questions. Kh&ocirc;i&rsquo;s draft: <a href="../AFK/End/Q%26A%20%5BEmily%20demo%20questions%202026-10-30%5D.html">AFK\End\Q&amp;A [Emily demo questions 2026-10-30].html</a> (no longer matches the live page). Live page: <a href="https://eochapterhubspotrollout.com/plans/emily-demo-questions.html">eochapterhubspotrollout.com/plans/emily-demo-questions.html</a>, published by global-hubspot #1184/#1185, the templates count fixed by #1186/#1187, the team&rsquo;s answers folded in and the boxes renamed Your feedback by #1188/#1189, and on 30 Oct made final by #1190/#1191: Kh&ocirc;i ruled the team&rsquo;s decisions made, so the page names no open decision and no question count, and asks Emily for feedback where an answer is unclear or needs a follow-up. Found in HubSpot on 30 Oct: EO&rsquo;s chapter emails are clones of shared Chapter Ops Template marketing emails (110 with the clones, 11 kinds, among them Invite to Prospect Events), so a change to a global template does not reach chapter copies; that changed question 1&rsquo;s answer from Not yet to Yes, as a template. Also 12 forms, and the only application form is Membership Application form (Global); Chapter staff may view and edit forms, and edit their team&rsquo;s contacts and deals; Member Acquisition win chances run 20, 40, 50, 60, 70 and 80%; the circle on each deal card is HubSpot&rsquo;s deal score. The shared dashboard Monday view for every chapter (23519639) has 7 reports and no recurring email, and no EO Vietnam dashboard remains, so Tam Nguyen gets no Monday email now. Kh&ocirc;i sent Emily the link on 30 Oct.</p></div><h3>Acceptance steps</h3><ol><li><span class="who">Kh&ocirc;i</span> <s>Settle the open decisions with the team.</s> Done 30 Oct: the team put its answers in, Kh&ocirc;i ruled the rest made, and #1188 to #1191 folded them into the page.</li><li><span class="who">Kh&ocirc;i</span> <s>In global-hubspot, one docs PR into dev: the page in website/public/plans, its entry in PLAN_QUESTIONS and the answer script.</s> Done 30 Oct: #1184 and #1185, page live.</li><li><span class="who">Kh&ocirc;i</span> <s>Reply to Emily with the page&rsquo;s link.</s> Done 30 Oct: sent.</li></ol></div></article>
+<section class="parked"><h2>Waiting outside the sprint</h2><p>Each item becomes a card in a later sprint once its dependency clears, and each names who takes it. The items carried from Sprint 42 stand as they did on 27 Oct, except where the 28 Oct call changed them. Sprint 42&rsquo;s lines for the file requests, the review-call booking, the import sheets and the reminder (#1031 to #1034) are dropped: built and live since 24 Oct. Its connector line for production OneEO is now Card 6 and the key swap below.</p><ul><li><b>Walk the first pilot chapters to Testing (Kh&ocirc;i, with Ha).</b> Waits for Kyle&rsquo;s names: one the day after the 28 Oct call (Wed 28 Oct, US time), and perhaps a second from a member of the TAC, EO&rsquo;s technology committee. Its dry run and Testing wait for the production key swap below. Dave wants five. Each chapter applies on the Events form and invites onboarding@ (Card 7&rsquo;s video); then Kh&ocirc;i adds it to Wave 1, records the access check with its production OneEO group and category from its EO CRM record, and, once the production keys are in, reads a dry run, the first production OneEO login: green, hivebrite calls above 0, no HivebriteForbidden. Only then does it move to Testing. A chapter reaches Testing only on production keys.</li><li><b>Swap in the production OneEO keys (Kh&ocirc;i).</b> Waits for EO&rsquo;s answer to Card 6&rsquo;s asks and for Card 3. If EO gave access, first make the Service App, add the trusted domain, read the Virtual category&rsquo;s id and check that USD is on for tickets, as the runbook&rsquo;s Switch to production section says; then set the six settings on GitHub. With no chapter connected, a dispatched run proves start-up only; the first pilot chapter&rsquo;s dry run is the first production login.</li><li><b>Switch the connector&rsquo;s schedule on (Kh&ocirc;i).</b> The second timed run is done: the 28 Oct demo&rsquo;s dry run 40619298100 read 1 connected chapter in 26 s, under the 60 s that doubles the billed minutes, and the three runs with Dry run unticked took 26, 30 and 24 s. Card 3 records it in the handoff. Waits for the first real chapter on production keys; then uncomment the cron line, change test/schedule-off.test.ts and fix the --dry-run line in one PR.</li><li><b>Finish the high-priority V1.1 items still open (Kh&ocirc;i).</b> Kh&ocirc;i told EO on 28 Oct that they follow the production switch. Waits for Card 1&rsquo;s checklist, which names the committed V1.1 items that are not done.</li><li><b>Sync the licence holders from Altai&rsquo;s chapter profile (Kh&ocirc;i).</b> Kyle on 28 Oct: anyone from the chapter, staff or member, can hold a licence. Today it is a field on the member&rsquo;s profile, seen through the leadership section; he is getting Altai to add three name fields on the chapter profile in the next few weeks, so EO staff see them and Edge8 can pull them into HubSpot. Waits for those fields. It replaces Sprint 42&rsquo;s line on syncing the licence fields from the person&rsquo;s contact record.</li><li><b>Who owns a chapter&rsquo;s prospects: the default owner and the alert for deals with no owner (Th&agrave;nh).</b> Kyle&rsquo;s 28 Oct answer settles who may hold a licence, not which holder owns new applications by default, nor whether global staff are alerted to deals with no owner. Waits for that answer and for the licence fields above.</li><li><b>Licence activations at the end of each data set-up call (Ha).</b> Lauren on 28 Oct: her team reconfirms each chapter&rsquo;s up to three licence holders at the end of its data set-up call, and Ha works directly with the person who turns licences on (Terrence, as heard on the call). She puts Ha back in touch with him, and Kyle agreed. More Asia Pacific chapters are expected in the next week or two.</li><li><b>Build the training course in the tracker (Kh&ocirc;i).</b> After Cards 8 and 9&rsquo;s plan, and after Kh&ocirc;i has shown it to the team, as Dave asked. HubSpot usage per chapter user comes after the course.</li><li><b>Event attendance and no-shows (Kh&ocirc;i).</b> Dave raised it on 28 Oct, because many chapters now charge a no-show fee. Kyle believes OneEO cannot mark a registrant who did not come, but was not sure. Nobody took it on during the call; Kh&ocirc;i takes it when it becomes a card. Waits for the connector&rsquo;s later phase, registrants coming back from Eventbrite.</li><li><b>Move the connector&rsquo;s event calls to Hivebrite&rsquo;s v4 API (Kh&ocirc;i).</b> Hivebrite answered the 28 Oct runs&rsquo; v3.1 event calls with a Deprecation header and a sunset on 21 Oct 2027 (none on 8 Oct). The connector logs a warning for each; the run&rsquo;s row does not record them yet. Waits for the pilot chapters to run on production; due before the sunset.</li><li><b>Copy one EO Vietnam website event to the OneEO sandbox (Kh&ocirc;i; Sprint 42&rsquo;s Card 7).</b> Waits behind production OneEO (Card 6 and the key swap): a sandbox run now only proves the concept. Still not run in event-sync&rsquo;s handoff. Dave mentioned the Vietnam preview himself on the 28 Oct call.</li><li><b>The larger-team call on application to conversion, and the demo pieces (Kh&ocirc;i).</b> Dave made Emily a demo video, and her questions on it are <a href="#card-12">Card 12</a>. Kyle&rsquo;s call with a larger EO team was not raised on 28 Oct; Dave now wants each call to step through the checklist (Card 1). The test renewal deal TEST renewal smoke - delete after demo (66214847534) and the demo dashboard Monday view for every chapter (23519639) stay until EO&rsquo;s review: Card 2&rsquo;s steps use the test deal. Delete both after it (a deal left on the board when the workflows go on gets moved for real).</li><li><b>Adjust the renewal workflows for the rest of the SOW&rsquo;s user stories (Kh&ocirc;i).</b> What is left, a return from leave, a move to alumnus and a chapter transfer, waits for the membership team&rsquo;s renewal process in writing, which Th&agrave;nh asked EO Global for on 21 Oct, and then for the team&rsquo;s review of the board. Not raised on 28 Oct.</li><li><b>Build SAP new and renewal (Kh&ocirc;i).</b> The SOW confirms Nisha: no picked story asks for it (LN26 is NA), so the build stays parked.</li><li><b>Scope the other five Priority 2 items (Kh&ocirc;i).</b> Global intake, new member onboarding, the Key Executive pipeline, nurture campaigns, and the forum view and moderator email. Each is checked against Card 1&rsquo;s checklist of picked stories before it is scoped.</li><li><b>Run the payment hand-off test, and build the Closed Won workflow (Th&agrave;nh).</b> Waits for Cloud Converge&rsquo;s trigger in the Altai and Chargebee sandboxes, and for the signal that tells HubSpot a person converted in Altai. The outcome of Nisha and Kyle&rsquo;s talk on Th&agrave;nh&rsquo;s document, and Kyle&rsquo;s Chargebee API question, were not raised on 28 Oct.</li><li><b>Give Cloud Converge sandbox access (Th&agrave;nh).</b> Waits for Kyle and Nisha to connect Edge8 with Cloud Converge after their talk, and to pass on their addresses.</li><li><b>Swap in EO&rsquo;s email content and the Pay dues link (Th&agrave;nh).</b> Waits for the shared document: Dave drafts it from Th&agrave;nh&rsquo;s export in Card 10, and Kyle shares it with EO for edits. The link also waits for EO to confirm how a member in grace pays and returns. Not raised on 28 Oct.</li><li><b>Brand the Membership Application Form (Th&agrave;nh).</b> Waits for EO Global to choose between direct edits by its communications team and a Figma file.</li><li><b>Turn on the HubSpot ID match for memberships HubSpot creates at approval (Th&agrave;nh).</b> Waits for Cloud Converge to add three HubSpot ID fields in Altai, from Th&agrave;nh&rsquo;s spec. Until then a membership HubSpot creates at approval can be doubled.</li><li><b>Confirm Canada regional data access and prospect ownership (Kh&ocirc;i).</b> Waits for EO Global and Canada. On 18 Oct the Canada Region team had no members, and EO Atlantic Canada&rsquo;s 163 deals have one owner on no team and no shared team, so a Canada leader sees nothing on the Regional dashboard until EO names the team and gives those deals an owner on it or shares them.</li><li><b>Prepare Canada SharpSpring data for HubSpot (Kh&ocirc;i).</b> Waits for Canada&rsquo;s cleaned data; carried over from Sprint 39.</li><li><b>Delete the duplicated import deals behind the Regional dashboard (Kh&ocirc;i).</b> Adelaide&rsquo;s copies remain. Compare the 7 deals that Deals and Contacts (Paste)-3 holds at Closed Won with their Deal Adelaide copies, and keep the 6 Sep batch with the newer stages (Sprint 42 said Paste-3, the 17:19 batch; the 23 Oct message said Deal Adelaide). Delete the other one with (Paste)-2 and July 02 EO Adelaide deal, after the chapter manager agrees. In the same sitting change the Regional dashboard&rsquo;s copy filter (Record source detail 1 is not Deal Adelaide, on the segment [Deal] Member Acquisition (all regions) and on every Regions deal report that carries it: New deals per month, Pipeline by stage and Stalled 30+ days, and check Days in current stage) to the deleted batch, or take it off, and re-read Adelaide&rsquo;s count. First check that no copy got an activity, an owner, a stage change or a new link since import. A deleted deal can be restored for 90 days, but may lose its links. Waits for Dave&rsquo;s call.</li><li><b>Push the EO Vietnam app&rsquo;s deals into HubSpot every night (Kh&ocirc;i).</b> About 18 working hours, from the 13 Oct estimate for Dave. Waits for Dave&rsquo;s go, and for EO Global to agree to a new deal field for the app&rsquo;s deal ID and to the Altai sync creating and updating deals.</li><li><b>Switch on the Member Renewal plan (Kh&ocirc;i).</b> Built on 17 Oct and all off, with the 23 Oct story changes. Waits, in order, for the membership team&rsquo;s process and the adjust line above; for Team Renewals to approve the board, its stage names and three defaults (the Dues due date of 1 May, a Grace length of 365 days, no renewal message from HubSpot); for EO to agree to the lifecycle fix and choose on the won switch (Lifecycle on first, then EO switches off Set lifecycle stage when a deal is created, never the reverse); and for EO&rsquo;s dues export and its call on view-only logins for the finance chairs. Then Kh&ocirc;i&rsquo;s 2027 dates: Open on by mid-March, Dues due by 1 April, Close before 1 July, Grace end on 1 July. Details in Scopes\Scope [Member renewal].html.</li><li><b>Roll the chapter manager&rsquo;s Monday view out to more chapters (Kh&ocirc;i).</b> One shared view works: a chapter user sees only the deals owned by or shared with their team, and one level up a regional leader sees the deals owned by its chapter teams, but not deals only shared with them (24 Oct test, shown on 28 Oct). Waits for the default-owner answer above, because a chapter&rsquo;s deals must be owned by or shared with its team before its people see them.</li></ul></section>
+<footer>Local sprint tracker. Made on 28 Oct 2026 after that morning&rsquo;s development call and Dave&rsquo;s talk with Kh&ocirc;i right after it: Cards 1 to 7 come from the call, Cards 8 and 9 from the talk, <a href="#card-3">Card 3</a> also carries Sprint 42&rsquo;s Card 4, and Cards 10 and 11 carry Th&agrave;nh&rsquo;s application cards. Card 12, Emily&rsquo;s questions, added and done on 30 Oct. Statuses and assignees are saved into this file itself, so every browser shows them. Updated Fri 30 Oct 2026, 17:15.</footer></div>
+    <script>
+      /* Assignee and status picker. Each card's assignees and status live in this file's own
+         markup (the data-assignees attribute of the card's .assignee span, and its status
+         chip), so every browser that opens the file shows the same. Each card also shows when it
+         last changed (its span.updated, whose data-updated holds the time): a save that changes a
+         card stamps it, and whoever edits a card by hand stamps it too. A change is written back
+         into this file by the Tickets helper (tickets-helper.pyw on 127.0.0.1:47613), which
+         works in every browser, Firefox included. The page starts the helper through the
+         edge8-tickets: link it registered with Windows: Chrome and Edge follow the link when
+         the tracker opens, Firefox only from a click, so there the first click or edit starts
+         it. The page holds a WebSocket to the helper, which exits a few seconds after the last
+         tracker closes in every browser. Without the helper, Chrome and Edge write the file
+         themselves once its folder is linked (File System Access API; the link is kept in
+         IndexedDB). */
+      (function () {
+        'use strict';
+        var PEOPLE = ['Khoi', 'Thanh', 'Ha'];
+        var STATUSES = [
+          ['todo', 'TO DO'],
+          ['doing', 'DOING'],
+          ['waiting', 'WAITING'],
+          ['done', 'DONE'],
+        ];
+        var TINT = ['waiting', 'done']; // statuses the card's own class repeats, for its left edge
+        var HELPER = 'http://127.0.0.1:47613';
+        var LAUNCH = 'edge8-tickets://start';
+        var path = location.pathname;
+        try {
+          path = decodeURIComponent(path);
+        } catch (e) {
+          /* keep the encoded path */
+        }
+        var FILE = path.slice(path.lastIndexOf('/') + 1);
+        var DIR = path.slice(0, path.lastIndexOf('/') + 1);
+        var FOLDER = DIR.split('/').filter(Boolean).pop() || 'Tickets';
+        var HOME = /\/Edge8\/Tickets\/$/i.test(DIR); // only trackers in the Tickets folder start the helper
+        var CAN_LINK = typeof window.showDirectoryPicker === 'function';
+        var cards = {}; // card number -> its assignee buttons, its names and the names in the file
+        var order = []; // card numbers in page order
+        var chips = {}; // card number -> its status chip, its status and the status in the file
+        var chipOrder = [];
+        var helper = null; // 'up', 'down' or 'outside' (running, but not for this folder)
+        var pinging = null;
+        var starting = null;
+        var launchedAt = 0; // when this page last followed the edge8-tickets: link
+        var armed = false; // the next click or key press on the page follows the link
+        var frame = null; // the hidden frame Chrome and Edge follow the link in
+        var quietUntil = 0; // Firefox follows the link as a page navigation: no leave warning then
+        var line = null; // this page's WebSocket to the helper, which keeps the helper running
+        var lost = 0; // times the line was found again since it was last open
+        var watching = 0;
+        var folder = null; // the linked folder, kept in IndexedDB under DIR
+        var busy = false;
+        var menu = null; // the open status menu
+        var say = makeToast();
+        var ready = CAN_LINK
+          ? idb('readonly', function (store) {
+              return store.get(DIR);
+            }).then(
+              function (handle) {
+                folder = handle || null;
+              },
+              function () {
+                /* no IndexedDB: the folder is linked once per visit */
+              }
+            )
+          : Promise.resolve();
+
+        function el(tag, cls, text) {
+          var node = document.createElement(tag);
+          if (cls) node.className = cls;
+          if (text) node.textContent = text;
+          return node;
+        }
+
+        function clean(name) {
+          return String(name).normalize('NFC').replace(/[\s,]+/g, ' ').trim();
+        }
+
+        function parse(value) {
+          var out = [];
+          String(value || '').split(',').forEach(function (s) {
+            s = clean(s);
+            if (s && out.indexOf(s) < 0) out.push(s);
+          });
+          return out;
+        }
+
+        function isStatus(name) {
+          return STATUSES.some(function (s) {
+            return s[0] === name;
+          });
+        }
+
+        function label(key) {
+          var found = STATUSES.filter(function (s) {
+            return s[0] === key;
+          })[0];
+          return found ? found[1] : key;
+        }
+
+        function statusOf(span) {
+          var key = '';
+          STATUSES.forEach(function (s) {
+            if (!key && span.classList.contains(s[0])) key = s[0];
+          });
+          return key;
+        }
+
+        // The cards with a change the file does not have yet.
+        function pending() {
+          var names = order.filter(function (n) {
+            return cards[n].names.join(', ') !== cards[n].saved;
+          });
+          var status = chipOrder.filter(function (n) {
+            return chips[n].key !== chips[n].saved;
+          });
+          return { names: names, status: status, any: names.length + status.length > 0 };
+        }
+
+        // In the Tickets folder the buttons stay live while the helper is down: a click starts
+        // it, and the change saves once it runs.
+        function canSave() {
+          return helper === 'up' || CAN_LINK || (HOME && helper !== 'outside');
+        }
+
+        function readOnlyTitle() {
+          return starting ? 'Starting the Tickets helper…' : 'Read-only: the Tickets helper only saves trackers in its Tickets folder';
+        }
+
+        function esc(s) {
+          return s
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+        }
+
+        function withClasses(tag, names) {
+          return tag.replace(/\sclass="[^"]*"/, function () {
+            return ' class="' + names.join(' ') + '"';
+          });
+        }
+
+        function classesOf(tag) {
+          var m = /\sclass="([^"]*)"/.exec(tag);
+          return m ? m[1].split(/\s+/).filter(Boolean) : [];
+        }
+
+        // Swap one card's data-assignees value in the file's text; null if the card is gone.
+        function patch(text, n, value) {
+          var tags = /<span\b[^>]*>/g;
+          var attr = 'data-assignees="' + esc(value) + '"';
+          var m;
+          while ((m = tags.exec(text))) {
+            var tag = m[0];
+            var card = /\sdata-card="([^"]*)"/.exec(tag);
+            if (!/\sclass="assignee"/.test(tag) || !card || card[1] !== n) continue;
+            var next = /\sdata-assignees="[^"]*"/.test(tag)
+              ? tag.replace(/data-assignees="[^"]*"/, function () {
+                  return attr;
+                })
+              : tag.slice(0, -1) + ' ' + attr + '>';
+            return text.slice(0, m.index) + next + text.slice(m.index + tag.length);
+          }
+          return null;
+        }
+
+        // Set one card's status chip in the file's text, and the tint on its card, as the
+        // Tickets helper does; null if the chip is gone.
+        function patchStatus(text, n, key) {
+          var tags = /<span\b[^>]*>/g;
+          var m;
+          while ((m = tags.exec(text))) {
+            var tag = m[0];
+            var card = /\sdata-card="([^"]*)"/.exec(tag);
+            var names = classesOf(tag);
+            if (names[0] !== 'status' || !card || card[1] !== n) continue;
+            var start = m.index + tag.length;
+            var end = text.indexOf('</span>', start);
+            if (end < 0 || text.slice(start, end).indexOf('<') >= 0) return null;
+            names = names.filter(function (c) {
+              return !isStatus(c);
+            });
+            names.splice(1, 0, key);
+            var out = text.slice(0, m.index) + withClasses(tag, names) + label(key) + text.slice(end);
+            var arts = /<article\b[^>]*>/g;
+            var art = null;
+            var a;
+            while ((a = arts.exec(out)) && a.index < m.index) art = a;
+            if (art && /\sclass="/.test(art[0]) && out.slice(art.index + art[0].length, m.index).indexOf('</article>') < 0) {
+              var tint = classesOf(art[0]).filter(function (c) {
+                return !isStatus(c);
+              });
+              if (TINT.indexOf(key) >= 0) tint.push(key);
+              out = out.slice(0, art.index) + withClasses(art[0], tint) + out.slice(art.index + art[0].length);
+            }
+            return out;
+          }
+          return null;
+        }
+
+        // Stamp one card's Last updated field in the file's text, as the Tickets helper does; the
+        // text as it was if the card has no such field.
+        function patchUpdated(text, n, iso) {
+          var tags = /<span\b[^>]*>/g;
+          var m;
+          while ((m = tags.exec(text))) {
+            var tag = m[0];
+            var card = /\sdata-card="([^"]*)"/.exec(tag);
+            if (!/\sclass="field updated"/.test(tag) || !card || card[1] !== n) continue;
+            var end = text.indexOf('</span>', m.index + tag.length);
+            if (end < 0) return text;
+            var attr = 'data-updated="' + esc(iso) + '"';
+            var next = /\sdata-updated="[^"]*"/.test(tag)
+              ? tag.replace(/data-updated="[^"]*"/, function () {
+                  return attr;
+                })
+              : tag.slice(0, -1) + ' ' + attr + '>';
+            return text.slice(0, m.index) + next + 'Last updated <b>' + shown(iso) + '</b>' + text.slice(end);
+          }
+          return text;
+        }
+
+        function cardsIn(doc) {
+          var map = {};
+          Array.prototype.forEach.call(doc.querySelectorAll('.assignee[data-card]'), function (span) {
+            var n = span.getAttribute('data-card');
+            if (!(n in map)) map[n] = span.getAttribute('data-assignees') || '';
+          });
+          return map;
+        }
+
+        function statusIn(doc) {
+          var map = {};
+          Array.prototype.forEach.call(doc.querySelectorAll('span.status[data-card]'), function (span) {
+            var n = span.getAttribute('data-card');
+            if (!(n in map)) map[n] = statusOf(span);
+          });
+          return map;
+        }
+
+        function updatedIn(doc) {
+          var map = {};
+          Array.prototype.forEach.call(doc.querySelectorAll('span.updated[data-card]'), function (span) {
+            var n = span.getAttribute('data-card');
+            if (!(n in map)) map[n] = span.getAttribute('data-updated') || '';
+          });
+          return map;
+        }
+
+        // A data-updated time as the card shows it, in the writer's own clock: Sun 11 Oct, 21:40.
+        function shown(iso) {
+          var m = /^(\d{4})-(\d\d)-(\d\d)T(\d\d):(\d\d)/.exec(iso || '');
+          if (!m) return '';
+          var day = new Date(Date.UTC(+m[1], m[2] - 1, +m[3])).getUTCDay();
+          var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+          return ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][day] + ' ' + +m[3] + ' ' + months[m[2] - 1] + ', ' + m[4] + ':' + m[5];
+        }
+
+        // Now, as data-updated holds it: this computer's time with its offset, to the second.
+        function stampNow() {
+          var d = new Date();
+          var off = -d.getTimezoneOffset();
+          function two(x) {
+            return (x < 10 ? '0' : '') + x;
+          }
+          var date = d.getFullYear() + '-' + two(d.getMonth() + 1) + '-' + two(d.getDate());
+          var time = two(d.getHours()) + ':' + two(d.getMinutes()) + ':' + two(d.getSeconds());
+          return date + 'T' + time + (off < 0 ? '-' : '+') + two(Math.floor(Math.abs(off) / 60)) + ':' + two(Math.abs(off) % 60);
+        }
+
+        // Show the time the file holds for one card.
+        function showUpdated(n, iso) {
+          if (!shown(iso)) return;
+          Array.prototype.forEach.call(document.querySelectorAll('span.updated[data-card]'), function (span) {
+            if (span.getAttribute('data-card') !== n || span.getAttribute('data-updated') === iso) return;
+            span.setAttribute('data-updated', iso);
+            span.textContent = 'Last updated ';
+            span.appendChild(el('b', null, shown(iso)));
+          });
+        }
+
+        function build(span) {
+          var n = span.getAttribute('data-card');
+          if (cards[n]) return; // a repeated card number: leave the copy alone
+          var names = parse(span.getAttribute('data-assignees'));
+          var c = { n: n, span: span, names: names, saved: names.join(', '), chips: {} };
+          span.textContent = '';
+          span.appendChild(el('span', 'a-label', 'Assignee'));
+          c.group = span.appendChild(el('span', 'a-chips'));
+          c.group.setAttribute('role', 'group');
+          c.group.setAttribute('aria-label', 'Assignees of card ' + n);
+          cards[n] = c;
+          order.push(n);
+          paint(c);
+        }
+
+        // One toggle button per person; a name the file holds that is not one of the three
+        // gets its own button too, so it can be removed.
+        function paint(c) {
+          var value = c.names.join(', ');
+          var pend = value !== c.saved;
+          var can = canSave();
+          PEOPLE.concat(c.names).forEach(function (name) {
+            if (c.chips[name]) return;
+            var chip = c.group.appendChild(el('button', 'a-chip', name));
+            chip.type = 'button';
+            chip.addEventListener('click', function () {
+              choose(c, name, chip.getAttribute('aria-pressed') !== 'true');
+            });
+            c.chips[name] = chip;
+          });
+          Object.keys(c.chips).forEach(function (name) {
+            var chip = c.chips[name];
+            var on = c.names.indexOf(name) >= 0;
+            if (!on && PEOPLE.indexOf(name) < 0) {
+              c.group.removeChild(chip);
+              delete c.chips[name];
+              return;
+            }
+            chip.setAttribute('aria-pressed', on ? 'true' : 'false');
+            chip.disabled = !can;
+            if (can) chip.removeAttribute('title');
+            else chip.title = readOnlyTitle();
+          });
+          c.group.classList.toggle('a-unsaved', pend);
+          if (pend) c.group.title = 'Not saved to the file yet';
+          else c.group.removeAttribute('title');
+          c.span.setAttribute('data-assignees', value);
+        }
+
+        // The status chip becomes a button that opens the status menu.
+        function buildChip(span) {
+          var n = span.getAttribute('data-card');
+          var key = statusOf(span);
+          if (chips[n] || !key) return; // a repeated card, or a status this page does not know
+          var s = { n: n, span: span, key: key, saved: key, art: span.closest('article') };
+          span.textContent = '';
+          span.classList.add('s-live');
+          s.btn = span.appendChild(el('button', 's-pick'));
+          s.btn.type = 'button';
+          s.btn.setAttribute('aria-haspopup', 'menu');
+          s.btn.setAttribute('aria-expanded', 'false');
+          s.btn.addEventListener('click', function () {
+            openMenu(s);
+          });
+          s.btn.addEventListener('keydown', function (e) {
+            if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
+            e.preventDefault();
+            if (!menu) openMenu(s);
+          });
+          chips[n] = s;
+          chipOrder.push(n);
+          paintChip(s);
+        }
+
+        function paintChip(s) {
+          STATUSES.forEach(function (st) {
+            s.span.classList.toggle(st[0], st[0] === s.key);
+          });
+          if (s.art) {
+            TINT.forEach(function (t) {
+              s.art.classList.toggle(t, t === s.key);
+            });
+          }
+          var can = canSave();
+          s.btn.textContent = label(s.key);
+          s.btn.setAttribute('aria-label', 'Status of card ' + s.n + ': ' + label(s.key));
+          s.btn.disabled = !can;
+          if (can) s.btn.removeAttribute('title');
+          else s.btn.title = readOnlyTitle();
+          var pend = s.key !== s.saved;
+          s.span.classList.toggle('s-unsaved', pend);
+          if (pend) s.span.title = 'Not saved to the file yet';
+          else s.span.removeAttribute('title');
+          if (!can && menu && menu.s === s) closeMenu(false);
+        }
+
+        function paintAll() {
+          order.forEach(function (n) {
+            paint(cards[n]);
+          });
+          chipOrder.forEach(function (n) {
+            paintChip(chips[n]);
+          });
+        }
+
+        function openMenu(s) {
+          if (menu) {
+            var same = menu.s === s;
+            closeMenu(same);
+            if (same) return;
+          }
+          if (s.btn.disabled) return;
+          var box = el('div', 's-menu');
+          box.setAttribute('role', 'menu');
+          box.setAttribute('aria-label', 'Status of card ' + s.n);
+          var items = STATUSES.map(function (st) {
+            var item = box.appendChild(el('button', 's-opt'));
+            item.type = 'button';
+            item.tabIndex = -1;
+            item.setAttribute('role', 'menuitemradio');
+            item.setAttribute('aria-checked', st[0] === s.key ? 'true' : 'false');
+            item.appendChild(el('span', 'status ' + st[0], st[1]));
+            item.addEventListener('click', function () {
+              closeMenu(true);
+              setStatus(s, st[0]);
+            });
+            return item;
+          });
+          box.addEventListener('keydown', function (e) {
+            var i = items.indexOf(document.activeElement);
+            if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+              var step = e.key === 'ArrowDown' ? 1 : -1;
+              items[i < 0 ? (step > 0 ? 0 : items.length - 1) : (i + step + items.length) % items.length].focus();
+            } else if (e.key === 'Home' || e.key === 'End') {
+              items[e.key === 'Home' ? 0 : items.length - 1].focus();
+            } else if (e.key === 'Escape') {
+              closeMenu(true);
+            } else {
+              if (e.key === 'Tab') closeMenu(true); // Tab then moves on from the chip
+              return;
+            }
+            e.preventDefault();
+          });
+          document.body.appendChild(box);
+          menu = { s: s, box: box };
+          s.btn.setAttribute('aria-expanded', 'true');
+          place();
+          (items[STATUSES.map(function (st) {
+            return st[0];
+          }).indexOf(s.key)] || items[0]).focus();
+        }
+
+        // Below the chip, or above it when the window has no room underneath.
+        function place() {
+          var r = menu.s.span.getBoundingClientRect();
+          var box = menu.box;
+          var top = r.bottom + 6;
+          if (top + box.offsetHeight > window.innerHeight - 8 && r.top - 6 - box.offsetHeight >= 8) {
+            top = r.top - 6 - box.offsetHeight;
+          }
+          var left = Math.max(8, Math.min(r.left, document.documentElement.clientWidth - box.offsetWidth - 8));
+          box.style.top = top + window.scrollY + 'px';
+          box.style.left = left + window.scrollX + 'px';
+        }
+
+        function closeMenu(focus) {
+          if (!menu) return;
+          var s = menu.s;
+          menu.box.remove();
+          menu = null;
+          s.btn.setAttribute('aria-expanded', 'false');
+          if (focus) s.btn.focus();
+        }
+
+        function choose(c, name, on) {
+          var names = c.names.filter(function (p) {
+            return p !== name;
+          });
+          if (on) names.push(name);
+          var all = PEOPLE.concat(c.names, name);
+          names.sort(function (a, b) {
+            return all.indexOf(a) - all.indexOf(b);
+          });
+          c.names = names;
+          paint(c);
+          if (pending().any) save(true);
+        }
+
+        function setStatus(s, key) {
+          s.key = key;
+          paintChip(s);
+          if (pending().any) save(true);
+        }
+
+        // click: called from a click, which lets the browser follow the edge8-tickets: link.
+        function save(click) {
+          if (click && helper !== 'up' && helper !== 'outside' && HOME && !line && Date.now() - launchedAt > 1500) launch(true);
+          if (busy) return; // the running save picks up this change when it ends
+          busy = true;
+          var was = helper;
+          flush().then(
+            function () {
+              busy = false;
+              if (helper !== was) paintAll();
+              if (pending().any) save();
+              else say('Saved to ' + FILE, 'ok');
+            },
+            function (err) {
+              busy = false;
+              if (helper !== was) paintAll();
+              if (err.offline && !CAN_LINK) say('Not saved: the Tickets helper is not running.', 'start');
+              else say('Not saved: ' + reason(err), 'retry');
+            }
+          );
+        }
+
+        async function flush() {
+          if (!pending().any) return;
+          if (starting) await starting; // save through the helper it is starting
+          if (helper === 'up' || helper === null || !CAN_LINK) {
+            try {
+              return await flushHelper();
+            } catch (err) {
+              if (!err.offline) throw err;
+              helper = err.outside ? 'outside' : 'down';
+              if (!CAN_LINK) throw err;
+            }
+          }
+          return flushFolder();
+        }
+
+        function batch() {
+          var p = pending();
+          var out = { names: {}, status: {} };
+          p.names.forEach(function (n) {
+            out.names[n] = cards[n].names.join(', ');
+          });
+          p.status.forEach(function (n) {
+            out.status[n] = chips[n].key;
+          });
+          return out;
+        }
+
+        // The file now holds what was sent.
+        function settle(b) {
+          Object.keys(b.names).forEach(function (n) {
+            cards[n].saved = b.names[n];
+            paint(cards[n]);
+          });
+          Object.keys(b.status).forEach(function (n) {
+            chips[n].saved = b.status[n];
+            paintChip(chips[n]);
+          });
+        }
+
+        async function flushHelper() {
+          var b = batch();
+          var data = await ask('/cards', {
+            path: location.pathname,
+            title: document.title,
+            assignees: b.names,
+            status: b.status,
+          });
+          found();
+          settle(b);
+          sync(data, b);
+        }
+
+        async function flushFolder() {
+          var handle = await fileHandle(true);
+          var text = await (await handle.getFile()).text();
+          var doc = new DOMParser().parseFromString(text, 'text/html');
+          if (doc.title !== document.title) throw new Error(FILE + ' in the linked folder is a different page.');
+          var b = batch();
+          var out = text;
+          var changed = []; // the cards this save really changes, to stamp
+          Object.keys(b.names).forEach(function (n) {
+            var next = patch(out, n, b.names[n]);
+            if (next === null) throw new Error('card ' + n + ' is no longer in the file. Reload the page.');
+            if (next !== out && changed.indexOf(n) < 0) changed.push(n);
+            out = next;
+          });
+          Object.keys(b.status).forEach(function (n) {
+            var next = patchStatus(out, n, b.status[n]);
+            if (next === null) throw new Error('the status of card ' + n + ' is no longer in the file. Reload the page.');
+            if (next !== out && changed.indexOf(n) < 0) changed.push(n);
+            out = next;
+          });
+          var stamps = updatedIn(doc);
+          var when = stampNow();
+          changed.forEach(function (n) {
+            out = patchUpdated(out, n, when);
+            if (n in stamps) stamps[n] = when;
+          });
+          if (out !== text) {
+            var w = await handle.createWritable();
+            try {
+              await w.write(out);
+              await w.close();
+            } catch (e) {
+              w.abort().catch(function () {});
+              throw e;
+            }
+          }
+          settle(b);
+          sync({ assignees: cardsIn(doc), status: statusIn(doc), updated: stamps }, b);
+        }
+
+        // Take the file's assignees and status for every card this page has not changed.
+        function sync(data, skip) {
+          var names = data.assignees || {};
+          var status = data.status || {};
+          Object.keys(names).forEach(function (n) {
+            var c = cards[n];
+            if (!c || (skip && n in skip.names) || c.names.join(', ') !== c.saved) return;
+            var list = parse(names[n]);
+            c.saved = list.join(', ');
+            if (c.saved === c.names.join(', ')) return;
+            c.names = list;
+            paint(c);
+          });
+          Object.keys(status).forEach(function (n) {
+            var s = chips[n];
+            if (!s || !isStatus(status[n]) || (skip && n in skip.status) || s.key !== s.saved) return;
+            s.saved = status[n];
+            if (s.key === s.saved) return;
+            s.key = s.saved;
+            paintChip(s);
+          });
+          var stamps = data.updated || {};
+          Object.keys(stamps).forEach(function (n) {
+            showUpdated(n, stamps[n]);
+          });
+        }
+
+        // Call the Tickets helper. A failure that means "no helper for this file" comes
+        // back with offline set, so the caller can fall back to the linked folder.
+        async function ask(route, body) {
+          var res;
+          try {
+            res = await fetch(HELPER + route, {
+              method: body ? 'POST' : 'GET',
+              cache: 'no-store',
+              headers: body ? { 'Content-Type': 'application/json' } : {},
+              body: body ? JSON.stringify(body) : undefined,
+              signal: AbortSignal.timeout(body ? 10000 : 4000),
+            });
+          } catch (e) {
+            var down = new Error('the Tickets helper is not running.');
+            down.offline = true;
+            throw down;
+          }
+          var data = await res.json().catch(function () {
+            return {};
+          });
+          if (!res.ok) {
+            var err = new Error(data.error || 'the Tickets helper answered ' + res.status + '.');
+            err.offline = err.outside = data.code === 'outside';
+            throw err;
+          }
+          return data;
+        }
+
+        function ping() {
+          if (!pinging) {
+            var before = helper;
+            pinging = ask('/ping?path=' + encodeURIComponent(location.pathname))
+              .then(
+                function (data) {
+                  helper = data.helper !== 'edge8-tickets' ? 'down' : data.serves === false ? 'outside' : 'up';
+                },
+                function () {
+                  helper = 'down';
+                }
+              )
+              .then(function () {
+                pinging = null;
+                if (helper === 'up') found();
+                if (helper !== before) paintAll();
+              });
+          }
+          return pinging;
+        }
+
+        // The helper answered for this file, by a ping or a save: hold the line to it.
+        function found() {
+          helper = 'up';
+          armed = false;
+          connect();
+        }
+
+        // Hold a WebSocket to the helper while this page is open: the helper counts the open
+        // trackers this way and exits a few seconds after the last one closes.
+        function connect() {
+          if (line || typeof WebSocket !== 'function') return;
+          var ws;
+          try {
+            ws = new WebSocket(HELPER.replace(/^http/, 'ws') + '/presence?path=' + encodeURIComponent(location.pathname));
+          } catch (e) {
+            return;
+          }
+          line = ws;
+          ws.onopen = function () {
+            lost = 0;
+          };
+          ws.onclose = function () {
+            if (line !== ws) return;
+            line = null;
+            if (helper === 'up') helper = null; // it stopped, or is closing: find out again
+            paintAll();
+            revive();
+          };
+        }
+
+        // The helper went away while this page is open: find it or start it again. A hidden
+        // page does so once it is shown again.
+        function revive() {
+          if (document.visibilityState !== 'visible' || lost > 2) return;
+          lost++;
+          setTimeout(function () {
+            if (!line && !starting) startHelper();
+          }, 500 + Math.random() * 1500);
+        }
+
+        // Find the Tickets helper. When it is down, Chrome and Edge follow the edge8-tickets:
+        // link at once, unless this page did so in the last minute; the next click on the page
+        // follows it too, for Firefox and for a Chrome or Edge that wants a click first. Waits
+        // up to 15 seconds after the latest start, then saves anything waiting.
+        function startHelper() {
+          if (starting) return starting;
+          starting = ping()
+            .then(function () {
+              if (helper !== 'down' || !HOME) return;
+              if (Date.now() - launchedAt >= 15000) armed = true; // not while a start may be on its way
+              if (CAN_LINK && Date.now() - launchedAt > 60000) launch(false);
+              return wait();
+            })
+            .then(function () {
+              starting = null;
+              paintAll();
+              if (helper === 'up') {
+                say(null);
+                if (pending().any) save();
+                return;
+              }
+              if (!CAN_LINK && (helper === 'outside' || !HOME)) {
+                say('Read-only here: the Tickets helper only saves trackers in its own Tickets folder.', 'warn');
+              } else if (!CAN_LINK && launchedAt) {
+                say('The Tickets helper is not running, so changes are not saved yet.', 'start');
+              } else {
+                say(null);
+              }
+              if (helper === 'down') watch();
+            });
+          paintAll();
+          return starting;
+        }
+
+        function wait() {
+          if (helper !== 'down' || Date.now() - launchedAt >= 15000) return;
+          return new Promise(function (r) {
+            setTimeout(r, 1000);
+          })
+            .then(ping)
+            .then(wait);
+        }
+
+        // Follow the edge8-tickets: link, which starts the helper (the browser may ask first).
+        // Chrome and Edge follow it in a hidden frame; Firefox only as a page navigation from a
+        // click, which leaves the page where it is.
+        function launch(click) {
+          launchedAt = Date.now();
+          if (click) armed = false;
+          say('Starting the Tickets helper…', 'info');
+          if (CAN_LINK) {
+            if (frame) frame.remove();
+            var f = (frame = document.body.appendChild(el('iframe')));
+            f.hidden = true;
+            f.src = LAUNCH;
+            setTimeout(function () {
+              f.remove(); // the browser has handed the link to Windows by now
+              if (frame === f) frame = null;
+            }, 5000);
+          } else {
+            quietUntil = Date.now() + 2000;
+            location.href = LAUNCH;
+          }
+          startHelper();
+        }
+
+        // The first click or key press on the page starts the helper if it is still down.
+        function interact(e) {
+          if (e.type === 'keydown') {
+            var named = e.key.length > 1 && e.key !== 'Enter' && e.key !== 'Tab'; // Escape, Shift, F5…
+            if (named || e.ctrlKey || e.altKey || e.metaKey) return; // these do not count as a click
+          }
+          if (armed && !line && helper !== 'up' && helper !== 'outside' && Date.now() - launchedAt > 1500) launch(true);
+        }
+
+        // After a start that did not answer in time, keep looking for the helper for two
+        // minutes while the page is shown (the browser may still be asking for permission).
+        function watch() {
+          if (watching) return;
+          var until = Date.now() + 120000;
+          watching = setInterval(function () {
+            if (helper === 'up' || Date.now() > until) {
+              clearInterval(watching);
+              watching = 0;
+              return;
+            }
+            if (document.visibilityState !== 'visible' || pinging || starting) return;
+            ping().then(function () {
+              if (helper !== 'up') return;
+              say(null);
+              if (pending().any) save();
+            });
+          }, 3000);
+        }
+
+        // Another browser may have saved since this page loaded.
+        async function refresh() {
+          if (busy || starting) return;
+          if (helper !== 'up') await ping();
+          if (helper === 'up') {
+            var data = await ask(
+              '/cards?path=' + encodeURIComponent(location.pathname) + '&title=' + encodeURIComponent(document.title)
+            );
+            found();
+            if (!busy) sync(data);
+            return;
+          }
+          if (!CAN_LINK) return;
+          var handle = await fileHandle(false);
+          if (!handle) return;
+          var text = await (await handle.getFile()).text();
+          var doc = new DOMParser().parseFromString(text, 'text/html');
+          if (doc.title === document.title && !busy) sync({ assignees: cardsIn(doc), status: statusIn(doc), updated: updatedIn(doc) });
+        }
+
+        // The file's handle, write access included. With ask, it may show the folder
+        // picker or the browser's permission prompt, so it must run from a click.
+        async function fileHandle(ask) {
+          await ready;
+          var mode = { mode: 'readwrite' };
+          if (!folder) {
+            if (!ask) return null;
+            say('Pick the ' + FOLDER + ' folder this page is in, so this browser can save into the file.', 'info');
+            var picked = await window.showDirectoryPicker({ id: 'edge8-tickets', mode: 'readwrite', startIn: 'documents' });
+            if (picked.name.toLowerCase() !== FOLDER.toLowerCase()) {
+              throw new Error('pick the ' + FOLDER + ' folder this page was opened from, not "' + picked.name + '".');
+            }
+            try {
+              await picked.getFileHandle(FILE);
+            } catch (e) {
+              throw new Error(FILE + ' is not in the folder you picked.');
+            }
+            folder = picked;
+            idb('readwrite', function (store) {
+              return store.put(picked, DIR);
+            }).catch(function () {
+              /* linked for this visit only */
+            });
+          }
+          if ((await folder.queryPermission(mode)) !== 'granted') {
+            if (!ask) return null;
+            if ((await folder.requestPermission(mode)) !== 'granted') {
+              throw new Error('the browser was not allowed to edit the ' + FOLDER + ' folder.');
+            }
+          }
+          try {
+            return await folder.getFileHandle(FILE);
+          } catch (e) {
+            if (e.name !== 'NotFoundError') throw e;
+            folder = null;
+            idb('readwrite', function (store) {
+              return store.delete(DIR);
+            }).catch(function () {});
+            throw new Error(FILE + ' is no longer in the linked folder. Try again to pick the folder.');
+          }
+        }
+
+        function reason(err) {
+          var name = err && err.name;
+          if (name === 'AbortError') return 'no folder was picked.';
+          if (name === 'NotAllowedError') return 'the browser was not allowed to edit the file.';
+          if (name === 'SecurityError') return 'click Try again to let the browser save.';
+          return (err && err.message) || String(err);
+        }
+
+        function idb(mode, use) {
+          return new Promise(function (resolve, reject) {
+            var open = indexedDB.open('edge8-tickets', 1);
+            open.onupgradeneeded = function () {
+              open.result.createObjectStore('folders');
+            };
+            open.onerror = function () {
+              reject(open.error);
+            };
+            open.onsuccess = function () {
+              var db = open.result;
+              try {
+                var tx = db.transaction('folders', mode);
+                var req = use(tx.objectStore('folders'));
+                tx.oncomplete = function () {
+                  db.close();
+                  resolve(req && req.result);
+                };
+                tx.onerror = tx.onabort = function () {
+                  db.close();
+                  reject(tx.error);
+                };
+              } catch (e) {
+                db.close();
+                reject(e);
+              }
+            };
+          });
+        }
+
+        // kind: 'ok' (fades), 'info' (stays until replaced), 'warn' (Dismiss), 'retry'
+        // (Try again) or 'start' (Start helper). say(null) clears an 'info' or 'start' message.
+        function makeToast() {
+          var box = el('div', 'a-toast');
+          box.setAttribute('role', 'status');
+          box.hidden = true;
+          var msg = box.appendChild(el('span'));
+          var act = box.appendChild(el('button'));
+          var dismiss = box.appendChild(el('button', null, 'Dismiss'));
+          act.type = 'button';
+          dismiss.type = 'button';
+          var kind = null;
+          act.addEventListener('click', function () {
+            if (kind === 'start') launch(true);
+            else save(true);
+          });
+          dismiss.addEventListener('click', function () {
+            box.hidden = true;
+          });
+          document.body.appendChild(box);
+          var timer = null;
+          return function (text, k) {
+            if (text === null) {
+              if (kind === 'info' || kind === 'start') box.hidden = true;
+              return;
+            }
+            kind = k;
+            msg.textContent = text;
+            act.textContent = k === 'start' ? 'Start helper' : 'Try again';
+            act.hidden = k !== 'retry' && k !== 'start';
+            dismiss.hidden = act.hidden && k !== 'warn';
+            box.classList.toggle('a-err', !dismiss.hidden);
+            box.hidden = false;
+            clearTimeout(timer);
+            if (k === 'ok') {
+              timer = setTimeout(function () {
+                box.hidden = true;
+              }, 2500);
+            }
+          };
+        }
+
+        window.addEventListener('focus', function () {
+          refresh().catch(function () {
+            /* keep what the page shows */
+          });
+        });
+        document.addEventListener('visibilitychange', function () {
+          if (document.visibilityState !== 'visible' || line || starting) return;
+          lost = 0;
+          startHelper();
+        });
+        window.addEventListener('pageshow', function (e) {
+          if (!e.persisted || line || starting) return; // back from the back/forward cache
+          lost = 0;
+          startHelper();
+        });
+        window.addEventListener('pagehide', function () {
+          var ws = line;
+          line = null; // a page leaving on purpose does not look for the helper again
+          if (ws) ws.close();
+        });
+        window.addEventListener('beforeunload', function (e) {
+          if (Date.now() < quietUntil) return; // Firefox following the edge8-tickets: link
+          if (pending().any) {
+            e.preventDefault();
+            e.returnValue = '';
+          }
+        });
+        document.addEventListener('pointerdown', interact, true);
+        document.addEventListener('keydown', interact, true);
+        document.addEventListener(
+          'pointerdown',
+          function (e) {
+            if (menu && !menu.box.contains(e.target) && !menu.s.span.contains(e.target)) closeMenu(false);
+          },
+          true
+        );
+        window.addEventListener('resize', function () {
+          closeMenu(false);
+        });
+
+        Array.prototype.forEach.call(document.querySelectorAll('.assignee[data-card]'), build);
+        Array.prototype.forEach.call(document.querySelectorAll('span.status[data-card]'), buildChip);
+        startHelper();
+      })();
+    </script>
+</body></html>

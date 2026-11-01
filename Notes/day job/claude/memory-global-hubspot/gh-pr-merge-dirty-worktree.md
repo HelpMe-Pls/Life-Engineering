@@ -1,0 +1,19 @@
+---
+name: gh-pr-merge-dirty-worktree
+description: gh pr merge --delete-branch skips LOCAL housekeeping (dirty worktree, or already off the branch) while the remote merge succeeds — and piping it to `tail` hides the result
+metadata: 
+  node_type: memory
+  type: feedback
+  originSessionId: 4aa8e7c4-aa1f-4b82-ade6-c80982e8e405
+  modified: 2026-08-28T23:59:53.109Z
+---
+
+`env -u GH_TOKEN gh pr merge <n> --squash --delete-branch` does the merge on the **remote first**, then tries to update the **local** repo (checkout `dev`, delete the merged branch). If the local working tree has **any** uncommitted change — even in a file unrelated to the PR — that local step aborts with `error: Your local changes ... would be overwritten by checkout`. The PR is **already MERGED on GitHub** at that point; only the local housekeeping failed.
+
+**Why:** the user (or a format-on-save linter) often leaves a stray uncommitted edit (e.g. the "person"→"contact" copy tweak applied to `UploadCard.tsx` after its commit, 2026-06-28). gh's post-merge `git checkout` collides with it.
+
+⚠ **A CLEAN worktree does not guarantee the local branch is deleted either** (2026-08-16, #583). Checking out `dev` *before* running the merge means gh's local step has nothing to do, and the merged local branch **silently survives** — which quietly defeats a branch close-out whose whole point is getting down to `main` + `dev`. Always re-check `git branch -vv` after the merge; the remote side is deleted correctly. A squash merge makes `git branch -d` refuse ("not fully merged"), so finish with `-D` once `gh pr view` says MERGED and the content is on `dev` — see [[close-out-branches-only-main-dev]].
+
+⚠ **Never pipe `gh pr merge` (or an `npm` gate) through `tail`.** The exit code becomes **`tail`'s**, so a failure reports 0, and gh's progress output can vanish entirely — a fully successful merge printed *nothing* and read as a no-op. ⚠ **It bites `git push` on a hooked branch too** (2026-08-29): `git push -u origin <b> 2>&1 | tail -30` ran the whole `.githooks/pre-push` gate, printed `pre-push: gate passed`, and **the push never happened** — no upstream, no remote ref, and `gh pr create` then failed with the misleading *"No commits between wip and &lt;branch&gt;"*. Re-running unpiped pushed fine. ⚠ **AND IT IS NOT `tail`-SPECIFIC — `grep` did exactly the same thing later that day**, twice, in a session that already held this memory: `git push -u origin <b> 2>&1 | grep -a "gate passed|new branch"` printed `pre-push: gate passed`, matched nothing for the push itself, and left NO remote ref and NO upstream. **Any filter that can finish before the writer does will do it**, so the rule is "do not pipe a hooked push at all", not "do not pipe it to tail". The gate output is long; let it be long, or redirect to a file and read the file. After any push, confirm with `git status -sb` (an upstream must be set) or `git ls-remote --heads origin`, never from the gate's last line. Verify state explicitly instead of inferring it from the command's output or status. Same class of trap: `gh pr view <n> --json files` returns at most **100** files, so on a large PR (422 changed) a missing path means **truncation, not absence** — confirm with `git diff --name-status origin/main origin/dev -- <path>`.
+
+**How to apply:** before `gh pr merge`, check `git status --short`. If dirty with WIP you want to keep, **stash by name first** (`git stash push -m … <file>`), let the merge complete, then `git checkout dev && git pull --ff-only origin dev`, delete the branch, and `git stash pop`. If the merge already aborted locally: confirm remote state with `gh pr view <n> --json state,mergedAt,mergeCommit` (NOT a `merged` field — that name is rejected; use `state`/`mergedAt`), then finish the local steps by hand. Don't re-run the merge — it's done. See [[promotion-merge-convention]] (feature PRs → squash + delete branch; dev→main → plain merge commit, keep dev head).

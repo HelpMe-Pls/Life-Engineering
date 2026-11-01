@@ -2,18 +2,18 @@
 > The MOVES file beneath [[This is it]] (the LAW) and [[Weekly Tasks]] `# Venture` (the SCHEDULE). `## NOW` is rewritten every Sunday by `/long-vol-consultant` and is embedded at the top of the SCHEDULE. The boxes below it are this week's work: tick a box when done; slip a date by writing the new one beside it. Dates may slip, gates never do. Words: [[CONTEXT]].
 
 ## NOW
-**Sun Oct 25 2026 · P1 Stranger dollar · week 3 of 13 closed today (read 14:40) · the coming week = week 4: Mon Oct 26 → Sun Nov 1**
-**Next gate:** Sun Nov 15 2026 (F-03) in 21 days — ≥1 paid enrollment from a stranger on EP. Have: 0 · the instructor has still not signed up (due Thu Oct 15, R-20).
-**Also ticking:** Mon Dec 7 (F-04, 43 d) ≥1 reply from ≤35 proposals · Wed Jan 6 (F-05, 73 d) a stranger's money in ACB.
-**Score Σ:** p 6 · r 0 · h 0 · $0 · posts 1 · Connects spent $6.60 of $300 (75 free + 40 bought, 27 left) · profile live.
+**Sun Nov 1 2026 · P1 Stranger dollar · week 4 of 13 closed today (read 16:03) · the coming week = week 5: Mon Nov 2 → Sun Nov 8**
+**Next gate:** Sun Nov 15 2026 (F-03) in 14 days — ≥1 paid enrollment from a stranger on EP. Have: 0 · the instructor has still not signed up (due Thu Oct 15, R-20).
+**Also ticking:** Mon Dec 7 (F-04, 36 d) ≥1 reply from ≤35 proposals · Wed Jan 6 (F-05, 66 d) a stranger's money in ACB.
+**Score Σ:** p 9 · r 0 · h 0 · $0 · posts 2 · Connects spent $8.25 of $300 (75 free + 50 bought, 7 left) · profile live.
 **Signal:** none.
-**Blocked on:** nothing (the Hormozi video: just curious, not adopted).
+**Blocked on:** nothing (wants something low-maintenance to rely on if the main income goes: that is P2, served by the reps).
 **Governor:** NO, NO → clear.
 
 ### Next 3 moves
-1. [ ] **By Sun Nov 1:** the demo repo shipped, ≤8 h, README as a landing page; the Oct 19 post made the date public (Next box 2).
-2. [ ] **Mon Oct 26 → Sun Nov 1, 20:00–22:00:** 3–5 proposals, the repo link in each once it ships; no follow-ups on unanswered bids (R-09, R-21).
-3. [ ] **One evening this week:** the weekly note post on the worker, as the Oct 19 post promised (Next box 1, standing).
+1. [ ] **Mon Nov 2 → Sun Nov 8, 20:00–22:00:** 3–5 proposals, the repo link in each; buy Connects singly as needed (7 left, R-16); no follow-ups unless the client replied (R-21).
+2. [ ] **One evening this week:** the weekly post (standing).
+3. [ ] **Sun Nov 8:** the Sunday read; EP needs nothing until the F-03 read on Sun Nov 15.
 
 ## This week (Mon Oct 12 → Sun Oct 18) — week 2 of 13
 1. [x] 🛠 **Today — one message to the EP instructor, three asks** (R-20): (1) sign up at hocvienksxd.com with his Gmail now — the webhook `500` is expected, not a failure; (2) the 8-clause page ([[EP SaaS]] §5, clause 8 first: whose account, who declares tax) signed before anything goes on sale; (3) how many old students he messages in week 1 + the first-sale date he commits to. ==No signup by Thu Oct 15 → buy no Stream storage; his Friday is his delay.==
@@ -26,7 +26,7 @@
 
 ## Next (Mon Oct 19 → Sun Nov 1) — weeks 3–4
 - [x] 🎯 First text post under your name (LinkedIn or X): what you are building in public this quarter, one paragraph, no pitch. Then one every week. Done Mon Oct 19: https://x.com/curiousKhoi/status/2112133114885800439
-- [ ] 🧱 Demo repo scoped to ≤8 h and shipped by **Sun Nov 1** (slipped from Oct 25 on 2026-10-11 — build hours go first in the cut order): the conversion-sync worker (Workers/D1, TDD) with a README that reads as a landing page. From then on it is the portfolio link in every proposal and the v0 of the product. First half done Sun Oct 25 (repo public, v0 + spec #4 in); the rest by Sun Nov 1.
+- [x] 🧱 Demo repo scoped to ≤8 h and shipped by **Sun Nov 1** (slipped from Oct 25 on 2026-10-11 — build hours go first in the cut order): the conversion-sync worker (Workers/D1, TDD) with a README that reads as a landing page. From then on it is the portfolio link in every proposal and the v0 of the product. First half done Sun Oct 25 (repo public, v0 + spec #4 in); the rest by Sun Nov 1. Done Sun Nov 1: PR #11 on main, CI, 56 tests.
 - [ ] 🛠 EP ops ≤2 h/wk: errors only, no features, no selling — he sells. **Sun Nov 15 (F-03):** ≥1 paid enrollment from anyone who is not you, him, or a test, else EP returns to the graveyard and Stream storage is cancelled.
 
 ## Standing, every week until Wed Jan 6 2027

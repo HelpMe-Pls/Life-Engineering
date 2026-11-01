@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HITL Pre-flight, Sprint 42</title>
+    <style>
+      :root {
+        --navy: #04102d;
+        --blue: #287be8;
+        --mint: #6ff2c1;
+        --pink: #d1458b;
+        --light: #eaeef2;
+        --white: #fff;
+        --muted: #66708a;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        color: var(--navy);
+        background: var(--white);
+        font:
+          16px/1.6 -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      .wrap {
+        padding: 48px 28px 72px;
+      }
+      header {
+        border-bottom: 4px solid var(--mint);
+        padding-bottom: 20px;
+        margin-bottom: 32px;
+      }
+      h1 {
+        font-size: 2rem;
+        margin: 0 0 6px;
+      }
+      .meta {
+        color: var(--blue);
+        font-size: 0.92rem;
+        font-weight: 600;
+        margin: 0 0 2px;
+      }
+      .meta span {
+        color: var(--navy);
+        font-weight: 400;
+      }
+      h2 {
+        font-size: 1.25rem;
+        margin: 36px 0 12px;
+        padding-left: 12px;
+        border-left: 4px solid var(--blue);
+      }
+      p {
+        margin: 0 0 14px;
+      }
+      code {
+        overflow-wrap: anywhere;
+      }
+      .callout {
+        background: var(--light);
+        border-radius: 10px;
+        padding: 18px 22px;
+        margin: 24px 0;
+      }
+      .callout h2 {
+        margin-top: 0;
+        border: 0;
+        padding: 0;
+        color: var(--navy);
+      }
+      .callout.alert {
+        background: #fbeaf3;
+        border-left: 5px solid var(--pink);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 14px 0;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--light);
+        vertical-align: top;
+        overflow-wrap: anywhere;
+      }
+      th:first-child,
+      td:first-child,
+      th:last-child,
+      td:last-child {
+        width: 1%;
+        white-space: nowrap;
+        overflow-wrap: normal;
+      }
+      th {
+        background: var(--navy);
+        color: var(--white);
+        font-size: 0.85rem;
+      }
+      .chip {
+        display: inline-block;
+        font-size: 0.74rem;
+        font-weight: 700;
+        padding: 2px 9px;
+        border-radius: 20px;
+        white-space: nowrap;
+        letter-spacing: 0.02em;
+      }
+      .chip-immediate {
+        background: var(--pink);
+        color: var(--white);
+      }
+      .chip-week {
+        background: var(--blue);
+        color: var(--white);
+      }
+      footer {
+        margin-top: 48px;
+        padding-top: 18px;
+        border-top: 1px solid var(--light);
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+      @media (max-width: 600px) {
+        .wrap {
+          padding: 32px 16px 56px;
+        }
+        h1 {
+          font-size: 1.6rem;
+        }
+        th,
+        td {
+          padding: 8px 6px;
+        }
+        th:last-child,
+        td:last-child {
+          white-space: normal;
+        }
+        .chip {
+          white-space: normal;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>
+          Sprint 42 run: two sign-ins and one key file before it can start
+        </h1>
+        <p class="meta">Date: <span>Fri 23 October 2026</span></p>
+        <p class="meta">
+          Author: <span>Kh&ocirc;i L&ecirc;, written by Claude Code</span>
+        </p>
+        <p class="meta">
+          Session: <span>Sprint 42 setup, before the unattended run</span>
+        </p>
+      </header>
+
+      <div class="callout">
+        <h2>Context</h2>
+        <p>
+          You asked for an unattended Claude Code run that closes Sprint 42's
+          cards. Nobody has launched the run that the 21 Oct setup prepared, so
+          this page replaces it. The run does
+          <a
+            href="../../Tickets/Sprint%20Tickets%20%5BY26%20Sprint%2042%5D.html#card-3"
+            >Card 3</a
+          >
+          (the Regional dashboard in HubSpot), Cards 5 and 6 (the events
+          connector's sandbox tests and its runbook), then Cards 2 and 4 (two
+          scope pages).
+          <a
+            href="../../Tickets/Sprint%20Tickets%20%5BY26%20Sprint%2042%5D.html#card-7"
+            >Card 7</a
+          >
+          stays WAITING. These are your steps before you launch it.
+        </p>
+      </div>
+
+      <div class="callout alert">
+        <h2>
+          A real sync could change Emily's demo event on the OneEO sandbox
+        </h2>
+        <p>
+          Test E4 runs one real sync on the OneEO sandbox, and that sync reads
+          every event in the Eventbrite test organisation, including the event
+          that Emily's demo shows.
+        </p>
+        <p>
+          <strong>To stop this:</strong> the run does a dry run first. It runs
+          the real sync only when the demo event shows as unchanged, and at the
+          end it reads that event back. Otherwise it stops that test and lists
+          it for you.
+        </p>
+      </div>
+
+      <h2>What to do: 4 steps, all yours, in this order</h2>
+      <table>
+        <tr>
+          <th>Owner</th>
+          <th>Step</th>
+          <th>Due</th>
+        </tr>
+        <tr>
+          <td>Kh&ocirc;i</td>
+          <td>
+            <strong>1. Sign in to HubSpot in Chrome.</strong> On 23 Oct HubSpot
+            said "Your authentication has expired". Only you can type your
+            password. Open app.hubspot.com, sign in as khoi.le@edge8.ai, and
+            open EO's portal. Nothing changes for others. Check that the account
+            menu names you and that no "temporarily logged in as" banner shows.
+          </td>
+          <td><span class="chip chip-immediate">Before launch</span></td>
+        </tr>
+        <tr>
+          <td>Kh&ocirc;i</td>
+          <td>
+            <strong>2. Sign in to Eventbrite in Chrome.</strong> On 23 Oct
+            Eventbrite sent Chrome to its sign-in page. Only you can type your
+            password. Open eventbrite.com/organizations/home and sign in with
+            the account that holds test organisation 3016566608989. Nothing
+            changes for others. Check that the organisation shows in the account
+            menu.
+          </td>
+          <td><span class="chip chip-immediate">Before launch</span></td>
+        </tr>
+        <tr>
+          <td>Kh&ocirc;i</td>
+          <td>
+            <strong>3. Save the sandbox keys in one file.</strong> These are
+            secrets, and an agent never reads them. The file was still missing
+            on 23 Oct. Create
+            <code
+              >C:\Users\leekh\Documents\Repos\Edge8\event-sync\.env.sandbox</code
+            >
+            with these names and the values from your 18 Oct test:
+            EVENTBRITE_TOKEN, HIVEBRITE_CLIENT_ID, HIVEBRITE_CLIENT_SECRET,
+            HIVEBRITE_AUTH_URL, HIVEBRITE_API_URL, HIVEBRITE_CHAPTER_CATEGORY_ID
+            and HIVEBRITE_VIRTUAL_CATEGORY_ID. Git already ignores the file, so
+            nothing changes for others. Check that both Hivebrite addresses hold
+            sandbox.
+          </td>
+          <td><span class="chip chip-immediate">Before launch</span></td>
+        </tr>
+        <tr>
+          <td>Kh&ocirc;i</td>
+          <td>
+            <strong>4. Launch the run.</strong> Close every other Claude Code
+            session that uses Chrome, because two of them conflict on Windows.
+            Then, in global-hubspot's folder, run the launch command from
+            <code
+              >C:\Users\leekh\Documents\Edge8\AFK\Start\Sprint Tickets [Y26
+              Sprint 42] AFK prompt.md</code
+            >. Send Message 1 first, then Message 2 right after it. Check that
+            the run reports its session start without asking you anything.
+          </td>
+          <td><span class="chip chip-week">After steps 1 to 3</span></td>
+        </tr>
+      </table>
+
+      <p>
+        <strong>The old dashboards stay:</strong> the run keeps the APAC Region
+        and Canada Region dashboards. Its report lists their delete as your
+        step, after your check that a regional leader sees the new Regional
+        dashboard.
+      </p>
+
+      <footer>
+        <p>
+          Sources, read on Fri 23 Oct 2026: the Sprint 42 tickets page, the
+          event-sync handoff, and Chrome's sign-in state on HubSpot, Eventbrite
+          and the OneEO sandbox (up).
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
