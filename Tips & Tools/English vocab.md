@@ -985,6 +985,8 @@ quarrel (v-n): angry disagreement
 
 dissensus (n): !consensus, difference of opinion
 
+fence sitting (idiom): waffling, equivocating, hedging, vacillating, remaining neutral
+
 acrimonious (adj): bitter, resentful, ==rancorous==
 
 vitriol (n): bitterly harsh or incisive language or criticism

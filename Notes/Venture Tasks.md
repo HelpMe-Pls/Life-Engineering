@@ -2,18 +2,18 @@
 > The MOVES file beneath [[This is it]] (the LAW) and [[Weekly Tasks]] `# Venture` (the SCHEDULE). `## NOW` is rewritten every Sunday by `/long-vol-consultant` and is embedded at the top of the SCHEDULE. The boxes below it are this week's work: tick a box when done; slip a date by writing the new one beside it. Dates may slip, gates never do. Words: [[CONTEXT]].
 
 ## NOW
-**Sun Nov 1 2026 · P1 Stranger dollar · week 4 of 13 closed today (read 16:03) · the coming week = week 5: Mon Nov 2 → Sun Nov 8**
-**Next gate:** Sun Nov 15 2026 (F-03) in 14 days — ≥1 paid enrollment from a stranger on EP. Have: 0 · the instructor has still not signed up (due Thu Oct 15, R-20).
-**Also ticking:** Mon Dec 7 (F-04, 36 d) ≥1 reply from ≤35 proposals · Wed Jan 6 (F-05, 66 d) a stranger's money in ACB.
-**Score Σ:** p 9 · r 0 · h 0 · $0 · posts 2 · Connects spent $8.25 of $300 (75 free + 50 bought, 7 left) · profile live.
+**Sun Nov 8 2026 · P1 Stranger dollar · week 5 of 13 closed today (read 20:55) · the coming week = week 6: Mon Nov 9 → Sun Nov 15**
+**Next gate:** Sun Nov 15 2026 (F-03) in 7 days — ≥1 paid enrollment from a stranger on EP. Have: 0 · the instructor has still not signed up (due Thu Oct 15, R-20).
+**Also ticking:** Mon Dec 7 (F-04, 29 d) ≥1 reply from ≤35 proposals · Wed Jan 6 (F-05, 59 d) a stranger's money in ACB.
+**Score Σ:** p 12 · r 0 · h 0 · $0 · posts 3 · Connects spent $11.72 of $300 (75 free + 71 bought, 0 left) · profile live.
 **Signal:** none.
-**Blocked on:** nothing (wants something low-maintenance to rely on if the main income goes: that is P2, served by the reps).
+**Blocked on:** the day job pushes every rep to Sunday night.
 **Governor:** NO, NO → clear.
 
 ### Next 3 moves
-1. [ ] **Mon Nov 2 → Sun Nov 8, 20:00–22:00:** 3–5 proposals, the repo link in each; buy Connects singly as needed (7 left, R-16); no follow-ups unless the client replied (R-21).
+1. [ ] **Tue Nov 10, 20:00–22:00:** 3 proposals first, the repo link in each; buy Connects singly (0 left, R-16); no follow-ups unless the client replied (R-21).
 2. [ ] **One evening this week:** the weekly post (standing).
-3. [ ] **Sun Nov 8:** the Sunday read; EP needs nothing until the F-03 read on Sun Nov 15.
+3. [ ] **Sun Nov 15:** the Sunday read, with the F-03 EP read.
 
 ## This week (Mon Oct 12 → Sun Oct 18) — week 2 of 13
 1. [x] 🛠 **Today — one message to the EP instructor, three asks** (R-20): (1) sign up at hocvienksxd.com with his Gmail now — the webhook `500` is expected, not a failure; (2) the 8-clause page ([[EP SaaS]] §5, clause 8 first: whose account, who declares tax) signed before anything goes on sale; (3) how many old students he messages in week 1 + the first-sale date he commits to. ==No signup by Thu Oct 15 → buy no Stream storage; his Friday is his delay.==
@@ -22,7 +22,7 @@
 4. [ ] 🛠 **EP wrap-up, only after he is signed up — ≤10 h total this week** (R-20): copy his Clerk id → the one `UPDATE` (EP repo `docs/plans/next-steps.md` step 1) → buy Stream storage (≤$15/mo, recouped before the 50/50 split) → the signing-key closure + deploy (`BACKLOG.md` § D3) → after his first video: the 10K₫ smoke as a non-owner buyer (step 3). Fri Oct 16 he uploads; you answer access/payment errors only, ≤30 min/day.
 5. [x] 💸 **Bank + tax, ≈45 min (done Sun Oct 18, ticked at the read):** the one-tab ledger · ACB ONE notifications · ~~export a recent ACB statement in your name (Upwork's location check)~~ done Thu Oct 15 · tax adviser booked for before the first payout, two questions added: the account notification (Form 01/BK-STK) for the ACB VND account, and how to pay his 50% (the 10% PIT withholding on ≥2M₫ payments to an individual). ACB VND + PayOS are live; the USD account waits for a USD inflow (P2).
 6. [x] 🎯 **First 3 proposals sent Sun Oct 18, 20:00–22:00** ([[This is it]] §7): one line quoting the client's own deliverable · one line of proof · one question · price at or below budget. Log them in the demand log; they are the first `p` in the scoreboard. Then the Sunday read. Done Sun Oct 18, 19:00–20:00: 3 sent (Marketing Attribution Audit $35/h · TripleSeat → Meta Ads $30/h · Secure MCP Server + ChatGPT $35/h), 57 of the 75 free Connects, $0 cash; follow-ups due Thu Oct 22 (day 5).
-7. [ ] Wed Oct 14, 20:00 — Tam HN's free masterclass: attend free, buy nothing, notes on his post-picking and proposal openings. Skip it if you need the sleep (R-18).
+7. [x] ~~Wed Oct 14, 20:00 — Tam HN's free masterclass: attend free, buy nothing, notes on his post-picking and proposal openings. Skip it if you need the sleep (R-18).~~ Closed as skipped, Sun Nov 8.
 
 ## Next (Mon Oct 19 → Sun Nov 1) — weeks 3–4
 - [x] 🎯 First text post under your name (LinkedIn or X): what you are building in public this quarter, one paragraph, no pitch. Then one every week. Done Mon Oct 19: https://x.com/curiousKhoi/status/2112133114885800439

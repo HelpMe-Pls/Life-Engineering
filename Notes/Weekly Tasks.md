@@ -1,57 +1,65 @@
 # The TODOs
 ### 2/11
-- [ ] EO with Opus ultra low:
-	- [ ] Send the `C:/Users/leekh/Documents/Edge8/Scopes/Scope [SOW user stories for review].html`
-	- [ ] Wrap up all HITL tasks
-	- [ ] AFK++ (`global-hubspot` self-training UI decision)
+- [x] EO with Opus ultra low:
+	- [x] Send the `C:/Users/leekh/Documents/Edge8/Scopes/Scope [SOW user stories for review].html`
+	- [x] Wrap up all HITL tasks
+	- [x] Check https://eoeventsapi.com wording
+	- [x] Sprint planning
+	- [x] AFK++ (`global-hubspot` self-training UI decision)
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 3/11
-- [ ] EO weekly report & sprint goals update (with Opus medium/xhigh)
-	- [ ] AFK sprint prep & Rehearse 
-	- [ ] Update & send the sprint report (with `event-sync` schedule cadence blocker)
-	- [ ] `global-hubspot` self-training implementation
+- [x] EO weekly report & sprint goals update (with Opus medium/xhigh)
+	- [x] AFK sprint prep & Rehearse 
+	- [x] AFK `global-hubspot` self-training implementation
+	- [x] Update & send the sprint report (with `event-sync` schedule cadence blocker)
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 4/11
-- [ ] EO sprint review with Opus Max:
-	- [ ] Record & summarize the meeting
-	- [ ] AFK `After sprint review`
+- [x] EO sprint review with Opus Max:
+	- [x] Record & summarize the meeting (with Nisha's reply)
+	- [x] AFK `After sprint review`
+	- [x] Update the training module to also track progress on viewed videos (so there are 2 ways of completing a module)
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 5/11
-- [ ] EO minimal work with Opus xhigh/Max:
-	- [ ] AFK++
-	- [ ] Drain Claude quota (with research)
-	- [ ] AIO coaching session
+- [x] EO minimal work with Opus xhigh/Max:
+	- [x] AFK++
+	- [x] Drain Claude quota (with research)
+	- [x] `global-hubspot`: Admin's editor for training module
+	- [x] AIO coaching session
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 6/11
-- [ ] EO minimal work Opus Low
-	- [ ] AFK++ 
-	- [ ] Contingencies
-- [ ] Venture++
+- [x] EO minimal work Opus Low
+	- [x] AFK++ 
+	- [x] LAC & Ottawa members
+	- [x] Update the prompts under the `# After sprint review` section of `C:\Users\leekh\Documents\Repos\Personal\Life-Engineering\Notes\Daily Standup.md` so that they'll create idempotent execution prompts (i.e. so that they won't waste tokens repeating finished work) that minimize quota usage without sacrificing output quality.
+	- [x] With Fable max ultra: `Update your own configs to MINIMIZE & OPTIMIZE usage quota/cost/context/tokens WITHOUT compromising output quality. Just do WHATEVER IT TAKES so that my usage/quota is NEVER WASTED. Good examples could be optimizing your tool calls and only using dynamic workflows and spawning subagent when ABSOLUTELY NECESSARY (and if comes to that, use Sonnet for subagents or sth like that), or orchestrating dedicated sessions so they can ping each other to divide and conquer long-horizon tasks instead of using dynamic workflows; but pls feel free to apply even better approaches, I just want to ALWAYS get the absolute highest ROI possible on my token quota, cutting my usual token usage AT LEAST in half WITHOUT sacrificing my output quality. Once you're done with that, give me the MOST OPTIMAL paste-ready prompt so I can paste it into a Claude Code CLI session on ANY machine and it'll automatically set up those same usage/quota optimization settings. That prompt should also work for ANY in-flight session to save as many tokens as possible for that session (i.e. I should be able to paste it mid-session and it'll work for that specific session). Finally, give me the EXACT practical tips that I can use when an agent (or the prompts above) can't enforce this (e.g. choosing the right model and effort level for the task). You have 30 minutes to get this done.`
+	- [x] Ask Claude how the increased limit is applied (is it actually applied tho)
+- [x] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 7/11
-- [ ] Perfect dive start + 500m
-- [ ] Hefty breakfast
-- [ ] Groceries
+- [x] Perfect dive start + 500m
+- [x] Hefty breakfast
+- [x] Groceries
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 8/11
-- [ ] Splurge (if you're done with EP HITL)
-- [ ] Weekly planning (including EO tickets with Opus Low)
-	- [ ] Wrap up all HITL tasks
-- [ ] Venture++
-	- [ ] Long vol
+- [x] Splurge (if you're done with EP HITL)
+- [x] Weekly planning (including EO tickets with Opus Low)
+	- [x] Wrap up all HITL tasks
+	- [x] Have Claude do this: https://duthaoonline.quochoi.vn/dt/luat-hien-lay-ghep-mo-bo-phan-co-the-nguoi-va-hien-lay-xac-sua-doi/260818155807311971
+- [x] Venture++
+	- [x] Long vol
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 # What a good day looks like
 - Wake up at 5AM
 - Finish workout before 6:30AM
@@ -85,6 +93,7 @@ One row every Sunday, numbers and dashes only — words go under "Notes to the c
 | 2026-10-18 | ~10 | NO   | 3/0/0/0         | -/-/-         | 0    | F-02   |
 | 2026-10-25 | ~10 | NO   | 3/0/0/0         | -/-/-         | 1    | -      |
 | 2026-11-01 | ~10 | NO   | 3/0/0/0         | -/-/-         | 1    | -      |
+| 2026-11-08 | ~10 | NO   | 3/0/0/0         | -/-/-         | 1    | -      |
 
 > [!abstract]- Column key (Σ = running total · `-` not live · `0` live, nothing happened · `_` fill on Sunday)
 > - **hrs** = all venture hours this week (20 = the ceiling)
@@ -111,6 +120,7 @@ One row per post read or bid on, from Oct 9 — ==log every post you read, not o
 | 2026-10-18 | 21     | 3      | 0         | 0       | 7           | 0                 | 4          | 3            | 6        | 1     |
 | 2026-10-25 | 31     | 6      | 0         | 0       | 8           | 1                 | 5          | 3            | 9        | 5     |
 | 2026-11-01 | 34     | 9      | 0         | 0       | 8           | 1                 | 5          | 3            | 9        | 8     |
+| 2026-11-08 | 37     | 12     | 0         | 0       | 8           | 1                 | 5          | 3            | 12       | 8     |
 
 **The log — newest row at the bottom:**
 
@@ -150,6 +160,9 @@ One row per post read or bid on, from Oct 9 — ==log every post you read, not o
 | 2026-10-30 | https://www.upwork.com/jobs/~022116002489016403699 | HubSpot CRM & Recruitment Workflow Specialist — Complete Existing Setup, Automations & Testing | other | $400 fixed | 9 | Y | N | N |  | "take over the existing work, identify what remains unfinished, and bring the system to a functional, tested, and documented state. This is not a project to rebuild our CRM from scratch." · Rainy Day Pets, US, payment verified · bid Fri Oct 30 at $400 fixed, less than 1 month (proposal 2116102738491707393) · 20 to 50 proposals |
 | 2026-11-01 | https://www.upwork.com/jobs/~022116383324145300288 | API & Webhook Developer Needed to Connect Levr.ai with HubSpot CRM | other | $200 fixed | 11 | Y | N | N |  | "build a clean, reliable background integration between Levr.ai and HubSpot using webhooks and REST API endpoints" · US, payment verified, member since Oct 31 · bid Sun Nov 1 at $200 fixed (10% fee → $180), proposal 2116778965214011393 · 50+ proposals |
 | 2026-11-01 | https://www.upwork.com/jobs/~022115360011089554577 | Hubspot app approval | other | $25–$65/hr | 10 | Y | N | N |  | "I don't want this message to appear when our customers install our package to Hubspot." · Israel, payment verified · bid Sun Nov 1 at $34.56/h, no boost, no rate increase, proposal 2116814528564617217 · 20 to 50 proposals |
+| 2026-11-08 | https://www.upwork.com/jobs/~022119310455195450457 | Google Analytics 4 (GA4) Integration & Tracking Support | tracking | $75–$200/hr | 10 | Y | N | N |  | "Reviewing the current GA4 integration and tracking configuration. Identifying any tracking issues or missing data." · Oman, payment NOT verified, member since Nov 4 · bid Sun Nov 8 at $75/h, no boost, no rate increase, proposal 2119410338267414529 · 10 to 15 proposals |
+| 2026-11-08 | https://www.upwork.com/jobs/~022119178171175812185 | Google Analytics 4 (GA4) & Google Tag Manager Specialist Needed | tracking | $20–$45/hr | 9 | Y | N | N |  | "build a reliable tracking system that provides actionable insights into user behaviour, marketing performance, and conversion attribution" · Nigeria, payment NOT verified · bid Sun Nov 8 at $34.56/h, no boost, no rate increase, proposal 2119410649822515201 · 5 to 10 proposals |
+| 2026-11-08 | https://www.upwork.com/jobs/~022119078303076465430 | Google Tag Manager Tags, Google Analytics, GA4, Meta, Google Ads, Stape | tracking | $250 fixed | 9 | Y | N | N |  | "I want to track this form for Facebook Pixel, Facebook CAPI, Google Ads, and Google Analytics. I really want to validate 0 duplicate events" · Germany, payment verified, member since Nov 1 · bid Sun Nov 8 at $250 fixed (15% fee → $212.50), proposal 2119411458101149697 · 20 to 50 proposals |
 
 ## Calendar — the 8 dates (put each in your calendar app with the Sunday it is read on)
 1. Sun Nov 1 2026 — demo repo shipped (a target; slipped from Oct 25 on 2026-10-11); its link goes into every proposal from then on
@@ -224,6 +237,11 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07).
 - **Proposals 2 and 3 of week 4, sent Sun Nov 1 by Claude in Khoi's Edge, on his word:** Levr.ai ↔ HubSpot ($200 fixed, 11 Connects) and HubSpot app approval ($34.56/h, 10 Connects). 10 Connects bought for $1.65 ($1.50 + tax, Visa 4071), 7 left.
 - **Text post 2 went out Sun Nov 1:** https://x.com/curiousKhoi/status/2116812633068408914 (the repo shipped as promised).
 - Khoi, in his words: "Nothing's stuck. I just really want to have sth low maintenance that I can rely on in case my main source of income is no longer there"
+
+#### Nov 8th, 2026
+- **Week 5's 3 proposals, sent Sun Nov 8 by Claude in Khoi's Chrome, on his word ("do WHATEVER IT TAKES to make the week count"):** GA4 Integration & Tracking Support ($75/h, 10 Connects), GA4 & GTM Specialist ($34.56/h, 9), Shopify GTM/CAPI form tracking ($250 fixed, 9). All tagged tracking, repo link in each, no boost, no rate increase. 21 Connects bought for $3.47 ($3.15 + tax, Visa 4071) after a first decline Khoi cleared; 0 Connects left. Skipped: HubSpot Account Setup (US only), HubSpot contact cleanup ($5), WordPress law firm (27 Connects), AI Automation Engineer (0% hire rate on 131 jobs), Vidya Timber AI platform ($400 fixed for 3–6 months).
+- **Text post 3 went out Sun Nov 8 (published by Claude in Khoi's Chrome, on his "post it"):** https://x.com/curiousKhoi/status/2119424549603377553
+- **Sunday read 20:55:** week 5 counted (3 proposals + the post, F-02 met). Gov? NO, ~10 h. No signal. Block: the day job ate the week, every rep left to Sunday night; next week the 3 proposals go first, Tue Nov 10. Tam HN masterclass box closed as skipped.
 # Backlog
 - [Learn about animations](https://animations.dev/learn/animation-theory/intro)
 - [Learn to be an AI Engineer](https://www.aihero.dev/ai-engineer-roadmap)

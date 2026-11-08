@@ -17,6 +17,31 @@ How it works:
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "<your-desired-model>"
   }
 ```
+## Saving your quota
+
+Paste into any Claude Code session, fresh or mid-session:
+
+````text
+Token economy: from this message on, in this session and every later one on this machine, cut token waste without cutting depth. Right now, in this session: grep with a head limit before you read and read only the lines you need (offset and limit); never re-read a file already in context or read a file back to verify an edit; put independent tool calls in one message and several shell commands in one Bash call; send long command output to a temp file and read only the lines that matter; no subagent, agent team or Workflow unless the work is parallel and independent or does not fit in one context, at most 5 spawns per session, Sonnet for subagents and Opus only for a judge, verify or design stage; a Workflow only when my message says workflow or ultracode, even when ultracode is on; answer first and short, no narration of tool calls, no restating my question, nothing beyond the result and what I must do next; load a skill only when the task matches its trigger; WebSearch standard mode first.
+
+Then make it permanent without asking me anything. Find the user-level Claude Code config folder (the folder that holds settings.json and CLAUDE.md: .claude under my home folder, or CLAUDE_CONFIG_DIR when it is set). Copy settings.json and CLAUDE.md into a backups folder inside it named token-economy plus today's date. Merge these keys into settings.json and keep every other key as it is: env.CLAUDE_CODE_SUBAGENT_MODEL = sonnet, env.CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL = sonnet, env.CLAUDE_CODE_SUBAGENT_EFFORT = medium, env.MAX_MCP_OUTPUT_TOKENS = 12000, autoCompactWindow = 200000 (and 200000 inside every existing modelSettings entry, because a per-model value replaces the top-level one), bashOutputMaxChars = 16000, workflowSizeGuideline = small; delete the ultracode key if it is true. Never set CLAUDE_CODE_EFFORT_LEVEL, DISABLE_PROMPT_CACHING or CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC. Leave any [1m] model alias alone: the 200000 window keeps the context lean, and /autocompact 1M raises it when a task needs more (it saves to settings, so /autocompact 200 puts the cap back). If a shell profile or alias launches claude with --effort xhigh or max, change it to high.
+
+Append this section to CLAUDE.md in that folder, verbatim, unless a section titled Token economy is already there (create the file if it is missing):
+
+## Token economy
+
+Every turn re-sends the whole context, so context size, turn count and spawned agents are the cost. These rules cut waste, never depth: think as hard as the task needs and no more, and read, print and spawn only what the task needs.
+
+- Search before you read: grep with a head limit, then read only the lines you need (offset and limit). Never read a whole file over 300 lines without a reason, never re-read a file that is already in context, never read a file back to verify an edit (Edit and Write fail loudly).
+- Batch: independent tool calls go in one message, and several shell commands go in one Bash call. Ask a command for only what you need (a count, a grep hit, a JSON field, the last 20 lines); send long output to a file in the temp folder and read the lines that matter.
+- No subagent, agent team or Workflow unless the work is parallel and independent, or does not fit in one context. At most 5 spawns per session. Subagents run on Sonnet at medium effort by default (settings); pick Opus only for a judge, verify or design stage, and Haiku or the Explore agent for a search. Ultracode on or effort max does not change this: a Workflow runs only when my message says workflow or ultracode.
+- Long-horizon work: write the plan or spec to a file and hand it to a fresh session (SendMessage between sessions when they must coordinate) instead of growing this session or spawning a fleet.
+- Replies: the answer first, short. No narration of tool calls, no restating my question, nothing beyond the result and what I must do next. Code, commands and error text go in a fenced block, never in prose.
+- Load a skill only when the task matches its trigger. WebSearch standard mode first, extended only when standard comes back thin. Open the browser tools only for a page that needs a logged-in session.
+- When a task is done and the next one is unrelated, say so in one line: a /clear or /compact there saves the most.
+
+Finish with at most 6 lines: what you changed, the path of the backup folder, and the slash commands I should run now in this session (effort high unless the task is hard; /autocompact 200, read as 200 thousand, if this session already runs with a bigger window). Nothing else.
+````
 
 # Skills
 [[validate-biz-idea]]
