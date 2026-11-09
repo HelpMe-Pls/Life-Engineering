@@ -1,40 +1,36 @@
 # The TODOs
-### 2/11
-- [x] EO with Opus ultra low:
-	- [x] Send the `C:/Users/leekh/Documents/Edge8/Scopes/Scope [SOW user stories for review].html`
-	- [x] Wrap up all HITL tasks
-	- [x] Check https://eoeventsapi.com wording
-	- [x] Sprint planning
-	- [x] AFK++ (`global-hubspot` self-training UI decision)
+### 9/11
+- [x] EO with Opus low:
+	- [x] Send the training module review
+	- [x] Create a handoff for the Refine session to Address Feedback
+	- [ ] Feedback: open the current wave in the `Training` board, with the same `Name and role` in the dropdown; recapture the screenshots to fix the footer gap in the `Manage a process` module
+	- [x] Sprint planning (with an emphasis on the training module demo)
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 3/11
-- [x] EO weekly report & sprint goals update (with Opus medium/xhigh)
-	- [x] AFK sprint prep & Rehearse 
-	- [x] AFK `global-hubspot` self-training implementation
-	- [x] Update & send the sprint report (with `event-sync` schedule cadence blocker)
+- [ ] Live up to your standards
+### 10/11
+- [ ] EO weekly report & sprint goals update (with Opus low)
+	- [ ] AFK sprint prep & Rehearse 
+	- [ ] Update & send the sprint report 
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 4/11
-- [x] EO sprint review with Opus Max:
-	- [x] Record & summarize the meeting (with Nisha's reply)
-	- [x] AFK `After sprint review`
-	- [x] Update the training module to also track progress on viewed videos (so there are 2 ways of completing a module)
+- [ ] Live up to your standards
+### 11/11
+- [ ] EO sprint review with Opus Max ultra:
+	- [ ] Record & summarize the meeting (with Nisha's reply)
+	- [ ] AFK `After sprint review`
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 5/11
-- [x] EO minimal work with Opus xhigh/Max:
-	- [x] AFK++
-	- [x] Drain Claude quota (with research)
-	- [x] `global-hubspot`: Admin's editor for training module
-	- [x] AIO coaching session
+- [ ] Live up to your standards
+### 12/11
+- [ ] EO minimal work with Fable Max:
+	- [ ] AFK++
+	- [ ] Drain Claude quota (with research)
+	- [ ] AIO coaching session
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 6/11
+- [ ] Live up to your standards
+### 13/11
 - [x] EO minimal work Opus Low
 	- [x] AFK++ 
 	- [x] LAC & Ottawa members
@@ -44,14 +40,14 @@
 - [x] Venture++
 - [ ] Tao Te Ching++
 - [x] Live up to your standards
-### 7/11
+### 14/11
 - [x] Perfect dive start + 500m
 - [x] Hefty breakfast
 - [x] Groceries
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [x] Live up to your standards
-### 8/11
+### 15/11
 - [x] Splurge (if you're done with EP HITL)
 - [x] Weekly planning (including EO tickets with Opus Low)
 	- [x] Wrap up all HITL tasks
