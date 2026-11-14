@@ -3,42 +3,40 @@
 - [x] EO with Opus low:
 	- [x] Send the training module review
 	- [x] Create a handoff for the Refine session to Address Feedback
-	- [ ] Feedback: open the current wave in the `Training` board, with the same `Name and role` in the dropdown; recapture the screenshots to fix the footer gap in the `Manage a process` module
+	- [x] Feedback: open the current wave in the `Training` board, with the same `Name and role` in the dropdown; recapture the screenshots to fix the footer gap in the `Manage a process` module
 	- [x] Sprint planning (with an emphasis on the training module demo)
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 10/11
-- [ ] EO weekly report & sprint goals update (with Opus low)
-	- [ ] AFK sprint prep & Rehearse 
+- [x] EO weekly report & sprint goals update (with Opus low)
+	- [x] AFK sprint prep & Rehearse 
 	- [ ] Update & send the sprint report 
 - [ ] Venture++
-- [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Tao Te Ching++
+- [x] Live up to your standards
 ### 11/11
-- [ ] EO sprint review with Opus Max ultra:
-	- [ ] Record & summarize the meeting (with Nisha's reply)
-	- [ ] AFK `After sprint review`
+- [x] EO sprint review with Opus Max ultra:
+	- [x] Record & summarize the meeting
+	- [x] AFK `After sprint review` and turn repeated work into skills
 - [ ] Venture++
+- [x] Shopee
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 ### 12/11
-- [ ] EO minimal work with Fable Max:
-	- [ ] AFK++
-	- [ ] Drain Claude quota (with research)
-	- [ ] AIO coaching session
+- [x] EO minimal work:
+	- [x] AFK++
+	- [x] Drain Claude quota (with research)
+	- [x] AIO coaching session
 - [ ] Venture++
-- [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Send the Đơn đề nghị
+- [x] Tao Te Ching++
+- [x] Live up to your standards
 ### 13/11
 - [x] EO minimal work Opus Low
 	- [x] AFK++ 
-	- [x] LAC & Ottawa members
-	- [x] Update the prompts under the `# After sprint review` section of `C:\Users\leekh\Documents\Repos\Personal\Life-Engineering\Notes\Daily Standup.md` so that they'll create idempotent execution prompts (i.e. so that they won't waste tokens repeating finished work) that minimize quota usage without sacrificing output quality.
-	- [x] With Fable max ultra: `Update your own configs to MINIMIZE & OPTIMIZE usage quota/cost/context/tokens WITHOUT compromising output quality. Just do WHATEVER IT TAKES so that my usage/quota is NEVER WASTED. Good examples could be optimizing your tool calls and only using dynamic workflows and spawning subagent when ABSOLUTELY NECESSARY (and if comes to that, use Sonnet for subagents or sth like that), or orchestrating dedicated sessions so they can ping each other to divide and conquer long-horizon tasks instead of using dynamic workflows; but pls feel free to apply even better approaches, I just want to ALWAYS get the absolute highest ROI possible on my token quota, cutting my usual token usage AT LEAST in half WITHOUT sacrificing my output quality. Once you're done with that, give me the MOST OPTIMAL paste-ready prompt so I can paste it into a Claude Code CLI session on ANY machine and it'll automatically set up those same usage/quota optimization settings. That prompt should also work for ANY in-flight session to save as many tokens as possible for that session (i.e. I should be able to paste it mid-session and it'll work for that specific session). Finally, give me the EXACT practical tips that I can use when an agent (or the prompts above) can't enforce this (e.g. choosing the right model and effort level for the task). You have 30 minutes to get this done.`
-	- [x] Ask Claude how the increased limit is applied (is it actually applied tho)
-- [x] Venture++
-- [ ] Tao Te Ching++
+- [ ] Venture++
+- [x] Tao Te Ching++
 - [x] Live up to your standards
 ### 14/11
 - [x] Perfect dive start + 500m
@@ -46,16 +44,16 @@
 - [x] Groceries
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
+- [ ] Live up to your standards
 ### 15/11
-- [x] Splurge (if you're done with EP HITL)
-- [x] Weekly planning (including EO tickets with Opus Low)
-	- [x] Wrap up all HITL tasks
-	- [x] Have Claude do this: https://duthaoonline.quochoi.vn/dt/luat-hien-lay-ghep-mo-bo-phan-co-the-nguoi-va-hien-lay-xac-sua-doi/260818155807311971
-- [x] Venture++
-	- [x] Long vol
+- [ ] Splurge (if you're done with EP HITL)
+- [ ] Weekly planning (including EO tickets with Opus Low)
+	- [ ] Wrap up all HITL tasks
+	- [ ] Have Claude do this: https://duthaoonline.quochoi.vn/dt/luat-hien-lay-ghep-mo-bo-phan-co-the-nguoi-va-hien-lay-xac-sua-doi/260818155807311971
+- [ ] Venture++
+	- [ ] Long vol
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
+- [ ] Live up to your standards
 # What a good day looks like
 - Wake up at 5AM
 - Finish workout before 6:30AM
@@ -243,12 +241,11 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07).
 - [Learn to be an AI Engineer](https://www.aihero.dev/ai-engineer-roadmap)
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)
 - [Learn TS](https://www.totaltypescript.com/workshops/typescript-pro-essentials/types-you-don't-control/configuring-the-lib-compiler-option)
-- Financial + grip strength training research
+- Financial + grip strength training + dirt bike renting in HCMC research
 - EO:
 	- [ ] `next-steps.md`++
 	- [ ] Realtime file list & their notes whenever a new CUD action is committed
-	- [ ] Enable edit ( for `admin`) & delete for (for `master_admin`) in `/admin/reviews` & `/admin/meetings`
-	- [ ] Chapter detail page UI revamp
-	- [ ] Clear ALL open issues & PRs
+	- [ ] Enable edit, upload (for `admin`) & delete for (for `master_admin`) in `/admin/reviews` & `/admin/meetings`
+	- [ ] Make sure that `Last sign-in` is up-to-date
 - Runbook:
 	- [ ] Open the USD account & get your debit card (ACB, at lunch)

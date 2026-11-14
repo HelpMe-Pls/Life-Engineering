@@ -32,13 +32,13 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "AI/Claude Code Skill Playbook.md",
+                    "file": "Tips & Tools/English vocab.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": false
                   },
                   "icon": "lucide-file",
-                  "title": "Claude Code Skill Playbook"
+                  "title": "English vocab"
                 }
               },
               {
@@ -47,15 +47,16 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/strength-research/protocol.md",
+                    "file": "AI/With Claude Code.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "protocol"
+                  "title": "With Claude Code"
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           },
           {
             "id": "8cedd05142699eb5",
@@ -192,7 +193,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 209.5
+    "width": 208
   },
   "right": {
     "id": "82a9e7d6600420b4",
@@ -283,13 +284,18 @@
   },
   "active": "03418aa526fdbc06",
   "lastOpenFiles": [
-    "Notes/Daily Standup.md",
+    "AI/With Claude Code.md",
     "Notes/Weekly Tasks.md",
+    "Tips & Tools/English vocab.md",
+    "Tips & Tools/English grammar.md",
+    "Notes/Daily Standup.md",
+    "AI/sprint-afk-prep/SKILL.md",
+    "AI/sprint-afk-prep",
+    "AI/sprint-review-prep/SKILL.md",
+    "AI/sprint-review-prep",
+    "Notes/strength-research/protocol.md",
     "AI/Claude Code Skill Playbook.md",
     "Notes/Weekly Tasks.md.tmp.77248.4506790c150e",
-    "Notes/strength-research/protocol.md",
-    "AI/With Claude Code.md",
-    "Tips & Tools/English vocab.md",
     "Notes/Daily Standup.md.tmp.70952.05f032c831c9",
     "Notes/Daily Standup.md.tmp.70952.ac21e0e59ab3",
     "Notes/Daily Standup.md.tmp.70952.4e4ca4288d40",
@@ -297,9 +303,6 @@
     "Notes/Daily Standup.md.tmp.70952.ba447463029c",
     "Notes/Daily Standup.md.tmp.70952.d80e1c036a2d",
     "Notes/Daily Standup.md.tmp.70952.477c1927db33",
-    "Notes/Daily Standup.md.tmp.70952.d5cccbc45ba2",
-    "Notes/Daily Standup.md.tmp.70952.fbee7430e3c7",
-    "Tips & Tools/English grammar.md",
     "Notes/Venture Tasks.md",
     "Notes/day job/claude/memory-global-hubspot/batch-2026-07-02-merged-promotion-200-pending.md",
     "promotion-192-admin-uxperf-batch.md",
@@ -317,7 +320,6 @@
     "Notes/day job/claude/memory-global-hubspot/worktree-junction-breaks-turbopack-build.md",
     "Notes/day job/claude/memory-global-hubspot/workflow-token-cannot-read-administration.md",
     "Notes/day job/claude/memory-global-hubspot/workflow-dead-agent-reads-as-clean-bill.md",
-    "Notes/day job/claude/memory-global-hubspot/workflow-agent-cap-69-target-15.md",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",

@@ -14,6 +14,8 @@ profound (adj-n): deep af
 
 muse (v-n): ponder, ruminate, cogitate, a state of deep thought or dreamy abstraction
 
+fret (v-n): worrying, agonizing, stewing, brooding, ruminating
+
 rote (n): học vẹt
 
 ornithologist (n): bird scientist
@@ -110,6 +112,8 @@ scour (v-n): search, scrub, polish
 
 ambiguous (adj): uncertain, fishy, suspicious, nebulous, obscure, arcane
 
+abstruse (adj): esoteric, recondite, arcane, obscure, complex
+
 obfuscate (v): to make obscure, darken, confuse
 
 obstinate (adj): unpersuadable, obdurate, stubborn, willful, rigid, adamant, implacable
@@ -193,6 +197,8 @@ curt (adj): terse, brusque, rude or peremptory shortness
 peremptory (adj): imperious or arrogant self-assurance
 
 imperious (adj): domineering, commanding, urgent 
+
+impel (v): compel, urge, drive, actuate
 
 posit (v-n): assume, presume, hypothesize
 
@@ -328,9 +334,7 @@ jovial (adj): jolly, festive, merry, (in) jest
 
 raillery (n): banter, teasing, jesting
 
-==vivacious== (adj): sprightly, zesty, lively in temper
-
-prolific (adj): fruitful, productive 
+==vivacious== (adj): sprightly, zesty, lively in temper 
 
 orchard (n): vườn cây ăn quả
 
@@ -395,6 +399,8 @@ telltale (n): indication, informer, gossip
 apprise (v): tell, give notice to
 
 proclivity (n): ==predilection== {for}, tendency, propensity, a strong inherent inclination toward something objectionable
+
+tropism (n): directional growth, automatic attraction
 
 volatile <val-adal> (n): explosive, unstable, ==fickle==, subject to rapid or unexpected change
 
@@ -472,13 +478,17 @@ burgeoning <burg-jun-ning> (adj): growing, expanding, or developing rapidly
 
 ==wax== (v): to grow in volume, strength, intensity, toward full development
 
+prolific (adj): fruitful, productive
+
 proliferate (v): multiply, abound, teem, grow by rapid production
+
+fecundity (n): fertility, fruitfulness, prolificacy
 
 intricate (adj): complicated, sophisticated
 
 ==pragmatic== (adj): practical, conveys simplicity, practicality, and efficiency
 
-canonical (adj): orthodox
+canonical (adj): orthodox, normative
 
 conundrum (n): nan giải, an intricate and difficult problem
 
@@ -666,6 +676,8 @@ sovereign (adj-n): supreme, paramount, absolute, tối cao
 
 mendacity (n): lie, falsehood, deceit → mendacious (adj)
 
+belie (v): contradict, mask, disguise, give the lie to, misrepresent
+
 ==formidable== (adj): impressive, terrifying, intimidating, scary
 
 ambivalent (adj): uncertain, ==dubious==, hesitant, unsure
@@ -806,7 +818,7 @@ emanate <em-anate> (v): emit, radiate, phát ra
 
 emaciated (adj): malnourished
 
-foray {into} (v-n): raid, loot, invasion, an initial and often tentative attempt to do something in a new or different field or area of activity
+foray {into} (v-n): raid, loot, despoil, invasion, an initial and often tentative attempt to do something in a new or different field or area of activity
 
 averse (adj): allergic, reluctant, loathe/loth/loath
 
@@ -1143,6 +1155,8 @@ catalyze (v): bring about, inspire, spawn
 
 contend (v): struggle, contest, argue, assert
 
+meddle (v): interfere, pry, butt in, tamper, poke one's nose in
+
 flounder (v): in an awkward or difficult situation, don't know what to do/say next
 
 dilemma (n): ==predicament==, a problem involving a difficult choice
@@ -1210,6 +1224,8 @@ inculcate (v): to teach and impress by frequent repetitions or admonitions
 admonish (v): give friendly earnest advice or encouragement to
 
 auspicious (adj): promising, favorable, fortunate, encouraging, propitious
+
+espousal (n): advocacy, endorsement, embracing, backing
 
 fortuitously: fortunately, luckily
 
@@ -1533,6 +1549,8 @@ goiter (n): bướu cổ
 
 sciatic (adj): thần kinh toạ
 
+adiposity (n): the quantity or accumulation of body fat
+
 bariatric (adj): giảm béo (surgical/medical)
 
 hysterectomies (n): a major surgical operation to remove the uterus
@@ -1595,3 +1613,6 @@ paucity (n): not enough evidence
 
 anthology (n): a curated collection of poems, short stories, songs, or essays compiled into a single book or album, often by various authors centered around a theme
 
+wisp (n): shred, strand, puff, tendril, a delicate physical presence that could easily be swept away by a breeze
+
+Confucianism (n): Nho giáo

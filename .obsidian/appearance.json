@@ -3,5 +3,6 @@
   "translucency": true,
   "theme": "obsidian",
   "cssTheme": "Dark Moss",
-  "accentColor": "#01f411"
+  "accentColor": "#01f411",
+  "showRibbon": true
 }

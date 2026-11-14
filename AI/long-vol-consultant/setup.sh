@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# setup.sh — install, check or repair the /long-vol-consultant skill on this machine.
+# setup.sh — install, check or repair the /long-vol-consultant, /sprint-review-prep and /sprint-afk-prep skills on this machine.
 # One line per check. OK = the same as Khoi's Mac on 2026-10-11 (macOS, Claude Code 2.1.296, Python 3.9.6).
 #
 #   bash setup.sh              check only; print the exact fix under every FAIL
@@ -115,6 +115,21 @@ else
   if [ -L "$SKILL" ] && [ "$(readlink "$SKILL")" = "../../.agents/skills/long-vol-consultant" ]; then ok "$SKILL -> ../../.agents/skills/long-vol-consultant"
   else fail "$SKILL is not the symlink Claude Code loads" "bash \"$HERE/setup.sh\" --fix"; fi
 fi
+
+# 4b · the two sprint skills, /sprint-review-prep and /sprint-afk-prep: AI/<name>/SKILL.md in the vault, installed as ~/.claude/skills/<name>/SKILL.md
+#      --copy copies the file (re-run after every edit); --fix links ~/.claude/skills/<name> to the vault folder; a plain check compares them.
+for S in sprint-review-prep sprint-afk-prep; do
+  SRC="$VAULT/AI/$S/SKILL.md"; DST="$HOME/.claude/skills/$S"
+  if [ ! -f "$SRC" ]; then fail "vault file missing: AI/$S/SKILL.md" "git -C \"$VAULT\" pull"; continue; fi
+  if [ "$COPY" = 1 ]; then
+    if [ -L "$DST" ]; then rm -f "$DST"; fi
+    mkdir -p "$DST" && cp "$SRC" "$DST/SKILL.md"
+  elif [ "$FIX" = 1 ] && [ ! -d "$DST" -o -L "$DST" ]; then
+    ln -sfn "$VAULT/AI/$S" "$DST"
+  fi
+  if cmp -s "$SRC" "$DST/SKILL.md"; then ok "/$S installed in $DST, the same as AI/$S/SKILL.md"
+  else fail "/$S is missing from $DST or differs from AI/$S/SKILL.md" "bash \"$HERE/setup.sh\" --copy   (or --fix where symlinks work)"; fi
+done
 
 # 5 · ~/.claude/settings.json: the two keys that change how the skill behaves, plus what else differs from the Mac
 mkdir -p "$HOME/.claude"
