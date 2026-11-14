@@ -2,18 +2,18 @@
 > The MOVES file beneath [[This is it]] (the LAW) and [[Weekly Tasks]] `# Venture` (the SCHEDULE). `## NOW` is rewritten every Sunday by `/long-vol-consultant` and is embedded at the top of the SCHEDULE. The boxes below it are this week's work: tick a box when done; slip a date by writing the new one beside it. Dates may slip, gates never do. Words: [[CONTEXT]].
 
 ## NOW
-**Sun Nov 8 2026 · P1 Stranger dollar · week 5 of 13 closed today (read 20:55) · the coming week = week 6: Mon Nov 9 → Sun Nov 15**
-**Next gate:** Sun Nov 15 2026 (F-03) in 7 days — ≥1 paid enrollment from a stranger on EP. Have: 0 · the instructor has still not signed up (due Thu Oct 15, R-20).
-**Also ticking:** Mon Dec 7 (F-04, 29 d) ≥1 reply from ≤35 proposals · Wed Jan 6 (F-05, 59 d) a stranger's money in ACB.
-**Score Σ:** p 12 · r 0 · h 0 · $0 · posts 3 · Connects spent $11.72 of $300 (75 free + 71 bought, 0 left) · profile live.
-**Signal:** none.
-**Blocked on:** the day job pushes every rep to Sunday night.
+**Sat Nov 14 2026 · P1 Stranger dollar · week 6 of 13 counted (read Sat 14:05, a day early) · the coming week = week 7: Mon Nov 16 → Sun Nov 22**
+**Next gate:** Sun Nov 15 2026 (F-03) tomorrow — ≥1 paid enrollment from a stranger on EP. Have: 0 · the only course on prod is "Test Payment" (2.000 ₫), so nothing is for sale yet.
+**Also ticking:** Mon Dec 7 (F-04, 23 d) ≥1 reply from ≤35 proposals · Wed Jan 6 (F-05, 53 d) a stranger's money in ACB.
+**Score Σ:** p 15 · r 0 · h 0 · $0 · posts 4 · Connects spent $19.81 of $300 (75 free + 120 bought, 3 left) · profile live.
+**Signal:** F-03 pending: e2e check Sun Nov 15, then the read.
+**Blocked on:** EP has no video, and Stream storage is not bought (R-20); the rest of the e2e check needs Khoi's logins and a bank payment.
 **Governor:** NO, NO → clear.
 
 ### Next 3 moves
-1. [ ] **Tue Nov 10, 20:00–22:00:** 3 proposals first, the repo link in each; buy Connects singly (0 left, R-16); no follow-ups unless the client replied (R-21).
-2. [ ] **One evening this week:** the weekly post (standing).
-3. [ ] **Sun Nov 15:** the Sunday read, with the F-03 EP read.
+1. [ ] **Tonight, 20:00 — EP e2e, Khoi's part (Claude did the rest Sat):** (a) PayOS login: webhook URL = https://hocvienksxd.com/api/payos-webhook · (b) buyer path: sign up as a non-owner → pay the 2.000 ₫ Test Payment → enrollment exists → course opens → receipt email · (c) instructor path: sign in → instructor role (EP repo `docs/plans/next-steps.md` step 1) → Dashboard → Curriculum builder → course/module/lesson → video upload (needs Stream; R-20: buy none) → publish → listed on /courses · (d) Cloudflare login so Claude can check D1. When every path passes: Claude writes the 2-minute HTML of what the app offers into the EP repo `docs/onboarding`.
+2. [ ] **Sun Nov 15 — run `/long-vol-consultant let's wrap up EP...`:** Claude takes the EP e2e AFK as far as it can (hard stops only: logins, signup, payment, terms), writes one definitive EP status, then reads F-03 on the real count — 0 stranger enrollments → EP back in the graveyard, Stream cancelled at month-end (F-03). A test purchase does not count.
+3. [ ] **Mon Nov 16 → Sat Nov 21:** week 7's 3 proposals + 1 post; 3 Connects left, buy singles (F-02, R-16).
 
 ## This week (Mon Oct 12 → Sun Oct 18) — week 2 of 13
 1. [x] 🛠 **Today — one message to the EP instructor, three asks** (R-20): (1) sign up at hocvienksxd.com with his Gmail now — the webhook `500` is expected, not a failure; (2) the 8-clause page ([[EP SaaS]] §5, clause 8 first: whose account, who declares tax) signed before anything goes on sale; (3) how many old students he messages in week 1 + the first-sale date he commits to. ==No signup by Thu Oct 15 → buy no Stream storage; his Friday is his delay.==

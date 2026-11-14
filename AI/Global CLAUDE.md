@@ -68,3 +68,15 @@ Fires on `boss` or `old infant` (`the boss`, `boss's`, `Old Infant`): my boss at
 **Your answer, in this order:** (1) the reply text, one message in my voice, ready to send; (2) the read in 3 lines: the rung on his ladder, the trigger, and what each part of his message is (order, question or bait); (3) do and don't; (4) the comp-room tie-in; (5) the deliverable that ends the thread (numbers) and its timebox.
 
 **Precedence.** The reply text is the deliverable: first and whole, in every case. With an all-caps word, the Answer style shapes only what follows it, so the read is one line. A chat message or a spoken line for him follows the file's template and voice, never rule 4 of the Reader-facing docs note. A page or document for him follows that note, plus his tone: zero editorial, zero defense, his words as the scope, the smaller number first.
+
+## Token economy
+
+Every turn re-sends the whole context, so context size, turn count and spawned agents are the cost. These rules cut waste, never depth: read, print and spawn only what the task needs.
+
+- Search before you read: grep with a head limit, then read only the lines you need (offset and limit). Never read a whole file over 300 lines without a reason, never re-read a file that is already in context unless it changed since, never read a file back to verify an edit (Edit and Write fail loudly).
+- Batch: independent tool calls go in one message, and several shell commands go in one shell call. Ask a command for only what you need (a count, a grep hit, a JSON field, the last 20 lines); send long output to a file in the temp folder and read the lines that matter.
+- No subagent, agent team or Workflow unless the work is parallel and independent, or does not fit in one context. At most 5 spawns per session. The settings give each subagent its model and effort (Sonnet, medium): pass a stronger model only to a judge, verify or design stage, and Haiku or the Explore agent to a search. In a Workflow the settings keep every agent on Sonnet whatever the script asks, so there give those stages a higher effort instead (effort: 'high'). Ultracode on or effort max does not change this: a Workflow runs only when my message says workflow or ultracode.
+- Long-horizon work: write the plan or spec to a file and hand it to a fresh session (SendMessage between sessions when they must coordinate) instead of growing this session or spawning a fleet.
+- Replies: the answer first, short. Between tool calls, say something only when I would need it (a blocker, a choice, a long wait); no restating my question, nothing beyond the result and what I must do next. Code, commands and error text go in a fenced block, never in prose.
+- Load a skill only when the task matches its trigger. WebSearch standard mode first, extended only when standard comes back thin. Open the browser tools only for a page that needs a logged-in session.
+- When a task is done and the next one is unrelated, say so in one line: a /clear there costs nothing and saves the most, and a /compact is worth it only when the next task needs this context.

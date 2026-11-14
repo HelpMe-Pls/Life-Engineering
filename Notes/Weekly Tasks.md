@@ -42,9 +42,9 @@
 - [x] Perfect dive start + 500m
 - [x] Hefty breakfast
 - [x] Groceries
-- [ ] Venture++
-- [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Venture++
+- [x] Tao Te Ching++
+- [x] Live up to your standards
 ### 15/11
 - [ ] Splurge (if you're done with EP HITL)
 - [ ] Weekly planning (including EO tickets with Opus Low)
@@ -88,6 +88,7 @@ One row every Sunday, numbers and dashes only — words go under "Notes to the c
 | 2026-10-25 | ~10 | NO   | 3/0/0/0         | -/-/-         | 1    | -      |
 | 2026-11-01 | ~10 | NO   | 3/0/0/0         | -/-/-         | 1    | -      |
 | 2026-11-08 | ~10 | NO   | 3/0/0/0         | -/-/-         | 1    | -      |
+| 2026-11-15 | ~10 | NO   | 3/0/0/0         | -/-/-         | 1    | F-03 pending: e2e check Sun Nov 15, then the read |
 
 > [!abstract]- Column key (Σ = running total · `-` not live · `0` live, nothing happened · `_` fill on Sunday)
 > - **hrs** = all venture hours this week (20 = the ceiling)
@@ -115,6 +116,7 @@ One row per post read or bid on, from Oct 9 — ==log every post you read, not o
 | 2026-10-25 | 31     | 6      | 0         | 0       | 8           | 1                 | 5          | 3            | 9        | 5     |
 | 2026-11-01 | 34     | 9      | 0         | 0       | 8           | 1                 | 5          | 3            | 9        | 8     |
 | 2026-11-08 | 37     | 12     | 0         | 0       | 8           | 1                 | 5          | 3            | 12       | 8     |
+| 2026-11-15 | 43     | 15     | 0         | 0       | 9           | 1                 | 5          | 3            | 17       | 8     |
 
 **The log — newest row at the bottom:**
 
@@ -157,6 +159,12 @@ One row per post read or bid on, from Oct 9 — ==log every post you read, not o
 | 2026-11-08 | https://www.upwork.com/jobs/~022119310455195450457 | Google Analytics 4 (GA4) Integration & Tracking Support | tracking | $75–$200/hr | 10 | Y | N | N |  | "Reviewing the current GA4 integration and tracking configuration. Identifying any tracking issues or missing data." · Oman, payment NOT verified, member since Nov 4 · bid Sun Nov 8 at $75/h, no boost, no rate increase, proposal 2119410338267414529 · 10 to 15 proposals |
 | 2026-11-08 | https://www.upwork.com/jobs/~022119178171175812185 | Google Analytics 4 (GA4) & Google Tag Manager Specialist Needed | tracking | $20–$45/hr | 9 | Y | N | N |  | "build a reliable tracking system that provides actionable insights into user behaviour, marketing performance, and conversion attribution" · Nigeria, payment NOT verified · bid Sun Nov 8 at $34.56/h, no boost, no rate increase, proposal 2119410649822515201 · 5 to 10 proposals |
 | 2026-11-08 | https://www.upwork.com/jobs/~022119078303076465430 | Google Tag Manager Tags, Google Analytics, GA4, Meta, Google Ads, Stape | tracking | $250 fixed | 9 | Y | N | N |  | "I want to track this form for Facebook Pixel, Facebook CAPI, Google Ads, and Google Analytics. I really want to validate 0 duplicate events" · Germany, payment verified, member since Nov 1 · bid Sun Nov 8 at $250 fixed (15% fee → $212.50), proposal 2119411458101149697 · 20 to 50 proposals |
+| 2026-11-14 | https://www.upwork.com/jobs/~022121294915043891920 | Meta Pixel, UTM and Lead Attribution Setup (Meta Ads + GoHighLevel) | tracking | hourly | 14 | Y | N | N |  | Canada · bid Sat Nov 14 at $34.56/h, $250 fixed quoted in the letter, no boost, no rate increase, proposal 2121504460116529153 |
+| 2026-11-14 | https://www.upwork.com/jobs/~022121264154261294537 | Meta Expert for Hotel Booking Tracking | tracking | $25–$50/hr | 18 | Y | N | N |  | US · bid Sat Nov 14 at $34.56/h, no boost, no rate increase, proposal 2121505063942225921 |
+| 2026-11-14 | https://www.upwork.com/jobs/~022121298680851597052 | GoHighLevel + Meta Conversions API Tracking Setup (Fast Turnaround) | tracking | hourly | 14 | Y | N | N |  | "Pixel + CAPI through GHL, 5 funnel events, Enroll offline conversion, dedup, 48h" · US, payment verified, 4.8 on 19 reviews · bid Sat Nov 14 at $34.56/h, repo link, no boost, no rate increase, proposal 2121505748348088321 |
+| 2026-11-14 | https://www.upwork.com/jobs/~022121309467495861705 | Stape server-side GTM | tracking |  |  | N | N | N |  | skipped: required city, camera-on screenshare and speedtest screenshot |
+| 2026-11-14 | - | GA4 analysis | tracking |  | 26 | N | N | N |  | skipped: 26 Connects |
+| 2026-11-14 | - | AI automation workflow | agent-build |  | 26 | N | N | N |  | skipped: 26 Connects |
 
 ## Calendar — the 8 dates (put each in your calendar app with the Sunday it is read on)
 1. Sun Nov 1 2026 — demo repo shipped (a target; slipped from Oct 25 on 2026-10-11); its link goes into every proposal from then on
@@ -236,6 +244,12 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07).
 - **Week 5's 3 proposals, sent Sun Nov 8 by Claude in Khoi's Chrome, on his word ("do WHATEVER IT TAKES to make the week count"):** GA4 Integration & Tracking Support ($75/h, 10 Connects), GA4 & GTM Specialist ($34.56/h, 9), Shopify GTM/CAPI form tracking ($250 fixed, 9). All tagged tracking, repo link in each, no boost, no rate increase. 21 Connects bought for $3.47 ($3.15 + tax, Visa 4071) after a first decline Khoi cleared; 0 Connects left. Skipped: HubSpot Account Setup (US only), HubSpot contact cleanup ($5), WordPress law firm (27 Connects), AI Automation Engineer (0% hire rate on 131 jobs), Vidya Timber AI platform ($400 fixed for 3–6 months).
 - **Text post 3 went out Sun Nov 8 (published by Claude in Khoi's Chrome, on his "post it"):** https://x.com/curiousKhoi/status/2119424549603377553
 - **Sunday read 20:55:** week 5 counted (3 proposals + the post, F-02 met). Gov? NO, ~10 h. No signal. Block: the day job ate the week, every rep left to Sunday night; next week the 3 proposals go first, Tue Nov 10. Tam HN masterclass box closed as skipped.
+#### Nov 14th, 2026
+- **Week 6's 3 proposals, sent Sat Nov 14 by Claude in Khoi's Chrome, on his blanket go:** Meta Pixel/UTM + GHL attribution ($34.56/h, 14 Connects), Meta hotel booking tracking ($34.56/h, 18), GHL + Meta CAPI fast turnaround ($34.56/h, 14). All tagged tracking, no boost, rate increase Never. 49 Connects bought for $8.09 ($7.35 + tax, Visa 4071); 3 left. Skipped: Stape server-side GTM (camera + speedtest questions), GA4 analysis and AI automation workflow (26 Connects each).
+- **Text post 4 went out Sat Nov 14 (published by Claude in Khoi's Chrome, on his blanket go):** https://x.com/curiousKhoi/status/2121506004072628610
+- **Replies 0, checked in the browser 14:41:** Upwork Messages empty; the one unread bell item was the $8.09 Connects receipt.
+- **Sunday read (run Sat 14:05):** week 6 counted (F-02 met). Gov? NO, ~10 h. Signal: F-03 pending. Khoi, in his words: "make sure that EP works e2e BEFORE putting it in the graveyard tmr"
+- **EP e2e check by Claude, Sat Nov 14:** prod webhooks live on hocvienksxd.com (payos 400 invalidPayload, clerk 401); old workers.dev URL dead (404 / 1042), so PayOS must point at the custom domain. The only course on prod is "Test Payment" at 2.000 ₫, linked from the public home page: no sellable course and no video, so a stranger has nothing to buy. Buyer path stops at sign-in. Blocked on Khoi: the PayOS login (webhook URL), a non-owner buyer signup, the 2.000 ₫ bank payment, the Cloudflare login (D1 check). Instructor path still to verify: sign in → instructor role (next-steps step 1) → Dashboard → Curriculum builder → course/module/lesson → video upload (needs Stream, not bought, R-20) → publish → listed on /courses. After every path passes: a 2-minute HTML of what the app offers goes into the EP repo `docs/onboarding`.
 # Backlog
 - [Learn about animations](https://animations.dev/learn/animation-theory/intro)
 - [Learn to be an AI Engineer](https://www.aihero.dev/ai-engineer-roadmap)
