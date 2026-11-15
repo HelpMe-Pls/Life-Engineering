@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "AI/sprint-review-prep/SKILL.md",
+                    "file": "Notes/Daily Standup.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "SKILL"
+                  "title": "Daily Standup"
                 }
               },
               {
@@ -55,7 +55,8 @@
                   "title": "With Claude Code"
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           },
           {
             "id": "8cedd05142699eb5",
@@ -281,15 +282,16 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "8e701c92c4b0d885",
+  "active": "08695eb55ecf940b",
   "lastOpenFiles": [
-    "AI/sprint-afk-prep/sedVAly68",
-    "AI/sprint-review-prep/sedbLSyae",
+    "AI/With Claude Code.md.tmp.47908.d10b56e2ca8f",
+    "Notes/Weekly Tasks.md",
+    "AI/With Claude Code.md",
+    "Notes/Daily Standup.md",
     "AI/sprint-afk-prep/SKILL.md",
     "AI/sprint-review-prep/SKILL.md",
-    "Notes/Daily Standup.md",
-    "AI/With Claude Code.md",
-    "Notes/Weekly Tasks.md",
+    "AI/sprint-afk-prep/sedVAly68",
+    "AI/sprint-review-prep/sedbLSyae",
     "AI/validate-biz-idea.md",
     "Tips & Tools/English vocab.md",
     "Tips & Tools/English grammar.md",
@@ -303,7 +305,6 @@
     "Notes/Daily Standup.md.tmp.70952.4e4ca4288d40",
     "Notes/Daily Standup.md.tmp.70952.35bf5fe8383b",
     "Notes/Daily Standup.md.tmp.70952.ba447463029c",
-    "Notes/Daily Standup.md.tmp.70952.d80e1c036a2d",
     "Notes/Venture Tasks.md",
     "Notes/day job/claude/memory-global-hubspot/batch-2026-07-02-merged-promotion-200-pending.md",
     "promotion-192-admin-uxperf-batch.md",

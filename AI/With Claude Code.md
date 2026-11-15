@@ -75,6 +75,113 @@ Every turn re-sends the whole context, so context size, turn count and spawned a
 - When a task is done and the next one is unrelated, say so in one line: a /clear there costs nothing and saves the most, and a /compact is worth it only when the next task needs this context.
 ````
 
+## Status line
+
+One line: `project | branch | context used (% of the auto-compact cap) | 7-day quota % | model`.
+- Project: cyan. Branch: bright pink. Separators `|`: dim grey.
+- Context: tokens as `57.8k (29%)`. The % is of the smaller of the model's window and the `autoCompactWindow` in settings.json (the model's own `modelSettings` entry first). Green ≤ 40%, yellow 41–75%, red ≥ 76%, grey when unknown.
+- 7d quota (Pro/Max only): green ≤ 40%, yellow 41–79%, red ≥ 80%.
+- Model name: violet `oklch(60.6% 0.25 292.717)` = `#8e51ff`.
+
+Paste into any Claude Code session (needs Node on the machine):
+
+````text
+Status line: install this status line on this machine, without asking me anything. Check first and change only what differs; when everything is already in place, change nothing and say so.
+
+1. Script. Write the script below, byte for byte, to statusline-command.js in the user-level Claude Code config folder: CLAUDE_CONFIG_DIR when it is set, otherwise .claude under my home folder. Write it with the file Write tool, never through a shell heredoc or echo: the escape sequences such as \x1b must stay as written. If the file exists with other text, first copy it into backups/statusline- plus today's date in that folder.
+
+2. Settings. In settings.json in the same folder, set the statusLine key to: {"type": "command", "command": "node \"<absolute path of the script, forward slashes>\""}. Leave every other key as it is.
+
+3. Check. Run: echo '{"cwd":".","model":{"display_name":"Opus"},"context_window":{"context_window_size":200000,"current_usage":50000},"rate_limits":{"seven_day":{"used_percentage":21}}}' | node <script path>. It must print a line with 50k (25%), 7d 21% and Opus. Then report in one line what you changed; the status line shows from the next refresh.
+
+The script:
+
+#!/usr/bin/env node
+const { execSync } = require('child_process');
+const { basename } = require('path');
+
+const chunks = [];
+process.stdin.on('data', c => chunks.push(c));
+process.stdin.on('end', () => {
+  let input = {};
+  try { input = JSON.parse(Buffer.concat(chunks).toString('utf8')); } catch {}
+
+  const project =
+    input?.workspace?.repo?.name ||
+    (input?.workspace?.project_dir ? basename(input.workspace.project_dir) : '');
+
+  let branch = '';
+  const cwd = input?.cwd;
+  if (cwd) {
+    try {
+      branch = execSync(
+        `git -C "${cwd}" --no-optional-locks symbolic-ref --short HEAD`,
+        { encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }
+      ).trim();
+    } catch {}
+  }
+
+  const cw = input?.context_window;
+  const windowSize = cw?.context_window_size ?? null;
+  const cu = cw?.current_usage;
+  const usedTokens = (() => {
+    if (typeof cu === 'number') return cu;
+    if (cu && typeof cu === 'object' && typeof cu.input_tokens === 'number')
+      return cu.input_tokens + (cu.output_tokens ?? 0)
+        + (cu.cache_creation_input_tokens ?? 0) + (cu.cache_read_input_tokens ?? 0);
+    return cw?.total_input_tokens ?? null;
+  })();
+  // The auto-compact cap from settings (the model's own modelSettings entry first, then the
+  // top-level autoCompactWindow) is the real ceiling: a 1M model with a 200k cap compacts at 200k.
+  const cap = (() => {
+    try {
+      const { readFileSync } = require('fs');
+      const { join } = require('path');
+      const dir = process.env.CLAUDE_CONFIG_DIR || join(require('os').homedir(), '.claude');
+      const s = JSON.parse(readFileSync(join(dir, 'settings.json'), 'utf8'));
+      const id = input?.model?.id || '';
+      const perModel = Object.entries(s.modelSettings || {}).find(([k]) => id.startsWith(k))?.[1]?.autoCompactWindow;
+      return [perModel, s.autoCompactWindow].find(v => typeof v === 'number') ?? null;
+    } catch { return null; }
+  })();
+  const effWindow = windowSize && cap ? Math.min(windowSize, cap) : (windowSize ?? cap ?? null);
+  const usedPct = (() => {
+    if (effWindow && usedTokens != null) return Math.round(usedTokens / effWindow * 100);
+    if (cw?.remaining_percentage != null) return Math.round(100 - cw.remaining_percentage);
+    return null;
+  })();
+
+  // Plan quota (Pro/Max): the 7-day window, when Claude Code reports it.
+  const q7 = input?.rate_limits?.seven_day?.used_percentage;
+
+  const fmtK = n => n >= 1000 ? `${+(n / 1000).toFixed(1)}k` : String(Math.round(n));
+  const tokenLabel = (usedTokens != null && usedPct != null)
+    ? `${fmtK(usedTokens)} (${usedPct}%)`
+    : usedPct != null ? `${usedPct}%` : null;
+
+  const CYAN = '\x1b[36m', PINK = '\x1b[95m', DIM = '\x1b[90m', RESET = '\x1b[0m';
+  const tokenColor = usedPct == null ? DIM
+    : usedPct <= 40 ? '\x1b[92m'   // bright green
+    : usedPct < 76 ? '\x1b[93m'    // bright yellow
+    : '\x1b[91m';                  // bright red
+  const SEP = `${DIM}|${RESET}`;
+
+  // Model name, so the burn rate is always visible.
+  const model = input?.model?.display_name || '';
+
+  // Order: project | branch | context | weekly usage | model
+  const parts = [];
+  if (project)    parts.push(`${CYAN}${project}${RESET}`);
+  if (branch)     parts.push(`${PINK}${branch}${RESET}`);
+  if (tokenLabel) parts.push(`${tokenColor}${tokenLabel}${RESET}`);
+  if (q7 != null) parts.push(`${(q7 >= 80 ? '\x1b[91m' : q7 > 40 ? '\x1b[93m' : '\x1b[92m')}7d ${Math.round(q7)}%${RESET}`);
+  if (model)      parts.push(`\x1b[38;2;142;81;255m${model}${RESET}`);   // violet, oklch(60.6% 0.25 292.717) = #8e51ff
+
+  process.stdout.write(parts.join(` ${SEP} `));
+});
+````
+
+
 # Skills
 [[validate-biz-idea]]
 

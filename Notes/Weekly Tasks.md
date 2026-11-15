@@ -1,55 +1,51 @@
 # The TODOs
-### 9/11
-- [x] EO with Opus low:
-	- [x] Send the training module review
-	- [x] Create a handoff for the Refine session to Address Feedback
-	- [x] Feedback: open the current wave in the `Training` board, with the same `Name and role` in the dropdown; recapture the screenshots to fix the footer gap in the `Manage a process` module
-	- [x] Sprint planning (with an emphasis on the training module demo)
-- [ ] Venture++
+### 16/11
+- [ ] EO:
+	- [ ] Send the message
+	- [ ] Run `/sprint-review-prep`
+- [ ] Venture: EP e2e
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 10/11
-- [x] EO weekly report & sprint goals update (with Opus low)
-	- [x] AFK sprint prep & Rehearse 
+- [ ] Live up to your standards
+### 17/11
+- [ ] EO weekly report
+	- [ ] Rehearse the sprint review
 	- [ ] Update & send the sprint report 
 - [ ] Venture++
-- [x] Tao Te Ching++
-- [x] Live up to your standards
-### 11/11
-- [x] EO sprint review with Opus Max ultra:
-	- [x] Record & summarize the meeting
-	- [x] AFK `After sprint review` and turn repeated work into skills
-- [ ] Venture++
-- [x] Shopee
 - [ ] Tao Te Ching++
-- [x] Live up to your standards
-### 12/11
-- [x] EO minimal work:
-	- [x] AFK++
-	- [x] Drain Claude quota (with research)
-	- [x] AIO coaching session
+- [ ] Live up to your standards
+### 18/11
+- [ ] EO sprint review with Opus Max ultra:
+	- [ ] Record & summarize the meeting
+	- [ ] Run `/sprint-afk-prep`
 - [ ] Venture++
-- [x] Send the Đơn đề nghị
-- [x] Tao Te Ching++
-- [x] Live up to your standards
-### 13/11
-- [x] EO minimal work Opus Low
-	- [x] AFK++ 
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 19/11
+- [ ] EO minimal work:
+	- [ ] AFK++
+	- [ ] Drain Claude quota (with research)
+	- [ ] AIO coaching session
+- [ ] Grep enduro bike rent
 - [ ] Venture++
-- [x] Tao Te Ching++
-- [x] Live up to your standards
-### 14/11
-- [x] Perfect dive start + 500m
-- [x] Hefty breakfast
-- [x] Groceries
-- [x] Venture++
-- [x] Tao Te Ching++
-- [x] Live up to your standards
-### 15/11
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 20/11
+- [ ] EO minimal work Opus Low
+	- [ ] AFK++ 
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 21/11
+- [ ] Perfect dive start + 500m
+- [ ] Hefty breakfast
+- [ ] Groceries
+- [ ] Venture++
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 22/11
 - [ ] Splurge (if you're done with EP HITL)
-- [ ] Weekly planning (including EO tickets with Opus Low)
+- [ ] Weekly planning (including EO tickets)
 	- [ ] Wrap up all HITL tasks
-	- [ ] Have Claude do this: https://duthaoonline.quochoi.vn/dt/luat-hien-lay-ghep-mo-bo-phan-co-the-nguoi-va-hien-lay-xac-sua-doi/260818155807311971
 - [ ] Venture++
 	- [ ] Long vol
 - [ ] Tao Te Ching++
