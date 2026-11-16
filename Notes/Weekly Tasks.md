@@ -1,16 +1,17 @@
 # The TODOs
 ### 16/11
-- [ ] EO:
-	- [ ] Send the message
-	- [ ] Run `/sprint-review-prep`
-- [ ] Venture: EP e2e
-- [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] EO:
+	- [x] Send the message
+	- [x] Run `/sprint-review-prep`
+- [x] Venture: EP e2e
+- [x] Tao Te Ching++
+- [x] Live up to your standards
 ### 17/11
 - [ ] EO weekly report
 	- [ ] Rehearse the sprint review
 	- [ ] Update & send the sprint report 
 - [ ] Venture++
+- [ ] ACB card & question about your available balance
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 18/11
@@ -24,7 +25,7 @@
 - [ ] EO minimal work:
 	- [ ] AFK++
 	- [ ] Drain Claude quota (with research)
-	- [ ] AIO coaching session
+	- [ ] AIO coaching session → Remind the Old Infant
 - [ ] Grep enduro bike rent
 - [ ] Venture++
 - [ ] Tao Te Ching++
@@ -246,6 +247,13 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07).
 - **Replies 0, checked in the browser 14:41:** Upwork Messages empty; the one unread bell item was the $8.09 Connects receipt.
 - **Sunday read (run Sat 14:05):** week 6 counted (F-02 met). Gov? NO, ~10 h. Signal: F-03 pending. Khoi, in his words: "make sure that EP works e2e BEFORE putting it in the graveyard tmr"
 - **EP e2e check by Claude, Sat Nov 14:** prod webhooks live on hocvienksxd.com (payos 400 invalidPayload, clerk 401); old workers.dev URL dead (404 / 1042), so PayOS must point at the custom domain. The only course on prod is "Test Payment" at 2.000 ₫, linked from the public home page: no sellable course and no video, so a stranger has nothing to buy. Buyer path stops at sign-in. Blocked on Khoi: the PayOS login (webhook URL), a non-owner buyer signup, the 2.000 ₫ bank payment, the Cloudflare login (D1 check). Instructor path still to verify: sign in → instructor role (next-steps step 1) → Dashboard → Curriculum builder → course/module/lesson → video upload (needs Stream, not bought, R-20) → publish → listed on /courses. After every path passes: a 2-minute HTML of what the app offers goes into the EP repo `docs/onboarding`.
+#### Nov 16th, 2026
+- **EP e2e status by Claude, Mon Nov 16 (definitive):** (1) buyer: blocked on Khoi — webhooks live on hocvienksxd.com (payos 400 invalidPayload, clerk 400); PayOS webhook URL, non-owner signup, 2.000 ₫ payment, D1 check all need his logins (wrangler still not logged in). (2) instructor: FAILED at video upload — sign-in OK, Instructor Dashboard OK, New Course "Khóa demo" (draft) → module → lesson OK, Video upload → "Duplicate discriminator value "true"" + "Some changes failed to save" (cause: `app/routes/api/stream-upload.schemas.ts`, `z.discriminatedUnion("ok")` has two `ok: true` members; fix = `z.union`). Not published. (3) sellable: failed — /courses lists only "Test Payment" 2.000 ₫, no video. (4) F-03 count: 0 paid strangers (no sellable course; D1 unchecked).
+- **Stream bought Mon Nov 16 under the one-month exception:** Cloudflare Images & Stream Starter Bundle, $5/mo, Visa 4071; renewal cancelled the same hour, billing shows "Expiring on Dec 16, 2026" (access kept to then, per Cloudflare's cancel dialog).
+- **F-03 read Mon Nov 16:** 0 paid strangers → graveyard, but held to Dec 16 by the one-month pitch exception (R-22); no second probation after it.
+- **EP instructor path PASSED by Claude, Mon Nov 16 (supersedes "(2) instructor: FAILED" above):** fixes live on prod via PRs #281–#286 (schema z.union; Stream token, account id, customer id; TUS chunkSize 50 MiB — without it a big file failed at "tus: failed to upload chunk at offset 0"). Stream quota was full (413, 1200/1000 min) from pending probe slots; 6 deleted. In Chrome as an instructor: 3.26 GB / 34 min video uploaded through the lesson's Upload Video box in ~20 min → saved to the lesson → Stream processing; 10 s video plays through the signed player on the lesson page; course published → "Khóa demo" listed on /courses → set back to Draft → gone from /courses. Still open: (1) buyer path blocked on Khoi (PayOS webhook URL, non-owner signup, 2.000 ₫ payment); (3) sellable: no priced public course with a video yet; app shows only "Failed to create upload." when Stream storage is full (small fix, not done). Onboarding HTML not written: not every path passed.
+- **EP status by Claude, Mon Nov 16 (definitive): buyer PASSED, instructor PASSED, sellable PASSED (as a test course), F-03 count 0.** Buyer: student hohcheeming6996@gmail.com paid 2.000 ₫ by PayOS QR (D1 payment 20 "paid"), enrollment 9 in Test Payment appeared, receipt email arrived 2:49 PM, the course opens ("Học tiếp") and the 10 s video plays for the student (Khoi copied it into Test Lesson in D1, content_items 22). Fixes shipped: #287/#288 honest "Video storage is full" message; #289/#290 Clerk webhook moves an old users row to a new Clerk ID when the email matches (the student's sign-up failed on UNIQUE(email) with an old row 19; Khoi also relinked row 19 by hand). Row 19 still holds an older paid 2.000 ₫ payment 18 with no enrollment (cause unknown, pre-fix). Onboarding page written: docs/onboarding/instructor.html (#291/#292). F-03: paid enrollments from someone not Khoi, the instructor or a test = 0.
+- **Cut run Nov 16:** skipped pages 6, 7 → filled Nov 16
 # Backlog
 - [Learn about animations](https://animations.dev/learn/animation-theory/intro)
 - [Learn to be an AI Engineer](https://www.aihero.dev/ai-engineer-roadmap)

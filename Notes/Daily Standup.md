@@ -40,6 +40,7 @@ claude -v
 
 # Sprint review prep
 - Type `/sprint-review-prep` in a session launched as the skill's Launch check says. The prompt and its /goal live in `AI/sprint-review-prep/SKILL.md`: change a rule there, then run `bash AI/long-vol-consultant/setup.sh --copy`.
+- Launch with: `claude --chrome --add-dir C:\tmp C:\Users\leekh\Documents\Edge8 C:\Users\leekh\Videos\Captures C:\Users\leekh\.claude\projects\C--Users-leekh-Videos-Captures C:\Users\leekh\Documents\Repos\Edge8\global-hubspot C:\Users\leekh\Documents\Repos\Edge8\event-sync C:\Users\leekh\Documents\Repos\Edge8\altai-hubspot-sync C:\Users\leekh\Documents\Repos\Personal\Life-Engineering\Notes`
 
 # After sprint review
 - Type `/sprint-afk-prep` in a session started under `C:\Users\leekh\Documents\Repos\Edge8\global-hubspot`. The prompt, its standing rules and its /goal live in `AI/sprint-afk-prep/SKILL.md`: change a rule there, then run `bash AI/long-vol-consultant/setup.sh --copy`.

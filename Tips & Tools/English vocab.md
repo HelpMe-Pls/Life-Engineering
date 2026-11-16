@@ -1045,9 +1045,13 @@ deity (n): god, divinity
 
 enshrining (v): codify, constitutionalize, consecrate, sanctify, honor formally, induct, formalize
 
+ordain (v): enact, mandate, consecrate, sanctify, ra lệnh
+
 vicar (n): parish priest, rector, cha xứ, pastor, clergyman
 
 incantation (n): spell, chant, charm, hex, mantra, thần chú
+
+oblation (n): đồ cúng, sacrifice, tribute, votive offering
 
 fideist (n): faith-alone believer, anti-rationalist in religion, non-rationalist believer
 

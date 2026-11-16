@@ -32,13 +32,13 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/English vocab.md",
+                    "file": "Notes/strength-research/protocol.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": false
                   },
                   "icon": "lucide-file",
-                  "title": "English vocab"
+                  "title": "protocol"
                 }
               },
               {
@@ -47,12 +47,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "AI/With Claude Code.md",
+                    "file": "Tips & Tools/English vocab.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "With Claude Code"
+                  "title": "English vocab"
                 }
               }
             ],
@@ -282,29 +282,28 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "08695eb55ecf940b",
+  "active": "03418aa526fdbc06",
   "lastOpenFiles": [
-    "AI/With Claude Code.md.tmp.47908.d10b56e2ca8f",
+    "Tips & Tools/English vocab.md",
+    "AI/Claude Code Skill Playbook.md",
+    "Notes/strength-research/protocol.md",
     "Notes/Weekly Tasks.md",
     "AI/With Claude Code.md",
     "Notes/Daily Standup.md",
+    "Notes/node_modules",
+    "Notes/Venture Tasks.md.tmp.27464.35831ab8665a",
+    "Notes/Weekly Tasks.md.tmp.27464.d261d4a5dbc6",
+    "AI/With Claude Code.md.tmp.47908.d10b56e2ca8f",
     "AI/sprint-afk-prep/SKILL.md",
     "AI/sprint-review-prep/SKILL.md",
     "AI/sprint-afk-prep/sedVAly68",
     "AI/sprint-review-prep/sedbLSyae",
     "AI/validate-biz-idea.md",
-    "Tips & Tools/English vocab.md",
     "Tips & Tools/English grammar.md",
     "AI/sprint-afk-prep",
     "AI/sprint-review-prep",
-    "Notes/strength-research/protocol.md",
-    "AI/Claude Code Skill Playbook.md",
     "Notes/Weekly Tasks.md.tmp.77248.4506790c150e",
     "Notes/Daily Standup.md.tmp.70952.05f032c831c9",
-    "Notes/Daily Standup.md.tmp.70952.ac21e0e59ab3",
-    "Notes/Daily Standup.md.tmp.70952.4e4ca4288d40",
-    "Notes/Daily Standup.md.tmp.70952.35bf5fe8383b",
-    "Notes/Daily Standup.md.tmp.70952.ba447463029c",
     "Notes/Venture Tasks.md",
     "Notes/day job/claude/memory-global-hubspot/batch-2026-07-02-merged-promotion-200-pending.md",
     "promotion-192-admin-uxperf-batch.md",
