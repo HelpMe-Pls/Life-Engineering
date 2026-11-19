@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# setup.sh — install, check or repair the /long-vol-consultant, /sprint-review-prep and /sprint-afk-prep skills on this machine.
+# setup.sh — install, check or repair the /long-vol-consultant, /sprint-review-prep, /sprint-summary-tickets and /sprint-afk-prep skills on this machine.
 # One line per check. OK = the same as Khoi's Mac on 2026-10-11 (macOS, Claude Code 2.1.296, Python 3.9.6).
 #
 #   bash setup.sh              check only; print the exact fix under every FAIL
@@ -53,7 +53,7 @@ echo "== /long-vol-consultant setup check · vault: $VAULT · home: $HOME"
 case "$(uname -s)" in MINGW*|MSYS*|CYGWIN*) note "Windows Git Bash detected: use --copy (symlinks there are not verified)";; esac
 
 # 1 · the vault files the skill reads and writes
-for f in "Notes/This is it.md" "Notes/Weekly Tasks.md" "Notes/Venture Tasks.md" "CONTEXT.md" "AI/long-vol-consultant.md" "AI/long-vol-consultant/position.py" "AI/Global CLAUDE.md" "AI/Reader-facing docs.md"; do
+for f in "Notes/This is it.md" "Notes/Weekly Tasks.md" "Notes/Venture Tasks.md" "AI/CONTEXT.md" "AI/long-vol-consultant.md" "AI/long-vol-consultant/position.py" "AI/Global CLAUDE.md" "AI/Reader-facing docs.md"; do
   if [ -f "$VAULT/$f" ]; then ok "vault file: $f"
   else fail "vault file missing: $f" "git -C \"$VAULT\" pull   (the vault is https://github.com/HelpMe-Pls/Life-Engineering.git)"; fi
 done
@@ -116,20 +116,21 @@ else
   else fail "$SKILL is not the symlink Claude Code loads" "bash \"$HERE/setup.sh\" --fix"; fi
 fi
 
-# 4b · the two sprint skills, /sprint-review-prep and /sprint-afk-prep: AI/<name>/SKILL.md in the vault, installed as ~/.claude/skills/<name>/SKILL.md
-#      --copy copies the file (re-run after every edit); --fix links ~/.claude/skills/<name> to the vault folder; a plain check compares them.
-for S in sprint-review-prep sprint-afk-prep; do
-  SRC="$VAULT/AI/$S/SKILL.md"; DST="$HOME/.claude/skills/$S"
-  if [ ! -f "$SRC" ]; then fail "vault file missing: AI/$S/SKILL.md" "git -C \"$VAULT\" pull"; continue; fi
-  if [ "$COPY" = 1 ]; then
-    if [ -L "$DST" ]; then rm -f "$DST"; fi
-    mkdir -p "$DST" && cp "$SRC" "$DST/SKILL.md"
-  elif [ "$FIX" = 1 ] && [ ! -d "$DST" -o -L "$DST" ]; then
-    ln -sfn "$VAULT/AI/$S" "$DST"
+# 4b · the three sprint skills, /sprint-review-prep, /sprint-summary-tickets and /sprint-afk-prep: AI/sprint-skills/ in the vault holds them
+#      with their own installer, AI/sprint-skills/install.mjs, which copies each one to ~/.claude/skills/<name>/ with this machine's paths
+#      written in. This script only calls it: a plain check compares, --copy or --fix installs. AI/sprint-skills/README.md says the rest.
+SPRINT="$VAULT/AI/sprint-skills/install.mjs"
+if [ ! -f "$SPRINT" ]; then fail "vault file missing: AI/sprint-skills/install.mjs" "git -C \"$VAULT\" pull"
+elif ! command -v node >/dev/null 2>&1; then fail "node is not on PATH, so the sprint skills cannot be checked" "install Node 18 or newer, then run this script again"
+else
+  if [ "$COPY" = 1 ] || [ "$FIX" = 1 ]; then SPRINT_MODE=""; else SPRINT_MODE="--check"; fi
+  if SPRINT_OUT="$(node "$SPRINT" --skills-only $SPRINT_MODE 2>&1)"; then ok "the three sprint skills are installed in $HOME/.claude/skills, the same as AI/sprint-skills/skills/"
+  else
+    fail "a sprint skill is missing from $HOME/.claude/skills or differs from AI/sprint-skills/skills/" "node \"$SPRINT\""
+    printf '%s\n' "$SPRINT_OUT" | grep -E '^(DIFF|FAIL)' || true
   fi
-  if cmp -s "$SRC" "$DST/SKILL.md"; then ok "/$S installed in $DST, the same as AI/$S/SKILL.md"
-  else fail "/$S is missing from $DST or differs from AI/$S/SKILL.md" "bash \"$HERE/setup.sh\" --copy   (or --fix where symlinks work)"; fi
-done
+fi
+note "/sprint-summary-tickets checks its own machine in its first step; AI/sprint-skills/skills/sprint-summary-tickets/SETUP.md says how to prepare one"
 
 # 5 · ~/.claude/settings.json: the two keys that change how the skill behaves, plus what else differs from the Mac
 mkdir -p "$HOME/.claude"

@@ -13,7 +13,8 @@ updated: 2026-10-11
 - **MOVES** — [[Venture Tasks]]: the `## NOW` block and this week's boxes. (§A)
 - **RECORD** — an older note kept for facts and history: [[EP SaaS]], [[Business Bank]], [[Contingencies]], [[Q4 Sprint]], the research folders. Never a plan source. (§A)
 - **the skill** — `/long-vol-consultant`, the Sunday check-in wizard: eight pages, one keyboard dialog each (page 1 = the position and the keys, read-only), a draft held in the chat, one `y` at the end that writes the week back. `Esc` stops it with nothing written. Weeknights: `/long-vol-consultant log` (demand-log rows only) or `/long-vol-consultant <the blocker>` (the unblock pages only). (§10)
-- **position.py** — the script beside the skill. It prints the phase, the week, the days to each gate, the last two rows and the open moves. It never writes. (§A, §C)
+- **the make-it-count run** — the skill called with words that say this week's work is not done (`/long-vol-consultant I haven't done anything this week, make it count`). Claude does the missing part of the week's motion unattended in Khoi's Chrome: the text post, then proposals up to R-09's 3. It writes the demand-log rows and the dated notes as the work happens, and stops only at a step that is Khoi's: a sign-in, a purchase, new terms, a client who replied. The bare `/long-vol-consultant` that follows is the read. (Khoi's ask, 2026-11-19; the skill's section of that name)
+- **position.py** — the script beside the skill. It prints the phase, the week, the days to each gate, this week so far (bids of 3 and the text post, so whether the week counts yet), the last two rows and the open moves. It never writes. (§A, §C)
 
 ## The route
 - **the route** — bid on Upwork, then productize: four phases from Fri Oct 9 2026 to Sun Oct 10 2027. (§3)

@@ -8,7 +8,7 @@ Usage:
   python3 position.py --today 2026-12-13
 
 Reads (relative to the vault root, found from this file's resolved path or --vault):
-  Notes/Weekly Tasks.md   → the scoreboard, the demand-log tally, the demand log
+  Notes/Weekly Tasks.md   → the scoreboard, the demand-log tally, the demand log, this week's "Text post" note
   Notes/Venture Tasks.md  → the open boxes under "## NOW" and "## This week"
 
 The dates below are the LAW ("This is it.md" §3 / §4). Gates never move; if a
@@ -42,6 +42,8 @@ GATES = [
     ("F-13/14", "2027-10-10", "quit ONLY if MRR >= floor AND <=4 h in all 13 rows (Jul 18 -> Oct 10), else renew and keep the asset running"),
 ]
 FOLLOW_UP_AFTER_DAYS = 4  # "day 5" with the send day as day 1
+MOTION_FLOOR = 3  # R-09 / F-02: the week counts only if >= 3 proposals AND the text post went out; a ruling that changes it changes it HERE too
+MONTHS = {m: i for i, m in enumerate("jan feb mar apr may jun jul aug sep oct nov dec".split(), 1)}
 DEFAULT_VAULT = "/Users/somebodhi/Documents/Personal/Life-Engineering"
 
 
@@ -187,6 +189,8 @@ def analyse(vault, today):
     tags = {}
     bids = replies = hires = connects = 0
     due = []
+    mon = cs - timedelta(days=6)
+    wk = {"rows": 0, "bids": 0, "connects": 0}
     for r in log:
         r = r + [""] * (11 - len(r))
         tag = r[3] or "(untagged)"
@@ -201,10 +205,42 @@ def analyse(vault, today):
             sent = d(r[0])
         except ValueError:
             continue
+        if mon <= sent <= cs:
+            wk["rows"] += 1
+            if bid:
+                wk["bids"] += 1
+                if r[5].strip().isdigit():
+                    wk["connects"] += int(r[5].strip())
         # R-21: Upwork opens no thread before the client replies, so only answered bids get the follow-up
         if bid and rep and "f/u" not in r[10].lower() and (today - sent).days >= FOLLOW_UP_AFTER_DAYS:
             due.append(f"{r[0]} {r[2][:50]} (bid day {(today - sent).days + 1})")
     pos["demand_log"] = {"rows": len(log), "bids": bids, "replies": replies, "hires": hires, "connects_on_bids": connects, "per_tag": tags, "follow_ups_due": due}
+
+    # this week so far (Mon -> Sun of this row): the gap the make-it-count run works off. The log rows dated in the week give the bids;
+    # the post is the bullet `- **Text post ...` under a `#### <Mon DDth, YYYY>` notes heading dated in the week.
+    post_note, in_week = None, False
+    for line in weekly:
+        s = line.strip()
+        m = re.match(r"^####\s+([A-Za-z]{3})[a-z]*\.? (\d{1,2})(?:st|nd|rd|th)?,? (\d{4})$", s)
+        if m:
+            try:
+                hd = date(int(m.group(3)), MONTHS[m.group(1).lower()], int(m.group(2)))
+            except (KeyError, ValueError):
+                hd = None
+            in_week = hd is not None and mon <= hd <= cs
+        elif s.startswith("#"):
+            in_week = False
+        elif in_week and s.startswith("- **Text post"):
+            post_note = s[:200]
+    to_go = []
+    if wk["bids"] < MOTION_FLOOR:
+        to_go.append(f"{MOTION_FLOOR - wk['bids']} bid(s)")
+    if not post_note:
+        to_go.append("the text post")
+    pos["this_week_so_far"] = {
+        "span": f"{fmt(mon)} -> {fmt(cs)}", "posts_logged": wk["rows"], "bids_logged": wk["bids"], "bids_floor": MOTION_FLOOR,
+        "connects_on_bids": wk["connects"], "text_post_note": post_note, "counts": not to_go, "to_go": to_go,
+    }
 
     # moves
     pos["next_moves_open"] = open_boxes(moves, "NOW")[:5]
@@ -275,6 +311,9 @@ def render(pos):
     dl = pos["demand_log"]
     L.append(f"Demand log: {dl['rows']} rows, {dl['bids']} bids, {dl['replies']} replies, {dl['hires']} hires, {dl['connects_on_bids']} Connects on bids; per tag: {dl['per_tag'] or '{}'}")
     L.append("Follow-ups due (bid, client replied, day >= 5, no f/u yet; R-21): " + ("; ".join(dl["follow_ups_due"]) if dl["follow_ups_due"] else "none"))
+    tw = pos["this_week_so_far"]
+    L.append(f"This week so far ({tw['span']}): {tw['posts_logged']} posts logged, {tw['bids_logged']} of {tw['bids_floor']} bids (R-09), {tw['connects_on_bids']} Connects on them; text post: {'noted' if tw['text_post_note'] else 'no note'} -> "
+             + ("the week counts" if tw["counts"] else "the week does NOT count yet (F-02), to go: " + " + ".join(tw["to_go"])))
     bl = pos.get("blanks_from_a_cut_run", [])
     L.append("Blanks from a cut run (`_` in a past Sunday row or in ## NOW): " + ("; ".join(bl) if bl else "none"))
     L.append(f"Next moves open (Venture Tasks ## NOW): {len(pos['next_moves_open'])}")

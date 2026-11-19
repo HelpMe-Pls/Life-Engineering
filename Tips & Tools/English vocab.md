@@ -312,6 +312,8 @@ malignant (adj): malevolent, benign/malignant (== harmless/harmful) tumor
 
 deleterious (adj): harmful, damaging, injurious, toxic, noxious, detrimental
 
+hobble (v-n): limp, stagger, cripple, impede, handicap, undermine
+
 beset (v): surround, harass
 
 windward (adj): !leeward, being in or facing the direction from which the wind is blowing

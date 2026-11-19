@@ -17,7 +17,7 @@ script: "AI/long-vol-consultant/setup.sh"
 5. You: quit Claude Code and start it again (a new skill loads at the next session), then type `/long` and press Tab.
 
 ## What the skill needs (each line was checked on the Mac on 2026-10-11)
-1. **The vault**, cloned from `https://github.com/HelpMe-Pls/Life-Engineering.git`, at any path: the LAW, the SCHEDULE, the MOVES file, `CONTEXT.md` and the `AI/` folder come with it.
+1. **The vault**, cloned from `https://github.com/HelpMe-Pls/Life-Engineering.git`, at any path: the LAW, the SCHEDULE, the MOVES file and the `AI/` folder (the vocabulary file `AI/CONTEXT.md` is in it) come with it.
 2. **Claude Code 2.1.296 or newer**: the dialog keys in the skill (Enter, ↑/↓, ←/→ or Tab, Space, Esc) were read from that build.
 3. **Python 3.9 or newer on PATH as `python3`**: the position script is standard library only.
 4. **The skill files where Claude Code loads skills**: `~/.claude/skills/long-vol-consultant/SKILL.md` and `scripts/position.py`; Claude Code reads `~/.claude/skills/*`, nothing else, and a new skill appears at the next session.
@@ -27,6 +27,7 @@ script: "AI/long-vol-consultant/setup.sh"
 8. **`~/.claude/settings.json` has `"askUserQuestionTimeout": "10m"`**: a page idle for 10 minutes then auto-continues with the answers picked so far; unset means never (the dialog waits forever).
 9. **`~/.claude/CLAUDE.md` holds the Answer style rule from `AI/Global CLAUDE.md`** (the EXACT rule the skill's wording follows): as the whole file (the Mac), or as a marked block inside a file that has the machine's own rules (the Windows PC). `setup.sh --claude-md` creates the file when there is none; an existing file is never replaced, it gets the block added or refreshed (a file that is a vault copy, current or older, is brought to the current text). It also copies `AI/Reader-facing docs.md` to `~/.claude/reader-facing-docs.md`, the note the rule points at (a plain copy, never hand-edited).
 10. **The same model settings as the Mac, if you want the same answers**: `model: opus`, `effortLevel: high`, `permissions.defaultMode: auto`, `tui: fullscreen`; the script reports these as NOTE, never changes them.
+11. **For the make-it-count run only** (the skill called with words that say the week's work is not done, e.g. `/long-vol-consultant I haven't done anything this week, make it count`): **the Claude in Chrome extension, connected, in a Chrome that is signed in to Upwork and X.** The run sends the week's proposals and the text post there and stops only at a sign-in, a purchase, new terms or a client who replied. The Sunday read and `log` work without the extension; `setup.sh` does not check it.
 
 ## The steps
 1. Clone the vault: `git clone https://github.com/HelpMe-Pls/Life-Engineering.git ~/Documents/Personal/Life-Engineering` (any path works; this is the Mac's).

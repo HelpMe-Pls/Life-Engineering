@@ -3,9 +3,8 @@
 
 - /goal /wayfinder read @docs/plans/next-steps.md to /implement its instructions with /codebase-design and /tdd to close-out the `Agent-ready queue` by opening a corresponding PR for each task and fold them all into `dev`
 - /goal perform a DEEP adversarial code review loop by utilizing the /code-review skill on the open PR (#404) and self-iterate with /tdd to /implement your fixes until ALL issues/gaps/regressions are FULLY resolved. You're granted FULL ACCESS to the producer's repo (`altai-hubspot-sync` under the same parent as this repo) to fact-check and verify your work as you go. It is CRITICAL to keep the ENTIRE test suite in BOTH repos MINIMAL and OPTIMIZED based on the standards of /codebase-design
-# Prompt
-- Read @A03.pdf and watch this video:https://www.youtube.com/watch?v=VmaA2p1Mg9E for your context before we start the next challenge. Tell me when you're ready.
-- Transcribe the LATEST video then add its summary and tickets accordingly.
+# Prompts
+- One-command installer for /sprint-summary-tickets, /sprint-afk-prep and /sprint-review-prep, on any machine, from the vault's root (run it again after every pull): `node AI/sprint-skills/install.mjs`
 - You're allowed to gratuitously write/check/access...
 - /wait-what surface the HITL actions from this run so I can make the decision
 - Feel free to fan out as many workflows/subagents as needed to get to the bottom of this
@@ -41,6 +40,11 @@ claude -v
 # Sprint review prep
 - Type `/sprint-review-prep` in a session launched as the skill's Launch check says. The prompt and its /goal live in `AI/sprint-review-prep/SKILL.md`: change a rule there, then run `bash AI/long-vol-consultant/setup.sh --copy`.
 - Launch with: `claude --chrome --add-dir C:\tmp C:\Users\leekh\Documents\Edge8 C:\Users\leekh\Videos\Captures C:\Users\leekh\.claude\projects\C--Users-leekh-Videos-Captures C:\Users\leekh\Documents\Repos\Edge8\global-hubspot C:\Users\leekh\Documents\Repos\Edge8\event-sync C:\Users\leekh\Documents\Repos\Edge8\altai-hubspot-sync C:\Users\leekh\Documents\Repos\Personal\Life-Engineering\Notes`
+
+# Sprint summary and tickets
+- Type `/sprint-summary-tickets` in a session started in `C:\Users\leekh\Videos\Captures`, after the call's recording is saved there. It replaces the prompt "Transcribe the LATEST video then add its summary and tickets accordingly." The prompt, its rules and its /goal live in `AI/sprint-summary-tickets/` (`SKILL.md`, with `SUMMARY.md`, `TICKETS.md` and `SETUP.md` beside it): change a rule there, then run `bash AI/long-vol-consultant/setup.sh --copy`.
+- Launch with: `claude --add-dir C:\tmp C:\Users\leekh\Documents\Edge8\Tickets "C:\Users\leekh\Documents\Edge8\Sprint review" C:\Users\leekh\Documents\Edge8\Scopes C:\Users\leekh\Documents\Repos\Edge8\global-hubspot C:\Users\leekh\Documents\Repos\Personal\Life-Engineering\AI C:\Users\leekh\.claude\skills\sprint-summary-tickets`
+- Another machine: pull the vault, run `bash AI/long-vol-consultant/setup.sh --copy` (Windows) or `--fix` (Mac), restart Claude Code, then type the skill in the folder that holds the recordings. Its first step checks the machine, and `AI/sprint-summary-tickets/SETUP.md` says how to prepare it. The Tickets, Sprint review and Scopes folders are in no repository: copy them from the work PC.
 
 # After sprint review
 - Type `/sprint-afk-prep` in a session started under `C:\Users\leekh\Documents\Repos\Edge8\global-hubspot`. The prompt, its standing rules and its /goal live in `AI/sprint-afk-prep/SKILL.md`: change a rule there, then run `bash AI/long-vol-consultant/setup.sh --copy`.

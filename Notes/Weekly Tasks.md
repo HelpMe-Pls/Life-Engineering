@@ -7,29 +7,29 @@
 - [x] Tao Te Ching++
 - [x] Live up to your standards
 ### 17/11
-- [ ] EO weekly report
-	- [ ] Rehearse the sprint review
-	- [ ] Update & send the sprint report 
-- [ ] Venture++
-- [ ] ACB card & question about your available balance
-- [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] EO weekly report
+	- [x] Rehearse the sprint review
+	- [x] Update & send the sprint report 
+- [x] Venture++
+- [x] Tao Te Ching++
+- [x] Live up to your standards
 ### 18/11
-- [ ] EO sprint review with Opus Max ultra:
-	- [ ] Record & summarize the meeting
-	- [ ] Run `/sprint-afk-prep`
+- [x] EO sprint review with Opus Max ultra:
+	- [x] Record & summarize the meeting
+	- [x] Run `/sprint-afk-prep` with Calgary's context
 - [ ] Venture++
-- [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] ACB card & question about your available balance
+- [x] Tao Te Ching++
+- [x] Live up to your standards
 ### 19/11
-- [ ] EO minimal work:
-	- [ ] AFK++
-	- [ ] Drain Claude quota (with research)
-	- [ ] AIO coaching session → Remind the Old Infant
-- [ ] Grep enduro bike rent
+- [x] EO minimal work:
+	- [x] AFK++
+	- [x] Drain Claude quota (with research)
+	- [x] AIO coaching session → Remind the Old Infant
+- [x] Grep enduro bike rent
 - [ ] Venture++
-- [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Tao Te Ching++
+- [x] Live up to your standards
 ### 20/11
 - [ ] EO minimal work Opus Low
 	- [ ] AFK++ 

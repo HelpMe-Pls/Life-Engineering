@@ -1,0 +1,65 @@
+---
+name: sprint-summary-tickets
+description: After the Wednesday EO call - transcribes the latest recording, writes its meeting summary and makes the new sprint's tickets.
+disable-model-invocation: true
+---
+
+This prompt is the file ~/.claude/skills/sprint-summary-tickets/SKILL.md; after any compaction of your context, before any other action, read it whole again, then SUMMARY.md or TICKETS.md beside it for the step you are on, then the files this run has written so far, and go on from what they show.
+
+## Launch check
+
+Khoi starts this session in the folder that holds the meeting recordings (the work PC: C:\Users\leekh\Videos\Captures), after the call's recording is saved there. When the launch folder holds no video file, say so and stop. As your first message on every launch, print this /goal line for Khoi to paste into this session, then start the work without waiting; the same skill relaunches the session after a stop, a turn cap or a usage limit: it reads what the run has written so far and goes on from the first step whose Done when fails.
+
+```
+/goal the machine report shown with every check pass, fixed or failed, by command; the latest recording and its Meeting date named; its transcript shown with the device, the minutes it took and every loop or gap; the meeting summary saved under its exact name in the clone's docs/meetings, with every render-check line PASS, its word count, and each fact-check finding shown as applied or refuted; the sprint page saved in Documents/Edge8/Tickets with every page-check line PASS, every card this run made shown with its Why paragraph, and each line of the After the demo box shown as a card, a step on a carried card, a waiting line, Khoi's own step or closed by the summary; the summary and the page agreeing on every owner and due day; what the call taught written into the skill's source and installed, or one line that says it taught nothing new; the handover shown; nothing committed, pushed or opened as a PR; NO MORE THAN 1 subagent spawned (if necessary); OR stopped on a question only Khoi can answer (a recording that is not the EO development call, a Tickets folder more than one sprint behind, a failed machine check that is his to bring); or stop after 60 turns and show where it stands
+```
+
+## Done when
+
+The /goal line above holds: it is this run's completion criterion, whether or not Khoi pasted it.
+
+## The prompt
+
+Turn the latest recording of the weekly EO HubSpot development call into two files: the call's meeting summary, which EO Global's admins read in the rollout tracker, and the new sprint's page of cards, which only Khoi reads. This skill replaces the prompt "Transcribe the LATEST video then add its summary and tickets accordingly." Nothing leaves the machine in this run: Khoi reads both files, asks for edits here, and asks for the summary to be shipped when it is good.
+
+The places, with ~ as this machine's home folder (the work PC: C:\Users\leekh). The recordings are in the launch folder. The clone is ~/Documents/Repos/Edge8/global-hubspot: its summaries are in docs/meetings, and its Prettier, Playwright and jsdom are in website/node_modules. Khoi's pages are in ~/Documents/Edge8, where this run reads and writes only Tickets, Sprint review and Scopes; the folder's other files hold keys and recovery codes, so open nothing else there. The transcriber's Python is ~/.venvs/transcribe/Scripts/python.exe on Windows and ~/.venvs/transcribe/bin/python elsewhere. This skill's folder is ~/.claude/skills/sprint-summary-tickets, with SUMMARY.md, TICKETS.md, SETUP.md, transcribe.py, render-check.js and page-check.js beside this file. The skill's source is the folder named in the file .vault-source there; when that file or the folder it names is missing, the skill's folder is its own source. Scratch (a generator, a spec, video frames) goes into one folder named sprint-summary-<Meeting date> under C:\tmp on the work PC, under the system temp folder elsewhere; a relaunch reuses it.
+
+On Windows every command runs in the Bash tool, and a path handed to python or node is written C:/Users/... (what cygpath -m prints): Git Bash converts a /c/... path for a Windows program only when the path has no square bracket, and every summary, sprint page and scope page has brackets in its name. Write a script with the Write tool and run it by its path. A script reads and writes a page as bytes, so the file keeps its line endings. Reach the clone with git -C and npm --prefix.
+
+The steps, in order. Steps 1 and 2 run on every launch. From step 3 on, when a step's Done when holds, add one line to progress.md in the scratch folder: the step, the file it wrote or checked, and the proof. A relaunch reads progress.md first, proves with one read that each file it names is still there, and starts at the first step it does not record. A launch whose progress.md records step 10 runs render-check and page-check again, shows the handover and changes nothing, unless a check fails or Khoi asks for a change.
+
+1. Check the machine. Run each check and report it as pass, fixed or failed with its command: the venv's Python imports faster_whisper; ffmpeg, ffprobe and node answer -version or --version; the clone is there and its website/node_modules holds prettier, playwright and jsdom; Tickets holds a file named Sprint Tickets [YNN Sprint NN].html; Sprint review holds a file named sprint-NN-review.html. When a check fails, read SETUP.md beside this file and fix what a command can fix, saying what you install and its size before you install it. Done when every check reads pass or fixed, or the run has stopped on a failed check that is Khoi's to bring (a sign-in, the Edge8 folders on a new machine), named with its command.
+
+2. Find the latest recording: the newest .mp4, .mkv, .m4a, .mp3 or .webm in the launch folder by modified time. The Meeting date is the YYYYMMDD in its name (Game Bar names a recording YYYYMMDD-HHMMSS.mp4 when the recording ends), else the file's modified date. Done when you have shown the file and the Meeting date; go on without waiting for an answer.
+
+3. Transcribe it in the background: PYTHONIOENCODING=utf-8 PYTHONUTF8=1 HF_HUB_DISABLE_SYMLINKS_WARNING=1 "<the venv's Python>" -u "<this skill's folder>/transcribe.py" "<the recording>" --force. It writes the .vtt beside the recording; --force replaces an older .vtt, which Khoi approved. Its first line names the device and its last line reads Wrote <path> in N.N min; a 50-minute call takes about 15 minutes on a 12-core CPU. While it runs, make step 4's first reads. When its completion notice arrives, look for loops with grep -v -E '^(WEBVTT|[0-9:.]+ --> [0-9:.]+)?$' "<the .vtt>" | uniq -c | sort -rn | head -5, and compare the last cue's end with the recording's length from ffprobe. On a relaunch, a .vtt newer than its recording that passes these two checks is kept. Done when the last cue ends near the recording's length and every loop (one line more than five times in a row) or gap is reported with the span it covers; never summarise from a looped span.
+
+4. Read. While the transcriber runs: the section What a summary looks like in the clone's docs/meetings/README.md; the newest summary in that folder (the highest date in its name), whole; SUMMARY.md and TICKETS.md beside this file, whole; the newest sprint page in Tickets, parsed with the clone's jsdom; the After the demo box of the review page for this call, and each scope page that box names. Then the transcript, whole and by line number: under an hour its times are MM:SS, and Grep hides long cues. Decide what the recording is. Only the weekly EO development call (EO Global and Edge8: demos, decisions, action items) gets a summary in the clone and a sprint page; for any other recording (a 1:1, an internal Edge8 call, a private talk with Dave) ask Khoi where its summary goes and whether it gets cards, and stop. The transcript has no speaker labels: settle who spoke and who attended as SUMMARY.md says under Speakers. Done when you can state who attended, what was shown, what was settled, what is open and who owes what, each from a line you read.
+
+5. Write the summary as SUMMARY.md says. A summary for this Meeting date that is already in docs/meetings is Khoi's: check it and patch it in place. Done when the file is in docs/meetings under its exact name, Prettier's check passes, every render-check line says PASS, and a cold read as an EO Global admin leaves nothing to guess.
+
+6. Fact-check the summary with one subagent, the only spawn in this run (a verify stage, so it may run on the session's model). Give it the .vtt's path, the summary's path and the Names and What the transcript mishears sections of SUMMARY.md, and nothing you concluded. Ask it to refute every name, owner, date, decision and number in the summary against the transcript, and to list what the summary leaves out. It may run while you draft the sprint page's spec. Check each finding against the transcript yourself before you apply it, and write the findings with your verdicts to fact-check.md in the scratch folder; on a relaunch that file stands, its open findings are applied, and nothing is spawned again. Done when each finding is shown as applied or refuted with its transcript line, and step 5's checks pass again.
+
+7. Make the sprint page as TICKETS.md says. A page for the new sprint that an earlier launch left is patched in place: a card or a line is added only when the page does not hold it yet. Done when every page-check line says PASS, Prettier's check passes on a page this run created, every card this run made has its Why paragraph, and each line of the After the demo box is shown as a card, a step on a carried card, a waiting line, Khoi's own step, or closed by the summary.
+
+8. Make the two files agree. Each action item in the summary that Edge8 owns is a card, a step on a card or a waiting line on the page, with the same owner and the same due day; each fact-check finding is applied in both files. Done when a list of the summary's Edge8 action items against the page shows no difference.
+
+9. Record what the call taught. A new name, a new mishearing, a new thing to keep out of the summary, a rule Khoi gave, or a lesson that changes the next run goes into SUMMARY.md or TICKETS.md in the skill's source, under the heading it belongs to, as a rule and never as a log of this run. When the source and the skill's folder are two folders, copy each changed file over its installed twin. When this session has a Claude memory folder with eo-call notes, add this call's note in the shape of the newest one, with its line in MEMORY.md, unless a note for this Meeting date is there already. Done when cmp shows each changed source file equal to its installed twin, or one line says the call taught nothing new.
+
+10. Hand over. Print each file's path on its own line; the Meeting date and the recording it came from; the attendees the recording made certain and the names Khoi must confirm; each transcript gap; the summary's word count; the cards by owner with their HT and the number of waiting lines; the After the demo lines left as Khoi's own steps; then what comes next: read both files, ask for edits here, say ship the meeting summary when it is good (SUMMARY.md, Shipping), then run /sprint-afk-prep. Delete the scratch folder's files from inside Python, all but progress.md. Done when that message is shown.
+
+STANDING RULES:
+
+1. Nothing leaves the machine. This run makes no commit, push, pull request, message or HubSpot write. Shipping the summary is a second ask from Khoi.
+
+2. EO reads the summary. It holds no sprint, card or ticket word and nothing Edge8-internal (SUMMARY.md, What stays out). The sprint page is Khoi's own and keeps its card numbers.
+
+3. Khoi decides his own scope. No card and no step sends work to Dave or to EO for review or sign-off, and no card mentions Khoi's hours.
+
+4. A file that Khoi or another session has edited is patched in place by a script that asserts each needle exactly once. Only a page this run created is generated or formatted whole.
+
+5. Pages are read and checked headless, with jsdom and Playwright. Leave browsers and Windows link handlers alone: the page's edge8-tickets link starts a helper and pops a dialog on a machine without it.
+
+6. A name the recording does not make certain is left out and reported to Khoi. A fact a card states as checked is checked in this session (the code, the page, the record), or the card says it is unchecked.
+
+7. Thrift. One subagent and no workflow. Grep a file for the part you need and read that part with offset and limit, except where a step says whole; read a file once unless something wrote it in between; put independent tool calls in one message and several commands in one Bash call; send long output to a file in the scratch folder and read the lines that matter.

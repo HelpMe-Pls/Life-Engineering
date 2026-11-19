@@ -2,7 +2,7 @@
 
 *For contributors who do not code. Pick a recipe, fill its boxes, send them. The agent does the rest.*
 
-*Written for Matt Pocock's skills — `mattpocock/skills`, **v1.3.1** (Oct 4, 2026) and the `main` branch it ships from — on Claude Code 2.1.x. When `npx skills@latest update` reports changed skills, the maintainer re-checks this file against the changelog at aihero.dev/skills.*
+*Written for Matt Pocock's skills — `mattpocock/skills`, **v1.3.2** (Oct 29, 2026) and the `main` branch it ships from — on Claude Code 2.1.x. When `npx skills@latest update` reports changed skills, the maintainer re-checks this file against the changelog at aihero.dev/skills.*
 
 ## How it works
 You describe and decide. The agent codes, tests, reviews and ships. The parts:
@@ -12,7 +12,7 @@ You describe and decide. The agent codes, tests, reviews and ships. The parts:
 - **The spine** — `docs/plans/next-steps.md` in the repo: the status board and the handoff between sessions, one line per Issue.
 - **The records** — `docs/adr/` (one small numbered file per settled call, such as `0001-git-flow.md`), `GLOSSARY.md` (the project's words, one meaning each) and `CODING_STANDARDS.md` (the rules every review checks; Retro grows it). The skills write all three. You never edit them.
 
-One feature's journey: you explain it and answer the questions (recipe 2 — the only time you must stay) → one send builds, reviews and ships it to production (recipe 3). After a rough run, Retro (10) smooths the next one.
+One feature's journey: you explain it and answer the questions (recipe 2 — the only time you must stay) → one send builds, reviews and ships it to production (recipe 3) → Retro (10) after every feature-size run, rough or smooth, proposes checks from what the run got wrong, for you to pick, so the next run does not repeat it.
 
 The spine is a status board:
 - Unchecked ⚡ = waits for an agent (tracker label `ready-for-agent`).
@@ -45,7 +45,7 @@ Every recipe starts in a terminal **in the repo folder**: open Terminal, type `c
 | Engineering | Fix something broken | 7 · Broken 🚶 |
 | Engineering | Finish a merge stuck half-way | 8 · Merge mess 🚶 |
 | Engineering | Get clean-up ideas | 9 · Survey 🚶 |
-| Engineering | Smooth the next run after a hard one | 10 · Retro 🚶→🧑 |
+| Engineering | Propose checks from a run's misses — after every feature-size run, or a hard one | 10 · Retro 🚶→🧑 |
 
 Feature: **2 → 3**, release included. One to three tiny tweaks: **2a**, release included. No row fits? Send `/ask-matt` and describe your situation — it routes you to the right skills. The Productivity helpers — `/handoff`, `/wait-what`, `/to-questionnaire` — appear where they are needed.
 
@@ -105,10 +105,10 @@ The agent reads the templates it needs from the [reference blocks](#agent-refere
 ✏️ Send, then answer the agent's questions, one round at a time, until it has none left:
 ```
 /grilling /domain-modeling /codebase-design The idea:
-<your idea: what, why, and every limit you already know>
+<your idea: the problem and who has it, what you picture, why now, and every limit you already know>
 ```
 
-*(Fact-check anytime with `/research <question>` as its own message — it runs in the background and leaves a cited file. A question only a working example can answer? Park it for recipe 5 — see "mid-interview" there.)*
+*(Fact-check anytime with `/research <question>` as its own message — it runs in the background and leaves a cited file. A question only a working example can answer? Have it prototyped in the background while you keep answering — see "mid-interview" in recipe 5.)*
 
 📋 When the questions end, send these three in order and walk away:
 ```
@@ -163,15 +163,15 @@ SHIP: first show the PR's changed files and line counts against the size check �
 ```
 /implement-spec run the whole journey for the parent spec of the top ⚡ ticket in @docs/plans/next-steps.md (no parent spec → the ⚡ tickets are the task graph), stage after stage with no stop between them; a new seam → stop for me.
 BUILD: list the spec's ⚡ tickets first and skip any parked under 🧑 or labelled ready-for-human; branch and draft PR per the git-flow ADR (body per the pr skill); merge each landing yourself — no merger subagents; compute the frontier from what has merged into the integration branch, not from the tracker's blocked-by counts (GitHub drops those only on close); a ticket whose tests need untracked local material (.env, a local database) is verified in the main checkout; after the code-review fixes, run only focused checks for the fixed findings; mark the PR ready.
-REVIEW: then call code-review once more on the PR — fixed point: its base branch on origin; spec: the spec Issue; in both briefs hunt regressions and gaps and try to refute the build's fixes; sub-agents must not invoke code-review or spawn agents; file only CRITICAL findings — regressions, broken usability, long-term maintainability — as unchecked ⚡ lines tagged review #N (N = the PR's number) in the spine (file:line, failure scenario); fix each test-first and push so the PR holds every fix; re-review the fixes only; a product-intent finding → 🧑 with the reason, and carry on.
-SHIP: then verify green and integrate per the git-flow ADR — merge the PR into its base once green; if that base is not production, open or refresh the standing promotion PR into production (reuse one already open) listing every Issue it carries and the worst Merge Danger among them, and merge it once its checks are green — a one-way door no spec or ADR settled → stop for me; delete the shipped lines of the spine and the build's merged branch, never the promotion PR's head; then watch the checks and deploys GitHub reports on production's new head until they finish — a red one → stop for me, the failure shown.
+REVIEW: then call code-review once more on the PR — fixed point: its base branch on origin; spec: the spec Issue; a diff past 800 changed lines (tests aside) → split its changed files by folder into 2 parts of like size (3 where the sub-agent cap leaves room: each call spends 2) and call code-review once per part, each brief given the whole spec and told to file only what its own part's files get wrong, so no reviewer covers the whole diff alone; in each brief hunt regressions and gaps and try to refute the build's fixes; sub-agents must not invoke code-review or spawn agents; file only CRITICAL findings — regressions, broken usability, long-term maintainability — as unchecked ⚡ lines tagged review #N (N = the PR's number) in the spine (file:line, failure scenario); fix each test-first and push so the PR holds every fix; re-review the fixes only; a product-intent finding → 🧑 with the reason, and carry on.
+SHIP: then verify green and integrate per the git-flow ADR — a one-way door no spec or ADR settled that is a separable change, the rest leaving production's behaviour as it was without it → before any merge, have a sub-agent move it to a last PR of its own on the same base, left open for me with its 🧑 line, and verify the rest green again; merge the PR into its base once green; if that base is not production, open or refresh the standing promotion PR into production (reuse one already open) listing every Issue it carries and the worst Merge Danger among them, and merge it once its checks are green — a one-way door no spec or ADR settled still in what would reach production → stop for me before it does; delete the shipped lines of the spine and the build's merged branch, never the promotion PR's head; then watch the checks and deploys GitHub reports on production's new head until they finish — a red one → stop for me, the failure shown.
 ```
 
 ```
-/goal EITHER released: every ⚡ ticket listed at the start merged into the integration branch with its tests shown green, or parked under 🧑 with its blocker named; the full suite's passing output on the integration branch shown; the build's code-review pass and its fixes shown; the second review's re-review of its fixes (or its clean first pass) found zero new CRITICAL findings, its ⚡ lines tagged review checked off in the spine or parked under 🧑 with their reason, every fix pushed; the PR's merge output shown and its branch deleted; the promotion PR into production merged — its URL and merge output shown (none needed when the PR's base is production); production's new head shown with its checks and deploys green, or none reported; the ⚡/🧑 sections of the spine (docs/plans/next-steps.md) shown after the last edit; implementer worktrees removed, the worktree list shown; OR stopped before production — red checks, a protection gate, or a one-way door no spec or ADR settled — the open PR's URL and what merged shown, the reason parked as a 🧑 line; OR released with a red production check or deploy — the failure shown, its 🧑 line filed; OR every ticket parked under 🧑, zero merges, the 🧑 section shown; OR stopped on a fork for me — options + a recommendation shown, its 🧑 line filed; or stop after 100 turns and show where it stands
+/goal EITHER released: every ⚡ ticket listed at the start merged into the integration branch with its tests shown green, or parked under 🧑 with its blocker named; the full suite's passing output on the integration branch shown; the build's code-review pass and its fixes shown; the second review's re-review of its fixes (or its clean first pass) found zero new CRITICAL findings, its ⚡ lines tagged review checked off in the spine or parked under 🧑 with their reason, every fix pushed; the PR's merge output shown and its branch deleted; the promotion PR into production merged — its URL and merge output shown (none needed when the PR's base is production); production's new head shown with its checks and deploys green, or none reported; the ⚡/🧑 sections of the spine (docs/plans/next-steps.md) shown after the last edit; implementer worktrees removed, the worktree list shown; OR stopped before production — red checks, a protection gate, or a one-way door no spec or ADR settled — the open PR's URL and what merged shown, the reason parked as a 🧑 line; OR released with a red production check or deploy — the failure shown, its 🧑 line filed; OR released without a one-way door no spec or ADR settled — every released clause above shown for the rest, that door's own PR open with its URL and Merge Danger shown, its 🧑 line filed; OR every ticket parked under 🧑, zero merges, the 🧑 section shown; OR stopped on a fork for me — options + a recommendation shown, its 🧑 line filed; or stop after 100 turns and show where it stands
 ```
 
-**When you return:** the feature is live, and its PR on GitHub tells the story: **Summary**, **Evidence**, **Merge Danger**. The run stops short of production only for red checks, a protection gate, or a one-way door (a migration, a deletion, anything that reaches users or other systems) that no spec or ADR settled. A check that turns red after the release stops it too. Each lands as a 🧑 line for you and the maintainer; Broken (7) fixes forward.
+**When you return:** the feature is live, and its PR on GitHub tells the story: **Summary**, **Evidence**, **Merge Danger**. The run stops short of production only for red checks, a protection gate, or a one-way door (a migration, a deletion, anything that reaches users or other systems) that no spec or ADR settled. Where such a door can be split off, the run first ships whatever works without it, so only the door's own PR waits for you. A check that turns red after the release stops it too. Each lands as a 🧑 line for you and the maintainer; Broken (7) fixes forward.
 
 Two honest limits. The review runs inside the build's session: its two reviewers start blank, but the agent that files their findings does not — the price of no stop between review and release. And a run that stopped early continues when you re-send its `/goal` after answering; in a new session, re-send both boxes (the build resumes from what has merged), or send 3c if only the release is left.
 
@@ -249,7 +249,7 @@ A region became clear? **Next →** recipe 2 like any idea; the interview starts
 
 **When you return:** the verdict is only *proposed*. A logic prototype is one HTML file — double-click it and press its buttons; a UI prototype starts with one command the ADR names. Then tell the agent to accept the ADR (status accepted, 🧑 line gone) or to delete it.
 
-**Mid-interview (recipe 2)?** Park it with ✏️ `/handoff design detour: <the question>` — the agent writes a handoff file in your computer's temp folder and shows its path; copy it. Run this recipe in a new session. Then resume the interview in one more new session: ✏️ `Read the handoff file at <the path the old session showed> and continue the interview.`
+**Mid-interview (recipe 2)?** Stay in the interview: ✏️ `prototype that in a background sub-agent, per the prototype skill, and keep interviewing me meanwhile`. When it is built, try it and say what to keep and what to drop: the same sub-agent goes back to it and pushes it as a prototype/ branch that the spec names, and your verdict joins the interview's decisions, so the Run has less left to decide. A detour too big for that? Park it with ✏️ `/handoff design detour: <the question>` — the agent writes a handoff file in your computer's temp folder and shows its path; copy it. Run this recipe in a new session. Then resume the interview in one more new session: ✏️ `Read the handoff file at <the path the old session showed> and continue the interview.`
 
 ### 6. Triage 🚶
 **When:** bug reports or requests arrived from other people (never recipe 2's own output — those Issues are already agent-ready). Work lands in ⚡; judgment calls land in 🧑 for you.
@@ -310,15 +310,15 @@ Finish the in-flight git operation: <merge or rebase, which branch into which, a
 **Next →** an idea becomes work only through recipe 2. Never straight to Run.
 
 ### 10. Retro 🚶→🧑
-**When:** a session struggled — a Run that stalled, a review that found a lot, a Broken that took all night. It proposes changes to the agent's **environment** (checks, pointers, the rulebook), never to the code; the maintainer picks. A smooth session has little to teach — skip it then. Best sent in the session that struggled; a new session reads the last session's log.
+**When:** after every feature-size Run (3), rough or smooth, and after any session that struggled — a review that found a lot, a Broken that took all night. It proposes changes to the agent's **environment** (checks, pointers, the rulebook), never to the code; the maintainer picks. A small smooth session has little to teach — skip it then. Best sent in the session that did the work; a new session reads the last session's log.
 
 📋 both:
 ```
-/retro show git status first; look back at the previous session for this repo in this machine's Claude Code session logs, unless the work happened here; trace every candidate to a moment in that session; file each as one 🧑 line flagged "maintainer decides" in @docs/plans/next-steps.md
+/retro show git status first; look back at the previous session for this repo in this machine's Claude Code session logs, its sub-agents' sessions included, unless the work happened here; read the review comments on the PRs it opened or merged (gh); trace every candidate to a moment in a session or to a comment; file each as one 🧑 line flagged "maintainer decides" in @docs/plans/next-steps.md, the most severe first
 ```
 
 ```
-/goal every candidate shown with its session moment and filed as a 🧑 line — the 🧑 section of the spine (docs/plans/next-steps.md) shown after the edit; git status shown before and after, differing only in the spine; OR a no-findings verdict naming the session read; or stop after 10 turns and show where it stands
+/goal every candidate shown with its moment (a session or a PR comment) and filed as a 🧑 line, the most severe first — the 🧑 section of the spine (docs/plans/next-steps.md) shown after the edit, and the PRs whose comments were read named; git status shown before and after, differing only in the spine; OR a no-findings verdict naming the sessions and PRs read; or stop after 20 turns and show where it stands
 ```
 
 **Next →** the maintainer picks. A pick becomes work through 2a (a check, a hook, a rulebook line) or 2 (anything bigger). Never applied straight from the retro.
@@ -410,6 +410,12 @@ Read at review and by retro. The repo's own docs win wherever they speak; these 
 - Expected values come from an independent source (a known literal, the spec), never recomputed the way the code computes them. Browser/end-to-end tests come after the behavior works, never first.
 - Every test earns its place by failing for exactly one reason someone cares about. Before cutting a test, read its name for the decision it locks.
 - Intermittent ≠ rare: rerun (--repeat-each or equivalent) before declaring a bug disproved or a fix proven; wait out the product's own debounces instead of retrying lookups.
+
+## Comments
+- Code explains itself through names, types and test names; a decision lives in an ADR. A comment earns its place only for a constraint the code cannot show. A comment that excuses a workaround marks a design to fix — fix it or file an Issue — and one that narrates the change, the session or the old behaviour is deleted.
+
+## Migrations
+- A migration is proven on the local database before it merges: applied from scratch, with the full suite green on the result, both shown under the PR's Evidence.
 ```
 
 </details>
