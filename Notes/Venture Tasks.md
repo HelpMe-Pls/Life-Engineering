@@ -1,19 +1,17 @@
 > [!info] What this file is
-> The MOVES file beneath [[This is it]] (the LAW) and [[Weekly Tasks]] `# Venture` (the SCHEDULE). `## NOW` is rewritten every Sunday by `/long-vol-consultant` and is embedded at the top of the SCHEDULE. The boxes below it are this week's work: tick a box when done; slip a date by writing the new one beside it. Dates may slip, gates never do. Words: [[CONTEXT]].
-
-## NOW
-**Mon Nov 16 2026 · P1 Stranger dollar · week 7 of 13 running: Mon Nov 16 → Sun Nov 22**
-**Next gate:** Mon Dec 7 (F-04) in 21 days — ≥1 reply from ≤35 proposals. Have: 0 replies from 15.
-**Also ticking:** Wed Jan 6 (F-05, 51 d) a stranger's money in ACB · Dec 16 Stream expires (EP pitch window ends).
-**Score Σ:** p 15 · r 0 · h 0 · $0 · posts 4 · Connects spent $19.81 of $300 (75 free + 120 bought, 3 left) · profile live · Stream $5 (one-month exception, R-22).
+> The MOVES file beneath [[This is it]] (the LAW) and [[Weekly Tasks]] `# Venture` (the SCHEDULE). `## NOW
+**Sun Nov 22 2026 · P1 Stranger dollar · week 8 of 13 running: Mon Nov 23 → Sun Nov 29**
+**Next gate:** Mon Dec 7 (F-04) in 15 days — ≥1 reply from ≤35 proposals. Have: 0 replies from 18.
+**Also ticking:** Wed Jan 6 (F-05, 45 d) a stranger's money in ACB · Wed Dec 16 Stream expires (EP pitch window ends).
+**Score Σ:** p 18 · r 0 · h 0 · $0 · posts 5 · Connects spent $26.41 of $300 (75 free + 160 bought, 4 left) · profile live · Stream $5 (one-month exception, R-22).
 **Signal:** F-03 read 0 → graveyard, held to Dec 16 for the instructor pitch (R-22).
-**Blocked on:** Upwork replies, 0 from 15 — hold until F-04 Dec 7; no follow-ups (R-21), keep 3–5/wk (R-09).
+**Blocked on:** Upwork replies, 0 from 18 — hold until F-04 Dec 7; no follow-ups (R-21), keep 3–5/wk (R-09).
 **Governor:** NO, NO → clear.
 
 ### Next 3 moves
-1. [ ] **Mon Nov 16 → Sat Nov 21:** week 7's 3 proposals + 1 post, 20:00–22:00; buy single Connects, 3 left (R-09, R-16).
+1. [ ] **Mon Nov 23 → Sun Nov 29:** week 8's 3 proposals + 1 post, 20:00–22:00; buy Connects first, 4 left (R-09, R-16).
 2. [ ] **Before Wed Dec 16:** pitch EP to one new instructor with the EP repo `docs/onboarding/instructor.html` (R-22). Stream already cancelled, ends Dec 16 by itself.
-3. [ ] **Sun Nov 22:** the Sunday read for week 7.
+3. [ ] **Sun Nov 29:** the Sunday read for week 8.
 
 ## This week (Mon Oct 12 → Sun Oct 18) — week 2 of 13
 1. [x] 🛠 **Today — one message to the EP instructor, three asks** (R-20): (1) sign up at hocvienksxd.com with his Gmail now — the webhook `500` is expected, not a failure; (2) the 8-clause page ([[EP SaaS]] §5, clause 8 first: whose account, who declares tax) signed before anything goes on sale; (3) how many old students he messages in week 1 + the first-sale date he commits to. ==No signup by Thu Oct 15 → buy no Stream storage; his Friday is his delay.==

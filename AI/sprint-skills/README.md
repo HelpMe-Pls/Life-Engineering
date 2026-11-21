@@ -38,7 +38,7 @@ The installer says which of these the machine lacks.
 
 - **Sign-ins:** Claude Code, `gh auth login`, the Claude in Chrome extension, and the sites a card needs.
 - **The clones** under `Documents/Repos/Edge8` (or `--repos <folder>`).
-- **The sprint pages** under `Documents/Edge8` (or `--edge8 <folder>`): the folders Tickets, Sprint review, Scopes, AFK and HITL. No repository holds them. Copy only those folders.
+- **The sprint pages** under `Documents/Edge8` (or `--edge8 <folder>`): the folders Tickets, Sprint review, Scopes, AFK and HITL. No repository holds them. Copy only those folders. Files made for other people go in `Documents/Edge8/Deliverables`, one folder per topic.
 - **Tools:** git, fnm, Docker Desktop, and the transcriber that `skills/sprint-summary-tickets/SETUP.md` describes.
 - **Permission rules.** The package holds no allow list and no auto-mode rule, because those are personal. `--unattended` turns on auto mode. You write the rules that say where a session may merge. Without them a session leaves each pull request open for you.
 

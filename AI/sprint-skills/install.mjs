@@ -485,7 +485,7 @@ function machineChecks(ctx, env) {
   else say('TODO', `/sprint-summary-tickets turns a recording into text with its own Python and ffmpeg: ${setup} says how to prepare them`);
   const memory = P.join(ctx.home, '.claude', 'projects', ctx.slug, 'memory');
   if (fs.existsSync(memory)) say('PASS', `Claude's notes for the recordings folder are at ${memory}`);
-  else say('TODO', `/sprint-review-prep reads Claude's notes for the recordings folder (${ctx.captures}). They are on the PC the skills were written on only: copy its memory folder to ${memory}. Without them the skill goes on and records each note as missing`);
+  else say('NOTE', `Claude has no notes for the recordings folder yet (${memory}). Nothing to do: the skills make them as you use them`);
 }
 
 const VALUE_FLAGS = ['--home', '--owner', '--github', '--email', '--edge8', '--repos', '--captures'];

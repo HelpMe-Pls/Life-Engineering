@@ -1,42 +1,45 @@
 # The TODOs
-### 16/11
-- [x] EO:
-	- [x] Send the message
-	- [x] Run `/sprint-review-prep`
-- [x] Venture: EP e2e
-- [x] Tao Te Ching++
-- [x] Live up to your standards
-### 17/11
+### 23/11
+- [ ] EO:
+	- [ ] Send the EOVN email & bug report
+	- [ ] Send Thành the trigger work
+	- [ ] Rehearse the sprint review
+	- [ ] Update & send the sprint report 
+- [ ] Venture
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 24/11
 - [x] EO weekly report
 	- [x] Rehearse the sprint review
 	- [x] Update & send the sprint report 
 - [x] Venture++
 - [x] Tao Te Ching++
 - [x] Live up to your standards
-### 18/11
-- [x] EO sprint review with Opus Max ultra:
-	- [x] Record & summarize the meeting
-	- [x] Run `/sprint-afk-prep` with Calgary's context
+### 25/11
+- [ ] EO sprint review with Opus Max ultra:
+	- [ ] Record & summarize the meeting
+	- [ ] Run `/sprint-afk-prep` 
+	- [ ] Old Infant meeting
 - [ ] Venture++
-- [x] ACB card & question about your available balance
-- [x] Tao Te Ching++
-- [x] Live up to your standards
-### 19/11
-- [x] EO minimal work:
-	- [x] AFK++
-	- [x] Drain Claude quota (with research)
-	- [x] AIO coaching session → Remind the Old Infant
-- [x] Grep enduro bike rent
+- [ ] ACB card & question about your available balance
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 26/11
+- [ ] EO minimal work:
+	- [ ] AFK++
+	- [ ] Drain Claude quota (with research)
+	- [ ] AIO coaching session → Remind the Old Infant
+- [ ] Grep enduro bike rent
 - [ ] Venture++
-- [x] Tao Te Ching++
-- [x] Live up to your standards
-### 20/11
+- [ ] Tao Te Ching++
+- [ ] Live up to your standards
+### 27/11
 - [ ] EO minimal work Opus Low
 	- [ ] AFK++ 
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
-### 21/11
+### 28/11
 - [ ] Perfect dive start + 500m
 - [ ] Hefty breakfast
 - [ ] Groceries
@@ -47,8 +50,9 @@
 - [ ] Splurge (if you're done with EP HITL)
 - [ ] Weekly planning (including EO tickets)
 	- [ ] Wrap up all HITL tasks
-- [ ] Venture++
-	- [ ] Long vol
+	- [ ] Craft the confrontation
+- [x] Venture++
+	- [x] Long vol
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 # What a good day looks like
@@ -86,6 +90,7 @@ One row every Sunday, numbers and dashes only — words go under "Notes to the c
 | 2026-11-01 | ~10 | NO   | 3/0/0/0         | -/-/-         | 1    | -      |
 | 2026-11-08 | ~10 | NO   | 3/0/0/0         | -/-/-         | 1    | -      |
 | 2026-11-15 | ~10 | NO   | 3/0/0/0         | -/-/-         | 1    | F-03 pending: e2e check Sun Nov 15, then the read |
+| 2026-11-22 | ~10 | NO   | 3/0/0/0         | -/-/-         | 1    | F-03 read 0 → graveyard, held to Dec 16 (R-22) |
 
 > [!abstract]- Column key (Σ = running total · `-` not live · `0` live, nothing happened · `_` fill on Sunday)
 > - **hrs** = all venture hours this week (20 = the ceiling)
@@ -114,6 +119,7 @@ One row per post read or bid on, from Oct 9 — ==log every post you read, not o
 | 2026-11-01 | 34     | 9      | 0         | 0       | 8           | 1                 | 5          | 3            | 9        | 8     |
 | 2026-11-08 | 37     | 12     | 0         | 0       | 8           | 1                 | 5          | 3            | 12       | 8     |
 | 2026-11-15 | 43     | 15     | 0         | 0       | 9           | 1                 | 5          | 3            | 17       | 8     |
+| 2026-11-22 | 47     | 18     | 0         | 0       | 11          | 2                 | 5          | 3            | 17       | 9     |
 
 **The log — newest row at the bottom:**
 
@@ -162,6 +168,10 @@ One row per post read or bid on, from Oct 9 — ==log every post you read, not o
 | 2026-11-14 | https://www.upwork.com/jobs/~022121309467495861705 | Stape server-side GTM | tracking |  |  | N | N | N |  | skipped: required city, camera-on screenshare and speedtest screenshot |
 | 2026-11-14 | - | GA4 analysis | tracking |  | 26 | N | N | N |  | skipped: 26 Connects |
 | 2026-11-14 | - | AI automation workflow | agent-build |  | 26 | N | N | N |  | skipped: 26 Connects |
+| 2026-11-21 | https://www.upwork.com/jobs/~022124103081850270703 | Wix Developer Needed — Simple Dubai Cost of Living Calculator with Claude API | agent-build | $175 | 14 | Y | N | N |  | "a 'Can You Afford Dubai?' calculator… Claude will provide a short personalised explanation" · UAE, payment verified, 5.0 on 3 reviews, $826 spent · bid Sat Nov 21 at $175 fixed, < 1 month, no boost, proposal 2124116498532708353 |
+| 2026-11-21 | https://www.upwork.com/jobs/~022124062718925143050 | Need Claude Code Specialist to Build AI Automation for Our Shopify Store | claude-code-setup | $610 | 23 | Y | N | N |  | "build the solution using the Claude API together with the Shopify Admin API and webhooks" · Saudi Arabia, 5.0 on 4 reviews, all 4 hires the same freelancer at $3/h · bid Sat Nov 21 at $610 fixed, no boost, proposal 2124116838862159873 |
+| 2026-11-21 | https://www.upwork.com/jobs/~022124054335939697310 | AI Agent Developer to Build a Customer Support Triage Agent (LLM + Email) | agent-build | $350 | 16 | Y | N | N |  | "orchestrated in n8n, with Claude as the model behind it" · India, 5.0 on 3 reviews, "lowest rates", 50+ proposals · opened with "Trailhead" as asked · bid Sat Nov 21 at $350 fixed, no boost, proposal 2124117545310011393 |
+| 2026-11-21 | https://www.upwork.com/jobs/~022123907532404823694 | Expert AI Agent Developer – Autonomous Lead Generation & Luxury Sales Automation (Claude AI) | other | hourly | 26 | N | N | N |  | skipped: the body is a real-time voice-latency specialist, 30+ h/wk, 4 interviewing, Vietnam not in preferred locations |
 
 ## Calendar — the 8 dates (put each in your calendar app with the Sunday it is read on)
 1. Sun Nov 1 2026 — demo repo shipped (a target; slipped from Oct 25 on 2026-10-11); its link goes into every proposal from then on
@@ -254,6 +264,11 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07).
 - **EP instructor path PASSED by Claude, Mon Nov 16 (supersedes "(2) instructor: FAILED" above):** fixes live on prod via PRs #281–#286 (schema z.union; Stream token, account id, customer id; TUS chunkSize 50 MiB — without it a big file failed at "tus: failed to upload chunk at offset 0"). Stream quota was full (413, 1200/1000 min) from pending probe slots; 6 deleted. In Chrome as an instructor: 3.26 GB / 34 min video uploaded through the lesson's Upload Video box in ~20 min → saved to the lesson → Stream processing; 10 s video plays through the signed player on the lesson page; course published → "Khóa demo" listed on /courses → set back to Draft → gone from /courses. Still open: (1) buyer path blocked on Khoi (PayOS webhook URL, non-owner signup, 2.000 ₫ payment); (3) sellable: no priced public course with a video yet; app shows only "Failed to create upload." when Stream storage is full (small fix, not done). Onboarding HTML not written: not every path passed.
 - **EP status by Claude, Mon Nov 16 (definitive): buyer PASSED, instructor PASSED, sellable PASSED (as a test course), F-03 count 0.** Buyer: student hohcheeming6996@gmail.com paid 2.000 ₫ by PayOS QR (D1 payment 20 "paid"), enrollment 9 in Test Payment appeared, receipt email arrived 2:49 PM, the course opens ("Học tiếp") and the 10 s video plays for the student (Khoi copied it into Test Lesson in D1, content_items 22). Fixes shipped: #287/#288 honest "Video storage is full" message; #289/#290 Clerk webhook moves an old users row to a new Clerk ID when the email matches (the student's sign-up failed on UNIQUE(email) with an old row 19; Khoi also relinked row 19 by hand). Row 19 still holds an older paid 2.000 ₫ payment 18 with no enrollment (cause unknown, pre-fix). Onboarding page written: docs/onboarding/instructor.html (#291/#292). F-03: paid enrollments from someone not Khoi, the instructor or a test = 0.
 - **Cut run Nov 16:** skipped pages 6, 7 → filled Nov 16
+#### Nov 21st, 2026
+- **Week 7's 3 proposals, sent Sat Nov 21 by Claude in Khoi's Chrome, each text approved by Khoi:** Wix Dubai calculator + Claude API ($175 fixed, 14 Connects), Shopify Claude Code automation ($610 fixed, 23), support triage agent n8n + Claude ($350 fixed, 16). No boost. 40 Connects bought for $6.60 ($6.00 + $0.60 tax, Visa 4071); the balance was 17, not the 3 in `## NOW`; 4 left. Skipped: the lead-gen voice post (26 Connects, not a fit).
+- **Text post 5 went out Sat Nov 21 (published by Claude in Khoi's Chrome, on his "post it"):** https://x.com/curiousKhoi/status/2124118191513448747
+- **Replies:** 0 (browser, Upwork Messages, 19:39).
+- **Sunday read done Sat Nov 21:** Governor clear (NO, NO), F-02 met (3 bids + post 5), no Signals, block unchanged (Upwork replies, hold to F-04 Dec 7).
 # Backlog
 - [Learn about animations](https://animations.dev/learn/animation-theory/intro)
 - [Learn to be an AI Engineer](https://www.aihero.dev/ai-engineer-roadmap)
