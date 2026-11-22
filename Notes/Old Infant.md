@@ -1,6 +1,6 @@
 # Old Infant (the boss)
 
-Dave (D.H. in Lark, dave@edge8.ai), founder of [[Money]], codename Old Infant. Full signing authority: HR's number is his number. Short-tempered, fragile ego, cannot be the reason for anything, still codes himself. His mood IS the money. Thu/Fri are offsite days, rushed. Engineers he name-drops: Thanh, Ha, Khoa.
+Dave, codename Old Infant. Full signing authority: HR's number is his number. Short-tempered, fragile ego, cannot be the reason for anything, still codes himself. His mood IS the money. Engineers he name-drops: Michael, Khoa.
 
 Source: Claude's memory files `old-infant-handling`, `edge8-comp-negotiation-aug-2026`, `khoi-negotiation-style-prefs` (copied here 22 Nov 2026). Related vault notes: [[1-1 Playbook]], [[1-1 Bench]], [[dave-is-the-boss]], [[dave-13-oct-three-asks]], [[dave-card9-ask]].
 

@@ -61,12 +61,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/Money.md",
+                    "file": "Notes/Old Infant.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Money"
+                  "title": "Old Infant"
                 }
               }
             ],
@@ -296,10 +296,11 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "71262b55b0f9f46c",
+  "active": "a31910d6c3ede185",
   "lastOpenFiles": [
-    "AI/With Claude Code.md",
     "Notes/Money.md",
+    "Notes/day job/claude/memory-global-hubspot/dave-is-the-boss.md",
+    "AI/With Claude Code.md",
     "Notes/Daily Standup.md",
     "Notes/Edge8.md.tmp.40928.9a25d1e9e183",
     "Notes/Old Infant.md",
@@ -333,7 +334,6 @@
     "AI/sprint-afk-prep/SKILL.md",
     "AI/sprint-review-prep/SKILL.md",
     "AI/validate-biz-idea.md",
-    "Notes/Venture Tasks.md",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",
