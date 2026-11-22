@@ -3,5 +3,5 @@
 [[Weekly Tasks]]
 [[2025]]
 [[2026]]
-[[Edge8]]
+[[Money]]
 [[Biz]]

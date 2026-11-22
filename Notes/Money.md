@@ -1,0 +1,11 @@
+# Notes
+[[Daily Standup]]
+[[HubSpot]]
+[[Old Infant]]
+[[1-1 Playbook]]
+[[1-1 Bench]]
+[[dave-is-the-boss]]
+[[dave-13-oct-three-asks]]
+[[dave-card9-ask]]
+![[M4 Key-1.png]]
+![[M4 Key-2.png]]

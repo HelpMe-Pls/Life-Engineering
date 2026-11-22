@@ -61,15 +61,16 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "AI/Claude Code Skill Playbook.md",
+                    "file": "Notes/Money.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Claude Code Skill Playbook"
+                  "title": "Money"
                 }
               }
-            ]
+            ],
+            "currentTab": 3
           },
           {
             "id": "8cedd05142699eb5",
@@ -181,7 +182,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Edge8",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -295,9 +296,14 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "03418aa526fdbc06",
+  "active": "71262b55b0f9f46c",
   "lastOpenFiles": [
+    "AI/With Claude Code.md",
+    "Notes/Money.md",
     "Notes/Daily Standup.md",
+    "Notes/Edge8.md.tmp.40928.9a25d1e9e183",
+    "Notes/Old Infant.md",
+    "AI/Claude Code Skill Playbook.md",
     "Notes/Weekly Tasks.md",
     "Notes/Daily Standup.md.tmp.11908.be2253b7b7f2",
     "Notes/Weekly Tasks.md.tmp.11908.da6454d52778",
@@ -314,12 +320,9 @@
     "AI/sprint-skills/skills/sprint-afk-prep/SKILL.md",
     "AI/sprint-skills/skills/sprint-summary-tickets/SKILL.md",
     "AI/sprint-skills/skills/sprint-summary-tickets/SETUP.md",
-    "AI/sprint-skills/skills/sprint-summary-tickets/render-check.js",
     "AI/sprint-skills/docs/reader-facing-docs.md",
     "AI/sprint-skills/docs/claude-md-block.md",
     "AI/sprint-skills/README.md",
-    "AI/Claude Code Skill Playbook.md",
-    "AI/With Claude Code.md",
     "Notes/strength-research/protocol.md",
     "Tips & Tools/English vocab.md",
     "AI/sprint-summary-tickets/SETUP.md",
@@ -331,7 +334,6 @@
     "AI/sprint-review-prep/SKILL.md",
     "AI/validate-biz-idea.md",
     "Notes/Venture Tasks.md",
-    "Notes/day job/claude/memory-global-hubspot/batch-2026-07-02-merged-promotion-200-pending.md",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",
