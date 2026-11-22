@@ -32,13 +32,13 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/strength-research/protocol.md",
+                    "file": "AI/With Claude Code.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": false
                   },
                   "icon": "lucide-file",
-                  "title": "protocol"
+                  "title": "With Claude Code"
                 }
               },
               {
@@ -47,29 +47,16 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Tips & Tools/English vocab.md",
+                    "file": "Notes/strength-research/protocol.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "English vocab"
-                }
-              },
-              {
-                "id": "a31910d6c3ede185",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "AI/Claude Code Skill Playbook.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Claude Code Skill Playbook"
+                  "title": "protocol"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -85,10 +72,28 @@
                     "id": "aef28ecae7a82a78",
                     "type": "leaf",
                     "state": {
-                      "type": "graph",
-                      "state": {},
-                      "icon": "lucide-git-fork",
-                      "title": "Graph view"
+                      "type": "markdown",
+                      "state": {
+                        "file": "Notes/Edge8.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "Edge8"
+                    }
+                  },
+                  {
+                    "id": "e232dbe8dc89d9cb",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Notes/Business Bank.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "Business Bank"
                     }
                   }
                 ]
@@ -113,7 +118,7 @@
                     }
                   },
                   {
-                    "id": "19b3490e297a9cfa",
+                    "id": "03418aa526fdbc06",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
@@ -127,7 +132,7 @@
                     }
                   },
                   {
-                    "id": "03418aa526fdbc06",
+                    "id": "9b9ab17c16c89870",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
@@ -181,7 +186,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "R-20",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -206,7 +211,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 208
+    "width": 237.3046875
   },
   "right": {
     "id": "82a9e7d6600420b4",
@@ -295,43 +300,43 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "03418aa526fdbc06",
+  "active": "aef28ecae7a82a78",
   "lastOpenFiles": [
-    "Notes/Daily Standup.md",
     "Notes/Weekly Tasks.md",
-    "Notes/Daily Standup.md.tmp.11908.be2253b7b7f2",
-    "Notes/Weekly Tasks.md.tmp.11908.da6454d52778",
-    "AI/sprint-skills/skills/sprint-review-prep/SKILL.md",
-    "AI/long-vol-consultant/setup.sh.tmp.51400.839f76f28281",
-    "AI/long-vol-consultant.md.tmp.51400.d7a44b39b20c",
-    "AI/long-vol-consultant.md.tmp.51400.896ba5920a0b",
-    "AI/long-vol-consultant.md.tmp.51400.dc2d80cde48e",
-    "Notes/Daily Standup.md.tmp.51400.b4b66aca1eeb",
-    "AI/sprint-skills/skills/sprint-summary-tickets/SETUP.md.tmp.51400.3e81c8e949a6",
+    "AI/With Claude Code.md",
     "AI/sprint-skills/skills/sprint-summary-tickets/transcribe.py",
+    "AI/sprint-skills/skills/sprint-summary-tickets/render-check.js",
+    "AI/sprint-skills/skills/sprint-summary-tickets/page-check.js",
     "AI/sprint-skills/skills/sprint-summary-tickets/TICKETS.md",
     "AI/sprint-skills/skills/sprint-summary-tickets/SUMMARY.md",
-    "AI/sprint-skills/skills/sprint-afk-prep/SKILL.md",
     "AI/sprint-skills/skills/sprint-summary-tickets/SKILL.md",
     "AI/sprint-skills/skills/sprint-summary-tickets/SETUP.md",
-    "AI/sprint-skills/skills/sprint-summary-tickets/render-check.js",
-    "AI/sprint-skills/docs/reader-facing-docs.md",
+    "AI/sprint-skills/skills/sprint-review-prep/SKILL.md",
+    "AI/sprint-skills/skills/sprint-afk-prep/SKILL.md",
+    "AI/sprint-skills/skills/sprint-summary-tickets",
+    "AI/sprint-skills/skills/sprint-review-prep",
+    "AI/sprint-skills/skills/sprint-afk-prep",
+    "AI/sprint-skills/hooks/no-cd-compound.mjs",
+    "AI/sprint-skills/hooks/ensure-chrome.mjs",
+    "AI/sprint-skills/hooks/compact-reread.mjs",
     "AI/sprint-skills/docs/claude-md-block.md",
+    "AI/sprint-skills/docs/reader-facing-docs.md",
+    "AI/sprint-skills/extras/tickets-helper.pyw",
     "AI/sprint-skills/README.md",
     "AI/Claude Code Skill Playbook.md",
-    "AI/With Claude Code.md",
     "Notes/strength-research/protocol.md",
-    "Tips & Tools/English vocab.md",
-    "AI/sprint-summary-tickets/SETUP.md",
-    "AI/sprint-summary-tickets/TICKETS.md",
-    "AI/sprint-summary-tickets/SUMMARY.md",
-    "AI/sprint-summary-tickets/SKILL.md",
-    "Tips & Tools/English grammar.md",
-    "AI/sprint-afk-prep/SKILL.md",
     "AI/sprint-review-prep/SKILL.md",
-    "AI/validate-biz-idea.md",
+    "AI/sprint-afk-prep/SKILL.md",
+    "README.md",
     "Notes/Venture Tasks.md",
-    "Notes/day job/claude/memory-global-hubspot/batch-2026-07-02-merged-promotion-200-pending.md",
+    "settled-decision-must-be-un-said-in-both-places.md",
+    "e2e-ci-single-worker-constraint.md",
+    "Notes/day job/claude/memory-global-hubspot/MEMORY.md",
+    "Books/Books.md",
+    "Notes/2026.md",
+    "Notes/Daily Standup.md",
+    "Notes/day job/Edge8/AFK/Start/Sprint Tickets [Y26 Sprint 43] AFK prompt.md",
+    "Notes/day job/claude/memory-global-hubspot/write-edit-normalise-unicode-escapes.md",
     "Notes/stakeholder-mobile-top.png",
     "Notes/stakeholder-full-dark.png",
     "Notes/stakeholder-full-default.png",
