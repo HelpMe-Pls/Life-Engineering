@@ -3,7 +3,7 @@
 - [ ] EO:
 	- [ ] Send the EOVN email & bug report
 	- [ ] Send Thành the trigger work
-	- [ ] Rehearse the sprint review
+	- [ ] Craft the confrontation
 	- [ ] Update & send the sprint report 
 - [ ] Venture
 - [ ] Tao Te Ching++
@@ -19,9 +19,9 @@
 - [ ] EO sprint review with Opus Max ultra:
 	- [ ] Record & summarize the meeting
 	- [ ] Run `/sprint-afk-prep` 
-	- [ ] Old Infant meeting
+	- [ ] Old Infant meeting?
+	- [ ] Send the team the skillset?
 - [ ] Venture++
-- [ ] ACB card & question about your available balance
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 ### 26/11
