@@ -1,5 +1,7 @@
 > [!info] What this file is
-> The MOVES file beneath [[This is it]] (the LAW) and [[Weekly Tasks]] `# Venture` (the SCHEDULE). `## NOW
+> The MOVES file beneath [[This is it]] (the LAW) and [[Weekly Tasks]] `# Venture` (the SCHEDULE). `## NOW` is embedded there.
+
+## NOW
 **Sun Nov 22 2026 · P1 Stranger dollar · week 8 of 13 running: Mon Nov 23 → Sun Nov 29**
 **Next gate:** Mon Dec 7 (F-04) in 15 days — ≥1 reply from ≤35 proposals. Have: 0 replies from 18.
 **Also ticking:** Wed Jan 6 (F-05, 45 d) a stranger's money in ACB · Wed Dec 16 Stream expires (EP pitch window ends).
