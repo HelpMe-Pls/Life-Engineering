@@ -1,8 +1,8 @@
 # The TODOs
 ### 23/11
-- [ ] EO:
+- [x] EO:
 	- [ ] Send the EOVN email & bug report
-	- [ ] Send Thành the trigger work
+	- [x] Send Thành the trigger work
 	- [ ] Rehearse the sprint review
 	- [ ] Update & send the sprint report 
 - [ ] Venture
@@ -20,6 +20,7 @@
 	- [ ] Record & summarize the meeting
 	- [ ] Run `/sprint-afk-prep` 
 	- [ ] Old Infant meeting
+	- [ ] Ping Trọng
 - [ ] Venture++
 - [ ] ACB card & question about your available balance
 - [ ] Tao Te Ching++
