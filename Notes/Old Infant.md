@@ -36,6 +36,7 @@ Bait = an editorial with no question mark, a verdict word ("not acceptable", "wa
 - **"Not sure where the disconnect is"** → never explain; echo his priority ("Agreed, X is the only priority now") and give dates.
 - **Usage or cost question** ("what are you coding that takes so much?") → what it does for the team plus the one big run; never the method, never "my own tasks".
 - **Pressure from above** ("board", "contract in jeopardy") → echo his word ("blocker", "only priority"), never say whose job it is, never argue his premise, timebox a status.
+- **He reassigns you** ("I'm going to move you off X") → yes to the direction, never to a start date in text; in the room tie the start to a date he already owns (the insurance record), one priority his to set, the new bar for "exceptional" in his words in the recap.
 - **The hook test:** the urge to explain, prove you were right, or correct him = the trap. Cut those sentences. Never reply within 60 s of reading bait while angry.
 
 ## Levers

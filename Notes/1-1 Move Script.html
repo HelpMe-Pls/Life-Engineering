@@ -1,0 +1,2294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1-1 Move Script</title>
+    <style>
+      /* House style of sprint-40-review.html in this folder. */
+      :root {
+        --ink: #0f1626;
+        --sub: #5b6478;
+        --line: #e4e7ef;
+        --al: #2454c7;
+        --soft: #f4f6fb;
+        --now: #eef3ff;
+        --flag-bg: #fff6e5;
+        --flag-line: #f0d38a;
+        --mono: "Cascadia Mono", Consolas, ui-monospace, Menlo, monospace;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #fff;
+        color: var(--ink);
+        font-family:
+          "Inter",
+          "Segoe UI",
+          -apple-system,
+          sans-serif;
+        line-height: 1.5;
+        font-size: 13.5px;
+      }
+      .wrap {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 44px 32px 60px;
+      }
+      h1 {
+        font-size: 23px;
+        font-weight: 800;
+        margin: 0 0 4px;
+      }
+      .meta {
+        color: var(--sub);
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+      .jump {
+        font-size: 12px;
+        font-weight: 600;
+        display: flex;
+        gap: 14px;
+        margin-bottom: 6px;
+      }
+      .jump a {
+        color: var(--al);
+        text-decoration: none;
+      }
+      .jump a:hover {
+        text-decoration: underline;
+      }
+      h2 {
+        font-size: 13px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        color: var(--al);
+        margin: 26px 0 8px;
+      }
+      h2 .aside {
+        font-weight: 600;
+        text-transform: none;
+        letter-spacing: 0;
+        color: var(--sub);
+      }
+      p {
+        margin: 0 0 10px;
+      }
+      ul {
+        margin: 0 0 10px;
+        padding-left: 18px;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+      a {
+        color: var(--al);
+      }
+      button:focus-visible,
+      a:focus-visible,
+      summary:focus-visible {
+        outline: 2px solid var(--al);
+        outline-offset: 2px;
+      }
+      code {
+        font: 12px/1.5 var(--mono);
+      }
+      .part {
+        margin-top: 34px;
+      }
+      .part-title {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 8px 16px;
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: 6px;
+      }
+      .part-title h1 {
+        font-size: 19px;
+        margin: 0;
+      }
+      .btn {
+        background: var(--soft);
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 6px 11px;
+        font:
+          600 12px/1.2 "Inter",
+          "Segoe UI",
+          -apple-system,
+          sans-serif;
+        color: var(--ink);
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      .btn:hover {
+        border-color: #c9cfdc;
+      }
+      .bar {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px 16px;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .clock {
+        font-size: 22px;
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+        line-height: 1;
+      }
+      .clock .aim {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--sub);
+      }
+      .clock.late .elapsed {
+        color: #b45309;
+      }
+      .clock.over .elapsed {
+        color: #b42318;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      .box {
+        background: var(--soft);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 12px 14px;
+      }
+      .box p:last-child,
+      .box ul:last-child {
+        margin-bottom: 0;
+      }
+      .dec {
+        background: var(--flag-bg);
+        border: 1px solid var(--flag-line);
+        border-radius: 8px;
+        padding: 10px 14px;
+        font-size: 12.8px;
+        color: #7a4405;
+      }
+      .dec ul {
+        margin: 0;
+      }
+      .dec li:last-child {
+        margin-bottom: 0;
+      }
+      .dec b {
+        color: #5f3403;
+      }
+      .small {
+        font-size: 12.5px;
+        color: var(--sub);
+      }
+      .grp {
+        border-top: 1px solid var(--line);
+        margin: 0 -10px;
+        padding: 14px 10px;
+        border-radius: 6px;
+      }
+      /* The first Extra after the last timed group: a dark rule marks where the script ends. */
+      .script-body > .grp[data-t] + .grp:not([data-t]) {
+        border-top: 3px solid var(--ink);
+        border-radius: 0;
+        margin-top: 10px;
+      }
+      .grp:first-child {
+        border-top: 0;
+      }
+      .grp.now {
+        background: var(--now);
+      }
+      .blk + .blk {
+        margin-top: 14px;
+      }
+      .head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px 10px;
+        margin-bottom: 6px;
+      }
+      .tc {
+        font-size: 12px;
+        font-weight: 800;
+        color: var(--sub);
+        font-variant-numeric: tabular-nums;
+        min-width: 32px;
+      }
+      .cue {
+        font: 600 12.5px/1.4 var(--mono);
+        color: var(--al);
+        background: var(--soft);
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 4px 9px;
+      }
+      .line {
+        font-size: 16.5px;
+        line-height: 1.6;
+        margin: 0 0 6px;
+        max-width: 66ch;
+      }
+      .line:last-child {
+        margin-bottom: 0;
+      }
+      table.win {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 6px 0 2px;
+        font-size: 12.8px;
+      }
+      table.win th,
+      table.win td {
+        text-align: left;
+        vertical-align: top;
+        padding: 6px 8px;
+        border-bottom: 1px solid var(--line);
+      }
+      table.win th {
+        font-size: 11.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        color: var(--sub);
+      }
+      .report .sec {
+        margin-top: 18px;
+      }
+      .report h3 {
+        font-size: 14px;
+        font-weight: 800;
+        margin: 0 0 4px;
+      }
+      .report h4 {
+        font-size: 11.5px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        color: var(--sub);
+        margin: 8px 0 3px;
+      }
+      .report ul {
+        margin-bottom: 4px;
+      }
+      details {
+        margin-top: 18px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--soft);
+      }
+      summary {
+        cursor: pointer;
+        padding: 10px 14px;
+        font-weight: 700;
+        font-size: 12.5px;
+      }
+      summary .small {
+        font-weight: 400;
+      }
+      .raw {
+        margin: 0;
+        padding: 12px 14px;
+        border-top: 1px solid var(--line);
+        background: #fff;
+        border-radius: 0 0 8px 8px;
+        overflow-wrap: anywhere;
+      }
+      pre.raw {
+        font: 12px/1.55 var(--mono);
+        white-space: pre-wrap;
+      }
+      .prompt-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px 14px;
+        margin-top: 14px;
+      }
+      .prompt-head p {
+        flex: 1 1 320px;
+        margin: 0;
+      }
+      #draft-prompt {
+        overflow-wrap: anywhere;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 10px 12px;
+        margin: 8px 0 0;
+      }
+      .preview ol,
+      .preview ul {
+        margin: 0;
+        padding-left: 22px;
+      }
+      .preview > ol > li {
+        margin: 10px 0 0;
+      }
+      .preview li {
+        margin-bottom: 2px;
+      }
+      .offscreen {
+        position: fixed;
+        left: -10000px;
+        top: 0;
+        width: 800px;
+      }
+      footer {
+        margin-top: 30px;
+        font-size: 10.5px;
+        color: var(--sub);
+      }
+      @media (max-width: 600px) {
+        .wrap {
+          padding: 28px 16px 48px;
+        }
+        .line {
+          font-size: 15.5px;
+        }
+      }
+      @media print {
+        .bar,
+        .btn {
+          display: none;
+        }
+        .grp.now {
+          background: none;
+        }
+      }
+    </style>
+    <style>
+      .jump{flex-wrap:wrap;gap:6px 14px}
+      .grp[id],h2[id],section[id]{scroll-margin-top:104px}
+      pre.copybox{font:12px/1.55 var(--mono);white-space:pre-wrap;overflow-wrap:anywhere;background:#fff;border:1px solid var(--line);border-radius:6px;padding:10px 12px;margin:8px 0 6px}
+      .lead{font-size:14.5px;margin:10px 0 12px}
+      .warn{margin:12px 0 14px}
+      .warn p{margin:0 0 6px}
+      .warn p:last-child{margin:0}
+      .box li,.dec li{margin-bottom:5px}
+      table.win td,table.win th{overflow-wrap:anywhere}
+      table.route td:first-child{width:62%}
+      table.rests td:first-child{width:30%}
+      table.law td:first-child{width:24%}
+      table.law td:last-child{width:24%}
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Script for the 1:1 with Dave about the move off EO</h1>
+      <div class="meta">
+        Mon 23 Nov 2026 · Khoi · aim 15:55, limit 30:00 · online, camera on,
+        nothing screen-shared
+      </div>
+      <p class="lead">
+        Last week Dave told you on Lark that he is moving you off the EO project
+        to work next to Khoa and Michael. This page is what you say in the 1:1
+        that follows. You say yes to the move. You tie its start to the day your
+        insurance record shows complete in VssID, the social insurance agency's
+        app. You work remote and on the build, on one priority at a time that he
+        sets. His own words for "exceptional" go in the recap. Each point rests
+        on something he already said or signed, so a no means that he argues
+        with his own words.
+      </p>
+      <p>
+        Where it stands: he has named no start date and no project yet, and he
+        waits for your plan for the open EO items.
+      </p>
+      <div class="dec warn">
+        <p>
+          <b
+            >A flat no to a dated order can bring you a second warning
+            letter.</b
+          >
+        </p>
+        <p>
+          Dave can turn the move into an order with a start date in this call.
+          Claude's law check of 23 Nov found no text that lets you refuse work
+          inside your job because the insurance is unpaid, so a no in the room
+          could be read as a refusal. A second letter would add to the paper
+          record. The law lets an employer end a contract for work often left
+          undone only by criteria in its own written rules, and whether a
+          letter counts under those rules is not known. This can happen in
+          this call.
+        </p>
+        <p>
+          <b>To stop this:</b> you never say no in the room. You say the exit
+          line in the last Extra, and you decide overnight between Hold and
+          Start, in After the call. That keeps a refusal off the record until
+          you choose it.
+        </p>
+      </div>
+      <div class="jump">
+        <a href="#before">Before the call</a><a href="#rests">What it rests on</a
+        ><a href="#watch">Watch out</a><a href="#route">If he says</a
+        ><a href="#script">Script</a><a href="#x-warm">Extras</a
+        ><a href="#after">After the call</a><a href="#law">The law</a>
+      </div>
+
+      <section class="part demo" id="demo" data-aim="955" data-limit="1800">
+        <div class="part-title">
+          <h1>
+            Script: yes to the move, and the start is the day the record is
+            complete
+          </h1>
+          <span class="small"
+            >Nine timed groups, then 17 Extras for what he may say. The marks
+            leave room for his answers, and the shaded group shows where the
+            plan is. The marks count your normal pace. At half speed the last
+            group ends near 16:45, so the clock turns amber while you say it,
+            and that is fine. Amber clock before the last group: you are past
+            the plan, so go to 15:00 at the next opening. Red clock: the slot
+            is over, so say the exit line in the last Extra.</span
+          >
+        </div>
+
+        <div class="bar">
+          <div class="clock" role="timer" aria-live="off">
+            <span class="elapsed">0:00</span>
+            <span class="aim">aim 15:55 · limit 30:00</span>
+          </div>
+          <div class="actions">
+            <button type="button" class="btn timer-toggle">Start</button>
+            <button type="button" class="btn timer-reset">Reset</button>
+            <button type="button" class="btn" data-copy="script">
+              Copy script
+            </button>
+          </div>
+        </div>
+
+        <h2 id="before">
+          Before the call, the plan goes in the chat
+          <span class="aside">· today, Mon 23 Nov</span>
+        </h2>
+        <div class="box">
+          <ul>
+            <li>
+              <div class="prompt-head">
+                <p>
+                  <b>The report, then the slot message, both today.</b> If the
+                  EO report you promised for Monday morning has not gone out,
+                  send it now. You told Dave "let's catch up on Monday", so
+                  send this slot message today, Mon 23 Nov, right after the
+                  report. Finish the rest of this list tonight. If he answers
+                  "now", reply "Works. The plan is in this chat in 30 minutes,
+                  then I'm on." The slot message says nothing about the three
+                  things. If Monday has passed, finish the list first, because
+                  he may pick a slot within minutes. Then write "slept on it a
+                  day longer than I said" in place of "slept on it", and before
+                  17:00 write "later today or tomorrow" in place of "tomorrow".
+                </p>
+                <button type="button" class="btn" data-copy-prompt="slot-msg">
+                  Copy slot message
+                </button>
+              </div>
+              <pre class="copybox" id="slot-msg">
+Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the plan for the open EO items in this chat before we talk. 30 minutes covers that and how to set up the move, any slot you pick tomorrow.</pre
+              >
+            </li>
+            <li>
+              <b>The plan in the chat.</b> Before the call starts, post one line
+              for each open EO item with its date, and the day Thanh gets the
+              handover. Dave asked for this plan last week, and it ends his
+              thread. The shape of a line: "&lt;item&gt; done by &lt;day and
+              date&gt;". The last line: "Thanh has the handover notes by &lt;day
+              and date&gt;". If the handover cannot be ready before the
+              Wednesday meeting on 25 Nov, write the day it will be.
+            </li>
+            <li>
+              <b>Three lines of the signed contract.</b> Read the job line, the
+              workplace line and the insurance clause. If the workplace line
+              does not say remote, cut "The contract has me remote" in the
+              Extra on client meetings. If the insurance clause has no
+              end-of-2026 date, skip the year-end line at 7:30. Your note of 28
+              Sep records the end of 2026, and you told Claude on 23 Nov that he
+              gives no timeline when you raise it, so the clause settles it. If
+              the job line names EO or a narrower job, see the second row of
+              The law.
+            </li>
+            <li>
+              <b>VssID.</b> On the day of the call, open it, take a screenshot of the contribution
+              history, count the missing months, and keep the count on a sticky
+              note. Say the count only if he asks.
+            </li>
+            <li>
+              <b>If the record is already complete.</b> The third thing becomes
+              a thank-you. At 7:30 say only "Third, a clean start. VssID shows
+              the record complete as of today. Thank you for pushing
+              that through. So I start the day you set." Then go on at 11:00
+              and leave out "Same rule as the start." At 15:00 say "the day you
+              set" in place of "the day the record's complete", and leave out
+              the "Until then" line. In the recap, write "the day you set" in
+              place of "the day the insurance record shows complete in VssID",
+              and cut the rest of that sentence, from "and until then" to "both certs". Use the Extra "It's already
+              paid" only if he says it first.
+            </li>
+            <li>
+              <b>Certs.</b> The AI Officer and AI Engineer certs are due by 31
+              Dec. If both are done, leave out the certs at 7:30, at 15:00, in
+              the Extra on no EO work and in the recap.
+            </li>
+            <li>
+              <b>Your choice: the review question.</b> The script gets his
+              words for "exceptional" into the recap. It does not ask him to
+              tie them to your review. To ask, say "Is there any reason we
+              wouldn't go by that at your review?" at 12:30, after "That's what
+              I'll aim at from day one." It gains a spoken yes that ties the
+              bar to the review. It costs a pay topic inside a work talk, and
+              your note on Dave says that asking shows appetite and appetite
+              gets priced. It can also bring "we'll see". Recommended: leave it
+              out, and bring his words and your results to the review.
+            </li>
+            <li>
+              <b>Set-up.</b> Camera on. This page on the second screen. Nothing
+              screen-shared. Press Start when the call connects.
+            </li>
+            <li>
+              <b>Rehearse.</b> Say the nine timed groups out loud once with
+              Start running, at half speed.
+            </li>
+            <li>
+              <b>If he opens hot.</b> Give the plan only, then the exit line in
+              the last Extra. The three things move to a later day, Monday to Wednesday. Never raise
+              them on a day he blew up.
+            </li>
+            <li>
+              <b>A short slot.</b> With 15 minutes or less, say 0:00, then 3:30
+              up to "This is going to sound ungrateful", then 7:30 from
+              "There's one open item", then 15:00 with only "I start on the new
+              work the day the record's complete" and the "Until then" line.
+              Leave remote, one priority and the bar out of the recap, and end
+              it with "I'll bring the rest of the set-up to our next 1:1."
+              Start 15:00 by the time the clock shows 10:00.
+            </li>
+            <li>
+              <b>A late slot.</b> If Thanh already has the handover when you
+              talk, say "and the handover to Thanh is done" at 0:00, and leave
+              the handover to Thanh out at 7:30, at 15:00 and in the recap.
+            </li>
+          </ul>
+        </div>
+
+        <h2 id="rests">
+          Each point rests on his own words
+          <span class="aside">· never quoted back</span>
+        </h2>
+        <div class="box">
+          <table class="win rests">
+            <tr>
+              <th>The point</th>
+              <th>What it rests on</th>
+            </tr>
+            <tr>
+              <td><b>The start is the day the record is complete</b></td>
+              <td>
+                The contract's insurance clause. The weeks until then are
+                filled by what he already asked for: a plan for the open EO
+                items, Thanh taking over the Wednesday meeting, and the two
+                certs he made mandatory by 31 Dec.
+              </td>
+            </tr>
+            <tr>
+              <td><b>One priority at a time, his to set</b></td>
+              <td>
+                His Lark line: "If anything with Event brite comes back around
+                when Europe rolls out, then you can deal with it." And item 3 of
+                his letter: "Failure to return to work on EO when requested."
+              </td>
+            </tr>
+            <tr>
+              <td><b>Remote, on the build</b></td>
+              <td>
+                The contract's workplace line. Items 1 and 4 of his letter, on
+                your attention in client meetings and at the client lunch. His
+                Lark line: "Khoa and Michael are more experienced engineers."
+              </td>
+            </tr>
+            <tr>
+              <td><b>The bar for exceptional</b></td>
+              <td>
+                His two routes to a raise at the 28 Sep close: a new contract
+                about a year out, or exceptional work. And his Lark words for
+                the new projects: "really exciting".
+              </td>
+            </tr>
+          </table>
+          <p class="small">
+            The letter is the first formal warning letter, and its items keep
+            the letter's own numbers. You never quote any of this back. It is
+            why each point is safe to hold.
+          </p>
+        </div>
+
+        <h2 id="watch">Watch out: the warm boss gets the quick yes</h2>
+        <div class="dec">
+          <ul>
+            <li>
+              <b>The warm boss.</b> Kindness makes pushing feel like
+              ingratitude. Give no yes to a start date in the room unless the
+              record is part of it.
+            </li>
+            <li>
+              <b>A promise is not the record.</b> A date he says moves your
+              start date. It does not replace what VssID shows.
+            </li>
+            <li>
+              <b>Never split it.</b> Half the months, half your time, both
+              projects at once. Each one is the set-up that ended in the letter.
+            </li>
+            <li>
+              <b>Words you never say.</b> Owe, debt, withholding, illegal,
+              lawyer, condition, non-negotiable, or else, why, sorry, the
+              letter. Other people's insurance, the people who left, your lost
+              sleep. Say the record, the gap, the catch-up.
+            </li>
+            <li>
+              <b>The hook test.</b> The urge to explain, to prove you were right
+              or to correct him is the trap. Cut the sentence.
+            </li>
+            <li>
+              <b>Silence is yours.</b> Count four after each question and each
+              label. Do not fill it.
+            </li>
+            <li>
+              <b>When lost, mirror.</b> Say his last three words back as a
+              question, then count four.
+            </li>
+            <li>
+              <b>Threats are mood.</b> Answer the order, never the threat.
+            </li>
+            <li>
+              <b>Pay stays out.</b> Only the bar for exceptional, in his words.
+            </li>
+          </ul>
+        </div>
+
+        <h2 id="route">If he says this, go here</h2>
+        <div class="box">
+          <table class="win route">
+            <tr>
+              <th>He says</th>
+              <th>Go to</th>
+            </tr>
+            <tr>
+              <td>"Great, start Monday", before the three things</td>
+              <td>
+                <a href="#t-0330">3:30</a>, the line under its last cue, then
+                4:45
+              </td>
+            </tr>
+            <tr>
+              <td>"When do you start?" or a push for a date, later on</td>
+              <td><a href="#t-0730">7:30</a></td>
+            </tr>
+            <tr>
+              <td>"It's being handled" or "Yes or no?"</td>
+              <td><a href="#x-handled">Extra: it's being handled</a></td>
+            </tr>
+            <tr>
+              <td>"We're doing our best"</td>
+              <td><a href="#x-best">Extra: doing our best</a></td>
+            </tr>
+            <tr>
+              <td>"That's HR", "Why now?" or "Let's park that"</td>
+              <td><a href="#x-hr">Extra: that's HR</a></td>
+            </tr>
+            <tr>
+              <td>"We'll see", "Just do good work" or "I won't move you back"</td>
+              <td><a href="#x-open">Extra: he leaves it open</a></td>
+            </tr>
+            <tr>
+              <td>Part of it now, or a bonus</td>
+              <td><a href="#x-offer">Extra: he offers part</a></td>
+            </tr>
+            <tr>
+              <td>"You can handle both"</td>
+              <td><a href="#x-both">Extra: handle both</a></td>
+            </tr>
+            <tr>
+              <td>"You need to be in the client meetings"</td>
+              <td><a href="#x-client">Extra: client meetings</a></td>
+            </tr>
+            <tr>
+              <td>"Khoa and Michael don't complain"</td>
+              <td><a href="#x-others">Extra: the others</a></td>
+            </tr>
+            <tr>
+              <td>"Is this an ultimatum?", "I decide" or "And if I say no?"</td>
+              <td><a href="#x-ultimatum">Extra: an ultimatum</a></td>
+            </tr>
+            <tr>
+              <td>A raised voice, or "Who do you think you are?"</td>
+              <td><a href="#x-heat">Extra: heat</a></td>
+            </tr>
+            <tr>
+              <td>A verdict or sarcasm with no question, or he goes quiet</td>
+              <td><a href="#x-bait">Extra: bait</a></td>
+            </tr>
+            <tr>
+              <td>"There's no EO work"</td>
+              <td><a href="#x-idle">Extra: no EO work</a></td>
+            </tr>
+            <tr>
+              <td>"It's already paid"</td>
+              <td><a href="#x-paid">Extra: it's already paid</a></td>
+            </tr>
+            <tr>
+              <td>
+                "Did you rehearse this?", "Are you leaving?", "What are you
+                asking for?" or "How many months?"
+              </td>
+              <td><a href="#x-you">Extra: he asks</a></td>
+            </tr>
+            <tr>
+              <td>"Trust me" or "After everything I've done"</td>
+              <td><a href="#x-warm">Extra: he goes warm</a></td>
+            </tr>
+            <tr>
+              <td>"Fine, stay on EO"</td>
+              <td><a href="#x-release">Extra: he lets go</a></td>
+            </tr>
+            <tr>
+              <td>You go blank</td>
+              <td><a href="#x-bait">Extra: bait</a>, its last line</td>
+            </tr>
+            <tr>
+              <td>"No.", "Final." or an order with a date</td>
+              <td><a href="#x-exit">Extra: the exit line</a></td>
+            </tr>
+          </table>
+        </div>
+
+        <h2 id="script">
+          Script <span class="aside">· 9 timed groups, aim 15:55</span>
+        </h2>
+        <p class="small">
+          Count four is a silent count to four. A mirror is his last three
+          words, said back as a question. A label starts with "It sounds like".
+          Lines in angle brackets are cues, never said.
+        </p>
+        <div class="script-body">
+          <section class="grp" data-t="0" id="t-0000">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">0:00</span
+                ><span class="cue"
+                  >&lt;Camera on. The plan is already in the chat. Half
+                  speed&gt;</span
+                >
+              </div>
+              <p class="line">
+                Thanks for giving me the weekend. I needed it to think this
+                through properly.
+              </p>
+              <p class="line">First, the plan you asked for. It's in the chat.</p>
+              <p class="line">
+                Every open item has a date, and so does the handover to Thanh.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Let him go through the plan. Answer with dates
+                  only&gt;</span
+                >
+              </div>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;If he starts with the new work, let him finish. Listen
+                  for on site, clients, hours. Mirror his last three words. Go
+                  on at 2:00&gt;</span
+                >
+              </div>
+            </div>
+          </section>
+
+          <section class="grp" data-t="120" id="t-0200">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">2:00</span
+                ><span class="cue">&lt;His plan, said back. Slow&gt;</span>
+              </div>
+              <p class="line">So, the move. Let me check I've got it.</p>
+              <p class="line">
+                EO isn't ready for more right now. You'd rather have me on the
+                projects you're excited about.
+              </p>
+              <p class="line">
+                You want me learning next to Khoa and Michael. And when EO's
+                ready for more, I bring what I learned back.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Count four. Wait for "that's right"&gt;</span
+                >
+              </div>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Only if he gives a flat "yeah". Then count four&gt;</span
+                >
+              </div>
+              <p class="line">
+                It sounds like you want the whole team learning from the best.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="210" id="t-0330">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">3:30</span
+                ><span class="cue">&lt;Yes first. Then the worst he could think of you, said by you&gt;</span>
+              </div>
+              <p class="line">
+                So, yes to the move. And I'm glad you thought of me for it.
+              </p>
+              <p class="line">This is going to sound ungrateful.</p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Count four. Let him answer. No denial after it&gt;</span
+                >
+              </div>
+              <p class="line">
+                Last time I split myself across two things, and you didn't get
+                my best.
+              </p>
+              <p class="line">I took your feedback on that seriously.</p>
+              <p class="line">
+                So here's how I'd set it up. Three short things.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;If he grabs the yes with "Great, start Monday". Then go
+                  on at 4:45&gt;</span
+                >
+              </div>
+              <p class="line">
+                I want a fast start too. Three short things first, so it's a
+                clean one.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="285" id="t-0445">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">4:45</span
+                ><span class="cue"
+                  >&lt;A what-if, in his own example. He stays the one who
+                  decides&gt;</span
+                >
+              </div>
+              <p class="line">First, one priority at a time.</p>
+              <p class="line">
+                Say Eventbrite comes back while I'm on the new work.
+              </p>
+              <p class="line">
+                I bring it to you. Whichever one you put first, I hold to it.
+              </p>
+              <p class="line">Does that get in the way of anything?</p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Count four. His no is your yes. "You'll do both": the
+                  Extra on both&gt;</span
+                >
+              </div>
+              <p class="line">
+                Good. One priority at a time, and you set which.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="360" id="t-0600">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">6:00</span
+                ><span class="cue">&lt;Calm. Say it as what he gets&gt;</span>
+              </div>
+              <p class="line">
+                Second, where you get my best work. That's remote, on the build.
+              </p>
+              <p class="line">The client side stays with whoever you pick.</p>
+              <p class="line">And I put my full attention on the build.</p>
+              <p class="line">Does that break anything on your side?</p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Count four. His no is your yes. If it does break
+                  something, the Extra on client meetings&gt;</span
+                >
+              </div>
+              <p class="line">Good. Remote, on the build.</p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="450" id="t-0730">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">7:30</span
+                ><span class="cue"
+                  >&lt;Low and slow. This is the one&gt;</span
+                >
+              </div>
+              <p class="line">
+                Third, and this is the one that matters most to me. A clean
+                start.
+              </p>
+              <p class="line">
+                There's one open item on the contract. The insurance record.
+                VssID still shows the gap.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Count four. Let him talk. Don't fill the silence&gt;</span
+                >
+              </div>
+              <p class="line">Here's what I'd suggest.</p>
+              <p class="line">
+                The day the record shows complete in VssID, I'm on the new work,
+                full time.
+              </p>
+              <p class="line">
+                Until then, I wrap up EO and hand over to Thanh. And I finish
+                both certs.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Only if the contract clause has the date&gt;</span
+                >
+              </div>
+              <p class="line">
+                The contract has it done by year end, so we're talking weeks.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;The close. His choice&gt;</span>
+              </div>
+              <p class="line">
+                If the record's complete sooner, I start sooner. You set the
+                pace.
+              </p>
+              <p class="line">How does that sit with you?</p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Count four. A yes: go on. Anything else: the
+                  Extras&gt;</span
+                >
+              </div>
+            </div>
+          </section>
+
+          <section class="grp" data-t="660" id="t-1100">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">11:00</span
+                ><span class="cue"
+                  >&lt;Only if he said yes to the start. A hard-won yes: skip to
+                  15:00&gt;</span
+                >
+              </div>
+              <p class="line">And so this never comes up between us again.</p>
+              <p class="line">
+                I check VssID once a month. If it's all there, you won't hear a
+                word from me.
+              </p>
+              <p class="line">
+                If a month's missing, I flag it to you that day. And I step back
+                to EO until it's caught up.
+              </p>
+              <p class="line">
+                Same rule as the start. Is there anything in that you'd change?
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;Count four&gt;</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="grp" data-t="750" id="t-1230">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">12:30</span
+                ><span class="cue"
+                  >&lt;Warm room only. His word is "exceptional". Cold room:
+                  skip to 15:00&gt;</span
+                >
+              </div>
+              <p class="line">
+                And one question, so I aim at the right things.
+              </p>
+              <p class="line">
+                It sounds like these projects matter a lot to you.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Count four. Whatever he answers, go on&gt;</span
+                >
+              </div>
+              <p class="line">What would exceptional look like to you there?</p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Let him talk. Write down his words&gt;</span
+                >
+              </div>
+              <p class="line">
+                Got it. I'll put that in the recap, in your words.
+              </p>
+              <p class="line">That's what I'll aim at from day one.</p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Count four. Whatever he adds, write it down&gt;</span
+                >
+              </div>
+              <p class="line">Thank you. That's the bar.</p>
+            </div>
+          </section>
+
+          <section class="grp" data-t="900" id="t-1500">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">15:00</span
+                ><span class="cue"
+                  >&lt;Half speed. Only what he agreed to&gt;</span
+                >
+              </div>
+              <p class="line">
+                Let me say it all back, so it's in one place.
+              </p>
+              <p class="line">
+                I start on the new work the day the record's complete. And I
+                stay on it while the record stays current.
+              </p>
+              <p class="line">
+                Until then, I wrap up EO and hand over to Thanh. And I finish
+                both certs.
+              </p>
+              <p class="line">
+                Remote, on the build. One priority at a time, and you set which.
+              </p>
+              <p class="line">
+                And the bar for exceptional is what you gave me.
+              </p>
+              <p class="line">Have I got any of that wrong?</p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Count four. "No" or "that's right" is the yes&gt;</span
+                >
+              </div>
+              <p class="line">
+                Thank you. I'll send the recap within the hour.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-warm">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he goes warm ("trust me", "assume good intentions", "after
+                  everything I've done for you"), not timed. Then go on where
+                  you were</span
+                >
+              </div>
+              <p class="line">
+                I appreciate that. And I believe you want it sorted.
+              </p>
+              <p class="line">
+                That's what makes this easy. The day it shows, I'm all in.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;"After everything I've done for you". Label, then count
+                  four&gt;</span
+                >
+              </div>
+              <p class="line">
+                It sounds like you feel I'm not seeing what you've done for me.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;After the count&gt;</span>
+              </div>
+              <p class="line">
+                I do see it. That's why I want to do this right.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-handled">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he says "it's being handled, start now" or "is that a yes
+                  or a no?", not timed. Then go on at 11:00, or at 15:00 if the
+                  yes was hard-won</span
+                >
+              </div>
+              <p class="line">
+                That's good news. Then the record and my start land on the same
+                day.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;He pushes. Ask it soft, as a real question. Then count
+                  four&gt;</span
+                >
+              </div>
+              <p class="line">
+                How am I supposed to start clean with that part still open?
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;He restates the order with a date: the last Extra&gt;</span
+                >
+              </div>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;"Is that a yes or a no?"&gt;</span>
+              </div>
+              <p class="line">
+                It's a yes. And the start is the day the record's complete.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;He gives a date&gt;</span>
+              </div>
+              <p class="line">
+                Thank you. That helps. I'll plan my start for that day, once it
+                shows in VssID.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;"I already told you, year end"&gt;</span>
+              </div>
+              <p class="line">
+                Right, year end. Then my start lands on that date, or sooner.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-best">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he says "we're doing our best" or "we can't right now",
+                  not timed. Then go on at 7:30 from "Here's what I'd
+                  suggest"</span
+                >
+              </div>
+              <p class="line">I know you're on it.</p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Count four. Then the label, and count four
+                  again&gt;</span
+                >
+              </div>
+              <p class="line">
+                It sounds like there's more to this than I can see from my side.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Then listen. The real reason shows here&gt;</span
+                >
+              </div>
+              <p class="line">What does it still need?</p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;After his answer&gt;</span>
+              </div>
+              <p class="line">Got it. When do you see it complete?</p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-hr">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he says "that's HR", "that's the accountant", "these are
+                  separate" or "why now?", not timed. Then go on where you
+                  were</span
+                >
+              </div>
+              <p class="line">Fair. It's a different desk.</p>
+              <p class="line">
+                I bring it to you because things move when you push them.
+              </p>
+              <p class="line">
+                And I'd rather start the new work with nothing open.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;"Let's park that" or "we'll talk at your review"&gt;</span
+                >
+              </div>
+              <p class="line">
+                Sure, the talk can wait. My start goes with the record.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-open">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he will not commit on the bar or on the step back ("we'll
+                  see", "just do good work", "I won't move you back"), not
+                  timed. Leave it open, never argue. Then go on where you
+                  were</span
+                >
+              </div>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;"We'll see" or "Just do good work", at 12:30. Then count
+                  four&gt;</span
+                >
+              </div>
+              <p class="line">
+                Fair. I'll put down what you've told me today, so I'm aiming at
+                the right thing.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;"I won't move you back" or "That's too rigid", at 11:00.
+                  Then count four. The recap leaves the step back out&gt;</span
+                >
+              </div>
+              <p class="line">
+                Fair. That part can stay open. I'll flag a missing month to you
+                the day I see it.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-offer">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he offers part of it (some months now, a bonus, a
+                  different deal), not timed. Then go on at 7:30 from "How does
+                  that sit with you?"</span
+                >
+              </div>
+              <p class="line">Thank you. That's real progress.</p>
+              <p class="line">
+                The start is the day it's all in. If that's next week, I start
+                next week.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;A bonus or a raise in its place&gt;</span>
+              </div>
+              <p class="line">
+                Thank you. That's generous, and it's a separate thing.
+              </p>
+              <p class="line">What makes this a yes for me is the record.</p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-both">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he says "you can handle both" or "half and half", not
+                  timed. Then go on at 6:00</span
+                >
+              </div>
+              <p class="line">Half and half spreads my best work thin.</p>
+              <p class="line">
+                You get more out of me on one thing, in the order you set.
+              </p>
+              <p class="line">Whichever one you put first, I hold to it.</p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-client">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he says "you need to be in the client meetings", "just
+                  join the calls" or "come on site", not timed. Then go on at
+                  7:30, or to the last Extra if he gives an on-site order with a
+                  date</span
+                >
+              </div>
+              <p class="line">Khoa and Michael are the experienced ones.</p>
+              <p class="line">
+                Whoever you put in front of the client, I'll have what they need
+                ready before each call.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;He pushes on client calls&gt;</span>
+              </div>
+              <p class="line">
+                The client room is where you got the least from me. On the
+                build, you get the most.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;He pushes on on site. Leave out the first sentence if the
+                  workplace line does not say remote. Then count four. An
+                  on-site order with a date: the last Extra&gt;</span
+                >
+              </div>
+              <p class="line">
+                The contract has me remote. And remote is where you get my best
+                work.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;He reopens the letter&gt;</span>
+              </div>
+              <p class="line">
+                Agreed, attention in the client room matters. That's why I'd put
+                me on the build.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-others">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he says "Khoa and Michael don't complain" or "everyone is
+                  waiting on the insurance", not timed. Then go on where you
+                  were</span
+                >
+              </div>
+              <p class="line">They're great, and I can't speak for them.</p>
+              <p class="line">I can only speak for my own record.</p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-ultimatum">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he says "is this an ultimatum?", "so you're refusing to
+                  work?" or "I decide where you work", not timed. Then go on
+                  where you were, or to the last Extra if he gives an order with
+                  a date</span
+                >
+              </div>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;"Is this an ultimatum?" Count four first&gt;</span
+                >
+              </div>
+              <p class="line">
+                Fair question. It's a yes. I'm telling you the day I'm all in.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;"So you're refusing to work?"&gt;</span>
+              </div>
+              <p class="line">
+                I'm on EO, full speed, same as now. And I'm on the new work the
+                day the record's complete.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;"And if I say no?" Label, then count four. Then
+                  listen&gt;</span
+                >
+              </div>
+              <p class="line">
+                It sounds like part of this doesn't work for you.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;"I decide where you work." Then count four&gt;</span
+                >
+              </div>
+              <p class="line">
+                Right. Where I work is your call. I'm telling you what gets you
+                all of me.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;"Maybe this isn't the place for you." Count four first.
+                  Answer the work, never the threat&gt;</span
+                >
+              </div>
+              <p class="line">
+                I want to be here. EO keeps moving, and I'm ready the day the
+                record's complete.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;"I'll give it to someone else"&gt;</span>
+              </div>
+              <p class="line">
+                Understood. I'm ready the day the record's complete.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-heat">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he raises his voice or says "who do you think you are?",
+                  not timed. Never hang up. Then go on where you were, or to the
+                  last Extra if he gives an order with a date</span
+                >
+              </div>
+              <p class="line">That came out wrong, and that's on me.</p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;Count four, then&gt;</span>
+              </div>
+              <p class="line">
+                This is your call. It always was. I'd like a set-up we both feel
+                good about.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;A full blow-up. Stop the three things. One line, then the
+                  exit line in the last Extra&gt;</span
+                >
+              </div>
+              <p class="line">
+                Understood. The EO items land on the dates in the chat.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-bait">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he throws bait with no question (a verdict word, sarcasm,
+                  "it's about your productivity"), not timed. Say nothing or one
+                  line, then go on where you were</span
+                >
+              </div>
+              <p class="line">
+                Fair. The pace is your call. My start follows the record.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;He turns it onto you&gt;</span>
+              </div>
+              <p class="line">
+                Agreed, the output's what counts. That's what this set-up is
+                for.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;He goes quiet or cold. Count four first, then the
+                  label&gt;</span
+                >
+              </div>
+              <p class="line">It seems like I caught you off guard.</p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;You go blank. Say it, breathe, then go on where you
+                  were&gt;</span
+                >
+              </div>
+              <p class="line">One second. I want to say this right.</p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-idle">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he says "there's no EO work, you can't sit idle", asks
+                  "and if it's not done by year end?" or hands you a small new
+                  task meanwhile, not timed. Then go on at 7:30 from "How does
+                  that sit with you?"</span
+                >
+              </div>
+              <p class="line">Understood. EO's light.</p>
+              <p class="line">
+                The wrap-up, the handover and both certs fill it. And I'm ready
+                the day the record's complete.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;"And if it's not done by year end?"&gt;</span
+                >
+              </div>
+              <p class="line">
+                Then I keep EO moving, and I'm ready the day it's complete.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;A small new task meanwhile. No yes and no no. Decide
+                  overnight, in After the call&gt;</span
+                >
+              </div>
+              <p class="line">
+                I'll look at it tonight and come back to you first thing
+                tomorrow.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-paid">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he says "it's already paid", not timed. Then go on at
+                  12:30</span
+                >
+              </div>
+              <p class="line">
+                That's great news. Thank you for pushing it through.
+              </p>
+              <p class="line">
+                I'll check VssID after the call. The day it shows, I start.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-you">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he asks about you or about the ask, not timed. Then go on
+                  where you were</span
+                >
+              </div>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;"Did you rehearse this?"&gt;</span>
+              </div>
+              <p class="line">
+                Busted. I did my homework. I figured you'd want me to.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;"Are you looking to leave?"&gt;</span>
+              </div>
+              <p class="line">
+                No. I'm planning to be here. That's why I want this set up
+                right.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;"Is this about money?"&gt;</span>
+              </div>
+              <p class="line">
+                No. The base is settled. This is about doing the new work well.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;"So what are you asking for?"&gt;</span>
+              </div>
+              <p class="line">
+                A clean start. The record complete, then all of me on the new
+                work. Remote, one priority at a time.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;"How many months is it?" Say the count you wrote down
+                  first. Nothing more&gt;</span
+                >
+              </div>
+              <p class="line">That's what VssID shows as of today.</p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-release">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he lets go ("fine, stay on EO then"), not timed. Take it.
+                  Do not reopen the three things. End warm</span
+                >
+              </div>
+              <p class="line">
+                Understood. I'll keep EO moving, and I'm ready the day the
+                record's complete.
+              </p>
+              <p class="line">
+                Thank you. The open items land on the dates in the chat.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;He moves it to a formal meeting or to writing&gt;</span
+                >
+              </div>
+              <p class="line">
+                Fair enough. I'll write up the set-up in one message before
+                then, so it's all in one place.
+              </p>
+            </div>
+          </section>
+
+          <section class="grp" id="x-exit">
+            <div class="blk">
+              <div class="head">
+                <span class="tc">Extra</span
+                ><span class="cue"
+                  >If he gives a flat no, says "final", or orders a start date,
+                  not timed. No yes and no no in the room. End warm</span
+                >
+              </div>
+              <p class="line">I hear you.</p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Count four, then the exit line&gt;</span
+                >
+              </div>
+              <p class="line">
+                I want to give you a solid answer, not a quick one. I'll come
+                back to you first thing tomorrow.
+              </p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;Then close the call. Nothing about the three things in
+                  chat tonight. Tomorrow morning, the morning message in After
+                  the call. Choose Hold or Start overnight&gt;</span
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <h2 id="after">
+          After the call, the recap goes out within the hour
+          <span class="aside">· the call day</span>
+        </h2>
+        <div class="box">
+          <ul>
+            <li>
+              <div class="prompt-head">
+                <p>
+                  <b>The recap.</b> Post it only when he agreed and the call
+                  stayed calm. If he said no or the call ran hot, use the
+                  morning message below. Before you post, do three things. Fill
+                  in his words for "exceptional" from your notes, or cut that
+                  sentence if you skipped 12:30 or he gave none. Strike each
+                  point he did not agree to. Add the monthly sentence below if
+                  he agreed at 11:00. Then post it in the 1:1 chat within the
+                  hour. His reply to it is the third yes, after the room and the
+                  playback.
+                </p>
+                <button type="button" class="btn" data-copy-prompt="recap-msg">
+                  Copy recap
+                </button>
+              </div>
+              <pre class="copybox" id="recap-msg">
+Boss, thanks for today, recap in one place: I start on the new projects full time the day the insurance record shows complete in VssID, and until then I wrap up the open EO items, hand over to Thanh and finish both certs. Remote and on the build, 1 priority at a time, yours to set. The bar for exceptional there, in your words: &lt;his words for exceptional&gt;.</pre
+              >
+            </li>
+            <li>
+              <div class="prompt-head">
+                <p>
+                  <b>The monthly check.</b> Add this sentence to the recap only
+                  if he agreed at 11:00. Put it after the first sentence. If he
+                  left the step back open, end it after "the same day".
+                </p>
+                <button type="button" class="btn" data-copy-prompt="recap-step">
+                  Copy sentence
+                </button>
+              </div>
+              <pre class="copybox" id="recap-step">
+I check VssID on the 5th each month and flag a missing month to you the same day, and until it's caught up I'm back on EO.</pre
+              >
+            </li>
+            <li>
+              <div class="prompt-head">
+                <p>
+                  <b>If he said no, or it ran hot.</b> That night, post nothing
+                  about the three things. Post only an EO item that is due. The
+                  next morning, send this.
+                </p>
+                <button type="button" class="btn" data-copy-prompt="next-msg">
+                  Copy morning message
+                </button>
+              </div>
+              <pre class="copybox" id="next-msg">
+Boss, thought it through and I'm in on the move. 15 minutes on the start, any slot you pick. EO items are on track meanwhile.</pre
+              >
+            </li>
+            <li>
+              <div class="prompt-head">
+                <p>
+                  <b>If he let go and you stay on EO.</b> Post no recap of the
+                  three things. Post this, then post nothing more until the
+                  next EO date.
+                </p>
+                <button type="button" class="btn" data-copy-prompt="stay-msg">
+                  Copy stay message
+                </button>
+              </div>
+              <pre class="copybox" id="stay-msg">
+Boss, thanks for today. I'm on EO for now, and the open items land on the dates above.</pre
+              >
+            </li>
+            <li>
+              <b>If he ordered a start date, choose Hold or Start overnight.</b>
+              A task outside EO that he hands you counts the same.
+              <b>Hold</b> means you stay on EO work until the record is
+              complete. It keeps the start tied to the record. It may cost you
+              legal footing. The law check found no text that lets you refuse
+              work inside your job over unpaid insurance. That is a search
+              result, not proof, and the law gives no direct answer on a move
+              to another project. So he could answer with a second letter. For
+              Hold, send the morning message above, and say the 7:30 lines
+              again in that talk. <b>Start</b> means you begin on his date. It
+              removes the risk of a letter for refusing. A letter for another
+              reason stays possible. It costs the tie between the record and
+              the start. What stays is the dated question on the 5th of each
+              month, and a report to the social insurance agency if you choose
+              that. Recommended: Start, unless a labour lawyer who has read
+              your contract says Hold is safe.
+              <div class="prompt-head">
+                <p>
+                  For Start, send this in place of the morning message. Cut the
+                  words from "remote" to "yours to set" if he did not agree to
+                  those two in the room.
+                </p>
+                <button type="button" class="btn" data-copy-prompt="start-msg">
+                  Copy start message
+                </button>
+              </div>
+              <pre class="copybox" id="start-msg">
+Boss, thought it through and I'm in. I start on &lt;his date&gt;, remote and on the build, 1 priority at a time, yours to set.</pre
+              >
+            </li>
+            <li>
+              <div class="prompt-head">
+                <p>
+                  <b>The 5th of each month.</b> Check VssID. If a month is
+                  missing, send this. A dated written question is your paper
+                  trail.
+                </p>
+                <button type="button" class="btn" data-copy-prompt="fifth-msg">
+                  Copy the question
+                </button>
+              </div>
+              <pre class="copybox" id="fifth-msg">
+Boss, quick one on the insurance catch-up. VssID still shows the gap as of today. Is it landing this month?</pre
+              >
+            </li>
+            <li>
+              <b>The evidence log.</b> Write down the bar in his words with the
+              date, and keep one VssID screenshot for each month. The bar in his
+              words, with the date, is what you bring to your review.
+            </li>
+            <li>
+              <b>One message.</b> Send no second message to fix the first. The
+              recap never mentions the letter.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="part" id="law">
+        <h2>
+          The law protects the record and the contract, and no text was found
+          that backs refusing work in your job
+          <span class="aside">· never said aloud</span>
+        </h2>
+        <p class="small">
+          This is Claude's reading of the law's text, not legal advice. Three
+          Claude agents read the texts on Mon 23 Nov 2026, and a fourth checked
+          each claim against the text. Each row says how far that check went.
+          Never say any of it aloud, because it turns a talk about a set-up
+          into a threat. Before you stop work or file anything, ask a labour
+          lawyer who has read your contract.
+        </p>
+        <div class="box">
+          <table class="win law">
+            <tr>
+              <th>The point</th>
+              <th>What the text says</th>
+              <th>Where it is</th>
+            </tr>
+            <tr>
+              <td>
+                <b>Refusing work in your job because the insurance is unpaid</b>
+              </td>
+              <td>
+                No text was found that allows it. Unpaid insurance is not named
+                in the list of cases where an employee may leave without notice.
+                Pay that is not paid in full or on time is a listed case, and
+                the text does not settle whether your deducted but unpaid share
+                counts as that. An employee who ends a contract outside the
+                listed cases ends it unlawfully. <b>Confirmed</b> for the list.
+                That no other text allows a refusal is a search result, not
+                proof.
+              </td>
+              <td>
+                <a
+                  href="https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2019/11/30232/29070-1-2019993-99445-2019-qh14.pdf"
+                  >Labour Code 45/2019</a
+                >, Arts. 35, 39 and 40
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b>A move to another project, with the same title and
+                  workplace</b>
+              </td>
+              <td>
+                The law gives no direct answer. The employer has the right to
+                arrange and manage work. The next two rows apply only if the
+                new work differs from the job in your contract, or changes one
+                of its terms. <b>Not confirmed.</b> This is one agent's reading,
+                and the checker did not read Art. 6.
+              </td>
+              <td>Labour Code, Arts. 6, 29 and 33</td>
+            </tr>
+            <tr>
+              <td><b>Work that differs from the contract</b></td>
+              <td>
+                The employer may move you to it for at most 60 working days in
+                1 year. It needs a sudden difficulty, or a business need that
+                the company's labour rules list. It takes 3 working days'
+                notice, with the length stated. Past 60 days it needs your
+                written consent. The new pay is at least 85% of the old pay,
+                and the old pay holds for the first 30 working days.
+                <b>Confirmed.</b>
+              </td>
+              <td>Labour Code, Arts. 29 and 118</td>
+            </tr>
+            <tr>
+              <td><b>A change from remote to on site</b></td>
+              <td>
+                The workplace follows the contract unless both sides agree
+                otherwise. A term of the contract changes only by agreement, in
+                an appendix or a new contract, with 3 working days' notice.
+                With no agreement the signed contract continues. An employee
+                who is not given the agreed workplace may leave without notice.
+                <b>Confirmed</b> for the change rule and the leave rule. The
+                workplace sentence comes from one agent's read of Art. 28 and is
+                not confirmed.
+              </td>
+              <td>Labour Code, Arts. 28, 33 and 35</td>
+            </tr>
+            <tr>
+              <td><b>The warning letter</b></td>
+              <td>
+                The law has four discipline forms: a reprimand, a pay-rise
+                delay of up to 6 months, demotion and dismissal. It names no
+                form called a warning letter. If yours was in fact a reprimand,
+                the procedure in this row applies to it. If not, it is not a
+                discipline form. Which one it is has not been confirmed.
+                Discipline needs proof of fault from the employer, your
+                presence with the right to defend yourself, and written
+                minutes. It must come within 6 months of the act.
+                <b>Confirmed</b> for the procedure and the 6 months. The four
+                forms matched what the checker read.
+              </td>
+              <td>
+                <a href="https://hethongphapluat.com/bo-luat-lao-dong-2019/dieu-122"
+                  >Labour Code, Art. 122</a
+                >, and Arts. 123 and 124
+              </td>
+            </tr>
+            <tr>
+              <td><b>Ending your contract</b></td>
+              <td>
+                Refusing an assignment is not in the list of grounds for
+                dismissal. But the employer may end a contract when the
+                employee often fails to complete the work, judged by criteria
+                in its own written rules. On a term of 12 to 36 months that
+                takes 30 days' notice. If the ending is unlawful, the employer
+                must take you back, pay the wages and insurance for the days
+                you did not work, and add at least 2 months of wages.
+                <b>Confirmed.</b>
+              </td>
+              <td>Labour Code, Arts. 36, 41 and 125</td>
+            </tr>
+            <tr>
+              <td><b>Overtime</b></td>
+              <td>
+                Overtime needs your consent. It pays at least 150% on a normal
+                day, 200% on a weekly rest day and 300% on a public holiday.
+                <b>Confirmed.</b>
+              </td>
+              <td>Labour Code, Arts. 98 and 107</td>
+            </tr>
+            <tr>
+              <td><b>The insurance money</b></td>
+              <td>
+                The employer must deduct your share, add its own and pay both
+                by the last day of the next month. When it pays late, it owes
+                the full amount plus 0.03% a day. It must compensate you for
+                harm caused by unpaid or incomplete insurance. Late payment
+                becomes evasion 60 days after the deadline, once the agency has
+                sent a written reminder. <b>Confirmed.</b> Two fines are not
+                confirmed. Press reports say the 2026 penalty decree adds 12%
+                to 15% of the late amount for late payment, and the checker
+                could not read that article itself. The fine for evasion, 18%
+                to 20%, matched in one check, and another check could not read
+                its article.
+              </td>
+              <td>
+                <a
+                  href="https://luatvietnam.vn/lao-dong/luat-bao-hiem-xa-hoi-2024-360809-d1.html"
+                  >Law on Social Insurance 41/2024</a
+                >, Arts. 13, 34, 38 and 39.
+                <a
+                  href="https://luatvietnam.vn/bao-hiem/nghi-dinh-274-2025-nd-cp-quy-dinh-chi-tiet-luat-bao-hiem-xa-hoi-ve-cham-dong-tron-dong-415381-d1.html"
+                  >Decree 274/2025</a
+                >.
+                <a href="https://luatvietnam.vn/lao-dong/nghi-dinh-283-2026-nd-cp-440485-d1.html"
+                  >Decree 283/2026</a
+                >, Art. 43
+              </td>
+            </tr>
+            <tr>
+              <td><b>Unemployment insurance if a contract ends</b></td>
+              <td>
+                The benefit needs 12 paid months in the 24 months before the
+                contract ends. The employer must pay the unpaid months in full
+                when the contract ends. If it did not, it must pay you a sum
+                equal to the benefit you would have got. The benefit is 60% of
+                your average insured salary, for 3 months after 12 to 36 paid
+                months. <b>Confirmed.</b>
+              </td>
+              <td>
+                <a
+                  href="https://luatvietnam.vn/lao-dong/luat-viec-lam-2025-so-74-2025-qh15-440017-d1.html"
+                  >Employment Law 74/2025</a
+                >, Arts. 33, 38 and 39
+              </td>
+            </tr>
+            <tr>
+              <td><b>Your rights and the steps</b></td>
+              <td>
+                You may ask the social insurance agency to confirm your
+                contribution record, require the employer to carry out its
+                duties in full, and complain, denounce and sue. The steps: ask
+                the employer in writing, then report to the agency so that it
+                sends its written reminder, then go to the labour arbitration
+                council or the court. The agency sends reminders in the first
+                10 days of a month. An insurance dispute needs no conciliation
+                step first. <b>Confirmed</b> after two corrections.
+              </td>
+              <td>
+                Law 41/2024, Arts. 10 and 35. Decree 274/2025, Art. 3. Labour
+                Code, Art. 188
+              </td>
+            </tr>
+            <tr>
+              <td><b>The time limit</b></td>
+              <td>
+                A labour dispute goes to the court within 1 year of the day you
+                learn of the breach, and to the labour arbitration council
+                within 9 months. <b>Confirmed.</b> Whether each unpaid month
+                restarts that period was not researched. The contract is 13
+                months old, so for the first unpaid months both periods may
+                already be over or close to it. Ask a lawyer this week.
+              </td>
+              <td>
+                <a href="https://hethongphapluat.com/bo-luat-lao-dong-2019/dieu-190"
+                  >Labour Code, Art. 190</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><b>When it becomes a crime</b></td>
+              <td>
+                Evasion by deceit or another trick for 6 months or more, after
+                the employer was already fined for it and still does not pay,
+                with 50 million to under 300 million VND unpaid, or 10 to under
+                50 employees affected. Larger sums and more employees fall in
+                the heavier clauses, and so does keeping contributions already
+                deducted from employees. <b>Confirmed</b> after a correction.
+                A 2025 amendment to the Penal Code was not checked.
+              </td>
+              <td>
+                <a href="https://hethongphapluat.com/bo-luat-hinh-su-2015/dieu-216"
+                  >Penal Code, Art. 216</a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="small">
+          Not confirmed, so not in the table: which body takes a denunciation
+          and its phone number, the protection from retaliation for a person
+          who denounces, and the health insurance rate. News reports of 21 Nov
+          2026 describe a new law that amends the Labour Code. No agent read
+          it, so its articles and its start date are unknown. Two law sites
+          blocked the agents and two pages cut off
+          before their end, so some articles went unread. In the checker's
+          output a few notes sit one line away from the claim they describe, so
+          in the insurance rows "confirmed" means that the checker read text
+          that matches.
+        </p>
+      </section>
+
+      <footer>
+        Sources: Dave's Lark messages of last week and the first formal warning
+        letter, from your screenshots. The Old Infant note, the 1-1 Playbook
+        and the 1-1 Bench. Never Split the Difference, by Chris Voss. The
+        Vietnamese legal texts that Claude agents read on Mon 23 Nov 2026. Not
+        read, because only you can open them: the signed contract, VssID and
+        the payslips.
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        var NL = String.fromCharCode(10);
+        var $ = function (s, r) {
+          return (r || document).querySelector(s);
+        };
+        var $$ = function (s, r) {
+          return Array.prototype.slice.call((r || document).querySelectorAll(s));
+        };
+        function clean(el) {
+          return el.textContent.replace(/\s+/g, " ").trim();
+        }
+        function scriptText(demo) {
+          var groups = [];
+          $$(".script-body > .grp", demo).forEach(function (grp) {
+            var blocks = [];
+            $$(".blk", grp).forEach(function (blk) {
+              var tc = $(".tc", blk);
+              var cue = $(".cue", blk);
+              var head = [tc ? "[" + clean(tc) + "]" : "", cue ? clean(cue) : ""]
+                .filter(Boolean)
+                .join(" ");
+              var lines = $$(".line", blk).map(clean);
+              blocks.push([head, lines.join(NL)].filter(Boolean).join(NL + NL));
+            });
+            groups.push(blocks.join(NL + NL));
+          });
+          return groups.join(
+            NL + NL + "----------------------------------------" + NL
+          );
+        }
+        function legacyCopy(text) {
+          var ta = document.createElement("textarea");
+          ta.value = text;
+          ta.setAttribute("readonly", "");
+          ta.style.position = "fixed";
+          ta.style.top = "-1000px";
+          document.body.appendChild(ta);
+          ta.select();
+          var ok = false;
+          try {
+            ok = document.execCommand("copy");
+          } catch (e) {
+            ok = false;
+          }
+          document.body.removeChild(ta);
+          return ok;
+        }
+        function flash(btn, ok) {
+          var old = btn.getAttribute("data-label") || btn.textContent;
+          btn.setAttribute("data-label", old);
+          btn.textContent = ok ? "Copied" : "Copy failed";
+          setTimeout(function () {
+            btn.textContent = old;
+          }, 1600);
+        }
+        function copy(text, btn) {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(
+              function () {
+                flash(btn, true);
+              },
+              function () {
+                flash(btn, legacyCopy(text));
+              }
+            );
+          } else flash(btn, legacyCopy(text));
+        }
+        document.addEventListener("click", function (e) {
+          var btn = e.target.closest("button[data-copy]");
+          if (btn && btn.getAttribute("data-copy") === "script") {
+            copy(scriptText(btn.closest(".demo")), btn);
+            return;
+          }
+          var pb = e.target.closest("button[data-copy-prompt]");
+          if (pb) {
+            var box = document.getElementById(
+              pb.getAttribute("data-copy-prompt")
+            );
+            if (box) copy(box.textContent.trim(), pb);
+          }
+        });
+        function fmt(s) {
+          return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
+        }
+        $$(".demo").forEach(function (demo) {
+          var aim = Number(demo.getAttribute("data-aim"));
+          var limit = Number(demo.getAttribute("data-limit"));
+          var elapsedEl = $(".elapsed", demo);
+          var clock = $(".clock", demo);
+          var toggle = $(".timer-toggle", demo);
+          var resetBtn = $(".timer-reset", demo);
+          var groups = $$(".script-body > .grp[data-t]", demo);
+          var banked = 0;
+          var startedAt = null;
+          var tick = null;
+          function seconds() {
+            return Math.floor(
+              (banked +
+                (startedAt === null ? 0 : performance.now() - startedAt)) /
+                1000
+            );
+          }
+          function paint() {
+            var s = seconds();
+            elapsedEl.textContent = fmt(s);
+            clock.classList.toggle("late", s >= aim && s < limit);
+            clock.classList.toggle("over", s >= limit);
+            var current = null;
+            if (s > 0 || startedAt !== null)
+              groups.forEach(function (g) {
+                if (Number(g.getAttribute("data-t")) <= s) current = g;
+              });
+            groups.forEach(function (g) {
+              g.classList.toggle("now", g === current);
+            });
+          }
+          toggle.addEventListener("click", function () {
+            if (startedAt === null) {
+              startedAt = performance.now();
+              tick = setInterval(paint, 250);
+              toggle.textContent = "Pause";
+            } else {
+              banked += performance.now() - startedAt;
+              startedAt = null;
+              clearInterval(tick);
+              toggle.textContent = "Resume";
+            }
+            paint();
+          });
+          resetBtn.addEventListener("click", function () {
+            clearInterval(tick);
+            banked = 0;
+            startedAt = null;
+            toggle.textContent = "Start";
+            paint();
+          });
+          paint();
+        });
+      })();
+    </script>
+  </body>
+</html>
