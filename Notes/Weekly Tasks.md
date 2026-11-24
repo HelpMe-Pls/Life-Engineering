@@ -1,57 +1,51 @@
 # The TODOs
 
 ### 23/11
-
 - [x] EO:
-  - [ ] Send the EOVN email & bug report
-  - [x] Send Thành the trigger work
-  - [ ] Rehearse the sprint review
-  - [ ] Update & send the sprint report
+	- [x] Send the EOVN email & bug report
+	- [x] Send Thành the trigger work
+	- [x] Rehearse the sprint review
+	- [x] Update & send the sprint report
 - [ ] Venture
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 
 ### 24/11
-
 - [x] EO weekly report
-  - [x] Rehearse the sprint review
-  - [x] Update & send the sprint report
+	- [ ] [x] Rehearse the sprint review
+	- [x] Update & send the sprint report
 - [x] Venture++
 - [x] Tao Te Ching++
 - [x] Live up to your standards
 
 ### 25/11
-
 - [ ] EO sprint review with Opus Max ultra:
-  - [ ] Record & summarize the meeting
-  - [ ] Run `/sprint-afk-prep`
-  - [ ] Old Infant meeting
-  - [ ] Ping Trọng
+	- [ ] Record & summarize the meeting
+	- [ ] Run `/sprint-afk-prep`
+	- [ ] Old Infant meeting?
+	- [ ] Ping Trọng
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 
 ### 26/11
-
 - [ ] EO minimal work:
-  - [ ] AFK++
-  - [ ] Drain Claude quota (with research)
-  - [ ] AIO coaching session → Remind the Old Infant
+	- [ ] AFK++
+	- [ ] Drain Claude quota (with research)
+	- [ ] AIO coaching session → Remind the Old Infant
 - [ ] Grep enduro bike rent
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 
 ### 27/11
-
 - [ ] EO minimal work Opus Low
-  - [ ] AFK++
+	- [ ] AFK++
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 
 ### 28/11
-
 - [ ] Perfect dive start + 500m
 - [ ] Hefty breakfast
 - [ ] Groceries
@@ -60,18 +54,16 @@
 - [ ] Live up to your standards
 
 ### 22/11
-
 - [ ] Splurge (if you're done with EP HITL)
 - [ ] Weekly planning (including EO tickets)
-  - [ ] Wrap up all HITL tasks
-  - [ ] Craft the confrontation
+	- [ ] Wrap up all HITL tasks
+	- [ ] Craft the confrontation
 - [x] Venture++
-  - [x] Long vol
+	- [x] Long vol
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
 
 # What a good day looks like
-
 - Wake up at 5AM
 - Finish workout before 6:30AM
 - Finish breakfast before 9AM
@@ -84,25 +76,21 @@
 - Rinse & repeat
 
 # Strategic goals
-
 - ==The route is [[This is it]]==: bid, then productize. The Oct 10 2027 renewal is the planned default; quitting is a test outcome (MRR ≥ 30–40M VND AND ≤4 h/wk for 13 weeks).
 - Always have a plan. When in doubt, stack reps — proposals, not commits. Utilize AI consultancy for separating signals from noise.
 - `git push origin master && git push gitlab master`
 
 # Pivot
-
 - The gates in [[This is it]] §4 are the only pivots. No hunts until Jul 10 2027.
 - Put yourself out there: 3–5 proposals + 1 text post, every week.
 - Barbell strategy: the salary is the safe leg; the route is the convex leg, capped at 20 h and $300 so it can only delay you, never blow you up.
 
 # Venture
-
 ![[Venture Tasks#NOW]]
 
 **The Sunday read = type `/long-vol-consultant`** (≤30min on its own clock, eight pages, one keyboard dialog each; page 1 shows the position and the keys: ↑/↓ pick, Enter next, ←/→ or Tab between a page's prompts, Space toggles). It fills today's row, logs the posts, names the Signal and its firewall row, gives the unblock steps one line each, and writes everything below only after your `y` at its review. `Esc` at any point stops it with nothing written; `ctrl+o` shows the full text if the terminal folds it into a `· summary` line. Weeknights: `/long-vol-consultant log` adds demand-log rows only (15 min); `/long-vol-consultant <what you are stuck on>` runs the unblock pages only. Agents: [[This is it]] §A first. Words: [[CONTEXT]].
 
 ## Scoreboard
-
 One row every Sunday, numbers and dashes only — words go under "Notes to the consultant". ==An honest `0` is data, not failure==: every gate verdict is read off these rows, never off vibes ([[This is it]] §C says which Sunday reads which gate).
 
 | Sunday     | hrs | Gov? | Upwork p/r/h/Σ$ | Asset s/MRR/u | Post | Signal                                            |
@@ -126,7 +114,6 @@ One row every Sunday, numbers and dashes only — words go under "Notes to the c
 > - Row 2 seeded 2026-10-11: week 1 was a zero week (0 proposals, 0 post); the first 3 proposals go out Sun Oct 18, 20:00–22:00.
 
 ## Demand log
-
 One row per post read or bid on, from Oct 9 — ==log every post you read, not only the ones you bid on==. The first 20 rows teach you the Connects price on YOUR posts before you spend a cent. Follow up once on day 5 (4 days after sending) only on a proposal the client has answered, and write `f/u <date>` in its notes; leave unanswered ones alone, never withdraw and resubmit (R-21).
 
 > [!abstract]- Rules of the log
@@ -200,7 +187,6 @@ One row per post read or bid on, from Oct 9 — ==log every post you read, not o
 | 2026-11-21 | https://www.upwork.com/jobs/~022123907532404823694 | Expert AI Agent Developer – Autonomous Lead Generation & Luxury Sales Automation (Claude AI)       | other             | hourly                                            | 26             | N    | N      | N     |        | skipped: the body is a real-time voice-latency specialist, 30+ h/wk, 4 interviewing, Vietnam not in preferred locations                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 ## Calendar — the 8 dates (put each in your calendar app with the Sunday it is read on)
-
 1. Sun Nov 1 2026 — demo repo shipped (a target; slipped from Oct 25 on 2026-10-11); its link goes into every proposal from then on
 2. Sun Nov 15 2026 — F-03 EP probation: ≥1 paid enrollment (not you, not him, not a test), else EP returns to the graveyard and Stream storage is cancelled
 3. Mon Dec 7 2026 — F-04 ≥1 reply from ≤35 proposals, else the one profile rewrite (read Sun Dec 13)
@@ -234,17 +220,13 @@ One row per post read or bid on, from Oct 9 — ==log every post you read, not o
 > 5. Tick and adjust next week's boxes — dates may slip, gates never do.
 
 ## Graveyard
-
 EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07). ==EP on probation 2026-10-11 → Nov 15 as a pull (R-20, F-03); the other three stay dead.== Parts reusable (EP codebase + PayOS→ACB, the Paddle seller account, the TDLR list, the Ledger collector). The record: [[Contingencies]] · [[Q4 Sprint]] · [[breakglass-research/README]]. The research behind the route: `C:\tmp\upwork-research\reports\Upwork freelancing vs owning an asset.md`.
 
 ### Notes to the consultant (dated, raw — write below)
-
 #### Oct 9th, 2026
-
 - Route ruled and written ([[This is it]]). Scoreboard reset to the new columns. First 3 proposals due Sun Oct 11.
 
 #### Oct 11th, 2026
-
 - **Zero week:** 0 proposals, 0 post, profile not live (unexpected things ate the week). Firewall row F-02: "<3 proposals → the week did not count; stack the reps." Phase 1 dates unchanged; the first 3 proposals go out Sun Oct 18, 20:00–22:00; the demo repo slips Oct 25 → Nov 1 (build hours go first in the cut order).
 - **Signal — Pull (F-15):** the EP instructor is back, wants to upload videos from Fri Oct 16 and sell, video-only to start. Ruled R-20 (kill: F-03 Nov 15): served inside the delivery cap (≤10 h this week, then ≤2 h/wk), ≤$15/mo of Stream storage recouped before the 50/50 split, no features, he sells. His gates: signed up on prod by Thu Oct 15 or no storage is bought; the 8-clause page ([[EP SaaS]] §5) signed before anything goes on sale. Kill Sun Nov 15 with 0 paid enrollments. Odds unsourced; his record is 0 asks in 3 months.
 - **Bank:** ACB VND + PayOS → ACB live since Jul 16, nothing to open; the USD account waits for a USD inflow (Phase 2). This week: the ledger, ACB ONE notifications, a statement export for Upwork's location check, the tax adviser booked with the Form 01/BK-STK and instructor-split questions.
@@ -253,7 +235,6 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07).
 - **Sunday read 16:59, ≈30 min:** hrs 0, Gov? NO, p/r/h/Σ$ 0/0/0/0, post 0 → F-02 ("the week did not count; nothing else changes; stack the reps"). Signal F-15 kept (R-20). Demand log: 0 rows. Block: Me — doubt, the urge to re-plan (§10.5, named); the next ask is box 1. Waiting on his signup, due Thu Oct 15. Box 1 ticked: the message with the three asks was sent today.
 
 #### Oct 18th, 2026
-
 - **Sunday read 20:28, ≈16 min:** hrs ~10, Gov? NO, p/r/h/Σ$ 3/0/0/0, post 0 → F-02 ("the week did not count; nothing else changes; stack the reps"). Other signals: none. Block: Me — the day job ate the week (the post did not go out). Unblock: F-02 · the cut order · §C · the post on Monday night.
 - **Profile live Thu Oct 15:** title "AI Agent Builds | Claude Code Setup | CRM and Ads Sync", rate $34.56/h, ID verified, W-8BEN done, DLB VND weekly at $100, GitHub linked. $0 spent.
 - **Demand log:** 21 rows read in Khoi's logged-in Chrome by Claude (notes = the client's words verbatim). Connects asked 7–23, median 17 (the LAW assumed ≈14). The "Claude Code" search returns clients who want a developer who uses Claude Code (tagged agent-build); 0 claude-code-setup posts. Phrases for week 3: AI agent · Claude Code · Claude API · MCP Claude · HubSpot integration · GA4 tracking (tags unchanged, §6).
@@ -262,13 +243,11 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07).
 - Not answered at the read: box 7 (masterclass Oct 14, attended or skipped) and the instructor's signup status (R-20); box 4 stays open.
 
 #### Oct 19th, 2026
-
 - **Text post 1 went out Mon Oct 19:** https://x.com/curiousKhoi/status/2112133114885800439 (the conversion-sync worker, ships Nov 1).
 - **Demand log:** 7 rows read Mon Oct 19 in Khoi's logged-in Chrome by Claude, from the six week-3 phrases (the 60 search results scanned, 7 opened). Connects asked 7–26. First claude-code-setup post: Integrate Claude and Supabase. No bids, $0, 18 Connects left.
 - **EP:** the instructor has still not signed up (due Thu Oct 15): no Stream storage bought (R-20). Upwork: 0 notifications on the 3 bids.
 
 #### Oct 25th, 2026
-
 - **Upwork, read 16:41 in Khoi's logged-in Chrome by Claude:** 3 proposals sent today: Meta / Hyros tracking ($34.56/h, 6 Connects), Meta Ad Account via MCP ($300 fixed, 7), HubSpot + Stripe ($150 fixed, 18). 40 Connects bought today in one purchase for $6.60; 27 left. 0 messages, 0 offers, 0 replies on all 6 bids; no follow-up possible on the Oct 18 three (R-21). The Meta Ad Account job page now says "the client is suspended".
 - **Demo repo set up Sun Oct 25 (Next box 2, read on GitHub by Claude):** github.com/HelpMe-Pls/conversion-sync, created 11:51, last push 12:25. Shipped in it: v0, HubSpot won deals → Meta Conversions API (PR #2), and spec #4, Google Ads offline conversions (PR #8), plus the skills, the spine and the coding standards (PR #1). Workers config (wrangler.toml) and D1 migrations are in. Made **public** the same day after Claude scanned its full history: no keys, tokens or client data.
 - **Sunday read 14:15–14:40 (resumed run):** hrs ~10, Gov? NO, p/r/h/Σ$ 3/0/0/0 (r/h/$ from today's Upwork note), post 1 (Oct 19) → the week counts, no F-02; governor clear. Block: none.
@@ -280,13 +259,11 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07).
 - **Follow-up rule aligned with R-21:** position.py, the skill, the demand-log intro and the Standing line now say follow up only where the client answered.
 
 #### Oct 30th, 2026
-
 - **Proposal 1 of 3 for week 4, sent Fri Oct 30 ~14:40 by Claude in Khoi's Chrome, on his word:** Rainy Day Pets, HubSpot CRM & Recruitment Workflow ($400 fixed, 9 Connects, no boost, 15% fee → $340). 18 Connects left. Two more proposals still due by Sun Nov 1 for the week to count (F-02); "We'll take care of the other 2 later." Skipped: HubSpot Starter Tier Setup (US only), Senior Marketing Analytics & CRM (HIPAA required, 22 Connects), Claude / MCP Go-to-Market Consultant (GTM launch record required, 22 Connects).
 
 ---
 
 #### Nov 1st, 2026
-
 - **Sunday read 15:50–16:03:** hrs ~10, Gov? NO, p/r/h/Σ$ 3/0/0/0, post 1 → the week counts, no F-02; governor clear. Signal: none. Block: none.
 - **Demo repo shipped Sun Nov 1 (Next box):** real-SQLite tests for the D1 sync log + GitHub Actions CI + README badge and flow diagram (PR #10 into dev), promoted to main (PR #11), 56 tests green. Its link went into proposals 2 and 3.
 - **Proposals 2 and 3 of week 4, sent Sun Nov 1 by Claude in Khoi's Edge, on his word:** Levr.ai ↔ HubSpot ($200 fixed, 11 Connects) and HubSpot app approval ($34.56/h, 10 Connects). 10 Connects bought for $1.65 ($1.50 + tax, Visa 4071), 7 left.
@@ -294,13 +271,11 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07).
 - Khoi, in his words: "Nothing's stuck. I just really want to have sth low maintenance that I can rely on in case my main source of income is no longer there"
 
 #### Nov 8th, 2026
-
 - **Week 5's 3 proposals, sent Sun Nov 8 by Claude in Khoi's Chrome, on his word ("do WHATEVER IT TAKES to make the week count"):** GA4 Integration & Tracking Support ($75/h, 10 Connects), GA4 & GTM Specialist ($34.56/h, 9), Shopify GTM/CAPI form tracking ($250 fixed, 9). All tagged tracking, repo link in each, no boost, no rate increase. 21 Connects bought for $3.47 ($3.15 + tax, Visa 4071) after a first decline Khoi cleared; 0 Connects left. Skipped: HubSpot Account Setup (US only), HubSpot contact cleanup ($5), WordPress law firm (27 Connects), AI Automation Engineer (0% hire rate on 131 jobs), Vidya Timber AI platform ($400 fixed for 3–6 months).
 - **Text post 3 went out Sun Nov 8 (published by Claude in Khoi's Chrome, on his "post it"):** https://x.com/curiousKhoi/status/2119424549603377553
 - **Sunday read 20:55:** week 5 counted (3 proposals + the post, F-02 met). Gov? NO, ~10 h. No signal. Block: the day job ate the week, every rep left to Sunday night; next week the 3 proposals go first, Tue Nov 10. Tam HN masterclass box closed as skipped.
 
 #### Nov 14th, 2026
-
 - **Week 6's 3 proposals, sent Sat Nov 14 by Claude in Khoi's Chrome, on his blanket go:** Meta Pixel/UTM + GHL attribution ($34.56/h, 14 Connects), Meta hotel booking tracking ($34.56/h, 18), GHL + Meta CAPI fast turnaround ($34.56/h, 14). All tagged tracking, no boost, rate increase Never. 49 Connects bought for $8.09 ($7.35 + tax, Visa 4071); 3 left. Skipped: Stape server-side GTM (camera + speedtest questions), GA4 analysis and AI automation workflow (26 Connects each).
 - **Text post 4 went out Sat Nov 14 (published by Claude in Khoi's Chrome, on his blanket go):** https://x.com/curiousKhoi/status/2121506004072628610
 - **Replies 0, checked in the browser 14:41:** Upwork Messages empty; the one unread bell item was the $8.09 Connects receipt.
@@ -308,7 +283,6 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07).
 - **EP e2e check by Claude, Sat Nov 14:** prod webhooks live on hocvienksxd.com (payos 400 invalidPayload, clerk 401); old workers.dev URL dead (404 / 1042), so PayOS must point at the custom domain. The only course on prod is "Test Payment" at 2.000 ₫, linked from the public home page: no sellable course and no video, so a stranger has nothing to buy. Buyer path stops at sign-in. Blocked on Khoi: the PayOS login (webhook URL), a non-owner buyer signup, the 2.000 ₫ bank payment, the Cloudflare login (D1 check). Instructor path still to verify: sign in → instructor role (next-steps step 1) → Dashboard → Curriculum builder → course/module/lesson → video upload (needs Stream, not bought, R-20) → publish → listed on /courses. After every path passes: a 2-minute HTML of what the app offers goes into the EP repo `docs/onboarding`.
 
 #### Nov 16th, 2026
-
 - **EP e2e status by Claude, Mon Nov 16 (definitive):** (1) buyer: blocked on Khoi — webhooks live on hocvienksxd.com (payos 400 invalidPayload, clerk 400); PayOS webhook URL, non-owner signup, 2.000 ₫ payment, D1 check all need his logins (wrangler still not logged in). (2) instructor: FAILED at video upload — sign-in OK, Instructor Dashboard OK, New Course "Khóa demo" (draft) → module → lesson OK, Video upload → "Duplicate discriminator value "true"" + "Some changes failed to save" (cause: `app/routes/api/stream-upload.schemas.ts`, `z.discriminatedUnion("ok")` has two `ok: true` members; fix = `z.union`). Not published. (3) sellable: failed — /courses lists only "Test Payment" 2.000 ₫, no video. (4) F-03 count: 0 paid strangers (no sellable course; D1 unchecked).
 - **Stream bought Mon Nov 16 under the one-month exception:** Cloudflare Images & Stream Starter Bundle, $5/mo, Visa 4071; renewal cancelled the same hour, billing shows "Expiring on Dec 16, 2026" (access kept to then, per Cloudflare's cancel dialog).
 - **F-03 read Mon Nov 16:** 0 paid strangers → graveyard, but held to Dec 16 by the one-month pitch exception (R-22); no second probation after it.
@@ -317,14 +291,12 @@ EP · Renewal Clock · Duty Ledger · Palmara — dead, ruled 2026-10-08 (R-07).
 - **Cut run Nov 16:** skipped pages 6, 7 → filled Nov 16
 
 #### Nov 21st, 2026
-
 - **Week 7's 3 proposals, sent Sat Nov 21 by Claude in Khoi's Chrome, each text approved by Khoi:** Wix Dubai calculator + Claude API ($175 fixed, 14 Connects), Shopify Claude Code automation ($610 fixed, 23), support triage agent n8n + Claude ($350 fixed, 16). No boost. 40 Connects bought for $6.60 ($6.00 + $0.60 tax, Visa 4071); the balance was 17, not the 3 in `## NOW`; 4 left. Skipped: the lead-gen voice post (26 Connects, not a fit).
 - **Text post 5 went out Sat Nov 21 (published by Claude in Khoi's Chrome, on his "post it"):** https://x.com/curiousKhoi/status/2124118191513448747
 - **Replies:** 0 (browser, Upwork Messages, 19:39).
 - **Sunday read done Sat Nov 21:** Governor clear (NO, NO), F-02 met (3 bids + post 5), no Signals, block unchanged (Upwork replies, hold to F-04 Dec 7).
 
 # Backlog
-
 - [Learn about animations](https://animations.dev/learn/animation-theory/intro)
 - [Learn to be an AI Engineer](https://www.aihero.dev/ai-engineer-roadmap)
 - [Learn MCP](https://www.aihero.dev/model-context-protocol-tutorial)

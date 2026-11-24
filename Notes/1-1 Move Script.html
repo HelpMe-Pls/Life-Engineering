@@ -387,6 +387,10 @@
       table.rests td:first-child{width:30%}
       table.law td:first-child{width:24%}
       table.law td:last-child{width:24%}
+      .menu-btn{position:fixed;right:20px;bottom:20px;z-index:1000;padding:10px 18px;border:0;border-radius:999px;background:var(--al);color:#fff;font:600 14px/1 system-ui,sans-serif;text-decoration:none;box-shadow:0 4px 14px rgba(15,22,38,.25)}
+      .menu-btn:hover{filter:brightness(1.1)}
+      #route{scroll-margin-top:16px}
+      @media print{.menu-btn{display:none}}
     </style>
   </head>
   <body>
@@ -435,7 +439,7 @@
         </p>
       </div>
       <div class="jump">
-        <a href="#before">Before the call</a><a href="#rests">What it rests on</a
+        <a href="#rests">What it rests on</a
         ><a href="#watch">Watch out</a><a href="#route">If he says</a
         ><a href="#script">Script</a><a href="#x-warm">Extras</a
         ><a href="#after">After the call</a><a href="#law">The law</a>
@@ -472,118 +476,6 @@
           </div>
         </div>
 
-        <h2 id="before">
-          Before the call, the plan goes in the chat
-          <span class="aside">· today, Mon 23 Nov</span>
-        </h2>
-        <div class="box">
-          <ul>
-            <li>
-              <div class="prompt-head">
-                <p>
-                  <b>The report, then the slot message, both today.</b> If the
-                  EO report you promised for Monday morning has not gone out,
-                  send it now. You told Dave "let's catch up on Monday", so
-                  send this slot message today, Mon 23 Nov, right after the
-                  report. Finish the rest of this list tonight. If he answers
-                  "now", reply "Works. The plan is in this chat in 30 minutes,
-                  then I'm on." The slot message says nothing about the three
-                  things. If Monday has passed, finish the list first, because
-                  he may pick a slot within minutes. Then write "slept on it a
-                  day longer than I said" in place of "slept on it", and before
-                  17:00 write "later today or tomorrow" in place of "tomorrow".
-                </p>
-                <button type="button" class="btn" data-copy-prompt="slot-msg">
-                  Copy slot message
-                </button>
-              </div>
-              <pre class="copybox" id="slot-msg">
-Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the plan for the open EO items in this chat before we talk. 30 minutes covers that and how to set up the move, any slot you pick tomorrow.</pre
-              >
-            </li>
-            <li>
-              <b>The plan in the chat.</b> Before the call starts, post one line
-              for each open EO item with its date, and the day Thanh gets the
-              handover. Dave asked for this plan last week, and it ends his
-              thread. The shape of a line: "&lt;item&gt; done by &lt;day and
-              date&gt;". The last line: "Thanh has the handover notes by &lt;day
-              and date&gt;". If the handover cannot be ready before the
-              Wednesday meeting on 25 Nov, write the day it will be.
-            </li>
-            <li>
-              <b>Three lines of the signed contract.</b> Read the job line, the
-              workplace line and the insurance clause. If the workplace line
-              does not say remote, cut "The contract has me remote" in the
-              Extra on client meetings. If the insurance clause has no
-              end-of-2026 date, skip the year-end line at 7:30. Your note of 28
-              Sep records the end of 2026, and you told Claude on 23 Nov that he
-              gives no timeline when you raise it, so the clause settles it. If
-              the job line names EO or a narrower job, see the second row of
-              The law.
-            </li>
-            <li>
-              <b>VssID.</b> On the day of the call, open it, take a screenshot of the contribution
-              history, count the missing months, and keep the count on a sticky
-              note. Say the count only if he asks.
-            </li>
-            <li>
-              <b>If the record is already complete.</b> The third thing becomes
-              a thank-you. At 7:30 say only "Third, a clean start. VssID shows
-              the record complete as of today. Thank you for pushing
-              that through. So I start the day you set." Then go on at 11:00
-              and leave out "Same rule as the start." At 15:00 say "the day you
-              set" in place of "the day the record's complete", and leave out
-              the "Until then" line. In the recap, write "the day you set" in
-              place of "the day the insurance record shows complete in VssID",
-              and cut the rest of that sentence, from "and until then" to "both certs". Use the Extra "It's already
-              paid" only if he says it first.
-            </li>
-            <li>
-              <b>Certs.</b> The AI Officer and AI Engineer certs are due by 31
-              Dec. If both are done, leave out the certs at 7:30, at 15:00, in
-              the Extra on no EO work and in the recap.
-            </li>
-            <li>
-              <b>Your choice: the review question.</b> The script gets his
-              words for "exceptional" into the recap. It does not ask him to
-              tie them to your review. To ask, say "Is there any reason we
-              wouldn't go by that at your review?" at 12:30, after "That's what
-              I'll aim at from day one." It gains a spoken yes that ties the
-              bar to the review. It costs a pay topic inside a work talk, and
-              your note on Dave says that asking shows appetite and appetite
-              gets priced. It can also bring "we'll see". Recommended: leave it
-              out, and bring his words and your results to the review.
-            </li>
-            <li>
-              <b>Set-up.</b> Camera on. This page on the second screen. Nothing
-              screen-shared. Press Start when the call connects.
-            </li>
-            <li>
-              <b>Rehearse.</b> Say the nine timed groups out loud once with
-              Start running, at half speed.
-            </li>
-            <li>
-              <b>If he opens hot.</b> Give the plan only, then the exit line in
-              the last Extra. The three things move to a later day, Monday to Wednesday. Never raise
-              them on a day he blew up.
-            </li>
-            <li>
-              <b>A short slot.</b> With 15 minutes or less, say 0:00, then 3:30
-              up to "This is going to sound ungrateful", then 7:30 from
-              "There's one open item", then 15:00 with only "I start on the new
-              work the day the record's complete" and the "Until then" line.
-              Leave remote, one priority and the bar out of the recap, and end
-              it with "I'll bring the rest of the set-up to our next 1:1."
-              Start 15:00 by the time the clock shows 10:00.
-            </li>
-            <li>
-              <b>A late slot.</b> If Thanh already has the handover when you
-              talk, say "and the handover to Thanh is done" at 0:00, and leave
-              the handover to Thanh out at 7:30, at 15:00 and in the recap.
-            </li>
-          </ul>
-        </div>
-
         <h2 id="rests">
           Each point rests on his own words
           <span class="aside">· never quoted back</span>
@@ -597,7 +489,7 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
             <tr>
               <td><b>The start is the day the record is complete</b></td>
               <td>
-                The contract's insurance clause. The weeks until then are
+                His own promise in August, on video, to fix the record in three months. The weeks until then are
                 filled by what he already asked for: a plan for the open EO
                 items, Thanh taking over the Wednesday meeting, and the two
                 certs he made mandatory by 31 Dec.
@@ -673,7 +565,10 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
               <b>Threats are mood.</b> Answer the order, never the threat.
             </li>
             <li>
-              <b>Pay stays out.</b> Only the bar for exceptional, in his words.
+              <b>Pay stays out.</b> Only the bar for exceptional, in his words. One
+              exception: if he offers a bonus, say you lean toward a raise. A
+              raise shows you are in for the long run. Never turn the bonus down,
+              and never call it a one-off. Name no number in the room.
             </li>
           </ul>
         </div>
@@ -787,34 +682,19 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
             <div class="blk">
               <div class="head">
                 <span class="tc">0:00</span
-                ><span class="cue"
-                  >&lt;Camera on. The plan is already in the chat. Half
-                  speed&gt;</span
-                >
+                ><span class="cue">&lt;Camera on. Half speed&gt;</span>
               </div>
               <p class="line">
                 Thanks for giving me the weekend. I needed it to think this
                 through properly.
               </p>
-              <p class="line">First, the plan you asked for. It's in the chat.</p>
-              <p class="line">
-                Every open item has a date, and so does the handover to Thanh.
-              </p>
+              <p class="line">So, here we are. What am I about to get myself into?</p>
             </div>
             <div class="blk">
               <div class="head">
                 <span class="cue"
-                  >&lt;Let him go through the plan. Answer with dates
-                  only&gt;</span
-                >
-              </div>
-            </div>
-            <div class="blk">
-              <div class="head">
-                <span class="cue"
-                  >&lt;If he starts with the new work, let him finish. Listen
-                  for on site, clients, hours. Mirror his last three words. Go
-                  on at 2:00&gt;</span
+                  >&lt;Let him finish. Listen for on site, clients, hours.
+                  Mirror his last three words. Go on at 2:00&gt;</span
                 >
               </div>
             </div>
@@ -935,8 +815,14 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
               <p class="line">
                 Second, where you get my best work. That's remote, on the build.
               </p>
-              <p class="line">The client side stays with whoever you pick.</p>
-              <p class="line">And I put my full attention on the build.</p>
+              <p class="line">
+                Last time I did an onsite with your clients, it didn't go well.
+              </p>
+              <p class="line">I got a formal write-up over it.</p>
+              <p class="line">
+                And I'm at my best when I can stay locked in on the build instead
+                of juggling a bunch of things at once.
+              </p>
               <p class="line">Does that break anything on your side?</p>
             </div>
             <div class="blk">
@@ -963,7 +849,7 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
                 start.
               </p>
               <p class="line">
-                There's one open item on the contract. The insurance record.
+                There's one open item. The insurance record.
                 VssID still shows the gap.
               </p>
             </div>
@@ -986,11 +872,11 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
             <div class="blk">
               <div class="head">
                 <span class="cue"
-                  >&lt;Only if the contract clause has the date&gt;</span
+                  >&lt;His own promise. Say it calmly, no blame&gt;</span
                 >
               </div>
               <p class="line">
-                The contract has it done by year end, so we're talking weeks.
+                In August you said about three months, so it should be close now.
               </p>
             </div>
             <div class="blk">
@@ -1100,7 +986,7 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
               </p>
               <p class="line">
                 I start on the new work the day the record's complete. And I
-                stay on it while the record stays current.
+                stay on it while the insurance record stays current.
               </p>
               <p class="line">
                 Until then, I wrap up EO and hand over to Thanh. And I finish
@@ -1278,7 +1164,7 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
                 I bring it to you because things move when you push them.
               </p>
               <p class="line">
-                And I'd rather start the new work with nothing open.
+                <b>And I'd rather start the new work with nothing open</b>.
               </p>
             </div>
             <div class="blk">
@@ -1349,12 +1235,36 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
             </div>
             <div class="blk">
               <div class="head">
-                <span class="cue">&lt;A bonus or a raise in its place&gt;</span>
+                <span class="cue"
+                  >&lt;A bonus in its place. Lean toward a raise, never turn the
+                  bonus down. Then count four&gt;</span
+                >
               </div>
-              <p class="line">
-                Thank you. That's generous, and it's a separate thing.
-              </p>
-              <p class="line">What makes this a yes for me is the record.</p>
+              <p class="line">Thank you. I appreciate that.</p>
+              <p class="line">My start still goes with the record.</p>
+              <p class="line">And I'm in this for the long run.</p>
+              <p class="line">So I'd lean toward a raise. Your call either way.</p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue"
+                  >&lt;"How much?" No number in the room. Then count four&gt;</span
+                >
+              </div>
+              <p class="line">The size is your call. The bonus works too.</p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;"The bonus is what I can do"&gt;</span>
+              </div>
+              <p class="line">Fair. Your call. Thank you.</p>
+            </div>
+            <div class="blk">
+              <div class="head">
+                <span class="cue">&lt;A raise in its place&gt;</span>
+              </div>
+              <p class="line">Thank you. I'd be glad to take that.</p>
+              <p class="line">And my start still goes with the record.</p>
             </div>
           </section>
 
@@ -1459,7 +1369,7 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
                 >
               </div>
               <p class="line">
-                Fair question. It's a yes. I'm telling you the day I'm all in.
+                Fair question. It's a yes. I'm letting you know when I can be all in.
               </p>
             </div>
             <div class="blk">
@@ -1489,8 +1399,8 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
                 >
               </div>
               <p class="line">
-                Right. Where I work is your call. I'm telling you what gets you
-                all of me.
+                Right. Where I work is your call. <b>I'm telling you what gets you
+                all of me.</b>
               </p>
             </div>
             <div class="blk">
@@ -1501,8 +1411,8 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
                 >
               </div>
               <p class="line">
-                I want to be here. EO keeps moving, and I'm ready the day the
-                record's complete.
+                I want to be here. EO keeps moving, and <b>I'm ready the day the
+                record's complete.</b>
               </p>
             </div>
             <div class="blk">
@@ -1510,7 +1420,7 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
                 <span class="cue">&lt;"I'll give it to someone else"&gt;</span>
               </div>
               <p class="line">
-                Understood. I'm ready the day the record's complete.
+                Understood. <b>I'm ready the day the record's complete.</b>
               </p>
             </div>
           </section>
@@ -1532,8 +1442,8 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
                 <span class="cue">&lt;Count four, then&gt;</span>
               </div>
               <p class="line">
-                This is your call. It always was. I'd like a set-up we both feel
-                good about.
+                This is your call. It always was. <b>I'd like a set-up we both feel
+                good about.</b>
               </p>
             </div>
             <div class="blk">
@@ -1543,9 +1453,7 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
                   exit line in the last Extra&gt;</span
                 >
               </div>
-              <p class="line">
-                Understood. The EO items land on the dates in the chat.
-              </p>
+              <p class="line">Understood.</p>
             </div>
           </section>
 
@@ -1683,7 +1591,7 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
                 <span class="cue">&lt;"Is this about money?"&gt;</span>
               </div>
               <p class="line">
-                No. The base is settled. This is about doing the new work well.
+                This is about doing the new work well, from a clean start.
               </p>
             </div>
             <div class="blk">
@@ -1719,20 +1627,7 @@ Yea, slept on it, and there's a lot to learn from Khoa and Michael. I'll put the
                 Understood. I'll keep EO moving, and I'm ready the day the
                 record's complete.
               </p>
-              <p class="line">
-                Thank you. The open items land on the dates in the chat.
-              </p>
-            </div>
-            <div class="blk">
-              <div class="head">
-                <span class="cue"
-                  >&lt;He moves it to a formal meeting or to writing&gt;</span
-                >
-              </div>
-              <p class="line">
-                Fair enough. I'll write up the set-up in one message before
-                then, so it's all in one place.
-              </p>
+              <p class="line">Thank you.</p>
             </div>
           </section>
 
@@ -1839,7 +1734,7 @@ Boss, thought it through and I'm in on the move. 15 minutes on the start, any sl
                 </button>
               </div>
               <pre class="copybox" id="stay-msg">
-Boss, thanks for today. I'm on EO for now, and the open items land on the dates above.</pre
+Boss, thanks for today. I'm on EO for now.</pre
               >
             </li>
             <li>
@@ -2290,5 +2185,6 @@ Boss, quick one on the insurance catch-up. VssID still shows the gap as of today
         });
       })();
     </script>
+    <a class="menu-btn" href="#route" onclick="event.preventDefault();document.getElementById('route').scrollIntoView({behavior:'smooth'})">Spine</a>
   </body>
 </html>

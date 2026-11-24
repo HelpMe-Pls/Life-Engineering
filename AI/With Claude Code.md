@@ -18,26 +18,25 @@ How it works:
   }
 ```
 ## Saving your quota
-
 Paste into any Claude Code session, fresh or mid-session:
 
 ````text
-Token economy: from this message on, follow the Token economy section at the end of this message in this session. Then make it permanent on this machine, without asking me anything: each new session then starts on Opus at low effort with ultracode off, and /model and /effort still switch inside a session. Steps 2 to 4 give the target. Check the machine against it first and change only what differs. When everything is already in place, change nothing, make no backup, and say so.
+Token economy: from this message on, follow the Token economy section at the end of this message in this session. Then make it permanent on this machine, without asking me anything: each new session then starts on Opus at low effort, with ultracode and Code Mode off, and /model and /effort still switch inside a session. Steps 2 to 4 give the target. Check the machine against it first and change only what differs. When everything is already in place, change nothing, make no backup, and say so.
 
 1. Version. Run claude --version. The settings in step 2 need 2.1.316 or later. On an older version, run claude update, then carry on: the new version starts at the next launch. If the command is not found, carry on too.
 
-2. Settings. The file is settings.json in the user-level Claude Code config folder: CLAUDE_CONFIG_DIR when it is set, otherwise .claude under my home folder (create the file if it is missing). The target, with every other key left as it is, and with a number that is already lower left as it is:
-- env, each value a string: ANTHROPIC_MODEL = opus (it decides the model at launch, whatever the model key says; a value that already names an Opus model, such as opus[1m], stays), CLAUDE_CODE_SUBAGENT_MODEL = sonnet, CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL = sonnet, CLAUDE_CODE_SUBAGENT_EFFORT = medium, MAX_MCP_OUTPUT_TOKENS = 12000
+2. Settings. The file is settings.json in the user-level Claude Code config folder: CLAUDE_CONFIG_DIR when it is set, otherwise .claude under my home folder (create the file if it is missing). The target, with every other key left as it is, and with any number that is already lower left as it is:
+- env, each value a string: ANTHROPIC_MODEL = opus (it decides the model at launch, whatever the model key says; a value that already names an Opus model, such as opus[1m], stays), CLAUDE_CODE_SUBAGENT_MODEL = sonnet, CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL = sonnet, CLAUDE_CODE_SUBAGENT_EFFORT = medium, MAX_MCP_OUTPUT_TOKENS = 12000, CLAUDE_CODE_EXPERIMENTAL_CODE_MODE = 0 (Code Mode turns off Claude in Chrome; a 0 here keeps Code Mode off even when my shell or --settings sets 1)
 - env without CLAUDE_CODE_EFFORT_LEVEL: it locks the effort of the whole session. Never add it, DISABLE_PROMPT_CACHING or CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC
-- effortLevel = low, at the top level and inside the modelSettings entry of each Opus model. The entry of the newest Opus model must be there (claude-opus-5-5 when this was written): Opus 5.5 and later models do not read the top-level one
+- effortLevel = low, at the top level and inside the modelSettings entry of each Opus model. The entry of the newest Opus model must be there (claude-opus-5-5 when this was written): Opus 5.5 and later models do not read the top-level effortLevel
 - autoCompactWindow = 200000, at the top level and inside each modelSettings entry that has its own (a per-model value beats the top-level one)
 - bashOutputMaxChars = 16000, workflowSizeGuideline = small, promptSuggestionEnabled = false, awaySummaryEnabled = false
 - ultracode: not true (delete the key if it is)
 
 3. Launcher. The settings alone do not hold: /effort saves a new level into them, and a level from my organization or a project outranks them. Only the launch flag beats those. So the claude command of each shell that I use must add --effort low when I do not pass --effort. Skip this step if claude --help does not list --effort. The profiles:
-- macOS or Linux: the file that my login shell reads at the start of an interactive session, such as .zshrc or .bashrc (create it if it is missing).
-- Windows: the file that $PROFILE names in each PowerShell that is installed (pwsh, powershell), and .bashrc in my home folder if it exists. Create a missing PowerShell profile only where it will load: in the output of Get-ExecutionPolicy -List in that shell, leave out the Process row (a Claude Code session can set that row itself); the first row that is not Undefined must show RemoteSigned, Unrestricted or Bypass. With no such row, or when you cannot read the policy, do not create the file. Never change the policy.
-In each profile: if it already defines a claude function or alias, make that one do this, take out of it a --model flag for a model that is not Opus, and add nothing else (leave it alone when it does this already); otherwise add these lines.
+- macOS or Linux: the startup file of my login shell (create it if it is missing): .zshrc for zsh; .bashrc for bash on Linux; for bash on macOS, the first of .bash_profile, .bash_login and .profile that exists, or else .bash_profile; for another shell, its own startup file.
+- Windows: the file that $PROFILE names in each PowerShell that is installed (pwsh, powershell), and .bashrc in my home folder if it exists. Create a missing PowerShell profile only where it will load: in the output of Get-ExecutionPolicy -List in that shell, leave out the Process row (a Claude Code session can set that row itself); the first row that is not Undefined must show RemoteSigned, Unrestricted or Bypass. From bash, run that check for powershell with PSModulePath unset (env -u PSModulePath powershell -NoProfile -Command Get-ExecutionPolicy -List): a PSModulePath inherited from pwsh stops it loading the policy module. With no such row, or when you still cannot read the policy, do not create the file. Never change the policy.
+In each profile: if it already defines a claude function or alias, make it add --effort low only when I pass no --effort (turn an alias into the function below, with the program and flags the alias used), make a PowerShell function pass piped text on to Claude Code as the ExpectingInput line below does, take out of it any fixed --effort and any --model flag for a model that is not Opus, and add nothing else (leave it alone when it does all this already); otherwise add these lines.
 PowerShell:
 function claude {
   $exe = @(Get-Command claude -CommandType Application, ExternalScript)[0].Source
@@ -49,14 +48,14 @@ claude() { local a; for a in "$@"; do case "$a" in --effort|--effort=*) command 
 
 4. Rules. CLAUDE.md in the config folder holds the section once, verbatim. If a section with the same heading is there with other text, replace it, from its heading to the next # or ## heading or the end of the file. If there is none, add the section at the end (create the file if it is missing). A difference only in line endings or in blank lines at the end is no difference.
 
-5. Change. Skip this step when nothing differs. Otherwise first copy each file that you will change into a new folder in the config folder: backups/token-economy- plus today's date (add the time, as in -1430, when that folder is already there). Keep two files with the same name apart there. Then make the changes, and nothing more. If an edit of settings.json is refused because a key is unrecognized (an old version does that), write the file with a script instead: Claude Code ignores a key that it does not know.
+5. Change. Skip this step when nothing differs. Otherwise first copy each existing file that you will change into a new folder in the config folder: backups/token-economy- plus today's date as YYYY-MM-DD (add the time, as in -1430, when that folder is already there); with no such file, make no folder. Keep two files with the same name apart there. Then make the changes, and nothing more. If an edit of settings.json is refused because a key is unrecognized (an old version does that), write the file with a script instead: Claude Code ignores a key that it does not know.
 
 6. Report. Finish with these lines and nothing else. When nothing differed, line 1 says so and lines 2 to 6 stay out.
 1. What you changed.
-2. The path of the backup folder.
-3. New sessions start on Opus at low effort with ultracode off. Name the shells that have the launcher: it works from the next terminal window on. Any other way to start Claude Code (another shell, an editor extension, the desktop app) uses the settings alone, which a level from an organization or a level that /effort saved can beat.
+2. The path of the backup folder, or none.
+3. New sessions start on Opus at low effort, with ultracode and Code Mode off (Code Mode would turn off Claude in Chrome). For Claude in Chrome in every new session: run /chrome, and if it offers Turn on by default, pick it. Name the shells that have the launcher: it works from the next terminal window on. Any other way to start Claude Code (another shell, an editor extension, the desktop app) uses the settings alone, which a level from an organization or a level that /effort saved can beat.
 4. For a hard task: run /effort, pick a level and press s, so that the level stays in that session.
-5. To run in this session now: /autocompact 200 (it reads as 200 thousand), unless the window was already 200000 or less; and /effort low, unless this task is hard.
+5. To run in this session now: /autocompact 200 (it reads as 200 thousand), unless this session started with a window of 200000 or less (a modelSettings value for its model counts first; no value counts as more); and /effort low, unless this task is hard.
 6. /autocompact 1M raises the window for one big task; /autocompact 200 puts the cap back after it.
 7. Only if the version was below 2.1.316 or you could not read it: the settings need a restart of Claude Code on 2.1.316 or later, and an update by hand if claude update failed.
 
@@ -64,14 +63,16 @@ The section is everything from the heading below to the end of this message:
 
 ## Token economy
 
-Every turn re-sends the whole context, so context size, turn count and spawned agents are the cost. These rules cut waste, never depth: read, print and spawn only what the task needs.
+Every round trip re-sends the whole context, so context size, round trips and spawned agents are the cost. These rules cut waste, never depth: read, print and spawn only what the task needs.
 
-- Search before you read: grep with a head limit, then read only the lines you need (offset and limit). Never read a whole file over 300 lines without a reason, never re-read a file that is already in context unless it changed since, never read a file back to verify an edit (Edit and Write fail loudly).
-- Batch: independent tool calls go in one message, and several shell commands go in one shell call. Ask a command for only what you need (a count, a grep hit, a JSON field, the last 20 lines); send long output to a file in the temp folder and read the lines that matter.
+- Search before you read: grep with a head limit, then read only the lines you need (offset and limit). Never read a whole file over 300 lines without a reason, and never re-read a file that is already in context unless it changed since.
+- Round trips: gather in one message what the next decision could plausibly need, filtered, with several shell commands in one shell call. Run steps with no decision between them as one script that stops at its first error (a long one as a file in the temp folder). Make a new call only when the next step depends on what this one shows.
+- Filter at the source: ask a command for only what you need (a count, a grep hit, a JSON field, the last 20 lines). Send long output to a file in the temp folder and query that file instead of running the command again. Pass an MCP tool its own filter, field, limit and page options.
 - No subagent, agent team or Workflow unless the work is parallel and independent, or does not fit in one context. At most 5 spawns per session. The settings give each subagent its model and effort (Sonnet, medium): pass a stronger model only to a judge, verify or design stage, and Haiku or the Explore agent to a search. In a Workflow the settings keep every agent on Sonnet whatever the script asks, so there give those stages a higher effort instead (effort: 'high'). Effort max alone does not change this. A Workflow runs when my message says workflow or ultracode, or when Ultracode is on for the session (I turned it on in /effort and a system message confirms it); then the 5-spawn cap does not apply.
 - Long-horizon work: write the plan or spec to a file and hand it to a fresh session (SendMessage between sessions when they must coordinate) instead of growing this session or spawning a fleet.
 - Replies: the answer first, short. Between tool calls, say something only when I would need it (a blocker, a choice, a long wait); no restating my question, nothing beyond the result and what I must do next. Code, commands and error text go in a fenced block, never in prose.
-- Load a skill only when the task matches its trigger. WebSearch standard mode first, extended only when standard comes back thin. Open the browser tools only for a page that needs a logged-in session.
+- Load a skill only when the task matches its trigger.
+- Browser tools: open them only when a plain fetch cannot do the job, and load browser_batch, find and get_page_text with them. Keep each browser_batch on one tab and give each navigate its own call; outside auto mode, batch only on a site I allowed in this chat. Read text with get_page_text; locate elements with find, or read_page with filter interactive, and click them by ref. Take screenshots at scale 0.5, except to read small text or to click by coordinate.
 - When a task is done and the next one is unrelated, say so in one line: a /clear there costs nothing and saves the most, and a /compact is worth it only when the next task needs this context.
 ````
 
