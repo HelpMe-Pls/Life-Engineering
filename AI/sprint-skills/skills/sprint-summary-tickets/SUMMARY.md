@@ -22,7 +22,7 @@ EO Global. The rollout tracker lists docs/meetings to every admin account on its
 ## What stays out
 
 - Anything Edge8-internal: sprint planning and the words sprint, card and ticket; contracts; hours; what Edge8 thinks of a request. An Eventbrite ticket (order and ticket, ticket type, ticket name) is Eventbrite's own word and stays.
-- What Dave asked to keep from EO: everything about EO Vietnam, above all the events test (website events copied to OneEO on the sandbox) and the push of the EO Vietnam app's deals into HubSpot. Add to this list when Dave adds to it. It stays out when Dave names it on the call himself: write his plan without it, and tell Khoi in the handover.
+- What Dave asked to keep from EO: the push of the EO Vietnam app's deals into HubSpot. EO Vietnam's events on the OneEO sandbox are no longer kept out: EO Global reviewed them after Dave's email to Nisha of 19 Nov, and Khôi showed them on the 25 Nov call. Add to this list when Dave adds to it. It stays out when Dave names it on the call himself: write his plan without it, and tell Khoi in the handover.
 - What the recorded call did not say. An email, a chat message or notes of another call that Khoi adds to the session go to the sprint page, never into the summary.
 - A local file path, a ticket number, and `#` before a digit (write "PR 1110").
 - Private data a video frame shows, such as an admin page with email addresses.
@@ -37,15 +37,16 @@ Write each name as here. Leave out a name the recording does not make certain, a
 - Cloud Converge is the vendor that builds Altai's side of the payment trigger. EO Global makes the introduction, and Edge8 never contacts them directly.
 - EO's Growth Team is capitalised.
 - Claire, of EO Global's business team, reviews the HubSpot work with Avery. Her surname was heard once as "Lim" after "I think", so she goes by first name.
-- Mouris and Marie, of EO Global's team, sent the attendee steps and the test plan for the event connector by email (17 Nov). The summary says "EO Global's team" for them unless the call makes the name certain.
+- Mouris and Marie, of EO Global's team, sent the attendee steps and the test plan for the event connector by email (17 Nov). The summary says "EO Global's team" for them unless the call makes the name certain. Marie (Marie Mongeau) reviewed EO Vietnam's sandbox events on 24 Nov; the 25 Nov call named her, so she goes by first name, "Marie of EO Global".
+- Tam, heard on 25 Nov, is EO Vietnam's chapter manager (Tam Nguyen on the tracker). The summary says "EO Vietnam's chapter manager".
 - Heard and never made certain, so kept out: Terrence, Drake, Chris, Tabitha, Tristan, Michael; an EO data-team colleague heard as "Suka", "Celica" or "Celco"; "Keith Carrier"; an EO Global colleague heard as "Iseli"; the contact person of a chapter, whom Stacie does not name. "Karen" is spelled as heard. "celly" is an unknown word and never a name.
 
 ## What the transcript mishears
 
 - Thành: Han, Tom, Tan, Sam, Pan, time, Ty, Todd, Tham, Dan, Tima, Tolana. But "Han" was Ha on 11 Nov, so a frame settles it.
-- Khôi: Khoia. Ha: HA. Nisha: Eisha. Avery: every, able. Dominick: Dominic, Dominique. Stacie: Stacey, Stacy. Mouris: Maru, Mario. Sourbutts: Saurabh, Saurbuts, Sour Butts, Sour Buds, David S., David Salbert. Cloud Converge: CC.
+- Khôi: Khoia. Ha: HA. Nisha: Eisha. Avery: every, able. Dominick: Dominic, Dominique. Stacie: Stacey, Stacy. Marie: Mary. Mouris: Maru, Mario. Sourbutts: Saurabh, Saurbuts, Sour Butts, Sour Buds, David S., David Salbert. Cloud Converge: CC.
 - Hivebrite: Hybrid, Hypebrite, High Fright, high-frived, Highbrite, High Purpose, Halfbrite, Hackbrite, hybride, Hybrite.
-- SLP (spouse or life partner): selfie. ICP (ideal customer profile): ICB. lead status: list status.
+- SLP (spouse or life partner): selfie. ICP (ideal customer profile): ICB. lead status: list status. leads added (a tracker column): list added.
 - OneEO: one EO, 1.EO, 1EO, 1.0, 1.8, Wadio.
 - HubSpot: hotspot. SOW: SLW. V1.1: B1.1. Closed Won: close one. WhatsApp: what's up. Diwali: Tiwali.
 - paid-up date: paid update. renewing member: redoing member. Chapter Bought (a License Type): Chapter Bot. grouped by wave: approved by WAVE. Eventbrite's free plan: three plan.
@@ -56,7 +57,7 @@ HubSpot is the CRM EO rolls out to its chapters. Altai is EO's membership system
 
 ## Speakers
 
-The transcript has no speaker labels. Attribute by what each voice says and knows, and settle a doubt with one video frame from inside the utterance: `ffmpeg -ss <MM:SS> -i "<the recording>" -frames:v 1 "<scratch>/frame-<MMSS>.png"`, read as an image, cropped to the meeting's floating window when it is small (`-vf crop=w:h:x:y`). The speaker's green border lags 1 to 2 seconds, so take the frame that far into the utterance. Participant names come from the same frames. Game Bar names the file when the recording ends, so the call started its length earlier.
+The transcript has no speaker labels. Attribute by what each voice says and knows, and settle a doubt with one video frame from inside the utterance: `ffmpeg -ss <MM:SS> -i "<the recording>" -frames:v 1 "<scratch>/frame-<MMSS>.png"`, read as an image, cropped to the meeting's floating window when it is small (`-vf crop=w:h:x:y`). The speaker's green border lags 1 to 2 seconds, so take the frame that far into the utterance. The meeting window can sit behind the shared screen for minutes: when a frame shows no tiles, try one 30 seconds later. Lauren and Stacie are both blue guest avatars: only the green border tells them apart, so never attribute an EO line between them without a frame. Participant names come from the same frames. Game Bar names the file when the recording ends, so the call started its length earlier.
 
 ## Fact-check
 

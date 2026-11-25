@@ -19,11 +19,10 @@
 - [x] Live up to your standards
 
 ### 25/11
-- [ ] EO sprint review:
-	- [ ] Record & summarize the meeting with Opus Max ultra (2hr cap)
+- [x] EO sprint review:
+	- [x] Record & summarize the meeting with Opus Max ultra (2hr cap)
 	- [ ] Run `/sprint-afk-prep` with Fable Max ultra (4hr cap)
 	- [ ] Ping Trọng for confirmation
-	- [ ] Old Infant meeting?
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
