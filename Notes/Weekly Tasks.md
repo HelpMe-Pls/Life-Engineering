@@ -12,18 +12,18 @@
 
 ### 24/11
 - [x] EO weekly report
-	- [ ] [x] Rehearse the sprint review
+	- [x] Rehearse the sprint review
 	- [x] Update & send the sprint report
 - [x] Venture++
 - [x] Tao Te Ching++
 - [x] Live up to your standards
 
 ### 25/11
-- [ ] EO sprint review with Opus Max ultra:
-	- [ ] Record & summarize the meeting
-	- [ ] Run `/sprint-afk-prep`
+- [ ] EO sprint review:
+	- [ ] Record & summarize the meeting with Opus Max ultra (2hr cap)
+	- [ ] Run `/sprint-afk-prep` with Fable Max ultra (4hr cap)
+	- [ ] Ping Trọng for confirmation
 	- [ ] Old Infant meeting?
-	- [ ] Ping Trọng
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
@@ -32,8 +32,7 @@
 - [ ] EO minimal work:
 	- [ ] AFK++
 	- [ ] Drain Claude quota (with research)
-	- [ ] AIO coaching session → Remind the Old Infant
-- [ ] Grep enduro bike rent
+	- [ ] AIO coaching session 
 - [ ] Venture++
 - [ ] Tao Te Ching++
 - [ ] Live up to your standards
