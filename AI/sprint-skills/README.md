@@ -26,7 +26,7 @@ Run it again after an upgrade of Node too. A hook command names the Node program
 - **Three hook scripts.** It copies them to `.claude/hooks` and names them in `settings.json`. `compact-reread.mjs` sends a long session back to its skill file after Claude Code shortens the conversation. `no-cd-compound.mjs` stops a command that changes folder and reads a file in one step, because such a command stops to ask you. `ensure-chrome.mjs` starts Chrome for the Claude extension (Windows only).
 - **Settings, only where a value is missing.** Sub-agents on Sonnet at medium effort, the size limits for tool output, and the six rules that keep `.env` files out of a conversation. It never changes or removes a value that is there. It keeps one copy of the file as it was.
 - **The Reader-facing docs note.** The pages follow it. The installer writes it when your `.claude` folder does not have it.
-- **Matt Pocock's skills.** `/grilling`, `/tdd`, `/implement`, `pr` and `code-review`. The installer installs them when they are missing, and lets a session call `/implement`, which ships slash-only.
+- **Matt Pocock's skills.** `/grilling`, `/tdd`, `/implement`, `pr` and `code-review`. The installer installs them as the `mattpocock-skills` plugin when the machine has no copy. `/implement` ships slash-only, so the AFK prompt starts with it.
 - **The Tickets page helper (Windows).** A Tickets page saves a pick through it from any browser. It serves the pages under `Documents/Edge8` only: with `--edge8` set to another folder, it does not save a pick made there.
 - **A check of the machine.** One line for each thing: `PASS`, `DONE`, `TODO` for a thing that is yours to do, `FAIL`.
 

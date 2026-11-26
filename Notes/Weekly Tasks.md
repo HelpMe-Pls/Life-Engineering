@@ -21,16 +21,16 @@
 ### 25/11
 - [x] EO sprint review:
 	- [x] Record & summarize the meeting with Opus Max ultra (2hr cap)
-	- [ ] Run `/sprint-afk-prep` with Fable Max ultra (4hr cap)
-	- [ ] Ping Trọng for confirmation
+	- [x] Run `/sprint-afk-prep` with Fable Max ultra (4hr cap)
+	- [x] Ping Trọng for confirmation
 - [ ] Venture++
-- [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Tao Te Ching++
+- [x] Live up to your standards
 
 ### 26/11
-- [ ] EO minimal work:
-	- [ ] AFK++
-	- [ ] Drain Claude quota (with research)
+- [x] EO minimal work:
+	- [x] AFK++
+	- [x] Drain Claude quota (with research)
 	- [ ] AIO coaching session 
 - [ ] Venture++
 - [ ] Tao Te Ching++

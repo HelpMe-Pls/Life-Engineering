@@ -33,9 +33,10 @@ const REF = {
   email: 'khoi.le@edge8.ai',
 };
 
-// The skills by Matt Pocock that the sprint skills call, and the command that installs them.
+// The skills by Matt Pocock that the sprint skills call, and the commands that install them as the plugin
+// mattpocock-skills, from its marketplace in the GitHub repository mattpocock/skills.
 const POCOCK = ['grilling', 'tdd', 'implement', 'pr', 'code-review'];
-const POCOCK_INSTALL = 'npx skills@latest add mattpocock/skills -g -a claude-code -s "*" -y';
+const POCOCK_INSTALL = ['claude plugin marketplace add mattpocock/skills', 'claude plugin install mattpocock-skills@mattpocock --scope user'];
 
 // What the settings merge adds when it is missing. It never changes or removes a value that is there.
 const HOOKS = [
@@ -394,39 +395,49 @@ function readerDocs(env, withClaudeMd) {
   say('DONE', `${file}: added the two writing rules between the sprint-skills marks`);
 }
 
-// Removes the line that makes a skill slash-only, so a session can call the skill itself.
-function ungate(file, check) {
-  const text = fs.readFileSync(file, 'utf8');
-  const eol = text.includes('\r\n') ? '\r\n' : '\n';
-  const lines = text.split(/\r?\n/);
-  if (lines[0] !== '---') return false;
-  const end = lines.indexOf('---', 1);
-  if (end < 0) return false;
-  const kept = lines.filter((l, i) => !(i > 0 && i < end && l.trim() === 'disable-model-invocation: true'));
-  if (kept.length === lines.length) return false;
-  if (!check) fs.writeFileSync(file, kept.join(eol));
-  return true;
+// The folders that can hold Matt Pocock's skills, each with how many folders down a skill can sit:
+// .claude/skills (a copy put there by hand), and the skills folder of each mattpocock-skills plugin
+// installed for the user and not turned off in settings.json (a plugin groups them, as in engineering/tdd).
+function pocockRoots(env) {
+  const read = (f) => { try { return JSON.parse(fs.readFileSync(f, 'utf8').replace(/^﻿/, '')); } catch { return null; } };
+  const enabled = read(path.join(env.claude, 'settings.json'))?.enabledPlugins || {};
+  const installs = read(path.join(env.claude, 'plugins', 'installed_plugins.json'))?.plugins || {};
+  const roots = [[path.join(env.claude, 'skills'), 0]];
+  for (const [id, list] of Object.entries(installs)) {
+    if (!id.startsWith('mattpocock-skills@') || enabled[id] === false || !Array.isArray(list)) continue;
+    for (const i of list) if (i && i.scope === 'user' && i.installPath) roots.push([path.join(i.installPath, 'skills'), 1]);
+  }
+  return roots;
 }
 
+// True when a folder named for the skill, with a SKILL.md in it, sits in root or up to depth folders below it.
+function hasSkill(root, name, depth) {
+  if (fs.existsSync(path.join(root, name, 'SKILL.md'))) return true;
+  if (depth <= 0) return false;
+  let dirs = [];
+  try { dirs = fs.readdirSync(root, { withFileTypes: true }).filter((d) => d.isDirectory()); } catch { return false; }
+  return dirs.some((d) => hasSkill(path.join(root, d.name), name, depth - 1));
+}
+
+// /implement ships slash-only. That needs no change here: the AFK prompt starts with /implement, so the person runs it.
 function pocock(env, skipInstall) {
-  const file = (n) => path.join(env.claude, 'skills', n, 'SKILL.md');
-  const lacking = () => POCOCK.filter((n) => !fs.existsSync(file(n)));
+  const lacking = () => {
+    const roots = pocockRoots(env);
+    return POCOCK.filter((n) => !roots.some(([root, depth]) => hasSkill(root, n, depth)));
+  };
   let missing = lacking();
   let installed = false;
   if (missing.length && !env.check && !env.test && !skipInstall) {
-    console.log(`      Matt Pocock's skills are missing; running: ${POCOCK_INSTALL}`);
-    spawnSync(POCOCK_INSTALL, { shell: true, stdio: 'inherit', timeout: 600000 });
+    for (const cmd of POCOCK_INSTALL) {
+      console.log(`      Matt Pocock's skills are missing; running: ${cmd}`);
+      spawnSync(cmd, { shell: true, stdio: 'inherit', timeout: 600000 });
+    }
     installed = true;
     missing = lacking();
   }
   const names = (l) => l.map((n) => '/' + n).join(', ');
-  if (missing.length) say('TODO', `Matt Pocock's skills are missing (${names(missing)}). Run this, then the installer again: ${POCOCK_INSTALL}`);
+  if (missing.length) say('TODO', `Matt Pocock's skills are missing (${names(missing)}). Run ${POCOCK_INSTALL.join(', then ')}, then this installer again`);
   else say(installed ? 'DONE' : 'PASS', `Matt Pocock's skills that the sprint skills call are installed (${names(POCOCK)})`);
-  const opened = [];
-  for (const n of POCOCK) {
-    try { if (fs.existsSync(file(n)) && ungate(file(n), env.check)) opened.push(n); } catch (e) { say('FAIL', `/${n}: ${e.message}`); }
-  }
-  if (opened.length) say(env.check ? 'DIFF' : 'DONE', `${names(opened)}: ${env.check ? 'is' : 'was'} slash-only as shipped; a session must be able to call it, so the installer removes that one line (run the installer again after you update Matt Pocock's skills)`);
 }
 
 function ticketsHelper(env, ctx) {
