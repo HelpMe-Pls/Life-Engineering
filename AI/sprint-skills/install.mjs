@@ -63,15 +63,15 @@ const escRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 // Render: the text of a skill file as this machine needs it. On the PC the skills were written on, with no
 // owner set, it returns the file unchanged.
 
-export function makeContext({ platform, home, edge8, repos, captures, notes = null, owner = null, exists = fs.existsSync }) {
+export function makeContext({ platform, home, edge8, repos, captures, notes = null, owner = null, desktop = false, exists = fs.existsSync }) {
   const win = platform === 'win32';
   const P = win ? path.win32 : path.posix;
-  const ctx = { win, home, owner, exists, notes };
+  const ctx = { win, home, owner, exists, notes, desktop: Boolean(desktop) };
   ctx.edge8 = edge8 || P.join(home, 'Documents', 'Edge8');
   ctx.repos = repos || P.join(home, 'Documents', 'Repos', 'Edge8');
   ctx.captures = captures || P.join(home, 'Videos', 'Captures');
   ctx.slug = slugOf(ctx.captures);
-  ctx.tmp = win ? REF.tmp : P.join(home, 'tmp');
+  ctx.tmp = win && !ctx.desktop ? REF.tmp : P.join(home, 'tmp');
   ctx.homeFwd = fwd(home);
   ctx.homeMsys = win ? fwd(home).replace(/^([A-Za-z]):/, (m, d) => '/' + d.toLowerCase()) : home;
   return ctx;
@@ -147,6 +147,13 @@ function ownerNote(owner, skill, tokensReplaced) {
 
 const MAC_NOTE = 'This machine is not a Windows PC. Where this file names PowerShell or Git Bash, use this machine\'s shell. A tool runs under its plain name, with no .cmd or .exe ending. Docker Desktop starts with open -a Docker, in place of Start-Process and the path of the exe. For one command, env -u GH_TOKEN takes the place of Remove-Item Env:GH_TOKEN. The same holds for every prompt and every command this file has you write.';
 
+// A machine whose sessions run in the Code tab of the Claude Desktop app has no claude command to launch with.
+// With --desktop, this paragraph says what stands in for a launch command there.
+const DESKTOP_NOTE = 'On this machine the sessions run in the Code tab of the Claude Desktop app, which takes no launch command. There, a folder that a launch command adds is in place when it is the folder the session runs in, a folder inside that one, a folder added with the + button beside the prompt box, then Add folder, or a folder inside an added one. The claude-in-chrome tools are there while Claude in Chrome is on under Connectors (the same + button, then Connectors; a connector that is not offered there is first connected under Settings, Customize, Connectors) and Chrome runs with the extension signed in to the same Claude account and organization. A flag for the model, the effort or the permission mode is set with the pickers under the prompt box. A folder and a connector can be added while a session runs, so no session has to start again for one. Where this file has you show the launch command and stop, show these steps instead, with the path of each missing folder on its own line, then go on in this same session when the owner of the session says they are done. When one folder holds every missing folder, as the home folder does on a machine that keeps the usual places, show that one folder first: adding it alone is enough. When the claude-in-chrome tools are still missing after that, say so: only then does the owner start a new session and type this skill\'s command there. Where this file gives a launch command for a session that is still to start, that session is a new session on This computer in the folder the command starts from, with each folder of the command in place the same way. The same holds for every prompt this file has you write.';
+
+// The review skill names every path in full and never changes folder, so its session may run anywhere.
+const DESKTOP_ANY_FOLDER = 'For this skill the folder the session runs in does not matter: every path in this file is absolute, so the skill runs in the session its command was typed in. Where the Launch check says that the session starts from a folder under the sprint pages or the recordings, read that as those folders being in place, in any of the three ways above: it never means a new session.';
+
 // rel is "<skill>/<file>", buf the bytes of the file in the package. Returns the bytes to install.
 export function render(rel, buf, ctx) {
   const todos = [];
@@ -169,6 +176,7 @@ export function render(rel, buf, ctx) {
     if (moved) notes.push(moved);
   }
   if (localized && !ctx.win) notes.push(MAC_NOTE);
+  if (localized && ctx.desktop) notes.push(skill === 'sprint-review-prep' ? DESKTOP_NOTE + ' ' + DESKTOP_ANY_FOLDER : DESKTOP_NOTE);
   if (notes.length) {
     const lines = text.split('\n');
     const at = lines.findIndex((l) => l.startsWith('This prompt is the file '));
@@ -252,6 +260,71 @@ function installHooks(env) {
   if (!changed.length) say('PASS', `the hook scripts are in ${path.join(env.claude, 'hooks')}, the same as the package`);
   else if (env.check) say('DIFF', `hook scripts missing or different in ${path.join(env.claude, 'hooks')}: ${changed.join(', ')}`);
   else say('DONE', `hook scripts written to ${path.join(env.claude, 'hooks')}: ${changed.join(', ')} (an older file of the same name is kept with the ending .bak)`);
+}
+
+// --pages: the sprint pages and the transcripts that came beside this copy of the package, in the folders Edge8
+// and Captures (a zip made for a teammate). No repository holds them, so this is how they reach a second machine.
+// Only the five page folders and the .vtt files are copied. A file of this machine that differs is kept first.
+const PAGE_FOLDERS = ['Tickets', 'Sprint review', 'Scopes', 'AFK', 'HITL'];
+function copyPages(ctx, env) {
+  const root = path.resolve(PKG, '..');
+  const jobs = []; // [the name inside the bundle, the source file, the destination file]
+  for (const d of PAGE_FOLDERS) {
+    const dir = path.join(root, 'Edge8', d);
+    if (!fs.existsSync(dir)) continue;
+    for (const rel of walk(dir)) jobs.push([`Edge8/${d}/${rel}`, path.join(dir, rel), path.join(ctx.edge8, d, rel)]);
+  }
+  const caps = path.join(root, 'Captures');
+  if (fs.existsSync(caps)) {
+    for (const rel of walk(caps)) if (!rel.includes('/') && /\.vtt$/i.test(rel)) jobs.push([`Captures/${rel}`, path.join(caps, rel), path.join(ctx.captures, rel)]);
+  }
+  if (!jobs.length) { say('FAIL', `--pages: no sprint page and no transcript came beside this package (it looks for the folders Edge8 and Captures in ${root})`); return; }
+  const kept = path.join(root, 'replaced');
+  let same = 0;
+  const added = [];
+  const replaced = [];
+  for (const [name, src, dst] of jobs) {
+    const buf = fs.readFileSync(src);
+    let old = null;
+    try { old = fs.readFileSync(dst); } catch { /* not there yet */ }
+    if (old && old.equals(buf)) { same += 1; continue; }
+    (old ? replaced : added).push(name);
+    if (env.check) continue;
+    if (old) {
+      let keep = path.join(kept, name);
+      for (let n = 2; fs.existsSync(keep); n += 1) keep = path.join(kept, `${name}.${n}`);
+      fs.mkdirSync(path.dirname(keep), { recursive: true });
+      fs.writeFileSync(keep, old);
+    }
+    fs.mkdirSync(path.dirname(dst), { recursive: true });
+    fs.writeFileSync(dst, buf);
+    if (!fs.readFileSync(dst).equals(buf)) throw new Error(`${dst} does not read back the same as ${src}`);
+  }
+  const where = `${ctx.edge8} and ${ctx.captures}`;
+  const n = added.length + replaced.length;
+  if (!n) say('PASS', `the ${jobs.length} sprint pages and transcripts that came with this package are in ${where}, the same byte for byte`);
+  else if (env.check) say('DIFF', `--pages would copy ${n} of the ${jobs.length} sprint pages and transcripts that came with this package into ${where}${replaced.length ? `, and replace ${replaced.length} of your files after keeping a copy` : ''}`);
+  else {
+    say('DONE', `copied ${n} of the ${jobs.length} sprint pages and transcripts that came with this package into ${where}, byte for byte (${same} were already the same)`);
+    if (replaced.length) say('NOTE', `${replaced.length} of those replaced a file of yours that differed; your old ${replaced.length === 1 ? 'copy is' : 'copies are'} kept in ${kept}: ${replaced.join(', ')}`);
+  }
+}
+
+// With --desktop: the folders that the review skill's launch command adds. A session in the app has each one as
+// the folder it runs in, a folder inside that one, or an added folder, so the line lists them all.
+function desktopFolders(ctx) {
+  const name = 'sprint-review-prep';
+  try {
+    const text = render(`${name}/SKILL.md`, fs.readFileSync(path.join(PKG, 'skills', name, 'SKILL.md')), ctx).buf.toString('utf8');
+    const line = text.split('\n').find((l) => l.startsWith('claude ') && l.includes('--add-dir '));
+    if (!line) return;
+    const folders = (line.split('--add-dir ')[1].match(/"[^"\n]+"|\S+/g) || []).map((t) => t.replace(/^"|"$/g, ''));
+    if (!folders.length) return;
+    const sep = ctx.win ? '\\' : '/';
+    const inHome = (f) => (ctx.win ? f.toLowerCase().startsWith(ctx.home.toLowerCase() + sep) : f.startsWith(ctx.home + sep));
+    const all = folders.every(inHome);
+    say('NOTE', `/${name} in the Code tab needs ${folders.length === 1 ? 'this folder' : 'these folders'} in its session, each as the folder the session runs in, a folder inside that one, a folder added with + and Add folder, or a folder inside an added one, before or while the session runs: ${folders.join(', ')}.${all ? ` Your home folder ${ctx.home} holds ${folders.length === 1 ? 'it' : 'them all'}: a session that runs there needs no folder added, and a session elsewhere needs only that one.` : ''}`);
+  } catch { /* the line of the skill itself already reports a problem */ }
 }
 
 // The node program a hook command names. fnm gives each shell its own short-lived path, so its default alias goes first.
@@ -420,14 +493,15 @@ function hasSkill(root, name, depth) {
 }
 
 // /implement ships slash-only. That needs no change here: the AFK prompt starts with /implement, so the person runs it.
-function pocock(env, skipInstall) {
+// The install commands need the claude command, which a machine that only has the Claude Desktop app lacks.
+function pocock(env, skipInstall, desktop) {
   const lacking = () => {
     const roots = pocockRoots(env);
     return POCOCK.filter((n) => !roots.some(([root, depth]) => hasSkill(root, n, depth)));
   };
   let missing = lacking();
   let installed = false;
-  if (missing.length && !env.check && !env.test && !skipInstall) {
+  if (missing.length && !env.check && !env.test && !skipInstall && !desktop) {
     for (const cmd of POCOCK_INSTALL) {
       console.log(`      Matt Pocock's skills are missing; running: ${cmd}`);
       spawnSync(cmd, { shell: true, stdio: 'inherit', timeout: 600000 });
@@ -436,7 +510,8 @@ function pocock(env, skipInstall) {
     missing = lacking();
   }
   const names = (l) => l.map((n) => '/' + n).join(', ');
-  if (missing.length) say('TODO', `Matt Pocock's skills are missing (${names(missing)}). Run ${POCOCK_INSTALL.join(', then ')}, then this installer again`);
+  if (missing.length && desktop) say('TODO', `Matt Pocock's skills are missing (${names(missing)}). They come as the plugin mattpocock-skills, from the marketplace mattpocock/skills: add both in the Code tab (the + button, then Plugins), then run this installer again`);
+  else if (missing.length) say('TODO', `Matt Pocock's skills are missing (${names(missing)}). Run ${POCOCK_INSTALL.join(', then ')}, then this installer again`);
   else say(installed ? 'DONE' : 'PASS', `Matt Pocock's skills that the sprint skills call are installed (${names(POCOCK)})`);
 }
 
@@ -472,12 +547,14 @@ function machineChecks(ctx, env) {
   const major = Number(process.versions.node.split('.')[0]);
   if (major >= 18) say('PASS', `Node ${process.versions.node}`); else say('FAIL', `Node ${process.versions.node} is older than 18: install a newer Node, then run this again`);
   tool('git --version', 'git is installed', 'install git');
-  tool('claude --version', 'Claude Code is installed', 'install Claude Code (the claude command) and sign in');
+  if (ctx.desktop) say('NOTE', 'the sessions run in the Code tab of the Claude Desktop app, which brings its own Claude Code: the claude command is not needed');
+  else tool('claude --version', 'Claude Code is installed', 'install Claude Code (the claude command) and sign in');
   if (!runs('gh --version')) say('TODO', 'install the GitHub CLI (gh), then sign in with: gh auth login');
   else tool('gh auth status', 'the GitHub CLI is signed in', 'sign in to GitHub with: gh auth login');
   tool('fnm --version', 'fnm is installed', '/sprint-afk-prep runs each repository on its own Node version through fnm: install fnm');
   tool('docker --version', 'Docker is installed', '/sprint-afk-prep proves a migration on a local database: install Docker Desktop');
-  say('NOTE', '/sprint-review-prep and a card that needs a browser use the Claude in Chrome extension: install it in Chrome and sign in (this installer cannot see it)');
+  if (ctx.desktop) say('NOTE', '/sprint-review-prep and a card that needs a browser use Claude in Chrome: install the extension in Chrome, sign it in with the same Claude account as the app, and turn on Claude in Chrome under Connectors in the app (this installer cannot see it)');
+  else say('NOTE', '/sprint-review-prep and a card that needs a browser use the Claude in Chrome extension: install it in Chrome and sign in (this installer cannot see it)');
 
   const P = ctx.win ? path.win32 : path.posix;
   const lacks = ['Tickets', 'Sprint review', 'Scopes', 'AFK', 'HITL'].filter((d) => !fs.existsSync(P.join(ctx.edge8, d)));
@@ -500,7 +577,7 @@ function machineChecks(ctx, env) {
 }
 
 const VALUE_FLAGS = ['--home', '--owner', '--github', '--email', '--edge8', '--repos', '--captures'];
-const PLAIN_FLAGS = ['--check', '--skills-only', '--unattended', '--no-pocock', '--claude-md', '--no-owner', '--help'];
+const PLAIN_FLAGS = ['--check', '--skills-only', '--unattended', '--no-pocock', '--claude-md', '--no-owner', '--desktop', '--no-desktop', '--pages', '--help'];
 const HELP = `Sprint skills installer
 
   node "<this folder>/install.mjs" [options]
@@ -515,12 +592,16 @@ const HELP = `Sprint skills installer
   --github <login>   a teammate: your GitHub login
   --email <address>  a teammate: your HubSpot sign-in
   --no-owner         forget the owner; the skills then speak of Khoi again
+  --desktop          your sessions run in the Code tab of the Claude Desktop app, not from the claude command
+  --no-desktop       forget that; the skills then give their launch commands with no note
+  --pages            also copy the sprint pages and transcripts that came beside this package (the folders Edge8
+                     and Captures of a zip made for you) into your folders; a file of yours that differs is kept first
   --edge8 <folder>   where your sprint pages are (default: Documents/Edge8 in your home folder)
   --repos <folder>   where your clones are (default: Documents/Repos/Edge8 in your home folder)
   --captures <folder> where your meeting recordings are (default: Videos/Captures in your home folder)
   --home <folder>    a test: use this folder as the home folder
 
-The owner and the folders are remembered in sprint-skills.json in the .claude folder.`;
+The owner, the folders and --desktop are remembered in sprint-skills.json in the .claude folder.`;
 
 function main() {
   const argv = process.argv.slice(2);
@@ -552,6 +633,8 @@ function main() {
     cfg.owner = { name: vals.owner.trim(), github, ...(vals.email || (cfg.owner && cfg.owner.email) ? { email: vals.email || cfg.owner.email } : {}) };
   } else if (vals.github || vals.email) { console.error('--github and --email go with --owner "<your name>"'); process.exit(2); }
   for (const k of ['edge8', 'repos', 'captures']) if (vals[k]) cfg[k] = path.resolve(vals[k]);
+  if (flags.has('no-desktop')) delete cfg.desktop;
+  if (flags.has('desktop')) cfg.desktop = true;
 
   const platform = process.platform === 'win32' ? 'win32' : 'posix';
   let notes = null;
@@ -559,9 +642,9 @@ function main() {
     const n = path.resolve(PKG, '..', '..', 'Notes');
     if (fs.existsSync(path.join(n, 'Daily Standup.md'))) notes = fs.realpathSync.native(n);
   } catch { /* the package is not inside the vault */ }
-  const ctx = makeContext({ platform, home, edge8: cfg.edge8, repos: cfg.repos, captures: cfg.captures, notes, owner: cfg.owner || null });
+  const ctx = makeContext({ platform, home, edge8: cfg.edge8, repos: cfg.repos, captures: cfg.captures, notes, owner: cfg.owner || null, desktop: cfg.desktop === true });
 
-  console.log(`Sprint skills installer: ${env.check ? 'a check, nothing is changed' : 'install or update'}; home folder ${home}${cfg.owner ? `; owner ${cfg.owner.name}` : ''}`);
+  console.log(`Sprint skills installer: ${env.check ? 'a check, nothing is changed' : 'install or update'}; home folder ${home}${cfg.owner ? `; owner ${cfg.owner.name}` : ''}${ctx.desktop ? '; sessions in the Claude Desktop app' : ''}`);
   if (!env.check) {
     try {
       fs.mkdirSync(env.claude, { recursive: true });
@@ -570,19 +653,22 @@ function main() {
     } catch (e) { say('FAIL', `could not prepare ${env.claude} or ${ctx.tmp}: ${e.message}`); }
   }
 
+  // The pages go first: a launch command keeps only the folders this machine holds, and --pages can make one.
+  if (flags.has('pages')) { try { copyPages(ctx, env); } catch (e) { say('FAIL', `--pages: ${e.message}`); } }
   installSkills(ctx, env);
+  if (ctx.desktop) desktopFolders(ctx);
   if (!skillsOnly) {
     try { installHooks(env); } catch (e) { say('FAIL', `the hook scripts: ${e.message}`); }
     try { mergeSettings(env, flags.has('unattended')); } catch (e) { say('FAIL', `settings.json: ${e.message}`); }
     try { readerDocs(env, flags.has('claude-md')); } catch (e) { say('FAIL', `the Reader-facing docs note: ${e.message}`); }
-    try { pocock(env, flags.has('no-pocock')); } catch (e) { say('FAIL', `Matt Pocock's skills: ${e.message}`); }
+    try { pocock(env, flags.has('no-pocock'), ctx.desktop); } catch (e) { say('FAIL', `Matt Pocock's skills: ${e.message}`); }
     try { ticketsHelper(env, ctx); } catch (e) { say('FAIL', `the Tickets page helper: ${e.message}`); }
     try { machineChecks(ctx, env); } catch (e) { say('FAIL', `the machine checks: ${e.message}`); }
   }
 
   const pending = counts.FAIL + (env.check ? counts.DIFF : 0);
   console.log(`\n${counts.DONE} changed, ${counts.PASS} already right, ${counts.DIFF} to change, ${counts.TODO} for you to do, ${counts.FAIL} failed.`);
-  if (!env.check && counts.DONE) console.log('Start Claude Code again: it loads a new skill and a new hook at its next start.');
+  if (!env.check && counts.DONE) console.log(ctx.desktop ? 'A session that is open now picks up the new skill files by itself: type a skill\'s command there. When the app does not know the command, or the text that arrives does not hold this machine\'s paragraph (it starts with On this machine the sessions run in the Code tab), type /reload-skills and then the command again. When that does not help, have that session read the skill\'s SKILL.md whole and follow it.' : 'Start Claude Code again: it loads a new skill and a new hook at its next start.');
   process.exitCode = Math.min(pending, 100);
 }
 

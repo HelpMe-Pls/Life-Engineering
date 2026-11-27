@@ -338,6 +338,8 @@ raillery (n): banter, teasing, jesting
 
 ==vivacious== (adj): sprightly, zesty, lively in temper 
 
+scintillate (v-adj): sparkle, twinkle, glitter, glint, coruscate, vivacious, dazzling
+
 orchard (n): vườn cây ăn quả
 
 ==abate== (v): calm down, becoming less intense; taper
@@ -604,7 +606,7 @@ clamor (v-n): to become loudly insistent, noisy shouting
 
 chagrin (v-n): disappoint, upset, frustration, dismay
 
-vexation (n): irritation, frustration, annoyance, exasperation
+==vexation== (n): irritation, frustration, annoyance, exasperation
 
 despondent (adj): hopeless, dejected, disheartened, downhearted
 

@@ -7,7 +7,7 @@
 	- [x] Rehearse the sprint review
 	- [x] Update & send the sprint report
 - [ ] Venture
-- [ ] Tao Te Ching++
+- [x] Tao Te Ching++
 - [x] Live up to your standards
 
 ### 24/11
@@ -31,17 +31,19 @@
 - [x] EO minimal work:
 	- [x] AFK++
 	- [x] Drain Claude quota (with research)
-	- [ ] AIO coaching session 
+	- [x] AIO coaching session 
+	- [x] Send the replies
 - [ ] Venture++
-- [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Tao Te Ching++
+- [x] Live up to your standards
 
 ### 27/11
-- [ ] EO minimal work Opus Low
-	- [ ] AFK++
+- [x] EO minimal work Opus Low
+	- [x] Send Thành the package
+	- [x] Refine the Move script (bridge with the productivity)
 - [ ] Venture++
 - [ ] Tao Te Ching++
-- [ ] Live up to your standards
+- [x] Live up to your standards
 
 ### 28/11
 - [ ] Perfect dive start + 500m

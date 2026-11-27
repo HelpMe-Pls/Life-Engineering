@@ -32,13 +32,13 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/strength-research/protocol.md",
+                    "file": "Notes/Daily Standup.md",
                     "mode": "source",
                     "source": false,
                     "backlinks": false
                   },
                   "icon": "lucide-file",
-                  "title": "protocol"
+                  "title": "Daily Standup"
                 }
               },
               {
@@ -55,7 +55,8 @@
                   "title": "English vocab"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           },
           {
             "id": "8cedd05142699eb5",
@@ -283,26 +284,28 @@
   },
   "active": "03418aa526fdbc06",
   "lastOpenFiles": [
+    "Notes/1-1 Move Script.html.tmp.42968.6019826133a3",
+    "AI/sprint-skills/skills/sprint-review-prep/SKILL.md",
+    "Notes/Weekly Tasks.md",
+    "AI/sprint-skills/install.mjs.tmp.37660.b40d489194e7",
+    "AI/sprint-skills/README.md.tmp.37660.4577bf99386c",
+    "AI/sprint-skills/install.mjs.tmp.37660.fa4bb03d8499",
+    "AI/sprint-skills/install.mjs.tmp.37660.edae3fa86205",
+    "AI/sprint-skills/install.mjs.tmp.37660.1d2d4d17af75",
+    "AI/sprint-skills/install.mjs.tmp.37660.1f6bf652ef8e",
+    "AI/sprint-skills/install.mjs.tmp.37660.e584da733c40",
+    "Notes/Daily Standup.md",
+    "Tips & Tools/English vocab.md",
+    "Tips & Tools/English grammar.md",
+    "Notes/strength-research/protocol.md",
     "AI/With Claude Code.md",
     "Notes/sedloJjMm",
     "Notes/sedKinSYw",
     "Notes/sedo6q3pP",
-    "Notes/sedvMBwlo",
-    "Notes/sedhbi9SP",
-    "Notes/sedAIOnV5",
-    "Notes/strength-research/protocol.md",
-    "Tips & Tools/English vocab.md",
-    "Notes/Weekly Tasks.md",
-    "Notes/1-1 Move Script.html",
-    "AI/sedkdpiZF",
-    "AI/sedOHAFfl",
-    "Notes/Daily Standup.md",
     "Notes/Old Infant.md",
     "Notes/Money.md",
     "Notes/day job/claude/memory-global-hubspot/dave-is-the-boss.md",
-    "Notes/Edge8.md.tmp.40928.9a25d1e9e183",
     "AI/Claude Code Skill Playbook.md",
-    "AI/sprint-skills/skills/sprint-review-prep/SKILL.md",
     "AI/sprint-skills/skills/sprint-summary-tickets/TICKETS.md",
     "AI/sprint-skills/skills/sprint-summary-tickets/SUMMARY.md",
     "AI/sprint-skills/skills/sprint-afk-prep/SKILL.md",
@@ -315,7 +318,6 @@
     "AI/sprint-summary-tickets/TICKETS.md",
     "AI/sprint-summary-tickets/SUMMARY.md",
     "AI/sprint-summary-tickets/SKILL.md",
-    "Tips & Tools/English grammar.md",
     "AI/sprint-afk-prep/SKILL.md",
     "AI/sprint-review-prep/SKILL.md",
     "Notes/stakeholder-mobile-top.png",
